@@ -1,0 +1,12 @@
+###
+### Cheaper slot machines in Moxxi's
+###
+
+prefix: Slots
+
+# Money-based machines
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_PlaySlots.UIData_PlaySlots,Cost.BaseValueScale,0,,0.2000
+
+# Eridium cost was part of the Week 3 event; here's my improved version of it:
+#SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_PlaySlotsEridium.UIData_PlaySlotsEridium,Cost.BaseValueScale,0,,0.2000
+

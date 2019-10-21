@@ -1,0 +1,34 @@
+# 10-Year Anniversary Events
+2019-10-01_-_10-year-anniversary-event-1_-_bonus_boss_loot
+better_rare_spawn_hunt
+better_eridium_event
+
+# Better loot in Mayhem 1
+# (we're now buffing stuff via better_loot in the main game, instead)
+#mayhem_1_better_loot
+
+# Maggie super buff
+maggie_super_buff
+
+# Cheaper SDUs
+cheaper_sdus
+
+# Cheaper Slots
+cheaper_slots
+
+# Free eridium fabricator?  (Is actually just my dumb "improved" version currently)
+#free_fabricator
+
+# Sort-of recreations of my BL2/TPS stuff
+early_bloomer
+better_loot
+expanded_legendary_pools
+
+testing_loot_drops
+
+# Haven't gotten these to work at all:
+#movement_speed
+#cdh
+#no_delay_red_chests
+#faster_cost_spin
+#always_visible_challenge_icons

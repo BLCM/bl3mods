@@ -1,0 +1,14 @@
+###
+### Make the Eridian Fabricator free?
+### (haven't figured it out yet, will just leave it at its useless current thing for now)
+###
+
+prefix: Fab
+
+# Hah, this actually makes it produce *nothing* but still requires ten Eridium
+#SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorShotCost.Att_FabricatorShotCost:ValueResolver_ConstantAttributeValueResolver,ValueResolver.Object.Value.BaseValueConstant,0,,0
+
+# Not at all what I was going for, but possibly makes it just shoot ten eridium?
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns.ItemPool_FabricatorGuns,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Single.ItemPool_Eridium_Single"',Weight=(BaseValueConstant=1)))
+
+

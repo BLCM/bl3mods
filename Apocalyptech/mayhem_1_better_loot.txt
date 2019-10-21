@@ -1,0 +1,26 @@
+###
+### Better Loot in Mayhem Mode 1
+###
+### Not that mayhem mode really *needs* better loot, but it's a proof of
+### concept if nothing else
+###
+
+prefix: MH1BL
+
+# Nearly-guaranteed legendaries
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MinValue,0,,20000.000000
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MaxValue,0,,20000.000000
+
+# Drop weights.  "stock" values are 7, 45, 40, 35
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Uncommon,MinValue,0,,7.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Uncommon,MaxValue,0,,7.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Rare,MinValue,0,,40.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Rare,MaxValue,0,,40.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_VeryRare,MinValue,0,,50.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_VeryRare,MaxValue,0,,50.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MinValue,0,,35.000000
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MaxValue,0,,35.000000
+
+# Drop chances (unchanged)
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropNumberChance_Multiplier,MinValue,0,,0.980000
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropNumberChance_Multiplier,MaxValue,0,,0.980000

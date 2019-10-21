@@ -1,0 +1,43 @@
+###
+### Early Bloomer!
+###
+
+prefix: Bloomer
+
+# Weapon type unlocks
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_AssaultRifle,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_Heavy,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_Pistol,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_Shotgun,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_SMG,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Weapon_SniperRifle,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+
+# Manufacturer unlocks
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Anshin,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Atlas,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_COV,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Dahl,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_ETech,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Hyperion,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Jakobs,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Maliwan,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Pangolin,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Tediore,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Torgue,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Manufacturer_Vladof,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+
+# Element unlocks
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Corrosive,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Cryo,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Fire,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Radiation,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Shock,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+
+# Item type unlocks.  Have to omit artifacts and coms, since those are locked by missions, not level.
+# Also, I wonder what Parts_EndGame is - I'm guessing Anointed?
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Artifacts,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,ClassMods,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,GrenadeMods,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Parts_EndGame,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Shields,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+

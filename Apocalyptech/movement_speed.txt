@@ -1,0 +1,19 @@
+###
+### Movement Speed Cheats, perhaps
+###
+
+prefix: Movement
+
+# Haven't found anything that actually does anything yet, alas.
+
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player,SpeedScale,0,,3
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player,WalkSpeed_Normal,0,,2000
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player,MaxWalkSpeed,0,,2000
+
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,SpeedScale,0,,3
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,WalkSpeed_Normal,0,,1000
+#SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,MaxWalkSpeed,0,,1000
+
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player,SpeedScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,SpeedScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,WalkSpeed_Normal,0,,2000

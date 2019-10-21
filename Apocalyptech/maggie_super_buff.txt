@@ -1,0 +1,11 @@
+###
+### Super buff to Maggie, so I can just power through those
+### interminable Circles of Slaughter.
+###
+### Original damage scale: 0.35
+### Damage scale after GBX nerf: 0.15
+###
+
+prefix: Maggie
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_Maggie,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,50.000000

@@ -1,0 +1,26 @@
+###
+### Attempts to disable the 30-min reopen delay on red chests
+###
+
+prefix: RedChest
+
+# No luck so far.  Who knows if this is even firing when the objects in
+# question exist, of course.  There's two vars which seem likely:
+# ResetDelay and LootEnabledDelay.  Have tried:
+#
+# obj.obj,ResetDelay
+# obj.obj,LootEnabledDelay
+# obj.obj_C,ResetDelay
+# obj.obj_C:Loot_Gen_VARIABLE,ResetDelay
+# obj.obj_C:Loot_Gen_VARIABLE,LootEnabledDelay
+#
+# Also, for all I know, even if successful it might only work on
+# newly-opened red chests, so I'd have to do some savefile restoring
+# to properly test it out.
+
+SparkLevelPatchEntry,(1,1,0,),/Game/Lootables/_Design/Classes/Atlas/BPIO_Lootable_Atlas_RedChest.BPIO_Lootable_Atlas_RedChest_C:Loot_GEN_VARIABLE,LootEnabledDelay,0,,0
+SparkLevelPatchEntry,(1,1,0,),/Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest.BPIO_Lootable_Maliwan_RedChest_C:Loot_GEN_VARIABLE,LootEnabledDelay,0,,0
+SparkLevelPatchEntry,(1,1,0,),/Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate.BPIO_Lootable_COV_RedCrate_C:Loot_GEN_VARIABLE,LootEnabledDelay,0,,0
+SparkLevelPatchEntry,(1,1,0,),/Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_RedChest.BPIO_Lootable_Jakobs_RedChest_C:Loot_GEN_VARIABLE,LootEnabledDelay,0,,0
+SparkLevelPatchEntry,(1,1,0,),/Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_RedChest.BPIO_Lootable_Eridian_RedChest_C:Loot_GEN_VARIABLE,LootEnabledDelay,0,,0
+
