@@ -3,12 +3,14 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-def set_pool(mod, pool_to_set, balances):
+def set_pool(mod, pool_to_set, balances, baltype='InventoryBalanceData'):
 
     parts = []
     for bal in balances:
-        part = '(InventoryBalanceData={},ResolvedInventoryBalanceData=InventoryBalanceData\'"{}"\',Weight=(BaseValueConstant=1))'.format(
-                bal, bal,
+        part = '(InventoryBalanceData={},ResolvedInventoryBalanceData={}\'"{}"\',Weight=(BaseValueConstant=1))'.format(
+                bal,
+                baltype,
+                bal,
                 )
         parts.append(part)
     mod.reg_hotfix(Mod.PATCH, '',
@@ -24,6 +26,14 @@ mod = Mod('testing_loot_drops.txt',
 
 pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+#pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
+#extra_pool_bit = 'ItemPool_Customizations_WeaponSkins_Loot'
+
+# Gold weapon skin might be: '/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_21.InvBal_WeaponSkin',
+# ... I couldn't seem to hardcode specific drops to any of those, though.  The pool which ordinarily
+# drops them (but not WeaponSkin_21, among others) is /Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot
+# Heh, and setting *that* pool to be what standards drop from actually goes so far as to crash the
+# game.  Gonna give up on customization dropping for now.  :)
 
 balances = [
         #'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator.Balance_PS_TOR_Devestator',
