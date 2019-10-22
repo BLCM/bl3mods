@@ -25,9 +25,10 @@ My BL3 Mod Workspace
   slot costs even further.
 - `better_mayhem_on_twitch.txt` - This is a better (ie: OP and cheaty) version
   of the Week 4 event, which buffs up XP gains even more in Mayhem modes, and
-  should guarantee Anointed parts on drops in all Mayhem modes.  This completely
-  omits all of the Mayhem modifier statements and Twitch integration stuff from
-  the vanilla Week 4 event, since I don't really care about those.
+  increases Anointed parts on drops even more (including in non-Mayhem).  All
+  drops in Mayhem 3 should be Anointed.  This completely omits all of the
+  Mayhem modifier statements and Twitch integration stuff from the vanilla
+  Week 4 event, since I don't really care about those.
 
 ## BL3 versions of some of my BL2/TPS mods
 
