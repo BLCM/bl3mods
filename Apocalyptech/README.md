@@ -14,7 +14,7 @@ My BL3 Mod Workspace
   is the Week 4 event, as sent by GBX itself.
 - `better_bonus_boss_loot.txt` - This is a better (ie: OP and cheaty) version
   of the Week 1 event, which guarantees that all affected bosses will drop
-  from their pools.  Only about half-tested so far, but I feel good about it.
+  from their pools.
 - `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
   of the Week 2 event, which guarantees that all of the rare spawns will always
   drop their unique loot, and also removes the undocumented health buffs which

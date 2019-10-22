@@ -53,9 +53,9 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/GameDat
 # Katagata Jr. gets legendary class mods
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm"'),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',ProbabilityString="50.00%"))
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,Quantity,0,,(BaseValueConstant=2)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_KatagawaJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_KatagawaJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_KatagawaJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaJr,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 
 # Rampager gets Kill-o'-the-Wisp
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant,0,,1.000000
