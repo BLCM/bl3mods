@@ -39,8 +39,6 @@ My BL3 Mod Workspace
   - Increases Eridium and Cosmetic drop rates.
   - Guarantees specific legendary drops from nearly all the bosses which
     have unique drops.  (This bit is largely untested still, though.)
-    Known exceptions: Billy the Anointed, Mother of Grogans, Red Jabber,
-    and El Dragon Jr.
 - `early_bloomer.txt` - Unlocks all weapon types, elements, manufacturers,
   etc, from the very beginning of the game.  Does *not* unlock COMs and
   Artifacts, since those are locked by storyline progression (eventually
