@@ -10,6 +10,11 @@ My BL3 Mod Workspace
 - `2019-10-15_-_10-year-anniversary-event-3_-_show_me_the_eridium.txt` - This
   is the Week 3 event, as sent by GBX itself, but with a few errors
   corrected.
+- `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
+  is the Week 4 event, as sent by GBX itself.
+- `better_bonus_boss_loot.txt` - This is a better (ie: OP and cheaty) version
+  of the Week 1 event, which guarantees that all affected bosses will drop
+  from their pools.  Only about half-tested so far, but I feel good about it.
 - `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
   of the Week 2 event, which guarantees that all of the rare spawns will always
   drop their unique loot, and also removes the undocumented health buffs which
@@ -18,6 +23,11 @@ My BL3 Mod Workspace
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium
   slot costs even further.
+- `better_mayhem_on_twitch.txt` - This is a better (ie: OP and cheaty) version
+  of the Week 4 event, which buffs up XP gains even more in Mayhem modes, and
+  should guarantee Anointed parts on drops in all Mayhem modes.  This completely
+  omits all of the Mayhem modifier statements and Twitch integration stuff from
+  the vanilla Week 4 event, since I don't really care about those.
 
 ## BL3 versions of some of my BL2/TPS mods
 

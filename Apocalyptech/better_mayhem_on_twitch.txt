@@ -1,0 +1,27 @@
+###
+### Better Week 4 Hotfixes
+###
+### Actually omits a lot of the Week 4 stuff, 'cause I don't actually care
+### too much about the Mayhem difficulty modifiers themselves, and I don't
+### care at all about Twitch integration stuff.
+###
+### I *am* buffing up the XP gains, though, and Anointed gear drops.
+###
+
+prefix: Week4Better
+
+# XP Gains
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,ExpGain_CombatOnly,MinValue,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,ExpGain_CombatOnly,MaxValue,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Medium.DataTable_Mayhem_CoreMods_Medium,ExpGain_CombatOnly,MinValue,0,,3
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Medium.DataTable_Mayhem_CoreMods_Medium,ExpGain_CombatOnly,MaxValue,0,,3
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Hard.DataTable_Mayhem_CoreMods_Hard,ExpGain_CombatOnly,MinValue,0,,5
+SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Hard.DataTable_Mayhem_CoreMods_Hard,ExpGain_CombatOnly,MaxValue,0,,5
+
+# Anoint drop chances - everything has anointments!
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughOne,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_01,PlaythroughTwoAndBeyond,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughOne,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_02,PlaythroughTwoAndBeyond,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughOne,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughTwoAndBeyond,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000
