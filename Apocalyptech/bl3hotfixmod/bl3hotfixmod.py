@@ -71,12 +71,32 @@ class Mod(object):
         print('', file=self.df)
         self.last_was_newline = True
 
-    def comment(self, comment_str):
+    def comment(self, comment_str, weight=1):
         """
         Writes a comment string out to the mod file
         """
-        print('# {}'.format(comment_str), file=self.df)
+        stripped = comment_str.strip()
+        if len(stripped) > 0:
+            print('{} {}'.format('#'*weight, stripped), file=self.df)
+        else:
+            print('{}'.format('#'*weight), file=self.df)
         self.last_was_newline = False
+
+    def header_lines(self, lines):
+        """
+        Outputs a "header" type thing, with three hashes
+        """
+        self.comment('', weight=3)
+        for line in lines:
+            self.comment(line, weight=3)
+        self.comment('', weight=3)
+        self.newline()
+
+    def header(self, line):
+        """
+        Outputs a "header" type thing, with three hashes
+        """
+        self.header_lines([line])
 
     def _process_value(self, value):
         """

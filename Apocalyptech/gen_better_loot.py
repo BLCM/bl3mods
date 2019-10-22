@@ -8,6 +8,23 @@ mod = Mod('better_loot.txt',
         [],
         'BL',
         )
+
+def set_legendary_odds(mod, charname, row, chance):
+    """
+    Sets the drop odds for specific legendary loot pools, used for bosses.
+    """
+    # Note that the object is not loaded until the character using it is loaded!
+    for attr in [
+            'LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26',
+            'LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111',
+            'LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6',
+            ]:
+        mod.table_hotfix(Mod.CHAR, charname,
+                '/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds',
+                row,
+                attr,
+                chance)
+
 # Define new rarity weights.  No idea what the defaults are for these, though.
 
 # Theoretically Mayhem 1, ish, though I expect that the Mayhem values are more
@@ -21,7 +38,7 @@ mod = Mod('better_loot.txt',
 # Legendary chance bumped up very slightly, though
 weights = [15, 35, 25, 13.5, 0.6]
 
-mod.comment('Base drop weights.  No idea what the defaults are, unfortunately')
+mod.header('Base drop weights.  No idea what the defaults are, unfortunately')
 for (rarity, weight) in zip(
         ['Common', 'Uncommon', 'Rare', 'VeryRare', 'Legendary'],
         weights
@@ -32,15 +49,6 @@ for (rarity, weight) in zip(
             'BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191',
             weight)
 mod.newline()
-
-# Testing guaranteed drops, didn't seem to actually affect anything though.
-# I suspect that this object may not exist until the actual pawns have been
-# spawned...
-#mod.table_hotfix(Mod.PATCH, '',
-#        '/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds',
-#        'Mouthpiece',
-#        'LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26',
-#        1)
 
 # Increase Eridium and cosmetic drop chances
 #
@@ -77,7 +85,7 @@ mod.newline()
 # Not tried yet since I just found out about 'em:
 #   SparkStreamedPackageEntry
 
-mod.comment('Increased Eridium and Cosmetic chances')
+mod.header('Increased Eridium and Cosmetic chances')
 for char in [
         'BPChar_Ape',
         'BPChar_EnforcerShared',
@@ -170,6 +178,190 @@ for char in [
     #        2000000)
 
 mod.newline()
+
+# Guaranteed boss drops!
+mod.header('Basic Guaranteed Boss Drop Statements')
+
+# Associating entries from Table_LegendarySpecificLootOdds with characters.  These
+# ones seem to be referenced, but the chars in question don't actually drop anything
+# specific (though I haven't doublechecked that myself).
+#
+# Antalope,Antalope,BPChar_Spiderant_Hunt01
+# Shiv,Shiv,BPChar_PsychoBadassPrologue
+# Red Rain,TechSlaughterBoss,BPChar_GiganticMech1
+# Blue Fire,TechSlaughterBoss,BPChar_GiganticMech2
+
+# Not sure if this one is used or not, since that boss fight's a bit weird.  I
+# believe those drops are handled via other means:
+#
+# Terror,Terror,BPChar_Terror
+
+# In terms of loot drops specifically, Katagawa Jr. is actually BPChar_KJR
+# This one might be more useful for other things though?  Perhaps KJR is
+# only the death-animated one?
+#
+# Katagawa Jr.,KatagawaJr,BPChar_KatagawaJR
+
+# Rows which don't seem to be referenced anywhere (at least under /Enemies)
+#
+# BigFoot,
+# CoVSlaughterBoss,
+# CreatureSlaughterBoss,
+# Cyranid,
+# ElDragonJunior,
+# Guardian,
+# HopperSwarmer,
+# JudgeHightower,
+# RaidBoss,
+# RaidMiniBoss1,
+# RaidMiniboss2,
+# RaidMiniboss3,
+# SirenSkag,
+# TrialBoss1,
+# TrialBoss2,
+# TrialBoss3,
+# TrialBoss4,
+# TrialBoss5,
+# TrialBoss6,
+# TrialBoss7,
+# TrialBoss8,
+# Verminvorous,
+
+# Now on to the ones we're reasonably sure of (this still needs testing)
+for (label, row_name, char_name) in [
+        ('Anointed Alpha', 'AnnointedJoe', 'BPChar_AnointedJoe'),
+        ('Atomic', 'SylestroAndAtomic', 'BPChar_Trooper_Bounty01'),
+        ('Aurelia', 'Aurelia', 'BPChar_AureliaBoss'),
+        ('Baron Noggin', 'BaronNoggin', 'BPChar_Nog01_Bounty'),
+        ('Blinding Banshee', 'BlindingBanshee', 'BPChar_Nekrobug_Hunt01'),
+        ('Borman Nates', 'BoremanNates', 'BPChar_PsychoRare02'),
+        ('Chonk Stomp', 'ChonkStomp', 'BPChar_Saurian_Hunt01'),
+        ('Chupacabratch', 'Chupacabratch', 'BPChar_Ratch_Hunt01'),
+        ('Crawley Family (Cybil)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaA'),
+        ('Crawley Family (Edie)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaB'),
+        ('Crawley Family (Martha)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaC'),
+        ('Crawley Family (Matty)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaD'),
+        ('Crushjaw', 'Crushjaw', 'BPChar_GoonBounty01'),
+        ('DJ Deadsk4g', 'DJBlood', 'BPChar_Enforcer_Bounty02'),
+        ('Demoskaggon', 'DemoSkag', 'BPChar_Skag_Rare01'),
+        ('Dinklebot', 'Dinklebot', 'BPChar_OversphereRare01'),
+        ('Force Trooper Citrine', 'PowerTroopers', 'BPChar_Trooper_Rare01b'),
+        ('Force Trooper Onyx', 'PowerTroopers', 'BPChar_Trooper_Rare01a'),
+        ('Force Trooper Ruby', 'PowerTroopers', 'BPChar_Trooper_Rare01c'),
+        ('Force Trooper Sapphire', 'PowerTroopers', 'BPChar_Trooper_Rare01e'),
+        ('Force Trooper Tourmaline', 'PowerTroopers', 'BPChar_Trooper_Rare01d'),
+        ('GenIVIV', 'GeneVIV', 'BPChar_MechEvilAI'),
+        ('Gigamind', 'Gigamind', 'BPChar_NogChipHolder'),
+        ('Graveward', 'Graveward', 'BPChar_EdenBoss'),
+        ('Handsome Jackie', 'HandsomeJackie', 'BPChar_PunkBounty02'),
+        ('Heckle', 'HeckleAndHyde', 'BPChar_Goliath_Bounty01'),
+        ('Hot Karl', 'Roadblock', 'BPChar_Enforcer_Bounty01'),
+        ('I\'m Rakkman', 'Rakkman', 'BPChar_Rakkman'),
+        ('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
+        ('Jabbermogwai', 'Jabbermogwai', 'BPChar_Ape_Hunt01'),
+        ('Katagawa Ball', 'KatagawaBall', 'BPChar_Oversphere_KatagawaSphere'),
+        ('Katagawa Jr.', 'KatagawaJr', 'BPChar_KJR'),
+        ('Killavolt', 'KillaVolt', 'BPChar_EnforcerKillavolt'),
+        ('Lagromar', 'TinkDemon', 'BPChar_TinkDemon'),
+        ('Manvark', 'Mothman', 'BPChar_VarkidHunt01'),
+        ('Maxitrillion', 'Maxitrillion', 'BPChar_ServiceBot_Rare01'),
+        ('Mouthpiece', 'Mouthpiece', 'BPChar_EnforcerSacrificeBoss'),
+        ('One Punch', 'OnePunch', 'BPChar_OnePunch'),
+        ('Phoenix', 'Phoenix', 'BPChar_Rakk_Hunt01'),
+        ('Princess Tarantella II', 'Tarantella', 'BPChar_SpiderantTarantella'),
+        ('Private Beans', 'Beans', 'BPChar_NogBeans'),
+        ('Psychobillies (Billee)', 'GoreGirls', 'BPChar_Punk_Bounty01d'),
+        ('Psychobillies (Billi)', 'GoreGirls', 'BPChar_Punk_Bounty01c'),
+        ('Psychobillies (Billie)', 'GoreGirls', 'BPChar_Punk_Bounty01b'),
+        ('Psychobillies (Billy)', 'GoreGirls', 'BPChar_Punk_Bounty01a'),
+        ('Road Dog', 'RoadDog', 'BPChar_Goliath_Rare02'),
+        ('Skrakk', 'Skrakk', 'BPChar_Rakk_HuntSkrakk'),
+        ('Sky Bully', 'SkyBullies', 'BPChar_Tink_Bounty01'),
+        ('Sloth', 'CaptainThunkandSloth', 'BPChar_Goon_Rare01'),
+        ('Sylestro', 'SylestroAndAtomic', 'BPChar_Heavy_Bounty01'),
+        ('The Unstoppable', 'TheUnstoppable', 'BPChar_Goliath_Rare01'),
+        ('Tyreen the Destroyer', 'TyreenFinalBoss', 'BPChar_FinalBoss'),
+        ('Urist McEnforcer', 'EnforcerUrist', 'BPChar_EnforcerUrist'),
+        ('Warden', 'Warden', 'BPChar_Goliath_CageArena'),
+        ('Wick', 'VicandWarty', 'BPChar_PsychoRare03'),
+        ]:
+
+    mod.comment(label)
+    set_legendary_odds(mod, char_name, row_name, 1)
+    mod.newline()
+
+mod.header_lines(['Extra Guaranteed Boss Drop Statements', '(mostly gleaned from the Week 1 hotfixes)'])
+
+# Set Mouthpiece's "/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All" drop to zero-weight
+mod.comment('Mouthpiece')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_EnforcerSacrificeBoss',
+        '/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/ItemPool/ItemPool_EnforcerSacrificeBoss_Shotgun.ItemPool_EnforcerSacrificeBoss_Shotgun',
+        'BalancedItems[1].Weight',
+        '(BaseValueConstant=0.000000)')
+mod.newline()
+
+# Guaranteed drop from Agonizer 9000
+mod.comment('Agonizer 9000 (Pain+Terror)')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
+        '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain',
+        'ItemPools.ItemPools[3].PoolProbability.BaseValueConstant',
+        1)
+mod.newline()
+
+# Guaranteed drop from Troy (this may actually already be the default -- it looks like
+# the Week 1 event actually *nerfed* his drop.)
+mod.comment('Troy')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_TroyBoss',
+        '/Game/NonPlayerCharacters/Troy/_TheBoss/_Design/Character/BPChar_TroyBoss.BPChar_TroyBoss_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant',
+        1)
+mod.newline()
+
+# The Rampager (this may actually already be the default -- it looks like
+# the Week 1 event actually *nerfed* his drop.)
+mod.comment('The Rampager')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Rampager',
+        '/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant',
+        1)
+mod.newline()
+
+# Buff Anoint Drops
+mod.header('Guaranteed Anointments')
+
+def anoint_part_chance(mod, label, row_name, chance):
+    mod.comment(label)
+    for attr_name in [
+            'PlaythroughOne',
+            'PlaythroughTwoAndBeyond',
+            ]:
+        mod.table_hotfix(Mod.PATCH, '',
+                '/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance',
+                row_name,
+                attr_name,
+                """(
+                    BaseValueConstant={chance},
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1
+                )""".format(chance=chance))
+    mod.newline()
+
+# Vanilla values:
+#   Normal - ???
+#   Mayhem 1 - PT1: 16, PT2: 12
+#   Mayhem 2 - PT1: 12, PT2: 10
+#   Mayhem 3 - PT1: 10, PT2: 6
+# Week 4 values:
+#   Normal - unchanged
+#   Mayhem 1 - PT1: 6, PT2: 4.5
+#   Mayhem 2 - PT1: 3, PT2: 1.8
+#   Mayhem 3 - PT1: 1, PT2: 0.5
+anoint_part_chance(mod, 'Regular Play', 'NoneChance', 0)
+anoint_part_chance(mod, 'Mayhem 1', 'NoneChance_Mayhem_01', 0)
+anoint_part_chance(mod, 'Mayhem 2', 'NoneChance_Mayhem_02', 0)
+anoint_part_chance(mod, 'Mayhem 3', 'NoneChance_Mayhem_03', 0)
 
 # Just some testing stuff at the end of the file, to make sure that the game
 # is parsing all the way to the end of the file

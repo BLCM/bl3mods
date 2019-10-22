@@ -33,8 +33,14 @@ My BL3 Mod Workspace
 ## BL3 versions of some of my BL2/TPS mods
 
 - `better_loot.txt` - A *very* stripped-down version of Better Loot, not that
-  BL3 really needs much in the way of better loot.  Just sets the rarity
-  weights to be improved, and increases Eridium and Cosmetic drop rates.
+  BL3 really needs much in the way of better loot.  Does the following,
+  currently:
+  - Sets the rarity weights to be improved
+  - Increases Eridium and Cosmetic drop rates.
+  - Guarantees specific legendary drops from nearly all the bosses which
+    have unique drops.  (This bit is largely untested still, though.)
+    Known exceptions: Billy the Anointed, Mother of Grogans, Red Jabber,
+    and El Dragon Jr.
 - `early_bloomer.txt` - Unlocks all weapon types, elements, manufacturers,
   etc, from the very beginning of the game.  Does *not* unlock COMs and
   Artifacts, since those are locked by storyline progression (eventually
