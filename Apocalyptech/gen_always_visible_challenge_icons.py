@@ -10,10 +10,10 @@ mod = Mod('always_visible_challenge_icons.txt',
         )
 
 # eh?
-mod.reg_hotfix(Mod.LEVEL, 'City_P',
-        '/Game/GameData/Challenges/CrewChallenges/Collection/Challenge_Collection_Journal.Challenge_Collection_Journal',
-        'bHideInUI',
-        'False')
+#mod.reg_hotfix(Mod.LEVEL, 'City_P',
+#        '/Game/GameData/Challenges/CrewChallenges/Collection/Challenge_Collection_Journal.Challenge_Collection_Journal',
+#        'bHideInUI',
+#        'False')
 
 for obj_name in [
         'UIData_ChallengeIcon_Journal',
@@ -34,6 +34,14 @@ for obj_name in [
             '/Game/UI/InWorldContainer/{}.{}'.format(obj_name, obj_name),
             'VisibleDistance',
             200000000)
+    # ... tried doing one of these, too, though those attributes didn't seem to exist.  Didn't work.
+    #        """(
+    #            BaseValueConstant=200000000,
+    #            DataTableValue=(DataTable=None,RowName="",ValueName=""),
+    #            BaseValueAttribute=None,
+    #            AttributeInitializer=None,
+    #            BaseValueScale=1
+    #        )""")
     #mod.reg_hotfix(Mod.LEVEL, 'City_P',
     #        '/Game/UI/InWorldContainer/{}.{}'.format(obj_name, obj_name),
     #        'HiddenDistance',

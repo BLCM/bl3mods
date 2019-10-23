@@ -6,7 +6,6 @@
 
 prefix: Icons
 
-SparkLevelPatchEntry,(1,1,0,City_P),/Game/GameData/Challenges/CrewChallenges/Collection/Challenge_Collection_Journal.Challenge_Collection_Journal,bHideInUI,0,,False
 SparkLevelPatchEntry,(1,1,0,City_P),/Game/UI/InWorldContainer/UIData_ChallengeIcon_Journal.UIData_ChallengeIcon_Journal,bUseVisibilityRange,0,,False
 SparkLevelPatchEntry,(1,1,0,City_P),/Game/UI/InWorldContainer/UIData_ChallengeIcon_Journal.UIData_ChallengeIcon_Journal,VisibleDistance,0,,200000000
 SparkLevelPatchEntry,(1,1,0,City_P),/Game/UI/InWorldContainer/UIData_ChallengeIcon_AwesomeTheftAuto.UIData_ChallengeIcon_AwesomeTheftAuto,bUseVisibilityRange,0,,False
