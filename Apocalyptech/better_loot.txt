@@ -359,6 +359,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/NonPlayerCharacters/Troy
 # The Rampager
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant,0,,1
 
+# Billy, the Anointed
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Anointed),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro,BalancedItems[1].Weight,0,,(BaseValueConstant=0.000000)
+
 ###
 ### Guaranteed Anointments
 ###

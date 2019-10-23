@@ -326,10 +326,33 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_Rampager',
         1)
 mod.newline()
 
-# Buff Anoint Drops
-mod.header('Guaranteed Anointments')
+# Billy, the Anointed - set the ItemPool_Guns_All drop to zero-weight
+mod.comment('Billy, the Anointed')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Goliath_Anointed',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro',
+        'BalancedItems[1].Weight',
+        '(BaseValueConstant=0.000000)')
+mod.newline()
 
-def anoint_part_chance(mod, label, row_name, chance):
+# Buff Anoint Drops
+#
+# Vanilla values:
+#   Normal - ???
+#   Mayhem 1 - PT1: 16, PT2: 12
+#   Mayhem 2 - PT1: 12, PT2: 10
+#   Mayhem 3 - PT1: 10, PT2: 6
+# Week 4 values:
+#   Normal - unchanged
+#   Mayhem 1 - PT1: 6, PT2: 4.5
+#   Mayhem 2 - PT1: 3, PT2: 1.8
+#   Mayhem 3 - PT1: 1, PT2: 0.5
+mod.header('Guaranteed Anointments')
+for (label, row_name, chance) in [
+        ('Regular Play', 'NoneChance', 0),
+        ('Mayhem 1', 'NoneChance_Mayhem_01', 0),
+        ('Mayhem 2', 'NoneChance_Mayhem_02', 0),
+        ('Mayhem 3', 'NoneChance_Mayhem_03', 0),
+        ]:
     mod.comment(label)
     for attr_name in [
             'PlaythroughOne',
@@ -347,21 +370,6 @@ def anoint_part_chance(mod, label, row_name, chance):
                     BaseValueScale=1
                 )""".format(chance=chance))
     mod.newline()
-
-# Vanilla values:
-#   Normal - ???
-#   Mayhem 1 - PT1: 16, PT2: 12
-#   Mayhem 2 - PT1: 12, PT2: 10
-#   Mayhem 3 - PT1: 10, PT2: 6
-# Week 4 values:
-#   Normal - unchanged
-#   Mayhem 1 - PT1: 6, PT2: 4.5
-#   Mayhem 2 - PT1: 3, PT2: 1.8
-#   Mayhem 3 - PT1: 1, PT2: 0.5
-anoint_part_chance(mod, 'Regular Play', 'NoneChance', 0)
-anoint_part_chance(mod, 'Mayhem 1', 'NoneChance_Mayhem_01', 0)
-anoint_part_chance(mod, 'Mayhem 2', 'NoneChance_Mayhem_02', 0)
-anoint_part_chance(mod, 'Mayhem 3', 'NoneChance_Mayhem_03', 0)
 
 # Just some testing stuff at the end of the file, to make sure that the game
 # is parsing all the way to the end of the file
