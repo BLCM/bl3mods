@@ -8,8 +8,9 @@ better_mayhem_on_twitch
 # (we're now buffing stuff via better_loot in the main game, instead)
 #mayhem_1_better_loot
 
-# Maggie super buff
-maggie_super_buff
+# Gear changes
+#maggie_super_buff
+#free_fabricator
 
 # Cheaper SDUs
 cheaper_sdus
@@ -17,14 +18,12 @@ cheaper_sdus
 # Cheaper Slots
 cheaper_slots
 
-# Free eridium fabricator?  (Is actually just my dumb "improved" version currently)
-#free_fabricator
-
 # Sort-of recreations of my BL2/TPS stuff
 early_bloomer
 better_loot
 expanded_legendary_pools
 
+# Testing loot drops
 #testing_loot_drops
 
 # Haven't gotten these to work at all:
