@@ -24,10 +24,23 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
+# This one's my usual 'rotating' pool that gets used
 pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+
+# Weapon skin test, don't recall if this worked or not.
 #pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
 #extra_pool_bit = 'ItemPool_Customizations_WeaponSkins_Loot'
+
+# Attempt to get the NOG heads; doesn't work -- I suspect that pool might not
+# exist outside the the mission it's ordinarily referenced from (that or the
+# heads themselves are broken)
+#pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Mission_Luchador'
+#extra_pool_bit = 'ItemPool_Customizations_Heads_Mission_Luchador'
+
+# Hoovering up cosmetics
+#pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
+#extra_pool_bit = 'ItemPool_SkinsAndMisc'
 
 # Gold weapon skin might be: '/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_21.InvBal_WeaponSkin',
 # ... I couldn't seem to hardcode specific drops to any of those, though.  The pool which ordinarily
