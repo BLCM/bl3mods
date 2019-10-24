@@ -27,6 +27,12 @@ mod = Mod('testing_loot_drops.txt',
 # This one's my usual 'rotating' pool that gets used
 pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
+#extra_pool_bit = 'ItemPool_Shotguns_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
+#extra_pool_bit = 'ItemPool_Shields_05_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
+#extra_pool_bit = 'ItemPool_GrenadeMods_05_Legendary'
 
 # Weapon skin test, don't recall if this worked or not.
 #pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
