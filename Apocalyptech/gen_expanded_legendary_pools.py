@@ -277,6 +277,11 @@ pools = [
                 # The Lob
                 ('/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob.Balance_SG_Torgue_ETech_TheLob', 1),
 
+                ### Bloody Harvest Additions
+
+                # Fearmonger
+                ('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Fearmonger/Balance/Balance_SG_HYP_ETech_Fearmonger.Balance_SG_HYP_ETech_Fearmonger', 1),
+
                 ### Additions
 
                 # Phebert
@@ -399,6 +404,11 @@ pools = [
                 # Lyuda
                 ('/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/Balance/Balance_VLA_SR_Lyuda.Balance_VLA_SR_Lyuda', 1),
 
+                ### Bloody Harvest Additions
+
+                # Stalker
+                ('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/SniperRifles/Dahl/_Design/_Unique/Frostbolt/Balance/Balance_SR_DAL_ETech_Frostbolt.Balance_SR_DAL_ETech_Frostbolt', 1),
+
                 ### Additions
 
                 # Brashi's Dedication
@@ -459,6 +469,11 @@ pools = [
                 ('/Game/Gear/Shields/_Design/_Uniques/Vamp/Balance/InvBalD_Shield_Legendary_Vamp.InvBalD_Shield_Legendary_Vamp', 1),
                 # Whiskey Tango Foxtrot
                 ('/Game/Gear/Shields/_Design/_Uniques/WhiskeyTangoFoxtrot/Balance/InvBalD_Shield_Legendary_WhiskeyTangoFoxtrot.InvBalD_Shield_Legendary_WhiskeyTangoFoxtrot', 1),
+
+                ### Bloody Harvest Additions
+
+                # Scream of Terror
+                ('/Game/PatchDLC/BloodyHarvest/Gear/Shields/_Design/_Unique/ScreamOfPain/Balance/InvBalD_Shield_ScreamOfTerror.InvBalD_Shield_ScreamOfTerror', 1),
 
                 ### Additions
 
@@ -526,6 +541,11 @@ pools = [
                 ('/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/Balance/InvBalD_GM_TranFusion.InvBalD_GM_TranFusion', 1),
                 # Widowmaker
                 ('/Game/Gear/GrenadeMods/_Design/_Unique/WidowMaker/Balance/InvBalD_GM_WidowMaker.InvBalD_GM_WidowMaker', 1),
+
+                ### Bloody Harvest Additions
+
+                # Ghast Call
+                ('/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/InvBalD_GM_TOR_FontOfDarkness.InvBalD_GM_TOR_FontOfDarkness', 1),
 
                 ### Additions
 
