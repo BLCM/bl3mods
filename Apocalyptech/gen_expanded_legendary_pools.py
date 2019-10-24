@@ -37,7 +37,7 @@ mod = Mod('expanded_legendary_pools.txt',
 # Fixed-part Baby Maker - /Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/Balance/Salvage/Balance_PS_Tediore_BabyMaker_Salvage.Balance_PS_Tediore_BabyMaker_Salvage
 #   Reward for Claptrap salvages, perhaps?  Anyway, no need since the actual non-partlocked Baby Maker is already in there
 
-addition_scale = 0.75
+addition_scale = 0.6
 pools = [
         ('ARs', '/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary',
             [
