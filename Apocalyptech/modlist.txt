@@ -26,6 +26,10 @@ expanded_legendary_pools
 # Testing loot drops
 #testing_loot_drops
 
+# Bloody Harvest toggles, possibly (untested!)
+#bloody_harvest_enable
+#bloody_harvest_disable
+
 # Haven't gotten these to work at all:
 #movement_speed
 #cdh

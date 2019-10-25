@@ -66,6 +66,11 @@ My BL3 Mod Workspace
   and improves the quality of drops in Mayhem 1 (not that it really needed
   it).  As I say, not really useful at all, but I've kept it here for my
   own historical interest.
+- `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - Theoretically,
+  these could be used to enable Bloody Harvest even after the event is over,
+  or disable it prematurely.  Currently completely untested, so watch out.
+  Will almost certainly interfere with future events, if you happen to run
+  'em while they're active.
 
 ## Failed Attempts
 

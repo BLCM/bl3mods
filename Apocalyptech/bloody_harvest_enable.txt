@@ -1,0 +1,39 @@
+###
+### Enable Bloody Harvest.  Theoretically.
+###
+### This hotfix was included when Bloody Harvest debuted; it's
+### *possible* that the data for Bloody Harvest will remain on-disk
+### once the event is done, and that this hotfix could be used to
+### re-enable it past December 5.  Whether or not that will
+### actually work remains to be seen, though.
+###
+### Since the object is an array, this hotfix could potentially
+### *disable* any other event which happens to be active.  We'll
+### have to play around with that, too, once the opportunity
+### arrives.
+###
+### NOTE: Untested!
+###
+
+prefix: BHEnable
+
+# Global activation switch
+SparkPatchEntry,(1,1,0,),/Game/GameData/Spawning/GlobalSpawnDLCData.GlobalSpawnDLCData,DLCs,0,,((Data=/Game/PatchDLC/BloodyHarvest/GameData/SpawnDLCScripts/SpawnDLC_BloodyHarvest.SpawnDLC_BloodyHarvest,IsEnabled=(BaseValueConstant=1.000000)))
+
+# Activate main menu changes
+SparkPatchEntry,(1,2,0,),/Game/Common/_Design/Table_MicropatchSwitches.Table_MicropatchSwitches,MainMenuAltBackground,Value,0,,(BaseValueConstant=3.000000)
+
+# Tag Borman Nates as Haunted
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare02),/Game/Enemies/Psycho_Male/_Unique/Rare02/_Design/Character/BPChar_PsychoRare02.Default__BPChar_PsychoRare02_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName="Population.Army.CoV.Psycho"),(TagName="Population.Classification.Humanoid"),(TagName="Population.Range.Melee"),(TagName="Population.Size.Medium"),(TagName="FriendEvent.NamedEnemy"),(TagName="Population.League.Haunted")))
+
+# Tag El Dragon Jr as Haunted
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03.Default__BPChar_Goliath_Rare03_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName="Population.Army.CoV.Goliath"),(TagName="Population.Range.Common"),(TagName="Population.Size.Large"),(TagName="Population.Classification.Humanoid"),(TagName="FriendEvent.NamedEnemy"),(TagName="Population.League.Haunted")))
+
+# Tag Demoskaggon as Haunted
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_rare01),/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.Default__BPChar_Skag_Rare01_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName="Population.Army.Pandora.Skag"),(TagName="Population.Size.Medium"),(TagName="Population.Range.Melee"),(TagName="Population.Classification.Creature"),(TagName="FriendEvent.NamedEnemy"),(TagName="Population.Badass"),(TagName="Population.League.Haunted")))
+
+# Tag Rakkman as Haunted
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakkman),/Game/Enemies/Psycho_Male/_Unique/Rakkman/_Design/Character/BPChar_Rakkman.Default__BPChar_Rakkman_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName="Population.ImmuneTo.GunnerSkills.CloseTheDistance"),(TagName="Population.ImmuneTo._Global.TeamSwap"),(TagName="Population.ImmuneTo._Global.Singularity"),(TagName="Population.ImmuneTo.BeastMasterSkills.PetKnockup"),(TagName="Population.ImmuneTo.SirenSkills.Thoughtlock"),(TagName="Population.ImmuneTo.SirenSkills.PhaselockLift"),(TagName="Population.ImmuneTo.SirenSkills.Phaselock"),(TagName="Population.Classification.Humanoid"),(TagName="Population.Size.Medium"),(TagName="Population.Army.CoV.Psycho"),(TagName="Population.Classification.Creature"),(TagName="Population.League.Haunted")))
+
+# Have the Bloody Harvest final boss drop  from the boss pool, rather than miniboss
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPoolLists.ItemPoolLists[0],0,,ItemPoolListData'/Game/GameData/Loot/ItemPools/ItemPoolList_Boss.ItemPoolList_Boss'
