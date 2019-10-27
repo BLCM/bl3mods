@@ -1,0 +1,25 @@
+###
+### A bit of a buff to the Whispering Ice grenade, used to get through one
+### of the Bloody Harvest challenges a bit more quickly.
+###
+
+# Damage - this is clearly a multiplier or something.  The "2" value here
+# makes the thing extremely good but not *completely* OP; since you can
+# get hit by your own grenade I didn't want it to be a super-buff.
+# Note that the "cryo efficiency" stat seems to go *down* when you get
+# larger; I suspect that might be the display rolling over.
+SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,Damage_12_F33DA0994756D761207677A51A156787,0,,2
+
+# Radius - this is actually a bit overkill, I was getting hit by my own
+# grenades pretty frequently.
+SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,Radius_13_9DDB780D4981106D3843E19FAC0856D3,0,,1.5
+
+# I don't think this even really does anything for this grenade.
+SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,FuseTime_27_7D89E52544EC113280B6F6BFA9EF8981,0,,0
+
+# Number of child grenades.  Default is 6!
+#SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,Primary_1_14_785154D64AF8EEEA12E3F1A63A0B04B6,0,,6
+
+# No idea what either of these do, if anything.
+#SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,Primary_2_15_2B2EF17E422835A6F855B0B351652BD4,0,,600
+#SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,ObviousTrap,Primary_3_16_1E6ADA3B4212CC38E1A4E59C9B29BBE2,0,,600

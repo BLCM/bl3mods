@@ -1,0 +1,12 @@
+###
+### Buffing Snowdrift artifacts to do much more damage.  Trying
+### to just power through the Bloody Harvest challenges, though
+### relying on slide for cryo damage isn't a great idea, since
+### enemies can take slide away from you pretty easily.
+###
+
+prefix: Snowdrift
+
+# These do the trick!  "Value" doesn't exist, Multiplier does...
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_BonusDamage,Multiplier,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_ProjectileDamage,Multiplier,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
