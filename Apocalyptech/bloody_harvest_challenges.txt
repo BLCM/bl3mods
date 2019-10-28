@@ -1,0 +1,50 @@
+###
+### Decrease the number of things required to complete various
+### Bloody Harvest challenges.  omghax.
+###
+
+# This is all very much fail.  :(
+
+prefix: BloodyChallenges
+
+# Kill Captain Haunt
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,ChallengeGoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,ChallengeGoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,ChallengeGoalValue,0,,4
+
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalInfo.GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalInfo.ChallengeGoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.ChallengeGoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.ChallengeGoalValue,0,,4
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,StatChallengeTests[0].GoalValue,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,StatChallengeTests[0].ChallengeGoalValue,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,StatChallengeTests[0].GoalValue,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,StatChallengeTests[0].ChallengeGoalValue,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,StatChallengeTests[0].GoalValue,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,StatChallengeTests[0].ChallengeGoalValue,0,,4
+
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,ChallengeGoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,ChallengeGoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,ChallengeGoalValue,0,,4
+
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalInfo.GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalInfo.ChallengeGoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.ChallengeGoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.GoalValue,0,,4
+#SparkLevelPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__Challenge_BloodyHarvest_02_CaptainHaunt_C,GoalInfo.ChallengeGoalValue,0,,4
+
+# Didn't really expect these to work, and was not disappointed...
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.BP_Challenge_BloodyHarvest_C,GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.BP_Challenge_BloodyHarvest_C,ChallengeGoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__BP_Challenge_BloodyHarvest_C,GoalValue,0,,4
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Default__BP_Challenge_BloodyHarvest_C,ChallengeGoalValue,0,,4
