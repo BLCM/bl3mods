@@ -17,7 +17,9 @@
 
 prefix: BHEnable
 
-# Global activation switch
+# Global activation switches
+SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,ActiveLeague,0,,OL_BloodyHarvest
+SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,LeagueInstance,0,,1
 SparkPatchEntry,(1,1,0,),/Game/GameData/Spawning/GlobalSpawnDLCData.GlobalSpawnDLCData,DLCs,0,,((Data=/Game/PatchDLC/BloodyHarvest/GameData/SpawnDLCScripts/SpawnDLC_BloodyHarvest.SpawnDLC_BloodyHarvest,IsEnabled=(BaseValueConstant=1.000000)))
 
 # Activate main menu changes
@@ -36,4 +38,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_rare01),/Game/Enemies/Skag/_Unique/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakkman),/Game/Enemies/Psycho_Male/_Unique/Rakkman/_Design/Character/BPChar_Rakkman.Default__BPChar_Rakkman_C:DefaultGameplayTagContainerComponent,TagContainer,0,,(GameplayTags=((TagName="Population.ImmuneTo.GunnerSkills.CloseTheDistance"),(TagName="Population.ImmuneTo._Global.TeamSwap"),(TagName="Population.ImmuneTo._Global.Singularity"),(TagName="Population.ImmuneTo.BeastMasterSkills.PetKnockup"),(TagName="Population.ImmuneTo.SirenSkills.Thoughtlock"),(TagName="Population.ImmuneTo.SirenSkills.PhaselockLift"),(TagName="Population.ImmuneTo.SirenSkills.Phaselock"),(TagName="Population.Classification.Humanoid"),(TagName="Population.Size.Medium"),(TagName="Population.Army.CoV.Psycho"),(TagName="Population.Classification.Creature"),(TagName="Population.League.Haunted")))
 
 # Have the Bloody Harvest final boss drop  from the boss pool, rather than miniboss
-SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPoolLists.ItemPoolLists[0],0,,ItemPoolListData'/Game/GameData/Loot/ItemPools/ItemPoolList_Boss.ItemPoolList_Boss'
+# (original hotfix for this was Char-based, but it was changed to regular patch)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPoolLists.ItemPoolLists[0],0,,ItemPoolListData'/Game/GameData/Loot/ItemPools/ItemPoolList_Boss.ItemPoolList_Boss'
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPoolLists.ItemPoolLists[0],0,,ItemPoolListData'/Game/GameData/Loot/ItemPools/ItemPoolList_Boss.ItemPoolList_Boss'
+
+# A couple of audio fixes for final boss
+SparkPatchEntry,(1,1,1,),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:DefaultAudioComponent_GEN_VARIABLE,EmitterGain,0,,10
+SparkPatchEntry,(1,1,1,),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/HarvestBoss/_Design/Character/BPChar_HarvestBoss.BPChar_HarvestBoss_C:DefaultAudioComponent_GEN_VARIABLE,RelativeScale3D,0,,(X=20.000000,Y=20.000000,Z=20.000000)
+
