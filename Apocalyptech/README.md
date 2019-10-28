@@ -18,7 +18,9 @@ My BL3 Mod Workspace
 - `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
   of the Week 2 event, which guarantees that all of the rare spawns will always
   drop their unique loot, and also removes the undocumented health buffs which
-  are in the vanilla version.
+  are in the vanilla version.  Also theoretically makes any other rare spawn
+  in the game which was *not* touched by this mod spawn with 100% frequency,
+  though I'm not sure what else there is which might be affected by this.
 - `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium
