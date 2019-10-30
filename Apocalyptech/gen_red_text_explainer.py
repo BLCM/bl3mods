@@ -150,6 +150,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/BOTD/UIStat_RedText_BOTD.UIStat_RedText_BOTD',
             "VexHelElEldZodEth.",
             "kills make the enemy explode, releasing corrosive balls"),
+        ('Breeder',
+            '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIStat_RedText_Breeder.UIStat_RedText_Breeder',
+            "Man hands on misery to man.",
+            "projectiles stick and spawn 2 extra arcing projectiles"),
         ('Burning Summit',
             '/Game/Gear/GrenadeMods/_Design/_Unique/Summit/UIStat_RedText_Summit.UIStat_RedText_Summit',
             "Can we get some 1G's in the chat?",
@@ -278,8 +282,8 @@ for (gear_name, obj_name, redtext, explanation) in [
             "The deadliest summer hit.",
             "plays music while in use"),
         ('Echo',
-            '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIStat_RedText_Breeder.UIStat_RedText_Breeder',
-            "Man hands on misery to man.",
+            '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIState_RedText_Echo1.UIState_RedText_Echo1',
+            "Don't make me repeat myself.",
             "sticky rounds explode 3 times"),
         ('Epicenter',
             '/Game/Gear/GrenadeMods/_Design/_Unique/Epicenter/UI/UIStat_RedText_Epicenter.UIStat_RedText_Epicenter',
@@ -988,10 +992,17 @@ for (gear_name, obj_name, redtext, explanation) in [
     # Eh, let's omit shields by default; I am 99% sure that all of them already
     # explicitly say what they do.
     if '/Shields/' not in obj_name:
+
+        # Stupid little special-case here; wtf is Echo seemingly the one different gun?
+        if gear_name == 'Echo':
+            attr_name = 'FormatText'
+        else:
+            attr_name = 'Text'
+
         mod.comment(gear_name)
         mod.reg_hotfix(Mod.PATCH, '',
                 obj_name,
-                'Text',
+                attr_name,
                 '[Flavor]{}[/Flavor] ({})'.format(redtext, elementize(explanation)))
         mod.newline()
 

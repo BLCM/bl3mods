@@ -82,6 +82,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_U
 # Breath of the Dying
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/BOTD/UIStat_RedText_BOTD.UIStat_RedText_BOTD,Text,0,,[Flavor]VexHelElEldZodEth.[/Flavor] (kills make the enemy explode, releasing [corrosive]corrosive[/corrosive] balls)
 
+# Breeder
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIStat_RedText_Breeder.UIStat_RedText_Breeder,Text,0,,[Flavor]Man hands on misery to man.[/Flavor] (projectiles stick and spawn 2 extra arcing projectiles)
+
 # Burning Summit
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Summit/UIStat_RedText_Summit.UIStat_RedText_Summit,Text,0,,[Flavor]Can we get some 1G's in the chat?[/Flavor] (explodes in your face)
 
@@ -173,7 +176,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/UIStat_RedText_Earworm.UIStat_RedText_Earworm,Text,0,,[Flavor]The deadliest summer hit.[/Flavor] (plays music while in use)
 
 # Echo
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIStat_RedText_Breeder.UIStat_RedText_Breeder,Text,0,,[Flavor]Man hands on misery to man.[/Flavor] (sticky rounds explode 3 times)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIState_RedText_Echo1.UIState_RedText_Echo1,FormatText,0,,[Flavor]Don't make me repeat myself.[/Flavor] (sticky rounds explode 3 times)
 
 # Epicenter
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Epicenter/UI/UIStat_RedText_Epicenter.UIStat_RedText_Epicenter,Text,0,,[Flavor]It burns, burns, burns.[/Flavor] (ring of 13 orbs which deal [fire]incendiary[/fire] damage)
