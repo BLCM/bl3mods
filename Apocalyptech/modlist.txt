@@ -24,6 +24,9 @@ cheaper_slots
 # Red Text Explainer
 red_text_explainer
 
+# Improve Maliwan charge times
+maliwan_charge_time
+
 # Sort-of recreations of my BL2/TPS stuff
 early_bloomer
 better_loot

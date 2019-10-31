@@ -73,6 +73,10 @@ My BL3 Mod Workspace
   or disable it prematurely.  Currently completely untested, so watch out.
   Will almost certainly interfere with future events, if you happen to run
   'em while they're active.
+- `maliwan_charge_time.txt` - Improves the charge time of all Maliwan
+  weapons except for Starkiller, Atomizers, and Melters, whose mechanism I
+  haven't figured out how to tweak yet.  Pistols and SMGs get a 50%
+  improvement, shotguns get 60%, and snipers will all be instant-fire.
 
 ## Failed Attempts
 
