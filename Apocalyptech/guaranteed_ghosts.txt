@@ -1,0 +1,11 @@
+###
+### Guaranteed ghosts everywhere, so long as the Bloody Harvest
+### event is on.  Just an extracted version of at hotfix deployed
+### by GBX on Oct 31, 2019.
+###
+
+prefix: GuaranteedGhosts
+
+# Default: 0.45
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,ChanceToSpawnAsHaunted,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+
