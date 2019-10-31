@@ -61,9 +61,6 @@ My BL3 Mod Workspace
   it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
   Useful!  (Actually I suppose it *could* be useful to give Eridium to
   other co-op players.)
-- `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
-  amount of damage.  Mostly just used for testing mods where I don't want
-  to deal with enemies.
 - `mayhem_1_better_loot.txt` - This was my first mod attempt, actually,
   and improves the quality of drops in Mayhem 1 (not that it really needed
   it).  As I say, not really useful at all, but I've kept it here for my
@@ -73,10 +70,30 @@ My BL3 Mod Workspace
   or disable it prematurely.  Currently completely untested, so watch out.
   Will almost certainly interfere with future events, if you happen to run
   'em while they're active.
+- `red_text_explainer.txt` - a BL3 version of Ezeith's BL2 mod.  Puts
+  descriptions of weapon/grenade effects on the red text.  Shields, Artifacts,
+  and COMs have been omitted since BL3 already lists those explicitly.
 - `maliwan_charge_time.txt` - Improves the charge time of all Maliwan
   weapons except for Starkiller, Atomizers, and Melters, whose mechanism I
   haven't figured out how to tweak yet.  Pistols and SMGs get a 50%
   improvement, shotguns get 60%, and snipers will all be instant-fire.
+
+## OP Gear Mods
+
+- `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
+  amount of damage.  Mostly just used for testing mods where I don't want
+  to deal with enemies.
+- `snowdrift_super_buff.txt` - Was looking into ways to trivialize the
+  cryo challenge in the Bloody Harvest event and took a look at using a
+  Snowdrift artifact for it.  Ended up not using it really, but it
+  technically worked.
+- `whispering_ice_slight_buff.txt` - This is actually what I ended up
+  using for that cryo challenge in Bloody Harvest - compared to the other
+  OP mods in this section, the buff is pretty slight here, but it's
+  still more powerful than usual.  Went a bit overboard with the radius
+  on the grenade; you'll probably get hit by it yourself occasionally.
+- `stalker_super_buff.txt` - Used to take down Captain Haunt quickly for
+  one of the Bloody Harvest challenges.
 
 ## Failed Attempts
 
