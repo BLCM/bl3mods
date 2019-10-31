@@ -65,11 +65,12 @@ My BL3 Mod Workspace
   and improves the quality of drops in Mayhem 1 (not that it really needed
   it).  As I say, not really useful at all, but I've kept it here for my
   own historical interest.
-- `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - Theoretically,
-  these could be used to enable Bloody Harvest even after the event is over,
-  or disable it prematurely.  Currently completely untested, so watch out.
-  Will almost certainly interfere with future events, if you happen to run
-  'em while they're active.
+- `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - These can be
+  used to enable Bloody Harvest even after the event is over, or disable
+  it prematurely.  The disabling one has been tested and works great;
+  obviously we'll have to wait until after the event is over to find out
+  if the enabling one works.  Will almost certainly interfere with future
+  events, if you happen to run 'em while they're active.
 - `red_text_explainer.txt` - a BL3 version of Ezeith's BL2 mod.  Puts
   descriptions of weapon/grenade effects on the red text.  Shields, Artifacts,
   and COMs have been omitted since BL3 already lists those explicitly.
