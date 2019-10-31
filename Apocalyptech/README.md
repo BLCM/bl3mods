@@ -146,6 +146,13 @@ Then you can use a few shortcuts to build out the mod:
     # Puts a comment in the mod (again, for readability)
     mod.comment('This is a comment line, will be prefixed by a #')
 
+    # Puts a much more obvious comment in the mod, using three hash marks
+    # with some "blank" comments above and below, to mark out main sections
+    mod.header('This is a mod header line')
+
+    # Same as above, but with a multiline header
+    mod.header_lines(['Line 1 of a header', 'Line 2 of a header'])
+
     # Creates a regular hotfix
     mod.reg_hotfix(hotfix_type, package,
         object_name,
@@ -158,6 +165,9 @@ Then you can use a few shortcuts to build out the mod:
         row_name,
         attribute_name,
         new_value)
+
+    # Closes out the mod properly
+    mod.close()
 
 For both `reg_hotfix` and `table_hotfix`, you can include an optional `prev_val`
 named argument, if you want to have a hotfix only trigger if the current value
