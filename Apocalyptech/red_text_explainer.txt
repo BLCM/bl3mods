@@ -23,7 +23,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Ni
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/AAA/UIStat_RedText_AAA.UIStat_RedText_AAA,Text,0,,[Flavor]Hold on! They're lithium![/Flavor] (always [shock]shock[/shock], 6 projectiles in shape of [bold]A[/bold])
 
 # ASMD
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/ASMD/UIStat_RedText_ASMD.UIStat_RedText_ASMD,Text,0,,[Flavor]You planning a follow-up?[/Flavor] (unreal [shock]shock[/shock]-rifle-alike)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/ASMD/UIStat_RedText_ASMD.UIStat_RedText_ASMD,Text,0,,[Flavor]You planning a follow-up?[/Flavor] (instant fire, Unreal [shock]shock[/shock]-rifle-alike)
 
 # Agonizer 1500
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/UIStat_RedText_Terror.UIStat_RedText_Terror,Text,0,,[Flavor]Bow to Drell, the pot roast king.[/Flavor] (3 [bold]explosive[/bold] sawblades which home in on enemies)
@@ -125,7 +125,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Un
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/UIStat_RedText_Crit.UIStat_RedText_Crit,Text,0,,[Flavor]Slippery when wet.[/Flavor] (heals player, has a chance to drop when reloading)
 
 # Crossroad
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/UIStat_RedText_Crossroad.UIStat_RedText_Crossroad,Text,0,,[Flavor]Open the gate for me.[/Flavor] (3 projectiles/2 ammo per shot, bursts of 6)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/UIStat_RedText_Crossroad.UIStat_RedText_Crossroad,Text,0,,[Flavor]Open the gate for me.[/Flavor] (instant fire, 3 projectiles/2 ammo per shot, bursts of 6)
 
 # Cutsman
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Cutsman/UIStat_RedText_Cutsman.UIStat_RedText_Cutsman,Text,0,,[Flavor]Little android man, born without a soul.[/Flavor] (projectiles stretch horizontally)
@@ -146,7 +146,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Foursum/UIStat_RedText_4SUM.UIStat_RedText_4SUM,Text,0,,[Flavor]I love it when a plan comes together.[/Flavor] (3 projectiles reconverge after a short distance)
 
 # Devoted
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Devoted/UIStat_RedText_Devoted.UIStat_RedText_Devoted,Text,0,,[Flavor]This is your champion.[/Flavor] (improved fire rate and charge time as ammo is spent)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Devoted/UIStat_RedText_Devoted.UIStat_RedText_Devoted,Text,0,,[Flavor]This is your champion.[/Flavor] (instant fire, fire rate increases over time)
 
 # The Dictator
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Dictator/UIStat_RedText_Dictator.UIStat_RedText_Dictator,Text,0,,[Flavor]Let them hate me, so that they will but fear me.[/Flavor] (3 bullets in rifle mode, 7 in bipod mode)
@@ -293,7 +293,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/HunterSeeker/UI/
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/UIStat_RedText_Hyde.UIStat_RedText_Hyde,Text,0,,[Flavor]Yes, I am.[/Flavor] (unknown)
 
 # Hyper-Hydrator
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/UIStat_RedText_HyperHydrator.UIStat_RedText_HyperHydrator,Text,0,,[Flavor]Moister is noice-ter.[/Flavor] (alt fire increases [shock]shock[/shock] damage)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/UIStat_RedText_HyperHydrator.UIStat_RedText_HyperHydrator,Text,0,,[Flavor]Moister is noice-ter.[/Flavor] (instant fire, alt fire increases [shock]shock[/shock] damage)
 
 # Hyperfocus XZ41
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/XZ/UIStat_RedText_XZ.UIStat_RedText_XZ,Text,0,,[Flavor]My line has ended.[/Flavor] (hits spawn two bouncy ricochets)
@@ -380,7 +380,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Un
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/MasterworkCrossbow/UIStat_RedText_Masterwork.UIStat_RedText_Masterwork,Text,0,,[Flavor]All craftsdwarfship is of the highest quality.[/Flavor] (arcing projectiles)
 
 # Mind-Killer
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/MouthPiece2/UIStat_RedText_Mouthpiece2.UIStat_RedText_Mouthpiece2,Text,0,,[Flavor]I must not fear. Fear is the mind-killer.[/Flavor] (circle pattern while hip-firing, plus sign while zoomed)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/MouthPiece2/UIStat_RedText_Mouthpiece2.UIStat_RedText_Mouthpiece2,Text,0,,[Flavor]I must not fear. Fear is the mind-killer.[/Flavor] (instant fire, circle pattern while hip-firing, plus sign while zoomed)
 
 # Miss Moxxi's Vibra-Pulse
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/UIStat_RedText_VibraPulse.UIStat_RedText_VibraPulse,Text,0,,[Flavor]Why not turn me on?[/Flavor] (energy beam which chains lightning, heals the player)
@@ -551,7 +551,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/UI/UI
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Shredifier/UIStat_RedText_Shredifier.UIStat_RedText_Shredifier,Text,0,,[Flavor]Speed kills.[/Flavor] (just stats)
 
 # Superball
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/UIStat_RedText_Plumber.UIStat_RedText_Plumber,Text,0,,[Flavor]Flower power.[/Flavor] (shoots small bouncy [fire]incendiary[/fire] balls in downward arc)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/UIStat_RedText_Plumber.UIStat_RedText_Plumber,Text,0,,[Flavor]Flower power.[/Flavor] (instant fire, shoots small bouncy [fire]incendiary[/fire] balls in downward arc)
 
 # Surge
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Surge/UI/UIStat_RedText_Surge.UIStat_RedText_Surge,Text,0,,[Flavor]Thar she blows![/Flavor] (bounces, after exploding jumps 6 times spawning 3 children each time)
@@ -572,7 +572,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Desig
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/UIStat_RedText_Thumper.UIStat_RedText_Thumper,Text,0,,[Flavor]The happiest place on Pandora.[/Flavor] (bouncy, slow-moving projectile fired in arc)
 
 # Thunderball Fists
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/UIStat_RedText_ThunderballFists.UIStat_RedText_ThunderballFists,Text,0,,[Flavor]I can have such a thing?[/Flavor] (on impact, projectiles form orb which does more damage)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/UIStat_RedText_ThunderballFists.UIStat_RedText_ThunderballFists,Text,0,,[Flavor]I can have such a thing?[/Flavor] (instant fire, on impact, projectiles form orb which does more damage)
 
 # Tina's Hippity Hopper
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/HipHop/Name/UIStat_RedText_HipHop.UIStat_RedText_HipHop,Text,0,,[Flavor]Hare today, bomb tomorrow.[/Flavor] (bounces back towards source, spawning extra grenades)
