@@ -159,6 +159,10 @@ Then you can use a few shortcuts to build out the mod:
         attribute_name,
         new_value)
 
+For both `reg_hotfix` and `table_hotfix`, you can include an optional `prev_val`
+named argument, if you want to have a hotfix only trigger if the current value
+matches.  (ie: a `set_cmp` in BLCMM parlance)
+
 For `hotfix_type` on either `reg_hotfix` or `table_hotfix`, you can use:
 
 - `Mod.PATCH` - Will create a `SparkPatchEntry` hotfix
