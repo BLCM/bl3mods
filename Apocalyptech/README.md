@@ -78,10 +78,10 @@ My BL3 Mod Workspace
   weapons except for Starkiller, Atomizers, and Melters, whose mechanism I
   haven't figured out how to tweak yet.  Pistols and SMGs get a 50%
   improvement, shotguns get 60%, and snipers will all be instant-fire.
-- `guaranteed_ghosts.txt` - All enemies should be ghosts.  Extracted from
-  an official GBX hotfix deployed on Oct 31, 2019.  Requires that the
-  Bloody Harvest event be active, presumably.  (Untested, but should be
-  fine.)
+- `guaranteed_ghosts.txt` - All enemies should be ghosts, and all "haunted"
+  Urns and skull boxes in the Heck Hole will spawn a ghost.  Extracted from
+  an official GBX hotfix deployed on Oct 31, 2019 and then extented a bit.
+  Requires that the Bloody Harvest event be active, presumably.
 
 ## OP Gear Mods
 
