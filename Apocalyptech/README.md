@@ -125,6 +125,8 @@ don't look at these thinking that they're any good.  :)
   delay between re-opening red chests.
 - `bloody_harvest_challenges.txt` - An attempt to cheat the Bloody Harvest
   challenges to have lower target numbers.  Total fail!
+- `guaranteed_badasses.txt` - A few little attempts to increase the number
+  of Badasses.  Didn't do the trick, alas.
 
 Constructing Mods With Code
 ===========================

@@ -1,0 +1,13 @@
+###
+### Guaranteed Badasses?
+### Nope.  Doesn't work.
+###
+
+prefix: GuaranteedBadasses
+
+# hurrr...
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/WeightingPlayerCount/DataTable_EnemyMajorUpgrade_PerPlayer.DataTable_EnemyMajorUpgrade_PerPlayer,OnePlayer_PT1,UpgradePerPlayer,0,,100
+
+# blrrrrrr
+#SparkPatchEntry,(1,1,0,),/Game/GameData/Attributes/MayhemMode/Att_MayhemModeBadassScaler.Att_MayhemModeBadassScaler:ValueResolver_ConstantAttributeValueResolver,ValueResolver.Object.Value.BaseValueConstant,0,,100
+
