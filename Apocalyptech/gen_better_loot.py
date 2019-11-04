@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
+# TODO: Earl's loot-o-gram pool
+
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('better_loot.txt',
@@ -208,7 +210,7 @@ mod.header('Basic Guaranteed Boss Drop Statements')
 # CoVSlaughterBoss,
 # CreatureSlaughterBoss,
 # Cyranid,
-# ElDragonJunior,
+# ElDragonJunior,  <- I think El Dragon Jr might use "RoadDog"
 # Guardian,
 # HopperSwarmer,
 # JudgeHightower,
@@ -332,6 +334,16 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_Goliath_Anointed',
         '/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro',
         'BalancedItems[1].Weight',
         '(BaseValueConstant=0.000000)')
+mod.newline()
+
+# Captain Haunt (from the Bloody Harvest event)
+# (a GBX-provided hotfix against this table doesn't require any char-based hotfixes)
+mod.comment('Captain Haunt (though I\'m not actually sure if this works)')
+mod.table_hotfix(Mod.PATCH, '',
+        '/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween',
+        'HarvestBoss_LootDropChance',
+        'DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD',
+        1)
 mod.newline()
 
 # Buff Anoint Drops
