@@ -13,6 +13,7 @@ better_mayhem_on_twitch
 #snowdrift_super_buff
 #stalker_super_buff
 #whispering_ice_slight_buff
+#westergun_super_buff
 #free_fabricator
 
 # Cheaper SDUs
@@ -35,6 +36,9 @@ expanded_legendary_pools
 # Bloody Harvest toggles, possibly (untested!)
 #bloody_harvest_enable
 bloody_harvest_disable
+
+# Guaranteed Ghosts in Bloody Harvest event
+#guaranteed_ghosts
 
 # Testing loot drops
 #testing_loot_drops
