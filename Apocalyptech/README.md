@@ -88,17 +88,21 @@ My BL3 Mod Workspace
 - `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
   amount of damage.  Mostly just used for testing mods where I don't want
   to deal with enemies.
-- `snowdrift_super_buff.txt` - Was looking into ways to trivialize the
-  cryo challenge in the Bloody Harvest event and took a look at using a
-  Snowdrift artifact for it.  Ended up not using it really, but it
-  technically worked.
-- `whispering_ice_slight_buff.txt` - This is actually what I ended up
-  using for that cryo challenge in Bloody Harvest - compared to the other
-  OP mods in this section, the buff is pretty slight here, but it's
-  still more powerful than usual.  Went a bit overboard with the radius
-  on the grenade; you'll probably get hit by it yourself occasionally.
-- `stalker_super_buff.txt` - Used to take down Captain Haunt quickly for
-  one of the Bloody Harvest challenges.
+- Bloody Harvest-related buffs (for getting the cryo challenge specifically
+  done as easily as possible)
+  - `stalker_super_buff.txt` - Used to take down Captain Haunt pretty
+    quickly for the Haunt-specific challenge.  May as well use the Maggie
+    buff until the final phase.
+  - `westergun_super_buff.txt` - Probably the easiest way to get the cryo
+    challenge.  Should tear through practically anything.  A few Mayhem
+    3 modifiers stacked together can make it a bit less effective but it'll
+    still perform extremely well.
+  - `snowdrift_super_buff.txt` - Ended up not using it really, but it
+    technically worked for the cryo challenge.
+  - `whispering_ice_slight_buff.txt` - Compared to the other OP mods in
+    this section, the buff is pretty slight here, but it's still more
+    powerful than usual.  Went a bit overboard with the radius on the
+    grenade; you'll probably get hit by it yourself occasionally.
 
 ## Failed Attempts
 
