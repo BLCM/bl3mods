@@ -338,9 +338,9 @@ mod.newline()
 
 # Captain Haunt (from the Bloody Harvest event)
 # (a GBX-provided hotfix against this table doesn't require any char-based hotfixes)
-mod.comment('Captain Haunt (though I\'m not actually sure if this works)')
+mod.comment('Captain Haunt (untested)')
 mod.table_hotfix(Mod.PATCH, '',
-        '/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween',
+        '/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween',
         'HarvestBoss_LootDropChance',
         'DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD',
         1)

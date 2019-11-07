@@ -362,8 +362,8 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Ra
 # Billy, the Anointed
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Anointed),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro,BalancedItems[1].Weight,0,,(BaseValueConstant=0.000000)
 
-# Captain Haunt (though I'm not actually sure if this works)
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween,HarvestBoss_LootDropChance,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+# Captain Haunt (untested)
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,HarvestBoss_LootDropChance,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
 
 ###
 ### Guaranteed Anointments
