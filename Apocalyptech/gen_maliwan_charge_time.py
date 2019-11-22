@@ -128,9 +128,17 @@ for label, obj_name, default, scale in [
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/Parts/Part_MAL_SR_Barrel_Krakatoa.Part_MAL_SR_Barrel_Krakatoa',
             1.0,
             scale_sniper),
+        ("Kyb's Worth",
+            '/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Parts/Part_SM_MAL_Barrel_KybsWorth.Part_SM_MAL_Barrel_KybsWorth',
+            0.85,
+            scale_smg),
         ("Miss Moxxi's Vibra-Pulse",
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/Parts/Part_SM_MAL_Barrel_VibraPulse.Part_SM_MAL_Barrel_VibraPulse',
             1.15,
+            scale_smg),
+        ('P2P Networker',
+            '/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link',
+            0.85,
             scale_smg),
         ('Projectile Recursion',
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Recursion/Parts/Part_SG_MAL_Barrel_Recursion.Part_SG_MAL_Barrel_Recursion',
@@ -152,6 +160,10 @@ for label, obj_name, default, scale in [
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Tsunami/Parts/Part_SM_MAL_Barrel_Tsunami.Part_SM_MAL_Barrel_Tsunami',
             0.8,
             scale_smg),
+        ("Vosk's Deathgrip",
+            '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Parts/Part_SG_MAL_Barrel_DeathGrip.Part_SG_MAL_Barrel_DeathGrip',
+            0.9,
+            scale_shotgun),
         ]:
     mod.comment('{} (default: {})'.format(label, default))
     charge_time(mod, obj_name, default*scale)
@@ -191,11 +203,11 @@ for label, obj_name, default, scale in [
 #        #('sniper3', '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_03/Part_MAL_SR_Barrel_03.Part_MAL_SR_Barrel_03', 1.7),
 #
 #        # Second pass... (got 'em!)
-#        ('shotty1', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_SG_MAL_Barrel_01.Part_SG_MAL_Barrel_01', 0.7),
-#        ('shotty2', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SG_MAL_Barrel_02.Part_SG_MAL_Barrel_02', 1.0),
-#        ('shotty3', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_03/Part_SG_MAL_Barrel_03.Part_SG_MAL_Barrel_03', 0.8),
-#        ('smg2', '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SM_MAL_Barrel_02.Part_SM_MAL_Barrel_02', 0.7),
-#        ('sniper1', '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_01/Part_MAL_SR_Barrel_01.Part_MAL_SR_Barrel_01', 1.0),
+#        #('shotty1', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_SG_MAL_Barrel_01.Part_SG_MAL_Barrel_01', 0.7),
+#        #('shotty2', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SG_MAL_Barrel_02.Part_SG_MAL_Barrel_02', 1.0),
+#        #('shotty3', '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_03/Part_SG_MAL_Barrel_03.Part_SG_MAL_Barrel_03', 0.8),
+#        #('smg2', '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SM_MAL_Barrel_02.Part_SM_MAL_Barrel_02', 0.7),
+#        #('sniper1', '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_01/Part_MAL_SR_Barrel_01.Part_MAL_SR_Barrel_01', 1.0),
 #
 #        # Legendaries/Uniques pass 1
 #        #('Cloud Kill',
@@ -238,6 +250,18 @@ for label, obj_name, default, scale in [
 #        # Legendaries/Uniques pass 3
 #        #('Hellshock',
 #        #    '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Parts/Part_PS_MAL_Barrel_HellShock.Part_PS_MAL_Barrel_HellShock', 0.7),
+#
+#        ### Maliwan Takedown / Mayhem 4 Gear
+#        #("Kyb's Worth",
+#        #    '/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Parts/Part_SM_MAL_Barrel_KybsWorth.Part_SM_MAL_Barrel_KybsWorth', 0.6),
+#        #('P2P Networker',
+#        #    '/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link', 0.8),
+#        #("Vosk's Deathgrip",
+#        #    '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Parts/Part_SG_MAL_Barrel_DeathGrip.Part_SG_MAL_Barrel_DeathGrip', 0.5),
+#
+#        # Take 2.
+#        ("Vosk's Deathgrip",
+#            '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Parts/Part_SG_MAL_Barrel_DeathGrip.Part_SG_MAL_Barrel_DeathGrip', 0.8),
 #        ]:
 #    mod.comment(label)
 #    prev_val = start
