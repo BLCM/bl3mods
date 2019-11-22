@@ -90,6 +90,15 @@ pools = [
                 # Boom Sickle / Sickle
                 ('/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Balance/Balance_AR_VLA_Sickle.Balance_AR_VLA_Sickle', 1),
 
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Good Juju
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju', 1),
+                # Juliet's Dazzle
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop.Balance_AR_TOR_Juliet_WorldDrop', 1),
+                # Zheitsev's Eruption
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/Balance/Balance_AR_COV_Zheitsev.Balance_AR_COV_Zheitsev', 1),
+
                 ### Additions
 
                 # Earworm
@@ -194,6 +203,13 @@ pools = [
                 # Magnificent
                 ('/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Magnificent/Balance/Balance_PS_VLA_Magnificent.Balance_PS_VLA_Magnificent', 1),
 
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Moonfire
+                ('/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon', 1),
+                # S3RV-80S-EXECUTE
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/Balance/Balance_PS_TED_Execute.Balance_PS_TED_Execute', 1),
+
                 ### Additions
 
                 # Linc
@@ -282,6 +298,13 @@ pools = [
                 # Fearmonger
                 ('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Fearmonger/Balance/Balance_SG_HYP_ETech_Fearmonger.Balance_SG_HYP_ETech_Fearmonger', 1),
 
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Tiggs' Boom
+                ('/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom.Balance_SG_Torgue_TiggsBoom', 1),
+                # Vosk's Deathgrip
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Balance/Balance_SG_MAL_DeathGrip.Balance_SG_MAL_DeathGrip', 1),
+
                 ### Additions
 
                 # Phebert
@@ -347,6 +370,17 @@ pools = [
                 # Ten Gallon
                 ('/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/TenGallon/Balance/Balance_SM_TED_TenGallon.Balance_SM_TED_TenGallon', 1),
 
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Redistributor
+                ('/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2', 1),
+                # Kyb's Worth
+                ('/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth', 1),
+                # P2P Networker
+                ('/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link', 1),
+                # Crader's EM-P5
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -408,6 +442,11 @@ pools = [
 
                 # Stalker
                 ('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/SniperRifles/Dahl/_Design/_Unique/Frostbolt/Balance/Balance_SR_DAL_ETech_Frostbolt.Balance_SR_DAL_ETech_Frostbolt', 1),
+
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Tankman's Shield
+                ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman', 1),
 
                 ### Additions
 
@@ -474,6 +513,17 @@ pools = [
 
                 # Scream of Terror
                 ('/Game/PatchDLC/BloodyHarvest/Gear/Shields/_Design/_Unique/ScreamOfPain/Balance/InvBalD_Shield_ScreamOfTerror.InvBalD_Shield_ScreamOfTerror', 1),
+
+                ### Maliwan Takedown / Mayhem 4 Legendaries
+
+                # Version 0.m
+                ('/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom', 1),
+                # Re-Charger Berner
+                ('/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner', 1),
+                # Frozen Snowshoe
+                ('/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart', 1),
+                # Re-Charger variant
+                ('/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger', 1),
 
                 ### Additions
 
