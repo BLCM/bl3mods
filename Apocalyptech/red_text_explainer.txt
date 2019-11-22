@@ -622,3 +622,39 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/WidowMaker/Name/
 # Woodblocker
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/UIStat_RedText_Woodblocks.UIStat_RedText_Woodblocks,Text,0,,[Flavor]You don't get into woodblocks unless you are ready to f***.[/Flavor] (fires multiple shots in a burst)
 
+# Good Juju
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/UIStat_RedText_Juju.UIStat_RedText_Juju,Text,0,,[Flavor]Kinda, sorta wants to end all existence.[/Flavor] (unknown)
+
+# Tankman's Shield
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_TankmanUIStat_RedText_Tankman,Text,0,,[Flavor]You ever seen this dude tank anything ever?[/Flavor] (all effects on card)
+
+# S3RV-80S-EXECUTE
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/UIStat_RedText_Execute.UIStat_RedText_Execute,Text,0,,[Flavor]Touch of death requires mastery of combo strikes.[/Flavor] (reloads roll around and bounce very quickly before exploding)
+
+# Vosk's Deathgrip
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/UIStat_RedText_Deathgrip.UIStat_RedText_Deathgrip,Text,0,,[Flavor]A good death is its own reward.[/Flavor] (launches a grid of damaging beams which remain stationary)
+
+# Juliet's Dazzle
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/UIStat_RedText_Juliet.UIStat_RedText_Juliet,Text,0,,[Flavor]Lights up the world.[/Flavor] (all effects on card)
+
+# Zheitsev's Eruption
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/UIStat_RedText_Zheitsev.UIStat_RedText_Zheitsev,Text,0,,[Flavor]Pain and Misery erupt in the Void.[/Flavor] (gets faster as you hold down the trigger)
+
+# Crader's EM-P5
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5,Text,0,,[Flavor]Dust off the beta EMP5.[/Flavor] (not sure, always full auto)
+
+# Kyb's Worth
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth,Text,0,,[Flavor]Stand in the f****** circle.[/Flavor] (shoots two oscillating projectiles side by side)
+
+# Redistributor
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (unsure apart from listed effects, bullets have long visible tail)
+
+# Moonfire
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_RedText_HandCannon.UIStat_RedText_HandCannon,Text,0,,[Flavor]Meet your destiny.[/Flavor] (shoots a laser every third shot)
+
+# Tiggs' Boom
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/UIStat_RedText_TiggsBoom.UIStat_RedText_TiggsBoom,Text,0,,[Flavor]A gaping hole in the sky.[/Flavor] (unknown - just stats?  doesn't look like gyrojets)
+
+# P2P Networker
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[Flavor]You wouldn't download a car.[/Flavor] (unknown - strange alt-fire mode?)
+
