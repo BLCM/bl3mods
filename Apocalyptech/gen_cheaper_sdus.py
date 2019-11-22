@@ -5,7 +5,8 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 start_price = 500
 increment = 2
-levels = 8
+default_levels = 8
+max_price = 1024000
 
 mod = Mod('cheaper_sdus.txt',
         'SDUs are much cheaper',
@@ -13,10 +14,10 @@ mod = Mod('cheaper_sdus.txt',
         'SDU',
         )
 
-for table in [
+for table_data in [
         'Table_SDU_AssaultRifle',
         'Table_SDU_Backpack',
-        'Table_SDU_Bank',
+        ('Table_SDU_Bank', 18),
         'Table_SDU_Grenade',
         'Table_SDU_Heavy',
         'Table_SDU_LostLoot',
@@ -25,6 +26,11 @@ for table in [
         'Table_SDU_SMG',
         'Table_SDU_SniperRifle',
         ]:
+    if type(table_data) == tuple:
+        (table, levels) = table_data
+    else:
+        table = table_data
+        levels = default_levels
     price = start_price
     for level in range(levels):
         mod.table_hotfix(Mod.PATCH, '',
@@ -32,6 +38,7 @@ for table in [
                 'Lv{}'.format(level+1),
                 'SDUPrice',
                 price)
-        price = int(price*increment)
+        if price < max_price:
+            price = int(price*increment)
 
 mod.close()
