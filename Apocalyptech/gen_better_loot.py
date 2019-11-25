@@ -302,12 +302,109 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_EnforcerSacrificeBoss',
         '(BaseValueConstant=0.000000)')
 mod.newline()
 
-# Guaranteed drop from Agonizer 9000
+# Guaranteed drop from Agonizer 9000, and also fold in some more drops:
+#   1) Legendary COM drop from the Week 1 event
+#   2) Presumably-intended drop additions of Damned, Loaded Dice, and Crader MP5, which
+#      only actually drop (probably) during the storyline mission when Pain+Terror are
+#      actually in-game.
+# Note that the MH4/MT patch also adds the Dictator and White Elephant to this pool,
+# so there's a LOT in here.
 mod.comment('Agonizer 9000 (Pain+Terror)')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
         '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain',
         'ItemPools.ItemPools[3].PoolProbability.BaseValueConstant',
         1)
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
+        '/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5"',
+                Weight=(BaseValueConstant=1)
+            )
+        )
+        """)
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
+        '/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot',
+        'Quantity',
+        '(BaseValueConstant=7)')
+mod.newline()
+
+# Katagawa Jr.  Adding in the Legendary COM chance from the Week 1 event.  Note that
+# the MH4/MT patch also adds in Crossroad, so there's three total drops in here.
+mod.comment('Katagawa Jr.')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',
+                Weight=(BaseValueConstant=1)
+            )
+        )
+        """)
+mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa',
+        'Quantity',
+        '(BaseValueConstant=3)')
+mod.newline()
+
+# Graveward!  Adding in the Earworm from the Week 1 event.  Note that
+# the MH4/MT patch brings the total item count to 5.
+mod.comment('Graveward')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave"',
+                Weight=(BaseValueConstant=0.500000)
+            ),
+            (
+                InventoryBalanceData=/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward"',
+                Weight=(BaseValueConstant=0.500000)
+            ),
+            (
+                InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm"',
+                Weight=(BaseValueConstant=0.500000)
+            )
+        )
+        """)
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward',
+        'Quantity',
+        '(BaseValueConstant=5)')
 mod.newline()
 
 # Guaranteed drop from Troy (this may actually already be the default -- it looks like

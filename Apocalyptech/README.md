@@ -3,8 +3,10 @@ My BL3 Mod Workspace
 
 ## Recreations of 10-Year-Anniversary Events
 
-- `2019-10-01_-_10-year-anniversary-event-1_-_bonus_boss_loot.txt` - This
-  is the Week 1 event, as sent by GBX itself.
+Check the `deprecated_or_broken` directory for some events which are
+no longer found up here, because they don't play nicely with more
+recent BL3 patches.
+
 - `2019-10-08_-_10-year-anniversary-event-2_-_rare_spawn_hunt.txt` - This
   is the Week 2 event, as sent by GBX itself.
 - `2019-10-15_-_10-year-anniversary-event-3_-_show_me_the_eridium.txt` - This
@@ -12,9 +14,6 @@ My BL3 Mod Workspace
   corrected.
 - `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
   is the Week 4 event, as sent by GBX itself.
-- `better_bonus_boss_loot.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 1 event, which guarantees that all affected bosses will drop
-  from their pools.
 - `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
   of the Week 2 event, which guarantees that all of the rare spawns will always
   drop their unique loot, and also removes the undocumented health buffs which
@@ -104,29 +103,11 @@ My BL3 Mod Workspace
     powerful than usual.  Went a bit overboard with the radius on the
     grenade; you'll probably get hit by it yourself occasionally.
 
-## Failed Attempts
+## Deprecated / Broken Mods
 
-These are some mod attempts that I've yet to actually get working at all.  So
-don't look at these thinking that they're any good.  :)
-
-- `always_visible_challenge_icons.txt` - Some attempts to make challenge icons
-  (Claptrap salvages, Radios, etc) always appear on the map, regardless of if
-  you've been close to them.
-- `cdh.txt` - Just a quick attempt to see if `bDropOnDeath` still existed in
-  item pools, even though it didn't look that it did.  Either it doesn't, or
-  there's other problems with my attempts.  :)
-- `faster_cost_spin.txt` - An attempt to get the cost spinner to resolve to
-  the cost much more quickly, when mousing around items.  Not sure why this
-  doesn't work, but I suspect that perhaps the object doesn't exist at the
-  time that the hotfix executes?
-- `movement_speed.txt` - An attempt to speed up character movement.  Didn't
-  really expect this to work - I should give it another go.
-- `no_delay_red_chests.txt` - An attempt to remove the 30-minute in-game
-  delay between re-opening red chests.
-- `bloody_harvest_challenges.txt` - An attempt to cheat the Bloody Harvest
-  challenges to have lower target numbers.  Total fail!
-- `guaranteed_badasses.txt` - A few little attempts to increase the number
-  of Badasses.  Didn't do the trick, alas.
+Check the `deprecated_or_broken` dir for various mods which either don't
+work at all, or don't make sense anymore given more recent patches to
+BL3 itself.
 
 Constructing Mods With Code
 ===========================
