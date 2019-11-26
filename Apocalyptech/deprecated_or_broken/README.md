@@ -12,6 +12,14 @@ though.
 - `better_bonus_boss_loot.txt` - This is a better (ie: OP and cheaty) version
   of the Week 1 event, which guarantees that all affected bosses will drop
   from their pools.
+- `2019-10-08_-_10-year-anniversary-event-2_-_rare_spawn_hunt.txt` - This
+  is the Week 2 event, as sent by GBX itself.
+- `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
+  of the Week 2 event, which guarantees that all of the rare spawns will always
+  drop their unique loot, and also removes the undocumented health buffs which
+  are in the vanilla version.  Also theoretically makes any other rare spawn
+  in the game which was *not* touched by this mod spawn with 100% frequency,
+  though I'm not sure what else there is which might be affected by this.
 
 ## Failed Attempts
 

@@ -7,19 +7,14 @@ Check the `deprecated_or_broken` directory for some events which are
 no longer found up here, because they don't play nicely with more
 recent BL3 patches.
 
-- `2019-10-08_-_10-year-anniversary-event-2_-_rare_spawn_hunt.txt` - This
-  is the Week 2 event, as sent by GBX itself.
 - `2019-10-15_-_10-year-anniversary-event-3_-_show_me_the_eridium.txt` - This
   is the Week 3 event, as sent by GBX itself, but with a few errors
   corrected.
 - `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
   is the Week 4 event, as sent by GBX itself.
-- `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 2 event, which guarantees that all of the rare spawns will always
-  drop their unique loot, and also removes the undocumented health buffs which
-  are in the vanilla version.  Also theoretically makes any other rare spawn
-  in the game which was *not* touched by this mod spawn with 100% frequency,
-  though I'm not sure what else there is which might be affected by this.
+- `better_rare_spawn_hunt_stripped.txt` - This is a stripped-down version of
+  the Week 2 event which now *just* focuses on making sure that all rare
+  spawns will spawn at 100% instead.
 - `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium

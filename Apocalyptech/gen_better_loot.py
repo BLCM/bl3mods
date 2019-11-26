@@ -443,6 +443,225 @@ mod.table_hotfix(Mod.PATCH, '',
         1)
 mod.newline()
 
+# Red Jabber - Add in legendary grenade, as the Week 2 event did.
+mod.comment('Red Jabber')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_TinkRedJabber',
+        '/Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber.BPChar_TinkRedJabber_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"',PoolProbability=(BaseValueConstant=1.000000))),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss.ItemPoolList_MiniBoss"')
+        )""")
+mod.newline()
+
+mod.header('Rare Spawn updates taken from Week 2 Event')
+
+# Some more guaranteed drops which were taken from the Week 2 event
+for (label, bpchar, obj_name) in [
+        ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE'),
+        ('The Unstoppable', 'BPChar_Goliath_Rare01', '/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01.BPChar_Goliath_Rare01_C:AIBalanceState_GEN_VARIABLE'),
+        ('Road Dog', 'BPChar_Goliath_Rare02', '/Game/Enemies/Goliath/_Unique/Rare02/_Design/Character/BPChar_Goliath_Rare02.BPChar_Goliath_Rare02_C:AIBalanceState_GEN_VARIABLE'),
+        ('El Dragon Jr.', 'BPChar_Goliath_Rare03', '/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03.BPChar_Goliath_Rare03_C:AIBalanceState_GEN_VARIABLE'),
+        ('Sloth', 'BPChar_Goon_Rare01', '/Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01.BPChar_Goon_Rare01_C:AIBalanceState_GEN_VARIABLE'),
+        ('Borman Nates', 'BPChar_PsychoRare02', '/Game/Enemies/Psycho_Male/_Unique/Rare02/_Design/Character/BPChar_PsychoRare02.BPChar_PsychoRare02_C:AIBalanceState_GEN_VARIABLE'),
+        ('Wick', 'BPChar_PsychoRare03', '/Game/Enemies/Psycho_Male/_Unique/Rare03/_Design/Character/BPChar_PsychoRare03.BPChar_PsychoRare03_C:AIBalanceState_GEN_VARIABLE'),
+        ("I'm Rakkman", 'BPChar_Rakkman', '/Game/Enemies/Psycho_Male/_Unique/Rakkman/_Design/Character/BPChar_Rakkman.BPChar_Rakkman_C:AIBalanceState_GEN_VARIABLE'),
+        ('Maxitrillion', 'BPChar_ServiceBot_Rare01', '/Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01.BPChar_ServiceBot_Rare01_C:AIBalanceState_GEN_VARIABLE'),
+        ('Princess Tarantella II', 'BPChar_SpiderantTarantella', '/Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella.BPChar_SpiderantTarantella_C:AIBalanceState_GEN_VARIABLE'),
+        ]:
+    mod.comment(label)
+    mod.reg_hotfix(Mod.CHAR, bpchar,
+            obj_name,
+            'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability',
+            """(
+                BaseValueConstant=100.000000,
+                DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                BaseValueAttribute=None,
+                AttributeInitializer=None,
+                BaseValueScale=1.000000
+            )""")
+    mod.newline()
+
+mod.header('Mayhem 4 / Maliwan Takedown compatibility fixes')
+
+# Enemies which follow were all affected by the Mayhem 4 / Maliwan Takedown Nov 21 2019
+# patch, adding more drops to their DropOnDeathItemPools via the object
+# /Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1
+# The ones using ItemPoolExpansions we can work with more subtly, but the
+# DropOnDeathItemPools I have no idea how to edit properly.  So the added drops for
+# these can technically happen twice - once for our guaranteed drop which we set up
+# below, and once for the usually-10% "legit" chance.
+
+# Mother of Grogans.  The MH4/MT patch adds Creeping Death, and we want to keep our
+# Week 2 Legendary Artifact drop, too.
+mod.comment('Mother of Grogans')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_PunkMotherOfDragons',
+        '/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Character/BPChar_PunkMotherOfDragons.BPChar_PunkMotherOfDragons_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1.000000)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot"',
+                    PoolProbability=(BaseValueConstant=1.000000)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear.ItemPoolList_BadassEnemyGunsGear"'),
+        )""")
+mod.newline()
+
+# Demoskaggon.  The MH4/MT patch adds Hunted, Monocle, and Night Hawkin.  We'll
+# keep the Week 2 Leg. shield drop, too.  Since two spawn at once, though, we're
+# dropping our chances/counts for those.
+mod.comment('Demoskaggon')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Skag_Rare01',
+        '/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPools',
+        """(
+            (
+                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"',
+                PoolProbability=(BaseValueConstant=0.5)
+            ),
+            (
+                ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon"',
+                PoolProbability=(BaseValueConstant=1),
+                NumberOfTimesToSelectFromThisPool=(BaseValueConstant=2)
+            )
+        )""")
+mod.newline()
+
+# Power Troopers!  Week 2 added in legendary COMs, we'll keep those in, in addition to
+# the MH4/MT gear additions.  Only dropping 1 from all of these pools, there's already
+# a crazy amount of legendaries being dropped here.
+mod.comment('Onyx Force Trooper')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01a',
+        '/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
+                    PoolProbability=(BaseValueConstant=1),
+                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear.ItemPoolList_BadassEnemyGunsGear"')
+        )""")
+mod.newline()
+
+mod.comment('Citrine Force Trooper')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01b',
+        '/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
+                    PoolProbability=(BaseValueConstant=1),
+                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
+        )""")
+mod.newline()
+
+mod.comment('Ruby Force Trooper')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01c',
+        '/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary.ItemPool_ClassMods_Operative_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
+                    PoolProbability=(BaseValueConstant=1),
+                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
+        )""")
+mod.newline()
+
+mod.comment('Tourmaline Force Trooper')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01d',
+        '/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1.000000)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',
+                    PoolProbability=(BaseValueConstant=1),
+                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
+        )""")
+mod.newline()
+
+mod.comment('Sapphire Force Trooper')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01e',
+        '/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools',
+        """(
+            ItemPools=(
+                (
+                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',
+                    PoolProbability=(BaseValueConstant=1.000000)
+                ),
+                (
+                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',
+                    PoolProbability=(BaseValueConstant=1),
+                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
+                )
+            ),
+            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
+        )""")
+mod.newline()
+
+# IndoTyrant - gets Unforgiven, Gunerang, and Woodblocker.  Keeping the Week 2
+# addition of a cosmetic item, too
+mod.comment('IndoTyrant')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Saurian_Rare01',
+        '/Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01.BPChar_Saurian_Rare01_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPools',
+        """(
+            (
+                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money.ItemPool_Money"',
+                NumberOfTimesToSelectFromThisPool=(
+                    BaseValueConstant=0,
+                    AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Buttload.Init_RandomLootCount_Buttload_C"'
+                )
+            ),
+            (
+                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc"',
+                PoolProbability=(BaseValueConstant=1)
+            ),
+            (
+                ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant.ItemPool_IndoTyrant"',
+                PoolProbability=(BaseValueConstant=1),
+                NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)
+            )
+        )""")
+mod.newline()
+
 # Buff Anoint Drops
 #
 # Vanilla values:

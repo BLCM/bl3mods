@@ -1,5 +1,5 @@
 # 10-Year Anniversary Events
-better_rare_spawn_hunt
+better_rare_spawn_hunt_stripped
 better_eridium_event
 better_mayhem_on_twitch
 
