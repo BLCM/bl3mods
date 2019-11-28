@@ -82,6 +82,7 @@ for level_name in [
 mod.newline()
 
 # Some individual spawn rates which apparently don't use those values above
+# TODO: I think Brood Mother (Pyre of Stars) needs something similar
 mod.comment('Individual Spawn rates')
 mod.reg_hotfix(Mod.LEVEL, 'Towers_P',
         '/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.OakMissionRareSpawner_VicAndWarty',
