@@ -42,9 +42,9 @@ recent BL3 patches.
     unlocks world Mayhem 4 drops or not, but you can use `expanded_legendary_pools`
     for that.
 - `early_bloomer.txt` - Unlocks all weapon types, elements, manufacturers,
-  etc, from the very beginning of the game.  Note that this doesn't unlock
-  Anointed drops, that's one thing I haven't figured out.  (It also doesn't
-  unlock the Eridian Resonator or Translator.)
+  anointments, etc, from the very beginning of the game.  The main things I
+  still haven't figured out is unlocking the Eridian Resonator and Translator,
+  so those are still locked behind story progression.
 - `expanded_legendary_pools.txt` - Adds all unique items into the main
   legendary drop pools, not that BL3 needs bigger legendary pools.  Includes
   all Bloody Harvest, Maliwan Takedown, and Mayhem 4 items (which will drop
