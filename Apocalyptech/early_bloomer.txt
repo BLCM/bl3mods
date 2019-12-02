@@ -33,11 +33,16 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Sc
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Radiation,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Shock,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 
-# Item type unlocks.  Have to omit artifacts and coms, since those are locked by missions, not level.
-# Parts_EndGame is theoretically anointed parts, but I don't think anything actually uses this value.
-# Probably they prefer /Game/Gear/Weapons/_Shared/_Design/EndGameParts/Att_EndGame_MinGamestage
-#SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Artifacts,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
-#SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,ClassMods,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+# Unlock all inventory slots right from the start of the game
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/InventorySlots/BPInvSlot_Weapon3.BPInvSlot_Weapon3,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/InventorySlots/BPInvSlot_Weapon4.BPInvSlot_Weapon4,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/_Data/BPInvSlot_ClassMod.BPInvSlot_ClassMod,InitiallyEnabled,0,,True
+SparkPatchEntry,(1,1,0,),/Game/Gear/Artifacts/_Design/_Data/BPInvSlot_Artifact.BPInvSlot_Artifact,InitiallyEnabled,0,,True
+
+# Item type unlocks. Parts_EndGame is theoretically anointed parts, but I don't think anything
+# actually uses this value.  Probably they prefer /Game/Gear/Weapons/_Shared/_Design/EndGameParts/Att_EndGame_MinGamestage
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Artifacts,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,ClassMods,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,GrenadeMods,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Parts_EndGame,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Shields,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
