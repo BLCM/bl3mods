@@ -1,11 +1,10 @@
-## Deprecated Mods
+## Deprecated Anniversary Event Mods
 
-So far, the deprecated mods in here are related to the 10-Year Anniversary
-events which took place shortly after BL3's release.  With the November 21,
-2019 patch (Mayhem 4 / Maliwan Takedown), nearly all gear was given a
-dedicated source, which is slightly at odds with the mods now found here.
-Some bits of functionality from these have been merged into Better Loot,
-though.
+These are related to the 10-Year Anniversary events which took place shortly
+after BL3's release.  With the November 21, 2019 patch (Mayhem 4 / Maliwan
+Takedown), nearly all gear was given a dedicated source, which is slightly at
+odds with the mods now found here.  Some bits of functionality from these have
+been merged into Better Loot, though.
 
 - `2019-10-01_-_10-year-anniversary-event-1_-_bonus_boss_loot.txt` - This
   is the Week 1 event, as sent by GBX itself.
@@ -20,6 +19,15 @@ though.
   are in the vanilla version.  Also theoretically makes any other rare spawn
   in the game which was *not* touched by this mod spawn with 100% frequency,
   though I'm not sure what else there is which might be affected by this.
+
+## Deprecated/Testing Mods
+
+- `mission_unlocks.txt` - This is actually partially successful; I can at
+  least set mission reward pools here.  I'd hoped to also unlock Sanctuary
+  with the first mission load, too, though, which didn't work.
+- `datatable.txt` - Was used to test out how DataTable values interact with
+  the rest of the BVC tuple - turns out that they probably override everything
+  except for BVSC, which gets multiplied at the end as per usual.
 
 ## Failed Attempts
 
@@ -47,9 +55,6 @@ don't look at these thinking that they're any good.  :)
 - `eridian_unlocks.txt` - Some attempts to unlock Eridian Resonator from the
   beginning of the game (would have gone on to the translator as well,
   had I figured this out)
-- `mission_unlocks.txt` - This is actually partially successful; I can at
-  least set mission reward pools here.  I'd hoped to also unlock Sanctuary
-  with the first mission load, too, though, which didn't work.
 - `torgue_full_auto.txt` - Tried to set Torgue ARs to full auto, but this
   didn't seem to do the trick (the version getting checked in actually tried
   to give them a 5-burst count).

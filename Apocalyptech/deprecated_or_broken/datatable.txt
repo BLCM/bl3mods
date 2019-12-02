@@ -1,0 +1,23 @@
+# Figuring out how datatable values work w/ BVC tuples
+
+prefix: DataTable
+
+# Make El Dragon always drop Girth Blaster
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf.Balance_PS_TOR_Nurf,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf.Balance_PS_TOR_Nurf"',Weight=(BaseValueConstant=1000000000)))
+
+# Guaranteed drop (duplicate of a Better Loot statement)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03.BPChar_Goliath_Rare03_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# Set the pool quantity back to 1 (undoes a Better Loot statement)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr,Quantity,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,Rowname="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+###
+### Actual testing vars below
+###
+
+# We'll be weird and use a drop probability value for this
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Common,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,5
+
+# Set the NumberOfTimes thing
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03.BPChar_Goliath_Rare03_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=10,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity"',Rowname="Common",ValueName="BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=3)
+
