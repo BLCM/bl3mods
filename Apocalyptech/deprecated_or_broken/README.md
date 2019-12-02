@@ -44,3 +44,12 @@ don't look at these thinking that they're any good.  :)
   challenges to have lower target numbers.  Total fail!
 - `guaranteed_badasses.txt` - A few little attempts to increase the number
   of Badasses.  Didn't do the trick, alas.
+- `eridian_unlocks.txt` - Some attempts to unlock Eridian Resonator from the
+  beginning of the game (would have gone on to the translator as well,
+  had I figured this out)
+- `mission_unlocks.txt` - This is actually partially successful; I can at
+  least set mission reward pools here.  I'd hoped to also unlock Sanctuary
+  with the first mission load, too, though, which didn't work.
+- `torgue_full_auto.txt` - Tried to set Torgue ARs to full auto, but this
+  didn't seem to do the trick (the version getting checked in actually tried
+  to give them a 5-burst count).
