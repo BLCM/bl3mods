@@ -7,5 +7,11 @@ prefix: Spinner
 # nothing I've tried has worked so far, alas, though these do seem like the
 # correct attributes to be going after.
 
-SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,CostSpinTime,0,,0.01
-SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,PauseOnNewValueTime,0,,0.01
+#SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,CostSpinTime,0,,0.01
+#SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,PauseOnNewValueTime,0,,0.01
+
+#SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget_C,CostSpinTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget_C,PauseOnNewValueTime,0,,0.01
+
+SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,CostSpinTime,0,,0.01
+SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,PauseOnNewValueTime,0,,0.01
