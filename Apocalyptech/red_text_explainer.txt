@@ -56,13 +56,13 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/BigSucc/UIStat_RedText_BigSucc.UIStat_RedText_BigSucc,Text,0,,[Flavor]What dat underbarrel do?[/Flavor] (grenade underbarrel)
 
 # Bitch
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Bitch/UIStat_RedText_Bitch.UIStat_RedText_Bitch,Text,0,,[Flavor]If you can't handle me at my worst...[/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Bitch/UIStat_RedText_Bitch.UIStat_RedText_Bitch,Text,0,,[Flavor]If you can't handle me at my worst...[/Flavor] (all effects on card)
 
 # Black Flame
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Brew/UIStat_RedText_Shroom.UIStat_RedText_Shroom,Text,0,,[Flavor]A virgin lit the candle.[/Flavor] (just mission-related)
 
 # Bone Shredder
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/UIStat_RedText_BoneShredder.UIStat_RedText_BoneShredder,Text,0,,[Flavor]THE LEAD WIND BLOWS![/Flavor] (just stats?)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/UIStat_RedText_BoneShredder.UIStat_RedText_BoneShredder,Text,0,,[Flavor]THE LEAD WIND BLOWS![/Flavor] (all effects on card)
 
 # The Boo+
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/Beans/UIStat_RedText_Beans.UIStat_RedText_Beans,Text,0,,[Flavor]We gotchu.[/Flavor] (on reload, becomes a turret with legs)
@@ -110,7 +110,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Chupa/UI/UIStat_
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/CloudKill/UIStat_RedText_CloudKill.UIStat_RedText_CloudKill,Text,0,,[Flavor]Now, you will rise.[/Flavor] (creates [corrosive]corrosive[/corrosive] cloud)
 
 # Cold Shoulder
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/UIStat_RedText_Prison.UIStat_RedText_Prison,Text,0,,[Flavor]Say “freeze”![/Flavor] (just stats?)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/UIStat_RedText_Prison.UIStat_RedText_Prison,Text,0,,[Flavor]Say “freeze”![/Flavor] (all effects on card)
 
 # The Companion
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/MelsCompanion/UIStat_RedText_MelsCompanion.UIStat_RedText_MelsCompanion,Text,0,,[Flavor]You can't take the sky from me.[/Flavor] (cannot [fire]ignite[/fire] without critical hit)
@@ -158,7 +158,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/ButtStallion/Nam
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/UIStat_RedText_TheDuc.UIStat_RedText_TheDuc,Text,0,,[Flavor]Fire that off to me real quick.[/Flavor] (bullets stick to foes and explode after delay, crits ricochet 2)
 
 # E-Gone
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/UIStat_RedText_Egon.UIStat_RedText_Egon,Text,0,,[Flavor]Don't cross the streams.[/Flavor] (just the beam effect?)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/UIStat_RedText_Egon.UIStat_RedText_Egon,Text,0,,[Flavor]Don't cross the streams.[/Flavor] (continuous laser beam)
 
 # ECHO-2
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3,Text,0,,[Flavor]Do not look directly at ECHO-2.[/Flavor] (damage, radius, and fuse time depend on player looking at it (best not to?))
@@ -275,16 +275,16 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Un
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Hornet/UIStat_RedText_Hornet.UIStat_RedText_Hornet,Text,0,,[Flavor]Fear the swarm![/Flavor] (6-round burst, alt fire toggles zoom)
 
 # Hot Drop
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/UIStat_RedText_HotDrop.UIStat_RedText_HotDrop,Text,0,,[Flavor]We are coming out hot.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/UIStat_RedText_HotDrop.UIStat_RedText_HotDrop,Text,0,,[Flavor]We are coming out hot.[/Flavor] (creates [fire]incendiary[/fire] pool and launches 2 children)
 
 # The Hunt(ed)
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Hunted.UIStat_RedText_Hunted,Text,0,,[Flavor]So dead.[/Flavor] (+175% damage against robots)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Hunted.UIStat_RedText_Hunted,Text,0,,[Flavor]So dead.[/Flavor] (all effects on card)
 
 # The Hunt(er)
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Hunter.UIStat_RedText_Hunter,Text,0,,[Flavor]So big.[/Flavor] (+175% damage against creatures)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Hunter.UIStat_RedText_Hunter,Text,0,,[Flavor]So big.[/Flavor] (all effects on card)
 
 # The Hunt(ress)
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Huntress.UIStat_RedText_Huntress,Text,0,,[Flavor]So angry.[/Flavor] (+175% damage against humans)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Huntress.UIStat_RedText_Huntress,Text,0,,[Flavor]So angry.[/Flavor] (all effects on card)
 
 # Hunter-Seeker
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/HunterSeeker/UI/UIStat_RedText_HunterSeeker.UIStat_RedText_HunterSeeker,Text,0,,[Flavor]Grip tightly.[/Flavor] (drone homes in on enemies while shooting)
@@ -299,7 +299,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Uni
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/XZ/UIStat_RedText_XZ.UIStat_RedText_XZ,Text,0,,[Flavor]My line has ended.[/Flavor] (hits spawn two bouncy ricochets)
 
 # The Ice Queen
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/IceQueen/UIStat_RedText_IceQueen.UIStat_RedText_IceQueen,Text,0,,[Flavor]Let it go![/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/IceQueen/UIStat_RedText_IceQueen.UIStat_RedText_IceQueen,Text,0,,[Flavor]Let it go![/Flavor] (all effects on card)
 
 # Infinity
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Infiniti/UIStat_RedText_Infiniti.UIStat_RedText_Infiniti,Text,0,,[Flavor]It's closer than you think! (no it isn't)[/Flavor] (does not consume ammo)
@@ -347,7 +347,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/TheLeech/UIStat_RedText_TheLeech.UIStat_RedText_TheLeech,Text,0,,[Flavor]Today, a new emperor must seize the throne.[/Flavor] (alt fire [fire]ignite[/fire]s enemies and heals the player)
 
 # Linc
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Drill/UIStat_RedText_Drill.UIStat_RedText_Drill,Text,0,,[Flavor]Power is pizza.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Drill/UIStat_RedText_Drill.UIStat_RedText_Drill,Text,0,,[Flavor]Power is pizza.[/Flavor] (all effects on card)
 
 # Linoge
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Legion/UIStat_RedText_Legion.UIStat_RedText_Legion,Text,0,,[Flavor]My name is Legion, for we are many.[/Flavor] (rounds ricochet)
@@ -368,7 +368,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/UIStat_RedText_Maggie.UIStat_RedText_Maggie,Text,0,,[Flavor]Monty's wife don't take no guff.[/Flavor] (very good masher)
 
 # Magnificent
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Magnificent/UIStat_RedText_Magnificent.UIStat_RedText_Magnificent,Text,0,,[Flavor]Yedesh na den', khleba beri na nedelyu.[/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Magnificent/UIStat_RedText_Magnificent.UIStat_RedText_Magnificent,Text,0,,[Flavor]Yedesh na den', khleba beri na nedelyu.[/Flavor] (all effects on card)
 
 # Malak's Bane
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/UIStat_RedText_MalaksBane.UIStat_RedText_MalaksBane,Text,0,,[Flavor]Welcome to the end.[/Flavor] (projectiles bounce, alt is shotgun-style blast)
@@ -401,7 +401,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/WizardOfNOG/UI/U
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Nagate/UI/UIStat_RedText_Nagate.UIStat_RedText_Nagate,Text,0,,[Flavor]Beltalowda![/Flavor] (ring of projectiles launched in spiral)
 
 # Nemesis
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Nemesis/UIStat_RedText_Nemesis.UIStat_RedText_Nemesis,Text,0,,[Flavor]A righteous infliction of retribution.[/Flavor] (just stats?)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Nemesis/UIStat_RedText_Nemesis.UIStat_RedText_Nemesis,Text,0,,[Flavor]A righteous infliction of retribution.[/Flavor] (chance to deal additional [shock]shock[/shock] damage)
 
 # Night Flyer
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Rakkman/UIStat_RedText_Rakkman.UIStat_RedText_Rakkman,Text,0,,[Flavor]I have one rule.[/Flavor] (damages enemies to 1HP, alt fire toggles zoom)
@@ -413,7 +413,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/De
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/NimbleJack/UIStat_RedText_Nimble.UIStat_RedText_Nimble,Text,0,,[Flavor]Jack be nimble, Jack be quick, Jack jump up and kill lunatics.[/Flavor] (crits don't consume ammo, increased accuracy when airborne)
 
 # Null Pointer
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/NPC_Weapons/Zero/ZeroForPlayer/UIStat_RedText_ZeroForPlayer.UIStat_RedText_ZeroForPlayer,Text,0,,[Flavor]:-D[/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/NPC_Weapons/Zero/ZeroForPlayer/UIStat_RedText_ZeroForPlayer.UIStat_RedText_ZeroForPlayer,Text,0,,[Flavor]:-D[/Flavor] (all effects on card)
 
 # Occultist
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Troy/UIStat_RedText_Troy.UIStat_RedText_Troy,Text,0,,[Flavor]The only way you can control people is to lie to them.[/Flavor] (swirling projectiles which can explode)
@@ -473,7 +473,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/UI/UIStat
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/UIStat_RedText_Rampager.UIStat_RedText_Rampager,Text,0,,[Flavor]You've had this one coming a long time.[/Flavor] (2 slow orbs which damage nearby enemies, and fire faster rockets at them upon explosion)
 
 # Rebel Yell
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/UIStat_RedText_RebelYell.UIStat_RedText_RebelYell,Text,0,,[Flavor]When you charge, yell like Furies.[/Flavor] (always [shock]shock[/shock])
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/UIStat_RedText_RebelYell.UIStat_RedText_RebelYell,Text,0,,[Flavor]When you charge, yell like Furies.[/Flavor] (regular bullets deal normal damage, trackers deal [shock]shock[/shock])
 
 # Red Queen
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/RedQueen/UI/UIStat_RedText_RedQueen.UIStat_RedText_RedQueen,Text,0,,[Flavor]OFF WITH THEIR HEADS![/Flavor] (grenade splits in two with laser connecting them)
@@ -548,7 +548,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/UI/UIStat_RedText_StormFront.UIStat_RedText_StormFront,Text,0,,[Flavor]Very, very frightening.[/Flavor] (spawns several child grenades that chain [shock]shock[/shock])
 
 # Super Shredifier
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Shredifier/UIStat_RedText_Shredifier.UIStat_RedText_Shredifier,Text,0,,[Flavor]Speed kills.[/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Shredifier/UIStat_RedText_Shredifier.UIStat_RedText_Shredifier,Text,0,,[Flavor]Speed kills.[/Flavor] (all effects on card)
 
 # Superball
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/UIStat_RedText_Plumber.UIStat_RedText_Plumber,Text,0,,[Flavor]Flower power.[/Flavor] (instant fire, shoots small bouncy [fire]incendiary[/fire] balls in downward arc)
@@ -566,7 +566,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/TheWave/UIStat_RedText_TidalWave.UIStat_RedText_TidalWave,Text,0,,[Flavor]Flee the wave, dude![/Flavor] (projectiles oscillate up and down and ricochet)
 
 # THE TWO TIME
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/TwoTime/UIStat_RedText_TwoTime.UIStat_RedText_TwoTime,Text,0,,[Flavor]Back-to-back consecutive champion.[/Flavor] (just stats?)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/TwoTime/UIStat_RedText_TwoTime.UIStat_RedText_TwoTime,Text,0,,[Flavor]Back-to-back consecutive champion.[/Flavor] (hitscan projectiles)
 
 # Thumper
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/UIStat_RedText_Thumper.UIStat_RedText_Thumper,Text,0,,[Flavor]The happiest place on Pandora.[/Flavor] (bouncy, slow-moving projectile fired in arc)
@@ -599,7 +599,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/ToyGrenade/Name/UIStat_RedText_ToyGrenade.UIStat_RedText_ToyGrenade,Text,0,,[Flavor]Do not taunt Happy Fun Ball.[/Flavor] (splits into multiple bouncy balls)
 
 # Unforgiven
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Unforgiven/UIStat_RedText_TheUnforgiven.UIStat_RedText_TheUnforgiven,Text,0,,[Flavor]It's a helluva thing...[/Flavor] (just stats)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Unforgiven/UIStat_RedText_TheUnforgiven.UIStat_RedText_TheUnforgiven,Text,0,,[Flavor]It's a helluva thing...[/Flavor] (all effects on card)
 
 # Vanquisher
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/UIStat_RedText_Vanquisher.UIStat_RedText_Vanquisher,Text,0,,[Flavor]Slide forward into your cave.[/Flavor] (20% increased slide speed, double fire rate while sliding)
@@ -620,40 +620,40 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/ObviousTrap/UI/U
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/WidowMaker/Name/UIStat_RedText_WidowMaker.UIStat_RedText_WidowMaker,Text,0,,[Flavor]À la vie, à la mort.[/Flavor] (creates landmine which spawns homing rockets)
 
 # Woodblocker
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/UIStat_RedText_Woodblocks.UIStat_RedText_Woodblocks,Text,0,,[Flavor]You don't get into woodblocks unless you are ready to f***.[/Flavor] (fires multiple shots in a burst)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/UIStat_RedText_Woodblocks.UIStat_RedText_Woodblocks,Text,0,,[Flavor]You don't get into woodblocks unless you are ready to f***.[/Flavor] (four-round burst)
 
 # Good Juju
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/UIStat_RedText_Juju.UIStat_RedText_Juju,Text,0,,[Flavor]Kinda, sorta wants to end all existence.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/UIStat_RedText_Juju.UIStat_RedText_Juju,Text,0,,[Flavor]Kinda, sorta wants to end all existence.[/Flavor] (refills magazine on kill)
 
 # Tankman's Shield
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_TankmanUIStat_RedText_Tankman,Text,0,,[Flavor]You ever seen this dude tank anything ever?[/Flavor] (all effects on card)
 
 # S3RV-80S-EXECUTE
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/UIStat_RedText_Execute.UIStat_RedText_Execute,Text,0,,[Flavor]Touch of death requires mastery of combo strikes.[/Flavor] (reloads roll around and bounce very quickly before exploding)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/UIStat_RedText_Execute.UIStat_RedText_Execute,Text,0,,[Flavor]Touch of death requires mastery of combo strikes.[/Flavor] (enemies hit with reload take more damage?)
 
 # Vosk's Deathgrip
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/UIStat_RedText_Deathgrip.UIStat_RedText_Deathgrip,Text,0,,[Flavor]A good death is its own reward.[/Flavor] (launches a grid of damaging beams which remain stationary)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/UIStat_RedText_Deathgrip.UIStat_RedText_Deathgrip,Text,0,,[Flavor]A good death is its own reward.[/Flavor] (launches a grid of damaging beams which remain stationary, alt fires singularity)
 
 # Juliet's Dazzle
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/UIStat_RedText_Juliet.UIStat_RedText_Juliet,Text,0,,[Flavor]Lights up the world.[/Flavor] (all effects on card)
 
 # Zheitsev's Eruption
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/UIStat_RedText_Zheitsev.UIStat_RedText_Zheitsev,Text,0,,[Flavor]Pain and Misery erupt in the Void.[/Flavor] (gets faster as you hold down the trigger)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/UIStat_RedText_Zheitsev.UIStat_RedText_Zheitsev,Text,0,,[Flavor]Pain and Misery erupt in the Void.[/Flavor] (launches homing projectiles when overheated)
 
 # Crader's EM-P5
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5,Text,0,,[Flavor]Dust off the beta EMP5.[/Flavor] (not sure, always full auto)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5,Text,0,,[Flavor]Dust off the beta EMP5.[/Flavor] (increased movement speed, increased accuracy in air)
 
 # Kyb's Worth
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth,Text,0,,[Flavor]Stand in the f****** circle.[/Flavor] (shoots two oscillating projectiles side by side)
 
 # Redistributor
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (unsure apart from listed effects, bullets have long visible tail)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (every 7th shot is amped and chains)
 
 # Moonfire
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_RedText_HandCannon.UIStat_RedText_HandCannon,Text,0,,[Flavor]Meet your destiny.[/Flavor] (shoots a laser every third shot)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_RedText_HandCannon.UIStat_RedText_HandCannon,Text,0,,[Flavor]Meet your destiny.[/Flavor] (every 3rd shot is more powerful)
 
 # Tiggs' Boom
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/UIStat_RedText_TiggsBoom.UIStat_RedText_TiggsBoom,Text,0,,[Flavor]A gaping hole in the sky.[/Flavor] (unknown - just stats?  doesn't look like gyrojets)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/UIStat_RedText_TiggsBoom.UIStat_RedText_TiggsBoom,Text,0,,[Flavor]A gaping hole in the sky.[/Flavor] (shots pierce enemies and makes meteors fall from sky)
 
 # P2P Networker
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[Flavor]You wouldn't download a car.[/Flavor] (unknown - strange alt-fire mode?)
