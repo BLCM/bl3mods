@@ -6,5 +6,5 @@
 
 prefix: EridianUnlocks
 
-SparkPatchEntry,(1,1,0,),/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator:Conditions_MissionEnableConditionObjective_0,ObjectiveRef,0,,(Mission=Mission'"/Game/Missions/Plot/Mission_Ep01_ChildrenOfTheVault.Mission_Ep01_ChildrenOfTheVault_C"',ObjectiveName="Obj_GetAcrossBridgeGap_Objective",ObjectiveGuid="70fa4d4d4d4891f3482ec68258d0cce3")
+SparkPatchEntry,(1,1,0,),/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator:Conditions_MissionEnableConditionObjective,EnabledCondition.Object..Condition1.Object..Conditions.Conditions[0].Object..ObjectiveRef,0,,(Mission=Mission'"/Game/Missions/Plot/Mission_Ep01_ChildrenOfTheVault.Mission_Ep01_ChildrenOfTheVault_C"',ObjectiveName="Obj_GetAcrossBridgeGap_Objective",ObjectiveGuid="70fa4d4d4d4891f3482ec68258d0cce3")
 
