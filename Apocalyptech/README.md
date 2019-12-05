@@ -68,10 +68,11 @@ recent BL3 patches.
   own historical interest.
 - `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - These can be
   used to enable Bloody Harvest even after the event is over, or disable
-  it prematurely.  The disabling one has been tested and works great;
-  obviously we'll have to wait until after the event is over to find out
-  if the enabling one works.  Will almost certainly interfere with future
-  events, if you happen to run 'em while they're active.
+  it prematurely.  The enabling script will also include the other balance
+  hotfixes which were active during the last week(s) of the event, which
+  includes health modifiers and other minor fixes.  These will almost
+  certainly interfere with future events, if you happen to run 'em while
+  they're active.
 - `red_text_explainer.txt` - a BL3 version of Ezeith's BL2 mod.  Puts
   descriptions of weapon/grenade effects on the red text.  Shields, Artifacts,
   and COMs have been omitted since BL3 already lists those explicitly.

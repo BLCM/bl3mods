@@ -32,9 +32,9 @@ early_bloomer
 better_loot
 expanded_legendary_pools
 
-# Bloody Harvest toggles, possibly (untested!)
+# Bloody Harvest toggles
 #bloody_harvest_enable
-bloody_harvest_disable
+#bloody_harvest_disable
 
 # Guaranteed Ghosts in Bloody Harvest event
 #guaranteed_ghosts
