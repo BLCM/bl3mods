@@ -561,6 +561,19 @@ mod.reg_hotfix(Mod.LEVEL, 'Sanctuary3_P',
         0)
 mod.newline()
 
+# Dinklebot -- this ordinarily drops the Loot O' Gram item itself, which must be
+# turned in to Earl in order to get loot, but I'm going to also change it to
+# dump from the Earl pool itself (assuming that the pool is loaded in Skywell-27;
+# I'll have to check that)
+mod.comment('Dinklebot')
+set_death_pools(mod, 'BPChar_OversphereRare01',
+        '/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01',
+        pools=[
+            ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns', 3),
+            ],
+        )
+mod.newline()
+
 mod.header('Rare Spawn updates taken from Week 2 Event')
 
 # Some more guaranteed drops which were taken from the Week 2 event

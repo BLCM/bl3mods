@@ -407,6 +407,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01d),/Game/Enemies/Punk_Femal
 # Loot O' Gram
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns,BalancedItems[0].Weight.BaseValueConstant,0,,0
 
+# Dinklebot
+SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)))
+
 ###
 ### Rare Spawn updates taken from Week 2 Event
 ###
