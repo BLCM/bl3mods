@@ -404,6 +404,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01b),/Game/Enemies/Punk_Femal
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01c),/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/c/BPChar_Punk_Bounty01c.BPChar_Punk_Bounty01c_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls.ItemPool_ElectricBanjo_GoreGirls"',PoolProbability=(DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds"',RowName="GoreGirls",ValueName="LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"))))
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01d),/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/d/BPChar_Punk_Bounty01d.BPChar_Punk_Bounty01d_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls.ItemPool_ElectricBanjo_GoreGirls"',PoolProbability=(DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds"',RowName="GoreGirls",ValueName="LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111"))))
 
+# Loot O' Gram
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns,BalancedItems[0].Weight.BaseValueConstant,0,,0
+
 ###
 ### Rare Spawn updates taken from Week 2 Event
 ###

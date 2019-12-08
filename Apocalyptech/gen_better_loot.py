@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# TODO: Earl's loot-o-gram pool
-
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('better_loot.txt',
@@ -552,6 +550,15 @@ for letter in ['a', 'b', 'c', 'd']:
                 )
             )
             """)
+mod.newline()
+
+# Loot O' Gram (obviously not a boss, but them's the breaks)
+# The first item in the pool is a "common" gun drop, the rest are the uniques
+mod.comment("Loot O' Gram")
+mod.reg_hotfix(Mod.LEVEL, 'Sanctuary3_P',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns',
+        'BalancedItems[0].Weight.BaseValueConstant',
+        0)
 mod.newline()
 
 mod.header('Rare Spawn updates taken from Week 2 Event')
