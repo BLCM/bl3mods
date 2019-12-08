@@ -108,12 +108,17 @@ class Mod(object):
         """
         return ''.join([l.strip() for l in str(value).splitlines()])
 
-    def reg_hotfix(self, hf_type, package, obj_name, attr_name, new_val, prev_val=''):
+    def reg_hotfix(self, hf_type, package, obj_name, attr_name, new_val, prev_val='', notify=False):
         """
         Writes a regular hotfix to the mod file
         """
-        print('{hf_type},(1,1,0,{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+        print('{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
             hf_type=Mod.TYPE[hf_type],
+            notification_flag=notification_flag,
             package=package,
             obj_name=obj_name,
             attr_name=attr_name,
@@ -123,12 +128,17 @@ class Mod(object):
             ), file=self.df)
         self.last_was_newline = False
 
-    def table_hotfix(self, hf_type, package, obj_name, row_name, attr_name, new_val, prev_val=''):
+    def table_hotfix(self, hf_type, package, obj_name, row_name, attr_name, new_val, prev_val='', notify=False):
         """
         Writes a regular hotfix to the mod file
         """
-        print('{hf_type},(1,2,0,{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+        print('{hf_type},(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
             hf_type=Mod.TYPE[hf_type],
+            notification_flag=notification_flag,
             package=package,
             obj_name=obj_name,
             row_name=row_name,

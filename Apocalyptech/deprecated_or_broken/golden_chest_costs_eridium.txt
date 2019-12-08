@@ -1,0 +1,9 @@
+# Testing this out.  Something like this *might* work, but I don't
+# think I've got the object/attr references right.  Even if this does
+# apply, though, I'm not sure if it'd just be an entirely-visual
+# change or if it'd actually do what I was trying.  Anyway, doesn't
+# work as-is.
+
+prefix: GoldenEridium
+
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Lootables/_Design/Classes/Sanctuary/BPIO_Lootable_Global_GoldenKey.Default__BPIO_Lootable_Global_GoldenKey_C,PrimaryUseDefSelection.DefaultUseDefinition,0,,UsableTypeDefinition'/Game/UI/InteractionPrompt/UIData_TyphonGunGun.UIData_TyphonGunGun'
