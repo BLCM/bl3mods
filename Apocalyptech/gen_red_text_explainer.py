@@ -989,7 +989,7 @@ for (gear_name, obj_name, redtext, explanation) in [
             "Kinda, sorta wants to end all existence.",
             "refills magazine on kill"),
         ("Tankman's Shield",
-            '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_TankmanUIStat_RedText_Tankman',
+            '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_Tankman.UIStat_RedText_Tankman',
             "You ever seen this dude tank anything ever?",
             ON_CARD),
         ('S3RV-80S-EXECUTE',

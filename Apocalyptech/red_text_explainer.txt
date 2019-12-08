@@ -626,7 +626,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Desig
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/UIStat_RedText_Juju.UIStat_RedText_Juju,Text,0,,[Flavor]Kinda, sorta wants to end all existence.[/Flavor] (refills magazine on kill)
 
 # Tankman's Shield
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_TankmanUIStat_RedText_Tankman,Text,0,,[Flavor]You ever seen this dude tank anything ever?[/Flavor] (all effects on card)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/UIStat_RedText_Tankman.UIStat_RedText_Tankman,Text,0,,[Flavor]You ever seen this dude tank anything ever?[/Flavor] (all effects on card)
 
 # S3RV-80S-EXECUTE
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/UIStat_RedText_Execute.UIStat_RedText_Execute,Text,0,,[Flavor]Touch of death requires mastery of combo strikes.[/Flavor] (enemies hit with reload take more damage?)
