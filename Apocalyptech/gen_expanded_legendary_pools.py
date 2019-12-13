@@ -99,6 +99,15 @@ pools = [
                 # Zheitsev's Eruption
                 ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/Balance/Balance_AR_COV_Zheitsev.Balance_AR_COV_Zheitsev', 1),
 
+                ### DLC1 (Moxxi's Heist)
+
+                # Digby's Smooth Tube
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Digby/Balance/Balance_DAL_AR_Digby.Balance_DAL_AR_Digby', 1*addition_scale),
+                # Brad Luck
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/Balance/Balance_AR_COV_Trash.Balance_AR_COV_Trash', 1*addition_scale),
+                # La Varlope
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Varlope/Balance/Balance_AR_TOR_Varlope.Balance_AR_TOR_Varlope', 1),
+
                 ### Additions
 
                 # Earworm
@@ -131,6 +140,15 @@ pools = [
                 ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Tunguska/Balance/Balance_HW_TOR_Tunguska.Balance_HW_TOR_Tunguska', 1),
                 # Jericho
                 ('/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/Balance/Balance_HW_VLA_CloudBurst.Balance_HW_VLA_CloudBurst', 1),
+
+                ### DLC1 (Moxxi's Heist)
+
+                # Creamer
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/Balance/Balance_HW_TOR_Creamer.Balance_HW_TOR_Creamer', 1),
+                # ION CANNON
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Balance/Balance_HW_VLA_IonCannon.Balance_HW_VLA_IonCannon', 1),
+                # Nukem
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Balance/Balance_HW_TOR_Nukem.Balance_HW_TOR_Nukem', 1),
 
                 ### Additions
 
@@ -209,6 +227,17 @@ pools = [
                 ('/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon', 1),
                 # S3RV-80S-EXECUTE
                 ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/Balance/Balance_PS_TED_Execute.Balance_PS_TED_Execute', 1),
+
+                ### DLC1 (Moxxi's Heist)
+
+                # Craps
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Craps/Balance/Balance_PS_TOR_Craps.Balance_PS_TOR_Craps', 1),
+                # Lucky 7
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7.Balance_PS_JAK_Lucky7', 1),
+                # Robo-Melter
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/RoboMasher/Balance/Balance_PS_JAK_RoboMasher.Balance_PS_JAK_RoboMasher', 1*addition_scale),
+                # Scoville
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Scoville/Balance/Balance_PS_TOR_Scoville.Balance_PS_TOR_Scoville', 1),
 
                 ### Additions
 
@@ -305,6 +334,15 @@ pools = [
                 # Vosk's Deathgrip
                 ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Balance/Balance_SG_MAL_DeathGrip.Balance_SG_MAL_DeathGrip', 1),
 
+                ### DLC1 (Moxxi's Heist)
+
+                # Heart Breaker
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/HeartBreaker/Balance/Balance_SG_HYP_HeartBreaker.Balance_SG_HYP_HeartBreaker', 1),
+                # Melt Facer
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/MeltFacer/Balance/Balance_SG_HYP_MeltFacer.Balance_SG_HYP_MeltFacer', 1*addition_scale),
+                # Slow Hand
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand.Balance_SG_HYP_SlowHand', 1),
+
                 ### Additions
 
                 # Phebert
@@ -381,6 +419,19 @@ pools = [
                 # Crader's EM-P5
                 ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5', 1),
 
+                ### DLC1 (Moxxi's Heist)
+
+                # Boomer
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/Balance/Balance_SM_DAL_Boomer.Balance_SM_DAL_Boomer', 1),
+                # Cheap Tips
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/CheapTips/Balance/Balance_SM_HYP_CheapTips.Balance_SM_HYP_CheapTips', 1),
+                # Ember's Purge
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/EmbersPurge/Balance/Balance_SM_MAL_EmbersPurge.Balance_SM_MAL_EmbersPurge', 1),
+                # ION LASER
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Balance/Balance_SM_MAL_IonLaser.Balance_SM_MAL_IonLaser', 1),
+                # Just Kaus
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/Balance/Balance_SM_HYP_JustCaustic.Balance_SM_HYP_JustCaustic', 1*addition_scale),
+
                 ### Additions
 
                 # Hellfire
@@ -447,6 +498,11 @@ pools = [
 
                 # Tankman's Shield
                 ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman', 1),
+
+                ### DLC1 (Moxxi's Heist)
+
+                # AutoAimè
+                ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/Balance/Balance_SR_DAL_AutoAime.Balance_SR_DAL_AutoAime', 1),
 
                 ### Additions
 
@@ -525,6 +581,17 @@ pools = [
                 # Re-Charger variant
                 ('/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger', 1),
 
+                ### DLC1 (Moxxi's Heist)
+                
+                # All-in
+                ('/Game/PatchDLC/Dandelion/Gear/Shield/Clover/Balance/InvBalD_Shield_Clover.InvBalD_Shield_Clover', 1*addition_scale),
+                # Double Downer
+                ('/Game/PatchDLC/Dandelion/Gear/Shield/DoubleDowner/Balance/InvBalD_Shield_DoubleDowner.InvBalD_Shield_DoubleDowner', 1*addition_scale),
+                # Ember's Blaze
+                ('/Game/PatchDLC/Dandelion/Gear/Shield/Ember/Balance/InvBalD_Shield_Ember.InvBalD_Shield_Ember', 1*addition_scale),
+                # Rico
+                ('/Game/PatchDLC/Dandelion/Gear/Shield/Rico/Balance/InvBalD_Shield_Rico.InvBalD_Shield_Rico', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -596,6 +663,13 @@ pools = [
 
                 # Ghast Call
                 ('/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/InvBalD_GM_TOR_FontOfDarkness.InvBalD_GM_TOR_FontOfDarkness', 1),
+
+                ### DLC1 (Moxxi's Heist)
+
+                # Acid Burn
+                ('/Game/PatchDLC/Dandelion/Gear/Grenade/AcidBurn/Balance/InvBalD_GM_AcidBurn.InvBalD_GM_AcidBurn', 1*addition_scale),
+                # Slider
+                ('/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider', 1*addition_scale),
 
                 ### Additions
 

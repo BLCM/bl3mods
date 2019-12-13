@@ -658,3 +658,66 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/UIStat_RedT
 # P2P Networker
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[Flavor]You wouldn't download a car.[/Flavor] (unknown - strange alt-fire mode?)
 
+# AutoAimè
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/UIStat_RedText_AutoAime.UIStat_RedText_AutoAime,Text,0,,[Flavor]OGC HOOKED[/Flavor] (homing bullets, though they must be close to activate)
+
+# Boomer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/UIStat_RedText_Boomer.UIStat_RedText_Boomer,Text,0,,[Flavor]Some like it hot.[/Flavor] (bullets explode with [fire]incendiary[/fire] effect)
+
+# Cheap Tips
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/CheapTips/UIStat_RedText_CheapTips.UIStat_RedText_CheapTips,Text,0,,[Flavor]I'll get home early from work.[/Flavor] (all effects on card)
+
+# Craps
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Craps/UIStat_RedText_Craps.UIStat_RedText_Craps,Text,0,,[Flavor]Oh me.[/Flavor] (has a chance to fire 5 bullets instead of just 1)
+
+# Creamer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/UIStat_RedText_Creamer.UIStat_RedText_Creamer,Text,0,,[Flavor]non-dairy[/Flavor] (rocket explodes mid-flight and splits into two)
+
+# Digby's Smooth Tube
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Digby/UIStat_RedText_Digby.UIStat_RedText_Digby,Text,0,,[Flavor]Hot or cool, man, hyperjazz is hyperjazz.[/Flavor] (plays a saxophone sound with each shot)
+
+# Ember's Purge
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/EmbersPurge/UIStat_RedText_EmbersPurge.UIStat_RedText_EmbersPurge,Text,0,,[Flavor]She's the only one who knows what it is to burn.[/Flavor] (crits (maybe all shots?) have a chance to spawn an [fire]incendiary[/fire] pool)
+
+# Heart Breaker
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/HeartBreaker/UIStat_RedText_HeartBreaker.UIStat_RedText_HeartBreaker,Text,0,,[Flavor]I don't want to set the world on fire...[/Flavor] (restores health based on damage dealt, fires in heart-shaped pattern)
+
+# ION CANNON
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/UIStat_RedText_IonCannon.UIStat_RedText_IonCannon,Text,0,,[Flavor]Fun Detected: Obliterate.[/Flavor] (hold to charge)
+
+# ION LASER
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/UIStat_RedText_IonLaser.UIStat_RedText_IonLaser,Text,0,,[Flavor]Particles unite![/Flavor] (beam weapon, shoots additional projectiles at end based on trigger hold time)
+
+# Just Kaus
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/UIStat_RedText_JustCaustic.UIStat_RedText_JustCaustic,Text,0,,[Flavor]I like to keep my lists short.[/Flavor] (unknown)
+
+# Lucky 7
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/UIStat_RedText_Lucky7.UIStat_RedText_Lucky7,Text,0,,[Flavor]O Fortuna.[/Flavor] (random effects rolled on reload, active for next mag)
+
+# Melt Facer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/MeltFacer/UIStat_RedText_MeltFacer.UIStat_RedText_MeltFacer,Text,0,,[Flavor]Get melted.[/Flavor] (unknown)
+
+# Nukem
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/UIStat_RedText_Nukem.UIStat_RedText_Nukem,Text,0,,[Flavor]Name dropper.[/Flavor] (projectiles fly in arc and explode in mushroom cloud)
+
+# Robo-Melter
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/RoboMasher/UIStat_RedText_RoboMasher.UIStat_RedText_RoboMasher,Text,0,,[Flavor]Reduce. Reuse. Recycle. Reload.[/Flavor] (always [corrosive]corrosive[/corrosive] (anything else?))
+
+# Scoville
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Scoville/UIStat_RedText_Scoville.UIStat_RedText_Scoville,Text,0,,[Flavor]Put a little pepper on the end of it.[/Flavor] (lobbed [fire]incendiary[/fire] balls which explode)
+
+# Slow Hand
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/UIStat_RedText_SlowHand.UIStat_RedText_SlowHand,Text,0,,[Flavor]Take your time, Sugar...[/Flavor] (slow-moving projectile, high elemental damage and splash, heals a percentage of damage dealt)
+
+# Brad Luck
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/UIStat_RedText_Trash.UIStat_RedText_Trash,Text,0,,[Flavor]Brad to the bone.[/Flavor] (fire rate varies over time)
+
+# La Varlope
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Varlope/UIStat_RedText_Varlope.UIStat_RedText_Varlope,Text,0,,[Flavor]Just take a little off the top.[/Flavor] (full auto, speedy rapid-fire missiles which fly in arc)
+
+# Acid Burn
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Grenade/AcidBurn/UI/UIStat_RedText_AcidBurn.UIStat_RedText_AcidBurn,Text,0,,[Flavor]Hack the Planet![/Flavor] (all effects on card)
+
+# Slider
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Name/UIStat_RedText_Slider.UIStat_RedText_Slider,Text,0,,[Flavor]Same planet, different dimension.[/Flavor] (travels in a perfectly straight line, small radius)
+
