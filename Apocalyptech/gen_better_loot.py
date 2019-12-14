@@ -318,6 +318,7 @@ for (label, row_name, char_name) in [
     set_legendary_odds(mod, char_name, row_name, 1)
     mod.newline()
 
+# Maliwan Takedown Bosses
 for (label, row_name, char_name) in [
         ('Wotan the Invincible', 'RaidBoss', 'BPChar_BehemothRaid'),
         ("Wotan's Brain", 'RaidBoss', 'BPChar_SpiderBrain'),
@@ -327,6 +328,26 @@ for (label, row_name, char_name) in [
 
     mod.comment(label)
     set_legendary_odds(mod, char_name, row_name, 1, obj_name='/Game/PatchDLC/Raid1/GameData/Loot/Table_Legendary_SpecificLootOdds_Raid1.Table_Legendary_SpecificLootOdds_Raid1')
+    mod.newline()
+
+# DLC1 (Dandelion; Moxxi's Heist) drop rates
+# TODO: enemy data isn't really in here yet, need to properly populate these.  We
+# don't have BPChars for most, and I don't think we can be sure of the few that we
+# do have (also don't have official names for most!)
+for (label, row_name, char_name) in [
+        #('Venchy / Degen3', 'Kill_Degen3', 'BPChar_LoaderBadass_Venchy'),
+        #('Loco Chantelle', 'Kill_LocoChantelle', 'foo'),
+        #('Gorgeous Armada', 'Kill_GorgeousArmada', 'foo'),
+        #('Goat Eater', 'Kill_GoatEater', 'foo'),
+        #('St. Lawrence', 'Kill_StLawrence', 'foo'),
+        #('Freddie', 'Freddie', 'foo'),
+        #('Scaptrap Prime', 'ScraptrapPrime', 'BPChar_ClaptrapQueen'), # Two items in this pool!
+        #('Fabricator', 'Fabricator', 'BPChar_FabrikatorBasic'),
+        #('Jackbot', 'Jackbot', 'foo'), # Three items in this pool!
+        ]:
+
+    mod.comment(label)
+    set_legendary_odds(mod, char_name, row_name, 1, obj_name='/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion')
     mod.newline()
 
 mod.header_lines(['Extra Guaranteed Boss Drop Statements', '(mostly gleaned from the Week 1 hotfixes)'])
