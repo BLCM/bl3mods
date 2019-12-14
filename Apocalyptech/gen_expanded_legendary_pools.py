@@ -3,12 +3,22 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
+def get_full_object(obj_name):
+    if obj_name is None:
+        return None
+    endpart = obj_name.rsplit('/', 1)[-1]
+    if '.' in endpart:
+        return obj_name
+    else:
+        return '{}.{}'.format(obj_name, endpart)
+
 def set_pool(mod, pool_to_set, balances):
 
     parts = []
     for (bal, weight) in balances:
+        full_bal = get_full_object(bal)
         part = '(InventoryBalanceData={},ResolvedInventoryBalanceData=InventoryBalanceData\'"{}"\',Weight=(BaseValueConstant={}))'.format(
-                bal, bal,
+                full_bal, full_bal,
                 round(weight, 6),
                 )
         parts.append(part)
@@ -704,6 +714,82 @@ pools = [
                 # NOG Potion #9
                 ('/Game/Gear/GrenadeMods/_Design/_Unique/WizardOfNOG/Balance/InvBalD_GM_WizardOfNOG.InvBalD_GM_WizardOfNOG', 1*addition_scale),
                 ]),
+
+        ('Beastmaster COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary',
+            [
+                # Stock COMs
+                ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Beastmaster_05_Legendary', 6),
+
+                # Mayhem 4 / Maliwan Takedown - R4kk P4k
+                ('/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_Raid1', 1),
+
+                # DLC1 - St4ckbot
+                ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_DLC1', 1),
+
+                ]),
+
+        ('Gunner COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
+            [
+                # Stock COMs
+                ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Gunner_05_Legendary', 5),
+
+                # Mayhem 4 / Maliwan Takedown - Raging Bear
+                ('/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_Raid1', 1),
+
+                # DLC1 - Green Monster
+                ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_DLC1', 1),
+
+                ]),
+
+        ('Operative COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary.ItemPool_ClassMods_Operative_05_Legendary',
+            [
+                # Stock COMs
+                ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Operative_05_Legendary', 5),
+
+                # Mayhem 4 / Maliwan Takedown - Antifreeze
+                ('/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_Raid1', 1),
+
+                # DLC1 - Seein' Dead
+                ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_DLC1', 1),
+
+                ]),
+
+        ('Siren COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
+            [
+                # Stock COMs
+                ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_05_Legendary', 5),
+
+                # Mayhem 4 / Maliwan Takedown - Spiritual Driver
+                ('/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_Raid1', 1),
+
+                # DLC1 - Golden Rule
+                ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1', 1),
+
+                ]),
+
+        ('Artifacts', '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary',
+            [
+                ### Original Pool
+
+                ('/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary', 14),
+
+                ### Additions
+
+                # Unleash the Dragon
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/ElDragonJr/Balance/InvBalD_Artifact_ElDragonJr', 1),
+                # Electric Banjo
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/ElectricBanjo/Balance/InvBalD_Artifact_ElectricBanjo', 1),
+                # Grave
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave', 1),
+                # Phoenix Tears
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/PhoenixTears/Balance/InvBalD_Artifact_PhoenixTears', 1),
+                # Road Warrior
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/RoadWarrior/Balance/InvBalD_Artifact_RoadWarrior', 1*addition_scale),
+                # Vault Hunter's Relic
+                ('/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/VaultHunterRelic/Balance/InvBalD_Artifact_Relic', 1*addition_scale),
+
+                ]),
+
     ]
 
 for (label, pool, balances) in pools:

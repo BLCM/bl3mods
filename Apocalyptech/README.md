@@ -45,10 +45,10 @@ recent BL3 patches.
   anointments, etc, from the very beginning of the game.  The main things I
   still haven't figured out is unlocking the Eridian Resonator and Translator,
   so those are still locked behind story progression.
-- `expanded_legendary_pools.txt` - Adds all unique items into the main
+- `expanded_legendary_pools.txt` - Adds all legendary/unique items into the main
   legendary drop pools, not that BL3 needs bigger legendary pools.  Includes
-  all Bloody Harvest, Maliwan Takedown, and Mayhem 4 items (which will drop
-  regardless of Mayhem level, even in normal).
+  all Bloody Harvest, Maliwan Takedown, Mayhem 4 items (which will drop
+  regardless of Mayhem level, even in normal), and DLC1 items.
 - `testing_loot_drops.txt` - A version of my modder's-resource mod that I
   use for testing out things like Expanded Legendary Pools.  All Standard-drop
   enemies will drop five items from the specified pool.

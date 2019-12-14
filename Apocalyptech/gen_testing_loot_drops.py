@@ -36,17 +36,27 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
+do_pool_set = False
+
 # This one's my usual 'rotating' pool that gets used
-pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
-extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
+#extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
 #extra_pool_bit = 'ItemPool_Shotguns_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
 #extra_pool_bit = 'ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
 #extra_pool_bit = 'ItemPool_GrenadeMods_05_Legendary'
-#pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
-#extra_pool_bit = 'ItemPool_Artifacts'
+pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
+extra_pool_bit = 'ItemPool_Artifacts_05_Legendary'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'
+#extra_pool_bit = 'ItemPool_ClassMods_05_Legendary'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'
+#extra_pool_bit = 'ItemPool_ClassMods_Beastmaster_05_Legendary'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'
+#extra_pool_bit = 'ItemPool_ClassMods_Gunner_05_Legendary'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'
+#extra_pool_bit = 'ItemPool_ClassMods_Operative_05_Legendary'
 
 # Weapon skin test, don't recall if this worked or not.
 #pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
@@ -245,8 +255,9 @@ balances = [
         '/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider',
         ]
 
-set_pool(mod, '{}.{}'.format(pool_to_set, extra_pool_bit), balances)
-#, mainattr='CustomizationInventoryBalanceData', baltype='CustomizationInventoryBalanceData')
+if do_pool_set:
+    set_pool(mod, '{}.{}'.format(pool_to_set, extra_pool_bit), balances)
+    #, mainattr='CustomizationInventoryBalanceData', baltype='CustomizationInventoryBalanceData')
 
 for char in [
         # TODO: This isn't actually sufficient; if you spawn in Floodmoor Basin, for
