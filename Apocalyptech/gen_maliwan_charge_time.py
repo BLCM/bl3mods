@@ -50,50 +50,67 @@ def charge_time(mod,
 
 # Put in our improvements
 mod.header('Generic Weapons')
-for (label, obj_name, default, scale) in [
+for (label, obj_name, aspect_num, default, scale) in [
+        # Eh, the name 'AspectList_WeaponUseModeSecondaryAspectData' doesn't exist in this object, which I think is the main
+        # thing screwing up altering this.
+        #('Pistol: Atomizer',
+        #    '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_PS_MAL_Barrel_01.Part_PS_MAL_Barrel_01',
+        #    2,
+        #    0.5,
+        #    scale_pistol),
         ('Pistol: Blaster',
             '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_03/Part_PS_MAL_Barrel_03.Part_PS_MAL_Barrel_03',
+            0,
             0.7,
             scale_pistol),
         ('Shotgun: Terminator',
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_SG_MAL_Barrel_01.Part_SG_MAL_Barrel_01',
+            1,
             0.7,
             scale_shotgun),
         ('Shotgun: Shockwave',
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SG_MAL_Barrel_02.Part_SG_MAL_Barrel_02',
+            1,
             1.05,
             scale_shotgun),
         ('Shotgun: Cyclotron',
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_03/Part_SG_MAL_Barrel_03.Part_SG_MAL_Barrel_03',
+            1,
             0.9,
             scale_shotgun),
         ('SMG: Pulsar',
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_SM_MAL_Barrel_01.Part_SM_MAL_Barrel_01',
+            1,
             0.75,
             scale_smg),
         ('SMG: Nebula',
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_02/Part_SM_MAL_Barrel_02.Part_SM_MAL_Barrel_02',
+            1,
             0.85,
             scale_smg),
         ('SMG: Quasar',
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_03/Part_SM_MAL_Barrel_03.Part_SM_MAL_Barrel_03',
+            1,
             1.0,
             scale_smg),
         ('Sniper Rifle: Multiplex',
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_01/Part_MAL_SR_Barrel_01.Part_MAL_SR_Barrel_01',
+            1,
             1.1,
             scale_sniper),
         ('Sniper Rifle: Particle Rifle',
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_02/Part_MAL_SR_Barrel_02.Part_MAL_SR_Barrel_02',
+            1,
             0.9,
             scale_sniper),
         ('Sniper Rifle: Proton Rifle',
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Barrel/Barrel_03/Part_MAL_SR_Barrel_03.Part_MAL_SR_Barrel_03',
+            1,
             1.75,
             scale_sniper),
         ]:
     mod.comment('{} (default: {})'.format(label, default))
-    charge_time(mod, obj_name, default*scale)
+    charge_time(mod, obj_name, default*scale, aspect_list=aspect_num)
     mod.newline()
 
 mod.header('Legendaries/Uniques')
@@ -202,7 +219,13 @@ for label, obj_name, default, scale in [
 #    charge_time(mod, obj_name, default*scale, aspect_list=aspect_idx, aspect_attr=aspect_attr)
 #    mod.newline()
 
-# No idea why these don't work...
+# So, pistols.  Every other maliwan gun's .uasset file has the name "AspectList_WeaponUseModeSecondaryAspectData"
+# defined, which is used after the colon in the object name to reference things properly - you start with the
+# AspectList, head to the WeaponUseModeSecondaryAspectData, and get to the Component from there.  Atomizers,
+# Melters, and the Starkiller don't actually have that name, though, and I couldn't tell you how to get to the
+# right object without it, though I've tried a bunch of different ways.  So, eh.  Perhaps if I ever get a console
+# with at least `getall` I could get a better feel for it and find a syntax that works, but I'm continuing to
+# just give up for now.
 #mod.comment('Pistol Tests...')
 #for obj_name, new_val in [
 #        ('/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Barrel/Barrel_01/Part_PS_MAL_Barrel_01.Part_PS_MAL_Barrel_01', 5),
