@@ -72,6 +72,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique
 # E-Gone (default: 0.85)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/Parts/Part_SM_MAL_Barrel_Egon.Part_SM_MAL_Barrel_Egon:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.425000)
 
+# Ember's Purge (default: 0.75)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/EmbersPurge/Parts/Part_SM_MAL_Barrel_EmbersPurge.Part_SM_MAL_Barrel_EmbersPurge:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.375000)
+
 # The Emperor's Condiment (default: 0.85)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Emporer/Parts/Part_SM_MAL_Barrel_Emporer.Part_SM_MAL_Barrel_Emporer:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.425000)
 
@@ -80,6 +83,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/
 
 # Hellshock (default: 0.8)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Parts/Part_PS_MAL_Barrel_HellShock.Part_PS_MAL_Barrel_HellShock:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.400000)
+
+# ION LASER (default: 0.45)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Parts/Part_SM_MAL_Barrel_IonLaser.Part_SM_MAL_Barrel_IonLaser:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.225000)
 
 # Kill-o'-the-Wisp (default: 1.0)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Wisp/Parts/Part_SG_MAL_Barrel_Wisp.Part_SG_MAL_Barrel_Wisp:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.400000)

@@ -7,6 +7,7 @@ scale_pistol = 0.5
 scale_shotgun = 0.4
 scale_smg = 0.5
 scale_sniper = 0
+scale_heavy = 0.5
 
 mod = Mod('maliwan_charge_time.txt',
         'Buffed Maliwan Charge Times',
@@ -23,17 +24,26 @@ mod = Mod('maliwan_charge_time.txt',
             'Shotgun Scaling: {:d}%'.format(int(scale_shotgun*100)),
             'SMG Scaling: {:d}%'.format(int(scale_smg*100)),
             'Sniper Scaling: {:d}%'.format(int(scale_sniper*100)),
+            #'',
+            #"Also (possibly) buffs the charge time for the ION CANNON, even though it's a Vladof gun.",
         ],
         'MaliwanCharge',
         )
 
-def charge_time(mod, obj_name, new_val, final_attr='ChargeTime', prev_val=None, aspect_list=1):
+def charge_time(mod,
+        obj_name,
+        new_val,
+        final_attr='ChargeTime',
+        prev_val=None,
+        aspect_list=1,
+        aspect_attr='Component_BPWeaponChargeComponent_MAL',
+        ):
     if prev_val is None:
         prev_val = ''
     else:
         prev_val = '(BaseValue={:.6f})'.format(prev_val)
     mod.reg_hotfix(Mod.PATCH, '',
-            '{}:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL'.format(obj_name),
+            '{}:AspectList_WeaponUseModeSecondaryAspectData.{}'.format(obj_name, aspect_attr),
             'AspectList.AspectList[{}].Object..Component.Object..{}'.format(aspect_list, final_attr),
             '(BaseValue={:.6f})'.format(new_val),
             prev_val=prev_val)
@@ -108,6 +118,10 @@ for label, obj_name, default, scale in [
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/Parts/Part_SM_MAL_Barrel_Egon.Part_SM_MAL_Barrel_Egon',
             0.85,
             scale_smg),
+        ("Ember's Purge",
+            '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/EmbersPurge/Parts/Part_SM_MAL_Barrel_EmbersPurge.Part_SM_MAL_Barrel_EmbersPurge',
+            0.75,
+            scale_smg),
         ("The Emperor's Condiment",
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Emporer/Parts/Part_SM_MAL_Barrel_Emporer.Part_SM_MAL_Barrel_Emporer',
             0.85,
@@ -120,6 +134,10 @@ for label, obj_name, default, scale in [
             '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Parts/Part_PS_MAL_Barrel_HellShock.Part_PS_MAL_Barrel_HellShock',
             0.8,
             scale_pistol),
+        ('ION LASER',
+            '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Parts/Part_SM_MAL_Barrel_IonLaser.Part_SM_MAL_Barrel_IonLaser',
+            0.45,
+            scale_smg),
         ("Kill-o'-the-Wisp",
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Wisp/Parts/Part_SG_MAL_Barrel_Wisp.Part_SG_MAL_Barrel_Wisp',
             1.0,
@@ -169,6 +187,21 @@ for label, obj_name, default, scale in [
     charge_time(mod, obj_name, default*scale)
     mod.newline()
 
+# This doesn't seem to actually do the trick, and I don't care enough to track
+# it down.  Was technically out-of-place anyway.
+#mod.header('Non-Maliwan Weapons')
+#for label, obj_name, aspect_attr, aspect_idx, default, scale in [
+#        ('ION CANNON (Vladof Heavy Weapon)',
+#            '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Parts/Part_HW_VLA_Barrel_IonCannon.Part_HW_VLA_Barrel_IonCannon',
+#            'Component_WeaponChargeComponent',
+#            7,
+#            2,
+#            scale_heavy),
+#        ]:
+#    mod.comment('{} (default: {})'.format(label, default))
+#    charge_time(mod, obj_name, default*scale, aspect_list=aspect_idx, aspect_attr=aspect_attr)
+#    mod.newline()
+
 # No idea why these don't work...
 #mod.comment('Pistol Tests...')
 #for obj_name, new_val in [
@@ -182,6 +215,11 @@ for label, obj_name, default, scale in [
 # absence of an in-game console, or other introspection methods!  It's... fun?
 #
 # (no, it's not, really)
+#
+# This method is quite obsolete now that we've discovered JohnWickParse, which
+# doesn't serialize *all* the Barrel part data, but does serialize enough that
+# you can get the value right from the JSON file.  Leaving it in just out of
+# some weird nostalgia, but JWP is the way to go.
 
 # Figuring out defaults by basically doing set_cmp on a wide range of possible values,
 # setting the new value to some obviously-distinct times.  I used 3-second intervals
