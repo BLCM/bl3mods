@@ -49,6 +49,9 @@ recent BL3 patches.
   legendary drop pools, not that BL3 needs bigger legendary pools.  Includes
   all Bloody Harvest, Maliwan Takedown, Mayhem 4 items (which will drop
   regardless of Mayhem level, even in normal), and DLC1 items.
+- `better_slots.txt` - Better results for slot machines.  A bit silly, but
+  whatever.  Turns out there aren't any unique heads/skins/whatever to be
+  had from them, so these just buff the gear.
 - `testing_loot_drops.txt` - A version of my modder's-resource mod that I
   use for testing out things like Expanded Legendary Pools.  All Standard-drop
   enemies will drop five items from the specified pool.

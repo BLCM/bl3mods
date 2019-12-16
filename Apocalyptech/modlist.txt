@@ -31,6 +31,7 @@ maliwan_charge_time
 early_bloomer
 better_loot
 expanded_legendary_pools
+better_slots
 
 # Bloody Harvest toggles
 #bloody_harvest_enable
