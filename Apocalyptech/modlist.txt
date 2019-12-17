@@ -27,6 +27,9 @@ red_text_explainer
 # Improve Maliwan charge times
 maliwan_charge_time
 
+# Disable non-legendary/unique slam artifacts
+no_slam_artifacts
+
 # Sort-of recreations of my BL2/TPS stuff
 early_bloomer
 better_loot

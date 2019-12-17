@@ -47,8 +47,8 @@ do_pool_set = False
 #extra_pool_bit = 'ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
 #extra_pool_bit = 'ItemPool_GrenadeMods_05_Legendary'
-pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
-extra_pool_bit = 'ItemPool_Artifacts_05_Legendary'
+#pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
+#extra_pool_bit = 'ItemPool_Artifacts_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'
 #extra_pool_bit = 'ItemPool_ClassMods_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'
@@ -57,6 +57,10 @@ extra_pool_bit = 'ItemPool_Artifacts_05_Legendary'
 #extra_pool_bit = 'ItemPool_ClassMods_Gunner_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'
 #extra_pool_bit = 'ItemPool_ClassMods_Operative_05_Legendary'
+#pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_03_Rare'
+#extra_pool_bit = 'ItemPool_Artifacts_03_Rare'
+pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
+extra_pool_bit = 'ItemPool_Artifacts'
 
 # Weapon skin test, don't recall if this worked or not.
 #pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
@@ -117,7 +121,7 @@ balances = [
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/Balance/Balance_PS_MAL_Plumber.Balance_PS_MAL_Plumber',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists.Balance_PS_MAL_ThunderballFists',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/Balance/Balance_PS_MAL_HyperHydrator.Balance_PS_MAL_HyperHydrator',
-        #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Starkiller/Balance/Balance_PS_MAL_Starkiller.Balance_PS_MAL_Starkiller',
+        '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Starkiller/Balance/Balance_PS_MAL_Starkiller.Balance_PS_MAL_Starkiller',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch.Balance_PS_MAL_SuckerPunch',
         #'/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Recursion/Balance/Balance_SG_MAL_Recursion.Balance_SG_MAL_Recursion',
         #'/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Trev/Balance/Balance_SG_MAL_Trev.Balance_SG_MAL_Trev',
@@ -149,6 +153,18 @@ balances = [
 
         # This works to spawn the top-tier bloody harvest reward!
         #'/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01',
+
+        # Golden gun skin? - Okay, this is the same problem as character skins here; _3 is in the global drop
+        # pools, and the values I'm setting there look dead on, given what JohnWickParse gives from the pool,
+        # but they don't drop.  Pff.  _21 is, I believe, the preorder golden weapon skin
+        #'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_21.InvBal_WeaponSkin',
+        #('/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_21.InvBal_WeaponSkin', '/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin.InvBal_WeaponSkin'),
+        #('/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_3.InvBal_WeaponSkin', '/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin.InvBal_WeaponSkin'),
+
+        # Likewise, I think this is the gold trinket, followed by one that *is* in the drop pools.
+        # Neither drop, though.
+        #('Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_51.InvBal_WeaponTrinket', '/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket.InvBal_WeaponTrinket'),
+        #('Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_21.InvBal_WeaponTrinket', '/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket.InvBal_WeaponTrinket'),
 
         # Maliwan Takedown weapons
         # Redistributor
@@ -251,8 +267,8 @@ balances = [
         #'/Game/PatchDLC/Dandelion/Gear/Shield/Rico/Balance/InvBalD_Shield_Rico.InvBalD_Shield_Rico',
 
         # DLC1 (Dandelion) Grenades
-        '/Game/PatchDLC/Dandelion/Gear/Grenade/AcidBurn/Balance/InvBalD_GM_AcidBurn.InvBalD_GM_AcidBurn',
-        '/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider',
+        #'/Game/PatchDLC/Dandelion/Gear/Grenade/AcidBurn/Balance/InvBalD_GM_AcidBurn.InvBalD_GM_AcidBurn',
+        #'/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider',
         ]
 
 if do_pool_set:

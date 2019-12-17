@@ -87,6 +87,11 @@ recent BL3 patches.
   Urns and skull boxes in the Heck Hole will spawn a ghost.  Extracted from
   an official GBX hotfix deployed on Oct 31, 2019 and then extented a bit.
   Requires that the Bloody Harvest event be active, presumably.
+- `no_slam_artifacts.txt` - Makes it so that non-legendary/unique slam-based
+  artifacts never drop.  Did this because I am self-evidentally never going
+  to work slams into my ordinary BL3 combat, and this way there's less
+  junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
+  how slamming works in BL3.
 
 ## OP Gear Mods
 
