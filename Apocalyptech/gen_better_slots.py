@@ -55,11 +55,13 @@ for (label, obj_name, maps, results) in [
                 ('GrenadeMod_Legendary',   2), # default: 0.25
                 ('Cash',                   3), # default: 3
             ]),
-        ('Loot Boxer',
+        ("Loot Boxer (and Moxxi's Heist machines)",
             '/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_LootBoxer.Table_SlotMachinePrizes_LootBoxer',
             [
                 ('Sanctuary', 'Sanctuary3_P'),
                 ('Jakobs Estate', 'Mansion_P'),
+                ('Grand Opening', 'CasinoIntro_P'),
+                ("Jack's Secret", 'Core_P'),
             ],
             [
                 ('Lose',          0),   # default: 25
