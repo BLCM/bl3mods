@@ -12,8 +12,6 @@
 ### have to play around with that, too, once the opportunity
 ### arrives.
 ###
-### NOTE: Untested!
-###
 
 prefix: BHEnable
 
