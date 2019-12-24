@@ -9,6 +9,8 @@ better_mayhem_on_twitch
 
 # Gear changes
 #maggie_super_buff
+craders_emp5_super_buff
+backham_super_buff
 #snowdrift_super_buff
 #stalker_super_buff
 #whispering_ice_slight_buff

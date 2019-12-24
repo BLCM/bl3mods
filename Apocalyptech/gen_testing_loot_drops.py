@@ -36,11 +36,11 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
-do_pool_set = False
+do_pool_set = True
 
 # This one's my usual 'rotating' pool that gets used
-#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
-#extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
+extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
 #extra_pool_bit = 'ItemPool_Shotguns_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
@@ -59,8 +59,8 @@ do_pool_set = False
 #extra_pool_bit = 'ItemPool_ClassMods_Operative_05_Legendary'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_03_Rare'
 #extra_pool_bit = 'ItemPool_Artifacts_03_Rare'
-pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
-extra_pool_bit = 'ItemPool_Artifacts'
+#pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
+#extra_pool_bit = 'ItemPool_Artifacts'
 
 # Weapon skin test, don't recall if this worked or not.
 #pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot',
@@ -121,7 +121,7 @@ balances = [
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/Balance/Balance_PS_MAL_Plumber.Balance_PS_MAL_Plumber',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists.Balance_PS_MAL_ThunderballFists',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/Balance/Balance_PS_MAL_HyperHydrator.Balance_PS_MAL_HyperHydrator',
-        '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Starkiller/Balance/Balance_PS_MAL_Starkiller.Balance_PS_MAL_Starkiller',
+        #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Starkiller/Balance/Balance_PS_MAL_Starkiller.Balance_PS_MAL_Starkiller',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch.Balance_PS_MAL_SuckerPunch',
         #'/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Recursion/Balance/Balance_SG_MAL_Recursion.Balance_SG_MAL_Recursion',
         #'/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Trev/Balance/Balance_SG_MAL_Trev.Balance_SG_MAL_Trev',
@@ -200,7 +200,7 @@ balances = [
 
         # Mayhem 4 Gear:
         # Crader's EM-P5
-        #'/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5',
+        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5',
         # Vosk's Deathgrip
         #'/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Balance/Balance_SG_MAL_DeathGrip.Balance_SG_MAL_DeathGrip',
         # S3RV-80S-EXECUTE
@@ -275,57 +275,79 @@ if do_pool_set:
     set_pool(mod, '{}.{}'.format(pool_to_set, extra_pool_bit), balances)
     #, mainattr='CustomizationInventoryBalanceData', baltype='CustomizationInventoryBalanceData')
 
-for char in [
-        # TODO: This isn't actually sufficient; if you spawn in Floodmoor Basin, for
-        # instance, the enemies around the lodge area don't trigger it.  May have to
-        # expand this list after all!
-        'BPChar_Ape',
-        'BPChar_EnforcerShared',
-        'BPChar_Frontrunner',
-        'BPChar_Goon',
-        'BPChar_GuardianShared',
-        'BPChar_Heavy_Shared',
-        'BPChar_Nekrobug_Shared',
-        'BPChar_Nog',
-        'BPChar_OversphereShared',
-        'BPChar_PsychoShared',
-        'BPChar_PunkShared',
-        'BPChar_Rakk',
-        'BPChar_Ratch',
-        'BPChar_Saurian_Shared',
-        'BPChar_ServiceBot',
-        'BPChar_SkagShared',
-        'BPChar_Spiderant',
-        'BPChar_Tink',
-        'BPChar_Tink_Turret',
-        'BPChar_Trooper',
-        'BPChar_VarkidShared',
+for (pool, chars) in [
+
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear', [
+            # TODO: This isn't actually sufficient; if you spawn in Floodmoor Basin, for
+            # instance, the enemies around the lodge area don't trigger it.  May have to
+            # expand this list after all!
+            'BPChar_Ape',
+            'BPChar_EnforcerShared',
+            'BPChar_Frontrunner',
+            'BPChar_Goon',
+            'BPChar_GuardianShared',
+            'BPChar_Heavy_Shared',
+            'BPChar_Nekrobug_Shared',
+            'BPChar_Nog',
+            'BPChar_OversphereShared',
+            'BPChar_PsychoShared',
+            'BPChar_PunkShared',
+            'BPChar_Rakk',
+            'BPChar_Ratch',
+            'BPChar_Saurian_Shared',
+            'BPChar_ServiceBot',
+            'BPChar_SkagShared',
+            'BPChar_Spiderant',
+            'BPChar_Tink',
+            'BPChar_Tink_Turret',
+            'BPChar_Trooper',
+            'BPChar_VarkidShared',
+
+            # Maliwan Takedown
+            'BPChar_MechBasicMini',
+            'BPChar_MechMeleeMini',
+
+            # Moxxi's Heist
+            'BPChar_EnforcerShared_Stripped',
+            'BPChar_Goon_Stripped',
+            'BPChar_PsychoShared_Stripped',
+            'BPChar_PunkShared_Stripped',
+            'BPChar_TinkStripped',
+            ]),
+
+        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader.ItemPoolList_StandardEnemyGunsandGearLoader', [
+            # Moxxi's Heist
+            'BPChar_HyperionTurretBasic',
+            'BPChar_LoaderShared',
+            'BPChar_WeeLoaderBasic',
+            ]),
+
         ]:
 
-    #set_pool(mod, '{}.{}'.format(pool_to_set, extra_pool_bit), balances, char=char)
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[0].PoolProbability',
-            """(
-                BaseValueConstant=1.000000,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1.000000
-            )""")
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[0].ItemPool',
-            'ItemPoolData\'"{}"\''.format(pool_to_set))
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[0].NumberOfTimesToSelectFromThisPool',
-            """(
-                BaseValueConstant=5.000000,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1.000000
-            )""")
+    for char in chars:
+        mod.reg_hotfix(Mod.CHAR, char,
+                pool,
+                'ItemPools[0].PoolProbability',
+                """(
+                    BaseValueConstant=1.000000,
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1.000000
+                )""")
+        mod.reg_hotfix(Mod.CHAR, char,
+                pool,
+                'ItemPools[0].ItemPool',
+                'ItemPoolData\'"{}"\''.format(pool_to_set))
+        mod.reg_hotfix(Mod.CHAR, char,
+                pool,
+                'ItemPools[0].NumberOfTimesToSelectFromThisPool',
+                """(
+                    BaseValueConstant=5.000000,
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1.000000
+                )""")
 
 mod.close()

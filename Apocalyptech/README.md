@@ -97,7 +97,19 @@ recent BL3 patches.
 
 - `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
   amount of damage.  Mostly just used for testing mods where I don't want
-  to deal with enemies.
+  to deal with enemies.  Also turns the Maggie into an Infinity -- doesn't
+  consume ammo.
+- `craders_emp5_super_buff.txt` - Cheat mod which gives Crader's EM-P5 an
+  absurd amount of damage, infinite ammo, perfect accuracy/handling, increased
+  fire rate, and improves the movement speed buff.  I just moved to this as
+  my mod-testing gun instead of the Maggie because I still haven't figured out
+  how to increase character movement speed in general, but the EM-P5 already
+  has that effect built-in.
+- `backham_super_buff.txt` - Cheat mod which makes the Back Ham practically
+  invulnerable.  It reports a 100% damage reduction, though that's not
+  entirely accurate; some damage can and will get through, but it'll be
+  quite minor.  Damage reduction is applied regardless of the direction it
+  came from, contrary to what the card reports.
 - Bloody Harvest-related buffs (for getting the cryo challenge specifically
   done as easily as possible)
   - `stalker_super_buff.txt` - Used to take down Captain Haunt pretty
