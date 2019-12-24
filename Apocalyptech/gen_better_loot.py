@@ -335,15 +335,17 @@ for (label, row_name, char_name) in [
 # don't have BPChars for most, and I don't think we can be sure of the few that we
 # do have (also don't have official names for most!)
 for (label, row_name, char_name) in [
-        #('Venchy / Degen3', 'Kill_Degen3', 'BPChar_LoaderBadass_Venchy'),
-        #('Loco Chantelle', 'Kill_LocoChantelle', 'foo'),
-        #('Gorgeous Armada', 'Kill_GorgeousArmada', 'foo'),
-        #('Goat Eater', 'Kill_GoatEater', 'foo'),
-        #('St. Lawrence', 'Kill_StLawrence', 'foo'),
-        #('Freddie', 'Freddie', 'foo'),
-        #('Scaptrap Prime', 'ScraptrapPrime', 'BPChar_ClaptrapQueen'), # Two items in this pool!
-        #('Fabricator', 'Fabricator', 'BPChar_FabrikatorBasic'),
-        #('Jackbot', 'Jackbot', 'foo'), # Three items in this pool!
+        ('DEGEN-3', 'Kill_Degen3', 'BPChar_LoaderBadass_Venchy'),
+        ('Evil St. Lawrence', 'Kill_StLawrence', 'BPChar_EnforcerBadass_Lawrence'),
+        ('Fabricator', 'Fabricator', 'BPChar_FabrikatorBasic'),
+        ('Freddie the Traitor', 'Freddie', 'BPChar_TraitorEddie'),
+        ('Gorgeous Armada', 'Kill_GorgeousArmada', 'BPChar_TinkBadass_Giorgio'),
+        ("Jackpot the Jack's Bot", 'Jackbot', 'BPChar_JackBot'), # Three items in this pool!
+        ('Scraptrap Prime', 'ScraptrapPrime', 'BPChar_ClaptrapQueen'), # Two items in this pool!
+
+        # Loco Chantelle and Junpai Goat Eater seem to be using each other's pools, weirdly.
+        ('Loco Chantelle', 'Kill_GoatEater', 'BPChar_GoonBadass_Coco'),
+        ('Junpai Goat Eater', 'Kill_LocoChantelle', 'BPChar_PunkBadass_Gaudy'),
         ]:
 
     mod.comment(label)
@@ -1249,6 +1251,54 @@ for (label, char_name, pool, quantity) in [
             'Quantity',
             '(BaseValueConstant={})'.format(quantity),
             )
+    mod.newline()
+
+# Newer-style quantity, which everything else should really be using.  Namely,
+# NumberOfTimesToSelectFromThisPool.
+for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
+        ("Jackpot the Jack's Bot - Legendary Pool",
+            '/Dandelion/Enemies/JackBot/_Shared/_Design/Character',
+            'BPChar_JackBot',
+            0,
+            3),
+        ("Jackpot the Jack's Bot - Weapon Trinket",
+            '/Dandelion/Enemies/JackBot/_Shared/_Design/Character',
+            'BPChar_JackBot',
+            1,
+            1),
+        ("Jackpot the Jack's Bot - Room Decoration",
+            '/Dandelion/Enemies/JackBot/_Shared/_Design/Character',
+            'BPChar_JackBot',
+            2,
+            1),
+        ('Scraptrap Prime',
+            'Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character',
+            'BPChar_ClaptrapQueen',
+            0,
+            2),
+        ]:
+    mod.comment(label)
+    full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)
+    mod.reg_hotfix(Mod.CHAR, bpchar_name,
+            full_obj_name,
+            'DropOnDeathItemPools.ItemPools[{}].PoolProbability'.format(bpchar_idx),
+            """(
+                BaseValueConstant=1,
+                DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                BaseValueAttribute=None,
+                AttributeInitializer=None,
+                BaseValueScale=1
+            )""")
+    mod.reg_hotfix(Mod.CHAR, bpchar_name,
+            full_obj_name,
+            'DropOnDeathItemPools.ItemPools[{}].NumberOfTimesToSelectFromThisPool'.format(bpchar_idx),
+            """(
+                BaseValueConstant={},
+                DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                BaseValueAttribute=None,
+                AttributeInitializer=None,
+                BaseValueScale=1
+            )""".format(bpchar_qty))
     mod.newline()
 
 # There's at least one case of gera which doesn't drop evenly, so smooth that out.
