@@ -19,29 +19,43 @@ Many of the challenges are quite trivial -- you can get up to the
 second reward unlock with very little effort, but a few of the other
 ones are time-consuming.  So, how do we cheat?
 
-Trinket, ECHO Skin, and Weapon Skin
------------------------------------
+The Easy Way: My "generate testing loot drops" mod
+==================================================
 
-These should all be pretty easily droppable using my
-`gen_testing_loot_drops.py` mod generator.  I've got the Weapon Skin
-commented in there right now; the appropriate balance for that one
-is:
+I finally figured out how to add all customization types to loot pools, so
+my loot drops script can generate all those items quite trivially.  If you
+bring up the generation script, there's already a commented area which you
+can uncomment to add the items to the drop pool.  For reference, though, here
+are all the balances:
+
+    /Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1
+
+    /Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_11.InvBal_ECHOTheme_11
+
+    /Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_40.InvBal_CustomSkin_Beastmaster_40
+    /Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_40.InvBal_CustomSkin_Gunner_40
+    /Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_40.InvBal_CustomSkin_Operative_40
+    /Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_40.InvBal_CustomSkin_Siren_40
 
     /Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01
 
-The Trinket and ECHO Skin balances are probably not difficult to
-find, too, though I didn't bother with those because getting to
-8 challenges is real easy.
+Make sure they're in the list of balances to spawn, run the generation script,
+add it into your `modlist.txt`, and then kill a few enemies to grab whatever
+you're missing.
+
+The Harder Way: Farming Bloody Harvest Efficiently
+==================================================
+
+This method actually just assumes that you're only going so far as
+to get the character skins.  If you're trying to get the weapon
+skin legitimately, I don't really know of any shortcuts for that
+annoying 25-mission requirement.  Good luck with that!  But for
+everything up to the character skins, read on:
 
 Character Skins
 ---------------
 
-This is the trickiest of the bunch, since I have yet to figure out how
-to construct a drop pool which contains character skins.  There's some
-kind of syntax in there which eludes me, in the absence of being able
-to dump objects in-game.
-
-So to get these, you'll have to get all but three challenges on four
+To get to these, you'll have to get all but three challenges on four
 characters.  The "hardest" ones (or at least the most time-consuming),
 if you take into account my cheaty mods, are:
 
@@ -162,7 +176,7 @@ Whatever, you've already cheated your way to the weapon skin.
 
 I didn't time it out explicitly, but I believe the process above takes
 less than an hour per char, which feels like a pretty vast improvement
-on doing it vanilla.  Still nowhere near as good as just figuring out
-character skin drops and letting `gen_testing_loot_drops.py` do all
-the work for you, but it works out pretty well.
+on doing it vanilla.  Still nowhere near as good as just spawning the
+items directly with `gen_testing_loot_drops.py`, but if you don't mind
+the Bloody Harvest combat then it's hardly a chore.
 
