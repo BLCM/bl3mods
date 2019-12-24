@@ -581,7 +581,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/HipHop/Name/UISt
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/TraitorsDeath/UIStat_RedText_TraitorsDeath.UIStat_RedText_TraitorsDeath,Text,0,,[Flavor]Non vo' che più favelle.[/Flavor] (25% chance to deal double damage as [fire]incendiary[/fire])
 
 # Tran-fusion
-SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/UIStat_RedText_TranFusion.UIStat_RedText_TranFusion,Text,0,,[Flavor]Here go, hell come.[/Flavor] (heals for 120% of health damage dealt)
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/UIStat_RedText_TranFusion.UIStat_RedText_TranFusion,Text,0,,[Flavor]Here go, hell come.[/Flavor] (all effects on card)
 
 # Trevonator
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Trev/UIStat_RedText_Trev.UIStat_RedText_Trev,Text,0,,[Flavor]Trev is gunna get you![/Flavor] (no charge time, fires 6 orbs in a burst)

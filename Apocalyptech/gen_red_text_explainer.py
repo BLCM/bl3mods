@@ -915,7 +915,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Tran-fusion',
             '/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/UIStat_RedText_TranFusion.UIStat_RedText_TranFusion',
             "Here go, hell come.",
-            "heals for 120% of health damage dealt"),
+            ON_CARD),
         ('Trevonator',
             '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Trev/UIStat_RedText_Trev.UIStat_RedText_Trev',
             "Trev is gunna get you!",
