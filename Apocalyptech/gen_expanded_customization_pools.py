@@ -161,7 +161,7 @@ for (dirname, shortname) in [
     # Base Game
     for num in range(1, 27):
         balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
-    # Bloody Harvest
+    # Bloody Harvest, Ordering Bonuses, etc
     for num in range(25, 30):
         balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
     # DLC1 - Dandelion
@@ -203,6 +203,8 @@ balances = []
 # Base Game
 for num in range(1, 35):
     balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
+# Unknown weird theme out in a strange location - AMD-themed, can't seem to drop it.
+#balances.append('/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35')
 # Uncategorized DLC
 balances.append('/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_37.InvBal_ECHOTheme_37')
 # Bloody Harvest
