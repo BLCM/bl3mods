@@ -78,40 +78,23 @@ for (rarity, weight) in zip(
             weight)
 mod.newline()
 
-# Increase Eridium and cosmetic drop chances
+# Increase Eridium and cosmetic drop chances (from standard enemies, anyway)
 #
-# Figuring out what elements in the standard drop pool control what
-# Still don't have a great method, but, seems to be:
-#  0 - Health
-#  1 - ammo
-#  2 - 'emergency' ammo
-#  3 - money
-#  4 - Guns
-#  5 - COMs
-#  6 - Shields
-#  7 - Artifacts
-#  8 - Grenades
-#  9 - Cosmetics
-#  10 - Eridium
+# PoolLists which get dropped, and their drop chances:
+# (note that the ones with `WithMayhem_Total` in the name will have
+# different numbers in mayhem mode)
 #
-# The object references
-#
-# Methods tried:
-#   SparkPatchEntry
-#   SparkLevelPatchEntry, with no level
-#   SparkLevelPatchEntry, with specific level
-#   SparkCharacterLoadedEntry, with no character
-#   SparkCharacterLoadedEntry, with specific character <- this *does* seem to work, but then you're defining
-#       that bastard for every char which uses it, yeah? - Update: we can, at least, limit the characters
-#       to ones which specifically reference the pool, which is the "Shared" object for nearly all of 'em.
-#       So at least we don't have to define every single variation of BPChar_*
-#   SparkCharacterLoadedEntry, with BPChar_Enemy
-#   SparkPostLoadedEntry, with no extra arg.  (no idea what this would look like, anyway)
-#   SparkPostLoadedEntry, with ItemPoolList_StandardEnemyGunsandGear
-#   SparkStreamedPackageEntry, with ItemPoolList_StandardEnemyGunsandGear
-#
-# Not tried yet since I just found out about 'em:
-#   SparkStreamedPackageEntry
+#  0 - Health, /Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds -> anywhere from 0.03 to 0.4?
+#  1 - needed ammo, 0.2
+#  2 - 'emergency' ammo, /Game/GameData/Loot/ItemPools/Attributes/Att_GunsAndGear_AmmoEmergency -> 0.2
+#  3 - money, /Game/GameData/Loot/ItemPools/Attributes/Att_Money_DropOdds -> 0.25
+#  4 - Guns, /Game/GameData/Loot/ItemPools/Attributes/Att_GunsAndGear_DropOddsWithMayhem_Total -> 0.09
+#  5 - COMs, /Game/GameData/Loot/ItemPools/Attributes/Att_ClassMods_DropOddsWithMayhem_Total -> 0.07 (lol, uses 'shields' constant)
+#  6 - Shields, /Game/GameData/Loot/ItemPools/Attributes/Att_Shields_DropOddsWithMayhem_Total -> 0.07
+#  7 - Artifacts, /Game/GameData/Loot/ItemPools/Attributes/Att_Artifact_DropOddsWithMayhem_Total -> 0.005
+#  8 - Grenades, /Game/GameData/Loot/ItemPools/Attributes/Att_GrenadeMod_DropOddsWithMayhem_Total -> 0.01
+#  9 - Cosmetics, /Game/GameData/Loot/ItemPools/Attributes/Att_PlayerHeads_DropOdds -> 0.005
+#  10 - Eridium, /Game/GameData/Loot/ItemPools/Attributes/Att_EridiumStick_DropOddsWithMayhem_Total -> 0.008
 
 mod.header('Increased Eridium and Cosmetic chances')
 for char in [
@@ -197,13 +180,6 @@ for char in [
                 AttributeInitializer=None,
                 BaseValueScale=1.000000
             )""")
-
-    # Slightly more subtle eridium scale change
-    # .... this... doesn't work?  wtf.
-    #mod.reg_hotfix(Mod.CHAR, char,
-    #        '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-    #        'ItemPools[10].PoolProbability.BaseValueScale',
-    #        2000000)
 
 mod.newline()
 
