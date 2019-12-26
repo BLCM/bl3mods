@@ -36,6 +36,7 @@ no_slam_artifacts
 early_bloomer
 better_loot
 expanded_legendary_pools
+expanded_customization_pools
 better_slots
 
 # Bloody Harvest toggles

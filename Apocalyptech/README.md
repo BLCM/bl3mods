@@ -92,6 +92,9 @@ recent BL3 patches.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
+- `expanded_customization_pools.txt` - Adds in *all* customizations to the
+  relevant global-drop pools, and increases the customization drop rate.
+  Slot machine rewards are unaffected.
 
 ## OP Gear Mods
 
