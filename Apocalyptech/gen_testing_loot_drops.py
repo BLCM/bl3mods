@@ -34,40 +34,29 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
-do_pool_set = True
+do_pool_set = False
 
 # This one's my usual 'rotating' pool that gets used
-pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
-extra_pool_bit = 'ItemPool_SnipeRifles_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
-#extra_pool_bit = 'ItemPool_Shotguns_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
-#extra_pool_bit = 'ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
-#extra_pool_bit = 'ItemPool_GrenadeMods_05_Legendary'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
-#extra_pool_bit = 'ItemPool_Artifacts_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'
-#extra_pool_bit = 'ItemPool_ClassMods_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'
-#extra_pool_bit = 'ItemPool_ClassMods_Beastmaster_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'
-#extra_pool_bit = 'ItemPool_ClassMods_Gunner_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'
-#extra_pool_bit = 'ItemPool_ClassMods_Operative_05_Legendary'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_03_Rare'
-#extra_pool_bit = 'ItemPool_Artifacts_03_Rare'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
-#extra_pool_bit = 'ItemPool_Artifacts'
 
 # Hoovering up cosmetics
 #pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
-#extra_pool_bit = 'ItemPool_SkinsAndMisc'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Siren'
-#extra_pool_bit = 'ItemPool_Customizations_Heads_Loot_Siren'
+#pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Beastmaster'
+pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Gunner'
 
 balances = [
-        '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator.Balance_PS_TOR_Devestator',
+        #'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator.Balance_PS_TOR_Devestator',
         #'/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/Sabre/Balance/Balance_PS_Tediore_Sabre.Balance_PS_Tediore_Sabre',
         #'/Game/Gear/GrenadeMods/_Design/_Unique/ObviousTrap/Balance/InvBalD_GM_ObviousTrap.InvBalD_GM_ObviousTrap',
         #'/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm',
@@ -129,6 +118,12 @@ balances = [
         #'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_40.InvBal_CustomSkin_Operative_40',
         #'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_40.InvBal_CustomSkin_Siren_40',
         #'/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01',
+
+        # NOG Heads:
+        #'/Game/PlayerCharacters/_Customizations/Beastmaster/Heads/CustomHead_Beastmaster_22.InvBal_CustomHead_Beastmaster_22',
+        #'/Game/PlayerCharacters/_Customizations/Gunner/Heads/CustomHead_Gunner_22.InvBal_CustomHead_Gunner_22',
+        #'/Game/PlayerCharacters/_Customizations/Operative/Heads/CustomHead_Operative_22.InvBal_CustomHead_Operative_22',
+        #'/Game/PlayerCharacters/_Customizations/SirenBrawler/Heads/CustomHead_Siren_22.InvBal_CustomHead_Siren_22',
 
         # Golden weapon skin + trinket.  Technically we already have these, as it turns out, but they're not
         # active unless you actually have the preorder "DLC" or whatever.
@@ -240,34 +235,23 @@ balances = [
         #'/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider',
         ]
 
-# Siren skins
-if False:
-    for num in range(1, 44):
-        balances.append(f'/Game/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_{num}.InvBal_CustomSkin_Siren_{num}')
-# Siren heads
-if False:
-    for num in range(1, 27):
-        balances.append(f'/Game/PlayerCharacters/_Customizations/SirenBrawler/Heads/CustomHead_Siren_{num}.InvBal_CustomHead_Siren_{num}')
-# Weapon Skins
-if False:
-    for num in range(1, 26):
-        balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
-# Weapon Trinkets
-if False:
-    for num in range(1, 59):
-        balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
-# Room Decorations
-if False:
-    for num in range(1, 68):
-        balances.append(f'/Game/Pickups/RoomDecoration/RoomDecoration_{num}.InvBal_RoomDecoration_{num}')
-
 # Set the pool, if we've been told to
 if do_pool_set:
-    set_pool(mod, '{}.{}'.format(pool_to_set, extra_pool_bit), balances)
+    last_bit = pool_to_set.split('/')[-1]
+    set_pool(mod, '{}.{}'.format(pool_to_set, last_bit), balances)
+
+# TODO: Would like to get trash piles back in here too, though I think we'd
+# have to have a level hotfix for each level, and I don't feel like scripting
+# that out yet.
+#
+# These definitions *should* be pretty thorough, though note that bosses and
+# minibosses have been left alone, since I'm only gonna be mobbing while
+# testing this stuff.
 
 for (pool, chars) in [
 
-        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear', [
+        # Base-game Standard Enemy drop list
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
             # TODO: This isn't actually sufficient; if you spawn in Floodmoor Basin, for
             # instance, the enemies around the lodge area don't trigger it.  May have to
             # expand this list after all!
@@ -292,6 +276,7 @@ for (pool, chars) in [
             'BPChar_Tink_Turret',
             'BPChar_Trooper',
             'BPChar_VarkidShared',
+            'BPChar_LootTracker',
 
             # Maliwan Takedown
             'BPChar_MechBasicMini',
@@ -305,39 +290,185 @@ for (pool, chars) in [
             'BPChar_TinkStripped',
             ]),
 
-        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader.ItemPoolList_StandardEnemyGunsandGearLoader', [
+        # Goliaths
+        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Godliath', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_NonEnraging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Ultimate', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_SuperRaging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_MegaRaging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+
+        # Dandelion standard-enemy drop list
+        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion', [
+            'BPChar_AcidTrip_EarlyPrototype',
+            'BPChar_EnforcerBruiser_Looter',
+            'BPChar_GoliathBasic_Looter',
+            'BPChar_GoliathMidget_Looter',
+            'BPChar_GoonBasic_looter',
+            'BPChar_GoonVortex_Looter',
+            'BPChar_PsychoBasic_Looter',
+            'BPChar_PsychoFirebrand_Looter',
+            'BPChar_PsychoSlugger_Looter',
+            'BPChar_PsychoSuicide_Looter',
+            'BPChar_PunkAssaulter_Looter',
+            'BPChar_PunkBasic_Looter',
+            'BPChar_PunkShotgunner_Looter',
+            'BPChar_PunkSniper_Looter',
+            'BPChar_TinkBasic_Looter',
+            'BPChar_TinkPsycho_Looter',
+            'BPChar_TinkShotgun_Looter',
+            'BPChar_TinkSuicide_Looter',
+            'BPChar_CasinoBot_BigJanitor',
+            ]),
+
+        # Dandelion standard-loader drop list
+        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', [
             # Moxxi's Heist
             'BPChar_HyperionTurretBasic',
             'BPChar_LoaderShared',
             'BPChar_WeeLoaderBasic',
             ]),
 
+        # Base game badass enemy drop list
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear', [
+
+            # Base Game (don't actually care about the unique enemies in here, but
+            # it was less work to just leave 'em in)
+            'BPChar_Ape_Hunt01',
+            'BPChar_ApeJungleMonarch',
+            'BPChar_ApeBadass',
+            'BPChar_ApeLoot',
+            'BPChar_Enforcer_BountyPrologue',
+            'BPChar_EnforcerUrist',
+            'BPChar_EnforcerBadass',
+            'BPChar_Frontrunner_Badass',
+            'BPChar_Goliath_Badass',
+            'BPChar_GoonBadass',
+            'BPChar_GuardianGemGoblin',
+            'BPChar_GuardianWraithBadass',
+            'BPChar_Heavy_Badass',
+            'BPChar_Mech',
+            'BPChar_Nekrobug_Badass',
+            'BPChar_NogBadass',
+            'BPChar_NogNogromancer',
+            'BPChar_OversphereBadass',
+            'BPChar_PsychoBadass',
+            'BPChar_Punk_Bounty01a',
+            'BPChar_Punk_Bounty01b',
+            'BPChar_Punk_Bounty01c',
+            'BPChar_Punk_Bounty01d',
+            'BPChar_PunkBrewHag',
+            'BPChar_PunkMotherOfDragons',
+            'BPChar_PunkBadass',
+            'BPChar_Rakk_Dragon',
+            'BPChar_Rakk_DragonCryo',
+            'BPChar_Rakk_Hunt01',
+            'BPChar_Rakk_HuntSkrakk',
+            'BPChar_RakkBadassCryo',
+            'BPChar_RakkChromatic',
+            'BPChar_RakkQueen',
+            'BPChar_RatchBadass',
+            'BPChar_RatchHive',
+            'BPChar_Saurian_Grog_Poison',
+            'BPChar_Saurian_Hamtaurus_Badass',
+            'BPChar_Saurian_Tyrant',
+            'BPChar_ServiceBot_SWAT',
+            'BPChar_Skag_Rare01',
+            'BPChar_SkagBadass',
+            'BPChar_SpiderantKing',
+            'BPChar_SpiderantQueen',
+            'BPChar_Tink_Bounty01',
+            'BPChar_TinkRare02',
+            'BPChar_TinkUndertaker',
+            'BPChar_TinkBadass',
+            'BPChar_Tink_SentryRocketPodBigD',
+            'BPChar_TrooperBadass',
+            'BPChar_VarkidBadass',
+            'BPChar_AtlasSoldier_Bounty01',
+
+            # Maliwan Takedown
+            'BPChar_Behemoth',
+
+            # Moxxi's Heist
+            'BPChar_EnforcerBadass_Stripped',
+            'BPChar_Goliath_Badass_Stripped',
+            'BPChar_GoonBadass_Stripped',
+            'BPChar_PunkBadass_Stripped',
+            'BPChar_TinkBadass_Stripped',
+            'BPChar_Mimic',
+            'BPChar_WeeLoaderShared',
+            ]),
+
+        # Dandelion Badass enemy list
+        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Dandelion', [
+            'BPChar_SisterlyLove_DebtCollectorLoader',
+            'BPChar_GreatEscape_Rudy',
+            'BPChar_RagingBot_MachineGunMikey',
+            'BPChar_EnforcerBadass_Looter',
+            'BPChar_Enforcer_PrettyBoy',
+            'BPChar_GoliathBadass_Looter',
+            'BPChar_GoonBadass_Looter',
+            'BPChar_PsychoBadass_Looter',
+            'BPChar_PunkArmored_LooterVIP',
+            'BPChar_PunkBadass_Looter',
+            'BPChar_TinkBadass_Looter',
+            'BPChar_TinkBadassArmored_Looter',
+            # /Dandelion/Missions/Plot/Ep05_ThePlan/SpawnOption_TricksyNick_Farmable but eh.
+            ]),
+
+        # Dandelion Badass loader list
+        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_BadassEnemyGunsGearLoader1', [
+            'BPChar_HyperionTurretBadass',
+            'BPChar_LoaderBadass',
+            ]),
+
+        # Dandelion Constructors
+        ('/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/ItemPoolList_Constructor', [
+            'BPChar_Constructor',
+            ]),
+
+        # Anointed Enemies
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_AnointedEnemyGunsGear', [
+
+            'BPChar_EnforcerAnointed',
+            'BPChar_Goliath_Anointed',
+            'BPChar_GoonAnointed',
+            'BPChar_PsychoAnointed',
+            'BPChar_Punk_Anointed',
+            'BPChar_TinkAnointed',
+            'BPChar_VarkidHunt02_LarvaA',
+            'BPChar_VarkidHunt02_LarvaB',
+            'BPChar_VarkidHunt02_LarvaC',
+            'BPChar_VarkidHunt02_LarvaD',
+            'BPChar_VarkidSuperBadass',
+            ]),
+
         ]:
+
+    last_bit = pool.split('/')[-1]
+    full_pool = '{}.{}'.format(pool, last_bit)
 
     for char in chars:
         mod.reg_hotfix(Mod.CHAR, char,
-                pool,
-                'ItemPools[0].PoolProbability',
+                full_pool,
+                'ItemPools',
                 """(
-                    BaseValueConstant=1.000000,
-                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                    BaseValueAttribute=None,
-                    AttributeInitializer=None,
-                    BaseValueScale=1.000000
-                )""")
-        mod.reg_hotfix(Mod.CHAR, char,
-                pool,
-                'ItemPools[0].ItemPool',
-                'ItemPoolData\'"{}"\''.format(pool_to_set))
-        mod.reg_hotfix(Mod.CHAR, char,
-                pool,
-                'ItemPools[0].NumberOfTimesToSelectFromThisPool',
-                """(
-                    BaseValueConstant=5.000000,
-                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                    BaseValueAttribute=None,
-                    AttributeInitializer=None,
-                    BaseValueScale=1.000000
-                )""")
+                    (
+                        ItemPool=ItemPoolData'"{}"'
+                        PoolProbability=(
+                            BaseValueConstant=1,
+                            DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                            BaseValueAttribute=None,
+                            AttributeInitializer=None,
+                            BaseValueScale=1
+                        ),
+                        NumberOfTimesToSelectFromThisPool=(
+                            BaseValueConstant=5,
+                            DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                            BaseValueAttribute=None,
+                            AttributeInitializer=None,
+                            BaseValueScale=1
+                        )
+                    )
+                )""".format(pool_to_set))
 
 mod.close()
