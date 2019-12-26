@@ -34,10 +34,10 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
-do_pool_set = False
+do_pool_set = True
 
 # This one's my usual 'rotating' pool that gets used
-#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
+pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
@@ -50,7 +50,7 @@ do_pool_set = False
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
 
 # Hoovering up cosmetics
-pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Siren'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Beastmaster'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Gunner'
@@ -113,6 +113,9 @@ balances = [
 
         # Ha ha!  Figured out getting head/skin drops!
         #'/Game/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_1.InvBal_CustomSkin_Siren_1',
+
+        # Weird, orphaned ECHO skin, not sure if this is droppable.
+        '/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35',
 
         # Bloody Harvest rewards:
         #'/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1',
