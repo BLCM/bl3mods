@@ -50,10 +50,14 @@ do_pool_set = False
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
 
 # Hoovering up cosmetics
-#pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
+pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Siren'
 #pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Beastmaster'
-pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Gunner'
+#pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_Gunner'
+#pool_to_set = '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot'
+#pool_to_set = '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot'
+#pool_to_set = '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot'
+#pool_to_set = '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot'
 
 balances = [
         #'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator.Balance_PS_TOR_Devestator',
@@ -252,9 +256,12 @@ for (pool, chars) in [
 
         # Base-game Standard Enemy drop list
         ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
-            # TODO: This isn't actually sufficient; if you spawn in Floodmoor Basin, for
-            # instance, the enemies around the lodge area don't trigger it.  May have to
-            # expand this list after all!
+
+            # TODO: This isn't always sufficient; if you spawn in Floodmoor Basin, for
+            # instance, the enemies around the lodge area don't trigger it, nor do Saurians
+            # in Floodmoor Basin.  Saurians in particular have proven difficult; even
+            # enumerating all the BPChar* entries which reference the "Shared" one didn't
+            # seem to do it.  Hrmph.  Giving up for now!
             'BPChar_Ape',
             'BPChar_EnforcerShared',
             'BPChar_Frontrunner',
@@ -269,6 +276,26 @@ for (pool, chars) in [
             'BPChar_Rakk',
             'BPChar_Ratch',
             'BPChar_Saurian_Shared',
+
+            # These are all the BPChars which reference BPChar_Saurian_Shared...
+            #'BPChar_Saurian_Grog_Poison_Fodder',
+            #'BPChar_SaurianLaser',
+            #'BPChar_SaurianShield',
+            #'BPChar_Saurian_SlaughterBoss',
+            #'BPChar_Saurian_TrialBoss',
+            #'BPChar_Saurian_Grog',
+            #'BPChar_Saurian_Grog_Fire',
+            #'BPChar_Saurian_Grog_Poison',
+            #'BPChar_Saurian_Hamtaurus',
+            #'BPChar_Saurian_Hamtaurus_Badass',
+            #'BPChar_Saurian_Predator',
+            #'BPChar_Saurian_Predator_X',
+            #'BPChar_Saurian_Pygmimus',
+            #'BPChar_SaurianShiny',
+            #'BPChar_Saurian_Slinger',
+            #'BPChar_Saurian_Tyrant',
+            #'BPChar_SaurianForager',
+
             'BPChar_ServiceBot',
             'BPChar_SkagShared',
             'BPChar_Spiderant',
