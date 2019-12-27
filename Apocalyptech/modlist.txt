@@ -9,8 +9,8 @@ better_mayhem_on_twitch
 
 # Gear changes
 #maggie_super_buff
-craders_emp5_super_buff
-backham_super_buff
+#craders_emp5_super_buff
+#backham_super_buff
 #snowdrift_super_buff
 #stalker_super_buff
 #whispering_ice_slight_buff
@@ -38,6 +38,9 @@ better_loot
 expanded_legendary_pools
 expanded_customization_pools
 better_slots
+
+# Only drop heads+skins from the global customization drop pool
+only_heads_and_skins
 
 # Bloody Harvest toggles
 #bloody_harvest_enable

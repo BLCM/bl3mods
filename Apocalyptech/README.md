@@ -95,6 +95,12 @@ recent BL3 patches.
 - `expanded_customization_pools.txt` - Adds in *all* customizations to the
   relevant global-drop pools, and increases the customization drop rate.
   Slot machine rewards are unaffected.
+- `only_heads_and_skins.txt` - Since I recently figured out how to spawn
+  customizations properly, I ended up completing my collection of all
+  non-character skin/head customizations, so this little mod just makes
+  it so that those are the only customizations that spawn (apart from
+  dedicated spawns, of course).  Probably of little use to other people
+  Not Me.
 
 ## OP Gear Mods
 
