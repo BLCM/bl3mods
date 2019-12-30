@@ -70,4 +70,7 @@ don't look at these thinking that they're any good.  :)
   I'm trying to change might just be a visual thing anyway, so who knows.
 - `vehicle_unlocks_test.txt` - Trying to figure out the syntax which would
   allow me to modify vehicle part spawn weights.  Haven't figured it out yet.
+- `better_vehicles.txt` - Was going to just be improving the hover mode for
+  hover wheels, to be speedier all around.  The stuff I was trying wasn't
+  working, though, so I've given up.  :)
 
