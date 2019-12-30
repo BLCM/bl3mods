@@ -101,6 +101,11 @@ recent BL3 patches.
   it so that those are the only customizations that spawn (apart from
   dedicated spawns, of course).  Probably of little use to other people
   Not Me.
+- `vehicle_unlocks.txt` - This potentially unlocks some vehicle parts/skins
+  a bit early, though don't expect miracles from it.  For instance, the
+  SpawnOptions used in The Droughts is quite restrictive, so this isn't
+  going to introduce more variety in there (though it *should* allow for
+  an extra skin or two to unlock in the early game, at least).
 
 ## OP Gear Mods
 
