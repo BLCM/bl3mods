@@ -1,0 +1,73 @@
+# Aaron0000 suggested I see if we could make something 'look' Pearlescent.
+# The item card frame seems to be the sticking point; you've only got a
+# single word identifier, and I *think* the frame is controlled by an
+# embedded SWF inside /Game/UI/ItemCard/ItemCard.  The "suuuuper"
+# shenanigans below were an attempt to see if that SWF can be modified at
+# all, by changing what looked like a "stats are better than the
+# comparison" hardcoded HTML colors to blue instead of green, but that
+# either didn't work or those bits aren't actually used by that.
+#
+# Anyway, just a bit of silliness anyway.  Loot beam height doesn't work
+# either, btw, there's a RarityLootBeamOverride attribute which controls
+# how those work, and the Legendary one seems to be hardcoded to legendary
+# colors itself.  (Potentially hotfixable itself, but the object can't
+# be serialized at all, so no idea what the syntax might look like.)
+
+prefix: Shenanigans
+
+# Loot stick color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX,0,,(r=0.047,g=0.898,b=0.902,a=1)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorOutline,0,,(r=0.020,g=0.878,b=0.882,a=1)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityLootBeamHeight,0,,240
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityFrameName,0,,Uncommon
+
+# Score/price modifier
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,ItemScoreRarityModifier.BaseValueConstant,0,,1.3
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,MonetaryValueModifier.BaseValueAttribute,0,,GbxAttributeData'"/Game/GameData/Economy/Rarity/Att_RarityCostMultiplier_05_Legendary.Att_RarityCostMultiplier_05_Legendary"'
+
+# Stats better than legendary
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,VeryRare,DamageScale_6_44C1C8784B7991DCCCF68DA3127A53C0,0,,1.3
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,VeryRare,SpreadScale_8_D7376BDD4BB47794C6ECD995F0B66F07,0,,0.9
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,VeryRare,FireRateScale_11_10E7E12E4756B0EAD899BE8513F300AC,0,,1.1
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Rarity_Stats,VeryRare,ElementalChanceScale_14_7044338B492EDD3EB1E5E2A58FA9113B,0,,1.3
+
+# Name/red text
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Warmonger/Name_ATL_PS_Warmonger.Name_ATL_PS_Warmonger,PartName,0,,Clockwork Aries
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Warmonger/UIStat_RedText_Warmonger.UIStat_RedText_Warmonger,Text,0,,[Flavor]Your Life Is Mine[/Flavor]
+
+# Suuuuper shenanigans
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11218],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11219],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11220],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11221],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11222],0,,66
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[11223],0,,66
+
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13021],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13022],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13023],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13024],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13025],0,,66
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13026],0,,66
+
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13192],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13193],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13194],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13195],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13196],0,,66
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13197],0,,66
+
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13363],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13364],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13365],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13366],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13367],0,,66
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13368],0,,66
+
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13534],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13535],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13536],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13537],0,,30
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13538],0,,66
+SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/ItemCard.ItemCard,RawData[13539],0,,66
+
