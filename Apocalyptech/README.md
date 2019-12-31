@@ -107,6 +107,10 @@ recent BL3 patches.
   SpawnOptions used in The Droughts is quite restrictive, so this isn't
   going to introduce more variety in there (though it *should* allow for
   an extra skin or two to unlock in the early game, at least).
+- `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically
+  never use them unless they've got the tracker darts part (as opposed to
+  pucks or grenades).  So, I increased the weight of the tracker dart part,
+  where possible, so that 75% of all Atlas equipment will have the darts.
 
 ## OP Gear Mods
 

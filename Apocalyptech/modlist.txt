@@ -35,6 +35,9 @@ no_slam_artifacts
 # Vehicle Unlocks
 vehicle_unlocks
 
+# More tracker darts!
+more_tracker_darts
+
 # Sort-of recreations of my BL2/TPS stuff
 early_bloomer
 better_loot
