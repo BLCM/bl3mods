@@ -7,17 +7,12 @@ mod = Mod('expanded_customization_pools.txt',
         'Expanded Customization Pools',
         [
             'The global drop pools for the various customization types in BL3 only include',
-            'a subset of available customizations.  This mod adds in *all* available',
-            "customizations, so you'll be able to get them all just via world drops.  The mod",
-            'also increases the global drop rate for cutomizations.',
+            'a subset of available customizations.  This mod adds in nearly all available',
+            "customizations, so you'll be able to get them all just via world drops -- the",
+            'ones left out are customizations you get automatically via preorders or deluxe',
+            "editions.  (Those aren't useful as drops for anyone without the prerequisite.)",
+            'The mod also increases the global drop rate for cutomizations.',
             ''
-            "Note that this mod *can* drop customizations which you can't use, or which",
-            "otherwise don't make a lot of sense to drop.  For instance, the golden weapon skin",
-            "and trinket, which are preorder bonuses, will now drop as part of these pools,",
-            "but everyone technically already has those -- they're just locked behind a 'DLC'",
-            "or something, so that drop is kind of pointless.  In the end I didn't care enough",
-            'to bother filtering those kinds of things out, though.',
-            '',
             'Slot machine rewards are unaffected!',
         ],
         'CustomPools',
@@ -142,8 +137,11 @@ for (dirname, shortname) in [
     pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot_{shortname}.ItemPool_Customizations_Skins_Loot_{shortname}'
     balances = []
     # Base Game
+    # 34 is retro pack, 35 is neon pack 
+    blacklist = {34, 35}
     for num in range(1, 44):
-        balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+        if num not in blacklist:
+            balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
     # Bloody Harvest
     balances.append(f'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_40.InvBal_CustomSkin_{shortname}_40')
     # Maliwan Takedown
@@ -162,7 +160,8 @@ for (dirname, shortname) in [
     for num in range(1, 27):
         balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
     # Bloody Harvest, Ordering Bonuses, etc
-    for num in range(25, 30):
+    # 28 is retro pack, 29 is neon pack (26 doesn't exist)
+    for num in [25, 27]:
         balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
     # DLC1 - Dandelion
     balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
@@ -173,8 +172,11 @@ for (dirname, shortname) in [
 # Weapon Skins
 balances = []
 # Base Game
+# 21 is gold pack, 22 is gbx pack, 23 is retro pack, 24 is butt stallion pack
+blacklist = {21, 22, 23, 24}
 for num in range(1, 26):
-    balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
+    if num not in blacklist:
+        balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
 # Bloody Harvest
 balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
 mod.comment('Weapon Skins')
@@ -184,8 +186,11 @@ mod.newline()
 # Weapon Trinkets
 balances = []
 # Base Game
+# 51 is gold pack, 52 is neon pack, 53 is butt stallion pack, 54 is gbx pack, 58 is toy box pack
+blacklist = {51, 52, 53, 54, 58}
 for num in range(1, 59):
-    balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
+    if num not in blacklist:
+        balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
 # Uncategorized DLC
 balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
 # Bloody Harvest
@@ -201,8 +206,11 @@ mod.newline()
 # ECHO Skins
 balances = []
 # Base Game
+# 12 is retro pack, 13 is neon pack
+blacklist = {12, 13}
 for num in range(1, 35):
-    balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
+    if num not in blacklist:
+        balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
 # Unknown weird theme out in a strange location - AMD-themed, can't seem to drop it.
 #balances.append('/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35')
 # Uncategorized DLC

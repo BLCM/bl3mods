@@ -92,9 +92,10 @@ recent BL3 patches.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
-- `expanded_customization_pools.txt` - Adds in *all* customizations to the
-  relevant global-drop pools, and increases the customization drop rate.
-  Slot machine rewards are unaffected.
+- `expanded_customization_pools.txt` - Adds in nearly all customizations to
+  the relevant global-drop pools (the ones omitted are for preorders, deluxe
+  editions, or other ones which give you the item automatically), and
+  increases the customization drop rate.  Slot machine rewards are unaffected.
 - `only_heads_and_skins.txt` - Since I recently figured out how to spawn
   customizations properly, I ended up completing my collection of all
   non-character skin/head customizations, so this little mod just makes
