@@ -7,11 +7,29 @@ prefix: Spinner
 # nothing I've tried has worked so far, alas, though these do seem like the
 # correct attributes to be going after.
 
+# Ah, I know now that Level hotfixes *must* have a level specified, so this one was doomed to failure.
 #SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,CostSpinTime,0,,0.01
 #SparkLevelPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,PauseOnNewValueTime,0,,0.01
+
+SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,CostSpinTime,0,,0.01
+SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget,PauseOnNewValueTime,0,,0.01
 
 #SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget_C,CostSpinTime,0,,0.01
 #SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.BPWidget_CurrencyWidget_C,PauseOnNewValueTime,0,,0.01
 
-SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,CostSpinTime,0,,0.01
-SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,PauseOnNewValueTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,CostSpinTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C,PauseOnNewValueTime,0,,0.01
+
+###
+### Looks like the attrs we were looking at exist in BPWidget_GFxItemCard
+### as well, try that.
+###
+
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.BPWidget_GFxItemCard,CostSpinTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.BPWidget_GFxItemCard,PauseOnNewValueTime,0,,0.01
+
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.BPWidget_GFxItemCard_C,CostSpinTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.BPWidget_GFxItemCard_C,PauseOnNewValueTime,0,,0.01
+
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.Default__BPWidget_GFxItemCard_C,CostSpinTime,0,,0.01
+#SparkPatchEntry,(1,1,0,),/Game/UI/ItemCard/BPWidget_GFxItemCard.Default__BPWidget_GFxItemCard_C,PauseOnNewValueTime,0,,0.01
