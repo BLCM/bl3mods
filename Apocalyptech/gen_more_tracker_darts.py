@@ -11,7 +11,7 @@ mod = Mod('more_tracker_darts.txt',
             "pucks or grenades).  So, this mod increases the weight of the",
             "tracking dart option, so that I get those most of the time.  Tracker",
             "darts should spawn 75% of the time with this enabled.",
-            ""
+            "",
             "Note that most unique/legendary weapons have hardcoded or custom",
             "tracking parts -- for instance, Linc will always spawn with a tracker",
             "grenade.  Those have been left alone.  (Specifically: Rebel Yell,",
