@@ -8,7 +8,13 @@ mod = Mod('vehicle_unlocks.txt',
         [
             "Unlocks most vehicle parts/skins from the beginning of the game.  Wheel",
             "types, unfortunately, can't be unlocked early, but the others should be",
-            "available as soon as the associated vehicles are.",
+            "available as soon as the associated vehicles are.  Vehicles will always",
+            "pull from the entire available part/skin pools, so there will be a much",
+            "greater variety of vehicles from the beginning of the game (at the cost",
+            "of having more strongly-themed vehicles per area).",
+            "",
+            "Also converts all Technicals in Sandblast Scar to the Monster Wheels",
+            "variety, so that there's an ingame source for the Monster Wheels."
         ],
         'VUnlocks',
         )
@@ -104,7 +110,7 @@ for (label, table, col_name, rows) in [
     mod.newline()
 
 # Fix any skin errors
-mod.header('Skin fixes')
+mod.header('Fixes/Tweaks')
 
 mod.comment('Fix Outrunner Red Machine MaxGameStage')
 for level in [
@@ -120,6 +126,17 @@ for level in [
             '/Game/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_RedMachine.VehiclePart_Mat_VehiclePart_Outrunner_RedMachine',
             'MaxGameStage.DataTableValue.ValueName',
             'MaxGameStage_18_5DDD0AF343807440C74B37A083027F1C')
+mod.newline()
+
+mod.comment('Make Technicals in Sandblast Scar use Monster Wheels')
+mod.reg_hotfix(Mod.LEVEL, 'Convoy_P',
+        '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Technical_CotV_Convoy.SpawnOptions_Technical_CotV_Convoy',
+        'Options[0].Factory.Object..VehicleClass',
+        'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
+mod.reg_hotfix(Mod.LEVEL, 'Convoy_P',
+        '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Technical_CotV_Convoy.SpawnOptions_Technical_CotV_Convoy',
+        'Options[0].Factory.Object..CustomInventoryData.Object..InventoryActorClass',
+        'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
 mod.newline()
 
 mod.header('Spawn as many parts as possible')
