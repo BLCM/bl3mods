@@ -96,4 +96,57 @@ mod.reg_hotfix(Mod.LEVEL, 'Towers_P',
         )""")
 mod.newline()
 
+# Rare Vehicle Spawns
+mod.header_lines([
+    "Rare Vehicle Spawns",
+    "",
+    "Due to how these work, these won't be *guaranteed* spawns, but",
+    "they'll be much more likely, at least.  Aiming for about a 10%",
+    "unique-vehicle spawn rate, in the levels which have them.  Note",
+    "that Skagzilla's spawn is defined very differently than the",
+    "others, and isn't touched in here at all.",
+    ])
+
+for (label, levels, spawnoptions, weights) in [
+        ('Clever Girl / Bayou Watch (in Floodmoor Basin)',
+            ['Wetlands_P'],
+            '/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix',
+            # Defaults: 1 (technicals), 0.6 (cyclones), 0.01 (clever girl), 0.01 (bayou watch)
+            [1, 0.6, 0.1, 0.1]),
+        ("Houndstooth (in Devil's Razor)",
+            ['Desert_P'],
+            '/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix',
+            # Defaults: 1 (outrunners), 1 (cyclones), 0.01 (houndstooth)
+            [1, 1, 0.25]),
+        ("Candy (in Desolation's Edge)",
+            ['Desolate_P'],
+            '/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix',
+            # Defaults: 0.6 (outrunners), 1 (cyclones), 0.01 (candy)
+            [0.6, 1, 0.2]),
+        ('Festive Flesh-Eater (in Splinterlands and Carnivora)',
+            ['Motorcade_P', 'MotorcadeFestival_P'],
+            '/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix',
+            # Defaults: 1 (technicals), 0.6 (cyclones), 0.01 (festive flesh-eater)
+            [1, 0.6, 0.2]),
+        ]:
+
+    # Process the data a bit.
+    spawnoptions_full = Mod.get_full(spawnoptions)
+    total_weight = sum(weights)
+
+    # Go!
+    mod.comment(label)
+    for idx, weight in enumerate(weights):
+        pct_weight = weight/total_weight*100
+        for level in levels:
+            mod.reg_hotfix(Mod.LEVEL, level,
+                    spawnoptions_full,
+                    'Options.Options[{}].WeightParam.Range.Value'.format(idx),
+                    weight)
+            mod.reg_hotfix(Mod.LEVEL, level,
+                    spawnoptions_full,
+                    'Options.Options[{}].Probability'.format(idx),
+                    '{:.02f}%'.format(pct_weight))
+    mod.newline()
+
 mod.close()

@@ -145,3 +145,53 @@ SparkLevelPatchEntry,(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_
 # Individual Spawn rates
 SparkLevelPatchEntry,(1,1,0,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.OakMissionRareSpawner_VicAndWarty,PercentChanceToSpawn,0,,(BaseValueConstant=100.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
 
+###
+### Rare Vehicle Spawns
+###
+### Due to how these work, these won't be *guaranteed* spawns, but
+### they'll be much more likely, at least.  Aiming for about a 10%
+### unique-vehicle spawn rate, in the levels which have them.  Note
+### that Skagzilla's spawn is defined very differently than the
+### others, and isn't touched in here at all.
+###
+
+# Clever Girl / Bayou Watch (in Floodmoor Basin)
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[0].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[0].Probability,0,,55.56%
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[1].WeightParam.Range.Value,0,,0.6
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[1].Probability,0,,33.33%
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[2].WeightParam.Range.Value,0,,0.1
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[2].Probability,0,,5.56%
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[3].WeightParam.Range.Value,0,,0.1
+SparkLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_2/SpawnOptions_Vehicle_CotV_WetlandsMix.SpawnOptions_Vehicle_CotV_WetlandsMix,Options.Options[3].Probability,0,,5.56%
+
+# Houndstooth (in Devil's Razor)
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[0].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[0].Probability,0,,44.44%
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[1].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[1].Probability,0,,44.44%
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[2].WeightParam.Range.Value,0,,0.25
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Desert/SpawnOptions_Vehicle_CotV_DesertMix.SpawnOptions_Vehicle_CotV_DesertMix,Options.Options[2].Probability,0,,11.11%
+
+# Candy (in Desolation's Edge)
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[0].WeightParam.Range.Value,0,,0.6
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[0].Probability,0,,33.33%
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[1].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[1].Probability,0,,55.56%
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[2].WeightParam.Range.Value,0,,0.2
+SparkLevelPatchEntry,(1,1,0,Desolate_P),/Game/Enemies/_Spawning/Maliwan/Vehicles/Zone4/Desolate_P/SpawnOptions_Vehicle_DarkMaliwan_DesolateMix.SpawnOptions_Vehicle_DarkMaliwan_DesolateMix,Options.Options[2].Probability,0,,11.11%
+
+# Festive Flesh-Eater (in Splinterlands and Carnivora)
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[0].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[0].Probability,0,,55.56%
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[0].WeightParam.Range.Value,0,,1
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[0].Probability,0,,55.56%
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[1].WeightParam.Range.Value,0,,0.6
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[1].Probability,0,,33.33%
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[1].WeightParam.Range.Value,0,,0.6
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[1].Probability,0,,33.33%
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[2].WeightParam.Range.Value,0,,0.2
+SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[2].Probability,0,,11.11%
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[2].WeightParam.Range.Value,0,,0.2
+SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/Enemies/_Spawning/CotV/Vehicles/Zone_3/Motorcade_P/SpawnOptions_Vehicle_CotV_Motorcade_FullMix.SpawnOptions_Vehicle_CotV_Motorcade_FullMix,Options.Options[2].Probability,0,,11.11%
+

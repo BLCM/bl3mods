@@ -14,7 +14,9 @@ recent BL3 patches.
   is the Week 4 event, as sent by GBX itself.
 - `better_rare_spawn_hunt_stripped.txt` - This is a stripped-down version of
   the Week 2 event which now *just* focuses on making sure that all rare
-  spawns will spawn at 100% instead.
+  spawns will spawn at 100% instead.  Also makes most of the vehicle rare
+  spawns more common, with the exception of Skagzilla (though note that
+  those just have an increased chance, not guaranteed).
 - `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium
