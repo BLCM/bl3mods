@@ -27,11 +27,12 @@ class Mod(object):
     Helper class for writing hotfix-injection mods for BL3
     """
 
-    (PATCH, LEVEL, CHAR) = range(3)
+    (PATCH, LEVEL, EARLYLEVEL, CHAR) = range(4)
 
     TYPE = {
             PATCH: 'SparkPatchEntry',
             LEVEL: 'SparkLevelPatchEntry',
+            EARLYLEVEL: 'SparkEarlyLevelPatchEntry',
             CHAR: 'SparkCharacterLoadedEntry',
         }
 
@@ -66,6 +67,14 @@ class Mod(object):
         print('', file=self.df)
         print('prefix: {}'.format(self.prefix), file=self.df)
         print('', file=self.df)
+
+    @staticmethod
+    def get_full(object_name):
+        """
+        Gets the "full" object name from one whose full reference just repeats the
+        last component.
+        """
+        return '{}.{}'.format(object_name, object_name.split('/')[-1])
 
     def newline(self):
         """
