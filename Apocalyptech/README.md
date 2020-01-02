@@ -107,10 +107,10 @@ recent BL3 patches.
 - `vehicle_unlocks.txt` - This unlocks most vehicle parts/skins as soon as
   the associated vehicle becomes available.  Note that wheel types aren't
   included here, since those are spawned a bit differently by the game, though
-  I did make Technicals in Sandblast Scar have Monster Wheels, so that there's
-  a source for those in-game.  Vehicles will pull from their full list of
-  parts/skins when spawning (minus wheels), so variety is much increased, at
-  the cost of stronger themeing per zone.
+  I did add Monster Wheels to a few specific vehicles: Clever Girl, Festive
+  Flesh-Eater, Skagzilla, and any Technical in Sandblast Scar.  Vehicles will
+  pull from their full list of parts/skins when spawning (minus wheels), so
+  variety is much increased, at the cost of stronger themeing per zone.
 - `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically
   never use them unless they've got the tracker darts part (as opposed to
   pucks or grenades).  So, I increased the weight of the tracker dart part,

@@ -13,8 +13,9 @@ mod = Mod('vehicle_unlocks.txt',
             "greater variety of vehicles from the beginning of the game (at the cost",
             "of having more strongly-themed vehicles per area).",
             "",
-            "Also converts all Technicals in Sandblast Scar to the Monster Wheels",
-            "variety, so that there's an ingame source for the Monster Wheels."
+            "Also converts Clever Girl, Festive Flesh-Eater, Skagzilla, and all",
+            "Technicals in Sandblast Scar to the Monster Wheels variety, so that",
+            "there's ingame sources for the Monster Wheels."
         ],
         'VUnlocks',
         )
@@ -112,7 +113,7 @@ for (label, table, col_name, rows) in [
 # Fix any skin errors
 mod.header('Fixes/Tweaks')
 
-mod.comment('Fix Outrunner Red Machine MaxGameStage')
+mod.comment('Fix Outrunner Red Machine Skin MaxGameStage')
 for level in [
         'Prologue_P',
         'Outskirts_P',
@@ -128,16 +129,31 @@ for level in [
             'MaxGameStage_18_5DDD0AF343807440C74B37A083027F1C')
 mod.newline()
 
-mod.comment('Make Technicals in Sandblast Scar use Monster Wheels')
-mod.reg_hotfix(Mod.LEVEL, 'Convoy_P',
-        '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Technical_CotV_Convoy.SpawnOptions_Technical_CotV_Convoy',
-        'Options[0].Factory.Object..VehicleClass',
-        'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
-mod.reg_hotfix(Mod.LEVEL, 'Convoy_P',
-        '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Technical_CotV_Convoy.SpawnOptions_Technical_CotV_Convoy',
-        'Options[0].Factory.Object..CustomInventoryData.Object..InventoryActorClass',
-        'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
-mod.newline()
+for (label, levels, spawn_obj) in [
+        ('Technicals in Sandblast Scar',
+            ['Convoy_P'],
+            '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Technical_CotV_Convoy.SpawnOptions_Technical_CotV_Convoy'),
+        ('Clever Girl (in Floodmoor Basin)',
+            ['Wetlands_P'],
+            '/Game/Enemies/_Spawning/Vehicles/RareSpawns/SpawnOptions_RareVehicle_Technical_CleverGirl.SpawnOptions_RareVehicle_Technical_CleverGirl'),
+        ('Festive Flesh-Eater (in Splinterlands and Carnivora)',
+            ['Motorcade_P', 'MotorcadeFestival_P'],
+            '/Game/Enemies/_Spawning/Vehicles/RareSpawns/SpawnOptions_RareVehicle_Technical_Princess.SpawnOptions_RareVehicle_Technical_Princess'),
+        ('Skagzilla (in The Droughts)',
+            ['Prologue_P'],
+            '/Game/Enemies/_Spawning/Vehicles/RareSpawns/SpawnOptions_RareVehicle_Technical_Skagzilla.SpawnOptions_RareVehicle_Technical_Skagzilla'),
+        ]:
+    mod.comment('Make {} use Monster Wheels'.format(label))
+    for level in levels:
+        mod.reg_hotfix(Mod.LEVEL, level,
+                spawn_obj,
+                'Options[0].Factory.Object..VehicleClass',
+                'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
+        mod.reg_hotfix(Mod.LEVEL, level,
+                spawn_obj,
+                'Options[0].Factory.Object..CustomInventoryData.Object..InventoryActorClass',
+                'Vehicle_Technical_BigWheels_C\'"/Game/Vehicles/Technical/Vehicle/Vehicle_Technical_BigWheels.Vehicle_Technical_BigWheels"\'')
+    mod.newline()
 
 mod.header('Spawn as many parts as possible')
 
