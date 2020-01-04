@@ -48,6 +48,9 @@ better_slots
 # Only drop heads+skins from the global customization drop pool
 only_heads_and_skins
 
+# Challenge icons are always visible
+always_visible_challenge_icons
+
 # Bloody Harvest toggles
 #bloody_harvest_enable
 #bloody_harvest_disable
@@ -63,5 +66,4 @@ only_heads_and_skins
 #cdh
 #no_delay_red_chests
 #faster_cost_spin
-#always_visible_challenge_icons
 #bloody_harvest_challenges

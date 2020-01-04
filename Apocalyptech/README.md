@@ -115,6 +115,11 @@ recent BL3 patches.
   never use them unless they've got the tracker darts part (as opposed to
   pucks or grenades).  So, I increased the weight of the tracker dart part,
   where possible, so that 75% of all Atlas equipment will have the darts.
+- `always_visible_challenge_icons.txt` - Makes challenge icons (Claptrap
+  salvages, Radios, etc) always appear on the map, regardless of if you've
+  been close to them.  Does the same for Eridian Writings.  Note that you
+  will miss dialog if you use this -- when entering a new map, only one of
+  the available challenge intros will be played.
 
 ## OP Gear Mods
 

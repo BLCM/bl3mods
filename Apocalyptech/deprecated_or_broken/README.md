@@ -34,15 +34,6 @@ been merged into Better Loot, though.
 These are some mod attempts that I've yet to actually get working at all.  So
 don't look at these thinking that they're any good.  :)
 
-- `always_visible_challenge_icons.txt` - Some attempts to make challenge icons
-  (Claptrap salvages, Radios, etc) always appear on the map, regardless of if
-  you've been close to them.  The current version of this actually *partially*
-  works for the one map I'd most recently played with, Ascension Bluff, but
-  some icons remain stubbornly non-visible, annoyingly.  Also, even once I
-  figure these out, doing Typhon logs would be a huge PITA, because their
-  objects are effectively random-number'd.  Would technically be possible to
-  discover the numbers without dumps of some sort, but that would be a painful
-  AF process.  I suppose `getall` w/ console access would probably do the trick...
 - `cdh.txt` - Just a quick attempt to see if `bDropOnDeath` still existed in
   item pools, even though it didn't look that it did.  Either it doesn't, or
   there's other problems with my attempts.  :)
