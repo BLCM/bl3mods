@@ -22,12 +22,44 @@ been merged into Better Loot, though.
 
 ## Deprecated/Testing Mods
 
+- `mayhem_1_better_loot.txt` - This was my first mod attempt, actually,
+  and improves the quality of drops in Mayhem 1 (not that it really needed
+  it).  As I say, not really useful at all, but I've kept it here for my
+  own historical interest.
 - `mission_unlocks.txt` - This is actually partially successful; I can at
   least set mission reward pools here.  I'd hoped to also unlock Sanctuary
   with the first mission load, too, though, which didn't work.
 - `datatable.txt` - Was used to test out how DataTable values interact with
   the rest of the BVC tuple - turns out that they probably override everything
   except for BVSC, which gets multiplied at the end as per usual.
+- `free_fabricator.txt` - This actually doesn't do what it *says* it does;
+  it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
+  Useful!  (Actually I suppose it *could* be useful to give Eridium to
+  other co-op players.)
+
+These mods were used for awhile for testing, and a few for doing some
+Bloody Harvest farming, but they're basically now obsolete (or at least
+I'll probably not use them again) with my Crader EM-P5 and Back Ham setup:
+
+- `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
+  amount of damage.  Mostly just used for testing mods where I don't want
+  to deal with enemies.  Also turns the Maggie into an Infinity -- doesn't
+  consume ammo.
+- Bloody Harvest-related buffs (for getting the cryo challenge specifically
+  done as easily as possible)
+  - `stalker_super_buff.txt` - Used to take down Captain Haunt pretty
+    quickly for the Haunt-specific challenge.  May as well use the Maggie
+    buff until the final phase.
+  - `westergun_super_buff.txt` - Probably the easiest way to get the cryo
+    challenge.  Should tear through practically anything.  A few Mayhem
+    3 modifiers stacked together can make it a bit less effective but it'll
+    still perform extremely well.
+  - `snowdrift_super_buff.txt` - Ended up not using it really, but it
+    technically worked for the cryo challenge.
+  - `whispering_ice_slight_buff.txt` - Compared to the other OP mods in
+    this section, the buff is pretty slight here, but it's still more
+    powerful than usual.  Went a bit overboard with the radius on the
+    grenade; you'll probably get hit by it yourself occasionally.
 
 ## Failed Attempts
 

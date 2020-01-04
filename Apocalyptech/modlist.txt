@@ -3,19 +3,9 @@ better_rare_spawn_hunt_stripped
 better_eridium_event
 better_mayhem_on_twitch
 
-# Better loot in Mayhem 1
-# (we're now buffing stuff via better_loot in the main game, instead)
-#mayhem_1_better_loot
-
-# Gear changes
-#maggie_super_buff
+# Mod-Testing Gear
 #craders_emp5_super_buff
 #backham_super_buff
-#snowdrift_super_buff
-#stalker_super_buff
-#whispering_ice_slight_buff
-#westergun_super_buff
-#free_fabricator
 
 # Cheaper SDUs
 cheaper_sdus

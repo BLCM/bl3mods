@@ -63,14 +63,6 @@ recent BL3 patches.
 - `cheaper_sdus.txt` - Vastly reduce the SDU costs.  Cheaty, of course!
 - `cheaper_slots.txt` - Reduce the cash slots cost to 20%.  The eridium slot
   machine is untouched since I did that in my `better_eridium_event.txt`.
-- `free_fabricator.txt` - This actually doesn't do what it *says* it does;
-  it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
-  Useful!  (Actually I suppose it *could* be useful to give Eridium to
-  other co-op players.)
-- `mayhem_1_better_loot.txt` - This was my first mod attempt, actually,
-  and improves the quality of drops in Mayhem 1 (not that it really needed
-  it).  As I say, not really useful at all, but I've kept it here for my
-  own historical interest.
 - `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - These can be
   used to enable Bloody Harvest even after the event is over, or disable
   it prematurely.  The enabling script will also include the other balance
@@ -123,10 +115,6 @@ recent BL3 patches.
 
 ## OP Gear Mods
 
-- `maggie_super_buff.txt` - Cheat mod which gives the Maggie an absurd
-  amount of damage.  Mostly just used for testing mods where I don't want
-  to deal with enemies.  Also turns the Maggie into an Infinity -- doesn't
-  consume ammo.
 - `craders_emp5_super_buff.txt` - Cheat mod which gives Crader's EM-P5 an
   absurd amount of damage, infinite ammo, perfect accuracy/handling, increased
   fire rate, and improves the movement speed buff.  I just moved to this as
@@ -138,21 +126,6 @@ recent BL3 patches.
   entirely accurate; some damage can and will get through, but it'll be
   quite minor.  Damage reduction is applied regardless of the direction it
   came from, contrary to what the card reports.
-- Bloody Harvest-related buffs (for getting the cryo challenge specifically
-  done as easily as possible)
-  - `stalker_super_buff.txt` - Used to take down Captain Haunt pretty
-    quickly for the Haunt-specific challenge.  May as well use the Maggie
-    buff until the final phase.
-  - `westergun_super_buff.txt` - Probably the easiest way to get the cryo
-    challenge.  Should tear through practically anything.  A few Mayhem
-    3 modifiers stacked together can make it a bit less effective but it'll
-    still perform extremely well.
-  - `snowdrift_super_buff.txt` - Ended up not using it really, but it
-    technically worked for the cryo challenge.
-  - `whispering_ice_slight_buff.txt` - Compared to the other OP mods in
-    this section, the buff is pretty slight here, but it's still more
-    powerful than usual.  Went a bit overboard with the radius on the
-    grenade; you'll probably get hit by it yourself occasionally.
 
 ## Deprecated / Broken Mods
 
