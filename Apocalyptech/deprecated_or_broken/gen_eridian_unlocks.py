@@ -32,7 +32,8 @@ mod = Mod('eridian_unlocks.txt',
 # before it even *gets* to this check, so there's about a million
 # unknowns here.  An `obj dump` would do wonders for this, of course.
 
-mod.reg_hotfix(Mod.PATCH, '',
+#mod.reg_hotfix(Mod.PATCH, '',
+mod.reg_hotfix(Mod.LEVEL, 'Prologue_P',
 
         # Come, marvel at my increasingly-desperate attempt to try every possible combination
         # of somewhat-likely names!
@@ -66,13 +67,19 @@ mod.reg_hotfix(Mod.PATCH, '',
         #'/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator:EnabledCondition_GbxCondition_Compound.Condition1_GbxCondition_List.Conditions_MissionEnableConditionObjective',
         #'EnabledCondition.Object..Condition1.Object..Conditions.Conditions[0].Object..ObjectiveRef',
 
-        '/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator:Conditions_MissionEnableConditionObjective',
-        'EnabledCondition.Object..Condition1.Object..Conditions.Conditions[0].Object..ObjectiveRef',
+        #'/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator:Conditions_MissionEnableConditionObjective',
+        #'EnabledCondition.Object..Condition1.Object..Conditions.Conditions[0].Object..ObjectiveRef',
+
+        # newest attempt, Jan 3 2020
+        # Finally managed to get an ingame console -- the below *does* seem to work, actually, it's just that apparently
+        # this alone isn't sufficient to allow early eridium-smashing.  Woo!
+        '/Game/Gear/Game/Resonator/_Design/UsabilityData_Resonator.UsabilityData_Resonator',
+        'EnabledCondition.Object..Condition1.Object..Conditions[0].Object..ObjectiveRef',
 
         """(
             Mission=Mission'"/Game/Missions/Plot/Mission_Ep01_ChildrenOfTheVault.Mission_Ep01_ChildrenOfTheVault_C"',
-            ObjectiveName="Obj_GetAcrossBridgeGap_Objective",
-            ObjectiveGuid="70fa4d4d4d4891f3482ec68258d0cce3"
+            ObjectiveName=Obj_GetAcrossBridgeGap_Objective,
+            ObjectiveGuid=70fa4d4d4d4891f3482ec68258d0cce3
         )""",
         )
 
