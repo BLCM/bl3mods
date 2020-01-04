@@ -111,7 +111,11 @@ recent BL3 patches.
   salvages, Radios, etc) always appear on the map, regardless of if you've
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
-  the available challenge intros will be played.
+  the available challenge intros will be played.  **NOTE:** This has not
+  yet been well-tested; I'm just doing that as I go through another BL3
+  playthrough.  Known issues, so far:
+  - The third Typhon log in Meridian Outskirts doesn't seem to want to
+    show up.
 
 ## OP Gear Mods
 

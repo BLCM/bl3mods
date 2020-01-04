@@ -12,6 +12,9 @@ mod = Mod('always_visible_challenge_icons.txt',
             "",
             "Eridian Writings are included in here, though those aren't really",
             "challenges per se.",
+            "",
+            "NOTE: This is currently not well-tested.  Only a handful of early",
+            "maps have been validated.",
         ],
         'ChallengeIcons',
         )
@@ -214,6 +217,7 @@ for (label, level_name, object_names) in sorted([
             ]),
         ("Meridian Outskirts", 'Outskirts_P', [
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner',
+            # One of these journals doesn't like showing up, it seems
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection',
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection',
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal3-OutskirtsofCity.BP_CrewChallengeComponent_Collection',
