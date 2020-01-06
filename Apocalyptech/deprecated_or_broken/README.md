@@ -73,8 +73,6 @@ don't look at these thinking that they're any good.  :)
   the cost much more quickly, when mousing around items.  Not sure why this
   doesn't work, but I suspect that perhaps the object doesn't exist at the
   time that the hotfix executes?
-- `movement_speed.txt` - An attempt to speed up character movement.  Didn't
-  really expect this to work - I should give it another go.
 - `no_delay_red_chests.txt` - An attempt to remove the 30-minute in-game
   delay between re-opening red chests.
 - `bloody_harvest_challenges.txt` - An attempt to cheat the Bloody Harvest

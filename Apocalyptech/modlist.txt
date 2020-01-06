@@ -36,6 +36,10 @@ expanded_customization_pools
 better_slots
 no_wasted_equipment
 
+# Movement Speed Cheats
+movement_speed_cheats_reasonable
+#movement_speed_cheats_extreme
+
 # Only drop heads+skins from the global customization drop pool
 only_heads_and_skins
 
@@ -56,7 +60,6 @@ always_visible_challenge_icons
 #testing_loot_drops
 
 # Haven't gotten these to work at all:
-#movement_speed
 #cdh
 #no_delay_red_chests
 #faster_cost_spin

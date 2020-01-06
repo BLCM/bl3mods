@@ -58,6 +58,10 @@ recent BL3 patches.
   this applies to COMs, Anointments, and Customizations as well.  Nicer than
   the BL2/TPS versions, since it should adjust properly even when players
   leave co-op, though note that it's completely untested in multiplayer.
+- `movement_speed_cheats_reasonable.txt` and `movement_speed_cheats_extreme.txt` -
+  Just what they sound like!  Move faster.  Also applies to Iron Bear and
+  FL4K's pets.  Have not yet tested how this interacts crouching, FFYL,
+  ladders, etc.
 - `testing_loot_drops.txt` - A version of my modder's-resource mod that I
   use for testing out things like Expanded Legendary Pools.  All Standard-drop
   enemies will drop five items from the specified pool.
