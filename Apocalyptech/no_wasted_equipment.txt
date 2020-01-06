@@ -1,0 +1,15 @@
+###
+### No Wasted Equipment
+###
+### Adjusts the character-specific weighting so that you won't get COMs,
+### customizations, or anointments for any character other than the one
+### you're currently playing.  Theoretically this should work just fine
+### in multiplayer, though I haven't tested it at all in that mode.
+###
+
+prefix: NoWasted
+
+# Yep, this single statement should do it!  Rather nicer than the BL2/TPS versions.
+# Default weighting: 0.15 (the character Atts add 0.85 when the char is present)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Economy/Economy_Miscellaneous.Economy_Miscellaneous,CharacterWeights_Base,Value,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+

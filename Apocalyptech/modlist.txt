@@ -34,6 +34,7 @@ better_loot
 expanded_legendary_pools
 expanded_customization_pools
 better_slots
+no_wasted_equipment
 
 # Only drop heads+skins from the global customization drop pool
 only_heads_and_skins

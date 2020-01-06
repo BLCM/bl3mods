@@ -54,6 +54,10 @@ recent BL3 patches.
 - `better_slots.txt` - Better results for slot machines.  A bit silly, but
   whatever.  Turns out there aren't any unique heads/skins/whatever to be
   had from them, so these just buff the gear.
+- `no_wasted_equipment.txt` - An improved version of my No Wasted COMs mod,
+  this applies to COMs, Anointments, and Customizations as well.  Nicer than
+  the BL2/TPS versions, since it should adjust properly even when players
+  leave co-op, though note that it's completely untested in multiplayer.
 - `testing_loot_drops.txt` - A version of my modder's-resource mod that I
   use for testing out things like Expanded Legendary Pools.  All Standard-drop
   enemies will drop five items from the specified pool.

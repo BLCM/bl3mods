@@ -34,7 +34,7 @@ mod = Mod('testing_loot_drops.txt',
         'Drops',
         )
 
-do_pool_set = True
+do_pool_set = False
 drop_quantity = 5
 
 # This one's my usual 'rotating' pool that gets used
@@ -263,10 +263,12 @@ balances = [
         #'/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider.InvBalD_GM_TED_Slider',
         ]
 
+last_bit = pool_to_set.split('/')[-1]
+pool_to_set_full = '{}.{}'.format(pool_to_set, last_bit)
+
 # Set the pool, if we've been told to
 if do_pool_set:
-    last_bit = pool_to_set.split('/')[-1]
-    set_pool(mod, '{}.{}'.format(pool_to_set, last_bit), balances)
+    set_pool(mod, pool_to_set_full, balances)
 
 # TODO: Would like to get trash piles back in here too, though I think we'd
 # have to have a level hotfix for each level, and I don't feel like scripting
@@ -520,6 +522,6 @@ for (pool, chars) in [
                             BaseValueScale=1
                         )
                     )
-                )""".format(pool_to_set, drop_quantity))
+                )""".format(pool_to_set_full, drop_quantity))
 
 mod.close()
