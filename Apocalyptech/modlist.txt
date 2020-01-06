@@ -39,6 +39,9 @@ no_wasted_equipment
 # Only drop heads+skins from the global customization drop pool
 only_heads_and_skins
 
+# Add anoints to weapons which don't ordinarily have them
+all_weapons_can_anoint
+
 # Challenge icons are always visible
 always_visible_challenge_icons
 

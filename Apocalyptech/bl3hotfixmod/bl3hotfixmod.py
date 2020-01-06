@@ -44,7 +44,7 @@ class Mod(object):
         self.title = title
         self.description = description
         self.prefix = prefix
-        self.last_was_newline = False
+        self.last_was_newline = True
 
         self.source = os.path.basename(sys.argv[0])
 
@@ -75,6 +75,16 @@ class Mod(object):
         last component.
         """
         return '{}.{}'.format(object_name, object_name.split('/')[-1])
+
+    @staticmethod
+    def get_full_cond(object_name):
+        """
+        Gets the "full" object name if there's not already a . in the name
+        """
+        if '.' in object_name:
+            return object_name
+        else:
+            return Mod.get_full(object_name)
 
     def newline(self):
         """
@@ -129,7 +139,7 @@ class Mod(object):
             hf_type=Mod.TYPE[hf_type],
             notification_flag=notification_flag,
             package=package,
-            obj_name=obj_name,
+            obj_name=Mod.get_full_cond(obj_name),
             attr_name=attr_name,
             prev_val_len=len(prev_val),
             prev_val=prev_val,
@@ -149,7 +159,7 @@ class Mod(object):
             hf_type=Mod.TYPE[hf_type],
             notification_flag=notification_flag,
             package=package,
-            obj_name=obj_name,
+            obj_name=Mod.get_full_cond(obj_name),
             row_name=row_name,
             attr_name=attr_name,
             prev_val_len=len(prev_val),

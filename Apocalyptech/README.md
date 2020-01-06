@@ -120,6 +120,8 @@ recent BL3 patches.
   playthrough.  Known issues, so far:
   - The third Typhon log in Meridian Outskirts doesn't seem to want to
     show up.
+- `all_weapons_can_anoint.txt` - A number of weapons in the game can't
+  ordinarily spawn with Anointments; this makes it so that they can.
 
 ## OP Gear Mods
 
