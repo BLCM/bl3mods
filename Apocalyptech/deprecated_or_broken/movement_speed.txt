@@ -15,5 +15,40 @@ prefix: Movement
 #SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,MaxWalkSpeed,0,,1000
 
 #SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player,SpeedScale,0,,3
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,SpeedScale,0,,3
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,WalkSpeed_Normal,0,,2000
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,SpeedScale,0,,3
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.BPChar_Siren,WalkSpeed_Normal,0,,2000
+
+# New attempts, jan 5 2020, given this info from the console, which I now
+# have access to:
+#
+#   >>> getall bpchar_player_c walkspeed_normal
+#   BPChar_Siren_C /Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0.WalkSpeed_Normal = (Value=470,BaseValue=470)
+#
+#   >>> ... walkspeed_zerog
+#   ... .WalkSpeed_ZeroG = (Value=100,BaseValue=100)
+#
+# None of the following actually resulted in the var updating in-game
+
+#SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0,WalkSpeed_Normal,0,,(Value=2000,BaseValue=2000)
+#SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C,WalkSpeed_Normal,0,,(BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C,WalkSpeed_Normal,0,,(BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren_C),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C,WalkSpeed_Normal,0,,(BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0,WalkSpeed_Normal,0,,(BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren_C),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0,WalkSpeed_Normal,0,,(BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C,WalkSpeed_Normal,0,,(Value=2000,BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren_C),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C,WalkSpeed_Normal,0,,(Value=2000,BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0,WalkSpeed_Normal,0,,(Value=2000,BaseValue=2000)
+#SparkCharacterLoadedEntry,(1,1,0,BPChar_Siren_C),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0,WalkSpeed_Normal,0,,(Value=2000,BaseValue=2000)
+
+# Moar:
+#
+#   >>> getall oakcharactermovementcomponent maxwalkspeed
+#   OakCharacterMovementComponent /Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0.CharMoveComp.MaxWalkSpeed = (Value=470,BaseValue=470)
+#
+#   >>> ... maxsprintspeed
+#   ... .MaxSprintSpeed = (Value=720,BaseValue=720)
+#
+# (this doesn't work either)
+
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.BPChar_Siren_C_0.CharMoveComp,MaxWalkSpeed,0,,(Value=2000,BaseValue=2000)
+
