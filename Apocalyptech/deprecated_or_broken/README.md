@@ -94,4 +94,9 @@ don't look at these thinking that they're any good.  :)
 - `better_vehicles.txt` - Was going to just be improving the hover mode for
   hover wheels, to be speedier all around.  The stuff I was trying wasn't
   working, though, so I've given up.  :)
+- `charitempoolexpansions.txt` - Some attempts to modify `CharacterItemPoolExpansionData`
+  objects.  It'd be nice to be able to edit these directly, because Better Loot
+  has to resort to some kind of dumb behavior, otherwise.  BL ends up leaving
+  the chances for double-drops in place.  Anyway, thus far I haven't figured
+  it out yet.
 
