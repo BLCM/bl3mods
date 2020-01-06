@@ -307,9 +307,6 @@ for (label, row_name, char_name) in [
     mod.newline()
 
 # DLC1 (Dandelion; Moxxi's Heist) drop rates
-# TODO: enemy data isn't really in here yet, need to properly populate these.  We
-# don't have BPChars for most, and I don't think we can be sure of the few that we
-# do have (also don't have official names for most!)
 for (label, row_name, char_name) in [
         ('DEGEN-3', 'Kill_Degen3', 'BPChar_LoaderBadass_Venchy'),
         ('Evil St. Lawrence', 'Kill_StLawrence', 'BPChar_EnforcerBadass_Lawrence'),

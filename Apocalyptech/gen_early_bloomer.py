@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# TODO: Earl's loot-o-gram pool
-
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('early_bloomer.txt',
