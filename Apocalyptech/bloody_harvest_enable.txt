@@ -52,12 +52,17 @@ SparkPatchEntry,(1,1,1,),/Game/PatchDLC/BloodyHarvest/Enemies/Heavy/_Unique/Harv
 ### the event.
 ###
 
+# These hotfixes reduced the frequency of Terror anoints outside of Heck Hole (introduced on Nov 7,
+# and continued until the end of the event).  I suspect that anyone enabling this mod probably wants
+# the full original Terror anoint drop rate, so I'm commenting these out.  I'm actually tempted to
+# even *increase* the scaling a bit, but eh.
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_GenericPartTerrorChance.Att_EndGame_GenericPartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Gunner_PartTerrorChance.Att_EndGame_Gunner_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Beastmaster_PartTerrorChance.Att_EndGame_Beastmaster_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Operative_PartTerrorChance.Att_EndGame_Operative_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Siren_PartTerrorChance.Att_EndGame_Siren_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
+
 SparkLevelPatchEntry,(1,1,0,BloodyHarvest_P),/Game/InteractiveObjects/ExplodingBarrels/Global/DA_ExplodingObject_Barrel_Jacobs.DA_ExplodingObject_Barrel_Jacobs,ExplodedDuration,0,,0.25
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_GenericPartTerrorChance.Att_EndGame_GenericPartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Gunner_PartTerrorChance.Att_EndGame_Gunner_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Beastmaster_PartTerrorChance.Att_EndGame_Beastmaster_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Operative_PartTerrorChance.Att_EndGame_Operative_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGame_Siren_PartTerrorChance.Att_EndGame_Siren_PartTerrorChance:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,0.1
 SparkLevelPatchEntry,(1,1,0,BloodyHarvest_P),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGamePartTerror_Multiplier_BHEnemy.Att_EndGamePartTerror_Multiplier_BHEnemy:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueScale,0,,10.0
 SparkLevelPatchEntry,(1,1,0,BloodyHarvest_P),/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/Att_EndGamePartTerror_Multiplier_RedChest.Att_EndGamePartTerror_Multiplier_RedChest:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueScale,0,,10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,HarvestBoss_LootDropChance,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,.25
