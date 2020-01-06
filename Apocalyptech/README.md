@@ -130,11 +130,11 @@ recent BL3 patches.
 ## OP Gear Mods
 
 - `craders_emp5_super_buff.txt` - Cheat mod which gives Crader's EM-P5 an
-  absurd amount of damage, infinite ammo, perfect accuracy/handling, increased
-  fire rate, and improves the movement speed buff.  I just moved to this as
-  my mod-testing gun instead of the Maggie because I still haven't figured out
-  how to increase character movement speed in general, but the EM-P5 already
-  has that effect built-in.
+  absurd amount of damage, infinite ammo, perfect accuracy/handling, and
+  increased fire rate.  I started using this as my mod-testing gun to take
+  advantage of its movement speed increase, though now that I've figured
+  out how to do a proper movement speed mod, that effect isn't nearly as
+  useful.  Still, it's a good testing gun anyway so I'll stick with it.
 - `backham_super_buff.txt` - Cheat mod which makes the Back Ham practically
   invulnerable.  It reports a 100% damage reduction, though that's not
   entirely accurate; some damage can and will get through, but it'll be

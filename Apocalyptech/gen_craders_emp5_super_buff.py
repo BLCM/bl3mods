@@ -8,10 +8,10 @@ mod = Mod('craders_emp5_super_buff.txt',
         [
             "Vastly buffs Crader's EM-P5's damage, makes it not consume any ammo,",
             "gives it perfect accuracy+handling (though the in-game Handling stat",
-            "won't say 100%), improves its already-good fire rate, and buffs up",
-            "its movement speed gains.  Used by myself primarily just for mod",
-            "testing purposes, for when I don't want to be bothered by actual",
-            "combat.",
+            "won't say 100%), and improves its already-good fire rate",
+            "",
+            "Used by myself primarily just for mod testing purposes, for when I",
+            "don't want to be bothered by actual combat.",
         ],
         'Craders',
         )
@@ -69,10 +69,11 @@ mod.reg_hotfix(Mod.PATCH, '',
         )
 
 # Also buff movement speed increase.  Stock: 0.25
-mod.table_hotfix(Mod.PATCH, '',
-        '/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons',
-        'CraderMP5',
-        'Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22',
-        0.75)
+# No longer doing this, since I figured out a real movement speed mod.
+#mod.table_hotfix(Mod.PATCH, '',
+#        '/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons',
+#        'CraderMP5',
+#        'Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22',
+#        0.75)
 
 mod.close()
