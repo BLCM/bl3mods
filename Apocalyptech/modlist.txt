@@ -5,7 +5,7 @@ better_mayhem_on_twitch
 
 # Mod-Testing Gear
 #craders_emp5_super_buff
-#backham_super_buff
+#transformer_super_buff
 
 # Cheaper SDUs
 cheaper_sdus

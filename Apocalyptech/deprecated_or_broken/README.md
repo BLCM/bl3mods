@@ -45,6 +45,14 @@ I'll probably not use them again) with my Crader EM-P5 and Back Ham setup:
   amount of damage.  Mostly just used for testing mods where I don't want
   to deal with enemies.  Also turns the Maggie into an Infinity -- doesn't
   consume ammo.
+- `backham_super_buff.txt` - Cheat mod which makes the Back Ham practically
+  invulnerable.  It reports a 100% damage reduction, though that's not
+  entirely accurate; some damage can and will get through, but it'll be
+  quite minor.  Damage reduction is applied regardless of the direction it
+  came from, contrary to what the card reports.  I was quite happy with
+  this shield, but the 40% reflect chance often made it difficult to
+  manage enemy damage when I was trying to test gear functionality, etc,
+  so I switched to the Transformer instead.
 - Bloody Harvest-related buffs (for getting the cryo challenge specifically
   done as easily as possible)
   - `stalker_super_buff.txt` - Used to take down Captain Haunt pretty

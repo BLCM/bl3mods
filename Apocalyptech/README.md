@@ -135,11 +135,8 @@ recent BL3 patches.
   advantage of its movement speed increase, though now that I've figured
   out how to do a proper movement speed mod, that effect isn't nearly as
   useful.  Still, it's a good testing gun anyway so I'll stick with it.
-- `backham_super_buff.txt` - Cheat mod which makes the Back Ham practically
-  invulnerable.  It reports a 100% damage reduction, though that's not
-  entirely accurate; some damage can and will get through, but it'll be
-  quite minor.  Damage reduction is applied regardless of the direction it
-  came from, contrary to what the card reports.
+- `transformer_super_buff.txt` - Cheat mod which makes the Transformer
+  practically invulnerable.
 
 ## Deprecated / Broken Mods
 
