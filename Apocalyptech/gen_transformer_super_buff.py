@@ -25,7 +25,7 @@ for (attr, mod_type, mod_val) in [
         # Our buffs
         ('/Game/Gear/Shields/_Design/Balance/Attributes/Att_ShieldBalance_Capacity', 'ScaleSimple', 5000),
         ('/Game/Gear/Shields/_Design/Balance/Attributes/Att_ShieldBalance_RegenDelay', 'ScaleSimple', 0.0001),
-        ('/Game/Gear/Shields/_Design/Balance/Attributes/Att_ShieldBalance_RegenRate', 'ScaleSimple', 5000),
+        ('/Game/Gear/Shields/_Design/Balance/Attributes/Att_ShieldBalance_RegenRate', 'ScaleSimple', 50000),
 
         ]:
 
