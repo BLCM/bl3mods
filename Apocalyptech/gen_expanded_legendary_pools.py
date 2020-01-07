@@ -287,10 +287,10 @@ pools = [
                 ('/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch.Balance_PS_MAL_SuckerPunch', 1*addition_scale),
                 # Scorpio
                 ('/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/Sabre/Balance/Balance_PS_Tediore_Sabre.Balance_PS_Tediore_Sabre', 1*addition_scale),
-                # Heckle
-                ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Heckle/Balance/Balance_PS_TOR_Heckle.Balance_PS_TOR_Heckle', 1*addition_scale),
-                # Hyde
-                ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/Balance/Balance_PS_TOR_Hyde.Balance_PS_TOR_Hyde', 1*addition_scale),
+                # Heckle - quite uninteresting, has no unique effects.  Bump its weight down even more than the others.
+                ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Heckle/Balance/Balance_PS_TOR_Heckle.Balance_PS_TOR_Heckle', 0.5*addition_scale),
+                # Hyde - quite uninteresting, has no unique effects.  Bump its weight down even more than the others.
+                ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/Balance/Balance_PS_TOR_Hyde.Balance_PS_TOR_Hyde', 0.5*addition_scale),
                 # Girth Blaster Elite (joke weapon)
                 ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf.Balance_PS_TOR_Nurf', 0.2*addition_scale),
                 # Occultist
