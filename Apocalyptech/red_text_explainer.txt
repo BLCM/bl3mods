@@ -161,7 +161,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/UIStat_RedText_Egon.UIStat_RedText_Egon,Text,0,,[Flavor]Don't cross the streams.[/Flavor] (continuous laser beam)
 
 # ECHO-2
-SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3,Text,0,,[Flavor]Do not look directly at ECHO-2.[/Flavor] (damage, radius, and fuse time depend on player looking at it (best not to?))
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3,Text,0,,[Flavor]Do not look directly at ECHO-2.[/Flavor] (no special effects, despite what the internet says)
 
 # Embrace the Pain
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text,0,,[Flavor]It hurts, hahahahaha! IT HURTS![/Flavor] (will [fire]ignite[/fire] player; during overheat, consumes no ammo)

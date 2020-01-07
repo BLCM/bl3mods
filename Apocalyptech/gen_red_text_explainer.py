@@ -255,11 +255,15 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Egon/UIStat_RedText_Egon.UIStat_RedText_Egon',
             "Don't cross the streams.",
             "continuous laser beam"),
-        # TODO: Details?
+        # The internet believes that the ECHO-2 behaves differently depending on whether you look at
+        # it or not, but my testing doesn't bear that out.  IMO that was something that was mentioned
+        # once or twice online and everyone else just ran with it without checking and spread it
+        # around.
         ('ECHO-2',
             '/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3',
             "Do not look directly at ECHO-2.",
-            "damage, radius, and fuse time depend on player looking at it (best not to?)"),
+            #"damage, radius, and fuse time depend on player looking at it (best not to?)"),
+            "no special effects, despite what the internet says"),
         ('Embrace the Pain',
             '/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate',
             "It hurts, hahahahaha! IT HURTS!",
