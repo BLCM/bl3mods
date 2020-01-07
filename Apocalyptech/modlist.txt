@@ -25,6 +25,9 @@ no_slam_artifacts
 # Vehicle Unlocks
 vehicle_unlocks
 
+# Unlock various Eridian equipment from the beginning
+eridian_unlocks
+
 # More tracker darts!
 more_tracker_darts
 

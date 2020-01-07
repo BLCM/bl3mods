@@ -126,6 +126,9 @@ recent BL3 patches.
     show up.
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
+- `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
+  from the beginning of the game, though currently all it does is the
+  Resonator.
 
 ## OP Gear Mods
 

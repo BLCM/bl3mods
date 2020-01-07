@@ -87,9 +87,9 @@ don't look at these thinking that they're any good.  :)
   challenges to have lower target numbers.  Total fail!
 - `guaranteed_badasses.txt` - A few little attempts to increase the number
   of Badasses.  Didn't do the trick, alas.
-- `eridian_unlocks.txt` - Some attempts to unlock Eridian Resonator from the
-  beginning of the game (would have gone on to the translator as well,
-  had I figured this out)
+- `eridian_unlocks.txt` - A work-in-progress; the main dir contains what
+  I've got working so far (which is just the Resonator unlock).  This has
+  the start of Analyzer/Translator too, though it acts a bit weird.
 - `torgue_full_auto.txt` - Tried to set Torgue ARs to full auto, but this
   didn't seem to do the trick (the version getting checked in actually tried
   to give them a 5-burst count).
