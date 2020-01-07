@@ -389,10 +389,11 @@ for (gear_name, obj_name, redtext, explanation) in [
             "That happens all the time.",
             "explosive rounds, crits ricochet three rounds"),
         # TODO: figure this out
+        # I suspect this might be an enemy-use weapon which really doesn't have anything special about it.
         ('Heckle',
             '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Heckle/UIStat_RedText_Heckle.UIStat_RedText_Heckle',
             "Am I evil?",
-            "unknown"),
+            ON_CARD),
         ('Hellfire',
             '/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/HellFire/UIStat_RedText_HellFire.UIStat_RedText_HellFire',
             "We don't need no... something...",
@@ -421,11 +422,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Hornet/UIStat_RedText_Hornet.UIStat_RedText_Hornet',
             "Fear the swarm!",
             "6-round burst, alt fire toggles zoom"),
-        # TODO: Verify this
         ('Hot Drop',
             '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/UIStat_RedText_HotDrop.UIStat_RedText_HotDrop',
             "We are coming out hot.",
-            "creates incendiary pool and launches 2 children"),
+            "creates incendiary pool and launches 2 small projectiles on impact"),
         ('The Hunt(ed)',
             '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/UIStat_RedText_Hunted.UIStat_RedText_Hunted',
             "So dead.",
@@ -446,10 +446,11 @@ for (gear_name, obj_name, redtext, explanation) in [
             "Grip tightly.",
             "drone homes in on enemies while shooting"),
         # TODO: figure this out
+        # I suspect this might be an enemy-use weapon which really doesn't have anything special about it.
         ('Hyde',
             '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/UIStat_RedText_Hyde.UIStat_RedText_Hyde',
             "Yes, I am.",
-            "unknown"),
+            ON_CARD),
         ('Hyper-Hydrator',
             '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/UIStat_RedText_HyperHydrator.UIStat_RedText_HyperHydrator',
             "Moister is noice-ter.",
@@ -506,12 +507,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/UIStat_RedText_Krakatoa.UIStat_RedText_Krakatoa',
             "Get him angry and he's bound to erupt.",
             "killed enemies generate volcano"),
-        # TODO: Figure this out
-        # Presumably a reference to https://gearsofwar.fandom.com/wiki/Kryll_Grenade
         ('Kryll',
             '/Game/Gear/GrenadeMods/_Design/_Unique/Kryll/UI/UIStat_RedText_Kryll.UIStat_RedText_Kryll',
             "Besiege!",
-            "unknown"),
+            "MIRV whose children become fast-moving homing mini-MIRVs after a short time"),
         ('L0V3M4CH1N3',
             '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/L0V3M4CH1N3/UIStat_RedText_L0V3M4CH1N3.UIStat_RedText_L0V3M4CH1N3',
             "Love always undermines righteous action.",
@@ -572,11 +571,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/UIStat_RedText_MalaksBane.UIStat_RedText_MalaksBane',
             "Welcome to the end.",
             "projectiles bounce, alt is shotgun-style blast"),
-        # TODO: figure this out; didn't seem too notable at the time but didn't test much
         ('Manic Pixie Dream Gun',
             '/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/UIStat_RedText_FriendZone.UIStat_RedText_FriendZone',
             "It's all in your head.",
-            "unknown"),
+            "reloads will sometimes drop the gun, which will run away and must be caught to retrieve the weapon"),
         ('Masterwork Crossbow',
             '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/MasterworkCrossbow/UIStat_RedText_Masterwork.UIStat_RedText_Masterwork',
             "All craftsdwarfship is of the highest quality.",
@@ -697,11 +695,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/UIStat_RedText_PortaPooper.UIStat_RedText_PortaPooper',
             "Never washes out.",
             "fires feces"),
-        # TODO: Figure this out?  Not that it's acquireable, though...
         ('Portals and Shite',
             '/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/Portal/UIStat_RedText_Portals.UIStat_RedText_Portals',
             "This is beyond science.",
-            "unknown"),
+            "unimplemented gun - nothing special about it"),
         ('Predatory Lending',
             '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/PredatoryLending/UIStat_RedText_PredatoryLending.UIStat_RedText_PredatoryLending',
             "Bullets are cheap, but not that cheap.",
@@ -730,7 +727,6 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Shields/_Design/_Uniques/Re-Charger/Name/UIStat_RedText_ReCharger.UIStat_RedText_ReCharger',
             "Once more, with feeling.",
             "no recharge delay when depleted (20sec cooldown)"),
-        # TODO: really?  That seems weird; verify.
         ('Rebel Yell',
             '/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/UIStat_RedText_RebelYell.UIStat_RedText_RebelYell',
             "When you charge, yell like Furies.",
@@ -892,11 +888,10 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Shields/_Design/_Uniques/Transformer/Name/UIStat_RedText_Transformer.UIStat_RedText_Transformer',
             "There's more than your eye can see.",
             "converts 100% of shock damage into shields"),
-        # TODO: confirm this
         ('THE TWO TIME',
             '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/TwoTime/UIStat_RedText_TwoTime.UIStat_RedText_TwoTime',
             "Back-to-back consecutive champion.",
-            "hitscan projectiles"),
+            "hitscan projectiles (no better than Jakobs, though)"),
         ('Thumper',
             '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/UIStat_RedText_Thumper.UIStat_RedText_Thumper',
             "The happiest place on Pandora.",
@@ -983,8 +978,6 @@ for (gear_name, obj_name, redtext, explanation) in [
             "four-round burst"),
 
         # New Mayhem 4 / Maliwan Takedown gear
-        # TODO: All of these could use verification once more people have seen and used these
-        # Don't actually believe the mag refill on juju, test it.
         ('Good Juju',
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/UIStat_RedText_Juju.UIStat_RedText_Juju',
             "Kinda, sorta wants to end all existence.",
@@ -996,7 +989,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('S3RV-80S-EXECUTE',
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/UIStat_RedText_Execute.UIStat_RedText_Execute',
             "Touch of death requires mastery of combo strikes.",
-            "enemies hit with reload take more damage?"),
+            "enemies hit with empty reload take more damage for 12 sec, effect can stack"),
         ("Vosk's Deathgrip",
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/UIStat_RedText_Deathgrip.UIStat_RedText_Deathgrip',
             "A good death is its own reward.",
@@ -1008,7 +1001,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Zheitsev's Eruption",
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/UIStat_RedText_Zheitsev.UIStat_RedText_Zheitsev',
             "Pain and Misery erupt in the Void.",
-            "launches homing projectiles when overheated"),
+            "launches barrage of homing projectiles when overheated"),
         ("Crader's EM-P5",
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5',
             "Dust off the beta EMP5.",
@@ -1032,7 +1025,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('P2P Networker',
             '/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link',
             "You wouldn't download a car.",
-            "unknown - strange alt-fire mode?"),
+            "hits chain to nearby enemies, also a weird UI name on alt-element mode"),
         ('Frozen Snowshoe',
             '/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/UIStat_RedText_SlideKick_FrozenHeart.UIStat_RedText_SlideKick_FrozenHeart',
             "Give em' the cold toelder.",
@@ -1048,14 +1041,13 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Version 0.m',
             '/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Name/UIStat_RedText_VersionOmNom.UIStat_RedText_VersionOmNom',
             "Stand and Clap.",
-            "unknown"),
+            "amp effect, on depletion releases AOE and creates a temporary amp damage area"),
 
         # DLC1 (Dandelion) Gear - Moxxi's Heist of the Handsome Jackpot
-        # TODO: nearly all of these could use verification
         ('AutoAimè',
             '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/UIStat_RedText_AutoAime.UIStat_RedText_AutoAime',
             "OGC HOOKED",
-            "homing bullets, though they must be close to activate"),
+            "bullets home to center of target, must be reasonably close to activate"),
         ('Boomer',
             '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/UIStat_RedText_Boomer.UIStat_RedText_Boomer',
             'Some like it hot.',
@@ -1103,7 +1095,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Melt Facer',
             '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/MeltFacer/UIStat_RedText_MeltFacer.UIStat_RedText_MeltFacer',
             'Get melted.',
-            'crits do additional cryo damage (or maybe just cryo damage?)'),
+            'cryo damage/freeze chance on critical hits'),
         ('Nukem',
             '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/UIStat_RedText_Nukem.UIStat_RedText_Nukem',
             'Name dropper.',
