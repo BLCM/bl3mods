@@ -129,6 +129,11 @@ recent BL3 patches.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
   from the beginning of the game, though currently all it does is the
   Resonator.
+- `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
+  requirements for the relevant cosmetic items.  This does *not* actually
+  spawn them in your game; you'll have to edit either `expanded_customization_pools`
+  or `testing_loot_drops` to drop/enable them, if you don't already have
+  them.
 
 ## OP Gear Mods
 

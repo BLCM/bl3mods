@@ -28,6 +28,9 @@ vehicle_unlocks
 # Unlock various Eridian equipment from the beginning
 eridian_unlocks
 
+# Unlock cosmetic items
+customization_unlocks
+
 # More tracker darts!
 more_tracker_darts
 
