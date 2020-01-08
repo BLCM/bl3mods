@@ -363,7 +363,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Ghast Call',
             '/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/UI/UIStat_RedText_FontOfDarkness.UIStat_RedText_FontOfDarkness',
             "To you I am past, a story to tell.",
-            "launches a ghast skill which creates ghast rift"),
+            "launches a ghast skull which creates ghast rift"),
         ('Girth Blaster Elite (joke weapon)',
             '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/UIStat_RedText_Nurf.UIStat_RedText_Nurf',
             "Don't go to pieces on me.",

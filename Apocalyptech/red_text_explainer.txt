@@ -230,7 +230,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/BurgerCannon/UIStat_RedText_BurgerCannon.UIStat_RedText_BurgerCannon,Text,0,,[Flavor]Dayum. Dayum! DAYUM![/Flavor] (fires cheeseburgers)
 
 # Ghast Call
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/UI/UIStat_RedText_FontOfDarkness.UIStat_RedText_FontOfDarkness,Text,0,,[Flavor]To you I am past, a story to tell.[/Flavor] (launches a ghast skill which creates ghast rift)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/UI/UIStat_RedText_FontOfDarkness.UIStat_RedText_FontOfDarkness,Text,0,,[Flavor]To you I am past, a story to tell.[/Flavor] (launches a ghast skull which creates ghast rift)
 
 # Girth Blaster Elite (joke weapon)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/UIStat_RedText_Nurf.UIStat_RedText_Nurf,Text,0,,[Flavor]Don't go to pieces on me.[/Flavor] (joke gun)
