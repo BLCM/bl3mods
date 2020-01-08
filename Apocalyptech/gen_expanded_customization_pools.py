@@ -208,10 +208,13 @@ balances = []
 # Base Game
 # 12 is retro pack, 13 is neon pack
 blacklist = {12, 13}
-for num in range(1, 35):
+for num in range(1, 36):
     if num not in blacklist:
         balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
-# Unknown weird theme out in a strange location - AMD-themed, can't seem to drop it.
+# This is an AMD-themed ECHO skin you get by buying certain AMD CPUs, but even though the object
+# looks to my organization routines like it belongs at this path, it *actually* belongs up
+# above in the main list.  Just got moved wrongly at some point, and probably overwrote
+# the object that's *supposed* to be at this location.
 #balances.append('/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35')
 # Uncategorized DLC
 balances.append('/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_37.InvBal_ECHOTheme_37')

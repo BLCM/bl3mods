@@ -70,7 +70,7 @@ balances = [
 
         # Testing Gear!
         #'/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5',
-        '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer.InvBalD_Shield_LGD_Transformer',
+        #'/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer.InvBalD_Shield_LGD_Transformer',
 
         # Older testing gear
         #'/Game/Gear/Shields/_Design/_Uniques/BackHam/Balance/InvBalD_Shield_BackHam.InvBalD_Shield_BackHam',
@@ -140,6 +140,7 @@ balances = [
 
         # Weird, orphaned ECHO skin, not sure if this is droppable.
         #'/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35',
+        '/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_35.InvBal_ECHOTheme_35',
 
         # Bloody Harvest rewards:
         #'/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1',
