@@ -81,7 +81,7 @@ class Mod(object):
         """
         Gets the "full" object name if there's not already a . in the name
         """
-        if '.' in object_name:
+        if object_name == 'None' or '.' in object_name:
             return object_name
         else:
             return Mod.get_full(object_name)
