@@ -20,6 +20,36 @@ mod = Mod('vehicle_unlocks.txt',
         'VUnlocks',
         )
 
+# A list of all levels where vehicles can show up
+outrunner_levels = {
+        'Prologue_P',
+        'Outskirts_P',
+        'Desert_P',
+        'MotorcadeFestival_P',
+        'Convoy_P',
+        'City_P',
+        'Desolate_P',
+        }
+technical_levels = {
+        'Outskirts_P',
+        'CityVault_P',
+        'Wetlands_P',
+        'Convoy_P',
+        'Motorcade_P',
+        'MotorcadeFestival_P',
+        }
+cyclone_levels = {
+        'Convoy_P',
+        'Wetlands_P',
+        'MotorcadeFestival_P',
+        'Desert_P',
+        'Motorcade_P',
+        'CityVault_P',
+        'Desolate_P',
+        'City_P',
+        }
+all_levels = outrunner_levels|technical_levels|cyclone_levels
+
 mod.header('Remove level restrictions for parts')
 
 for (label, table, col_name, rows) in [
@@ -103,26 +133,19 @@ for (label, table, col_name, rows) in [
     full_table = Mod.get_full(table)
     mod.comment(label)
     for row in rows:
-        mod.table_hotfix(Mod.PATCH, '',
-                full_table,
-                row,
-                col_name,
-                0)
+        for level in sorted(all_levels):
+            mod.table_hotfix(Mod.LEVEL, level,
+                    full_table,
+                    row,
+                    col_name,
+                    0)
     mod.newline()
 
 # Fix any skin errors
 mod.header('Fixes/Tweaks')
 
 mod.comment('Fix Outrunner Red Machine Skin MaxGameStage')
-for level in [
-        'Prologue_P',
-        'Outskirts_P',
-        'Desert_P',
-        'MotorcadeFestival_P',
-        'Convoy_P',
-        'City_P',
-        'Desolate_P',
-        ]:
+for level in sorted(outrunner_levels):
     mod.reg_hotfix(Mod.LEVEL, level,
             '/Game/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_RedMachine.VehiclePart_Mat_VehiclePart_Outrunner_RedMachine',
             'MaxGameStage.DataTableValue.ValueName',
