@@ -839,7 +839,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Soleki Protocol',
             '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Soleki/UIStat_RedText_Soleki.UIStat_RedText_Soleki',
             "Cut Katagawa Jr.'s Junior.",
-            "on hit, ricochet splits into 5 projectils in horizontal (X) or vertical (Y) line"),
+            "on hit, ricochet splits into 5 projectiles in horizontal (X) or vertical (Y) line"),
         ('Stalker',
             '/Game/PatchDLC/BloodyHarvest/Gear/Weapons/SniperRifles/Dahl/_Design/_Unique/Frostbolt/UIStat_RedText_Fbolt.UIStat_RedText_Fbolt',
             "All that remains is an icy husk.",
