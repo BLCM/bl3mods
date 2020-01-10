@@ -215,7 +215,6 @@ mod.header('Basic Guaranteed Boss Drop Statements')
 # ElDragonJunior,  <- I think El Dragon Jr might use "RoadDog"
 # Guardian,
 # HopperSwarmer,
-# JudgeHightower,
 # RaidBoss,
 # RaidMiniBoss1,
 # RaidMiniboss2,
@@ -263,6 +262,7 @@ for (label, row_name, char_name) in [
         ('I\'m Rakkman', 'Rakkman', 'BPChar_Rakkman'),
         ('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
         ('Jabbermogwai', 'Jabbermogwai', 'BPChar_Ape_Hunt01'),
+        ('Judge Hightower', 'JudgeHightower', 'BPChar_AtlasSoldier_Bounty01'),
         ('Katagawa Ball', 'KatagawaBall', 'BPChar_Oversphere_KatagawaSphere'),
         ('Katagawa Jr.', 'KatagawaJr', 'BPChar_KJR'),
         ('Killavolt', 'KillaVolt', 'BPChar_EnforcerKillavolt'),
@@ -492,37 +492,6 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_TinkRedJabber',
             ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss.ItemPoolList_MiniBoss"')
         )""")
 mod.newline()
-
-# Judge Hightower - doesn't seem to actually drop from his pool properly, so see if we
-# can fix that?  EDIT: nope, couldn't figure this out.  Both Hightower and his gang
-# only ever seem to drop a single AR ammo, no matter what I do.  Weird.
-# TODO: How about trying to modify /Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01/SpawnOptions_AtlasSoldier_Bounty01
-# ... and set that object's `ItemPoolToDropOnDeath` attribute?  For example, see:
-# /Game/Enemies/_Spawning/CotV/Enforcers/_Unique/SpawnOptions_EnforcerSacrificeBoss_Runnable
-# (Update on todo: either that doesn't work either, or I have the syntax wrong)
-#mod.comment('Judge Hightower')
-#mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
-#        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01/SpawnOptions_AtlasSoldier_Bounty01.SpawnOptions_AtlasSoldier_Bounty01',
-#        'ItemPoolToDropOnDeath',
-#        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower')
-#mod.reg_hotfix(Mod.LEVEL, 'Towers_P',
-#        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01/SpawnOptions_AtlasSoldier_Bounty01.SpawnOptions_AtlasSoldier_Bounty01',
-#        'ItemPoolToDropOnDeath',
-#        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower')
-#mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
-#        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',
-#        'DropOnDeathItemPools',
-#        """(
-#            ItemPools=(
-#                (
-#                    ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower"',
-#                    PoolProbability=(BaseValueConstant=1)
-#                )
-#            ),
-#            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss.ItemPoolList_MiniBoss"')
-#        )""")
-#
-#mod.newline()
 
 # Psychobillies!  A set of official hotfixes from GBX clears out the drop pools for
 # all but one of the Psychobillies.  That won't do!  Reinstate those (we're just
@@ -1397,6 +1366,33 @@ for (label, row_name, chance) in [
                     BaseValueScale=1
                 )""".format(chance=chance))
     mod.newline()
+
+# Bugfixes!
+mod.header('Bugfixes')
+
+# Judge Hightower (and his cronies) have data in PlayThroughs[0].DropOnDeathItemPools which override
+# the actual pools, and causes them to only drop AR ammo.  Clear that out!
+mod.comment('Fix Judge Hightower drops')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].bOverrideDropOnDeathItemPools',
+        'False')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].DropOnDeathItemPools.ItemPools',
+        '()')
+mod.newline()
+
+mod.comment('Fix Hightower Crew drops')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].bOverrideDropOnDeathItemPools',
+        'False')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].DropOnDeathItemPools.ItemPools',
+        '()')
+mod.newline()
 
 # Just some testing stuff at the end of the file, to make sure that the game
 # is parsing all the way to the end of the file

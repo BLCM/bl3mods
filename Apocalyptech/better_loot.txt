@@ -217,6 +217,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Ape_Hunt01),/Game/GameData/Loot/ItemPool
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Ape_Hunt01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Jabbermogwai,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Ape_Hunt01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Jabbermogwai,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
 
+# Judge Hightower
+SparkCharacterLoadedEntry,(1,2,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,JudgeHightower,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,JudgeHightower,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,JudgeHightower,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
+
 # Katagawa Ball
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaBall,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,KatagawaBall,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
@@ -895,4 +900,16 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWei
 # Mayhem 3
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughOne,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DropWeight/DataTable_EndGame_DropChance.DataTable_EndGame_DropChance,NoneChance_Mayhem_03,PlaythroughTwoAndBeyond,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+###
+### Bugfixes
+###
+
+# Fix Judge Hightower drops
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
+
+# Fix Hightower Crew drops
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
 
