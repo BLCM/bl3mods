@@ -479,7 +479,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/RedQueen/UI/UIStat_RedText_RedQueen.UIStat_RedText_RedQueen,Text,0,,[Flavor]OFF WITH THEIR HEADS![/Flavor] (grenade splits in two with laser connecting them)
 
 # Redistributor
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/UIStat_RedText_Fork.UIStat_RedText_Fork,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (every 7th shot is amped and chains)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/UIStat_RedText_Fork.UIStat_RedText_Fork,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (all effects on card)
 
 # Redline
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/UIStat_RedText_RedLine.UIStat_RedText_RedLine,Text,0,,[Flavor]I live my life a quarter mag at a time.[/Flavor] (increased fire rate with weapon charge-up)
@@ -647,7 +647,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth,Text,0,,[Flavor]Stand in the f****** circle.[/Flavor] (shoots two oscillating projectiles side by side)
 
 # Redistributor
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (every 7th shot is amped and chains)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (all effects on card)
 
 # Moonfire
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_RedText_HandCannon.UIStat_RedText_HandCannon,Text,0,,[Flavor]Meet your destiny.[/Flavor] (every 3rd shot is more powerful)
