@@ -24,7 +24,7 @@ attr_effects = []
 for (attr, mod_type, mod_val) in [
 
         # Increased Damage
-        ('/Game/GameData/Weapons/Att_Weapon_Damage', 'ScaleSimple', 300),
+        ('/Game/GameData/Weapons/Att_Weapon_Damage', 'ScaleSimple', 6000),
 
         # Infinite ammo.
         ('/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost', 'OverrideBaseValue', 0),
