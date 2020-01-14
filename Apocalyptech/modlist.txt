@@ -1,11 +1,14 @@
-# 10-Year Anniversary Events
+###
+### Better versions of 10-Year Anniversary Events
+###
+
 better_rare_spawn_hunt_stripped
 better_eridium_event
 better_mayhem_on_twitch
 
-# Mod-Testing Gear
-#craders_emp5_super_buff
-#transformer_super_buff
+###
+### Annnnd all the various mods that are slightly more original.
+###
 
 # Cheaper SDUs
 cheaper_sdus
@@ -55,6 +58,24 @@ all_weapons_can_anoint
 # Challenge icons are always visible
 always_visible_challenge_icons
 
+###
+### Manufacturer locks
+###
+
+#manufacturer_lock_atlas
+#manufacturer_lock_cov
+#manufacturer_lock_dahl
+#manufacturer_lock_hyperion
+#manufacturer_lock_jakobs
+#manufacturer_lock_maliwan
+#manufacturer_lock_tediore
+#manufacturer_lock_torgue
+#manufacturer_lock_vladof
+
+###
+### Bloody Harvest mods
+###
+
 # Bloody Harvest toggles
 #bloody_harvest_enable
 #bloody_harvest_disable
@@ -62,11 +83,14 @@ always_visible_challenge_icons
 # Guaranteed Ghosts in Bloody Harvest event
 #guaranteed_ghosts
 
+###
+### Mod-testing Mods
+###
+
+# Mod-Testing Gear
+#craders_emp5_super_buff
+#transformer_super_buff
+
 # Testing loot drops
 #testing_loot_drops
 
-# Haven't gotten these to work at all:
-#cdh
-#no_delay_red_chests
-#faster_cost_spin
-#bloody_harvest_challenges

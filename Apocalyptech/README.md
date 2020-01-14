@@ -119,11 +119,17 @@ recent BL3 patches.
   salvages, Radios, etc) always appear on the map, regardless of if you've
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
-  the available challenge intros will be played.  **NOTE:** This has not
-  yet been well-tested; I'm just doing that as I go through another BL3
+  the available challenge intros will be played.  **NOTE:** This has only
+  been partially tested; I'm just doing that as I go through another BL3
   playthrough.  Known issues, so far:
   - The third Typhon log in Meridian Outskirts doesn't seem to want to
     show up.
+  - The Dead Claptrap in Neon Arterial might not show up immediately,
+    though it does show up before there's been too much progression
+    in the level.
+  - The Legendary Hunt in Floodmoor Basin doesn't seem to show up until
+    you're right on top of it.
+  - Likewise, the Legendary Hunt in The Anvil doesn't seem to show up.
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
@@ -134,6 +140,13 @@ recent BL3 patches.
   spawn them in your game; you'll have to edit either `expanded_customization_pools`
   or `testing_loot_drops` to drop/enable them, if you don't already have
   them.
+- `manufacturer_lock_*.txt` - Where possible, locks weapon drops to only
+  the specified manufacturer (except for legendary/unique pools, which
+  are left totally alone).  This also only touches pools in which the
+  manufacturer actually exists, so if you load in the Atlas lock mod,
+  you'll still get the usual range of shotguns, SMGs, and sniper rifles,
+  for instance.  There's also a few instances of manufacturer-specific
+  loot pools which haven't been touched.
 
 ## OP Gear Mods
 
