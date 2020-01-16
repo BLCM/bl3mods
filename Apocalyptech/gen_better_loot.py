@@ -9,6 +9,8 @@ mod = Mod('better_loot.txt',
         'BL',
         )
 
+# TODO: The Farming Frenzy event sets the default table here using a regular SparkPatchEntry,
+# rather than by character.  So we may be able to get away with that?
 def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds'):
     """
     Sets the drop odds for specific legendary loot pools, used for bosses.
@@ -295,6 +297,8 @@ for (label, row_name, char_name) in [
     mod.newline()
 
 # Maliwan Takedown Bosses
+# TODO: Turns out that this table should be hotfixable with a LEVEL on Raid_P, rather than having to
+# do it by character
 for (label, row_name, char_name) in [
         ('Wotan the Invincible', 'RaidBoss', 'BPChar_BehemothRaid'),
         ("Wotan's Brain", 'RaidBoss', 'BPChar_SpiderBrain'),
@@ -1171,16 +1175,23 @@ for (label, char_name, pool, quantity) in [
         ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink', 4),
         ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated', 2),
 
-        # There's a lot more than 4 items in here, but this'll do.
+        # There are a *ton* of items that drop from these (15 total for the Valkyries,
+        # 19 for Wotan), and you get four total drops from 'em: once from Valkyries
+        # and then one for each Wotan part.
+        #
+        # Going to have each drop provide 3, which is still sort of too much, really,
+        # but that'll give you 12 over the course of one run.  You'll need a few
+        # runs through to get the complete set.
+        #
         # BPChar_BehemothRaid: Wotan the Invincible
         # BPChar_SpiderBrain: Wotan's Brain
         # BPChar_UpperHalf: Wotan's Better Half
         # BPChar_MechRaidBossBar: Valkyrie Squad
-        ('Maliwan Takedown Legendaries (possibly not used?)', '', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_Raid1_Legendary.ItemPool_Raid1_Legendary', 4),
-        ('Maliwan Takedown Raid Bosses', 'BPChar_BehemothRaid', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 4),
-        ('Maliwan Takedown Raid Bosses', 'BPChar_SpiderBrain', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 4),
-        ('Maliwan Takedown Raid Bosses', 'BPChar_UpperHalf', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 4),
-        ('Maliwan Takedown Raid Minibosses', 'BPChar_MechRaidBossBar', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool', 4),
+        #('Maliwan Takedown Legendaries (possibly not used?)', '', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_Raid1_Legendary.ItemPool_Raid1_Legendary', 3),
+        ('Maliwan Takedown Raid Bosses', 'BPChar_BehemothRaid', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 3),
+        ('Maliwan Takedown Raid Bosses', 'BPChar_SpiderBrain', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 3),
+        ('Maliwan Takedown Raid Bosses', 'BPChar_UpperHalf', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 3),
+        ('Maliwan Takedown Raid Minibosses', 'BPChar_MechRaidBossBar', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool', 3),
 
         ]:
     mod.comment(label)
@@ -1271,15 +1282,6 @@ for idx in range(5, 8):
                 '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool',
                 'BalancedItems[{}].Weight.BaseValueConstant'.format(idx),
                 0.75)
-for char_name in [
-        'BPChar_BehemothRaid',
-        'BPChar_SpiderBrain',
-        'BPChar_UpperHalf',
-        ]:
-    mod.reg_hotfix(Mod.CHAR, char_name,
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool',
-            'BalancedItems[8].Weight.BaseValueConstant',
-            1)
 mod.newline()
 
 # Unlock Mayhem 4 drops where appropriate (for non-boss-specific drops)
@@ -1312,7 +1314,7 @@ for char_name in [
             '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool',
             'BalancedItems[8].Weight',
             """(
-                BaseValueConstant=1,
+                BaseValueConstant=11,
                 DataTableValue=(DataTable=None,RowName="",ValueName=""),
                 BaseValueAttribute=None,
                 AttributeInitializer=None,
@@ -1322,7 +1324,7 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_MechRaidBossBar',
         '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool',
         'BalancedItems[4].Weight',
         """(
-            BaseValueConstant=0.5,
+            BaseValueConstant=2,
             DataTableValue=(DataTable=None,RowName="",ValueName=""),
             BaseValueAttribute=None,
             AttributeInitializer=None,
@@ -1371,7 +1373,9 @@ for (label, row_name, chance) in [
 mod.header('Bugfixes')
 
 # Judge Hightower (and his cronies) have data in PlayThroughs[0].DropOnDeathItemPools which override
-# the actual pools, and causes them to only drop AR ammo.  Clear that out!
+# the actual pools, and causes them to only drop AR ammo.  Clear that out!  (This was fixed officially
+# in GBX's 2020-01-16 hotfix update, though I'm keeping it in here for now because I get an Internet
+# Gold Star for figuring it out before GBX.)
 mod.comment('Fix Judge Hightower drops')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
         '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',
