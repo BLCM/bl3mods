@@ -58,6 +58,9 @@ all_weapons_can_anoint
 # Challenge icons are always visible
 always_visible_challenge_icons
 
+# Always scale Maliwan Takedown to the number of players
+always_scale_maliwan_takedown
+
 ###
 ### Manufacturer locks
 ###

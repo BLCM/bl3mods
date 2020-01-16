@@ -147,6 +147,9 @@ recent BL3 patches.
   you'll still get the usual range of shotguns, SMGs, and sniper rifles,
   for instance.  There's also a few instances of manufacturer-specific
   loot pools which haven't been touched.
+- `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
+  set the Takedown to scale to the number of players.  This'll let you
+  keep it that way forever, if you want.
 
 ## OP Gear Mods
 
