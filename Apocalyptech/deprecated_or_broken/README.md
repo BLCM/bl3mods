@@ -1,3 +1,13 @@
+## Proofs of Concept
+
+These are things that *work*, and I wanted to keep track of, but which
+weren't actually intended to be mods themselves.
+
+- `spawn_test.txt` - I just wanted to see if we could spawn enemy types in
+  maps which don't ordinarily spawn them, and we can!  The test as-is is
+  a bit broken and needs further development to be viable, but it worked
+  well enough that I'm happy leaving it the way it is for now.
+
 ## Deprecated Anniversary Event Mods
 
 These are related to the 10-Year Anniversary events which took place shortly
