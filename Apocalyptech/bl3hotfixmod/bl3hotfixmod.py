@@ -69,22 +69,40 @@ class Mod(object):
         print('', file=self.df)
 
     @staticmethod
-    def get_full(object_name):
+    def get_full(object_name, data_type=None):
         """
         Gets the "full" object name from one whose full reference just repeats the
         last component.
         """
-        return '{}.{}'.format(object_name, object_name.split('/')[-1])
+        expanded_obj = '{}.{}'.format(object_name, object_name.split('/')[-1])
+        if data_type:
+            return '{}\'"{}"\''.format(
+                    data_type,
+                    expanded_obj,
+                    )
+        else:
+            return expanded_obj
 
     @staticmethod
-    def get_full_cond(object_name):
+    def get_full_cond(object_name, data_type=None):
         """
         Gets the "full" object name if there's not already a . in the name
         """
-        if object_name == 'None' or '.' in object_name:
+        if object_name == 'None':
             return object_name
+
+        if '.' in object_name:
+            expanded_obj = object_name
         else:
-            return Mod.get_full(object_name)
+            expanded_obj = Mod.get_full(object_name)
+
+        if data_type:
+            return '{}\'"{}"\''.format(
+                    data_type,
+                    expanded_obj,
+                    )
+        else:
+            return expanded_obj
 
     def newline(self):
         """
@@ -176,3 +194,109 @@ class Mod(object):
             self.newline()
         self.df.close()
 
+class DataTableValue(object):
+    """
+    Class to make dealing with datatable values (inside BVC tuples) easier
+    """
+
+    def __init__(self, table=None, row='', value=''):
+        if table:
+            self.table = table
+        else:
+            self.table = 'None'
+        self.row = row
+        self.value = value
+
+    def __str__(self):
+        return '(DataTable={},RowName="{}",ValueName="{}")'.format(
+                Mod.get_full_cond(self.table, 'DataTable'),
+                self.row,
+                self.value,
+                )
+
+class BVC(object):
+    """
+    Class to make dealing with BVC tuples/structures/whatever a bit easier.  By
+    default, When turned into a string, it'll only include "interesting" data.
+    So if you've just got a tuple with BVC=1,BVSC=1, you'll get an empty string
+    instead.  Use `full=True` to get all components regardless (if, for instance,
+    you're overwriting an existing tuple and want to be sure to reset all
+    attributes).
+    """
+
+    def __init__(self, bvc=1, dtv=None, bva=None, ai=None, bvs=1, full=False):
+        self.full = full
+        self.bvc = bvc
+        if dtv:
+            self.dtv = dtv
+        else:
+            self.dtv = DataTableValue()
+        if bva:
+            self.bva = bva
+        else:
+            self.bva = 'None'
+        if ai:
+            self.ai = ai
+        else:
+            self.ai = 'None'
+        self.bvs = bvs
+
+    def _get_parts(self):
+        parts = []
+        if self.full or self.bvc != 1:
+            parts.append('BaseValueConstant={}'.format(round(self.bvc, 6)))
+        if self.full or self.dtv.table != 'None':
+            parts.append('DataTableValue={}'.format(self.dtv))
+        # TODO: Are these always the object types for BVA/AI?
+        if self.full or self.bva != 'None':
+            parts.append('BaseValueAttribute={}'.format(Mod.get_full_cond(self.bva, 'GbxAttributeData')))
+        if self.full or self.ai != 'None':
+            parts.append('AttributeInitializer={}'.format(Mod.get_full_cond(self.ai, 'BlueprintGeneratedClass')))
+        if self.full or self.bvs != 1:
+            parts.append('BaseValueScale={}'.format(round(self.bvs, 6)))
+        return parts
+
+    def has_data(self):
+        return len(self._get_parts()) > 0
+
+    def __str__(self):
+        parts = self._get_parts()
+        if len(parts) == 0:
+            return ''
+        else:
+            return '({})'.format(','.join(parts))
+
+class BVCF(BVC):
+    """
+    A BVC which always has `full=True` specified.  Just a little convenience class.
+    """
+
+    def __init__(self, **kwargs):
+        super().__init__(full=True, **kwargs)
+
+class Pool(object):
+    """
+    Class to make dealing with pools a bit easier
+    """
+
+    def __init__(self, pool_name, probability=1, num=1):
+        self.pool_name = pool_name
+        if probability:
+            if type(probability) == BVC or type(probability) == BVCF:
+                self.probability = probability
+            else:
+                self.probability = BVC(bvc=probability)
+        if num:
+            if type(probability) == BVC or type(probability) == BVCF:
+                self.num = num
+            else:
+                self.num = BVC(bvc=num)
+
+    def __str__(self):
+        parts = []
+        parts.append('ItemPool={}'.format(Mod.get_full_cond(self.pool_name, 'ItemPool')))
+        if self.probability and self.probability.has_data():
+            parts.append('PoolProbability={}'.format(self.probability))
+        if self.num and self.num.has_data():
+            parts.append('NumberOfTimesToSelectFromThisPool={}'.format(self.num))
+        return '({})'.format(','.join(parts))

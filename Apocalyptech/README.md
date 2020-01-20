@@ -17,6 +17,7 @@ recent BL3 patches.
   spawns will spawn at 100% instead.  Also makes most of the vehicle rare
   spawns more common, with the exception of Skagzilla (though note that
   those just have an increased chance, not guaranteed).
+  - Brood Mother, in Pyre of Stars, looks like it's unaffected by this, alas.
 - `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium
@@ -127,9 +128,13 @@ recent BL3 patches.
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
     in the level.
-  - The Legendary Hunt in Floodmoor Basin doesn't seem to show up until
-    you're right on top of it.
-  - Likewise, the Legendary Hunt in The Anvil doesn't seem to show up.
+  - A *bunch* of Legendary Hunts in Eden-6 don't show up until you're
+    right on top of them, for some reason.  No idea why this planet's
+    so finnicky:
+    - Floodmoor Basin
+    - Anvil
+    - Voracious Canopy
+    - Ambermire
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment

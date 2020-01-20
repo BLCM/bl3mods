@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('better_loot.txt',
         'Better Loot, ish',
@@ -163,30 +163,18 @@ for char in [
     mod.reg_hotfix(Mod.CHAR, char,
             '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
             'ItemPools[9].PoolProbability',
-            """(
-                BaseValueConstant=0.030000,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1.000000
-            )""")
+            BVCF(bvc=0.03))
 
     # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.
     mod.reg_hotfix(Mod.CHAR, char,
             '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
             'ItemPools[10].PoolProbability',
-            """(
-                BaseValueConstant=0.750000,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1.000000
-            )""")
+            BVCF(bvc=0.75))
 
 mod.newline()
 
 # Guaranteed boss drops!
-mod.header('Basic Guaranteed Boss Drop Statements')
+mod.header('DataTable-Based Guaranteed Boss Drop Statements')
 
 # Associating entries from Table_LegendarySpecificLootOdds with characters.  These
 # ones seem to be referenced, but the chars in question don't actually drop anything
@@ -248,13 +236,15 @@ for (label, row_name, char_name) in [
         ('Crawley Family (Matty)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaD'),
         ('Crushjaw', 'Crushjaw', 'BPChar_GoonBounty01'),
         ('DJ Deadsk4g', 'DJBlood', 'BPChar_Enforcer_Bounty02'),
-        ('Demoskaggon', 'DemoSkag', 'BPChar_Skag_Rare01'),
+        # I don't think this is used...
+        #('Demoskaggon', 'DemoSkag', 'BPChar_Skag_Rare01'),
         ('Dinklebot', 'Dinklebot', 'BPChar_OversphereRare01'),
-        ('Force Trooper Citrine', 'PowerTroopers', 'BPChar_Trooper_Rare01b'),
-        ('Force Trooper Onyx', 'PowerTroopers', 'BPChar_Trooper_Rare01a'),
-        ('Force Trooper Ruby', 'PowerTroopers', 'BPChar_Trooper_Rare01c'),
-        ('Force Trooper Sapphire', 'PowerTroopers', 'BPChar_Trooper_Rare01e'),
-        ('Force Trooper Tourmaline', 'PowerTroopers', 'BPChar_Trooper_Rare01d'),
+        # I don't think these are used...
+        #('Force Trooper Citrine', 'PowerTroopers', 'BPChar_Trooper_Rare01b'),
+        #('Force Trooper Onyx', 'PowerTroopers', 'BPChar_Trooper_Rare01a'),
+        #('Force Trooper Ruby', 'PowerTroopers', 'BPChar_Trooper_Rare01c'),
+        #('Force Trooper Sapphire', 'PowerTroopers', 'BPChar_Trooper_Rare01e'),
+        #('Force Trooper Tourmaline', 'PowerTroopers', 'BPChar_Trooper_Rare01d'),
         ('GenIVIV', 'GeneVIV', 'BPChar_MechEvilAI'),
         ('Gigamind', 'Gigamind', 'BPChar_NogChipHolder'),
         ('Graveward', 'Graveward', 'BPChar_EdenBoss'),
@@ -262,7 +252,8 @@ for (label, row_name, char_name) in [
         ('Heckle', 'HeckleAndHyde', 'BPChar_Goliath_Bounty01'),
         ('Hot Karl', 'Roadblock', 'BPChar_Enforcer_Bounty01'),
         ('I\'m Rakkman', 'Rakkman', 'BPChar_Rakkman'),
-        ('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
+        # Don't think this is used...
+        #('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
         ('Jabbermogwai', 'Jabbermogwai', 'BPChar_Ape_Hunt01'),
         ('Judge Hightower', 'JudgeHightower', 'BPChar_AtlasSoldier_Bounty01'),
         ('Katagawa Ball', 'KatagawaBall', 'BPChar_Oversphere_KatagawaSphere'),
@@ -329,7 +320,7 @@ for (label, row_name, char_name) in [
     set_legendary_odds(mod, char_name, row_name, 1, obj_name='/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion')
     mod.newline()
 
-mod.header_lines(['Extra Guaranteed Boss Drop Statements', '(mostly gleaned from the Week 1 hotfixes)'])
+mod.header('Extra Guaranteed Boss Drop Statements')
 
 # Set Mouthpiece's "/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All" drop to zero-weight
 mod.comment('Mouthpiece')
@@ -449,8 +440,8 @@ mod.newline()
 mod.comment('Troy')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_TroyBoss',
         '/Game/NonPlayerCharacters/Troy/_TheBoss/_Design/Character/BPChar_TroyBoss.BPChar_TroyBoss_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant',
-        1)
+        'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability',
+        BVCF())
 mod.newline()
 
 # The Rampager.  A currently-active hotfix sets the scale to 0.2; in the past the BVC has been
@@ -459,13 +450,7 @@ mod.comment('The Rampager')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_Rampager',
         '/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE',
         'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
+        BVCF())
 mod.newline()
 
 # Billy, the Anointed - set the ItemPool_Guns_All drop to zero-weight
@@ -543,8 +528,6 @@ set_death_pools(mod, 'BPChar_OversphereRare01',
         )
 mod.newline()
 
-mod.header('Rare Spawn updates taken from Week 2 Event')
-
 # Some more guaranteed drops which were taken from the Week 2 event
 for (label, bpchar, obj_name) in [
         ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE'),
@@ -562,547 +545,110 @@ for (label, bpchar, obj_name) in [
     mod.reg_hotfix(Mod.CHAR, bpchar,
             obj_name,
             'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability',
-            """(
-                BaseValueConstant=100.000000,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1.000000
-            )""")
+            BVCF())
     mod.newline()
 
-mod.header('Mayhem 4 / Maliwan Takedown enemy compatibility fixes')
+# Mayhem 4 / Maliwan Takedown additions, using the CharacterItemPoolExpansions_Raid1 object
+for char_name, idx, num in [
+        ('Aurelia', 42, 2),
+        ('Holy Dumptruck', 43, 1),
+        ('Mouthpiece', 44, 2),
+        # Sylestro spawns with Atomic, reducing this from 3 to 2
+        ('Sylestro', 50, 2),
+        ('Captain Traunt', 51, 3),
+        ('General Traunt', 52, 3),
+        ('Billy, The Anointed', 53, 3),
+        ('Brood Mother', 55, 3),
+        ('Antalope', 63, 3),
+        ('Warty', 64, 2),
+        ('Captain Thunk', 65, 2),
+        ('Troy Calypso', 72, 2),
 
-# Enemies which follow were all affected by the Mayhem 4 / Maliwan Takedown Nov 21 2019
-# patch, adding more drops to their DropOnDeathItemPools via the object
-# /Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1
-# The ones using ItemPoolExpansions we can work with more subtly, but the
-# DropOnDeathItemPools I have no idea how to edit properly.  So the added drops for
-# these can technically happen twice - once for our guaranteed drop which we set up
-# below, and once for the usually-10% "legit" chance.
+        # Slaughters
+        ('Tremendous Rex', 59, 2),
+        ('Mr. Titan', 47, 4),
+        ('Red Rain', 45, 2),
+        ('Blue Fire', 46, 2),
 
-# Mother of Grogans.  The MH4/MT patch adds Creeping Death, and we want to keep our
-# Week 2 Legendary Artifact drop, too.
-mod.comment('Mother of Grogans')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_PunkMotherOfDragons',
-        '/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Character/BPChar_PunkMotherOfDragons.BPChar_PunkMotherOfDragons_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1.000000)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot"',
-                    PoolProbability=(BaseValueConstant=1.000000)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear.ItemPoolList_BadassEnemyGunsGear"'),
-        )""")
-mod.newline()
+        # Trials (all legendary COMs)
+        ('Hag of Fervor', 48, 3),
+        ('Sera of Supremacy', 49, 4),
+        ('Arbalest of Discipline', 54, 5),
+        ('Tyrant of Instinct', 60, 4),
+        ('Skag of Survival', 62, 3),
+        ('Tink of Cunning', 66, 4),
 
-# Demoskaggon.  The MH4/MT patch adds Hunted, Monocle, and Night Hawkin.  We'll
-# keep the Week 2 Leg. shield drop, too.  Since two spawn at once, though, we're
-# dropping our chances/counts for those.
-mod.comment('Demoskaggon')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Skag_Rare01',
-        '/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools.ItemPools',
-        """(
-            (
-                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"',
-                PoolProbability=(BaseValueConstant=0.5)
-            ),
-            (
-                ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon"',
-                PoolProbability=(BaseValueConstant=1),
-                NumberOfTimesToSelectFromThisPool=(BaseValueConstant=2)
-            )
-        )""")
-mod.newline()
+        ]:
+    # This object's available right from the main menu no need to do CHAR-based
+    # hotfixes with it.
+    mod.comment(char_name)
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1',
+            'CharacterExpansions.CharacterExpansions_Value[{}].DropOnDeathItemPools[0].PoolProbability'.format(idx),
+            BVCF())
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1',
+            'CharacterExpansions.CharacterExpansions_Value[{}].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant'.format(idx),
+            num)
+    mod.newline()
 
-# Power Troopers!  Week 2 added in legendary COMs, we'll keep those in, in addition to
-# the MH4/MT gear additions.  Only dropping 1 from all of these pools, there's already
-# a crazy amount of legendaries being dropped here.
-mod.comment('Onyx Force Trooper')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01a',
-        '/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
-                    PoolProbability=(BaseValueConstant=1),
-                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear.ItemPoolList_BadassEnemyGunsGear"')
-        )""")
-mod.newline()
-
-mod.comment('Citrine Force Trooper')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01b',
-        '/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
-                    PoolProbability=(BaseValueConstant=1),
-                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
-        )""")
-mod.newline()
-
-mod.comment('Ruby Force Trooper')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01c',
-        '/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary.ItemPool_ClassMods_Operative_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',
-                    PoolProbability=(BaseValueConstant=1),
-                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
-        )""")
-mod.newline()
-
-mod.comment('Tourmaline Force Trooper')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01d',
-        '/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1.000000)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',
-                    PoolProbability=(BaseValueConstant=1),
-                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
-        )""")
-mod.newline()
-
-mod.comment('Sapphire Force Trooper')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Trooper_Rare01e',
-        '/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools',
-        """(
-            ItemPools=(
-                (
-                    ItemPool=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',
-                    PoolProbability=(BaseValueConstant=1.000000)
-                ),
-                (
-                    ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',
-                    PoolProbability=(BaseValueConstant=1),
-                    NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)
-                )
-            ),
-            ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear"')
-        )""")
-mod.newline()
-
-# IndoTyrant - gets Unforgiven, Gunerang, and Woodblocker.  Keeping the Week 2
-# addition of a cosmetic item, too
-mod.comment('IndoTyrant')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Saurian_Rare01',
-        '/Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01.BPChar_Saurian_Rare01_C:AIBalanceState_GEN_VARIABLE',
-        'DropOnDeathItemPools.ItemPools',
-        """(
-            (
-                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money.ItemPool_Money"',
-                NumberOfTimesToSelectFromThisPool=(
-                    BaseValueConstant=0,
-                    AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Buttload.Init_RandomLootCount_Buttload_C"'
-                )
-            ),
-            (
-                ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc"',
-                PoolProbability=(BaseValueConstant=1)
-            ),
-            (
-                ItemPool=ItemPoolData'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant.ItemPool_IndoTyrant"',
-                PoolProbability=(BaseValueConstant=1),
-                NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)
-            )
-        )""")
-mod.newline()
-
-# Rampager.  This is actually somewhat easier than the rest; this is just working around
-# the Mayhem 4-locked drop which was added here.  Would be more cleanly applied on that
-# pool-modification object, but eh.  Note that with this change, if you DO fight the
-# Rampager on MH4, you'll get a double chance to drop the Good Juju.  That weird
-# money drop in the middle there is... somewhat intentional.  GBX has flopped back and
-# forth on that for awhile, but the most recent hotfixes (as of 2019-11-26) have disabled
-# the drop, so eh.
-mod.comment('Rampager')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Rampager',
-        '/Game/Enemies/PrometheaBoss/_Shared/_Design/LootPools/ItemPool_Rampager_Gun.ItemPool_Rampager_Gun',
-        'BalancedItems',
-        """
-        (
-            (
-                InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Rampager/Balance/Balance_HW_TOR_Rampager.Balance_HW_TOR_Rampager,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Rampager/Balance/Balance_HW_TOR_Rampager.Balance_HW_TOR_Rampager"',
-                Weight=(BaseValueConstant=1)
-            ),
-            (
-                ItemPoolData=ItemPoolData'/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money_Normal.ItemPool_Money_Normal',
-                Weight=(BaseValueConstant=0)
-            ),
-            (
-                InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju"',
-                Weight=(BaseValueConstant=1)
-            )
-        )
-        """)
-mod.newline()
-
-# Aurelia.  She very helpfully uses a boss-drop constant already, so we don't have to
-# mess with the DropOnDeath stuff.  We *do* need to make sure that the M4-specific drop
-# gets non-M4'd though.
-# I didn't actually test this enough to be sure, but I *think* that we have to set the
-# whole Weight tuple to clear out the M4-locked BVA in there (or at least, we'd have
-# to set BVA in addition to BVC) - *just* setting BVC looked like it might not be
-# enough.
-mod.comment('Aurelia')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_AureliaBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss.ItemPool_AureliaBoss',
-        'BalancedItems[1].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Holy Dumptruck
-mod.comment('Holy Dumptruck')
-set_death_pools(mod, 'BPChar_Enforcer_BountyPrologue',
-        '/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_HolyDumptruck',
-            ],
-        )
-mod.newline()
-
-# Mouthpiece
-mod.comment('Mouthpiece')
-set_death_pools(mod, 'BPChar_EnforcerSacrificeBoss',
-        '/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss',
-        pools=[
-            '/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/ItemPool/ItemPool_EnforcerSacrificeBoss_Gun',
-            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MouthpieceDedicated', 2),
-            ],
-        )
-mod.newline()
-
-# Red Rain
-mod.comment('Red Rain')
-set_death_pools(mod, 'BPChar_GiganticMech1',
-        '/Game/Enemies/Mech/_Unique/TechSlaughterBoss/_Design/Character/BPChar_GiganticMech1',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_RedRain',
-            ],
-        )
-mod.newline()
-
-# Blue Fire
-mod.comment('Blue Fire')
-set_death_pools(mod, 'BPChar_GiganticMech2',
-        '/Game/Enemies/Mech/_Unique/TechSlaughterBoss/_Design/Character/BPChar_GiganticMech2',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_BlueFire',
-            ],
-        )
-mod.newline()
-
-# Mr. Titan.  We also need to alter the pool to allow the M4-specific drop in non-M4
-mod.comment('Mr. Titan')
-set_death_pools(mod, 'BPChar_Goliath_SlaughterBoss',
-        '/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Goliath_SlaughterBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss.Itempool_CoVSlaughterBoss',
-        'BalancedItems[3].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Hag of Fervor
-mod.comment('Hag of Fervor')
-set_death_pools(mod, 'BPChar_Goon_TrialBoss',
-        '/Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGoon',
-            ],
-        )
-mod.newline()
-
-# Sera of Supremacy
-mod.comment('Sera of Supremacy')
-set_death_pools(mod, 'BPChar_Guardian_TrialBoss',
-        '/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian',
-            ],
-        )
-mod.newline()
-
-# Sylestro - this one thankfully already uses the legendary drop rate table, so all we need
-# to do is make the M4-specific drop not M4-specific.
-mod.comment('Sylestro')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Heavy_Bounty01',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro.ItemPool_Sylvestro',
-        'BalancedItems[2].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Captain Traunt.  Need to un-M4-lock one item in here.
-mod.comment('Captain Traunt')
-set_death_pools(mod, 'BPChar_Heavy_Traunt',
-        '/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt',
-            ],
-        ),
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Heavy_Traunt',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt',
-        'BalancedItems[2].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# General Traunt.  Need to un-M4-lock an item in here too.
-mod.comment('General Traunt')
-set_death_pools(mod, 'BPChar_HeavyDarkTraunt',
-        '/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_HeavyDarkTraunt',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt',
-        'BalancedItems[2].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Billy, the Anointed.  Need to un-M4-lock an item
-mod.comment('Billy, The Anointed')
-set_death_pools(mod, 'BPChar_MansionBoss',
-        '/Game/Enemies/Goliath/Anointed/_Design/Character/BPChar_MansionBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_MansionBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss',
-        'BalancedItems[2].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Arbalest of Discipline.  Need to un-M4-lock an item
-mod.comment('Arbalest of Discipline')
-set_death_pools(mod, 'BPChar_Mech_TrialBoss',
-        '/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Mech_TrialBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech',
-        'BalancedItems[4].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Brood Mother
-mod.comment('Brood Mother')
-set_death_pools(mod, 'BPChar_Nekrobug_HopperSwarm',
-        '/Game/Enemies/Nekrobug/_Unique/HopperSwarm/_Design/Character/BPChar_Nekrobug_HopperSwarm',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother',
-            ],
-        )
-mod.newline()
-
-# Tremendous Rex
-mod.comment('Tremendous Rex')
-set_death_pools(mod, 'BPChar_Saurian_SlaughterBoss',
-        '/Game/Enemies/Saurian/_Unique/SlaughterBoss/_Design/Character/BPChar_Saurian_SlaughterBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss',
-            ],
-        )
-mod.newline()
-
-# Tyrant of Instinct
-mod.comment('Tyrant of Instinct')
-set_death_pools(mod, 'BPChar_Saurian_TrialBoss',
-        '/Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian',
-            ],
-        )
-mod.newline()
-
-# Skag of Survival
-mod.comment('Skag of Survival')
-set_death_pools(mod, 'BPChar_Skag_TrialBoss',
-        '/Game/Enemies/Skag/_Unique/TrialBoss/_Design/Character/BPChar_Skag_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag',
-            ],
-        )
-mod.newline()
-
-# Antalope
-mod.comment('Antalope')
-set_death_pools(mod, 'BPChar_Spiderant_Hunt01',
-        '/Game/Enemies/Spiderant/_Unique/Hunt01/_Design/Character/BPChar_Spiderant_Hunt01',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Antalope',
-            ],
-        )
-mod.newline()
-
-# Warty
-mod.comment('Warty')
-set_death_pools(mod, 'BPChar_Tink_Rare01',
-        '/Game/Enemies/Tink/_Unique/Rare01/_Design/Character/BPChar_Tink_Rare01',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty',
-            ],
-        )
-mod.newline()
-
-# Captain Thunk
-mod.comment('Captain Thunk')
-set_death_pools(mod, 'BPChar_TinkRare02',
-        '/Game/Enemies/Tink/_Unique/Rare02/_Design/Character/BPChar_TinkRare02',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk',
-            ],
-        )
-mod.newline()
-
-# Tink of Cunning - We also have to un-M4-lock an M4-locked item
-mod.comment('Tink of Cunning')
-set_death_pools(mod, 'BPChar_Tink_TrialBoss',
-        '/Game/Enemies/Tink/_Unique/TrialBoss/_Design/Character/BPChar_Tink_TrialBoss',
-        pools=[
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Tink_TrialBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink',
-        'BalancedItems[3].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
-
-# Troy Calypso - we also need to un-M4-lock one item
-mod.comment('Troy Calypso')
-set_death_pools(mod, 'BPChar_TroyBoss',
-        '/Game/NonPlayerCharacters/Troy/_TheBoss/_Design/Character/BPChar_TroyBoss',
-        pools=[
-            '/Game/NonPlayerCharacters/Troy/_TheBoss/_Design/Character/ItemPool_Troy_Gun',
-            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated',
-            ],
-        )
-mod.reg_hotfix(Mod.CHAR, 'BPChar_TroyBoss',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated',
-        'BalancedItems[1].Weight',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
+# M4/MT additions which we're adding to or altering in some way
+for char_name, idx, pools in [
+        # Keeping the week 2 guaranteed-cosmetic on here
+        ('Indo Tyrant', 58, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant', num=3),
+            Pool('/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'),
+            ]),
+        # Two Demoskaggons spawn at once, so we're dropping the quantities from what we'd ordinarily do
+        ('Demoskaggon', 61, [
+            Pool('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', probability=0.5),
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon', num=2),
+            ]),
+        # Keeping the week 2 Legendary Artifact drop
+        ('Mother of Grogans', 73, [
+            Pool('/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot'),
+            Pool('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'),
+            ]),
+        # Power Troopers - adding in the Week 2 legendary COMs - keeping the drop count for the
+        # additional pools at 1, though, since there's so many legendaries even at that level.
+        ('Black Force Trooper (Onyx)', 67, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'),
+            ]),
+        ('Yellow Force Trooper (Citrine)', 68, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'),
+            ]),
+        ('Red Force Trooper (Ruby)', 69, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'),
+            ]),
+        ('Pink Force Trooper (Tourmaline)', 70, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
+            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary'),
+            ]),
+        ('Sapphire Force Trooper (Sapphire)', 71, [
+            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
+            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'),
+            ]),
+        ]:
+    mod.comment(char_name)
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1',
+            'CharacterExpansions.CharacterExpansions_Value[{}].DropOnDeathItemPools.ItemPools'.format(idx),
+            '({})'.format(','.join([str(pool) for pool in pools])))
+    mod.newline()
 
 # Since the MH4/MT patch, a lot of bosses have 2+ items in their drop pools.  Fix those up
 # so that they drop N items to match, like Better Loot has historically done
-mod.header('Drop Pool Quantity Tweaks')
+mod.header_lines(['Drop Pool Quantity Tweaks', '(some of the above statements include some quantity fixes as well)'])
 
 for (label, char_name, pool, quantity) in [
 
-        # TODO: *really* the right way to do these in BL3 would be via the NumberOfTimesToDropFromThisPool
-        # attr, or whatever it's called.  This could be especially notable with the new M4/MT pools,
-        # since the only way we can guarantee drops is by putting the pool in there twice - if a pool
-        # with a Quantity of 4 happens to hit the 10% chance in addition to our guaranteed one, you've
-        # got 8 items on your hands instead of 5.  Still, I'm far enough along in testing that I'm not
-        # gonna bother to change it now.  That's a problem for Future Me.
-
-        # First up, pools which already existed, pre-MH4/MT.
+        # TODO: *really* the right way to do these in BL3 would be via the NumberOfTimesToSelectFromThisPool
+        # attr in the DropOnDeathItemPools structure, rather than Quantity in the ItemPool itself.  Since we
+        # can't serialize BPChar objects yet, though, constructing equivalent statements without guesswork
+        # would involve a lot of painful console `getall` shenanigans, which hardly seems worth it.
 
         # Handled already elsewhere in the mod:
         #  * Graveward
@@ -1147,33 +693,11 @@ for (label, char_name, pool, quantity) in [
         # Doublecheck that there's not more than one of these at a time, may not want to up the quantity. - yep, can get two at once.  Keeping this at 2, though.
         ('Sky Bully', 'BPChar_Tink_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_ShootingStar_SkyBullies.ItemPool_ShootingStar_SkyBullies', 2),
         ('Lagromar', 'BPChar_TinkDemon', '/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot.ItemPool_DemonDark_DemonTink_Loot', 3),
-        ('Atomic', 'BPChar_Trooper_Bounty01', '/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01', 4),
+        # Atomic an Sylestro spawn at the same time, reducing this from 4 to 2
+        ('Atomic', 'BPChar_Trooper_Bounty01', '/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01', 2),
         # Doublecheck that there's not more than one of these at a time, may not want to up the quantity. - yep, this'll spawn four times, omit it.
         #('Crawley Family', 'BPChar_VarkidHunt02_LarvaA', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PredatoryLending_CrawlyFamily.ItemPool_PredatoryLending_CrawlyFamily', 2),
         ('Manvark', 'BPChar_VarkidHunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman', 3),
-
-        # Now, new pools which were added by MH4/MT
-
-        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss.ItemPool_AureliaBoss', 2),
-        ('Red Rain', 'BPChar_GiganticMech1', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_RedRain.ItemPool_RedRain', 2),
-        ('Blue Fire', 'BPChar_GiganticMech2', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_BlueFire.ItemPool_BlueFire', 2),
-        ('Mr. Titan', 'BPChar_Goliath_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss.Itempool_CoVSlaughterBoss', 4),
-        ('Hag of Fervor', 'BPChar_Goon_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGoon.ItemPool_TrialBossGoon', 3),
-        ('Sera of Supremacy', 'BPChar_Guardian_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian', 4),
-        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro.ItemPool_Sylvestro', 3),
-        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt', 3),
-        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt', 3),
-        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss', 3),
-        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech', 5),
-        ('Brood Mother', 'BPChar_Nekrobug_HopperSwarm', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother.ItemPool_Broodmother', 3),
-        ('Tremendous Rex', 'BPChar_Saurian_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss.ItemPool_CreatureSlaughterBoss', 2),
-        ('Tyrant of Instinct', 'BPChar_Saurian_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian.ItemPool_TrialBossSaurian', 4),
-        ('Skag of Survival', 'BPChar_Skag_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag', 3),
-        ('Antalope', 'BPChar_Spiderant_Hunt01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Antalope.ItemPool_Antalope', 3),
-        ('Warty', 'BPChar_Tink_Rare01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty', 2),
-        ('Captain Thunk', 'BPChar_TinkRare02', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk.ItemPool_Thunk', 2),
-        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink', 4),
-        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated', 2),
 
         # There are a *ton* of items that drop from these (15 total for the Valkyries,
         # 19 for Wotan), and you get four total drops from 'em: once from Valkyries
@@ -1284,10 +808,30 @@ for idx in range(5, 8):
                 0.75)
 mod.newline()
 
-# Unlock Mayhem 4 drops where appropriate (for non-boss-specific drops)
-mod.header('Mayhem 4 Drop Unlocks')
+# Make sure that the Mayhem 4-locked gear is no longer Mayhem 4-locked.
+mod.header('Remove Mayhem 4 Gear Restrictions')
 
-# Again, kind of guessing at chars here.
+for label, char_name, pool, idx in [
+        ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 2),
+        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', 1),
+        ('Mr. Titan', 'BPChar_Goliath_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss', 3),
+        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', 2),
+        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt', 2),
+        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt', 2),
+        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss', 2),
+        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 4),
+        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 3),
+        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 1),
+        ]:
+    mod.comment(label)
+    mod.reg_hotfix(Mod.CHAR, char_name,
+            pool,
+            'BalancedItems[{}].Weight'.format(idx),
+            BVCF())
+    mod.newline()
+
+# Kind of guessing at chars here.
+mod.comment('General Maliwan Takedown Mayhem 4 Legendaries Pool')
 for idx in range(11):
     for char_name in [
             'BPChar_BehemothRaid',
@@ -1305,6 +849,9 @@ for idx in range(11):
                     AttributeInitializer=None,
                     BaseValueScale=1
                 )""")
+mod.newline()
+
+mod.comment('Maliwan Takedown Raid Boss Pool')
 for char_name in [
         'BPChar_BehemothRaid',
         'BPChar_SpiderBrain',
@@ -1320,6 +867,9 @@ for char_name in [
                 AttributeInitializer=None,
                 BaseValueScale=1
             )""")
+mod.newline()
+
+mod.comment('Maliwan Takedown Valkyrie Squad Pool')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_MechRaidBossBar',
         '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool',
         'BalancedItems[4].Weight',
