@@ -9,8 +9,6 @@ mod = Mod('better_loot.txt',
         'BL',
         )
 
-# TODO: The Farming Frenzy event sets the default table here using a regular SparkPatchEntry,
-# rather than by character.  So we may be able to get away with that?
 def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds'):
     """
     Sets the drop odds for specific legendary loot pools, used for bosses.
@@ -21,6 +19,10 @@ def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot
             'LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111',
             'LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6',
             ]:
+        # The Farming Frenzy event sets the values in this table using a regular SparkPatchEntry,
+        # rather than by character, so we could probably do that too.  Since we're only doing
+        # one hotfix per pool anyway, though, it doesn't really save us much, and if I changed
+        # it I'd have to test, so I'm just leaving it as a Char hotfix for now.
         mod.table_hotfix(Mod.CHAR, charname,
                 obj_name,
                 row,
@@ -288,8 +290,8 @@ for (label, row_name, char_name) in [
     mod.newline()
 
 # Maliwan Takedown Bosses
-# TODO: Turns out that this table should be hotfixable with a LEVEL on Raid_P, rather than having to
-# do it by character
+# These should be hotfixable with a LEVEL on Raid_P, rather than having to do it by character,
+# but IMO it's not worth the re-test.
 for (label, row_name, char_name) in [
         ('Wotan the Invincible', 'RaidBoss', 'BPChar_BehemothRaid'),
         ("Wotan's Brain", 'RaidBoss', 'BPChar_SpiderBrain'),
