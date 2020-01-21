@@ -61,6 +61,10 @@ always_visible_challenge_icons
 # Always scale Maliwan Takedown to the number of players
 always_scale_maliwan_takedown
 
+# Alterations to the first couple of weapon chests in the game
+first_gun_full_loadout
+#first_gun_testing_gear
+
 ###
 ### Manufacturer locks
 ###

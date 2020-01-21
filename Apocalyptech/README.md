@@ -155,6 +155,15 @@ recent BL3 patches.
 - `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
   set the Takedown to scale to the number of players.  This'll let you
   keep it that way forever, if you want.
+- `first_gun_full_loadout.txt` - Modifies the opening chest in Covenant
+  Pass, which ordinarily just gives you a white Vladof pistol, to give
+  you two pistols, a grenade mod, a shield, a COM, and an Artifact.
+  Obviously you'll need my Early Bloomer mod if you want to be able to
+  use the COM and Artifact.  Also improves the second-gun chest to not
+  be rarity/manufacturer-locked.
+- `first_gun_testing_gear.txt` - Modifies the opening chest in Covenant
+  Pass to contain a Crader's EM-P5 and a Transformer.  Also improves the
+  second-gun chest to not be rarity/manufacturer-locked.
 
 ## OP Gear Mods
 
