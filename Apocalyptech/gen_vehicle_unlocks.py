@@ -53,8 +53,6 @@ all_levels = outrunner_levels|technical_levels|cyclone_levels
 
 mod.header('Remove level restrictions for parts')
 
-# TODO: There's no need to do *all* of these for *all* levels, just the
-# ones which spawn the relevant vehicles
 for (label, table, col_name, rows) in [
         ('Vehicle Parts (table 1)',
             '/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData',
@@ -137,11 +135,14 @@ for (label, table, col_name, rows) in [
     mod.comment(label)
     for row in rows:
         for level in sorted(all_levels):
-            mod.table_hotfix(Mod.LEVEL, level,
-                    full_table,
-                    row,
-                    col_name,
-                    0)
+            if ((level in outrunner_levels and row.startswith('Outrunner_'))
+                    or (level in technical_levels and row.startswith('Technical_'))
+                    or (level in cyclone_levels and row.startswith('Revolver_'))):
+                mod.table_hotfix(Mod.LEVEL, level,
+                        full_table,
+                        row,
+                        col_name,
+                        0)
     mod.newline()
 
 # Fix any skin errors
