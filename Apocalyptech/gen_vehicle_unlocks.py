@@ -654,7 +654,8 @@ for (vehicle, object_mapping, master_partlist) in vehicle_parts:
             mod.newline()
 
 # Now we need to do one weird little custom thing for the Outrunners in
-# Ascension Bluff
+# Ascension Bluff.  Note that these aren't *fully* unlocked like the other
+# maps, but it's pretty close; I think it's only missing a couple of skins.
 mod.comment('Nonstandard Fixes for Outrunnners in Ascension Bluff')
 for num in range(42):
     mod.reg_hotfix(Mod.LEVEL, 'Sacrifice_P',
