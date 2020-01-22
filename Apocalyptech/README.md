@@ -140,6 +140,11 @@ recent BL3 patches.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
   from the beginning of the game, though currently all it does is the
   Resonator.
+  - **NOTE:** This currently does have a couple weird side effects, namely:
+    - Meleeing enemies will use the Resonator animation, though it
+      continues to do damage as usual
+    - You won't be able to attach the empty blood pack to Ace Baron, during
+      the Meridian Outskirts mission "Healers and Dealers."
 - `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
   requirements for the relevant cosmetic items.  This does *not* actually
   spawn them in your game; you'll have to edit either `expanded_customization_pools`
