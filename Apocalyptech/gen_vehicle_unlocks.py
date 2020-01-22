@@ -23,6 +23,7 @@ mod = Mod('vehicle_unlocks.txt',
 # A list of all levels where vehicles can show up
 outrunner_levels = {
         'Prologue_P',
+        'Sacrifice_P',
         'Outskirts_P',
         'Desert_P',
         'MotorcadeFestival_P',
@@ -52,6 +53,8 @@ all_levels = outrunner_levels|technical_levels|cyclone_levels
 
 mod.header('Remove level restrictions for parts')
 
+# TODO: There's no need to do *all* of these for *all* levels, just the
+# ones which spawn the relevant vehicles
 for (label, table, col_name, rows) in [
         ('Vehicle Parts (table 1)',
             '/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData',
@@ -217,6 +220,15 @@ vehicle_parts = [
                         'MotorcadeFestival_P',
                         'Convoy_P',
                         ],
+                # This one works different than all the rest; the parts used are directly on
+                # `Balance_Outrunner_BuggyWheels_Basic`, and it doesn't use the "Builder" objects that
+                # basically every other spawn uses.
+                #('COV @ Ascension Bluff',
+                #    '/Game/Vehicles/Outrunner/Design/PartSets/Outrunner_VehiclePartSet_All',
+                #    '/Game/Missions/Plot/Ep02_Sacrifice/SpawnOptions_CotV_Outrunner_Basic',
+                #    (0,)): [
+                #        'Sacrifice_P',
+                #        ],
                 ('COV @ Sandblast Scar',
                     '/Game/Vehicles/Outrunner/Design/PartSets/COTV/Outrunner_VehiclePartSet_Enemy_COTV_Convoy',
                     '/Game/Enemies/_Spawning/CotV/Vehicles/_Mixes/Zone_3/Convoy/SpawnOptions_Outrunner_CotV_Convoy',
@@ -639,5 +651,15 @@ for (vehicle, object_mapping, master_partlist) in vehicle_parts:
                             option_probability)
 
             mod.newline()
+
+# Now we need to do one weird little custom thing for the Outrunners in
+# Ascension Bluff
+mod.comment('Nonstandard Fixes for Outrunnners in Ascension Bluff')
+for num in range(42):
+    mod.reg_hotfix(Mod.LEVEL, 'Sacrifice_P',
+            '/Game/Missions/Plot/Ep02_Sacrifice/Balance_Outrunner_BuggyWheels_Basic',
+            'RuntimePartList.AllParts.AllParts[{}].Weight.BaseValueConstant'.format(num),
+            1)
+mod.newline()
 
 mod.close()
