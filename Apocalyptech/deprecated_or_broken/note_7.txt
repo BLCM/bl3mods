@@ -1,0 +1,15 @@
+# ShadowEvil wanted to do a joke about ECHO-2 -> Note 7, so here it is.
+# Didn't seem quite worth a gen_note_7.py script.
+
+prefix: EchoNote
+
+# Grenade Name
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/Naming/GrenadeModNamingStrategy.GrenadeModNamingStrategy,SingleNames.SingleNames[41].NamePart.Object..PartName,0,,Note 7
+
+# Part Name
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_Grenade_EchoV2.UIStat_Grenade_EchoV2,Text,0,,Note 7
+
+# Flavor Text
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2.UIStat_RedText_EchoV2,Text,0,,[Flavor]Do not throw Note 7.[/Flavor]
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_2.UIStat_RedText_EchoV2_2,Text,0,,[Flavor]Do not hold Note 7 close to face.[/Flavor]
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3,Text,0,,[Flavor]Do not look directly at Note 7.[/Flavor]
