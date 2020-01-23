@@ -887,7 +887,7 @@ mod.newline()
 # Buff Anoint Drops
 #
 # Vanilla values:
-#   Normal - ???
+#   Normal - PT1: 28, PT2: 16
 #   Mayhem 1 - PT1: 16, PT2: 12
 #   Mayhem 2 - PT1: 12, PT2: 10
 #   Mayhem 3 - PT1: 10, PT2: 6
