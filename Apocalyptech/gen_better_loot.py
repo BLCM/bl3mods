@@ -161,13 +161,15 @@ for char in [
 
     # direct pool finagling.  This works!
 
-    # Cosmetics.  3%?  I'm guessing that's better than they generally are, 'cause I'd hardly see them
+    # Cosmetics.  Default is 0.5%.  Buffing this to 6%, since the pools are so huge.  Even at 6% it'll probably
+    # take ages to get those last few.
     mod.reg_hotfix(Mod.CHAR, char,
             '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
             'ItemPools[9].PoolProbability',
-            BVCF(bvc=0.03))
+            BVCF(bvc=0.06))
 
-    # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.
+    # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
+    # by Mayhem
     mod.reg_hotfix(Mod.CHAR, char,
             '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
             'ItemPools[10].PoolProbability',
