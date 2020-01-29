@@ -120,21 +120,27 @@ recent BL3 patches.
   salvages, Radios, etc) always appear on the map, regardless of if you've
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
-  the available challenge intros will be played.  **NOTE:** This has only
-  been partially tested; I'm just doing that as I go through another BL3
-  playthrough.  Known issues, so far:
-  - The third Typhon log in Meridian Outskirts doesn't seem to want to
-    show up.
+  the available challenge intros will be played.  Known issues:
+  - The third Typhon log in Meridian Outskirts
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
     in the level.
-  - A *bunch* of Legendary Hunts in Eden-6 don't show up until you're
-    right on top of them, for some reason.  No idea why this planet's
-    so finnicky:
-    - Floodmoor Basin
-    - Anvil
-    - Voracious Canopy
-    - Ambermire
+  - A *bunch* of Legendary Hunts don't show up until you're right on
+    top of them, for some reason.  Eden-6 and the second half of
+    Pandora are especially finnicky about it for some reason:
+    - Eden-6:
+      - Floodmoor Basin
+      - Anvil
+      - Voracious Canopy
+      - Ambermire
+    - Pandora:
+      - Devil's Razor
+      - Splinterlands
+      - Konrad's Hold
+    - Nekrotafeyo:
+      - The Pyre of Stars
+  - The Target of Opportunity in Devil's Razor
+  - Target of Opportunity in Cathedral of the Twin Gods
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
@@ -145,6 +151,8 @@ recent BL3 patches.
       continues to do damage as usual
     - You won't be able to attach the empty blood pack to Ace Baron, during
       the Meridian Outskirts mission "Healers and Dealers."
+    - You won't be able to melee the varkid poop pile in Demon in the Dark,
+      in Konrad's Hold
 - `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
   requirements for the relevant cosmetic items.  This does *not* actually
   spawn them in your game; you'll have to edit either `expanded_customization_pools`
