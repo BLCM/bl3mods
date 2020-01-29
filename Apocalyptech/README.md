@@ -35,7 +35,7 @@ recent BL3 patches.
   BL3 really needs much in the way of better loot.  Does the following,
   currently:
   - Sets the rarity weights to be improved
-  - Increases Eridium and Cosmetic drop rates.
+  - Increases Eridium drop rates.
   - Guarantees specific legendary drops from nearly all the bosses which
     have unique drops.  This has been updated for the Mayhem 4 / Maliwan
     Takedown patch, including all the new drops set up in that patch.
@@ -95,16 +95,29 @@ recent BL3 patches.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
-- `expanded_customization_pools.txt` - Adds in nearly all customizations to
-  the relevant global-drop pools (the ones omitted are for preorders, deluxe
-  editions, or other ones which give you the item automatically), and
-  increases the customization drop rate.  Slot machine rewards are unaffected.
-- `only_heads_and_skins.txt` - Since I recently figured out how to spawn
-  customizations properly, I ended up completing my collection of all
-  non-character skin/head customizations, so this little mod just makes
-  it so that those are the only customizations that spawn (apart from
-  dedicated spawns, of course).  Probably of little use to other people
-  Not Me.
+- Some customization-related mods:
+  - `expanded_customization_pools.txt` - Adds in nearly all customizations to
+    the relevant global-drop pools (the ones omitted are for preorders, deluxe
+    editions, or other ones which give you the item automatically), and
+    increases the customization drop rate.  Slot machine rewards are unaffected.
+  - `only_heads_and_skins.txt` - Since I recently figured out how to spawn
+    customizations properly, I ended up completing my collection of all
+    non-character skin/head customizations, so this little mod just makes
+    it so that those are the only customizations that spawn (apart from
+    dedicated spawns, of course).  Probably of little use to other people
+    Not Me.
+  - `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
+    requirements for the relevant cosmetic items.  This does *not* actually
+    spawn them in your game; you'll have to edit either `expanded_customization_pools`
+    or `testing_loot_drops` to drop/enable them, if you don't already have
+    them.
+  - `customization_drops_*.txt` - Comes in three variants: `none`, `improved`, and
+    `frequent`, and only affects the customization drop rate for "standard" enemies.
+    The default is 0.5%; these mods change the rate to 0%, 3%, or 6%, respectively.
+    `none` is useful if you already have all customizations and don't want to have
+    them clogging up your Lost Loot machine.  `frequent` is useful for hunting down
+    those last few you have yet to find (though even at 6% it'll probably take you
+    ages to hunt them all down, if you're just relying on drops).
 - `vehicle_unlocks.txt` - This unlocks most vehicle parts/skins as soon as
   the associated vehicle becomes available.  Note that wheel types aren't
   included here, since those are spawned a bit differently by the game, though
@@ -120,7 +133,8 @@ recent BL3 patches.
   salvages, Radios, etc) always appear on the map, regardless of if you've
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
-  the available challenge intros will be played.  Known issues:
+  the available challenge intros will be played.  Note that this currently
+  only supports the base game, not DLC1.  Known issues:
   - The third Typhon log in Meridian Outskirts
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
@@ -153,11 +167,6 @@ recent BL3 patches.
       the Meridian Outskirts mission "Healers and Dealers."
     - You won't be able to melee the varkid poop pile in Demon in the Dark,
       in Konrad's Hold
-- `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
-  requirements for the relevant cosmetic items.  This does *not* actually
-  spawn them in your game; you'll have to edit either `expanded_customization_pools`
-  or `testing_loot_drops` to drop/enable them, if you don't already have
-  them.
 - `manufacturer_lock_*.txt` - Where possible, locks weapon drops to only
   the specified manufacturer (except for legendary/unique pools, which
   are left totally alone).  This also only touches pools in which the

@@ -29,10 +29,8 @@ no_slam_artifacts
 vehicle_unlocks
 
 # Unlock various Eridian equipment from the beginning
-eridian_unlocks
-
-# Unlock cosmetic items
-customization_unlocks
+# Commenting for now 'cause it ends up interfering with a couple of quests.
+#eridian_unlocks
 
 # More tracker darts!
 more_tracker_darts
@@ -41,16 +39,12 @@ more_tracker_darts
 early_bloomer
 better_loot
 expanded_legendary_pools
-expanded_customization_pools
 better_slots
 no_wasted_equipment
 
 # Movement Speed Cheats
 movement_speed_cheats_reasonable
 #movement_speed_cheats_extreme
-
-# Only drop heads+skins from the global customization drop pool
-only_heads_and_skins
 
 # Add anoints to weapons which don't ordinarily have them
 all_weapons_can_anoint
@@ -64,6 +58,24 @@ always_scale_maliwan_takedown
 # Alterations to the first couple of weapon chests in the game
 first_gun_full_loadout
 #first_gun_testing_gear
+
+###
+### Customization Tweaks
+###
+
+# Add all customizations to the global drop pools
+expanded_customization_pools
+
+# Unlock cosmetic items
+customization_unlocks
+
+# Only drop heads+skins from the global customization drop pool
+only_heads_and_skins
+
+# Customization drop rates
+customization_drops_none
+#customization_drops_improved
+#customization_drops_frequent
 
 ###
 ### Manufacturer locks

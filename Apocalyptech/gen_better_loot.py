@@ -100,7 +100,7 @@ mod.newline()
 #  9 - Cosmetics, /Game/GameData/Loot/ItemPools/Attributes/Att_PlayerHeads_DropOdds -> 0.005
 #  10 - Eridium, /Game/GameData/Loot/ItemPools/Attributes/Att_EridiumStick_DropOddsWithMayhem_Total -> 0.008
 
-mod.header('Increased Eridium and Cosmetic chances')
+mod.header('Increased Eridium chances')
 for (pool, chars) in [
         ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
             'BPChar_Ape',
@@ -193,13 +193,6 @@ for (pool, chars) in [
         ]:
 
     for char in chars:
-
-        # Cosmetics.  Default is 0.5%.  Buffing this to 6%, since the pools are so huge.  Even at 6% it'll probably
-        # take ages to get those last few.
-        mod.reg_hotfix(Mod.CHAR, char,
-                pool,
-                'ItemPools[9].PoolProbability',
-                BVCF(bvc=0.06))
 
         # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
         # by Mayhem
