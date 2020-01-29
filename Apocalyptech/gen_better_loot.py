@@ -101,79 +101,112 @@ mod.newline()
 #  10 - Eridium, /Game/GameData/Loot/ItemPools/Attributes/Att_EridiumStick_DropOddsWithMayhem_Total -> 0.008
 
 mod.header('Increased Eridium and Cosmetic chances')
-for char in [
-        'BPChar_Ape',
-        'BPChar_EnforcerShared',
-        'BPChar_Frontrunner',
-        'BPChar_Goon',
-        'BPChar_GuardianShared',
-        'BPChar_Heavy_Shared',
-        'BPChar_Nekrobug_Shared',
-        'BPChar_Nog',
-        'BPChar_OversphereShared',
-        'BPChar_PsychoShared',
-        'BPChar_PunkShared',
-        'BPChar_Rakk',
-        'BPChar_Ratch',
-        'BPChar_Saurian_Shared',
-        'BPChar_ServiceBot',
-        'BPChar_SkagShared',
-        'BPChar_Spiderant',
-        'BPChar_Tink',
-        'BPChar_Tink_Turret',
-        'BPChar_Trooper',
-        'BPChar_VarkidShared',
+for (pool, chars) in [
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
+            'BPChar_Ape',
+            'BPChar_EnforcerShared',
+            'BPChar_Frontrunner',
+            'BPChar_Goon',
+            'BPChar_GuardianShared',
+            'BPChar_Heavy_Shared',
+            'BPChar_Nekrobug_Shared',
+            'BPChar_Nog',
+            'BPChar_OversphereShared',
+            'BPChar_PsychoShared',
+            'BPChar_PunkShared',
+            'BPChar_Rakk',
+            'BPChar_Ratch',
+            'BPChar_Saurian_Shared',
+            'BPChar_ServiceBot',
+            'BPChar_SkagShared',
+            'BPChar_Spiderant',
+            'BPChar_Tink',
+            'BPChar_Tink_Turret',
+            'BPChar_Trooper',
+            'BPChar_VarkidShared',
+            'BPChar_LootTracker',
 
-        # Characters used in GBX's own hotfix for the Week 3 Eridium event:
-        # (just these five!)
-        #'BPChar_PunkBasic',
-        #'BPChar_NogBasic',
-        #'BPChar_RakkBasic',
-        #'BPChar_GuardianWraith',
-        #'BPChar_ApeBasic',
+            # Maliwan Takedown
+            'BPChar_MechBasicMini',
+            'BPChar_MechMeleeMini',
 
-        # Don't actually need all the individual ones, thankfully.
-        #'BPChar_PsychoSuicide',
-        #'BPChar_PsychoLoot',
-        #'BPChar_PsychoShared',
-        #'BPChar_PsychoFirebrand',
-        #'BPChar_PsychoSlugger',
-        #'BPChar_PsychoBadass',
-        #'BPChar_PsychoBasic',
-        #'BPChar_PunkShotgunner',
-        #'BPChar_PunkBasic',
-        #'BPChar_PunkBadass',
-        #'BPChar_PunkShared',
-        #'BPChar_PunkAssaulter',
+            # Moxxi's Heist
+            'BPChar_EnforcerShared_Stripped',
+            'BPChar_Goon_Stripped',
+            'BPChar_PsychoShared_Stripped',
+            'BPChar_PunkShared_Stripped',
+            'BPChar_TinkStripped',
+
+            # Characters used in GBX's own hotfix for the Week 3 Eridium event:
+            # (just these five!)
+            #'BPChar_PunkBasic',
+            #'BPChar_NogBasic',
+            #'BPChar_RakkBasic',
+            #'BPChar_GuardianWraith',
+            #'BPChar_ApeBasic',
+
+            # Don't actually need all the individual ones, thankfully.
+            #'BPChar_PsychoSuicide',
+            #'BPChar_PsychoLoot',
+            #'BPChar_PsychoShared',
+            #'BPChar_PsychoFirebrand',
+            #'BPChar_PsychoSlugger',
+            #'BPChar_PsychoBadass',
+            #'BPChar_PsychoBasic',
+            #'BPChar_PunkShotgunner',
+            #'BPChar_PunkBasic',
+            #'BPChar_PunkBadass',
+            #'BPChar_PunkShared',
+            #'BPChar_PunkAssaulter',
+            ]),
+
+        # Dandelion standard-enemy drop list
+        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion', [
+            'BPChar_AcidTrip_EarlyPrototype',
+            'BPChar_EnforcerBruiser_Looter',
+            'BPChar_GoliathBasic_Looter',
+            'BPChar_GoliathMidget_Looter',
+            'BPChar_GoonBasic_looter',
+            'BPChar_GoonVortex_Looter',
+            'BPChar_PsychoBasic_Looter',
+            'BPChar_PsychoFirebrand_Looter',
+            'BPChar_PsychoSlugger_Looter',
+            'BPChar_PsychoSuicide_Looter',
+            'BPChar_PunkAssaulter_Looter',
+            'BPChar_PunkBasic_Looter',
+            'BPChar_PunkShotgunner_Looter',
+            'BPChar_PunkSniper_Looter',
+            'BPChar_TinkBasic_Looter',
+            'BPChar_TinkPsycho_Looter',
+            'BPChar_TinkShotgun_Looter',
+            'BPChar_TinkSuicide_Looter',
+            'BPChar_CasinoBot_BigJanitor',
+            ]),
+
+        # Dandelion standard-loader drop list
+        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', [
+            # Moxxi's Heist
+            'BPChar_HyperionTurretBasic',
+            'BPChar_LoaderShared',
+            'BPChar_WeeLoaderBasic',
+            ]),
         ]:
 
-    # attempts to alter drop odds table, didn't seem to do anything
-    #mod.table_hotfix(Mod.CHAR, char,
-    #        '/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances.Table_SimpleLootDropChances',
-    #        'Eridium_Bar',
-    #        'Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836',
-    #        10000)
-    #mod.table_hotfix(Mod.CHAR, char,
-    #        '/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances.Table_SimpleLootDropChances',
-    #        'Eridium_Stick',
-    #        'Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836',
-    #        10000)
+    for char in chars:
 
-    # direct pool finagling.  This works!
+        # Cosmetics.  Default is 0.5%.  Buffing this to 6%, since the pools are so huge.  Even at 6% it'll probably
+        # take ages to get those last few.
+        mod.reg_hotfix(Mod.CHAR, char,
+                pool,
+                'ItemPools[9].PoolProbability',
+                BVCF(bvc=0.06))
 
-    # Cosmetics.  Default is 0.5%.  Buffing this to 6%, since the pools are so huge.  Even at 6% it'll probably
-    # take ages to get those last few.
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[9].PoolProbability',
-            BVCF(bvc=0.06))
-
-    # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
-    # by Mayhem
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[10].PoolProbability',
-            BVCF(bvc=0.75))
+        # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
+        # by Mayhem
+        mod.reg_hotfix(Mod.CHAR, char,
+                pool,
+                'ItemPools[10].PoolProbability',
+                BVCF(bvc=0.75))
 
 mod.newline()
 
