@@ -168,12 +168,13 @@ recent BL3 patches.
     - You won't be able to melee the varkid poop pile in Demon in the Dark,
       in Konrad's Hold
 - `manufacturer_lock_*.txt` - Where possible, locks weapon drops to only
-  the specified manufacturer (except for legendary/unique pools, which
-  are left totally alone).  This also only touches pools in which the
-  manufacturer actually exists, so if you load in the Atlas lock mod,
+  the specified manufacturer (except for boss/miniboss/rare-spawn drops,
+  which are left totally alone).  This also only touches pools in which
+  the manufacturer actually exists, so if you load in the Atlas lock mod,
   you'll still get the usual range of shotguns, SMGs, and sniper rifles,
   for instance.  There's also a few instances of manufacturer-specific
-  loot pools which haven't been touched.
+  loot pools which haven't been touched.  Custom combinations of locked
+  gear can be generated from the commandline.
 - `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
   set the Takedown to scale to the number of players.  This'll let you
   keep it that way forever, if you want.

@@ -3,6 +3,11 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
+###
+### A lot of this mod is duplicated in gen_manufacturer_lock.py now.
+### Be sure to update both when gear changes!
+###
+
 def get_full_object(obj_name):
     if obj_name is None:
         return None
