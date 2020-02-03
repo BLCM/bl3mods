@@ -49,7 +49,7 @@ for gun_type in sys.argv[1:]:
         custom_to_lock.add(arg_to_man[gun_type])
         eng_args.append(eng_manufacturers[arg_to_man[gun_type]])
     else:
-        raise Exception('{} not known as a manufacturer'.format(gun_type))
+        raise Exception('{} not known as a manufacturer.  Valid values: {}'.format(gun_type, ', '.join(sorted(arg_to_man.keys()))))
 if len(custom_to_lock) == 1:
     print('Not generating single-manufacturer custom file')
     custom_to_lock = set()
