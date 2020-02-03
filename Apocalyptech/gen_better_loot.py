@@ -493,6 +493,7 @@ mod.newline()
 
 # Captain Haunt (from the Bloody Harvest event)
 # (a GBX-provided hotfix against this table doesn't require any char-based hotfixes)
+# TODO: This is definitely not working.  Also he should really have a quantity/numtimes defined
 mod.comment('Captain Haunt (untested)')
 mod.table_hotfix(Mod.PATCH, '',
         '/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween',
