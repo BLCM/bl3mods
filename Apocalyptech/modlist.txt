@@ -58,6 +58,9 @@ always_scale_maliwan_takedown
 # ECHO Log loot bar is bigger
 more_visible_echo_logs
 
+# Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
+nvhm_gamestage_follows_level
+
 # Alterations to the first couple of weapon chests in the game
 first_gun_full_loadout
 #first_gun_testing_gear
@@ -116,4 +119,9 @@ manufacturer_lock_custom_ted_vla
 
 # Testing loot drops
 #testing_loot_drops
+
+# Real quick XP gains
+#fast_levelling_fast
+#fast_levelling_faster
+#fast_levelling_insane
 

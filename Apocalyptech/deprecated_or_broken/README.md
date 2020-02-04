@@ -113,4 +113,11 @@ don't look at these thinking that they're any good.  :)
 - `deluxe_badass_combustor_unlock.txt` - Attempts to have the Deluxe Badass
   Combustor do its effects beyond level 10.  The object we need to modify is
   dead simple, but damned if I could get it to change.  Another time.
+- `expanded_pt1_scaling.txt` - An attempt to allow all Normal/PT1/NVHM
+  missions to have no max-level cap, which would have two effects: 1)
+  Splinterlands and Carnivora would no longer suddenly be a cakewalk, and
+  2) the game would scale all the way to 50, most likely, before the end
+  of the campaign.  In the end, this approach didn't work, though.  Use
+  `nvhm_gamestage_follows_level.txt` out in the main dir for a more
+  nuclear option which happens to work.
 

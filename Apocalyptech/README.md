@@ -63,9 +63,6 @@ recent BL3 patches.
   Just what they sound like!  Move faster.  Also applies to Iron Bear and
   FL4K's pets.  Have not yet tested how this interacts crouching, FFYL,
   ladders, etc.
-- `testing_loot_drops.txt` - A version of my modder's-resource mod that I
-  use for testing out things like Expanded Legendary Pools.  All Standard-drop
-  enemies will drop five items from the specified pool.
 
 ## Other mods
 
@@ -190,8 +187,13 @@ recent BL3 patches.
 - `more_visible_echo_logs.txt` - Makes ECHO Log loot bars (and any other
   item using that bar, such as mission items) much bigger.  Used to
   hopefully catch any ECHOs I may have missed after a few playthroughs.
+- `nvhm_gamestage_follows_level.txt` - Makes the game follow your
+  character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
 
-## OP Gear Mods
+## Mods for Testing Mods
+
+A collection of mods which I use primarily just when testing out other
+mods.
 
 - `craders_emp5_super_buff.txt` - Cheat mod which gives Crader's EM-P5 an
   absurd amount of damage, infinite ammo, perfect accuracy/handling, and
@@ -201,6 +203,14 @@ recent BL3 patches.
   useful.  Still, it's a good testing gun anyway so I'll stick with it.
 - `transformer_super_buff.txt` - Cheat mod which makes the Transformer
   practically invulnerable.
+- `testing_loot_drops.txt` - A version of my modder's-resource mod that I
+  use for testing out things like Expanded Legendary Pools.  All Standard-drop
+  enemies will drop five items from the specified pool.
+- `fast_levelling_*.txt` - Used to level up a character real fast.  Comes
+  in three variants.  "Insane" will give you nearly a whole level per
+  kill when you're approaching lvl 50 (and probably more when on low level),
+  "Fast" will be a little more sedate, for fine-tuning purposes, but will
+  still be a *lot* faster than base game, and "Faster" is inbetween the two.
 
 ## Deprecated / Broken Mods
 
