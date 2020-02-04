@@ -187,6 +187,9 @@ recent BL3 patches.
 - `first_gun_testing_gear.txt` - Modifies the opening chest in Covenant
   Pass to contain a Crader's EM-P5 and a Transformer.  Also improves the
   second-gun chest to not be rarity/manufacturer-locked.
+- `more_visible_echo_logs.txt` - Makes ECHO Log loot bars (and any other
+  item using that bar, such as mission items) much bigger.  Used to
+  hopefully catch any ECHOs I may have missed after a few playthroughs.
 
 ## OP Gear Mods
 

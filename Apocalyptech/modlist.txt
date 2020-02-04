@@ -55,6 +55,9 @@ always_visible_challenge_icons
 # Always scale Maliwan Takedown to the number of players
 always_scale_maliwan_takedown
 
+# ECHO Log loot bar is bigger
+more_visible_echo_logs
+
 # Alterations to the first couple of weapon chests in the game
 first_gun_full_loadout
 #first_gun_testing_gear
@@ -73,9 +76,9 @@ customization_unlocks
 only_heads_and_skins
 
 # Customization drop rates
-customization_drops_none
+#customization_drops_none
 #customization_drops_improved
-#customization_drops_frequent
+customization_drops_frequent
 
 ###
 ### Manufacturer locks
@@ -90,6 +93,7 @@ customization_drops_none
 #manufacturer_lock_tediore
 #manufacturer_lock_torgue
 #manufacturer_lock_vladof
+manufacturer_lock_custom_ted_vla
 
 ###
 ### Bloody Harvest mods
