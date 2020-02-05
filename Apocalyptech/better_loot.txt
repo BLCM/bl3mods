@@ -393,10 +393,23 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadass_Gaudy),/Game/PatchDLC/Dandeli
 # Mouthpiece
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/ItemPool/ItemPool_EnforcerSacrificeBoss_Shotgun.ItemPool_EnforcerSacrificeBoss_Shotgun,BalancedItems[1].Weight,0,,(BaseValueConstant=0.000000)
 
-# Agonizer 9000 (Pain+Terror)
+# Terror Guaranteed Drop (and also half of Agonizer 9000's drops)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain,ItemPools.ItemPools[3].PoolProbability.BaseValueConstant,0,,1
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5"',Weight=(BaseValueConstant=1)))
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot,Quantity,0,,(BaseValueConstant=7)
+
+# Pain Guaranteed Drop (and also half of Agonizer 9000's drops)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].PoolProbability.BaseValueConstant,0,,1
+
+# De-weight Agonizer 1500 a bit
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Agonizer1500_Terror.ItemPool_Agonizer1500_Terror,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Remove Crader's EM-P5 M4 Requirement
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Agonizer1500_Terror.ItemPoolExpansion_Agonizer1500_Terror,BalancedItems.BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Remove doubled Pain drop
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/Enemies/Enforcer/_Unique/Terror/_Design/Character/BPChar_Terror.BPChar_Terror_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Add Legendary COM to Terror
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror"',Weight=(BaseValueConstant=0.5)),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=1)))
 
 # Katagawa Jr.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=1)))
@@ -718,6 +731,12 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Sha
 # Scraptrap Prime
 SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Pain
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Terror
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Drop rate normalization

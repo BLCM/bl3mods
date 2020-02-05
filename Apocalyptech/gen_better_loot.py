@@ -215,10 +215,10 @@ mod.header('DataTable-Based Guaranteed Boss Drop Statements')
 # Red Rain,TechSlaughterBoss,BPChar_GiganticMech1
 # Blue Fire,TechSlaughterBoss,BPChar_GiganticMech2
 
-# Not sure if this one is used or not, since that boss fight's a bit weird.  I
-# believe those drops are handled via other means:
-#
-# Terror,Terror,BPChar_Terror
+# This var is referenced by Pain's `BPChar_Terror` (I know, it's weird), but we're
+# axing it out of that object since the relevant pools are also dropped elsewhere,
+# and I don't want them doubling up.
+#('Pain', 'Terror', 'BPChar_Terror'),
 
 # In terms of loot drops specifically, Katagawa Jr. is actually BPChar_KJR
 # This one might be more useful for other things though?  Perhaps KJR is
@@ -360,18 +360,89 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_EnforcerSacrificeBoss',
         '(BaseValueConstant=0.000000)')
 mod.newline()
 
-# Guaranteed drop from Agonizer 9000, and also fold in some more drops:
-#   1) Legendary COM drop from the Week 1 event
-#   2) Presumably-intended drop additions of Damned, Loaded Dice, and Crader MP5, which
-#      only actually drop (probably) during the storyline mission when Pain+Terror are
-#      actually in-game.
-# Note that the MH4/MT patch also adds the Dictator and White Elephant to this pool,
-# so there's a LOT in here.
-mod.comment('Agonizer 9000 (Pain+Terror)')
+# Adding Legendary COM to Pain/Terror/A9k, which was in the Week 1 event.  Also doing some
+# housekeeping on these pools so that they work exactly how I want.
+
+# So here's the deal with Pain/Terror/Agonizer9k drops:
+#
+#    1) Internally, Pain and Terror are backwards namingwise.  Any object referencing "Terror" actually
+#       applies to Pain, and vice-versa.  This makes data inspection very fun.
+#
+#    2) Terror drops from `ItemPoolList_Boss_Pain`, which includes ItemPool_Pain_Loot by default, at
+#       index 3
+#
+#    3) Pain drops from `ItemPoolList_Boss_Terror`, which includes ItemPool_Agonizer1500_Terror
+#       because of a GBX hotfix, which ends up at index 3 (SparkCharacterLoadedEntry437)
+#
+#       3a) If you're altering ItemPoolList_Boss_Terror in any way, make sure to use BPChar_Terror
+#           as the hotfix key, otherwise that GBX hotfix might not fire, since they use the prev-value
+#           field.  Using BPChar_Agonizer_9k, for instance, causes the GBX hotfix to fail because
+#           BPChar_Agonizer_9k is apparently loaded before BPChar_Terror.
+#
+#    4) Pain's DropOnDeathItemPools (in `BPChar_Terror`, remember) also includes
+#       ItemPool_Agonizer1500_Terror, so technically he could drop from that pool twice.
+#
+#    5) Agonizer9k drops from both `ItemPoolList_Boss_Pain` and `ItemPoolList_Boss_Terror`
+#
+#    6) Both ItemPool_Pain_Loot and ItemPool_Agonizer1500_Terror get expanded by ItemPoolExpansion
+#       objects.
+#
+#       6a) ItemPool_Pain_Loot (Terror's drops):
+#           - Agonizer 1500 (base pool)
+#           - Dicatator (from expansion)
+#           - White Elephant (from expansion)
+#
+#       6b) ItemPool_Agonizer1500_Terror (Pain's drops, can drop twice from Pain himself (but not from A9k)):
+#           - Agonizer 1500 (base pool)
+#           - Damned (from expansion)
+#           - Loaded Dice (from expansion)
+#           - Crader's EM-P5 (M4-only) (from expansion)
+#
+# So that's the vanilla situation; we're modifying that a bit for our own purposes here.
+
+# Guaranteed drops
+mod.comment('Terror Guaranteed Drop (and also half of Agonizer 9000\'s drops)')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
-        '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain',
+        '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain',
         'ItemPools.ItemPools[3].PoolProbability.BaseValueConstant',
         1)
+mod.newline()
+mod.comment('Pain Guaranteed Drop (and also half of Agonizer 9000\'s drops)')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Terror',
+        '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror',
+        'ItemPools.ItemPools[3].PoolProbability.BaseValueConstant',
+        1)
+mod.newline()
+
+# De-weight the Agonizer 1500 drop a bit, so it's less likely to come up twice
+# (Terror's is below)
+mod.comment('De-weight Agonizer 1500 a bit')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Terror',
+        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Agonizer1500_Terror',
+        'BalancedItems.BalancedItems[0].Weight',
+        BVCF(bvc=0.5))
+mod.newline()
+
+# Remove Crader's EM-P5 M4 requirement
+mod.comment('Remove Crader\'s EM-P5 M4 Requirement')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Terror',
+        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Agonizer1500_Terror',
+        'BalancedItems.BalancedItems[2].Weight',
+        BVCF())
+mod.newline()
+
+# Remove the specific ItemPool_Agonizer1500_Terror reference in Pain's DropOnDeathItemPool,
+# since it's included in ItemPoolList_Boss_Terror thanks to GBX hotfix SparkCharacterLoadedEntry437.
+# We'd otherwise drop from that pool twice.
+mod.comment('Remove doubled Pain drop')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Terror',
+        '/Game/Enemies/Enforcer/_Unique/Terror/_Design/Character/BPChar_Terror.BPChar_Terror_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability',
+        BVCF(bvc=0))
+mod.newline()
+
+# Add the COM drop
+mod.comment('Add Legendary COM to Terror')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
         '/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot',
         'BalancedItems',
@@ -380,33 +451,14 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
             (
                 InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror,
                 ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror.Balance_HW_COV_Terror"',
-                Weight=(BaseValueConstant=1)
+                Weight=(BaseValueConstant=0.5)
             ),
             (
                 ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',
                 Weight=(BaseValueConstant=1)
-            ),
-            (
-                InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn.Balance_AR_VLA_Damn"',
-                Weight=(BaseValueConstant=1)
-            ),
-            (
-                InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice.InvBalD_Artifact_LoadedDice"',
-                Weight=(BaseValueConstant=1)
-            ),
-            (
-                InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5"',
-                Weight=(BaseValueConstant=1)
             )
         )
         """)
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Agonizer_9k',
-        '/Game/Enemies/Tink/_Unique/Pain/_Design/Character/ItemPool_Pain_Loot.ItemPool_Pain_Loot',
-        'Quantity',
-        '(BaseValueConstant=7)')
 mod.newline()
 
 # Katagawa Jr.  Adding in the Legendary COM chance from the Week 1 event.  Note that
@@ -807,6 +859,26 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
                 AttributeInitializer=None,
                 BaseValueScale=1
             )""".format(bpchar_qty))
+    mod.newline()
+
+# A few more which can talk right to an ItemPoolList
+for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
+        # Yes, this is correct, the object names for Pain/Terror are mismatched.
+        ('Pain', 'BPChar_Terror',
+            '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror',
+            3,
+            4),
+        # Could really use BPChar_Pain for this, but whatever.
+        ('Terror', 'BPChar_Agonizer_9k',
+            '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain',
+            3,
+            4),
+        ]:
+    mod.comment(label)
+    mod.reg_hotfix(Mod.CHAR, bpchar_name,
+            poollist,
+            'ItemPools.ItemPools[{}].NumberOfTimesToSelectFromThisPool'.format(itempool_idx),
+            BVCF(bvc=drop_qty))
     mod.newline()
 
 # There's at least one case of gera which doesn't drop evenly, so smooth that out.
