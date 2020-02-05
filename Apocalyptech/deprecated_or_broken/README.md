@@ -46,6 +46,11 @@ been merged into Better Loot, though.
   it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
   Useful!  (Actually I suppose it *could* be useful to give Eridium to
   other co-op players.)
+- `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
+  set the Takedown to scale to the number of players.  This'll let you
+  keep it that way forever, if you want.  Turns out that GBX decided
+  to make that change permanent, so there's no real need for this one
+  anymore.
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least

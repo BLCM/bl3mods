@@ -52,9 +52,6 @@ all_weapons_can_anoint
 # Challenge icons are always visible
 always_visible_challenge_icons
 
-# Always scale Maliwan Takedown to the number of players
-always_scale_maliwan_takedown
-
 # ECHO Log loot bar is bigger
 more_visible_echo_logs
 
@@ -100,7 +97,7 @@ customization_drops_frequent
 #manufacturer_lock_tediore
 #manufacturer_lock_torgue
 #manufacturer_lock_vladof
-#manufacturer_lock_custom_ted_vla
+manufacturer_lock_custom_ted_vla
 
 ###
 ### Bloody Harvest mods

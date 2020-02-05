@@ -172,9 +172,6 @@ recent BL3 patches.
   for instance.  There's also a few instances of manufacturer-specific
   loot pools which haven't been touched.  Custom combinations of locked
   gear can be generated from the commandline.
-- `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
-  set the Takedown to scale to the number of players.  This'll let you
-  keep it that way forever, if you want.
 - `first_gun_full_loadout.txt` - Modifies the opening chest in Covenant
   Pass, which ordinarily just gives you a white Vladof pistol, to give
   you two pistols, a grenade mod, a shield, a COM, and an Artifact.
