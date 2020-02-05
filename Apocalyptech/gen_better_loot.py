@@ -1051,6 +1051,24 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
         '()')
 mod.newline()
 
+# Lilith's chest on Sanctuary doesn't actually *guarantee* legendaries because GBX doesn't
+# realize that 0 is a number too.  The chances of a non-legendary are super slim, but FDH
+# got a bit of white gear there once, so it's possible.  (Default modifiers for these are 1,
+# while the legendary modifier is 5000000.)
+mod.comment('Ensure legendaries in Lilith\'s game-end chest')
+for col in [
+        'CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC',
+        'UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5',
+        'RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58',
+        'VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA',
+        ]:
+    mod.table_hotfix(Mod.PATCH, '',
+            '/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData',
+            'LilithEndChest',
+            col,
+            0)
+mod.newline()
+
 # Just some testing stuff at the end of the file, to make sure that the game
 # is parsing all the way to the end of the file
 if False:

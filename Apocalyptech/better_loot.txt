@@ -879,3 +879,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCh
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
 
+# Ensure legendaries in Lilith's game-end chest
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0
+
