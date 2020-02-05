@@ -11,6 +11,9 @@ mod = Mod('more_visible_echo_logs.txt',
             "a bit wider, to be more easily visible from a distance.  Put this together",
             "because even after a few playthroughs I wasn't sure if I'd heard all the ECHOs",
             "yet, and these might help me suss a few more out.",
+            "",
+            "Technically this also lengthens the ammo/eridium/health/money/booster bars a bit,",
+            "but only by a very small amount.",
         ],
         'VEchoLogs',
         )
@@ -40,6 +43,25 @@ for (attr, value) in [
             '/Game/Pickups/_Shared/Effects/Systems/PS_ConsumableLocatorStick.PS_ConsumableLocatorStick:ParticleModuleSize_0.DistributionVectorConstant_1',
             attr,
             value)
+mod.newline()
+
+# The "common" gear loot stick is nearly identical to the consumables one, which
+# is what we're buffing up in this mod, so we'll reassign everything else which
+# uses the now-huge one to the Common stick instead.  I'm leaving `RarityLootBeamHeight`
+# alone for these, so that there's still at least *some* difference between 'em.
+mod.comment('Reassign ammo/eridium/health/money/booster loot bars')
+common_stick = Mod.get_full_cond('/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common', 'ParticleSystem')
+for rd in [
+        '/Game/GameData/Loot/RarityData/RarityData_00_Ammo',
+        '/Game/GameData/Loot/RarityData/RarityData_00_Eridium',
+        '/Game/GameData/Loot/RarityData/RarityData_00_Health',
+        '/Game/GameData/Loot/RarityData/RarityData_00_Money',
+        '/Game/GameData/Loot/RarityData/RarityData_00_ShieldBooster',
+        ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+            rd,
+            'RarityLootBeamOverride',
+            common_stick)
 mod.newline()
 
 # What follows is a bunch of other stuff I'm unsure about.  All these statements *work*
