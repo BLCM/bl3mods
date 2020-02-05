@@ -189,6 +189,12 @@ recent BL3 patches.
   hopefully catch any ECHOs I may have missed after a few playthroughs.
 - `nvhm_gamestage_follows_level.txt` - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
+- `boss_drop_randomizer.txt` - Gets rid of all the specific boss drops,
+  in favor of randomized loot.  After going through the game a few times
+  with Better Loot I found myself using the same gear at various parts
+  in the game, thanks to boss drops, so this'll keep me nicely randomized.
+  I suspect I'm the only person in the world who'd want this, since I
+  don't care about farming at all.
 
 ## Mods for Testing Mods
 

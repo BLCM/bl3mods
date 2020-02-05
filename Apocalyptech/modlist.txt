@@ -65,6 +65,10 @@ nvhm_gamestage_follows_level
 first_gun_full_loadout
 #first_gun_testing_gear
 
+# Randomize boss drops (I imagine I am the only person who would possibly
+# want this, heh)
+boss_drop_randomizer
+
 ###
 ### Customization Tweaks
 ###
@@ -96,7 +100,7 @@ customization_drops_frequent
 #manufacturer_lock_tediore
 #manufacturer_lock_torgue
 #manufacturer_lock_vladof
-manufacturer_lock_custom_ted_vla
+#manufacturer_lock_custom_ted_vla
 
 ###
 ### Bloody Harvest mods
