@@ -191,7 +191,8 @@ recent BL3 patches.
   with Better Loot I found myself using the same gear at various parts
   in the game, thanks to boss drops, so this'll keep me nicely randomized.
   I suspect I'm the only person in the world who'd want this, since I
-  don't care about farming at all.
+  don't care about farming at all.  Basically intended to be used
+  alongside my Expanded Legendary Pools mod, for best effect.
 
 ## Mods for Testing Mods
 
