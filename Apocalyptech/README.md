@@ -193,6 +193,11 @@ recent BL3 patches.
   I suspect I'm the only person in the world who'd want this, since I
   don't care about farming at all.  Basically intended to be used
   alongside my Expanded Legendary Pools mod, for best effect.
+- `mission_reward_randomizer.txt` - Like the Boss Drop Randomizer, this
+  randomizes all mission rewards to pull from the appropriate legendary
+  pools instead of having fixed gear.  Customization rewards are
+  similarly randomized.  Intended to be used at least with Expanded
+  Customization Pools, and recommended with Expanded Legendary Pools.
 
 ## Mods for Testing Mods
 

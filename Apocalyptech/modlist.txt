@@ -62,9 +62,10 @@ nvhm_gamestage_follows_level
 first_gun_full_loadout
 #first_gun_testing_gear
 
-# Randomize boss drops (I imagine I am the only person who would possibly
-# want this, heh)
+# Randomize boss drops and mission rewards.  I imagine I am the only
+# person who would possibly want this.  Heh.
 boss_drop_randomizer
+mission_reward_randomizer
 
 ###
 ### Customization Tweaks
