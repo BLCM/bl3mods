@@ -92,6 +92,10 @@ recent BL3 patches.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
+- `no_projected_shields.txt` - Makes it so that shields never spawn with
+  the "Projected" augmenation.  I've actually sort of made my peace with that
+  aug, and don't immediately trash any shield with 'em anymore, but it's
+  definitely my least favorite still, so away it goes!
 - Some customization-related mods:
   - `expanded_customization_pools.txt` - Adds in nearly all customizations to
     the relevant global-drop pools (the ones omitted are for preorders, deluxe

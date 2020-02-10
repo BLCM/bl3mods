@@ -22,9 +22,6 @@ red_text_explainer
 # Improve Maliwan charge times
 maliwan_charge_time
 
-# Disable non-legendary/unique slam artifacts
-no_slam_artifacts
-
 # Vehicle Unlocks
 vehicle_unlocks
 
@@ -66,6 +63,16 @@ first_gun_full_loadout
 # person who would possibly want this.  Heh.
 boss_drop_randomizer
 mission_reward_randomizer
+
+###
+### Partlocks
+###
+
+# Disable non-legendary/unique slam artifacts
+no_slam_artifacts
+
+# Disable "projected" shields
+no_projected_shields
 
 ###
 ### Customization Tweaks
