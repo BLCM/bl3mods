@@ -49,7 +49,7 @@ for obj_name in obj_names:
         # Map a part index to what'll be an ActorPartList in the PartSet
         part_idx_to_apl_idx = {}
         for (apl_idx, toc) in enumerate(data[0]['RuntimePartList']['PartTypeTOC']):
-            if toc['NumParts'] > 0:
+            if toc['NumParts'] > 0 and toc['StartIndex'] >= 0:
                 for part_idx in range(toc['StartIndex'], toc['StartIndex']+toc['NumParts']):
                     part_idx_to_apl_idx[part_idx] = apl_idx
 
