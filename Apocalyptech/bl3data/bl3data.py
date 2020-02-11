@@ -3,6 +3,7 @@
 
 import os
 import json
+import glob
 import appdirs
 import MySQLdb
 import subprocess
@@ -72,6 +73,9 @@ class BL3Data(object):
         self.config.read(self.config_file)
         self._enforce_config_section('filesystem')
 
+        # Convenience var
+        self.data_dir = self.config['filesystem']['data_dir']
+
         # Now the rest of the vars we'll use
         self.cache = {}
         self.db = None
@@ -112,10 +116,12 @@ class BL3Data(object):
         """
         if obj_name not in self.cache:
 
-            base_path = '{}{}'.format(self.config['filesystem']['data_dir'], obj_name)
+            base_path = '{}{}'.format(self.data_dir, obj_name)
             json_file = '{}.json'.format(base_path)
             if not os.path.exists(json_file):
-                subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', capture_output=True)
+                # PyPy3 is still on 3.6, which doesn't have capture_output
+                #subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', capture_output=True)
+                subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             if os.path.exists(json_file):
                 with open(json_file) as df:
                     self.cache[obj_name] = json.load(df)
@@ -131,10 +137,10 @@ class BL3Data(object):
         yield the object names as they're found.
         """
         prefix_lower = prefix.lower()
-        base_dir = '{}{}'.format(self.config['filesystem']['data_dir'], base)
+        base_dir = '{}{}'.format(self.data_dir, base)
         results = []
         for (dirpath, dirnames, filenames) in os.walk(base_dir):
-            obj_base = dirpath[len(self.config['filesystem']['data_dir']):]
+            obj_base = dirpath[len(self.data_dir):]
             for filename in filenames:
                 if filename.lower().startswith(prefix_lower) and filename.endswith('.uasset'):
                     yield os.path.join(obj_base, filename[:-7])
@@ -147,6 +153,25 @@ class BL3Data(object):
         is possible) as they're found.
         """
         for obj_name in self.find(base, prefix):
+            yield (obj_name, self.get_data(obj_name))
+
+    def glob(self, glob_pattern):
+        """
+        Find classes which match the given `glob_pattern` and yield the
+        object names which were found.
+        https://en.wikipedia.org/wiki/Glob_(programming)
+        """
+        for filename in glob.glob('{}{}'.format(self.data_dir, glob_pattern)):
+            if filename.endswith('.uasset'):
+                yield filename[len(self.data_dir):-7]
+
+    def glob_data(self, glob_pattern):
+        """
+        Find classes which match the given `glob_pattern` and yield the
+        serialized object data for each (or None if unavailable).
+        https://en.wikipedia.org/wiki/Glob_(programming)
+        """
+        for obj_name in self.glob(glob_pattern):
             yield (obj_name, self.get_data(obj_name))
 
     def get_exports(self, obj_name, export_type):
