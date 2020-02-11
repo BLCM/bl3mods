@@ -36,6 +36,10 @@ class BL3Data(object):
     until either of those methods are called.
     """
 
+    # Hardcoded BVA values
+    bva_values = {
+            }
+
     def __init__(self):
         """
         Initialize a BL3Data object.  Will create a sample config file if one
@@ -174,6 +178,19 @@ class BL3Data(object):
         for obj_name in self.glob(glob_pattern):
             yield (obj_name, self.get_data(obj_name))
 
+    def get_export_idx(self, obj_name, export_idx):
+        """
+        Given an object `obj_name`, return the specified export at `export_idx`, or
+        None.
+        """
+        if export_idx == 0:
+            return None
+        data = self.get_data(obj_name)
+        if export_idx > len(data):
+            return None
+        else:
+            return data[export_idx-1]
+
     def get_exports(self, obj_name, export_type):
         """
         Given an object `obj_name`, return a list of serialized exports which match
@@ -183,7 +200,7 @@ class BL3Data(object):
         data = self.get_data(obj_name)
         if data:
             for export in data:
-                if data['export_type'] == export_type:
+                if export['export_type'] == export_type:
                     exports.append(export)
         return exports
 
@@ -218,4 +235,63 @@ class BL3Data(object):
                     and o2.id=r.to_obj
                 """, (obj_name,))
         return [row[0] for row in self.curs.fetchall()]
+
+    def datatable_lookup(self, table_name, row_name, col_name):
+        """
+        Given a `table_name`, `row_name`, and `col_name`, return the specified cell.
+        """
+        data = self.get_exports(table_name, 'DataTable')[0]
+        return data[row_name][col_name]
+
+    def process_bvc_struct(self, data):
+        """
+        Given a serialized BVC/BVSC/etc structure, return a value.
+        """
+
+        # BVC
+        if 'BaseValueConstant' in data:
+            bvc = data['BaseValueConstant']
+        else:
+            bvc = 1
+
+        # DT
+        if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
+            raise Exception('datatable: {}'.format(data['DataTableValue']['DataTable']))
+
+        # BVA
+        if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
+            attr_name = data['BaseValueAttribute'][1]
+            if attr_name in self.bva_values:
+                bvc = self.bva_values[attr_name]
+            else:
+                # Try to read the attr
+                base = self.get_exports(attr_name, 'GbxAttributeData')
+                if len(base) != 1:
+                    raise Exception('bva: {}'.format(attr_name))
+                if 'ValueResolver' not in base[0]:
+                    raise Exception('bva: {}'.format(attr_name))
+                lookup_export = base[0]['ValueResolver']['export']
+                lookup = self.get_export_idx(attr_name, lookup_export)
+                lookup_type = lookup['export_type']
+                if lookup_type == 'ConstantAttributeValueResolver':
+                    bvc = lookup['Value']['BaseValueConstant']
+                    #print('{} -> {}'.format(attr_name, bvc))
+                elif lookup_type == 'DataTableAttributeValueResolver':
+                    table_name = lookup['DataTableRow']['DataTable'][1]
+                    row = lookup['DataTableRow']['RowName']
+                    col = lookup['Property']['ParsedPath']['PropertyName']
+                    bvc = self.datatable_lookup(table_name, row, col)
+                    #print('{} -> {}'.format(attr_name, bvc))
+                else:
+                    raise Exception('Unknown bva type {} for {}'.format(lookup_type, attr_name))
+
+        # AI
+        if 'AttributeInitializer' in data and 'export' not in data['AttributeInitializer']:
+            raise Exception('ai: {}'.format(data['BaseValueAttribute']))
+
+        # BVS
+        if 'BaseValueScale' in data:
+            return bvc * data['BaseValueScale']
+        else:
+            return bvc
 
