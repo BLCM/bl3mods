@@ -1,24 +1,24 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('better_rare_spawn_hunt_stripped.txt',
-        'Pared-down alteration of Week 2 Event',
+mod = Mod('guaranteed_rare_spawns.txt',
+        'Guarantee all rare spawns',
         [
-            'Mostly just ensures that the rare spawns will appear at 100%.  Other',
-            'functionality has been moved, as appropriate, into Better Loot.',
-            '',
-            'https://borderlands.com/en-US/news/2019-10-07-borderlands-3-rare-spawn-hunt/',
-            'https://github.com/BLCM/bl3hotfixes/blob/master/gbx_info_archive/2019-10-07-anniversary_2.md',
+            "Ensures that all BL3 rare spawns will appear at 100%.  This is actually",
+            "mostly unnecessary now, as GBX has decided to permanently buff them to",
+            "100% after their Farming Frenzy event, but I'll keep them in here anyway.",
+            "",
+            "This *does* also buff most rare vehicle spawns, too, which GBX does not",
+            "do yet.  Rare Vehicle spawns should be maybe about 10% per vehicle spawn.",
         ],
-        'Week2Stripped',
+        'GuaranteedRareSpawn',
         )
 
-# Make all rare spawns 100%
-mod.comment('General level-based spawn rates (unchanged from stock GBX hotfixes, but for all levels)')
-mod.comment("I'm not actually sure if the extra levels make any difference (it definitely shouldn't")
-mod.comment('for stuff like the trials/slaughters, for instance), but eh.')
+# Make all rare spawns 100%.  We specify a lot more levels than GBX does, and I don't
+# think that the extra levels actually do any good, but whatever.
+mod.comment('General level-based spawn rates')
 for level_name in [
         'AtlasHQ_P',
         'Beach_P',
@@ -69,31 +69,21 @@ for level_name in [
             'SuperRare',
             ]:
         mod.table_hotfix(Mod.LEVEL, level_name,
-                '/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities',
+                '/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities',
                 row_name,
                 'Value',
-                """(
-                    BaseValueConstant=100.000000,
-                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                    BaseValueAttribute=None,
-                    AttributeInitializer=None,
-                    BaseValueScale=1.000000
-                )""")
+                BVCF(bvc=100))
 mod.newline()
 
 # Some individual spawn rates which apparently don't use those values above
-# TODO: I think Brood Mother (Pyre of Stars) needs something similar
+# TODO: I think Brood Mother (Pyre of Stars) needs something similar.  GBX
+# has said that Brood Mother's spawn actually depends on killing mobs outside
+# her lair, so I should look into that...
 mod.comment('Individual Spawn rates')
 mod.reg_hotfix(Mod.LEVEL, 'Towers_P',
         '/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.OakMissionRareSpawner_VicAndWarty',
         'PercentChanceToSpawn',
-        """(
-            BaseValueConstant=100.000000,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1.000000
-        )""")
+        BVCF(bvc=100))
 mod.newline()
 
 # Rare Vehicle Spawns

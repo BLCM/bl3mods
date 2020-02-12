@@ -12,12 +12,6 @@ recent BL3 patches.
   corrected.
 - `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
   is the Week 4 event, as sent by GBX itself.
-- `better_rare_spawn_hunt_stripped.txt` - This is a stripped-down version of
-  the Week 2 event which now *just* focuses on making sure that all rare
-  spawns will spawn at 100% instead.  Also makes most of the vehicle rare
-  spawns more common, with the exception of Skagzilla (though note that
-  those just have an increased chance, not guaranteed).
-  - Brood Mother, in Pyre of Stars, looks like it's unaffected by this, alas.
 - `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
   of the Week 3 event, which increases the Eridium drop rates even further,
   *vastly* reduces the customization costs at Earl's, and reduces the Eridium
@@ -96,6 +90,14 @@ recent BL3 patches.
   the "Projected" augmenation.  I've actually sort of made my peace with that
   aug, and don't immediately trash any shield with 'em anymore, but it's
   definitely my least favorite still, so away it goes!
+- `guaranteed_rare_spawns.txt` - Guarantees that all rare spawns will spawn
+  at 100%, and that most vehicle rare spawns are much more common (about 10%
+  per vehicle spawn, in the maps which have them).  The non-vehicle part is
+  actually unnecessary now, since GBX made that change permanent on their
+  end.  A few things which don't work:
+  - Brood Mother, in Pyre of Stars, apparently spawns based partially on how
+    many mobs you've killed outside her lair?  Maybe just the Varkids?
+  - Skagzilla's spawnrate is unaffected.
 - Some customization-related mods:
   - `expanded_customization_pools.txt` - Adds in nearly all customizations to
     the relevant global-drop pools (the ones omitted are for preorders, deluxe
