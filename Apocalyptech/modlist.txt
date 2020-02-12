@@ -1,42 +1,13 @@
 ###
-### Master Mod List
+### Enemy/Spawn Changes
 ###
 
 # Guarantee rare spawns (and buff vehicle rare spawns)
 guaranteed_rare_spawns
 
-# Better Mayhem rewards (mostly just for XP; Better Loot further buffs
-# anoint rates)
-better_mayhem_rewards
-
-# Cheaper SDUs
-cheaper_sdus
-
-# Cheaper Slots
-cheaper_slots
-
-# Cheaper Eridium economy
-cheaper_eridium_economy
-
-# Red Text Explainer
-red_text_explainer
-
-# Improve Maliwan charge times
-maliwan_charge_time
-
-# Vehicle Unlocks
-vehicle_unlocks
-
-# Unlock various Eridian equipment from the beginning
-# Commenting for now 'cause it ends up interfering with a couple of quests.
-#eridian_unlocks
-
-# Sort-of recreations of my BL2/TPS stuff
-early_bloomer
-better_loot
-expanded_legendary_pools
-better_slots
-no_wasted_equipment
+###
+### Cheat Type Mods
+###
 
 # Movement Speed Cheats
 movement_speed_cheats_reasonable
@@ -48,36 +19,90 @@ always_visible_challenge_icons
 # ECHO Log loot bar is bigger
 more_visible_echo_logs
 
-# Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
-nvhm_gamestage_follows_level
+# Better Mayhem rewards (mostly just for XP; Better Loot further buffs
+# anoint rates).  Make sure this stays above Better Loot!
+better_mayhem_rewards
 
 # Alterations to the first couple of weapon chests in the game
 first_gun_full_loadout
 #first_gun_testing_gear
 
+###
+### Gameplay Changes
+###
+
+# Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
+nvhm_gamestage_follows_level
+
+# Unlock various Eridian equipment from the beginning
+# Commenting for now 'cause it ends up interfering with a couple of quests.
+#eridian_unlocks
+
+# Better Loot!  Improves loot quality and other such tweaks
+better_loot
+
 # Randomize boss drops and mission rewards.  I imagine I am the only
-# person who would possibly want this.  Heh.
+# person who would possibly want this.  Heh.  Make sure the boss one
+# in particular happens *after* Better Loot in the file.
 boss_drop_randomizer
 mission_reward_randomizer
+
+# Vehicle Unlocks
+vehicle_unlocks
+
+###
+### Economy-related mods
+###
+
+# Cheaper SDUs
+cheaper_sdus
+
+# Cheaper Slots
+cheaper_slots
+
+# Improved Slot Machines
+better_slots
+
+# Cheaper Eridium economy
+cheaper_eridium_economy
+
+###
+### Gear Functionality Changes
+###
+
+# Red Text Explainer
+red_text_explainer
+
+# Improve Maliwan charge times
+maliwan_charge_time
 
 ###
 ### Partlocks / Part Changes
 ###
 
-# More tracker darts!
-more_tracker_darts
+# Only get COMs/Skins/Heads/Anoints for chars actively in the game
+no_wasted_equipment
+
+# Unlock all weapon/item parts from the beginning of the game
+early_bloomer
+
+# Add all uniques/legendaries to the relevant world drop pools
+expanded_legendary_pools
 
 # Add anoints to weapons which don't ordinarily have them
 all_weapons_can_anoint
 
-# Disable non-legendary/unique slam artifacts
-no_slam_artifacts
+# More tracker darts!
+more_tracker_darts
+
+# More elemental weapons
+more_elemental_weapons
 
 # Disable "projected" shields
 no_projected_shields
 
-# More elemental weapons
-more_elemental_weapons
+# Disable non-legendary/unique slam artifacts
+no_slam_artifacts
 
 ###
 ### Customization Tweaks
@@ -128,8 +153,8 @@ manufacturer_lock_custom_ted_vla
 ###
 
 # Mod-Testing Gear
-#craders_emp5_super_buff
-#transformer_super_buff
+craders_emp5_super_buff
+transformer_super_buff
 
 # Testing loot drops
 #testing_loot_drops
