@@ -194,13 +194,128 @@ for (pool, chars) in [
 
     for char in chars:
 
-        # Eridium.  75%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
+        # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
         # by Mayhem
         mod.reg_hotfix(Mod.CHAR, char,
                 pool,
                 'ItemPools[10].PoolProbability',
-                BVCF(bvc=0.75))
+                BVCF(bvc=0.8))
 
+mod.newline()
+
+# Eridium quantities.  Originally taken from the Week 3 event
+# Default during the event was 1.5 (we're using 3)
+mod.header('Eridium Drop Quantity Buffs')
+
+# Enemies first.  This is probably not exhaustive, I should go over it at
+# some point.
+for label, poollist_name, pool_idx, chars in [
+        ('Bosses', '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss', 7, [
+            'BPChar_AureliaBoss',
+            'BPChar_EnforcerKillaVolt',
+            'BPChar_Goliath_CageArena',
+            'BPChar_HeavyDarkTraunt',
+            'BPChar_Heavy_Traunt',
+            'BPChar_KJR',
+            'BPChar_MechEvilAI',
+            'BPChar_NogChipHolder',
+            'BPChar_Oversphere_KatagawaSphere',
+            'BPChar_PunkSpaceCowboy',
+            'BPChar_Varkid_RaidBoss',
+            ]),
+        ('Terror', '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror', 2, [
+            'BPChar_Terror',
+            ]),
+        ('Minibosses', '/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss', 7, [
+            'BPChar_ApeKingBobo',
+            'BPChar_EnforcerSacrificeBoss',
+            'BPChar_Enforcer_Bounty01',
+            'BPChar_Enforcer_Bounty02',
+            'BPChar_GoonBounty01',
+            'BPChar_GoonMonsterTrucker',
+            'BPChar_Goon_Rare01',
+            'BPChar_GuardianCube_Spectre',
+            'BPChar_GuardianCube_SpectreFinal',
+            'BPChar_HeavyDinerBoss',
+            'BPChar_HeavyFootstepsOfGiants',
+            'BPChar_HeavyJavaCore',
+            'BPChar_HeavyLoot',
+            'BPChar_Heavy_Bounty01',
+            'BPChar_Nog01_Bounty',
+            'BPChar_NogBeans',
+            'BPChar_PsychoLoot',
+            'BPChar_PsychoRare02',
+            'BPChar_PsychoRare03',
+            'BPChar_PunkBounty02',
+            'BPChar_Rakkman',
+            'BPChar_Ratch_Hunt01',
+            'BPChar_SaurianShiny',
+            'BPChar_ServiceBot_LOOT',
+            'BPChar_ServiceBot_Rare01',
+            'BPChar_SkagAntEater',
+            'BPChar_SkagChubby',
+            'BPChar_SpiderantCakeRoyalty',
+            'BPChar_SpiderantCoffer',
+            'BPChar_SpiderantTarantella',
+            'BPChar_Spiderant_Hunt01',
+            'BPChar_TinkDemon',
+            'BPChar_TinkMotorcadeBigD',
+            'BPChar_TinkRedJabber',
+            'BPChar_VarkidHunt01',
+            ]),
+        ('Vault Monsters', '/Game/GameData/Loot/ItemPools/ItemPoolList_VaultBossEnemy', 7, [
+            'BPChar_EdenBoss',
+            'BPChar_FinalBoss',
+            'BPChar_Rampager',
+            'BPChar_TroyBoss',
+            ]),
+        ('Anointed Enemies', '/Game/GameData/Loot/ItemPools/ItemPoolList_AnointedEnemyGunsGear', 4, [
+            'BPChar_EnforcerAnointed',
+            'BPChar_Goliath_Anointed',
+            'BPChar_Goliath_Elemental',
+            'BPChar_GoonAnointed',
+            'BPChar_PsychoAnointed',
+            'BPChar_Punk_Anointed',
+            'BPChar_TinkAnointed',
+            'BPChar_VarkidHunt02_LarvaA',
+            'BPChar_VarkidHunt02_LarvaB',
+            'BPChar_VarkidHunt02_LarvaC',
+            'BPChar_VarkidHunt02_LarvaD',
+            'BPChar_VarkidSuperBadass',
+            ]),
+        ]:
+
+    mod.comment(label)
+    for char_name in chars:
+        mod.reg_hotfix(Mod.CHAR, char_name,
+                poollist_name,
+                'ItemPools.ItemPools[{}].NumberOfTimesToSelectFromThisPool.BaseValueScale'.format(pool_idx),
+                3)
+    mod.newline()
+
+# The old week 3 event used 1.5 for the scale, I'm bumping it to 5.
+mod.comment('Slaughters')
+for level_name in [
+        'COVSlaughter_P',
+        'CreatureSlaughter_P',
+        'TechSlaughter_P',
+        ]:
+    mod.reg_hotfix(Mod.LEVEL, level_name,
+            '/Game/GameData/Loot/ItemPools/ItemPoolList_SlaughterMoney',
+            'ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale',
+            5)
+mod.newline()
+
+# Eridium crystal growths (I think).  Event scale was 1.5, using 3 here.
+mod.comment('Eridium Crystal Growths')
+for pool_name in [
+        '/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal',
+        '/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large',
+        ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+            pool_name,
+            'Quantity.BaseValueScale',
+            3)
 mod.newline()
 
 # Guaranteed boss drops!

@@ -2,7 +2,6 @@
 ### Better versions of 10-Year Anniversary Events
 ###
 
-better_eridium_event
 better_mayhem_on_twitch
 
 ###
@@ -17,6 +16,9 @@ cheaper_sdus
 
 # Cheaper Slots
 cheaper_slots
+
+# Cheaper Eridium economy
+cheaper_eridium_economy
 
 # Red Text Explainer
 red_text_explainer

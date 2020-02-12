@@ -12,10 +12,6 @@ recent BL3 patches.
   corrected.
 - `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
   is the Week 4 event, as sent by GBX itself.
-- `better_eridium_event.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 3 event, which increases the Eridium drop rates even further,
-  *vastly* reduces the customization costs at Earl's, and reduces the Eridium
-  slot costs even further.
 - `better_mayhem_on_twitch.txt` - This is a better (ie: OP and cheaty) version
   of the Week 4 event, which buffs up XP gains even more in Mayhem modes, and
   increases Anointed parts on drops even more (including in non-Mayhem).  All
@@ -29,7 +25,7 @@ recent BL3 patches.
   BL3 really needs much in the way of better loot.  Does the following,
   currently:
   - Sets the rarity weights to be improved
-  - Increases Eridium drop rates.
+  - Increases Eridium drop rates and quantities.
   - Guarantees specific legendary drops from nearly all the bosses which
     have unique drops.  This has been updated for the Mayhem 4 / Maliwan
     Takedown patch, including all the new drops set up in that patch.
@@ -61,8 +57,10 @@ recent BL3 patches.
 ## Other mods
 
 - `cheaper_sdus.txt` - Vastly reduce the SDU costs.  Cheaty, of course!
-- `cheaper_slots.txt` - Reduce the cash slots cost to 20%.  The eridium slot
-  machine is untouched since I did that in my `better_eridium_event.txt`.
+- `cheaper_slots.txt` - Reduce the slot costs to 20% (both cash and eridium)
+- `cheaper_eridium_economy.txt` - Make Earl's cosmetics and Eridium slot
+  costs cheaper.  Very cheaty.  (The eridium slot change is the same as in
+  `cheaper_slots.txt`.)
 - `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - These can be
   used to enable Bloody Harvest even after the event is over, or disable
   it prematurely.  The enabling script will also include the other balance
