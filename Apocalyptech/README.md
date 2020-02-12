@@ -12,12 +12,6 @@ recent BL3 patches.
   corrected.
 - `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
   is the Week 4 event, as sent by GBX itself.
-- `better_mayhem_on_twitch.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 4 event, which buffs up XP gains even more in Mayhem modes, and
-  increases Anointed parts on drops even more (including in non-Mayhem).  All
-  drops in Mayhem 3 should be Anointed.  This completely omits all of the
-  Mayhem modifier statements and Twitch integration stuff from the vanilla
-  Week 4 event, since I don't really care about those.
 
 ## BL3 versions of some of my BL2/TPS mods
 
@@ -96,6 +90,11 @@ recent BL3 patches.
   - Brood Mother, in Pyre of Stars, apparently spawns based partially on how
     many mobs you've killed outside her lair?  Maybe just the Varkids?
   - Skagzilla's spawnrate is unaffected.
+- `better_mayhem_rewards.txt` - This buffs up XP gains even more in Mayhem
+  modes, and increases Anointed parts on drops even more (including in
+  non-Mayhem).  All drops in Mayhem 3 should be Anointed.  Mayhem drop rates
+  are otherwise identical to the Farming Frenzy event rates, which might
+  actually be permanent now?
 - Some customization-related mods:
   - `expanded_customization_pools.txt` - Adds in nearly all customizations to
     the relevant global-drop pools (the ones omitted are for preorders, deluxe

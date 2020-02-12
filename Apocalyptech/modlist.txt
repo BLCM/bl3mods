@@ -1,15 +1,13 @@
 ###
-### Better versions of 10-Year Anniversary Events
-###
-
-better_mayhem_on_twitch
-
-###
 ### Master Mod List
 ###
 
 # Guarantee rare spawns (and buff vehicle rare spawns)
 guaranteed_rare_spawns
+
+# Better Mayhem rewards (mostly just for XP; Better Loot further buffs
+# anoint rates)
+better_mayhem_rewards
 
 # Cheaper SDUs
 cheaper_sdus
