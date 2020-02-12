@@ -153,8 +153,8 @@ manufacturer_lock_custom_ted_vla
 ###
 
 # Mod-Testing Gear
-craders_emp5_super_buff
-transformer_super_buff
+#craders_emp5_super_buff
+#transformer_super_buff
 
 # Testing loot drops
 #testing_loot_drops
