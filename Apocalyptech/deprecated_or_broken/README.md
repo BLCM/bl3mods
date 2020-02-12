@@ -14,28 +14,6 @@ weren't actually intended to be mods themselves.
   into a real randomizer, just wanted to see if these kinds of shenanigans
   were possible.
 
-## Deprecated Anniversary Event Mods
-
-These are related to the 10-Year Anniversary events which took place shortly
-after BL3's release.  With the November 21, 2019 patch (Mayhem 4 / Maliwan
-Takedown), nearly all gear was given a dedicated source, which is slightly at
-odds with the mods now found here.  Some bits of functionality from these have
-been merged into Better Loot, though.
-
-- `2019-10-01_-_10-year-anniversary-event-1_-_bonus_boss_loot.txt` - This
-  is the Week 1 event, as sent by GBX itself.
-- `better_bonus_boss_loot.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 1 event, which guarantees that all affected bosses will drop
-  from their pools.
-- `2019-10-08_-_10-year-anniversary-event-2_-_rare_spawn_hunt.txt` - This
-  is the Week 2 event, as sent by GBX itself.
-- `better_rare_spawn_hunt.txt` - This is a better (ie: OP and cheaty) version
-  of the Week 2 event, which guarantees that all of the rare spawns will always
-  drop their unique loot, and also removes the undocumented health buffs which
-  are in the vanilla version.  Also theoretically makes any other rare spawn
-  in the game which was *not* touched by this mod spawn with 100% frequency,
-  though I'm not sure what else there is which might be affected by this.
-
 ## Deprecated/Testing Mods
 
 - `mayhem_1_better_loot.txt` - This was my first mod attempt, actually,

@@ -1,18 +1,6 @@
 My BL3 Mod Workspace
 ====================
 
-## Recreations of 10-Year-Anniversary Events
-
-Check the `deprecated_or_broken` directory for some events which are
-no longer found up here, because they don't play nicely with more
-recent BL3 patches.
-
-- `2019-10-15_-_10-year-anniversary-event-3_-_show_me_the_eridium.txt` - This
-  is the Week 3 event, as sent by GBX itself, but with a few errors
-  corrected.
-- `2019-10-22_-_10-year-anniversary-event-4_-_mayhem_on_twitch.txt` - This
-  is the Week 4 event, as sent by GBX itself.
-
 ## BL3 versions of some of my BL2/TPS mods
 
 - `better_loot.txt` - A *very* stripped-down version of Better Loot, not that
