@@ -27,13 +27,21 @@ class Mod(object):
     Helper class for writing hotfix-injection mods for BL3
     """
 
-    (PATCH, LEVEL, EARLYLEVEL, CHAR) = range(4)
+    (PATCH, LEVEL, EARLYLEVEL, CHAR, PACKAGE, POST) = range(6)
 
+    # We have no examples of SparkPostLoadedEntry or SparkStreamedPackageEntry, and
+    # I haven't been successful in trying to get them to work (I suspect that
+    # modifying vehicle handling might require SparkStreamedPackageEntry), so they're
+    # a bit pointless in here.  Still, putting them in for those times when I feel
+    # like doing some more trial-and-error to get 'em to work.
     TYPE = {
             PATCH: 'SparkPatchEntry',
             LEVEL: 'SparkLevelPatchEntry',
             EARLYLEVEL: 'SparkEarlyLevelPatchEntry',
             CHAR: 'SparkCharacterLoadedEntry',
+            # No idea what the right syntax is for these two...
+            PACKAGE: 'SparkStreamedPackageEntry',
+            POST: 'SparkPostLoadedEntry',
         }
 
     def __init__(self, filename, title, description, prefix):
