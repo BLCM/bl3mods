@@ -29,9 +29,6 @@ vehicle_unlocks
 # Commenting for now 'cause it ends up interfering with a couple of quests.
 #eridian_unlocks
 
-# More tracker darts!
-more_tracker_darts
-
 # Sort-of recreations of my BL2/TPS stuff
 early_bloomer
 better_loot
@@ -42,9 +39,6 @@ no_wasted_equipment
 # Movement Speed Cheats
 movement_speed_cheats_reasonable
 #movement_speed_cheats_extreme
-
-# Add anoints to weapons which don't ordinarily have them
-all_weapons_can_anoint
 
 # Challenge icons are always visible
 always_visible_challenge_icons
@@ -65,14 +59,23 @@ boss_drop_randomizer
 mission_reward_randomizer
 
 ###
-### Partlocks
+### Partlocks / Part Changes
 ###
+
+# More tracker darts!
+more_tracker_darts
+
+# Add anoints to weapons which don't ordinarily have them
+all_weapons_can_anoint
 
 # Disable non-legendary/unique slam artifacts
 no_slam_artifacts
 
 # Disable "projected" shields
 no_projected_shields
+
+# More elemental weapons
+more_elemental_weapons
 
 ###
 ### Customization Tweaks

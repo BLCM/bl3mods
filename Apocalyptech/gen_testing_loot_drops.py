@@ -50,6 +50,7 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRif
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_03_Rare'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_VeryRare'
 
 # Hoovering up cosmetics
 #pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
