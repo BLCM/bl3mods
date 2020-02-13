@@ -216,6 +216,14 @@ being used, which gives you far more Eridium than usual.
   an official GBX hotfix deployed on Oct 31, 2019 and then extented a bit.
   Requires that the Bloody Harvest event be active, presumably.
 
+## Broken Hearts Mods
+
+- `broken_hearts_enable.txt` - This can theoretically be used to enable
+  the Broken Hearts event after it's officially closed down.  Untested, given
+  that the event is still ongoing as of writing.  Will almost certainly
+  interfere with future events, if you happen to run 'em while they're
+  active.
+
 ## Mod-Testing Mods
 
 A collection of mods which I use primarily just when testing out other

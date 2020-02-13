@@ -149,6 +149,13 @@ manufacturer_lock_custom_ted_vla
 #guaranteed_ghosts
 
 ###
+### Broken Hearts mods
+###
+
+# Event enable
+#broken_hearts_enable
+
+###
 ### Mod-testing Mods
 ###
 
