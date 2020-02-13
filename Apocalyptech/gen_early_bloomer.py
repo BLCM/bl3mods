@@ -61,6 +61,20 @@ unlock_table(mod, label='Element unlocks', rows=[
     'Element_Shock',
     ])
 
+# Broken Hearts gear is locked to 53 with a hotfix, at least during the event
+# itself.  Unlocking that here.
+mod.comment('Allow Terminal Polyaimorous and Wedding Invitation to be any level')
+for row in [
+        'PolyAim',
+        'WeddingInvitation',
+        ]:
+    mod.table_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay',
+            row,
+            'MinGameStage_5_E12DB0C74420238367FBC1A5221AFB84',
+            1)
+mod.newline()
+
 # Inventory slots
 mod.comment('Unlock all inventory slots right from the start of the game')
 for slot in [
