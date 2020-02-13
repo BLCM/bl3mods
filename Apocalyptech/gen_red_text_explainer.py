@@ -1152,6 +1152,22 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Name/UIStat_RedText_Slider.UIStat_RedText_Slider',
             'Same planet, different dimension.',
             'travels in a perfectly straight line, small radius'),
+
+        # New Broken Hearts event gear
+        # TODO: Need to actually populate these.
+        ('Terminal Polyaimorous',
+            '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/UIStat_RedText_PolyAim.UIStat_RedText_PolyAim',
+            "Spread the love.",
+            "(unknown)"),
+        ('Wedding Invitation',
+            '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/UIStat_RedText_WeddingInvite.UIStat_RedText_WeddingInvite',
+            "Will you be the rest of my life?",
+            "(unknown)"),
+        # This was added in Broken Hearts but it has no special abilities or red text
+        #('Superstreamer',
+        #    '',
+        #    '',
+        #    ''),
         ]:
 
     # Eh, let's omit shields by default; I am 99% sure that all of them already

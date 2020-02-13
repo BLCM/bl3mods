@@ -721,3 +721,9 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Grenade/AcidBurn/UI/UISta
 # Slider
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Name/UIStat_RedText_Slider.UIStat_RedText_Slider,Text,0,,[Flavor]Same planet, different dimension.[/Flavor] (travels in a perfectly straight line, small radius)
 
+# Terminal Polyaimorous
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/UIStat_RedText_PolyAim.UIStat_RedText_PolyAim,Text,0,,[Flavor]Spread the love.[/Flavor] ((unknown))
+
+# Wedding Invitation
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/UIStat_RedText_WeddingInvite.UIStat_RedText_WeddingInvite,Text,0,,[Flavor]Will you be the rest of my life?[/Flavor] ((unknown))
+
