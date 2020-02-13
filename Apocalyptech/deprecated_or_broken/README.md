@@ -35,6 +35,10 @@ weren't actually intended to be mods themselves.
   keep it that way forever, if you want.  Turns out that GBX decided
   to make that change permanent, so there's no real need for this one
   anymore.
+- `bloody_harvest_disable.txt` - This can be used to disable Bloody
+  Harvest prematurely.  It worked fine during the original event, but it's
+  a bit pointless now because GBX added in an in-game toggle for that kind
+  of event.  Still, keeping it around for awhile.
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least

@@ -204,9 +204,8 @@ being used, which gives you far more Eridium than usual.
 
 ## Bloody Harvest Mods
 
-- `bloody_harvest_enable.txt`/`bloody_harvest_disable.txt` - These can be
-  used to enable Bloody Harvest even after the event is over, or disable
-  it prematurely.  The enabling script will also include the other balance
+- `bloody_harvest_enable.txt` - This can be used to enable Bloody Harvest
+  even after the event is over.  It also includes the other balance
   hotfixes which were active during the last week(s) of the event, which
   includes health modifiers and other minor fixes.  These will almost
   certainly interfere with future events, if you happen to run 'em while
