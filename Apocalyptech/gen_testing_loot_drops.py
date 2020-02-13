@@ -132,6 +132,21 @@ balances = [
         #'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_40.InvBal_CustomSkin_Siren_40',
         #'/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01',
 
+        # Broken Hearts rewards:
+        #'/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite.Balance_SR_JAK_WeddingInvite',
+        #'/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch.Balance_SG_TED_Twitch',
+        #'/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Balance/Balance_SM_MAL_PolyAim.Balance_SM_MAL_PolyAim',
+        #'/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_01.InvBal_EchoTheme_Valentines_01',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_Beastmaster_50.InvBal_CustomSkin_Beastmaster_50',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_Gunner_50.InvBal_CustomSkin_Gunner_50',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_Operative_50.InvBal_CustomSkin_Operative_50',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_Siren_50.InvBal_CustomSkin_Siren_50',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_BeastMaster_Twitch.InvBal_CustomHead_BeastMaster_Twitch',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_Gunner_Twitch.InvBal_CustomHead_Gunner_Twitch',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_Operative_Twitch.InvBal_CustomHead_Operative_Twitch',
+        #'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_Siren_Twitch.InvBal_CustomHead_Siren_Twitch',
+
         # NOG Heads:
         #'/Game/PlayerCharacters/_Customizations/Beastmaster/Heads/CustomHead_Beastmaster_22.InvBal_CustomHead_Beastmaster_22',
         #'/Game/PlayerCharacters/_Customizations/Gunner/Heads/CustomHead_Gunner_22.InvBal_CustomHead_Gunner_22',

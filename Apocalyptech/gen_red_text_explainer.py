@@ -1158,11 +1158,11 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Terminal Polyaimorous',
             '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/UIStat_RedText_PolyAim.UIStat_RedText_PolyAim',
             "Spread the love.",
-            "(unknown)"),
+            "beam chains to nearby enemies"),
         ('Wedding Invitation',
             '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/UIStat_RedText_WeddingInvite.UIStat_RedText_WeddingInvite',
             "Will you be the rest of my life?",
-            "(unknown)"),
+            "crits possibly ricochet with cryo"),
         # This was added in Broken Hearts but it has no special abilities or red text
         #('Superstreamer',
         #    '',
