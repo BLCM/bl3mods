@@ -419,6 +419,11 @@ type_pools = [
                 # Slow Hand
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand.Balance_SG_HYP_SlowHand', HYP, 1),
 
+                ### Broken Hearts Additions
+
+                # Superstreamer (just a somewhat partlocked purple Tediore shotgun, only thing special is the material.  no red text, even!)
+                ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch.Balance_SG_TED_Twitch', TED, 0.5*addition_scale),
+
                 ### Additions
 
                 # Phebert
@@ -514,6 +519,11 @@ type_pools = [
                 # Just Kaus
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/Balance/Balance_SM_HYP_JustCaustic.Balance_SM_HYP_JustCaustic', HYP, 1*addition_scale),
 
+                ### Broken Hearts additions
+
+                # Terminal Polyaimorous
+                ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Balance/Balance_SM_MAL_PolyAim.Balance_SM_MAL_PolyAim', MAL, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -591,6 +601,11 @@ type_pools = [
 
                 # AutoAimè
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/Balance/Balance_SR_DAL_AutoAime.Balance_SR_DAL_AutoAime', DAL, 1),
+
+                ### Broken Hearts Additions
+
+                # Wedding Invitation
+                ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite.Balance_SR_JAK_WeddingInvite', JAK, 1),
 
                 ### Additions
 
