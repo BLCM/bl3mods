@@ -156,6 +156,14 @@ manufacturer_lock_custom_ted_vla
 #broken_hearts_enable
 
 ###
+### Main Menu
+###
+
+#main_menu_normal
+#main_menu_halloween
+#main_menu_christmas
+
+###
 ### Mod-testing Mods
 ###
 

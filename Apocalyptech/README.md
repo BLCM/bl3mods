@@ -223,6 +223,12 @@ being used, which gives you far more Eridium than usual.
   interfere with future events, if you happen to run 'em while they're
   active.
 
+## Main Menu
+
+- `main_menu_*.txt` - Just a simple tweak to set the main menu to any of
+  the known visual changes.  Right now that's just normal, Halloween, and
+  Christmas.  No actual gameplay changes or anything, it's pretty silly.
+
 ## Mod-Testing Mods
 
 A collection of mods which I use primarily just when testing out other
