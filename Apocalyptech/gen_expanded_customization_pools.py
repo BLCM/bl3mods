@@ -1,22 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-from bl3hotfixmod.bl3hotfixmod import Mod
-
-mod = Mod('expanded_customization_pools.txt',
-        'Expanded Customization Pools',
-        [
-            'The global drop pools for the various customization types in BL3 only include',
-            'a subset of available customizations.  This mod adds in nearly all available',
-            "customizations, so you'll be able to get them all just via world drops -- the",
-            'ones left out are customizations you get automatically via preorders or deluxe',
-            "editions.  (Those aren't useful as drops for anyone without the prerequisite.)",
-            'The mod also increases the global drop rate for cutomizations.',
-            ''
-            'Slot machine rewards are unaffected!',
-        ],
-        'CustomPools',
-        )
+from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 def set_pool(mod, pool_to_set, balances, char=None):
     parts = []
@@ -42,213 +27,327 @@ def set_pool(mod, pool_to_set, balances, char=None):
             'BalancedItems',
             '({})'.format(','.join(parts)))
 
-mod.comment('Increased Cosmetic chances')
-for char in [
-        # TODO: need to figure out which things actually need definition in here.
-        'BPChar_Ape',
-        'BPChar_EnforcerShared',
-        'BPChar_Frontrunner',
-        'BPChar_Goon',
-        'BPChar_GuardianShared',
-        'BPChar_Heavy_Shared',
-        'BPChar_Nekrobug_Shared',
-        'BPChar_Nog',
-        'BPChar_OversphereShared',
-        'BPChar_PsychoShared',
-        'BPChar_PunkShared',
-        'BPChar_Rakk',
-        'BPChar_Ratch',
-        'BPChar_Saurian_Shared',
-        'BPChar_ServiceBot',
-        'BPChar_SkagShared',
-        'BPChar_Spiderant',
-        'BPChar_Tink',
-        'BPChar_Tink_Turret',
-        'BPChar_Trooper',
-        'BPChar_VarkidShared',
-
-        # Characters used in GBX's own hotfix for the Week 3 Eridium event:
-        # (just these five!)
-        #'BPChar_PunkBasic',
-        #'BPChar_NogBasic',
-        #'BPChar_RakkBasic',
-        #'BPChar_GuardianWraith',
-        #'BPChar_ApeBasic',
-
-        # Don't actually need all the individual ones, thankfully.
-        #'BPChar_PsychoSuicide',
-        #'BPChar_PsychoLoot',
-        #'BPChar_PsychoShared',
-        #'BPChar_PsychoFirebrand',
-        #'BPChar_PsychoSlugger',
-        #'BPChar_PsychoBadass',
-        #'BPChar_PsychoBasic',
-        #'BPChar_PunkShotgunner',
-        #'BPChar_PunkBasic',
-        #'BPChar_PunkBadass',
-        #'BPChar_PunkShared',
-        #'BPChar_PunkAssaulter',
+for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in [
+        ('All Customizations', 'All', 'all',
+            True, True,
+            ["literally all \"useful\" customizations will world-drop."]),
+        ('All but Mission Rewards', 'NoMiss', 'no_mission_rewards',
+            True, False,
+            ["all customizations except for mission rewards",
+            "will world-drop (non-main-game mission rewards *are* included)."]),
+        ('All but Mission Rewards and Earl\'s Shop', 'NoMissEarl', 'no_mission_rewards_or_earl',
+            False, False,
+            ["all customizations except for mission rewards",
+            "and those available in Earl's shop will world-drop (non-main-game mission",
+            "rewards *are* included)."]),
         ]:
 
-    # Cosmetics at 3%, same as Better Loot.
-    mod.reg_hotfix(Mod.CHAR, char,
-            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-            'ItemPools[9].PoolProbability',
+    filename_full = 'expanded_customization_pools_{}.txt'.format(filename_addition)
+
+    full_desc = [
+        "The global drop pools for the various customization types in BL3 excludes various",
+        "customizations, such as SHiFT rewards, Twitch streamer rewards, or even just some",
+        "which appear to have no availability at all.  This mod adds all those in to the",
+        "global drop pools, so you'll be able to find them just through playing the game.",
+        "",
+        "In this version of the mod, {}".format(extra_texts[0]),
+        ]
+    full_desc.extend(extra_texts[1:])
+    full_desc.extend(["",
+        "This mod *does* leave out the customizations that you automatically get from",
+        "preorders or deluxe editions and the like, since those drops will never be",
+        "useful to anyone.",
+        "",
+        "The mod also increases the global drop rate for customizations, to offset the",
+        "increased pool sizes, flattens the pool probabilities so that all customizations",
+        "in their pools will drop equally, and skews the pool probabilities so that each",
+        "type of customization is weighted according to how many items are in the pool.",
+        "(In other words: each customization in the pools should have an equal chance of",
+        "dropping.)  This does assume you're using my No Wasted Gear mod, and playing in",
+        "single player, in terms of head/skin drops.",
+        "",
+        "Slot machine rewards are unaffected!",
+        ])
+
+    mod = Mod(filename_full,
+            'Expanded Customization Pools: {}'.format(label),
+            full_desc,
+            'CustomPools{}'.format(prefix),
+            )
+
+    mod.header('Increased Cosmetic chances')
+    for char in [
+            # TODO: need to figure out which things actually need definition in here.
+            'BPChar_Ape',
+            'BPChar_EnforcerShared',
+            'BPChar_Frontrunner',
+            'BPChar_Goon',
+            'BPChar_GuardianShared',
+            'BPChar_Heavy_Shared',
+            'BPChar_Nekrobug_Shared',
+            'BPChar_Nog',
+            'BPChar_OversphereShared',
+            'BPChar_PsychoShared',
+            'BPChar_PunkShared',
+            'BPChar_Rakk',
+            'BPChar_Ratch',
+            'BPChar_Saurian_Shared',
+            'BPChar_ServiceBot',
+            'BPChar_SkagShared',
+            'BPChar_Spiderant',
+            'BPChar_Tink',
+            'BPChar_Tink_Turret',
+            'BPChar_Trooper',
+            'BPChar_VarkidShared',
+
+            # Characters used in GBX's own hotfix for the Week 3 Eridium event:
+            # (just these five!)
+            #'BPChar_PunkBasic',
+            #'BPChar_NogBasic',
+            #'BPChar_RakkBasic',
+            #'BPChar_GuardianWraith',
+            #'BPChar_ApeBasic',
+
+            # Don't actually need all the individual ones, thankfully.
+            #'BPChar_PsychoSuicide',
+            #'BPChar_PsychoLoot',
+            #'BPChar_PsychoShared',
+            #'BPChar_PsychoFirebrand',
+            #'BPChar_PsychoSlugger',
+            #'BPChar_PsychoBadass',
+            #'BPChar_PsychoBasic',
+            #'BPChar_PunkShotgunner',
+            #'BPChar_PunkBasic',
+            #'BPChar_PunkBadass',
+            #'BPChar_PunkShared',
+            #'BPChar_PunkAssaulter',
+            ]:
+
+        # Cosmetics at 3%, same as Better Loot.
+        mod.reg_hotfix(Mod.CHAR, char,
+                '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
+                'ItemPools[9].PoolProbability',
+                """(
+                    BaseValueConstant=0.030000,
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1.000000
+                )""")
+
+    mod.newline()
+
+    # The pool has its Quantity set to /Game/GameData/Loot/ItemPools/Init_RandomLootCount_Normal,
+    # which seems to sometimes dip below 1, and cause the pool to not produce anything.  It's
+    # weird.  Set it to 1 instead, so that every time the pool is chosen, it'll drop.
+    mod.comment('Guarantee cosmetic drop when the pool is rolled (which weirdly isn\'t')
+    mod.comment('the case, ordinarily.')
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc',
+            'Quantity',
             """(
-                BaseValueConstant=0.030000,
+                BaseValueConstant=1,
                 DataTableValue=(DataTable=None,RowName="",ValueName=""),
                 BaseValueAttribute=None,
                 AttributeInitializer=None,
-                BaseValueScale=1.000000
+                BaseValueScale=1
             )""")
+    mod.newline()
 
-mod.newline()
+    # Now the pool expansions.
+    mod.header('Customization Pool Expansions')
 
-# The pool has its Quantity set to /Game/GameData/Loot/ItemPools/Init_RandomLootCount_Normal,
-# which seems to sometimes dip below 1, and cause the pool to not produce anything.  It's
-# weird.  Set it to 1 instead, so that every time the pool is chosen, it'll drop.
-mod.comment('Guarantee drop')
-mod.reg_hotfix(Mod.PATCH, '',
-        '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc',
-        'Quantity',
-        """(
-            BaseValueConstant=1,
-            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-            BaseValueAttribute=None,
-            AttributeInitializer=None,
-            BaseValueScale=1
-        )""")
-mod.newline()
+    # Skins/Heads first.
+    for (dirname, shortname) in [
+            ('Beastmaster', 'Beastmaster'),
+            ('Gunner', 'Gunner'),
+            ('Operative', 'Operative'),
+            ('SirenBrawler', 'Siren'),
+            ]:
 
-# Now the pool expansions.
-#
-# NOTE: basically all of these have "holes" in the enumeration, so we're setting some
-# balances which don't exist.  Whatever.  Those just never drop, so it's fine.
+        # Skins
+        pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot_{shortname}.ItemPool_Customizations_Skins_Loot_{shortname}'
+        balances = []
+        # Base Game
+        blacklist = {
+                # These indexes plain ol' don't exist
+                33, 38, 40,
+                # 34 is retro pack, 35 is neon pack 
+                34, 35,
+                }
+        if not drop_earl:
+            blacklist |= {5, 7, 8, 9, 10, 11, 13, 14, 15, 18, 39}
+        if not drop_mission:
+            blacklist |= {29, 30, 31, 32, 36}
+        for num in range(1, 44):
+            if num not in blacklist:
+                balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+        # Bloody Harvest
+        balances.append(f'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_40.InvBal_CustomSkin_{shortname}_40')
+        # Maliwan Takedown
+        balances.append(f'/Game/PatchDLC/Raid1/PlayerCharacters/_Customizations/{shortname}/CustomSkin_{shortname}_45.InvBal_CustomSkin_{shortname}_45')
+        # DLC1 - Dandelion
+        for num in [44, 46]:
+            balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+        # Broken Hearts
+        balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_50.InvBal_CustomSkin_{shortname}_50')
+        mod.comment(f'{shortname} Skins')
+        set_pool(mod, pool_name, balances)
+        mod.newline()
+        # Technically this gets set multiple times, but whatever
+        num_skins = len(balances)
 
-# Skins/Heads first.
-for (dirname, shortname) in [
-        ('Beastmaster', 'Beastmaster'),
-        ('Gunner', 'Gunner'),
-        ('Operative', 'Operative'),
-        ('SirenBrawler', 'Siren'),
-        ]:
+        # Heads
+        pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_{shortname}.ItemPool_Customizations_Heads_Loot_{shortname}'
+        balances = []
+        # Base Game
+        blacklist = {
+                # These indexes just plain ol' don't exist
+                2, 3, 25
+                }
+        if not drop_earl:
+            blacklist |= {7, 9, 10, 11, 12, 13, 14, 16, 18, 19}
+        if not drop_mission:
+            blacklist |= {5, 20, 21, 22, 23, 24}
+        for num in range(1, 27):
+            if num not in blacklist:
+                balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+        # Bloody Harvest, Ordering Bonuses, etc
+        # 28 is retro pack, 29 is neon pack (26 doesn't exist)
+        for num in [25, 27]:
+            balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+        # DLC1 - Dandelion
+        balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
+        # Broken Hearts (actually a Twitch Prime reward, most likely)
+        balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
+        mod.comment(f'{shortname} Heads')
+        set_pool(mod, pool_name, balances)
+        mod.newline()
+        # Technically this gets set multiple times, but whatever
+        num_heads = len(balances)
 
-    # Skins
-    pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot_{shortname}.ItemPool_Customizations_Skins_Loot_{shortname}'
+    # Weapon Skins
     balances = []
     # Base Game
-    # 34 is retro pack, 35 is neon pack 
-    blacklist = {34, 35}
-    for num in range(1, 44):
+    blacklist = {
+            # 21 is gold pack, 22 is gbx pack, 23 is retro pack, 24 is butt stallion pack
+            21, 22, 23, 24,
+            }
+    if not drop_earl:
+        blacklist |= {1, 2, 8, 12, 13, 14, 15, 16, 20}
+    for num in range(1, 26):
         if num not in blacklist:
-            balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+            balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
     # Bloody Harvest
-    balances.append(f'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_40.InvBal_CustomSkin_{shortname}_40')
-    # Maliwan Takedown
-    balances.append(f'/Game/PatchDLC/Raid1/PlayerCharacters/_Customizations/{shortname}/CustomSkin_{shortname}_45.InvBal_CustomSkin_{shortname}_45')
-    # DLC1 - Dandelion
-    for num in [44, 46]:
-        balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
-    # Broken Hearts
-    balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_50.InvBal_CustomSkin_{shortname}_50')
-    mod.comment(f'{shortname} Skins')
-    set_pool(mod, pool_name, balances)
+    balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
+    mod.comment('Weapon Skins')
+    set_pool(mod, '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot.ItemPool_Customizations_WeaponSkins_Loot', balances)
     mod.newline()
+    num_weap_skins = len(balances)
 
-    # Heads
-    pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_{shortname}.ItemPool_Customizations_Heads_Loot_{shortname}'
+    # Weapon Trinkets
     balances = []
     # Base Game
-    for num in range(1, 27):
-        balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
-    # Bloody Harvest, Ordering Bonuses, etc
-    # 28 is retro pack, 29 is neon pack (26 doesn't exist)
-    for num in [25, 27]:
-        balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+    blacklist = {
+            # These indexes plain ol' don't exist
+            1, 23, 36, 55, 56,
+            # 51 is gold pack, 52 is neon pack, 53 is butt stallion pack, 54 is gbx pack, 58 is toy box pack
+            51, 52, 53, 54, 58,
+            }
+    if not drop_earl:
+        blacklist |= {5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 24, 27, 31, 34, 41}
+    if not drop_mission:
+        blacklist |= {6, 20, 22, 28, 29, 30}
+    for num in range(1, 59):
+        if num not in blacklist:
+            balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
+    # Uncategorized DLC
+    balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
+    # Bloody Harvest
+    balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1')
     # DLC1 - Dandelion
-    balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
-    # Broken Hearts (actually a Twitch Prime reward, most likely)
-    balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
-    mod.comment(f'{shortname} Heads')
-    set_pool(mod, pool_name, balances)
+    balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_01_JackGoldenMask.InvBal_Trinket_Dandelion_01_JackGoldenMask')
+    balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_02_Mimic.InvBal_Trinket_Dandelion_02_Mimic')
+    balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
+    # Broken Hearts
+    balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1')
+    mod.comment('Weapon Trinkets')
+    set_pool(mod, '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot.ItemPool_Customizations_WeaponTrinkets_Loot', balances)
     mod.newline()
+    num_trinkets = len(balances)
 
-# Weapon Skins
-balances = []
-# Base Game
-# 21 is gold pack, 22 is gbx pack, 23 is retro pack, 24 is butt stallion pack
-blacklist = {21, 22, 23, 24}
-for num in range(1, 26):
-    if num not in blacklist:
-        balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
-# Bloody Harvest
-balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
-mod.comment('Weapon Skins')
-set_pool(mod, '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot.ItemPool_Customizations_WeaponSkins_Loot', balances)
-mod.newline()
+    # ECHO Skins
+    balances = []
+    # Base Game
+    blacklist = {
+            # These indexes plain ol' don't exist
+            11, 25,
+            # 12 is retro pack, 13 is neon pack
+            12, 13,
+            }
+    if not drop_earl:
+        blacklist |= {1, 2, 3, 4, 5, 6, 8, 9, 10, 26, 27, 28, 29, 30}
+    for num in range(1, 36):
+        if num not in blacklist:
+            balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
+    # Uncategorized DLC
+    balances.append('/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_37.InvBal_ECHOTheme_37')
+    # Bloody Harvest
+    balances.append('/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_11.InvBal_ECHOTheme_11')
+    # Maliwan Takedown
+    balances.append('/Game/PatchDLC/Raid1/Customizations/EchoDevice/ECHOTheme_38.InvBal_ECHOTheme_38')
+    # DLC1 - Dandelion
+    for num in [36, 64, 65, 66]:
+        balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+    # Broken Hearts
+    balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_01.InvBal_EchoTheme_Valentines_01')
+    mod.comment('ECHO Skins')
+    set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
+    mod.newline()
+    num_echo_skins = len(balances)
 
-# Weapon Trinkets
-balances = []
-# Base Game
-# 51 is gold pack, 52 is neon pack, 53 is butt stallion pack, 54 is gbx pack, 58 is toy box pack
-blacklist = {51, 52, 53, 54, 58}
-for num in range(1, 59):
-    if num not in blacklist:
-        balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
-# Uncategorized DLC
-balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
-# Bloody Harvest
-balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1')
-# DLC1 - Dandelion
-balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_01_JackGoldenMask.InvBal_Trinket_Dandelion_01_JackGoldenMask')
-balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_02_Mimic.InvBal_Trinket_Dandelion_02_Mimic')
-balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
-# Broken Hearts
-balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1')
-mod.comment('Weapon Trinkets')
-set_pool(mod, '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot.ItemPool_Customizations_WeaponTrinkets_Loot', balances)
-mod.newline()
+    # Room Decorations
+    balances = []
+    # Base Game
+    blacklist = {
+            # These indexes plain ol' don't exist
+            1, 2, 3, 14, 53, 54,
+            }
+    if not drop_earl:
+        blacklist |= {4, 6, 7, 8, 10, 11, 12, 13, 15, 17, 18, 19, 23, 24, 26, 27, 41, 42, 43, 52, 55, 61, 65}
+    if not drop_mission:
+        blacklist |= {5}
+    for num in range(1, 68):
+        balances.append(f'/Game/Pickups/RoomDecoration/RoomDecoration_{num}.InvBal_RoomDecoration_{num}')
+    # Maliwan Takedown
+    balances.append('/Game/PatchDLC/Raid1/Customizations/RoomDeco/RoomDeco_Raid1_1.InvBal_RoomDeco_Raid1_1')
+    # DLC1 - Dandelion
+    for num in range(1, 7):
+        balances.append(f'/Game/PatchDLC/Dandelion/Customizations/RoomDeco/RoomDeco_DLC1_{num}.InvBal_RoomDeco_DLC1_{num}')
+    mod.comment('Room Decorations')
+    set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
+    mod.newline()
+    num_decorations = len(balances)
 
-# ECHO Skins
-balances = []
-# Base Game
-# 12 is retro pack, 13 is neon pack
-blacklist = {12, 13}
-for num in range(1, 36):
-    if num not in blacklist:
-        balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
-# This is an AMD-themed ECHO skin you get by buying certain AMD CPUs, but even though the object
-# looks to my organization routines like it belongs at this path, it *actually* belongs up
-# above in the main list.  Just got moved wrongly at some point, and probably overwrote
-# the object that's *supposed* to be at this location.
-#balances.append('/Game/UI/_Shared/CustomIconsEcho/ECHOTheme_35.InvBal_ECHOTheme_35')
-# Uncategorized DLC
-balances.append('/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_37.InvBal_ECHOTheme_37')
-# Bloody Harvest
-balances.append('/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_11.InvBal_ECHOTheme_11')
-# Maliwan Takedown
-balances.append('/Game/PatchDLC/Raid1/Customizations/EchoDevice/ECHOTheme_38.InvBal_ECHOTheme_38')
-# DLC1 - Dandelion
-for num in [36, 64, 65, 66]:
-    balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
-# Broken Hearts
-balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_01.InvBal_EchoTheme_Valentines_01')
-mod.comment('ECHO Skins')
-set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
-mod.newline()
+    # Now set our weighting on the main customization-drop pool
+    mod.header('Overall customization-type weighting')
+    # Keep the "average" weight in this pool to the default 0.05, in case anything weird happens to the
+    # pool later.
+    target_total = 6*0.05
+    total_weight = num_heads + num_skins + num_weap_skins + num_trinkets + num_echo_skins + num_decorations
+    for idx, individual_weight in enumerate([
+            num_heads,
+            num_skins,
+            num_weap_skins,
+            num_trinkets,
+            num_echo_skins,
+            num_decorations,
+            ]):
+        weight = individual_weight/total_weight*target_total
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc',
+                'BalancedItems.BalancedItems[{}].Weight'.format(idx),
+                BVCF(bvc=weight))
 
-# Room Decorations
-balances = []
-# Base Game
-for num in range(1, 68):
-    balances.append(f'/Game/Pickups/RoomDecoration/RoomDecoration_{num}.InvBal_RoomDecoration_{num}')
-# Maliwan Takedown
-balances.append('/Game/PatchDLC/Raid1/Customizations/RoomDeco/RoomDeco_Raid1_1.InvBal_RoomDeco_Raid1_1')
-# DLC1 - Dandelion
-for num in range(1, 7):
-    balances.append(f'/Game/PatchDLC/Dandelion/Customizations/RoomDeco/RoomDeco_DLC1_{num}.InvBal_RoomDeco_DLC1_{num}')
-mod.comment('Room Decorations')
-set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
-mod.newline()
-
-mod.close()
+    mod.close()
+    print('Generated {}'.format(filename_full))

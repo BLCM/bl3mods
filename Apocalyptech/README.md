@@ -168,10 +168,18 @@ being used, which gives you far more Eridium than usual.
 
 ## Customization Tweaks
 
-- `expanded_customization_pools.txt` - Adds in nearly all customizations to
-  the relevant global-drop pools (the ones omitted are for preorders, deluxe
-  editions, or other ones which give you the item automatically), and
-  increases the customization drop rate.  Slot machine rewards are unaffected.
+- `expanded_customization_pools_*.txt` - Expands the world drop customization
+  drop pool, flattens the pools (so each customization is as likely to drop
+  as any other) and increases the customization drop rate.  All versions omit
+  the customizations you get via preorders, deluxe editions, etc, since those
+  drops aren't useful to anyone.  Slot machine rewards are unaffected.  Comes
+  in three variants:
+  - `all` - Apart from the exceptions above, all customizations will world
+     drop.
+  - `no_mission_rewards` - Excludes the customizations you get as mission
+    rewards.
+  - `no_mission_rewards_or_earl` - Excludes the customizations you get as
+    mission rewards, and the ones which can be found in Earl's machine.
 - `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
   requirements for the relevant cosmetic items.  This does *not* actually
   spawn them in your game; you'll have to edit either `expanded_customization_pools`

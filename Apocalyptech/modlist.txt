@@ -109,7 +109,9 @@ no_slam_artifacts
 ###
 
 # Add all customizations to the global drop pools
-expanded_customization_pools
+#expanded_customization_pools_all
+#expanded_customization_pools_no_mission_rewards
+expanded_customization_pools_no_mission_rewards_or_earl
 
 # Unlock cosmetic items
 customization_unlocks
