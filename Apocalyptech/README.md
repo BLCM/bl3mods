@@ -326,6 +326,107 @@ For `hotfix_type` on either `reg_hotfix` or `table_hotfix`, you can use:
 
 - `Mod.PATCH` - Will create a `SparkPatchEntry` hotfix
 - `Mod.LEVEL`- Will create a `SparkLevelPatchEntry` hotfix
+- `Mod.EARLYLEVEL`- Will create a `SparkEarlyLevelPatchEntry` hotfix
 - `Mod.CHAR` - Will create a `SparkCharacterLoadedEntry` hotfix
+- `Mod.PACKAGE` - Will create a `SparkStreamedPackageEntry` hotfix
+- `Mod.POST` - Will create a `SparkPostLoadedEntry` hotfix
 
-Leave the `package` attribute as an empty string to leave that blank.
+Leave the `package` attribute as an empty string to leave that blank.  Note that
+no official GBX hotfix has used `SparkStreamedPackageEntry` or
+`SparkPostLoadedEntry` yet, and I've not yet been able to find a way to make use
+of them (though I've only tried for `PACKAGE`, which I suspect might be required
+to edit vehicle handling information).
+
+The `bl3hotfixmod` package also includes a few convenience classes to help deal
+with some commonly-used structures like `BaseValueConstant`-based stanzas and
+`ItemPool` entries.  There's also a hash to turn level identifiers into their
+English titles.  Look through the source for some more info on those, and grep
+for their use in the mod-generation scripts for examples.
+
+Data Introspection
+==================
+
+This project also includes a `bl3data` project which can be used to simplify
+programmatic access to BL3 data, so long as you have it set up properly.  There
+are two data sources the package can draw from:
+
+1. Extracted BL3 data, using the technique [described by the BLCMods wiki](https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data#extracting-raw-datafiles).
+   This will require that you run the extra script linked to by that page, so
+   that the object files exist in the same directory structure that they live
+   at while in-engine.
+2. [The BL3 References database](http://apocalyptech.com/games/bl3-refs/) - the
+   online version links to a MySQL/MariaDB database dump, which you'll have to
+   import into your own MySQL/MariaDB database in order to use.  Alternatively,
+   you can use [my refs-creation script](https://github.com/apocalyptech/bl3hotfixmodding/blob/master/dataprocessing/populate_refs_db.py)
+   to generate the database from your already-extracted datafiles, though
+   grabbing the provided SQL dump will almost certainly be quicker.
+
+Of the two data sources, the first is required.  In order for `bl3data` to 
+actually make use of the data, you also need to have a [JohnWickParse](https://github.com/SirWaddles/JohnWickParse)
+binary available to do data serialization, and specifically you'll probably
+want to use my own [indexed_arrays branch](https://github.com/apocalyptech/JohnWickParse/tree/indexed_arrays),
+which includes some versioning information which `bl3data` uses to know if
+it should re-serialize data.  You can use the main JWP project instead, but
+the data library will re-serialize the data objects every time you run,
+rather than intelligently using the previous data if possible.
+
+The refs database is only needed if you want to use the `get_refs_to()` or
+`get_refs_from()` methods, to look up references betwen objects.
+
+As for usage, you'll probably find it most useful to just grep through this
+project for examples.  The `dataprocessing` dir uses the library nearly everywhere,
+and I've started using it for mod generation as well.  In short, though, here's
+a couple of ways to use it:
+
+    from bl3data.bl3data import BL3Data
+
+    data = BL3data()
+
+    poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
+
+    # boss_loot will contain a serialized version of the poollist.
+    # boss_loot[0] will contain the single export, of type `ItemPoolListData`
+    boss_loot = data.get_data(poollist_name)
+    
+    # Loop through the pool list
+    for pool in boss_loot[0]['ItemPools']:
+        print('Found item pool: {}'.format(pool['ItemPool'][1]))
+
+    # Get only `ItemPoolListData` exports specifically (in this case, no actual
+    # difference between just `get_data()`, `[0]` will still contain the single
+    # export
+    boss_loot = data.get_exports(poollist_name, 'ItemPoolListData')
+
+    # Get export number 1 specifically (index `[0]`) -- the non-0-based-numbering
+    # is what's used by UE4 itself.  boss_loot[0] == listdata
+    listdata = data.get_export_idx(poollist_name, 0)
+
+    # Get references to the pool
+    object_names = data.get_refs_to(poollist_name)
+
+    # Get serialized objects which reference the pool
+    object_serializations = data.get_refs_to_data(poollist_name)
+
+    # Find object names under `/Game/GameData/Loot` which start with `ItemPool_*`
+    object_names = list(data.find('/Game/GameData/Loot', 'ItemPool_'))
+    object_serializations = list(data.find_data('/Game/GameData/Loot', 'ItemPool_'))
+
+    # Find objects by shell-like globs:
+    object_names = list(data.glob('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
+    object_serializations = list(data.glob_data('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
+
+    # Look up data in a DataTable
+    cell = data.datatable_lookup(
+            '/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances',
+            'Eridium_Bar',
+            'Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836')
+
+    # Get the exact weight of a BaseValueConstant-based structure.
+    # Note that this will raise an Exception if it encounters data it doesn't
+    # understand yet, and right now it only supports very basic objects.  This
+    # will likely get better over time as I encounter more cases that I need
+    # to be able to process.
+    dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
+    for item in dumpster['BalancedItems']:
+        print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
+
