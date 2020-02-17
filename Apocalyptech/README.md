@@ -99,8 +99,7 @@ Gameplay Changes instead.)
 - `mission_reward_randomizer.txt` - Like the Boss Drop Randomizer, this
   randomizes all mission rewards to pull from the appropriate legendary
   pools instead of having fixed gear.  Customization rewards are
-  similarly randomized.  Intended to be used at least with Expanded
-  Customization Pools, and recommended with Expanded Legendary Pools.
+  left alone.  Recommended to be used with Expanded Legendary Pools.
 - `vehicle_unlocks.txt` - This unlocks most vehicle parts/skins as soon as
   the associated vehicle becomes available.  Note that wheel types aren't
   included here, since those are spawned a bit differently by the game, though

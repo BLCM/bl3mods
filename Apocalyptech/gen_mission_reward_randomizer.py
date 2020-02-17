@@ -8,10 +8,10 @@ mod = Mod('mission_reward_randomizer.txt',
         [
             "Randomizes the rewards given by missions.  Reward types should remain",
             "constant -- if it originally gives a pistol, you should get a legendary",
-            "pistol of some sort.  This includes customization rewards as well.",
+            "pistol of some sort.  This does not include customization rewards.",
             "",
-            "More or less intended to be used alongside my Expanded Legendary Pools and",
-            "Expanded Customization Pools mods, for the most interesting rewards.",
+            "More or less intended to be used alongside my Expanded Legendary Pools",
+            "mods, for the most interesting rewards.",
             "",
             "Relatively untested!  It's quite possible that some missions were missed.",
             "The data here was programmatically generated from JohnWickParse data",
@@ -24,6 +24,7 @@ mod = Mod('mission_reward_randomizer.txt',
 # super over-engineered method.  Ah, well!
 
 (AR, HW, PS, SG, SM, SR, SH, GM, CM, AF, SK, HD, TK, RD) = range(14)
+type_blacklist = {SK, HD, TK, RD}
 
 leg_pools = {
         AR: '/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary',
@@ -36,6 +37,9 @@ leg_pools = {
         GM: '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary',
         CM: '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary',
         AF: '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary',
+
+        # If we were going to randomize customizations (as we were doing for awhile), we'd use
+        # these.  These types are now blacklisted, though.
         SK: '/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot',
         HD: '/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot',
         TK: '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot',
@@ -113,9 +117,10 @@ for (mission_obj, drop_type) in [
         ('/Game/PatchDLC/Dandelion/Missions/Side/Mission_DLC1_Side_RegainingOnesFeet.Default__Mission_DLC1_Side_RegainingOnesFeet_C:RewardData_OakMissionRewardData', SH),
         ]:
 
-    mod.reg_hotfix(Mod.PATCH, '',
-            mission_obj,
-            'ItemPoolReward',
-            leg_pools[drop_type])
+    if drop_type not in type_blacklist:
+        mod.reg_hotfix(Mod.PATCH, '',
+                mission_obj,
+                'ItemPoolReward',
+                leg_pools[drop_type])
 
 mod.close()
