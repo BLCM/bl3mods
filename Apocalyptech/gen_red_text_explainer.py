@@ -1162,7 +1162,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Wedding Invitation',
             '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/UIStat_RedText_WeddingInvite.UIStat_RedText_WeddingInvite',
             "Will you be the rest of my life?",
-            "crits possibly ricochet with cryo"),
+            "full auto, return ammo on crits, splash damage, cryo ricochet"),
         # This was added in Broken Hearts but it has no special abilities or red text
         #('Superstreamer',
         #    '',
