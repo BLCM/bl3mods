@@ -229,6 +229,15 @@ class BL3Data(object):
                 """, (obj_name,))
         return [row[0] for row in self.curs.fetchall()]
 
+    def get_refs_to_data(self, obj_name):
+        """
+        Find all object names which reference the given `obj_name`, and yield
+        tuples consisting of the object name and the serialized object data.
+        Requires a database connection to the refs database.
+        """
+        for ref in self.get_refs_to(obj_name):
+            yield (ref, self.get_data(ref))
+
     def get_refs_from(self, obj_name):
         """
         Find all object names which `obj_name` references, and return
@@ -244,6 +253,15 @@ class BL3Data(object):
                     and o2.id=r.to_obj
                 """, (obj_name,))
         return [row[0] for row in self.curs.fetchall()]
+
+    def get_refs_from_data(self, obj_name):
+        """
+        Find all object names which `obj_name` references, and yield tuples
+        consisting of the object name and the serialized object data.  Requires
+        a database connection to the refs database.
+        """
+        for ref in self.get_refs_from(obj_name):
+            yield (ref, self.get_data(ref))
 
     def datatable_lookup(self, table_name, row_name, col_name):
         """
