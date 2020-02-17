@@ -393,13 +393,13 @@ a couple of ways to use it:
         print('Found item pool: {}'.format(pool['ItemPool'][1]))
 
     # Get only `ItemPoolListData` exports specifically (in this case, no actual
-    # difference between just `get_data()`, `[0]` will still contain the single
-    # export
+    # difference to just `get_data()`, `[0]` will still contain the single
+    # export)
     boss_loot = data.get_exports(poollist_name, 'ItemPoolListData')
 
     # Get export number 1 specifically (index `[0]`) -- the non-0-based-numbering
     # is what's used by UE4 itself.  boss_loot[0] == listdata
-    listdata = data.get_export_idx(poollist_name, 0)
+    listdata = data.get_export_idx(poollist_name, 1)
 
     # Get references to the pool
     object_names = data.get_refs_to(poollist_name)
