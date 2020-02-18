@@ -191,7 +191,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Brick/UIStat_RedText_Brick.UIStat_RedText_Brick,Text,0,,[Flavor]Man your own jackhammer.[/Flavor] (listed damage based on character's melee damage)
 
 # Faisor
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/UIStat_RedText_Faisor.UIStat_RedText_Faisor,Text,0,,[Flavor]Set Faisers to kill.[/Flavor] (fires elemental beam)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/UIStat_RedText_Faisor.UIStat_RedText_Faisor,Text,0,,[Flavor]Set Faisers to kill.[/Flavor] (fires elemental bolts)
 
 # Fastball
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Name/UIStat_RedText_Fastball.UIStat_RedText_Fastball,Text,0,,[Flavor]Forget the curveball Ricky, give him the heater.[/Flavor] (flat arc and fast travel speed)

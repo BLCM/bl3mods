@@ -303,7 +303,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('Faisor',
             '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/UIStat_RedText_Faisor.UIStat_RedText_Faisor',
             "Set Faisers to kill.",
-            "fires elemental beam"),
+            "fires elemental bolts"),
         ('Fastball',
             '/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Name/UIStat_RedText_Fastball.UIStat_RedText_Fastball',
             "Forget the curveball Ricky, give him the heater.",
