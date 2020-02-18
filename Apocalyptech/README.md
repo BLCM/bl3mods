@@ -276,6 +276,7 @@ the mods I've worked on.  That's stored in the `bl3hotfixmod` directory.
 You can check out any of the files named `gen_*.py` to take a look at how
 it works, but it's pretty straightforward.  Start off the script with:
 
+```python
     from bl3hotfixmod.bl3hotfixmod import Mod
 
     mod = Mod('filename_to_save.txt',
@@ -286,9 +287,11 @@ it works, but it's pretty straightforward.  Start off the script with:
             ],
             'HotfixPrefix',
             )
+```
 
 Then you can use a few shortcuts to build out the mod:
 
+```python
     # Puts a newline in the mod (for readability purposes)
     mod.newline()
 
@@ -317,6 +320,7 @@ Then you can use a few shortcuts to build out the mod:
 
     # Closes out the mod properly
     mod.close()
+```
 
 For both `reg_hotfix` and `table_hotfix`, you can include an optional `prev_val`
 named argument, if you want to have a hotfix only trigger if the current value
@@ -378,6 +382,7 @@ project for examples.  The `dataprocessing` dir uses the library nearly everywhe
 and I've started using it for mod generation as well.  In short, though, here's
 a couple of ways to use it:
 
+```python
     from bl3data.bl3data import BL3Data
 
     data = BL3data()
@@ -405,15 +410,18 @@ a couple of ways to use it:
     object_names = data.get_refs_to(poollist_name)
 
     # Get serialized objects which reference the pool
-    object_serializations = data.get_refs_to_data(poollist_name)
+    for object_name, data in data.get_refs_to_data(poollist_name):
+        print('Found object: {}'.format(object_name))
 
     # Find object names under `/Game/GameData/Loot` which start with `ItemPool_*`
     object_names = list(data.find('/Game/GameData/Loot', 'ItemPool_'))
-    object_serializations = list(data.find_data('/Game/GameData/Loot', 'ItemPool_'))
+    for object_name, data in data.find_data('/Game/GameData/Loot', 'ItemPool_'):
+        print('Found object: {}'.format(object_name))
 
     # Find objects by shell-like globs:
     object_names = list(data.glob('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
-    object_serializations = list(data.glob_data('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
+    for object_name, data in data.glob_data('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'):
+        print('Found object: {}'.format(object_name))
 
     # Look up data in a DataTable
     cell = data.datatable_lookup(
@@ -429,4 +437,4 @@ a couple of ways to use it:
     dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
     for item in dumpster['BalancedItems']:
         print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
-
+```
