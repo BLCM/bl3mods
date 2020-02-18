@@ -277,49 +277,49 @@ You can check out any of the files named `gen_*.py` to take a look at how
 it works, but it's pretty straightforward.  Start off the script with:
 
 ```python
-    from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfixmod import Mod
 
-    mod = Mod('filename_to_save.txt',
-            'Mod Title',
-            [
-                'Extra description lines to show in the header, if you want.',
-                'You can leave this as an empty list.',
-            ],
-            'HotfixPrefix',
-            )
+mod = Mod('filename_to_save.txt',
+        'Mod Title',
+        [
+            'Extra description lines to show in the header, if you want.',
+            'You can leave this as an empty list.',
+        ],
+        'HotfixPrefix',
+        )
 ```
 
 Then you can use a few shortcuts to build out the mod:
 
 ```python
-    # Puts a newline in the mod (for readability purposes)
-    mod.newline()
+# Puts a newline in the mod (for readability purposes)
+mod.newline()
 
-    # Puts a comment in the mod (again, for readability)
-    mod.comment('This is a comment line, will be prefixed by a #')
+# Puts a comment in the mod (again, for readability)
+mod.comment('This is a comment line, will be prefixed by a #')
 
-    # Puts a much more obvious comment in the mod, using three hash marks
-    # with some "blank" comments above and below, to mark out main sections
-    mod.header('This is a mod header line')
+# Puts a much more obvious comment in the mod, using three hash marks
+# with some "blank" comments above and below, to mark out main sections
+mod.header('This is a mod header line')
 
-    # Same as above, but with a multiline header
-    mod.header_lines(['Line 1 of a header', 'Line 2 of a header'])
+# Same as above, but with a multiline header
+mod.header_lines(['Line 1 of a header', 'Line 2 of a header'])
 
-    # Creates a regular hotfix
-    mod.reg_hotfix(hotfix_type, package,
-        object_name,
-        attribute_name,
-        new_value)
+# Creates a regular hotfix
+mod.reg_hotfix(hotfix_type, package,
+    object_name,
+    attribute_name,
+    new_value)
 
-    # Creates a table-setting hotfix
-    mod.table_hotfix(hotfix_type, package,
-        object_name,
-        row_name,
-        attribute_name,
-        new_value)
+# Creates a table-setting hotfix
+mod.table_hotfix(hotfix_type, package,
+    object_name,
+    row_name,
+    attribute_name,
+    new_value)
 
-    # Closes out the mod properly
-    mod.close()
+# Closes out the mod properly
+mod.close()
 ```
 
 For both `reg_hotfix` and `table_hotfix`, you can include an optional `prev_val`
@@ -383,58 +383,58 @@ and I've started using it for mod generation as well.  In short, though, here's
 a couple of ways to use it:
 
 ```python
-    from bl3data.bl3data import BL3Data
+from bl3data.bl3data import BL3Data
 
-    data = BL3data()
+data = BL3data()
 
-    poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
+poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
 
-    # boss_loot will contain a serialized version of the poollist.
-    # boss_loot[0] will contain the single export, of type `ItemPoolListData`
-    boss_loot = data.get_data(poollist_name)
-    
-    # Loop through the pool list
-    for pool in boss_loot[0]['ItemPools']:
-        print('Found item pool: {}'.format(pool['ItemPool'][1]))
+# boss_loot will contain a serialized version of the poollist.
+# boss_loot[0] will contain the single export, of type `ItemPoolListData`
+boss_loot = data.get_data(poollist_name)
 
-    # Get only `ItemPoolListData` exports specifically (in this case, no actual
-    # difference to just `get_data()`, `[0]` will still contain the single
-    # export)
-    boss_loot = data.get_exports(poollist_name, 'ItemPoolListData')
+# Loop through the pool list
+for pool in boss_loot[0]['ItemPools']:
+    print('Found item pool: {}'.format(pool['ItemPool'][1]))
 
-    # Get export number 1 specifically (index `[0]`) -- the non-0-based-numbering
-    # is what's used by UE4 itself.  boss_loot[0] == listdata
-    listdata = data.get_export_idx(poollist_name, 1)
+# Get only `ItemPoolListData` exports specifically (in this case, no actual
+# difference to just `get_data()`, `[0]` will still contain the single
+# export)
+boss_loot = data.get_exports(poollist_name, 'ItemPoolListData')
 
-    # Get references to the pool
-    object_names = data.get_refs_to(poollist_name)
+# Get export number 1 specifically (index `[0]`) -- the non-0-based-numbering
+# is what's used by UE4 itself.  boss_loot[0] == listdata
+listdata = data.get_export_idx(poollist_name, 1)
 
-    # Get serialized objects which reference the pool
-    for object_name, data in data.get_refs_to_data(poollist_name):
-        print('Found object: {}'.format(object_name))
+# Get references to the pool
+object_names = data.get_refs_to(poollist_name)
 
-    # Find object names under `/Game/GameData/Loot` which start with `ItemPool_*`
-    object_names = list(data.find('/Game/GameData/Loot', 'ItemPool_'))
-    for object_name, data in data.find_data('/Game/GameData/Loot', 'ItemPool_'):
-        print('Found object: {}'.format(object_name))
+# Get serialized objects which reference the pool
+for object_name, data in data.get_refs_to_data(poollist_name):
+    print('Found object: {}'.format(object_name))
 
-    # Find objects by shell-like globs:
-    object_names = list(data.glob('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
-    for object_name, data in data.glob_data('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'):
-        print('Found object: {}'.format(object_name))
+# Find object names under `/Game/GameData/Loot` which start with `ItemPool_*`
+object_names = list(data.find('/Game/GameData/Loot', 'ItemPool_'))
+for object_name, data in data.find_data('/Game/GameData/Loot', 'ItemPool_'):
+    print('Found object: {}'.format(object_name))
 
-    # Look up data in a DataTable
-    cell = data.datatable_lookup(
-            '/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances',
-            'Eridium_Bar',
-            'Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836')
+# Find objects by shell-like globs:
+object_names = list(data.glob('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'))
+for object_name, data in data.glob_data('/Game/GameData/Loot/ItemPools/Guns/*/ItemPool_*'):
+    print('Found object: {}'.format(object_name))
 
-    # Get the exact weight of a BaseValueConstant-based structure.
-    # Note that this will raise an Exception if it encounters data it doesn't
-    # understand yet, and right now it only supports very basic objects.  This
-    # will likely get better over time as I encounter more cases that I need
-    # to be able to process.
-    dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
-    for item in dumpster['BalancedItems']:
-        print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
+# Look up data in a DataTable
+cell = data.datatable_lookup(
+        '/Game/GameData/Loot/ItemPools/Table_SimpleLootDropChances',
+        'Eridium_Bar',
+        'Drop_Chances_2_2811F91D40768DBD4FEBB791F8286836')
+
+# Get the exact weight of a BaseValueConstant-based structure.
+# Note that this will raise an Exception if it encounters data it doesn't
+# understand yet, and right now it only supports very basic objects.  This
+# will likely get better over time as I encounter more cases that I need
+# to be able to process.
+dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
+for item in dumpster['BalancedItems']:
+    print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
 ```
