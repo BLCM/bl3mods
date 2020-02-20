@@ -123,6 +123,7 @@ customization_unlocks
 customization_drops_none
 #customization_drops_improved
 #customization_drops_frequent
+#customization_drops_constant
 
 ###
 ### Manufacturer locks
