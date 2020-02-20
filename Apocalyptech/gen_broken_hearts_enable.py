@@ -42,7 +42,7 @@ mod.reg_hotfix(Mod.PATCH, '',
 # The default here is apparently:
 #   SpawnOptionData'/Game/PatchDLC/BloodyHarvest/NonPlayerCharacters/LeagueNPC/_Design/Spawning/SpawnOptions_LeagueNPC_Season01.SpawnOptions_LeagueNPC_Season01'
 # Should maybe add that into our Bloody Harvest enabling thing
-mod.reg_hotfix(Mod.LEVEL, 'Sanctuary3_P',
+mod.reg_hotfix(Mod.EARLYLEVEL, 'Sanctuary3_P',
         '/Game/Maps/Sanctuary3/Sanctuary3_Season.Sanctuary3_Season:PersistentLevel.OakMissionSpawner_1.SpawnerComponent.SpawnerStyle_SpawnerStyle_Single',
         'SpawnOptions',
         "SpawnOptionData'/Game/PatchDLC/EventVDay/NonPlayerCharacters/LeagueNPC/_Design/Spawning/SpawnOptions_LeagueNPC_VDay.SpawnOptions_LeagueNPC_VDay'")
