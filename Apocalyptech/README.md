@@ -209,26 +209,25 @@ being used, which gives you far more Eridium than usual.
   loot pools which haven't been touched.  Custom combinations of locked
   gear can be generated from the commandline.
 
-## Bloody Harvest Mods
+## Timed Event Mods
+
+Note that only one timed event can be fully active at the same time, so
+the event-enabling mods here will interfere with each other.  It *is*
+possible to combine some of their effects -- for instance, it's possible
+to have both haunted enemies and hearts at the same time.  I haven't
+put together a mod to do that, though, 'cause it hardly seems worth it.
 
 - `bloody_harvest_enable.txt` - This can be used to enable Bloody Harvest
   even after the event is over.  It also includes the other balance
   hotfixes which were active during the last week(s) of the event, which
-  includes health modifiers and other minor fixes.  These will almost
-  certainly interfere with future events, if you happen to run 'em while
-  they're active.
+  includes health modifiers and other minor fixes.
 - `guaranteed_ghosts.txt` - All enemies should be ghosts, and all "haunted"
   Urns and skull boxes in the Heck Hole will spawn a ghost.  Extracted from
   an official GBX hotfix deployed on Oct 31, 2019 and then extented a bit.
   Requires that the Bloody Harvest event be active, presumably.
-
-## Broken Hearts Mods
-
-- `broken_hearts_enable.txt` - This can theoretically be used to enable
-  the Broken Hearts event after it's officially closed down.  Untested, given
-  that the event is still ongoing as of writing.  Will almost certainly
-  interfere with future events, if you happen to run 'em while they're
-  active.
+- `broken_hearts_enable.txt` - This can be used to enable the Broken Hearts
+  event after it's officially closed down.  Includes some related balance
+  changes which were active during the event.
 
 ## Main Menu
 

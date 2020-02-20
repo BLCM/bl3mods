@@ -1,16 +1,13 @@
 ###
-### Enable Bloody Harvest.  Theoretically.
+### Enable "Bloody Harvest" Event
 ###
-### This hotfix was included when Bloody Harvest debuted; it's
-### *possible* that the data for Bloody Harvest will remain on-disk
-### once the event is done, and that this hotfix could be used to
-### re-enable it past December 5.  Whether or not that will
-### actually work remains to be seen, though.
+### Enables the Bloody Harvest event.  Will interfere with any other
+### event which happens to be running.  (Only one can be fully
+### active at a time.)
 ###
-### Since the object is an array, this hotfix could potentially
-### *disable* any other event which happens to be active.  We'll
-### have to play around with that, too, once the opportunity
-### arrives.
+### Includes various balance changes and fixes which were active during
+### the event, so you get as close to the "live" event experience as
+### possible.
 ###
 
 prefix: BHEnable

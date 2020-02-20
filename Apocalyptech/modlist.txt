@@ -142,22 +142,15 @@ manufacturer_lock_custom_ted_vla
 #manufacturer_lock_custom_dal_jak
 
 ###
-### Bloody Harvest mods
+### Timed Event mods
 ###
 
-# Bloody Harvest toggles
+# Event-enabling mods
 #bloody_harvest_enable
-#bloody_harvest_disable
+#broken_hearts_enable
 
 # Guaranteed Ghosts in Bloody Harvest event
 #guaranteed_ghosts
-
-###
-### Broken Hearts mods
-###
-
-# Event enable
-#broken_hearts_enable
 
 ###
 ### Main Menu

@@ -7,12 +7,8 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('broken_hearts_enable.txt',
         'Enable "Broken Hearts" Event',
         [
-            "Theoretically enables the Broken Hearts event even after it's been closed down.",
-            "This is currently untested, given that it was written when the event was still",
-            "ongoing.",
-            "",
-            "This will presumably interfere with any other event which happens to be running",
-            "at the time.",
+            "Enables the Broken Hearts event.  Will interfere with any other event which",
+            "happens to be running.  (Only one can be fully active at a time.)",
         ],
         'BrokenHeartsEnable',
         )
