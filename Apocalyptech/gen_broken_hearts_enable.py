@@ -21,6 +21,11 @@ mod.comment('Global activation switches')
 
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/GameData/GameplayGlobals',
+        'LeagueInstance',
+        1)
+
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/GameData/GameplayGlobals',
         'ActiveLeague',
         'OL_ValentinesDay')
 

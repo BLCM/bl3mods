@@ -14,6 +14,7 @@
 prefix: BrokenHeartsEnable
 
 # Global activation switches
+SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,LeagueInstance,0,,1
 SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,ActiveLeague,0,,OL_ValentinesDay
 SparkPatchEntry,(1,1,0,),/Game/GameData/Spawning/GlobalSpawnDLCData.GlobalSpawnDLCData,DLCs,0,,((Data=/Game/PatchDLC/EventVDay/GameData/SpawnDLCScripts/SpawnDLC_VDay.SpawnDLC_VDay,IsEnabled=(BaseValueConstant=1.000000)))
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_Season.Sanctuary3_Season:PersistentLevel.OakMissionSpawner_1.SpawnerComponent.SpawnerStyle_SpawnerStyle_Single,SpawnOptions,0,,SpawnOptionData'/Game/PatchDLC/EventVDay/NonPlayerCharacters/LeagueNPC/_Design/Spawning/SpawnOptions_LeagueNPC_VDay.SpawnOptions_LeagueNPC_VDay'
