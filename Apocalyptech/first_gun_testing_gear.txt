@@ -2,7 +2,9 @@
 ### First Gun Chest: Testing Gear
 ###
 ### Updates the opening chest in Covenant Pass to contain my mod-testing gear,
-### namely a Crader's EM-P5 and a Transformer.
+### namely a Crader's EM-P5 and a Transformer.  Depending on circumstance, you
+### might be more interested in my modtest_char_setup mod, which also does this
+### (among other things).
 ###
 ### Note that if the first thing you take out of the opening chest isn't a gun,
 ### you'll automatically receive a bonus gun from the FirstGun pool, in your

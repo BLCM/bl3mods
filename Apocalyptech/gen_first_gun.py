@@ -26,7 +26,9 @@ for filename, label, comments, attachments, set_gun in [
         ('testing_gear', 'Testing Gear',
             [
                 "Updates the opening chest in Covenant Pass to contain my mod-testing gear,",
-                "namely a Crader's EM-P5 and a Transformer.",
+                "namely a Crader's EM-P5 and a Transformer.  Depending on circumstance, you",
+                "might be more interested in my modtest_char_setup mod, which also does this",
+                "(among other things).",
             ],
             [
                 ('TopLeft', '/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_FirstGun'),

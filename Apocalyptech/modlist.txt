@@ -176,3 +176,6 @@ manufacturer_lock_custom_ted_vla
 #fast_levelling_faster
 #fast_levelling_insane
 
+# Mod-testing Char Setup (for new games)
+#modtest_char_setup
+

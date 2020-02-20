@@ -246,8 +246,13 @@ mods.
   advantage of its movement speed increase, though now that I've figured
   out how to do a proper movement speed mod, that effect isn't nearly as
   useful.  Still, it's a good testing gun anyway so I'll stick with it.
+  Also prevents EM-P5 from spawning with the x2 grip, since that causes
+  ammo consumption again.
 - `transformer_super_buff.txt` - Cheat mod which makes the Transformer
   practically invulnerable.
+- `modtest_char_setup.txt` - Used to create a max-level character, with
+  max-level starting gear (Crader's EM-P5 and Transformer), right at the
+  very beginning of the game.  See the mod comments for specific info.
 - `first_gun_testing_gear.txt` - Modifies the opening chest in Covenant
   Pass to contain a Crader's EM-P5 and a Transformer.  Also improves the
   second-gun chest to not be rarity/manufacturer-locked.

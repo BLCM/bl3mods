@@ -12,6 +12,9 @@ mod = Mod('craders_emp5_super_buff.txt',
             "",
             "Used by myself primarily just for mod testing purposes, for when I",
             "don't want to be bothered by actual combat.",
+            "",
+            "Note that any EM-P5 with the x2 Grip will consume 1 ammo (as opposed",
+            "to its usual 2).  This mod prevents further x2 Grips from spawning.",
         ],
         'Craders',
         )
@@ -62,11 +65,13 @@ for (attr, mod_type, mod_val) in [
     )""")
 
 # Apply all our custom effects
+mod.comment('Custom Effects')
 mod.reg_hotfix(Mod.PATCH, '',
-        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Parts/Part_SM_DAL_Barrel_CraderMP5.Part_SM_DAL_Barrel_CraderMP5',
+        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Parts/Part_SM_DAL_Barrel_CraderMP5',
         'InventoryAttributeEffects',
         '({})'.format(','.join(attr_effects)),
         )
+mod.newline()
 
 # Also buff movement speed increase.  Stock: 0.25
 # No longer doing this, since I figured out a real movement speed mod.
@@ -75,5 +80,16 @@ mod.reg_hotfix(Mod.PATCH, '',
 #        'CraderMP5',
 #        'Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22',
 #        0.75)
+
+# Also, prevent the x2 Grip from spawning, since we'll start consuming ammo
+# then.  We *could* probably just use a -1 Att_Weapon_ShotAmmoCost, which
+# would make the thing actually regen ammo on non-x2 grips, but we'll just
+# disallow it anyway.
+mod.comment('Disallow x2 Grip from Spawning')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
+        'RuntimePartList.AllParts.AllParts[24].Weight.BaseValueConstant',
+        0)
+mod.newline()
 
 mod.close()
