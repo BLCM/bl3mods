@@ -21,6 +21,14 @@ for (label, filename, rate, desc) in [
             "drops only.  Basdass/miniboss/boss drops haven't been touched, nor have any",
             "specific customization drop that a particular enemy might have.",
             ]),
+        ('Constant', 'constant', 0.12, [
+            "This improves the customization drop rate from 0.5% to 12%, on 'standard' enemy",
+            "drops only.  Basdass/miniboss/boss drops haven't been touched, nor have any",
+            "specific customization drop that a particular enemy might have.",
+            "",
+            "This will seriously interfere with your Lost Loot machine, so only really",
+            "recommended if you're chasing down those last few customizations.",
+            ]),
         ]:
 
     full_filename = 'customization_drops_{}.txt'.format(filename)
