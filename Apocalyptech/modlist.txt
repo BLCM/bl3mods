@@ -117,12 +117,12 @@ expanded_customization_pools_no_mission_rewards_or_earl
 customization_unlocks
 
 # Only drop heads+skins from the global customization drop pool
-only_heads_and_skins
+#only_heads_and_skins
 
 # Customization drop rates
-#customization_drops_none
+customization_drops_none
 #customization_drops_improved
-customization_drops_frequent
+#customization_drops_frequent
 
 ###
 ### Manufacturer locks
@@ -138,6 +138,7 @@ customization_drops_frequent
 #manufacturer_lock_torgue
 #manufacturer_lock_vladof
 manufacturer_lock_custom_ted_vla
+#manufacturer_lock_custom_dal_jak
 
 ###
 ### Bloody Harvest mods
