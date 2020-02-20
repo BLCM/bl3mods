@@ -35,9 +35,10 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Sc
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Radiation,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule,Element_Shock,MinGameStage_17_2500317646FAD2F4916D158835B29E83,0,,1
 
-# Allow Terminal Polyaimorous and Wedding Invitation to be any level
+# Allow Terminal Polyaimorous, Wedding Invitation, and Superstreamer to be any level
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,PolyAim,MinGameStage_5_E12DB0C74420238367FBC1A5221AFB84,0,,1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,WeddingInvitation,MinGameStage_5_E12DB0C74420238367FBC1A5221AFB84,0,,1
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch.Balance_SG_TED_Twitch,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage.BaseValueConstant,0,,1
 
 # Unlock all inventory slots right from the start of the game
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/InventorySlots/BPInvSlot_Weapon3.BPInvSlot_Weapon3,InitiallyEnabled,0,,True

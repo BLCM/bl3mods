@@ -62,8 +62,8 @@ unlock_table(mod, label='Element unlocks', rows=[
     ])
 
 # Broken Hearts gear is locked to 53 with a hotfix, at least during the event
-# itself.  Unlocking that here.
-mod.comment('Allow Terminal Polyaimorous and Wedding Invitation to be any level')
+# itself.  Superstreamer is locked to 50+.  Unlocking these here.
+mod.comment('Allow Terminal Polyaimorous, Wedding Invitation, and Superstreamer to be any level')
 for row in [
         'PolyAim',
         'WeddingInvitation',
@@ -73,6 +73,10 @@ for row in [
             row,
             'MinGameStage_5_E12DB0C74420238367FBC1A5221AFB84',
             1)
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch',
+        'Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage.BaseValueConstant',
+        1)
 mod.newline()
 
 # Inventory slots
