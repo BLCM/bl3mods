@@ -251,8 +251,8 @@ class BVC(object):
 
     def _get_parts(self):
         parts = []
-        if self.full or self.bvc != 1:
-            parts.append('BaseValueConstant={}'.format(round(self.bvc, 6)))
+        #if self.full or self.bvc != 1:
+        parts.append('BaseValueConstant={}'.format(round(self.bvc, 6)))
         if self.full or self.dtv.table != 'None':
             parts.append('DataTableValue={}'.format(self.dtv))
         # TODO: Are these always the object types for BVA/AI?
@@ -308,6 +308,205 @@ class Pool(object):
         if self.num and self.num.has_data():
             parts.append('NumberOfTimesToSelectFromThisPool={}'.format(self.num))
         return '({})'.format(','.join(parts))
+
+class Part(object):
+    """
+    Class to hold info about a single Part for an item/weapon.  Just the object name
+    and its weight, basically a glorified dict.
+    """
+
+    def __init__(self, part_name, weight=1):
+        self.part_name = part_name
+        if type(weight) == BVC or type(weight) == BVCF:
+            self.weight = weight
+        else:
+            self.weight = BVC(bvc=weight)
+
+    def __str__(self):
+        return '(PartData={},Weight={})'.format(
+                Mod.get_full_cond(self.part_name),
+                self.weight,
+                )
+
+class PartCategory(object):
+    """
+    Class for dealing with a collection of parts used in items/wepaons.  Technically
+    this is part of the PartSet object, but it'll also get used to set the attributes
+    on the Balance.
+    """
+
+    def __init__(self, num_min=1, num_max=1,
+            index=0,
+            partlist=None,
+            part_type_enum=None,
+            select_multiple=False, use_weight_with_mult=False,
+            enabled=True):
+        self.num_min = num_min
+        self.num_max = num_max
+        self.index = index
+        self.part_type_enum = part_type_enum
+        self.select_multiple = select_multiple
+        if num_min > 1 or num_max > 1 or num_min != num_max:
+            self.select_multiple = True
+        self.use_weight_with_mult = use_weight_with_mult
+        self.enabled = enabled
+        if partlist:
+            self.partlist = partlist
+        else:
+            self.partlist = []
+
+    def __add__(self, other):
+        """
+        Convenience for when we construct Balance objects
+        """
+        new = PartCategory(
+                num_min=self.num_min,
+                num_max=self.num_max,
+                index=self.index,
+                part_type_enum=self.part_type_enum,
+                partlist=list(self.partlist),
+                select_multiple=self.select_multiple,
+                use_weight_with_mult=self.use_weight_with_mult,
+                enabled=self.enabled,
+                )
+        if type(other) == PartCategory:
+            for part in other.partlist:
+                new.add_part_obj(part)
+        elif type(other) == int and other == 0:
+            pass
+        else:
+            raise TypeError('PartCategory objects can only be added to other PartCategory objects')
+        return new
+
+    def __radd__(self, other):
+        return self.__add__(other)
+
+    def add_part_obj(self, new_part):
+        """
+        Adds an already-instantiated Part object
+        """
+        self.partlist.append(new_part)
+
+    def add_part_name(self, new_part_name, weight=1):
+        """
+        Adds a new part by object name (and optionally weight)
+        """
+        self.add_part_obj(Part(part_name, weight))
+
+    def str_partlist(self):
+        """
+        Returns just a string representation of our partlist
+        """
+        return ','.join([str(l) for l in self.partlist])
+
+    def __len__(self):
+        """
+        Returns the number of parts we have
+        """
+        return len(self.partlist)
+
+    def __str__(self):
+        """
+        Returns a string representation as a complete stanza inside a
+        PartSet object
+        """
+        if not self.part_type_enum:
+            raise Exception('PartSet representation requires part_type_enum')
+
+        return """(
+            PartTypeEnum={part_type_enum},
+            PartType={index},
+            bCanSelectMultipleParts={select_multiple},
+            bUseWeightWithMultiplePartSelection={use_weight_with_mult},
+            MultiplePartSelectionRange=(
+                Min={num_min},
+                Max={num_max}
+            ),
+            bEnabled={enabled},
+            Parts=({parts})
+        )""".format(
+                part_type_enum=Mod.get_full_cond(self.part_type_enum),
+                index=self.index,
+                select_multiple=str(self.select_multiple),
+                use_weight_with_mult=str(self.use_weight_with_mult),
+                num_min=self.num_min,
+                num_max=self.num_max,
+                enabled=str(self.enabled),
+                parts=self.str_partlist(),
+                )
+
+class Balance(object):
+    """
+    Class for dealing with both Balances and PartSets -- the class will generate
+    hotfixes which set both.
+    """
+
+    def __init__(self, bal_name, partset_name, part_type_enum=None):
+        self.bal_name = bal_name
+        self.partset_name = partset_name
+        self.part_type_enum = part_type_enum
+        self.categories = []
+
+    def add_category(self, category):
+        """
+        Adds a new PartCategory to ourselves
+        """
+        self.categories.append(category)
+
+    def add_category_smart(self, category):
+        """
+        Adds a new PartCategory to ourselves, managing the PartCategory index
+        by how many categories already exist, and automatically populating the
+        part_type_enum based on what we already know about it.
+        """
+        if not self.part_type_enum:
+            raise Exception('part_type_enum must be defined for add_category_smart()')
+        category.index = len(self.categories)
+        category.part_type_enum = self.part_type_enum
+        self.categories.append(category)
+
+    def hotfix_partset_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
+        """
+        Generates hotfixes to completely set the PartSet portion.
+        """
+        mod.reg_hotfix(hf_type, hf_package,
+                self.partset_name,
+                'ActorPartLists',
+                '({})'.format(','.join([str(c) for c in self.categories])))
+
+    def hotfix_balance_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
+        """
+        Generates hotfixes to completely set the Balance portion.
+        """
+
+        # Generate the TOC
+        cur_idx = 0
+        toc = []
+        for cat in self.categories:
+            toc.append((cur_idx, len(cat)))
+            cur_idx += len(cat)
+        mod.reg_hotfix(hf_type, hf_package,
+                self.bal_name,
+                'RuntimePartList.PartTypeTOC',
+                '({})'.format(
+                    ','.join([
+                        '(StartIndex={},NumParts={})'.format(t[0], t[1]) for t in toc
+                        ])
+                    ))
+
+        # Now the AllParts list
+        all_parts = sum(self.categories)
+        mod.reg_hotfix(hf_type, hf_package,
+                self.bal_name,
+                'RuntimePartList.AllParts',
+                '({})'.format(','.join([str(p) for p in all_parts.partlist])))
+
+    def hotfix_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
+        """
+        Generates hotfixes to completely set the object
+        """
+        self.hotfix_partset_full(mod, hf_type, hf_package)
+        self.hotfix_balance_full(mod, hf_type, hf_package)
 
 LVL_TO_ENG = {
         'AtlasHQ_P': "Atlas HQ",

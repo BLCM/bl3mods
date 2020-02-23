@@ -268,7 +268,10 @@ class BL3Data(object):
         Given a `table_name`, `row_name`, and `col_name`, return the specified cell.
         """
         data = self.get_exports(table_name, 'DataTable')[0]
-        return data[row_name][col_name]
+        if row_name in data and col_name in data[row_name]:
+            return data[row_name][col_name]
+        else:
+            return None
 
     def process_bvc_struct(self, data):
         """
@@ -283,7 +286,12 @@ class BL3Data(object):
 
         # DT
         if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
-            raise Exception('datatable: {}'.format(data['DataTableValue']['DataTable']))
+            datatable_name = data['DataTableValue']['DataTable'][1]
+            row = data['DataTableValue']['RowName']
+            col = data['DataTableValue']['ValueName']
+            new_bvc = self.datatable_lookup(datatable_name, row, col)
+            if new_bvc is not None:
+                bvc = new_bvc
 
         # BVA
         if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
@@ -307,7 +315,9 @@ class BL3Data(object):
                     table_name = lookup['DataTableRow']['DataTable'][1]
                     row = lookup['DataTableRow']['RowName']
                     col = lookup['Property']['ParsedPath']['PropertyName']
-                    bvc = self.datatable_lookup(table_name, row, col)
+                    new_bvc = self.datatable_lookup(table_name, row, col)
+                    if new_bvc is not None:
+                        bvc = new_bvc
                     #print('{} -> {}'.format(attr_name, bvc))
                 else:
                     raise Exception('Unknown bva type {} for {}'.format(lookup_type, attr_name))
