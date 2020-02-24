@@ -9,6 +9,8 @@ import MySQLdb
 import subprocess
 import configparser
 
+from bl3hotfixmod.bl3hotfixmod import BVC
+
 class BL3Data(object):
     """
     Class to assist in programmatically inspecting Borderlands 3 data as much as
@@ -273,29 +275,23 @@ class BL3Data(object):
         else:
             return None
 
-    def process_bvc_struct(self, data):
+    def process_bvc(self, bvc_obj):
         """
-        Given a serialized BVC/BVSC/etc structure, return a value.
+        Given a bl3hotfixmod BVC object, return a value.
         """
 
         # BVC
-        if 'BaseValueConstant' in data:
-            bvc = data['BaseValueConstant']
-        else:
-            bvc = 1
+        bvc = bvc_obj.bvc
 
         # DT
-        if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
-            datatable_name = data['DataTableValue']['DataTable'][1]
-            row = data['DataTableValue']['RowName']
-            col = data['DataTableValue']['ValueName']
-            new_bvc = self.datatable_lookup(datatable_name, row, col)
+        if bvc_obj.dtv and bvc_obj.dtv.table != 'None':
+            new_bvc = self.datatable_lookup(bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
             if new_bvc is not None:
                 bvc = new_bvc
 
         # BVA
-        if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
-            attr_name = data['BaseValueAttribute'][1]
+        if bvc_obj.bva and bvc_obj.bva != 'None':
+            attr_name = bvc_obj.bva
             if attr_name in self.bva_values:
                 bvc = self.bva_values[attr_name]
             else:
@@ -323,12 +319,16 @@ class BL3Data(object):
                     raise Exception('Unknown bva type {} for {}'.format(lookup_type, attr_name))
 
         # AI
-        if 'AttributeInitializer' in data and 'export' not in data['AttributeInitializer']:
+        if bvc_obj.ai and bvc_obj.ai != 'None':
             raise Exception('ai: {}'.format(data['BaseValueAttribute']))
 
         # BVS
-        if 'BaseValueScale' in data:
-            return bvc * data['BaseValueScale']
-        else:
-            return bvc
+        return bvc * bvc_obj.bvs
+
+    def process_bvc_struct(self, data):
+        """
+        Given a serialized BVC/BVSC/etc structure, return a value.
+        """
+
+        return self.process_bvc(BVC.from_data_struct(data))
 

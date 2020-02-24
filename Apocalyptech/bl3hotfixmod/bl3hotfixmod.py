@@ -230,6 +230,8 @@ class BVC(object):
     instead.  Use `full=True` to get all components regardless (if, for instance,
     you're overwriting an existing tuple and want to be sure to reset all
     attributes).
+
+    Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
     def __init__(self, bvc=1, dtv=None, bva=None, ai=None, bvs=1, full=False):
@@ -248,6 +250,51 @@ class BVC(object):
         else:
             self.ai = 'None'
         self.bvs = bvs
+
+    @staticmethod
+    def from_data_struct(data):
+        """
+        Given a serialized data struct, return a BVC object
+        """
+
+        # BVC
+        if 'BaseValueConstant' in data:
+            bvc = data['BaseValueConstant']
+        else:
+            bvc = 1
+
+        # DataTable
+        if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
+            dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
+                    row=data['DataTableValue']['RowName'],
+                    value=data['DataTableValue']['ValueName'])
+        else:
+            dtv = None
+
+        # BVA
+        if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
+            bva = data['BaseValueAttribute'][1]
+        else:
+            bva = None
+
+        # AI
+        # TODO: haven't actually looked for examples of this.  I assume it's right.
+        if 'AttributeInitializer' in data and 'export' not in data['AttributeInitializer']:
+            ai = data['AttributeInitializer'][1]
+        else:
+            ai = None
+
+        # BVS
+        if 'BaseValueScale' in data:
+            bvs = data['BaseValueScale']
+        else:
+            bvs = 1
+
+        return BVC(bvc=bvc,
+                dtv=dtv,
+                bva=bva,
+                ai=ai,
+                bvs=bvs)
 
     def _get_parts(self):
         parts = []
@@ -277,6 +324,8 @@ class BVC(object):
 class BVCF(BVC):
     """
     A BVC which always has `full=True` specified.  Just a little convenience class.
+
+    Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
     def __init__(self, **kwargs):
@@ -313,6 +362,8 @@ class Part(object):
     """
     Class to hold info about a single Part for an item/weapon.  Just the object name
     and its weight, basically a glorified dict.
+
+    Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
     def __init__(self, part_name, weight=1):
@@ -330,9 +381,11 @@ class Part(object):
 
 class PartCategory(object):
     """
-    Class for dealing with a collection of parts used in items/wepaons.  Technically
+    Class for dealing with a collection of parts used in items/weapons.  Technically
     this is part of the PartSet object, but it'll also get used to set the attributes
     on the Balance.
+
+    Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
     def __init__(self, num_min=1, num_max=1,
@@ -391,7 +444,7 @@ class PartCategory(object):
         """
         Adds a new part by object name (and optionally weight)
         """
-        self.add_part_obj(Part(part_name, weight))
+        self.add_part_obj(Part(new_part_name, weight))
 
     def str_partlist(self):
         """
@@ -438,14 +491,112 @@ class PartCategory(object):
 class Balance(object):
     """
     Class for dealing with both Balances and PartSets -- the class will generate
-    hotfixes which set both.
+    hotfixes to deal with the pair.  Technically the PartSet object does NOT
+    need to have an enumerated parts list -- it seems to be completely ignored
+    by the game.  We'll go ahead and generate those by default though, anyway,
+    just so it matches the parts that are listed in the Balance.
+
+    Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
-    def __init__(self, bal_name, partset_name, part_type_enum=None):
+    def __init__(self, bal_name, partset_name, part_type_enum=None, raw_bal_data=None, raw_ps_data=None):
+        """
+        `part_type_enum` is a PartTypeEnum object name which will be used if partlists are added via
+            `add_category_smart` (unused otherwise)
+        `raw_bal_data` is the raw serialized Balance export (pretty much only useful with `from_data()`)
+        `raw_ps_data` is the raw serialized PartSet export (pretty much only useful with `from_data()`)
+        """
         self.bal_name = bal_name
         self.partset_name = partset_name
         self.part_type_enum = part_type_enum
         self.categories = []
+        self.raw_bal_data = raw_bal_data
+        self.raw_ps_data = raw_ps_data
+
+    @staticmethod
+    def from_data(data, bal_name):
+        """
+        Loads in all our data from a BL3Data instance, given a balance name.  Returns
+        a fully-populated Balance object.
+        """
+
+        # Load in Balance
+        bal_obj = data.get_data(bal_name)
+        if len(bal_obj) != 1:
+            raise Exception('Unknown export count ({}) for: {}'.format(len(bal_obj), bal_name))
+        last_bit = bal_name.split('/')[-1]
+        bal_data = bal_obj[0]
+
+        # Load in part list from balance (grouping it as it would be done in a PartSet.
+        partlists = []
+        for toc in bal_data['RuntimePartList']['PartTypeTOC']:
+            partlist = []
+            for part_idx in range(toc['StartIndex'], toc['StartIndex']+toc['NumParts']):
+                partdata = bal_data['RuntimePartList']['AllParts'][part_idx]['PartData']
+                weight = BVC.from_data_struct(bal_data['RuntimePartList']['AllParts'][part_idx]['Weight'])
+                if 'export' in partdata:
+                    partlist.append(('None', weight))
+                else:
+                    partlist.append((partdata[1], weight))
+            partlists.append(partlist)
+
+        # Load our PartSet
+        partset_name = bal_data['PartSetData'][1]
+        partset_obj = data.get_data(partset_name)
+        if len(partset_obj) != 1:
+            raise Exception('Unknown export count ({}) for: {}'.format(len(partset_obj), partset_name))
+        partset_data = partset_obj[0]
+
+        # Sanity check
+        if len(partlists) != len(partset_data['ActorPartLists']):
+            raise Exception('Balance partlist count ({}) does not match PartSet partlist count ({}) - {} vs {}'.format(
+                len(partlists),
+                len(partset_data['ActorPartLists']),
+                bal_name,
+                partset_name,
+                ))
+
+        # Check to see if we have consensus about the PartTypeEnum
+        part_type_enum = None
+        have_mismatch = False
+        for apl_idx, apl in enumerate(partset_data['ActorPartLists']):
+            if 'export' not in apl['PartTypeEnum']:
+                if part_type_enum:
+                    if apl['PartTypeEnum'][1] != part_type_enum:
+                        print('WARNING: PartTypeEnum mismatch detected in APL[{}] - {}'.format(
+                            apl_idx,
+                            partset_name,
+                            ))
+                        have_mismatch = True
+                        break
+                else:
+                    part_type_enum = apl['PartTypeEnum'][1]
+        if have_mismatch:
+            part_type_enum = None
+            #print('WARNING: No PartTypeEnum consensus for {}'.format(partset_name))
+
+        # No reason not to create a Balance object now
+        bal = Balance(bal_name, partset_name, part_type_enum,
+                raw_bal_data=bal_data,
+                raw_ps_data=partset_data,
+                )
+
+        # Loop through our partlists and populate our objects
+        for (partlist, apl) in zip(partlists, partset_data['ActorPartLists']):
+            partcat = PartCategory(
+                    num_min=apl['MultiplePartSelectionRange']['Min'],
+                    num_max=apl['MultiplePartSelectionRange']['Max'],
+                    index=apl['PartType'],
+                    part_type_enum=apl['PartTypeEnum'],
+                    select_multiple=apl['bCanSelectMultipleParts'],
+                    use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
+                    enabled=apl['bEnabled'])
+            for part, weight in partlist:
+                partcat.add_part_name(part, weight=weight)
+            bal.add_category(partcat)
+
+        # That... should be all?
+        return bal
 
     def add_category(self, category):
         """
