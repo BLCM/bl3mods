@@ -68,7 +68,12 @@ def set_death_pools(mod, char_name, obj_name, pools=[]):
 
 # Theoretically "Very Good" Better Loot, ish.
 # Legendary chance bumped up very slightly, though
-weights = [15, 35, 25, 13.5, 0.6]
+# I've used this for 2-3 playthroughs of the game, and in the end there's *too*
+# much purple+legendary gear, even in Normal, so I'm bumping it down a bit.
+#weights = [15, 35, 25, 13.5, 0.6]
+
+# Fresh weights as of late Feb 2020.
+weights = [15, 35, 25, 11.5, 0.3]
 
 mod.header('Base drop weights.')
 for (rarity, weight) in zip(
