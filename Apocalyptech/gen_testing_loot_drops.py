@@ -12,9 +12,9 @@ def set_pool(mod, pool_to_set, balances, char=None):
         else:
             bal1 = bal
             bal2 = bal
-        part = '(InventoryBalanceData={},ResolvedInventoryBalanceData=InventoryBalanceData\'"{}"\',Weight=(BaseValueConstant=1))'.format(
-                bal1,
-                bal2,
+        part = '(InventoryBalanceData={},ResolvedInventoryBalanceData={},Weight=(BaseValueConstant=1))'.format(
+                Mod.get_full_cond(bal1),
+                Mod.get_full_cond(bal2, 'InventoryBalanceData'),
                 )
         parts.append(part)
     if char is None:
@@ -68,8 +68,8 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRif
 balances = [
 
         # Testing Gear!
-        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5',
-        '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer.InvBalD_Shield_LGD_Transformer',
+        '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
+        '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer',
 
         # Atlas Gear (which have multiple tracker types; this isn't exhaustive)
         #'/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/Balance/Balance_ATL_AR_01_Common.Balance_ATL_AR_01_Common',
