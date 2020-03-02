@@ -66,16 +66,6 @@ Gameplay Changes instead.)
 
 - `nvhm_gamestage_follows_level.txt` - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
-- `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
-  from the beginning of the game, though currently all it does is the
-  Resonator.
-  - **NOTE:** This currently does have a couple weird side effects, namely:
-    - Meleeing enemies will use the Resonator animation, though it
-      continues to do damage as usual
-    - You won't be able to attach the empty blood pack to Ace Baron, during
-      the Meridian Outskirts mission "Healers and Dealers."
-    - You won't be able to melee the varkid poop pile in Demon in the Dark,
-      in Konrad's Hold
 - `better_loot.txt` - A somewhat stripped-down version of Better Loot, not that
   BL3 really needs much in the way of better loot.  Does the following,
   currently:

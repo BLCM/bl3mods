@@ -39,6 +39,19 @@ weren't actually intended to be mods themselves.
   Harvest prematurely.  It worked fine during the original event, but it's
   a bit pointless now because GBX added in an in-game toggle for that kind
   of event.  Still, keeping it around for awhile.
+- `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
+  from the beginning of the game, though currently all it does is the
+  Resonator.
+  - **NOTE:** This currently does have a couple weird side effects, namely:
+    - Meleeing enemies will use the Resonator animation, though it
+      continues to do damage as usual
+    - You won't be able to attach the empty blood pack to Ace Baron, during
+      the Meridian Outskirts mission "Healers and Dealers."
+    - You won't be able to melee the varkid poop pile in Demon in the Dark,
+      in Konrad's Hold
+  - Given the problems above, and the fact that there's some actual savegame
+    editing forthcoming which can unlock this gear properly, without any
+    fuss, I'm moving the mod into this deprecated section.
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least
@@ -90,9 +103,9 @@ don't look at these thinking that they're any good.  :)
   challenges to have lower target numbers.  Total fail!
 - `guaranteed_badasses.txt` - A few little attempts to increase the number
   of Badasses.  Didn't do the trick, alas.
-- `eridian_unlocks.txt` - A work-in-progress; the main dir contains what
-  I've got working so far (which is just the Resonator unlock).  This has
-  the start of Analyzer/Translator too, though it acts a bit weird.
+- `eridian_unlocks_full.txt` - A work-in-progress; the non-`full` version
+  contains what I've got working so far (which is just the Resonator unlock).
+  This has the start of Analyzer/Translator too, though it acts a bit weird.
 - `torgue_full_auto.txt` - Tried to set Torgue ARs to full auto, but this
   didn't seem to do the trick (the version getting checked in actually tried
   to give them a 5-burst count).

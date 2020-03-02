@@ -34,10 +34,6 @@ first_gun_full_loadout
 # Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
 nvhm_gamestage_follows_level
 
-# Unlock various Eridian equipment from the beginning
-# Commenting for now 'cause it ends up interfering with a couple of quests.
-#eridian_unlocks
-
 # Better Loot!  Improves loot quality and other such tweaks
 better_loot
 
