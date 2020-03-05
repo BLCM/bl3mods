@@ -21,7 +21,7 @@ more_visible_echo_logs
 
 # Better Mayhem rewards (mostly just for XP; Better Loot further buffs
 # anoint rates).  Make sure this stays above Better Loot!
-better_mayhem_rewards
+#better_mayhem_rewards
 
 # Alterations to the first couple of weapon chests in the game
 first_gun_full_loadout
@@ -134,8 +134,8 @@ customization_drops_none
 #manufacturer_lock_tediore
 #manufacturer_lock_torgue
 #manufacturer_lock_vladof
-manufacturer_lock_custom_ted_vla
-#manufacturer_lock_custom_dal_jak
+#manufacturer_lock_custom_ted_vla
+manufacturer_lock_custom_dal_jak
 
 ###
 ### Timed Event mods
