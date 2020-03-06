@@ -710,7 +710,8 @@ LVL_TO_ENG = {
         'Wetlands_P': "Floodmoor Basin",
         }
 
-# Also add in lowercase keys for levels...
+# Also create a lowercase version
+LVL_TO_ENG_LOWER = {}
 for k, v in list(LVL_TO_ENG.items()):
-    LVL_TO_ENG[k.lower()] = v
+    LVL_TO_ENG_LOWER[k.lower()] = v
 
