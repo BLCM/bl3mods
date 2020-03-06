@@ -33,7 +33,7 @@ partset_seen = set()
 # Grab all references to the aug and clear 'em out
 aug_name = '/Game/Gear/Shields/_Design/PartSets/Part_Augment/ProjectedShield/Part_Shield_Aug_Projected'
 obj_names = bl3data.get_refs_to(aug_name)
-for obj_name in obj_names:
+for obj_name in sorted(obj_names):
 
     last_component = obj_name.split('/')[-1]
 
