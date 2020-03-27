@@ -478,6 +478,33 @@ weapons = [
             '/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/InvBalD_GM_TOR_FontOfDarkness',
             '/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/PartSet_GM_FontOfDarkness',
             GR),
+        
+        # DLC2 Weapons
+        ("Firecracker",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/Balance/Balance_SG_HYP_Firecracker',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/Balance/InvPartSet_SG_HYP_Firecracker',
+            HYP_SG),
+        ("Kaleidoscope",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/Balance/Balance_DAL_PS_Kaleidoscope',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/Balance/PartSet_DAL_PS_Kaleidoscope',
+            DAL_PS),
+        ("Love Drill (mission version)",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/InvPartSet_PS_JAK_LoveDrill',
+            JAK_PS),
+        ("Sacrificial Lamb",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/Balance/Balance_SG_TED_SacrificialLamb',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/Balance/PartSet_SG_TED_SacrificialLamb',
+            TED_SG),
+        ("The Cure",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/Balance_SG_JAK_TheCure',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/PartSet_SG_JAK_TheCure',
+            JAK_SG),
+        # TODO: I think at least one other Seventh Sense variant could potentially need this.
+        ("Seventh Sense (prefixed mission version)",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense_MissionWeapon',
+            JAK_PS),
         ]
 
 # Now do the actual mod
