@@ -51,6 +51,20 @@ mod = Mod('expanded_legendary_pools.txt',
 #
 # Fixed-part Baby Maker - /Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/Balance/Salvage/Balance_PS_Tediore_BabyMaker_Salvage.Balance_PS_Tediore_BabyMaker_Salvage
 #   Reward for Claptrap salvages, perhaps?  Anyway, no need since the actual non-partlocked Baby Maker is already in there
+#
+# Mission version of Love Drill - /Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill
+#   Legendary version's better, would be a bit silly to have both.
+#
+# Seventh Sense guns.  Need to figure out what in the world is up with all of these.
+#    This one is referenced by a mission, presumably only available through there:
+#   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon',
+#
+#    This one is referenced by an enemy; I suspect it might be enemy-use-only
+#   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SS_L',
+#
+#    These other two don't seem to be usefully referenced by anything:
+#   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
+#   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense',
 
 addition_scale = 0.6
 pools = [
@@ -122,6 +136,19 @@ pools = [
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/Balance/Balance_AR_COV_Trash.Balance_AR_COV_Trash', 1*addition_scale),
                 # La Varlope
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Varlope/Balance/Balance_AR_TOR_Varlope.Balance_AR_TOR_Varlope', 1),
+
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Clairvoyance
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Clairvoyance/Balance/Balance_AR_JAK_Clairvoyance', 1),
+                # Seeryul Killur
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/Balance/Balance_AR_COV_Homicidal', 1),
+                # Mutant
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/Balance/Balance_AR_JAK_Mutant', 1),
+                # Soulrender
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender', 1),
+                # Stauros' Burn
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Balance/Balance_AR_COV_SparkyBoom', 1),
 
                 ### Additions
 
@@ -254,6 +281,21 @@ pools = [
                 # Scoville
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Scoville/Balance/Balance_PS_TOR_Scoville.Balance_PS_TOR_Scoville', 1),
 
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Bite Size
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/Balance/Balance_PS_JAK_BiteSize', 1),
+                # Frozen Devil
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/Balance/Balance_PS_MAL_FrozenDevil', 1),
+                # Hydrafrost
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/Balance/Balance_PS_COV_Hydrafrost', 1),
+                # Kaleidoscope
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/Balance/Balance_DAL_PS_Kaleidoscope', 1*addition_scale),
+                # Little Yeeti
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/Balance/Balance_PS_JAK_LittleYeeti', 1),
+                # Love Drill (legendary version)
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', 1),
+
                 ### Additions
 
                 # Linc
@@ -358,6 +400,25 @@ pools = [
                 # Slow Hand
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand.Balance_SG_HYP_SlowHand', 1),
 
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Anarchy
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/Balance/Balance_SG_TED_Anarchy', 1),
+                # Firecracker
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/Balance/Balance_SG_HYP_Firecracker', 1*addition_scale),
+                # Insider
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider', 1),
+                # Flama Diddle
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/Balance/Balance_SG_TED_Omen', 1),
+                # Sacrificial Lamb
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/Balance/Balance_SG_TED_SacrificialLamb', 1*addition_scale),
+                # Shocker
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/Balance/Balance_SG_Torgue_ETech_Shocker', 1),
+                # The Cure
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/Balance_SG_JAK_TheCure', 1*addition_scale),
+                # Nothingness
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/Balance/Balance_SG_MAL_TheNothing', 1),
+
                 ### Broken Hearts Additions
 
                 # Superstreamer (just a somewhat partlocked purple Tediore shotgun, only thing special is the material.  no red text, even!)
@@ -452,6 +513,13 @@ pools = [
                 # Just Kaus
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/Balance/Balance_SM_HYP_JustCaustic.Balance_SM_HYP_JustCaustic', 1*addition_scale),
 
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Oldridian
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/Balance/Balance_SM_HYP_Oldridian', 1),
+                # SF Force
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce', 1),
+
                 ### Broken Hearts additions
 
                 # Terminal Polyaimorous
@@ -528,6 +596,15 @@ pools = [
 
                 # AutoAimè
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/Balance/Balance_SR_DAL_AutoAime.Balance_SR_DAL_AutoAime', 1),
+
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Cocky Bastard
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/CockyBastard/Balance/Balance_SR_JAK_CockyBastard', 1),
+                # Skullmasher
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher/Balance/Balance_SR_JAK_Skullmasher', 1),
+                # Unseen Threat
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/UnseenThreat/Balance/Balance_SR_JAK_UnseenThreat', 1),
 
                 ### Broken Hearts Additions
 
@@ -621,6 +698,17 @@ pools = [
                 ('/Game/PatchDLC/Dandelion/Gear/Shield/Ember/Balance/InvBalD_Shield_Ember.InvBalD_Shield_Ember', 1*addition_scale),
                 # Rico
                 ('/Game/PatchDLC/Dandelion/Gear/Shield/Rico/Balance/InvBalD_Shield_Rico.InvBalD_Shield_Rico', 1),
+
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Initiative
+                ('/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/Initiative/Balance/InvBalD_Shield_Initiative', 1*addition_scale),
+                # Old God
+                ('/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/OldGod/Balance/InvBalD_Shield_OldGod', 1),
+                # Torch
+                ('/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/Torch/Balance/InvBalD_Shield_Legendary_Torch', 1),
+                # Void Rift
+                ('/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/VoidRift/Balance/InvBalD_Shield_LGD_VoidRift', 1),
 
                 ### Additions
 
@@ -746,6 +834,9 @@ pools = [
                 # DLC1 - St4ckbot
                 ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_DLC1', 1),
 
+                # DLC2 - Tr4iner
+                ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Hib', 1),
+
                 ]),
 
         ('Gunner COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
@@ -758,6 +849,9 @@ pools = [
 
                 # DLC1 - Green Monster
                 ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_DLC1', 1),
+
+                # DLC2 - Sapper
+                ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib', 1),
 
                 ]),
 
@@ -772,6 +866,9 @@ pools = [
                 # DLC1 - Seein' Dead
                 ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_DLC1', 1),
 
+                # DLC2 - Conductor
+                ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Hib', 1),
+
                 ]),
 
         ('Siren COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
@@ -785,6 +882,9 @@ pools = [
                 # DLC1 - Golden Rule
                 ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1', 1),
 
+                # DLC2 - Stone
+                ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib', 1),
+
                 ]),
 
         ('Artifacts', '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary',
@@ -792,6 +892,13 @@ pools = [
                 ### Original Pool
 
                 ('/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary', 14),
+
+                ### DLC2 (Guns, Love, and Tentacles)
+
+                # Lunacy
+                ('/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy', 1),
+                # Pearl of Ineffable Knowledge
+                ('/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK', 1),
 
                 ### Additions
 
