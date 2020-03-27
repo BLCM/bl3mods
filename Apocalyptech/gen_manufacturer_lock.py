@@ -333,6 +333,8 @@ type_pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/Balance/Balance_PS_JAK_LittleYeeti', JAK, 1),
                 # Love Drill (legendary version)
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', JAK, 1),
+                # Seventh Sense (legendary version)
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense', JAK, 1),
 
                 ### Additions
 
@@ -572,6 +574,8 @@ type_pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/Balance/Balance_SM_HYP_Oldridian', HYP, 1),
                 # SF Force
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce', MAL, 1),
+                # Short Stick (legendary version)
+                ('/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick_Legendary', HYP, 1),
 
                 ### Broken Hearts additions
 

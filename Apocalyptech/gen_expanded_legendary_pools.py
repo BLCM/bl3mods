@@ -55,15 +55,19 @@ mod = Mod('expanded_legendary_pools.txt',
 # Mission version of Love Drill - /Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill
 #   Legendary version's better, would be a bit silly to have both.
 #
-# Seventh Sense guns.  Need to figure out what in the world is up with all of these.
-#    This one is referenced by a mission, presumably only available through there:
+# Email-reward version of Short Stick - /Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick
+#   Doesn't seem to actually work anyway, and would only be purple if it did.  (This is theoretically
+#   what was used for the email reward, though, so they got it to work *somehow* via that.)
+#
+# Seventh Sense guns.  There's four total variants, and we're only adding one of them.  The others:
+#   This one is referenced by a mission, presumably only available during that
 #   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon',
 #
-#    This one is referenced by an enemy; I suspect it might be enemy-use-only
+#   This one is referenced by an enemy; I suspect it might be enemy-use-only
 #   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SS_L',
 #
-#    These other two don't seem to be usefully referenced by anything:
-#   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
+#   This one doesn't seem to really be referenced by anything at all (or rather, it's in a pool, but
+#   the pool isn't referenced by anything)
 #   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense',
 
 addition_scale = 0.6
@@ -295,6 +299,8 @@ pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/Balance/Balance_PS_JAK_LittleYeeti', 1),
                 # Love Drill (legendary version)
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', 1),
+                # Seventh Sense (legendary version)
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense', 1),
 
                 ### Additions
 
@@ -519,6 +525,8 @@ pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/Balance/Balance_SM_HYP_Oldridian', 1),
                 # SF Force
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce', 1),
+                # Short Stick
+                ('/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick_Legendary', 1),
 
                 ### Broken Hearts additions
 

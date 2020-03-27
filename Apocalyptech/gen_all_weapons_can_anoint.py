@@ -500,10 +500,15 @@ weapons = [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/Balance_SG_JAK_TheCure',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/PartSet_SG_JAK_TheCure',
             JAK_SG),
-        # TODO: I think at least one other Seventh Sense variant could potentially need this.
-        ("Seventh Sense (prefixed mission version)",
+        # There are two more Seventh Sense balances in "SeventhSense" (without "The"), but I think if those are
+        # used at all, it's just as an enemy-use-only version.
+        ("Seventh Sense (mission version)",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense_MissionWeapon',
+            JAK_PS),
+        ("Seventh Sense (legendary version)",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense',
             JAK_PS),
         ]
 
