@@ -191,6 +191,10 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
         # Broken Hearts
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_50.InvBal_CustomSkin_{shortname}_50')
+        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC2_01.InvBal_CustomSkin_{shortname}_DLC2_01')
+        # Citizen Science stuff (came long with DLC2)
+        balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_CS.InvBal_CustomSkin_{shortname}_CS')
         mod.comment(f'{shortname} Skins')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -220,6 +224,10 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
         # Broken Hearts (actually a Twitch Prime reward, most likely)
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
+        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC2_01.InvBal_CustomHead_{shortname}_DLC2_01')
+        # Citizen Science stuff (came long with DLC2)
+        balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_CS.InvBal_CustomHead_{shortname}_CS')
         mod.comment(f'{shortname} Heads')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -271,6 +279,11 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
     # Broken Hearts
     balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1')
+    # DLC2 - Hibiscus - TODO: Need to figure out if these should be on a blacklist
+    balances.append('/Game/PatchDLC/Hibiscus/Gear/WeaponTrinkets/_Shared/Trinket_Hibiscus_01_Squidly.InvBal_Trinket_Hibiscus_01_Squidly')
+    balances.append('/Game/PatchDLC/Hibiscus/Gear/WeaponTrinkets/_Shared/Trinket_Hibiscus_02_Necrocookmicon.InvBal_Trinket_Hibiscus_02_Necrocookmicon')
+    # DLC2 Email reward of some sort?  Keeping it out for now, but I'm guessing that Not Everyone actually gets it?
+    #balances.append('/Game/PatchDLC/Steam/Gear/WeaponTrinkets/WeaponTrinket_SteamPunk.InvBal_WeaponTrinket_SteamPunk')
     mod.comment('Weapon Trinkets')
     set_pool(mod, '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot.ItemPool_Customizations_WeaponTrinkets_Loot', balances)
     mod.newline()
@@ -301,6 +314,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
     # Broken Hearts
     balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_01.InvBal_EchoTheme_Valentines_01')
+    # DLC2 - Hibiscus - TODO: figure out if any of these should be blacklisted
+    for num in [1, 2, 3, 4]:
+        balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC2_{num:02d}.InvBal_ECHOTheme_DLC2_{num:02d}')
     mod.comment('ECHO Skins')
     set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
     mod.newline()
@@ -324,6 +340,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC1 - Dandelion
     for num in range(1, 7):
         balances.append(f'/Game/PatchDLC/Dandelion/Customizations/RoomDeco/RoomDeco_DLC1_{num}.InvBal_RoomDeco_DLC1_{num}')
+    # DLC2 - Hibiscus - TODO: Figure out if any of these should be on a blacklist
+    for num in range(1, 9):
+        balances.append(f'/Game/PatchDLC/Hibiscus/Customizations/RoomDeco/RoomDeco_DLC2_{num}.InvBal_RoomDeco_DLC2_{num}')
     mod.comment('Room Decorations')
     set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
     mod.newline()
