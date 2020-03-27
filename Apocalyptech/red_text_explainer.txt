@@ -760,6 +760,18 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti
 # Love Drill (legendary version)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill_L.UIStat_RedText_LoveDrill_L,Text,0,,[Flavor]...till death us depart.[/Flavor] (unknown)
 
+# Love Drill (mission version)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] (unknown)
+
+# Seventh Sense (prefixed mission)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (unknown)
+
+# Seventh Sense (prefixed legendary)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense_Legendary.UIStat_RedText_TheSeventhSense_Legendary,Text,0,,[Flavor]Something so close, and yet... so distant.[/Flavor] (unknown)
+
+# Seventh Sense (non-prefixed, both purple and legendary)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Parts/UIStat_RedText_SeventhSense.UIStat_RedText_SeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (unknown)
+
 # Anarchy
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/UIStat_RedText_Anarchy.UIStat_RedText_Anarchy,Text,0,,[Flavor]The stacks... THE STACKS![/Flavor] (unknown)
 
