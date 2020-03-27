@@ -43,7 +43,7 @@ def charge_time(mod,
     else:
         prev_val = '(BaseValue={:.6f})'.format(prev_val)
     mod.reg_hotfix(Mod.PATCH, '',
-            '{}:AspectList_WeaponUseModeSecondaryAspectData.{}'.format(obj_name, aspect_attr),
+            '{}:AspectList_WeaponUseModeSecondaryAspectData.{}'.format(Mod.get_full_cond(obj_name), aspect_attr),
             'AspectList.AspectList[{}].Object..Component.Object..{}'.format(aspect_list, final_attr),
             '(BaseValue={:.6f})'.format(new_val),
             prev_val=prev_val)
@@ -171,6 +171,10 @@ for label, obj_name, default, scale in [
             '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/Parts/Part_SM_MAL_Barrel_VibraPulse.Part_SM_MAL_Barrel_VibraPulse',
             1.15,
             scale_smg),
+        ('Nothingness',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/Parts/Part_SG_MAL_Barrel_TheNothing',
+            1.05,
+            scale_shotgun),
         ('P2P Networker',
             '/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link',
             0.85,

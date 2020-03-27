@@ -99,6 +99,9 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Parts/Part_
 # Miss Moxxi's Vibra-Pulse (default: 1.15)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/Parts/Part_SM_MAL_Barrel_VibraPulse.Part_SM_MAL_Barrel_VibraPulse:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.575000)
 
+# Nothingness (default: 1.05)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/Parts/Part_SG_MAL_Barrel_TheNothing.Part_SG_MAL_Barrel_TheNothing:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.420000)
+
 # P2P Networker (default: 0.85)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.425000)
 
