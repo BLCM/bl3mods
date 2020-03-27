@@ -195,6 +195,32 @@ for (pool, chars) in [
             'BPChar_LoaderShared',
             'BPChar_WeeLoaderBasic',
             ]),
+
+        # Hibiscus standard-enemy drop list
+        ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', [
+            'BPChar_FlyingSlugBasic',
+            'BPChar_LostOneBadass',
+            'BPChar_LostOneFlailing',
+            'BPChar_Lunatic',
+            'BPChar_Minion',
+            'BPChar_Slug',
+            'BPChar_Wolven_Shared',
+            'BPChar_Zealot',
+            'BPChar_Spinsmouth',
+            'BPChar_FrostEnforcerBruiser',
+            'BPChar_FrostEnforcerMelee',
+            'BPChar_FrostPsychoFirebrand',
+            'BPChar_FrostPsychoSlugger',
+            'BPChar_FrostPsychoSuicide',
+            'BPChar_FrostPunk_Basic',
+            'BPChar_FrostPunk_Assaulter',
+            'BPChar_FrostPunk_Badass',
+            'BPChar_FrostPunk_Shotgunner',
+            'BPChar_FrostPunk_Sniper',
+            'BPChar_FrostTinkBadass',
+            'BPChar_FrostTinkBasic',
+            'BPChar_FrostTinkShotgun',
+            ]),
         ]:
 
     for char in chars:
@@ -227,6 +253,12 @@ for label, poollist_name, pool_idx, chars in [
             'BPChar_Oversphere_KatagawaSphere',
             'BPChar_PunkSpaceCowboy',
             'BPChar_Varkid_RaidBoss',
+            ]),
+        ('DLC2 Bosses', '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Boss_Hibiscus', 7, [
+            'BPChar_HeartBoss',
+            'BPChar_LostTwo_BigBro',
+            'BPChar_LostTwo_ToughBro',
+            'BPChar_Vincent',
             ]),
         ('Terror', '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror', 2, [
             'BPChar_Terror',
@@ -267,6 +299,11 @@ for label, poollist_name, pool_idx, chars in [
             'BPChar_TinkMotorcadeBigD',
             'BPChar_TinkRedJabber',
             'BPChar_VarkidHunt01',
+            ]),
+        ('DLC2 Minibosses', '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Hibiscus', 7, [
+            'BPChar_ZealotNightmareShocker_Rare',
+            'BPChar_ZealotPilfer_Child_Rare',
+            'BPChar_LunaticPossessed',
             ]),
         ('Vault Monsters', '/Game/GameData/Loot/ItemPools/ItemPoolList_VaultBossEnemy', 7, [
             'BPChar_EdenBoss',
