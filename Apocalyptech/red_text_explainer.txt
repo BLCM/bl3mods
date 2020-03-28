@@ -728,77 +728,86 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/UIStat_RedText_WeddingInvite.UIStat_RedText_WeddingInvite,Text,0,,[Flavor]Will you be the rest of my life?[/Flavor] (full auto, return ammo on crits, splash damage, [cryo]cryo[/cryo] ricochet)
 
 # Clairvoyance
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Clairvoyance/UIStat_RedText_Clairvoyance.UIStat_RedText_Clairvoyance,Text,0,,[Flavor]A broken smile beneath her whispered wings.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Clairvoyance/UIStat_RedText_Clairvoyance.UIStat_RedText_Clairvoyance,Text,0,,[Flavor]A broken smile beneath her whispered wings.[/Flavor] (crits leave sticky bomb that fires a shot on detonation)
 
 # Seeryul Killur
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/UIStat_RedText_Homicidal.UIStat_RedText_Homicidal,Text,0,,[Flavor]Look at that unsubtle blood-red coloring...[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/UIStat_RedText_Homicidal.UIStat_RedText_Homicidal,Text,0,,[Flavor]Look at that unsubtle blood-red coloring...[/Flavor] (kills reduce heat shot cost, increase damage and fire rate, max 3 stacks)
 
 # Mutant
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/UIStat_RedText_Mutant.UIStat_RedText_Mutant,Text,0,,[Flavor]Super unnatural.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/UIStat_RedText_Mutant.UIStat_RedText_Mutant,Text,0,,[Flavor]Super unnatural.[/Flavor] (continuous laser beam)
 
 # Soulrender
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/UIStat_RedText_Soulrender.UIStat_RedText_Soulrender,Text,0,,[Flavor]Picture a soul. Now REND that thing![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/UIStat_RedText_Soulrender.UIStat_RedText_Soulrender,Text,0,,[Flavor]Picture a soul. Now REND that thing![/Flavor] (shoots homing skulls at targets)
 
 # Stauros' Burn
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/UIStat_RedText_SparkyBoom.UIStat_RedText_SparkyBoom,Text,0,,[Flavor]A long sigh was heard...[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/UIStat_RedText_SparkyBoom.UIStat_RedText_SparkyBoom,Text,0,,[Flavor]A long sigh was heard...[/Flavor] (all effects on card)
 
 # Bite Size
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/UIStat_RedText_BiteSize.UIStat_RedText_BiteSize,Text,0,,[Flavor]And yet so filling![/Flavor] (unknown)
 
 # Frozen Devil
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/UIStat_RedText_FrozenDevil.UIStat_RedText_FrozenDevil,Text,0,,[Flavor]Not sorry, not sorry, not sorry.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/UIStat_RedText_FrozenDevil.UIStat_RedText_FrozenDevil,Text,0,,[Flavor]Not sorry, not sorry, not sorry.[/Flavor] (continuous laser and ice spike)
 
 # Hydrafrost
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/UIStat_RedText_Hydrafrost.UIStat_RedText_Hydrafrost,Text,0,,[Flavor]Tell your heads to chill.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/UIStat_RedText_Hydrafrost.UIStat_RedText_Hydrafrost,Text,0,,[Flavor]Tell your heads to chill.[/Flavor] (after kill, second shot deals 200% [shock]shock[/shock] or [fire]incendiary[/fire] damage for 6 secs)
 
 # Kaleidoscope
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/UIStat_RedText_Kaleidoscope.UIStat_RedText_Kaleidoscope,Text,0,,[Flavor]I can fly twice as high, take a look...[/Flavor] (unknown)
 
 # Little Yeeti
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/UIStat_RedText_LittleYeeti.UIStat_RedText_LittleYeeti,Text,0,,[Flavor]Yeet 'em if you got 'em![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/UIStat_RedText_LittleYeeti.UIStat_RedText_LittleYeeti,Text,0,,[Flavor]Yeet 'em if you got 'em![/Flavor] (multiple projectiles, chance to knockback enemy)
 
 # Love Drill (legendary version)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill_L.UIStat_RedText_LoveDrill_L,Text,0,,[Flavor]...till death us depart.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill_L.UIStat_RedText_LoveDrill_L,Text,0,,[Flavor]...till death us depart.[/Flavor] (20% chance to deal double damage as [shock]shock[/shock])
 
 # Love Drill (mission version)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] (20% chance to deal double damage as [shock]shock[/shock])
 
 # Short Stick
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] (chance to fire 2 additional spiralling shots and deal [fire]incendiary[/fire] damage)
 
 # Seventh Sense (prefixed mission)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (unknown - prefixed mission)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (on hit, creates additional wandering projectiles; reloading sends them back to enemy)
 
 # Seventh Sense (prefixed legendary)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense_Legendary.UIStat_RedText_TheSeventhSense_Legendary,Text,0,,[Flavor]Something so close, and yet... so distant.[/Flavor] (unknown - prefixed legendary)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense_Legendary.UIStat_RedText_TheSeventhSense_Legendary,Text,0,,[Flavor]Something so close, and yet... so distant.[/Flavor] (on hit, creates additional wandering projectiles; reloading sends them back to enemy)
 
 # Anarchy
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/UIStat_RedText_Anarchy.UIStat_RedText_Anarchy,Text,0,,[Flavor]The stacks... THE STACKS![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/UIStat_RedText_Anarchy.UIStat_RedText_Anarchy,Text,0,,[Flavor]The stacks... THE STACKS![/Flavor] (every auto reload or kill grants 30% damage and reduces accuracy, 10 stacks max)
 
 # Firecracker
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/UIStat_RedText_Firecracker.UIStat_RedText_Firecracker,Text,0,,[Flavor]Ooooh. Aaaah.[/Flavor] (unknown)
 
 # Insider
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider.UIStat_RedText_Insider,Text,0,,[Flavor]You can run, but you can't hide[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider.UIStat_RedText_Insider,Text,0,,[Flavor]You can run, but you can't hide[/Flavor] (instant fire, shots penetrate enemies)
 
 # Flama Diddle
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen.UIStat_RedText_Omen,Text,0,,[Flavor]VIII. Never turn your back on a Monster![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen.UIStat_RedText_Omen,Text,0,,[Flavor]VIII. Never turn your back on a Monster![/Flavor] (reload shoots twice before exploding on impact, bullets ricochet once)
 
 # Sacrificial Lamb
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/UIStat_RedText_SacrificialLamb.UIStat_RedText_SacrificialLamb,Text,0,,[Flavor]Kali Ma Shakti de![/Flavor] (unknown)
 
 # Shocker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker.UIStat_RedText_Shocker,Text,0,,[Flavor]Surprise![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker.UIStat_RedText_Shocker,Text,0,,[Flavor]Surprise![/Flavor] ([shock]shock[/shock] orb splits into 3 orbs horizontally)
 
 # The Cure
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/UIStat_RedText_TheCure.UIStat_RedText_TheCure,Text,0,,[Flavor]Vaccinations save lives. Sorry, no joke here! Just facts.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/UIStat_RedText_TheCure.UIStat_RedText_TheCure,Text,0,,[Flavor]Vaccinations save lives. Sorry, no joke here! Just facts.[/Flavor] (restores health with each hit)
 
 # Nothingness
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/UIStat_RedText_TheNothing.UIStat_RedText_TheNothing,Text,0,,[Flavor]A hole would be something.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/UIStat_RedText_TheNothing.UIStat_RedText_TheNothing,Text,0,,[Flavor]A hole would be something.[/Flavor] (charged shot for several explosions, similar to Flakker)
 
 # Oldridian
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/UIStat_RedText_Oldridian.UIStat_RedText_Oldridian,Text,0,,[Flavor]They bound the ones they knew of. There were more.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/UIStat_RedText_Oldridian.UIStat_RedText_Oldridian,Text,0,,[Flavor]They bound the ones they knew of. There were more.[/Flavor] (switches element on reload, shield reduces elemental damage by 20%)
 
 # SF Force
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/UIStat_RedText_SFForce.UIStat_RedText_SFForce,Text,0,,[Flavor]Flavor-blast them all.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/UIStat_RedText_SFForce.UIStat_RedText_SFForce,Text,0,,[Flavor]Flavor-blast them all.[/Flavor] (shoots musical notes of both elements)
+
+# Cocky Bastard
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/CockyBastard/UIStat_RedText_CockyBastard.UIStat_RedText_CockyBastard,Text,0,,[Flavor]Great, kid.[/Flavor] (crits deal [shock]shock[/shock] damage equal to crit damage)
+
+# Skullmasher
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher/UIStat_RedText_Skullmasher.UIStat_RedText_Skullmasher,Text,0,,[Flavor]Makes your brain hurt.[/Flavor] (x5 projectiles per shot, extremely fast fire rate)
+
+# Unseen Threat
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/UnseenThreat/UIStat_RedText_UnseenThreat.UIStat_RedText_UnseenThreat,Text,0,,[Flavor]Taste their fear.[/Flavor] (crits ricochet 3 homing projectiles)
 
