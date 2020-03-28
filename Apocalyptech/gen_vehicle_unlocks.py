@@ -313,6 +313,10 @@ vehicle_parts = [
                     '/Game/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_Tri',
                     '/Game/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_Vladof',
                     '/Game/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_Wrap',
+
+                    # DLC2 skins
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_Fish',
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Outrunner/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Outrunner_Tentacle',
                     ],
                 # Armor
                 [
@@ -426,6 +430,11 @@ vehicle_parts = [
                     '/Game/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Torgue',
                     '/Game/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Vaughn',
                     '/Game/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Vladof',
+
+                    # DLC2 Skins
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Tentacle',
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Fish',
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Technical/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Technical_Frost',
                     ],
                 # Armor
                 [
@@ -565,6 +574,9 @@ vehicle_parts = [
                     '/Game/Vehicles/Revolver/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Revolver_Stealth',
                     '/Game/Vehicles/Revolver/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Revolver_Torgue',
                     '/Game/Vehicles/Revolver/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Revolver_Vladof',
+
+                    # DLC2 skins
+                    '/Game/PatchDLC/Hibiscus/Vehicles/Revolver/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Revolver_Fish',
                     ],
                 # Armor
                 [
