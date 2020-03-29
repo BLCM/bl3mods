@@ -767,7 +767,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/U
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] (chance to fire 2 additional spiralling shots and deal [fire]incendiary[/fire] damage)
 
 # Seventh Sense (prefixed mission)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (on hit, creates additional wandering projectiles; reloading sends them back to enemy)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (mission item, reveals ghosts during ADS)
 
 # Seventh Sense (prefixed legendary)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense_Legendary.UIStat_RedText_TheSeventhSense_Legendary,Text,0,,[Flavor]Something so close, and yet... so distant.[/Flavor] (on hit, creates additional wandering projectiles; reloading sends them back to enemy)

@@ -1226,7 +1226,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Seventh Sense (prefixed mission)",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense',
             "Do you see?",
-            "on hit, creates additional wandering projectiles; reloading sends them back to enemy"),
+            "mission item, reveals ghosts during ADS"),
         ("Seventh Sense (prefixed legendary)",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense_Legendary',
             "Something so close, and yet... so distant.",
