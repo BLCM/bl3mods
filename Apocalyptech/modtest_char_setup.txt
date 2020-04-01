@@ -4,7 +4,7 @@
 ### Does a couple of things:
 ###
 ### 1) Discovering the first zone (right after Claptrap gets sucked
-###    up by the magnet) will level your char to 53.  (This will
+###    up by the magnet) will level your char to 57.  (This will
 ###    need tweaking as the game's level cap gets raised.)  Note that
 ###    any future zone discoveries will produce massive amounts of
 ###    Guardian Rank, so make sure to restart without this mod once
@@ -13,10 +13,10 @@
 ### 2) Alters the first gun chest to contain a Crader's EM-P5 and a
 ###    Transformer shield (identical to first_gun_testing_gear.txt).
 ###
-### 3) Sets Covenant Pass's Game Stage to be 53, so the gear should
+### 3) Sets Covenant Pass's Game Stage to be 57, so the gear should
 ###    be levelled that far.
 ###
-### So, basisically, open that starting chest to get a set of level-53
+### So, basisically, open that starting chest to get a set of level-57
 ### starting gear, then hop in to the first fight area to level up your
 ### character.  Exit the game, disable this mod, and hop back in.
 ### You'll have yourself a max-levelled character with max-level testing
@@ -39,20 +39,20 @@ SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Loot/ItemPools/Guns/Pi
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_FirstGun.ItemPool_Pistols_FirstGun,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5.Balance_SM_DAHL_CraderMP5"'
 
 ###
-### Force Covenant Pass to Level 53
+### Force Covenant Pass to Level 57
 ###
 
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
-SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[1].MinGameStage,0,,53
+SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[1].MinGameStage,0,,57
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[1].MaxGameStage,0,,100
-SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[2].MinGameStage,0,,53
+SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[2].MinGameStage,0,,57
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[2].MaxGameStage,0,,100
-SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[4].MinGameStage,0,,53
+SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[4].MinGameStage,0,,57
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].Regions.Regions[4].MaxGameStage,0,,100
 
 ###
 ### Zone-Discovery XP Buff
 ###
 
-SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,BaseDiscoverAreaExperienceFormula.BaseValueConstant,0,,15100
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,BaseDiscoverAreaExperienceFormula.BaseValueConstant,0,,18500
 
