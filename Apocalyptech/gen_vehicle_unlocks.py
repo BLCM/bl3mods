@@ -38,6 +38,7 @@ technical_levels = {
         'Convoy_P',
         'Motorcade_P',
         'MotorcadeFestival_P',
+        'Lake_P',
         }
 cyclone_levels = {
         'Convoy_P',
@@ -395,6 +396,12 @@ vehicle_parts = [
                     '/Game/Enemies/_Spawning/Vehicles/Technical/SpawnOptions_Vehicle_EP05_HoverTechnical',
                     (0,)): [
                         'Outskirts_P',
+                        ],
+                ('Frostbiters in Skittermaw Basin',
+                    '/Hibiscus/Enemies/_Spawning/Vehicles/VehiclePartSet_Technical_Hibiscus',
+                    '/Hibiscus/Enemies/_Spawning/Vehicles/SpawnOptions_Vehicle_Frostbiter_Lake_FullMix',
+                    (0,)): [
+                        'Lake_P',
                         ],
                 },
             [
