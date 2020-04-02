@@ -169,6 +169,17 @@ SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/Wet
 SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/WetlandsVault_P.WetlandsVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/WetlandsVault_P.WetlandsVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Cankerwood
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Carnivora
 SparkLevelPatchEntry,(1,1,1,MotorcadeFestival_P),/Game/Maps/Zone_3/MotorcadeFestival/MotorcadeFestival_Encounters.MotorcadeFestival_Encounters:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,MotorcadeFestival_P),/Game/Maps/Zone_3/MotorcadeFestival/MotorcadeFestival_Encounters.MotorcadeFestival_Encounters:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
@@ -213,6 +224,17 @@ SparkLevelPatchEntry,(1,1,1,Desertvault_P),/Game/Maps/Zone_3/DesertVault/Desertv
 SparkLevelPatchEntry,(1,1,1,Desertvault_P),/Game/Maps/Zone_3/DesertVault/Desertvault_Dynamic.Desertvault_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Covenant Pass
+
+# Cursehaven
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Desolation's Edge
 SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Encounters.Desolate_Encounters:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
@@ -321,6 +343,14 @@ SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terr
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Dustbound Archives
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Floating Tomb
 
 # Floodmoor Basin
@@ -372,6 +402,14 @@ SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInte
 SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
+
+# Heart's Desire
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Jakobs Estate
 SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_DoorOpeningModule.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
@@ -451,6 +489,8 @@ SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Tow
 SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Lodge
+
 # Meridian Metroplex
 SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
@@ -500,6 +540,17 @@ SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_C
 SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Combat.Outskirts_Combat:PersistentLevel.EridianWritingSpawner.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Combat.Outskirts_Combat:PersistentLevel.EridianWritingSpawner.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Negul Neshai
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Neon Arterial
 SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
@@ -537,6 +588,14 @@ SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.San
 SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_0.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Sandblast Scar
+
+# Skittermaw Basin
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Skywell-27
 SparkLevelPatchEntry,(1,1,1,OrbitalPlatform_P),/Game/Maps/Zone_1/OrbitalPlatform/OrbitalPlatform_Cinema.OrbitalPlatform_Cinema:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_DubstepLibrary.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000

@@ -29,7 +29,8 @@ Gameplay Changes instead.)
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
   the available challenge intros will be played.  Note that this currently
-  only supports the base game, not DLC1.  Known issues:
+  only supports the base game, not DLC1.  Support for DLC2 has been added
+  but has not yet been tested.  Known issues:
   - The third Typhon log in Meridian Outskirts
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
