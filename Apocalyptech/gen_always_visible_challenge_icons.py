@@ -356,10 +356,11 @@ for (label, level_name, object_names) in sorted([
         ###
 
         # So the Occult Hunts seem to work fine, but Gaige's Gifts don't, and having these in here
-        # prevents her dialog from playing, so I'm taking those out for now.  Jury's still out on
-        # the statues; those don't activate until after Wainwright's taken over, and the one I'd
-        # checked out previously in Cursehaven showed up when I went back there, but the one in
-        # Dustbound Archive didn't.  So: hrm.
+        # prevents her dialog from playing, so I'm taking those out for now.  (Or rather: the gifts
+        # themselves work just fine, minus the missing dialog, but these statements don't make them
+        # show up ahead of time.)  Jury's still out on the statues; those don't activate until after
+        # Wainwright's taken over, and the one I'd checked out previously in Cursehaven showed up
+        # when I went back there, but the one in Dustbound Archive didn't.  So: hrm.
 
         ("Dustbound Archives", 'Archives_P', [
             '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
