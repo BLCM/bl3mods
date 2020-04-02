@@ -52,6 +52,20 @@ SparkLevelPatchEntry,(1,2,0,OrbitalPlatform_P),/Game/InteractiveObjects/SlotMach
 SparkLevelPatchEntry,(1,2,0,OrbitalPlatform_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,Eridium,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
 SparkLevelPatchEntry,(1,2,0,OrbitalPlatform_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,Cash,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
 
+# Cash Trap! (in The Lodge)
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,Lose,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,BOOM!,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,ClassMod_Common,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,ClassMod_Uncommon,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,ClassMod_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,ClassMod_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,5
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,ClassMod_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,2
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,PlayerSkin,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,5
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,RoomDecoration,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0.5
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,PlayerHead,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0.5
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,Eridium,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_ClapTrap.Table_SlotMachinePrizes_ClapTrap,Cash,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+
 # Tink's Hijinx (in Sanctuary)
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Lose,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,BOOM!,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
@@ -135,4 +149,18 @@ SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,GrenadeMod_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,GrenadeMod_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Artifact,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+
+# Vault Line (in The Lodge)
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Lose,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Eridium,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,5
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Gun_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,4
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Gun_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Gun_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Shield_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,4
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Shield_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Shield_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,GrenadeMod_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,4
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,GrenadeMod_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,GrenadeMod_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Bar_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine,Artifact,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
 

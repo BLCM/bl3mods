@@ -21,6 +21,7 @@ for (label, obj_name, maps, results) in [
                 ('Sanctuary', 'Sanctuary3_P'),
                 ('Atlas HQ', 'AtlasHQ_P'),
                 ('Skywell-27', 'OrbitalPlatform_P'),
+                ('The Lodge', 'Bar_P'),
             ],
             [
                 ('Lose',               0),   # default: 25
@@ -81,6 +82,7 @@ for (label, obj_name, maps, results) in [
             '/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_VaultLine.Table_SlotMachinePrizes_VaultLine',
             [
                 ('Sanctuary', 'Sanctuary3_P'),
+                ('The Lodge', 'Bar_P'),
             ],
             [
                 ('Lose',                 0), # default: 60
