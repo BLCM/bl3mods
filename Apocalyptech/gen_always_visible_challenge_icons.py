@@ -355,19 +355,25 @@ for (label, level_name, object_names) in sorted([
         ### DLC2
         ###
 
+        # So the Occult Hunts seem to work fine, but Gaige's Gifts don't, and having these in here
+        # prevents her dialog from playing, so I'm taking those out for now.  Jury's still out on
+        # the statues; those don't activate until after Wainwright's taken over, and the one I'd
+        # checked out previously in Cursehaven showed up when I went back there, but the one in
+        # Dustbound Archive didn't.  So: hrm.
+
         ("Dustbound Archives", 'Archives_P', [
             '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
-            '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            #'/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Lodge", 'Bar_P', [
             ]),
         ("Negul Neshai", 'Camp_P', [
             '/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
             '/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
-            '/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            #'/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Skittermaw Basin", 'Lake_P', [
-            '/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            #'/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             '/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
             ]),
         ("Heart's Desire", 'Venue_P', [
@@ -377,12 +383,12 @@ for (label, level_name, object_names) in sorted([
         ("Cursehaven", 'Village_P', [
             '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
             '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
-            '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            #'/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Cankerwood", 'Woods_P', [
             '/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
             '/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
-            '/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            #'/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
 
         ]):
