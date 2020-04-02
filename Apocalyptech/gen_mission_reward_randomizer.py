@@ -115,6 +115,11 @@ for (mission_obj, drop_type) in [
         ('/Game/PatchDLC/Dandelion/Missions/Side/Mission_DLC1_Side_DoubleDown.Default__Mission_DLC1_Side_DoubleDown_C:RewardData_OakMissionRewardData', SH),
         ('/Game/PatchDLC/Dandelion/Missions/Side/Mission_DLC1_Side_GreatEscape.Default__Mission_DLC1_Side_GreatEscape_C:RewardData_OakMissionRewardData', AR),
         ('/Game/PatchDLC/Dandelion/Missions/Side/Mission_DLC1_Side_RegainingOnesFeet.Default__Mission_DLC1_Side_RegainingOnesFeet_C:RewardData_OakMissionRewardData', SH),
+        ('/Game/PatchDLC/Hibiscus/Missions/Plot/EP02_DLC2.Default__EP02_DLC2_C:RewardData_OakMissionRewardData', SG),
+        ('/Game/PatchDLC/Hibiscus/Missions/Plot/EP06_DLC2.Default__EP06_DLC2_C:RewardData_OakMissionRewardData', PS),
+        ('/Game/PatchDLC/Hibiscus/Missions/Side/SideMission_DLC2_HappilyEverAfter.Default__SideMission_DLC2_HappilyEverAfter_C:RewardData_OakMissionRewardData', SG),
+        ('/Game/PatchDLC/Hibiscus/Missions/Side/SideMission_DLC2_PrivateEyePart3.Default__SideMission_DLC2_PrivateEyePart3_C:RewardData_OakMissionRewardData', PS),
+        ('/Game/PatchDLC/Hibiscus/Missions/Side/SideMission_DLC2_WeSlassPart3.Default__SideMission_DLC2_WeSlassPart3_C:RewardData_OakMissionRewardData', SG),
         ]:
 
     if drop_type not in type_blacklist:
