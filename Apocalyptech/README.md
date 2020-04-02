@@ -29,8 +29,8 @@ Gameplay Changes instead.)
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
   the available challenge intros will be played.  Note that this currently
-  only supports the base game, not DLC1.  Support for DLC2 has been added
-  but has not yet been tested.  Known issues:
+  only supports the base game and partially DLC2.  DLC1 challenges are
+  omitted entirely because they act weirdly.  Known issues:
   - The third Typhon log in Meridian Outskirts
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
@@ -51,6 +51,9 @@ Gameplay Changes instead.)
       - The Pyre of Stars
   - The Target of Opportunity in Devil's Razor
   - Target of Opportunity in Cathedral of the Twin Gods
+  - All DLC1 challenges are omitted
+  - Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
+  - Some Eldritch Statue challenges from DLC2 don't seem to work.
 - `more_visible_echo_logs.txt` - Makes ECHO Log loot bars (and any other
   item using that bar, such as mission items) much bigger.  Used to
   hopefully catch any ECHOs I may have missed after a few playthroughs.
@@ -73,10 +76,8 @@ Gameplay Changes instead.)
   - Sets the rarity weights to be improved
   - Increases Eridium drop rates and quantities.
   - Guarantees specific legendary drops from nearly all the bosses which
-    have unique drops.  This has been updated for the Mayhem 4 / Maliwan
-    Takedown patch, including all the new drops set up in that patch.
-    Trials, Slaughters, and the Maliwan Takedown itself remain untested
-    but everything else looks good
+    have unique drops.  This has been updated for DLC1 -- DLC2 support is
+    forthcoming.
   - Unlocks Mayhem 4 drops for the named enemies as well.  Not sure if this
     unlocks world Mayhem 4 drops or not, but you can use `expanded_legendary_pools`
     for that.
@@ -137,7 +138,8 @@ being used, which gives you far more Eridium than usual.
 - `expanded_legendary_pools.txt` - Adds all legendary/unique items into the main
   legendary drop pools, not that BL3 needs bigger legendary pools.  Includes
   all Bloody Harvest, Maliwan Takedown, Mayhem 4 items (which will drop
-  regardless of Mayhem level, even in normal), and DLC1 items.
+  regardless of Mayhem level, even in normal), Broken Hearts, DLC1, and DLC2
+  items.
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically
