@@ -3,6 +3,9 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod, LVL_TO_ENG
 
+# Note that so far (up through DLC2), all DLCs already have a MaxGameStage of 100
+# in their RegionManagerData, so we've not had to worry about DLC level scaling.
+
 mod = Mod('nvhm_gamestage_follows_level.txt',
         'NVHM GameStage Follows Player Level',
         [
