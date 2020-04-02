@@ -660,10 +660,13 @@ class Balance(object):
         self.hotfix_balance_full(mod, hf_type, hf_package)
 
 LVL_TO_ENG = {
+        'Archives_P': "Dustbound Archives",
         'AtlasHQ_P': "Atlas HQ",
+        'Bar_P': "Lodge",
         'Beach_P': "Tazendeer Ruins",
         'BloodyHarvest_P': "Heck Hole",
         'COVSlaughter_P': "Slaughter Shaft",
+        'Camp_P': "Negul Neshai",
         'CasinoIntro_P': "Grand Opening",
         'CityBoss_P': "Forgotten Basilica",
         'CityVault_P': "Neon Arterial",
@@ -678,6 +681,7 @@ LVL_TO_ENG = {
         'Desolate_P': "Desolation's Edge",
         'FinalBoss_P': "Destroyer's Rift",
         'Impound_P': "Impound Deluxe",
+        'Lake_P': "Skittermaw Basin",
         'Mansion_P': "Jakobs Estate",
         'MarshFields_P': "Ambermire",
         'Mine_P': "Konrad's Hold",
@@ -704,10 +708,13 @@ LVL_TO_ENG = {
         'TowerLair_P': "VIP Tower",
         'Towers_P': "Lectra City",
         'Trashtown_P': "Compactor",
+        'Venue_P': "Heart's Desire",
+        'Village_P': "Cursehaven",
         'Watership_P': "Voracious Canopy",
         'WetlandsBoss_P': "Floating Tomb",
         'WetlandsVault_P': "Blackbarrel Cellars",
         'Wetlands_P': "Floodmoor Basin",
+        'Woods_P': "Cankerwood",
         }
 
 # Also create a lowercase version
