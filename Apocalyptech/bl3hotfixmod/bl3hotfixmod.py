@@ -660,7 +660,7 @@ class Balance(object):
         self.hotfix_balance_full(mod, hf_type, hf_package)
 
 LVL_TO_ENG = {
-        'Archives_P': "Dustbound Archives",
+        'Archive_P': "Dustbound Archives",
         'AtlasHQ_P': "Atlas HQ",
         'Bar_P': "Lodge",
         'Beach_P': "Tazendeer Ruins",
