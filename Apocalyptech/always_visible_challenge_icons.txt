@@ -338,9 +338,9 @@ SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terr
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Dustbound Archives
-SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Archives_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Floating Tomb
 

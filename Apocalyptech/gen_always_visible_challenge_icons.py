@@ -362,7 +362,7 @@ for (label, level_name, object_names) in sorted([
         # Wainwright's taken over, and the one I'd checked out previously in Cursehaven showed up
         # when I went back there, but the one in Dustbound Archive didn't.  So: hrm.
 
-        ("Dustbound Archives", 'Archives_P', [
+        ("Dustbound Archives", 'Archive_P', [
             '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
             #'/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
