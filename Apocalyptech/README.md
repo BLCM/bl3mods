@@ -157,6 +157,13 @@ being used, which gives you far more Eridium than usual.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
+- `gen_arbitrary_partlocks.py` - This is actually just an interactive
+  CLI-based mod-generation script which, when given an item/weapon balance as
+  the one argument, will let you choose parts to either partlock or exclude
+  entirely.  This could've theoretically been used to generate my No
+  Projected Shields or No Slam Artifacts mods, though this script was written
+  after those two.  Very much an oddity; I didn't even really have a use case
+  for it when I wrote it.
 
 ## Customization Tweaks
 
