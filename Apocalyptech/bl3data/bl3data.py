@@ -2,6 +2,7 @@
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
 import os
+import re
 import json
 import glob
 import appdirs
@@ -45,6 +46,43 @@ class BL3Data(object):
     bva_values = {
             }
 
+    # Hardcoded part-category values
+    cats_shields = [
+            'BODY',
+            'RARITY',
+            'LEGENDARY AUG',
+            'AUGMENT',
+            'ELEMENT',
+            'MATERIAL',
+            ]
+
+    cats_grenades = [
+            'MANUFACTURER',
+            'ELEMENT',
+            'RARITY',
+            'AUGMENT',
+            'BEHAVIOR',
+            'MATERIAL',
+            ]
+
+    cats_coms = [
+            'CHARACTER',
+            'MODTYPE',
+            'RARITY',
+            'PRIMARY',
+            'SECONDARY',
+            'SKILLS',
+            '(unknown)',
+            ]
+
+    cats_artifacts = [
+            'RARITY',
+            'LEGENDARY ABILITY',
+            'ABILITY',
+            'PRIMARY',
+            'SECONDARY',
+            ]
+
     def __init__(self):
         """
         Initialize a BL3Data object.  Will create a sample config file if one
@@ -87,6 +125,7 @@ class BL3Data(object):
 
         # Now the rest of the vars we'll use
         self.cache = {}
+        self.balance_to_extra_anoints = None
         self.db = None
         self.curs = None
 
@@ -331,4 +370,209 @@ class BL3Data(object):
         """
 
         return self.process_bvc(BVC.from_data_struct(data))
+
+    def guess_part_category_name(self, part_name):
+        """
+        Given a `part_name`, try and guess what the category name is, for the parts category
+        which this part lives in.  This may or may not be accurate depending on context,
+        but it'll be the best we can do given the current part.  (Keep in mind that these
+        category names are NOT really part of the base game data itself.  I've done a fair
+        bit of tweaking so they "make sense," at least to myself.  The labels you see
+        in the Item Inspector in-game are often pretty good guidelines but they're not
+        always consistent.)
+        """
+
+        if not part_name:
+            return None
+
+        part_lower = part_name.lower()
+
+        # First, a hardcode for a part that we currently can't serialize
+        if part_lower == '/game/gear/grenademods/_design/partsets/part_manufacturer/gm_part_manufacturer_06_pangolin':
+            return 'MANUFACTURER'
+
+        # Grab the data itself and see if we can do anything with it.
+        part_obj = self.get_data(part_name)
+        for export in part_obj:
+            if export['export_type'].startswith('BPInvPart_'):
+                if 'PartInspectionTitleOverride' in export:
+                    title_name = export['PartInspectionTitleOverride'][0][1]
+                    title_obj = self.get_data(title_name)
+                    ui_label = re.sub(r'\[/?.*?\]', '', title_obj[0]['Text']['string'])
+
+                    # Some hardcoded overrides here
+                    if ui_label.startswith('TRACKING '):
+                        return 'TRACKING METHOD'
+                    elif ui_label.endswith(' SHIELD'):
+                        return 'SHIELD TYPE'
+                    elif ui_label.endswith(' MODULE'):
+                        return 'RELOAD TYPE'
+                    elif ui_label.startswith('UNDERBARREL '):
+                        return 'UNDERBARREL TYPE'
+                    else:
+                        return ui_label
+
+                elif 'material' in part_lower or '_mat_' in part_lower \
+                        or part_lower.endswith('/part_sr_dal_worlddestroyer') \
+                        or part_lower.endswith('/part_sr_hyp_masterwork') \
+                        or part_lower.endswith('/part_sr_hyp_zeroforplayer') \
+                        or part_lower.endswith('/part_sr_hyp_tankman') \
+                        or part_lower.endswith('/part_sr_jak_icequeen') \
+                        or part_lower.endswith('/part_sr_hyp_woodblocks'):
+                    return 'MATERIAL'
+
+                elif 'frontsight' in part_lower:
+                    return 'FRONT SIGHT'
+
+                elif 'slidecap' in part_lower:
+                    return 'CAPS'
+
+                elif 'underbarrel' in part_lower:
+                    return 'UNDERBARREL TYPE'
+
+                elif 'magazine' in part_lower or '_mag_' in part_lower:
+                    return 'MAGAZINE'
+
+                elif 'thewave' in part_name:
+                    return 'TK WAVE'
+
+                elif '_sight_' in part_name:
+                    return 'SIGHT'
+
+                elif part_lower.endswith('_boomsickle'):
+                    return 'BOOM SICKLE'
+
+                elif part_lower.endswith('_trigger_fingerbiter') \
+                        or part_lower.endswith('_trigger_hellwalker'):
+                    return 'BODY ACCESSORY'
+
+                elif part_lower.endswith('/part_ar_cov_scopemount'):
+                    return 'RAIL'
+
+                elif part_lower.endswith('/part_sg_jak_body') \
+                        or part_lower.endswith('/part_ps_mal_body') \
+                        or part_lower.endswith('/part_ps_vla_body'):
+                    return 'BODY'
+
+                break
+
+        return None
+
+    def get_parts_category_name(self, part_names, balance_name, cat_idx):
+        """
+        Given a list of `part_names`, figure out the most reasonable category name to
+        use for those parts.  `balance_name` and `cat_idx` are used for some hardcoded
+        tiebreakers, when we can't auto-determine it.
+        """
+
+        # First up: if we're NOT dealing with a weapon, we're using some hardcoded
+        # values, 'cause it's super annoying otherwise
+        if '/Shield/' in balance_name or '/Shields/' in balance_name:
+            return self.cats_shields[cat_idx]
+        elif '/GrenadeMods/' in balance_name or '/Grenade/' in balance_name:
+            return self.cats_grenades[cat_idx]
+        elif '/ClassMods/' in balance_name or '/CM/' in balance_name:
+            return self.cats_coms[cat_idx]
+        elif '/Artifacts/' in balance_name:
+            return self.cats_artifacts[cat_idx]
+
+        # Construct a sort of label histogram
+        valid_labels = {}
+        for part_name in part_names:
+            label = self.guess_part_category_name(part_name)
+            if label:
+                if label in valid_labels:
+                    valid_labels[label] += 1
+                else:
+                    valid_labels[label] = 1
+
+        # Pick the most-used one
+        label_text = None
+        label_max = -1
+        contention = False
+        for label, count in valid_labels.items():
+            if count > label_max:
+                contention = False
+                label_max = count
+                label_text = label
+            elif count == label_max:
+                contention = True
+
+        # Resolve some contentions with hard-coded values, if we can
+        if contention:
+            if balance_name == '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf' and cat_idx == 1:
+                # BODY ACCESSORY vs. BARREL ACCESSORY
+                contention = False
+                label_text = 'BODY ACCESSORY'
+            elif balance_name == '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Ogre/Balance/Balance_AR_VLA_Ogre' and cat_idx == 10:
+                # IRON SIGHTS vs. RAIL
+                contention = False
+                label_text = 'RAIL'
+
+        # Return
+        if contention:
+            return None
+        else:
+            return label_text
+
+    def get_extra_anoints(self, balance_name):
+        """
+        Given a `balance_name`, return a list of tuples, each with two elements:
+          1) The GPartExpansion object providing extra anointments (or None)
+          2) A list of anointments which that GPartExpansion is adding to the object.
+        """
+
+        # First, if we haven't read in the GPartExpansion data and created our lookup
+        # object, do that.
+        if not self.balance_to_extra_anoints:
+
+            self.balance_to_extra_anoints = {}
+
+            for expansion_name in [
+                    '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Raid1',
+                    '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Shields_Raid1',
+                    '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Raid1',
+                    # These objects do exist, but they don't actually add any parts, so whatever.
+                    # The BloodyHarvest ones *do* add them, but only during the event, so we're ignoring
+                    # those too.
+                    #'/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/GPartExpansion_Grenades_BloodyHarvest',
+                    #'/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/GPartExpansion_Shields_BloodyHarvest',
+                    #'/Game/PatchDLC/BloodyHarvest/Gear/_Design/_GearExtension/GParts/GPartExpansion_Weapons_BloodyHarvest',
+                    #'/Game/PatchDLC/Dandelion/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Dandelion',
+                    #'/Game/PatchDLC/Dandelion/Gear/_GearExtension/GParts/GPartExpansion_Shields_Dandelion',
+                    #'/Game/PatchDLC/Dandelion/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Dandelion',
+                    #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Hibiscus',
+                    #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Shields_Hibiscus',
+                    #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Hibiscus',
+                    ]:
+
+                # Construct a list of anointments which this GPartExpansion provides
+                extra_anoints = []
+                expansion_data = self.get_exports(expansion_name, 'InventoryGenericPartExpansionData')[0]
+                for part in expansion_data['GenericParts']['Parts']:
+                    extra_anoints.append(part['PartData'][1])
+
+                # Grab a list of balance collections which define the gear this expansion acts on.
+                bal_collections = [expansion_data['InventoryBalanceCollection'][1]]
+                for (extra, extra_data) in self.get_refs_to_data(bal_collections[0]):
+                    if extra_data \
+                            and extra_data[0]['export_type'] == 'InventoryBalanceCollectionData' \
+                            and extra_data[0]['ParentCollection'][1] == bal_collections[0]:
+                        bal_collections.append(extra)
+
+                # Now loop through all balances and populate our dict
+                for bal_collection in bal_collections:
+                    collection = self.get_exports(bal_collection, 'InventoryBalanceCollectionData')[0]
+                    if 'InventoryBalanceList' in collection:
+                        for bal in collection['InventoryBalanceList']:
+                            this_balance = bal['asset_path_name'].split('.')[0]
+                            if this_balance not in self.balance_to_extra_anoints:
+                                self.balance_to_extra_anoints[this_balance] = []
+                            self.balance_to_extra_anoints[this_balance].append((expansion_name, extra_anoints))
+
+        # Now, return the appropriate value
+        if balance_name in self.balance_to_extra_anoints:
+            return self.balance_to_extra_anoints[balance_name]
+        else:
+            return []
 
