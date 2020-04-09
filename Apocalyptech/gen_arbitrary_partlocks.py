@@ -225,7 +225,7 @@ while True:
                 for action in actions[idx].values():
                     print('{}  - {}'.format(color_actions, action.text_long()))
             elif len(cat.parts) == 1:
-                print('[-] Single Choice: {}'.format(cat.cat_name))
+                print('[-] Single Choice: {} ({})'.format(cat.cat_name, cat.parts[0][1].short))
             else:
                 if idx == 0:
                     print('[-] (no anointments)')
