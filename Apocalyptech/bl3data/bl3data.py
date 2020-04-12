@@ -304,6 +304,17 @@ class BL3Data(object):
         for ref in self.get_refs_from(obj_name):
             yield (ref, self.get_data(ref))
 
+    def get_refs_objects_by_short_name(self, short_name):
+        """
+        Find all objects in our references database whose "short" object
+        name (ie: the last path component) is `short_name`.  Requires a
+        database connection to the refs database.
+        """
+        self._connect_db()
+        self.curs.execute('select name from bl3object where name like %s',
+                (f'%/{short_name}',))
+        return [row[0] for row in self.curs.fetchall()]
+
     def datatable_lookup(self, table_name, row_name, col_name):
         """
         Given a `table_name`, `row_name`, and `col_name`, return the specified cell.
