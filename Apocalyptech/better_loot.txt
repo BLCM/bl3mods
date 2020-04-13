@@ -565,6 +565,9 @@ SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/GameData/Loot/ItemPools/Unique/I
 # Dinklebot
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)))
 
+# Loot Skritaari
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionLoot),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Hib_MinionLoot.ItemPoolList_Hib_MinionLoot,ItemPools.ItemPools[12].PoolProbability.BaseValueConstant,0,,1
+
 # Urist McEnforcer
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerUrist),/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
@@ -710,6 +713,9 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 ###
 ### Drop Pool Quantity Tweaks
 ### (some of the above statements include some quantity fixes as well)
+### Also the DLC2 entries in here largely serve to make the drops guaranteed
+### instead of just doing quantity work.  There's a lot of overlap, is
+### what I'm saying.
 ###
 
 # Anointed Alpha
@@ -848,8 +854,96 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Sha
 SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Character/BPChar_JackBot.BPChar_JackBot_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[2].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Scraptrap Prime
-SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Gideon - Class Mods
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character/BPChar_Gideon.BPChar_Gideon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character/BPChar_Gideon.BPChar_Gideon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Gideon - Legendary Guns
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer.BPChar_Zealot_Badass_Procurer_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer.BPChar_Zealot_Badass_Procurer_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Procurer - Class Mods
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer.BPChar_Zealot_Badass_Procurer_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer.BPChar_Zealot_Badass_Procurer_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Procurer - Legendary Guns
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character/BPChar_Gideon.BPChar_Gideon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character/BPChar_Gideon.BPChar_Gideon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# DJ Spinsmouth
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character/BPChar_Spinsmouth.BPChar_Spinsmouth_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character/BPChar_Spinsmouth.BPChar_Spinsmouth_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Yeti
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti.BPChar_Yeti_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti.BPChar_Yeti_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Kritchy
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy.BPChar_Hib_Hunt_Kritchy_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy.BPChar_Hib_Hunt_Kritchy_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Amach
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare.BPChar_ZealotPilfer_Child_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare.BPChar_ZealotPilfer_Child_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Empowered Scholar
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Hibiscus/Enemies/Minion/Possessed/_Design/Character/BPChar_MinionPossessed.BPChar_MinionPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Hibiscus/Enemies/Minion/Possessed/_Design/Character/BPChar_MinionPossessed.BPChar_MinionPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Tom
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro.BPChar_LostTwo_BigBro_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro.BPChar_LostTwo_BigBro_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Xam
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_ToughBro.BPChar_LostTwo_ToughBro_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_ToughBro.BPChar_LostTwo_ToughBro_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Kratch
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SlugBadass_Kratch),/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch.BPChar_SlugBadass_Kratch_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SlugBadass_Kratch),/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch.BPChar_SlugBadass_Kratch_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Eleanor and the Heart - Weapon
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character/BPChar_HeartBoss.BPChar_HeartBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character/BPChar_HeartBoss.BPChar_HeartBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Eleanor and the Heart - Emote
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character/BPChar_HeartBoss.BPChar_HeartBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character/BPChar_HeartBoss.BPChar_HeartBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Shiverous the Unscathed
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon.BPChar_Rare_Frost_Dragon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon.BPChar_Rare_Frost_Dragon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Voltborn
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotNightmareShocker_Rare),/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare.BPChar_ZealotNightmareShocker_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotNightmareShocker_Rare),/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare.BPChar_ZealotNightmareShocker_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Kukuwajack
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Hibiscus/Enemies/_Unique/Hunt_Hampton/Character/BPChar_Hib_Hunt_Hampton.BPChar_Hib_Hunt_Hampton_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Hibiscus/Enemies/_Unique/Hunt_Hampton/Character/BPChar_Hib_Hunt_Hampton.BPChar_Hib_Hunt_Hampton_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Empowered Grawn - Artifact
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Empowered Grawn - Room Decoration
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Gmork
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gmork_B_Wolf_Child),/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gmork_B_Wolf_Child),/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Fungal Gorger
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lost_Mush_Child),/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character/BPChar_Lost_Mush_Child.BPChar_Lost_Mush_Child_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lost_Mush_Child),/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character/BPChar_Lost_Mush_Child.BPChar_Lost_Mush_Child_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Wendigo
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo.BPChar_Wendigo_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo.BPChar_Wendigo_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Pain
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)

@@ -768,6 +768,15 @@ set_death_pools(mod, 'BPChar_OversphereRare01',
         )
 mod.newline()
 
+# Loot Skritaari.  There's five items in this pool, but the DLC's already lousy with
+# DLC2 legendaries, so I'm only altering the probability for this one, not the quantity.
+mod.comment('Loot Skritaari')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_MinionLoot',
+        '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Hib_MinionLoot',
+        'ItemPools.ItemPools[12].PoolProbability.BaseValueConstant',
+        1)
+mod.newline()
+
 # Some more guaranteed drops which were taken from the Week 2 event
 for (label, bpchar, obj_name) in [
         ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE'),
@@ -881,7 +890,13 @@ for char_name, idx, pools in [
 
 # Since the MH4/MT patch, a lot of bosses have 2+ items in their drop pools.  Fix those up
 # so that they drop N items to match, like Better Loot has historically done
-mod.header_lines(['Drop Pool Quantity Tweaks', '(some of the above statements include some quantity fixes as well)'])
+mod.header_lines([
+    'Drop Pool Quantity Tweaks',
+    '(some of the above statements include some quantity fixes as well)',
+    'Also the DLC2 entries in here largely serve to make the drops guaranteed',
+    'instead of just doing quantity work.  There\'s a lot of overlap, is',
+    'what I\'m saying.',
+    ])
 
 for (label, char_name, pool, quantity) in [
 
@@ -989,10 +1004,131 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             2,
             1),
         ('Scraptrap Prime',
-            'Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character',
+            '/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character',
             'BPChar_ClaptrapQueen',
             0,
             2),
+        
+        ###
+        ### DLC2 chars continue.  These are doing guaranteed drops as much as quantities;
+        ### I should maybe move these out of here?  Vincent already seems to have a 100%
+        ### drop, btw.
+        ###
+        ('Gideon - Class Mods',
+            '/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character',
+            'BPChar_Gideon',
+            0,
+            1),
+        # There's five in the legendary gun pool, but *lots* of stuff drop from it in this DLC.
+        ('Gideon - Legendary Guns',
+            '/Hibiscus/Enemies/Zealot/Badass/_Design/Character',
+            'BPChar_Zealot_Badass_Procurer',
+            1,
+            2),
+        ('Procurer - Class Mods',
+            '/Hibiscus/Enemies/Zealot/Badass/_Design/Character',
+            'BPChar_Zealot_Badass_Procurer',
+            0,
+            1),
+        # There's five in the legendary gun pool, but *lots* of stuff drop from it in this DLC.
+        ('Procurer - Legendary Guns',
+            '/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character',
+            'BPChar_Gideon',
+            1,
+            2),
+        ('DJ Spinsmouth',
+            '/Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character',
+            'BPChar_Spinsmouth',
+            0,
+            1),
+        ('Yeti',
+            '/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character',
+            'BPChar_Yeti',
+            0,
+            1),
+        ('Kritchy',
+            '/Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character',
+            'BPChar_Hib_Hunt_Kritchy',
+            0,
+            1),
+        ('Amach',
+            '/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character',
+            'BPChar_ZealotPilfer_Child_Rare',
+            0,
+            1),
+        ('Empowered Scholar',
+            '/Hibiscus/Enemies/Minion/Possessed/_Design/Character',
+            'BPChar_MinionPossessed',
+            0,
+            1),
+        # Tom and Xam drop the exact same things, so we'd expect 2x Souldrenders in total.  Whatever.
+        ('Tom',
+            '/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character',
+            'BPChar_LostTwo_BigBro',
+            1,
+            1),
+        ('Xam',
+            '/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character',
+            'BPChar_LostTwo_ToughBro',
+            1,
+            1),
+        # This is just cosmetics, but whatever.
+        ('Kratch',
+            '/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character',
+            'BPChar_SlugBadass_Kratch',
+            1,
+            1),
+        ('Eleanor and the Heart - Weapon',
+            '/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character',
+            'BPChar_HeartBoss',
+            0,
+            1),
+        ('Eleanor and the Heart - Emote',
+            '/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character',
+            'BPChar_HeartBoss',
+            1,
+            1),
+        ('Shiverous the Unscathed',
+            '/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character',
+            'BPChar_Rare_Frost_Dragon',
+            0,
+            1),
+        ('Voltborn',
+            '/Hibiscus/Enemies/_Unique/Rare_Shocker/Character',
+            'BPChar_ZealotNightmareShocker_Rare',
+            0,
+            1),
+        # Data only has Kukuwajack dropping Frozen Devil, but SparkCharacterLoadedEntry682 adds Anarchy
+        ('Kukuwajack',
+            '/Hibiscus/Enemies/_Unique/Hunt_Hampton/Character',
+            'BPChar_Hib_Hunt_Hampton',
+            0,
+            2),
+        ('Empowered Grawn - Artifact',
+            '/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character',
+            'BPChar_LunaticPossessed',
+            0,
+            1),
+        ('Empowered Grawn - Room Decoration',
+            '/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character',
+            'BPChar_LunaticPossessed',
+            1,
+            1),
+        ('Gmork',
+            '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character',
+            'BPChar_Gmork_B_Wolf_Child',
+            0,
+            1),
+        ('Fungal Gorger',
+            '/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character',
+            'BPChar_Lost_Mush_Child',
+            0,
+            1),
+        ('Wendigo',
+            '/Hibiscus/Enemies/Wendigo/Design/Character',
+            'BPChar_Wendigo',
+            1,
+            1),
         ]:
     mod.comment(label)
     full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)

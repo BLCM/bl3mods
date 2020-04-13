@@ -79,9 +79,36 @@ mod.newline()
 # TODO: I think Brood Mother (Pyre of Stars) needs something similar.  GBX
 # has said that Brood Mother's spawn actually depends on killing mobs outside
 # her lair, so I should look into that...
-mod.comment('Individual Spawn rates')
+mod.header('Individual Spawn rates')
+
+mod.comment('Wick and Warty')
 mod.reg_hotfix(Mod.LEVEL, 'Towers_P',
         '/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.OakMissionRareSpawner_VicAndWarty',
+        'PercentChanceToSpawn',
+        BVCF(bvc=100))
+mod.newline()
+
+mod.comment('Amach')
+mod.reg_hotfix(Mod.LEVEL, 'Village_P',
+        '/Hibiscus/Maps/Village/Village_Combat.Village_Combat:PersistentLevel.OakMissionRareSpawner_1',
+        'PercentChanceToSpawn',
+        BVCF(bvc=100))
+mod.newline()
+
+mod.comment('Fungal Gorger')
+mod.reg_hotfix(Mod.LEVEL, 'Woods_P',
+        '/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.OakMissionRareSpawner_1',
+        'PercentChanceToSpawn',
+        BVCF(bvc=100))
+mod.newline()
+
+mod.comment('Shiverous the Unscathed and Voltborn (not sure which is which)')
+mod.reg_hotfix(Mod.LEVEL, 'Camp_P',
+        '/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.OakMissionRareSpawner_0',
+        'PercentChanceToSpawn',
+        BVCF(bvc=100))
+mod.reg_hotfix(Mod.LEVEL, 'Camp_P',
+        '/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.OakMissionRareSpawner_1',
         'PercentChanceToSpawn',
         BVCF(bvc=100))
 mod.newline()

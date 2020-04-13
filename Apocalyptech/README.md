@@ -6,8 +6,9 @@ My BL3 Mod Workspace
 - `guaranteed_rare_spawns.txt` - Guarantees that all rare spawns will spawn
   at 100%, and that most vehicle rare spawns are much more common (about 10%
   per vehicle spawn, in the maps which have them).  The non-vehicle part is
-  actually unnecessary now, since GBX made that change permanent on their
-  end.  A few things which don't work:
+  actually unnecessary for the base game now, since GBX made that change
+  permanent on their end.  This does include DLC2 rare spawns, though, which
+  are not currently at 100% in vanilla.  A few things which don't work:
   - Brood Mother, in Pyre of Stars, apparently spawns based partially on how
     many mobs you've killed outside her lair?  Maybe just the Varkids?
   - Skagzilla's spawnrate is unaffected.
@@ -76,8 +77,7 @@ Gameplay Changes instead.)
   - Sets the rarity weights to be improved
   - Increases Eridium drop rates and quantities.
   - Guarantees specific legendary drops from nearly all the bosses which
-    have unique drops.  This has been updated for DLC1 -- DLC2 support is
-    forthcoming.
+    have unique drops.  This has been updated through DLC2.
   - Unlocks Mayhem 4 drops for the named enemies as well.  Not sure if this
     unlocks world Mayhem 4 drops or not, but you can use `expanded_legendary_pools`
     for that.

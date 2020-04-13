@@ -141,8 +141,22 @@ SparkLevelPatchEntry,(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_
 SparkLevelPatchEntry,(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,VeryRare,Value,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkLevelPatchEntry,(1,2,0,Wetlands_P),/Game/GameData/Balance/RareSpawns/Table_Async_RareSpawnRarities.Table_Async_RareSpawnRarities,SuperRare,Value,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# Individual Spawn rates
+###
+### Individual Spawn rates
+###
+
+# Wick and Warty
 SparkLevelPatchEntry,(1,1,0,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.OakMissionRareSpawner_VicAndWarty,PercentChanceToSpawn,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Amach
+SparkLevelPatchEntry,(1,1,0,Village_P),/Hibiscus/Maps/Village/Village_Combat.Village_Combat:PersistentLevel.OakMissionRareSpawner_1,PercentChanceToSpawn,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Fungal Gorger
+SparkLevelPatchEntry,(1,1,0,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.OakMissionRareSpawner_1,PercentChanceToSpawn,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Shiverous the Unscathed and Voltborn (not sure which is which)
+SparkLevelPatchEntry,(1,1,0,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.OakMissionRareSpawner_0,PercentChanceToSpawn,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkLevelPatchEntry,(1,1,0,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.OakMissionRareSpawner_1,PercentChanceToSpawn,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Rare Vehicle Spawns
