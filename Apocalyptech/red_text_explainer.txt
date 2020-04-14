@@ -785,7 +785,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIS
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen.UIStat_RedText_Omen,Text,0,,[Flavor]VIII. Never turn your back on a Monster![/Flavor] (reload shoots twice before exploding on impact, bullets ricochet once)
 
 # Sacrificial Lamb
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/UIStat_RedText_SacrificialLamb.UIStat_RedText_SacrificialLamb,Text,0,,[Flavor]Kali Ma Shakti de![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/UIStat_RedText_SacrificialLamb.UIStat_RedText_SacrificialLamb,Text,0,,[Flavor]Kali Ma Shakti de![/Flavor] (all effects on card)
 
 # Shocker
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker.UIStat_RedText_Shocker,Text,0,,[Flavor]Surprise![/Flavor] ([shock]shock[/shock] orb splits into 3 orbs horizontally)

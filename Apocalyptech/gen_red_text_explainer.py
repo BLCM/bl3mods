@@ -1257,7 +1257,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Sacrificial Lamb",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/UIStat_RedText_SacrificialLamb',
             "Kali Ma Shakti de!",
-            "unknown"),
+            ON_CARD),
         ("Shocker",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker',
             "Surprise!",
