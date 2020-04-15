@@ -1021,8 +1021,8 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             1),
         # There's five in the legendary gun pool, but *lots* of stuff drop from it in this DLC.
         ('Gideon - Legendary Guns',
-            '/Hibiscus/Enemies/Zealot/Badass/_Design/Character',
-            'BPChar_Zealot_Badass_Procurer',
+            '/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character',
+            'BPChar_Gideon',
             1,
             2),
         ('Procurer - Class Mods',
@@ -1032,8 +1032,8 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             1),
         # There's five in the legendary gun pool, but *lots* of stuff drop from it in this DLC.
         ('Procurer - Legendary Guns',
-            '/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character',
-            'BPChar_Gideon',
+            '/Hibiscus/Enemies/Zealot/Badass/_Design/Character',
+            'BPChar_Zealot_Badass_Procurer',
             1,
             2),
         ('DJ Spinsmouth',
