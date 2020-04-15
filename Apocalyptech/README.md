@@ -92,6 +92,13 @@ Gameplay Changes instead.)
   randomizes all mission rewards to pull from the appropriate legendary
   pools instead of having fixed gear.  Customization rewards are
   left alone.  Recommended to be used with Expanded Legendary Pools.
+- `dlc_loot_de-emphasizer.txt` - Both of the story DLCs so far (Moxxi's Heist
+  and Marriage of Wainwright and Hammerlock) have had specific legendary drop
+  pools which drop pretty frequently throughout their campaigns, so you see the
+  same smallish pool of loot quire frequently (at least when using Better Loot
+  or the like).  This largely takes away those specific drops in favor of
+  the usual world drops.  Intended to be used alongside Expanded Legendary
+  Pools.  *Note: not yet really tested much.*
 - `vehicle_unlocks.txt` - This unlocks most vehicle parts/skins as soon as
   the associated vehicle becomes available.  Note that wheel types aren't
   included here, since those are spawned a bit differently by the game, though

@@ -43,6 +43,9 @@ better_loot
 boss_drop_randomizer
 mission_reward_randomizer
 
+# Get rid of DLC-specific world drops
+dlc_loot_de-emphasizer
+
 # Vehicle Unlocks
 vehicle_unlocks
 
