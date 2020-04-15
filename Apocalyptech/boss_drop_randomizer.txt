@@ -18,6 +18,11 @@
 
 prefix: BossDropRando
 
+# Amach
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat.ItemPool_Hibiscus_UnseenThreat,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat.ItemPool_Hibiscus_UnseenThreat,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat.ItemPool_Hibiscus_UnseenThreat,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
+
 # Anointed Alpha
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -224,6 +229,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty02),/Game/PatchDLC/Raid1/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Thumper_DJBlood.ItemPoolExpansion_Thumper_DJBlood,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Thumper_DJBlood.ItemPoolExpansion_Thumper_DJBlood,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"'
 
+# DJ Spinsmouth
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SFForce.ItemPool_Hibiscus_SFForce,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SFForce.ItemPool_Hibiscus_SFForce,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SFForce.ItemPool_Hibiscus_SFForce,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+
 # Demoskaggon
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -256,6 +266,21 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/PatchDLC/Raid1/Gam
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_UnleashTheDragon_ElDragonJr.ItemPoolExpansion_UnleashTheDragon_ElDragonJr,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_UnleashTheDragon_ElDragonJr.ItemPoolExpansion_UnleashTheDragon_ElDragonJr,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_UnleashTheDragon_ElDragonJr.ItemPoolExpansion_UnleashTheDragon_ElDragonJr,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+
+# Eleanor and the Heart
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_LoveDrill.ItemPool_Hibiscus_LoveDrill,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_LoveDrill.ItemPool_Hibiscus_LoveDrill,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeartBoss),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_LoveDrill.ItemPool_Hibiscus_LoveDrill,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
+# Empowered Grawn
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy.ItemPool_Hibiscus_Lunacy,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy.ItemPool_Hibiscus_Lunacy,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy.ItemPool_Hibiscus_Lunacy,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"'
+
+# Empowered Scholar
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
 
 # Evil St. Lawrence
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerBadass_Lawrence),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence.ItemPool_StLawrence,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -342,6 +367,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/G
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
 
+# Fungal Gorger
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lost_Mush_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Mutant.ItemPool_Hibiscus_Mutant,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lost_Mush_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Mutant.ItemPool_Hibiscus_Mutant,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lost_Mush_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Mutant.ItemPool_Hibiscus_Mutant,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
 # GenIVIV
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -367,6 +397,35 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/Ga
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 
+# Gideon
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+
 # Gigamind
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -377,6 +436,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/PatchDLC/Raid1/Game
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Spidermind_Gigamind.ItemPoolExpansion_Spidermind_Gigamind,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Spidermind_Gigamind.ItemPoolExpansion_Spidermind_Gigamind,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Spidermind_Gigamind.ItemPoolExpansion_Spidermind_Gigamind,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
+# Gmork
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gmork_B_Wolf_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_GMork.ItemPool_Hibiscus_Hunt_GMork,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gmork_B_Wolf_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_GMork.ItemPool_Hibiscus_Hunt_GMork,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Gmork_B_Wolf_Child),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_GMork.ItemPool_Hibiscus_Hunt_GMork,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
 
 # Gorgeous Armada
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkBadass_Giorgio),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_GorgeousArmada.ItemPool_GorgeousArmada,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -550,6 +614,19 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt.ItemPoolExpansion_KillaVolt_Ninevolt,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt.ItemPoolExpansion_KillaVolt_Ninevolt,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
 
+# Kritchy
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Mothman.ItemPool_Hibiscus_Hunt_Mothman,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Mothman.ItemPool_Hibiscus_Hunt_Mothman,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Mothman.ItemPool_Hibiscus_Hunt_Mothman,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
+# Kukuwajack
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Hampton),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton.ItemPool_Hibiscus_Hunt_Hampton,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+
 # Lagromar
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkDemon),/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot.ItemPool_DemonDark_DemonTink_Loot,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkDemon),/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot.ItemPool_DemonDark_DemonTink_Loot,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -676,6 +753,35 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/PatchDLC/Raid1/GameData/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Westergun_TheBoo.ItemPoolExpansion_Westergun_TheBoo,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Westergun_TheBoo.ItemPoolExpansion_Westergun_TheBoo,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
 
+# Procurer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass_Procurer),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary.ItemPool_Hibiscus_Guns_Legendary,BalancedItems.BalancedItems[4].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+
 # Psychobillies
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01a),/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls.ItemPool_ElectricBanjo_GoreGirls,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01a),/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls.ItemPool_ElectricBanjo_GoreGirls,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -744,6 +850,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/PatchDLC/Raid1
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+
+# Shiverous the Unscathed
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hydrafrost.ItemPool_Hibiscus_Hydrafrost,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hydrafrost.ItemPool_Hibiscus_Hydrafrost,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hydrafrost.ItemPool_Hibiscus_Hydrafrost,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 
 # Skag of Survival
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -832,6 +943,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/Gam
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+
+# Tom
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
 # Tremendous Rex
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_SlaughterBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss.ItemPool_CreatureSlaughterBoss,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -935,6 +1051,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/Re
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries,BalancedItems.BalancedItems[10].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries,BalancedItems.BalancedItems[10].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
+# Vincent
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shield_initiative.ItemPool_Hibiscus_Shield_initiative,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shield_initiative.ItemPool_Hibiscus_Shield_initiative,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shield_initiative.ItemPool_Hibiscus_Shield_initiative,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
+# Voltborn
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotNightmareShocker_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shocker.ItemPool_Hibiscus_Shocker,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotNightmareShocker_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shocker.ItemPool_Hibiscus_Shocker,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotNightmareShocker_Rare),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shocker.ItemPool_Hibiscus_Shocker,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+
 # Warden
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -953,6 +1079,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Rare01),/Game/PatchDLC/Raid1/GameDa
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+
+# Wendigo
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SparkyBoom.ItemPool_Hibiscus_SparkyBoom,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SparkyBoom.ItemPool_Hibiscus_SparkyBoom,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SparkyBoom.ItemPool_Hibiscus_SparkyBoom,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
 # Wick
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Portals_VicAndWarty.ItemPool_Portals_VicAndWarty,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -1020,6 +1151,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Re-En
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries,BalancedItems.BalancedItems[10].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries,BalancedItems.BalancedItems[10].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries,BalancedItems.BalancedItems[10].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
+# Xam
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
+# Yeti
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 
 # Remove partlock attempt for Anointed Alpha drop
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,PartSelectionOverrides,0,,()

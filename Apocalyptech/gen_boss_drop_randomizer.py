@@ -43,6 +43,9 @@ for drop_type in leg_pools.keys():
 
 # Here we go!
 for (label, char_name, pools) in sorted([
+        ('Amach', 'BPChar_ZealotPilfer_Child_Rare', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat', [SR]),
+            ]),
         ('Anointed Alpha', 'BPChar_AnointedJoe', [
             ('/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe', [PS]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_AnointedJoe', [AR, PS]),
@@ -114,6 +117,9 @@ for (label, char_name, pools) in sorted([
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Thumper_DJBlood', [SG]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Thumper_DJBlood', [GM, AF]),
             ]),
+        ('DJ Spinsmouth', 'BPChar_Spinsmouth', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SFForce', [SM]),
+            ]),
         ('Demoskaggon', 'BPChar_Skag_Rare01', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon', [SR, SR, SM]),
             ]),
@@ -123,6 +129,15 @@ for (label, char_name, pools) in sorted([
         ('El Dragon Jr.', 'BPChar_Goliath_Rare03', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr', [AF]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_UnleashTheDragon_ElDragonJr', [SH, GM]),
+            ]),
+        ('Eleanor and the Heart', 'BPChar_HeartBoss', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_LoveDrill', [PS]),
+            ]),
+        ('Empowered Grawn', 'BPChar_LunaticPossessed', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy', [AF]),
+            ]),
+        ('Empowered Scholar', 'BPChar_MinionPossessed', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift', [SH]),
             ]),
         ('Evil St. Lawrence', 'BPChar_EnforcerBadass_Lawrence', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence', [SM]),
@@ -148,6 +163,9 @@ for (label, char_name, pools) in sorted([
         ('Freddie the Traitor', 'BPChar_TraitorEddie', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie', [SR]),
             ]),
+        ('Fungal Gorger', 'BPChar_Lost_Mush_Child', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Mutant', [AR]),
+            ]),
         ('General Traunt', 'BPChar_HeavyDarkTraunt', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt', [SG, AF, PS]),
             ]),
@@ -155,9 +173,16 @@ for (label, char_name, pools) in sorted([
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV', [SH]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_MessyBreakup_GeneVIV', [SG, SM, GM]),
             ]),
+        ('Gideon', 'BPChar_Gideon', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus', [CM, CM, CM, CM]),
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary', [SG, AR, SM, SG, SG]),
+            ]),
         ('Gigamind', 'BPChar_NogChipHolder', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind', [SM]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Spidermind_Gigamind', [SH, PS]),
+            ]),
+        ('Gmork', 'BPChar_Gmork_B_Wolf_Child', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_GMork', [SG]),
             ]),
         ('Gorgeous Armada', 'BPChar_TinkBadass_Giorgio', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_GorgeousArmada', [SG]),
@@ -221,6 +246,13 @@ for (label, char_name, pools) in sorted([
             ('/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt', [SM]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt', [SH, GM]),
             ]),
+        ('Kritchy', 'BPChar_Hib_Hunt_Kritchy', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Mothman', [AR]),
+            ]),
+        ('Kukuwajack', 'BPChar_Hib_Hunt_Hampton', [
+            # SparkCharacterLoadedEntry682 adds Anarchy; if that hotfix ever goes away, the SG here won't work anymore
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Hampton', [PS, SG]),
+            ]),
         ('Lagromar', 'BPChar_TinkDemon', [
             ('/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot', [SG]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_DemonDark_DemonTink_Loot', [PS, SM]),
@@ -267,6 +299,10 @@ for (label, char_name, pools) in sorted([
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo', [SM]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Westergun_TheBoo', [SH, SG]),
             ]),
+        ('Procurer', 'BPChar_Zealot_Badass_Procurer', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus', [CM, CM, CM, CM]),
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Guns_Legendary', [SG, AR, SM, SG, SG]),
+            ]),
         # Just doing one Psychobillie here
         ('Psychobillies', 'BPChar_Punk_Bounty01a', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls', [AF]),
@@ -288,6 +324,9 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Sera of Supremacy', 'BPChar_Guardian_TrialBoss', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian', [CM, CM, CM, CM]),
+            ]),
+        ('Shiverous the Unscathed', 'BPChar_Rare_Frost_Dragon', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hydrafrost', [PS]),
             ]),
         ('Skag of Survival', 'BPChar_Skag_TrialBoss', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag', [CM, CM, CM]),
@@ -320,6 +359,9 @@ for (label, char_name, pools) in sorted([
         ('Tink of Cunning', 'BPChar_Tink_TrialBoss', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', [CM, CM, CM, CM]),
             ]),
+        ('Tom', 'BPChar_LostTwo_BigBro', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender', [AR]),
+            ]),
         ('Tremendous Rex', 'BPChar_Saurian_SlaughterBoss', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CreatureSlaughterBoss', [PS, SR]),
             ]),
@@ -342,12 +384,21 @@ for (label, char_name, pools) in sorted([
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', [SH, SH, SH, SH, None]),
             ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
             ]),
+        ('Vincent', 'BPChar_Vincent', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shield_initiative', [SH]),
+            ]),
+        ('Voltborn', 'BPChar_ZealotNightmareShocker_Rare', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Shocker', [SG]),
+            ]),
         ('Warden', 'BPChar_Goliath_CageArena', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden', [HW]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Freeman_Warden', [PS, AR]),
             ]),
         ('Warty', 'BPChar_Tink_Rare01', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty', [PS, GM]),
+            ]),
+        ('Wendigo', 'BPChar_Wendigo', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SparkyBoom', [AR]),
             ]),
         ('Wick', 'BPChar_PsychoRare03', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Portals_VicAndWarty', [SG]),
@@ -357,6 +408,12 @@ for (label, char_name, pools) in sorted([
         ('Wotan (all parts)', 'BPChar_BehemothRaid', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool', [PS, SM, SG, SM, SH, SH, SH, SH, None, None]),
             ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
+            ]),
+        ('Xam', 'BPChar_LostTwo_ToughBro', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender', [AR]),
+            ]),
+        ('Yeti', 'BPChar_Yeti', [
+            ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti', [PS]),
             ]),
         ]):
 
