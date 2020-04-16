@@ -103,6 +103,9 @@ no_projected_shields
 # Disable non-legendary/unique slam artifacts
 no_slam_artifacts
 
+# Only spawn Atlas grenads (using this on my Zane)
+only_atlas_grenades
+
 ###
 ### Customization Tweaks
 ###

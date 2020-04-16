@@ -164,6 +164,9 @@ being used, which gives you far more Eridium than usual.
   to work slams into my ordinary BL3 combat, and this way there's less
   junk gear to dispose of immediately.  Perhaps someday GBX will overhaul
   how slamming works in BL3.
+- `only_atlas_grenades.txt` - Non-legendary/unique grenades should always be
+  Atlas.  Using this on my Zane, where all I really wanted were homing
+  grenades.
 - `gen_arbitrary_partlocks.py` - This is actually just an interactive
   CLI-based mod-generation script which, when given an item/weapon balance as
   the one argument, will let you choose parts to either partlock or exclude
