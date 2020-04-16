@@ -1219,6 +1219,7 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill',
             "To have and to hold...",
             "20% chance to deal double damage as shock"),
+        # TODO: doesn't actually show up?  Should apply to both legendary and non-legendary versions
         ("Short Stick",
             '/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick',
             "A small price to pay.",
