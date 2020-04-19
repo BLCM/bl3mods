@@ -184,7 +184,8 @@ extra_anoints = data.get_extra_anoints(balance_name)
 actions = [{}]
 
 # Grab the PartSet, too
-partset = data.get_data(balance[0]['PartSetData'][1])
+partset_name = balance[0]['PartSetData'][1]
+partset = data.get_data(partset_name)
 categories = []
 # We're putting anointments first
 categories.append(CategoryInfo(data, None, cat_name='ANOINTMENTS', extra_parts=extra_anoints))
@@ -427,6 +428,15 @@ if save_filename:
 
             else:
 
+                # Make sure this is set to use weights
+                if not partset[0]['ActorPartLists'][cat_idx-1]['bUseWeightWithMultiplePartSelection']:
+                    mod.comment('Category {}: Enable weight-based part picking'.format(cat_idx))
+                    mod.reg_hotfix(Mod.PATCH, '',
+                            partset_name,
+                            'ActorPartLists.ActorPartLists[{}].bUseWeightWithMultiplePartSelection'.format(cat_idx-1),
+                            'True')
+                    mod.newline()
+
                 # Regular parts
                 # TODO: If we ever get GPartExpansion objects which do more than add expansions,
                 # well have to support it here, too.
@@ -440,14 +450,14 @@ if save_filename:
 
                     # Now write out
                     if num in always_vals:
-                        mod.comment('Category {}: Always choose {}'.format(cat_idx+1, part.short))
+                        mod.comment('Category {}: Always choose {}'.format(cat_idx, part.short))
                         mod.reg_hotfix(Mod.PATCH, '',
                                 balance_name,
                                 'RuntimePartList.AllParts[{}].Weight'.format(part.idx),
                                 BVCF(bvc=1))
                         mod.newline()
                     elif num in never_vals:
-                        mod.comment('Category {}: Never choose {}'.format(cat_idx+1, part.short))
+                        mod.comment('Category {}: Never choose {}'.format(cat_idx, part.short))
                         mod.reg_hotfix(Mod.PATCH, '',
                                 balance_name,
                                 'RuntimePartList.AllParts[{}].Weight'.format(part.idx),
