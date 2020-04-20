@@ -98,7 +98,7 @@ Gameplay Changes instead.)
   same smallish pool of loot quire frequently (at least when using Better Loot
   or the like).  This largely takes away those specific drops in favor of
   the usual world drops.  Intended to be used alongside Expanded Legendary
-  Pools.  *Note: not yet really tested much.*
+  Pools.
 - `vehicle_unlocks.txt` - This unlocks most vehicle parts/skins as soon as
   the associated vehicle becomes available.  Note that wheel types aren't
   included here, since those are spawned a bit differently by the game, though
