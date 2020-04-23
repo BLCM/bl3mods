@@ -667,6 +667,7 @@ LVL_TO_ENG = {
         'BloodyHarvest_P': "Heck Hole",
         'COVSlaughter_P': "Slaughter Shaft",
         'Camp_P': "Negul Neshai",
+        'Cartels_P': "Villa Ultraviolet",
         'CasinoIntro_P': "Grand Opening",
         'CityBoss_P': "Forgotten Basilica",
         'CityVault_P': "Neon Arterial",
