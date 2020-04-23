@@ -424,6 +424,7 @@ class BL3Data(object):
                         return ui_label
 
                 elif 'material' in part_lower or '_mat_' in part_lower \
+                        or part_lower.endswith('_mat') \
                         or part_lower.endswith('/part_sr_dal_worlddestroyer') \
                         or part_lower.endswith('/part_sr_hyp_masterwork') \
                         or part_lower.endswith('/part_sr_hyp_zeroforplayer') \
