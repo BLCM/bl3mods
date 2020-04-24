@@ -22,6 +22,11 @@ SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv6,SDUPrice,0,,16000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv7,SDUPrice,0,,32000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv8,SDUPrice,0,,64000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv9,SDUPrice,0,,128000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv10,SDUPrice,0,,256000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv11,SDUPrice,0,,512000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv12,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv13,SDUPrice,0,,1024000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv1,SDUPrice,0,,500
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv2,SDUPrice,0,,1000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv3,SDUPrice,0,,2000
@@ -40,6 +45,11 @@ SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv15,SD
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv16,SDUPrice,0,,1024000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv17,SDUPrice,0,,1024000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv18,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv19,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv20,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv21,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv22,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv23,SDUPrice,0,,1024000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Grenade.Table_SDU_Grenade,Lv1,SDUPrice,0,,500
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Grenade.Table_SDU_Grenade,Lv2,SDUPrice,0,,1000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Grenade.Table_SDU_Grenade,Lv3,SDUPrice,0,,2000
@@ -56,6 +66,11 @@ SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv5,S
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv6,SDUPrice,0,,16000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv7,SDUPrice,0,,32000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv8,SDUPrice,0,,64000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv9,SDUPrice,0,,128000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv10,SDUPrice,0,,256000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv11,SDUPrice,0,,512000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv12,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv13,SDUPrice,0,,1024000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_LostLoot.Table_SDU_LostLoot,Lv1,SDUPrice,0,,500
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_LostLoot.Table_SDU_LostLoot,Lv2,SDUPrice,0,,1000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_LostLoot.Table_SDU_LostLoot,Lv3,SDUPrice,0,,2000
@@ -96,4 +111,9 @@ SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_Snipe
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv6,SDUPrice,0,,16000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv7,SDUPrice,0,,32000
 SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv8,SDUPrice,0,,64000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv9,SDUPrice,0,,128000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv10,SDUPrice,0,,256000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv11,SDUPrice,0,,512000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv12,SDUPrice,0,,1024000
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv13,SDUPrice,0,,1024000
 

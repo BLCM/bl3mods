@@ -16,15 +16,15 @@ mod = Mod('cheaper_sdus.txt',
 
 for table_data in [
         'Table_SDU_AssaultRifle',
-        'Table_SDU_Backpack',
-        ('Table_SDU_Bank', 18),
+        ('Table_SDU_Backpack', 13),
+        ('Table_SDU_Bank', 23),
         'Table_SDU_Grenade',
-        'Table_SDU_Heavy',
+        ('Table_SDU_Heavy', 13),
         'Table_SDU_LostLoot',
         'Table_SDU_Pistol',
         'Table_SDU_Shotgun',
         'Table_SDU_SMG',
-        'Table_SDU_SniperRifle',
+        ('Table_SDU_SniperRifle', 13),
         ]:
     if type(table_data) == tuple:
         (table, levels) = table_data
