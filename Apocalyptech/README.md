@@ -128,9 +128,10 @@ being used, which gives you far more Eridium than usual.
   descriptions of weapon/grenade effects on the red text.  Shields, Artifacts,
   and COMs have been omitted since BL3 already lists those explicitly.
 - `maliwan_charge_time.txt` - Improves the charge time of all Maliwan
-  weapons except for Starkiller, Atomizers, and Melters, whose mechanism I
-  haven't figured out how to tweak yet.  Pistols and SMGs get a 50%
-  improvement, shotguns get 60%, and snipers will all be instant-fire.
+  weapons except for Starkiller, Ice Pick, D.N.A., Atomizers, and Melters,
+  whose mechanism I haven't figured out how to tweak yet.  Pistols and
+  SMGs get a 50% improvement, shotguns get 60%, and snipers will all be
+  instant-fire.
 
 ## Partlocks / Part Changes
 
