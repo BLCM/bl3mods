@@ -811,3 +811,51 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher
 # Unseen Threat
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/UnseenThreat/UIStat_RedText_UnseenThreat.UIStat_RedText_UnseenThreat,Text,0,,[Flavor]Taste their fear.[/Flavor] (crits ricochet 3 homing projectiles)
 
+# Backburner
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/UIStat_RedText_BackBurner.UIStat_RedText_BackBurner,Text,0,,[Flavor]We'll get to it eventually.[/Flavor] (unknown)
+
+# D.N.A.
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/UIStat_RedText_DNA.UIStat_RedText_DNA,Text,0,,[Flavor]Death cannot be contained.[/Flavor] (unknown)
+
+# Multi-tap
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/UIStat_RedText_DoubleTap.UIStat_RedText_DoubleTap,Text,0,,[Flavor]Double the fun[/Flavor] (unknown)
+
+# Kaoson
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/UIStat_RedText_Kaoson.UIStat_RedText_Kaoson,Text,0,,[Flavor]Small but packs a punch.[/Flavor] (unknown)
+
+# The Monarch
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/UIStat_RedText_Monarch.UIStat_RedText_Monarch,Text,0,,[Flavor]The deadly sting of the monarch![/Flavor] (unknown)
+
+# Plaguebearer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/UIStat_RedText_Plague.UIStat_RedText_Plague,Text,0,,[Flavor]Glad you could make it.[/Flavor] (unknown)
+
+# Reflux
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/UIStat_RedText_Reflux.UIStat_RedText_Reflux,Text,0,,[Flavor]That's gotta burn.[/Flavor] (unknown)
+
+# Sand Hawk
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/UIStat_RedText_SandHawk.UIStat_RedText_SandHawk,Text,0,,[Flavor]Wedge a pig.[/Flavor] (unknown)
+
+# Grease Trap
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/UIStat_RedText_GreaseTrap.UIStat_RedText_GreaseTrap,Text,0,,[Flavor]“EXTREMELY FLAMMABLE!”[/Flavor] (unknown)
+
+# Iceburger
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/UIStat_RedText_IceBurger.UIStat_RedText_IceBurger,Text,0,,[Flavor]90% of the flavor is under the bun.[/Flavor] (unknown)
+
+# Needle Gun
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/NeedleGun/UIStat_RedText_NeedleGun.UIStat_RedText_NeedleGun,Text,0,,[Flavor]Not your average needle.[/Flavor] (unknown)
+
+# O.P.Q. System
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/UIStat_RedText_OPQ.UIStat_RedText_OPQ,Text,0,,[Flavor]B.Y.O.B.B.[/Flavor] (unknown)
+
+# NoPewPew
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/UIStat_RedText_PewPew.UIStat_RedText_PewPew,Text,0,,[Flavor]Extra, extra spicy.[/Flavor] (unknown)
+
+# Pricker
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/UIStat_RedText_Pricker.UIStat_RedText_Pricker,Text,0,,[Flavor]What have they to say now?[/Flavor] (unknown)
+
+# Yellowcake
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UIStat_RedText_YellowCake.UIStat_RedText_YellowCake,Text,0,,[Flavor]I'm really more of a pie person.[/Flavor] (unknown)
+
+# Fish Slap
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap.UIStat_RedText_FishSlap,Text,0,,[Flavor]Say hello to my little fish![/Flavor] (unknown)
+
