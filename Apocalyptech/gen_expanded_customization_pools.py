@@ -195,6 +195,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC2_01.InvBal_CustomSkin_{shortname}_DLC2_01')
         # Citizen Science stuff (came long with DLC2)
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_CS.InvBal_CustomSkin_{shortname}_CS')
+        # Revenge of the Cartels
+        balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_47.InvBal_CustomSkin_{shortname}_47')
         mod.comment(f'{shortname} Skins')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -228,6 +230,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC2_01.InvBal_CustomHead_{shortname}_DLC2_01')
         # Citizen Science stuff (came long with DLC2)
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_CS.InvBal_CustomHead_{shortname}_CS')
+        # Revenge of the Cartels
+        balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_34.InvBal_CustomHead_{shortname}_34')
         mod.comment(f'{shortname} Heads')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -284,6 +288,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/Hibiscus/Gear/WeaponTrinkets/_Shared/Trinket_Hibiscus_02_Necrocookmicon.InvBal_Trinket_Hibiscus_02_Necrocookmicon')
     # DLC2 Email reward of some sort?  Keeping it out for now, but I'm guessing that Not Everyone actually gets it?
     #balances.append('/Game/PatchDLC/Steam/Gear/WeaponTrinkets/WeaponTrinket_SteamPunk.InvBal_WeaponTrinket_SteamPunk')
+    # Revenge of the Cartels
+    balances.append('/Game/PatchDLC/Event2/Gear/_Design/WeaponTrinkets/WeaponTrinket_Cartels_1.InvBal_WeaponTrinket_Cartels_1')
     mod.comment('Weapon Trinkets')
     set_pool(mod, '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot.ItemPool_Customizations_WeaponTrinkets_Loot', balances)
     mod.newline()
@@ -317,6 +323,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC2 - Hibiscus - TODO: figure out if any of these should be blacklisted
     for num in [1, 2, 3, 4]:
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC2_{num:02d}.InvBal_ECHOTheme_DLC2_{num:02d}')
+    # Revenge of the Cartels
+    balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_44.InvBal_ECHOTheme_44')
     mod.comment('ECHO Skins')
     set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
     mod.newline()
@@ -343,6 +351,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC2 - Hibiscus - TODO: Figure out if any of these should be on a blacklist
     for num in range(1, 9):
         balances.append(f'/Game/PatchDLC/Hibiscus/Customizations/RoomDeco/RoomDeco_DLC2_{num}.InvBal_RoomDeco_DLC2_{num}')
+    # Revenge of the Cartels
+    balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_3.InvBal_RoomDecoration_Event2_3')
     mod.comment('Room Decorations')
     set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
     mod.newline()
