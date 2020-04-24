@@ -238,12 +238,16 @@ put together a mod to do that, though, 'cause it hardly seems worth it.
 - `broken_hearts_enable.txt` - This can be used to enable the Broken Hearts
   event after it's officially closed down.  Includes some related balance
   changes which were active during the event.
+- `cartels_enable.txt` - This can be used to enable the Revenge of the
+  Cartels event after it's officially closed down.  This includes a bugfix
+  which was hotfixed along with the event launch.
 
 ## Main Menu
 
 - `main_menu_*.txt` - Just a simple tweak to set the main menu to any of
-  the known visual changes.  Right now that's just normal, Halloween, and
-  Christmas.  No actual gameplay changes or anything, it's pretty silly.
+  the known visual changes.  Right now that is: normal, Halloween,
+  Christmas, and Cartels.  No actual gameplay changes or anything, it's
+  pretty silly.
 
 ## Mod-Testing Mods
 

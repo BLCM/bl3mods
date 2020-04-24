@@ -7,6 +7,7 @@ for event, menunum in [
         ('normal', 0),
         ('halloween', 3),
         ('christmas', 4),
+        ('cartels', 5),
         ]:
 
     mod_filename = 'main_menu_{}.txt'.format(event)
