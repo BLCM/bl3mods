@@ -49,6 +49,10 @@ dlc_loot_de-emphasizer
 # Vehicle Unlocks
 vehicle_unlocks
 
+# Mayhem 2.0 Scaling Changes
+mayhem2_no_drop_scaling
+mayhem2_decreased_enemy_scaling
+
 ###
 ### Economy-related mods
 ###

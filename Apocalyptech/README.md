@@ -106,6 +106,19 @@ Gameplay Changes instead.)
   Flesh-Eater, Skagzilla, and any Technical in Sandblast Scar.  Vehicles will
   pull from their full list of parts/skins when spawning (minus wheels), so
   variety is much increased, at the cost of stronger themeing per zone.
+- `mayhem2_no_drop_scaling.txt` - This nerfs the Mayhem 2.0 enhanced drop
+  weighting so that Mayhem mode no longer provides any improved drops.  This
+  is because in conjunction with Better Loot, it gets utterly absurd, and
+  I'm honestly fine with the drops I get from Better Loot.  So, a rare
+  example of a plain and simple nerf in one of my mods!
+- `mayhem2_decreased_enemy_scaling.txt` - Conversely, I really dislike
+  bullet-sponginess, and would rather just have fun with the various
+  Mayhem 2.0 modifiers without having to worry about optimizing DPS.  This
+  severely cuts back on enemy health/shield/armor buffs in all Mayhem 2.0
+  modes.  **TODO:** I *would* actually like to figure out how to nerf
+  Mayhem-enhanced weapons so that they don't become super OP, but I haven't
+  figured that out yet.  I may end up adjusting this to suit, if I'm
+  finding things too easy.
 
 ## Economy-related Mods
 
