@@ -37,6 +37,8 @@ for trigger_method, trigger_names in [
             '/Game/Vehicles/Outrunner/Vehicle/Vehicle_Outrunner',
             'AspectData_Outrunner_Hover',
             '/Game/Vehicles/_Shared/Effects/Data/AspectData_Outrunner_Hover',
+            # Something new to try?
+            'MatchAll',
             ]),
         (Mod.CHAR, [
             'WT_Outrunner_HoverWheels',
@@ -44,6 +46,8 @@ for trigger_method, trigger_names in [
             'Vehicle_Outrunner_HoverWheels',
             'Vehicle_Outrunner',
             'AspectData_Outrunner_Hover',
+            # Something new to try?
+            'MatchAll',
             ]),
         (Mod.POST, [
             # These are *all* longshots, no idea what this hotfix type would even be
