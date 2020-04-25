@@ -752,7 +752,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/UIStat_RedText_Hydrafrost.UIStat_RedText_Hydrafrost,Text,0,,[Flavor]Tell your heads to chill.[/Flavor] (after kill, second shot deals 200% [shock]shock[/shock] or [fire]incendiary[/fire] damage for 6 secs)
 
 # Kaleidoscope
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/UIStat_RedText_Kaleidoscope.UIStat_RedText_Kaleidoscope,Text,0,,[Flavor]I can fly twice as high, take a look...[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/UIStat_RedText_Kaleidoscope.UIStat_RedText_Kaleidoscope,Text,0,,[Flavor]I can fly twice as high, take a look...[/Flavor] (every 3rd shot will be an elemental amp shot, ADS changes element)
 
 # Little Yeeti
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/UIStat_RedText_LittleYeeti.UIStat_RedText_LittleYeeti,Text,0,,[Flavor]Yeet 'em if you got 'em![/Flavor] (multiple projectiles, chance to knockback enemy)
@@ -776,7 +776,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhS
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/UIStat_RedText_Anarchy.UIStat_RedText_Anarchy,Text,0,,[Flavor]The stacks... THE STACKS![/Flavor] (every auto reload or kill grants 30% damage and reduces accuracy, 10 stacks max)
 
 # Firecracker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/UIStat_RedText_Firecracker.UIStat_RedText_Firecracker,Text,0,,[Flavor]Ooooh. Aaaah.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/UIStat_RedText_Firecracker.UIStat_RedText_Firecracker,Text,0,,[Flavor]Ooooh. Aaaah.[/Flavor] (shoots cluster of 12 fireworks which spiral randomly and explode into hearts)
 
 # Insider
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider.UIStat_RedText_Insider,Text,0,,[Flavor]You can run, but you can't hide[/Flavor] (instant fire, shots penetrate enemies)
@@ -812,50 +812,50 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/UnseenThreat/UIStat_RedText_UnseenThreat.UIStat_RedText_UnseenThreat,Text,0,,[Flavor]Taste their fear.[/Flavor] (crits ricochet 3 homing projectiles)
 
 # Backburner
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/UIStat_RedText_BackBurner.UIStat_RedText_BackBurner,Text,0,,[Flavor]We'll get to it eventually.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/UIStat_RedText_BackBurner.UIStat_RedText_BackBurner,Text,0,,[Flavor]We'll get to it eventually.[/Flavor] (shoots orb which spawns singularity with child MIRV orbs)
 
 # D.N.A.
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/UIStat_RedText_DNA.UIStat_RedText_DNA,Text,0,,[Flavor]Death cannot be contained.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/UIStat_RedText_DNA.UIStat_RedText_DNA,Text,0,,[Flavor]Death cannot be contained.[/Flavor] (fires paired swirling random-element projectiles connected by beam)
 
 # Multi-tap
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/UIStat_RedText_DoubleTap.UIStat_RedText_DoubleTap,Text,0,,[Flavor]Double the fun[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/UIStat_RedText_DoubleTap.UIStat_RedText_DoubleTap,Text,0,,[Flavor]Double the fun[/Flavor] (all effects on card)
 
 # Kaoson
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/UIStat_RedText_Kaoson.UIStat_RedText_Kaoson,Text,0,,[Flavor]Small but packs a punch.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/UIStat_RedText_Kaoson.UIStat_RedText_Kaoson,Text,0,,[Flavor]Small but packs a punch.[/Flavor] (fires Torgue-like sticky shots)
 
 # The Monarch
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/UIStat_RedText_Monarch.UIStat_RedText_Monarch,Text,0,,[Flavor]The deadly sting of the monarch![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/UIStat_RedText_Monarch.UIStat_RedText_Monarch,Text,0,,[Flavor]The deadly sting of the monarch![/Flavor] (shotgun AR with bipod)
 
 # Plaguebearer
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/UIStat_RedText_Plague.UIStat_RedText_Plague,Text,0,,[Flavor]Glad you could make it.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/UIStat_RedText_Plague.UIStat_RedText_Plague,Text,0,,[Flavor]Glad you could make it.[/Flavor] (main orb creates singularity on hit, and spawns additional homing orbs enroute)
 
 # Reflux
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/UIStat_RedText_Reflux.UIStat_RedText_Reflux,Text,0,,[Flavor]That's gotta burn.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/UIStat_RedText_Reflux.UIStat_RedText_Reflux,Text,0,,[Flavor]That's gotta burn.[/Flavor] (creates [corrosive]corrosive[/corrosive] beam between enemies, shield returns bullets to mag when damaged)
 
 # Sand Hawk
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/UIStat_RedText_SandHawk.UIStat_RedText_SandHawk,Text,0,,[Flavor]Wedge a pig.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/UIStat_RedText_SandHawk.UIStat_RedText_SandHawk,Text,0,,[Flavor]Wedge a pig.[/Flavor] (fires nine bullets in a wing pattern which flap as they travel)
 
 # Grease Trap
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/UIStat_RedText_GreaseTrap.UIStat_RedText_GreaseTrap,Text,0,,[Flavor]“EXTREMELY FLAMMABLE!”[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/UIStat_RedText_GreaseTrap.UIStat_RedText_GreaseTrap,Text,0,,[Flavor]“EXTREMELY FLAMMABLE!”[/Flavor] (Fire Starter mode shoots [fire]incendiary[/fire] fireballs, Hot Grease shoots arcing projectiles with kinetic damage)
 
 # Iceburger
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/UIStat_RedText_IceBurger.UIStat_RedText_IceBurger,Text,0,,[Flavor]90% of the flavor is under the bun.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/UIStat_RedText_IceBurger.UIStat_RedText_IceBurger,Text,0,,[Flavor]90% of the flavor is under the bun.[/Flavor] (Continuous laser while launching MIRV-like [cryo]cryo[/cryo] burgers)
 
 # Needle Gun
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/NeedleGun/UIStat_RedText_NeedleGun.UIStat_RedText_NeedleGun,Text,0,,[Flavor]Not your average needle.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/NeedleGun/UIStat_RedText_NeedleGun.UIStat_RedText_NeedleGun,Text,0,,[Flavor]Not your average needle.[/Flavor] (all effects on card)
 
 # O.P.Q. System
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/UIStat_RedText_OPQ.UIStat_RedText_OPQ,Text,0,,[Flavor]B.Y.O.B.B.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/UIStat_RedText_OPQ.UIStat_RedText_OPQ,Text,0,,[Flavor]B.Y.O.B.B.[/Flavor] (spawns a drone copy of itself)
 
 # NoPewPew
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/UIStat_RedText_PewPew.UIStat_RedText_PewPew,Text,0,,[Flavor]Extra, extra spicy.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/UIStat_RedText_PewPew.UIStat_RedText_PewPew,Text,0,,[Flavor]Extra, extra spicy.[/Flavor] (Fire rate increases as trigger is held, generates lava pool at killed enemies)
 
 # Pricker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/UIStat_RedText_Pricker.UIStat_RedText_Pricker,Text,0,,[Flavor]What have they to say now?[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/UIStat_RedText_Pricker.UIStat_RedText_Pricker,Text,0,,[Flavor]What have they to say now?[/Flavor] (slow homing needles which stick on contact, exploding once four have landed)
 
 # Yellowcake
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UIStat_RedText_YellowCake.UIStat_RedText_YellowCake,Text,0,,[Flavor]I'm really more of a pie person.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UIStat_RedText_YellowCake.UIStat_RedText_YellowCake,Text,0,,[Flavor]I'm really more of a pie person.[/Flavor] (multi-MIRV projectiles, extremely powerful)
 
 # Fish Slap
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap.UIStat_RedText_FishSlap,Text,0,,[Flavor]Say hello to my little fish![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap.UIStat_RedText_FishSlap,Text,0,,[Flavor]Say hello to my little fish![/Flavor] (30% of damage dealt is used to refill shields)
 
