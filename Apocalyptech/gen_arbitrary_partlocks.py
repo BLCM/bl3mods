@@ -216,11 +216,16 @@ while True:
         valid_cats = set()
         for idx, cat in enumerate(categories):
             if len(cat.parts) > 1:
-                print('{}[{}] Category: {} ({} parts)'.format(
+                if cat.min_parts != cat.max_parts:
+                    part_range = '{}-{}'.format(cat.min_parts, cat.max_parts)
+                else:
+                    part_range = cat.min_parts
+                print('{}[{}] Category: {} ({} parts, select {})'.format(
                     color_choices,
                     idx,
                     cat.cat_name,
                     len(cat.parts),
+                    part_range,
                     ))
                 valid_cats.add(idx)
                 for action in actions[idx].values():
