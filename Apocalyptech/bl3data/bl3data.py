@@ -29,7 +29,25 @@ class BL3Data(object):
            JohnWickParse project, used to serialize borderlands .uasset/.umap files
            to a JSON object.  This is what's used to process the extracted data into
            a format we can work with, on an on-demand basis.
-           https://github.com/SirWaddles/JohnWickParse
+
+           I'm using a custom fork of this which adds some versioning information to
+           the generated JSON, so that I can leave serializations on-disk but "force"
+           them to re-generate when there are patches, in case the data's been updated.
+           (My fork also includes various other bits of information which are useful
+           to a would-be BL3 modder, like it prints out the indexes of all the arrays,
+           etc, and puts in some extra info when objects reference other exports within
+           the object.)
+
+           If you don't use my fork, you'll end up serializing the same data over and
+           over.  If you use the "vanilla" JWP version, you'll probably want to search
+           for `BL3Data.data_version` down in the code, in `get_data()`, and remove
+           that check from the code.  (And then manually clear out the `.json` files
+           when you suspect that an object needs re-serialization.)  Otherwise, just
+           compile up my fork/branch and use that.  Make sure you're using the
+           `indexed_arrays` branch in particular, on my own fork.
+
+           Vanilla JWP: https://github.com/SirWaddles/JohnWickParse
+           My fork/branch: https://github.com/apocalyptech/JohnWickParse/tree/indexed_arrays
 
     The "database" section contains the values "host", "db", "user", and "passwd".
     These define the connection parameters to a MySQL database populated with BL3
