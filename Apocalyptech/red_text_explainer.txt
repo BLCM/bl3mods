@@ -743,7 +743,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/UIStat_RedText_SparkyBoom.UIStat_RedText_SparkyBoom,Text,0,,[Flavor]A long sigh was heard...[/Flavor] (all effects on card)
 
 # Bite Size
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/UIStat_RedText_BiteSize.UIStat_RedText_BiteSize,Text,0,,[Flavor]And yet so filling![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/UIStat_RedText_BiteSize.UIStat_RedText_BiteSize,Text,0,,[Flavor]And yet so filling![/Flavor] (Torgue-like sticky explosion after a few seconds, initial burst does NOT do splash)
 
 # Frozen Devil
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/UIStat_RedText_FrozenDevil.UIStat_RedText_FrozenDevil,Text,0,,[Flavor]Not sorry, not sorry, not sorry.[/Flavor] (continuous laser and ice spike)
