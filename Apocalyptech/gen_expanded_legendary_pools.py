@@ -311,8 +311,9 @@ pools = [
 
                 ### DLC2 (Guns, Love, and Tentacles)
 
-                # Bite Size
-                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/Balance/Balance_PS_JAK_BiteSize', 1),
+                # Bite Size - Basically just a WIP that started with the Duc; don't drop it much.  The initial nova looks
+                # nice but it's entirely for show
+                ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/Balance/Balance_PS_JAK_BiteSize', 0.2*addition_scale),
                 # Frozen Devil
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/Balance/Balance_PS_MAL_FrozenDevil', 1),
                 # Hydrafrost
@@ -330,8 +331,8 @@ pools = [
 
                 # Grease Trap
                 ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/Balance/Balance_PS_MAL_GreaseTrap', 1),
-                # Ice Pick
-                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IcePick/Balance/Balance_PS_MAL_IcePick', 1),
+                # Ice Pick - nothing special about it, just a regular Maliwan pistol
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IcePick/Balance/Balance_PS_MAL_IcePick', 0.2*addition_scale),
 
                 ### Mayhem 2.0
 
