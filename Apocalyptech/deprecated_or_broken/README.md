@@ -52,6 +52,9 @@ weren't actually intended to be mods themselves.
   - Given the problems above, and the fact that there's some actual savegame
     editing forthcoming which can unlock this gear properly, without any
     fuss, I'm moving the mod into this deprecated section.
+- `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
+  (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
+  it's a bit much.  Never used it outside of a couple tests.
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least
