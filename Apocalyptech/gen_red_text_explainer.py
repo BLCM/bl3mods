@@ -1189,6 +1189,7 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/UIStat_RedText_SparkyBoom',
             "A long sigh was heard...",
             ON_CARD),
+        # This is basically exactly like the Duc, minus a few visual effects
         ("Bite Size",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/UIStat_RedText_BiteSize',
             "And yet so filling!",
