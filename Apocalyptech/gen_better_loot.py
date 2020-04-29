@@ -640,7 +640,7 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
 mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
         '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa',
         'Quantity',
-        '(BaseValueConstant=3)')
+        '(BaseValueConstant=4)')
 mod.newline()
 
 # Graveward!  Adding in the Earworm from the Week 1 event.  Note that
@@ -804,8 +804,10 @@ for char_name, idx, num in [
         ('Mouthpiece', 44, 2),
         # Sylestro spawns with Atomic, reducing this from 3 to 2
         ('Sylestro', 50, 2),
-        ('Captain Traunt', 51, 3),
-        ('General Traunt', 52, 3),
+        # Capt. Traunt gets an extra +1 from Mayhem 2.0
+        ('Captain Traunt', 51, 4),
+        # General Traunt also gets an extra +1 from Mayhem 2.0
+        ('General Traunt', 52, 4),
         ('Billy, The Anointed', 53, 3),
         ('Brood Mother', 55, 3),
         ('Antalope', 63, 3),
@@ -888,6 +890,24 @@ for char_name, idx, pools in [
             '({})'.format(','.join([str(pool) for pool in pools])))
     mod.newline()
 
+# Mayhem 2.0 Gear Additions.  Yet another way of doing it, yay!
+for char_name, char_obj, exp_obj in [
+        ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary'),
+        ('Pain', 'BPChar_Terror', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1'),
+        ('Warden', 'BPChar_Goliath_CageArena', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2'),
+        ('Katagawa Ball', 'BPChar_Oversphere_KatagawaSphere', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_PS_Legendary'),
+        ('GenIVIV', 'BPChar_MechEvilAI', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SG_Legendary'),
+        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1'),
+        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary2'),
+        ('Katagawa Jr.', 'BPChar_KJR', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SR_Legendary'),
+        ]:
+    mod.comment('{} - Mayhem 6 Requirement Removal'.format(char_name))
+    mod.reg_hotfix(Mod.CHAR, char_obj,
+            exp_obj,
+            'BalancedItems.BalancedItems[0].Weight',
+            BVCF())
+    mod.newline()
+
 # Since the MH4/MT patch, a lot of bosses have 2+ items in their drop pools.  Fix those up
 # so that they drop N items to match, like Better Loot has historically done
 mod.header_lines([
@@ -917,23 +937,23 @@ for (label, char_name, pool, quantity) in [
         ('Judge Hightower', 'BPChar_AtlasSoldier_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower', 3),
         ('Hot Karl', 'BPChar_Enforcer_Bounty01', '/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/ItemPool_Enforcer_Bounty01.ItemPool_Enforcer_Bounty01', 4),
         ('DJ Deadsk4g', 'BPChar_Enforcer_Bounty02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Thumper_DJBlood.ItemPool_Thumper_DJBlood', 3),
-        ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt', 3),
+        ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt', 4),
         ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist', 3),
         ('Tyreen the Destroyer', 'BPChar_FinalBoss', '/Game/Enemies/FinalBoss/_Shared/_Design/LootPools/ItemPool_FinalBoss_KingsCall.ItemPool_FinalBoss_KingsCall', 3),
         ('Heckle', 'BPChar_Goliath_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde', 3),
-        ('Warden', 'BPChar_Goliath_CageArena', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden', 3),
+        ('Warden', 'BPChar_Goliath_CageArena', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden', 4),
         ('The Unstoppable', 'BPChar_Goliath_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable', 3),
         ('Road Dog', 'BPChar_Goliath_Rare02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Redliner_Roaddog.ItemPool_Redliner_Roaddog', 3),
         ('El Dragon Jr.', 'BPChar_Goliath_Rare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr', 3),
         ('Crushjaw', 'BPChar_GoonBounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_BoneShredder_Crushjaw.ItemPool_BoneShredder_Crushjaw', 3),
         ('Sloth', 'BPChar_Goon_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth', 2),
-        ('GenIVIV', 'BPChar_MechEvilAI', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV', 4),
+        ('GenIVIV', 'BPChar_MechEvilAI', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV', 5),
         ('Blinding Banshee', 'BPChar_Nekrobug_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Shriek_DevilBug.ItemPool_Shriek_DevilBug', 3),
         ('Baron Noggin', 'BPChar_Nog01_Bounty', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_EMPGrenade_BaronNoggin.ItemPool_EMPGrenade_BaronNoggin', 2),
         ('Private Beans', 'BPChar_NogBeans', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo.ItemPool_Westergun_TheBoo', 3),
         ('Gigamind', 'BPChar_NogChipHolder', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind', 3),
         ('One Punch', 'BPChar_OnePunch', '/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Loot/ItemPool_OnePunch.ItemPool_OnePunch', 2),
-        ('Katagawa Ball', 'BPChar_Oversphere_KatagawaSphere', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall', 3),
+        ('Katagawa Ball', 'BPChar_Oversphere_KatagawaSphere', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall', 4),
         ('Borman Nates', 'BPChar_PsychoRare02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PsychoStabber_BormanNates.ItemPool_PsychoStabber_BormanNates', 3),
         ('Wick', 'BPChar_PsychoRare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Portals_VicAndWarty.ItemPool_Portals_VicAndWarty', 2),
         ('Handsome Jackie', 'BPChar_PunkBounty02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_NimbleJack_HandsomeJackie.ItemPool_NimbleJack_HandsomeJackie', 3),
@@ -1160,7 +1180,7 @@ for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
         ('Pain', 'BPChar_Terror',
             '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror',
             3,
-            4),
+            5),
         # Could really use BPChar_Pain for this, but whatever.
         ('Terror', 'BPChar_Agonizer_9k',
             '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain',

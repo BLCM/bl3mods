@@ -532,7 +532,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Tink/_Unique/
 
 # Katagawa Jr.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=1)))
-SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,Quantity,0,,(BaseValueConstant=3)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,Quantity,0,,(BaseValueConstant=4)
 
 # Graveward
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave"',Weight=(BaseValueConstant=0.500000)),(InventoryBalanceData=/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward"',Weight=(BaseValueConstant=0.500000)),(InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm"',Weight=(BaseValueConstant=0.500000)))
@@ -616,11 +616,11 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 
 # Captain Traunt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
 
 # General Traunt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
 
 # Billy, The Anointed
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[53].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -710,6 +710,30 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 # Sapphire Force Trooper (Sapphire)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[71].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)),(ItemPool=ItemPool'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
 
+# Killavolt - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary.ItemPoolExpansion_Mayhem2_AR_Legendary,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Pain - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1.ItemPoolExpansion_Mayhem2_HW_Legendary1,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Warden - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2.ItemPoolExpansion_Mayhem2_HW_Legendary2,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Katagawa Ball - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_PS_Legendary.ItemPoolExpansion_Mayhem2_PS_Legendary,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# GenIVIV - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SG_Legendary.ItemPoolExpansion_Mayhem2_SG_Legendary,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Captain Traunt - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1.ItemPoolExpansion_Mayhem2_SMG_Legendary1,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# General Traunt - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary2.ItemPoolExpansion_Mayhem2_SMG_Legendary2,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Katagawa Jr. - Mayhem 6 Requirement Removal
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SR_Legendary.ItemPoolExpansion_Mayhem2_SR_Legendary,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
 ###
 ### Drop Pool Quantity Tweaks
 ### (some of the above statements include some quantity fixes as well)
@@ -734,7 +758,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforce
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Thumper_DJBlood.ItemPool_Thumper_DJBlood,Quantity,0,,(BaseValueConstant=3)
 
 # Killavolt
-SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt,Quantity,0,,(BaseValueConstant=3)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt,Quantity,0,,(BaseValueConstant=4)
 
 # Urist McEnforcer
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerUrist),/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist,Quantity,0,,(BaseValueConstant=3)
@@ -746,7 +770,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/Enemies/FinalBoss/_Shar
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde,Quantity,0,,(BaseValueConstant=3)
 
 # Warden
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,Quantity,0,,(BaseValueConstant=3)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,Quantity,0,,(BaseValueConstant=4)
 
 # The Unstoppable
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable,Quantity,0,,(BaseValueConstant=3)
@@ -764,7 +788,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GoonBounty01),/Game/GameData/Loot/ItemPo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth,Quantity,0,,(BaseValueConstant=2)
 
 # GenIVIV
-SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,Quantity,0,,(BaseValueConstant=4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,Quantity,0,,(BaseValueConstant=5)
 
 # Blinding Banshee
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Shriek_DevilBug.ItemPool_Shriek_DevilBug,Quantity,0,,(BaseValueConstant=3)
@@ -782,7 +806,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/GameData/Loot/ItemP
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OnePunch),/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Loot/ItemPool_OnePunch.ItemPool_OnePunch,Quantity,0,,(BaseValueConstant=2)
 
 # Katagawa Ball
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall,Quantity,0,,(BaseValueConstant=3)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall,Quantity,0,,(BaseValueConstant=4)
 
 # Borman Nates
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_PsychoStabber_BormanNates.ItemPool_PsychoStabber_BormanNates,Quantity,0,,(BaseValueConstant=3)
@@ -946,7 +970,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Desig
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo.BPChar_Wendigo_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Pain
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Terror
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
