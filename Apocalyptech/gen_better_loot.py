@@ -719,10 +719,8 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_Goliath_Anointed',
 mod.newline()
 
 # Captain Haunt (from the Bloody Harvest event)
-# (a GBX-provided hotfix against this table doesn't require any char-based hotfixes)
-# TODO: This is definitely not working.  Also he should really have a quantity/numtimes defined
-mod.comment('Captain Haunt (untested)')
-mod.table_hotfix(Mod.PATCH, '',
+mod.comment('Captain Haunt')
+mod.table_hotfix(Mod.CHAR, 'BPChar_HarvestBoss',
         '/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween',
         'HarvestBoss_LootDropChance',
         'DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD',
@@ -991,6 +989,9 @@ for (label, char_name, pool, quantity) in [
         # Doublecheck that there's not more than one of these at a time, may not want to up the quantity. - yep, this'll spawn four times, omit it.
         #('Crawley Family', 'BPChar_VarkidHunt02_LarvaA', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PredatoryLending_CrawlyFamily.ItemPool_PredatoryLending_CrawlyFamily', 2),
         ('Manvark', 'BPChar_VarkidHunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman', 3),
+
+        # Bloody Harvest
+        ('Captain Haunt', 'BPChar_HarvestBoss', '/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary', 4),
 
         # There are a *ton* of items that drop from these (15 total for the Valkyries,
         # 19 for Wotan), and you get four total drops from 'em: once from Valkyries

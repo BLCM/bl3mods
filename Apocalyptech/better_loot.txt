@@ -559,8 +559,8 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Ra
 # Billy, the Anointed
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Anointed),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LeadSprinkler_AnointedIntro.ItemPool_LeadSprinkler_AnointedIntro,BalancedItems[1].Weight,0,,(BaseValueConstant=0.000000)
 
-# Captain Haunt (untested)
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,HarvestBoss_LootDropChance,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+# Captain Haunt
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,HarvestBoss_LootDropChance,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
 
 # Red Jabber
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkRedJabber),/Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber.BPChar_TinkRedJabber_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools,0,,(ItemPools=((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"',PoolProbability=(BaseValueConstant=1.000000))),ItemPoolLists=(ItemPoolListData'"/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss.ItemPoolList_MiniBoss"'))
@@ -864,6 +864,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Bounty01),/Game/Enemies/Trooper/
 
 # Manvark
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman,Quantity,0,,(BaseValueConstant=3)
+
+# Captain Haunt
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,Quantity,0,,(BaseValueConstant=4)
 
 # Maliwan Takedown Raid Bosses
 SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool,Quantity,0,,(BaseValueConstant=3)
