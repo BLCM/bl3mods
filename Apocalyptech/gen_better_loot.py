@@ -507,6 +507,24 @@ for (label, row_name, char_name) in [
     set_legendary_odds(mod, char_name, row_name, 1, obj_name='/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion')
     mod.newline()
 
+# Revenge fo the Cartels drop rates
+# (it *looks* like this table exists right on the main menu, so I think we can
+# set it without worrying about char)
+for row_name in [
+        'UniqueLoot_Underboss',
+        'UniqueLoot_Underboss_Boss',
+        # This one is already 1, but what the hell.
+        'UniqueLoot_Boss',
+        'UniqueLoot_UberBoss',
+        ]:
+    mod.comment('Revenge of the Cartels - {}'.format(row_name))
+    mod.table_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels',
+            row_name,
+            'DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD',
+            1)
+    mod.newline()
+
 mod.header('Extra Guaranteed Boss Drop Statements')
 
 # Set Mouthpiece's "/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All" drop to zero-weight
@@ -992,6 +1010,22 @@ for (label, char_name, pool, quantity) in [
         ('Maliwan Takedown Raid Bosses', 'BPChar_UpperHalf', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool', 3),
         ('Maliwan Takedown Raid Minibosses', 'BPChar_MechRaidBossBar', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool', 3),
 
+        # Revenge of the Cartels Underbosses
+        # These all seem to also have a BPChar_*_MiniBoss as well, which I suspect is when they spawn
+        # during the Joey Ultraviolet fight.  Leaving those alone, 'cause the loot drops in there
+        # would be a bit crazy, though you're at least somewhat likely to have triggered it before,
+        # anyway.  There's also three items in each pool, but given how often you come across these
+        # folks, I'm dropping the minibosses down to 2, and upping Joey to 4.  I'm almost tempted to
+        # leave the minibosses at 1, honestly...
+        ('Cartels - Josie Byte', 'BPChar_PunkCyberLt', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg', 2),
+        ('Cartels - Franco Firewall', 'BPChar_CyberTrooperCapo', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg', 2),
+        ('Cartels - Roaster', 'BPChar_Punk_Roaster', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat', 2),
+        ('Cartels - The Tenderizer', 'BPChar_Tink_Tenderizer', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat', 2),
+        ('Cartels - FISH SLAP!', 'BPChar_PsychoBadassTinyEvent2', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny', 2),
+        ('Cartels - Tyrone Smallums', 'BPChar_TrooperBadassTinyEvent2', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny', 2),
+        # There's actually nine items in this one, but that's awfully crazy, especially since we're likely to have at least one
+        # of those minibosses spawning as well, which might have picked up the increased quantity.
+        ('Cartels - Joey Ultraviolet', 'BPChar_CartelBoss', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss', 4),
         ]:
     mod.comment(label)
     if char_name == '':

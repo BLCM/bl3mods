@@ -505,6 +505,18 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadass_Gaudy),/Game/PatchDLC/Dandeli
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadass_Gaudy),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion,Kill_LocoChantelle,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PunkBadass_Gaudy),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion,Kill_LocoChantelle,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
 
+# Revenge of the Cartels - UniqueLoot_Underboss
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels.DataTable_Event02_Cartels,UniqueLoot_Underboss,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+
+# Revenge of the Cartels - UniqueLoot_Underboss_Boss
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels.DataTable_Event02_Cartels,UniqueLoot_Underboss_Boss,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+
+# Revenge of the Cartels - UniqueLoot_Boss
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels.DataTable_Event02_Cartels,UniqueLoot_Boss,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+
+# Revenge of the Cartels - UniqueLoot_UberBoss
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels.DataTable_Event02_Cartels,UniqueLoot_UberBoss,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1
+
 ###
 ### Extra Guaranteed Boss Drop Statements
 ###
@@ -864,6 +876,27 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_UpperHalf),/Game/PatchDLC/Raid1/GameData
 
 # Maliwan Takedown Raid Minibosses
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool,Quantity,0,,(BaseValueConstant=3)
+
+# Cartels - Josie Byte
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - Franco Firewall
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - Roaster
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - The Tenderizer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - FISH SLAP!
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - Tyrone Smallums
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,Quantity,0,,(BaseValueConstant=2)
+
+# Cartels - Joey Ultraviolet
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,Quantity,0,,(BaseValueConstant=4)
 
 # Jackpot the Jack's Bot - Legendary Pool
 SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Character/BPChar_JackBot.BPChar_JackBot_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
