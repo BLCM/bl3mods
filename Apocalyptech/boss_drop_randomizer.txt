@@ -153,6 +153,20 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperSwarm),/Game/PatchDLC/Rai
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperSwarm),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother.ItemPool_Broodmother,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperSwarm),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Broodmother.ItemPool_Broodmother,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
+# Captain Haunt
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+
 # Captain Thunk
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkRare02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk.ItemPool_Thunk,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkRare02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Thunk.ItemPool_Thunk,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -171,6 +185,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameD
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1.ItemPoolExpansion_Mayhem2_SMG_Legendary1,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1.ItemPoolExpansion_Mayhem2_SMG_Legendary1,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1.ItemPoolExpansion_Mayhem2_SMG_Legendary1,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
 # Chonk Stomp
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_Hunt01),/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/ItemPool_Saurian01_Hunt.ItemPool_Saurian01_Hunt,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -287,6 +304,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerBadass_Lawrence),/Game/PatchDLC/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerBadass_Lawrence),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence.ItemPool_StLawrence,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerBadass_Lawrence),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence.ItemPool_StLawrence,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
+# FISH SLAP!
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
+
 # Fabricator
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Fabricator.ItemPool_Fabricator,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Fabricator.ItemPool_Fabricator,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -362,6 +390,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/PatchDLC/Raid1/Ga
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
+# Franco Firewall
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CyberTrooperCapo),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
 # Freddie the Traitor
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -385,6 +424,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Raid1/GameDat
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_MessyBreakup_GeneVIV.ItemPoolExpansion_MessyBreakup_GeneVIV,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_MessyBreakup_GeneVIV.ItemPoolExpansion_MessyBreakup_GeneVIV,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_MessyBreakup_GeneVIV.ItemPoolExpansion_MessyBreakup_GeneVIV,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SG_Legendary.ItemPoolExpansion_Mayhem2_SG_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SG_Legendary.ItemPoolExpansion_Mayhem2_SG_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SG_Legendary.ItemPoolExpansion_Mayhem2_SG_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
 
 # General Traunt
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -396,6 +438,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/Ga
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary2.ItemPoolExpansion_Mayhem2_SMG_Legendary2,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary2.ItemPoolExpansion_Mayhem2_SMG_Legendary2,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary2.ItemPoolExpansion_Mayhem2_SMG_Legendary2,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
 # Gideon
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Gideon),/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_ClassMods_Legendary_Hibiscus.ItemPool_ClassMods_Legendary_Hibiscus,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -568,6 +613,46 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Game/PatchDLC/Dandelion/GameDa
 SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Jackbot.ItemPool_Jackbot,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Jackbot.ItemPool_Jackbot,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 
+# Joey Ultraviolet
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[4].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[4].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[4].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[5].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[5].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[5].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[6].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[6].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[6].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[7].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[7].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[7].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[8].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[8].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[8].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
+
+# Josie Byte
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkCyberLt),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Cyborg.ItemPool_Event02_Unique_Cyborg,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
 # Judge Hightower
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -594,6 +679,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDL
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Tsunami_KatagawaBall.ItemPoolExpansion_Tsunami_KatagawaBall,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Tsunami_KatagawaBall.ItemPoolExpansion_Tsunami_KatagawaBall,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Tsunami_KatagawaBall.ItemPoolExpansion_Tsunami_KatagawaBall,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_PS_Legendary.ItemPoolExpansion_Mayhem2_PS_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_PS_Legendary.ItemPoolExpansion_Mayhem2_PS_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_PS_Legendary.ItemPoolExpansion_Mayhem2_PS_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 
 # Katagawa Jr.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -602,6 +690,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Uniqu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Storm_Katagawa.ItemPoolExpansion_Storm_Katagawa,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Storm_Katagawa.ItemPoolExpansion_Storm_Katagawa,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Storm_Katagawa.ItemPoolExpansion_Storm_Katagawa,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SR_Legendary.ItemPoolExpansion_Mayhem2_SR_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SR_Legendary.ItemPoolExpansion_Mayhem2_SR_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SR_Legendary.ItemPoolExpansion_Mayhem2_SR_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
 
 # Killavolt
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -613,6 +704,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt.ItemPoolExpansion_KillaVolt_Ninevolt,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt.ItemPoolExpansion_KillaVolt_Ninevolt,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_KillaVolt_Ninevolt.ItemPoolExpansion_KillaVolt_Ninevolt,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary.ItemPoolExpansion_Mayhem2_AR_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary.ItemPoolExpansion_Mayhem2_AR_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary.ItemPoolExpansion_Mayhem2_AR_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
 # Kritchy
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Mothman.ItemPool_Hibiscus_Hunt_Mothman,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -719,6 +813,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Raid1/GameData/Lo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Agonizer1500_Terror.ItemPoolExpansion_Agonizer1500_Terror,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Agonizer1500_Terror.ItemPoolExpansion_Agonizer1500_Terror,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Agonizer1500_Terror.ItemPoolExpansion_Agonizer1500_Terror,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1.ItemPoolExpansion_Mayhem2_HW_Legendary1,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1.ItemPoolExpansion_Mayhem2_HW_Legendary1,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1.ItemPoolExpansion_Mayhem2_HW_Legendary1,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
 
 # Phoenix
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_PhoenixTears_Phoenix.ItemPool_PhoenixTears_Phoenix,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -829,6 +926,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/PatchDLC/Raid1/Gam
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Redliner_Roaddog.ItemPoolExpansion_Redliner_Roaddog,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Redliner_Roaddog.ItemPoolExpansion_Redliner_Roaddog,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"'
 
+# Roaster
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Roaster),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
 # Scraptrap Prime
 SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_ScraptrapPrime.ItemPool_ScraptrapPrime,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_ScraptrapPrime.ItemPool_ScraptrapPrime,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -919,6 +1027,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Pain),/Game/PatchDLC/Raid1/GameData/Loot
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Pain),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Pain_Loot.ItemPoolExpansion_Pain_Loot,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Pain),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Pain_Loot.ItemPoolExpansion_Pain_Loot,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
+# The Tenderizer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Tenderizer),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat.ItemPool_Event02_Unique_Meat,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
 # The Unstoppable
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -992,6 +1111,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/PatchDLC/Raid1/GameData
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_FinalBoss_KingsCall.ItemPoolExpansion_FinalBoss_KingsCall,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_FinalBoss_KingsCall.ItemPoolExpansion_FinalBoss_KingsCall,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_FinalBoss_KingsCall.ItemPoolExpansion_FinalBoss_KingsCall,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+
+# Tyrone Smallums
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadassTinyEvent2),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Tiny.ItemPool_Event02_Unique_Tiny,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
 
 # Urist McEnforcer
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerUrist),/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -1071,6 +1201,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Raid1/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Freeman_Warden.ItemPoolExpansion_Freeman_Warden,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Freeman_Warden.ItemPoolExpansion_Freeman_Warden,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Freeman_Warden.ItemPoolExpansion_Freeman_Warden,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2.ItemPoolExpansion_Mayhem2_HW_Legendary2,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2.ItemPoolExpansion_Mayhem2_HW_Legendary2,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2.ItemPoolExpansion_Mayhem2_HW_Legendary2,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
 
 # Warty
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Warty.ItemPool_Warty,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None

@@ -158,9 +158,15 @@ being used, which gives you far more Eridium than usual.
   so those are still locked behind story progression.
 - `expanded_legendary_pools.txt` - Adds all legendary/unique items into the main
   legendary drop pools, not that BL3 needs bigger legendary pools.  Includes
-  all Bloody Harvest, Maliwan Takedown, Mayhem 4 items (which will drop
-  regardless of Mayhem level, even in normal), Broken Hearts, DLC1, and DLC2
-  items.
+  all items from:
+  - Bloody Harvest
+  - Broken Hearts
+  - Revenge of the Cartels
+  - Maliwan Takedown
+  - Mayhem 4 items (which will drop regardless of Mayhem level, even in normal)
+  - Mayhem 2.0 items (which will drop regardless of Mayhem level, even in normal)
+  - DLC1 (Moxxi's Heist of the Handsome Jackpot)
+  - DLC2 (Guns, Love, and Tentacles)
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically
