@@ -154,6 +154,7 @@ customization_drops_none
 # Event-enabling mods
 #bloody_harvest_enable
 #broken_hearts_enable
+#cartels_enable
 
 # Guaranteed Ghosts in Bloody Harvest event
 #guaranteed_ghosts
