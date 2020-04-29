@@ -3,6 +3,8 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
+# TODO: Pricker
+
 mod = Mod('all_weapons_can_anoint.txt',
         'All Weapons Can Anoint',
         [
@@ -442,6 +444,10 @@ weapons = [
            '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/Balance/Balance_HW_COV_PortaPooper',
            '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/Balance/PartSet_HW_COV_PortaPooper',
            COV_HW),
+        ("Pricker",
+            '/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/Balance/Balance_SM_HYP_Pricker',
+            '/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/Balance/InvPartSet_SM_HYP_Pricker',
+            HYP_SM),
         ("R.Y.N.A.H.",
            '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Balance/Balance_HW_TOR_RYNO',
            '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Balance/PartSet_HW_TOR_RYNO',
