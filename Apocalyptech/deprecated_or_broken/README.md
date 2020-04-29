@@ -9,10 +9,17 @@ weren't actually intended to be mods themselves.
   well enough that I'm happy leaving it the way it is for now.
 - `gun_randomizer.txt` - The file as-is just randomizes the barrel for
   the Cloud Kill SMG, and works pretty well, giving three random barrels
-  to the gun.  (Though there's some kind of sanity checking going on,
-  because they don't survive a quit/reload.)  No real plans to turn this
-  into a real randomizer, just wanted to see if these kinds of shenanigans
-  were possible.
+  to the gun.  No real plans to turn this into a real randomizer, just
+  wanted to see if these kinds of shenanigans were possible.
+  - As an aside, in order to survive a quit+reload, all of an item's
+    parts have to come from the same "pool," which for weapons means
+    a specific manufacturer+guntype.  So if you want gear that survives
+    being put into a savegame, your options for randomization are
+    somewhat limited.
+- `mayhem_tweaks.txt` - Just playing around with the number and type of
+  modifiers that get applied at various Mayhem levels, mostly just to
+  verify that it could be done.  Works great!  I don't actually have any
+  plans to do anything with 'em, though.
 
 ## Deprecated/Testing Mods
 
