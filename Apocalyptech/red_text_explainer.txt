@@ -478,7 +478,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/
 # Red Queen
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/RedQueen/UI/UIStat_RedText_RedQueen.UIStat_RedText_RedQueen,Text,0,,[Flavor]OFF WITH THEIR HEADS![/Flavor] (grenade splits in two with laser connecting them)
 
-# Redistributor
+# Redistributor (mission reward)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/UIStat_RedText_Fork.UIStat_RedText_Fork,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (all effects on card)
 
 # Redline
@@ -646,7 +646,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UI
 # Kyb's Worth
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth,Text,0,,[Flavor]Stand in the f****** circle.[/Flavor] (shoots two oscillating projectiles side by side)
 
-# Redistributor
+# Redistributor (legendary version)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2,Text,0,,[Flavor]Man's reach exceeds his imagination.[/Flavor] (all effects on card)
 
 # Moonfire
@@ -779,7 +779,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/UIS
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/UIStat_RedText_Firecracker.UIStat_RedText_Firecracker,Text,0,,[Flavor]Ooooh. Aaaah.[/Flavor] (shoots cluster of 12 fireworks which spiral randomly and explode into hearts)
 
 # Insider
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider.UIStat_RedText_Insider,Text,0,,[Flavor]You can run, but you can't hide[/Flavor] (instant fire, shots penetrate enemies)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider.UIStat_RedText_Insider,Text,0,,[Flavor]You can run, but you can't hide[/Flavor] (instant fire, shots penetrate enemies and deal splash damage)
 
 # Flama Diddle
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen.UIStat_RedText_Omen,Text,0,,[Flavor]VIII. Never turn your back on a Monster![/Flavor] (reload shoots twice before exploding on impact, bullets ricochet once)
@@ -794,13 +794,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIS
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/UIStat_RedText_TheCure.UIStat_RedText_TheCure,Text,0,,[Flavor]Vaccinations save lives. Sorry, no joke here! Just facts.[/Flavor] (restores health with each hit)
 
 # Nothingness
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/UIStat_RedText_TheNothing.UIStat_RedText_TheNothing,Text,0,,[Flavor]A hole would be something.[/Flavor] (charged shot for several explosions, similar to Flakker)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/UIStat_RedText_TheNothing.UIStat_RedText_TheNothing,Text,0,,[Flavor]A hole would be something.[/Flavor] (generates additional explosions around the main shot, similar to Flakker)
 
 # Oldridian
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/UIStat_RedText_Oldridian.UIStat_RedText_Oldridian,Text,0,,[Flavor]They bound the ones they knew of. There were more.[/Flavor] (switches element on reload, shield reduces elemental damage by 20%)
 
 # SF Force
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/UIStat_RedText_SFForce.UIStat_RedText_SFForce,Text,0,,[Flavor]Flavor-blast them all.[/Flavor] (shoots musical notes of both elements)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/UIStat_RedText_SFForce.UIStat_RedText_SFForce,Text,0,,[Flavor]Flavor-blast them all.[/Flavor] (all effects on card)
 
 # Cocky Bastard
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/CockyBastard/UIStat_RedText_CockyBastard.UIStat_RedText_CockyBastard,Text,0,,[Flavor]Great, kid.[/Flavor] (crits deal [shock]shock[/shock] damage equal to crit damage)

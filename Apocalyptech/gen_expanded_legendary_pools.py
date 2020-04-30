@@ -544,7 +544,7 @@ pools = [
 
                 ### Maliwan Takedown / Mayhem 4 Legendaries
 
-                # Redistributor
+                # Redistributor (legendary rarity)
                 ('/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2', 1),
                 # Kyb's Worth
                 ('/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth', 1),
@@ -600,8 +600,8 @@ pools = [
                 ('/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/HellFire/Balance/Balance_SM_DAHL_HellFire.Balance_SM_DAHL_HellFire', 1*addition_scale),
                 # 9-Volt
                 ('/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/NineVolt/Balance/Balance_SM_DAHL_NineVolt.Balance_SM_DAHL_NineVolt', 1*addition_scale),
-                # Redistributor
-                ('/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/Balance/Balance_SM_HYP_Fork.Balance_SM_HYP_Fork', 1*addition_scale),
+                # Redistributor (blue rarity, mission reward) - the Legendary version is better in just about every way
+                ('/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/Balance/Balance_SM_HYP_Fork.Balance_SM_HYP_Fork', 0.2*addition_scale),
                 # L0V3M4CH1N3
                 ('/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/L0V3M4CH1N3/Balance/Balance_SM_HYP_L0V3M4CH1N3.Balance_SM_HYP_L0V3M4CH1N3', 1*addition_scale),
                 # Predatory Lending

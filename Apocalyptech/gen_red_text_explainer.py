@@ -392,8 +392,6 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Headsplosion/UIStat_RedText_Headsplosion.UIStat_RedText_Headsplosion',
             "That happens all the time.",
             "explosive rounds, crits ricochet three rounds"),
-        # TODO: figure this out
-        # I suspect this might be an enemy-use weapon which really doesn't have anything special about it.
         ('Heckle',
             '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Heckle/UIStat_RedText_Heckle.UIStat_RedText_Heckle',
             "Am I evil?",
@@ -449,8 +447,6 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/GrenadeMods/_Design/_Unique/HunterSeeker/UI/UIStat_RedText_HunterSeeker.UIStat_RedText_HunterSeeker',
             "Grip tightly.",
             "drone homes in on enemies while shooting"),
-        # TODO: figure this out
-        # I suspect this might be an enemy-use weapon which really doesn't have anything special about it.
         ('Hyde',
             '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/UIStat_RedText_Hyde.UIStat_RedText_Hyde',
             "Yes, I am.",
@@ -751,11 +747,9 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/Gear/Shields/_Design/_Uniques/Radiate/Name/UIStat_RedText_Radiate.UIStat_RedText_Radiate',
             "Warning. Containment failure.",
             "constantly deals radiation damage to nearby enemies"),
-        # TODO: Why are there two Redistributors?
-        ('Redistributor',
+        ('Redistributor (mission reward)',
             '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/UIStat_RedText_Fork.UIStat_RedText_Fork',
             "Man's reach exceeds his imagination.",
-            #"every 7th shot is amped and chains"),
             ON_CARD),
         ('Redline',
             '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/UIStat_RedText_RedLine.UIStat_RedText_RedLine',
@@ -1016,11 +1010,9 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth',
             "Stand in the f****** circle.",
             "shoots two oscillating projectiles side by side"),
-        # TODO: Why are there two Redistributors?
-        ('Redistributor',
+        ('Redistributor (legendary version)',
             '/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/UIStat_RedText_Fork2.UIStat_RedText_Fork2',
             "Man's reach exceeds his imagination.",
-            #"every 7th shot is amped and chains"),
             ON_CARD),
         ('Moonfire',
             '/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_RedText_HandCannon.UIStat_RedText_HandCannon',
@@ -1247,9 +1239,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Insider",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIStat_RedText_Insider',
             "You can run, but you can't hide",
-            # TODO: bit of confusion here
-            #"instant fire, fires cluster of 10 bullets which explode on contact, dealing splash"),
-            "instant fire, shots penetrate enemies"),
+            "instant fire, shots penetrate enemies and deal splash damage"),
         ("Flama Diddle",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen',
             "VIII. Never turn your back on a Monster!",
@@ -1269,9 +1259,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Nothingness",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/UIStat_RedText_TheNothing',
             "A hole would be something.",
-            # TODO: bit of confusion here
-            #"additional projectiles around the main beam, which explode"),
-            "charged shot for several explosions, similar to Flakker"),
+            "generates additional explosions around the main shot, similar to Flakker"),
         ("Oldridian",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Oldridian/UIStat_RedText_Oldridian',
             "They bound the ones they knew of. There were more.",
@@ -1279,9 +1267,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("SF Force",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/UIStat_RedText_SFForce',
             "Flavor-blast them all.",
-            # TODO: bit of confusion here
-            #"instant fire, piercing projectiles from both elements at once"),
-            "shoots musical notes of both elements"),
+            ON_CARD),
         ("Initiative",
             '/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/Initiative/UIStat_RedText_Initiative',
             "You're only given a little spark...",
