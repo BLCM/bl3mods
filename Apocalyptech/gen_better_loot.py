@@ -492,6 +492,8 @@ for (label, row_name, char_name) in [
 for (label, row_name, char_name) in [
         ('DEGEN-3', 'Kill_Degen3', 'BPChar_LoaderBadass_Venchy'),
         ('Evil St. Lawrence', 'Kill_StLawrence', 'BPChar_EnforcerBadass_Lawrence'),
+        # Both Fabricator and Freddie apparently just have hardcoded guaranteed drops anyway, and
+        # don't even reference this table.  Still, whatever, we'll set the values.
         ('Fabricator', 'Fabricator', 'BPChar_FabrikatorBasic'),
         ('Freddie the Traitor', 'Freddie', 'BPChar_TraitorEddie'),
         ('Gorgeous Armada', 'Kill_GorgeousArmada', 'BPChar_TinkBadass_Giorgio'),
