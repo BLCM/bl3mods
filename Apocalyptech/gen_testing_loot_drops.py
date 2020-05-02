@@ -209,265 +209,92 @@ balances = [
         #'/Game/Gear/Shields/_Design/_Uniques/MessyBreakup/bALANCE/InvBalD_Shield_MessyBreakup',
         ]
 
-last_bit = pool_to_set.split('/')[-1]
-pool_to_set_full = '{}.{}'.format(pool_to_set, last_bit)
-
 # Set the pool, if we've been told to
 if do_pool_set:
-    set_pool(mod, pool_to_set_full, balances)
+    set_pool(mod, pool_to_set, balances)
 
-# TODO: Would like to get trash piles back in here too, though I think we'd
-# have to have a level hotfix for each level, and I don't feel like scripting
-# that out yet.
-#
-# These definitions *should* be pretty thorough, though note that bosses and
-# minibosses have been left alone, since I'm only gonna be mobbing while
-# testing this stuff.
-
-for (pool, chars) in [
+# Now set everything's drops.
+for hf_type, pool in [
 
         # Base-game Standard Enemy drop list
-        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
-
-            # TODO: This isn't always sufficient; if you spawn in Floodmoor Basin, for
-            # instance, the enemies around the lodge area don't trigger it, nor do Saurians
-            # in Floodmoor Basin.  Saurians in particular have proven difficult; even
-            # enumerating all the BPChar* entries which reference the "Shared" one didn't
-            # seem to do it.  Hrmph.  Giving up for now!
-            'BPChar_Ape',
-            'BPChar_EnforcerShared',
-            'BPChar_Frontrunner',
-            'BPChar_Goon',
-            'BPChar_GuardianShared',
-            'BPChar_Heavy_Shared',
-            'BPChar_Nekrobug_Shared',
-            'BPChar_Nog',
-            'BPChar_OversphereShared',
-            'BPChar_PsychoShared',
-            'BPChar_PunkShared',
-            'BPChar_Rakk',
-            'BPChar_Ratch',
-            'BPChar_Saurian_Shared',
-
-            # These are all the BPChars which reference BPChar_Saurian_Shared...
-            #'BPChar_Saurian_Grog_Poison_Fodder',
-            #'BPChar_SaurianLaser',
-            #'BPChar_SaurianShield',
-            #'BPChar_Saurian_SlaughterBoss',
-            #'BPChar_Saurian_TrialBoss',
-            #'BPChar_Saurian_Grog',
-            #'BPChar_Saurian_Grog_Fire',
-            #'BPChar_Saurian_Grog_Poison',
-            #'BPChar_Saurian_Hamtaurus',
-            #'BPChar_Saurian_Hamtaurus_Badass',
-            #'BPChar_Saurian_Predator',
-            #'BPChar_Saurian_Predator_X',
-            #'BPChar_Saurian_Pygmimus',
-            #'BPChar_SaurianShiny',
-            #'BPChar_Saurian_Slinger',
-            #'BPChar_Saurian_Tyrant',
-            #'BPChar_SaurianForager',
-
-            'BPChar_ServiceBot',
-            'BPChar_SkagShared',
-            'BPChar_Spiderant',
-            'BPChar_Tink',
-            'BPChar_Tink_Turret',
-            'BPChar_Trooper',
-            'BPChar_VarkidShared',
-            'BPChar_LootTracker',
-
-            # Maliwan Takedown
-            'BPChar_MechBasicMini',
-            'BPChar_MechMeleeMini',
-
-            # Moxxi's Heist
-            'BPChar_EnforcerShared_Stripped',
-            'BPChar_Goon_Stripped',
-            'BPChar_PsychoShared_Stripped',
-            'BPChar_PunkShared_Stripped',
-            'BPChar_TinkStripped',
-            ]),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear'),
 
         # Goliaths
-        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Godliath', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
-        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_NonEnraging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
-        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Ultimate', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
-        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_SuperRaging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
-        ('/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_MegaRaging', ['BPChar_Goliath', 'BPChar_Goliath_Stripped']),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Godliath'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_NonEnraging'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Ultimate'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_SuperRaging'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_MegaRaging'),
 
         # Dandelion standard-enemy drop list
-        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion', [
-            'BPChar_AcidTrip_EarlyPrototype',
-            'BPChar_EnforcerBruiser_Looter',
-            'BPChar_GoliathBasic_Looter',
-            'BPChar_GoliathMidget_Looter',
-            'BPChar_GoonBasic_looter',
-            'BPChar_GoonVortex_Looter',
-            'BPChar_PsychoBasic_Looter',
-            'BPChar_PsychoFirebrand_Looter',
-            'BPChar_PsychoSlugger_Looter',
-            'BPChar_PsychoSuicide_Looter',
-            'BPChar_PunkAssaulter_Looter',
-            'BPChar_PunkBasic_Looter',
-            'BPChar_PunkShotgunner_Looter',
-            'BPChar_PunkSniper_Looter',
-            'BPChar_TinkBasic_Looter',
-            'BPChar_TinkPsycho_Looter',
-            'BPChar_TinkShotgun_Looter',
-            'BPChar_TinkSuicide_Looter',
-            'BPChar_CasinoBot_BigJanitor',
-            ]),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion'),
 
         # Dandelion standard-loader drop list
-        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', [
-            # Moxxi's Heist
-            'BPChar_HyperionTurretBasic',
-            'BPChar_LoaderShared',
-            'BPChar_WeeLoaderBasic',
-            ]),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader'),
 
         # Base game badass enemy drop list
-        ('/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear', [
-
-            # Base Game (don't actually care about the unique enemies in here, but
-            # it was less work to just leave 'em in)
-            'BPChar_Ape_Hunt01',
-            'BPChar_ApeJungleMonarch',
-            'BPChar_ApeBadass',
-            'BPChar_ApeLoot',
-            'BPChar_Enforcer_BountyPrologue',
-            'BPChar_EnforcerUrist',
-            'BPChar_EnforcerBadass',
-            'BPChar_Frontrunner_Badass',
-            'BPChar_Goliath_Badass',
-            'BPChar_GoonBadass',
-            'BPChar_GuardianGemGoblin',
-            'BPChar_GuardianWraithBadass',
-            'BPChar_Heavy_Badass',
-            'BPChar_Mech',
-            'BPChar_Nekrobug_Badass',
-            'BPChar_NogBadass',
-            'BPChar_NogNogromancer',
-            'BPChar_OversphereBadass',
-            'BPChar_PsychoBadass',
-            'BPChar_Punk_Bounty01a',
-            'BPChar_Punk_Bounty01b',
-            'BPChar_Punk_Bounty01c',
-            'BPChar_Punk_Bounty01d',
-            'BPChar_PunkBrewHag',
-            'BPChar_PunkMotherOfDragons',
-            'BPChar_PunkBadass',
-            'BPChar_Rakk_Dragon',
-            'BPChar_Rakk_DragonCryo',
-            'BPChar_Rakk_Hunt01',
-            'BPChar_Rakk_HuntSkrakk',
-            'BPChar_RakkBadassCryo',
-            'BPChar_RakkChromatic',
-            'BPChar_RakkQueen',
-            'BPChar_RatchBadass',
-            'BPChar_RatchHive',
-            'BPChar_Saurian_Grog_Poison',
-            'BPChar_Saurian_Hamtaurus_Badass',
-            'BPChar_Saurian_Tyrant',
-            'BPChar_ServiceBot_SWAT',
-            'BPChar_Skag_Rare01',
-            'BPChar_SkagBadass',
-            'BPChar_SpiderantKing',
-            'BPChar_SpiderantQueen',
-            'BPChar_Tink_Bounty01',
-            'BPChar_TinkRare02',
-            'BPChar_TinkUndertaker',
-            'BPChar_TinkBadass',
-            'BPChar_Tink_SentryRocketPodBigD',
-            'BPChar_TrooperBadass',
-            'BPChar_VarkidBadass',
-            'BPChar_AtlasSoldier_Bounty01',
-
-            # Maliwan Takedown
-            'BPChar_Behemoth',
-
-            # Moxxi's Heist
-            'BPChar_EnforcerBadass_Stripped',
-            'BPChar_Goliath_Badass_Stripped',
-            'BPChar_GoonBadass_Stripped',
-            'BPChar_PunkBadass_Stripped',
-            'BPChar_TinkBadass_Stripped',
-            'BPChar_Mimic',
-            'BPChar_WeeLoaderShared',
-            ]),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear'),
 
         # Dandelion Badass enemy list
-        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Dandelion', [
-            'BPChar_SisterlyLove_DebtCollectorLoader',
-            'BPChar_GreatEscape_Rudy',
-            'BPChar_RagingBot_MachineGunMikey',
-            'BPChar_EnforcerBadass_Looter',
-            'BPChar_Enforcer_PrettyBoy',
-            'BPChar_GoliathBadass_Looter',
-            'BPChar_GoonBadass_Looter',
-            'BPChar_PsychoBadass_Looter',
-            'BPChar_PunkArmored_LooterVIP',
-            'BPChar_PunkBadass_Looter',
-            'BPChar_TinkBadass_Looter',
-            'BPChar_TinkBadassArmored_Looter',
-            # /Dandelion/Missions/Plot/Ep05_ThePlan/SpawnOption_TricksyNick_Farmable but eh.
-            ]),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Dandelion'),
 
         # Dandelion Badass loader list
-        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_BadassEnemyGunsGearLoader1', [
-            'BPChar_HyperionTurretBadass',
-            'BPChar_LoaderBadass',
-            ]),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_BadassEnemyGunsGearLoader1'),
 
         # Dandelion Constructors
-        ('/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/ItemPoolList_Constructor', [
-            'BPChar_Constructor',
-            ]),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/ItemPoolList_Constructor'),
 
         # Anointed Enemies
-        ('/Game/GameData/Loot/ItemPools/ItemPoolList_AnointedEnemyGunsGear', [
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_AnointedEnemyGunsGear'),
 
-            'BPChar_EnforcerAnointed',
-            'BPChar_Goliath_Anointed',
-            'BPChar_GoonAnointed',
-            'BPChar_PsychoAnointed',
-            'BPChar_Punk_Anointed',
-            'BPChar_TinkAnointed',
-            'BPChar_VarkidHunt02_LarvaA',
-            'BPChar_VarkidHunt02_LarvaB',
-            'BPChar_VarkidHunt02_LarvaC',
-            'BPChar_VarkidHunt02_LarvaD',
-            'BPChar_VarkidSuperBadass',
-            ]),
+        # Trash Piles - this isn't actually *used* by very many things, as it turns out.  Most stuff
+        # ends up referencing the ItemPool directly, instead of using this list.
+        # NOTE: the quantity specified here doesn't actually seem to show up, in general -
+        # I suspect that some of the spawned gear might fall through the ground.
+        (Mod.LEVEL, '/Game/GameData/Loot/ItemPools/ItemPoolList_TrashPile'),
 
         ]:
 
-    last_bit = pool.split('/')[-1]
-    full_pool = '{}.{}'.format(pool, last_bit)
-
-    for char in chars:
-        mod.reg_hotfix(Mod.CHAR, char,
-                full_pool,
-                'ItemPools',
-                """(
-                    (
-                        ItemPool=ItemPoolData'"{}"'
-                        PoolProbability=(
-                            BaseValueConstant=1,
-                            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                            BaseValueAttribute=None,
-                            AttributeInitializer=None,
-                            BaseValueScale=1
-                        ),
-                        NumberOfTimesToSelectFromThisPool=(
-                            BaseValueConstant={},
-                            DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                            BaseValueAttribute=None,
-                            AttributeInitializer=None,
-                            BaseValueScale=1
-                        )
+    mod.reg_hotfix(hf_type, 'MatchAll',
+            pool,
+            'ItemPools',
+            """(
+                (
+                    ItemPool={},
+                    PoolProbability=(
+                        BaseValueConstant=1,
+                        DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                        BaseValueAttribute=None,
+                        AttributeInitializer=None,
+                        BaseValueScale=1
+                    ),
+                    NumberOfTimesToSelectFromThisPool=(
+                        BaseValueConstant={},
+                        DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                        BaseValueAttribute=None,
+                        AttributeInitializer=None,
+                        BaseValueScale=1
                     )
-                )""".format(pool_to_set_full, drop_quantity))
+                )
+            )""".format(
+                Mod.get_full_cond(pool_to_set, 'ItemPoolData'),
+                drop_quantity,
+                ))
+
+# Since I'm doing it, may as well put in trash piles specifically
+# NOTE: the quantity specified here doesn't actually seem to show up, in general -
+# I suspect that some of the spawned gear might fall through the ground.
+mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
+        '/Game/GameData/Loot/ItemPools/ItemPool_TrashPile',
+        'BalancedItems',
+        """(
+            (
+                ItemPoolData={},
+                Quantity=(BaseValueConstant={})
+            )
+        )""".format(
+            Mod.get_full_cond(pool_to_set, 'ItemPoolData'),
+            drop_quantity,
+            ))
 
 mod.close()
