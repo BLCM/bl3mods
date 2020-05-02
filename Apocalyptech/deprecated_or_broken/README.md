@@ -20,6 +20,9 @@ weren't actually intended to be mods themselves.
   modifiers that get applied at various Mayhem levels, mostly just to
   verify that it could be done.  Works great!  I don't actually have any
   plans to do anything with 'em, though.
+  - `mayhem_laffs.txt` - Mocking up a screenshot of a ridiuclous
+    hypothetical Mayhem 20.  Bit o' fun is all.  (Though it does legit
+    make Mayhem 10 into a nightmare.)
 
 ## Deprecated/Testing Mods
 
