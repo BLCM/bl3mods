@@ -94,7 +94,7 @@ with open(args.modlist) as modlist_df:
 
 # Write out
 with open(args.output, 'w') as json_df:
-    json.dump(json_out, json_df, separators=(',', ':'))
+    json.dump(json_out, json_df, indent='  ')
 
 # Report!
 print('Done!  Wrote {} mods (with {} total hotfixes) to {}'.format(
