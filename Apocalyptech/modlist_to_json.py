@@ -28,6 +28,11 @@ parser.add_argument('-f', '--force',
         help='Overwrite output file without prompting',
         )
 
+parser.add_argument('-v', '--verbose',
+        action='store_true',
+        help='Verbose output (show modfile contents as it goes)',
+        )
+
 args = parser.parse_args()
 
 if os.path.exists(args.output) and not args.force:
@@ -43,14 +48,16 @@ if not os.path.exists(args.modlist):
     print('ERROR: {} does not exist'.format(args.modlist))
     sys.exit(1)
 
-def process_modfile(modpath):
+def process_modfile(modpath, verbose=False):
 
     to_ret = []
     with open(modpath) as mod_df:
         prefix = None
         hf_counter = 0
-        for modline in mod_df:
+        for linenum, modline in enumerate(mod_df):
             modline = modline.strip()
+            if verbose:
+                print('{} line {}: {}'.format(modpath, linenum+1, modline))
             if modline == '' or modline.startswith('#'):
                 continue
 
@@ -58,6 +65,8 @@ def process_modfile(modpath):
             if not prefix:
                 if not modline.lower().startswith('prefix:'):
                     print('WARNING: {} did not contain a prefix line, skipping'.format(modpath))
+                    if verbose:
+                        print('')
                     return []
                 else:
                     prefix = modline.split(':', 1)[1].strip()
@@ -67,6 +76,8 @@ def process_modfile(modpath):
                 key = '{}-Apoc{}{}'.format(hftype, prefix, hf_counter)
                 to_ret.append((key, hf))
 
+    if verbose:
+        print('')
     return to_ret
 
 # Start constructing
@@ -88,7 +99,8 @@ with open(args.modlist) as modlist_df:
             print('WARNING: {} was not found, skipping...'.format(modpath))
             continue
 
-        for (key, value) in process_modfile(modpath):
+        print('Processing: {}'.format(modpath))
+        for (key, value) in process_modfile(modpath, verbose=args.verbose):
             json_out['parameters'].append({'key': key, 'value': value})
         mod_count += 1
 
