@@ -75,6 +75,9 @@ Gameplay Changes instead.)
   This fixes them up (or at least makes everything drop at their non-Mayhem
   rate, which is better than the Not-At-All they were getting before).  (Not
   all drops were affected, but quite a few were.)
+- `fix_dlc2_shield_drops.txt` - Most enemies in DLC2 (Guns, Love, and Tentacles)
+  won't actually drop shields.  This fixes standard enemies but doesn't
+  currently bother with badasses.
 - `better_loot.txt` - A somewhat stripped-down version of Better Loot, not that
   BL3 really needs much in the way of better loot.  Does the following,
   currently:
