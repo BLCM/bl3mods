@@ -51,7 +51,7 @@ if not os.path.exists(args.modlist):
 def process_modfile(modpath, verbose=False):
 
     to_ret = []
-    with open(modpath) as mod_df:
+    with open(modpath, encoding='utf-8') as mod_df:
         prefix = None
         hf_counter = 0
         for linenum, modline in enumerate(mod_df):
@@ -88,7 +88,7 @@ json_out = {
         'parameters': [],
         }
 mod_count = 0
-with open(args.modlist) as modlist_df:
+with open(args.modlist, encoding='utf-8') as modlist_df:
     for line in modlist_df:
         line = line.strip()
         if line == '' or line.startswith('#'):
