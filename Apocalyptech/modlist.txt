@@ -34,6 +34,10 @@ first_gun_full_loadout
 # Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
 nvhm_gamestage_follows_level
 
+# Mayhem 2.0 Drop Rate Fixes - run this before Better Loot so that
+# Better Loot's eridium drop rate overwrites this
+fix_mayhem2_drops
+
 # Better Loot!  Improves loot quality and other such tweaks
 better_loot
 

@@ -71,6 +71,10 @@ Gameplay Changes instead.)
 
 - `nvhm_gamestage_follows_level.txt` - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
+- `fix_mayhem2_drops.txt` - On release, Mayhem 2.0 broke a lot of world drops.
+  This fixes them up (or at least makes everything drop at their non-Mayhem
+  rate, which is better than the Not-At-All they were getting before).  (Not
+  all drops were affected, but quite a few were.)
 - `better_loot.txt` - A somewhat stripped-down version of Better Loot, not that
   BL3 really needs much in the way of better loot.  Does the following,
   currently:
