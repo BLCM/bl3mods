@@ -22,8 +22,11 @@ mod = Mod('mayhem2_decreased_enemy_scaling.txt',
 # Default scaling values:
 #scaling = [2, 4, 6, 8, 15, 30, 50, 75, 100, 125]
 
-# My new values (hah, pathetic!)
-scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]
+# My original new values (hah, pathetic!)
+#scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]
+
+# My most recent values (even more pathetic!)
+scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 4.5, 5, 5]
 
 for mayhem_level_minus_one, scale_value in enumerate(scaling):
     mayhem_level = mayhem_level_minus_one + 1
