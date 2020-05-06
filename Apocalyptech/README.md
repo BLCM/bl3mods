@@ -62,10 +62,24 @@ Gameplay Changes instead.)
   modes, and increases Anointed parts on drops even more (including in
   non-Mayhem).  All drops in Mayhem 3 should be Anointed.  Mayhem drop rates
   are otherwise identical to the Farming Frenzy event rates, which might
-  actually be permanent now?
+  actually be permanent now?  **TODO:** I believe that this is still in use
+  and works fine after the Mayhem 2.0 release, and they've simply changed
+  the levels at which these variables get applied.  I should test that out
+  to be sure, though.
 - `first_gun_full_loadout` - Modifies the opening chest in Covenant Pass to
   contain two pistols, a shield, a grenade mod, a COM, and an artifact,  You'll
   need to be using Early Bloomer to make use of the COM and Artifact, of course.
+- `mayhem2_decreased_enemy_scaling.txt` - I really dislike bullet-sponginess,
+  and would rather just have fun with the various Mayhem 2.0 modifiers without
+  having to worry about optimizing DPS.  This severely cuts back on enemy
+  health/shield/armor buffs in all Mayhem 2.0 modes.  **TODO:** I *would*
+  actually like to figure out how to nerf Mayhem-enhanced weapons so that they
+  don't become super OP, but I haven't figured that out yet.  I may end up
+  adjusting this to suit, if I'm finding things too easy.
+- `mayhem2_modifier_nerfs.txt` - I enjoy the Mayhem 2.0 modifiers in general,
+  but I'd wanted to nerf a few of 'em down a bit.  I don't think these nerfs
+  dramatically change how you'd approach any given set of modifiers, but it
+  should make the tougher ones a bit less deadly.
 
 ## Gameplay Changes
 
@@ -118,14 +132,6 @@ Gameplay Changes instead.)
   is because in conjunction with Better Loot, it gets utterly absurd, and
   I'm honestly fine with the drops I get from Better Loot.  So, a rare
   example of a plain and simple nerf in one of my mods!
-- `mayhem2_decreased_enemy_scaling.txt` - Conversely, I really dislike
-  bullet-sponginess, and would rather just have fun with the various
-  Mayhem 2.0 modifiers without having to worry about optimizing DPS.  This
-  severely cuts back on enemy health/shield/armor buffs in all Mayhem 2.0
-  modes.  **TODO:** I *would* actually like to figure out how to nerf
-  Mayhem-enhanced weapons so that they don't become super OP, but I haven't
-  figured that out yet.  I may end up adjusting this to suit, if I'm
-  finding things too easy.
 
 ## Economy-related Mods
 

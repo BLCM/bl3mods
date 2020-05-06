@@ -27,6 +27,12 @@ better_mayhem_rewards
 first_gun_full_loadout
 #first_gun_testing_gear
 
+# Vastly decreased enemy scaling in Mayhem 2.0
+mayhem2_decreased_enemy_scaling
+
+# Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
+mayhem2_modifier_nerfs
+
 ###
 ### Gameplay Changes
 ###
@@ -56,9 +62,8 @@ dlc_loot_de-emphasizer
 # Vehicle Unlocks
 vehicle_unlocks
 
-# Mayhem 2.0 Scaling Changes
+# Mayhem 2.0 - Remove drop scaling altogether
 mayhem2_no_drop_scaling
-mayhem2_decreased_enemy_scaling
 
 ###
 ### Economy-related mods
