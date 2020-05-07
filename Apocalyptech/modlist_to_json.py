@@ -48,11 +48,10 @@ if not os.path.exists(args.modlist):
     print('ERROR: {} does not exist'.format(args.modlist))
     sys.exit(1)
 
-def process_modfile(modpath, verbose=False):
+def process_modfile(modpath, prefix, verbose=False):
 
     to_ret = []
     with open(modpath, encoding='utf-8') as mod_df:
-        prefix = None
         hf_counter = 0
         for linenum, modline in enumerate(mod_df):
             modline = modline.strip()
@@ -60,21 +59,15 @@ def process_modfile(modpath, verbose=False):
                 print('{} line {}: {}'.format(modpath, linenum+1, modline))
             if modline == '' or modline.startswith('#'):
                 continue
+            if modline.lower().startswith('prefix:'):
+                # Ignoring these now!  Prefix was always a bad idea.
+                continue
 
             # Check for prefix
-            if not prefix:
-                if not modline.lower().startswith('prefix:'):
-                    print('WARNING: {} did not contain a prefix line, skipping'.format(modpath))
-                    if verbose:
-                        print('')
-                    return []
-                else:
-                    prefix = modline.split(':', 1)[1].strip()
-            else:
-                hf_counter += 1
-                hftype, hf = modline.split(',', 1)
-                key = '{}-Apoc{}{}'.format(hftype, prefix, hf_counter)
-                to_ret.append((key, hf))
+            hf_counter += 1
+            hftype, hf = modline.split(',', 1)
+            key = '{}-Apoc{}-{}'.format(hftype, prefix, hf_counter)
+            to_ret.append((key, hf))
 
     if verbose:
         print('')
@@ -100,7 +93,7 @@ with open(args.modlist, encoding='utf-8') as modlist_df:
             continue
 
         print('Processing: {}'.format(modpath))
-        for (key, value) in process_modfile(modpath, verbose=args.verbose):
+        for (key, value) in process_modfile(modpath, '{:X}'.format(mod_count), verbose=args.verbose):
             json_out['parameters'].append({'key': key, 'value': value})
         mod_count += 1
 
