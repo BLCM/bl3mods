@@ -40,10 +40,6 @@ mayhem2_modifier_nerfs
 # Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
 nvhm_gamestage_follows_level
 
-# Mayhem 2.0 Drop Rate Fixes - run this before Better Loot so that
-# Better Loot's eridium drop rate overwrites this
-fix_mayhem2_drops
-
 # Fix Shield drops on standard enemies in DLC2
 fix_dlc2_shield_drops
 
