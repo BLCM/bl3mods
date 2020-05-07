@@ -6,8 +6,6 @@
 # other pools out of here.
 #
 
-prefix: OnlyHeadsSkins
-
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc,BalancedItems[2].Weight.BaseValueConstant,0,,0
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc,BalancedItems[3].Weight.BaseValueConstant,0,,0
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc,BalancedItems[4].Weight.BaseValueConstant,0,,0

@@ -49,8 +49,7 @@ for filename, label, comments, attachments, set_gun in [
                 "Also updates the car-trunk chest which provides your second and third guns",
                 "to pull from the main pistol pool rather than locked to white Jakobs+Dahl",
                 "pistols.",
-                ],
-            'FirstGun{}'.format(label.replace(' ', '')))
+                ])
 
     mod.comment('Update the chest LootDef')
     stanzas = []

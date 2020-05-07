@@ -21,9 +21,7 @@ mod = Mod('more_elemental_weapons.txt',
             "   Very Rare: 41%",
             "",
             "This mod increases the chance to {}%, across the board.".format(chance_element),
-        ],
-        'MoreElementals',
-        )
+        ])
 
 for row in [
         'Common',

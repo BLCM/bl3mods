@@ -15,9 +15,7 @@ mod = Mod('red_text_explainer.txt',
             'Text mostly summarized from borderlands.fandom.com, so take with a grain',
             'of salt. :)  Some weapons could use some verification, especially the ones',
             'whose special abilities appear to just be the "better" stats on the card.',
-        ],
-        'RedText',
-        )
+        ])
 
 def elementize(text):
     for snippet, tag in [

@@ -13,9 +13,7 @@ mod = Mod('only_atlas_grenades.txt',
             "",
             "This does *not* affect legendary grenade drops, only the regular",
             "sort.",
-        ],
-        'OnlyAtlasGrenades',
-        )
+        ])
 
 for pool_name in [
         'ItemPool_GrenadeMods_01_Common',

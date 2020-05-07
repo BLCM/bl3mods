@@ -3,8 +3,6 @@
 ### of the Bloody Harvest challenges a bit more quickly.
 ###
 
-prefix: WhisperingIce
-
 # Damage - this is clearly a multiplier or something.  The "2" value here
 # makes the thing extremely good but not *completely* OP; since you can
 # get hit by your own grenade I didn't want it to be a super-buff.

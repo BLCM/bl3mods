@@ -16,9 +16,7 @@ mod = Mod('mission_reward_randomizer.txt',
             "Relatively untested!  It's quite possible that some missions were missed.",
             "The data here was programmatically generated from JohnWickParse data",
             "serializations, and JWP has problems with some objects.",
-        ],
-        'MissRwdRando',
-        )
+        ])
 
 # There are various ways to accomplish this, and of course I go for a
 # super over-engineered method.  Ah, well!

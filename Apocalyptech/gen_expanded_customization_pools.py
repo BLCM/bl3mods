@@ -72,7 +72,6 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     mod = Mod(filename_full,
             'Expanded Customization Pools: {}'.format(label),
             full_desc,
-            'CustomPools{}'.format(prefix),
             )
 
     mod.header('Increased Cosmetic chances')

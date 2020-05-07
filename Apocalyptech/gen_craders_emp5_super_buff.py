@@ -15,9 +15,7 @@ mod = Mod('craders_emp5_super_buff.txt',
             "",
             "Note that any EM-P5 with the x2 Grip will consume 1 ammo (as opposed",
             "to its usual 2).  This mod prevents further x2 Grips from spawning.",
-        ],
-        'Craders',
-        )
+        ])
 
 # The default Crader's barrel doesn't have *any* InventoryAttributeEffects, so these
 # are all new.  Note that I'm not really sure which of these are *actually* providing

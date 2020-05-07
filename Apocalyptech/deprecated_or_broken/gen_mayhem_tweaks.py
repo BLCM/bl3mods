@@ -15,7 +15,6 @@ mod = Mod('mayhem_tweaks.txt',
         'Mayhem Tweaks',
         [
         ],
-        'MayhemTweaks',
         )
 
 EASY = '/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_EAsy'

@@ -9,9 +9,7 @@ mod = Mod('better_slots.txt',
             'Improved results for all slot machines -- will always get a reward, and',
             "never any loaded grenades.  Customizations won't drop too often, since",
             'they just just the same pools as the global customization drops.',
-        ],
-        'Slots',
-        )
+        ])
 
 weight_attr = 'Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E'
 for (label, obj_name, maps, results) in [

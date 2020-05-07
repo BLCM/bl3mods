@@ -27,9 +27,7 @@ mod = Mod('maliwan_charge_time.txt',
             'Sniper Scaling: {:d}%'.format(int(scale_sniper*100)),
             #'',
             #"Also (possibly) buffs the charge time for the ION CANNON, even though it's a Vladof gun.",
-        ],
-        'MaliwanCharge',
-        )
+        ])
 
 def charge_time(mod,
         obj_name,

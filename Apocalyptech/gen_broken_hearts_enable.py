@@ -9,9 +9,7 @@ mod = Mod('broken_hearts_enable.txt',
         [
             "Enables the Broken Hearts event.  Will interfere with any other event which",
             "happens to be running.  (Only one can be fully active at a time.)",
-        ],
-        'BrokenHeartsEnable',
-        )
+        ])
 
 mod.comment('Global activation switches')
 

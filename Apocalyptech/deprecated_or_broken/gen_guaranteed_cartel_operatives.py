@@ -8,9 +8,7 @@ mod = Mod('guaranteed_cartel_operatives.txt',
         [
             "All spawns which can generate operatives should do so.  This is",
             "actually a bit much, I stopped using it after a couple of tests.",
-        ],
-        'CartelGuar',
-        )
+        ])
 
 mod.table_hotfix(Mod.PATCH, '',
         '/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels',

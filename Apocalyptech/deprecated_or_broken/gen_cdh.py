@@ -8,7 +8,6 @@ mod = Mod('cdh.txt',
         [
             'Not really, but wanted to test out if bDropOnDeath still exists',
             ],
-        'CDH',
         )
 
 for char in [

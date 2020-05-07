@@ -373,8 +373,7 @@ if save_filename:
             'Arbitrary Partlocks: {}'.format(bal_last),
             [
                 'Auto-generated partlocks, chosen with an interactive CLI app.',
-            ],
-            'ArbPL{}'.format(bal_last.replace('_', '')))
+            ])
 
     for cat_idx, cat_actions in enumerate(actions):
         cur_cat = categories[cat_idx]

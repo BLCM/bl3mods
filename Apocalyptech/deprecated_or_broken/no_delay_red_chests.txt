@@ -2,8 +2,6 @@
 ### Attempts to disable the 30-min reopen delay on red chests
 ###
 
-prefix: RedChest
-
 # No luck so far.  Who knows if this is even firing when the objects in
 # question exist, of course.  There's two vars which seem likely:
 # ResetDelay and LootEnabledDelay.  Have tried:

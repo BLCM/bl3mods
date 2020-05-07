@@ -10,9 +10,7 @@ max_price = 1024000
 
 mod = Mod('cheaper_sdus.txt',
         'SDUs are much cheaper',
-        [],
-        'SDU',
-        )
+        [])
 
 for table_data in [
         'Table_SDU_AssaultRifle',

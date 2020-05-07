@@ -11,8 +11,6 @@
 ### NOTE: Untested!
 ###
 
-prefix: BHDisable
-
 # Global activation switches
 SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,ActiveLeague,0,,OL_None
 SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,LeagueInstance,0,,0

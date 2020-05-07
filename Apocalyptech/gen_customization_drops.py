@@ -36,7 +36,6 @@ for (label, filename, rate, desc) in [
     mod = Mod(full_filename,
             'Standard Enemy Customization Drop Rate: {}'.format(label),
             desc,
-            '{}Customs'.format(label),
             )
 
     mod.header('Set cosmetics chance to {}'.format(rate))

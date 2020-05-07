@@ -16,9 +16,7 @@ mod = Mod('vehicle_unlocks.txt',
             "Also converts Clever Girl, Festive Flesh-Eater, Skagzilla, and all",
             "Technicals in Sandblast Scar to the Monster Wheels variety, so that",
             "there's ingame sources for the Monster Wheels."
-        ],
-        'VUnlocks',
-        )
+        ])
 
 # A list of all levels where vehicles can show up
 outrunner_levels = {

@@ -11,9 +11,7 @@ mod = Mod('fix_mayhem2_drops.txt',
             "",
             "This should be run BEFORE my Better Loot mod, if you're using both",
             "and want Better Loot's enhanced eridium drop rate.",
-        ],
-        'M2DropFix',
-        )
+        ])
 
 class PoolList(object):
     

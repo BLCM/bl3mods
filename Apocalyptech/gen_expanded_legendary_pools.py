@@ -37,9 +37,7 @@ mod = Mod('expanded_legendary_pools.txt',
         [
             'Adds all uniques and stuff (minus a few exceptions) into the legendary drop pools,',
             'at a reduced rate compared to the legendaries already in there.',
-            ],
-        'Pools',
-        )
+        ])
 
 # Items Omitted:
 #

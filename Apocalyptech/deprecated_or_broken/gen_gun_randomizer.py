@@ -15,9 +15,7 @@ mod = Mod('gun_randomizer.txt',
             "",
             "Don't really have any plans to turn this into a full mod, just",
             "wanted to see if it'd work.",
-        ],
-        'GunRando',
-        )
+        ])
 
 parts = [
         (False, [

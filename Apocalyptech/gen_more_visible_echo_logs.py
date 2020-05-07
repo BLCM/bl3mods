@@ -14,9 +14,7 @@ mod = Mod('more_visible_echo_logs.txt',
             "",
             "Technically this also lengthens the ammo/eridium/health/money/booster bars a bit,",
             "but only by a very small amount.",
-        ],
-        'VEchoLogs',
-        )
+        ])
 
 # default: 85
 height = 900

@@ -5,8 +5,6 @@
 
 # This is all very much fail.  :(
 
-prefix: BloodyChallenges
-
 # Kill Captain Haunt
 #SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,GoalValue,0,,4
 #SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_02_CaptainHaunt.Challenge_BloodyHarvest_02_CaptainHaunt,ChallengeGoalValue,0,,4

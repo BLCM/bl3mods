@@ -11,9 +11,7 @@ mod = Mod('fix_dlc2_shield_drops.txt',
             "zero weight.  For badasses, they're absent entirely from the pool",
             "list.  We're fixing the Standard ones, but not bothering with Badasses",
             "for now.",
-        ],
-        'DLC2ShieldDrop',
-        )
+        ])
 
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus',

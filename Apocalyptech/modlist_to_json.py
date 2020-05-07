@@ -59,9 +59,6 @@ def process_modfile(modpath, prefix, verbose=False):
                 print('{} line {}: {}'.format(modpath, linenum+1, modline))
             if modline == '' or modline.startswith('#'):
                 continue
-            if modline.lower().startswith('prefix:'):
-                # Ignoring these now!  Prefix was always a bad idea.
-                continue
 
             # Check for prefix
             hf_counter += 1

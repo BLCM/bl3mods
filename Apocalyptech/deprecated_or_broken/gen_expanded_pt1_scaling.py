@@ -21,9 +21,7 @@ mod = Mod('expanded_pt1_scaling.txt',
             "levels, so it's possible that these changes aren't applying fully in",
             "all cases.  This is currently untested, I'll have to go through a",
             "playthrough to find out if it's doing the right thing.",
-        ],
-        'ExpandedPT1Scale',
-        )
+        ])
 
 # For a version which *basically* does what I want here, see the working
 # nvhm_gamestage_follows_level.txt in the parent dir.  That's a bit more aggressive

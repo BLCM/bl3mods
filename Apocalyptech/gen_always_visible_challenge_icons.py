@@ -15,9 +15,7 @@ mod = Mod('always_visible_challenge_icons.txt',
             "",
             "NOTE: This is currently not well-tested.  Only a handful of early",
             "maps have been validated.",
-        ],
-        'ChallengeIcons',
-        )
+        ])
 
 # I should look at actual data, but it looks to me from some *real* simple
 # scaling on the map screen that The Droughts is probably 65k "wide".

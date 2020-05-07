@@ -9,9 +9,7 @@ mod = Mod('mayhem2_modifier_nerfs.txt',
             "Applying some nerfs to Mayhem 2.0 modifiers that I enjoy, but wish",
             "were a little less intrusive.  Cheaty!  Though the Lootsplosion",
             "modifier change is technically *against* the player rather than for.",
-        ],
-        'M2ModNerf',
-        )
+        ])
 
 mod.header('Actual Stat Changes')
 

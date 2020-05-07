@@ -15,7 +15,6 @@ mod = Mod('mayhem_laffs.txt',
         'Mayhem lol',
         [
         ],
-        'MayhemLol',
         )
 
 EASY = '/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_EAsy'

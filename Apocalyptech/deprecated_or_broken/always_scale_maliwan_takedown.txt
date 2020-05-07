@@ -7,8 +7,6 @@
 ### out there was just the one statement!
 ###
 
-prefix: MaliwanTakedownScaling
-
 # Yep, this is it!
 SparkLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_P.Raid_P:PersistentLevel.Raid_P_C_1,ForceBalance,0,,False
 

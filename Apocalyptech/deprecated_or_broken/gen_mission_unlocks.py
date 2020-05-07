@@ -6,7 +6,6 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('mission_unlocks.txt',
         'pffff',
         [],
-        'MissionUnlocks',
         )
 
 # Set the item pool reward - this works!

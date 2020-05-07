@@ -12,9 +12,7 @@ mod = Mod('cheaper_eridium_economy.txt',
             "Currently the affected areas are Earl's Customizations, and the Eridium",
             "slot machine.  Earl's Vault Veteran vending machine is untouched since",
             "I haven't yet figured out how to alter it.",
-        ],
-        'CheaperEridium',
-        )
+        ])
 
 for label, row in [
         ('Trinkets', 'WeaponTrinket'),

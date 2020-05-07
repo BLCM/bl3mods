@@ -6,7 +6,6 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('torgue_full_auto.txt',
         'pffff',
         [],
-        'TorgueAuto',
         )
 
 for barrel in ['01', '02', '03']:

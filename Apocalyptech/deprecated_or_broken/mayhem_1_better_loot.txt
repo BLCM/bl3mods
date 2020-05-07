@@ -5,8 +5,6 @@
 ### concept if nothing else
 ###
 
-prefix: MH1BL
-
 # Nearly-guaranteed legendaries
 #SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MinValue,0,,20000.000000
 #SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MaxValue,0,,20000.000000

@@ -331,9 +331,7 @@ mod = Mod('filename_to_save.txt',
         [
             'Extra description lines to show in the header, if you want.',
             'You can leave this as an empty list.',
-        ],
-        'HotfixPrefix',
-        )
+        ])
 ```
 
 Then you can use a few shortcuts to build out the mod:

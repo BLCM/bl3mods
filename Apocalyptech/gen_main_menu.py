@@ -19,9 +19,7 @@ for event, menunum in [
                 "Sets the main menu to have the {} visuals.  No actual effect on".format(event_cap),
                 "gameplay or anything (use the `eventname_enable.txt` mods to actually",
                 "turn timed events back on).",
-            ],
-            'Menu{}'.format(event_cap),
-            )
+            ])
 
     mod.table_hotfix(Mod.PATCH, '',
             '/Game/Common/_Design/Table_MicropatchSwitches',

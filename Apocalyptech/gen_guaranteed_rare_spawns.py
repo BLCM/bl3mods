@@ -12,9 +12,7 @@ mod = Mod('guaranteed_rare_spawns.txt',
             "",
             "This *does* also buff most rare vehicle spawns, too, which GBX does not",
             "do yet.  Rare Vehicle spawns should be maybe about 10% per vehicle spawn.",
-        ],
-        'GuaranteedRareSpawn',
-        )
+        ])
 
 # Make all rare spawns 100%.  We specify a lot more levels than GBX does, and I don't
 # think that the extra levels actually do any good, but whatever.

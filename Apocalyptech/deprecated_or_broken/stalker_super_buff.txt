@@ -3,6 +3,4 @@
 ### various Bloody Harvest challenges
 ###
 
-prefix: Stalker
-
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_Weapon_BloodyHarvest.DataTable_Weapon_BloodyHarvest,SR_FrostBolt,DamageScale_2_6249E51D41B75899C0DEDD8B5EFE89ED,0,,50.000000

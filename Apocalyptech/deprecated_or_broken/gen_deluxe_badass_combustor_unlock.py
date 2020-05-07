@@ -8,9 +8,7 @@ mod = Mod('deluxe_badass_combustor_unlock.txt',
         [
             "Allows the Deluxe Badass Combustor shield to function at any level",
             "of the game, instead of until level 10.",
-        ],
-        'CombustorUnlock',
-        )
+        ])
 
 # This looks *so simple* from the JWP serialization, but I'm still not great at modifying
 # BlueprintGeneratedClasses.  The BGC exists out on the main menu, but I couldn't even figure

@@ -3,8 +3,6 @@
 ### Nope.  Doesn't work.
 ###
 
-prefix: GuaranteedBadasses
-
 # hurrr...
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/WeightingPlayerCount/DataTable_EnemyMajorUpgrade_PerPlayer.DataTable_EnemyMajorUpgrade_PerPlayer,OnePlayer_PT1,UpgradePerPlayer,0,,100
 

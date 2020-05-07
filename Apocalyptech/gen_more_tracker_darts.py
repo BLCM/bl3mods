@@ -16,9 +16,7 @@ mod = Mod('more_tracker_darts.txt',
             "tracking parts -- for instance, Linc will always spawn with a tracker",
             "grenade.  Those have been left alone.  (Specifically: Rebel Yell,",
             "Freeman, Ruby's Wrath, Linc, and Peacemonger.)",
-        ],
-        'TrackerDarts',
-        )
+        ])
 
 # Default weight for all tracker delivery types is 1
 new_weight = 6

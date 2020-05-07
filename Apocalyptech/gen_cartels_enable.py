@@ -9,9 +9,7 @@ mod = Mod('cartels_enable.txt',
             "Enables the Revenge of the Cartels event.  Will interfere with any",
             "other event which happens to be running.  (Only one can be fully",
             "active at a time.)",
-        ],
-        'CartelsEnable',
-        )
+        ])
 
 mod.comment('Global activation switches')
 

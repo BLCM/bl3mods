@@ -11,9 +11,7 @@ mod = Mod('all_weapons_can_anoint.txt',
             "Adds anointment parts to all the weapons which can't ordinarily",
             "have them.  (This doesn't *guarantee* anointments -- use my",
             "Better Loot for that.)",
-        ],
-        'AllAnoint',
-        )
+        ])
 
 # Weight attributes
 (NONE, GENERIC, SIREN, OPERATIVE, BEASTMASTER, GUNNER) = range(6)

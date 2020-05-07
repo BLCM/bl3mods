@@ -10,9 +10,7 @@ mod = Mod('maggie_super_buff.txt',
             "Used by myself primarily just for mod testing purposes, for when I don't",
             "want to be bothered by actual combat.  Originally used just to power",
             "through those interminable Slaughters, though.",
-        ],
-        'Maggie',
-        )
+        ])
 
 # Original version of this mod just did the following, rather than editing the
 # InventoryAttributeEffects directly:

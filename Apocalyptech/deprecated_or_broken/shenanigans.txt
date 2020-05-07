@@ -12,8 +12,6 @@
 # colors itself.  (Potentially hotfixable itself, but the object can't
 # be serialized at all, so no idea what the syntax might look like.)
 
-prefix: Shenanigans
-
 # Loot stick color
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX,0,,(r=0.047,g=0.898,b=0.902,a=1)
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorOutline,0,,(r=0.020,g=0.878,b=0.882,a=1)

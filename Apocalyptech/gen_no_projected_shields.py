@@ -9,9 +9,7 @@ mod = Mod('no_projected_shields.txt',
         'No Projected Shields',
         [
             'Makes shields never spawn with the "projected" effect',
-        ],
-        'NoProjected',
-        )
+        ])
 
 sections = {}
 def do_start(mod, section_name):

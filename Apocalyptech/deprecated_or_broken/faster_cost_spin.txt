@@ -2,8 +2,6 @@
 ### Attempt to speed up the cost spinner (inventory, etc)
 ###
 
-prefix: Spinner
-
 # nothing I've tried has worked so far, alas, though these do seem like the
 # correct attributes to be going after.
 

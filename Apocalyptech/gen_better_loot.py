@@ -5,9 +5,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('better_loot.txt',
         'Better Loot, ish',
-        [],
-        'BL',
-        )
+        [])
 
 def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds'):
     """

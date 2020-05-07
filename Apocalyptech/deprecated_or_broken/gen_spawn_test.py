@@ -6,7 +6,6 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('spawn_test.txt',
         'Spawn Test',
         [],
-        'SpawnTest',
         )
 
 # This was a test to see if UE4's dynamic-object-loading thing would permit us to do

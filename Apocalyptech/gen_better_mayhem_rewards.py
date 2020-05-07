@@ -10,9 +10,7 @@ mod = Mod('better_mayhem_rewards.txt',
             "the likelihood of Anointed drops.  Note that Better Loot makes anointments",
             "guaranteed, so if you're using both, be sure to put whichever behavior you",
             "want most *after* the other.",
-        ],
-        'BetterMayhem',
-        )
+        ])
 
 # XP
 mod.comment('XP Gains')

@@ -10,9 +10,7 @@ mod = Mod('better_rare_spawn_hunt.txt',
             '',
             'https://borderlands.com/en-US/news/2019-10-07-borderlands-3-rare-spawn-hunt/',
             'https://github.com/BLCM/bl3hotfixes/blob/master/gbx_info_archive/2019-10-07-anniversary_2.md',
-        ],
-        'Week2Better',
-        )
+        ])
 
 # Make all rare spawns 100%
 mod.comment('General level-based spawn rates (unchanged from stock GBX hotfixes, but for all levels)')

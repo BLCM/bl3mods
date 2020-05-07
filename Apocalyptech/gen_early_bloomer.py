@@ -5,9 +5,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('early_bloomer.txt',
         'Early Bloomer!',
-        [],
-        'Bloomer',
-        )
+        [])
 
 def unlock_table(mod,
         label=None,

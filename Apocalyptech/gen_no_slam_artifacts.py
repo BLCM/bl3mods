@@ -9,9 +9,7 @@ mod = Mod('no_slam_artifacts.txt',
             'Makes non-legendary/unique artifacts never have slam effects.',
             "Doesn't touch legendary/unique artifacts at all, so those can",
             'still spawn.',
-        ],
-        'NoSlam',
-        )
+        ])
 
 def clear_part(mod, obj_name, part_idx):
     mod.reg_hotfix(Mod.PATCH, '',

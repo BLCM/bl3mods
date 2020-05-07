@@ -6,7 +6,6 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('eridian_unlocks_full.txt',
         'pffff',
         [],
-        'EridianUnlocks',
         )
 
 ###

@@ -11,9 +11,7 @@ mod = Mod('nvhm_gamestage_follows_level.txt',
         [
             "Makes Normal/NVHM mode always scale to your player level, like it",
             "does in TVHM or Mayhem mode.",
-        ],
-        'NVHMGameStage',
-        )
+        ])
 
 for level in sorted(LVL_TO_ENG.keys()):
     mod.reg_hotfix(Mod.LEVEL, level,

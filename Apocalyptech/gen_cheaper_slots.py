@@ -6,9 +6,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 mod = Mod('cheaper_slots.txt',
         'Cheaper Slot Machines',
         [
-        ],
-        'CheaperSlots',
-        )
+        ])
 
 levels_money = [
         'Sanctuary3_P',

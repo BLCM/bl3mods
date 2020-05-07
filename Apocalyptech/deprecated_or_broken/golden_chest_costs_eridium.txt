@@ -4,6 +4,4 @@
 # change or if it'd actually do what I was trying.  Anyway, doesn't
 # work as-is.
 
-prefix: GoldenEridium
-
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Lootables/_Design/Classes/Sanctuary/BPIO_Lootable_Global_GoldenKey.Default__BPIO_Lootable_Global_GoldenKey_C,PrimaryUseDefSelection.DefaultUseDefinition,0,,UsableTypeDefinition'/Game/UI/InteractionPrompt/UIData_TyphonGunGun.UIData_TyphonGunGun'

@@ -20,9 +20,7 @@ mod = Mod('dlc_loot_de-emphasizer.txt',
             "",
             "This is intended to be used alongside my Expanded Legendary Pools mod,",
             "so you've got interesting stuff dropping most of the time.",
-        ],
-        'NoDLCLoot',
-        )
+        ])
 
 # Pools that we're redirecting stuff to
 leg_pool_guns = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', 'ItemPoolData')

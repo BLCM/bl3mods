@@ -21,9 +21,7 @@ mod = Mod('eridian_unlocks.txt',
             "At the moment, only the Resonator is unlocked.  I've partially figured",
             "out unlocking the Analyzer, though it behaves pretty weirdly so it's",
             "not in here yet.",
-        ],
-        'EridianUnlocks',
-        )
+        ])
 
 # Resonator unlock.  Kind of stupid, really, but it works great!
 mod.comment('Always allow Resonator')

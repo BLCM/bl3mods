@@ -10,8 +10,6 @@
 ### possible.
 ###
 
-prefix: BHEnable
-
 # Global activation switches
 SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,ActiveLeague,0,,OL_BloodyHarvest
 SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,LeagueInstance,0,,1

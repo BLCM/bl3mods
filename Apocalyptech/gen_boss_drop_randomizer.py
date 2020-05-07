@@ -17,9 +17,7 @@ mod = Mod('boss_drop_randomizer.txt',
             "so you get as interesting as possible drops.",
             "",
             "Relatively untested!",
-        ],
-        'BossDropRando',
-        )
+        ])
 
 # There are various ways to accomplish this, and of course I go for a
 # super over-engineered method.  Ah, well!

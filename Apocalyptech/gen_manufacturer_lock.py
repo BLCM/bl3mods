@@ -737,9 +737,7 @@ for (man, man_label) in eng_manufacturers.items():
                 "To generate combinations of manufacturers, run the generation script with",
                 "three-letter manufacturer codes as the arguments.  See sourcecode for",
                 "details",
-            ],
-            'Lock{}'.format(man_label),
-            )
+            ])
 
     for (guntype, pools, (leg_pool, leg_balances)) in type_pools:
         if man in type_to_manufacturer[guntype]:
@@ -793,9 +791,7 @@ if len(custom_to_lock) >  0:
                 "Note that this *only* touches weapon type pools which these manufacturers",
                 "actually belong to.  For other weapon types, you'll still see the full range",
                 "of available manufacturers.",
-            ],
-            'LockCustom{}'.format(''.join(sorted(eng_args))),
-            )
+            ])
 
     for (guntype, pools, (leg_pool, leg_balances)) in type_pools:
         if any([man in type_to_manufacturer[guntype] for man in custom_to_lock]):

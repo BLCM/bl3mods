@@ -21,9 +21,7 @@ mod = Mod('customization_unlocks.txt',
             "if you launch the game without this mod enabled, but you won't have",
             "access to them until you re-enable this mod.  You don't have to worry",
             "about re-dropping them, though, because they remain in the profile.",
-        ],
-        'CustomPools',
-        )
+        ])
 
 for (label, locked_bals) in sorted([
 

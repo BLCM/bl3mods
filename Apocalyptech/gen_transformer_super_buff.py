@@ -11,9 +11,7 @@ mod = Mod('transformer_super_buff.txt',
             "",
             "Used by myself primarily just for mod testing purposes, for when I",
             "don't want to be bothered by actual combat.",
-        ],
-        'Transformer',
-        )
+        ])
 
 attr_effects = []
 for (attr, mod_type, mod_val) in [

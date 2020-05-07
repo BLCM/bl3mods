@@ -2,7 +2,5 @@
 ### Super buff to Westergun
 ###
 
-prefix: Westergun
-
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_westergun,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,100.000000
 

@@ -43,9 +43,7 @@ for (label, suffix, multiplier) in [
                 "",
                 "Not yet sure how this interacts with stuff like speed while crouching,",
                 "FFYL, climbing ladders, etc.",
-            ],
-            'Movement{}'.format(suffix.capitalize()),
-            )
+            ])
 
     # Player Chars
     mod.header('Player Characters')

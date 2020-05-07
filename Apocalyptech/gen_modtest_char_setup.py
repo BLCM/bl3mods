@@ -32,9 +32,7 @@ mod = Mod('modtest_char_setup.txt',
             "",
             "This is obviously intended to be used alongside my EM-P5 and",
             "Transformer Super Buff mods.",
-        ],
-        'ModTestChar',
-        )
+        ])
 
 # Taken directly from first_gun_testing_gear.txt
 mod.header('First Gun Chest Contents')
