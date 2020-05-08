@@ -40,6 +40,10 @@ mayhem2_modifier_nerfs
 # Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
 nvhm_gamestage_follows_level
 
+# Hardcode various Mayhem 2.0 droprates, since it feels like those still
+# aren't totally fixed yet.
+hardcode_mayhem2_drops
+
 # Fix Shield drops on standard enemies in DLC2
 fix_dlc2_shield_drops
 

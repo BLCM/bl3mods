@@ -65,11 +65,6 @@ weren't actually intended to be mods themselves.
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
-- `fix_mayhem2_drops.txt` - On release, Mayhem 2.0 broke a lot of world drops.
-  This fixes them up (or at least makes everything drop at their non-Mayhem
-  rate, which is better than the Not-At-All they were getting before).  (Not
-  all drops were affected, but quite a few were.)  This was fixed officially
-  by GBX in their May 7, 2020 hotfixes, so this isn't actually needed anymore.
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least

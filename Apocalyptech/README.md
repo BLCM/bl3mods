@@ -128,6 +128,12 @@ Gameplay Changes instead.)
   is because in conjunction with Better Loot, it gets utterly absurd, and
   I'm honestly fine with the drops I get from Better Loot.  So, a rare
   example of a plain and simple nerf in one of my mods!
+- `fix_mayhem2_drops.txt` - On release, Mayhem 2.0 broke a lot of world drops,
+  which was fixed in a hotfix a week later.  Despite it looking like that fix
+  should be working, I kept feeling like various world drops still weren't
+  happening.  So, I'm just keeping this "fix" in place for now.  I don't
+  actually care about having increased drop rates in Mayhem anyway, so this
+  works fine for me.
 
 ## Economy-related Mods
 

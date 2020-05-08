@@ -3,11 +3,15 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('fix_mayhem2_drops.txt',
-        'Fix Mayhem 2.0 World Drops',
+mod = Mod('hardcode_mayhem2_drops.txt',
+        'Hardcode Mayhem 2.0 World Drops',
         [
-            "Mayhem 2.0 introduced a bug where standard enemies don't drop guns",
-            "(and other gear) in Mayhem mode.  This mod fixes it up.",
+            "Mayhem 2.0 introduced a bug where various enemies don't drop gear",
+            "in Mayhem mode.  A hotfix a week later fixed it, theoretically, and",
+            "seemed to work fine, but running through some DLC2 content felt",
+            "awfully a lot like the drop rates still weren't right.  I don't",
+            "actually care if the drop rates get better at higher Mayhem levels",
+            "anyway, so I'm just keeping this 'fix' in place.",
             "",
             "This should be run BEFORE my Better Loot mod, if you're using both",
             "and want Better Loot's enhanced eridium drop rate.",
