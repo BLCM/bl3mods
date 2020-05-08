@@ -65,6 +65,9 @@ vehicle_unlocks
 # Mayhem 2.0 - Remove drop scaling altogether
 mayhem2_no_drop_scaling
 
+# Disable Mayhem 2.0 Modifier "Rogue Lite"
+disable_rogue_lite
+
 ###
 ### Economy-related mods
 ###

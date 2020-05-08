@@ -134,6 +134,9 @@ Gameplay Changes instead.)
   happening.  So, I'm just keeping this "fix" in place for now.  I don't
   actually care about having increased drop rates in Mayhem anyway, so this
   works fine for me.
+- `disable_rogue_lite.txt` - "Rogue Lite" is about the only Mayhem 2.0
+  modifier which I'll always avoid, so rather than re-rolling to avoid it all
+  the time, this mod disables it altogether.
 
 ## Economy-related Mods
 
