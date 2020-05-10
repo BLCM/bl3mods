@@ -23,6 +23,8 @@ weren't actually intended to be mods themselves.
   - `mayhem_laffs.txt` - Mocking up a screenshot of a ridiuclous
     hypothetical Mayhem 20.  Bit o' fun is all.  (Though it does legit
     make Mayhem 10 into a nightmare.)
+- `tiniest_tina.txt` - Made for a laugh after someone suggested online.
+  Scales Tina down quite small, and renames her "Tiniest Tina."
 
 ## Deprecated/Testing Mods
 
