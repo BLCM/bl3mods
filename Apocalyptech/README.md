@@ -220,6 +220,8 @@ being used, which gives you far more Eridium than usual.
   Projected Shields or No Slam Artifacts mods, though this script was written
   after those two.  Very much an oddity; I didn't even really have a use case
   for it when I wrote it.
+- `p2p_networker_element_fix.txt` - Adds a secondary element to the P2P
+  Networker, so that switching elements works with the gun as-is.
 
 ## Customization Tweaks
 

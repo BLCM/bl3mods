@@ -128,6 +128,9 @@ no_slam_artifacts
 # Only spawn Atlas grenads (using this on my Zane)
 only_atlas_grenades
 
+# Fix P2P Networker's missing second element
+p2p_networker_element_fix
+
 ###
 ### Customization Tweaks
 ###
