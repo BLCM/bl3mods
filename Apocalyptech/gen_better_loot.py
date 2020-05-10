@@ -71,7 +71,12 @@ def set_death_pools(mod, char_name, obj_name, pools=[]):
 #weights = [15, 35, 25, 13.5, 0.6]
 
 # Fresh weights as of late Feb 2020.
-weights = [15, 35, 25, 11.5, 0.3]
+#weights = [15, 35, 25, 11.5, 0.3]
+
+# Fresh weights as of early May 2020, after my own nerfs of the Mayhem drop
+# scaling; I think I'd been somewhat used to those Mayhem-enhanced drops, and
+# things feel a little weak now without...
+weights = [15, 35, 25, 13.5, 0.4]
 
 mod.header('Base drop weights.')
 for (rarity, weight) in zip(

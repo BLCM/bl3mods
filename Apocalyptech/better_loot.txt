@@ -11,8 +11,8 @@
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Common,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,15
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Uncommon,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,35
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Rare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,25
-SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,VeryRare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,11.5
-SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,0.3
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,VeryRare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,13.5
+SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,0.4
 
 ###
 ### Increased Eridium chances
