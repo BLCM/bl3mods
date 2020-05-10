@@ -279,6 +279,10 @@ put together a mod to do that, though, 'cause it hardly seems worth it.
 - `cartels_enable.txt` - This can be used to enable the Revenge of the
   Cartels event after it's officially closed down.  This includes a bugfix
   which was hotfixed along with the event launch.
+- `fewer_cartel_operatives.txt` - I'd wanted to nerf the Cartel operative
+  spawn rate a bit, to be able to have a bit of a breather occasionally.
+  This just cuts their spawn rate back a bit, while keeping them in the
+  game.
 
 ## Main Menu
 
