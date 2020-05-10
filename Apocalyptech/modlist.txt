@@ -27,8 +27,11 @@ better_mayhem_rewards
 first_gun_full_loadout
 #first_gun_testing_gear
 
-# Vastly decreased enemy scaling in Mayhem 2.0
-mayhem2_decreased_enemy_scaling
+# Vastly decreased enemy scaling in Mayhem 2.0 (conflicts with mayhem_level_cheats)
+#mayhem2_decreased_enemy_scaling
+
+# Mayhem 2.0 Outright Cheating (conflicts with mayhem2_decreased_enemy_scaling)
+mayhem_level_cheats
 
 # Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
 mayhem2_modifier_nerfs

@@ -80,6 +80,14 @@ Gameplay Changes instead.)
   but I'd wanted to nerf a few of 'em down a bit.  I don't think these nerfs
   dramatically change how you'd approach any given set of modifiers, but it
   should make the tougher ones a bit less deadly.
+- `mayhem_level_cheats.txt` - Rather extreme nerf for all of Mayhem 2.0 -
+  sets a flat enemy scaling for all levels, and reduces the modifier set for
+  all levels to Easy+Easy+Hard.  The only difference in levels will be the
+  Mayhem gear level dropped by enemies.  Will doubtless be tweaking this
+  until I find a value that I personally like playing in.  Regardless, will
+  be quite a bit easier than default Mayhem levels at about all but Mayhem 1.
+  Conflicts with `mayhem2_decreased_enemy_scaling`, since they alter many of
+  the same vars.
 
 ## Gameplay Changes
 
