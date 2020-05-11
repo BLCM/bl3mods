@@ -21,7 +21,7 @@ mod = Mod('p2p_networker_element_fix.txt',
 #  1) The "secondary element" part group is the only empty group in the list.
 #  2) The weights of the elements should all just be 1 (since that's what the Primary element uses)
 
-p2p_bal = '/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link'
+p2p_bal_name = '/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link'
 extra_elements = [
         '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_01_Fire',
         '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_02_Cryo',
@@ -32,7 +32,7 @@ extra_elements = [
 
 # Add the parts
 data = BL3Data()
-p2p_bal = Balance.from_data(data, p2p_bal)
+p2p_bal = Balance.from_data(data, p2p_bal_name)
 for cat in p2p_bal.categories:
     if len(cat) == 0:
         cat.enabled = True
