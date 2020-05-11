@@ -71,6 +71,9 @@ mayhem2_no_drop_scaling
 # Disable Mayhem 2.0 Modifier "Rogue Lite"
 disable_rogue_lite
 
+# Allow Trials missions as soon as you get to the maps which have them
+no_trials_dependencies
+
 ###
 ### Economy-related mods
 ###

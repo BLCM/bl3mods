@@ -145,6 +145,12 @@ Gameplay Changes instead.)
 - `disable_rogue_lite.txt` - "Rogue Lite" is about the only Mayhem 2.0
   modifier which I'll always avoid, so rather than re-rolling to avoid it all
   the time, this mod disables it altogether.
+- `no_trials_dependencies.txt` - Unlocks the Proving Grounds / Trials missions
+  as soon as you can get to the levels which provide them.  The missions
+  themselves claim to be a minimum level of 29, but the enemies in the Trials
+  will scale to your character regardless.  **NOTE:** in order for this to
+  be active, you have to enter the game once, and then quit back out to the
+  main menu.  No idea why that's required, but I have yet to find a workaround.
 
 ## Economy-related Mods
 
