@@ -131,6 +131,9 @@ only_atlas_grenades
 # Fix P2P Networker's missing second element
 p2p_networker_element_fix
 
+# Enable Pendant of Terramorphous as a valid legendary artifact drop
+enable_pendant_of_terra
+
 ###
 ### Customization Tweaks
 ###

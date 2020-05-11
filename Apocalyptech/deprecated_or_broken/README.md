@@ -25,11 +25,6 @@ weren't actually intended to be mods themselves.
     make Mayhem 10 into a nightmare.)
 - `tiniest_tina.txt` - Made for a laugh after someone suggested online.
   Scales Tina down quite small, and renames her "Tiniest Tina."
-- `enable_pendant_of_terra.txt` - Pendant of Terramorphous is a legendary
-  artifact which is technically in the game data but was never added to
-  the game.  This adds it back in as a valid legendary artifact drop,
-  though you'll find its health regen to be *extremely* anemic.  This
-  was clearly never finished before getting mothballed.
 
 ## Deprecated/Testing Mods
 
