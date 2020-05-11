@@ -28,7 +28,7 @@ if len(cat) != 14:
     raise Exception('Expected to find a category with fourteen parts!')
 cat.add_part_name(terra_part, 1)
 art_bal.hotfix_balance_full(mod)
-mod.newline();
+mod.newline()
 
 # Now buff up its health regen rate -- the default is really anemic (presumably it
 # was scrapped before they got around to looking at balancing it).  Default value
