@@ -235,6 +235,10 @@ being used, which gives you far more Eridium than usual.
   presumably it never even got to a balancing attempt before being
   scrapped).  The regen rate might get tweaked in the future.  The current
   value hasn't seen any real playtesting.
+- `fix_siren_com_blank_parts.txt` - Siren COMs have a `None` option in their
+  "primary" part pool, which none of the other characters' COMs have, so
+  sometimes a Siren COM will spawn a little less powerful than it should.
+  This makes sure that the `None` part is never chosen.
 
 ## Customization Tweaks
 

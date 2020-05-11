@@ -74,6 +74,9 @@ disable_rogue_lite
 # Allow Trials missions as soon as you get to the maps which have them
 no_trials_dependencies
 
+# Fixes the blank parts that Siren COMs can sometimes roll
+fix_siren_com_blank_parts
+
 ###
 ### Economy-related mods
 ###
