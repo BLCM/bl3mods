@@ -584,7 +584,7 @@ class Balance(object):
                     num_min=apl['MultiplePartSelectionRange']['Min'],
                     num_max=apl['MultiplePartSelectionRange']['Max'],
                     index=apl['PartType'],
-                    part_type_enum=apl['PartTypeEnum'],
+                    part_type_enum=apl['PartTypeEnum'][1],
                     select_multiple=apl['bCanSelectMultipleParts'],
                     use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
                     enabled=apl['bEnabled'])
