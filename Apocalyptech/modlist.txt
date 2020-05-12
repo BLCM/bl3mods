@@ -150,6 +150,9 @@ fix_siren_com_blank_parts
 # More money from the malfunctioning slots in Sisterly Love
 sisterly_love_more_money
 
+# Better gifts from Joy in Heart of Gold
+heart_of_gold_better_gifts
+
 ###
 ### Customization Tweaks
 ###

@@ -249,6 +249,11 @@ being used, which gives you far more Eridium than usual.
   malfunctioning slot machines during Sisterly Love, in DLC2.  They're actually
   still quite anemic; it doesn't look like there's a great way to buff them
   up significantly.
+- `heart_of_gold_better_gifts.txt` - I've always felt like it'd be less
+  pathetic if Joy turned out to be sitting on a huge fortune or something, so
+  this bumps up the gifts you get at the end of Heart of Gold.  This doesn't
+  really make a vast difference, really, but it does up the quantity of drops
+  by 4x, and introduces Eridium stacks to the gifts.
 
 ## Customization Tweaks
 
