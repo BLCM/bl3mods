@@ -121,9 +121,6 @@ don't look at these thinking that they're any good.  :)
 - `eridian_unlocks_full.txt` - A work-in-progress; the non-`full` version
   contains what I've got working so far (which is just the Resonator unlock).
   This has the start of Analyzer/Translator too, though it acts a bit weird.
-- `torgue_full_auto.txt` - Tried to set Torgue ARs to full auto, but this
-  didn't seem to do the trick (the version getting checked in actually tried
-  to give them a 5-burst count).
 - `golden_chest_costs_eridium.txt` - Just testing to see if I could get the
   Golden Chest to take Eridium instead.  Object/attr syntax is wrong somehow
   in here, and I don't really care enough to track it down.  Also the thing

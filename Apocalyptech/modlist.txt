@@ -74,8 +74,8 @@ disable_rogue_lite
 # Allow Trials missions as soon as you get to the maps which have them
 no_trials_dependencies
 
-# Fixes the blank parts that Siren COMs can sometimes roll
-fix_siren_com_blank_parts
+# Make (nearly) all Torgue ARs full-auto
+torgue_ar_full_auto
 
 ###
 ### Economy-related mods
@@ -139,6 +139,9 @@ p2p_networker_element_fix
 
 # Enable Pendant of Terramorphous as a valid legendary artifact drop
 enable_pendant_of_terra
+
+# Fixes the blank parts that Siren COMs can sometimes roll
+fix_siren_com_blank_parts
 
 ###
 ### Mission-specific Mods
@@ -225,3 +228,4 @@ fewer_cartel_operatives
 
 # Mod-testing Char Setup (for new games)
 #modtest_char_setup
+

@@ -151,6 +151,9 @@ Gameplay Changes instead.)
   will scale to your character regardless.  **NOTE:** in order for this to
   be active, you have to enter the game once, and then quit back out to the
   main menu.  No idea why that's required, but I have yet to find a workaround.
+- `torgue_ar_full_auto.txt` - Makes (nearly) all Torgue ARs full-auto.  The
+  exceptions are the handful of legendary ARs which have inherent burst-fire
+  mechanics.  (Only the Alchemist needed tweaking, of the legendaries.)
 
 ## Economy-related Mods
 
