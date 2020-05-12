@@ -180,6 +180,10 @@ being used, which gives you far more Eridium than usual.
   whose mechanism I haven't figured out how to tweak yet.  Pistols and
   SMGs get a 50% improvement, shotguns get 60%, and snipers will all be
   instant-fire.
+- `stronger_snipers.txt` - I've always felt that sniper rifles in BL3 could
+  use a bit of a buff, so this does that.  Sniper Rifles are currently
+  getting a 15% damage+crit bonus, and Jakobs rifles get an extra 10% crit
+  bonus.
 
 ## Partlocks / Part Changes
 

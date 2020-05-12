@@ -103,6 +103,9 @@ red_text_explainer
 # Improve Maliwan charge times
 maliwan_charge_time
 
+# Stronger Snipers
+stronger_snipers
+
 ###
 ### Partlocks / Part Changes
 ###
