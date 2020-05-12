@@ -240,6 +240,13 @@ being used, which gives you far more Eridium than usual.
   sometimes a Siren COM will spawn a little less powerful than it should.
   This makes sure that the `None` part is never chosen.
 
+## Mission-specific Mods
+
+- `sisterly_love_more_money.txt` - Buffs the amount of cash you get from the
+  malfunctioning slot machines during Sisterly Love, in DLC2.  They're actually
+  still quite anemic; it doesn't look like there's a great way to buff them
+  up significantly.
+
 ## Customization Tweaks
 
 - `expanded_customization_pools_*.txt` - Expands the world drop customization

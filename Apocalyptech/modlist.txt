@@ -141,6 +141,13 @@ p2p_networker_element_fix
 enable_pendant_of_terra
 
 ###
+### Mission-specific Mods
+###
+
+# More money from the malfunctioning slots in Sisterly Love
+sisterly_love_more_money
+
+###
 ### Customization Tweaks
 ###
 
@@ -218,4 +225,3 @@ fewer_cartel_operatives
 
 # Mod-testing Char Setup (for new games)
 #modtest_char_setup
-
