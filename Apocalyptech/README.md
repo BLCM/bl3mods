@@ -329,6 +329,21 @@ put together a mod to do that, though, 'cause it hardly seems worth it.
   spawn rate a bit, to be able to have a bit of a breather occasionally.
   This just cuts their spawn rate back a bit, while keeping them in the
   game.
+- `all_event_spawns.txt` - Makes it so that all event spawn modifications
+  will be active at once, which currently means Bloody Harvest, Broken
+  Hearts, and Revenge of the Cartels.  Make sure this appears *after*
+  any mod which enables the events, otherwise it'll get overwritten.
+  Enemies *can* be both Haunted and Cartel at the same time!  Should not
+  actually require that any events be active for this to work.
+- `expanded_event_spawners_*.txt` - These three mods basically expand the
+  areas in which the event spawn modifications take place, so that they
+  all apply to the widest possible area.  For instance, ordinarily Cartel
+  operatives won't show up in Voracious Canopy, but with this they will.
+  Ordinarily Bloody Harvest and Broken Hearts wouldn't show up in DLC2,
+  but they will with this.  This doesn't enable them *globally* --
+  Covenant Pass and Droughts won't have any -- but they'll all be active
+  in as big an area as possible (so far).  Doesn't do anything unless
+  an event or my `all_event_spawns` mod is active.
 
 ## Main Menu
 

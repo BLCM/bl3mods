@@ -202,6 +202,19 @@ customization_drops_none
 #broken_hearts_enable
 #cartels_enable
 
+# Enable all Timed Event enemy spawn modifications at once.  This
+# shouldn't actually require any events to be active.  Make sure
+# this appears *after* any mod which enables an event.
+#all_event_spawns
+
+# Expand enemy spawn modifications to apply everywhere that any
+# timed event has used in the past.  Will allow ghosts+hearts in
+# DLC maps, for instance.  Doesn't do anything unless an event or
+# my all_event_spawns mod is active.
+expanded_event_spawners_cartels
+#expanded_event_spawners_bloody_harvest
+#expanded_event_spawners_broken_hearts
+
 # Guaranteed Ghosts in Bloody Harvest event
 #guaranteed_ghosts
 
