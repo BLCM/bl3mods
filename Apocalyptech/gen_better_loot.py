@@ -967,7 +967,7 @@ for (label, char_name, pool, quantity) in [
         ('Road Dog', 'BPChar_Goliath_Rare02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Redliner_Roaddog.ItemPool_Redliner_Roaddog', 3),
         ('El Dragon Jr.', 'BPChar_Goliath_Rare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr', 3),
         ('Crushjaw', 'BPChar_GoonBounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_BoneShredder_Crushjaw.ItemPool_BoneShredder_Crushjaw', 3),
-        ('Sloth', 'BPChar_Goon_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth', 2),
+        ('Sloth', 'BPChar_Goon_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth', 3),
         ('GenIVIV', 'BPChar_MechEvilAI', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV', 5),
         ('Blinding Banshee', 'BPChar_Nekrobug_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Shriek_DevilBug.ItemPool_Shriek_DevilBug', 3),
         ('Baron Noggin', 'BPChar_Nog01_Bounty', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_EMPGrenade_BaronNoggin.ItemPool_EMPGrenade_BaronNoggin', 2),
@@ -1041,7 +1041,7 @@ for (label, char_name, pool, quantity) in [
     mod.reg_hotfix(hf_type, char_name,
             pool,
             'Quantity',
-            '(BaseValueConstant={})'.format(quantity),
+            BVCF(bvc=quantity),
             )
     mod.newline()
 
@@ -1313,9 +1313,11 @@ for char_name in [
         'BPChar_SpiderBrain',
         'BPChar_UpperHalf',
         ]:
+    # We're altering the `ItemPool_Mayhem4_Legendaries` weight here, which is index 8 in
+    # the base game data, but the 2020-05-14 hotfix reduced Wotan's pool so it's 4 now.
     mod.reg_hotfix(Mod.CHAR, char_name,
             '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool',
-            'BalancedItems[8].Weight',
+            'BalancedItems[4].Weight',
             """(
                 BaseValueConstant=11,
                 DataTableValue=(DataTable=None,RowName="",ValueName=""),
