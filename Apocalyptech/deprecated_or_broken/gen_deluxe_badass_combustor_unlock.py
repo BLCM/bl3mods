@@ -23,10 +23,13 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('deluxe_badass_combustor_unlock.txt',
         'Deluxe Badass Combustor Unlock',
+        'Apocalyptech',
         [
             "Allows the Deluxe Badass Combustor shield to function at any level",
             "of the game, instead of until level 10.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # This looks *so simple* from the JWP serialization, but I'm still not great at modifying
 # BlueprintGeneratedClasses.  The BGC exists out on the main menu, but I couldn't even figure

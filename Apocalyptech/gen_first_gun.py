@@ -58,6 +58,7 @@ for filename, label, comments, attachments, set_gun in [
     full_filename = 'first_gun_{}.txt'.format(filename)
     mod = Mod(full_filename,
             'First Gun Chest: {}'.format(label),
+            'Apocalyptech',
             comments + [
                 "",
                 "Note that if the first thing you take out of the opening chest isn't a gun,",
@@ -67,7 +68,9 @@ for filename, label, comments, attachments, set_gun in [
                 "Also updates the car-trunk chest which provides your second and third guns",
                 "to pull from the main pistol pool rather than locked to white Jakobs+Dahl",
                 "pistols.",
-                ])
+                ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     mod.comment('Update the chest LootDef')
     stanzas = []

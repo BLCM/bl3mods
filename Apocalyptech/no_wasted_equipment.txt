@@ -1,10 +1,14 @@
 ###
 ### No Wasted Equipment
+### by Apocalyptech
 ###
 ### Adjusts the character-specific weighting so that you won't get COMs,
 ### customizations, or anointments for any character other than the one
 ### you're currently playing.  Theoretically this should work just fine
 ### in multiplayer, though I haven't tested it at all in that mode.
+###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
 ###
 
 # Yep, this single statement should do it!  Rather nicer than the BL2/TPS versions.

@@ -32,10 +32,13 @@ for (label, scale) in [
 
     mod = Mod(mod_filename,
             'Fast Levelling: {} Variant (very cheaty!)'.format(label),
+            'Apocalyptech',
             [
                 "I wanted a way to quickly level a character up for testing purposes",
                 "so that's what this mod provides.  Increases XP gains by {}x.".format(round(scale/10), 0),
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     mod.comment('Base XP Scaling')
 

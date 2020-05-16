@@ -53,7 +53,9 @@ for (label, filename, rate, desc) in [
 
     mod = Mod(full_filename,
             'Standard Enemy Customization Drop Rate: {}'.format(label),
+            'Apocalyptech',
             desc,
+            lic=Mod.CC_BY_SA_40,
             )
 
     mod.header('Set cosmetics chance to {}'.format(rate))

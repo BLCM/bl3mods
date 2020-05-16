@@ -25,13 +25,16 @@ from bl3hotfixmod.bl3hotfixmod import Mod, Balance, BVCF
 
 mod = Mod('enable_pendant_of_terra.txt',
         'Enable Pendant of Terramorphous Artifact',
+        'Apocalyptech',
         [
             "Pendant of Terramorphous is an Artifact which is in the BL3 data but",
             "was apparently cut sometime before release.  This sets it as a valid",
             "legendary Artifact drop.  It also increases the health regen rate from",
             "the 'default' (which is *extremely* weak, presumably before any balancing",
             "attempts had been made) to something which feels somewhat reasonable.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 art_bal_name = '/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary'
 cat_idx = 1

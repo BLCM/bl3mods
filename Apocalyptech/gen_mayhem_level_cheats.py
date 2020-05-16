@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('mayhem_level_cheats.txt',
         'Mayhem 2.0: Mayhem Level Cheats',
+        'Apocalyptech',
         [
             "Makes all Mayhem levels look identical in terms of difficulty-related",
             "scaling: 200% health/shield/armor scaling for enemies, and 2x Easy +",
@@ -31,7 +32,9 @@ mod = Mod('mayhem_level_cheats.txt',
             "Note that this and mayhem2_decreased_enemy_scaling both touch the same",
             "vars for enemy scaling, so they'll conflict (whichever is used 'last'",
             "will take precedence).",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 enemy_scale = 2
 modifiers = '({})'.format(','.join([Mod.get_full_cond(m, 'MayhemModifierSlotDataAsset') for m in [

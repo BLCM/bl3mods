@@ -28,6 +28,7 @@ chance_element = round((weight_element*5)/total*100)
 
 mod = Mod('more_elemental_weapons.txt',
         'More Elemental Weapons',
+        'Apocalyptech',
         [
             "Increases the chances of having elements spawn on all weapons which support",
             "elements.  The stock chances of getting an element (for weapons which can",
@@ -39,7 +40,9 @@ mod = Mod('more_elemental_weapons.txt',
             "   Very Rare: 41%",
             "",
             "This mod increases the chance to {}%, across the board.".format(chance_element),
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 for row in [
         'Common',

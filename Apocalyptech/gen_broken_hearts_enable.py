@@ -24,10 +24,13 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('broken_hearts_enable.txt',
         'Enable "Broken Hearts" Event',
+        'Apocalyptech',
         [
             "Enables the Broken Hearts event.  Will interfere with any other event which",
             "happens to be running.  (Only one can be fully active at a time.)",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.comment('Global activation switches')
 

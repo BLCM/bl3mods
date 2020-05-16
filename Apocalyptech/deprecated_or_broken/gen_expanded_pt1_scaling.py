@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('expanded_pt1_scaling.txt',
         'Expanded PT1 Scaling',
+        'Apocalyptech',
         [
             "NOTE: This doesn't actually *work*, alas.  The object gets updated",
             "properly but nothing changes in-game.  Pff.",
@@ -39,7 +40,9 @@ mod = Mod('expanded_pt1_scaling.txt',
             "levels, so it's possible that these changes aren't applying fully in",
             "all cases.  This is currently untested, I'll have to go through a",
             "playthrough to find out if it's doing the right thing.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # For a version which *basically* does what I want here, see the working
 # nvhm_gamestage_follows_level.txt in the parent dir.  That's a bit more aggressive

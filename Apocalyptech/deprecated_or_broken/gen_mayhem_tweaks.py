@@ -31,8 +31,10 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('mayhem_tweaks.txt',
         'Mayhem Tweaks',
+        'Apocalyptech',
         [
         ],
+        lic=Mod.CC_BY_SA_40,
         )
 
 EASY = '/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_EAsy'

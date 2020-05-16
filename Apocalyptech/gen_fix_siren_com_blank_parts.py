@@ -25,12 +25,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('fix_siren_com_blank_parts.txt',
         'Fix Siren COM Blank Parts',
+        'Apocalyptech',
         [
             "Siren COMs have a 'None' part in their PRIMARY part category, which",
             "means that those COMs might spawn with a missing part, compared to",
             "COMs from all other characters.  This will fix those so that the",
             "empty part can never be chosen.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 data = BL3Data()
 

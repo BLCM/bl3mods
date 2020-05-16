@@ -2,6 +2,9 @@
 ### Guaranteed Badasses?
 ### Nope.  Doesn't work.
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 # hurrr...
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/WeightingPlayerCount/DataTable_EnemyMajorUpgrade_PerPlayer.DataTable_EnemyMajorUpgrade_PerPlayer,OnePlayer_PT1,UpgradePerPlayer,0,,100

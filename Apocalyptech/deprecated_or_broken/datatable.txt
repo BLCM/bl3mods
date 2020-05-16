@@ -1,4 +1,7 @@
 # Figuring out how datatable values work w/ BVC tuples
+#
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# https://creativecommons.org/licenses/by-sa/4.0/
 
 # Make El Dragon always drop Girth Blaster
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf.Balance_PS_TOR_Nurf,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/Balance_PS_TOR_Nurf.Balance_PS_TOR_Nurf"',Weight=(BaseValueConstant=1000000000)))

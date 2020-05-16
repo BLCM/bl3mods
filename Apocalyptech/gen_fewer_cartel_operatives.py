@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('fewer_cartel_operatives.txt',
         'Revenge of the Cartels: Fewer Operatives',
+        'Apocalyptech',
         [
             "I enjoy having Cartel operatives pop up all over the place and",
             "provide a bit more chaos, but at their stock spawn rates, nearly",
@@ -30,7 +31,9 @@ mod = Mod('fewer_cartel_operatives.txt',
             "actively hunting them down for a Cartels mission, I'd like to",
             "ease off a bit without getting rid of them entirely.  So this",
             "just cuts their spawn probability in half.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Default value: 0.3
 mod.table_hotfix(Mod.PATCH, '',

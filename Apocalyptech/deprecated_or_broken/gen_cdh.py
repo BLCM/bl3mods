@@ -23,9 +23,11 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('cdh.txt',
         'Cold Dead Hands!',
+        'Apocalyptech',
         [
             'Not really, but wanted to test out if bDropOnDeath still exists',
             ],
+        lic=Mod.CC_BY_SA_40,
         )
 
 for char in [

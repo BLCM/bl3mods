@@ -23,7 +23,9 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('eridian_unlocks_full.txt',
         'pffff',
+        'Apocalyptech',
         [],
+        lic=Mod.CC_BY_SA_40,
         )
 
 ###

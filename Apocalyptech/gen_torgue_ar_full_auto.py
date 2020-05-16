@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('torgue_ar_full_auto.txt',
         'Torgue ARs: Full Auto',
+        'Apocalyptech',
         [
             "Makes Torgue ARs full auto, apart from a few legendary ones which specifically have",
             "burst-fire modes.  In general only 'generic' ARs needed fixing, apart from the",
             "Alchemist."
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 for obj_name in [
         '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Barrel/Barrel_01/Part_AR_TOR_Barrel_01',

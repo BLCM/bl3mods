@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('hardcode_mayhem2_drops.txt',
         'Hardcode Mayhem 2.0 World Drops',
+        'Apocalyptech',
         [
             "Mayhem 2.0 introduced a bug where various enemies don't drop gear",
             "in Mayhem mode.  A hotfix a week later fixed it, theoretically, and",
@@ -33,7 +34,9 @@ mod = Mod('hardcode_mayhem2_drops.txt',
             "",
             "This should be run BEFORE my Better Loot mod, if you're using both",
             "and want Better Loot's enhanced eridium drop rate.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 class PoolList(object):
     

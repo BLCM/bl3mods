@@ -5,6 +5,9 @@
 # heads+skins for Amara, and possibly FL4K.  So, gonna cut the
 # other pools out of here.
 #
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# https://creativecommons.org/licenses/by-sa/4.0/
+#
 
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc,BalancedItems[2].Weight.BaseValueConstant,0,,0
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc,BalancedItems[3].Weight.BaseValueConstant,0,,0

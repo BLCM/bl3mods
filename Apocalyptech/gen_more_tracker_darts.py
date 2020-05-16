@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('more_tracker_darts.txt',
         'More Tracker Darts',
+        'Apocalyptech',
         [
             "I'm rather fond of Atlas weapons, but I've found that I pretty much",
             "never actually use them unless they have tracker darts (as opposed to",
@@ -34,7 +35,9 @@ mod = Mod('more_tracker_darts.txt',
             "tracking parts -- for instance, Linc will always spawn with a tracker",
             "grenade.  Those have been left alone.  (Specifically: Rebel Yell,",
             "Freeman, Ruby's Wrath, Linc, and Peacemonger.)",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Default weight for all tracker delivery types is 1
 new_weight = 6

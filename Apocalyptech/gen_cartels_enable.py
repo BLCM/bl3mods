@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
 mod = Mod('cartels_enable.txt',
         'Enable "Revenge of the Cartels" Event',
+        'Apocalyptech',
         [
             "Enables the Revenge of the Cartels event.  Will interfere with any",
             "other event which happens to be running.  (Only one can be fully",
             "active at a time.)",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.comment('Global activation switches')
 

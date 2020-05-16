@@ -24,12 +24,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('sisterly_love_more_money.txt',
         'Sisterly Love: More Money',
+        'Apocalyptech',
         [
             "I always felt that the malfunctioning-slot-machine money drop in",
             "the DLC2 mission Sisterly Love was pretty anemic and unimpressive.",
             "This mod buffs it up slightly, though it turns out there's not a",
             "*lot* that we can really do with it.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Default is a single stack; I couldn't find anything bigger than the triple, which is
 # still pretty meh.

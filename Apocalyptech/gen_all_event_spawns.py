@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('all_event_spawns.txt',
         'All (Limited-Time) Event Spawns',
+        'Apocalyptech',
         [
             "Enables Bloody Harvest, Broken Hearts, and Revenge of the Cartels spawn",
             "modifications at the same time.  Shouldn't require the events to be",
@@ -31,7 +32,9 @@ mod = Mod('all_event_spawns.txt',
             "",
             "This should appear in your modlist *after* any mod which enables an event,",
             "otherwise this statement will get overwritten.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/GameData/Spawning/GlobalSpawnDLCData',

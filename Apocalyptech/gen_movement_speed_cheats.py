@@ -56,12 +56,15 @@ for (label, suffix, multiplier) in [
     mod_filename = 'movement_speed_cheats_{}.txt'.format(suffix)
     mod = Mod(mod_filename,
             'Movement Speed Cheats - {}'.format(label),
+            'Apocalyptech',
             [
                 "Increases character (and pet, and Iron Bear) movement speed by {}x,".format(multiplier),
                 "",
                 "Not yet sure how this interacts with stuff like speed while crouching,",
                 "FFYL, climbing ladders, etc.",
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     # Player Chars
     mod.header('Player Characters')

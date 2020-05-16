@@ -4,6 +4,9 @@
 ### Not that mayhem mode really *needs* better loot, but it's a proof of
 ### concept if nothing else
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 # Nearly-guaranteed legendaries
 #SparkPatchEntry,(1,2,0,),/Game/GameData/Modifiers/DataTable_Mayhem_CoreMods_Easy.DataTable_Mayhem_CoreMods_Easy,DropRarityWeight_Legendary,MinValue,0,,20000.000000

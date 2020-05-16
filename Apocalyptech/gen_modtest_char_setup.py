@@ -26,6 +26,7 @@ level_to = 57
 
 mod = Mod('modtest_char_setup.txt',
         'Set Up Mod-Testing Char (at beginning of the game)',
+        'Apocalyptech',
         [
             "Does a couple of things:",
             "",
@@ -50,7 +51,9 @@ mod = Mod('modtest_char_setup.txt',
             "",
             "This is obviously intended to be used alongside my EM-P5 and",
             "Transformer Super Buff mods.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Taken directly from first_gun_testing_gear.txt
 mod.header('First Gun Chest Contents')

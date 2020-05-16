@@ -23,12 +23,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('better_mayhem_rewards.txt',
         'Better Mayhem Rewards',
+        'Apocalyptech',
         [
             "Increases the XP gains you get in the various Mayhem modes, and increases",
             "the likelihood of Anointed drops.  Note that Better Loot makes anointments",
             "guaranteed, so if you're using both, be sure to put whichever behavior you",
             "want most *after* the other.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # XP
 mod.comment('XP Gains')

@@ -23,13 +23,16 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('fix_dlc2_shield_drops.txt',
         'Fix DLC2 Shield Drops',
+        'Apocalyptech',
         [
             "Most enemies in DLC2 (Guns, Love, and Tentacles) don't actually drop",
             "shields.  For standard enemies, they're in the pool list but with a",
             "zero weight.  For badasses, they're absent entirely from the pool",
             "list.  We're fixing the Standard ones, but not bothering with Badasses",
             "for now.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus',

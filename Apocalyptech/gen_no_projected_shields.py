@@ -25,9 +25,12 @@ from bl3data.bl3data import BL3Data
 bl3data = BL3Data()
 mod = Mod('no_projected_shields.txt',
         'No Projected Shields',
+        'Apocalyptech',
         [
             'Makes shields never spawn with the "projected" effect',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 sections = {}
 def do_start(mod, section_name):

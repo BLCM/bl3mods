@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('better_slots.txt',
         'Improved Slot Machine Chances',
+        'Apocalyptech',
         [
             'Improved results for all slot machines -- will always get a reward, and',
             "never any loaded grenades.  Customizations won't drop too often, since",
             'they just just the same pools as the global customization drops.',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 weight_attr = 'Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E'
 for (label, obj_name, maps, results) in [

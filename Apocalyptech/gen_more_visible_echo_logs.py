@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('more_visible_echo_logs.txt',
         'More Visible ECHO Logs',
+        'Apocalyptech',
         [
             "Alters the loot bar for ECHO logs (and coincidentally mission-related pickups,",
             "and anything else using that smallish cyan bar) so that it's *much* taller and",
@@ -32,7 +33,9 @@ mod = Mod('more_visible_echo_logs.txt',
             "",
             "Technically this also lengthens the ammo/eridium/health/money/booster bars a bit,",
             "but only by a very small amount.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # default: 85
 height = 900

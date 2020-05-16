@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('no_slam_artifacts.txt',
         'No Slam-based Artifacts',
+        'Apocalyptech',
         [
             'Makes non-legendary/unique artifacts never have slam effects.',
             "Doesn't touch legendary/unique artifacts at all, so those can",
             'still spawn.',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 def clear_part(mod, obj_name, part_idx):
     mod.reg_hotfix(Mod.PATCH, '',

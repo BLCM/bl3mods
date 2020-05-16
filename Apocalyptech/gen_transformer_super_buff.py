@@ -23,13 +23,16 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('transformer_super_buff.txt',
         "Super buff for The Transformer.  Cheating!",
+        'Apocalyptech',
         [
             "Vastly buffs The Transformer, making you basically invulnerable",
             "when wearing it.",
             "",
             "Used by myself primarily just for mod testing purposes, for when I",
             "don't want to be bothered by actual combat.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 attr_effects = []
 for (attr, mod_type, mod_val) in [

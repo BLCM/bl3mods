@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('eridian_unlocks.txt',
         'Eridian Artifact Unlocker',
+        'Apocalyptech',
         [
             "This is the start of a mod which aims to eventually unlock the",
             "fancy Eridian tech to be available at the start of the game, namely:",
@@ -39,7 +40,9 @@ mod = Mod('eridian_unlocks.txt',
             "At the moment, only the Resonator is unlocked.  I've partially figured",
             "out unlocking the Analyzer, though it behaves pretty weirdly so it's",
             "not in here yet.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Resonator unlock.  Kind of stupid, really, but it works great!
 mod.comment('Always allow Resonator')

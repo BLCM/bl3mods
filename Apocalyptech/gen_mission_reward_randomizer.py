@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('mission_reward_randomizer.txt',
         'Mission Reward Randomizer',
+        'Apocalyptech',
         [
             "Randomizes the rewards given by missions.  Reward types should remain",
             "constant -- if it originally gives a pistol, you should get a legendary",
@@ -34,7 +35,9 @@ mod = Mod('mission_reward_randomizer.txt',
             "Relatively untested!  It's quite possible that some missions were missed.",
             "The data here was programmatically generated from JohnWickParse data",
             "serializations, and JWP has problems with some objects.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # There are various ways to accomplish this, and of course I go for a
 # super over-engineered method.  Ah, well!

@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('mayhem2_modifier_nerfs.txt',
         'Mayhem 2.0: Various Modifier Nerfs',
+        'Apocalyptech',
         [
             "Applying some nerfs to Mayhem 2.0 modifiers that I enjoy, but wish",
             "were a little less intrusive.  Cheaty!  Though the Lootsplosion",
             "modifier change is technically *against* the player rather than for.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.header('Actual Stat Changes')
 

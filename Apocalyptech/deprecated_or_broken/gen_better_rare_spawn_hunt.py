@@ -23,12 +23,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('better_rare_spawn_hunt.txt',
         'Alteration of Week 2 Event',
+        'Apocalyptech',
         [
             'Totally-guaranteed drops, and remove health buffs of enemies.',
             '',
             'https://borderlands.com/en-US/news/2019-10-07-borderlands-3-rare-spawn-hunt/',
             'https://github.com/BLCM/bl3hotfixes/blob/master/gbx_info_archive/2019-10-07-anniversary_2.md',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Make all rare spawns 100%
 mod.comment('General level-based spawn rates (unchanged from stock GBX hotfixes, but for all levels)')

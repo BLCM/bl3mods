@@ -2,5 +2,8 @@
 ### Super buff to Stalker, so I can just power through the
 ### various Bloody Harvest challenges
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_Weapon_BloodyHarvest.DataTable_Weapon_BloodyHarvest,SR_FrostBolt,DamageScale_2_6249E51D41B75899C0DEDD8B5EFE89ED,0,,50.000000

@@ -23,8 +23,11 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('cheaper_slots.txt',
         'Cheaper Slot Machines',
+        'Apocalyptech',
         [
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 levels_money = [
         'Sanctuary3_P',

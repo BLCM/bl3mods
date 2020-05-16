@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('red_text_explainer.txt',
         'Red Text Explainer',
+        'Apocalyptech',
         [
             "Inspired by Ezeith's BL2 Red Text Explainer",
             '',
@@ -33,7 +34,9 @@ mod = Mod('red_text_explainer.txt',
             'Text mostly summarized from borderlands.fandom.com, so take with a grain',
             'of salt. :)  Some weapons could use some verification, especially the ones',
             'whose special abilities appear to just be the "better" stats on the card.',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 def elementize(text):
     for snippet, tag in [

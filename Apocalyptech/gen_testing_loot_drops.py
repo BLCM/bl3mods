@@ -48,7 +48,9 @@ def set_pool(mod, pool_to_set, balances, char=None):
 
 mod = Mod('testing_loot_drops.txt',
         'Testing loot drops...',
+        'Apocalyptech',
         [],
+        lic=Mod.CC_BY_SA_40,
         )
 
 do_pool_set = True

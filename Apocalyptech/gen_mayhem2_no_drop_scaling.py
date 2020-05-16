@@ -23,12 +23,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('mayhem2_no_drop_scaling.txt',
         'Mayhem 2.0: No Extra Drop Scaling',
+        'Apocalyptech',
         [
             "Mayhem 2.0 increases the drop rates pretty significantly, and when",
             "combined with my Better Loot mod, it's totally absurd.  I'm happy",
             "with my Better Loot drop weighting, so this should de-scale the",
             "loot so that Mayhem 2.0 modes are no different than in normal.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # There's another column named LootQuality_56_03E220E0495C6B37CD6C7195F5EA289B which
 # goes from 1 at M1, to 2 at M10.  No idea what that does, really, though it looks like

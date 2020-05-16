@@ -23,12 +23,15 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('maggie_super_buff.txt',
         'Super buff for Maggie.  Cheating!',
+        'Apocalyptech',
         [
             "Vastly buffs Maggie's damage, and makes it not consume any ammo.",
             "Used by myself primarily just for mod testing purposes, for when I don't",
             "want to be bothered by actual combat.  Originally used just to power",
             "through those interminable Slaughters, though.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Original version of this mod just did the following, rather than editing the
 # InventoryAttributeEffects directly:

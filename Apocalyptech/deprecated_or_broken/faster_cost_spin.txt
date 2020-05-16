@@ -1,6 +1,9 @@
 ###
 ### Attempt to speed up the cost spinner (inventory, etc)
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 # nothing I've tried has worked so far, alas, though these do seem like the
 # correct attributes to be going after.

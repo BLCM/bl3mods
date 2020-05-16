@@ -23,8 +23,11 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('backham_super_buff.txt',
         'Super buff for Back Ham.  Cheating!',
+        'Apocalyptech',
         [
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Pretty sure that this value defines a fractional scale, so we'll approach
 # 100% but not quite get there.  Also I'm guessing that probably only

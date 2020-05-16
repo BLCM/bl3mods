@@ -33,11 +33,14 @@ for event, menunum in [
 
     mod = Mod(mod_filename,
             'Main Menu: {}'.format(event_cap),
+            'Apocalyptech',
             [
                 "Sets the main menu to have the {} visuals.  No actual effect on".format(event_cap),
                 "gameplay or anything (use the `eventname_enable.txt` mods to actually",
                 "turn timed events back on).",
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     mod.table_hotfix(Mod.PATCH, '',
             '/Game/Common/_Design/Table_MicropatchSwitches',

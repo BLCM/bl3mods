@@ -26,10 +26,13 @@ from bl3hotfixmod.bl3hotfixmod import Mod, LVL_TO_ENG
 
 mod = Mod('nvhm_gamestage_follows_level.txt',
         'NVHM GameStage Follows Player Level',
+        'Apocalyptech',
         [
             "Makes Normal/NVHM mode always scale to your player level, like it",
             "does in TVHM or Mayhem mode.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 for level in sorted(LVL_TO_ENG.keys()):
     mod.reg_hotfix(Mod.LEVEL, level,

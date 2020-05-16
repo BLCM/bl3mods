@@ -240,6 +240,7 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
 
     mod = Mod(full_filename,
             'Expanded Event Spawners: {}'.format(label),
+            'Apocalyptech',
             [
                 "Updates the {}-specific enemy spawn modifications so that".format(label),
                 "it occurs in every location which has been used in limited-time events",
@@ -249,7 +250,9 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "",
                 "Note that this does not yet equate to Literally Everywhere - Droughts",
                 "and Covenant Pass won't have any, for instance.",
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     spawndlc.generate_hotfixes(mod)
 

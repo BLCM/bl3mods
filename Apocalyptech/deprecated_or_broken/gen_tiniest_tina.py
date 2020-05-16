@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('tiniest_tina.txt',
         'Tiniest Tina',
+        'Apocalyptech',
         [
             "Scales down Tina a bunch, for a laff.  (Based entirely on the April Fool's",
             "thing from GBX, here -- not sure how many of the scaling vars *actually*",
             "need updating for this to work properly.  I'd think maybe just the first one?",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 reg_scale = 0.35
 enraged_scale = 0.25

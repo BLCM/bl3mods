@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('only_atlas_grenades.txt',
         'Only Atlas Grenades',
+        'Apocalyptech',
         [
             "While doing a Zane runthrough, I only really wanted homing grenades,",
             "since I didn't have a lot of control over when exactly they were",
@@ -31,7 +32,9 @@ mod = Mod('only_atlas_grenades.txt',
             "",
             "This does *not* affect legendary grenade drops, only the regular",
             "sort.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 for pool_name in [
         'ItemPool_GrenadeMods_01_Common',

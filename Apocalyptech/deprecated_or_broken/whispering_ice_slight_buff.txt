@@ -2,6 +2,9 @@
 ### A bit of a buff to the Whispering Ice grenade, used to get through one
 ### of the Bloody Harvest challenges a bit more quickly.
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 # Damage - this is clearly a multiplier or something.  The "2" value here
 # makes the thing extremely good but not *completely* OP; since you can

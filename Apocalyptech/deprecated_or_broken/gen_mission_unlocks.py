@@ -23,7 +23,9 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('mission_unlocks.txt',
         'pffff',
+        'Apocalyptech',
         [],
+        lic=Mod.CC_BY_SA_40,
         )
 
 # Set the item pool reward - this works!

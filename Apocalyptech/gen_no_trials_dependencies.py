@@ -24,6 +24,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('no_trials_dependencies.txt',
         'No Trials Dependencies',
+        'Apocalyptech',
         [
             "Allows you to pick up (and enter) Proving Grounds Trials as soon as",
             "you get to the levels which unlock them.  The missions (both the",
@@ -35,7 +36,9 @@ mod = Mod('no_trials_dependencies.txt',
             "NOTE: In order for this to *actually* take effect, you will have to",
             "enter the game once, and then quit back to the main menu.  No idea",
             "why this doesn't apply cleanly until then, but them's the breaks.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mission_dep = Mod.get_full_cond('/Game/Missions/Plot/Mission_Ep01_ChildrenOfTheVault.Mission_Ep01_ChildrenOfTheVault_C', 'Mission')
 

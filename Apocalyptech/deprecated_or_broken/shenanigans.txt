@@ -11,6 +11,9 @@
 # how those work, and the Legendary one seems to be hardcoded to legendary
 # colors itself.  (Potentially hotfixable itself, but the object can't
 # be serialized at all, so no idea what the syntax might look like.)
+#
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# https://creativecommons.org/licenses/by-sa/4.0/
 
 # Loot stick color
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX,0,,(r=0.047,g=0.898,b=0.902,a=1)

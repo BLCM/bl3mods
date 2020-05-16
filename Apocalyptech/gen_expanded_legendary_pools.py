@@ -52,10 +52,13 @@ def set_pool(mod, pool_to_set, balances):
 
 mod = Mod('expanded_legendary_pools.txt',
         'Expanded Legendary Pools',
+        'Apocalyptech',
         [
             'Adds all uniques and stuff (minus a few exceptions) into the legendary drop pools,',
             'at a reduced rate compared to the legendaries already in there.',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Items Omitted:
 #

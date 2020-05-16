@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('stronger_snipers.txt',
         'Stronger Snipers',
+        'Apocalyptech',
         [
             "This buffs up sniper rifles by a bit, with a bit of base-damage increase, and",
             "some crit bonus damage as well (which is expanded even more for Jakobs snipers).",
@@ -33,7 +34,9 @@ mod = Mod('stronger_snipers.txt',
             "   On-Card Damage: 4159 -> 4852",
             "   Non-Crit on Dummy: 4770 -> 5566",
             "   Crit on Dummy: 12k -> 18k",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # All Sniper Manufacturers
 mod.comment('All Sniper Rifles')

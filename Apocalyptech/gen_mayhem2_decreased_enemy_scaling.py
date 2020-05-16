@@ -23,11 +23,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('mayhem2_decreased_enemy_scaling.txt',
         'Mayhem 2.0: Decreased Enemy Scaling',
+        'Apocalyptech',
         [
             "I'd like to play around with Mayhem modifiers, but the extra bullet-",
             "sponginess doesn't really do it for me.  This'll drop the enemy",
             "health/shield/armor scaling down pretty significantly.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # TODO: Honestly I should really nerf the Mayhem gun parts themselves, too,
 # 'cause they're gonna end up OP as hell.  Unfortunately the actual part

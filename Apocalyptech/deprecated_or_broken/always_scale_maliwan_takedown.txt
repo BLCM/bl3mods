@@ -1,10 +1,14 @@
 ###
 ### Always Scale Maliwan Takedown
+### by Apocalyptech
 ###
 ### This is just an extract of the hotfix from GBX's 2020-01-16 hotfixes
 ### which makes Takedown at the Maliwan Blacksite scale to the number of
 ### players instead of being locked on four-player difficulty.  Turns
 ### out there was just the one statement!
+###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
 ###
 
 # Yep, this is it!

@@ -25,11 +25,14 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('all_weapons_can_anoint.txt',
         'All Weapons Can Anoint',
+        'Apocalyptech',
         [
             "Adds anointment parts to all the weapons which can't ordinarily",
             "have them.  (This doesn't *guarantee* anointments -- use my",
             "Better Loot for that.)",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Weight attributes
 (NONE, GENERIC, SIREN, OPERATIVE, BEASTMASTER, GUNNER) = range(6)

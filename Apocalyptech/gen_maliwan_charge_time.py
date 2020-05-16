@@ -29,6 +29,7 @@ scale_heavy = 0.5
 
 mod = Mod('maliwan_charge_time.txt',
         'Buffed Maliwan Charge Times',
+        'Apocalyptech',
         [
             'Reduces the charge time for most Maliwan guns.  Notable exceptions at the moment',
             'are mostly pistols: the unique guns Starkiller, Ice Pick, and D.N.A.; and the',
@@ -45,7 +46,9 @@ mod = Mod('maliwan_charge_time.txt',
             'Sniper Scaling: {:d}%'.format(int(scale_sniper*100)),
             #'',
             #"Also (possibly) buffs the charge time for the ION CANNON, even though it's a Vladof gun.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 def charge_time(mod,
         obj_name,

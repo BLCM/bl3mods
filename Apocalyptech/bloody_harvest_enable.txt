@@ -1,5 +1,6 @@
 ###
 ### Enable "Bloody Harvest" Event
+### by Apocalyptech
 ###
 ### Enables the Bloody Harvest event.  Will interfere with any other
 ### event which happens to be running.  (Only one can be fully
@@ -8,6 +9,9 @@
 ### Includes various balance changes and fixes which were active during
 ### the event, so you get as close to the "live" event experience as
 ### possible.
+###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
 ###
 
 # Global activation switches

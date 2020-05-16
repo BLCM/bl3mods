@@ -402,13 +402,48 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('filename_to_save.txt',
         'Mod Title',
+        'Author Name',
         [
             'Extra description lines to show in the header, if you want.',
             'You can leave this as an empty list.',
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        version='1.0.0',
+        )
 ```
 
-Then you can use a few shortcuts to build out the mod:
+Most of that is probably self-explanatory, but I'll go through a couple of points:
+
+The `version=foo` line is completely optional, so don't worry about specifying a
+version if you don't want (though it's good practice to put it in your file so that
+people can compare to versions online, to know if they're out of date).
+
+The `lic=Mod.CC_BY_SA_40` line is there so that an explicit license is attached
+to your mod file.  It's not *required*, but I'd personally recommend you
+license your mods, just so there's no ambiguity about how you want them used.
+There's an open question as to whether or not licenses can even really apply to
+this kind of modding, but I personally feel like the answer's a solid
+"probably."
+
+There are a bunch of Creative Commons licenses that the library supports, which I'll
+list out here:
+
+- `Mod.CC_40` - [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- `Mod.CC_BY_ND_40` - [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)](https://creativecommons.org/licenses/by-nd/4.0/)
+- `Mod.CC_BY_SA_40` - [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
+- `Mod.CC_NC_40` - [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+- `Mod.CC_BY_NC_ND_40` - [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+- `Mod.CC_BY_NC_SA_40` - [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- `Mod.CC0` - [Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- `Mod.PUBLICDOMAIN` - [Public Domain (Creative Commons CC0 1.0 Universal (CC0 1.0))](https://creativecommons.org/publicdomain/zero/1.0/)
+
+You can also specify any arbitrary string, if you want to use a license that's not
+included in that list, such as:
+
+    lic="Abandon all hope, ye who try to upload this mod anywhere",
+
+Anyway, once you've got that mod header set up, you can use a few shortcuts to
+build out the mod in your script:
 
 ```python
 # Puts a newline in the mod (for readability purposes)
@@ -557,3 +592,14 @@ dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
 for item in dumpster['BalancedItems']:
     print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
 ```
+
+Licenses
+========
+
+All the code in this project is licensed under the
+[GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
+See [COPYING.txt](../COPYING.txt) for the full text of the license.
+
+All the mods in this repository are currently licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+

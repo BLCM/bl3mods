@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('always_visible_challenge_icons.txt',
         'Sets all the challenge icons to be visible on the map at all times',
+        'Apocalyptech',
         [
             "Note that this mod will cause to to miss dialogue -- when entering",
             "a new map for the first time, you'll basically just get one random",
@@ -33,7 +34,9 @@ mod = Mod('always_visible_challenge_icons.txt',
             "",
             "NOTE: This is currently not well-tested.  Only a handful of early",
             "maps have been validated.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # I should look at actual data, but it looks to me from some *real* simple
 # scaling on the map screen that The Droughts is probably 65k "wide".

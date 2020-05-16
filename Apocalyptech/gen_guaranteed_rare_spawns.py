@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('guaranteed_rare_spawns.txt',
         'Guarantee all rare spawns',
+        'Apocalyptech',
         [
             "Ensures that all BL3 rare spawns will appear at 100%.  This is actually",
             "mostly unnecessary now, as GBX has decided to permanently buff them to",
@@ -30,7 +31,9 @@ mod = Mod('guaranteed_rare_spawns.txt',
             "",
             "This *does* also buff most rare vehicle spawns, too, which GBX does not",
             "do yet.  Rare Vehicle spawns should be maybe about 10% per vehicle spawn.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Make all rare spawns 100%.  We specify a lot more levels than GBX does, and I don't
 # think that the extra levels actually do any good, but whatever.

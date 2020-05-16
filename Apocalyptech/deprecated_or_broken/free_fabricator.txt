@@ -2,6 +2,9 @@
 ### Make the Eridian Fabricator free?
 ### (haven't figured it out yet, will just leave it at its useless current thing for now)
 ###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 # Hah, this actually makes it produce *nothing* but still requires ten Eridium
 #SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorShotCost.Att_FabricatorShotCost:ValueResolver_ConstantAttributeValueResolver,ValueResolver.Object.Value.BaseValueConstant,0,,0

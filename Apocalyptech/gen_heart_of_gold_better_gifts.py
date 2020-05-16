@@ -24,6 +24,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('heart_of_gold_better_gifts.txt',
         'Heart of Gold: Better Gifts',
+        'Apocalyptech',
         [
             "I always felt that the gifts you get from Joy in the mission 'Heart",
             "of Gold' are a bit pathetic.  Not that you need the resources or",
@@ -33,7 +34,9 @@ mod = Mod('heart_of_gold_better_gifts.txt',
             "Buffing this up to *actually* impressive levels isn't really possible",
             "but we can at least bump up the quantity and throw in Eridium as well,",
             "which may make it seem more impressive.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Improve the pool
 mod.comment('Improve Gift Pool')

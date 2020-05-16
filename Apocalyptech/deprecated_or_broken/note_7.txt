@@ -1,5 +1,8 @@
 # ShadowEvil wanted to do a joke about ECHO-2 -> Note 7, so here it is.
 # Didn't seem quite worth a gen_note_7.py script.
+#
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# https://creativecommons.org/licenses/by-sa/4.0/
 
 # Grenade Name
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/Naming/GrenadeModNamingStrategy.GrenadeModNamingStrategy,SingleNames.SingleNames[41].NamePart.Object..PartName,0,,Note 7

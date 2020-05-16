@@ -389,9 +389,12 @@ while True:
 if save_filename:
     mod = Mod(save_filename,
             'Arbitrary Partlocks: {}'.format(bal_last),
+            'Apocalyptech',
             [
                 'Auto-generated partlocks, chosen with an interactive CLI app.',
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     for cat_idx, cat_actions in enumerate(actions):
         cur_cat = categories[cat_idx]

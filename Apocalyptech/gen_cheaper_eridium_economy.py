@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('cheaper_eridium_economy.txt',
         'Cheaper Eridium Economy',
+        'Apocalyptech',
         [
             "Makes various aspects of the Eridium economy cheaper, which basically",
             "ends up breaking that whole economy given the scaling I've done here.",
@@ -30,7 +31,9 @@ mod = Mod('cheaper_eridium_economy.txt',
             "Currently the affected areas are Earl's Customizations, and the Eridium",
             "slot machine.  Earl's Vault Veteran vending machine is untouched since",
             "I haven't yet figured out how to alter it.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 for label, row in [
         ('Trinkets', 'WeaponTrinket'),

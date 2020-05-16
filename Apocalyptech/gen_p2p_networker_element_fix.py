@@ -25,6 +25,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, Balance
 
 mod = Mod('p2p_networker_element_fix.txt',
         'P2P Networker Element Fix',
+        'Apocalyptech',
         [
             "P2P Networker is an unfinished/unreleased gun that's still present in the",
             "BL3 data.  It's basically a more-powerful redistributor.  One thing broken",
@@ -33,7 +34,9 @@ mod = Mod('p2p_networker_element_fix.txt',
             "in the game's UI.  Amusing as that is, this mod will add in a secondary",
             "element to the gun, so that it can be switched properly just like any other",
             "Maliwan weapon.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Some assumptions we can make, since we're just dealing with the one balance:
 #  1) The "secondary element" part group is the only empty group in the list.

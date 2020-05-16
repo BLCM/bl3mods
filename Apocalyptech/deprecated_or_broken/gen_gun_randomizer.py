@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
 mod = Mod('gun_randomizer.txt',
         'Gun Randomizer (proof of concept)',
+        'Apocalyptech',
         [
             "Proof of concept for a gun randomizer.  In this state it's ony",
             "randomizing the barrel (oh, and element, I suppose) of the Cloud",
@@ -33,7 +34,9 @@ mod = Mod('gun_randomizer.txt',
             "",
             "Don't really have any plans to turn this into a full mod, just",
             "wanted to see if it'd work.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 parts = [
         (False, [

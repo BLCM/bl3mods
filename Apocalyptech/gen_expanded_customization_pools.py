@@ -89,7 +89,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
 
     mod = Mod(filename_full,
             'Expanded Customization Pools: {}'.format(label),
+            'Apocalyptech',
             full_desc,
+            lic=Mod.CC_BY_SA_40,
             )
 
     mod.header('Increased Cosmetic chances')

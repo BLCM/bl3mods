@@ -739,6 +739,7 @@ for (man, man_label) in eng_manufacturers.items():
 
     mod = Mod(man_filename,
             'Manufacturer Lock: {}'.format(man_label),
+            'Apocalyptech',
             [
                 "Restricts drops for (mostly) all global (world-drop) weapon pools so that",
                 "*only* {} weapons will drop from that pool, including the relevant world".format(man_label),
@@ -755,7 +756,9 @@ for (man, man_label) in eng_manufacturers.items():
                 "To generate combinations of manufacturers, run the generation script with",
                 "three-letter manufacturer codes as the arguments.  See sourcecode for",
                 "details",
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     for (guntype, pools, (leg_pool, leg_balances)) in type_pools:
         if man in type_to_manufacturer[guntype]:
@@ -793,6 +796,7 @@ if len(custom_to_lock) >  0:
 
     mod = Mod(man_filename,
             'Custom Manufacturer Lock: {}'.format(', '.join(sorted(eng_args))),
+            'Apocalyptech',
             [
                 "Restricts drops for (mostly) all global (world-drop) weapon pools so that",
                 "*only* weapons from the following manufacturers will drop from that pool,",
@@ -809,7 +813,9 @@ if len(custom_to_lock) >  0:
                 "Note that this *only* touches weapon type pools which these manufacturers",
                 "actually belong to.  For other weapon types, you'll still see the full range",
                 "of available manufacturers.",
-            ])
+            ],
+            lic=Mod.CC_BY_SA_40,
+            )
 
     for (guntype, pools, (leg_pool, leg_balances)) in type_pools:
         if any([man in type_to_manufacturer[guntype] for man in custom_to_lock]):

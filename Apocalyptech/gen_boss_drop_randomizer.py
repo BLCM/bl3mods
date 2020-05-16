@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('boss_drop_randomizer.txt',
         'Boss Drop Randomizer',
+        'Apocalyptech',
         [
             "Randomizes the unique drops provided by bosses, or in other words basically",
             "completely does away with specific boss drops.  Drop types should remain",
@@ -35,7 +36,9 @@ mod = Mod('boss_drop_randomizer.txt',
             "so you get as interesting as possible drops.",
             "",
             "Relatively untested!",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # There are various ways to accomplish this, and of course I go for a
 # super over-engineered method.  Ah, well!

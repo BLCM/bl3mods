@@ -23,8 +23,11 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('better_vehicles.txt',
         'Better Vehicles',
+        'Apocalyptech',
         [
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # Mostly I just want to make the hovering more speedy so I can have, effectively,
 # sandskiffs across all vehicle types.  I've tried a few variations of the

@@ -3,5 +3,8 @@
 # apply, though, I'm not sure if it'd just be an entirely-visual
 # change or if it'd actually do what I was trying.  Anyway, doesn't
 # work as-is.
+#
+# Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# https://creativecommons.org/licenses/by-sa/4.0/
 
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/Lootables/_Design/Classes/Sanctuary/BPIO_Lootable_Global_GoldenKey.Default__BPIO_Lootable_Global_GoldenKey_C,PrimaryUseDefSelection.DefaultUseDefinition,0,,UsableTypeDefinition'/Game/UI/InteractionPrompt/UIData_TyphonGunGun.UIData_TyphonGunGun'

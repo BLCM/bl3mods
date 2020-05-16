@@ -23,6 +23,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('vehicle_unlocks.txt',
         'Vehicle Unlocks',
+        'Apocalyptech',
         [
             "Unlocks most vehicle parts/skins from the beginning of the game.  Wheel",
             "types, unfortunately, can't be unlocked early, but the others should be",
@@ -34,7 +35,9 @@ mod = Mod('vehicle_unlocks.txt',
             "Also converts Clever Girl, Festive Flesh-Eater, Skagzilla, and all",
             "Technicals in Sandblast Scar to the Monster Wheels variety, so that",
             "there's ingame sources for the Monster Wheels."
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 # A list of all levels where vehicles can show up
 outrunner_levels = {

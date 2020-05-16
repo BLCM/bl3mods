@@ -23,10 +23,13 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('guaranteed_cartel_operatives.txt',
         'Revenge of the Cartels: Guaranteed Operatives',
+        'Apocalyptech',
         [
             "All spawns which can generate operatives should do so.  This is",
             "actually a bit much, I stopped using it after a couple of tests.",
-        ])
+        ],
+        lic=Mod.CC_BY_SA_40,
+        )
 
 mod.table_hotfix(Mod.PATCH, '',
         '/Game/PatchDLC/Event2/GameData/Balance/DataTable_Event02_Cartels',
