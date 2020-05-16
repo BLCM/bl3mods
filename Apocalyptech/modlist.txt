@@ -135,7 +135,7 @@ no_projected_shields
 no_slam_artifacts
 
 # Only spawn Atlas grenads (using this on my Zane)
-only_atlas_grenades
+#only_atlas_grenades
 
 # Fix P2P Networker's missing second element
 p2p_networker_element_fix
@@ -211,7 +211,7 @@ customization_drops_none
 # timed event has used in the past.  Will allow ghosts+hearts in
 # DLC maps, for instance.  Doesn't do anything unless an event or
 # my all_event_spawns mod is active.
-expanded_event_spawners_cartels
+#expanded_event_spawners_cartels
 #expanded_event_spawners_bloody_harvest
 #expanded_event_spawners_broken_hearts
 
