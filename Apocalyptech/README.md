@@ -159,6 +159,11 @@ Gameplay Changes instead.)
   default is `1.09`.  BL1's is maybe `1.045` (BL1 doesn't have a single scaling
   factor, but apparently that value works pretty well), BL2's is `1.13`, and
   TPS's is `1.1`.
+- `photo_mode_unlock.txt` - Lets the camera in Photo Mode go extremely far, and
+  also speeds it up so that getting across the map isn't super slow.  Untested
+  exactly *how* far you can go; might not be able to go literally all the way
+  across every map, but you can at least go between the two Fast Travels in
+  The Droughts.
 
 ## Economy-related Mods
 

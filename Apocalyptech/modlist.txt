@@ -82,6 +82,9 @@ torgue_ar_full_auto
 #alternate_scaling_bl2
 #alternate_scaling_tps
 
+# Photo Mode Unlock
+photo_mode_unlock
+
 ###
 ### Economy-related mods
 ###
