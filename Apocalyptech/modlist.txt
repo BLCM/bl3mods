@@ -89,6 +89,9 @@ torgue_ar_full_auto
 # Photo Mode Unlock
 photo_mode_unlock
 
+# No Reload Notification
+no_reload_notification
+
 ###
 ### Economy-related mods
 ###

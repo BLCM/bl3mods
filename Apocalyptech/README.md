@@ -168,6 +168,8 @@ Gameplay Changes instead.)
   The Droughts.  Also reduces the camera's collision radius to zero, which doesn't
   let it clip directly through objects, but it will often be able to slip through
   seams.
+- `no_reload_notification.txt` - Removes the "reload" notification when you're
+  near the end of a magazine.
 
 ## Economy-related Mods
 
