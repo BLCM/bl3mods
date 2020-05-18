@@ -36,6 +36,10 @@ mayhem_level_cheats
 # Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
 mayhem2_modifier_nerfs
 
+# No cost for respec or respawn
+free_respec
+free_respawn
+
 ###
 ### Gameplay Changes
 ###

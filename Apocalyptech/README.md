@@ -88,6 +88,8 @@ Gameplay Changes instead.)
   be quite a bit easier than default Mayhem levels at about all but Mayhem 1.
   Conflicts with `mayhem2_decreased_enemy_scaling`, since they alter many of
   the same vars.
+- `free_respawn.txt` - No charge for respawning after death!
+- `free_respec.txt` - No charge to respec your skills.
 
 ## Gameplay Changes
 
