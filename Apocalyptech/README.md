@@ -154,6 +154,11 @@ Gameplay Changes instead.)
 - `torgue_ar_full_auto.txt` - Makes (nearly) all Torgue ARs full-auto.  The
   exceptions are the handful of legendary ARs which have inherent burst-fire
   mechanics.  (Only the Alchemist needed tweaking, of the legendaries.)
+- `alternate_scaling_*.txt` - Sets the main "universal" scaling constant to
+  match either BL1, BL2, or TPS (depending on which one you choose).  BL3's
+  default is `1.09`.  BL1's is maybe `1.045` (BL1 doesn't have a single scaling
+  factor, but apparently that value works pretty well), BL2's is `1.13`, and
+  TPS's is `1.1`.
 
 ## Economy-related Mods
 

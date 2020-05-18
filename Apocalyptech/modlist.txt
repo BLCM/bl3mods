@@ -77,6 +77,11 @@ no_trials_dependencies
 # Make (nearly) all Torgue ARs full-auto
 torgue_ar_full_auto
 
+# Alternate Universal Scalings
+alternate_scaling_bl1
+alternate_scaling_bl2
+alternate_scaling_tps
+
 ###
 ### Economy-related mods
 ###
