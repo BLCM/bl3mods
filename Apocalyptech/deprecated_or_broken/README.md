@@ -138,4 +138,8 @@ don't look at these thinking that they're any good.  :)
   of the campaign.  In the end, this approach didn't work, though.  Use
   `nvhm_gamestage_follows_level.txt` out in the main dir for a more
   nuclear option which happens to work.
+- `longer_auto_pickup.txt` - There was a likely-looking var in `GameplayGlobals`
+  which looked like it probably controlled the auto-item-pickup radius.
+  This changes the value properly, but either it doesn't do what I thought
+  it did, or something else also needs to change in order for it to work.
 
