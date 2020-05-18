@@ -31,6 +31,9 @@ mod = Mod('photo_mode_unlock.txt',
             "that area, at least.  Also buffs up the camera move speed so that it's not",
             "agonizing having to go over so much terrain.  That might make lining up",
             "precise angles a bit harder, but c'est la vie!",
+            "",
+            "Also reduces the camera's collision radius to zero, which doesn't let it clip",
+            "directly through objects, but it can often slip through real tiny seams.",
         ],
         lic=Mod.CC_BY_SA_40,
         )
@@ -57,6 +60,13 @@ mod.reg_hotfix(Mod.PATCH, '',
         '/Game/GameData/Camera/CameraMode_PhotoMode_Offset.CameraMode_PhotoMode_Offset:Behaviors_CameraBehavior_OffsetCameraRelativeFromInputs',
         'MoveSpeed',
         speed)
+mod.newline()
+
+mod.comment('Decrease collision radius (can sometimes let us clip through edges)')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/GameData/Camera/CameraMode_PhotoMode_Offset.CameraMode_PhotoMode_Offset:Behaviors_CameraBehavior_OffsetCameraRelativeFromInputs',
+        'CollisionRadius',
+        0)
 mod.newline()
 
 mod.close()

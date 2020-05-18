@@ -9,6 +9,9 @@
 ### agonizing having to go over so much terrain.  That might make lining up
 ### precise angles a bit harder, but c'est la vie!
 ###
+### Also reduces the camera's collision radius to zero, which doesn't let it clip
+### directly through objects, but it can often slip through real tiny seams.
+###
 ### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### https://creativecommons.org/licenses/by-sa/4.0/
 ###
@@ -20,4 +23,7 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_PhotoMode_Offset.Camer
 
 # Increasing camera move speed
 SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_PhotoMode_Offset.CameraMode_PhotoMode_Offset:Behaviors_CameraBehavior_OffsetCameraRelativeFromInputs,MoveSpeed,0,,800
+
+# Decrease collision radius (can sometimes let us clip through edges)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_PhotoMode_Offset.CameraMode_PhotoMode_Offset:Behaviors_CameraBehavior_OffsetCameraRelativeFromInputs,CollisionRadius,0,,0
 

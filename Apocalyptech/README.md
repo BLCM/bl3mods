@@ -163,7 +163,9 @@ Gameplay Changes instead.)
   also speeds it up so that getting across the map isn't super slow.  Untested
   exactly *how* far you can go; might not be able to go literally all the way
   across every map, but you can at least go between the two Fast Travels in
-  The Droughts.
+  The Droughts.  Also reduces the camera's collision radius to zero, which doesn't
+  let it clip directly through objects, but it will often be able to slip through
+  seams.
 
 ## Economy-related Mods
 
