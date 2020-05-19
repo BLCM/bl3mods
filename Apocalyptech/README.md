@@ -289,11 +289,6 @@ being used, which gives you far more Eridium than usual.
     rewards.
   - `no_mission_rewards_or_earl` - Excludes the customizations you get as
     mission rewards, and the ones which can be found in Earl's machine.
-- `customization_unlocks.txt` - Removes the preorder/deluxe/superdeluxe
-  requirements for the relevant cosmetic items.  This does *not* actually
-  spawn them in your game; you'll have to edit either `expanded_customization_pools`
-  or `testing_loot_drops` to drop/enable them, if you don't already have
-  them.
 - `only_heads_and_skins.txt` - Since I recently figured out how to spawn
   customizations properly, I ended up completing my collection of all
   non-character skin/head customizations, so this little mod just makes

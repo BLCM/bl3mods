@@ -3,4 +3,6 @@ hotfix_archive
 isolate.py
 isolate_strip_from.py
 manufacturer_lock_custom_*.txt
+customization_unlocks.txt
+gen_customization_unlocks.py
 modlist.json
