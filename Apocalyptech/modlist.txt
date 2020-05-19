@@ -92,6 +92,9 @@ photo_mode_unlock
 # No Reload Notification
 no_reload_notification
 
+# Shiv Legendary Drop, by SSpyR
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/give_shiv_drop
+
 ###
 ### Economy-related mods
 ###
@@ -160,6 +163,9 @@ enable_pendant_of_terra
 
 # Fixes the blank parts that Siren COMs can sometimes roll
 fix_siren_com_blank_parts
+
+# Green Monster Click Click Points Fix, by SSpyR
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix
 
 ###
 ### Mission-specific Mods
