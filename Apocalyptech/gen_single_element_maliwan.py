@@ -22,8 +22,8 @@
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, Balance
 
-mod = Mod('no_second_element_maliwan.txt',
-        'No Second Element Maliwan',
+mod = Mod('single_element_maliwan.txt',
+        'Single-Element Maliwan',
         'Apocalyptech',
         [
             "Removes the second element on all Maliwan guns which ordinarily have it.",

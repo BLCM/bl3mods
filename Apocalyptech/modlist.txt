@@ -156,11 +156,11 @@ no_slam_artifacts
 #only_atlas_grenades
 
 # Fix P2P Networker's missing second element (doesn't make sense to use
-# with no_second_element_maliwan)
+# with single_element_maliwan)
 #p2p_networker_element_fix
 
 # No Second Element Maliwan (doesn't make sense to use with p2p_networker_element_fix)
-no_second_element_maliwan
+single_element_maliwan
 
 # Enable Pendant of Terramorphous as a valid legendary artifact drop
 enable_pendant_of_terra

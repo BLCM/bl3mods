@@ -253,7 +253,7 @@ being used, which gives you far more Eridium than usual.
   for it when I wrote it.
 - `p2p_networker_element_fix.txt` - Adds a secondary element to the P2P
   Networker, so that switching elements works with the gun as-is.
-- `no_second_element_maliwan.txt` - Removes the second element that most Maliwan
+- `single_element_maliwan.txt` - Removes the second element that most Maliwan
   equipment lets you switch to.  Doesn't affect special gun abilities like the
   D.N.A.  No more blinky inventory screens!  Omits the Vault Hero, so now that
   gun *does* to something special.  This does *not* clear out the secondary
