@@ -35,8 +35,10 @@ for label, scale, extra in [
                 "Updates the universal scaling constant from BL3's default of 1.09 to match",
                 "{}'s {}{}".format(label, scale, extra),
                 "",
-                "(NOTE: This is confirmed to affect gun damage, at least, but I have yet to",
-                "test if it actually affects other stuff like enemies.)",
+                "(NOTE: These scaling vars don't play intuitively with Mayhem levels.  Anything",
+                "above the default 1.09 will end up making the game quite a bit easier in higher",
+                "Mayhem levels, so you'd actually want to *reduce* the scaling to make Mayhem",
+                "harder.)",
             ],
             lic=Mod.CC_BY_SA_40,
             )

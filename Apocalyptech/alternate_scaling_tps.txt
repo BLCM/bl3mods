@@ -5,8 +5,10 @@
 ### Updates the universal scaling constant from BL3's default of 1.09 to match
 ### TPS's 1.1
 ###
-### (NOTE: This is confirmed to affect gun damage, at least, but I have yet to
-### test if it actually affects other stuff like enemies.)
+### (NOTE: These scaling vars don't play intuitively with Mayhem levels.  Anything
+### above the default 1.09 will end up making the game quite a bit easier in higher
+### Mayhem levels, so you'd actually want to *reduce* the scaling to make Mayhem
+### harder.)
 ###
 ### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### https://creativecommons.org/licenses/by-sa/4.0/
