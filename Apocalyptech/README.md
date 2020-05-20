@@ -253,6 +253,11 @@ being used, which gives you far more Eridium than usual.
   for it when I wrote it.
 - `p2p_networker_element_fix.txt` - Adds a secondary element to the P2P
   Networker, so that switching elements works with the gun as-is.
+- `no_second_element_maliwan.txt` - Removes the second element that most Maliwan
+  equipment lets you switch to.  Doesn't affect special gun abilities like the
+  D.N.A.  No more blinky inventory screens!  Omits the Vault Hero, so now that
+  gun *does* to something special.  This does *not* clear out the secondary
+  element added by my `p2p_networker_element_fix` mod.
 - `enable_pendant_of_terra.txt` - Pendant of Terramorphous is a legendary
   artifact which is technically in the game data but was never added to
   the game.  This adds it back in as a valid legendary artifact drop,
