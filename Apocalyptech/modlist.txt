@@ -259,11 +259,11 @@ fewer_cartel_operatives
 ###
 
 # Mod-Testing Gear
-craders_emp5_super_buff
-transformer_super_buff
+#craders_emp5_super_buff
+#transformer_super_buff
 
 # Testing loot drops
-testing_loot_drops
+#testing_loot_drops
 
 # Real quick XP gains
 #fast_levelling_fast
