@@ -1044,7 +1044,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ('P2P Networker',
             '/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link',
             "You wouldn't download a car.",
-            "hits chain to nearby enemies, also a weird UI name on alt-element mode"),
+            "hits chain to nearby enemies, broken second element"),
         ('Frozen Snowshoe',
             '/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/UIStat_RedText_SlideKick_FrozenHeart.UIStat_RedText_SlideKick_FrozenHeart',
             "Give em' the cold toelder.",

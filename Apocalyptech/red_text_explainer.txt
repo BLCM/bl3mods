@@ -658,7 +658,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_Red
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/UIStat_RedText_TiggsBoom.UIStat_RedText_TiggsBoom,Text,0,,[Flavor]A gaping hole in the sky.[/Flavor] (shots pierce enemies and makes meteors fall from sky)
 
 # P2P Networker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[Flavor]You wouldn't download a car.[/Flavor] (hits chain to nearby enemies, also a weird UI name on alt-element mode)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[Flavor]You wouldn't download a car.[/Flavor] (hits chain to nearby enemies, broken second element)
 
 # AutoAimè
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/UIStat_RedText_AutoAime.UIStat_RedText_AutoAime,Text,0,,[Flavor]OGC HOOKED[/Flavor] (bullets home to center of target, must be reasonably close to activate)
