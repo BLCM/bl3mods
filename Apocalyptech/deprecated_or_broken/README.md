@@ -25,6 +25,11 @@ weren't actually intended to be mods themselves.
     make Mayhem 10 into a nightmare.)
 - `tiniest_tina.txt` - Made for a laugh after someone suggested online.
   Scales Tina down quite small, and renames her "Tiniest Tina."
+- `hellwalker_to_purple_parts.txt` - Replaces the Hellwalker Balance/PartSet
+  with the versions from a regular purple Jakobs shotgun.  Basically just
+  wanted to see if the NamingStrategy object would still do the right thing,
+  which it did.  This kind of thing could maybe turn into a mod of some
+  sort eventually, though I have no immediate plans for it.
 
 ## Deprecated/Testing Mods
 

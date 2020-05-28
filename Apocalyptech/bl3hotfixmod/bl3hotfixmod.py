@@ -694,6 +694,17 @@ class Balance(object):
         category.part_type_enum = self.part_type_enum
         self.categories.append(category)
 
+    def set_balance_to(self, new_balance_name, data):
+        """
+        Updates our balance name to be `new_balance_name`, and updates the PartSet name
+        appropriately using the BL3Data object `data` as well.  Used if you want to copy
+        an existing balance over to another one.  Probably not a lot of general-purpose
+        use, but what's a little API bloat, right?
+        """
+        self.bal_name = new_balance_name
+        obj = data.get_data(self.bal_name)[0]
+        self.partset_name = obj['PartSetData'][1]
+
     def hotfix_partset_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
         Generates hotfixes to completely set the PartSet portion.
