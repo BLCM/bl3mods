@@ -544,6 +544,10 @@ class PartCategory(object):
         if not self.part_type_enum:
             raise Exception('PartSet representation requires part_type_enum')
 
+        # If we ever want to include the partlist again, we'd want to add in
+        # `self.str_partlist()` to the `Parts=()` section in here.  The attribute
+        # seems to be entirely ignored by the game engine, though, so we can
+        # safely omit it.
         return """(
             PartTypeEnum={part_type_enum},
             PartType={index},
@@ -554,7 +558,7 @@ class PartCategory(object):
                 Max={num_max}
             ),
             bEnabled={enabled},
-            Parts=({parts})
+            Parts=()
         )""".format(
                 part_type_enum=Mod.get_full_cond(self.part_type_enum),
                 index=self.index,
@@ -563,7 +567,6 @@ class PartCategory(object):
                 num_min=self.num_min,
                 num_max=self.num_max,
                 enabled=str(self.enabled),
-                parts=self.str_partlist(),
                 )
 
 class Balance(object):
