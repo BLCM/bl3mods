@@ -322,13 +322,18 @@ being used, which gives you far more Eridium than usual.
   it so that those are the only customizations that spawn (apart from
   dedicated spawns, of course).  Probably of little use to other people
   Not Me.
-- `customization_drops_*.txt` - Comes in three variants: `none`, `improved`, and
-  `frequent`, and only affects the customization drop rate for "standard" enemies.
-  The default is 0.5%; these mods change the rate to 0%, 3%, or 6%, respectively.
-  `none` is useful if you already have all customizations and don't want to have
-  them clogging up your Lost Loot machine.  `frequent` is useful for hunting down
-  those last few you have yet to find (though even at 6% it'll probably take you
-  ages to hunt them all down, if you're just relying on drops).
+- `customization_drops_*.txt` - Comes in four variants: `none`, `improved`,
+  `frequent`, and `constant`.  This should affect the "world" customization
+  drop rate for all enemies.  Specific cosmetic drops weren't touched, so
+  you'll still see them from various bosses occasionally.  The default rate for
+  these in the base game is 0.5% (higher in DLCs, typically); these mods change
+  the rate to 0%, 3%, 6%, or 12%, respectively.  `none` is useful if you
+  already have all customizations and don't want to have them clogging up your
+  Lost Loot machine.  `frequent` or `constant` are useful for hunting down
+  those last few you have yet to find (though even at 12% it'll probably take
+  you ages to hunt them all down, if you're just relying on drops).  The `none`
+  variant also tries to remove cosmetics from containers, though that is far
+  less well tested.
 
 ## Manufacturer Locks
 
