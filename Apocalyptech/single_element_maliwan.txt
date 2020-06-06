@@ -129,9 +129,6 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Ba
 # Balance_SG_MAL_ETech_Insider
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
 
-# Balance_SM_MAL_SFForce
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce.Balance_SM_MAL_SFForce,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
-
 # Balance_SG_MAL_TheNothing
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/Balance/Balance_SG_MAL_TheNothing.Balance_SG_MAL_TheNothing,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
 

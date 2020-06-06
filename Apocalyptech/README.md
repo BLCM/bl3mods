@@ -275,8 +275,9 @@ being used, which gives you far more Eridium than usual.
 - `single_element_maliwan.txt` - Removes the second element that most Maliwan
   equipment lets you switch to.  Doesn't affect special gun abilities like the
   D.N.A.  No more blinky inventory screens!  Omits the Vault Hero, so now that
-  gun *does* to something special.  This does *not* clear out the secondary
-  element added by my `p2p_networker_element_fix` mod.
+  gun *does* to something special.  Also this omits SF Force, whose ability is
+  directly tied to having two elements on the card.  This does *not* clear out
+  the secondary element added by my `p2p_networker_element_fix` mod.
 - `enable_pendant_of_terra.txt` - Pendant of Terramorphous is a legendary
   artifact which is technically in the game data but was never added to
   the game.  This adds it back in as a valid legendary artifact drop,
