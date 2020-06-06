@@ -124,6 +124,9 @@ maliwan_charge_time
 # Stronger Snipers
 stronger_snipers
 
+# Nerf OP Gear
+nerf_op_gear
+
 ###
 ### Partlocks / Part Changes
 ###

@@ -202,6 +202,25 @@ being used, which gives you far more Eridium than usual.
   use a bit of a buff, so this does that.  Sniper Rifles are currently
   getting a 15% damage+crit bonus, and Jakobs rifles get an extra 10% crit
   bonus.
+- `nerf_op_gear.txt` - Nerfs a bunch of weapons which are mostly geared
+  towards performing well at M10, and are thus extremely OP at M0 (or when
+  using my `mayhem_level_cheats` or `mayhem2_decreased_enemy_scaling`
+  mods).  These could almost certainly use more tweaking, and doubtless
+  I've forgotten about a few weapons which should maybe be in here.  The
+  weapons included in here are:
+  - Anarchy: `1` -> `0.4`
+  - Backburner: `2` -> `1.7`
+  - Kaoson: `2.25` -> `1`
+  - Krakatoa: `4.25` -> `2.5`
+  - NoPewPew: `1.1` -> `0.15`
+  - O.P.Q. System: `1.8` -> `1`
+  - Plaguebearer: `1.1` -> `0.9`
+  - Reflux: `1.75` -> `1.5`
+  - Sand Hawk: `1.5` -> `0.5`
+  - Skullmasher: `0.5` -> `0.3`
+  - The Monarch: `1.6` -> `0.7`
+  - Wedding Invitation Ricochet Damage: `2.928` -> `1`
+  - Yellowcake: `1.75` -> `1`
 
 ## Partlocks / Part Changes
 
