@@ -261,6 +261,7 @@ for label, obj_name, default, scale, final_attr in [
 
 # This doesn't seem to actually do the trick, and I don't care enough to track
 # it down.  Was technically out-of-place anyway.
+# TODO: Plaguebearer? (Torgue HW)
 #mod.header('Non-Maliwan Weapons')
 #for label, obj_name, aspect_attr, aspect_idx, default, scale in [
 #        ('ION CANNON (Vladof Heavy Weapon)',
