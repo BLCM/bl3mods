@@ -22,9 +22,33 @@
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
 
 mod = Mod('better_loot.txt',
-        'Better Loot, ish',
+        'BL3 Better Loot',
         'Apocalyptech',
-        [],
+        [
+            "Like my BL2 and TPS variants, this mod improves the quality of",
+            "gear you'll get throughout BL3.  The scaling values in here aren't",
+            "as extreme as the defaults for BL2/TPS, since the loot in BL3 is",
+            "already quite good.  Without other mods, though, you'll probably",
+            "still be getting legendaries quite frequently.  When used alongside",
+            "my `mayhem2_no_drop_scaling` mod, though, things here drop at about",
+            "the rates I'm happy with at the moment.",
+            "",
+            "Like my other Better Loot mods, this guarantees drops from bosses",
+            "and minibosses who have dedicated drops, and will mostly provide N",
+            "drops from each, where N is the number of possibilities in the pool.",
+            "Also like the other Better Loots, that number's sometimes lowered a",
+            "bit for enemies with a LOT of stuff in their pools.",
+            "",
+            "Eridium drop frequency is also increased quite a bit, as is the",
+            "amount of eridium received from breaking eridium deposits and",
+            "containers.",
+            "",
+            "This mod also removes the Mayhem requirements for previously Mayhem-",
+            "locked drops, and sets anointments to be guaranteed at all times.",
+            "",
+            "I'd recommend using my Early Bloomer mod in conjunction with this,",
+            "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
+        ],
         lic=Mod.CC_BY_SA_40,
         )
 
@@ -372,16 +396,18 @@ for level_name in [
             5)
 mod.newline()
 
-# Eridium crystal growths (I think).  Event scale was 1.5, using 3 here.
+# Eridium crystal growths.
+# ItemPool_EridiumCrystal uses Init_RandomLootCount_Lots, which seems to generate 2-5
+# ItemPool_EridiumCrystal_Large uses Init_RandomLootCount_LotsAndLots, which is 4-8
 mod.comment('Eridium Crystal Growths')
-for pool_name in [
-        '/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal',
-        '/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large',
+for pool_name, new_qty in [
+        ('/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal', 2),
+        ('/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large', 2)
         ]:
     mod.reg_hotfix(Mod.PATCH, '',
             pool_name,
             'Quantity.BaseValueScale',
-            3)
+            new_qty)
 mod.newline()
 
 # Guaranteed boss drops!
