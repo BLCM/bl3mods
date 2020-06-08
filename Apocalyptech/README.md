@@ -150,6 +150,10 @@ Gameplay Changes instead.)
 - `disable_lootsplosion.txt` - In the end, I find that I'm not fond of the
   amount of extraneous loot that shows up all the time when using the Easy
   Mayhem 2.0 modifier "Lootsplosion," so I'm just going ahead and disabling it.
+- `mayhem_slayer_booster_change.txt` - Changes the boosters dropped by the
+  Mayhem 2.0 mod "Slayer" to be health regen or damage reduction, instead of
+  shield boosters (for anyone using a roid-focused build which wants shields
+  to be down).
 - `no_trials_dependencies.txt` - Unlocks the Proving Grounds / Trials missions
   as soon as you can get to the levels which provide them.  The missions
   themselves claim to be a minimum level of 29, but the enemies in the Trials

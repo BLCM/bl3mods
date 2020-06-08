@@ -76,6 +76,9 @@ mayhem2_no_drop_scaling
 disable_rogue_lite
 disable_lootsplosion
 
+# Change the booster types dropped by the "Slayer" mayhem mod
+#mayhem_slayer_booster_change
+
 # Allow Trials missions as soon as you get to the maps which have them
 no_trials_dependencies
 

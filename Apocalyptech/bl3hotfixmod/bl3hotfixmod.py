@@ -437,6 +437,68 @@ class ItemPoolListEntry(object):
             parts.append('NumberOfTimesToSelectFromThisPool={}'.format(self.num))
         return '({})'.format(','.join(parts))
 
+class ItemPoolEntry(object):
+    """
+    Some abstraction for items inside an ItemPool
+    """
+
+    def __init__(self, pool_name=None, balance_name=None, weight=None):
+        """
+        `weight` should be a BVC/BVCF object
+        """
+        self.pool_name = pool_name
+        self.balance_name = balance_name
+        self.weight = weight
+
+    def __str__(self):
+        """
+        Outputs a string which can be used in a hotfix to represent this entry
+        """
+        parts = []
+        if self.pool_name:
+            parts.append('ItemPoolData={}'.format(Mod.get_full_cond(self.pool_name, 'ItemPoolData')))
+        if self.balance_name:
+            parts.append('InventoryBalanceData={}'.format(Mod.get_full_cond(self.balance_name)))
+            parts.append('ResolvedInventoryBalanceData={}'.format(Mod.get_full_cond(self.balance_name, 'InventoryBalanceData')))
+        if self.weight:
+            parts.append('Weight={}'.format(self.weight))
+        return '({})'.format(','.join(parts))
+
+class ItemPool(object):
+    """
+    Some abstraction to easily build up ItemPools.
+    """
+
+    def __init__(self, pool_name):
+        self.pool_name = pool_name
+        self.balanceditems = []
+
+    def add_pool(self, pool_name, weight=None):
+        """
+        Adds the specified `pool_name` to our ItemPool, optionally with the specified
+        `weight`, which should be a BVC/BVCF object.  Weight will default to 1 if not
+        specified.
+        """
+        if not weight:
+            weight = BVC()
+        self.balanceditems.append(ItemPoolEntry(pool_name=pool_name, weight=weight))
+
+    def add_balance(self, balance_name, weight=None):
+        """
+        Adds the specified `balance_name` to our ItemPool, optionally with the specified
+        `weight`, which should be a BVC/BVCF object.  Weight will default to 1 if not
+        specified.
+        """
+        if not weight:
+            weight = BVC()
+        self.balanceditems.append(ItemPoolEntry(balance_name=balance_name, weight=weight))
+
+    def __str__(self):
+        """
+        Format our BalancedItems as a hotfix
+        """
+        return '({})'.format(','.join([str(i) for i in self.balanceditems]))
+
 class Part(object):
     """
     Class to hold info about a single Part for an item/weapon.  Just the object name
