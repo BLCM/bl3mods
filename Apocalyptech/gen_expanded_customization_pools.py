@@ -398,4 +398,3 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
                 BVCF(bvc=weight))
 
     mod.close()
-    print('Generated {}'.format(filename_full))

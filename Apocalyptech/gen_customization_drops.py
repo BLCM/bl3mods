@@ -132,5 +132,4 @@ for (label, filename, rate, desc) in [
         mod.newline()
 
     mod.close()
-    print('Wrote {}'.format(full_filename))
 

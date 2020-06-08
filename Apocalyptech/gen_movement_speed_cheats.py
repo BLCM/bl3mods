@@ -127,4 +127,3 @@ for (label, suffix, multiplier) in [
         mod.newline()
 
     mod.close()
-    print('Generated {}'.format(mod_filename))

@@ -49,6 +49,5 @@ for event, menunum in [
             BVC(bvc=menunum))
 
     mod.close()
-    print('Generated {}'.format(mod_filename))
 
 

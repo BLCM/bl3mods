@@ -279,6 +279,7 @@ class Mod(object):
         if not self.last_was_newline:
             self.newline()
         self.df.close()
+        print('Wrote mod to {}'.format(self.filename))
 
 class DataTableValue(object):
     """

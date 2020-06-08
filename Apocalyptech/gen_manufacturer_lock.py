@@ -787,7 +787,6 @@ for (man, man_label) in eng_manufacturers.items():
             mod.newline()
 
     mod.close()
-    print('Generated {}'.format(man_filename))
 
 # If we've had some manufacturers specified, do a "combined" mod as well
 if len(custom_to_lock) >  0:
@@ -845,4 +844,3 @@ if len(custom_to_lock) >  0:
             mod.newline()
 
     mod.close()
-    print('Generated {}'.format(man_filename))

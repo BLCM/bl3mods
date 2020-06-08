@@ -257,5 +257,4 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
     spawndlc.generate_hotfixes(mod)
 
     mod.close()
-    print('Wrote to {}'.format(full_filename))
 

@@ -49,4 +49,3 @@ for label, scale, extra in [
             BVC(bvc=scale))
 
     mod.close()
-    print('Generated {}'.format(full_filename))

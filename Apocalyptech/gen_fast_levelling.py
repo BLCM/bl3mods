@@ -68,4 +68,3 @@ for (label, scale) in [
     mod.newline()
 
     mod.close()
-    print('Generated {}'.format(mod_filename))
