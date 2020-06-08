@@ -72,8 +72,9 @@ vehicle_unlocks
 # Mayhem 2.0 - Remove drop scaling altogether
 mayhem2_no_drop_scaling
 
-# Disable Mayhem 2.0 Modifier "Rogue Lite"
+# Disable a few Mayhem 2.0 Modifiers
 disable_rogue_lite
+disable_lootsplosion
 
 # Allow Trials missions as soon as you get to the maps which have them
 no_trials_dependencies
