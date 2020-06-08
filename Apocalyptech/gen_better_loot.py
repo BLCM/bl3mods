@@ -19,7 +19,7 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, ItemPoolListEntry
 
 mod = Mod('better_loot.txt',
         'BL3 Better Loot',
@@ -915,40 +915,40 @@ for char_name, idx, num in [
 for char_name, idx, pools in [
         # Keeping the week 2 guaranteed-cosmetic on here
         ('Indo Tyrant', 58, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant', num=3),
-            Pool('/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant', num=3),
+            ItemPoolListEntry('/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'),
             ]),
         # Two Demoskaggons spawn at once, so we're dropping the quantities from what we'd ordinarily do
         ('Demoskaggon', 61, [
-            Pool('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', probability=0.5),
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon', num=2),
+            ItemPoolListEntry('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', probability=0.5),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon', num=2),
             ]),
         # Keeping the week 2 Legendary Artifact drop
         ('Mother of Grogans', 73, [
-            Pool('/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot'),
-            Pool('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'),
+            ItemPoolListEntry('/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot'),
+            ItemPoolListEntry('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'),
             ]),
         # Power Troopers - adding in the Week 2 legendary COMs - keeping the drop count for the
         # additional pools at 1, though, since there's so many legendaries even at that level.
         ('Black Force Trooper (Onyx)', 67, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
-            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            ItemPoolListEntry('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'),
             ]),
         ('Yellow Force Trooper (Citrine)', 68, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
-            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            ItemPoolListEntry('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'),
             ]),
         ('Red Force Trooper (Ruby)', 69, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
-            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01'),
+            ItemPoolListEntry('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'),
             ]),
         ('Pink Force Trooper (Tourmaline)', 70, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
-            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
+            ItemPoolListEntry('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary'),
             ]),
         ('Sapphire Force Trooper (Sapphire)', 71, [
-            Pool('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
-            Pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'),
+            ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02'),
+            ItemPoolListEntry('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'),
             ]),
         ]:
     mod.comment(char_name)

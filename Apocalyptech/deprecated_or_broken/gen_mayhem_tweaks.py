@@ -19,7 +19,7 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
 # Just a tiny test to make sure it was possible, no real plans to actually
 # do anything with this.

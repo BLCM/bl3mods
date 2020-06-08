@@ -409,9 +409,9 @@ class BVCF(BVC):
     def __init__(self, **kwargs):
         super().__init__(full=True, **kwargs)
 
-class Pool(object):
+class ItemPoolListEntry(object):
     """
-    Class to make dealing with pools a bit easier
+    Class to make dealing with ItemPoolList entries a bit easier
     """
 
     def __init__(self, pool_name, probability=1, num=1):

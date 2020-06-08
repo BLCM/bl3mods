@@ -19,7 +19,7 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
 # The socket names can be found inside `Skeleton` objects, such as the one for this container:
 #     /Game/Lootables/COV/Crate_Ammo/Model/Rig/SK_COV_Ammo_Box_Skeleton

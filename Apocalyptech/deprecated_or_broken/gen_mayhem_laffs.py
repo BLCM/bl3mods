@@ -19,7 +19,7 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
 # Someone said it'd be fun to mock up a screenshot of some ludicrous
 # "Mayhem 25" or whatever, and I thought that sounded amusing enough

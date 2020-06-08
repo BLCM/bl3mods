@@ -19,7 +19,7 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, Pool
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
 mod = Mod('deluxe_badass_combustor_unlock.txt',
         'Deluxe Badass Combustor Unlock',
