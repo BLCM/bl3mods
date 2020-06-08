@@ -21,7 +21,7 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('mayhem2_no_drop_scaling.txt',
+mod = Mod('mayhem_no_drop_scaling.txt',
         'Mayhem 2.0: No Extra Drop Scaling',
         'Apocalyptech',
         [

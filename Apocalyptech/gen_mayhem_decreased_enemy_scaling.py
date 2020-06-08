@@ -21,7 +21,7 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('mayhem2_decreased_enemy_scaling.txt',
+mod = Mod('mayhem_decreased_enemy_scaling.txt',
         'Mayhem 2.0: Decreased Enemy Scaling',
         'Apocalyptech',
         [

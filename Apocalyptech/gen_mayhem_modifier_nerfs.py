@@ -21,7 +21,7 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('mayhem2_modifier_nerfs.txt',
+mod = Mod('mayhem_modifier_nerfs.txt',
         'Mayhem 2.0: Various Modifier Nerfs',
         'Apocalyptech',
         [

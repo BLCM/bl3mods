@@ -28,13 +28,13 @@ first_gun_full_loadout
 #first_gun_testing_gear
 
 # Vastly decreased enemy scaling in Mayhem 2.0 (conflicts with mayhem_level_cheats)
-#mayhem2_decreased_enemy_scaling
+#mayhem_decreased_enemy_scaling
 
-# Mayhem 2.0 Outright Cheating (conflicts with mayhem2_decreased_enemy_scaling)
+# Mayhem 2.0 Outright Cheating (conflicts with mayhem_decreased_enemy_scaling)
 mayhem_level_cheats
 
 # Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
-mayhem2_modifier_nerfs
+mayhem_modifier_nerfs
 
 # No cost for respec or respawn
 free_respec
@@ -70,7 +70,7 @@ dlc_loot_de-emphasizer
 vehicle_unlocks
 
 # Mayhem 2.0 - Remove drop scaling altogether
-mayhem2_no_drop_scaling
+mayhem_no_drop_scaling
 
 # Disable a few Mayhem 2.0 Modifiers
 disable_rogue_lite
