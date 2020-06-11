@@ -836,6 +836,7 @@ LVL_TO_ENG = {
         'Desertvault_P': "Cathedral of the Twin Gods",
         'Desolate_P': "Desolation's Edge",
         'FinalBoss_P': "Destroyer's Rift",
+        'GuardianTakedown_P': "Minos Prime / The Shattered Tribunal",
         'Impound_P': "Impound Deluxe",
         'Lake_P': "Skittermaw Basin",
         'Mansion_P': "Jakobs Estate",
