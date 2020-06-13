@@ -185,6 +185,23 @@ type_pools = [
                 # Stauros' Burn
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Balance/Balance_AR_COV_SparkyBoom', COV, 1),
 
+                ### Revenge of the Cartels
+
+                # NoPewPew
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/Balance/Balance_AR_COV_PewPew', COV, 1),
+                # O.P.Q. System
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/Balance/Balance_ATL_AR_OPQ', ATL, 1),
+
+                ### Mayhem 2.0
+
+                # The Monarch
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Balance/Balance_AR_VLA_Monarch', VLA, 1),
+
+                ### Guardian Takedown
+
+                # Web Slinger
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Balance/Balance_AR_VLA_WebSlinger', VLA, 1),
+
                 ### Additions
 
                 # Earworm
@@ -232,6 +249,23 @@ type_pools = [
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Balance/Balance_HW_VLA_IonCannon.Balance_HW_VLA_IonCannon', VLA, 1),
                 # Nukem
                 ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Balance/Balance_HW_TOR_Nukem.Balance_HW_TOR_Nukem', TOR, 1),
+
+                ### Revenge of the Cartels
+
+                # Yellowcake
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/Balance/Balance_HW_COV_ETech_YellowCake', COV, 1),
+
+                ### Mayhem 2.0
+
+                # Backburner
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner', VLA, 1),
+                # Plaguebearer
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/Balance/Balance_HW_TOR_Plague', TOR, 1),
+
+                ### Guardian Takedown
+
+                # Globetrottr
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Balance/Balance_HW_COV_Globetrotter', COV, 1),
 
                 ### Additions
 
@@ -353,6 +387,18 @@ type_pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', JAK, 1),
                 # Seventh Sense (legendary version)
                 ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense', JAK, 1),
+
+                ### Revenge of the Cartels
+
+                # Grease Trap
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/Balance/Balance_PS_MAL_GreaseTrap', MAL, 1),
+                # Ice Pick - nothing special about it, just a regular Maliwan pistol
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IcePick/Balance/Balance_PS_MAL_IcePick', MAL, 0.2*addition_scale),
+
+                ### Mayhem 2.0
+
+                # Multi-tap
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/Balance/Balance_PS_ATL_DoubleTap', ATL, 1),
 
                 ### Additions
 
@@ -491,6 +537,16 @@ type_pools = [
                 # Superstreamer (just a somewhat partlocked purple Tediore shotgun, only thing special is the material.  no red text, even!)
                 ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch.Balance_SG_TED_Twitch', TED, 0.5*addition_scale),
 
+                ### Revenge of the Cartels
+
+                # Iceburger
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/Balance/Balance_SG_HYP_IceBurger', HYP, 1),
+
+                ### Mayhem 2.0
+
+                # Reflux
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/Balance/Balance_SG_HYP_Reflux', HYP, 1),
+
                 ### Additions
 
                 # Phebert
@@ -600,6 +656,25 @@ type_pools = [
                 # Terminal Polyaimorous
                 ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Balance/Balance_SM_MAL_PolyAim.Balance_SM_MAL_PolyAim', MAL, 1),
 
+                ### Revenge of the Cartels
+
+                # Needle Gun
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/NeedleGun/Balance/Balance_SM_TED_NeedleGun', TED, 1),
+                # Pricker
+                ('/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/Balance/Balance_SM_HYP_Pricker', HYP, 1*addition_scale),
+
+                ### Mayhem 2.0
+
+                # D.N.A.
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/Balance/Balance_SM_MAL_DNA', MAL, 1),
+                # Kaoson
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/Balance/Balance_SM_DAHL_Kaoson', DAL, 1),
+
+                ### Guardian Takedown
+
+                # Smog
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/Balance/Balance_SM_HYP_Smog', HYP, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -691,6 +766,11 @@ type_pools = [
 
                 # Wedding Invitation
                 ('/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite.Balance_SR_JAK_WeddingInvite', JAK, 1),
+
+                ### Mayhem 2.0
+
+                # Sand Hawk
+                ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/Balance/Balance_SR_DAL_SandHawk', DAL, 1),
 
                 ### Additions
 
