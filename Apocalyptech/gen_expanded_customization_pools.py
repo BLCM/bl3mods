@@ -94,65 +94,18 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             lic=Mod.CC_BY_SA_40,
             )
 
+    # Cosmetics at 3%, same as Better Loot.
     mod.header('Increased Cosmetic chances')
-    for char in [
-            # TODO: need to figure out which things actually need definition in here.
-            'BPChar_Ape',
-            'BPChar_EnforcerShared',
-            'BPChar_Frontrunner',
-            'BPChar_Goon',
-            'BPChar_GuardianShared',
-            'BPChar_Heavy_Shared',
-            'BPChar_Nekrobug_Shared',
-            'BPChar_Nog',
-            'BPChar_OversphereShared',
-            'BPChar_PsychoShared',
-            'BPChar_PunkShared',
-            'BPChar_Rakk',
-            'BPChar_Ratch',
-            'BPChar_Saurian_Shared',
-            'BPChar_ServiceBot',
-            'BPChar_SkagShared',
-            'BPChar_Spiderant',
-            'BPChar_Tink',
-            'BPChar_Tink_Turret',
-            'BPChar_Trooper',
-            'BPChar_VarkidShared',
-
-            # Characters used in GBX's own hotfix for the Week 3 Eridium event:
-            # (just these five!)
-            #'BPChar_PunkBasic',
-            #'BPChar_NogBasic',
-            #'BPChar_RakkBasic',
-            #'BPChar_GuardianWraith',
-            #'BPChar_ApeBasic',
-
-            # Don't actually need all the individual ones, thankfully.
-            #'BPChar_PsychoSuicide',
-            #'BPChar_PsychoLoot',
-            #'BPChar_PsychoShared',
-            #'BPChar_PsychoFirebrand',
-            #'BPChar_PsychoSlugger',
-            #'BPChar_PsychoBadass',
-            #'BPChar_PsychoBasic',
-            #'BPChar_PunkShotgunner',
-            #'BPChar_PunkBasic',
-            #'BPChar_PunkBadass',
-            #'BPChar_PunkShared',
-            #'BPChar_PunkAssaulter',
-            ]:
-
-        # Cosmetics at 3%, same as Better Loot.
-        mod.reg_hotfix(Mod.CHAR, char,
-                '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
-                'ItemPools[9].PoolProbability',
-                """(
-                    BaseValueConstant=0.030000,
-                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                    BaseValueAttribute=None,
-                    AttributeInitializer=None,
-                    BaseValueScale=1.000000
-                )""")
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+            '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear.ItemPoolList_StandardEnemyGunsandGear',
+            'ItemPools[9].PoolProbability',
+            """(
+                BaseValueConstant=0.030000,
+                DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                BaseValueAttribute=None,
+                AttributeInitializer=None,
+                BaseValueScale=1.000000
+            )""")
 
     mod.newline()
 
@@ -216,6 +169,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_CS.InvBal_CustomSkin_{shortname}_CS')
         # Revenge of the Cartels
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_47.InvBal_CustomSkin_{shortname}_47')
+        # Guardian Takedown
+        balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/PlayerSkins/CustomSkin_{shortname}_52.InvBal_CustomSkin_{shortname}_52')
         mod.comment(f'{shortname} Skins')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -251,6 +206,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_CS.InvBal_CustomHead_{shortname}_CS')
         # Revenge of the Cartels
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_34.InvBal_CustomHead_{shortname}_34')
+        # Guardian Takedown
+        balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/CustomHeads/CustomHead46/CustomHead_{shortname}_46.InvBal_CustomHead_{shortname}_46')
         mod.comment(f'{shortname} Heads')
         set_pool(mod, pool_name, balances)
         mod.newline()
@@ -344,6 +301,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC2_{num:02d}.InvBal_ECHOTheme_DLC2_{num:02d}')
     # Revenge of the Cartels
     balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_44.InvBal_ECHOTheme_44')
+    # Guardian Takedown
+    balances.append('/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/EchoDevice/EchoTheme_Takedown2.InvBal_EchoTheme_Takedown2')
     mod.comment('ECHO Skins')
     set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
     mod.newline()
@@ -372,6 +331,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Hibiscus/Customizations/RoomDeco/RoomDeco_DLC2_{num}.InvBal_RoomDeco_DLC2_{num}')
     # Revenge of the Cartels
     balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_3.InvBal_RoomDecoration_Event2_3')
+    # Guardian Takedown
+    balances.append('/Game/PatchDLC/Takedown2/InteractiveObjects/PlayerQuarters/RoomDeco_Takedown2.InvBal_RoomDeco_Takedown2')
     mod.comment('Room Decorations')
     set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
     mod.newline()
