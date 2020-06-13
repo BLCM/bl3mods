@@ -90,14 +90,8 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETec
 # Balance_SR_MAL_ETech_VeryRare
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/SniperRifles/Maliwan/Balance/Balance_SR_MAL_ETech_VeryRare.Balance_SR_MAL_ETech_VeryRare,RuntimePartList.PartTypeTOC.PartTypeTOC[11],0,,(StartIndex=-1,NumParts=0)
 
-# Balance_PS_MAL_Hellshock
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Balance/Balance_PS_MAL_Hellshock.Balance_PS_MAL_Hellshock,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
-
 # Balance_PS_MAL_SuckerPunch
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch.Balance_PS_MAL_SuckerPunch,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
-
-# Balance_SM_MAL_DestructoSpin
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/DestructoSpin/Balance/Balance_SM_MAL_DestructoSpin.Balance_SM_MAL_DestructoSpin,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
 
 # Balance_SM_MAL_Devoted
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Devoted/Balance/Balance_SM_MAL_Devoted.Balance_SM_MAL_Devoted,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
