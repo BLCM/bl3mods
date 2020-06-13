@@ -248,6 +248,7 @@ being used, which gives you far more Eridium than usual.
   - Maliwan Takedown
   - Mayhem 4 items (which will drop regardless of Mayhem level, even in normal)
   - Mayhem 2.0 items (which will drop regardless of Mayhem level, even in normal)
+  - Guardian Takedown
   - DLC1 (Moxxi's Heist of the Handsome Jackpot)
   - DLC2 (Guns, Love, and Tentacles)
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't

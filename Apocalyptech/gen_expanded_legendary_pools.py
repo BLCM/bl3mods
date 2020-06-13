@@ -185,6 +185,11 @@ pools = [
                 # The Monarch
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Balance/Balance_AR_VLA_Monarch', 1),
 
+                ### Guardian Takedown
+
+                # Web Slinger
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Balance/Balance_AR_VLA_WebSlinger', 1),
+
                 ### Additions
 
                 # Earworm
@@ -238,6 +243,11 @@ pools = [
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner', 1),
                 # Plaguebearer
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/Balance/Balance_HW_TOR_Plague', 1),
+
+                ### Guardian Takedown
+
+                # Globetrottr
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Balance/Balance_HW_COV_Globetrotter', 1),
 
                 ### Additions
 
@@ -613,6 +623,11 @@ pools = [
                 # Kaoson
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/Balance/Balance_SM_DAHL_Kaoson', 1),
 
+                ### Guardian Takedown
+
+                # Smog
+                ('/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/Balance/Balance_SM_HYP_Smog', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -812,6 +827,13 @@ pools = [
                 # Wattson
                 ('/Game/PatchDLC/Event2/Gear/Shield/_Unique/Wattson/Balance/InvBalD_Shield_Legendary_Wattson', 1),
 
+                ### Guardian Takedown
+
+                # Asclepius
+                ('/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/Balance/InvBalD_Shield_LGD_Aesclepius', 1),
+                # Stinger
+                ('/Game/PatchDLC/Takedown2/Gear/Shields/Stinger/Balance/InvBalD_Shield_LGD_Stinger', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -895,6 +917,11 @@ pools = [
 
                 # Fish Slap
                 ('/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/Balance/InvBalD_GM_FishSlap', 1),
+
+                ### Guardian Takedown
+
+                # Lightspeed
+                ('/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/Balance/InvBalD_GM_HYP_Lightspeed', 1),
 
                 ### Additions
 
