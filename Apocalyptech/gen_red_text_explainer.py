@@ -1400,6 +1400,32 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap',
             "Say hello to my little fish!",
             "30% of damage dealt is used to refill shields"),
+
+        # Guardian Takedown gear
+        ("Globetrottr",
+            '/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/UIStat_RedText_Globetrotter',
+            "Um allan heim, styttur hrynja fyrir mig.",
+            "3 discs that bounce several times before rising and exploding"),
+        ("Smog",
+            '/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/UIStat_RedText_Smog',
+            "Haze amaze.",
+            "increased damage when weapon shield is active and at full capacity"),
+        ("Web Slinger",
+            '/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat_RedText_WebSlinger',
+            "Let's do this one last time.",
+            "crits can cause novas that deal 500% status effect damage"),
+        ("Asclepius",
+            '/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_RedText_Aesclepius',
+            "Always carry a small snake.",
+            "50% resistance to elemental status effects while depleted"),
+        ("Stinger",
+            '/Game/PatchDLC/Takedown2/Gear/Shields/Stinger/UIStat_RedText_Stinger',
+            "They don't let you use that no more.",
+            "melee damage increased by 50% when full"),
+        ("Lightspeed",
+            '/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/UIStat_RedText_Lightspeed',
+            "Gimme a parsec.",
+            "extremely fast longbow which explodes into ricocheting projectiles"),
         ]:
 
     # Eh, let's omit shields by default; I am 99% sure that all of them already

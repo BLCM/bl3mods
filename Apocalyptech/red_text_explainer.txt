@@ -861,3 +861,15 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UI
 # Fish Slap
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap.UIStat_RedText_FishSlap,Text,0,,[Flavor]Say hello to my little fish![/Flavor] (30% of damage dealt is used to refill shields)
 
+# Globetrottr
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/UIStat_RedText_Globetrotter.UIStat_RedText_Globetrotter,Text,0,,[Flavor]Um allan heim, styttur hrynja fyrir mig.[/Flavor] (3 discs that bounce several times before rising and exploding)
+
+# Smog
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/UIStat_RedText_Smog.UIStat_RedText_Smog,Text,0,,[Flavor]Haze amaze.[/Flavor] (increased damage when weapon shield is active and at full capacity)
+
+# Web Slinger
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat_RedText_WebSlinger.UIStat_RedText_WebSlinger,Text,0,,[Flavor]Let's do this one last time.[/Flavor] (crits can cause novas that deal 500% status effect damage)
+
+# Lightspeed
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/UIStat_RedText_Lightspeed.UIStat_RedText_Lightspeed,Text,0,,[Flavor]Gimme a parsec.[/Flavor] (extremely fast longbow which explodes into ricocheting projectiles)
+
