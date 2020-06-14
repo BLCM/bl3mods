@@ -1252,6 +1252,7 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_GuardianBruteMiniboss',
             0,
             4),
+        # I am 99.999% certain that Anathema's Shadow can't actually drop anything, but whatever...
         ("Anathema's Shadow",
             '/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character',
             'BPChar_GuardianBruteMinibossClone',
@@ -1352,6 +1353,7 @@ for label, char_name, pool, idx, weight in [
         ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 3, None),
         ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 1, None),
         ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
+        # I am 99.999% certain that Anathema's Shadow can't actually drop anything, but whatever...
         ("Anathema's Shadow", 'BPChar_GuardianBruteMinibossClone', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', 4, 0.5),
         ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, 0.5),
         ]:
