@@ -1079,6 +1079,15 @@ for (label, char_name, pool, quantity) in [
         # There's actually nine items in this one, but that's awfully crazy, especially since we're likely to have at least one
         # of those minibosses spawning as well, which might have picked up the increased quantity.
         ('Cartels - Joey Ultraviolet', 'BPChar_CartelBoss', '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss', 4),
+
+        # Guardian Takedown
+        # This is a bit silly; I'd already put in NumberOfTimesToSelectFromThisPool in the stanza
+        # below this one, but it turns out that the pools themselves have a Quantity field which
+        # makes them drop 1+ per drop.  So really I should maybe just not do the NumberOfTimes
+        # thing at all, though that remains IMO the "best" way to do it.  So I'm doubling down,
+        # leaving the NumberOfTimes in, and setting the Quantity here to 1.  STUPID.
+        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 1),
+        ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 1),
         ]:
     mod.comment(label)
     if char_name == '':
@@ -1236,6 +1245,23 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_Wendigo',
             1,
             1),
+
+        # Guardian Takedown bosses
+        ('Anathema the Relentless',
+            '/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character',
+            'BPChar_GuardianBruteMiniboss',
+            0,
+            4),
+        ("Anathema's Shadow",
+            '/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character',
+            'BPChar_GuardianBruteMinibossClone',
+            0,
+            5),
+        ('Scourge the Invincible Martyr',
+            '/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Boss/_Design/Character',
+            'BPChar_GuardianBruteBoss',
+            0,
+            5),
         ]:
     mod.comment(label)
     full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)
@@ -1314,33 +1340,43 @@ mod.newline()
 # Make sure that the Mayhem 4-locked gear is no longer Mayhem 4-locked.
 mod.header('Remove Mayhem 4 Gear Restrictions')
 
-for label, char_name, pool, idx in [
-        ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 2),
-        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', 1),
-        ('Mr. Titan', 'BPChar_Goliath_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss', 3),
-        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', 2),
-        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt', 2),
-        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt', 2),
-        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss', 2),
-        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 4),
-        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 3),
-        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 1),
+for label, char_name, pool, idx, weight in [
+        ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 2, None),
+        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', 1, None),
+        ('Mr. Titan', 'BPChar_Goliath_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss', 3, None),
+        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', 2, None),
+        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt', 2, None),
+        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt', 2, None),
+        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss', 2, None),
+        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 4, None),
+        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 3, None),
+        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 1, None),
+        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
+        ("Anathema's Shadow", 'BPChar_GuardianBruteMinibossClone', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', 4, 0.5),
+        ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, 0.5),
         ]:
+    if weight is None:
+        value = BVCF()
+    else:
+        value = BVCF(bvc=weight)
     mod.comment(label)
     mod.reg_hotfix(Mod.CHAR, char_name,
             pool,
             'BalancedItems[{}].Weight'.format(idx),
-            BVCF())
+            value)
     mod.newline()
 
-# Kind of guessing at chars here.
-mod.comment('General Maliwan Takedown Mayhem 4 Legendaries Pool')
+# Now update the itempool itself
+mod.comment('General Maliwan/Guardian Takedown Mayhem 4 Legendaries Pool')
 for idx in range(11):
     for char_name in [
             'BPChar_BehemothRaid',
             'BPChar_SpiderBrain',
             'BPChar_UpperHalf',
             'BPChar_MechRaidBossBar',
+            'BPChar_GuardianBruteMiniboss',
+            'BPChar_GuardianBruteMinibossClone',
+            'BPChar_GuardianBruteBoss',
             ]:
         mod.reg_hotfix(Mod.CHAR, char_name,
                 '/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries',
