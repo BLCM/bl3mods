@@ -65,6 +65,15 @@ for (label, char_name, pools) in sorted([
         ('Amach', 'BPChar_ZealotPilfer_Child_Rare', [
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat', [SR]),
             ]),
+        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', [
+            ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', [SH, SH, GM, None]),
+            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
+            ]),
+        # I am 99.999% certain that Anathema's Shadow can't actually drop, but may as well leave this in.
+        ("Anathema's Shadow", 'BPChar_GuardianBruteMinibossClone', [
+            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', [SH, SH, SH, SH, None]),
+            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
+            ]),
         ('Anointed Alpha', 'BPChar_AnointedJoe', [
             ('/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe', [PS]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_AnointedJoe', [AR, PS]),
@@ -362,6 +371,10 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Roaster', 'BPChar_Punk_Roaster', [
             ('/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_Unique_Meat', [SG, AR, PS]),
+            ]),
+        ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', [
+            ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', [HW, SM, AR, None, None]),
+            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
             ]),
         ('Scraptrap Prime', 'BPChar_ClaptrapQueen', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_ScraptrapPrime', [SM, PS]),
