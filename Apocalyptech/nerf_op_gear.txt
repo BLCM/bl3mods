@@ -67,7 +67,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalan
 # Backburner (default: 2)
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,HW_Backburner,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.7
 
-# Kaoson (default: 2.25)
+# Kaoson (default: 1.6)
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,Kaoson,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
 
 # Plaguebearer (default: 1.1)

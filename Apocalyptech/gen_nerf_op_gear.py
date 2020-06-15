@@ -86,13 +86,16 @@ for cat_name, balance_obj, weapons in [
         ('Cartels', '/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2', [
             ('O.P.Q. System', 'OPQS', 1.8, 1),
             ('NoPewPew', 'PewPew', 1.1, 0.15),
+            # TODO: GBX nerfed this officially, though by different means.  Should re-test Yellowcake.
             ('Yellowcake', 'YellowCake', 1.75, 1),
             ]),
         ('Mayhem 2.0', '/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2', [
             ('The Monarch', 'AR_TheMonarch', 1.6, 0.7),
             ('Plaguebearer', 'HW_Plague', 1.1, 0.9),
             ('Backburner', 'HW_Backburner', 2, 1.7),
-            ('Kaoson', 'Kaoson', 2.25, 1),
+            # TODO: GBX nerfed Kaoson from 2.25 to 1.6, but also buffed most other legendary SMGs.
+            # Should re-test all the SMGs in here to see how they fare now.
+            ('Kaoson', 'Kaoson', 1.6, 1),
             ('Sand Hawk', 'SR_SandHawk', 1.5, 0.5),
             ('Reflux', 'SG_Reflux', 1.75, 1.5),
             ]),

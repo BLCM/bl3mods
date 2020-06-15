@@ -221,7 +221,7 @@ being used, which gives you far more Eridium than usual.
   weapons included in here are:
   - Anarchy: `1` -> `0.4`
   - Backburner: `2` -> `1.7`
-  - Kaoson: `2.25` -> `1`
+  - Kaoson: `1.6` -> `1`
   - Krakatoa: `4.25` -> `2.5`
   - NoPewPew: `1.1` -> `0.15`
   - O.P.Q. System: `1.8` -> `1`
