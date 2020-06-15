@@ -251,7 +251,7 @@ customization_drops_none
 #guaranteed_ghosts
 
 # Fewer Cartel spawns
-fewer_cartel_operatives
+#fewer_cartel_operatives
 
 ###
 ### Main Menu
