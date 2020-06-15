@@ -99,6 +99,9 @@ no_reload_notification
 # Shiv Legendary Drop, by SSpyR
 /home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/give_shiv_drop
 
+# Disable email loyalty rewards
+disable_email_loyalty_rewards
+
 ###
 ### Economy-related mods
 ###

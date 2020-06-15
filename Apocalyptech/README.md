@@ -179,6 +179,10 @@ Gameplay Changes instead.)
   seams.
 - `no_reload_notification.txt` - Removes the "reload" notification when you're
   near the end of a magazine.
+- `disable_email_loyalty_rewards.txt` - Disables the email rewards you get at
+  100 kills for a specific manufacturer.  This does *not* interfere with the
+  "Rewards Card" achievement, except that you'll no longer get the in-game
+  notifications that you've reached the goal for the individual manufacturers.
 
 ## Economy-related Mods
 
