@@ -46,6 +46,10 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Loot
 # Regular container ItemPools
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_ChestFlaps.ItemPool_ChestFlaps,BalancedItems.BalancedItems[5].Weight.BaseValueScale,0,,0
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_RedChestFlaps.ItemPool_RedChestFlaps,BalancedItems.BalancedItems[4].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco.ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco,BalancedItems.BalancedItems[4].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco.ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco,BalancedItems.BalancedItems[5].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco.ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco,BalancedItems.BalancedItems[6].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco.ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco,BalancedItems.BalancedItems[7].Weight.BaseValueScale,0,,0
 
 # Container LootDef Configurations
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Hibiscus/InteractiveObjects/Lootables/_Design/Data/BalanceData/LootDef_FishNet.LootDef_FishNet,DefaultLoot.DefaultLoot[1].Weight.BaseValueScale,0,,0

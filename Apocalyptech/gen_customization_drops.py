@@ -100,6 +100,10 @@ for (label, filename, rate, desc) in [
         for pool, index in [
                 ('/Game/GameData/Loot/ItemPools/ItemPool_ChestFlaps', 5),
                 ('/Game/GameData/Loot/ItemPools/ItemPool_RedChestFlaps', 4),
+                ('/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco', 4),
+                ('/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco', 5),
+                ('/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco', 6),
+                ('/Game/GameData/Loot/ItemPools/ItemPool_Shields_Skins_Artifacts_GrenadeMods_ClassMods_Deco', 7),
                 ]:
             mod.reg_hotfix(Mod.PATCH, '',
                     pool,
