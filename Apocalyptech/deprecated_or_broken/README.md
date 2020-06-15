@@ -30,6 +30,9 @@ weren't actually intended to be mods themselves.
   wanted to see if the NamingStrategy object would still do the right thing,
   which it did.  This kind of thing could maybe turn into a mod of some
   sort eventually, though I have no immediate plans for it.
+- `weapon_skin_swap.txt` - Makes the Ghoul Metal Grey user weapon skin actually
+  use the Superstreamer's skin, if applied to a Tediore shotgun.  Just wanted
+  to see if that was possible; no plans to turn it into a Real Mod.
 
 ## Deprecated/Testing Mods
 
