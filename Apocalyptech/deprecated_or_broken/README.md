@@ -150,4 +150,7 @@ don't look at these thinking that they're any good.  :)
   which looked like it probably controlled the auto-item-pickup radius.
   This changes the value properly, but either it doesn't do what I thought
   it did, or something else also needs to change in order for it to work.
+- `fix_enemy_loot_spawn_patterns.txt` - I wanted to fix the loot drop pattern
+  for the Maliwan Slaughter bosses, but started with Mouthpiece instead, since
+  he's many orders of magnitude easier to get to.  Anyway, no dice.
 
