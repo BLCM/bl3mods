@@ -580,6 +580,10 @@ class BL3Data(object):
                     '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Raid1',
                     '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Shields_Raid1',
                     '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Raid1',
+                    # Cartels expansions have become part of the base game, add those in.
+                    '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Grenades_Event2',
+                    '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Shields_Event2',
+                    '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Weapons_Event2',
                     # These objects do exist, but they don't actually add any parts, so whatever.
                     # The BloodyHarvest ones *do* add them, but only during the event, so we're ignoring
                     # those too.
