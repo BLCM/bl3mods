@@ -242,6 +242,14 @@ being used, which gives you far more Eridium than usual.
   - The Monarch: `1.6` -> `0.7`
   - Wedding Invitation Ricochet Damage: `2.928` -> `1`
   - Yellowcake: `1.75` -> `1`
+- `uniques_are_legendary.txt` - With just a few exceptions, turns nearly
+  all red-text weapons/items into legendary rarity, if they aren't already.
+  Mostly just intended to be used along with my Expanded Legendary Pools
+  mod, to make the dropped gear more noticeable.  Without that mod, I
+  think these mostly just come as mission rewards or as mission items, so
+  this mod would be a bit pointless.  Not sure if being legendary has an
+  effect on item stats; it's possible that this mod buffs up some items
+  here.
 
 ## Partlocks / Part Changes
 

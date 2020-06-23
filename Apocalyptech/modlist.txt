@@ -141,6 +141,9 @@ stronger_snipers
 # Nerf OP Gear
 nerf_op_gear
 
+# Turn (nearly) all uniques into legendary-rarity
+uniques_are_legendary
+
 ###
 ### Partlocks / Part Changes
 ###
