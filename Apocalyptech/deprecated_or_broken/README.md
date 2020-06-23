@@ -33,6 +33,12 @@ weren't actually intended to be mods themselves.
 - `weapon_skin_swap.txt` - Makes the Ghoul Metal Grey user weapon skin actually
   use the Superstreamer's skin, if applied to a Tediore shotgun.  Just wanted
   to see if that was possible; no plans to turn it into a Real Mod.
+- `achievement_shenanigans.txt` - I had the two co-op achievements left on
+  Steam, and since I basically never do multiplayer, I decided to see if I could
+  cheese 'em.  Turns out to be quite easy; just made them both depend on my
+  SMG kill count, and set the target to one higher than that current stat from
+  my save.  No plans to make this into a full mod, but if anyone else is
+  interested, this is how you'd do it.
 
 ## Deprecated/Testing Mods
 
