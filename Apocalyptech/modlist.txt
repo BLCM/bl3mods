@@ -5,6 +5,13 @@
 # Guarantee rare spawns (and buff vehicle rare spawns)
 guaranteed_rare_spawns
 
+# Alternate NPC/Enemy Size Scaling
+#sizemod_npc_0.4_tiny
+#sizemod_npc_0.7_smol
+sizemod_npc_2.0_big
+#sizemod_npc_3.0_huge
+#sizemod_npc_5.0_giant
+
 ###
 ### Cheat Type Mods
 ###

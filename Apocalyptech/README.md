@@ -12,6 +12,16 @@ My BL3 Mod Workspace
   - Brood Mother, in Pyre of Stars, apparently spawns based partially on how
     many mobs you've killed outside her lair?  Maybe just the Varkids?
   - Skagzilla's spawnrate is unaffected.
+- `sizemod_npc_*.txt` - Attempts to scale all NPCs (enemies or otherwise) by
+  various factors, to make them very small, or very large.  This will almost
+  certainly be game-breaking in some circumstances; let me know if anything
+  really dire happens with any of these.  Also these are hardly tested at
+  all.  Prebuilt scaling options are:
+  - Tiny: 0.4x
+  - Smol: 0.7x
+  - Big: 2.0x
+  - Huge: 3.0x
+  - Giant: 5.0x
 
 ## Cheat Type Mods
 
