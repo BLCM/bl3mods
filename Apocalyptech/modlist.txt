@@ -112,6 +112,9 @@ no_reload_notification
 # Disable email loyalty rewards
 disable_email_loyalty_rewards
 
+# "Fix" some Guardian Rank stat scaling (probably only UI, not actual stats)
+guardian_rank_mathfix
+
 ###
 ### Economy-related mods
 ###
