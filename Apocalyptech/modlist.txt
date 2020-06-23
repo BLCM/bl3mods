@@ -12,6 +12,9 @@ sizemod_npc_2.0_big
 #sizemod_npc_3.0_huge
 #sizemod_npc_5.0_giant
 
+# Infighting!  Enemies attack each other, too.
+#infighting
+
 ###
 ### Cheat Type Mods
 ###

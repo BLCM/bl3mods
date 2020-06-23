@@ -22,6 +22,11 @@ My BL3 Mod Workspace
   - Big: 2.0x
   - Huge: 3.0x
   - Giant: 5.0x
+- `infighting.txt` - Assigns basically all enemies to the "enraged Goliath"
+  team, which makes them as likely to attach each other as they are you.
+  Relatively untested, so let me know if this causes anything game-breaking.
+  I have noticed that some NPCs end up getting classified as enemies because
+  of this, though they don't become hostile.
 
 ## Cheat Type Mods
 
