@@ -198,15 +198,6 @@ Gameplay Changes instead.)
   100 kills for a specific manufacturer.  This does *not* interfere with the
   "Rewards Card" achievement, except that you'll no longer get the in-game
   notifications that you've reached the goal for the individual manufacturers.
-- `guardian_rank_mathfix.txt` - "Fixes" the scaling of five Guardian Rank stat
-  boosts so that the same number of points reports the same percent increase,
-  compared to the other stats.  I *suspect* this is a visual change only, and
-  the actual stat boost is unaffected by this.  Other possibilities is that
-  this mod could potentially buff the GR (so each point in these skills is
-  more effective), or even nerf it (so each point is *less* effective).  No
-  idea what the truth is, here, but if you want all your percents to line up,
-  given the same number of GR point investment, this'll at least make your
-  UI look nice.
 
 ## Economy-related Mods
 
