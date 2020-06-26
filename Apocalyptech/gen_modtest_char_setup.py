@@ -22,7 +22,7 @@
 import math
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-level_to = 57
+level_to = 60
 
 mod = Mod('modtest_char_setup.txt',
         'Set Up Mod-Testing Char (at beginning of the game)',
