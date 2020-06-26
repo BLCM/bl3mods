@@ -60,8 +60,20 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/
 ### Legendaries/Uniques
 ###
 
+# Beacon (default: 0.7)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler.Part_PS_MAL_Barrel_Decoupler:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.350000)
+
+# Bubble Blaster (default: 0.5)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Parts/Part_PS_MAL_Barrel_BubbleBlaster.Part_PS_MAL_Barrel_BubbleBlaster:WeaponUseModeSecondaryAspectData_0.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.250000)
+
+# Chandelier (default: 1.05)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/Parts/Part_SG_MAL_Barrel_Antler.Part_SG_MAL_Barrel_Antler:AspectList_WeaponUseModeSecondaryAspectData.BPWeaponChargeComponent_MAL_C_0,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.420000)
+
 # Cloud Kill (default: 0.8)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/CloudKill/Parts/Part_SM_MAL_Barrel_CloudKill.Part_SM_MAL_Barrel_CloudKill:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.400000)
+
+# Complex Root (default: 1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/Parts/Part_MAL_SR_Barrel_ImaginaryNumber.Part_MAL_SR_Barrel_ImaginaryNumber:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.000000)
 
 # Crit (default: 0.75)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/Parts/Part_SM_MAL_Barrel_Crit.Part_SM_MAL_Barrel_Crit:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.375000)
@@ -83,6 +95,12 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique
 
 # Firestorm (default: 1.0)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Parts/Part_MAL_SR_Barrel_FireStorm.Part_MAL_SR_Barrel_FireStorm:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.000000)
+
+# Flipper (default: 0.85)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Parts/Part_SM_MAL_Barrel_Flipper.Part_SM_MAL_Barrel_Flipper:WeaponUseModeSecondaryAspectData_0.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.425000)
+
+# Frequency (default: 1.05)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Parts/Part_SG_MAL_Barrel_Frequency.Part_SG_MAL_Barrel_Frequency:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.420000)
 
 # Hellshock (default: 0.8)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Parts/Part_PS_MAL_Barrel_HellShock.Part_PS_MAL_Barrel_HellShock:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.400000)
