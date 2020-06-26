@@ -21,8 +21,6 @@
 
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-# TODO: Pricker
-
 mod = Mod('all_weapons_can_anoint.txt',
         'All Weapons Can Anoint',
         'Apocalyptech',
@@ -535,6 +533,45 @@ weapons = [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense',
             JAK_PS),
+
+        # DLC3 Weapons
+        ("Bubble Blaster",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Balance/Balance_PS_MAL_BubbleBlaster',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Balance/InvPartSet_PS_MAL_BubbleBlaster',
+            MAL_PS),
+        ("Marshal",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Sheriff/Balance/Balance_PS_JAK_Sheriff',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Sheriff/Balance/InvPartSet_PS_JAK_Sheriff',
+            JAK_PS),
+        ("Peashooter",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/Balance/Balance_PS_JAK_Peashooter',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/Balance/InvPartSet_PS_JAK_Peashooter',
+            JAK_PS),
+        ("Quickdraw",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/Balance/Balance_PS_JAK_QuickDraw',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/Balance/InvPartSet_PS_JAK_QuickDraw',
+            JAK_PS),
+        ("Splinter",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/Balance_SG_JAK_Splinter',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/PartSet_SG_JAK_Splinter',
+            JAK_SG),
+        ("The Beast (rad)",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Rad',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/InvPartSet_AR_COV_BioBetsy_Rad',
+            COV_AR),
+        ("The Beast (shock)",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Shock',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/InvPartSet_AR_COV_BioBetsy_Shock',
+            COV_AR),
+        ("The Chalice",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/Balance_AR_JAK_McSmugger',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/InvPartSet_JAK_AR_McSmugger',
+            JAK_AR),
+        # Arguably we should leave this one out intentionally
+        ("The Shoddy",
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs',
+            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/PartSet_SG_JAK_Fakobs',
+            JAK_SG),
         ]
 
 # Now do the actual mod
