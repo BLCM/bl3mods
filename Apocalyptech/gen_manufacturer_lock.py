@@ -202,6 +202,23 @@ type_pools = [
                 # Web Slinger
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Balance/Balance_AR_VLA_WebSlinger', VLA, 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # The Beast (rad)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Rad', COV, 1*addition_scale/2),
+                # The Beast (shock)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Shock', COV, 1*addition_scale/2),
+                # Contained Blast
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/Balance/Balance_AR_TOR_Contained', TOR, 1),
+                # Icebreaker
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/Balance/Balance_AR_JAK_CoolBeans', JAK, 1*addition_scale),
+                # Dowsing Rod
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/Balance/Balance_AR_VLA_Dowsing', VLA, 1),
+                # The Chalice
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/Balance_AR_JAK_McSmugger', JAK, 1*addition_scale),
+                # Stonethrower
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/Balance/Balance_AR_JAK_Stonethrow', JAK, 1),
+
                 ### Additions
 
                 # Earworm
@@ -266,6 +283,13 @@ type_pools = [
 
                 # Globetrottr
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Balance/Balance_HW_COV_Globetrotter', COV, 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Plumage
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/Balance/Balance_HW_ATL_Plumage', ATL, 1),
+                # Satisfaction
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', TOR, 1),
 
                 ### Additions
 
@@ -399,6 +423,29 @@ type_pools = [
 
                 # Multi-tap
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/Balance/Balance_PS_ATL_DoubleTap', ATL, 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Bubble Blaster
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Balance/Balance_PS_MAL_BubbleBlaster', MAL, 1*addition_scale),
+                # Beacon
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Balance/Balance_PS_MAL_Decoupler', MAL, 1),
+                # Gargoyle
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/Balance/Balance_PS_COV_Gargoyle', COV, 1),
+                # Light Show
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/Balance/Balance_PS_VLA_Lasocannon', VLA, 1),
+                # Miscreant
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/Balance/Balance_PS_VLA_Miscreant', VLA, 1),
+                # Peashooter
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/Balance/Balance_PS_JAK_Peashooter', JAK, 1*addition_scale),
+                # The Blanc
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/Balance/Balance_DAL_PS_PrivateInvestigator', DAL, 1),
+                # Quickdraw
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/Balance/Balance_PS_JAK_QuickDraw', JAK, 1*addition_scale),
+                # Bloom
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose', JAK, 1),
+                # Unkempt Harold
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/Balance/Balance_PS_TOR_UnkemptHarold', TOR, 1),
 
                 ### Additions
 
@@ -547,6 +594,25 @@ type_pools = [
                 # Reflux
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/Balance/Balance_SG_HYP_Reflux', HYP, 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # Chandelier
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/Balance/Balance_SG_MAL_ETech_Antler', MAL, 1),
+                # Brightside
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/Balance/Balance_SG_TED_Brightside', TED, 1),
+                # Dakota
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/Balance/Balance_SG_JAK_Dakota', JAK, 1*addition_scale),
+                # The Shoddy (I suspect it has no redeeming qualities; need to test it out though)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs', JAK, 0.1*addition_scale),
+                # Frequency
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Balance/Balance_SG_MAL_Frequency', MAL, 1),
+                # Spade
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/Balance/Balance_SG_Torgue_Shoveler', TOR, 1),
+                # Robin's Call
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/Balance/Balance_SG_JAK_SpeakEasy', JAK, 1),
+                # Splinter
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/Balance_SG_JAK_Splinter', JAK, 1*addition_scale),
+
                 ### Additions
 
                 # Phebert
@@ -675,6 +741,15 @@ type_pools = [
                 # Smog
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/Balance/Balance_SM_HYP_Smog', HYP, 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # Proprietary License
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/Balance/Balance_SM_HYP_Copybeast', HYP, 1),
+                # Mother Too
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/Balance/Balance_SM_TED_Earthbound', TED, 1),
+                # Flipper
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper', MAL, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -771,6 +846,13 @@ type_pools = [
 
                 # Sand Hawk
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/Balance/Balance_SR_DAL_SandHawk', DAL, 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Complex Root
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/Balance/Balance_MAL_SR_ImaginaryNumber', MAL, 1),
+                # Narp
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/Balance/Balance_SR_HYP_Narp', HYP, 1),
 
                 ### Additions
 
