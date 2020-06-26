@@ -278,6 +278,7 @@ being used, which gives you far more Eridium than usual.
   - Guardian Takedown
   - DLC1 (Moxxi's Heist of the Handsome Jackpot)
   - DLC2 (Guns, Love, and Tentacles)
+  - DLC3 (Bounty of Blood)
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
   ordinarily spawn with Anointments; this makes it so that they can.
 - `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically

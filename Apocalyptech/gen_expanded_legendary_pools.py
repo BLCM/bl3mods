@@ -88,6 +88,10 @@ mod = Mod('expanded_legendary_pools.txt',
 #   This one doesn't seem to really be referenced by anything at all (or rather, it's in a pool, but
 #   the pool isn't referenced by anything)
 #   '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense',
+#
+# Marshal - /Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Sheriff/Balance/Balance_PS_JAK_Sheriff
+#   It's just a green Jakobs pistol.  I haven't gone through DLC3 yet, but I assume that it's just
+#   mission-related, or maybe an enemy-use gun.  Or something that's just Not Finished.
 
 addition_scale = 0.6
 pools = [
@@ -190,6 +194,23 @@ pools = [
                 # Web Slinger
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/Balance/Balance_AR_VLA_WebSlinger', 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # The Beast (rad)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Rad', 1*addition_scale/2),
+                # The Beast (shock)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Balance/Balance_AR_COV_BioBetsy_Shock', 1*addition_scale/2),
+                # Contained Blast
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/Balance/Balance_AR_TOR_Contained', 1),
+                # Icebreaker
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/Balance/Balance_AR_JAK_CoolBeans', 1*addition_scale),
+                # Dowsing Rod
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/Balance/Balance_AR_VLA_Dowsing', 1),
+                # The Chalice
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/Balance_AR_JAK_McSmugger', 1*addition_scale),
+                # Stonethrower
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/Balance/Balance_AR_JAK_Stonethrow', 1),
+
                 ### Additions
 
                 # Earworm
@@ -248,6 +269,13 @@ pools = [
 
                 # Globetrottr
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Balance/Balance_HW_COV_Globetrotter', 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Plumage
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/Balance/Balance_HW_ATL_Plumage', 1),
+                # Satisfaction
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', 1),
 
                 ### Additions
 
@@ -367,6 +395,29 @@ pools = [
 
                 # Multi-tap
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/Balance/Balance_PS_ATL_DoubleTap', 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Bubble Blaster
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Balance/Balance_PS_MAL_BubbleBlaster', 1*addition_scale),
+                # Beacon
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Balance/Balance_PS_MAL_Decoupler', 1),
+                # Gargoyle
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/Balance/Balance_PS_COV_Gargoyle', 1),
+                # Light Show
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/Balance/Balance_PS_VLA_Lasocannon', 1),
+                # Miscreant
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/Balance/Balance_PS_VLA_Miscreant', 1),
+                # Peashooter
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/Balance/Balance_PS_JAK_Peashooter', 1*addition_scale),
+                # The Blanc
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/Balance/Balance_DAL_PS_PrivateInvestigator', 1),
+                # Quickdraw
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/Balance/Balance_PS_JAK_QuickDraw', 1*addition_scale),
+                # Bloom
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose', 1),
+                # Unkempt Harold
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/Balance/Balance_PS_TOR_UnkemptHarold', 1),
 
                 ### Additions
 
@@ -506,6 +557,25 @@ pools = [
                 # Reflux
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/Balance/Balance_SG_HYP_Reflux', 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # Chandelier
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/Balance/Balance_SG_MAL_ETech_Antler', 1),
+                # Brightside
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/Balance/Balance_SG_TED_Brightside', 1),
+                # Dakota
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/Balance/Balance_SG_JAK_Dakota', 1*addition_scale),
+                # The Shoddy (I suspect it has no redeeming qualities; need to test it out though)
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs', 0.1*addition_scale),
+                # Frequency
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Balance/Balance_SG_MAL_Frequency', 1),
+                # Spade
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/Balance/Balance_SG_Torgue_Shoveler', 1),
+                # Robin's Call
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/Balance/Balance_SG_JAK_SpeakEasy', 1),
+                # Splinter
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/Balance_SG_JAK_Splinter', 1*addition_scale),
+
                 ### Additions
 
                 # Phebert
@@ -628,6 +698,15 @@ pools = [
                 # Smog
                 ('/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/Balance/Balance_SM_HYP_Smog', 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # Proprietary License
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/Balance/Balance_SM_HYP_Copybeast', 1),
+                # Mother Too
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/Balance/Balance_SM_TED_Earthbound', 1),
+                # Flipper
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -718,6 +797,13 @@ pools = [
 
                 # Sand Hawk
                 ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/Balance/Balance_SR_DAL_SandHawk', 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Complex Root
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/Balance/Balance_MAL_SR_ImaginaryNumber', 1),
+                # Narp
+                ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/Balance/Balance_SR_HYP_Narp', 1),
 
                 ### Additions
 
@@ -923,6 +1009,13 @@ pools = [
                 # Lightspeed
                 ('/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/Balance/InvBalD_GM_HYP_Lightspeed', 1),
 
+                ### DLC3 (Bounty of Blood)
+
+                # Core Buster
+                ('/Game/PatchDLC/Geranium/Gear/Grenade/CoreBurst/Balance/InvBalD_GM_CoreBurst', 1*addition_scale),
+                # Doc Hina's Miracle Bomb
+                ('/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/Balance/InvBalD_GM_SkagOil', 1*addition_scale),
+
                 ### Additions
 
                 # Exterminator
@@ -1033,6 +1126,11 @@ pools = [
                 ('/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy', 1),
                 # Pearl of Ineffable Knowledge
                 ('/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK', 1),
+
+                ### DLC3 (Bounty of Blood)
+
+                # Vendetta
+                ('/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance', 1*addition_scale),
 
                 ### Additions
 
