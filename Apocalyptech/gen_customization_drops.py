@@ -80,6 +80,10 @@ for (label, filename, rate, desc) in [
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Hibiscus', 9),
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Boss_Hibiscus', 6),
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Hibiscus', 6),
+            ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Geranium', 9),
+            ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium', 6),
+            ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium', 6),
+            ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 9),
             ]:
 
         # Defaults vary depending on pool; for base-game it's 0.5%.
@@ -124,6 +128,7 @@ for (label, filename, rate, desc) in [
         mod.comment('Container LootDef Contents')
         for lootdef, configidx, inneridxes in [
                 ('/Game/Lootables/_Design/Data/Industrial/LootDef_Industrial_Refrigerator', 4, [8, 9]),
+                ('/Game/PatchDLC/Geranium/Lootables/_Design/Data/Jakobs/LootDef_GER_Industrial_Refrigerator', 4, [8, 9]),
                 ]:
             for inneridx in inneridxes:
                 mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll',
