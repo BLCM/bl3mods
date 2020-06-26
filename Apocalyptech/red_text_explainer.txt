@@ -880,61 +880,61 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Shock.UIStat_RedText_BioBetsy_Shock,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] (unknown)
 
 # Contained Blast
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/UIStat_RedText_Contained.UIStat_RedText_Contained,Text,0,,[Flavor]Put a lid on it.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/UIStat_RedText_Contained.UIStat_RedText_Contained,Text,0,,[Flavor]Put a lid on it.[/Flavor] (projectiles explode on impact, semi-auto)
 
 # Icebreaker
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/UIStat_RedText_CoolBeans.UIStat_RedText_CoolBeans,Text,0,,[Flavor]Dread fifty below more than fifty above.[/Flavor] (unknown)
 
 # Dowsing Rod
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/UIStat_RedText_Dowsing.UIStat_RedText_Dowsing,Text,0,,[Flavor]It's down there somewhere, lemme take another look.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/UIStat_RedText_Dowsing.UIStat_RedText_Dowsing,Text,0,,[Flavor]It's down there somewhere, lemme take another look.[/Flavor] (full auto, high fire rate)
 
 # The Chalice
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/UIStat_RedText_McSmugger.UIStat_RedText_McSmugger,Text,0,,[Flavor]You'll have to do much better than that, loves.[/Flavor] (unknown)
 
 # Stonethrower
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/UIStat_RedText_StoneThrow.UIStat_RedText_StoneThrow,Text,0,,[Flavor]Everywhere is nearby.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/UIStat_RedText_StoneThrow.UIStat_RedText_StoneThrow,Text,0,,[Flavor]Everywhere is nearby.[/Flavor] (semi-auto)
 
 # Plumage
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/UIStat_RedText_Plumage.UIStat_RedText_Plumage,Text,0,,[Flavor]Quit peacocking around.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/UIStat_RedText_Plumage.UIStat_RedText_Plumage,Text,0,,[Flavor]Quit peacocking around.[/Flavor] (marked enemies drop tracking grenade on kill)
 
 # Satisfaction
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/UIStat_RedText_Satisfaction.UIStat_RedText_Satisfaction,Text,0,,[Flavor]Thirty minutes or less.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/UIStat_RedText_Satisfaction.UIStat_RedText_Satisfaction,Text,0,,[Flavor]Thirty minutes or less.[/Flavor] (four sticky orbs)
 
 # Bubble Blaster
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/UIStat_RedText_BubbleBlaster.UIStat_RedText_BubbleBlaster,Text,0,,[Flavor]Every day is a holiday.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/UIStat_RedText_BubbleBlaster.UIStat_RedText_BubbleBlaster,Text,0,,[Flavor]Every day is a holiday.[/Flavor] (rounds float upward and explode after a delay)
 
 # Beacon
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/UIStat_RedText_Decoupler.UIStat_RedText_Decoupler,Text,0,,[Flavor]This little light of mine...[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/UIStat_RedText_Decoupler.UIStat_RedText_Decoupler,Text,0,,[Flavor]This little light of mine...[/Flavor] (reload triggers nova of current element)
 
 # Gargoyle
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/UIStat_RedText_Gargoyle.UIStat_RedText_Gargoyle,Text,0,,[Flavor]Defender of the night.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/UIStat_RedText_Gargoyle.UIStat_RedText_Gargoyle,Text,0,,[Flavor]Defender of the night.[/Flavor] (rapidly shoots projectiles and occasional globs of [corrosive]corrosive[/corrosive])
 
 # Light Show
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/UIStat_RedText_Lasocannon.UIStat_RedText_Lasocannon,Text,0,,[Flavor]Give me some light, away![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/UIStat_RedText_Lasocannon.UIStat_RedText_Lasocannon,Text,0,,[Flavor]Give me some light, away![/Flavor] (shots form rotating circular pattern)
 
 # Miscreant
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/UIStat_RedText_Miscreant.UIStat_RedText_Miscreant,Text,0,,[Flavor]Why waste time shoot lot gun when few gun do trick?[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/UIStat_RedText_Miscreant.UIStat_RedText_Miscreant,Text,0,,[Flavor]Why waste time shoot lot gun when few gun do trick?[/Flavor] (full-auto rockets)
 
 # Peashooter
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/UIStat_RedText_Peashooter.UIStat_RedText_Peashooter,Text,0,,[Flavor]If you think there's no risk, take a good dose.[/Flavor] (unknown)
 
 # The Blanc
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/UIStat_RedText_PrivateInvestigator.UIStat_RedText_PrivateInvestigator,Text,0,,[Flavor]This machine unerringly arrives at the truth.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/UIStat_RedText_PrivateInvestigator.UIStat_RedText_PrivateInvestigator,Text,0,,[Flavor]This machine unerringly arrives at the truth.[/Flavor] (damaging enemies grants +35% weapon damage when switching, stacks x10)
 
 # Quickdraw
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/UIStat_RedText_QuickDraw.UIStat_RedText_QuickDraw,Text,0,,[Flavor]Oo, that smarts![/Flavor] (unknown)
 
 # Bloom
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/UIStat_RedText_Rose.UIStat_RedText_Rose,Text,0,,[Flavor]A thorn by any other name would probably still hurt.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/UIStat_RedText_Rose.UIStat_RedText_Rose,Text,0,,[Flavor]A thorn by any other name would probably still hurt.[/Flavor] (hold trigger to charge burst-fire shots)
 
 # Unkempt Harold
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/UIStat_RedText_UnkemptHarold.UIStat_RedText_UnkemptHarold,Text,0,,[Flavor]I wasn't counting either.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/UIStat_RedText_UnkemptHarold.UIStat_RedText_UnkemptHarold,Text,0,,[Flavor]I wasn't counting either.[/Flavor] (narrow spread of [bold]explosive[/bold] projectiles)
 
 # Chandelier
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/UIStat_RedText_Antler.UIStat_RedText_Antler,Text,0,,[Flavor]It will not last the night.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/UIStat_RedText_Antler.UIStat_RedText_Antler,Text,0,,[Flavor]It will not last the night.[/Flavor] (shoots disk projectiles)
 
 # Brightside
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/UIStat_RedText_Brightside.UIStat_RedText_Brightside,Text,0,,[Flavor]It's killing me.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/UIStat_RedText_Brightside.UIStat_RedText_Brightside,Text,0,,[Flavor]It's killing me.[/Flavor] (reload becomes drone which splits into four elemental drones)
 
 # Dakota
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] (unknown)
@@ -943,31 +943,31 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UISt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] (unknown)
 
 # Frequency
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/UIStat_RedText_Frequency.UIStat_RedText_Frequency,Text,0,,[Flavor]Hertz so good.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/UIStat_RedText_Frequency.UIStat_RedText_Frequency,Text,0,,[Flavor]Hertz so good.[/Flavor] (kills increase burst count for a short time)
 
 # Spade
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/UIStat_RedText_Shoveler.UIStat_RedText_Shoveler,Text,0,,[Flavor]Lucille, God gave me a gift.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/UIStat_RedText_Shoveler.UIStat_RedText_Shoveler,Text,0,,[Flavor]Lucille, God gave me a gift.[/Flavor] (gyrojets penetrate, leaving sticky bombs on enemies)
 
 # Robin's Call
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/UIStat_RedText_SpeakEasy.UIStat_RedText_SpeakEasy,Text,0,,[Flavor]Are you not he?[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/UIStat_RedText_SpeakEasy.UIStat_RedText_SpeakEasy,Text,0,,[Flavor]Are you not he?[/Flavor] (crits ricochet 1 bullet and return 1 to mag)
 
 # Splinter
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] (unknown)
 
 # Proprietary License
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] (crits ricochet, ads increases fire rate)
 
 # Mother Too
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/UIStat_RedText_Earthbound.UIStat_RedText_Earthbound,Text,0,,[Flavor]Thank you for taking the time to read this flavor text. This flavor text loves you.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/UIStat_RedText_Earthbound.UIStat_RedText_Earthbound,Text,0,,[Flavor]Thank you for taking the time to read this flavor text. This flavor text loves you.[/Flavor] (continuous laser, reload becomes laser drone)
 
 # Flipper
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/UIStat_RedText_Flipper.UIStat_RedText_Flipper,Text,0,,[Flavor]Put one foot in front of the other.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/UIStat_RedText_Flipper.UIStat_RedText_Flipper,Text,0,,[Flavor]Put one foot in front of the other.[/Flavor] (hold trigger for increased projectile count)
 
 # Complex Root
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/UIStat_RedText_ImaginaryNumber.UIStat_RedText_ImaginaryNumber,Text,0,,[Flavor]Your brain is a creative computer.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/UIStat_RedText_ImaginaryNumber.UIStat_RedText_ImaginaryNumber,Text,0,,[Flavor]Your brain is a creative computer.[/Flavor] (shoots sporadic zig-zagging projectiles)
 
 # Narp
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/UIStat_RedText_Narp.UIStat_RedText_Narp,Text,0,,[Flavor]What happened to your peace lily?[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/UIStat_RedText_Narp.UIStat_RedText_Narp,Text,0,,[Flavor]What happened to your peace lily?[/Flavor] (when reloading, remaining rounds grant bonuses to next mag)
 
 # Core Buster
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/CoreBurst/UIStat_RedText_CoreBurst.UIStat_RedText_CoreBurst,Text,0,,[Flavor]Work it.[/Flavor] (unknown)
