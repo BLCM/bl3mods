@@ -353,6 +353,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     #balances.append('/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDeco_DLC3_1.InvBal_RoomDeco_DLC3_1')
     for num in [2, 3, 4, 5, 6, 7]:
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_Geranium_{num}.InvBal_RoomDecoration_Geranium_{num}')
+    for num in [1, 2, 3]:
+        balances.append(f'/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_Geranium_IO_{num}.RoomDecoration_Geranium_IO_{num}')
     balances.append('/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_KeyToCity.InvBal_RoomDecoration_KeyToCity')
     mod.comment('Room Decorations')
     set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
