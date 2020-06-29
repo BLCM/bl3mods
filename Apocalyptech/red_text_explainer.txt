@@ -889,7 +889,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/U
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/UIStat_RedText_Dowsing.UIStat_RedText_Dowsing,Text,0,,[Flavor]It's down there somewhere, lemme take another look.[/Flavor] (full auto, high fire rate)
 
 # The Chalice
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/UIStat_RedText_McSmugger.UIStat_RedText_McSmugger,Text,0,,[Flavor]You'll have to do much better than that, loves.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/UIStat_RedText_McSmugger.UIStat_RedText_McSmugger,Text,0,,[Flavor]You'll have to do much better than that, loves.[/Flavor] (all effects on card)
 
 # Stonethrower
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/UIStat_RedText_StoneThrow.UIStat_RedText_StoneThrow,Text,0,,[Flavor]Everywhere is nearby.[/Flavor] (semi-auto)
@@ -916,13 +916,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/UIStat_RedText_Miscreant.UIStat_RedText_Miscreant,Text,0,,[Flavor]Why waste time shoot lot gun when few gun do trick?[/Flavor] (full-auto rockets)
 
 # Peashooter
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/UIStat_RedText_Peashooter.UIStat_RedText_Peashooter,Text,0,,[Flavor]If you think there's no risk, take a good dose.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/UIStat_RedText_Peashooter.UIStat_RedText_Peashooter,Text,0,,[Flavor]If you think there's no risk, take a good dose.[/Flavor] (hits (maybe just crits) generate MIRV-like ricochets)
 
 # The Blanc
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/UIStat_RedText_PrivateInvestigator.UIStat_RedText_PrivateInvestigator,Text,0,,[Flavor]This machine unerringly arrives at the truth.[/Flavor] (damaging enemies grants +35% weapon damage when switching, stacks x10)
 
 # Quickdraw
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/UIStat_RedText_QuickDraw.UIStat_RedText_QuickDraw,Text,0,,[Flavor]Oo, that smarts![/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/QuickDraw/UIStat_RedText_QuickDraw.UIStat_RedText_QuickDraw,Text,0,,[Flavor]Oo, that smarts![/Flavor] (all effects on card)
 
 # Bloom
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/UIStat_RedText_Rose.UIStat_RedText_Rose,Text,0,,[Flavor]A thorn by any other name would probably still hurt.[/Flavor] (hold trigger to charge burst-fire shots)
@@ -940,7 +940,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] (unknown)
 
 # The Shoddy
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] (does no actual damage)
 
 # Frequency
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/UIStat_RedText_Frequency.UIStat_RedText_Frequency,Text,0,,[Flavor]Hertz so good.[/Flavor] (kills increase burst count for a short time)
@@ -970,8 +970,8 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNu
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/UIStat_RedText_Narp.UIStat_RedText_Narp,Text,0,,[Flavor]What happened to your peace lily?[/Flavor] (when reloading, remaining rounds grant bonuses to next mag)
 
 # Core Buster
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/CoreBurst/UIStat_RedText_CoreBurst.UIStat_RedText_CoreBurst,Text,0,,[Flavor]Work it.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/CoreBurst/UIStat_RedText_CoreBurst.UIStat_RedText_CoreBurst,Text,0,,[Flavor]Work it.[/Flavor] (MIRV effect on explosion)
 
 # Doc Hina's Miracle Bomb
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/UIStat_RedText_SkagOil.UIStat_RedText_SkagOil,Text,0,,[Flavor]Give me fever.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/UIStat_RedText_SkagOil.UIStat_RedText_SkagOil,Text,0,,[Flavor]Give me fever.[/Flavor] (generates [fire]incendiary[/fire] pools while bouncing)
 
