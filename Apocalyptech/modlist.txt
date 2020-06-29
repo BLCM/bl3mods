@@ -112,6 +112,9 @@ no_reload_notification
 # Disable email loyalty rewards
 disable_email_loyalty_rewards
 
+# Unlock DLC3 Company Tech (Coresploders, Traitorweed, Telezappers)
+unlock_dlc3_tech
+
 ###
 ### Economy-related mods
 ###
