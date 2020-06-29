@@ -198,6 +198,11 @@ Gameplay Changes instead.)
   100 kills for a specific manufacturer.  This does *not* interfere with the
   "Rewards Card" achievement, except that you'll no longer get the in-game
   notifications that you've reached the goal for the individual manufacturers.
+- `unlock_dlc3_tech.txt` - Unlocks Coresploders, Traitorweed, and Telezappers
+  right from the beginning in Bounty of Blood.  Doesn't bother touching
+  Breezebloom since you get that almost immediately anyway.  Also doesn't
+  affect mission-specific objects, such as the first Coresploder you use to
+  rescue Titus.
 
 ## Economy-related Mods
 
