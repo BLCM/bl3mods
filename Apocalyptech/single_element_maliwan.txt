@@ -120,6 +120,21 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IcePick/Balan
 # Balance_SM_MAL_PolyAim
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Balance/Balance_SM_MAL_PolyAim.Balance_SM_MAL_PolyAim,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
 
+# Balance_SG_MAL_ETech_Antler
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/Balance/Balance_SG_MAL_ETech_Antler.Balance_SG_MAL_ETech_Antler,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_PS_MAL_Decoupler
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Balance/Balance_PS_MAL_Decoupler.Balance_PS_MAL_Decoupler,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_SM_MAL_Flipper
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper.Balance_SM_MAL_Flipper,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_SG_MAL_Frequency
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Balance/Balance_SG_MAL_Frequency.Balance_SG_MAL_Frequency,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_MAL_SR_ImaginaryNumber
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/Balance/Balance_MAL_SR_ImaginaryNumber.Balance_MAL_SR_ImaginaryNumber,RuntimePartList.PartTypeTOC.PartTypeTOC[11],0,,(StartIndex=-1,NumParts=0)
+
 # Balance_SG_MAL_ETech_Insider
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
 
