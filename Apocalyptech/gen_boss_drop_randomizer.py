@@ -34,8 +34,6 @@ mod = Mod('boss_drop_randomizer.txt',
             "",
             "More or less intended to be used alongside my Expanded Legendary Pools mod",
             "so you get as interesting as possible drops.",
-            "",
-            "Relatively untested!",
         ],
         lic=Mod.CC_BY_SA_40,
         )
@@ -478,6 +476,77 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Yeti', 'BPChar_Yeti', [
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti', [PS]),
+            ]),
+
+        # DLC3 Drops
+        ('Abbadoxis', 'BPChar_GerSaurianGrogzilla', [
+            ('/Geranium/Enemies/GerSaurian/_Unique/Grogzilla/_Design/Character/ItemPool_Grogzilla', [AR]),
+            ]),
+        ('Garriden Loch', 'BPChar_GerTinkProhibitor', [
+            ('/Geranium/Enemies/GerTink/_Unique/Prohibitor/_Design/Character/ItemPool_Prohibitor', [SG]),
+            ]),
+        ('Haddon Marr', 'BPChar_GerEnforcerYarp', [
+            ('/Geranium/Enemies/GerEnforcer/_Unique/Yarp/_Design/Character/ItemPool_Yarp', [SR]),
+            ]),
+        ('Kormash', 'BPChar_SploderBoss', [
+            ('/Geranium/Enemies/LodgeBoss/_Design/Character/ItemPool_LodgeBoss', [AR]),
+            ]),
+        ('Lani Dixon', 'BPChar_GerPunkNumber', [
+            ('/Geranium/Enemies/GerPunk_Female/_Unique/Number/_Design/Character/ItemPool_ImaginaryNumber', [SR]),
+            ]),
+        ('Caber Dowd', 'BPChar_GerPunkLarry', [
+            ('/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/ItemPool_GerPunkLarry', [PS]),
+            ]),
+        ('Dickon Goyle', 'BPChar_GerPunkGreg_Rakk', [
+            ('/Geranium/Enemies/GerPunk_Female/_Unique/Greg/_Design/Character/ItemPool_Gregoyle', [PS]),
+            ]),
+        ('Jerrick Logan', 'BPChar_GerPsychoPhaserPete', [
+            ('/Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/ItemPool_PhaserPete', [PS]),
+            ]),
+        ('Minosaur', 'BPChar_GerSaurianSaurtaur', [
+            ('/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/ItemPool_Saurtaur', [SM]),
+            ]),
+        ('The Quartermaster', 'BPChar_Quartermaster_Tink', [
+            ('/Geranium/Enemies/Quartermaster/Tink/_Design/Character/ItemPool_FacilityBoss', [PS]),
+            ]),
+        ('Adelai Bronson', 'BPChar_GerSaurianHorsemen4', [
+            ('/Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Character/ItemPool_Horsemen', [SG]),
+            ]),
+        ('Ipswitch Dunne (v1)', 'BPChar_GerEnforcerDispatcher', [
+            ('/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/ItemPool_Dispatcher', [PS]),
+            ]),
+        ('Ipswitch Dunne (v2)', 'BPChar_GerSaurianDispatcher', [
+            ('/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/ItemPool_Dispatcher', [PS]),
+            ]),
+        ('Pterodomini', 'BPChar_GerRakkRod', [
+            ('/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/ItemPool_GerRakkRod', [AR]),
+            ]),
+        ('Slithermaw', 'BPChar_GerRakkMother', [
+            ('/Geranium/Enemies/GerRakk/_Unique/Mother/_Design/Character/ItemPool_RakkMother', [SM]),
+            ]),
+        ('Vorducken', 'BPChar_GerSaurianDevourer_Pygmimus', [
+            ('/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/ItemPool_Devourer', [HW]),
+            ]),
+        ('Wrendon Esk', 'BPChar_GyroPainless', [
+            ('/Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/ItemPool_GyroPainless', [HW]),
+            ]),
+        ('The Ruiner', 'BPChar_RuinerBoss', [
+            ('/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss', [PS]),
+            ]),
+        ('Bellik Primis', 'BPChar_Biobeast_AlteredBeast', [
+            ('/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/ItemPool_BioBeastBoss', [SG]),
+            ]),
+        ('Hydragoian', 'BPChar_Biobeast_CopyBeast', [
+            ('/Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/ItemPool_Copybeast', [SM]),
+            ]),
+        ('Lasodactyl', 'BPChar_GerRakkLasodactyl', [
+            ('/Geranium/Enemies/GerRakk/_Unique/Lasodactyl/_Design/Character/ItemPool_LasoDactyl', [PS]),
+            ]),
+        ('Lectrikor', 'BPChar_Biobeast_PlasmaBeast', [
+            ('/Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/ItemPool_PlasmaBeast', [SG]),
+            ]),
+        ('Waylon Hurd', 'BPChar_GerPsychoMoleMan', [
+            ('/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/ItemPool_MoleMan', [SG]),
             ]),
         ]):
 
