@@ -2,7 +2,7 @@
 ### DLC Loot De-Emphasizer
 ### by Apocalyptech
 ###
-### So far, both story DLCs for BL3 have included specific legendary loot
+### So far, all story DLCs for BL3 have included specific legendary loot
 ### pools which world-drop pretty frequently throughout the DLC, so you get
 ### the same relatively-small set of drops often while playing.  This is
 ### great for the first playthrough or two, but after that, I'd typically
@@ -224,4 +224,19 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_FrostTinkBadass),/Game/PatchDLC/Hibiscus
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FrostTinkBasic),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools.ItemPools[5].ItemPool,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 SparkCharacterLoadedEntry,(1,1,0,BPChar_FrostTinkShotgun),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools.ItemPools[5].ItemPool,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Spinsmouth),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools.ItemPools[5].ItemPool,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+
+###
+### DLC3 - Bounty of Blood
+###
+
+# Main Weapon Pool
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/ItemPool_Guns_All_Geranium.ItemPool_Guns_All_Geranium,BalancedItems.BalancedItems[4].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Individual Weapon Pools
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_AssaultRifles_Legendary.ItemPool_GER_AssaultRifles_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Heavy_Legendary.ItemPool_GER_Heavy_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Pistols_Legendary.ItemPool_GER_Pistols_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Shotguns_Legendary.ItemPool_GER_Shotguns_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SMGs_Legendary.ItemPool_GER_SMGs_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SnipeRifles_Legendary.ItemPool_GER_SnipeRifles_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'))
 

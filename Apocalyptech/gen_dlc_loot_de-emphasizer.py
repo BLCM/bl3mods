@@ -25,7 +25,7 @@ mod = Mod('dlc_loot_de-emphasizer.txt',
         'DLC Loot De-Emphasizer',
         'Apocalyptech',
         [
-            "So far, both story DLCs for BL3 have included specific legendary loot",
+            "So far, all story DLCs for BL3 have included specific legendary loot",
             "pools which world-drop pretty frequently throughout the DLC, so you get",
             "the same relatively-small set of drops often while playing.  This is",
             "great for the first playthrough or two, but after that, I'd typically",
@@ -47,6 +47,14 @@ mod = Mod('dlc_loot_de-emphasizer.txt',
 leg_pool_guns = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', 'ItemPoolData')
 leg_pool_shields = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', 'ItemPoolData')
 leg_pool_coms = Mod.get_full_cond('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary', 'ItemPoolData')
+
+# Individual wepon type pools
+leg_pool_ar = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary', 'ItemPoolData')
+leg_pool_hw = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary', 'ItemPoolData')
+leg_pool_ps = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary', 'ItemPoolData')
+leg_pool_sg = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary', 'ItemPoolData')
+leg_pool_sm = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary', 'ItemPoolData')
+leg_pool_sr = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary', 'ItemPoolData')
 
 # Support functions
 def do_hotfix(char_name, object_name, attr_name, index, to_pool):
@@ -386,6 +394,36 @@ for char_name in [
         ]:
     legendary_coms_itempoollist(char_name,
             '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', 5)
+mod.newline()
+
+###
+### DLC3 - Bounty of Blood
+### Getting lazy here and just using MatchAll...
+###
+
+mod.header('DLC3 - Bounty of Blood')
+
+# Main weapon pool
+# No need to do main shield pool 'cause it's empty
+mod.comment('Main Weapon Pool')
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Geranium/GameData/Loot/ItemPool_Guns_All_Geranium', 4)
+mod.newline()
+
+# Individual weapon pools -- DLC3 seems to have duplicated each weapon type legendary
+# pool; going to just redirect all of those to our default ones.
+mod.comment('Individual Weapon Pools')
+for src, dst in [
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_AssaultRifles_Legendary', leg_pool_ar),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Heavy_Legendary', leg_pool_hw),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Pistols_Legendary', leg_pool_ps),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Shotguns_Legendary', leg_pool_sg),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SMGs_Legendary', leg_pool_sm),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SnipeRifles_Legendary', leg_pool_sr),
+        ]:
+    mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
+            src,
+            'BalancedItems',
+            '((ItemPoolData={}))'.format(dst))
 mod.newline()
 
 # Finish
