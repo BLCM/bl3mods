@@ -26,7 +26,9 @@ My BL3 Mod Workspace
   team, which makes them as likely to attach each other as they are you.
   Relatively untested, so let me know if this causes anything game-breaking.
   I have noticed that some NPCs end up getting classified as enemies because
-  of this, though they don't become hostile.
+  of this, though they don't become hostile.  Sometimes enemies get weirdly
+  non-aggressive in general, like some Belliks in Obsidian Forest.  Amusingly,
+  DLC3 riders can start attacking their own mounts!
 
 ## Cheat Type Mods
 

@@ -47,6 +47,7 @@ subdirs = [
         'others',
         'dlc1',
         'dlc2',
+        'dlc3',
         ]
 spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
 spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
