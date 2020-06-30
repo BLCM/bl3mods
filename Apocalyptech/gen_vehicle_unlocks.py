@@ -40,6 +40,7 @@ mod = Mod('vehicle_unlocks.txt',
         )
 
 # A list of all levels where vehicles can show up
+# (We don't have to worry about this for Jetbeasts, there aren't level restrictions on those)
 outrunner_levels = {
         'Prologue_P',
         'Sacrifice_P',
@@ -624,6 +625,46 @@ vehicle_parts = [
                     '/Game/Vehicles/Revolver/Design/Parts/CoreMod/Firestarter/VehiclePart_FireStarter',
                     '/Game/Vehicles/Revolver/Design/Parts/CoreMod/DigiThruster/VehiclePart_DigiThruster',
                     '/Game/Vehicles/Revolver/Design/Parts/CoreMod/CryoBooster/VehiclePart_CryoBooster',
+                    ],
+            ]),
+
+        ('Jetbeast',
+            {
+                ('Devil Riders',
+                    '/Geranium/Vehicles/Horse/PartSets/Horse_VehiclePartSet_All',
+                    '/Geranium/Enemies/_Spawning/Vehicles/Horse/SpawnOptions_Vehicle_Horse_ALL',
+                    (0, 1, 2)): [
+                        'Frontier_P',
+                        ],
+                },
+            [
+                # Materials
+                [
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Default',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Skin1',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Skin2',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Skin3',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Skin4',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Materials/VehiclePart_Mat_VehiclePart_Horse_Skin5',
+                    ],
+                # Armor
+                [
+                    '/Geranium/Vehicles/Horse/Design/Parts/Armor/VehiclePart_Horse_Armor_HardSaddleBags',
+                    '/Geranium/Vehicles/Horse/Design/Parts/Armor/VehiclePart_Horse_Armor_SoftSaddleBags',
+                    ],
+                # Gunner Weapon
+                [
+                    ],
+                # Driver Weapon
+                [
+                    '/Geranium/Vehicles/VehicleWeapons/Type_DualMachineGun/VehiclePart_WeaponDriver_Horse_DualMachineGun',
+                    '/Geranium/Vehicles/VehicleWeapons/Type_Cannon/VehiclePart_WeaponDriver_Horse_Cannon',
+                    '/Geranium/Vehicles/VehicleWeapons/Type_Mortar/VehiclePart_Weapon_Horse_Mortar',
+                    ],
+                # Booster
+                [
+                    '/Geranium/Vehicles/Horse/Design/Parts/CoreMod/TwinEngine/VehiclePart_TwinEngine_Horse',
+                    '/Geranium/Vehicles/Horse/Design/Parts/CoreMod/SingleEngine/VehiclePart_SingleBooster_Horse',
                     ],
             ]),
     ]
