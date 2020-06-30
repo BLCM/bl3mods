@@ -16,6 +16,7 @@ SparkLevelPatchEntry,(1,1,0,Mansion_P),/Game/UI/InteractionPrompt/UIData_PlaySlo
 SparkLevelPatchEntry,(1,1,0,CasinoIntro_P),/Game/UI/InteractionPrompt/UIData_PlaySlots.UIData_PlaySlots,Cost.BaseValueScale,0,,0.2
 SparkLevelPatchEntry,(1,1,0,Core_P),/Game/UI/InteractionPrompt/UIData_PlaySlots.UIData_PlaySlots,Cost.BaseValueScale,0,,0.2
 SparkLevelPatchEntry,(1,1,0,Bar_P),/Game/UI/InteractionPrompt/UIData_PlaySlots.UIData_PlaySlots,Cost.BaseValueScale,0,,0.2
+SparkLevelPatchEntry,(1,1,0,Town_P),/Game/UI/InteractionPrompt/UIData_PlaySlots.UIData_PlaySlots,Cost.BaseValueScale,0,,0.2
 
 # Eridium-based machines
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/UI/InteractionPrompt/UIData_PlaySlotsEridium.UIData_PlaySlotsEridium,Cost.BaseValueScale,0,,0.2

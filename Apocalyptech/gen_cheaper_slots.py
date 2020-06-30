@@ -37,6 +37,7 @@ levels_money = [
         'CasinoIntro_P',
         'Core_P',
         'Bar_P',
+        'Town_P',
         ]
 
 levels_eridium = [

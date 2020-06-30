@@ -60,6 +60,7 @@ for (label, obj_name, maps, results) in [
             '/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx',
             [
                 ('Sanctuary', 'Sanctuary3_P'),
+                ('Vestige', 'Town_P'),
             ],
             [
                 ('Lose',                   0), # default: 25

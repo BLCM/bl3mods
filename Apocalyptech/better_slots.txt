@@ -82,6 +82,20 @@ SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,GrenadeMod_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,2
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Cash,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
 
+# Tink's Hijinx (in Vestige)
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Lose,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,BOOM!,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,ShieldOrGrenade_Common,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Shield_Uncommon,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Shield_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Shield_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,5
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Shield_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,2
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,GrenadeMod_Uncommon,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,GrenadeMod_Rare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,9
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,GrenadeMod_VeryRare,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,5
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,GrenadeMod_Legendary,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,2
+SparkLevelPatchEntry,(1,2,0,Town_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_HiJinx.Table_SlotMachinePrizes_HiJinx,Cash,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,3
+
 # Loot Boxer (and Moxxi's Heist machines) (in Sanctuary)
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_LootBoxer.Table_SlotMachinePrizes_LootBoxer,Lose,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
 SparkLevelPatchEntry,(1,2,0,Sanctuary3_P),/Game/InteractiveObjects/SlotMachine/_Shared/_Design/Table_SlotMachinePrizes_LootBoxer.Table_SlotMachinePrizes_LootBoxer,BOOM!,Weight_2_352BDC9A4B7443F6DB3D9FA890CF4B0E,0,,0
