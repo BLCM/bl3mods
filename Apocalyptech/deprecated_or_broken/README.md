@@ -39,6 +39,10 @@ weren't actually intended to be mods themselves.
   SMG kill count, and set the target to one higher than that current stat from
   my save.  No plans to make this into a full mod, but if anyone else is
   interested, this is how you'd do it.
+- `hatsoff_weapon.txt` - Just a joke mod.  During the intro to Bounty of Blood,
+  a character named Old Pete starts making another character dance by shooting
+  at his feet.  This changes his Jakobs gun into the Backburner, instead, for a
+  laugh.
 
 ## Deprecated/Testing Mods
 
