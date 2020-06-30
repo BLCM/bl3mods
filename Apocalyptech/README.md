@@ -119,7 +119,7 @@ Gameplay Changes instead.)
   - Sets the rarity weights to be improved
   - Increases Eridium drop rates and quantities.
   - Guarantees specific legendary drops from nearly all the bosses which
-    have unique drops.  This has been updated through the Guardian Takedown update.
+    have unique drops.  This has been updated through DLC3 (Bounty of Blood).
   - Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
     unlocks world Mayhem 4 drops or not, but you can use `expanded_legendary_pools`
     for that.
