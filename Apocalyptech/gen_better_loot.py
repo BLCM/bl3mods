@@ -154,131 +154,20 @@ mod.newline()
 #  10 - Eridium, /Game/GameData/Loot/ItemPools/Attributes/Att_EridiumStick_DropOddsWithMayhem_Total -> 0.008
 
 mod.header('Increased Eridium chances')
-for (pool, chars) in [
-        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', [
-            'BPChar_Ape',
-            'BPChar_EnforcerShared',
-            'BPChar_Frontrunner',
-            'BPChar_Goon',
-            'BPChar_GuardianShared',
-            'BPChar_Heavy_Shared',
-            'BPChar_Nekrobug_Shared',
-            'BPChar_Nog',
-            'BPChar_OversphereShared',
-            'BPChar_PsychoShared',
-            'BPChar_PunkShared',
-            'BPChar_Rakk',
-            'BPChar_Ratch',
-            'BPChar_Saurian_Shared',
-            'BPChar_ServiceBot',
-            'BPChar_SkagShared',
-            'BPChar_Spiderant',
-            'BPChar_Tink',
-            'BPChar_Tink_Turret',
-            'BPChar_Trooper',
-            'BPChar_VarkidShared',
-            'BPChar_LootTracker',
-
-            # Maliwan Takedown
-            'BPChar_MechBasicMini',
-            'BPChar_MechMeleeMini',
-
-            # Moxxi's Heist
-            'BPChar_EnforcerShared_Stripped',
-            'BPChar_Goon_Stripped',
-            'BPChar_PsychoShared_Stripped',
-            'BPChar_PunkShared_Stripped',
-            'BPChar_TinkStripped',
-
-            # Characters used in GBX's own hotfix for the Week 3 Eridium event:
-            # (just these five!)
-            #'BPChar_PunkBasic',
-            #'BPChar_NogBasic',
-            #'BPChar_RakkBasic',
-            #'BPChar_GuardianWraith',
-            #'BPChar_ApeBasic',
-
-            # Don't actually need all the individual ones, thankfully.
-            #'BPChar_PsychoSuicide',
-            #'BPChar_PsychoLoot',
-            #'BPChar_PsychoShared',
-            #'BPChar_PsychoFirebrand',
-            #'BPChar_PsychoSlugger',
-            #'BPChar_PsychoBadass',
-            #'BPChar_PsychoBasic',
-            #'BPChar_PunkShotgunner',
-            #'BPChar_PunkBasic',
-            #'BPChar_PunkBadass',
-            #'BPChar_PunkShared',
-            #'BPChar_PunkAssaulter',
-            ]),
-
-        # Dandelion standard-enemy drop list
-        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion', [
-            'BPChar_AcidTrip_EarlyPrototype',
-            'BPChar_EnforcerBruiser_Looter',
-            'BPChar_GoliathBasic_Looter',
-            'BPChar_GoliathMidget_Looter',
-            'BPChar_GoonBasic_looter',
-            'BPChar_GoonVortex_Looter',
-            'BPChar_PsychoBasic_Looter',
-            'BPChar_PsychoFirebrand_Looter',
-            'BPChar_PsychoSlugger_Looter',
-            'BPChar_PsychoSuicide_Looter',
-            'BPChar_PunkAssaulter_Looter',
-            'BPChar_PunkBasic_Looter',
-            'BPChar_PunkShotgunner_Looter',
-            'BPChar_PunkSniper_Looter',
-            'BPChar_TinkBasic_Looter',
-            'BPChar_TinkPsycho_Looter',
-            'BPChar_TinkShotgun_Looter',
-            'BPChar_TinkSuicide_Looter',
-            'BPChar_CasinoBot_BigJanitor',
-            ]),
-
-        # Dandelion standard-loader drop list
-        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', [
-            # Moxxi's Heist
-            'BPChar_HyperionTurretBasic',
-            'BPChar_LoaderShared',
-            'BPChar_WeeLoaderBasic',
-            ]),
-
-        # Hibiscus standard-enemy drop list
-        ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', [
-            'BPChar_FlyingSlugBasic',
-            'BPChar_LostOneBadass',
-            'BPChar_LostOneFlailing',
-            'BPChar_Lunatic',
-            'BPChar_Minion',
-            'BPChar_Slug',
-            'BPChar_Wolven_Shared',
-            'BPChar_Zealot',
-            'BPChar_Spinsmouth',
-            'BPChar_FrostEnforcerBruiser',
-            'BPChar_FrostEnforcerMelee',
-            'BPChar_FrostPsychoFirebrand',
-            'BPChar_FrostPsychoSlugger',
-            'BPChar_FrostPsychoSuicide',
-            'BPChar_FrostPunk_Basic',
-            'BPChar_FrostPunk_Assaulter',
-            'BPChar_FrostPunk_Badass',
-            'BPChar_FrostPunk_Shotgunner',
-            'BPChar_FrostPunk_Sniper',
-            'BPChar_FrostTinkBadass',
-            'BPChar_FrostTinkBasic',
-            'BPChar_FrostTinkShotgun',
-            ]),
+for pool, index in [
+        ('/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear', 10),
+        ('/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion', 10),
+        ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', 10),
+        ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', 10),
+        ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 10),
         ]:
 
-    for char in chars:
-
-        # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
-        # by Mayhem
-        mod.reg_hotfix(Mod.CHAR, char,
-                pool,
-                'ItemPools[10].PoolProbability',
-                BVCF(bvc=0.8))
+    # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
+    # by Mayhem
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+            pool,
+            f'ItemPools[{index}].PoolProbability',
+            BVCF(bvc=0.8))
 
 mod.newline()
 
@@ -372,6 +261,16 @@ for label, poollist_name, pool_idx, chars in [
             'BPChar_VarkidHunt02_LarvaC',
             'BPChar_VarkidHunt02_LarvaD',
             'BPChar_VarkidSuperBadass',
+            ]),
+        ('DLC3 Minibosses', '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium', 7, [
+            'BPChar_Biobeast_AlteredBeast',
+            'BPChar_GerTinkLoot',
+            'BPChar_SploderBoss',
+            'BPChar_Quartermaster_Tink',
+            'BPChar_RuinerBoss',
+            ]),
+        ('DLC3 Bosses', '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium', 7, [
+            'BPChar_RuinerBoss',
             ]),
         ]:
 
