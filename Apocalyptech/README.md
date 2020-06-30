@@ -45,8 +45,8 @@ Gameplay Changes instead.)
   been close to them.  Does the same for Eridian Writings.  Note that you
   will miss dialog if you use this -- when entering a new map, only one of
   the available challenge intros will be played.  Note that this currently
-  only supports the base game and partially DLC2.  DLC1 challenges are
-  omitted entirely because they act weirdly.  Known issues:
+  only supports the base game, some of DLC2, and most of DLC3.  DLC1 challenges
+  are omitted entirely because they act weirdly.  Known issues:
   - The third Typhon log in Meridian Outskirts
   - The Dead Claptrap in Neon Arterial might not show up immediately,
     though it does show up before there's been too much progression
@@ -70,6 +70,8 @@ Gameplay Changes instead.)
   - All DLC1 challenges are omitted
   - Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
   - Some Eldritch Statue challenges from DLC2 don't seem to work.
+  - DLC3's "Good Prospects" are omitted since they do some weird Treasure Map
+    things, and I didn't care enough to try and figure those out.
 - `more_visible_echo_logs.txt` - Makes ECHO Log loot bars (and any other
   item using that bar, such as mission items) much bigger.  Used to
   hopefully catch any ECHOs I may have missed after a few playthroughs.

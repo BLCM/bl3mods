@@ -108,6 +108,29 @@ SparkLevelPatchEntry,(1,1,1,Sacrifice_P),/Game/Maps/Zone_0/Sacrifice/Sacrifice_D
 SparkLevelPatchEntry,(1,1,1,Sacrifice_P),/Game/Maps/Zone_0/Sacrifice/Sacrifice_Dynamic.Sacrifice_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_GasTank.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,Sacrifice_P),/Game/Maps/Zone_0/Sacrifice/Sacrifice_Dynamic.Sacrifice_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_GasTank.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Ashfall Peaks
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Lodge_P),/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Athenas
 SparkLevelPatchEntry,(1,1,1,Monastery_P),/Game/Maps/Zone_1/Monastery/Monastery_Challenges.Monastery_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_PoetryModule.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,Monastery_P),/Game/Maps/Zone_1/Monastery/Monastery_Challenges.Monastery_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_PoetryModule.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
@@ -171,6 +194,29 @@ SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/Wet
 SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/WetlandsVault_P.WetlandsVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,WetlandsVault_P),/Game/Maps/Zone_2/WetlandsVault/WetlandsVault_P.WetlandsVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Bloodsun Canyon
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__2.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__8.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__8.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__8.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__7.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__7.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__7.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__6.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__6.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Facility_P),/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__6.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Cankerwood
 SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,Woods_P),/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
@@ -223,6 +269,8 @@ SparkLevelPatchEntry,(1,1,1,Desertvault_P),/Game/Maps/Zone_3/DesertVault/Desertv
 SparkLevelPatchEntry,(1,1,1,Desertvault_P),/Game/Maps/Zone_3/DesertVault/Desertvault_Dynamic.Desertvault_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Covenant Pass
+
+# Crater's Edge
 
 # Cursehaven
 SparkLevelPatchEntry,(1,1,1,Village_P),/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
@@ -558,6 +606,29 @@ SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P
 SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory_0.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory_0.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
 
+# Obsidian Forest
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+
 # Pyre of Stars
 SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
@@ -661,6 +732,49 @@ SparkLevelPatchEntry,(1,1,1,Beach_P),/Game/Maps/Zone_4/Beach/Beach_Encounters.Be
 SparkLevelPatchEntry,(1,1,1,Beach_P),/Game/Maps/Zone_4/Beach/Beach_Encounters.Beach_Encounters:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_RotatorCuffModule_0.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
 SparkLevelPatchEntry,(1,1,1,Beach_P),/Game/Maps/Zone_4/Beach/Beach_Encounters.Beach_Encounters:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_RotatorCuffModule_0.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
 SparkLevelPatchEntry,(1,1,1,Beach_P),/Game/Maps/Zone_4/Beach/Beach_Encounters.Beach_Encounters:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_RotatorCuffModule_0.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
+
+# The Blastplains
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__5.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__5.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__5.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__4.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__4.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__4.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Frontier_P),/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+
+# Vestige
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
+SparkLevelPatchEntry,(1,1,1,Town_P),/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
 
 # Voracious Canopy
 SparkLevelPatchEntry,(1,1,1,Watership_P),/Game/Maps/Zone_2/Watership/Watership_Sidemission.Watership_Sidemission:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
