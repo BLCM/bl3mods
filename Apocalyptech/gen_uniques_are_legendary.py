@@ -40,10 +40,7 @@ to_rarity_full = Mod.get_full_cond(to_rarity, 'OakInventoryRarityData')
 # - Email-reward version of Short Stick
 # - The other three Seventh Sense variants
 # - Marshal (green-rarity Jakobs pistol balance added in DLC3)
-#
-# TODO: I should maybe leave The Shoddy out of this?  Though if I'm allowing ECHOv2, that's
-# basically the same "joke."  I suppose what it is is that I need to see if The Shoddy has
-# anything "special" about it that might make it deserving of notice...
+# - The Shoddy
 unique_balances = [
         '/Game/Gear/GrenadeMods/_Design/_Unique/BirthdaySuprise/Balance/InvBalD_GM_BirthdaySuprise',
         '/Game/Gear/GrenadeMods/_Design/_Unique/ButtStallion/Balance/InvBalD_GM_ButtStallion',
@@ -328,7 +325,6 @@ unique_balances = [
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Balance/Balance_PS_MAL_Decoupler',
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/Balance/Balance_AR_VLA_Dowsing',
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/Balance/Balance_SM_TED_Earthbound',
-        '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs',
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper',
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Balance/Balance_SG_MAL_Frequency',
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/Balance/Balance_PS_COV_Gargoyle',

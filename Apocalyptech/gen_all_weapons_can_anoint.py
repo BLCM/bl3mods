@@ -27,7 +27,7 @@ mod = Mod('all_weapons_can_anoint.txt',
         [
             "Adds anointment parts to all the weapons which can't ordinarily",
             "have them.  (This doesn't *guarantee* anointments -- use my",
-            "Better Loot for that.)",
+            "Better Loot for that.)  Excludes The Shoddy.",
         ],
         lic=Mod.CC_BY_SA_40,
         )
@@ -567,11 +567,11 @@ weapons = [
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/Balance_AR_JAK_McSmugger',
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/McSmugger/Balance/InvPartSet_JAK_AR_McSmugger',
             JAK_AR),
-        # Arguably we should leave this one out intentionally
-        ("The Shoddy",
-            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs',
-            '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/PartSet_SG_JAK_Fakobs',
-            JAK_SG),
+        # Leaving The Shoddy out of this intentionally.
+        #("The Shoddy",
+        #    '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs',
+        #    '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/PartSet_SG_JAK_Fakobs',
+        #    JAK_SG),
         ]
 
 # Now do the actual mod

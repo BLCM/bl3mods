@@ -289,7 +289,8 @@ being used, which gives you far more Eridium than usual.
   - DLC2 (Guns, Love, and Tentacles)
   - DLC3 (Bounty of Blood)
 - `all_weapons_can_anoint.txt` - A number of weapons in the game can't
-  ordinarily spawn with Anointments; this makes it so that they can.
+  ordinarily spawn with Anointments; this makes it so that they can.  (Excludes
+  The Shoddy)
 - `more_tracker_darts.txt` - I enjoy Atlas weapons, but I've found I basically
   never use them unless they've got the tracker darts part (as opposed to
   pucks or grenades).  So, I increased the weight of the tracker dart part,
