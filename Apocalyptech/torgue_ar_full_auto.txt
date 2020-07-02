@@ -4,7 +4,7 @@
 ###
 ### Makes Torgue ARs full auto, apart from a few legendary ones which specifically have
 ### burst-fire modes.  In general only 'generic' ARs needed fixing, apart from the
-### Alchemist.
+### Alchemist and Contained Blast.
 ###
 ### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### https://creativecommons.org/licenses/by-sa/4.0/
@@ -16,4 +16,5 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Barrel/Barrel_02/Part_AR_TOR_Barrel_02.Part_AR_TOR_Barrel_02:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,AutomaticBurstCount,0,,(Value=0,BaseValue=0)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Barrel/Barrel_03/Part_AR_TOR_Barrel_03.Part_AR_TOR_Barrel_03:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,AutomaticBurstCount,0,,(Value=0,BaseValue=0)
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Alchemist/Parts/Part_AR_TOR_Barrel_Alchemist.Part_AR_TOR_Barrel_Alchemist:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_Torgue,AutomaticBurstCount,0,,(Value=0,BaseValue=0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/Parts/Part_AR_TOR_Barrel_Contained.Part_AR_TOR_Barrel_Contained:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPFiringComponent_TOR_Contained,AutomaticBurstCount,0,,(Value=0,BaseValue=0)
 
