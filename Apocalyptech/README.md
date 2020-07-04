@@ -432,8 +432,9 @@ put together a mod to do that, though, 'cause it hardly seems worth it.
   Ordinarily Bloody Harvest and Broken Hearts wouldn't show up in DLC2,
   but they will with this.  This doesn't enable them *globally* --
   Covenant Pass and Droughts won't have any -- but they'll all be active
-  in as big an area as possible (so far).  Doesn't do anything unless
-  an event or my `all_event_spawns` mod is active.
+  in as big an area as possible (so far).  These *have* been updated to
+  include DLC3 spawners, though that's not super well-tested.  Doesn't
+  do anything unless an event or my `all_event_spawns` mod is active.
 
 ## Main Menu
 
