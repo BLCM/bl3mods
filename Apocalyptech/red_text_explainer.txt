@@ -766,7 +766,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/U
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] (20% chance to deal double damage as [shock]shock[/shock])
 
 # Short Stick
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] (chance to fire 2 additional spiralling shots and deal [fire]incendiary[/fire] damage)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] (chance to fire 2 additional spiralling shots and deal [fire]incendiary[/fire] damage)
 
 # Seventh Sense (prefixed mission)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] (mission item, reveals ghosts during ADS)

@@ -1229,7 +1229,6 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill',
             "To have and to hold...",
             "20% chance to deal double damage as shock"),
-        # TODO: doesn't actually show up?  Should apply to both legendary and non-legendary versions
         ("Short Stick",
             '/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick',
             "A small price to pay.",
@@ -1432,6 +1431,7 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("The Beast (rad)",
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Rad',
             "She grew big, and she grew mean.",
+            # I think this is basically just a good Vladof AR
             "unknown"),
         ("The Beast (shock)",
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Shock',
@@ -1584,8 +1584,18 @@ for (gear_name, obj_name, redtext, explanation) in [
         else:
             attr_name = 'Text'
 
+        # Another *weird* special-case.  The red text for Short Stick doesn't actually
+        # get updated if we do it at PATCH time.
+        if 'ShortStick' in obj_name:
+            hf_type = Mod.LEVEL
+            hf_package = 'MatchAll'
+        else:
+            hf_type = Mod.PATCH
+            hf_package = ''
+
+        # Now generate the hotfix
         mod.comment(gear_name)
-        mod.reg_hotfix(Mod.PATCH, '',
+        mod.reg_hotfix(hf_type, hf_package,
                 obj_name,
                 attr_name,
                 '[Flavor]{}[/Flavor] ({})'.format(redtext, elementize(explanation)))
