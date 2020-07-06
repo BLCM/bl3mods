@@ -235,36 +235,39 @@ if do_pool_set:
 # Now set everything's drops.
 for hf_type, pool in [
 
-        # Base-game Standard Enemy drop list
-        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear'),
-
-        # Goliaths
+        # Base-game stuff
         (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Godliath'),
-        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_NonEnraging'),
-        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Ultimate'),
-        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_SuperRaging'),
         (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_MegaRaging'),
-
-        # Dandelion standard-enemy drop list
-        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion'),
-
-        # Dandelion standard-loader drop list
-        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader'),
-
-        # Base game badass enemy drop list
-        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear'),
-
-        # Dandelion Badass enemy list
-        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Dandelion'),
-
-        # Dandelion Badass loader list
-        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_BadassEnemyGunsGearLoader1'),
-
-        # Dandelion Constructors
-        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/ItemPoolList_Constructor'),
-
-        # Anointed Enemies
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_NonEnraging'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_SuperRaging'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/Goliath/ItemPoolList_Goliath_Ultimate'),
         (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_AnointedEnemyGunsGear'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_MiniBoss'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_StandardEnemyGunsandGear'),
+        (Mod.CHAR, '/Game/GameData/Loot/ItemPools/ItemPoolList_VaultBossEnemy'),
+
+        # DLC1 (Dandelion) stuff
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/ItemPoolList_Constructor'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_BadassEnemyGunsGearLoader1'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Dandelion'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Dandelion'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_Boss_Dandelion'),
+        (Mod.CHAR, '/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Dandelion'),
+
+        # DLC2 (Hibiscus) stuff
+        (Mod.CHAR, '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Hibiscus'),
+        (Mod.CHAR, '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Boss_Hibiscus'),
+        (Mod.CHAR, '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Hibiscus'),
+        (Mod.CHAR, '/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus'),
+        
+        # DLC3 (Geranium) stuff
+        (Mod.CHAR, '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Geranium'),
+        (Mod.CHAR, '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium'),
+        (Mod.CHAR, '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium'),
+        (Mod.CHAR, '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium'),
 
         # Trash Piles - this isn't actually *used* by very many things, as it turns out.  Most stuff
         # ends up referencing the ItemPool directly, instead of using this list.
