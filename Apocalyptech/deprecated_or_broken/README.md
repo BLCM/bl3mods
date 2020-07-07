@@ -163,4 +163,10 @@ don't look at these thinking that they're any good.  :)
 - `fix_enemy_loot_spawn_patterns.txt` - I wanted to fix the loot drop pattern
   for the Maliwan Slaughter bosses, but started with Mouthpiece instead, since
   he's many orders of magnitude easier to get to.  Anyway, no dice.
+- `gen_faster_npcs.py` - DLC3 added a few NPCs who walk reaaal slowly, and I
+  wanted to see if I could speed them up.  Started with Oletta (intending to
+  test around the Lost and Found mission), but didn't get anywhere -- I think
+  I have the right attribute to go after, but I haven't been able to figure out
+  a correct hotfix syntax, so I don't know if that's right.  Anyway, giving
+  up for now.
 
