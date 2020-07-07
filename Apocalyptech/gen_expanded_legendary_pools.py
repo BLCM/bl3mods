@@ -75,8 +75,9 @@ mod = Mod('expanded_legendary_pools.txt',
 #   Legendary version's better, would be a bit silly to have both.
 #
 # Email-reward version of Short Stick - /Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick
-#   Doesn't seem to actually work anyway, and would only be purple if it did.  (This is theoretically
-#   what was used for the email reward, though, so they got it to work *somehow* via that.)
+#   The MinGameStage and MaxGameStage for this are both set to 57, so it will refuse to spawn unless
+#   the game's exactly there.  You can add it to pools, etc, but if you're not exactly 57 it just won't
+#   spawn.  Easy enough to fix, but you might as well just use the legendary version anyway.
 #
 # Seventh Sense guns.  There's four total variants, and we're only adding one of them.  The others:
 #   This one is referenced by a mission, presumably only available during that
