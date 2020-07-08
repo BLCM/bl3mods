@@ -7,6 +7,10 @@ weren't actually intended to be mods themselves.
   maps which don't ordinarily spawn them, and we can!  The test as-is is
   a bit broken and needs further development to be viable, but it worked
   well enough that I'm happy leaving it the way it is for now.
+- `all_anointed.txt` - Just a test to turn all enemies (just in Covenant
+   Pass) into Anointed.  Works fine, actually, but I have no plans to
+   expand it beyond there.  There's a commented bit to turn all Covenant
+   Pass enemies into Wotan instead, which is good for a laugh...
 - `gun_randomizer.txt` - The file as-is just randomizes the barrel for
   the Cloud Kill SMG, and works pretty well, giving three random barrels
   to the gun.  No real plans to turn this into a real randomizer, just
