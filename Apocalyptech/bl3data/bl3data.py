@@ -406,7 +406,14 @@ class BL3Data(object):
 
         # AI
         if bvc_obj.ai and bvc_obj.ai != 'None':
-            raise Exception('ai: {}'.format(data['BaseValueAttribute']))
+            # Basically just gonna hardcode these things for now
+            if bvc_obj.ai == '/Game/GameData/Balance/WeightingPlayerCount/Enemy_MajorUpgrade_PerPlayer':
+                # This uses EAttributeInitializerUsageMode::Scale, and depends on both
+                # player count and game mode (NVHM/TVHM).  This code's going to assume
+                # 1-player NVHM, which is 1, so no actual changes.
+                print('WARNING: Assuming 1-player NVHM while processing Enemy_MajorUpgrade_PerPlayer')
+            else:
+                raise Exception('Unknown AI: {}'.format(bvc_obj.ai))
 
         # BVS
         return bvc * bvc_obj.bvs
