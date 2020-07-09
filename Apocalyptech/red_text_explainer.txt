@@ -952,7 +952,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/UIStat_RedText_SpeakEasy.UIStat_RedText_SpeakEasy,Text,0,,[Flavor]Are you not he?[/Flavor] (crits ricochet 1 bullet and return 1 to mag)
 
 # Splinter
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] (no special effects)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] (crits might ricochet 3x instead of just 1, unsure)
 
 # Proprietary License
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] (crits ricochet, ads increases fire rate)

@@ -1541,7 +1541,8 @@ for (gear_name, obj_name, redtext, explanation) in [
         ("Splinter",
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter',
             "The first one is always the hardest.",
-            "no special effects"),
+            # TODO: Should try to verify this.
+            "crits might ricochet 3x instead of just 1, unsure"),
         ("Proprietary License",
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast',
             "A little from Column A, a little from Column B.",
