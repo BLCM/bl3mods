@@ -874,16 +874,16 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/UIStat_RedText_Lightspeed.UIStat_RedText_Lightspeed,Text,0,,[Flavor]Gimme a parsec.[/Flavor] (extremely fast longbow which explodes into ricocheting projectiles)
 
 # The Beast (rad)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Rad.UIStat_RedText_BioBetsy_Rad,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Rad.UIStat_RedText_BioBetsy_Rad,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] (no special effects)
 
 # The Beast (shock)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Shock.UIStat_RedText_BioBetsy_Shock,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Shock.UIStat_RedText_BioBetsy_Shock,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] (no special effects)
 
 # Contained Blast
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ContainedExplosion/UIStat_RedText_Contained.UIStat_RedText_Contained,Text,0,,[Flavor]Put a lid on it.[/Flavor] (projectiles explode on impact, semi-auto)
 
 # Icebreaker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/UIStat_RedText_CoolBeans.UIStat_RedText_CoolBeans,Text,0,,[Flavor]Dread fifty below more than fifty above.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/UIStat_RedText_CoolBeans.UIStat_RedText_CoolBeans,Text,0,,[Flavor]Dread fifty below more than fifty above.[/Flavor] ([cryo]cryo[/cryo]thrower)
 
 # Dowsing Rod
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/UIStat_RedText_Dowsing.UIStat_RedText_Dowsing,Text,0,,[Flavor]It's down there somewhere, lemme take another look.[/Flavor] (full auto, high fire rate)
@@ -916,7 +916,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Lasocannon/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Miscreant/UIStat_RedText_Miscreant.UIStat_RedText_Miscreant,Text,0,,[Flavor]Why waste time shoot lot gun when few gun do trick?[/Flavor] (full-auto rockets)
 
 # Peashooter
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/UIStat_RedText_Peashooter.UIStat_RedText_Peashooter,Text,0,,[Flavor]If you think there's no risk, take a good dose.[/Flavor] (hits (maybe just crits) generate MIRV-like ricochets)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/UIStat_RedText_Peashooter.UIStat_RedText_Peashooter,Text,0,,[Flavor]If you think there's no risk, take a good dose.[/Flavor] (crits generate MIRV-like ricochets)
 
 # The Blanc
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/PrivateInvestigator/UIStat_RedText_PrivateInvestigator.UIStat_RedText_PrivateInvestigator,Text,0,,[Flavor]This machine unerringly arrives at the truth.[/Flavor] (damaging enemies grants +35% weapon damage when switching, stacks x10)
@@ -937,10 +937,10 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/UISt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/UIStat_RedText_Brightside.UIStat_RedText_Brightside,Text,0,,[Flavor]It's killing me.[/Flavor] (reload becomes drone which splits into four elemental drones)
 
 # Dakota
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] (randomly fires [shock]shock[/shock], [fire]incendiary[/fire], or non-elemental pellets)
 
 # The Shoddy
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] (does no actual damage)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] (projectiles fall very close to player)
 
 # Frequency
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/UIStat_RedText_Frequency.UIStat_RedText_Frequency,Text,0,,[Flavor]Hertz so good.[/Flavor] (kills increase burst count for a short time)
@@ -952,7 +952,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/UIStat_RedText_SpeakEasy.UIStat_RedText_SpeakEasy,Text,0,,[Flavor]Are you not he?[/Flavor] (crits ricochet 1 bullet and return 1 to mag)
 
 # Splinter
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] (unknown)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] (no special effects)
 
 # Proprietary License
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] (crits ricochet, ads increases fire rate)
