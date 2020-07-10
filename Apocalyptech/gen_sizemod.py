@@ -54,6 +54,13 @@ pcs = {
         '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_StandIn_Siren_SkillScreen',
         }
 
+# Chars which have scaling limits (tuple: min, max)
+scale_limits = {
+        # A 2x+ Wendigo will fall through the floor and become unkillable, so we won't let
+        # it grow.  (Presumably a *smaller* Wendigo would be okay though.)
+        '/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo': (None, 1),
+        }
+
 # Generate sizes with: find . -name "BPChar_*.uasset" | cut -d. -f2 | sort -i
 bpchars = []
 with open('gen_sizemod_data.txt') as df:
@@ -85,11 +92,22 @@ for label, scale in [
             lic=Mod.CC_BY_SA_40,
             )
     for bpchar in bpchars:
+
+        # Check our scaling for min/max on a per-char basis
+        this_scale = scale
+        if bpchar in scale_limits:
+            scale_min, scale_max = scale_limits[bpchar]
+            if scale_max is not None and scale > scale_max:
+                this_scale = scale_max
+            elif scale_min is not None and scale < scale_min:
+                this_scale = scale_min
+
+        # Now do the hotfix
         last_bit = bpchar.split('/')[-1]
         mod.reg_hotfix(Mod.CHAR, last_bit,
                 '{}.Default__{}_C:CharacterMesh0'.format(bpchar, last_bit),
                 'RelativeScale3D',
-                f'(X={scale},Y={scale},Z={scale})')
+                f'(X={this_scale},Y={this_scale},Z={this_scale})')
     mod.close()
 
     # Doesn't seem to work, will play around with it later.

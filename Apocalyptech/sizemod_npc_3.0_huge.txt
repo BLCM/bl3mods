@@ -1091,7 +1091,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemi
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent),/Hibiscus/Enemies/Vincent/_design/Character/BPChar_Vincent.Default__BPChar_Vincent_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent_Fake),/Hibiscus/Enemies/Vincent/_design/Character/BPChar_Vincent_Fake.Default__BPChar_Vincent_Fake_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Vincent_Fake_Ghost),/Hibiscus/Enemies/Vincent/_design/Character/BPChar_Vincent_Fake_Ghost.Default__BPChar_Vincent_Fake_Ghost_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo.Default__BPChar_Wendigo_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Design/Character/BPChar_Wendigo.Default__BPChar_Wendigo_C:CharacterMesh0,RelativeScale3D,0,,(X=1,Y=1,Z=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Drizzen),/Hibiscus/Enemies/Wolf/Alpha/_Design/Character/BPChar_Wolven_Drizzen.Default__BPChar_Wolven_Drizzen_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Badass),/Hibiscus/Enemies/Wolf/Badass/_Design/Character/BPChar_Wolven_Badass.Default__BPChar_Wolven_Badass_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_WolfBasic),/Hibiscus/Enemies/Wolf/Basic/_Design/Character/BPChar_WolfBasic.Default__BPChar_WolfBasic_C:CharacterMesh0,RelativeScale3D,0,,(X=3.0,Y=3.0,Z=3.0)
