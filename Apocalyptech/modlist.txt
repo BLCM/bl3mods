@@ -8,7 +8,7 @@ guaranteed_rare_spawns
 # Alternate NPC/Enemy Size Scaling
 #sizemod_npc_0.4_tiny
 #sizemod_npc_0.7_smol
-sizemod_npc_2.0_big
+#sizemod_npc_2.0_big
 #sizemod_npc_3.0_huge
 #sizemod_npc_5.0_giant
 
@@ -149,6 +149,9 @@ nerf_op_gear
 
 # Turn (nearly) all uniques into legendary-rarity
 uniques_are_legendary
+
+# Removes the Sellout's Tyreen voice module
+silent_sellout
 
 ###
 ### Partlocks / Part Changes

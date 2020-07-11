@@ -265,6 +265,9 @@ being used, which gives you far more Eridium than usual.
   this mod would be a bit pointless.  Not sure if being legendary has an
   effect on item stats; it's possible that this mod buffs up some items
   here.
+- `silent_sellout.txt` - Removes the Tyreen-themed voice module from the
+  Sellout.  I realize that's sort of the *point* of the gun, but it's a
+  nice gun on its own, and the voice module got to annoy me.
 
 ## Partlocks / Part Changes
 

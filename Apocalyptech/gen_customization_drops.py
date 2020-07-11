@@ -98,6 +98,8 @@ for (label, filename, rate, desc) in [
     # Some extra things to do if we're disabling entirely.
     if rate == 0:
 
+        # TODO: Still getting some cosmetic drops in DLC2, maybe from badasses?
+
         mod.header('Remove cosmetics from containers')
 
         mod.comment('Regular container ItemPools')
