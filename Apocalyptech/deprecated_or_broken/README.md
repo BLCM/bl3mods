@@ -173,4 +173,14 @@ don't look at these thinking that they're any good.  :)
   I have the right attribute to go after, but I haven't been able to figure out
   a correct hotfix syntax, so I don't know if that's right.  Anyway, giving
   up for now.
+- `get_skill_tree_shenanigans.py` - This is actually partially working; was just
+  playing with shuffling skills around, namely swapping Amara's Root to Rise
+  with One With Nature.  My "preferred" method, which gives the most flexibility
+  (can totally rearrange skill trees) doesn't work well enough to be generally
+  useful -- skills lower than they "should" be won't be selectable ever, and
+  skills higher than they "should" be have incorrect visual notifications.  The
+  second method I tried does work, but would require that you keep the same
+  "structure" as the vanilla tree.  You could swap skills around all you like
+  (while making sure that the max-points and icon vars are moved too) but you
+  wouldn't be able to rearrange the tree at will.
 
