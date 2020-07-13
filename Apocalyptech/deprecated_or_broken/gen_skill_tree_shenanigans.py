@@ -46,6 +46,8 @@ for varname in [
 
 # Skills
 root_to_rise = '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl:Tiers_OakPlayerAbilityTreeTierData_0.Items_OakPlayerAbilityTreeItemData_Ability'
+personal_space = '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl:Tiers_OakPlayerAbilityTreeTierData_0.Items_OakPlayerAbilityTreeItemData_Ability_0'
+clarity = '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl:Tiers_OakPlayerAbilityTreeTierData_0.Items_OakPlayerAbilityTreeItemData_Ability_2'
 one_with_nature = '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl:Tiers_OakPlayerAbilityTreeTierData_3.Items_OakPlayerAbilityTreeItemData_Ability_0'
 
 # Augments
@@ -63,17 +65,38 @@ if False:
     notify=False
 
     # Swap Root To Rise (tier 1) with One With Nature (tier 4)
-    mod.reg_hotfix(Mod.PATCH, '',
-            '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
-            'Tiers.Tiers[1].Object..Items.Items[0]',
-            Mod.get_full_cond(one_with_nature, 'OakPlayerAbilityTreeItemData_Ability'),
-            notify=notify)
+    if False:
+        # Setting just a single element in `Items`
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
+                'Tiers.Tiers[1].Object..Items.Items[0]',
+                Mod.get_full_cond(one_with_nature, 'OakPlayerAbilityTreeItemData_Ability'),
+                notify=notify)
 
-    mod.reg_hotfix(Mod.PATCH, '',
-            '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
-            'Tiers.Tiers[4].Object..Items.Items[0]',
-            Mod.get_full_cond(root_to_rise, 'OakPlayerAbilityTreeItemData_Ability'),
-            notify=notify)
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
+                'Tiers.Tiers[4].Object..Items.Items[0]',
+                Mod.get_full_cond(root_to_rise, 'OakPlayerAbilityTreeItemData_Ability'),
+                notify=notify)
+    if True:
+        # Setting the entire `Items` array
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
+                'Tiers.Tiers[1].Object..Items',
+                '({})'.format(','.join([
+                    Mod.get_full_cond(one_with_nature, 'OakPlayerAbilityTreeItemData_Ability'),
+                    Mod.get_full_cond(personal_space, 'OakPlayerAbilityTreeItemData_Ability'),
+                    Mod.get_full_cond(clarity, 'OakPlayerAbilityTreeItemData_Ability'),
+                    ])),
+                notify=notify)
+
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl',
+                'Tiers.Tiers[4].Object..Items',
+                '({})'.format(','.join([
+                    Mod.get_full_cond(root_to_rise, 'OakPlayerAbilityTreeItemData_Ability'),
+                    ])),
+                notify=notify)
 
     # Fix display columns (we *could*, of course, use our fancy object-chaining syntax as we did with the
     # previous statements, to get to these objects, but I feel it's clearer if we go after them directly,
