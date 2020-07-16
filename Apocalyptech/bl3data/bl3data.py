@@ -165,6 +165,9 @@ class BL3Data(object):
         self.db = None
         self.curs = None
 
+        # Some internal caches
+        self.part_category_name_cache = {}
+
     def _enforce_config_section(self, section_name):
         """
         Raises an exception if the configuration section `section_name` hasn't
@@ -425,7 +428,14 @@ class BL3Data(object):
 
         return self.process_bvc(BVC.from_data_struct(data))
 
-    def guess_part_category_name(self, part_name):
+    def _cache_part_category_name(self, part_name, name):
+        """
+        Caches a part category name (stupid little func for code simplification)
+        """
+        self.part_category_name_cache[part_name] = name
+        return name
+
+    def guess_part_category_name(self, part_name, part_obj=None):
         """
         Given a `part_name`, try and guess what the category name is, for the parts category
         which this part lives in.  This may or may not be accurate depending on context,
@@ -433,20 +443,26 @@ class BL3Data(object):
         category names are NOT really part of the base game data itself.  I've done a fair
         bit of tweaking so they "make sense," at least to myself.  The labels you see
         in the Item Inspector in-game are often pretty good guidelines but they're not
-        always consistent.)
+        always consistent.)  Optionally pass in an already-retrieved `part_obj` data
+        structure, if you already have the object in-hand (though we cache those too,
+        so it doesn't matter too much if we request it again here).
         """
 
-        if not part_name:
-            return None
+        if part_name in self.part_category_name_cache:
+            return self.part_category_name_cache[part_name]
+
+        if not part_name or part_name == 'None':
+            return self._cache_part_category_name(part_name, None)
 
         part_lower = part_name.lower()
 
         # First, a hardcode for a part that we currently can't serialize
         if part_lower == '/game/gear/grenademods/_design/partsets/part_manufacturer/gm_part_manufacturer_06_pangolin':
-            return 'MANUFACTURER'
+            return self._cache_part_category_name(part_name, 'MANUFACTURER')
 
         # Grab the data itself and see if we can do anything with it.
-        part_obj = self.get_data(part_name)
+        if part_obj is None:
+            part_obj = self.get_data(part_name)
         for export in part_obj:
             if export['export_type'].startswith('BPInvPart_'):
                 if 'PartInspectionTitleOverride' in export:
@@ -456,15 +472,15 @@ class BL3Data(object):
 
                     # Some hardcoded overrides here
                     if ui_label.startswith('TRACKING '):
-                        return 'TRACKING METHOD'
+                        return self._cache_part_category_name(part_name, 'TRACKING METHOD')
                     elif ui_label.endswith(' SHIELD'):
-                        return 'SHIELD TYPE'
+                        return self._cache_part_category_name(part_name, 'SHIELD TYPE')
                     elif ui_label.endswith(' MODULE'):
-                        return 'RELOAD TYPE'
+                        return self._cache_part_category_name(part_name, 'RELOAD TYPE')
                     elif ui_label.startswith('UNDERBARREL '):
-                        return 'UNDERBARREL TYPE'
+                        return self._cache_part_category_name(part_name, 'UNDERBARREL TYPE')
                     else:
-                        return ui_label
+                        return self._cache_part_category_name(part_name, ui_label)
 
                 elif 'material' in part_lower or '_mat_' in part_lower \
                         or part_lower.endswith('_mat') \
@@ -474,44 +490,43 @@ class BL3Data(object):
                         or part_lower.endswith('/part_sr_hyp_tankman') \
                         or part_lower.endswith('/part_sr_jak_icequeen') \
                         or part_lower.endswith('/part_sr_hyp_woodblocks'):
-                    return 'MATERIAL'
+                    return self._cache_part_category_name(part_name, 'MATERIAL')
 
                 elif 'frontsight' in part_lower:
-                    return 'FRONT SIGHT'
+                    return self._cache_part_category_name(part_name, 'FRONT SIGHT')
 
                 elif 'slidecap' in part_lower:
-                    return 'CAPS'
+                    return self._cache_part_category_name(part_name, 'CAPS')
 
                 elif 'underbarrel' in part_lower:
-                    return 'UNDERBARREL TYPE'
+                    return self._cache_part_category_name(part_name, 'UNDERBARREL TYPE')
 
                 elif 'magazine' in part_lower or '_mag_' in part_lower:
-                    return 'MAGAZINE'
+                    return self._cache_part_category_name(part_name, 'MAGAZINE')
 
-                elif 'thewave' in part_name:
-                    return 'TK WAVE'
+                elif 'thewave' in part_lower:
+                    return self._cache_part_category_name(part_name, 'TK WAVE')
 
-                elif '_sight_' in part_name:
-                    return 'SIGHT'
+                elif '_sight_' in part_lower:
+                    return self._cache_part_category_name(part_name, 'SIGHT')
+
+                elif '_trigger_' in part_lower:
+                    return self._cache_part_category_name(part_name, 'BODY ACCESSORY')
 
                 elif part_lower.endswith('_boomsickle'):
-                    return 'BOOM SICKLE'
-
-                elif part_lower.endswith('_trigger_fingerbiter') \
-                        or part_lower.endswith('_trigger_hellwalker'):
-                    return 'BODY ACCESSORY'
+                    return self._cache_part_category_name(part_name, 'BOOM SICKLE')
 
                 elif part_lower.endswith('/part_ar_cov_scopemount'):
-                    return 'RAIL'
+                    return self._cache_part_category_name(part_name, 'RAIL')
 
                 elif part_lower.endswith('/part_sg_jak_body') \
                         or part_lower.endswith('/part_ps_mal_body') \
                         or part_lower.endswith('/part_ps_vla_body'):
-                    return 'BODY'
+                    return self._cache_part_category_name(part_name, 'BODY')
 
                 break
 
-        return None
+        return self._cache_part_category_name(part_name, None)
 
     def get_parts_category_name(self, part_names, balance_name, cat_idx):
         """
@@ -563,6 +578,8 @@ class BL3Data(object):
                 # IRON SIGHTS vs. RAIL
                 contention = False
                 label_text = 'RAIL'
+
+        #print('{}, {}: {} (from {})'.format(balance_name, cat_idx, valid_labels, len(part_names)))
 
         # Return
         if contention:

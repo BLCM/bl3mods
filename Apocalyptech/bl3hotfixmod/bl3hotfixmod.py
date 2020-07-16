@@ -643,6 +643,16 @@ class Balance(object):
     Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
+    # PartSet mode mappings
+    (PS_MODE_COMPLETE, PS_MODE_ADDITIVE, PS_MODE_SELECTIVE) = range(3)
+    PS_MODE_MAPPING = {
+            'EActorPartReplacementMode::Complete': PS_MODE_COMPLETE,
+            # Additive is the default and will likely never actually show up in dumps
+            'EActorPartReplacementMode::Additive': PS_MODE_ADDITIVE,
+            'EActorPartReplacementMode::Selective': PS_MODE_SELECTIVE,
+            }
+    PS_MODE_DEFAULT = PS_MODE_ADDITIVE
+
     def __init__(self, bal_name, partset_name, part_type_enum=None, raw_bal_data=None, raw_ps_data=None):
         """
         `part_type_enum` is a PartTypeEnum object name which will be used if partlists are added via
@@ -671,34 +681,90 @@ class Balance(object):
         last_bit = bal_name.split('/')[-1]
         bal_data = bal_obj[0]
 
-        # Load in part list from balance (grouping it as it would be done in a PartSet.
+        # Now.  *Previously* we would read parts in right from the Balance itself, but it turns out
+        # that we can't always trust the "cached" RuntimePartList in the Balance object.
+        # Specifically the DLC3 patch introduced some new parts for COMs which aren't present in
+        # the on-disk Balance data, and while investigating that, it turns out we're being lied to
+        # about a couple Artifact parts from the balance as well.  So, we *do*, in the end, have
+        # to build the part lists from all the various PartSet objects which are used by the
+        # game at runtime to generate RuntimePartList.  Again, this does nearly always match the
+        # on-disk data for that attr, but not always, so let's Do The Right Thing here.
+
+        # Get a list of PartSets that we need to process
+        partset_names = []
+        cur_bal_data = bal_data
+        while True:
+            partset_names.append(cur_bal_data['PartSetData'][1])
+            if 'BaseSelectionData' in cur_bal_data and type(cur_bal_data['BaseSelectionData']) == list:
+                cur_bal_data = data.get_data(cur_bal_data['BaseSelectionData'][1])[0]
+            else:
+                break
+
+        # Loop through the partset objects (note that we need to do the above list in reverse)
+        # to grab parts by category, overwriting/appending where instructed to by the
+        # PartSet object.
         partlists = []
-        for toc in bal_data['RuntimePartList']['PartTypeTOC']:
-            partlist = []
-            for part_idx in range(toc['StartIndex'], toc['StartIndex']+toc['NumParts']):
-                partdata = bal_data['RuntimePartList']['AllParts'][part_idx]['PartData']
-                weight = BVC.from_data_struct(bal_data['RuntimePartList']['AllParts'][part_idx]['Weight'])
-                if 'export' in partdata:
-                    partlist.append(('None', weight))
+        partset_name = None
+        partset_obj = None
+        for partset_name in reversed(partset_names):
+            partset_data = data.get_data(partset_name)[0]
+
+            # Figure out the mode of the PartSet APLs
+            if 'ActorPartReplacementMode' in partset_data:
+                partset_mode = Balance.PS_MODE_MAPPING[partset_data['ActorPartReplacementMode']]
+            else:
+                partset_mode = Balance.PS_MODE_DEFAULT
+
+            # Loop through the APLs
+            for idx, category in enumerate(partset_data['ActorPartLists']):
+
+                # Make sure our partlists list is big enough
+                if len(partlists) < (idx+1):
+                    partlists.append([])
+
+                # Behavior for each APL depends on what the mode is
+                if partset_mode == Balance.PS_MODE_COMPLETE:
+                    # First up: Complete
+                    partlists[idx] = []
+                    if category['bEnabled']:
+                        for part in category['Parts']:
+                            partdata = part['PartData']
+                            weight = BVC.from_data_struct(part['Weight'])
+                            if type(part['PartData']) == list:
+                                partlists[idx].append((partdata[1], weight))
+                            else:
+                                partlists[idx].append(('None', weight))
+
+                elif partset_mode == Balance.PS_MODE_ADDITIVE:
+                    # Next: Additive
+                    if category['bEnabled']:
+                        for part in category['Parts']:
+                            partdata = part['PartData']
+                            weight = BVC.from_data_struct(part['Weight'])
+                            if type(part['PartData']) == list:
+                                partlists[idx].append((partdata[1], weight))
+                            else:
+                                partlists[idx].append(('None', weight))
+
+                elif partset_mode == Balance.PS_MODE_SELECTIVE:
+                    # Finally: Selective
+                    if category['bEnabled']:
+                        partlists[idx] = []
+                        for part in category['Parts']:
+                            partdata = part['PartData']
+                            weight = BVC.from_data_struct(part['Weight'])
+                            if type(part['PartData']) == list:
+                                partlists[idx].append((partdata[1], weight))
+                            else:
+                                partlists[idx].append(('None', weight))
+
                 else:
-                    partlist.append((partdata[1], weight))
-            partlists.append(partlist)
+                    # Not sure how we'd ever get here...
+                    raise Exception('Unknown partset mode: {}'.format(partset_mode))
 
-        # Load our PartSet
-        partset_name = bal_data['PartSetData'][1]
-        partset_obj = data.get_data(partset_name)
-        if len(partset_obj) != 1:
-            raise Exception('Unknown export count ({}) for: {}'.format(len(partset_obj), partset_name))
-        partset_data = partset_obj[0]
-
-        # Sanity check
-        if len(partlists) != len(partset_data['ActorPartLists']):
-            raise Exception('Balance partlist count ({}) does not match PartSet partlist count ({}) - {} vs {}'.format(
-                len(partlists),
-                len(partset_data['ActorPartLists']),
-                bal_name,
-                partset_name,
-                ))
+        # Doublecheck we have a partset (don't know how we'd get here)
+        if partset_name is None or partset_data is None:
+            raise Exception('No Partset found')
 
         # Check to see if we have consensus about the PartTypeEnum
         part_type_enum = None
@@ -736,6 +802,16 @@ class Balance(object):
                     use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
                     enabled=apl['bEnabled'])
             for part, weight in partlist:
+                # Weird data mangling here.  A couple of artifacts seem to reference
+                # Artifact_Part_Stats_FireDamage and Artifact_Part_Stats_CryoDamage in
+                # their JWP serializations, but both should have a `_2` suffix (all
+                # the other artifacts already do that).  There is no valid object
+                # *without* that `_2` suffix, so we're gonna cheat and alter the name
+                # if we need to.
+                if part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage':
+                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_FireDamage_2'
+                elif part == '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage':
+                    part = '/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Elemental/Artifact_Part_Stats_CryoDamage_2'
                 partcat.add_part_name(part, weight=weight)
             bal.add_category(partcat)
 
