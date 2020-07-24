@@ -223,20 +223,27 @@ class BL3Data(object):
 
         return self.cache[obj_name]
 
-    def find(self, base, prefix):
+    def find(self, base, prefix, exact=False):
         """
         Given a base object path `base`, recursively search through to find any
         objects with the prefix `prefix`.  Will match case-insensitively.  Will
-        yield the object names as they're found.
+        yield the object names as they're found.  If `exact` is `True`, this will
+        only match on exact object names, rather than a prefix.
         """
         prefix_lower = prefix.lower()
+        if exact:
+            full_match = '{}.uasset'.format(prefix_lower)
         base_dir = '{}{}'.format(self.data_dir, base)
         results = []
         for (dirpath, dirnames, filenames) in os.walk(base_dir):
             obj_base = dirpath[len(self.data_dir):]
             for filename in filenames:
-                if filename.lower().startswith(prefix_lower) and filename.endswith('.uasset'):
-                    yield os.path.join(obj_base, filename[:-7])
+                if exact:
+                    if filename.lower() == full_match:
+                        yield os.path.join(obj_base, filename[:-7])
+                else:
+                    if filename.lower().startswith(prefix_lower) and filename.endswith('.uasset'):
+                        yield os.path.join(obj_base, filename[:-7])
 
     def find_data(self, base, prefix):
         """
