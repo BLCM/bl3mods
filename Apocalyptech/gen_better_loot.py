@@ -366,10 +366,6 @@ for (label, row_name, char_name) in [
         ('Borman Nates', 'BoremanNates', 'BPChar_PsychoRare02'),
         ('Chonk Stomp', 'ChonkStomp', 'BPChar_Saurian_Hunt01'),
         ('Chupacabratch', 'Chupacabratch', 'BPChar_Ratch_Hunt01'),
-        ('Crawley Family (Cybil)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaA'),
-        ('Crawley Family (Edie)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaB'),
-        ('Crawley Family (Martha)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaC'),
-        ('Crawley Family (Matty)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaD'),
         ('Crushjaw', 'Crushjaw', 'BPChar_GoonBounty01'),
         ('DJ Deadsk4g', 'DJBlood', 'BPChar_Enforcer_Bounty02'),
         # I don't think this is used...
@@ -389,7 +385,7 @@ for (label, row_name, char_name) in [
         ('Hot Karl', 'Roadblock', 'BPChar_Enforcer_Bounty01'),
         ('I\'m Rakkman', 'Rakkman', 'BPChar_Rakkman'),
         # Don't think this is used...
-        #('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
+        #('IndoTyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
         ('Jabbermogwai', 'Jabbermogwai', 'BPChar_Ape_Hunt01'),
         ('Judge Hightower', 'JudgeHightower', 'BPChar_AtlasSoldier_Bounty01'),
         ('Katagawa Ball', 'KatagawaBall', 'BPChar_Oversphere_KatagawaSphere'),
@@ -421,6 +417,22 @@ for (label, row_name, char_name) in [
 
     mod.comment(label)
     set_legendary_odds(mod, char_name, row_name, 1)
+    mod.newline()
+
+# Doing some special-cases for when we don't *actually* want a 100% droprate...
+for (label, row_name, char_name, rate) in [
+        # There will be four of the Crawly family, and only two items in their shared pool.
+        # Gonna drop them from 100% -> 75%.  Really we'd only have to key this off of a
+        # single one of these, I think (presumably `LarvaA` would work), but will go ahead
+        # and continue doing it to all of them.
+        ('Crawley Family (Cybil)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaA', 0.75),
+        ('Crawley Family (Edie)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaB', 0.75),
+        ('Crawley Family (Martha)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaC', 0.75),
+        ('Crawley Family (Matty)', 'LavenderCrawly', 'BPChar_VarkidHunt02_LarvaD', 0.75),
+        ]:
+
+    mod.comment(label)
+    set_legendary_odds(mod, char_name, row_name, rate)
     mod.newline()
 
 # Maliwan Takedown Bosses
@@ -609,11 +621,11 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
 mod.reg_hotfix(Mod.CHAR, 'BPChar_KJR',
         '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa',
         'Quantity',
-        '(BaseValueConstant=4)')
+        '(BaseValueConstant=3)')
 mod.newline()
 
-# Graveward!  Adding in the Earworm from the Week 1 event.  Note that
-# the MH4/MT patch brings the total item count to 5.
+# Graveward!  Adding in the Earworm from the Week 1 event.  Note that the Lob gets
+# added in here after the fact.
 mod.comment('Graveward')
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward',
@@ -640,7 +652,7 @@ mod.reg_hotfix(Mod.PATCH, '',
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward',
         'Quantity',
-        '(BaseValueConstant=5)')
+        '(BaseValueConstant=4)')
 mod.newline()
 
 # Guaranteed drop from Troy (this may actually already be the default -- it looks like
@@ -730,7 +742,7 @@ mod.comment('Dinklebot')
 set_death_pools(mod, 'BPChar_OversphereRare01',
         '/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01',
         pools=[
-            ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns', 3),
+            ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns', 2),
             ],
         )
 mod.newline()
@@ -764,23 +776,52 @@ for (label, bpchar, obj_name) in [
             BVCF())
     mod.newline()
 
-# Mayhem 4 / Maliwan Takedown additions, using the CharacterItemPoolExpansions_Raid1 object
+# Alterations to CharacterItemPoolExpansions_Raid1 drops, added with Mayhem 4 / Maliwan Takedown,
+# but since expanded a number of times
 for char_name, idx, num in [
-        ('Aurelia', 42, 2),
+
+        # Original set, base-game chars
+        ('Aurelia', 42, 1),
         ('Holy Dumptruck', 43, 1),
         ('Mouthpiece', 44, 2),
         # Sylestro spawns with Atomic, reducing this from 3 to 2
         ('Sylestro', 50, 2),
-        # Capt. Traunt gets an extra +1 from Mayhem 2.0
-        ('Captain Traunt', 51, 4),
-        # General Traunt also gets an extra +1 from Mayhem 2.0
-        ('General Traunt', 52, 4),
+        ('Captain Traunt', 51, 2),
+        ('General Traunt', 52, 2),
         ('Billy, The Anointed', 53, 3),
-        ('Brood Mother', 55, 3),
+        # Brood Mother's entry in here is now empty, as of 2020-07-23
+        #('Brood Mother', 55, 3),
         ('Antalope', 63, 3),
         ('Warty', 64, 2),
         ('Captain Thunk', 65, 2),
-        ('Troy Calypso', 72, 2),
+        ('Troy Calypso', 72, 1),
+
+        # Added in the 2020-07-23 patch
+        ('Anointed X-2', 75, 2),
+        ('Anointed X-4', 77, 2),
+        ('Archer Rowe', 93, 2),
+        ('Azalea', 98, 2),
+        ('Big Donny', 78, 2),
+        ('Buttmunch', 88, 1),
+        ('Dreg/Rage', 85, 1),
+        ('King Bobo', 96, 2),
+        ('King Gnasher', 97, 2),
+        ('Lt. Preston', 99, 2),
+        ('Max', 92, 1),
+        ('Queen Ant Wanette', 80, 2),
+        ('Rachael, the Anointed', 83, 2),
+        ('Rax', 91, 1),
+        ('Red Jabber', 84, 2),
+        ('Sheega', 90, 2),
+        ('Shiv', 74, 2),
+        ('The Big-D', 79, 1),
+        ('Tink-Train', 82, 2),
+        ('Trufflemunch', 89, 1),
+        ('Tumorhead', 94, 2),
+        ('Turnkey Tim', 95, 2),
+        ('Undertaker', 87, 2),
+        ('Vermilingua', 81, 2),
+        ('Vice', 86, 1),
 
         # Slaughters
         ('Tremendous Rex', 59, 2),
@@ -789,12 +830,12 @@ for char_name, idx, num in [
         ('Blue Fire', 46, 2),
 
         # Trials (all legendary COMs)
-        ('Hag of Fervor', 48, 3),
-        ('Sera of Supremacy', 49, 4),
-        ('Arbalest of Discipline', 54, 5),
-        ('Tyrant of Instinct', 60, 4),
-        ('Skag of Survival', 62, 3),
-        ('Tink of Cunning', 66, 4),
+        ('Hag of Fervor', 48, 2),
+        ('Sera of Supremacy', 49, 2),
+        ('Arbalest of Discipline', 54, 2),
+        ('Tyrant of Instinct', 60, 2),
+        ('Skag of Survival', 62, 2),
+        ('Tink of Cunning', 66, 2),
 
         ]:
     # This object's available right from the main menu no need to do CHAR-based
@@ -813,7 +854,7 @@ for char_name, idx, num in [
 # M4/MT additions which we're adding to or altering in some way
 for char_name, idx, pools in [
         # Keeping the week 2 guaranteed-cosmetic on here
-        ('Indo Tyrant', 58, [
+        ('IndoTyrant', 58, [
             ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant', num=3),
             ItemPoolListEntry('/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'),
             ]),
@@ -824,7 +865,7 @@ for char_name, idx, pools in [
             ]),
         # Keeping the week 2 Legendary Artifact drop
         ('Mother of Grogans', 73, [
-            ItemPoolListEntry('/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot'),
+            ItemPoolListEntry('/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot', num=2),
             ItemPoolListEntry('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'),
             ]),
         # Power Troopers - adding in the Week 2 legendary COMs - keeping the drop count for the
@@ -855,6 +896,39 @@ for char_name, idx, pools in [
             '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1',
             'CharacterExpansions.CharacterExpansions_Value[{}].DropOnDeathItemPools.ItemPools'.format(idx),
             '({})'.format(','.join([str(pool) for pool in pools])))
+    mod.newline()
+
+# These three drops were added on the 2020-07-23 patch, and use a "generic" bpchar which is being
+# altered a bit by SpawnOptions objects.  Those objects just set a single pool which is guaranteed
+# to drop, so the pools contain an `ItemPool_Guns_All` entry at the end to control the drop rate.
+# We'll set those entries to weight 0, and set quantities as-appropriate
+for char_name, char_obj, pool_name, qty in [
+        ('Artemis', 'BPChar_ApeBadass',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Artemis',
+            2),
+        ('Mincemeat', 'BPChar_PsychoBadass',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Mincemeat',
+            1),
+        ('Muldock, the Anointed', 'BPChar_EnforcerAnointed',
+            '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Muldock',
+            2),
+
+        # Private Beans (runnable version) also gets a Westergun via this method.  May as well
+        # make that guaranteed
+        ('Private Beans (runnable)', 'BPChar_NogBeans',
+            '/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/ItemPool_InvasionOfPrivacy_BeansRunnable',
+            1),
+        ]:
+    mod.comment(char_name)
+    mod.reg_hotfix(Mod.CHAR, char_obj,
+            pool_name,
+            'Quantity',
+            BVC(bvc=qty))
+    # The `ItemPool_Guns_All` entry to clear will always be the last one
+    mod.reg_hotfix(Mod.CHAR, char_obj,
+            pool_name,
+            'BalancedItems.BalancedItems[{}].Weight.BaseValueScale'.format(qty),
+            BVCF(bvc=0))
     mod.newline()
 
 # Mayhem 2.0 Gear Additions.  Yet another way of doing it, yay!
@@ -900,46 +974,46 @@ for (label, char_name, pool, quantity) in [
         # So it evens out.
         #('Psychobillies (Billy)', 'BPChar_Punk_Bounty01a', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls.ItemPool_ElectricBanjo_GoreGirls', 4),
         ('Anointed Alpha', 'BPChar_AnointedJoe', '/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe', 3),
-        ('Jabbermogwai', 'BPChar_Ape_Hunt01', '/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/ItemPool_Ape01_Hunt.ItemPool_Ape01_Hunt', 3),
-        ('Judge Hightower', 'BPChar_AtlasSoldier_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower', 3),
-        ('Hot Karl', 'BPChar_Enforcer_Bounty01', '/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/ItemPool_Enforcer_Bounty01.ItemPool_Enforcer_Bounty01', 4),
+        ('Jabbermogwai', 'BPChar_Ape_Hunt01', '/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/ItemPool_Ape01_Hunt.ItemPool_Ape01_Hunt', 2),
+        ('Judge Hightower', 'BPChar_AtlasSoldier_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower', 2),
+        ('Hot Karl', 'BPChar_Enforcer_Bounty01', '/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/ItemPool_Enforcer_Bounty01.ItemPool_Enforcer_Bounty01', 3),
         ('DJ Deadsk4g', 'BPChar_Enforcer_Bounty02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Thumper_DJBlood.ItemPool_Thumper_DJBlood', 3),
-        ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt', 4),
-        ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist', 3),
-        ('Tyreen the Destroyer', 'BPChar_FinalBoss', '/Game/Enemies/FinalBoss/_Shared/_Design/LootPools/ItemPool_FinalBoss_KingsCall.ItemPool_FinalBoss_KingsCall', 3),
-        ('Heckle', 'BPChar_Goliath_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde', 3),
-        ('Warden', 'BPChar_Goliath_CageArena', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden', 4),
+        ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt', 2),
+        ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist', 2),
+        ('Tyreen the Destroyer', 'BPChar_FinalBoss', '/Game/Enemies/FinalBoss/_Shared/_Design/LootPools/ItemPool_FinalBoss_KingsCall.ItemPool_FinalBoss_KingsCall', 2),
+        ('Heckle', 'BPChar_Goliath_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde', 2),
+        ('Warden', 'BPChar_Goliath_CageArena', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden', 2),
         ('The Unstoppable', 'BPChar_Goliath_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable', 3),
         ('Road Dog', 'BPChar_Goliath_Rare02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Redliner_Roaddog.ItemPool_Redliner_Roaddog', 3),
-        ('El Dragon Jr.', 'BPChar_Goliath_Rare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr', 3),
+        ('El Dragon Jr.', 'BPChar_Goliath_Rare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr', 2),
         ('Crushjaw', 'BPChar_GoonBounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_BoneShredder_Crushjaw.ItemPool_BoneShredder_Crushjaw', 3),
-        ('Sloth', 'BPChar_Goon_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth', 3),
-        ('GenIVIV', 'BPChar_MechEvilAI', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV', 5),
+        ('Sloth', 'BPChar_Goon_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth', 2),
+        ('GenIVIV', 'BPChar_MechEvilAI', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV', 3),
         ('Blinding Banshee', 'BPChar_Nekrobug_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Shriek_DevilBug.ItemPool_Shriek_DevilBug', 3),
         ('Baron Noggin', 'BPChar_Nog01_Bounty', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_EMPGrenade_BaronNoggin.ItemPool_EMPGrenade_BaronNoggin', 2),
-        ('Private Beans', 'BPChar_NogBeans', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo.ItemPool_Westergun_TheBoo', 3),
-        ('Gigamind', 'BPChar_NogChipHolder', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind', 3),
+        ('Private Beans', 'BPChar_NogBeans', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo.ItemPool_Westergun_TheBoo', 2),
+        ('Gigamind', 'BPChar_NogChipHolder', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind', 2),
         ('One Punch', 'BPChar_OnePunch', '/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Loot/ItemPool_OnePunch.ItemPool_OnePunch', 2),
-        ('Katagawa Ball', 'BPChar_Oversphere_KatagawaSphere', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall', 4),
+        ('Katagawa Ball', 'BPChar_Oversphere_KatagawaSphere', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall', 2),
         ('Borman Nates', 'BPChar_PsychoRare02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PsychoStabber_BormanNates.ItemPool_PsychoStabber_BormanNates', 3),
         ('Wick', 'BPChar_PsychoRare03', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Portals_VicAndWarty.ItemPool_Portals_VicAndWarty', 2),
-        ('Handsome Jackie', 'BPChar_PunkBounty02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_NimbleJack_HandsomeJackie.ItemPool_NimbleJack_HandsomeJackie', 3),
+        ('Handsome Jackie', 'BPChar_PunkBounty02', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_NimbleJack_HandsomeJackie.ItemPool_NimbleJack_HandsomeJackie', 2),
         ('Phoenix', 'BPChar_Rakk_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PhoenixTears_Phoenix.ItemPool_PhoenixTears_Phoenix', 3),
         ('Skrakk', 'BPChar_Rakk_HuntSkrakk', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Skeksis_Skrakk.ItemPool_Skeksis_Skrakk', 2),
-        ("I'm Rakkman", 'BPChar_Rakkman', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Rakkman_Rakkman.ItemPool_Rakkman_Rakkman', 3),
-        ('Rampager', 'BPChar_Rampager', '/Game/Enemies/PrometheaBoss/_Shared/_Design/LootPools/ItemPool_Rampager_Gun.ItemPool_Rampager_Gun', 4),
-        ('Chupacabratch', 'BPChar_Ratch_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_BloodSucker_Chupacabratch.ItemPool_BloodSucker_Chupacabratch', 3),
-        ('Chonk Stomp', 'BPChar_Saurian_Hunt01', '/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/ItemPool_Saurian01_Hunt.ItemPool_Saurian01_Hunt', 3),
+        ("I'm Rakkman", 'BPChar_Rakkman', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Rakkman_Rakkman.ItemPool_Rakkman_Rakkman', 2),
+        ('Rampager', 'BPChar_Rampager', '/Game/Enemies/PrometheaBoss/_Shared/_Design/LootPools/ItemPool_Rampager_Gun.ItemPool_Rampager_Gun', 2),
+        ('Chupacabratch', 'BPChar_Ratch_Hunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_BloodSucker_Chupacabratch.ItemPool_BloodSucker_Chupacabratch', 2),
+        ('Chonk Stomp', 'BPChar_Saurian_Hunt01', '/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/ItemPool_Saurian01_Hunt.ItemPool_Saurian01_Hunt', 2),
         ('Maxitrillion', 'BPChar_ServiceBot_Rare01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Horizon_Maxitrillion.ItemPool_Horizon_Maxitrillion', 3),
         ('Princess Tarantella II', 'BPChar_SpiderantTarantella', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Hive_Tarantella.ItemPool_Hive_Tarantella', 3),
         # Doublecheck that there's not more than one of these at a time, may not want to up the quantity. - yep, can get two at once.  Keeping this at 2, though.
-        ('Sky Bully', 'BPChar_Tink_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_ShootingStar_SkyBullies.ItemPool_ShootingStar_SkyBullies', 2),
+        ('Sky Bully', 'BPChar_Tink_Bounty01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_ShootingStar_SkyBullies.ItemPool_ShootingStar_SkyBullies', 1),
         ('Lagromar', 'BPChar_TinkDemon', '/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot.ItemPool_DemonDark_DemonTink_Loot', 3),
-        # Atomic an Sylestro spawn at the same time, reducing this from 4 to 2
-        ('Atomic', 'BPChar_Trooper_Bounty01', '/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01', 2),
+        # Atomic an Sylestro spawn at the same time, but the pools for each have been shortened, so bumping this back up to the full pool size
+        ('Atomic', 'BPChar_Trooper_Bounty01', '/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01', 3),
         # Doublecheck that there's not more than one of these at a time, may not want to up the quantity. - yep, this'll spawn four times, omit it.
         #('Crawley Family', 'BPChar_VarkidHunt02_LarvaA', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_PredatoryLending_CrawlyFamily.ItemPool_PredatoryLending_CrawlyFamily', 2),
-        ('Manvark', 'BPChar_VarkidHunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman', 3),
+        ('Manvark', 'BPChar_VarkidHunt01', '/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman', 2),
 
         # Bloody Harvest
         ('Captain Haunt', 'BPChar_HarvestBoss', '/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary', 4),
@@ -1003,6 +1077,19 @@ for (label, char_name, pool, quantity) in [
 # Newer-style quantity, which everything else should really be using.  Namely,
 # NumberOfTimesToSelectFromThisPool.
 for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
+
+        ###
+        ### Base-game additions, with the 2020-07-23 update
+        ###
+        ('Swarm Host / Brood Mother / Vanda',
+            '/Game/Enemies/Nekrobug/_Unique/HopperSwarm/_Design/Character',
+            'BPChar_Nekrobug_HopperSwarm',
+            0,
+            3),
+
+        ###
+        ### DLC2
+        ###
         ("Jackpot the Jack's Bot - Legendary Pool",
             '/Dandelion/Enemies/JackBot/_Shared/_Design/Character',
             'BPChar_JackBot',
@@ -1363,16 +1450,16 @@ mod.newline()
 mod.header('Remove Mayhem 4 Gear Restrictions')
 
 for label, char_name, pool, idx, weight in [
-        ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 2, None),
-        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', 1, None),
+        ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 0, None),
+        ('Aurelia', 'BPChar_AureliaBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', 0, None),
         ('Mr. Titan', 'BPChar_Goliath_SlaughterBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss', 3, None),
-        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', 2, None),
-        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt', 2, None),
-        ('General Traunt', 'BPChar_HeavyDarkTraunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt', 2, None),
-        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss', 2, None),
-        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 4, None),
-        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 3, None),
-        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 1, None),
+        ('Sylestro', 'BPChar_Heavy_Bounty01', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', 0, None),
+        ('Captain Traunt', 'BPChar_Heavy_Traunt', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt', 0, None),
+        ('Anointed X-2', 'BPChar_AnointedX2', 'Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AnointedX2', 0, None),
+        ('Billy, the Anointed', 'BPChar_MansionBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss', 0, None),
+        ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 1, None),
+        ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 1, None),
+        ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 0, None),
         ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
         # I am 99.999% certain that Anathema's Shadow can't actually drop anything, but whatever...
         ("Anathema's Shadow", 'BPChar_GuardianBruteMinibossClone', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', 4, 0.5),
@@ -1489,7 +1576,9 @@ mod.header('Bugfixes')
 # Judge Hightower (and his cronies) have data in PlayThroughs[0].DropOnDeathItemPools which override
 # the actual pools, and causes them to only drop AR ammo.  Clear that out!  (This was fixed officially
 # in GBX's 2020-01-16 hotfix update, though I'm keeping it in here for now because I get an Internet
-# Gold Star for figuring it out before GBX.)
+# Gold Star for figuring it out before GBX.)  As of 2020-07-24, Hightower himself is still being fixed
+# via GBX hotfix, but his crew drops have not.  (I suppose it's possible that the Playthroughs attr
+# was fixed in data in the meantime, but I sort of doubt it.)
 mod.comment('Fix Judge Hightower drops')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
         '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',

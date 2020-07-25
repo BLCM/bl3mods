@@ -203,26 +203,6 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Ratch_Hunt01),/Game/GameData/Loot/ItemPo
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Ratch_Hunt01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Chupacabratch,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Ratch_Hunt01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Chupacabratch,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
 
-# Crawley Family (Cybil)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
-
-# Crawley Family (Edie)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
-
-# Crawley Family (Martha)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
-
-# Crawley Family (Matty)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
-
 # Crushjaw
 SparkCharacterLoadedEntry,(1,2,0,BPChar_GoonBounty01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Crushjaw,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_GoonBounty01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Crushjaw,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
@@ -408,6 +388,26 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoRare03),/Game/GameData/Loot/ItemPo
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoRare03),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,VicandWarty,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoRare03),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,VicandWarty,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
 
+# Crawley Family (Cybil)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaA),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.75
+
+# Crawley Family (Edie)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaB),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.75
+
+# Crawley Family (Martha)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.75
+
+# Crawley Family (Matty)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.75
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,LavenderCrawly,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.75
+
 # Wotan the Invincible
 SparkCharacterLoadedEntry,(1,2,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/GameData/Loot/Table_Legendary_SpecificLootOdds_Raid1.Table_Legendary_SpecificLootOdds_Raid1,RaidBoss,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/GameData/Loot/Table_Legendary_SpecificLootOdds_Raid1.Table_Legendary_SpecificLootOdds_Raid1,RaidBoss,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
@@ -512,11 +512,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Tink/_Unique/
 
 # Katagawa Jr.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm.Balance_MAL_SR_LGD_Storm"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=1)))
-SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,Quantity,0,,(BaseValueConstant=4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Storm_Katagawa.ItemPool_Storm_Katagawa,Quantity,0,,(BaseValueConstant=3)
 
 # Graveward
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave.InvBalD_Artifact_Grave"',Weight=(BaseValueConstant=0.500000)),(InventoryBalanceData=/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/InvBalD_Shield_Ward.InvBalD_Shield_Ward"',Weight=(BaseValueConstant=0.500000)),(InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Earworm/Balance/Balance_DAL_AR_Earworm.Balance_DAL_AR_Earworm"',Weight=(BaseValueConstant=0.500000)))
-SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward,Quantity,0,,(BaseValueConstant=5)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Unique/ItemPool_GraveandWard_Graveward.ItemPool_GraveandWard_Graveward,Quantity,0,,(BaseValueConstant=4)
 
 # Troy
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/NonPlayerCharacters/Troy/_TheBoss/_Design/Character/BPChar_TroyBoss.BPChar_TroyBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -543,7 +543,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01d),/Game/Enemies/Punk_Femal
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns,BalancedItems[0].Weight.BaseValueConstant,0,,0
 
 # Dinklebot
-SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)))
+SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=2)))
 
 # Loot Skritaari
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionLoot),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_Hib_MinionLoot.ItemPoolList_Hib_MinionLoot,ItemPools.ItemPools[12].PoolProbability.BaseValueConstant,0,,1
@@ -580,7 +580,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantTarantella),/Game/Enemies/Spide
 
 # Aurelia
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[42].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[42].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[42].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
 
 # Holy Dumptruck
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[43].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -596,19 +596,15 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 
 # Captain Traunt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # General Traunt
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[52].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Billy, The Anointed
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[53].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[53].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
-
-# Brood Mother
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[55].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[55].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
 
 # Antalope
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[63].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -624,7 +620,107 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 
 # Troy Calypso
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[72].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[72].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[72].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Anointed X-2
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[75].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[75].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Anointed X-4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[77].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[77].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Archer Rowe
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[93].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[93].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Azalea
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[98].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[98].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Big Donny
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[78].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[78].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Buttmunch
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[88].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[88].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Dreg/Rage
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[85].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[85].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# King Bobo
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[96].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[96].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# King Gnasher
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[97].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[97].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Lt. Preston
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[99].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[99].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Max
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[92].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[92].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Queen Ant Wanette
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[80].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[80].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Rachael, the Anointed
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[83].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[83].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Rax
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[91].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[91].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Red Jabber
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[84].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[84].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Sheega
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[90].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[90].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Shiv
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[74].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[74].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# The Big-D
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[79].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[79].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Tink-Train
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[82].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[82].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Trufflemunch
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[89].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[89].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
+
+# Tumorhead
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[94].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[94].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Turnkey Tim
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[95].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[95].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Undertaker
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[87].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[87].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Vermilingua
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[81].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[81].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
+
+# Vice
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[86].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[86].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,1
 
 # Tremendous Rex
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[59].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -644,36 +740,36 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 
 # Hag of Fervor
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[48].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[48].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[48].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Sera of Supremacy
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Arbalest of Discipline
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[54].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[54].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,5
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[54].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Tyrant of Instinct
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[60].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[60].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[60].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Skag of Survival
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[62].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[62].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[62].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
 # Tink of Cunning
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[66].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[66].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,4
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[66].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,2
 
-# Indo Tyrant
+# IndoTyrant
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[58].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant.ItemPool_IndoTyrant"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=3)),(ItemPool=ItemPool'"/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc.ItemPool_SkinsAndMisc"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
 
 # Demoskaggon
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[61].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"',PoolProbability=(BaseValueConstant=0.5),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)),(ItemPool=ItemPool'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=2)))
 
 # Mother of Grogans
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[73].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)),(ItemPool=ItemPool'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[73].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Loot/ItemPool_MotherOfDragons_Loot.ItemPool_MotherOfDragons_Loot"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=2)),(ItemPool=ItemPool'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
 
 # Black Force Trooper (Onyx)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[67].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper01.ItemPool_PowerTrooper01"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)),(ItemPool=ItemPool'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
@@ -689,6 +785,22 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/C
 
 # Sapphire Force Trooper (Sapphire)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[71].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPool'"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_PowerTrooper02.ItemPool_PowerTrooper02"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)),(ItemPool=ItemPool'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',PoolProbability=(BaseValueConstant=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1)))
+
+# Artemis
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ApeBadass),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Artemis.ItemPool_Artemis,Quantity,0,,(BaseValueConstant=2)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ApeBadass),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Artemis.ItemPool_Artemis,BalancedItems.BalancedItems[2].Weight.BaseValueScale,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Mincemeat
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadass),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Mincemeat.ItemPool_Mincemeat,Quantity,0,,(BaseValueConstant=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadass),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Mincemeat.ItemPool_Mincemeat,BalancedItems.BalancedItems[1].Weight.BaseValueScale,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Muldock, the Anointed
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerAnointed),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Muldock.ItemPool_Muldock,Quantity,0,,(BaseValueConstant=2)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerAnointed),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Muldock.ItemPool_Muldock,BalancedItems.BalancedItems[2].Weight.BaseValueScale,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Private Beans (runnable)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/ItemPool_InvasionOfPrivacy_BeansRunnable.ItemPool_InvasionOfPrivacy_BeansRunnable,Quantity,0,,(BaseValueConstant=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/ItemPool_InvasionOfPrivacy_BeansRunnable.ItemPool_InvasionOfPrivacy_BeansRunnable,BalancedItems.BalancedItems[1].Weight.BaseValueScale,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Killavolt - Mayhem 6 Requirement Removal
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary.ItemPoolExpansion_Mayhem2_AR_Legendary,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -726,31 +838,31 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_KJR),/Game/PatchDLC/Mayhem2/Gear/ItemPoo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Jabbermogwai
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Ape_Hunt01),/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/ItemPool_Ape01_Hunt.ItemPool_Ape01_Hunt,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ape_Hunt01),/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/ItemPool_Ape01_Hunt.ItemPool_Ape01_Hunt,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Judge Hightower
-SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Sabre_JudgeHightower.ItemPool_Sabre_JudgeHightower,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Hot Karl
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/ItemPool_Enforcer_Bounty01.ItemPool_Enforcer_Bounty01,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/ItemPool_Enforcer_Bounty01.ItemPool_Enforcer_Bounty01,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # DJ Deadsk4g
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Thumper_DJBlood.ItemPool_Thumper_DJBlood,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Killavolt
-SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerKillavolt),/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Weapon/ItemPool_KillaVolt_Ninevolt.ItemPool_KillaVolt_Ninevolt,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Urist McEnforcer
-SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerUrist),/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerUrist),/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/ItemPool_EnforcerUrist.ItemPool_EnforcerUrist,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Tyreen the Destroyer
-SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/Enemies/FinalBoss/_Shared/_Design/LootPools/ItemPool_FinalBoss_KingsCall.ItemPool_FinalBoss_KingsCall,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FinalBoss),/Game/Enemies/FinalBoss/_Shared/_Design/LootPools/ItemPool_FinalBoss_KingsCall.ItemPool_FinalBoss_KingsCall,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Heckle
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Pestilence_HeckleandHyde.ItemPool_Pestilence_HeckleandHyde,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Warden
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Freeman_Warden.ItemPool_Freeman_Warden,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # The Unstoppable
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool__BandsofSytorak_Unstoppable.ItemPool__BandsofSytorak_Unstoppable,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -759,16 +871,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/GameData/Loot/Item
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Redliner_Roaddog.ItemPool_Redliner_Roaddog,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # El Dragon Jr.
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_UnleashTheDragon_ElDragonJr.ItemPool_UnleashTheDragon_ElDragonJr,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Crushjaw
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GoonBounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_BoneShredder_Crushjaw.ItemPool_BoneShredder_Crushjaw,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Sloth
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth.ItemPool_Piss_ThunkandSloth,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # GenIVIV
-SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,Quantity,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MechEvilAI),/Game/GameData/Loot/ItemPools/Unique/ItemPool_MessyBreakup_GeneVIV.ItemPool_MessyBreakup_GeneVIV,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Blinding Banshee
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Shriek_DevilBug.ItemPool_Shriek_DevilBug,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -777,16 +889,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_Hunt01),/Game/GameData/Loot/Ite
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nog01_Bounty),/Game/GameData/Loot/ItemPools/Unique/ItemPool_EMPGrenade_BaronNoggin.ItemPool_EMPGrenade_BaronNoggin,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Private Beans
-SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo.ItemPool_Westergun_TheBoo,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Westergun_TheBoo.ItemPool_Westergun_TheBoo,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Gigamind
-SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_NogChipHolder),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Spidermind_Gigamind.ItemPool_Spidermind_Gigamind,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # One Punch
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OnePunch),/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Loot/ItemPool_OnePunch.ItemPool_OnePunch,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Katagawa Ball
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Tsunami_KatagawaBall.ItemPool_Tsunami_KatagawaBall,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Borman Nates
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_PsychoStabber_BormanNates.ItemPool_PsychoStabber_BormanNates,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -795,7 +907,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare02),/Game/GameData/Loot/ItemPo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoRare03),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Portals_VicAndWarty.ItemPool_Portals_VicAndWarty,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Handsome Jackie
-SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkBounty02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_NimbleJack_HandsomeJackie.ItemPool_NimbleJack_HandsomeJackie,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkBounty02),/Game/GameData/Loot/ItemPools/Unique/ItemPool_NimbleJack_HandsomeJackie.ItemPool_NimbleJack_HandsomeJackie,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Phoenix
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_PhoenixTears_Phoenix.ItemPool_PhoenixTears_Phoenix,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -804,16 +916,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_Hunt01),/Game/GameData/Loot/ItemPoo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_HuntSkrakk),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Skeksis_Skrakk.ItemPool_Skeksis_Skrakk,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # I'm Rakkman
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakkman),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Rakkman_Rakkman.ItemPool_Rakkman_Rakkman,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakkman),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Rakkman_Rakkman.ItemPool_Rakkman_Rakkman,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Rampager
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/LootPools/ItemPool_Rampager_Gun.ItemPool_Rampager_Gun,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/LootPools/ItemPool_Rampager_Gun.ItemPool_Rampager_Gun,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Chupacabratch
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Ratch_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_BloodSucker_Chupacabratch.ItemPool_BloodSucker_Chupacabratch,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ratch_Hunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_BloodSucker_Chupacabratch.ItemPool_BloodSucker_Chupacabratch,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Chonk Stomp
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_Hunt01),/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/ItemPool_Saurian01_Hunt.ItemPool_Saurian01_Hunt,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_Hunt01),/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/ItemPool_Saurian01_Hunt.ItemPool_Saurian01_Hunt,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Maxitrillion
 SparkCharacterLoadedEntry,(1,1,0,BPChar_ServiceBot_Rare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Horizon_Maxitrillion.ItemPool_Horizon_Maxitrillion,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -822,16 +934,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_ServiceBot_Rare01),/Game/GameData/Loot/I
 SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantTarantella),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Hive_Tarantella.ItemPool_Hive_Tarantella,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Sky Bully
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_ShootingStar_SkyBullies.ItemPool_ShootingStar_SkyBullies,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_Bounty01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_ShootingStar_SkyBullies.ItemPool_ShootingStar_SkyBullies,Quantity,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Lagromar
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkDemon),/Game/Enemies/Tink/_Unique/Demon/_Design/Loot/ItemPool_DemonDark_DemonTink_Loot.ItemPool_DemonDark_DemonTink_Loot,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Atomic
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Bounty01),/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Bounty01),/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/ItemPool_Trooper_Bounty01.ItemPool_Trooper_Bounty01,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Manvark
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman,Quantity,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_Headsplosion_Mothman.ItemPool_Headsplosion_Mothman,Quantity,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Captain Haunt
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -874,6 +986,10 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Ta
 
 # Scourge the Invincible Martyr
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBoss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss.ItemPool_TD2_Boss,Quantity,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Swarm Host / Brood Mother / Vanda
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperSwarm),/Game/Enemies/Nekrobug/_Unique/HopperSwarm/_Design/Character/BPChar_Nekrobug_HopperSwarm.BPChar_Nekrobug_HopperSwarm_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperSwarm),/Game/Enemies/Nekrobug/_Unique/HopperSwarm/_Design/Character/BPChar_Nekrobug_HopperSwarm.BPChar_Nekrobug_HopperSwarm_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Jackpot the Jack's Bot - Legendary Pool
 SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Character/BPChar_JackBot.BPChar_JackBot_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -1115,34 +1231,34 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_UpperHalf),/Game/PatchDLC/Raid1/GameData
 ###
 
 # Rampager
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun.ItemPoolExpansion_Rampager_Gun,BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun.ItemPoolExpansion_Rampager_Gun,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Aurelia
-SparkCharacterLoadedEntry,(1,1,0,BPChar_AureliaBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss.ItemPool_AureliaBoss,BalancedItems[1].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AureliaBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss.ItemPool_AureliaBoss,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Mr. Titan
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_SlaughterBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/Itempool_CoVSlaughterBoss.Itempool_CoVSlaughterBoss,BalancedItems[3].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Sylestro
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Bounty01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro.ItemPool_Sylvestro,BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Bounty01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro.ItemPool_Sylvestro,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Captain Traunt
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# General Traunt
-SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyDarkTraunt),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_GenTraunt.ItemPool_GenTraunt,BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# Anointed X-2
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedX2),Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AnointedX2.ItemPool_AnointedX2,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Billy, the Anointed
-SparkCharacterLoadedEntry,(1,1,0,BPChar_MansionBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss,BalancedItems[2].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MansionBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_MansionBoss.ItemPool_MansionBoss,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Arbalest of Discipline
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Mech_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech,BalancedItems[4].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Mech_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech,BalancedItems[1].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Tink of Cunning
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems[3].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems[1].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Troy Calypso
-SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated,BalancedItems[1].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated.ItemPool_TroyDedicated,BalancedItems[0].Weight,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Anathema the Relentless
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems[3].Weight,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
