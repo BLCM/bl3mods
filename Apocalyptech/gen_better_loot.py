@@ -759,6 +759,29 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_MinionLoot',
         1)
 mod.newline()
 
+# The 2020-07-23 update rearranged loot all over the place, and in the process lost the drop
+# for the Firestorm grenade mod entirely, which used to come from Captain Traunt.  Adding it
+# back in to Captain Traunt, for want of anywhere "better" to put it.
+mod.comment('Add Firestorm Grenade Mod back to Captain Traunt')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Heavy_Traunt',
+        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm.InvBalD_GM_VLA_FireStorm,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm.InvBalD_GM_VLA_FireStorm"',
+                Weight=(BaseValueConstant=1)
+            )
+        )
+        """)
+mod.newline()
+
 # Some more guaranteed drops which were taken from the Week 2 event
 for (label, bpchar, obj_name) in [
         ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE'),
@@ -788,7 +811,7 @@ for char_name, idx, num in [
         ('Holy Dumptruck', 43, 1),
         ('Mouthpiece', 44, 2),
         ('Sylestro', 50, 1),
-        ('Captain Traunt', 51, 2),
+        ('Captain Traunt', 51, 3),
         ('General Traunt', 52, 2),
         ('Billy, The Anointed', 53, 3),
         # Brood Mother's entry in here is now empty, as of 2020-07-23
@@ -853,7 +876,7 @@ for char_name, idx, num in [
             num)
     mod.newline()
 
-# M4/MT additions which we're adding to or altering in some way
+# Alterations to the `CharacterItemPoolExpansions_Raid1` object
 for char_name, idx, pools in [
         # Keeping the week 2 guaranteed-cosmetic on here
         ('Indo Tyrant', 58, [
