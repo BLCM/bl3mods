@@ -385,7 +385,7 @@ for (label, row_name, char_name) in [
         ('Hot Karl', 'Roadblock', 'BPChar_Enforcer_Bounty01'),
         ('I\'m Rakkman', 'Rakkman', 'BPChar_Rakkman'),
         # Don't think this is used...
-        #('IndoTyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
+        #('Indo Tyrant', 'IndoTyrant', 'BPChar_Saurian_Rare01'),
         ('Jabbermogwai', 'Jabbermogwai', 'BPChar_Ape_Hunt01'),
         ('Judge Hightower', 'JudgeHightower', 'BPChar_AtlasSoldier_Bounty01'),
         ('Katagawa Ball', 'KatagawaBall', 'BPChar_Oversphere_KatagawaSphere'),
@@ -726,12 +726,15 @@ for letter in ['a', 'b', 'c', 'd']:
 mod.newline()
 
 # Loot O' Gram (obviously not a boss, but them's the breaks)
-# The first item in the pool is a "common" gun drop, the rest are the uniques
+# The first item in the pool is a "common" gun drop, the rest are the uniques.  Note
+# that because we set Dinklebot to drop directly from this, we'll have to do this
+# in Skywell-27 (we'll continue to do it in Sanctuary as well)
 mod.comment("Loot O' Gram")
-mod.reg_hotfix(Mod.LEVEL, 'Sanctuary3_P',
-        '/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns',
-        'BalancedItems[0].Weight.BaseValueConstant',
-        0)
+for level in ['Sanctuary3_P', 'OrbitalPlatform_P']:
+    mod.reg_hotfix(Mod.LEVEL, level,
+            '/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns',
+            'BalancedItems[0].Weight.BaseValueConstant',
+            0)
 mod.newline()
 
 # Dinklebot -- this ordinarily drops the Loot O' Gram item itself, which must be
@@ -784,8 +787,7 @@ for char_name, idx, num in [
         ('Aurelia', 42, 1),
         ('Holy Dumptruck', 43, 1),
         ('Mouthpiece', 44, 2),
-        # Sylestro spawns with Atomic, reducing this from 3 to 2
-        ('Sylestro', 50, 2),
+        ('Sylestro', 50, 1),
         ('Captain Traunt', 51, 2),
         ('General Traunt', 52, 2),
         ('Billy, The Anointed', 53, 3),
@@ -797,7 +799,7 @@ for char_name, idx, num in [
         ('Troy Calypso', 72, 1),
 
         # Added in the 2020-07-23 patch
-        ('Anointed X-2', 75, 2),
+        ('Anointed X-2 (and X-3)', 75, 1),
         ('Anointed X-4', 77, 2),
         ('Archer Rowe', 93, 2),
         ('Azalea', 98, 2),
@@ -854,7 +856,7 @@ for char_name, idx, num in [
 # M4/MT additions which we're adding to or altering in some way
 for char_name, idx, pools in [
         # Keeping the week 2 guaranteed-cosmetic on here
-        ('IndoTyrant', 58, [
+        ('Indo Tyrant', 58, [
             ItemPoolListEntry('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_IndoTyrant', num=3),
             ItemPoolListEntry('/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'),
             ]),
