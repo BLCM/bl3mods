@@ -47,6 +47,13 @@ weren't actually intended to be mods themselves.
   a character named Old Pete starts making another character dance by shooting
   at his feet.  This changes his Jakobs gun into the Backburner, instead, for a
   laugh.
+- `claptrap_gun.txt` - Makes the Smart-Gun XXL spawn Claptraps instead of
+  spider turrets.  The Claptraps don't actually do anything interesting, though;
+  they just stay in their spawned spot.  You can spawn other chars easily, of
+  course, though enemies spawned this way will initially be on your team, and
+  won't be able to harm you if they switch.  It's a bit weird.  Anyway, was kind
+  of hoping to make a gun which would just generate more and more enemies
+  against you, but the Team thing got in my way.  So a Claptrap gun it remains.
 
 ## Deprecated/Testing Mods
 
