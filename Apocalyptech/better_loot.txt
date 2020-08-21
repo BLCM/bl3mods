@@ -1103,10 +1103,6 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Hibiscus/Enemies/Wendigo/Desig
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMiniboss.BPChar_GuardianBruteMiniboss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMiniboss.BPChar_GuardianBruteMiniboss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# Anathema's Shadow
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMinibossClone),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMinibossClone.BPChar_GuardianBruteMinibossClone_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMinibossClone),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMinibossClone.BPChar_GuardianBruteMinibossClone_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-
 # Scourge the Invincible Martyr
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBoss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Boss/_Design/Character/BPChar_GuardianBruteBoss.BPChar_GuardianBruteBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBoss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Boss/_Design/Character/BPChar_GuardianBruteBoss.BPChar_GuardianBruteBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
@@ -1266,9 +1262,6 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/PatchDLC/Raid1/GameData/
 
 # Anathema the Relentless
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems[3].Weight,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-
-# Anathema's Shadow
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMinibossClone),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool,BalancedItems[4].Weight,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Scourge the Invincible Martyr
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBoss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss.ItemPool_TD2_Boss,BalancedItems[4].Weight,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
