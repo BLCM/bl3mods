@@ -65,12 +65,7 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', [
             ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', [SH, SH, GM, None]),
-            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
-            ]),
-        # I am 99.999% certain that Anathema's Shadow can't actually drop, but may as well leave this in.
-        ("Anathema's Shadow", 'BPChar_GuardianBruteMinibossClone', [
-            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool', [SH, SH, SH, SH, None]),
-            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
+            ('/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries', [HW, SM, PS, SM, AR, HW, SG, SR]),
             ]),
         ('Anointed Alpha', 'BPChar_AnointedJoe', [
             ('/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe', [PS]),
@@ -427,7 +422,7 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', [
             ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', [HW, SM, AR, None, None]),
-            ('/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries', [SM, AR, SR, SG, AR, PS, CM, CM, CM, CM, AR]),
+            ('/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries', [HW, SM, PS, SM, AR, HW, SG, SR]),
             ]),
         ('Scraptrap Prime', 'BPChar_ClaptrapQueen', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_ScraptrapPrime', [SM, PS]),
