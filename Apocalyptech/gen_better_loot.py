@@ -1466,7 +1466,8 @@ for idx in range(5, 8):
 mod.newline()
 
 # Make sure that the Mayhem 4-locked gear is no longer Mayhem 4-locked.
-mod.header('Remove Mayhem 4 Gear Restrictions')
+# (also M6, now that Anathema/Scourge have been shifted over to those)
+mod.header('Remove Mayhem 4/6 Gear Restrictions')
 
 for label, char_name, pool, idx, weight in [
         ('Rampager', 'BPChar_Rampager', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun', 0, None),
@@ -1479,6 +1480,8 @@ for label, char_name, pool, idx, weight in [
         ('Arbalest of Discipline', 'BPChar_Mech_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech', 1, None),
         ('Tink of Cunning', 'BPChar_Tink_TrialBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink', 1, None),
         ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 0, None),
+        # With a hotfix on 2020-08-20, GBX changed Anathema and Scourge to pull from the M6 pool instead.  This
+        # statement continues to work just fine, though.
         ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
         ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, 0.5),
         ]:
@@ -1494,19 +1497,35 @@ for label, char_name, pool, idx, weight in [
     mod.newline()
 
 # Now update the itempool itself
-mod.comment('General Maliwan/Guardian Takedown Mayhem 4 Legendaries Pool')
+mod.comment('General Maliwan Takedown Mayhem 4 Legendaries Pool')
 for idx in range(11):
     for char_name in [
             'BPChar_BehemothRaid',
             'BPChar_SpiderBrain',
             'BPChar_UpperHalf',
             'BPChar_MechRaidBossBar',
-            'BPChar_GuardianBruteMiniboss',
-            'BPChar_GuardianBruteMinibossClone',
-            'BPChar_GuardianBruteBoss',
             ]:
         mod.reg_hotfix(Mod.CHAR, char_name,
                 '/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries',
+                'BalancedItems[{}].Weight'.format(idx),
+                """(
+                    BaseValueConstant=1,
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1
+                )""")
+mod.newline()
+
+# ... and the M6 pool, now that Anathema and Scourge reference it
+mod.comment('General Guardian Takedown Mayhem 6 Legendaries Pool')
+for idx in range(8):
+    for char_name in [
+            'BPChar_GuardianBruteMiniboss',
+            'BPChar_GuardianBruteBoss',
+            ]:
+        mod.reg_hotfix(Mod.CHAR, char_name,
+                '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries',
                 'BalancedItems[{}].Weight'.format(idx),
                 """(
                     BaseValueConstant=1,
