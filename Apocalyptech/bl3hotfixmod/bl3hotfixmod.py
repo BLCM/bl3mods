@@ -792,7 +792,14 @@ class Balance(object):
                 )
 
         # Loop through our partlists and populate our objects
-        for (partlist, apl) in zip(partlists, partset_data['ActorPartLists']):
+        for idx, (partlist, apl) in enumerate(zip(partlists, partset_data['ActorPartLists'])):
+
+            # Hardcoded fix - SparkPatchEntry210 was brought into the main game binary, and
+            # alters the part range inside an APL for PartSet_Shield_Ward.  Will have to
+            # just handle it stupidly like this, for now.
+            if partset_name == '/Game/Gear/Shields/_Design/_Uniques/Ward/Balance/PartSet_Shield_Ward' and idx == 3:
+                apl['MultiplePartSelectionRange']['Min'] = 1
+
             partcat = PartCategory(
                     num_min=apl['MultiplePartSelectionRange']['Min'],
                     num_max=apl['MultiplePartSelectionRange']['Max'],
