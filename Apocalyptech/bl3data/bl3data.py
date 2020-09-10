@@ -76,7 +76,7 @@ class BL3Data(object):
     """
 
     # Data serialization version requirements
-    data_version = 14
+    data_version = 15
 
     # Hardcoded BVA values
     bva_values = {
