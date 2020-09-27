@@ -1,0 +1,338 @@
+###
+### Modlist for Borderlands 3 Hotfix Injection
+###
+### This file is used with the mitmproxy-based hotfix injection system
+### available at https://github.com/apocalyptech/bl3hotfixmodding
+### At the moment, this is the only publicly-available BL3 hotfix
+### modding mechanism, though more are forthcoming.  Other solutions
+### are unlikely to use this file format, so if you're not using
+### mitmproxy, you can feel free to ignore this entirely.
+###
+### File syntax:
+###
+### Any line with a # in front of it is ignored, so you can use those
+### to comment the file however you like.  (There is nothing special
+### about using three of them; it just makes it more noticeable so I
+### use it for section headings.)
+###
+### Any line that *doesn't* start with a # mark will be loaded in as
+### a mod.  If you specify an absolute path (starting with something
+### like `C:\` on Windows, or `/` on Linux), that full path will be
+### used.  If not, the file will be loaded relative to this file.
+### In the examples below, for instance, a bunch of mods from the
+### `Apocalyptech` dir are being loaded.
+###
+### To disable a mod (but keep it in the file in case you want to
+### enable it again later), just prefix the filename with a # mark,
+### to turn the line into a comment (you'll see plenty of examples
+### of that, below, too).
+###
+### This example file is basically just Apocalyptech's personal
+### modlist.txt as of late September 2020 - obviously you should
+### feel free to prune and edit as much as you like!
+###
+
+###
+### Enemy/Spawn Changes
+###
+
+# Guarantee rare spawns (and buff vehicle rare spawns)
+Apocalyptech/enemy_spawn_changes/guaranteed_rare_spawns/guaranteed_rare_spawns.txt
+
+# Alternate NPC/Enemy Size Scaling
+#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_0.4_tiny.txt
+#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_0.7_smol.txt
+#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_2.0_big.txt
+#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_3.0_huge.txt
+#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_5.0_giant.txt
+
+# Infighting!  Enemies attack each other, too.
+#Apocalyptech/enemy_spawn_changes/infighting/infighting.txt
+
+###
+### QOL stuff
+###
+
+# Challenge icons are always visible
+Apocalyptech/qol/always_visible_challenge_icons/always_visible_challenge_icons.txt
+
+# ECHO Log loot bar is bigger
+Apocalyptech/qol/more_visible_echo_logs/more_visible_echo_logs.txt
+
+# Photo Mode Unlock
+Apocalyptech/qol/photo_mode_unlock/photo_mode_unlock.txt
+
+# No Reload Notification
+Apocalyptech/qol/no_reload_notification/no_reload_notification.txt
+
+# Disable email loyalty rewards
+Apocalyptech/qol/disable_email_loyalty_rewards/disable_email_loyalty_rewards.txt
+
+###
+### Tweaks to Mayhem Mode
+###
+
+# Better Mayhem rewards (mostly just for XP; Better Loot further buffs
+# anoint rates).  Make sure this stays above Better Loot!
+Apocalyptech/mayhem/better_mayhem_rewards/better_mayhem_rewards.txt
+
+# Vastly decreased enemy scaling in Mayhem 2.0 (conflicts with mayhem_level_cheats)
+#Apocalyptech/mayhem/decreased_mayhem_enemy_scaling/decreased_mayhem_enemy_scaling.txt
+
+# Mayhem 2.0 Outright Cheating (conflicts with mayhem_decreased_enemy_scaling)
+Apocalyptech/mayhem/mayhem_level_cheats/mayhem_level_cheats.txt
+
+# Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
+Apocalyptech/mayhem/mayhem_modifier_nerfs/mayhem_modifier_nerfs.txt
+
+# Mayhem 2.0 - Remove drop scaling altogether
+Apocalyptech/mayhem/no_mayhem_drop_scaling/no_mayhem_drop_scaling.txt
+
+# Disable a few Mayhem 2.0 Modifiers
+Apocalyptech/mayhem/disable_rogue_lite_modifier/disable_rogue_lite_modifier.txt
+Apocalyptech/mayhem/disable_lootsplosion_modifier/disable_lootsplosion_modifier.txt
+
+# Change the booster types dropped by the "Slayer" mayhem mod
+#Apocalyptech/mayhem/slayer_modifier_booster_change/slayer_modifier_booster_change.txt
+
+###
+### Gear Changes
+###
+
+# Make (nearly) all Torgue ARs full-auto
+Apocalyptech/gear_changes/torgue_ar_full_auto/torgue_ar_full_auto.txt
+
+# Red Text Explainer
+Apocalyptech/gear_changes/red_text_explainer/red_text_explainer.txt
+
+# Improve Maliwan charge times
+Apocalyptech/gear_changes/better_maliwan_charge_time/better_maliwan_charge_time.txt
+
+# Stronger Snipers
+Apocalyptech/gear_changes/stronger_snipers/stronger_snipers.txt
+
+# Nerf OP Gear
+Apocalyptech/gear_changes/nerf_op_gear/nerf_op_gear.txt
+
+# Turn (nearly) all uniques into legendary-rarity
+Apocalyptech/gear_changes/uniques_are_legendary/uniques_are_legendary.txt
+
+# Removes the Sellout's Tyreen voice module
+Apocalyptech/gear_changes/silent_sellout/silent_sellout.txt
+
+# Add anoints to weapons which don't ordinarily have them
+Apocalyptech/gear_changes/all_weapons_can_anoint/all_weapons_can_anoint.txt
+
+# Fix P2P Networker's missing second element (doesn't make sense to use
+# with single_element_maliwan)
+#Apocalyptech/gear_changes/p2p_networker_element_fix/p2p_networker_element_fix.txt
+
+# Single Element Maliwan (doesn't make sense to use with p2p_networker_element_fix)
+Apocalyptech/gear_changes/single_element_maliwan/single_element_maliwan.txt
+
+# Fixes the blank parts that Siren COMs can sometimes roll
+Apocalyptech/gear_changes/fix_siren_com_blank_parts/fix_siren_com_blank_parts.txt
+
+###
+### Gameplay Changes
+###
+
+# Movement Speed Cheats
+Apocalyptech/gameplay_changes/movement_speed_cheats/movement_speed_cheats_reasonable.txt
+#Apocalyptech/gameplay_changes/movement_speed_cheats/movement_speed_cheats_extreme.txt
+
+# Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
+Apocalyptech/gameplay_changes/nvhm_gamestage_follows_level/nvhm_gamestage_follows_level.txt
+
+# Randomize mission rewards
+Apocalyptech/gameplay_changes/mission_reward_randomizer/mission_reward_randomizer.txt
+
+# Vehicle Unlocks
+Apocalyptech/gameplay_changes/vehicle_unlocks/vehicle_unlocks.txt
+
+# Alternate Universal Scalings
+#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_bl1.txt
+#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_bl2.txt
+#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_tps.txt
+
+# Unlock DLC3 Company Tech (Coresploders, Traitorweed, Telezappers)
+Apocalyptech/gameplay_changes/unlock_dlc3_tech/unlock_dlc3_tech.txt
+
+# Green Monster Click Click Points Fix, by SSpyR
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix
+
+###
+### Loot Changes
+###
+
+# Alterations to the first couple of weapon chests in the game
+Apocalyptech/loot_changes/first_gun_chest/first_gun_chest_full_loadout.txt
+#Apocalyptech/loot_changes/first_gun_chest/first_gun_chest_testing_gear.txt
+
+# Fix Shield drops on standard enemies in DLC2
+Apocalyptech/loot_changes/fix_dlc2_shield_drops/fix_dlc2_shield_drops.txt
+
+# Better Loot!  Improves loot quality and other such tweaks
+Apocalyptech/loot_changes/better_loot/better_loot.txt
+
+# Randomize boss drops.  Make sure this occurs *after* Better Loot in the
+# file, if using both.
+Apocalyptech/loot_changes/boss_drop_randomizer/boss_drop_randomizer.txt
+
+# Get rid of DLC-specific world drops
+Apocalyptech/loot_changes/dlc_loot_de-emphasizer/dlc_loot_de-emphasizer.txt
+
+# Shiv Legendary Drop, by SSpyR
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/give_shiv_drop
+
+# Only get COMs/Skins/Heads/Anoints for chars actively in the game
+Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.txt
+
+# Unlock all weapon/item parts from the beginning of the game
+Apocalyptech/loot_changes/early_bloomer/early_bloomer.txt
+
+# Add all uniques/legendaries to the relevant world drop pools
+Apocalyptech/loot_changes/expanded_legendary_pools/expanded_legendary_pools.txt
+
+# More tracker darts!
+Apocalyptech/loot_changes/more_tracker_darts/more_tracker_darts.txt
+
+# More elemental weapons
+Apocalyptech/loot_changes/more_elemental_weapons/more_elemental_weapons.txt
+
+# Disable "projected" shields
+Apocalyptech/loot_changes/no_projected_shields/no_projected_shields.txt
+
+# Disable non-legendary/unique slam artifacts
+Apocalyptech/loot_changes/no_slam_artifacts/no_slam_artifacts.txt
+
+# Only spawn Atlas grenads (using this on my Zane)
+#Apocalyptech/loot_changes/only_atlas_grenades/only_atlas_grenades.txt
+
+# Enable Pendant of Terramorphous as a valid legendary artifact drop
+Apocalyptech/loot_changes/enable_pendant_of_terra/enable_pendant_of_terra.txt
+
+###
+### Loot Changes (customization-related)
+
+# Add all customizations to the global drop pools
+#Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_all.txt
+#Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards.txt
+Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards_or_earl.txt
+
+# Unlock cosmetic items
+Apocalyptech/loot_changes/customization_unlocks/customization_unlocks.txt
+
+# Only drop heads+skins from the global customization drop pool
+#Apocalyptech/loot_changes/customizations_only_heads_and_skins/customizations_only_heads_and_skins.txt
+
+# Customization drop rates
+Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_none.txt
+#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_improved.txt
+#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_frequent.txt
+#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_constant.txt
+
+###
+### Loot Changes (Manufacturer locks)
+###
+
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_atlas.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_cov.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_dahl.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_hyperion.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_jakobs.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_maliwan.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_tediore.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_torgue.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_vladof.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_custom_ted_vla.txt
+#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_custom_dal_jak.txt
+
+###
+### Economy-related mods
+###
+
+# Cheaper SDUs
+Apocalyptech/economy/cheaper_sdus/cheaper_sdus.txt
+
+# Cheaper Slots
+Apocalyptech/economy/cheaper_slots/cheaper_slots.txt
+
+# Improved Slot Machines
+Apocalyptech/economy/better_slots/better_slots.txt
+
+# Cheaper Eridium economy
+Apocalyptech/economy/cheaper_eridium_economy/cheaper_eridium_economy.txt
+
+# No cost for respec or respawn
+Apocalyptech/economy/free_respec/free_respec.txt
+Apocalyptech/economy/free_respawn/free_respawn.txt
+
+###
+### Mission-specific Mods
+###
+
+# More money from the malfunctioning slots in Sisterly Love
+Apocalyptech/mission_specific/sisterly_love_more_money/sisterly_love_more_money.txt
+
+# Better gifts from Joy in Heart of Gold
+Apocalyptech/mission_specific/heart_of_gold_better_gifts/heart_of_gold_better_gifts.txt
+
+# Allow Trials missions as soon as you get to the maps which have them
+Apocalyptech/mission_specific/no_trials_dependencies/no_trials_dependencies.txt
+
+###
+### Timed Event mods
+###
+
+# Event-enabling mods
+#Apocalyptech/timed_events/timed_event_enable/bloody_harvest_enable.txt
+#Apocalyptech/timed_events/timed_event_enable/broken_hearts_enable.txt
+#Apocalyptech/timed_events/timed_event_enable/cartels_enable.txt
+
+# Enable all Timed Event enemy spawn modifications at once.  This
+# shouldn't actually require any events to be active.  Make sure
+# this appears *after* any mod which enables an event.
+#Apocalyptech/timed_events/all_event_spawns_active/all_event_spawns_active.txt
+
+# Expand enemy spawn modifications to apply everywhere that any
+# timed event has used in the past.  Will allow ghosts+hearts in
+# DLC maps, for instance.  Doesn't do anything unless an event or
+# my all_event_spawns mod is active.
+#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_cartels.txt
+#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_bloody_harvest.txt
+#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_broken_hearts.txt
+
+# Guaranteed Ghosts in Bloody Harvest event
+#Apocalyptech/timed_events/guaranteed_ghosts/guaranteed_ghosts.txt
+
+# Fewer Cartel spawns
+#Apocalyptech/timed_events/fewer_cartel_operatives/fewer_cartel_operatives.txt
+
+###
+### Main Menu
+###
+
+#Apocalyptech/timed_events/main_menu/main_menu_normal.txt
+#Apocalyptech/timed_events/main_menu/main_menu_halloween.txt
+#Apocalyptech/timed_events/main_menu/main_menu_christmas.txt
+
+###
+### Mod-testing Mods
+###
+
+# Mod-Testing Gear
+#Apocalyptech/mod_testing_mods/super_buff_craders_emp5/super_buff_craders_emp5.txt
+#Apocalyptech/mod_testing_mods/super_buff_transformer/super_buff_transformer.txt
+
+# Testing loot drops
+#Apocalyptech/mod_testing_mods/testing_loot_drops/testing_loot_drops.txt
+
+# Real quick XP gains
+#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_fast.txt
+#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_faster.txt
+#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_insane.txt
+
+# Mod-testing Char Setup (for new games)
+#Apocalyptech/mod_testing_mods/modtest_char_setup/modtest_char_setup.txt
+

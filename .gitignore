@@ -1,0 +1,4 @@
+modlist.txt
+modlist.json
+*.swp
+__pycache__

@@ -128,6 +128,9 @@ I'll probably not use them again) with my Crader EM-P5 and Back Ham setup:
     this section, the buff is pretty slight here, but it's still more
     powerful than usual.  Went a bit overboard with the radius on the
     grenade; you'll probably get hit by it yourself occasionally.
+- `hardcode_mayhem2_drops.txt` - On release, Mayhem 2.0 broke a lot of world
+  drops, which was fixed in a hotfix a week later.  This mod fixed them up
+  in the meantime.
 
 ## Failed Attempts
 
@@ -190,4 +193,14 @@ don't look at these thinking that they're any good.  :)
   "structure" as the vanilla tree.  You could swap skills around all you like
   (while making sure that the max-points and icon vars are moved too) but you
   wouldn't be able to rearrange the tree at will.
+
+Licenses
+========
+
+All the code in this project is licensed under the
+[GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
+See [COPYING.txt](../COPYING.txt) for the full text of the license.
+
+All the mods in this repository are currently licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
