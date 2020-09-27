@@ -24,7 +24,6 @@ of the mods you'll find in here, though:
 
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
-- **Mission Reward Randomizer** - Randomizes mission rewards
 - **Movement Speed Cheats** - Move faster!
 - **NVHM Gamestage Follows Level** - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
@@ -68,6 +67,7 @@ of the mods you'll find in here, though:
 - **First Gun Chest** - Some alternate contents for the first gun chest, in Covenant Pass.
 - **Fix DLC2 Shield Drops** - Most enemies in DLC2 don't drop shields; this fixes that.
 - **Manufacturer Lock** - A set of mods which make only the specified manufacturers drop.
+- **Mission Reward Randomizer** - Randomizes mission rewards
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
   of any given weapon.
 - **More Tracker Darts** - Increases the probability of having the Tracker Dart mechanism

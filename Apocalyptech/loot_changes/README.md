@@ -21,6 +21,7 @@ See the individual mod folders for full READMEs.
 - **First Gun Chest** - Some alternate contents for the first gun chest, in Covenant Pass.
 - **Fix DLC2 Shield Drops** - Most enemies in DLC2 don't drop shields; this fixes that.
 - **Manufacturer Lock** - A set of mods which make only the specified manufacturers drop.
+- **Mission Reward Randomizer** - Randomizes mission rewards
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
   of any given weapon.
 - **More Tracker Darts** - Increases the probability of having the Tracker Dart mechanism
