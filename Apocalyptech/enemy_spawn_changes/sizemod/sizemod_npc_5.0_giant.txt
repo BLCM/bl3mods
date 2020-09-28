@@ -7,6 +7,8 @@
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ###
+### Screenshot: https://raw.githubusercontent.com/apocalyptech/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_giant.jpg
+###
 
 ###
 ### Scales NPC (enemies and otherwise) to 5.0x.  Keep in mind that this may
