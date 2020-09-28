@@ -37,7 +37,7 @@ mod = Mod('enable_pendant_of_terra.txt',
         ],
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='gear-general',
+        cats='gear-general, gear-artifact',
         )
 
 art_bal_name = '/Game/Gear/Artifacts/_Design/BalanceDefs/InvBalD_Artifact_05_Legendary'

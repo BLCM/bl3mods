@@ -31,7 +31,7 @@ mod = Mod('no_reload_notification.txt',
         ],
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='qol',
+        cats='qol, ui',
         )
 
 # Default: 0.3
