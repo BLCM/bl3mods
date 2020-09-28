@@ -17,6 +17,11 @@ There are a number of options available:
 To use a custom value, edit the generation script to add more, and
 re-run it.
 
+Note that characters who are interacting with the environment in some way,
+like typing on a console, or leaning up against a wall, will generally
+be unaffected by this change, as the scene-based animation seems to override
+the size scaling.
+
 Changelog
 =========
 
