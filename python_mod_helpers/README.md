@@ -77,6 +77,32 @@ included in that list, such as:
 
     lic="Abandon all hope, ye who try to upload this mod anywhere",
 
+Finally, there's a bunch of media data which can be added to the mod header,
+which will be added to the ModCabinet wiki if specified.  Here's a mod
+definition which includes all of them:
+
+```python
+mod = Mod('filename_to_save.txt',
+        'Mod Title',
+        'Author Name',
+        [
+            'Extra description lines to show in the header',
+        ],
+        lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='qol',
+        ss='https://i.imgur.com/ClUttYw.gif',
+        videos='https://www.youtube.com/watch?v=JiEu23G4onM',
+        nexus='https://www.nexusmods.com/borderlands3/mods/128',
+        urls='https://borderlands.com/en-US/news/2020-09-10-borderlands-3-patch-hotfixes-sept-10/',
+        )
+```
+
+`ss` is for screenshots (which will be inlined on the ModCabinet wiki page), `videos`
+is for videos, `nexus` is for an alternate Nexus Mods link for this mod, and `urls`
+is any other URL you might want to link to.  `ss`, `videos`, and `urls` can all be
+lists rather than just strings, if you wanted to supply more than one.
+
 Anyway, once you've got that mod header set up, you can use a few shortcuts to
 build out the mod in your script:
 
