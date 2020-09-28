@@ -7,6 +7,8 @@
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ###
+### Screenshot: https://raw.githubusercontent.com/apocalyptech/bl3mods/master/Apocalyptech/qol/more_visible_echo_logs/echo.png
+###
 
 ###
 ### Alters the loot bar for ECHO logs (and coincidentally mission-related pickups,
