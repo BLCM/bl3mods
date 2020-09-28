@@ -5,10 +5,10 @@ This is a collection of mods which have no purpose other than to alter the
 main menu to be one of the seasonal variants which have popped up over the
 time.  Right now there's just four variants:
 
-- Normal
-- Halloween
-- Christmas (not associated with a timed event)
-- Cartels
+* Normal
+* Halloween
+* Christmas (not associated with a timed event)
+* Cartels
 
 No gameplay changes or anything!  Just the main menu style.
 

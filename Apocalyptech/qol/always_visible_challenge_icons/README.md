@@ -9,31 +9,31 @@ played.  Note that this currently only supports the base game, some of DLC2,
 and most of DLC3.  DLC1 challenges are omitted entirely because they act
 weirdly.  Known issues:
 
-- The third Typhon log in Meridian Outskirts won't show up until you're very
+* The third Typhon log in Meridian Outskirts won't show up until you're very
   close to it.
-- The Dead Claptrap in Neon Arterial might not show up immediately,
+* The Dead Claptrap in Neon Arterial might not show up immediately,
   though it does show up before there's been too much progression
   in the level.
-- A *bunch* of Legendary Hunts don't show up until you're right on
+* A *bunch* of Legendary Hunts don't show up until you're right on
   top of them, for some reason.  Eden-6 and the second half of
   Pandora are especially finnicky about it for some reason:
-  - Eden-6:
-    - Floodmoor Basin
-    - Anvil
-    - Voracious Canopy
-    - Ambermire
-  - Pandora:
-    - Devil's Razor
-    - Splinterlands
-    - Konrad's Hold
-  - Nekrotafeyo:
-    - The Pyre of Stars
-- The Target of Opportunity in Devil's Razor
-- Target of Opportunity in Cathedral of the Twin Gods
-- All DLC1 challenges are omitted
-- Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
-- Some Eldritch Statue challenges from DLC2 don't seem to work.
-- DLC3's "Good Prospects" are omitted since they do some weird Treasure Map
+  * Eden-6:
+    * Floodmoor Basin
+    * Anvil
+    * Voracious Canopy
+    * Ambermire
+  * Pandora:
+    * Devil's Razor
+    * Splinterlands
+    * Konrad's Hold
+  * Nekrotafeyo:
+    * The Pyre of Stars
+* The Target of Opportunity in Devil's Razor
+* Target of Opportunity in Cathedral of the Twin Gods
+* All DLC1 challenges are omitted
+* Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
+* Some Eldritch Statue challenges from DLC2 don't seem to work.
+* DLC3's "Good Prospects" are omitted since they do some weird Treasure Map
   things, and I didn't care enough to try and figure those out.
 
 TODO

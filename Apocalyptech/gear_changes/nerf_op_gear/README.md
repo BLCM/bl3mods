@@ -7,19 +7,19 @@ For the most part, these are weapons which are intended for use at Mayhem
 or Decreased Mayhem Enemy Scaling mods), they're just too much.  So, they've
 gotten nerfed down.  The weapons currently included in here are:
 
-- Anarchy: `1` -> `0.4`
-- Backburner: `2` -> `1.7`
-- Kaoson: `1.6` -> `1`
-- Krakatoa: `4.25` -> `2.5`
-- NoPewPew: `1.1` -> `0.15`
-- O.P.Q. System: `1.8` -> `1`
-- Plaguebearer: `1.1` -> `0.9`
-- Reflux: `1.75` -> `1.5`
-- Sand Hawk: `1.5` -> `0.5`
-- Skullmasher: `0.5` -> `0.3`
-- The Monarch: `1.6` -> `0.7`
-- Wedding Invitation Ricochet Damage: `2.928` -> `1`
-- Yellowcake: `1.75` -> `1`
+* Anarchy: `1` -> `0.4`
+* Backburner: `2` -> `1.7`
+* Kaoson: `1.6` -> `1`
+* Krakatoa: `4.25` -> `2.5`
+* NoPewPew: `1.1` -> `0.15`
+* O.P.Q. System: `1.8` -> `1`
+* Plaguebearer: `1.1` -> `0.9`
+* Reflux: `1.75` -> `1.5`
+* Sand Hawk: `1.5` -> `0.5`
+* Skullmasher: `0.5` -> `0.3`
+* The Monarch: `1.6` -> `0.7`
+* Wedding Invitation Ricochet Damage: `2.928` -> `1`
+* Yellowcake: `1.75` -> `1`
 
 TODO
 ====

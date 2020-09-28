@@ -8,13 +8,13 @@ progression-related mods.
 
 This comes in three variants:
 
-- **Insane** - Gives you about a whole level per kill, even beyond
+* **Insane** - Gives you about a whole level per kill, even beyond
   level 50.  Early levels will probably have you jumping multiple levels
   per kill.
-- **Fast** - Compared to "Insane," this will be much more sedate, for
+* **Fast** - Compared to "Insane," this will be much more sedate, for
   fine-tuning purposes, but it'll still be a heck of a lot faster than
   the base game.
-- **Faster** - This is inbetween the two.
+* **Faster** - This is inbetween the two.
 
 Changelog
 =========

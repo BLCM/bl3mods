@@ -6,16 +6,16 @@ even bigger.  It adds all legendary/unique items into the main world-drop
 legendary pools (basically anything with red text).  This currently includes
 all items from:
 
-- Bloody Harvest
-- Broken Hearts
-- Revenge of the Cartels
-- Maliwan Takedown
-- Mayhem 4 items (which will drop regardless of Mayhem level, even in normal)
-- Mayhem 2.0 items (which will drop regardless of Mayhem level, even in normal)
-- Guardian Takedown
-- DLC1 (Moxxi's Heist of the Handsome Jackpot)
-- DLC2 (Guns, Love, and Tentacles)
-- DLC3 (Bounty of Blood)
+* Bloody Harvest
+* Broken Hearts
+* Revenge of the Cartels
+* Maliwan Takedown
+* Mayhem 4 items (which will drop regardless of Mayhem level, even in normal)
+* Mayhem 2.0 items (which will drop regardless of Mayhem level, even in normal)
+* Guardian Takedown
+* DLC1 (Moxxi's Heist of the Handsome Jackpot)
+* DLC2 (Guns, Love, and Tentacles)
+* DLC3 (Bounty of Blood)
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will

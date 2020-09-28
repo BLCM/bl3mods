@@ -3,8 +3,8 @@ Super Buff: Transformer
 
 Cheat mod which gives the Transformer shield the following:
 
-- Zero recharge delay
-- Extraordinarily fast recharge
+* Zero recharge delay
+* Extraordinarily fast recharge
 
 A level 1 Transformer will easily last you throughout an entire story
 runthough, and probably into Mayhem levels after that.

@@ -3,10 +3,10 @@ Super Buff: Crader's EM-P5
 
 Cheat mod which gives Crader's EM-P5 the following:
 
-- Absurd amount of damage
-- Infinite ammo
-- Perfect accuracy/handling
-- Increased rate of fire
+* Absurd amount of damage
+* Infinite ammo
+* Perfect accuracy/handling
+* Increased rate of fire
 
 A level 1 EM-P5 will easily last you throughout an entire story
 runthough, and probably into Mayhem levels after that.  This mod

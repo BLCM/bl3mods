@@ -8,11 +8,11 @@ me know if anything really dire happens with any of these.
 
 There are a number of options available:
 
-- Tiny: 0.4x
-- Smol: 0.7x
-- Big: 2.0x
-- Huge: 3.0x
-- Giant: 5.0x
+* Tiny: 0.4x
+* Smol: 0.7x
+* Big: 2.0x
+* Huge: 3.0x
+* Giant: 5.0x
 
 To use a custom value, edit the generation script to add more, and
 re-run it.

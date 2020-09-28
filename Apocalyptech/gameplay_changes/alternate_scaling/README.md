@@ -6,11 +6,11 @@ to match either BL1, BL2, or TPS (depending on which you choose).
 
 The default scaling factors for the various Borderlands games are:
 
-- **BL1**: `1.045` or thereabouts, though BL1 doesn't have a single scaling
+* **BL1**: `1.045` or thereabouts, though BL1 doesn't have a single scaling
   factor, so it's more difficult to reduce it to a single number.
-- **BL2**: `1.13`
-- **TPS**: `1.1`
-- **BL3**: `1.09`
+* **BL2**: `1.13`
+* **TPS**: `1.1`
+* **BL3**: `1.09`
 
 Note that these scaling values interact oddly with mayhem mod, and values
 above `1.09` actually make Mayhem levels *easier* due to how the math works

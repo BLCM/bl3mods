@@ -3,11 +3,11 @@ Better Maliwan Charge Time
 
 Improves the charge time of all Maliwan weapons except for the following:
 
-- Starkiller
-- Ice Pick
-- D.N.A.
-- Atomizer pistols
-- Melter pistols
+* Starkiller
+* Ice Pick
+* D.N.A.
+* Atomizer pistols
+* Melter pistols
 
 Pistols and SMGs receive a 50% improvement, shotguns get 60%, and snipers will always
 be instant-fire (though the models which fire on *releasing* the trigger will still do so).

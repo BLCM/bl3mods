@@ -13,10 +13,10 @@ are referenced differently in the game objects.
 This mod also adds Monster Wheels to a few specific vehicles, so
 you'll have an easier source for those:
 
-- Clever Girl (Floodmoor Basin)
-- Festive Flesh-Eater (Splinterlands)
-- Skagzilla (The Droughts)
-- Any Technical in Sandblast Scar
+* Clever Girl (Floodmoor Basin)
+* Festive Flesh-Eater (Splinterlands)
+* Skagzilla (The Droughts)
+* Any Technical in Sandblast Scar
 
 One downside, of course, is that enemy vehicles won't be so strongly
 "themed" to their maps, but personally I'd rather see as wide a

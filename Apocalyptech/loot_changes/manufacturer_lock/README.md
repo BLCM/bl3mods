@@ -19,15 +19,15 @@ drop Vladof or Dahl weapons for you, you could run:
 Which would generate a `manufacturer_lock_dal_vla.txt` file.  The manufacturer
 abbreviations are:
 
-- atl
-- cov
-- dal
-- hyp
-- jak
-- mal
-- ted
-- tor
-- vla
+* atl
+* cov
+* dal
+* hyp
+* jak
+* mal
+* ted
+* tor
+* vla
 
 Changelog
 =========

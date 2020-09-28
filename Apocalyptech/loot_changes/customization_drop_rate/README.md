@@ -9,10 +9,10 @@ collected the lot.
 The default drop rate for cosmetics in the game is `0.5%` (though it's higher in
 the DLCs, typically).  The four variants available here are:
 
-- **None** - `0%`
-- **Improved** - `3%`
-- **Frequent** - `6%`
-- **Constant** - `12%`
+* **None** - `0%`
+* **Improved** - `3%`
+* **Frequent** - `6%`
+* **Constant** - `12%`
 
 Given the volume of cosmetics, even at 12% it'll probably still take you ages to
 collect them all.

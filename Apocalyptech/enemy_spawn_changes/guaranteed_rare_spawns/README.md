@@ -13,9 +13,9 @@ to 100% by Gearbox).
 
 There are two known exceptions at the moment:
 
-- Brood Mother, in Pyre of Stars, apparently spawns based partially on how
+* Brood Mother, in Pyre of Stars, apparently spawns based partially on how
   many mobs you've killed outside her lair?
-- Skagzilla's spawnrate is unaffected.
+* Skagzilla's spawnrate is unaffected.
 
 TODO
 ====

@@ -12,9 +12,9 @@ since those customizations aren't at all useful as drops (if you own the DLC,
 you already have them, and if you don't own the DLC, the dropped cosmetics can't
 be redeemed).  The variants:
 
-- **All** - Apart from the exceptions above, all customizations will world drop.
-- **No Mission Rewards** - Excludes the customizations you'd get as mission rewards
-- **No Mission Rewards or Earl** - Excludes the mission reward customizations, and
+* **All** - Apart from the exceptions above, all customizations will world drop.
+* **No Mission Rewards** - Excludes the customizations you'd get as mission rewards
+* **No Mission Rewards or Earl** - Excludes the mission reward customizations, and
   all the ones that you can otherwise buy at Earl's shop in Sanctuary.
 
 Note that DLC cosmetics that you get via missions might still need some tweaking
