@@ -88,7 +88,7 @@ class Mod(object):
                 'https://creativecommons.org/publicdomain/zero/1.0/'),
             }
 
-    def __init__(self, filename, title, author, description, v=None, lic=None, cats=None):
+    def __init__(self, filename, title, author, description, v=None, lic=None, cats=None, ss=None, videos=None, urls=None, nexus=None):
         """
         Initializes ourselves and starts writing the mod
         """
@@ -99,6 +99,10 @@ class Mod(object):
         self.version = v
         self.lic = lic
         self.categories = cats
+        self.ss = ss
+        self.videos = videos
+        self.urls = urls
+        self.nexus = nexus
         self.last_was_newline = True
 
         self.source = os.path.basename(sys.argv[0])
@@ -117,6 +121,7 @@ class Mod(object):
                 print('### Categories: {}'.format(', '.join(self.categories)), file=self.df)
             else:
                 print('### Categories: {}'.format(self.categories), file=self.df)
+        print('###', file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
         # if it hasn't!)
@@ -138,13 +143,33 @@ class Mod(object):
             print('Apocalyptech recommends `Mod.CC_BY_SA_40` but you do you!')
             print('')
         else:
-            print('###', file=self.df)
             if self.lic in Mod.LIC_INFO:
                 lic_name, lic_url = Mod.LIC_INFO[self.lic]
                 print('### License: {}'.format(lic_name), file=self.df)
                 print('### License URL: {}'.format(lic_url), file=self.df)
             else:
                 print('### License: {}'.format(self.lic), file=self.df)
+            print('###', file=self.df)
+
+        # Media links
+        if ss or videos or urls or nexus:
+            if ss:
+                if type(ss) != list:
+                    ss = [ss]
+                for shot in ss:
+                    print('### Screenshot: {}'.format(shot), file=self.df)
+            if videos:
+                if type(videos) != list:
+                    videos = [videos]
+                for video in videos:
+                    print('### Video: {}'.format(video), file=self.df)
+            if urls:
+                if type(urls) != list:
+                    urls = [urls]
+                for url in urls:
+                    print('### URL: {}'.format(url), file=self.df)
+            if nexus:
+                print('### Nexus: {}'.format(nexus), file=self.df)
             print('###', file=self.df)
 
         # Now continue on (basically just the description from here on out)

@@ -144,9 +144,6 @@ Apocalyptech/gameplay_changes/movement_speed_cheats/movement_speed_cheats_reason
 # Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
 Apocalyptech/gameplay_changes/nvhm_gamestage_follows_level/nvhm_gamestage_follows_level.txt
 
-# Randomize mission rewards
-Apocalyptech/gameplay_changes/mission_reward_randomizer/mission_reward_randomizer.txt
-
 # Vehicle Unlocks
 Apocalyptech/gameplay_changes/vehicle_unlocks/vehicle_unlocks.txt
 
@@ -159,7 +156,7 @@ Apocalyptech/gameplay_changes/vehicle_unlocks/vehicle_unlocks.txt
 Apocalyptech/gameplay_changes/unlock_dlc3_tech/unlock_dlc3_tech.txt
 
 # Green Monster Click Click Points Fix, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix.txt
 
 ###
 ### Loot Changes
@@ -179,11 +176,14 @@ Apocalyptech/loot_changes/better_loot/better_loot.txt
 # file, if using both.
 Apocalyptech/loot_changes/boss_drop_randomizer/boss_drop_randomizer.txt
 
+# Randomize mission rewards
+Apocalyptech/loot_changes/mission_reward_randomizer/mission_reward_randomizer.txt
+
 # Get rid of DLC-specific world drops
 Apocalyptech/loot_changes/dlc_loot_de-emphasizer/dlc_loot_de-emphasizer.txt
 
 # Shiv Legendary Drop, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/give_shiv_drop
+/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/archive/give_shiv_drop.txt
 
 # Only get COMs/Skins/Heads/Anoints for chars actively in the game
 Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.txt

@@ -7,6 +7,8 @@
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ###
+### Screenshot: https://raw.githubusercontent.com/apocalyptech/bl3mods/master/Apocalyptech/qol/always_visible_challenge_icons/droughts.png
+###
 
 ###
 ### Sets all the challenge icons to be visible on the map at all times.
