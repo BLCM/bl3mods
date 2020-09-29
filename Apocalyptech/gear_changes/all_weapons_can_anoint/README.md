@@ -7,8 +7,13 @@ anointments.  This mod makes it so that they can.
 This *does* exclude The Shoddy, since it seems quite fitting that that
 gun wouldn't have anointments on it.
 
+Should be up to date with DLC4 (Psycho Krieg and the Fantastic Fustercluck).
+
 Changelog
 =========
+
+**v1.1.0** - Sep 26, 2020
+ * Updated with DLC4 items
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release
