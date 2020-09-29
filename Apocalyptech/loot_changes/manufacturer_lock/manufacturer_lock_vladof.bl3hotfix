@@ -1,6 +1,6 @@
 ###
 ### Name: Manufacturer Lock: Vladof
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: loot-system
 ###
@@ -187,5 +187,5 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPoo
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SniperRifles_ETech_VeryRare.ItemPool_SniperRifles_ETech_VeryRare,BalancedItems.BalancedItems[3].Weight.BaseValueConstant,0,,1
 
 # Sniper Rifle Legendaries
-SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/Balance/Balance_VLA_SR_Lyuda.Balance_VLA_SR_Lyuda,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/Balance/Balance_VLA_SR_Lyuda.Balance_VLA_SR_Lyuda"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/Balance/Balance_VLA_SR_Prison.Balance_VLA_SR_Prison,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/Balance/Balance_VLA_SR_Prison.Balance_VLA_SR_Prison"',Weight=(BaseValueConstant=0.6)))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/Balance/Balance_VLA_SR_Lyuda.Balance_VLA_SR_Lyuda,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/Balance/Balance_VLA_SR_Lyuda.Balance_VLA_SR_Lyuda"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator.Balance_VLA_SR_Septimator,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator.Balance_VLA_SR_Septimator"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/Balance/Balance_VLA_SR_Prison.Balance_VLA_SR_Prison,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/Balance/Balance_VLA_SR_Prison.Balance_VLA_SR_Prison"',Weight=(BaseValueConstant=0.6)))
 

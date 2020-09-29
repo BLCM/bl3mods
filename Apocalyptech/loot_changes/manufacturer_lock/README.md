@@ -29,8 +29,13 @@ abbreviations are:
 * tor
 * vla
 
+This mod has been updated as far as DLC4 (Psycho Krieg and the Fantastic Fustercluck).
+
 Changelog
 =========
+
+**v1.1.0** - Sep 29, 2020
+ * Updated with DLC4 guns
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

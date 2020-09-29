@@ -220,6 +220,13 @@ type_pools = [
                 # Stonethrower
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/Balance/Balance_AR_JAK_Stonethrow', JAK, 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Lovable Rogue
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/Balance/Balance_AR_TOR_LovableRogue', TOR, 1),
+                # Rebound
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse', COV, 1),
+
                 ### Additions
 
                 # Earworm
@@ -291,6 +298,11 @@ type_pools = [
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/Balance/Balance_HW_ATL_Plumage', ATL, 1),
                 # Satisfaction
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', TOR, 1),
+
+                ### DLC4 (Psycho Krieg)
+
+                # Major Kong
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher', COV, 1),
 
                 ### Additions
 
@@ -447,6 +459,11 @@ type_pools = [
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose', JAK, 1),
                 # Unkempt Harold
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/Balance/Balance_PS_TOR_UnkemptHarold', TOR, 1),
+
+                ### DLC4 (Psycho Krieg)
+
+                # Prompt Critical
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice', TOR, 1),
 
                 ### Additions
 
@@ -614,6 +631,13 @@ type_pools = [
                 # Splinter
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/Balance_SG_JAK_Splinter', JAK, 1*addition_scale),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Blind Sage
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit', MAL, 1),
+                # Convergence
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence', HYP, 1),
+
                 ### Additions
 
                 # Phebert
@@ -751,6 +775,13 @@ type_pools = [
                 # Flipper
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper', MAL, 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Blood-Starved Beast
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast', DAL, 1),
+                # P.A.T. Mk. III
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3', TED, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -855,6 +886,11 @@ type_pools = [
                 # Narp
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/Balance/Balance_SR_HYP_Narp', HYP, 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Septimator Prime
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator', VLA, 1),
+
                 ### Additions
 
                 # Brashi's Dedication
@@ -921,7 +957,7 @@ for (man, man_label) in eng_manufacturers.items():
                 "details",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.1.0',
             cats='loot-system',
             )
 
