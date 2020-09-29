@@ -16,6 +16,7 @@ all items from:
 * DLC1 (Moxxi's Heist of the Handsome Jackpot)
 * DLC2 (Guns, Love, and Tentacles)
 * DLC3 (Bounty of Blood)
+* DLC4 (Psycho Krieg and the Fantastic Fustercluck)
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will
@@ -26,6 +27,9 @@ and DLC Loot De-Emphasizer mods.
 
 Changelog
 =========
+
+**v1.1.0** - Sep 29, 2020
+ * Added DLC4 (Psycho Krieg) items
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release
