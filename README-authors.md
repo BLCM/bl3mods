@@ -88,8 +88,9 @@ And then the mod-helper framework will convert that into a proper hotfix for
 you, and you can edit it in a much more intuitive way.
 
 These helpers (and a few more examples of how to use them) can be found in
-the `python_mod_helpers` directory, and plenty of examples of using it in
-"real life" can be found throughout Apocalyptech's mod directory.
+the [python_mod_helpers](https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers)
+directory, and plenty of examples of using it in "real life" can be found
+throughout Apocalyptech's mod directory.
 
 The code in `python_mod_helpers` dir is licensed under the GNU GPLv3 or later.
 
