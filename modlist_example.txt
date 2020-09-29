@@ -156,7 +156,7 @@ Apocalyptech/gameplay_changes/vehicle_unlocks/vehicle_unlocks.bl3hotfix
 Apocalyptech/gameplay_changes/unlock_dlc3_tech/unlock_dlc3_tech.bl3hotfix
 
 # Green Monster Click Click Points Fix, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix.txt
+SSpyR/bugfix/green_monster_clickclick_fix.bl3hotfix
 
 ###
 ### Loot Changes
@@ -183,7 +183,7 @@ Apocalyptech/loot_changes/mission_reward_randomizer/mission_reward_randomizer.bl
 Apocalyptech/loot_changes/dlc_loot_de-emphasizer/dlc_loot_de-emphasizer.bl3hotfix
 
 # Shiv Legendary Drop, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/archive/give_shiv_drop.txt
+SSpyR/archive(old_or_broken)/give_shiv_drop.txt
 
 # Only get COMs/Skins/Heads/Anoints for chars actively in the game
 Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.bl3hotfix
