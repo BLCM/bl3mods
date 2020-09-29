@@ -31,6 +31,9 @@ TODO
 Changelog
 =========
 
+**v1.1.0** - Sep 29, 2020
+ * Updated for DLC4 Cosmetics
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  
