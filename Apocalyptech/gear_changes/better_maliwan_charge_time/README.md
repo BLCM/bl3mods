@@ -12,6 +12,8 @@ Improves the charge time of all Maliwan weapons except for the following:
 Pistols and SMGs receive a 50% improvement, shotguns get 60%, and snipers will always
 be instant-fire (though the models which fire on *releasing* the trigger will still do so).
 
+This has been updated through DLC4 (Psycho Krieg and the Fantastic Fustercluck).
+
 TODO
 ====
 
@@ -21,6 +23,10 @@ TODO
 
 Changelog
 =========
+
+**v1.1.0** - Sep 26, 2020
+ * Updated for DLC4 (Psycho Krieg and the Fantastic Fustercluck) weapons (Blind
+   Bandit and Blind Sage)
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

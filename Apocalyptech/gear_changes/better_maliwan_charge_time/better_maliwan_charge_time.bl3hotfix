@@ -1,6 +1,6 @@
 ###
 ### Name: Better Maliwan Charge Time
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: gear-brand, cheat
 ###
@@ -66,6 +66,12 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/
 
 # Beacon (default: 0.7)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler.Part_PS_MAL_Barrel_Decoupler:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.350000)
+
+# Blind Bandit (default: 1.05)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Parts/Part_SG_MAL_Barrel_BlindBandit_Epic.Part_SG_MAL_Barrel_BlindBandit_Epic:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.420000)
+
+# Blind Sage (default: 1.05)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Parts/Part_SG_MAL_Barrel_BlindBandit.Part_SG_MAL_Barrel_BlindBandit:AspectList_WeaponUseModeSecondaryAspectData.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.420000)
 
 # Bubble Blaster (default: 0.5)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BubbleBlaster/Parts/Part_PS_MAL_Barrel_BubbleBlaster.Part_PS_MAL_Barrel_BubbleBlaster:WeaponUseModeSecondaryAspectData_0.Component_BPWeaponChargeComponent_MAL,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.250000)

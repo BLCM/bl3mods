@@ -50,7 +50,7 @@ mod = Mod('better_maliwan_charge_time.bl3hotfix',
             #"Also (possibly) buffs the charge time for the ION CANNON, even though it's a Vladof gun.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='gear-brand, cheat',
         )
 
@@ -72,6 +72,9 @@ def charge_time(mod,
             'AspectList.AspectList[{}].Object..Component.Object..{}'.format(aspect_list, final_attr),
             '(BaseValue={:.6f})'.format(new_val),
             prev_val=prev_val)
+
+# TODO: Blind Sage - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit
+# (and non-legendary equivalent)
 
 # Put in our improvements
 mod.header('Generic Weapons')
@@ -144,6 +147,20 @@ for label, obj_name, default, scale, aspect_obj, aspect_attr, final_attr in [
             '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler',
             0.7,
             scale_pistol,
+            None,
+            None,
+            None),
+        ('Blind Bandit',
+            '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Parts/Part_SG_MAL_Barrel_BlindBandit_Epic',
+            1.05,
+            scale_shotgun,
+            None,
+            None,
+            None),
+        ('Blind Sage',
+            '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Parts/Part_SG_MAL_Barrel_BlindBandit',
+            1.05,
+            scale_shotgun,
             None,
             None,
             None),
