@@ -220,9 +220,6 @@ Apocalyptech/loot_changes/enable_pendant_of_terra/enable_pendant_of_terra.bl3hot
 #Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards.bl3hotfix
 Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards_or_earl.bl3hotfix
 
-# Unlock cosmetic items
-Apocalyptech/loot_changes/customization_unlocks/customization_unlocks.bl3hotfix
-
 # Only drop heads+skins from the global customization drop pool
 #Apocalyptech/loot_changes/customizations_only_heads_and_skins/customizations_only_heads_and_skins.bl3hotfix
 
