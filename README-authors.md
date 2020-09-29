@@ -103,9 +103,9 @@ instructions for how to do so
 [at the BLCMods Wiki](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Contribution).
 
 If you want your mods to show up on the
-[Borderlands 3 ModCabinet wiki](https://github.com/BLCM/BL3ModCabinet/wiki), which
+[Borderlands 3 ModCabinet wiki](https://github.com/BLCM/bl3mods/wiki), which
 is the easiest way for users to find mods through github, you'll want to make sure
-to follow the [ModCabinet wiki guidelines](https://github.com/BLCM/BL3ModCabinet/wiki/Contributing-to-BL3-ModCabinet)
+to follow the [ModCabinet wiki guidelines](https://github.com/BLCM/bl3mods/wiki/Contributing-to-BL3-ModCabinet)
 as well.  The most important parts are to make sure your mod file has a `.bl3hotfix`
 extension, and contain `Name:` and `Categories:` headers at the top of the mod file.
 

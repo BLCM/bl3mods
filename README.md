@@ -34,7 +34,7 @@ Finding Mods
 Obviously you can just browse around this github repo to find mods that
 you like, but since the mods are arranged by author, it might be difficult
 to know exactly what's available.  Like for BL2/TPS mods, we've created a
-[Borderlands 3 ModCabinet Wiki](https://github.com/BLCM/BL3ModCabinet/wiki)
+[Borderlands 3 ModCabinet Wiki](https://github.com/BLCM/bl3mods/wiki)
 which categorizes mods by what they do, and will probably be much easier
 to work with.
 
