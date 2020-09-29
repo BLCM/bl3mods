@@ -28,7 +28,7 @@ increment = 2
 default_levels = 8
 max_price = 1024000
 
-mod = Mod('cheaper_sdus.txt',
+mod = Mod('cheaper_sdus.bl3hotfix',
         'Cheaper SDUs',
         'Apocalyptech',
         [

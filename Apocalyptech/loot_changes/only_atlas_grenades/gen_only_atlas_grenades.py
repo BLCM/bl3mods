@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
-mod = Mod('only_atlas_grenades.txt',
+mod = Mod('only_atlas_grenades.bl3hotfix',
         'Only Atlas Grenades',
         'Apocalyptech',
         [

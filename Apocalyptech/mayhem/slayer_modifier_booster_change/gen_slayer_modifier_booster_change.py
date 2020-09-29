@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, ItemPool, BVC
 
-mod = Mod('slayer_modifier_booster_change.txt',
+mod = Mod('slayer_modifier_booster_change.bl3hotfix',
         'Slayer Modifier Booster Change',
         'Apocalyptech',
         [

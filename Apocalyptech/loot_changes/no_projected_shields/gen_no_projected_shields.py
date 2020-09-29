@@ -25,7 +25,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 from bl3data.bl3data import BL3Data
 
 bl3data = BL3Data()
-mod = Mod('no_projected_shields.txt',
+mod = Mod('no_projected_shields.bl3hotfix',
         'No Projected Shields',
         'Apocalyptech',
         [

@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('disable_rogue_lite_modifier.txt',
+mod = Mod('disable_rogue_lite_modifier.bl3hotfix',
         'Disable "Rogue Lite" Modifier',
         'Apocalyptech',
         [

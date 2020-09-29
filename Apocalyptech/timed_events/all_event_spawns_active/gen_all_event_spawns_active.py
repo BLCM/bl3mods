@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('all_event_spawns_active.txt',
+mod = Mod('all_event_spawns_active.bl3hotfix',
         'All (Limited-Time) Event Spawns Active',
         'Apocalyptech',
         [

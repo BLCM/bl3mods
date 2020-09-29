@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, ItemPoolListEntry
 
-mod = Mod('better_loot.txt',
+mod = Mod('better_loot.bl3hotfix',
         'BL3 Better Loot',
         'Apocalyptech',
         [

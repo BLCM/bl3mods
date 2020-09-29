@@ -410,7 +410,7 @@ unique_balances = [
 
 data = BL3Data()
 
-mod = Mod('uniques_are_legendary.txt',
+mod = Mod('uniques_are_legendary.bl3hotfix',
         'Uniques Are Legendary',
         'Apocalyptech',
         [

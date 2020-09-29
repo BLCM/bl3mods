@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('fewer_cartel_operatives.txt',
+mod = Mod('fewer_cartel_operatives.bl3hotfix',
         'Revenge of the Cartels: Fewer Operatives',
         'Apocalyptech',
         [

@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
-mod = Mod('boss_drop_randomizer.txt',
+mod = Mod('boss_drop_randomizer.bl3hotfix',
         'Boss Drop Randomizer',
         'Apocalyptech',
         [

@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
-mod = Mod('free_respec.txt',
+mod = Mod('free_respec.bl3hotfix',
         'Free Respec',
         'Apocalyptech',
         [

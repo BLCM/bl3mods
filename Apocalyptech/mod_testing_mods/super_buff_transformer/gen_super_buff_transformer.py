@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('super_buff_transformer.txt',
+mod = Mod('super_buff_transformer.bl3hotfix',
         "Super Buff: Transformer",
         'Apocalyptech',
         [

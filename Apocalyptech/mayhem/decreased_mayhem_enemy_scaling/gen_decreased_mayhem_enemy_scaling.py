@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('decreased_mayhem_enemy_scaling.txt',
+mod = Mod('decreased_mayhem_enemy_scaling.bl3hotfix',
         'Decreased Mayhem Enemy Scaling',
         'Apocalyptech',
         [

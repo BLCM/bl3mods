@@ -80,7 +80,7 @@ for label, scale in [
         ('Giant', 5.0),
         ]:
 
-    filename_label = '{:0.1f}_{}.txt'.format(scale, label.lower())
+    filename_label = '{:0.1f}_{}.bl3hotfix'.format(scale, label.lower())
 
     mod = Mod('sizemod_npc_{}'.format(filename_label),
             'Sizemod: NPC {}-lands ({}x)'.format(label, scale),

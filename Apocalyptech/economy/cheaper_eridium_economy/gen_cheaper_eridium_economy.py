@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('cheaper_eridium_economy.txt',
+mod = Mod('cheaper_eridium_economy.bl3hotfix',
         'Cheaper Eridium Economy',
         'Apocalyptech',
         [

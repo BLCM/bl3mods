@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('no_slam_artifacts.txt',
+mod = Mod('no_slam_artifacts.bl3hotfix',
         'No Slam-based Artifacts',
         'Apocalyptech',
         [

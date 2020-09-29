@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('better_slots.txt',
+mod = Mod('better_slots.bl3hotfix',
         'Better Slots',
         'Apocalyptech',
         [

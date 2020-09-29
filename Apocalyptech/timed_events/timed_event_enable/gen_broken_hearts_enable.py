@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('broken_hearts_enable.txt',
+mod = Mod('broken_hearts_enable.bl3hotfix',
         'Timed Event Enable: Broken Hearts',
         'Apocalyptech',
         [

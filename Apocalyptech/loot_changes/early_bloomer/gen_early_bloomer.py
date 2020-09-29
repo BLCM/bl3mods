@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('early_bloomer.txt',
+mod = Mod('early_bloomer.bl3hotfix',
         'Early Bloomer',
         'Apocalyptech',
         [

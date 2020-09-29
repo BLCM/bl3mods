@@ -30,7 +30,7 @@ for event, menunum in [
         ('cartels', 5),
         ]:
 
-    mod_filename = 'main_menu_{}.txt'.format(event)
+    mod_filename = 'main_menu_{}.bl3hotfix'.format(event)
     event_cap = event.capitalize()
 
     mod = Mod(mod_filename,
@@ -38,7 +38,7 @@ for event, menunum in [
             'Apocalyptech',
             [
                 "Sets the main menu to have the {} visuals.  No actual effect on".format(event_cap),
-                "gameplay or anything (use the `eventname_enable.txt` mods to actually",
+                "gameplay or anything (use the `eventname_enable.bl3hotfix` mods to actually",
                 "turn timed events back on).",
             ],
             lic=Mod.CC_BY_SA_40,

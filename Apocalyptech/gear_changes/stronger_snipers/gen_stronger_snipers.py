@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('stronger_snipers.txt',
+mod = Mod('stronger_snipers.bl3hotfix',
         'Stronger Snipers',
         'Apocalyptech',
         [

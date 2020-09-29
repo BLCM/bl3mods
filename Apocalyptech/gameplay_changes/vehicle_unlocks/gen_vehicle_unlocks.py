@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('vehicle_unlocks.txt',
+mod = Mod('vehicle_unlocks.bl3hotfix',
         'Vehicle Unlocks',
         'Apocalyptech',
         [

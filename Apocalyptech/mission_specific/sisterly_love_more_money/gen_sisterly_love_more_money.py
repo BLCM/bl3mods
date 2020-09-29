@@ -24,7 +24,7 @@ import collections
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('sisterly_love_more_money.txt',
+mod = Mod('sisterly_love_more_money.bl3hotfix',
         'Sisterly Love: More Money',
         'Apocalyptech',
         [

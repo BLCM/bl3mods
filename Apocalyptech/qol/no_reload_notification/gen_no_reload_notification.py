@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
-mod = Mod('no_reload_notification.txt',
+mod = Mod('no_reload_notification.bl3hotfix',
         'No Reload Notification',
         'Apocalyptech',
         [

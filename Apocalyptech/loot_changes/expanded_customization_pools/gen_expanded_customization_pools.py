@@ -65,7 +65,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             "rewards *are* included)."]),
         ]:
 
-    filename_full = 'expanded_customization_pools_{}.txt'.format(filename_addition)
+    filename_full = 'expanded_customization_pools_{}.bl3hotfix'.format(filename_addition)
 
     full_desc = [
         "The global drop pools for the various customization types in BL3 excludes various",

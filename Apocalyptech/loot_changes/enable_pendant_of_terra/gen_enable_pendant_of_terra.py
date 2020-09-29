@@ -25,7 +25,7 @@ sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, Balance, BVCF
 
-mod = Mod('enable_pendant_of_terra.txt',
+mod = Mod('enable_pendant_of_terra.bl3hotfix',
         'Enable Pendant of Terramorphous Artifact',
         'Apocalyptech',
         [

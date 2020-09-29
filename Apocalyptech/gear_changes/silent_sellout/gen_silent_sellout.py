@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('silent_sellout.txt',
+mod = Mod('silent_sellout.bl3hotfix',
         'Silent Sellout',
         'Apocalyptech',
         [

@@ -29,7 +29,7 @@ for label, scale, extra in [
         ('TPS', 1.1, ''),
         ]:
 
-    full_filename = 'alternate_scaling_{}.txt'.format(label.lower())
+    full_filename = 'alternate_scaling_{}.bl3hotfix'.format(label.lower())
     mod = Mod(full_filename,
             'Alternate Scaling: {}'.format(label),
             'Apocalyptech',

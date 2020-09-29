@@ -55,7 +55,7 @@ for (label, suffix, multiplier) in [
         ]:
 
     # Mod header
-    mod_filename = 'movement_speed_cheats_{}.txt'.format(suffix)
+    mod_filename = 'movement_speed_cheats_{}.bl3hotfix'.format(suffix)
     mod = Mod(mod_filename,
             'Movement Speed Cheats - {}'.format(label),
             'Apocalyptech',

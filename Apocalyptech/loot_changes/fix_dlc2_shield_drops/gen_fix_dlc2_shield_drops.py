@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('fix_dlc2_shield_drops.txt',
+mod = Mod('fix_dlc2_shield_drops.bl3hotfix',
         'Fix DLC2 Shield Drops',
         'Apocalyptech',
         [

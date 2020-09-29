@@ -52,7 +52,7 @@ def set_pool(mod, pool_to_set, balances):
             'BalancedItems',
             '({})'.format(','.join(parts)))
 
-mod = Mod('expanded_legendary_pools.txt',
+mod = Mod('expanded_legendary_pools.bl3hotfix',
         'Expanded Legendary Pools',
         'Apocalyptech',
         [

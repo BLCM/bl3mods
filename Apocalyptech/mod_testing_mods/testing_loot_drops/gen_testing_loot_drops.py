@@ -48,7 +48,7 @@ def set_pool(mod, pool_to_set, balances, char=None):
             'BalancedItems',
             '({})'.format(','.join(parts)))
 
-mod = Mod('testing_loot_drops.txt',
+mod = Mod('testing_loot_drops.bl3hotfix',
         'Testing Loot Drops',
         'Apocalyptech',
         [

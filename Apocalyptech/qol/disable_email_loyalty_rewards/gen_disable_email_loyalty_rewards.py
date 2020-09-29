@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('disable_email_loyalty_rewards.txt',
+mod = Mod('disable_email_loyalty_rewards.bl3hotfix',
         'Disable Email Loyalty Rewards',
         'Apocalyptech',
         [

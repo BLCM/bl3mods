@@ -24,7 +24,7 @@ sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, Balance
 
-mod = Mod('single_element_maliwan.txt',
+mod = Mod('single_element_maliwan.bl3hotfix',
         'Single-Element Maliwan',
         'Apocalyptech',
         [

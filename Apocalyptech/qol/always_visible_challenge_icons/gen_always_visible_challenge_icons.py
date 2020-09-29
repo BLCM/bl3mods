@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('always_visible_challenge_icons.txt',
+mod = Mod('always_visible_challenge_icons.bl3hotfix',
         'Always Visible Challenge Icons',
         'Apocalyptech',
         [

@@ -54,7 +54,7 @@ for (label, filename, rate, desc) in [
             ]),
         ]:
 
-    full_filename = 'customization_drop_rate_{}.txt'.format(filename)
+    full_filename = 'customization_drop_rate_{}.bl3hotfix'.format(filename)
 
     mod = Mod(full_filename,
             'Customization Drop Rate: {}'.format(label),

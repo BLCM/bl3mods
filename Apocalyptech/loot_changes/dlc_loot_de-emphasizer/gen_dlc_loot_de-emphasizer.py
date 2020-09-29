@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
-mod = Mod('dlc_loot_de-emphasizer.txt',
+mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
         'DLC Loot De-Emphasizer',
         'Apocalyptech',
         [

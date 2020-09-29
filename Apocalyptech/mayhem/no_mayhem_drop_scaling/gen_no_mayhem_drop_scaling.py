@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('no_mayhem_drop_scaling.txt',
+mod = Mod('no_mayhem_drop_scaling.bl3hotfix',
         'No Mayhem Drop Scaling',
         'Apocalyptech',
         [

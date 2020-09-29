@@ -898,7 +898,7 @@ for (guntype, pools, (leg_pool, leg_balances)) in type_pools:
 for (man, man_label) in eng_manufacturers.items():
 
     man_file_label = man_label.lower()
-    man_filename = 'manufacturer_lock_{}.txt'.format(man_file_label)
+    man_filename = 'manufacturer_lock_{}.bl3hotfix'.format(man_file_label)
 
     mod = Mod(man_filename,
             'Manufacturer Lock: {}'.format(man_label),
@@ -956,7 +956,7 @@ for (man, man_label) in eng_manufacturers.items():
 # If we've had some manufacturers specified, do a "combined" mod as well
 if len(custom_to_lock) >  0:
 
-    man_filename = 'manufacturer_lock_custom_{}.txt'.format('_'.join(sorted(processed_args)))
+    man_filename = 'manufacturer_lock_custom_{}.bl3hotfix'.format('_'.join(sorted(processed_args)))
 
     mod = Mod(man_filename,
             'Custom Manufacturer Lock: {}'.format(', '.join(sorted(eng_args))),

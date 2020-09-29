@@ -30,7 +30,7 @@ for (label, scale) in [
         ('Insane', 5000),
         ]:
 
-    mod_filename = 'fast_levelling_{}.txt'.format(label.lower())
+    mod_filename = 'fast_levelling_{}.bl3hotfix'.format(label.lower())
 
     mod = Mod(mod_filename,
             'Fast Levelling: {} Variant (very cheaty!)'.format(label),

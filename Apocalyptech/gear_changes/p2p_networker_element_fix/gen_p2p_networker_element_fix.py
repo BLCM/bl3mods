@@ -25,7 +25,7 @@ sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, Balance
 
-mod = Mod('p2p_networker_element_fix.txt',
+mod = Mod('p2p_networker_element_fix.bl3hotfix',
         'P2P Networker Element Fix',
         'Apocalyptech',
         [

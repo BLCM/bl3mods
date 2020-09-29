@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('all_weapons_can_anoint.txt',
+mod = Mod('all_weapons_can_anoint.bl3hotfix',
         'All Weapons Can Anoint',
         'Apocalyptech',
         [

@@ -57,7 +57,7 @@ for filename, label, comments, attachments, set_gun in [
             '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5'),
         ]:
 
-    full_filename = 'first_gun_chest_{}.txt'.format(filename)
+    full_filename = 'first_gun_chest_{}.bl3hotfix'.format(filename)
     mod = Mod(full_filename,
             'First Gun Chest: {}'.format(label),
             'Apocalyptech',

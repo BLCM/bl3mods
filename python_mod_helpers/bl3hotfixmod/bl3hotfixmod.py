@@ -88,7 +88,9 @@ class Mod(object):
                 'https://creativecommons.org/publicdomain/zero/1.0/'),
             }
 
-    def __init__(self, filename, title, author, description, v=None, lic=None, cats=None, ss=None, videos=None, urls=None, nexus=None):
+    def __init__(self, filename, title, author, description,
+            v=None, lic=None, cats=None,
+            ss=None, videos=None, urls=None, nexus=None):
         """
         Initializes ourselves and starts writing the mod
         """

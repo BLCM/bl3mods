@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('red_text_explainer.txt',
+mod = Mod('red_text_explainer.bl3hotfix',
         'Red Text Explainer',
         'Apocalyptech',
         [

@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
-mod = Mod('cartels_enable.txt',
+mod = Mod('cartels_enable.bl3hotfix',
         'Timed Event Enable: Revenge of the Cartels',
         'Apocalyptech',
         [

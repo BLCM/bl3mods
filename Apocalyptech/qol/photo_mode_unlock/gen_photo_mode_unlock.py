@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
-mod = Mod('photo_mode_unlock.txt',
+mod = Mod('photo_mode_unlock.bl3hotfix',
         'Photo Mode Unlock',
         'Apocalyptech',
         [

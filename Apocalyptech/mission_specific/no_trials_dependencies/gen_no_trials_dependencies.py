@@ -24,7 +24,7 @@ import collections
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('no_trials_dependencies.txt',
+mod = Mod('no_trials_dependencies.bl3hotfix',
         'No Trials Dependencies',
         'Apocalyptech',
         [

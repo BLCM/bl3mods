@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('more_tracker_darts.txt',
+mod = Mod('more_tracker_darts.bl3hotfix',
         'More Tracker Darts',
         'Apocalyptech',
         [

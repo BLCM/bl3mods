@@ -29,7 +29,7 @@ scale_smg = 0.5
 scale_sniper = 0
 scale_heavy = 0.5
 
-mod = Mod('better_maliwan_charge_time.txt',
+mod = Mod('better_maliwan_charge_time.bl3hotfix',
         'Better Maliwan Charge Time',
         'Apocalyptech',
         [

@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF
 
-mod = Mod('mission_reward_randomizer.txt',
+mod = Mod('mission_reward_randomizer.bl3hotfix',
         'Mission Reward Randomizer',
         'Apocalyptech',
         [

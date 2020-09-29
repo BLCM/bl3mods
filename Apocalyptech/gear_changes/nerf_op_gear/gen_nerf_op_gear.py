@@ -32,7 +32,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 #  - Needle Gun - On the card, it's outclassed damagewise in the first place.
 #                 Could be that the effects make up for it, but leaving for now.
 
-mod = Mod('nerf_op_gear.txt',
+mod = Mod('nerf_op_gear.bl3hotfix',
         'Nerf OP Gear',
         'Apocalyptech',
         [

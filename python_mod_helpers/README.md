@@ -31,7 +31,7 @@ so:
 ```python
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('filename_to_save.txt',
+mod = Mod('filename_to_save.bl3hotfix',
         'Mod Title',
         'Author Name',
         [
@@ -82,7 +82,7 @@ which will be added to the ModCabinet wiki if specified.  Here's a mod
 definition which includes all of them:
 
 ```python
-mod = Mod('filename_to_save.txt',
+mod = Mod('filename_to_save.bl3hotfix',
         'Mod Title',
         'Author Name',
         [

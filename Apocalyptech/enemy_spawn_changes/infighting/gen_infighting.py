@@ -113,7 +113,7 @@ for spawnoption in data.find('', 'SpawnOptions_'):
         spawnoptions[last_bit] = spawnoption
 
 # Start writing the mod
-mod = Mod('infighting.txt',
+mod = Mod('infighting.bl3hotfix',
         'Infighting',
         'Apocalyptech',
         [

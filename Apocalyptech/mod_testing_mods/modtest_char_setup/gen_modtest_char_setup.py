@@ -26,7 +26,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 level_to = 60
 
-mod = Mod('modtest_char_setup.txt',
+mod = Mod('modtest_char_setup.bl3hotfix',
         'Modtest Char Setup (at beginning of the game)',
         'Apocalyptech',
         [
@@ -40,7 +40,7 @@ mod = Mod('modtest_char_setup.txt',
             "   you're levelled.",
             "",
             "2) Alters the first gun chest to contain a Crader's EM-P5 and a",
-            "   Transformer shield (identical to first_gun_testing_gear.txt).",
+            "   Transformer shield (identical to first_gun_testing_gear.bl3hotfix).",
             "",
             "3) Sets Covenant Pass's Game Stage to be {}, so the gear should".format(level_to),
             "   be levelled that far.",
@@ -59,7 +59,7 @@ mod = Mod('modtest_char_setup.txt',
         cats='cheat',
         )
 
-# Taken directly from first_gun_testing_gear.txt
+# Taken directly from first_gun_testing_gear.bl3hotfix
 mod.header('First Gun Chest Contents')
 
 mod.reg_hotfix(Mod.EARLYLEVEL, 'Recruitment_P',

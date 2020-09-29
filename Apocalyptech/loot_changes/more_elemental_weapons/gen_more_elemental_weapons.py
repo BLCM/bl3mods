@@ -28,7 +28,7 @@ weight_element = 0.5
 total = weight_no_element+(weight_element*5)
 chance_element = round((weight_element*5)/total*100)
 
-mod = Mod('more_elemental_weapons.txt',
+mod = Mod('more_elemental_weapons.bl3hotfix',
         'More Elemental Weapons',
         'Apocalyptech',
         [

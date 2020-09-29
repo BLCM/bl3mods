@@ -449,7 +449,7 @@ print('Writing mod files:')
 print('')
 for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
 
-    full_filename = 'expanded_event_spawners_{}.txt'.format(filename)
+    full_filename = 'expanded_event_spawners_{}.bl3hotfix'.format(filename)
 
     mod = Mod(full_filename,
             'Expanded Event Spawners: {}'.format(label),

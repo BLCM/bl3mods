@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('torgue_ar_full_auto.txt',
+mod = Mod('torgue_ar_full_auto.bl3hotfix',
         'Torgue ARs: Full Auto',
         'Apocalyptech',
         [

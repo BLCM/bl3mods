@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('guaranteed_rare_spawns.txt',
+mod = Mod('guaranteed_rare_spawns.bl3hotfix',
         'Guaranteed Rare Spawns',
         'Apocalyptech',
         [

@@ -25,7 +25,7 @@ sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('fix_siren_com_blank_parts.txt',
+mod = Mod('fix_siren_com_blank_parts.bl3hotfix',
         'Fix Siren COM Blank Parts',
         'Apocalyptech',
         [

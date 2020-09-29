@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('super_buff_craders_emp5.txt',
+mod = Mod('super_buff_craders_emp5.bl3hotfix',
         "Super Buff: Crader's EM-P5",
         'Apocalyptech',
         [

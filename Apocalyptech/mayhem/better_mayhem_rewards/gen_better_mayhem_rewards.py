@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 
-mod = Mod('better_mayhem_rewards.txt',
+mod = Mod('better_mayhem_rewards.bl3hotfix',
         'Better Mayhem Rewards',
         'Apocalyptech',
         [

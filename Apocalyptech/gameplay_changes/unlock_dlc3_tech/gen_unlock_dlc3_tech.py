@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, LVL_TO_ENG
 
-mod = Mod('unlock_dlc3_tech.txt',
+mod = Mod('unlock_dlc3_tech.bl3hotfix',
         'Unlock DLC3 Tech',
         'Apocalyptech',
         [
