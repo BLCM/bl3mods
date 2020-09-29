@@ -1,0 +1,5 @@
+#Hotfix Applied Sign
+
+SparkLevelPatchEntry,(1,11,0,MenuMap_P),/Game/Maps/MenuMap,/Game/Patch/MicropatchApplied,IO_MainMenu_HotfixIndicator,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+SparkPatchEntry,(1,11,0,),/Game/Maps/MenuMap,/Game/Patch/MicropatchApplied,IO_MainMenu_HotfixIndicator,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
