@@ -10,6 +10,9 @@ in the data, so this mod just patches that up.
 Changelog
 =========
 
+**v1.1.0** - Sep 26, 2020
+ * Updated for DLC4 Siren COM
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

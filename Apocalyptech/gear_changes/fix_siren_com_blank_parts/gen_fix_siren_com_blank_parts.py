@@ -35,7 +35,7 @@ mod = Mod('fix_siren_com_blank_parts.bl3hotfix',
             "empty part can never be chosen.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='gear-com, bugfix',
         )
 
@@ -66,6 +66,7 @@ for bal_name, part_idx in [
         # DLCs
         ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1', 72),
         ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib', 72),
+        ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma', 73),
         ]:
 
     # Set the `None` weight to zero
