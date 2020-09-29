@@ -1,6 +1,6 @@
 ###
 ### Name: Single-Element Maliwan
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: gear-brand
 ###
@@ -147,4 +147,10 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheNothing/
 
 # Balance_SM_MAL_KybsWorth
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth,RuntimePartList.PartTypeTOC.PartTypeTOC[10],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_SG_MAL_BlindBandit
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit.Balance_SG_MAL_BlindBandit,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
+
+# Balance_SG_MAL_BlindBandit_Epic
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit_Epic.Balance_SG_MAL_BlindBandit_Epic,RuntimePartList.PartTypeTOC.PartTypeTOC[9],0,,(StartIndex=-1,NumParts=0)
 

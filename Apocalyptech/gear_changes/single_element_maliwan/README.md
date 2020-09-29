@@ -14,6 +14,8 @@ now has a legitimate special ability.
 Note that if you use my P2P Networker Element Fix mod in conjunction with this one,
 the P2P Networker *will* have its second element.
 
+This has been updated through DLC4 (Psycho Krieg and the Fantastic Fustercluck).
+
 **Note:** This only applies to freshly-spawned guns.  Any Maliwan weapon
 already in your inventory (or imported via an previously-existing item code) will
 still only have the single element.  It needs to be a fresh spawn, with this
@@ -21,6 +23,9 @@ mod active.
 
 Changelog
 =========
+
+**v1.1.0** - Sep 26, 2020
+ * Updated for DLC4 weapons
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release
