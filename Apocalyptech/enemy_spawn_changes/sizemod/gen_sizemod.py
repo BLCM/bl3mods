@@ -94,7 +94,7 @@ for label, scale in [
             lic=Mod.CC_BY_SA_40,
             v='1.0.0',
             cats='enemy, joke',
-            ss='https://raw.githubusercontent.com/apocalyptech/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
+            ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
             )
     for bpchar in bpchars:
 

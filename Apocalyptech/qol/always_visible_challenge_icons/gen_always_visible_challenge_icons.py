@@ -41,7 +41,7 @@ mod = Mod('always_visible_challenge_icons.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol',
-        ss='https://raw.githubusercontent.com/apocalyptech/bl3mods/master/Apocalyptech/qol/always_visible_challenge_icons/droughts.png',
+        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/always_visible_challenge_icons/droughts.png',
         )
 
 # I should look at actual data, but it looks to me from some *real* simple
