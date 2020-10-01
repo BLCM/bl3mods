@@ -7,6 +7,11 @@ along with my Expanded Legendary Pools mod, to make the dropped gear more
 noticeable.  Without that mod, I think these mostly just come as mission
 rewards or as mission items, so this mod would be a bit pointless.
 
+DLC4 (Psycho Krieg) introduced a set of gear which had both legendary and
+non-legendary variants -- this mod omits those non-legendary variants, since
+there's no real reason to have them once you've got the legendary versions
+(and my Expanded Legendary Pools mod does not add them in).
+
 I'm actually not sure if being legendary has an effect on item stats; it's
 possible that this mod buffs up some items here.
 
