@@ -23,6 +23,9 @@ myself anymore, but I'm keeping it here for old time's sake.
 Changelog
 =========
 
+**v1.1.0** - Sep 30, 2020
+ * Updated for level bump in DLC4 (should take you to 65 now)
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

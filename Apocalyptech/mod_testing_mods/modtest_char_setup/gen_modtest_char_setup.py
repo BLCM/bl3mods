@@ -24,7 +24,7 @@ import math
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-level_to = 60
+level_to = 65
 
 mod = Mod('modtest_char_setup.bl3hotfix',
         'Modtest Char Setup (at beginning of the game)',
@@ -55,7 +55,7 @@ mod = Mod('modtest_char_setup.bl3hotfix',
             "Transformer Super Buff mods.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='cheat',
         )
 
