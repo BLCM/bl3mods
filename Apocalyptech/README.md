@@ -151,6 +151,13 @@ no longer needed (either because of changes to the game itself, or because it
 was obsoleted by one of my other mods).  There's a README in there which details
 most of those, so feel free to browse around if you want.
 
+## Data Processing
+
+There's also a `dataprocessing` dir here, which is various utils that I use to
+pull data from BL3, mostly using the `bl3mods` and `bl3hotfixmod` modules up
+in the main dir of this repo.  These are often in service of mod creation, though
+there's also scripts which populate some Google Sheets that I maintain as well.
+
 Licenses
 ========
 
