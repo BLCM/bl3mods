@@ -1,6 +1,6 @@
 ###
 ### Name: DLC Loot De-Emphasizer
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: loot-system, enemy-drops, chests
 ###
@@ -243,4 +243,16 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_Shotguns_Legendary.ItemPool_GER_Shotguns_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SMGs_Legendary.ItemPool_GER_SMGs_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/Guns/ItemPool_GER_SnipeRifles_Legendary.ItemPool_GER_SnipeRifles_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'))
+
+###
+### DLC4 - Psycho Krieg and the Fantastic Fustercluck
+###
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Guns_All_Alisma.ItemPool_Guns_All_Alisma,BalancedItems.BalancedItems[4].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma.ItemPoolList_BadassEnemyGunsGear_Alisma,ItemPools.ItemPools[10].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Shields_All_Alisma.ItemPool_Shields_All_Alisma,BalancedItems.BalancedItems[4].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma.ItemPoolList_StandardEnemyGunsandGear_Alisma,ItemPools.ItemPools[5],0,,(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All.ItemPool_Shields_All"',PoolProbability=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/ItemPools/Attributes/Att_Shields_DropOddsWithMayhem_Total.Att_Shields_DropOddsWithMayhem_Total"',AttributeInitializer=None,BaseValueScale=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1))
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_ClassMods_All_Alisma.ItemPool_ClassMods_All_Alisma,BalancedItems.BalancedItems[4].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[7].ItemPool,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[8].ItemPool,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"'
 

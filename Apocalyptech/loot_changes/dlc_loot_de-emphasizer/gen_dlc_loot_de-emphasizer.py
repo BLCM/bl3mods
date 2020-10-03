@@ -43,7 +43,7 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
             "so you've got interesting stuff dropping most of the time.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='loot-system, enemy-drops, chests',
         )
 
@@ -97,6 +97,13 @@ def legendary_coms_itempoollist(char_name, list_name, index):
 def legendary_coms_itempool(char_name, pool_name, index):
     global leg_pool_coms
     do_itempool(char_name, pool_name, index, leg_pool_coms)
+
+def zero_itempoollist(hf_mode, hf_target, poollist_name, index):
+    global mod
+    mod.reg_hotfix(hf_mode, hf_target,
+            poollist_name,
+            'ItemPools.ItemPools[{}].PoolProbability'.format(index),
+            BVCF(bvc=0))
 
 def zero_pool(hf_mode, hf_target, pool_name, index):
     global mod
@@ -429,6 +436,47 @@ for src, dst in [
             'BalancedItems',
             '((ItemPoolData={}))'.format(dst))
 mod.newline()
+
+###
+### DLC4 - Psycho Krieg
+### Continuing to be lazy here and just using MatchAll...
+###
+
+mod.header('DLC4 - Psycho Krieg and the Fantastic Fustercluck')
+
+# Main weapon pool.  This is used by standard enemies, badasses, and bosses
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Guns_All_Alisma', 4)
+
+# Extra badass purple drops
+zero_itempoollist(Mod.CHAR, 'MatchAll',
+        '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma', 10)
+
+# Main shield pool.  Only used by badasses, it seems
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Shields_All_Alisma', 4)
+
+# Fix standard enemy shield drop (ordinarily is hardcoded to have a 1% chance of DLC
+# legendary shields, and nothing else).
+mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+        '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma',
+        'ItemPools.ItemPools[5]',
+        """(
+            ItemPool={},
+            PoolProbability={},
+            NumberOfTimesToSelectFromThisPool={}
+        )""".format(
+            Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All', 'ItemPoolData'),
+            BVCF(bva='/Game/GameData/Loot/ItemPools/Attributes/Att_Shields_DropOddsWithMayhem_Total'),
+            BVCF(bvc=1),
+            ))
+
+# Main COM pool.  Used by standard enemies, badasses, and bosses
+legendary_coms_itempool('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_ClassMods_All_Alisma', 4)
+
+# Boss Shields
+legendary_shields_itempoollist('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 7)
+
+# Boss Guns
+legendary_guns_itempoollist('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 8)
 
 # Finish
 mod.close()
