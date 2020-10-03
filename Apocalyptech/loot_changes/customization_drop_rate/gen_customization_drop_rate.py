@@ -61,7 +61,7 @@ for (label, filename, rate, desc) in [
             'Apocalyptech',
             desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.1.0',
             cats='enemy-drops',
             )
 
@@ -88,6 +88,11 @@ for (label, filename, rate, desc) in [
             ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium', 6),
             ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium', 6),
             ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 9),
+            ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma', 8),
+            ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma', 9),
+            # Yep, it's really in there twice
+            ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 3),
+            ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 4),
             ]:
 
         # Defaults vary depending on pool; for base-game it's 0.5%.

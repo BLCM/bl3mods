@@ -1,6 +1,6 @@
 ###
 ### Name: Customization Drop Rate: Frequent
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -41,4 +41,8 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium.ItemPoolList_Boss_Geranium,ItemPools[6].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium.ItemPoolList_MiniBoss_Geranium,ItemPools[6].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium.ItemPoolList_StandardEnemyGunsandGear_Geranium,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma.ItemPoolList_StandardEnemyGunsandGear_Alisma,ItemPools[8].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma.ItemPoolList_BadassEnemyGunsGear_Alisma,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools[3].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools[4].PoolProbability,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
