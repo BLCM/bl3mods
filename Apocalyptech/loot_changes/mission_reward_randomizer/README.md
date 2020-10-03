@@ -15,6 +15,9 @@ skins/heads will still reward those cosmetics.
 Changelog
 =========
 
+**v1.1.0** - Oct 3, 2020
+ * Updated with DLC4 (Psycho Krieg) missions
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

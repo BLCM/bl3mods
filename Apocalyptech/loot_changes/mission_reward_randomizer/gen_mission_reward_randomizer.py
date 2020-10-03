@@ -33,13 +33,9 @@ mod = Mod('mission_reward_randomizer.bl3hotfix',
             "",
             "More or less intended to be used alongside my Expanded Legendary Pools",
             "mods, for the most interesting rewards.",
-            "",
-            "Relatively untested!  It's quite possible that some missions were missed.",
-            "The data here was programmatically generated from JohnWickParse data",
-            "serializations, and JWP has problems with some objects.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='quest-changes',
         )
 
@@ -154,6 +150,10 @@ for (mission_obj, drop_type) in [
         ('/Game/PatchDLC/Geranium/Missions/Plot/Mission_Ep02_Bathhouse.Default__Mission_Ep02_Bathhouse_C:RewardData_OakMissionRewardData', AF),
         ('/Game/PatchDLC/Geranium/Missions/Plot/Mission_Ep03_ObsidianForest.Default__Mission_Ep03_ObsidianForest_C:RewardData_OakMissionRewardData', GM),
         ('/Game/PatchDLC/Geranium/Missions/Plot/Mission_Ep05_Crater.Default__Mission_Ep05_Crater_C:RewardData_OakMissionRewardData', RD),
+        ('/Game/PatchDLC/Alisma/Missions/Plot/ALI_EP05.Default__ALI_EP05_C:RewardData_OakMissionRewardData', HW),
+        ('/Game/PatchDLC/Alisma/Missions/Plot/ALI_EP04.Default__ALI_EP04_C:RewardData_OakMissionRewardData', TK),
+        ('/Game/PatchDLC/Alisma/Missions/Side/ALI_SM_StrongBones.Default__ALI_SM_StrongBones_C:RewardData_OakMissionRewardData', SM),
+        ('/Game/PatchDLC/Alisma/Missions/Side/ALI_SM_ChecksAndBalances.Default__ALI_SM_ChecksAndBalances_C:RewardData_OakMissionRewardData', TK),
         ]:
 
     if drop_type not in type_blacklist:
