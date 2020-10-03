@@ -38,8 +38,8 @@
 ### Bugfixes
 ###
 
-# Fix Shield drops on standard enemies in DLC2
-Apocalyptech/loot_changes/fix_dlc2_shield_drops/fix_dlc2_shield_drops.bl3hotfix
+# Fix Shield drops on standard enemies in DLC2+DLC4
+Apocalyptech/loot_changes/fix_dlc_shield_drops/fix_dlc_shield_drops.bl3hotfix
 
 # Fixes the blank parts that Siren COMs can sometimes roll
 Apocalyptech/gear_changes/fix_siren_com_blank_parts/fix_siren_com_blank_parts.bl3hotfix
