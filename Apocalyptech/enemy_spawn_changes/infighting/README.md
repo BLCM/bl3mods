@@ -15,6 +15,9 @@ Amusingly, DLC3 riders can end up attacking their own mounts!
 Changelog
 =========
 
+**v1.1.0** - Sep 26, 2020
+ * Updated with DLC4 enemies
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

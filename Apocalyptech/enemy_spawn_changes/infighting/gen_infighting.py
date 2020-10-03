@@ -49,12 +49,26 @@ subdirs = [
         'dlc1',
         'dlc2',
         'dlc3',
+        'dlc4',
         ]
-spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
-spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
+spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
+spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
 spawnoption_blacklist = {
         # There's another "SpawnOptions_CoVMix_Mine" and this one appears unused
         '/Game/PatchDLC/Event2/Enemies/_Spawning/WorldMechanicMixes/WorldMapMixes/SpawnOptions_CoVMix_Mine',
+
+        # These seem to be unused, and collide with some Dandelion objects
+        '/Alisma/Enemies/_Spawning/Loader/SpawnOptions_LoaderMix_Regular',
+        '/Alisma/Enemies/_Spawning/Loader/SpawnOptions_SurveyorMix',
+
+        # Likewise, but with a base-game object
+        '/Alisma/Enemies/_Spawning/Heavy/Individual/SpawnOptions_HeavyBasic',
+
+        # With Alisma we started looking for SpawnGroup_ and SpawnTier_ objects as well, which
+        # doesn't actually affect other DLCs for the most part, but *does* pull in a few extra
+        # objects from DCL2 which it seems we should ignore.  So, ignoring 'em.
+        '/Hibiscus/Enemies/_Spawning/_Unique/Mission/SpawnTier_SinisterSounds_FrostbiterECHOLog',
+        '/Hibiscus/Enemies/_Spawning/Tiers/Cultists/Village/Episode2/SpawnTier_Hib_Village_Cult_EP2Renewal_Friendly',
         }
 # Turns out we don't need to "randomize" teams at all, 'cause the Enraged Goliath
 # team works great all by itself.
@@ -98,7 +112,10 @@ if not os.path.exists(base_dir):
 # Figure out what SpawnOptions_* objects we care about
 data = BL3Data()
 spawnoptions = {}
-for spawnoption in data.find('', 'SpawnOptions_'):
+full_options = list(data.find('', 'SpawnOptions_')) \
+        + list(data.find('', 'SpawnGroup_')) \
+        + list(data.find('', 'SpawnTier_'))
+for spawnoption in full_options:
     if spawnoption in spawnoption_blacklist:
         continue
     if 'Enemies' in spawnoption:
@@ -122,7 +139,7 @@ mod = Mod('infighting.bl3hotfix',
             "thoroughly tested, but seems to do the trick!",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='enemy, gameplay',
         )
 
