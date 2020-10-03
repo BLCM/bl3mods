@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='enemy-drops',
         )
 
@@ -164,6 +164,7 @@ for pool, index in [
         ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', 10),
         ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', 10),
         ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 10),
+        ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma', 9),
         ]:
 
     # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
@@ -275,6 +276,15 @@ for label, poollist_name, pool_idx, chars in [
             ]),
         ('DLC3 Bosses', '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium', 7, [
             'BPChar_RuinerBoss',
+            ]),
+        ('DLC4 Bosses', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 5, [
+            'BPChar_DarkBrick',
+            'BPChar_DarkLilith',
+            'BPChar_DarkMordecai',
+            'BPChar_DrBenedict',
+            'BPChar_PsychodinP2',
+            'BPChar_TrainBoss',
+            'BPChar_SpongeBoss',
             ]),
         ]:
 
@@ -1394,6 +1404,48 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_GerPsychoMoleMan',
             0,
             1),
+
+        # DLC4 Bosses
+        ("Locomöbius",
+            '/Alisma/Enemies/TrainBoss/_Shared/_Design/Character',
+            'BPChar_TrainBoss',
+            1,
+            3),
+        ("Psychoreaver - Weapons",
+            '/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character',
+            'BPChar_PsychodinP2',
+            0,
+            2),
+        ("Psychoreaver - Room Deco",
+            '/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character',
+            'BPChar_PsychodinP2',
+            1,
+            1),
+        ("Evil Mordecai",
+            '/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character',
+            'BPChar_DarkMordecai',
+            0,
+            2),
+        ("Evil Brick",
+            '/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character',
+            'BPChar_DarkBrick',
+            0,
+            1),
+        ("Evil Lilith",
+            '/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character',
+            'BPChar_DarkLilith',
+            0,
+            3),
+        ("SpongeBoss BulletPants",
+            '/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character',
+            'BPChar_SpongeBoss',
+            0,
+            1),
+        ("Dr. Benedict",
+            '/Alisma/Enemies/DrBenedict/_Shared/_Design/Character',
+            'BPChar_DrBenedict',
+            0,
+            3),
         ]:
     mod.comment(label)
     full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)

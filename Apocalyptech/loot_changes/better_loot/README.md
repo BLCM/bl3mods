@@ -8,7 +8,7 @@ different things:
 * Sets the rarity weights to be improved, globally
 * Increases Eridium drop rates and quantities.
 * Guarantees specific legendary drops from nearly all the bosses which
-  have unique drops.  This has been updated through DLC3 (Bounty of Blood),
+  have unique drops.  This has been updated through DLC4 (Psycho Krieg),
   and updated with the drop changes as recently as the 2020-08-20 patch.
 * Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
@@ -29,8 +29,14 @@ regardless of whether you're in Normal, TVHM, or any Mayhem mode.
 I personally recommend the use of Expanded Legendary Pools with this mod, so that
 the loot you come across is as varied as possible.
 
+For a list of what drops you should expect from bosses, while using this mod, see
+[expected_drops.md](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
+
 Changelog
 =========
+
+**v1.1.0** - Sep 26, 2020
+ * Updated with DLC4 enemies
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

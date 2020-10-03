@@ -1,6 +1,6 @@
 ###
 ### Name: BL3 Better Loot
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -55,6 +55,7 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/GameData/Loo
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader.ItemPoolList_StandardEnemyGunsandGearLoader,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium.ItemPoolList_StandardEnemyGunsandGear_Geranium,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma.ItemPoolList_StandardEnemyGunsandGear_Alisma,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Eridium Drop Quantity Buffs
@@ -153,6 +154,15 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Game/PatchDLC/Geranium/Game
 
 # DLC3 Bosses
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium.ItemPoolList_Boss_Geranium,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+
+# DLC4 Bosses
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
 
 # Slaughters
 SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/GameData/Loot/ItemPools/ItemPoolList_SlaughterMoney.ItemPoolList_SlaughterMoney,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,5
@@ -1202,6 +1212,38 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/
 # Waylon Hurd
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Locomöbius
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss.BPChar_TrainBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss.BPChar_TrainBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Psychoreaver - Weapons
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Psychoreaver - Room Deco
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Mordecai
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character/BPChar_DarkMordecai.BPChar_DarkMordecai_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character/BPChar_DarkMordecai.BPChar_DarkMordecai_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Brick
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character/BPChar_DarkBrick.BPChar_DarkBrick_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character/BPChar_DarkBrick.BPChar_DarkBrick_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Lilith
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character/BPChar_DarkLilith.BPChar_DarkLilith_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character/BPChar_DarkLilith.BPChar_DarkLilith_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# SpongeBoss BulletPants
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss.BPChar_SpongeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss.BPChar_SpongeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Dr. Benedict
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict.BPChar_DrBenedict_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict.BPChar_DrBenedict_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Pain
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
