@@ -43,6 +43,13 @@ challenges_init = [
         # ... though it looks like they might all use the exact same obj type, apart
         # from Good Prospects, which functions totally differently.
         ("DLC3 Challenges", 'BP_CrewChallengeComponent_Geranium'),
+
+        # DLC4 challenges:
+        #    Signal to Noise
+        # ... this was just a guess as to the object name here, and it turns out to be
+        # wrong.  The DLC4 challenges are practically impossible to miss, though, so
+        # I'm not gonna bother looking any more for 'em.
+        ("DLC4 Challenges", 'BP_CrewChallengeComponent_Salvage'),
         ]
 
 level_to_eng = {
@@ -119,6 +126,13 @@ level_to_eng = {
         'Frontier_P': "The Blastplains",
         'Lodge_P': "Ashfall Peaks",
         'Town_P': "Vestige",
+
+        # DLC4
+        'Experiment_P': "Benediction of Pain",
+        'Anger_P': "Castle Crimson",
+        'Chase_P': "Sapphire's Run ",
+        'Sanctum_P': "The Psychoscape",
+        'Eldorado_P': "Vaulthalla",
     }
 
 num_re = re.compile('^(.*)_(\d+)$')
@@ -137,6 +151,7 @@ map_re = re.compile(r'^.*(\/Game\/Maps\/.*)\/([^\.\/]+)\.\2$')
 dlc1_map_re = re.compile(r'^.*(\/Dandelion\/Maps\/.*)\/([^\.\/]+)\.\2$')
 dlc2_map_re = re.compile(r'^.*(\/Hibiscus\/Maps\/.*)\/([^\.\/]+)\.\2$')
 dlc3_map_re = re.compile(r'^.*(\/Geranium\/Maps\/.*)\/([^\.\/]+)\.\2$')
+dlc4_map_re = re.compile(r'^.*(\/Alisma\/Maps\/.*)\/([^\.\/]+)\.\2$')
 with lzma.open('UE4Tools_NamesDump.txt.xz', 'rt', encoding='latin1') as df:
     for line in df:
         match = map_re.match(line)
@@ -162,6 +177,12 @@ with lzma.open('UE4Tools_NamesDump.txt.xz', 'rt', encoding='latin1') as df:
                         dirname = match.group(1)
                         obj_name = match.group(2)
                         map_to_full['{}.{}'.format(obj_name, obj_name)] = '{}/{}.{}'.format(dirname, obj_name, obj_name)
+                    else:
+                        match = dlc4_map_re.match(line)
+                        if match:
+                            dirname = match.group(1)
+                            obj_name = match.group(2)
+                            map_to_full['{}.{}'.format(obj_name, obj_name)] = '{}/{}.{}'.format(dirname, obj_name, obj_name)
 
 # Now find our challenge objects
 print('        ("{}", \'{}\', ['.format(level_name, level_package))

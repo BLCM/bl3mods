@@ -34,3 +34,11 @@ do
     ${CUR_DIR}/process_challenges.py >> ${CUR_DIR}/challenges-dlc3.py
     cd ${CUR_DIR}
 done
+
+for dir in dlc4/*
+do
+    echo $dir
+    cd $dir
+    ${CUR_DIR}/process_challenges.py >> ${CUR_DIR}/challenges-dlc4.py
+    cd ${CUR_DIR}
+done
