@@ -7,7 +7,9 @@ the same for Eridian Writings.  Note that you will miss dialog if you use this:
 when entering a new map, only one of the available challenge intros will be
 played.  Note that this currently only supports the base game, some of DLC2,
 and most of DLC3.  DLC1 challenges are omitted entirely because they act
-weirdly.  Known issues:
+weirdly, and DLC4 challenges are omitted both because they're nearly impossible
+to miss, and because my initial attempts at finding the objects failed.
+Known issues:
 
 * The third Typhon log in Meridian Outskirts won't show up until you're very
   close to it.
@@ -31,6 +33,7 @@ weirdly.  Known issues:
 * The Target of Opportunity in Devil's Razor
 * Target of Opportunity in Cathedral of the Twin Gods
 * All DLC1 challenges are omitted
+* All DLC4 challenges are omitted (though you won't miss 'em anyway)
 * Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
 * Some Eldritch Statue challenges from DLC2 don't seem to work.
 * DLC3's "Good Prospects" are omitted since they do some weird Treasure Map
