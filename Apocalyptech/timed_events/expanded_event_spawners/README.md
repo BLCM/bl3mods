@@ -15,11 +15,14 @@ mods, in order to actually see the spawns.  This just expands the range that
 the spawn modifications can show up in.
 
 Note that these still don't seem to work inside Covenant Pass and The Droughts,
-so those are the main known exceptions.  DLC3 areas have been added in to this,
-though that's not been well-tested thus far.
+so those are the main known exceptions.  This has been updated through DLC4
+(Psycho Krieg and the Fantastic Fustercluck), though.
 
 Changelog
 =========
+
+**v1.1.0** - Oct 3, 2020
+ * Addition of DLC4 (Psycho Krieg) maps
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

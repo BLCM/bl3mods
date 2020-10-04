@@ -157,7 +157,8 @@ class ScriptedSpawner(object):
 
         # Debugging (and figuring out excluders)
         #for s in spawners:
-        #    print(s)
+        #    first, last = s.SpawnerPathName.rsplit('.', 1)
+        #    print('{} -> {}.{}'.format(first, last, s.SpawnerSubPathString))
 
         # Lastly, create and return the object
         return ScriptedSpawner(description, spawners)
@@ -390,6 +391,104 @@ for cat_name, subdir, level_names in [
                 'Town_M_Ep02_Bathhouse.PersistentLevel.Ep02Baths_FerrisTownsfolk',
                 ])),
             ]),
+        ('DLC4', 'dlc4', [
+            ('Sanctum_P', set([
+                # Friendly NPCs
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_ShadowMordecai',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_ShadowBrick',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_SaneKrieg',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Mordecai',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Maya',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_MadKrieg',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Lilith',
+                'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Brick',
+                ])),
+            ('Anger_P', set([
+                # P.A.T. and offspring
+                'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_PAT',
+                'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_BabyGun_5',
+                # Krieg
+                'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_SaneKrieg_GoodbyeOldFriend',
+                'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_MadKrieg_GoodbyeOldFriend',
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_SaneKrieg',
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
+                # Hot and Bothered NPCs
+                'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered_MissionGiver',
+                'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered',
+                # Post-boss white dreamy zone
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostMord',
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostLilith',
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostKrieg',
+                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostBrick',
+                # Containers
+                'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalSmall',
+                'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalChest',
+                ])),
+            ('Chase_P', set([
+                # Interstitial Trains
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_TrainStation01_Train',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_Station02_Trains',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_Station01_Trains',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train_3',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_HangarTrains',
+                'Chase_Combat.PersistentLevel.OakMissionSpawner_BridgeTrains',
+                'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_Trains',
+                'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_CrashingTrain',
+                'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains_0',
+                'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains',
+                'Chase_Interactives.PersistentLevel.Spawner_Intro_Train_NoMission',
+                # Caboose?  No idea.
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Caboose',
+                # NPCs/Krieg
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Maya',
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegSane',
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegMad',
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostMaya',
+                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostKrieg_4',
+                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Thadeus',
+                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Maya_ChecksAndBalances_3',
+                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_MK_ChecksAndBalances',
+                'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_SaneKriegHarpoon',
+                'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_Parade_Mad',
+                'Chase_SM_WhenItRains.PersistentLevel.OakMissionSpawner_Rains_Mad',
+                'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Sane',
+                'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Mad',
+                'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Sane',
+                'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Mad',
+                # Containers, etc
+                'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Small',
+                'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Medium',
+                ])),
+            ('Experiment_P', set([
+                # Krieg
+                'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_SaneKrieg_Exposure',
+                'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_MadKrieg_Exposure',
+                'Experiment_M_Plot.PersistentLevel.OakMissionSpawnerSaneKrieg',
+                'Experiment_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
+                # Containers
+                'Experiment_Lootable.PersistentLevel.EridianCrystals_SecretCave',
+                'Experiment_Lootable.PersistentLevel.EridianCrystals',
+                'Experiment_Lootable.PersistentLevel.EridianChests',
+                'Experiment_Lootable.PersistentLevel.EridianChest_SecretCave',
+                ])),
+            ('Eldorado_P', set([
+                # Krieg
+                'Eldorado_BossFight.PersistentLevel.SpawnOption_Ali_Krieg_Sane_BigAss',
+                'Eldorado_BossFight.PersistentLevel.SpawnOption_Ali_Krieg_Sane_6',
+                'Eldorado_BossFight.PersistentLevel.SpawnOption_Ali_Krieg_Mad_BigAss_6',
+                'Eldorado_BossFight.PersistentLevel.SpawnOption_Ali_Krieg_Mad_2',
+                'Eldorado_Plot_M.PersistentLevel.OakMissionSpawner_SaneKrieg',
+                'Eldorado_Plot_M.PersistentLevel.OakMissionSpawner_MadKrieg',
+                # Dreamy white room afterwards
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerWhiteSecondRoom',
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerWhiteFirstRoom',
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerRedSecondRoom',
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerRedFirstRoom',
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerWhiteChest',
+                'Eldorado_Env_LootRoom.PersistentLevel.SpawnerRedChest',
+                ])),
+            ]),
         ]:
     for level_name, excluders in level_names:
         print('Processing extra spawns from {} {} ({})'.format(cat_name, LVL_TO_ENG[level_name], level_name))
@@ -466,7 +565,7 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "been added in, though.",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.1.0',
             cats='event, enemy, maps',
             )
 
