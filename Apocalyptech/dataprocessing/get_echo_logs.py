@@ -34,6 +34,7 @@ globs_rando = [
         '/Game/PatchDLC/Dandelion/InteractiveObjects/EchoLogs/DataAssets/EchoLogData_*',
         '/Game/PatchDLC/Hibiscus/InteractiveObjects/EchoLogs/DataAssets/EchoLogData_*',
         '/Game/PatchDLC/Geranium/InteractiveObjects/EchoLogs/EchoLogData/EchoLogData_*',
+        '/Game/PatchDLC/Alisma/InteractiveObjects/EchoLogs/DataAssets/EchoLogData_*',
         ]
 objects_rando = []
 for glob in globs_rando:
