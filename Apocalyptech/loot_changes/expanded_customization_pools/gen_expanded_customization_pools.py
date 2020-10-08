@@ -97,7 +97,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             'Apocalyptech',
             full_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.1.1',
             cats='loot-system, enemy-drops',
             )
 
@@ -265,6 +265,10 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
     # Broken DLC3 weapon skin; not adding it!
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponSkin/WeaponSkin_DLC3_1.InvBal_WeaponSkin_DLC3_1')
+    # Bloody Harvest 2020
+    balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.InvBal_WeaponSkin_BloodyHarvest_02')
+
+    # Now output
     mod.comment('Weapon Skins')
     set_pool(mod, '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot.ItemPool_Customizations_WeaponSkins_Loot', balances)
     mod.newline()

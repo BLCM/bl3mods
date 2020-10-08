@@ -31,6 +31,9 @@ TODO
 Changelog
 =========
 
+**v1.1.1** - Sep 29, 2020
+ * Updated with the Bloody Harvest 2020 weapon skin, Porphyrophobia
+
 **v1.1.0** - Sep 29, 2020
  * Updated for DLC4 Cosmetics
 
