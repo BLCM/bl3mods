@@ -29,9 +29,12 @@ mod = Mod('broken_hearts_enable.bl3hotfix',
         [
             "Enables the Broken Hearts event.  Will interfere with any other event which",
             "happens to be running.  (Only one can be fully active at a time.)",
+            "",
+            "Sets the Polyaimorous and Wedding Invitation to always be level 65 (originally",
+            "they were 53, the max level at the time).",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='event',
         )
 
@@ -86,7 +89,7 @@ for char_name in [
 mod.newline()
 
 # Reward scaling
-mod.comment('Force Terminal Polyaimorous and Wedding Invitation to Level 53')
+mod.comment('Force Terminal Polyaimorous and Wedding Invitation to Level 65')
 for row in [
         'PolyAim',
         'WeddingInvitation',
@@ -95,7 +98,7 @@ for row in [
             '/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay',
             row,
             'MinGameStage_5_E12DB0C74420238367FBC1A5221AFB84',
-            53)
+            65)
 mod.newline()
 
 mod.close()
