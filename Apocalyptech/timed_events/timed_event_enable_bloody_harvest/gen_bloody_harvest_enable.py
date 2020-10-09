@@ -31,9 +31,50 @@ boss = 'BPChar_HarvestBoss'
 # I suspect those changes will be made permanent, so I'm not including them
 # now, but keep an eye on it...
 
-for instance, year in [
-        (1, 2019),
-        (2, 2020),
+class TierReward(object):
+
+    def __init__(self, trinket, echo, skins, weapskin):
+        self.trinket = trinket
+        self.echo = echo
+        self.skins = skins
+        self.weapskin = weapskin
+
+    def to_hotfix(self, mod):
+        return """(
+            (RewardWeaponTrinkets=({})),
+            (RewardCustomizations=({})),
+            (RewardCustomizations=({})),
+            (RewardWeaponSkins=({}))
+        )""".format(
+                mod.get_full_cond(self.trinket, 'BP_BaseWeaponTrinketData_C'),
+                mod.get_full_cond(self.echo, 'ECHOThemeCustomizationData'),
+                ','.join([mod.get_full_cond(s, 'OakCustomizationData') for s in self.skins]),
+                mod.get_full_cond(self.weapskin, 'BP_BaseWeaponSkinData_C'),
+                )
+
+for instance, year, rewards in [
+        (1, 2019, TierReward(
+            trinket='/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1',
+            echo='/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_11',
+            skins=[
+                '/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_40',
+                '/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_40',
+                '/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_40',
+                '/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_40',
+                ],
+            weapskin='/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01',
+            )),
+        (2, 2020, TierReward(
+            trinket='/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020',
+            echo='/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79',
+            skins=[
+                '/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_63',
+                '/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_63',
+                '/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_63',
+                '/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_63',
+                ],
+            weapskin='/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02',
+            )),
         ]:
 
     mod = Mod('bloody_harvest_enable_{}.bl3hotfix'.format(year),
@@ -54,7 +95,7 @@ for instance, year in [
                 "between years.",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.1.1',
             cats='event',
             )
 
@@ -88,6 +129,31 @@ for instance, year in [
             'MainMenuAltBackground',
             'Value',
             '(BaseValueConstant=3.000000)')
+    mod.newline()
+
+    # Challenge Rewards!
+    # Challenge_BloodyHarvest_00_MetaChallenge really *looks* like it's set up so that the rewards
+    # that are active depend on the current LeagueInstance set above, but they just don't seem to
+    # be.  I've not been able to find a way to get it to use anything but LeagueInstance 2, and
+    # the game is pretty fussy about the array -- any additions to the array end up just being
+    # empty, and removing the second instance altogether crashes the game.  So, we're gonna do it
+    # the stupid way and just set the rewards for *both* instances to the year we're looking for.
+    # Really we'd only have to do it for instance 2, but eh...
+    reward_str = rewards.to_hotfix(mod)
+    mod.header('Hardcode Challenge Rewards')
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_00_MetaChallenge.Default__Challenge_BloodyHarvest_00_MetaChallenge_C',
+            'TierRewardsPerInstance',
+            f"""(
+                (
+                    LeagueInstance=1,
+                    TierRewards={reward_str}
+                ),
+                (
+                    LeagueInstance=2,
+                    TierRewards={reward_str}
+                )
+            )""")
     mod.newline()
 
     # Increased terror-anoint chances
@@ -225,5 +291,4 @@ for instance, year in [
                 mod.get_full_cond('/Game/Lootables/_Design/Data/Eridian/LootDef_Eridian_RedChest'))
 
     mod.close()
-
 

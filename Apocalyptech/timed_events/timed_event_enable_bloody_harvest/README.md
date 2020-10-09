@@ -32,6 +32,10 @@ The 2020 event rewarded the following:
 * At 12 Challenges: Haunted Look Character Skin
 * At 15 Challenges: Porphyrophobia Weapon Skin
 
+Note that the game doesn't seem to always save your Bloody Harvest mission state
+when hopping back and forth between 2019 and 2020, and activating the 2019 version
+might not actually bring back your previous Bloody Harvest state.
+
 TODO
 ====
 
@@ -43,6 +47,10 @@ TODO
 
 Changelog
 =========
+
+**v1.1.1** - Oct 8, 2020
+ * Fixed up the challenge rewards when going back to 2019 -- turns out we have
+   to hardcode it in the mod.
 
 **v1.1.0** - Oct 8, 2020
  * Cleaned up the mod in various ways:

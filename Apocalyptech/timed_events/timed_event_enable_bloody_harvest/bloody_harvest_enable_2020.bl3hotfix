@@ -1,6 +1,6 @@
 ###
 ### Name: Timed Event Enable: Bloody Harvest (2020)
-### Version: 1.1.0
+### Version: 1.1.1
 ### Author: Apocalyptech
 ### Categories: event
 ###
@@ -35,6 +35,12 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Spawning/GlobalSpawnDLCData.GlobalSpawnD
 
 # Activate main menu changes
 SparkPatchEntry,(1,2,0,),/Game/Common/_Design/Table_MicropatchSwitches.Table_MicropatchSwitches,MainMenuAltBackground,Value,0,,(BaseValueConstant=3.000000)
+
+###
+### Hardcode Challenge Rewards
+###
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/GameData/Challenges/LeagueChallenges/Challenge_BloodyHarvest_00_MetaChallenge.Default__Challenge_BloodyHarvest_00_MetaChallenge_C,TierRewardsPerInstance,0,,((LeagueInstance=1,TierRewards=((RewardWeaponTrinkets=(BP_BaseWeaponTrinketData_C'"/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.Trinket_League_BloodyHarvest_2020"')),(RewardCustomizations=(ECHOThemeCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.ECHOTheme_79"')),(RewardCustomizations=(OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_63.CustomSkin_Beastmaster_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_63.CustomSkin_Gunner_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_63.CustomSkin_Operative_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_63.CustomSkin_Siren_63"')),(RewardWeaponSkins=(BP_BaseWeaponSkinData_C'"/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.WeaponSkin_BloodyHarvest_02"')))),(LeagueInstance=2,TierRewards=((RewardWeaponTrinkets=(BP_BaseWeaponTrinketData_C'"/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.Trinket_League_BloodyHarvest_2020"')),(RewardCustomizations=(ECHOThemeCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.ECHOTheme_79"')),(RewardCustomizations=(OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_63.CustomSkin_Beastmaster_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_63.CustomSkin_Gunner_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_63.CustomSkin_Operative_63"',OakCustomizationData'"/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_63.CustomSkin_Siren_63"')),(RewardWeaponSkins=(BP_BaseWeaponSkinData_C'"/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.WeaponSkin_BloodyHarvest_02"')))))
 
 ###
 ### Increased chance of Terror-anointment drops from various sources
