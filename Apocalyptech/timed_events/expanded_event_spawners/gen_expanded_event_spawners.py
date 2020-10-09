@@ -260,6 +260,20 @@ class SpawnDLC(object):
                 self.obj_name,
                 'ScriptedSpawners',
                 self.to_hotfix())
+
+        # Testing vars here -- looking at differences between my own data-driven DLC3+DLC4 adds
+        # and the GBX ones added in Bloody Harvest 2020
+        #with open('output.txt', 'a') as df:
+        #    print(self.obj_name, file=df)
+        #    print('-'*len(self.obj_name), file=df)
+        #    print('', file=df)
+        #    for s in self.spawners:
+        #        print('Spawner: {}'.format(s.description), file=df)
+        #        print('', file=df)
+        #        for path in sorted(s.soft_paths):
+        #            print('  - {} {}'.format(path.SpawnerPathName, path.SpawnerSubPathString), file=df)
+        #        print('', file=df)
+
         for exp in self.expansions:
             exp.generate_hotfixes(mod)
 
@@ -285,112 +299,120 @@ for cat_name, subdir, level_names in [
         #        'Prologue_Dynamic.PersistentLevel.OakMissionSpawner_Tannis',
         #        ])),
         #    ]),
-        ('DLC3', 'dlc3', [
-            # Omitting CraterBoss_P
-            ('Facility_P', set([
-                # The husband+wife in The Dandy and Damsel
-                'Facility_M_LoveBarNone.PersistentLevel.LoveBars_Husbando',
-                'Facility_M_LoveBarNone.PersistentLevel.LoveBars_BossKeem',
-                ])),
-            ('Forest_P', set([
-                # Oletta, probably
-                'Forest_M_Ep03_Forest.PersistentLevel.OakMissionSpawner_Granny',
-                # From Of Blood and Beans
-                'Forest_M_BloodAndBeans.PersistentLevel.OakMissionSpawner_CowboyB',
-                'Forest_M_BloodAndBeans.PersistentLevel.OakMissionSpawner_CowboyA',
-                ])),
-            ('Frontier_P', set([
-                # Husband+wife in Miracle Elixir Fixer
-                'Frontier_M_SnakeOil.PersistentLevel.OakMissionSpawner_Hina',
-                'Frontier_M_SnakeOil.PersistentLevel.OakMissionSpawner_Eli',
-                # Posse on way to final boss fight (I suspect the vehicles can't
-                # get it anyway, but whatever)
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_TitusVehicle_1',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_TitusVehicle',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_Titus',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_PosseMember_3',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle_3',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle_2',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle',
-                'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_Dakota',
-                # Saurdew Valley NPCS (not sure about pygmies+predators)
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrogs',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_5',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_4',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_3',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_1',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RanchPet_1',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RanchPet',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RancherJan',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Pygmies_1',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Pygmies',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Predators',
-                'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Daisy',
-                ])),
-            ('Lodge_P', set([
-                # Titus, maybe?
-                'Lodge_M_Ep02_Bathhouse.PersistentLevel.OakMissionSpawner_Clay_2',
-                'Lodge_M_Ep02_Bathhouse.PersistentLevel.OakMissionSpawner_Clay_1',
-                # McSmugger
-                'Lodge_M_TheLegendOfMcSmugger.PersistentLevel.McSmuggerSpawner',
-                # Captive from Dirty Deeds, maybe?
-                'Lodge_M_DirtyDeeds.OakMissionSpawner_SoapMaker',
-                ])),
-            ('Town_P', set([
-                # Various NPCs
-                'Town_M_WestLandIntro.PersistentLevel.OakMissionSpawner_Toge',
-                'Town_M_WestLandIntro.PersistentLevel.OakMissionSpawner_Rose',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_Tanner',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_Mission1_FilmMaker',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__10',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__8',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__7',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__11',
-                'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk_',
-                'Town_M_NPC.PersistentLevel.BathhouseEp02_Wanderer',
-                'Town_M_Dueling.OakMissionSpawner_4',
-                'Town_M_Dueling.OakMissionSpawner_3',
-                'Town_M_Dueling.OakMissionSpawner_1',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Yuko',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Yosuke',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Tarou',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Ori',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Micah',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Maiko',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Ko',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Josey',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Jinson',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Jerica',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Herb',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Gus',
-                'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Felice',
-                # I've pruned some "obvious" attackers, but I suspect these might be, too
-                #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_EggAttack',
-                #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_MarketGyros',
-                #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_2',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_YoungJed',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_Titus',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_Sheriff',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_OldPete',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_BulliedGuy_1',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_BulliedGuy',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_Bartender',
-                'Town_M_WestlandWelcome.PersistentLevel.Mission1_BackTalker',
-                'Town_Missions.PersistentLevel.Missions_Titus',
-                'Town_Missions.PersistentLevel.Missions_Dakota',
-                'Town_Missions.PersistentLevel.Mission_DirtyDeeds_Soapmaker',
-                'Town_Missions.PersistentLevel.Mission_AnimalCTRL_BiobeastBetsyShock',
-                'Town_Missions.PersistentLevel.Mission_AnimalCTRL_BiobeastBetsyRad',
-                'Town_Missions.PersistentLevel.LoveBars_Husband',
-                'Town_Missions.PersistentLevel.LoveBars_GrogReward',
-                'Town_Missions.PersistentLevel.LoveBars_GrievingHusband',
-                'Town_Missions.PersistentLevel.GhostStories_Preacher',
-                'Town_Missions.PersistentLevel.GhostStories_CrazedMan',
-                'Town_M_Ep05CraterBoss.PersistentLevel.Ep05Crater_PosseMember',
-                'Town_M_Ep05CraterBoss.PersistentLevel.CraterBoss_RetreatingNPCs',
-                'Town_M_Ep02_Bathhouse.PersistentLevel.Ep02Baths_FerrisTownsfolk',
-                ])),
-            ]),
+
+        # Omitting DLC3 entirely since Bloody Harvest 2020 added them legitimately.  My code
+        # here technically adds *more* spawners than BH2020 did, but probably the omissions
+        # make sense.  Anyway, don't want to double up, so getting rid of it.
+        #('DLC3', 'dlc3', [
+        #    # Omitting CraterBoss_P
+        #    ('Facility_P', set([
+        #        # The husband+wife in The Dandy and Damsel
+        #        'Facility_M_LoveBarNone.PersistentLevel.LoveBars_Husbando',
+        #        'Facility_M_LoveBarNone.PersistentLevel.LoveBars_BossKeem',
+        #        ])),
+        #    ('Forest_P', set([
+        #        # Oletta, probably
+        #        'Forest_M_Ep03_Forest.PersistentLevel.OakMissionSpawner_Granny',
+        #        # From Of Blood and Beans
+        #        'Forest_M_BloodAndBeans.PersistentLevel.OakMissionSpawner_CowboyB',
+        #        'Forest_M_BloodAndBeans.PersistentLevel.OakMissionSpawner_CowboyA',
+        #        ])),
+        #    ('Frontier_P', set([
+        #        # Husband+wife in Miracle Elixir Fixer
+        #        'Frontier_M_SnakeOil.PersistentLevel.OakMissionSpawner_Hina',
+        #        'Frontier_M_SnakeOil.PersistentLevel.OakMissionSpawner_Eli',
+        #        # Posse on way to final boss fight (I suspect the vehicles can't
+        #        # get it anyway, but whatever)
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_TitusVehicle_1',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_TitusVehicle',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_Titus',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_PosseMember_3',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle_3',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle_2',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_DakotaVehicle',
+        #        'Frontier_M_Ep05_CraterBoss.PersistentLevel.CraterBoss_Dakota',
+        #        # Saurdew Valley NPCS (not sure about pygmies+predators)
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrogs',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_5',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_4',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_3',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawnerCagedGrog_1',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RanchPet_1',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RanchPet',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_RancherJan',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Pygmies_1',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Pygmies',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Predators',
+        #        'Frontier_M_SaurdewValley.PersistentLevel.OakMissionSpawner_Daisy',
+        #        ])),
+        #    ('Lodge_P', set([
+        #        # Titus, maybe?
+        #        'Lodge_M_Ep02_Bathhouse.PersistentLevel.OakMissionSpawner_Clay_2',
+        #        'Lodge_M_Ep02_Bathhouse.PersistentLevel.OakMissionSpawner_Clay_1',
+        #        # McSmugger
+        #        'Lodge_M_TheLegendOfMcSmugger.PersistentLevel.McSmuggerSpawner',
+        #        # Captive from Dirty Deeds, maybe?
+        #        'Lodge_M_DirtyDeeds.OakMissionSpawner_SoapMaker',
+        #        ])),
+        #    ('Town_P', set([
+        #        # Various NPCs
+        #        'Town_M_WestLandIntro.PersistentLevel.OakMissionSpawner_Toge',
+        #        'Town_M_WestLandIntro.PersistentLevel.OakMissionSpawner_Rose',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_Tanner',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_Mission1_FilmMaker',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__10',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__8',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__7',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk__11',
+        #        'Town_M_NPC.PersistentLevel.OakMissionSpawner_GenericTownsfolk_',
+        #        'Town_M_NPC.PersistentLevel.BathhouseEp02_Wanderer',
+        #        'Town_M_Dueling.OakMissionSpawner_4',
+        #        'Town_M_Dueling.OakMissionSpawner_3',
+        #        'Town_M_Dueling.OakMissionSpawner_1',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Yuko',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Yosuke',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Tarou',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Ori',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Micah',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Maiko',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Ko',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Josey',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Jinson',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Jerica',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Herb',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Gus',
+        #        'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_Felice',
+        #        # I've pruned some "obvious" attackers, but I suspect these might be, too
+        #        #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_Mission1_EggAttack',
+        #        #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_MarketGyros',
+        #        #'Town_M_WestlandWelcome.PersistentLevel.OakMissionSpawner_2',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_YoungJed',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_Titus',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_Sheriff',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_OldPete',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_BulliedGuy_1',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_BulliedGuy',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_Bartender',
+        #        'Town_M_WestlandWelcome.PersistentLevel.Mission1_BackTalker',
+        #        'Town_Missions.PersistentLevel.Missions_Titus',
+        #        'Town_Missions.PersistentLevel.Missions_Dakota',
+        #        'Town_Missions.PersistentLevel.Mission_DirtyDeeds_Soapmaker',
+        #        'Town_Missions.PersistentLevel.Mission_AnimalCTRL_BiobeastBetsyShock',
+        #        'Town_Missions.PersistentLevel.Mission_AnimalCTRL_BiobeastBetsyRad',
+        #        'Town_Missions.PersistentLevel.LoveBars_Husband',
+        #        'Town_Missions.PersistentLevel.LoveBars_GrogReward',
+        #        'Town_Missions.PersistentLevel.LoveBars_GrievingHusband',
+        #        'Town_Missions.PersistentLevel.GhostStories_Preacher',
+        #        'Town_Missions.PersistentLevel.GhostStories_CrazedMan',
+        #        'Town_M_Ep05CraterBoss.PersistentLevel.Ep05Crater_PosseMember',
+        #        'Town_M_Ep05CraterBoss.PersistentLevel.CraterBoss_RetreatingNPCs',
+        #        'Town_M_Ep02_Bathhouse.PersistentLevel.Ep02Baths_FerrisTownsfolk',
+        #        ])),
+        #    ]),
+
+        # Likewise, paring down DLC4 considerably, though in this case I'm keeping my own
+        # Psychoscape and Vaulthalla additions, so that enemies in those areas can get
+        # statuses.
         ('DLC4', 'dlc4', [
             ('Sanctum_P', set([
                 # Friendly NPCs
@@ -403,75 +425,75 @@ for cat_name, subdir, level_names in [
                 'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Lilith',
                 'Sanctum_MissionNPCs.PersistentLevel.OakMissionSpawner_Brick',
                 ])),
-            ('Anger_P', set([
-                # P.A.T. and offspring
-                'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_PAT',
-                'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_BabyGun_5',
-                # Krieg
-                'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_SaneKrieg_GoodbyeOldFriend',
-                'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_MadKrieg_GoodbyeOldFriend',
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_SaneKrieg',
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
-                # Hot and Bothered NPCs
-                'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered_MissionGiver',
-                'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered',
-                # Post-boss white dreamy zone
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostMord',
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostLilith',
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostKrieg',
-                'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostBrick',
-                # Containers
-                'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalSmall',
-                'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalChest',
-                ])),
-            ('Chase_P', set([
-                # Interstitial Trains
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_TrainStation01_Train',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_Station02_Trains',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_Station01_Trains',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train_3',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_HangarTrains',
-                'Chase_Combat.PersistentLevel.OakMissionSpawner_BridgeTrains',
-                'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_Trains',
-                'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_CrashingTrain',
-                'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains_0',
-                'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains',
-                'Chase_Interactives.PersistentLevel.Spawner_Intro_Train_NoMission',
-                # Caboose?  No idea.
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Caboose',
-                # NPCs/Krieg
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Maya',
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegSane',
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegMad',
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostMaya',
-                'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostKrieg_4',
-                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Thadeus',
-                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Maya_ChecksAndBalances_3',
-                'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_MK_ChecksAndBalances',
-                'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_SaneKriegHarpoon',
-                'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_Parade_Mad',
-                'Chase_SM_WhenItRains.PersistentLevel.OakMissionSpawner_Rains_Mad',
-                'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Sane',
-                'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Mad',
-                'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Sane',
-                'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Mad',
-                # Containers, etc
-                'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Small',
-                'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Medium',
-                ])),
-            ('Experiment_P', set([
-                # Krieg
-                'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_SaneKrieg_Exposure',
-                'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_MadKrieg_Exposure',
-                'Experiment_M_Plot.PersistentLevel.OakMissionSpawnerSaneKrieg',
-                'Experiment_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
-                # Containers
-                'Experiment_Lootable.PersistentLevel.EridianCrystals_SecretCave',
-                'Experiment_Lootable.PersistentLevel.EridianCrystals',
-                'Experiment_Lootable.PersistentLevel.EridianChests',
-                'Experiment_Lootable.PersistentLevel.EridianChest_SecretCave',
-                ])),
+            #('Anger_P', set([
+            #    # P.A.T. and offspring
+            #    'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_PAT',
+            #    'Anger_SM_AllShapesAndCalibers.PersistentLevel.OakMissionSpawner_BabyGun_5',
+            #    # Krieg
+            #    'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_SaneKrieg_GoodbyeOldFriend',
+            #    'Anger_BSM_GoodbyeOldFriend.PersistentLevel.OakMissionSpawner_MadKrieg_GoodbyeOldFriend',
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_SaneKrieg',
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
+            #    # Hot and Bothered NPCs
+            #    'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered_MissionGiver',
+            #    'Anger_BSM_HotNBothered.PersistentLevel.OakMissionSpawner_HotNBothered',
+            #    # Post-boss white dreamy zone
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostMord',
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostLilith',
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostKrieg',
+            #    'Anger_M_Plot.PersistentLevel.OakMissionSpawner_WhiteRoom_GhostBrick',
+            #    # Containers
+            #    'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalSmall',
+            #    'Anger_IO.PersistentLevel.OakSpawner_EridianCrystalChest',
+            #    ])),
+            #('Chase_P', set([
+            #    # Interstitial Trains
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_TrainStation01_Train',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_Station02_Trains',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_Station01_Trains',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train_3',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_Mines02_Train',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_HangarTrains',
+            #    'Chase_Combat.PersistentLevel.OakMissionSpawner_BridgeTrains',
+            #    'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_Trains',
+            #    'Chase_M_Plot.PersistentLevel.Spawner_BridgeEnd_CrashingTrain',
+            #    'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains_0',
+            #    'Chase_Env_Station_01.PersistentLevel.OakMissionSpawner_StationJumps_Trains',
+            #    'Chase_Interactives.PersistentLevel.Spawner_Intro_Train_NoMission',
+            #    # Caboose?  No idea.
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Caboose',
+            #    # NPCs/Krieg
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_Maya',
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegSane',
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_KriegMad',
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostMaya',
+            #    'Chase_M_Plot.PersistentLevel.OakMissionSpawner_GhostKrieg_4',
+            #    'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Thadeus',
+            #    'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_Maya_ChecksAndBalances_3',
+            #    'Chase_SM_ChecksAndBalances.PersistentLevel.OakMissionSpawner_MK_ChecksAndBalances',
+            #    'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_SaneKriegHarpoon',
+            #    'Chase_SM_ParadeHarpoon.PersistentLevel.OakMissionSpawner_Parade_Mad',
+            #    'Chase_SM_WhenItRains.PersistentLevel.OakMissionSpawner_Rains_Mad',
+            #    'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Sane',
+            #    'Chase_SM_ThatRingsABell.PersistentLevel.OakMissionSpawner_RingABell_Mad',
+            #    'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Sane',
+            #    'Chase_SM_SpineTingler.PersistentLevel.OakMissionSpawner_SpineTingler_Mad',
+            #    # Containers, etc
+            #    'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Small',
+            #    'Chase_Interactives.PersistentLevel.OakSpawner_EridiumCrystals_Medium',
+            #    ])),
+            #('Experiment_P', set([
+            #    # Krieg
+            #    'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_SaneKrieg_Exposure',
+            #    'Experiment_SM_ExposureTherapy.PersistentLevel.OakMissionSpawner_MadKrieg_Exposure',
+            #    'Experiment_M_Plot.PersistentLevel.OakMissionSpawnerSaneKrieg',
+            #    'Experiment_M_Plot.PersistentLevel.OakMissionSpawner_MadKrieg',
+            #    # Containers
+            #    'Experiment_Lootable.PersistentLevel.EridianCrystals_SecretCave',
+            #    'Experiment_Lootable.PersistentLevel.EridianCrystals',
+            #    'Experiment_Lootable.PersistentLevel.EridianChests',
+            #    'Experiment_Lootable.PersistentLevel.EridianChest_SecretCave',
+            #    ])),
             ('Eldorado_P', set([
                 # Krieg
                 'Eldorado_BossFight.PersistentLevel.SpawnOption_Ali_Krieg_Sane_BigAss',
@@ -487,6 +509,9 @@ for cat_name, subdir, level_names in [
                 'Eldorado_Env_LootRoom.PersistentLevel.SpawnerRedFirstRoom',
                 'Eldorado_Env_LootRoom.PersistentLevel.SpawnerWhiteChest',
                 'Eldorado_Env_LootRoom.PersistentLevel.SpawnerRedChest',
+                # Psychoreaver exclusions
+                'Eldorado_BossFight.PersistentLevel.OakMissionSpawnerDummy',
+                'Eldorado_BossFight.PersistentLevel.SpawnOptions_PsychodinP_2',
                 ])),
             ]),
         ]:
@@ -561,11 +586,11 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "it out to apply for anything that's been touched.",
                 "",
                 "Note that this does not yet equate to Literally Everywhere - Droughts",
-                "and Covenant Pass won't have any, for instance.  DLC3 spawners have",
-                "been added in, though.",
+                "and Covenant Pass won't have any, for instance.  This is up to date",
+                "through DLC4 (Psycho Krieg), though.",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.1.1',
             cats='event, enemy, maps',
             )
 
