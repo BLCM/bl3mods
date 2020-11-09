@@ -961,6 +961,7 @@ LVL_TO_ENG = {
         'FinalBoss_P': "Destroyer's Rift",
         'Forest_P': "Obsidian Forest",
         'Frontier_P': "The Blastplains",
+        'FrostSite_P': "Stormblind Complex",
         'GuardianTakedown_P': "Minos Prime / The Shattered Tribunal",
         'Impound_P': "Impound Deluxe",
         'Lake_P': "Skittermaw Basin",
