@@ -829,6 +829,8 @@ fts_to_map = {
         '/game/patchdlc/hibiscus/gamedata/fasttravel/resurrect/autogen/woods/rts_woods_3.rts_woods_3': 'Woods_P',
         '/game/patchdlc/hibiscus/gamedata/fasttravel/resurrect/autogen/woods/rts_woods_4.rts_woods_4': 'Woods_P',
         '/game/patchdlc/hibiscus/gamedata/fasttravel/resurrect/autogen/woods/rts_woods_5.rts_woods_5': 'Woods_P',
+        '/game/patchdlc/ixora/gamedata/fasttravel/leveltravel/fts_gearupmap.fts_gearupmap': 'FrostSite_P',
+        '/game/patchdlc/ixora/gamedata/fasttravel/leveltravel/fts_gearupmap_sendonly.fts_gearupmap_sendonly': 'FrostSite_P',
         '/game/patchdlc/raid1/gamedata/fasttravel/leveltraveldata/fts_maliwantd_sendonly.fts_maliwantd_sendonly': 'Raid_P',
         '/game/patchdlc/raid1/gamedata/fasttravel/leveltraveldata/fts_raid1.fts_raid1': 'Raid_P',
         '/game/patchdlc/raid1/gamedata/fasttravel/leveltraveldata/fts_raid1droppod.fts_raid1droppod': 'Raid_P',
