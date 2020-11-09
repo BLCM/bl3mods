@@ -70,7 +70,7 @@ curs = data.curs
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 826
+estimated_secs = 844
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -178,7 +178,7 @@ for (dirpath, dirnames, filenames) in os.walk('extracted'):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~169500, post-DLC4 patch (200967 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~173900, post-Designer\'s-Cut (206004 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
