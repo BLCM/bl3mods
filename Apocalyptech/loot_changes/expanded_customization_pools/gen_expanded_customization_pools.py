@@ -26,6 +26,17 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 # TODO: Should probably find out if the DLC emotes are actually guaranteed or not, and
 # add them in here if they aren't.
 
+# Leaving out the Final Form cosmetics, which are all just given to you automatically if
+# you have the required DLCs.  The balances, for reference:
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Beastmaster_51.InvBal_CustomSkin_Beastmaster_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Gunner_51.InvBal_CustomSkin_Gunner_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Operative_51.InvBal_CustomSkin_Operative_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Siren_51.InvBal_CustomSkin_Siren_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/DA_BMHead39.InvBal_DA_BMHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/DA_GNRHead39.InvBal_DA_GNRHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Operative/Heads/DA_OPHead39.InvBal_DA_OPHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/SirenBrawler/Heads/DA_SRNHead39.InvBal_DA_SRNHead39
+
 def set_pool(mod, pool_to_set, balances, char=None):
     parts = []
     for bal in balances:
@@ -97,7 +108,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             'Apocalyptech',
             full_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.1.1',
+            v='1.2.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -192,6 +203,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC4_01.InvBal_CustomSkin_{shortname}{alisma_underscore}DLC4_01')
         # Bloody Harvest 2020
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_63.InvBal_CustomSkin_{shortname}_63')
+        # DLC5 - Ixora - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin62/CustomSkin_{shortname}_62.InvBal_CustomSkin_{shortname}_62')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -318,6 +331,8 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_02.InvBal_Trinket_DLC4_Trinket_02')
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.InvBal_Trinket_League_BloodyHarvest_2020'),
+    # DLC5 - Ixora - TODO: Need to figure out if these should be on a blacklist
+    balances.append('/Game/PatchDLC/Ixora/Gear/Weapons/WeaponTrinkets/_Design/WeaponTrinket_GearUp.InvBal_WeaponTrinket_GearUp')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -368,6 +383,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_{num:02d}.InvBal_ECHOTheme_DLC4_{num:02d}')
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.InvBal_ECHOTheme_79')
+    # DLC5 - Ixora - TODO: figure out if any of these should be blacklisted
+    for num in ['50', '52', '57a', '58']:
+        balances.append(f'/Game/PatchDLC/Ixora/Customizations/ECHOTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
 
     # Now output
     mod.comment('ECHO Skins')
