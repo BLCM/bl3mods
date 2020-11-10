@@ -32,7 +32,7 @@ mod = Mod('all_weapons_can_anoint.bl3hotfix',
             "Better Loot for that.)  Excludes The Shoddy.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='gear-anointments',
         )
 
@@ -618,6 +618,12 @@ weapons = [
             '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher_Epic',
             '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/PartSet_HW_COV_BanditLauncher_Epic',
             COV_HW),
+
+        # DLC5 Weapons
+        ("Res",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya',
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/PartSet_PS_ATL_SpiritOfMaya',
+            ATL_PS),
         ]
 
 # Now do the actual mod
