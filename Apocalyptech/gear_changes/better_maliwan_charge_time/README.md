@@ -24,6 +24,10 @@ TODO
 Changelog
 =========
 
+**v1.2.0** - Nov 10, 2020
+ * Updated for DLC5 (Designer's Cut) weapons (Binary Operator and Superconducting
+   Plasma Coil)
+
 **v1.1.0** - Sep 26, 2020
  * Updated for DLC4 (Psycho Krieg and the Fantastic Fustercluck) weapons (Blind
    Bandit and Blind Sage)
