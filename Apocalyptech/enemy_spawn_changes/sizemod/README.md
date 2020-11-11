@@ -25,6 +25,9 @@ the size scaling.
 Changelog
 =========
 
+**v1.2.0** - Nov 11, 2020
+ * Updated with DLC5 BPChars
+
 **v1.1.0** - Oct 3, 2020
  * Updated with DLC4 BPChars
  * Now takes into account any already-applied scaling on the models

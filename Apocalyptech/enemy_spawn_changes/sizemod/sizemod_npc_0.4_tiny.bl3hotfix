@@ -1,6 +1,6 @@
 ###
 ### Name: Sizemod: NPC Tiny-lands (0.4x)
-### Version: 1.1.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: enemy, joke
 ###
@@ -988,6 +988,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_GroundTD2),/Game/PatchDLC/Taked
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_GroundTD2_BossAdd),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Ground/BPChar_Nekrobug_GroundTD2_BossAdd.Default__BPChar_Nekrobug_GroundTD2_BossAdd_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Hopper/BPChar_Nekrobug_HopperTD2.Default__BPChar_Nekrobug_HopperTD2_C:CharacterMesh0,RelativeScale3D,0,,(X=0.52,Y=0.52,Z=0.52)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_HopperTD2_BossAdd),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Hopper/BPChar_Nekrobug_HopperTD2_BossAdd.Default__BPChar_Nekrobug_HopperTD2_BossAdd_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PetLoader_Base),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_Base.Default__BPChar_PetLoader_Base_C:CharacterMesh0,RelativeScale3D,0,,(X=0.04,Y=0.04,Z=0.04)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PetLoader_BUL),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_BUL.Default__BPChar_PetLoader_BUL_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PetLoader_ION),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_ION.Default__BPChar_PetLoader_ION_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PetLoader_WAR),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_WAR.Default__BPChar_PetLoader_WAR_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_IronCub_V3),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,RelativeScale3D,0,,(X=0.2,Y=0.2,Z=0.2)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Player),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.Default__BPChar_Player_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_StandInPlayer),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_StandInPlayer.Default__BPChar_StandInPlayer_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_Badass),/Geranium/Enemies/Biobeast/Badass/_Design/Character/BPChar_Biobeast_Badass.Default__BPChar_Biobeast_Badass_C:CharacterMesh0,RelativeScale3D,0,,(X=0.56,Y=0.56,Z=0.56)
@@ -1302,4 +1307,24 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Parker),/Hibiscus/NonPlayerCharacter
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Silvan),/Hibiscus/NonPlayerCharacters/_Townsfolk/Unique/_Design/Characters/BPChar_Hib_Silvan.Default__BPChar_Hib_Silvan_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Walter),/Hibiscus/NonPlayerCharacters/_Townsfolk/Unique/_Design/Characters/BPChar_Hib_Walter.Default__BPChar_Hib_Walter_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Wainwright),/Hibiscus/NonPlayerCharacters/Wainwright/_Design/Character/BPChar_Hib_Wainwright.Default__BPChar_Hib_Wainwright_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MaliEnforcerGun_GearUp),/Ixora/Enemies/CotV/Enforcer/GearUp/_Design/Character/BPChar_MaliEnforcerGun_GearUp.Default__BPChar_MaliEnforcerGun_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Reaper),/Ixora/Enemies/CotV/Enforcer/Reaper/_Design/Character/BPChar_Enforcer_Reaper.Default__BPChar_Enforcer_Reaper_C:CharacterMesh0,RelativeScale3D,0,,(X=0.6,Y=0.6,Z=0.6)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadass_GearUp),/Ixora/Enemies/CotV/PsychoBadass/BPChar_PsychoBadass_GearUp.Default__BPChar_PsychoBadass_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MaliPsychoBasic_GearUp),/Ixora/Enemies/CotV/Psycho/GearUp/_Design/Character/BPChar_MaliPsychoBasic_GearUp.Default__BPChar_MaliPsychoBasic_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PunkBadass_GearUp),/Ixora/Enemies/CotV/Punk/Badass/_Design/Character/BPChar_PunkBadass_GearUp.Default__BPChar_PunkBadass_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.52,Y=0.52,Z=0.52)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MaliTinkSuicide_GearUp),/Ixora/Enemies/CotV/Tink/GearUp/_Design/Character/BPChar_MaliTinkSuicide_GearUp.Default__BPChar_MaliTinkSuicide_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.48,Y=0.48,Z=0.48)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagBadass_GearUp),/Ixora/Enemies/Creatures/BPChar_SkagBadass_GearUp.Default__BPChar_SkagBadass_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/BPChar_SkagChubby_GearUp.Default__BPChar_SkagChubby_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantCoffer_GearUp),/Ixora/Enemies/Creatures/BPChar_SpiderantCoffer_GearUp.Default__BPChar_SpiderantCoffer_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantKing_GearUp),/Ixora/Enemies/Creatures/BPChar_SpiderantKing_GearUp.Default__BPChar_SpiderantKing_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantQueen_GearUp),/Ixora/Enemies/Creatures/BPChar_SpiderantQueen_GearUp.Default__BPChar_SpiderantQueen_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Mount),/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.Default__BPChar_FrontRider_Mount_C:CharacterMesh0,RelativeScale3D,0,,(X=0.8,Y=0.8,Z=0.8)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Pet),/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.Default__BPChar_FrontRider_Pet_C:CharacterMesh0,RelativeScale3D,0,,(X=0.36,Y=0.36,Z=0.36)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider.Default__BPChar_FrontRider_Rider_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CoVFrontrunner_GearUp),/Ixora/Enemies/Maliwan/Frontrunner/GearUp/_Design/Character/BPChar_CoVFrontrunner_GearUp.Default__BPChar_CoVFrontrunner_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Badass_GearUp),/Ixora/Enemies/Maliwan/Heavy/Badass/_Design/Character/BPChar_Heavy_Badass_GearUp.Default__BPChar_Heavy_Badass_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_GearUp),/Ixora/Enemies/Maliwan/Heavy/GearUp/_Design/Character/BPChar_Heavy_GearUp.Default__BPChar_Heavy_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CoVOversphere_GearUp),/Ixora/Enemies/Maliwan/Oversphere/GearUp/_Design/Character/BPChar_CoVOversphere_GearUp.Default__BPChar_CoVOversphere_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.2,Y=0.2,Z=0.2)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperBadass_GearUp),/Ixora/Enemies/Maliwan/TrooperBadass/BPChar_TrooperBadass_GearUp.Default__BPChar_TrooperBadass_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrooperFlash_GearUp),/Ixora/Enemies/Maliwan/Trooper/GearUp/_Design/Character/BPChar_TrooperFlash_GearUp.Default__BPChar_TrooperFlash_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 

@@ -111,7 +111,7 @@ for label, scale in [
                 "remain unscaled.  Let me know if anything really game-breaking happens!",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.2.0',
             cats='enemy, joke',
             ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
             )
