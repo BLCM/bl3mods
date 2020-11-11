@@ -1,6 +1,6 @@
 ###
 ### Name: Red Text Explainer
-### Version: 1.1.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: qol, gear-general
 ###
@@ -1035,4 +1035,40 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/UIStat_
 
 # Prompt Critical
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/UIStat_RedText_Voice.UIStat_RedText_Voice,Text,0,,[Flavor]Explodermaster masterexploder.[/Flavor] (all effects on card)
+
+# Binary Operator
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/UIStat_RedText_BinaryOperator.UIStat_RedText_BinaryOperator,Text,0,,[Flavor]Do it or don't. What's an attempt?[/Flavor] (one-shot enemies up to a hidden HP value, otherwise 2 damage)
+
+# Boogeyman
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/UIStat_RedText_Boogeyman.UIStat_RedText_Boogeyman,Text,0,,[Flavor]Comin' ta GET'CHA![/Flavor] (all effects on card)
+
+# Critical Thug
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/UIStat_RedText_CriticalThug.UIStat_RedText_CriticalThug,Text,0,,[Flavor]No shooting at parties![/Flavor] (fires fast-exploding sticky bombs, crits ricochet to other enemies)
+
+# Dark Army
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/UIStat_RedText_DarkArmy.UIStat_RedText_DarkArmy,Text,0,,[Flavor]I am the gun.[/Flavor] (all effects on card)
+
+# Firefly
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/UIStat_RedText_Firefly.UIStat_RedText_Firefly,Text,0,,[Flavor]Something bugging you?[/Flavor] (all effects on card)
+
+# Hotfoot Teddy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/UIStat_RedText_Hotfoot.UIStat_RedText_Hotfoot,Text,0,,[Flavor]You could have prevented this.[/Flavor] (flamethrower, hold fire for more damage, locks on and chains to other enemies)
+
+# Ice Age
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/UIStat_RedText_IceAge.UIStat_RedText_IceAge,Text,0,,[Flavor]Allow me to break the ice.[/Flavor] (lobs a [cryo]cryo[/cryo] grenade in an arc)
+
+# Superconducting Plasma Coil
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/UIStat_RedText_PlasmaCoil.UIStat_RedText_PlasmaCoil,Text,0,,[Flavor]Harness the 4th state of matter.[/Flavor] (long burst-fire, short-range elemental splash damage)
+
+# Res
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/UIStat_RedText_SpiritOfMaya.UIStat_RedText_SpiritOfMaya,Text,0,,[Flavor]She was right here, I swear. Hair blue as the sky.[/Flavor] (all effects on card)
+
+# Fasterfied Tizzy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/UIStat_RedText_Tizzy.UIStat_RedText_Tizzy,Text,0,,[Flavor]I feel the hurt...time for a rampage![/Flavor] (fire rate increases the longer fire is held, [bold]explosive[/bold] shots)
+
+# Snide Trickshot
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/UIStat_RedText_Trickshot.UIStat_RedText_Trickshot,Text,0,,[Flavor]Smooth sextuple action.[/Flavor] (all effects on card)
+
+# HOT Spring
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/UIStat_RedText_HOTSpring.UIStat_RedText_HOTSpring,Text,0,,[Flavor]Please, call me doctor.[/Flavor] (all effects on card)
 

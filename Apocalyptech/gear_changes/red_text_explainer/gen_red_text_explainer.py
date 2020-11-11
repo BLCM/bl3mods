@@ -38,7 +38,7 @@ mod = Mod('red_text_explainer.bl3hotfix',
             'whose special abilities appear to just be the "better" stats on the card.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='qol, gear-general',
         )
 
@@ -1678,6 +1678,77 @@ for (gear_name, obj_name, redtext, explanation) in [
             '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/UIStat_RedText_Voice',
             "Explodermaster masterexploder.",
             # increased damage and blast radius for each stuck gyrojet
+            ON_CARD),
+
+        # DLC5 (Designer's Cut)
+        ("Binary Operator",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/UIStat_RedText_BinaryOperator',
+            "Do it or don't. What's an attempt?",
+            "one-shot enemies up to a hidden HP value, otherwise 2 damage"),
+        ("Boogeyman",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/UIStat_RedText_Boogeyman',
+            "Comin' ta GET'CHA!",
+            # Chance to spawn enemy-seeking "boogeyman," high chance to not consume ammo
+            ON_CARD),
+        ("Critical Thug",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/UIStat_RedText_CriticalThug',
+            "No shooting at parties!",
+            "fires fast-exploding sticky bombs, crits ricochet to other enemies"),
+        ("Dark Army",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/UIStat_RedText_DarkArmy',
+            "I am the gun.",
+            # Army of drones; on reload, drones get extra damage plus elemental effect of gun
+            ON_CARD),
+        ("Firefly",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/UIStat_RedText_Firefly',
+            "Something bugging you?",
+            # Shoots fireflies which hatch babies in the flesh of enemies
+            ON_CARD),
+        ("Hotfoot Teddy",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/UIStat_RedText_Hotfoot',
+            "You could have prevented this.",
+            "flamethrower, hold fire for more damage, locks on and chains to other enemies"),
+        ("Ice Age",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/UIStat_RedText_IceAge',
+            "Allow me to break the ice.",
+            "lobs a cryo grenade in an arc"),
+        ("Superconducting Plasma Coil",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/UIStat_RedText_PlasmaCoil',
+            "Harness the 4th state of matter.",
+            "long burst-fire, short-range elemental splash damage"),
+        ("Res",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/UIStat_RedText_SpiritOfMaya',
+            "She was right here, I swear. Hair blue as the sky.",
+            # Heals allies or revives from FFYL; 30sec countdown (not useful as a combat weapon)
+            ON_CARD),
+        ("Fasterfied Tizzy",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/UIStat_RedText_Tizzy',
+            "I feel the hurt...time for a rampage!",
+            "fire rate increases the longer fire is held, explosive shots"),
+        ("Snide Trickshot",
+            '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/UIStat_RedText_Trickshot',
+            "Smooth sextuple action.",
+            # On hit, becomes very fast full-auto
+            ON_CARD),
+        ("HOT Spring",
+            '/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/UIStat_RedText_HOTSpring',
+            "Please, call me doctor.",
+            # Spawns a healing aura, rather than doing damage
+            ON_CARD),
+        ("Beskar",
+            '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Beskar/UIStat_RedText_Beskar',
+            "This is the way.",
+            # 100% chance to reflect while shielded
+            ON_CARD),
+        ("Madcap",
+            '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/MadCap/UIStat_RedText_Madcap',
+            "Sometimes there is no next time.",
+            # -50% FFYL time, but very high capacity
+            ON_CARD),
+        ("Gas Mask",
+            '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/UIStat_RedText_Ventilator',
+            "Fight until the end; until your last breath.",
+            # +50% FFYL time
             ON_CARD),
         ]:
 
