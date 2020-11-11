@@ -32,7 +32,7 @@ mod = Mod('decreased_mayhem_enemy_scaling.bl3hotfix',
             "health/shield/armor scaling down pretty significantly.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='mayhem, scaling, enemy, cheat',
         )
 
@@ -49,7 +49,7 @@ mod = Mod('decreased_mayhem_enemy_scaling.bl3hotfix',
 #scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6]
 
 # My most recent values (even more pathetic!)
-scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 4.5, 5, 5]
+scaling = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 4.5, 5, 5, 5]
 
 for mayhem_level_minus_one, scale_value in enumerate(scaling):
     mayhem_level = mayhem_level_minus_one + 1
