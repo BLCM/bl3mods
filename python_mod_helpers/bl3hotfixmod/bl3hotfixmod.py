@@ -627,6 +627,24 @@ class PartCategory(object):
         """
         return ','.join([str(l) for l in self.partlist])
 
+    def clear(self):
+        """
+        Clears this category entirely
+        """
+        self.partlist = []
+
+    def enable(self):
+        """
+        Enables the category
+        """
+        self.enabled = True
+
+    def disable(self):
+        """
+        Disables the category
+        """
+        self.enabled = False
+
     def __len__(self):
         """
         Returns the number of parts we have
