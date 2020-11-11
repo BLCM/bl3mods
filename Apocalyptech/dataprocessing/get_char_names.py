@@ -23,7 +23,7 @@ import sys
 from bl3data.bl3data import BL3Data
 
 # This is all a bit hokey, but it seems to work in general.  Current error
-# output, as of 2020-09-10 (note that it may be awhile before I can confirm
+# output, as of 2020-11-09 (note that it may be awhile before I can confirm
 # some of the Alisma errors):
 #
 # WARNING: More than one bpchar redirect found for /Hibiscus/Enemies/Tentacle/Basic/_Design/Character/BPChar_TentacleBasic
