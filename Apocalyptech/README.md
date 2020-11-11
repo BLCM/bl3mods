@@ -108,6 +108,7 @@ of the mods you'll find in here, though:
 
 ## Mod-Testing Mods
 
+- **Arms Race Cheat** - A mod to make Arms Race completely trivial.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
