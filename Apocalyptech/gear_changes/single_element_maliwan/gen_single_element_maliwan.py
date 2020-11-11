@@ -20,6 +20,7 @@
 # <https://www.gnu.org/licenses/>.
 
 import sys
+from enum import Enum
 sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC, Balance
@@ -39,9 +40,92 @@ mod = Mod('single_element_maliwan.bl3hotfix',
             "of course.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='gear-brand',
         )
+
+# What, me overengineer a problem that could be solved quite simply with just a bit
+# of hardcoding?  Pffffff....
+
+class Weap(Enum):
+    PS = 1
+    SG = 2
+    SM = 3
+    SR = 4
+
+class Element(Enum):
+    FIRE = 1
+    CRYO = 2
+    SHOCK = 3
+    RAD = 4
+    CORR = 5
+
+primary = {
+        Weap.PS: {
+            Element.FIRE: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_PS_MAL_Elemental_Primary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_PS_MAL_Elemental_Primary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_PS_MAL_Elemental_Primary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_PS_MAL_Elemental_Primary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_PS_MAL_Elemental_Primary_Corr',
+            },
+        Weap.SG: {
+            Element.FIRE: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SG_MAL_Elemental_Primary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SG_MAL_Elemental_Primary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SG_MAL_Elemental_Primary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SG_MAL_Elemental_Primary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SG_MAL_Elemental_Primary_Corr',
+            },
+        Weap.SM: {
+            Element.FIRE: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SM_Mal_ElemPrimary_01_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SM_Mal_ElemPrimary_02_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SM_Mal_ElemPrimary_03_Shock',
+            Element.RAD: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SM_Mal_ElemPrimary_04_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Primary/Part_SM_Mal_ElemPrimary_05_Corrosive',
+            },
+        Weap.SR: {
+            Element.FIRE: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Primary/Part_MAL_SR_Ele_Primary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Primary/Part_MAL_SR_Ele_Primary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Primary/Part_MAL_SR_Ele_Primary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Primary/Part_MAL_SR_Ele_Primary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Primary/Part_MAL_SR_Ele_Primary_Corr',
+            },
+        }
+secondary = {
+        Weap.PS: {
+            Element.FIRE: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_PS_MAL_Elemental_Secondary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_PS_MAL_Elemental_Secondary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_PS_MAL_Elemental_Secondary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_PS_MAL_Elemental_Secondary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_PS_MAL_Elemental_Secondary_Corr',
+            },
+        Weap.SG: {
+            Element.FIRE: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SG_MAL_Elemental_Secondary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SG_MAL_Elemental_Secondary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SG_MAL_Elemental_Secondary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SG_MAL_Elemental_Secondary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SG_MAL_Elemental_Secondary_Corr',
+            },
+        Weap.SM: {
+            Element.FIRE: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_01_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_02_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_03_Shock',
+            Element.RAD: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_04_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Elemental_Secondary/Part_SM_Mal_ElemSecondary_05_Corrosive',
+            },
+        Weap.SR: {
+            Element.FIRE: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Secondary/Part_MAL_SR_Ele_Secondary_Fire',
+            Element.CRYO: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Secondary/Part_MAL_SR_Ele_Secondary_Cryo',
+            Element.SHOCK: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Secondary/Part_MAL_SR_Ele_Secondary_Shock',
+            Element.RAD: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Secondary/Part_MAL_SR_Ele_Secondary_Radiation',
+            Element.CORR: '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/Parts/Elemental_Secondary/Part_MAL_SR_Ele_Secondary_Corr',
+            },
+        }
+known_parts = {}
+part_type = {}
+for weap, elements in list(primary.items()) + list(secondary.items()):
+    for element, partname in elements.items():
+        known_parts[partname] = element
+        part_type[partname] = weap
 
 data = BL3Data()
 for bal_name in [
@@ -86,8 +170,6 @@ for bal_name in [
         #    - Destructo Spinner
         #    - Hellshock
         #    - SF Force
-        #
-        # Current up through 2020-06-11 (Guardian Takedown).
 
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/Balance/Balance_PS_MAL_Hellshock',
         #'/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/Balance/Balance_PS_MAL_HyperHydrator',
@@ -117,6 +199,7 @@ for bal_name in [
         #'/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/Balance/Balance_SM_MAL_DNA',
         #'/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link',
         #'/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/Balance/Balance_SG_MAL_DeathGrip',
+        #'/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator',
         '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch',
         '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Devoted/Balance/Balance_SM_MAL_Devoted',
         '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Kevins/Balance/Balance_SM_MAL_Kevins',
@@ -137,29 +220,51 @@ for bal_name in [
         '/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth',
         '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit',
         '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit_Epic',
+        '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil',
         ]:
+
     short_bal_name = bal_name.split('/')[-1]
     bal = Balance.from_data(data, bal_name)
-    found_secondary_elem = False
+
+    weap_type = None
+    primary_cat = None
+    primary_elements = set()
+    secondary_cat = None
+    secondary_elements = set()
+
     for cat in bal.categories:
         for part in cat.partlist:
-            if 'Elemental_Secondary' in part.part_name:
-                found_secondary_elem = True
-                break
-        if found_secondary_elem:
-            # We *could* wipe out the partlist in this category and use the built-in
-            # hotfix functionality in the `Balance` object, but that would generate a
-            # gigantic hotfix, when all we really need to do is tweak one element in
-            # the balance's TOC.  Note that `bEnabled` in the PartSet's ActorPartLists
-            # array does *not* actually do anything.
-            mod.comment(short_bal_name)
-            mod.reg_hotfix(Mod.PATCH, '',
-                    bal_name,
-                    'RuntimePartList.PartTypeTOC.PartTypeTOC[{}]'.format(cat.index),
-                    '(StartIndex=-1,NumParts=0)')
-            mod.newline()
-            break
-    if not found_secondary_elem:
-        print('NOTE: No secondary element for {}'.format(short_bal_name))
+            if 'Elemental_Primary' in part.part_name:
+                weap_type = part_type[part.part_name]
+                primary_elements.add(known_parts[part.part_name])
+                primary_cat = cat
+            elif 'Elemental_Secondary' in part.part_name:
+                secondary_elements.add(known_parts[part.part_name])
+                secondary_cat = cat
+
+    mod.comment(short_bal_name)
+
+    if primary_elements == secondary_elements:
+        # Simple case - secondary elements are just a duplicate of the primary, so all
+        # we're doing is disabling the secondary
+        mod.reg_hotfix(Mod.PATCH, '',
+                bal_name,
+                'RuntimePartList.PartTypeTOC.PartTypeTOC[{}]'.format(secondary_cat.index),
+                '(StartIndex=-1,NumParts=0)')
+    else:
+        # More complex: the elemental offerings are different.  Offer them all as equally-
+        # likely options on the primary slot.
+        full_elements = primary_elements | secondary_elements
+        print(bal_name)
+        print(' -> Folding into primary: {}'.format([e.name for e in full_elements]))
+        print('')
+        secondary_cat.disable()
+        secondary_cat.clear()
+        primary_cat.clear()
+        for element in full_elements:
+            primary_cat.add_part_name(primary[weap_type][element])
+        bal.hotfix_full(mod)
+
+    mod.newline()
 
 mod.close()
