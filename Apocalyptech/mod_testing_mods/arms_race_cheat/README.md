@@ -7,9 +7,9 @@ It seemed easier to do this than figure out a way to get my usual mod-testing
 gear into that map.
 
 This does a few things:
-- Reduces the damage you take, so you're basically invulnerable
-- Decreases enemy health severely, so you can one-shot them with basically anything
-- Increases the first Murdercane timer to six hours
+ * Reduces the damage you take, so you're basically invulnerable
+ * Decreases enemy health severely, so you can one-shot them with basically anything
+ * Increases the first Murdercane timer to six hours
 
 Changelog
 =========
