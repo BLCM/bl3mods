@@ -227,6 +227,11 @@ type_pools = [
                 # Rebound
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse', COV, 1),
 
+                ### DLC5 (Designer's Cut)
+
+                # Hotfoot Teddy
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot', TOR, 1),
+
                 ### Additions
 
                 # Earworm
@@ -303,6 +308,11 @@ type_pools = [
 
                 # Major Kong
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher', COV, 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Ice Age
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', TOR, 1),
 
                 ### Additions
 
@@ -464,6 +474,17 @@ type_pools = [
 
                 # Prompt Critical
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice', TOR, 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Firefly
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/Balance/Balance_PS_VLA_Firefly', VLA, 1),
+                # Res
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya', ATL, 1),
+                # Fasterfied Tizzy
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy', COV, 1),
+                # Snide Trickshot
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot', JAK, 1),
 
                 ### Additions
 
@@ -638,6 +659,11 @@ type_pools = [
                 # Convergence
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence', HYP, 1),
 
+                ### DLC5 (Designer's Cut)
+
+                # Critical Thug / Critical Thug x2
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', TOR, 1),
+
                 ### Additions
 
                 # Phebert
@@ -782,6 +808,13 @@ type_pools = [
                 # P.A.T. Mk. III
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3', TED, 1),
 
+                ### DLC5 (Designer's Cut)
+
+                # Dark Army +
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/Balance/Balance_SM_TED_DarkArmy', TED, 1),
+                # Superconducting Plasma Coil
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil', MAL, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -891,6 +924,13 @@ type_pools = [
                 # Septimator Prime
                 ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator', VLA, 1),
 
+                ### DLC5 (Designer's Cut)
+
+                # Binary Operator
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator', MAL, 1),
+                # Boogeyman
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/Balance/Balance_VLA_SR_Boogeyman', VLA, 1),
+
                 ### Additions
 
                 # Brashi's Dedication
@@ -957,7 +997,7 @@ for (man, man_label) in eng_manufacturers.items():
                 "details",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.2.0',
             cats='loot-system',
             )
 
