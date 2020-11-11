@@ -339,13 +339,13 @@ gun_balances.sort()
 for (label, balance_name) in [
         ("9-Volt", '/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/NineVolt/Balance/Balance_SM_DAHL_NineVolt'),
         ("AAA", '/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/AAA/Balance/Balance_DAL_PS_AAA'),
-        ("ASMD", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/ASMD/Balance/Balance_MAL_SR_ASMD'),
         ("Agonizer 1500", '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Balance/Balance_HW_COV_Terror'),
         ("Alchemist", '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Alchemist/Balance/Balance_AR_TOR_Alchemist'),
         ("Amazing Grace", '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/AmazingGrace/Balance/Balance_PS_JAK_AmazingGrace'),
         ("Amber Management", '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/AmberManagement/Balance/Balance_AR_TOR_AmberManagement'),
         ("Anarchy", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/Balance/Balance_SG_TED_Anarchy'),
         ("Ashen Beast", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast_Epic'),
+        ("ASMD", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/ASMD/Balance/Balance_MAL_SR_ASMD'),
         ("AutoAimè", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/Balance/Balance_SR_DAL_AutoAime'),
         ("Baby Maker ++", '/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/Balance/Balance_PS_Tediore_BabyMaker'),
         ("Backburner", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner'),
@@ -354,6 +354,7 @@ for (label, balance_name) in [
         ("Beacon", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Balance/Balance_PS_MAL_Decoupler'),
         ("Bearcat", '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Bearcat/Balance/Balance_AR_TOR_Bearcat'),
         ("Bekah", '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/Bekah/Balance/Balance_AR_JAK_Bekah'),
+        ("Binary Operator", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator'),
         ("Bitch", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Bitch/Balance/Balance_SM_HYP_Bitch'),
         ("Bite Size", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/Balance/Balance_PS_JAK_BiteSize'),
         ("Black Flame", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Brew/Balance/Balance_SG_TOR_Brewha'),
@@ -362,6 +363,7 @@ for (label, balance_name) in [
         ("Blood-Starved Beast", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast'),
         ("Bloom", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose'),
         ("Bone Shredder", '/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/Balance/Balance_PS_VLA_BoneShredder'),
+        ("Boogeyman", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/Balance/Balance_VLA_SR_Boogeyman'),
         ("Boom Sickle / Sickle", '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Balance/Balance_AR_VLA_Sickle'),
         ("Boomer", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/Balance/Balance_SM_DAL_Boomer'),
         ("Brad Luck", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/Balance/Balance_AR_COV_Trash'),
@@ -389,11 +391,13 @@ for (label, balance_name) in [
         ("Creeping Death", '/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/Sludge/Balance/Balance_SG_TED_Sludge'),
         ("Crit", '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/Balance/Balance_SM_MAL_Crit'),
         ("Critical Mass", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice_Epic'),
+        ("Critical Thug / Critical Thug x2", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug'),
         ("Crossroad", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/Balance/Balance_SM_HYP_Crossroad'),
         ("Cutsman", '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Cutsman/Balance/Balance_SM_MAL_Cutsman'),
         ("D.N.A.", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DNA/Balance/Balance_SM_MAL_DNA'),
         ("Dakota", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/Balance/Balance_SG_JAK_Dakota'),
         ("Damned", '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Damn/Balance/Balance_AR_VLA_Damn'),
+        ("Dark Army +", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/Balance/Balance_SM_TED_DarkArmy'),
         ("Dead Chamber", '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Malevolent/Balance/Balance_PS_JAK_Malevolent'),
         ("Destructo Spinner", '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/DestructoSpin/Balance/Balance_SM_MAL_DestructoSpin'),
         ("Devastator", '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator'),
@@ -408,9 +412,11 @@ for (label, balance_name) in [
         ("Extreme Hangin' Chadd", '/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Chad/Balance/Balance_PS_COV_Chad'),
         ("Face-puncher", '/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Brick/Balance/Balance_SG_HYP_Brick'),
         ("Faisor", '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Balance/Balance_AR_VLA_Faisor'),
+        ("Fasterfied Tizzy", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy'),
         ("Fearmonger", '/Game/PatchDLC/BloodyHarvest/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/Fearmonger/Balance/Balance_SG_HYP_ETech_Fearmonger'),
         ("Fingerbiter", '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/Fingerbiter/Balance/Balance_SG_JAK_Fingerbiter'),
         ("Firecracker", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Firecracker/Balance/Balance_SG_HYP_Firecracker'),
+        ("Firefly", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/Balance/Balance_PS_VLA_Firefly'),
         ("Flakker", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Balance/Balance_SG_Torgue_Flakker'),
         ("Flama Diddle", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/Balance/Balance_SG_TED_Omen'),
         ("Flipper", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper'),
@@ -437,16 +443,18 @@ for (label, balance_name) in [
         ("Hive", '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Hive/Balance/Balance_HW_TOR_Hive'),
         ("Hornet", '/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Hornet/Balance/Balance_DAL_PS_Hornet'),
         ("Hot Drop", '/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/Balance/Balance_HW_COV_HotDrop'),
+        ("Hotfoot Teddy", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot'),
         ("Hyde", '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/HeckelAndHyde/Hyde/Balance/Balance_PS_TOR_Hyde'),
         ("Hydrafrost", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/Balance/Balance_PS_COV_Hydrafrost'),
         ("Hyper-Hydrator", '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/HyperHydrator/Balance/Balance_PS_MAL_HyperHydrator'),
-        ("ION CANNON", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Balance/Balance_HW_VLA_IonCannon'),
-        ("ION LASER", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Balance/Balance_SM_MAL_IonLaser'),
+        ("Ice Age", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge'),
         ("Ice Pick", '/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IcePick/Balance/Balance_PS_MAL_IcePick'),
         ("Icebreaker", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/CoolBeans/Balance/Balance_AR_JAK_CoolBeans'),
         ("Iceburger", '/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/Balance/Balance_SG_HYP_IceBurger'),
         ("Infinity", '/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Infiniti/Balance/Balance_PS_VLA_Infiniti'),
         ("Insider", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider'),
+        ("ION CANNON", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Balance/Balance_HW_VLA_IonCannon'),
+        ("ION LASER", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Balance/Balance_SM_MAL_IonLaser'),
         ("Jericho", '/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/Balance/Balance_HW_VLA_CloudBurst'),
         ("Juliet's Dazzle", '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop'),
         ("Just Kaus", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/Balance/Balance_SM_HYP_JustCaustic'),
@@ -537,6 +545,7 @@ for (label, balance_name) in [
         ("Redistributor (mission reward)", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/Balance/Balance_SM_HYP_Fork'),
         ("Redline", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/Balance/Balance_SG_Torgue_RedLine'),
         ("Reflux", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/Balance/Balance_SG_HYP_Reflux'),
+        ("Res", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya'),
         ("Reunion", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence_Epic'),
         ("Ripper", '/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Ripper/Balance/Balance_SM_DAL_Ripper'),
         ("Robin's Call", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/Balance/Balance_SG_JAK_SpeakEasy'),
@@ -546,7 +555,6 @@ for (label, balance_name) in [
         ("Rowan's Call", '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/RowansCall/Balance/Balance_AR_JAK_RowansCall'),
         ("Ruby's Wrath", '/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/Balance/Balance_HW_ATL_RubysWrath'),
         ("S3RV-80S-EXECUTE", '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Execute/Balance/Balance_PS_TED_Execute'),
-        ("SF Force", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce'),
         ("Sacrificial Lamb", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SacrificalLamb/Balance/Balance_SG_TED_SacrificialLamb'),
         ("Sand Hawk", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/Balance/Balance_SR_DAL_SandHawk'),
         ("Satisfaction", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction'),
@@ -560,6 +568,7 @@ for (label, balance_name) in [
         ("Septimator Prime", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator'),
         ("Septimator", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator_Epic'),
         ("Seventh Sense (legendary version)", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense'),
+        ("SF Force", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SFForce/Balance/Balance_SM_MAL_SFForce'),
         ("Shocker", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/Balance/Balance_SG_Torgue_ETech_Shocker'),
         ("Short Stick (legendary version)", '/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick_Legendary'),
         ("Shrieking Devil", '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Shriek/Balance/Balance_SG_MAL_Shriek'),
@@ -570,6 +579,7 @@ for (label, balance_name) in [
         ("Slow Hand", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand'),
         ("Smart-Gun", '/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/SpiderMind/Balance/Balance_SM_TED_SpiderMind'),
         ("Smog", '/Game/PatchDLC/Takedown2/Gear/Weapons/Smog/Balance/Balance_SM_HYP_Smog'),
+        ("Snide Trickshot", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot'),
         ("Soleki Protocol", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Soleki/Balance/Balance_MAL_SR_Soleki'),
         ("Soulrender", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender'),
         ("Spade", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/Balance/Balance_SG_Torgue_Shoveler'),
@@ -582,9 +592,9 @@ for (label, balance_name) in [
         ("Storm / Firestorm", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Balance/Balance_MAL_SR_LGD_Storm'),
         ("Super Shredifier", '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Shredifier/Balance/Balance_AR_VLA_Sherdifier'),
         ("Superball", '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/Balance/Balance_PS_MAL_Plumber'),
+        ("Superconducting Plasma Coil", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil'),
         ("Superstreamer", '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/TwitchPrime/Balance/Balance_SG_TED_Twitch'),
         ("T.K.'s Wave + variants", '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/TheWave/Balance/Balance_SG_JAK_Unique_Wave'),
-        ("THE TWO TIME", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/TwoTime/Balance/Balance_SR_HYP_TwoTime'),
         ("Tankman's Shield", '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman'),
         ("Ten Gallon", '/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/TenGallon/Balance/Balance_SM_TED_TenGallon'),
         ("Terminal Polyaimorous", '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Balance/Balance_SM_MAL_PolyAim'),
@@ -613,6 +623,7 @@ for (label, balance_name) in [
         ("The Lob", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob'),
         ("The Monarch", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Balance/Balance_AR_VLA_Monarch'),
         ("The Shoddy", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs'),
+        ("THE TWO TIME", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/TwoTime/Balance/Balance_SR_HYP_TwoTime'),
         ("Thumper", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/Balance/Balance_SG_Torgue_Thumper'),
         ("Thunderball Fists", '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists'),
         ("Tiggs' Boom", '/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom'),
@@ -688,6 +699,7 @@ for (sname, sobj) in [
         ("Asclepius", '/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/Balance/InvBalD_Shield_LGD_Aesclepius'),
         ("Back Ham", '/Game/Gear/Shields/_Design/_Uniques/BackHam/Balance/InvBalD_Shield_BackHam'),
         ("Band of Sitorak", '/Game/Gear/Shields/_Design/_Uniques/Cyttorak/bALANCE/InvBalD_Shield_Cyttorak'),
+        ("Beskar", '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Beskar/Balance/InvBalD_Shield_Beskar'),
         ("Big Boom Blaster", '/Game/Gear/Shields/_Design/_Uniques/BigBoomBlaster/Balance/InvBalD_Shield_LGD_BigBoomBlaster'),
         ("Black Hole", '/Game/Gear/Shields/_Design/_Uniques/BlackHole/Balance/InvBalD_Shield_LGD_BlackHole'),
         ("Deluxe Badass Combustor", '/Game/Gear/Shields/_Design/_Uniques/_XPLootBooster/Balance/InvBalD_Shield_XPLootBooster'),
@@ -698,6 +710,7 @@ for (sname, sobj) in [
         ("Front Loader", '/Game/Gear/Shields/_Design/_Uniques/FrontLoader/Balance/InvBalD_Shield_LGD_FrontLoader'),
         ("Frozen Heart", '/Game/Gear/Shields/_Design/_Uniques/Aurelia/Balance/InvBalD_Shield_LGD_Aurelia'),
         ("Frozen Snowshoe", '/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart'),
+        ("Gas Mask", '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator'),
         ("Golden Touch", '/Game/Gear/Shields/_Design/_Uniques/GoldenTouch/Balance/InvBalD_Shield_GoldenTouch'),
         ("Guilty Spark", '/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar_Epic'),
         ("Impaler", '/Game/Gear/Shields/_Design/_Uniques/Impaler/Balance/InvBalD_Shield_LGD_Impaler'),
@@ -705,11 +718,12 @@ for (sname, sobj) in [
         ("Limit Break", '/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra_Epic'),
         ("Loop of 4N631", '/Game/Gear/Shields/_Design/_Uniques/LoopOf4N631/Balance/InvBalD_Shield_HYP_LoopOf4N631'),
         ("M.E.A.T. Shield", '/Game/PatchDLC/Event2/Gear/Shield/_Unique/MEAT/Balance/InvBalD_Shield_Legendary_MEAT'),
-        ("MSRC Auto-Dispensary", '/Game/Gear/Shields/_Design/_Uniques/Dispensary/Balance/InvBalD_Shield_LGD_Dispensary'),
+        ("Madcap", '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/MadCap/Balance/InvBalD_Shield_LGD_Madcap'),
         ("Mendel's Multivitamin Shield", '/Game/Gear/Shields/_Design/_Uniques/BuriedAlive/Balance/InvBalD_Shield_BuriedAlive'),
         ("Messy Breakup", '/Game/Gear/Shields/_Design/_Uniques/MessyBreakup/bALANCE/InvBalD_Shield_MessyBreakup'),
         ("Moxxi's Embrace", '/Game/Gear/Shields/_Design/_Uniques/MoxxisEmbrace/Balance/InvBalD_Shield_MoxxisEmbrace'),
         ("Mr Caffeine", '/Game/Gear/Shields/_Design/_Uniques/MrCaffeine/Balance/InvBalD_Shield_PAN_MrCaffeine'),
+        ("MSRC Auto-Dispensary", '/Game/Gear/Shields/_Design/_Uniques/Dispensary/Balance/InvBalD_Shield_LGD_Dispensary'),
         ("Nova Berner", '/Game/Gear/Shields/_Design/_Uniques/NovaBurner/Balance/InvBalD_Shield_LGD_NovaBurner'),
         ("Old God", '/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/OldGod/Balance/InvBalD_Shield_OldGod'),
         ("Plus Ultra", '/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra'),
@@ -781,6 +795,7 @@ for (gname, gobj) in [
         ("Fungus Among Us", '/Game/Gear/GrenadeMods/_Design/_Unique/Mushroom/Balance/InvBalD_GM_Shroom'),
         ("Ghast Call", '/Game/PatchDLC/BloodyHarvest/Gear/GrenadeMods/_Design/_Unique/FontOfDarkness/Balance/InvBalD_GM_TOR_FontOfDarkness'),
         ("Hex", '/Game/Gear/GrenadeMods/_Design/_Unique/Seeker/Balance/InvBalD_GM_Seeker'),
+        ("HOT Spring", '/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/Balance/InvBalD_GM_HOTSpring'),
         ("Hunter-Seeker", '/Game/Gear/GrenadeMods/_Design/_Unique/HunterSeeker/Balance/InvBalD_GM_HunterSeeker'),
         ("It's Piss", '/Game/Gear/GrenadeMods/_Design/_Unique/Piss/Balance/InvBalD_GM_Piss'),
         ("Kryll", '/Game/Gear/GrenadeMods/_Design/_Unique/Kryll/Balance/InvBalD_GM_Kryll'),
@@ -804,42 +819,61 @@ for (gname, gobj) in [
     grenade_balances.append((gname, 'Grenade', 'Named Grenade', gobj))
 
 # COMs
+char_map = {
+        'BSM': 'Beastmaster',
+        'GUN': 'Gunner',
+        'OPE': 'Operative',
+        'SRN': 'Siren',
+        }
 com_balances = []
-glob_pattern = '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_*_*_*'
-pat = re.compile(r'^/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_(?P<character>.*?)_(?P<rarity>\d+_.*?)$')
-for obj_name in data.glob(glob_pattern):
-    match = pat.match(obj_name).groupdict()
-    rarity_lower = match['rarity'].lower()
-    if rarity_lower == '01_common':
-        rarity = '01/Common'
-    elif rarity_lower == '02_uncommon':
-        rarity = '02/Uncommon'
-    elif rarity_lower == '03_rare':
-        rarity = '03/Rare'
-    elif rarity_lower == '04_veryrare':
-        rarity = '04/Very Rare'
-    elif rarity_lower == '05_legendary':
-        # There's one "main" legendary balance for these, which depending on part selection
-        # will "be" one of the available base-game legendary COMs.  When the Mayhem 4 /
-        # Maliwan Takedown patch was released, though, GBX assigned a dedicated drop for
-        # practically all legendary gear, including COMs, and to do that they created brand
-        # new balances for all the base-game legendary COMs (and assigned them to the Trials
-        # bosses).  These balances are identical to the main world-drop legendary balance,
-        # except that they all just have a single part for the legendary ability each, so
-        # that they can be individually assigned.  Anyway, long story short: we're gonna
-        # use *those* instead, so that we can have individual rows for each one.  I verified
-        # that the counts work out exactly the same.
-        rarity = '05/Legendary'
-        #print('NOTICE: Skipping base-game Legendary COM {} - we\'re enumerating them via Raid1 balances now'.format(obj_name))
-        continue
-    else:
-        raise Exception('Unknown rarity in {}, {}'.format(obj_name, rarity_lower))
-    com_balances.append((
-        match['character'],
-        'COM',
-        rarity,
-        obj_name,
-        ))
+for glob_pattern, re_pat, extra_label in [
+        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_*_*_*',
+            r'^/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_(?P<character>.*?)_(?P<rarity>\d+_.*?)$',
+            None),
+        ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/*/PartSets/InvBalD_CM_*',
+            r'^/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/(?P<character>.*?)/PartSets/InvBalD_CM_Ixora_.*?_(?P<rarity>\d+_.*?)$',
+            "Designer's Cut"),
+        ]:
+    pat = re.compile(re_pat)
+    for obj_name in data.glob(glob_pattern):
+        match = pat.match(obj_name).groupdict()
+        rarity_lower = match['rarity'].lower()
+        if rarity_lower == '01_common':
+            rarity = '01/Common'
+        elif rarity_lower == '02_uncommon':
+            rarity = '02/Uncommon'
+        elif rarity_lower == '03_rare':
+            rarity = '03/Rare'
+        elif rarity_lower == '04_veryrare':
+            rarity = '04/Very Rare'
+        elif rarity_lower == '05_legendary':
+            # There's one "main" legendary balance for these, which depending on part selection
+            # will "be" one of the available base-game legendary COMs.  When the Mayhem 4 /
+            # Maliwan Takedown patch was released, though, GBX assigned a dedicated drop for
+            # practically all legendary gear, including COMs, and to do that they created brand
+            # new balances for all the base-game legendary COMs (and assigned them to the Trials
+            # bosses).  These balances are identical to the main world-drop legendary balance,
+            # except that they all just have a single part for the legendary ability each, so
+            # that they can be individually assigned.  Anyway, long story short: we're gonna
+            # use *those* instead, so that we can have individual rows for each one.  I verified
+            # that the counts work out exactly the same.
+            rarity = '05/Legendary'
+            #print('NOTICE: Skipping base-game Legendary COM {} - we\'re enumerating them via Raid1 balances now'.format(obj_name))
+            continue
+        else:
+            raise Exception('Unknown rarity in {}, {}'.format(obj_name, rarity_lower))
+        if match['character'] in char_map:
+            character = char_map[match['character']]
+        else:
+            character = match['character']
+        if extra_label:
+            character = '{} ({})'.format(character, extra_label)
+        com_balances.append((
+            character,
+            'COM',
+            rarity,
+            obj_name,
+            ))
 # Specific Legendary COM balances added in the Mayhem 4 / Maliwan Takedown patch, which added
 # dedicated drops to practically everything.  These balances are identical to the regular
 # base-game legendary COM balances, except that there's one per COM, which makes them nicer
@@ -869,10 +903,12 @@ for (cname, cobj) in [
         ]:
     com_balances.append((cname, 'COM', '05/Legendary', cobj))
 for (cname, cobj) in [
+        ("Beastmaster - Cmdl3t", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora_BSM_L01'),
         ("Beastmaster - Peregrine", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Alisma'),
         ("Beastmaster - R4kk P4k", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_Raid1'),
         ("Beastmaster - St4ckbot", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_DLC1'),
         ("Beastmaster - Tr4iner", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Hib'),
+        ("Gunner - Eternal Flame", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora_GUN_L01'),
         ("Gunner - Flare", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Alisma'),
         ("Gunner - Green Monster", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_DLC1'),
         ("Gunner - Raging Bear", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_Raid1'),
@@ -881,7 +917,9 @@ for (cname, cobj) in [
         ("Operative - Conductor", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Hib'),
         ("Operative - Hustler", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Alisma'),
         ("Operative - Seein' Dead", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_DLC1'),
+        ("Operative - Spy", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora_OPE_L01'),
         ("Siren - Golden Rule", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1'),
+        ("Siren - Kensei", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01'),
         ("Siren - Muse", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma'),
         ("Siren - Spiritual Driver", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_Raid1'),
         ("Siren - Stone", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib'),
@@ -911,12 +949,15 @@ artifact_balances = [
         ("Commander Planetoid", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/CommanderPlanetoid/InvBalD_Artifact_CommanderPlanetoid'),
         ("Cosmic Crater", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/CosmicCrater/InvBalD_Artifact_CosmicCrater'),
         ("Deathless", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/Deathless/InvBalD_Artifact_Deathless'),
+        ("Deathrattle", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/Balance/InvBalD_Artifact_Deathrattle'),
         ("Electric Banjo", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/ElectricBanjo/Balance/InvBalD_Artifact_ElectricBanjo'),
         ("Grave", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave'),
+        ("Holy Grail", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Balance/InvBalD_Artifact_HolyGrail'),
         ("Launch Pad", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/Salvo/InvBalD_Artifact_Salvo'),
         ("Loaded Dice", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/LoadedDice/InvBalD_Artifact_LoadedDice'),
         ("Lunacy", 'Artifact', '05/Legendary', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy'),
         ("Moxxi's Endowment", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/MoxxisEndowment/InvBalD_Artifact_MoxxisEndowment'),
+        ("Mysterious Amulet", 'Artifact', '04/Very Rare', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
         ("Otto Idol", 'Artifact', '05/Legendary', '/Game/PatchDLC/Raid1/Gear/Artifacts/OttoIdol/InvBalD_Artifact_OttoIdol'),
         ("Pearl of Ineffable Knowledge", 'Artifact', '05/Legendary', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK'),
         ("Phoenix Tears", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/PhoenixTears/Balance/InvBalD_Artifact_PhoenixTears'),
@@ -973,6 +1014,8 @@ for (filename, balances, man_col_name, type_col_name, do_anoints, anoint_expansi
             '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Weapons_Event2',
             # Adds nothing, don't bother
             #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Geranium',
+            # DLC5 / Designer's Cut Anointments
+            '/Game/PatchDLC/Ixora/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Ixora',
             ]),
         ('shield_counts.csv', shield_balances, 'Manufacturer/Name', None, True, [
             '/Game/PatchDLC/Raid1/Gear/_GearExtension/GParts/GPartExpansion_Shields_Raid1',
