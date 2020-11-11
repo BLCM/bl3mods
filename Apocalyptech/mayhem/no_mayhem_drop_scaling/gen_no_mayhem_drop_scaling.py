@@ -33,7 +33,7 @@ mod = Mod('no_mayhem_drop_scaling.bl3hotfix',
             "loot so that Mayhem 2.0 modes are no different than in normal.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='mayhem, enemy-drops',
         )
 
@@ -41,7 +41,7 @@ mod = Mod('no_mayhem_drop_scaling.bl3hotfix',
 # goes from 1 at M1, to 2 at M10.  No idea what that does, really, though it looks like
 # it might only be referenced by a UI element.  So possibly nothing important...
 
-for mayhem_level in range(1, 11):
+for mayhem_level in range(1, 12):
     mod.comment('Mayhem {}'.format(mayhem_level))
     for col_name in [
             'DropWeightCommonScalar_21_59A2FB124E32B955768A7B9D93C25A99',
