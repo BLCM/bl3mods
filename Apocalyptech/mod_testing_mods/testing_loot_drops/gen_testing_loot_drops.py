@@ -105,6 +105,59 @@ balances = [
         '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
         '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer',
 
+        # Ixora COMs
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_04_VeryRare',
+
+        # Weird Ixora Beastmaster Heads?
+        ## grep -A1 -B0  \"InventoryName InvData_*.json | grep string
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead03',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead33',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead35',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead36',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead37',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead39',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead40',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead41',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead42',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead43',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead44',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead45',
+
+        # Weird Ixora Gunner Heads?
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead03',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead33',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead35',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead36',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead37',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead39',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead40',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead41',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead42',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead43',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead44',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead45',
+
+        # No Weird Ixora Operative or Siren heads?
+
         # Atlas Gear (which have multiple tracker types; this isn't exhaustive)
         #'/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/Balance/Balance_ATL_AR_01_Common.Balance_ATL_AR_01_Common',
         #'/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/Balance/Balance_ATL_AR_02_UnCommon.Balance_ATL_AR_02_UnCommon',
