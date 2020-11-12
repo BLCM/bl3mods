@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.0',
+        v='1.2.1',
         cats='enemy-drops',
         )
 
@@ -1627,6 +1627,34 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_MechRaidBossBar',
             AttributeInitializer=None,
             BaseValueScale=1
         )""")
+mod.newline()
+
+# DLC5 Legendary Chance in area chests
+mod.header('DLC5 (Designer\'s Cut) Area Challenge Chest Legendary Chances')
+for row in [
+        'CreatureSewers',
+        'WaterWorks',
+        'Thunderdome',
+        'Dam',
+        'HQ',
+        'Industry',
+        'Spaceport',
+        'Silo',
+        ]:
+    # I'm 99.9% sure that only LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26
+    # is used here, but whatever.
+    for col in [
+            'LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26',
+            'LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6',
+            'LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111',
+            ]:
+        # Default value: 0.25
+        mod.table_hotfix(Mod.LEVEL, 'FrostSite_P',
+                '/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora',
+                row,
+                col,
+                0.5)
+
 mod.newline()
 
 # Buff Anoint Drops

@@ -31,13 +31,17 @@ the loot you come across is as varied as possible.
 For a list of what drops you should expect from bosses, while using this mod, see
 [expected_drops.md](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
 
-Note that this mod intentionally doesn't touch the rarity values in Stormblind
-Complex / Arms Race, since those are rather intentionally balanced as part of
-that level's unique challenge.  The only Designer's Cut specific changes here is
-drop quantity increases from Heavyweight Harker.
+Note that this mod leaves Arms Race (DLC5, Stormblind Complex) basically as-is,
+since the rarity levels in there are pretty clearly engineered for specific
+effect.  This mod *does* increase the odds of legendary gear in the area-event
+reward chests, though, and increases the drop quantity for Heavyweight Harker.
 
 Changelog
 =========
+
+**v1.2.1** - Nov 12, 2020
+ * Doubled chances of legendary gear from Arms Race area-event reward
+   chests.
 
 **v1.2.0** - Nov 12, 2020
  * Updated with Heavyweight Harker from DLC5.  This was already a
