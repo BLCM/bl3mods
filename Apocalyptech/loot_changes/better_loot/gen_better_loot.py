@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='enemy-drops',
         )
 
@@ -1482,6 +1482,10 @@ for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
         ('Terror', 'BPChar_Agonizer_9k',
             '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain',
             3,
+            4),
+        ('Heavyweight Harker', 'BPChar_FrontRider_Rider',
+            '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Enemy/ItemPoolList_GearUp_FinalBoss',
+            6,
             4),
         ]:
     mod.comment(label)

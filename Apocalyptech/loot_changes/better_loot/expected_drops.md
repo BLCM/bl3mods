@@ -141,6 +141,31 @@ Pandora
 **Vermilingua**
  * 2x: Hellshock, Tsunami
 
+## Stormblind Complex
+
+**Heavyweight Harker**
+ * 4x:
+   * Binary Operator
+   * Boogeyman
+   * Critical Thug
+   * Firefly
+   * Hotfoot Teddy
+   * Plasma Coil
+   * Res
+   * Deathrattle
+   * HOT Spring
+   * Beskar
+   * Madcap
+   * Gas Mask
+   * Trick Shot
+   * Dark Army +
+   * Holy Grail
+   * Tizzy
+   * Cmdl3t COM
+   * Eternal Flame COM
+   * Spy COM
+   * Kensei COM
+
 Athenas
 -------
 

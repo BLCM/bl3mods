@@ -8,8 +8,7 @@ different things:
 * Sets the rarity weights to be improved, globally
 * Increases Eridium drop rates and quantities.
 * Guarantees specific legendary drops from nearly all the bosses which
-  have unique drops.  This has been updated through DLC4 (Psycho Krieg),
-  and updated with the drop changes as recently as the 2020-08-20 patch.
+  have unique drops.  This has been updated through DLC5 (Designer's Cut).
 * Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
   mod for that.
@@ -32,8 +31,18 @@ the loot you come across is as varied as possible.
 For a list of what drops you should expect from bosses, while using this mod, see
 [expected_drops.md](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
 
+Note that this mod intentionally doesn't touch the rarity values in Stormblind
+Complex / Arms Race, since those are rather intentionally balanced as part of
+that level's unique challenge.  The only Designer's Cut specific changes here is
+drop quantity increases from Heavyweight Harker.
+
 Changelog
 =========
+
+**v1.2.0** - Nov 12, 2020
+ * Updated with Heavyweight Harker from DLC5.  This was already a
+   guaranteed drop, but it's a wide pool, so increased the quantity
+   a bit.
 
 **v1.1.0** - Oct 3, 2020
  * Updated with DLC4 enemies

@@ -1,6 +1,6 @@
 ###
 ### Name: BL3 Better Loot
-### Version: 1.1.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -1250,6 +1250,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/It
 
 # Terror
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Heavyweight Harker
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Enemy/ItemPoolList_GearUp_FinalBoss.ItemPoolList_GearUp_FinalBoss,ItemPools.ItemPools[6].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Drop rate normalization
