@@ -15,13 +15,13 @@ the spawn modifications can show up in.
 
 Note also that these still don't seem to work inside Covenant Pass and The
 Droughts, so those are the main known exceptions.  This has been updated through
-DLC4 (Psycho Krieg and the Fantastic Fustercluck), though.
-
-Also also: as of October 2020, the Bloody Harvest version of this mod doesn't
-really do too much, since Gearbox had updated its spawn areas for the re-release.
+DLC5 (Designer's Cut), though.
 
 Changelog
 =========
+
+**v1.2.0** - Nov 11, 2020
+ * Addition of DLC5 (Designer's Cut) map
 
 **v1.1.1** - Oct 9, 2020
  * Pared down our custom spawn additions after investigating the official

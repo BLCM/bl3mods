@@ -514,6 +514,35 @@ for cat_name, subdir, level_names in [
                 'Eldorado_BossFight.PersistentLevel.SpawnOptions_PsychodinP_2',
                 ])),
             ]),
+        ('DLC5', 'dlc5', [
+            ('FrostSite_P', set([
+                # Chests+stuff
+                'FrostSite_Combat.PersistentLevel.TRASHPILES-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTWATERWORKS',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTTHUNDERDOME',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTSPACEPORT',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTSILO',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTINDUSTRY',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTHQ',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTDAM',
+                'FrostSite_Combat.PersistentLevel.POIREDCHESTCREATURESEWER',
+                'FrostSite_Combat.PersistentLevel.OFFERINGBOX-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.LOCKERS-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.GLOBALWhiteChestDen-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.GlobalWeaponVendingMachine',
+                'FrostSite_Combat.PersistentLevel.GLOBALRedChestDen-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.GlobalHealthVendingMachine',
+                'FrostSite_Combat.PersistentLevel.GLOBALBARRELS-LootDen',
+                'FrostSite_Combat.PersistentLevel.GlobalAmmoVendingMachine',
+                'FrostSite_Combat.PersistentLevel.DAHLAMMOBOXES-LOOTDEN',
+                'FrostSite_Combat.PersistentLevel.BONEPILES-LOOTDEN',
+                'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest__5',
+                'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest__4',
+                'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest__3',
+                'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest__2',
+                'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest_',
+                ])),
+            ]),
         ]:
     for level_name, excluders in level_names:
         print('Processing extra spawns from {} {} ({})'.format(cat_name, LVL_TO_ENG[level_name], level_name))
@@ -590,7 +619,7 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "through DLC4 (Psycho Krieg), though.",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.1.1',
+            v='1.2.0',
             cats='event, enemy, maps',
             )
 
