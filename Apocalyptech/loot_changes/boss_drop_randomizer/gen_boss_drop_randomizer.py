@@ -38,7 +38,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
             "so you get as interesting as possible drops.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='enemy-drops',
         )
 
@@ -678,6 +678,21 @@ for (label, char_name, pools) in sorted([
                         'BalancedItems.BalancedItems[{}].ItemPoolData'.format(idx),
                         leg_pools[drop_type])
     mod.newline()
+
+mod.comment('Special-case for Heavyweight Harker, in Stormblind Complex (also randomizes other enemies there)')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_FrontRider_Rider',
+        '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary',
+        'BalancedItems',
+        """(
+            (
+                ItemPoolData={},
+                Weight={}
+            )
+        )""".format(
+            Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', 'ItemPoolData'),
+            BVC(bvc=1),
+            ))
+mod.newline()
 
 mod.comment('Remove partlock attempt for Anointed Alpha drop')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_AnointedJoe',

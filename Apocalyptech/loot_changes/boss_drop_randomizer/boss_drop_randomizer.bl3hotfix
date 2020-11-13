@@ -1,6 +1,6 @@
 ###
 ### Name: Boss Drop Randomizer
-### Version: 1.1.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -1595,6 +1595,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
+# Special-case for Heavyweight Harker, in Stormblind Complex (also randomizes other enemies there)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary.ItemPool_Ixora_Guns_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',Weight=(BaseValueConstant=1)))
 
 # Remove partlock attempt for Anointed Alpha drop
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,PartSelectionOverrides,0,,()
