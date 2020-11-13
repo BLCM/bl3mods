@@ -43,7 +43,7 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
             "so you've got interesting stuff dropping most of the time.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='loot-system, enemy-drops, chests',
         )
 
