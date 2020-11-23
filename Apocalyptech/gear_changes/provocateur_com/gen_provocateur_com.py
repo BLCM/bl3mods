@@ -212,12 +212,12 @@ mod.newline()
 
 mod.header('Add to drop pools')
 
+data = BL3Data()
 for pool_name in [
         '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary',
         '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary',
         ]:
     short_name = pool_name.split('/')[-1]
-    data = BL3Data()
     pool = ItemPool.from_data(data, pool_name)
     weight = None
     for drop in pool.balanceditems:
