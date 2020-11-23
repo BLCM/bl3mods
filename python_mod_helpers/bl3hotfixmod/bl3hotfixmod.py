@@ -527,6 +527,24 @@ class ItemPool(object):
             weight = BVC()
         self.balanceditems.append(ItemPoolEntry(balance_name=balance_name, weight=weight))
 
+    @staticmethod
+    def from_data(data, pool_name):
+        """
+        Returns a new ItemPool object by loading `pool_name` from the BL3Data object `data`
+        """
+
+        pool = ItemPool(pool_name)
+        pool_data = data.get_data(pool_name)[0]
+        for bal in pool_data['BalancedItems']:
+            if 'export' in bal['ItemPoolData']:
+                bal_name = bal['ResolvedInventoryBalanceData'][1]
+                pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
+            else:
+                pool_name = bal['ItemPoolData'][1]
+                pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
+
+        return pool
+
     def __str__(self):
         """
         Format our BalancedItems as a hotfix

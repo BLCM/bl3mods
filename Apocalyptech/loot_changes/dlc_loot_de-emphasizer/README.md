@@ -14,6 +14,9 @@ which adds all DLC gear into the world drop pools.
 Changelog
 =========
 
+**v1.2.1** - Nov 23, 2020
+ * Updated for compatibility with Provocateur COM mod.
+
 **v1.2.0** - Nov 12, 2020
  * Updated for DLC5 (Designer's Cut)
 

@@ -1,6 +1,6 @@
 ###
 ### Name: DLC Loot De-Emphasizer
-### Version: 1.2.0
+### Version: 1.2.1
 ### Author: Apocalyptech
 ### Categories: loot-system, enemy-drops, chests
 ###
@@ -293,6 +293,9 @@ SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/Item
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary.ItemPool_GearUp_Event_Industry_Legendary,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary.ItemPool_GearUp_Event_Silo_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary.ItemPool_GearUp_Event_Silo_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary.ItemPool_GearUp_Event_Silo_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
@@ -401,6 +404,9 @@ SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/Item
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[19].InventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[19].ResolvedInventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[19].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[20].InventoryBalanceData,0,,None
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[20].ResolvedInventoryBalanceData,0,,None
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary.ItemPool_Ixora_All_Legendary,BalancedItems.BalancedItems[20].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary.ItemPool_Ixora_Artifacts_Legendary,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary.ItemPool_Ixora_Artifacts_Legendary,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary.ItemPool_Ixora_Artifacts_Legendary,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary"'

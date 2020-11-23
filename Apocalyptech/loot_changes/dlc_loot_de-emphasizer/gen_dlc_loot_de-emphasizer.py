@@ -43,7 +43,7 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
             "so you've got interesting stuff dropping most of the time.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.0',
+        v='1.2.1',
         cats='loot-system, enemy-drops, chests',
         )
 
@@ -509,6 +509,9 @@ for src, idx, dst in [
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 0, leg_pool_sm),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 1, leg_pool_sm),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 2, leg_pool_coms),
+        # This last COM in ItemPool_GearUp_Event_Industry_Legendary just here to support the Provocateur COM mod, should
+        # it be enabled.  Will do nothing if not.
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 3, leg_pool_coms),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary', 0, leg_pool_grenades),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary', 1, leg_pool_shields),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Spaceport_Legendary', 0, leg_pool_artifacts),
@@ -547,6 +550,9 @@ for src, idx, dst in [
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 17, leg_pool_coms),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 18, leg_pool_coms),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 19, leg_pool_coms),
+        # This last COM in ItemPool_Ixora_All_Legendary just here to support the Provocateur COM mod, should
+        # it be enabled.  Will do nothing if not.
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 20, leg_pool_coms),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary', 0, leg_pool_artifacts),
         ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary', 1, leg_pool_artifacts),
         # Nothing actually references this one, and it's not present in the level.
