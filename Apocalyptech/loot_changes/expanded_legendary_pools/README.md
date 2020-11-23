@@ -26,8 +26,17 @@ which will make the red-text purple gear more noticeable when they drop.
 This also pairs nicely with my Boss Drop Randomizer, Mission Reward Randomizer,
 and DLC Loot De-Emphasizer mods.
 
+**Notes on Mod Compatibility:**
+
+If using this mod alongside the Provocateur COM mod, make sure this mod appears
+in your mod list *before* the Provocateur COM mod, so that Provocateur gets
+added into the loot pool properly.
+
 Changelog
 =========
+
+**v1.2.1** - Nov 23, 2020
+ * Updated with Provocateur COM mod compatibility
 
 **v1.2.0** - Nov 10, 2020
  * Added DLC5 (Designer's Cut) items

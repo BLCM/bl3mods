@@ -11,6 +11,14 @@ from base game enemies.  That's what this mod does!
 This mod is definitely intended to be used alongside my Expanded Legendary Pools mod,
 which adds all DLC gear into the world drop pools.
 
+**Notes on Mod Compatibility:**
+
+If using this mod alongside the Provocateur COM mod, make sure that this mod
+appears in your mod list *after* the Provocateur COM mod, so that Provocateur
+gets properly de-emphasized.  Note that when using both together, you'll need
+to be using something like Expanded Legendary Pools, in order to get any
+Provocateur drops.
+
 Changelog
 =========
 

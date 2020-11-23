@@ -52,7 +52,7 @@ mod = Mod('provocateur_com.bl3hotfix',
             "Provocateur are equally-likely drops).",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='gear-com',
         ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/provocateur_com/screenshot.png',
         )
@@ -235,5 +235,12 @@ for pool_name in [
             str(pool),
             )
     mod.newline()
+
+mod.comment('Expanded Legendary Pools Compatibility')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary',
+        'BalancedItems.BalancedItems[6].Weight.BaseValueConstant',
+        1)
+mod.newline()
 
 mod.close()

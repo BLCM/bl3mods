@@ -60,7 +60,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'at a reduced rate compared to the legendaries already in there.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.0',
+        v='1.2.1',
         cats='loot-system, enemy-drops',
         )
 
@@ -1237,6 +1237,10 @@ pools = [
 
                 # DLC5 - Spy
                 ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora_OPE_L01', 1),
+
+                # DLC5 - Provocateur (requires the Provocateur COM mod to work, so weight is set to
+                # zero.  The Provocateur COM mod will set it to 1)
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L02/InvBalD_CM_Ixora_OPE_L02', 0),
 
                 ]),
 

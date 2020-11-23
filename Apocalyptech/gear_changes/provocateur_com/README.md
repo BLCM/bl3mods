@@ -26,8 +26,23 @@ The probability of Spy was dropped a little bit to make room for the
 new COM, without diluting the rest of the pools too much (Spy and
 Provocateur are equally-likely drops).
 
+**Notes on Mod Compatibility:**
+
+If using this mod along with DLC Loot De-Emphasizer, make sure that this
+mod is in your list *before* DLC Loot De-Emphasizer, otherwise the
+Provocateur COM will remain a fixed drop.  (If using these two in
+conjunction, you'll need to use a mod like Expanded Legendary Pools, in
+order to get Provocateur drops.)
+
+If using this mod along with Expanded Legendary Pools, make sure that this
+mod is in mod list *after* Expanded Legendary Pools, in order to
+correctly get added to that mod's updated pools.
+
 Changelog
 =========
+
+**v1.0.1** - Nov 23, 2020
+ * Updated for compatibility with Expanded Legendary Pools
 
 **v1.0.0** - Nov 23, 2020
  * Initial release
