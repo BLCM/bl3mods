@@ -44,10 +44,10 @@ mod = Mod('world_drop_designers_cut_coms.bl3hotfix',
         v='1.0.0',
         cats='gear-com',
         ss=[
-            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com-beastmaster.png',
-            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com-gunner.png',
-            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com-operative.png',
-            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com-siren.png',
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com_beastmaster.png',
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com_gunner.png',
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com_operative.png',
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/loot_changes/world_drop_designers_cut_coms/com_siren.png',
             ],
         )
 
