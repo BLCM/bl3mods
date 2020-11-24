@@ -7,6 +7,14 @@ supposed to, or at least one fewer part than any other chars'
 COMs have.  This is pretty rare, but it *is* something that's possible
 in the data, so this mod just patches that up.
 
+**Notes on Mod Compatibility:**
+
+If using this mod along with World Drop Ixora COMs, make sure that this
+mod is *before* World Drop Ixora COMs in your mod list.  The World Drop
+Ixora COMs takes care of fixing the blank Siren COM parts for the COMs
+that it touches, and this mod would disable the wrong part if run after
+World Drop Ixora COMs.
+
 Changelog
 =========
 

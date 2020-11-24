@@ -14,6 +14,7 @@ See the individual mod folders for full READMEs.
   them to have one too few ability parts.
 - **Nerf OP Gear** - Nerfs some gear which is too OP when used in Normal.
 - **P2P Networker Element Fix** - Adds a second element to the P2P Networker
+- **Provocateur COM** - Adds in a second legendary Operative COM in the Designer's Cut DLC data
 - **Red Text Explainer** - Adds a description of weapon/grenade special effects on the card.
 - **Silent Sellout** - Removes the Tyreen-themed voice module from the Sellout.
 - **Single-Element Maliwan** - Makes most Maliwan weapons only have a single element.

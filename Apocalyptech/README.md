@@ -40,6 +40,7 @@ of the mods you'll find in here, though:
   them to have one too few ability parts.
 - **Nerf OP Gear** - Nerfs some gear which is too OP when used in Normal.
 - **P2P Networker Element Fix** - Adds a second element to the P2P Networker
+- **Provocateur COM** - Adds in a second legendary Operative COM in the Designer's Cut DLC data
 - **Red Text Explainer** - Adds a description of weapon/grenade special effects on the card.
 - **Silent Sellout** - Removes the Tyreen-themed voice module from the Sellout.
 - **Single-Element Maliwan** - Makes most Maliwan weapons only have a single element.
@@ -77,6 +78,8 @@ of the mods you'll find in here, though:
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary
+  COMs from the Designer's Cut DLC into the world drop pools.
 
 ## Mayhem Changes
 
@@ -109,6 +112,8 @@ of the mods you'll find in here, though:
 ## Mod-Testing Mods
 
 - **Arms Race Cheat** - A mod to make Arms Race completely trivial.
+- **Equal Character Gear Chance** - Makes character-specific gear equally likely
+  to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
