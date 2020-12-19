@@ -14,8 +14,6 @@ See the individual mod folders for full READMEs.
   active.
 - **Main Menu** - Collection of mods to choose a specific main menu theme
   (including the eventless Christmas menu)
-- **Timed Event Enable** - Three mods to fully enable the three timed
-  events.  Only one can be fully active at once.
 
 Licenses
 ========
