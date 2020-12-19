@@ -9,9 +9,9 @@ before those.  With this mod enabled, though, cartels enemies could appear
 practically anywhere.
 
 Note that this mod, on its own, does *not* enable any of the spawns.  You'd
-need to either use my All Event Spawns mod, or one of the Timed Event Enable
-mods, in order to actually see the spawns.  This just expands the range that
-the spawn modifications can show up in.
+need to either wait for the event in question to be properly active, or use
+my All Event Spawns Active mod, to turn on the global spawn changes.  This
+mod just expands the range that the spawn modifications can show up in.
 
 Note also that these still don't seem to work inside Covenant Pass and The
 Droughts, so those are the main known exceptions.  This has been updated through

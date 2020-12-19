@@ -2,10 +2,10 @@ Fewer Cartel Operatives
 =======================
 
 When Revenge of the Cartels is active (or its spawn modifications are active,
-such as with my All Event Spawns Active or Timed Event Enable mods), this mod
-will reduce the frequency of coming across a Cartel operative out in the world.
-I'd ended up finding the default rate to be a little high for my liking, so
-this fixes it up a bit.
+such as with my All Event Spawns Active mod), this mod will reduce the
+frequency of coming across a Cartel operative out in the world.  I'd ended up
+finding the default rate to be a little high for my liking, so this fixes it
+up a bit.
 
 Changelog
 =========
