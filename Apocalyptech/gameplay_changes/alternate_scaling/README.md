@@ -12,7 +12,7 @@ The default scaling factors for the various Borderlands games are:
 * **TPS**: `1.1`
 * **BL3**: `1.09`
 
-Note that these scaling values interact oddly with mayhem mod, and values
+Note that these scaling values interact oddly with Mayhem Mode, and values
 above `1.09` actually make Mayhem levels *easier* due to how the math works
 out.  Use a lower scaling value if you want harder Mayhem play.
 
