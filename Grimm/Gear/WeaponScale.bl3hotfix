@@ -1,7 +1,7 @@
 ###
 ### Name: Weapon Scale
 ### Author: Grimm
-### Categories : gear-general
+###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ###
@@ -406,7 +406,7 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/W
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,DAHL_59_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.15
 
 # Pistol damage
-SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,Jakobs_60_F95FBBA045F4F1899B3F7AB7A2CF0F22,0,,1.75
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,Jakobs_60_F95FBBA045F4F1899B3F7AB7A2CF0F22,0,,2.0
 
 # Pistol damage
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,Pistol,Vladof_63_DBDCED3C4D3A2AAE4157EEA39EAB81DB,0,,0.9
