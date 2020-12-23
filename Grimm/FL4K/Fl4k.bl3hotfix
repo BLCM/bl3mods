@@ -1,12 +1,13 @@
 ###
 ### Name: Fl4k Redone
 ### Author: Grimm
-### Categories : char-overhaul, char-beastmaster
+###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ###
 
 ###
+### Categories: char-overhaul, char-beastmaster
 ### My own version of Fl4k.
 ### Includes :
 ### Skill balancing
@@ -69,7 +70,7 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Pass
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Status_Beastmaster_HitAndRun5_Still.Status_Beastmaster_HitAndRun5_Still,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale
 
 # Buffing The Fast and the Furryous projectile speed bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,HitAndRun_10,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.15
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,HitAndRun_10,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.1
 
 # Changing The Fast and the Furryous Description
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun10/Passive_Beastmaster_HitAndRun10.Default__Passive_Beastmaster_HitAndRun10_C,AbilityDescription,0,,While above half health, FL4K's [skillbold]Gun Damage[/skillbold] and [skillbold]Projectile Speed[/skillbold] are increased and their pet gains increased [skillbold]Damage[/skillbold].
@@ -84,10 +85,10 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Pass
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun10/Status_HitAndRun10_WeaponDamage_DA.Status_HitAndRun10_WeaponDamage_DA,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_ProjectileSpeedScale.Att_Weapon_ProjectileSpeedScale
 
 # Buffing Rage and Recover health regen
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun3,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.05
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun3,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.025
 
 # Buffing Rage and Recover health regen
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun3,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.05
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun3,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.025
 
 # Buffing Second Intention reload speed bonus
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged2,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,-0.05
@@ -140,21 +141,165 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmas
 # Buffing global pet ranged damage
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.6
 
-# Buffing Skag fire rate bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSkag,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.08
+# Description for The Base Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag.Augment_Pet_Skag,Description,0,,FL4K is joined by a loyal [Actionskill]Skag[/Actionskill] companion, which deals increase [skillbold]Pet Damage[/skillbold].<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [Actionskill]Skag[/Actionskill] to vomit acid onto enemies.
 
-# Buffing Spiderants health regen bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSpiderant,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.02
+# Description for The Base Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag.Augment_Pet_Skag:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Pet Damage[/skillbold]: $VALUE$
 
-# Buffing Spiderants damage reduction bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSpiderant,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,-0.08
+# Giving The Base Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag.Augment_Pet_Skag:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale
 
-# Buffing Jabbers health bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetJabbermon,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.12
+# Giving The Base Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Base.Status_Beastmaster_PetSkagBuff_Base,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale
+
+# Description for The Evo1 Skag Bonus Melee Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned,Description,0,,FL4K's [Actionskill]Skag[/Actionskill] evolves into a larger, [Actionskill]Great Horned Skag[/Actionskill] which will increase FL4K's [skillbold]Melee Damage[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the Great Horned Skag will charge at enemies and knock them into the air.
+
+# Removing The Evo1 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,
+
+# Removing The Evo1 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,
+
+# Removing The Evo1 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo1.Status_Beastmaster_PetSkagBuff_Evo1,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Description for The Evo1 Skag Bonus Melee Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Melee Damage[/skillbold]: $VALUE$
+
+# Giving The Evo1 Skag Bonus Melee Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Melee.Att_DamageSourceInstigatorMultiplier_Melee
+
+# Giving The Evo1 Skag Bonus Melee Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo1.Status_Beastmaster_PetSkagBuff_Evo1,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Melee.Att_DamageSourceInstigatorMultiplier_Melee
+
+# Description for The Evo2 Skag Bonus Radiation Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass,Description,0,,FL4K's [actionskill]Skag[/actionskill] evolves into an [actionskill]Eridian Skag[/actionskill], which will increase FL4K's [skillbold]Radiation Damage[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], their [actionskill]Eridian Skag[/actionskill] pulls nearby enemies in by generating a [skillbold]Singularity[/skillbold].
+
+# Removing The Evo2 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,
+
+# Removing The Evo2 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,
+
+# Removing The Evo2 Skag Bonus Pet Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo2.Status_Beastmaster_PetSkagBuff_Evo2,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Description for The Evo2 Skag Bonus Radiation Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Radiation Damage[/skillbold]: $VALUE$
+
+# Giving The Evo2 Skag Bonus Radiation Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation
+
+# Giving The Evo2 Skag Bonus Radiation Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo2.Status_Beastmaster_PetSkagBuff_Evo2,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation
+
+# Buffing Skag pet damage bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSkag,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.25
+
+# Buffing Skag melee damage bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSkag,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.3
+
+# Buffing Skag radiation damage bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSkag,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.15
+
+# Description for The Base Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant.Augment_Pet_Spiderant,Description,0,,FL4K is joined by a loyal [actionskill]Spiderant[/actionskill] companion, which will cause FL4K to gain increased [skillbold]Action Skill Damage[/skillbold].<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [Actionskill]Spiderant[/Actionskill] to charge into enemies.
+
+# Description for The Base Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant.Augment_Pet_Spiderant:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Action SKill Damage[/skillbold]: $VALUE$
+
+# Giving The Base Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant.Augment_Pet_Spiderant:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Skill.Att_DamageSourceInstigatorMultiplier_Skill
+
+# Giving The Base Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/StatusEffects/Status_Beastmaster_PetSpidBuff_Base.Status_Beastmaster_PetSpidBuff_Base,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Skill.Att_DamageSourceInstigatorMultiplier_Skill
+
+# Description for The Evo1 Spiderant Bonus Elemental Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_Badass.Augment_Pet_Spiderant_Badass,Description,0,,FL4K's [actionskill]Spiderant[/actionskill] evolves into a [actionskill]Scorcher[/actionskill], occasionally dealing Incendiary Damage to all enemies nearby. While accompanied by the [actionskill]Scorcher[/actionskill], FL4K gains increased [skillbold]Elemental Damage[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [actionskill]Scorcher[/actionskill] will charge enemies.
+
+# Description for The Evo1 Spiderant Bonus Elemental Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_Badass.Augment_Pet_Spiderant_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,
+
+# Giving The Base Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_Badass.Augment_Pet_Spiderant_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,
+
+# Removing The Evo1 Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/StatusEffects/Status_Beastmaster_PetSpidBuff_Evo1.Status_Beastmaster_PetSpidBuff_Evo1,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Description for The Evo2 Spiderant Bonus Hunt Skill Efficienty
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_King.Augment_Pet_Spiderant_King,Description,0,,FL4K's [actionskill]Spiderant[/actionskill] evolves into a [actionskill]Countess[/actionskill], which will cause FL4K to gain increased [skillbold]Hunter Skill Effects[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [actionskill]Countess[/actionskill] will burrow underground and then emerge dealing [skillbold]Corrosive Damage[/skillbold] in an area.
+
+# Removing The Evo2 Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/StatusEffects/Status_Beastmaster_PetSpidBuff_Evo2.Status_Beastmaster_PetSpidBuff_Evo2,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Removing The Evo2 Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_King.Augment_Pet_Spiderant_King:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,
+
+# Removing The Evo2 Spiderant Bonus Action Skill Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_King.Augment_Pet_Spiderant_King:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,
+
+# Giving The Evo2 Spiderant Bonus Hunt Skill Efficienty
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/StatusEffects/Status_Beastmaster_PetSpidBuff_Evo2.Status_Beastmaster_PetSpidBuff_Evo2,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_HuntSkillPassiveScale.Att_Beastmaster_HuntSkillPassiveScale
+
+# Giving The Evo2 Spiderant Bonus Hunter Skill Effect
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_King.Augment_Pet_Spiderant_King:UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Hunter Skill Effects[/skillbold]: $VALUE$
+
+# Giving The Evo2 Spiderant Bonus Hunter Skill Effect
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Spiderant_King.Augment_Pet_Spiderant_King:UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_HuntSkillPassiveScale.Att_Beastmaster_HuntSkillPassiveScale
+
+# Buffing Spiderants action skill damage bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSpiderant,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.2
+
+# Buffing Spiderants Bonus Hunt Skill Efficienty
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetSpiderant,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.15
+
+# Description for The Base Jabber Bonus Projectile Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon.Augment_Pet_Jabbermon,Description,0,,FL4K is joined by a loyal [actionskill]Jabber[/actionskill] companion, armed with a [skillbold]Pistol[/skillbold]. While accompanied by the [actionskill]Jabber[/actionskill], FL4K's [skillbold]Slide Speed[/skillbold] is increased.<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [Actionskill]Jabber[/Actionskill] to throw a [skillbold]Radiation Barrel[/skillbold] at enemies.
+
+# Description for The Base Jabber Bonus Slide Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon.Augment_Pet_Jabbermon:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,[skillbold]Slide Speed[/skillbold]: $VALUE$
+
+# Giving The Base Jabber Bonus Slide Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Monkey/_Design/StatusEffects/Status_Beastmaster_PetJabbBuff_Base.Status_Beastmaster_PetJabbBuff_Base,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_Slide_SpeedScale.Att_Players_Slide_SpeedScale
+
+# Removing The Evo1 Jabber Bonus Slide Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Monkey/_Design/StatusEffects/Status_Beastmaster_PetJabbBuff_Evo1.Status_Beastmaster_PetJabbBuff_Evo1,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Removing The Evo2 Jabber Bonus Slide Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Monkey/_Design/StatusEffects/Status_Beastmaster_PetJabbBuff_Evo2.Status_Beastmaster_PetJabbBuff_Evo2,AttributeEffects.AttributeEffects[0].AttributeData,0,,
+
+# Description for The Evo1 Jabber Bonus Movement Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Beefcake.Augment_Pet_Jabbermon_Beefcake,Description,0,,FL4K's [Actionskill]Jabber[/Actionskill] evolves into a [Actionskill]Beefcake[/Actionskill], discarding its pistol and equipping a [skillbold]Shotgun[/skillbold]. While accompanied by the [Actionskill]Beefcake[/Actionskill], FL4K gains increased [skillbold]Movement Speed[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [Actionskill]Beefcake[/Actionskill] will summon a melee weapon to deliver a powerful attack that [skillbold]knocks enemies back[/skillbold].
+
+# Description for The Evo1 Jabber Bonus Movement Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Beefcake.Augment_Pet_Jabbermon_Beefcake:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+
+# Description for The Evo1 Jabber Bonus Movement Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Beefcake.Augment_Pet_Jabbermon_Beefcake:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,FormatText,0,,[skillbold]Movement Speed[/skillbold]: $VALUE$
+
+# Giving The Evo1 Jabber Bonus Movement Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Monkey/_Design/StatusEffects/Status_Beastmaster_PetJabbBuff_Evo1.Status_Beastmaster_PetJabbBuff_Evo1,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Character/Att_GroundSpeedScale.Att_GroundSpeedScale
+
+# Description for The Evo2 Jabber Bonus Projectile Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Gunslinger.Augment_Pet_Jabbermon_Gunslinger,Description,0,,FL4K's [actionskill]Jabber[/actionskill] upgrades his gear and equips an [skillbold]SMG[/skillbold]. While accompanied by the [actionskill]Gunslinger[/actionskill], FL4K gains increased [skillbold]Projectile Speed[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [actionskill]Gunslinger[/actionskill] equips a [skillbold]Rocket Launcher[/skillbold] to attack the target.
+
+# Description for The Evo2 Jabber Bonus Projectile Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Gunslinger.Augment_Pet_Jabbermon_Gunslinger:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+
+# Description for The Evo2 Jabber Bonus Projectile Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Jabbermon_Gunslinger.Augment_Pet_Jabbermon_Gunslinger:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,FormatText,0,,[skillbold]Projectile Speed[/skillbold]: $VALUE$
+
+# Giving The Evo2 Jabber Bonus Projectile Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Monkey/_Design/StatusEffects/Status_Beastmaster_PetJabbBuff_Evo2.Status_Beastmaster_PetJabbBuff_Evo2,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_ProjectileSpeedScale.Att_Weapon_ProjectileSpeedScale
+
+# Buffing Jabbers Slide Speed bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetJabbermon,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.3
 
 # Buffing Jabbers move speed bonus
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetJabbermon,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.15
 
-# Buffing Jabbers critical bonus
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetJabbermon,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.1
+# Buffing Jabbers Projectile Speed bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Buffs_PetJabbermon,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.15
 
