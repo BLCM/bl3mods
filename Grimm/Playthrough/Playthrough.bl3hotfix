@@ -7,6 +7,7 @@
 ###
 
 ###
+### Categories : mode-balance, scaling
 ### Global changes : 
 ### -Enemies now gain more health and damage per level (makes TVHM harder)
 ### -Vending machines have more blue and purples, less legendaries
@@ -247,8 +248,6 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceSca
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerGroundSlamDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,100
 
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerSlideDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,18
-
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_Damage_GlobalBase.DataTable_Damage_GlobalBase,PlayerGrenadeModDamage,Base_2_5C32556442B4DA4D7EAE1A8610E0A950,0,,75
 
 # Increasing Enemy Damage
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.1
