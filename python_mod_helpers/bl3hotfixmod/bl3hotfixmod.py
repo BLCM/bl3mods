@@ -21,6 +21,7 @@
 
 import os
 import sys
+import gzip
 
 class Mod(object):
     """
@@ -109,7 +110,10 @@ class Mod(object):
 
         self.source = os.path.basename(sys.argv[0])
 
-        self.df = open(self.filename, 'w')
+        if self.filename.endswith('.gz'):
+            self.df = gzip.open(self.filename, 'wt')
+        else:
+            self.df = open(self.filename, 'w')
         if not self.df:
             raise Exception('Unable to write to {}'.format(self.filename))
 
