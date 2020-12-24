@@ -746,6 +746,8 @@ class Balance(object):
 
         # Load in Balance
         bal_obj = data.get_data(bal_name)
+        if not bal_obj:
+            raise Exception('Could not find datafile for {}'.format(bal_name))
         if len(bal_obj) != 1:
             raise Exception('Unknown export count ({}) for: {}'.format(len(bal_obj), bal_name))
         last_bit = bal_name.split('/')[-1]
@@ -766,7 +768,11 @@ class Balance(object):
         while True:
             partset_names.append(cur_bal_data['PartSetData'][1])
             if 'BaseSelectionData' in cur_bal_data and type(cur_bal_data['BaseSelectionData']) == list:
-                cur_bal_data = data.get_data(cur_bal_data['BaseSelectionData'][1])[0]
+                base_sel_name = cur_bal_data['BaseSelectionData'][1]
+                cur_bal_data = data.get_data(base_sel_name)
+                if not cur_bal_data:
+                    raise Exception('Could not find datafile for {}'.format(base_sel_name))
+                cur_bal_data = cur_bal_data[0]
             else:
                 break
 
@@ -777,7 +783,10 @@ class Balance(object):
         partset_name = None
         partset_obj = None
         for partset_name in reversed(partset_names):
-            partset_data = data.get_data(partset_name)[0]
+            partset_data = data.get_data(partset_name)
+            if not partset_data:
+                raise Exception('Could not find datafile for {}'.format(partset_name))
+            partset_data = partset_data[0]
 
             # Figure out the mode of the PartSet APLs
             if 'ActorPartReplacementMode' in partset_data:
