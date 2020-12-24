@@ -9,24 +9,29 @@ ones sent to the game by Gearbox.
 Running Mods
 ------------
 
-Currently, there is currently only one publicly-available method for
-running hotfix-based mods, and it's not an especially easy one.  It's
-based on the network tool [mitmproxy](https://mitmproxy.org/) and
-requires a nontrivial amount of setup.  Information on that method
-can be found a [Apocalyptech's bl3hotfixmodding repo](https://github.com/apocalyptech/bl3hotfixmodding).
-Users who use this method will maintain a `modlist.txt` file (you can
-see an example here at `modlist_example.txt`) which defines all the
-active mods, and then the mitmproxy process will inject them into
-the network stream.
+The best method for running Borderlands 3 mods is using c0dycode's [B3HM
+(Borderlands 3 Hotfix Merger)](https://www.nexusmods.com/borderlands3/mods/244).
+B3HM is a tool which merges in custom hotfixes for BL3 to pick up.
+It's available either as a standalone EXE, or as a DLL which you can inject in
+a variety of methods.  You can find B3HM in these locations:
 
-Other methods are forthcoming, including some more user-friendly GUIs
-which let you just choose mods from a list, but there is currently no
-release date scheduled for those tools.  Those tools are unlikely to
-make use of the `modlist.txt` format that Apocalyptech's mitmproxy-based
-solution does.
+- [B3HM at Nexusmods](https://www.nexusmods.com/borderlands3/mods/244)
+- [B3HM at Github Releases](https://github.com/c0dycode/BL3HotfixWebUI/releases)
 
-The Python utility `modlist_to_json.py` can be used to convert a
-`modlist.txt` file to a format capable with one such unreleased utility.
+The B3HM project has [documentation right at its github page](https://github.com/c0dycode/BL3HotfixWebUI/wiki/B3HM-Wiki).
+
+For the DLL version, it's recommended that you use
+[FromDarkHell's BL3DX11Injection/PluginLoader](https://github.com/FromDarkHell/BL3DX11Injection/releases)
+to inject the B3HM into the Borderlands 3 process.  For the EXE version, just
+download the EXE and give it a run.
+
+See the [B3HM documentation](https://github.com/c0dycode/BL3HotfixWebUI/wiki/B3HM-Wiki) for
+further information about how to use the app!  There's also an [easy-to-follow
+HOWTO about running PluginLoader + B3HM](https://docs.google.com/document/d/1gdJX7eje3v-S7INIX5ZzIvaLfzGaWjauB2rcPgPqslw),
+and a [tutorial video, both by by FromDarkHell](https://www.youtube.com/watch?v=KYgUzKomXrk).
+
+Other information (such as some info for Linux users) can be found at
+[borderlandsmodding.com](http://borderlandsmodding.com/bl3-running-mods/).
 
 Finding Mods
 ------------
