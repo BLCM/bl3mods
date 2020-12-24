@@ -53,7 +53,7 @@ mod = Mod('better_loot.bl3hotfix',
         ],
         lic=Mod.CC_BY_SA_40,
         v='1.2.1',
-        cats='enemy-drops',
+        cats='enemy-drops, loot-system',
         )
 
 def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds'):
