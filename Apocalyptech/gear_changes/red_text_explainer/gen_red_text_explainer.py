@@ -40,6 +40,10 @@ mod = Mod('red_text_explainer.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.2.0',
         cats='qol, gear-general',
+        ss=[
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
+            'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/fastball.png',
+            ],
         )
 
 def elementize(text):
