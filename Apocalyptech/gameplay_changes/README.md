@@ -5,6 +5,8 @@ See the individual mod folders for full READMEs.
 
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
+- **Infinite Slide** - Makes the duration of your character's slide effectively
+  infinite.
 - **Movement Speed Cheats** - Move faster!
 - **NVHM Gamestage Follows Level** - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
