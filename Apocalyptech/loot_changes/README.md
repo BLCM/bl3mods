@@ -31,6 +31,8 @@ See the individual mod folders for full READMEs.
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary
+  COMs from the Designer's Cut DLC into the world drop pools.
 
 Licenses
 ========

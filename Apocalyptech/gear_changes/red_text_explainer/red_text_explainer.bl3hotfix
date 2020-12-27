@@ -1,11 +1,14 @@
 ###
 ### Name: Red Text Explainer
-### Version: 1.0.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: qol, gear-general
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png
+### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/fastball.png
 ###
 
 ###
@@ -978,4 +981,97 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/CoreBurst/UIStat_R
 
 # Doc Hina's Miracle Bomb
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/UIStat_RedText_SkagOil.UIStat_RedText_SkagOil,Text,0,,[Flavor]Give me fever.[/Flavor] (generates [fire]incendiary[/fire] pools while bouncing)
+
+# Ashen Beast
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/UIStat_RedText_AshenBeast_Epic.UIStat_RedText_AshenBeast_Epic,Text,0,,[Flavor]Our eyes are yet to open.[/Flavor] (projectiles penetrate targets)
+
+# Blood-Starved Beast
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/UIStat_RedText_AshenBeast.UIStat_RedText_AshenBeast,Text,0,,[Flavor]Chaos, or some say Chaosm.[/Flavor] (projectiles penetrate targets and have a chance to explode)
+
+# Minor Kong
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/UIStat_RedText_BanditLauncher_Epic.UIStat_RedText_BanditLauncher_Epic,Text,0,,[Flavor]Dear John...[/Flavor] (spawns a homing child rocket when main rocket hits enemy)
+
+# Major Kong
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/UIStat_RedText_BanditLauncher.UIStat_RedText_BanditLauncher,Text,0,,[Flavor]Hi there![/Flavor] (spawns a homing child rocket when main rocket hits enemy)
+
+# Blind Bandit
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/UIStat_RedText_BlindBandit_Epic.UIStat_RedText_BlindBandit_Epic,Text,0,,[Flavor]I got a pretty good look at you.[/Flavor] (all effects on card)
+
+# Blind Sage
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/UIStat_RedText_BlindBandit.UIStat_RedText_BlindBandit,Text,0,,[Flavor]There is more than one sort of prison.[/Flavor] (all effects on card)
+
+# Reunion
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/UIStat_RedText_Convergence_Epic.UIStat_RedText_Convergence_Epic,Text,0,,[Flavor]Hello, boys! I'm back![/Flavor] (hits spawn homing projectiles)
+
+# Convergence
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/UIStat_RedText_Convergence.UIStat_RedText_Convergence,Text,0,,[Flavor]At the summit, you will find yourselves united.[/Flavor] (hits spawn homing projectiles)
+
+# Likable Rascal
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/UIStat_RedText_LovableRogue_Epic.UIStat_RedText_LovableRogue_Epic,Text,0,,[Flavor]You must have a thousand questions.[/Flavor] (all effects on card)
+
+# Lovable Rogue
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/UIStat_RedText_LovableRogue.UIStat_RedText_LovableRogue,Text,0,,[Flavor]I know.[/Flavor] (all effects on card)
+
+# P.A.T. Mk. II
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3_Epic.UIStat_RedText_PatMk3_Epic,Text,0,,[Flavor]War is a matter of arithmetic.[/Flavor] (unique voice module)
+
+# P.A.T. Mk. I
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] (unique voice module)
+
+# P.A.T. Mk. III
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] (unique voice module)
+
+# Sawpenny
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/UIStat_RedText_Sawhorse_Epic.UIStat_RedText_Sawhorse_Epic,Text,0,,[Flavor]Measure once, cut once![/Flavor] (fires sawblades which pierce enemies, ricochet, and explode)
+
+# Rebound
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/UIStat_RedText_Sawhorse.UIStat_RedText_Sawhorse,Text,0,,[Flavor]Measure twice, cut twice![/Flavor] (fires sawblades which pierce enemies, ricochet, and explode)
+
+# Septimator
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/UIStat_RedText_Septimator_Epic.UIStat_RedText_Septimator_Epic,Text,0,,[Flavor]When shooting six just isn't enough.[/Flavor] (hits have a chance to launch meteors at enemies)
+
+# Septimator Prime
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/UIStat_RedText_Septimator.UIStat_RedText_Septimator,Text,0,,[Flavor]I oft have wish'd for Hell for ease from Heaven.[/Flavor] (hits have a chance to launch meteors at enemies)
+
+# Critical Mass
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/UIStat_RedText_Voice_Epic.UIStat_RedText_Voice_Epic,Text,0,,[Flavor]Lend me your energy![/Flavor] (all effects on card)
+
+# Prompt Critical
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/UIStat_RedText_Voice.UIStat_RedText_Voice,Text,0,,[Flavor]Explodermaster masterexploder.[/Flavor] (all effects on card)
+
+# Binary Operator
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/UIStat_RedText_BinaryOperator.UIStat_RedText_BinaryOperator,Text,0,,[Flavor]Do it or don't. What's an attempt?[/Flavor] (one-shot enemies up to a hidden HP value, otherwise 2 damage)
+
+# Boogeyman
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/UIStat_RedText_Boogeyman.UIStat_RedText_Boogeyman,Text,0,,[Flavor]Comin' ta GET'CHA![/Flavor] (all effects on card)
+
+# Critical Thug
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/UIStat_RedText_CriticalThug.UIStat_RedText_CriticalThug,Text,0,,[Flavor]No shooting at parties![/Flavor] (fires fast-exploding sticky bombs, crits ricochet to other enemies)
+
+# Dark Army
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/UIStat_RedText_DarkArmy.UIStat_RedText_DarkArmy,Text,0,,[Flavor]I am the gun.[/Flavor] (all effects on card)
+
+# Firefly
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/UIStat_RedText_Firefly.UIStat_RedText_Firefly,Text,0,,[Flavor]Something bugging you?[/Flavor] (all effects on card)
+
+# Hotfoot Teddy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/UIStat_RedText_Hotfoot.UIStat_RedText_Hotfoot,Text,0,,[Flavor]You could have prevented this.[/Flavor] (flamethrower, hold fire for more damage, locks on and chains to other enemies)
+
+# Ice Age
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/UIStat_RedText_IceAge.UIStat_RedText_IceAge,Text,0,,[Flavor]Allow me to break the ice.[/Flavor] (lobs a [cryo]cryo[/cryo] grenade in an arc)
+
+# Superconducting Plasma Coil
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/UIStat_RedText_PlasmaCoil.UIStat_RedText_PlasmaCoil,Text,0,,[Flavor]Harness the 4th state of matter.[/Flavor] (long burst-fire, short-range elemental splash damage)
+
+# Res
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/UIStat_RedText_SpiritOfMaya.UIStat_RedText_SpiritOfMaya,Text,0,,[Flavor]She was right here, I swear. Hair blue as the sky.[/Flavor] (all effects on card)
+
+# Fasterfied Tizzy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/UIStat_RedText_Tizzy.UIStat_RedText_Tizzy,Text,0,,[Flavor]I feel the hurt...time for a rampage![/Flavor] (fire rate increases the longer fire is held, [bold]explosive[/bold] shots)
+
+# Snide Trickshot
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/UIStat_RedText_Trickshot.UIStat_RedText_Trickshot,Text,0,,[Flavor]Smooth sextuple action.[/Flavor] (all effects on card)
+
+# HOT Spring
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/UIStat_RedText_HOTSpring.UIStat_RedText_HOTSpring,Text,0,,[Flavor]Please, call me doctor.[/Flavor] (all effects on card)
 

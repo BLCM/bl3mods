@@ -21,6 +21,7 @@
 
 import os
 import sys
+import gzip
 
 class Mod(object):
     """
@@ -109,7 +110,10 @@ class Mod(object):
 
         self.source = os.path.basename(sys.argv[0])
 
-        self.df = open(self.filename, 'w')
+        if self.filename.endswith('.gz'):
+            self.df = gzip.open(self.filename, 'wt')
+        else:
+            self.df = open(self.filename, 'w')
         if not self.df:
             raise Exception('Unable to write to {}'.format(self.filename))
 
@@ -527,6 +531,24 @@ class ItemPool(object):
             weight = BVC()
         self.balanceditems.append(ItemPoolEntry(balance_name=balance_name, weight=weight))
 
+    @staticmethod
+    def from_data(data, pool_name):
+        """
+        Returns a new ItemPool object by loading `pool_name` from the BL3Data object `data`
+        """
+
+        pool = ItemPool(pool_name)
+        pool_data = data.get_data(pool_name)[0]
+        for bal in pool_data['BalancedItems']:
+            if 'export' in bal['ItemPoolData']:
+                bal_name = bal['ResolvedInventoryBalanceData'][1]
+                pool.add_balance(bal_name, BVC.from_data_struct(bal['Weight']))
+            else:
+                pool_name = bal['ItemPoolData'][1]
+                pool.add_pool(pool_name, BVC.from_data_struct(bal['Weight']))
+
+        return pool
+
     def __str__(self):
         """
         Format our BalancedItems as a hotfix
@@ -627,6 +649,24 @@ class PartCategory(object):
         """
         return ','.join([str(l) for l in self.partlist])
 
+    def clear(self):
+        """
+        Clears this category entirely
+        """
+        self.partlist = []
+
+    def enable(self):
+        """
+        Enables the category
+        """
+        self.enabled = True
+
+    def disable(self):
+        """
+        Disables the category
+        """
+        self.enabled = False
+
     def __len__(self):
         """
         Returns the number of parts we have
@@ -710,6 +750,8 @@ class Balance(object):
 
         # Load in Balance
         bal_obj = data.get_data(bal_name)
+        if not bal_obj:
+            raise Exception('Could not find datafile for {}'.format(bal_name))
         if len(bal_obj) != 1:
             raise Exception('Unknown export count ({}) for: {}'.format(len(bal_obj), bal_name))
         last_bit = bal_name.split('/')[-1]
@@ -730,7 +772,11 @@ class Balance(object):
         while True:
             partset_names.append(cur_bal_data['PartSetData'][1])
             if 'BaseSelectionData' in cur_bal_data and type(cur_bal_data['BaseSelectionData']) == list:
-                cur_bal_data = data.get_data(cur_bal_data['BaseSelectionData'][1])[0]
+                base_sel_name = cur_bal_data['BaseSelectionData'][1]
+                cur_bal_data = data.get_data(base_sel_name)
+                if not cur_bal_data:
+                    raise Exception('Could not find datafile for {}'.format(base_sel_name))
+                cur_bal_data = cur_bal_data[0]
             else:
                 break
 
@@ -741,7 +787,10 @@ class Balance(object):
         partset_name = None
         partset_obj = None
         for partset_name in reversed(partset_names):
-            partset_data = data.get_data(partset_name)[0]
+            partset_data = data.get_data(partset_name)
+            if not partset_data:
+                raise Exception('Could not find datafile for {}'.format(partset_name))
+            partset_data = partset_data[0]
 
             # Figure out the mode of the PartSet APLs
             if 'ActorPartReplacementMode' in partset_data:
@@ -961,6 +1010,7 @@ LVL_TO_ENG = {
         'FinalBoss_P': "Destroyer's Rift",
         'Forest_P': "Obsidian Forest",
         'Frontier_P': "The Blastplains",
+        'FrostSite_P': "Stormblind Complex",
         'GuardianTakedown_P': "Minos Prime / The Shattered Tribunal",
         'Impound_P': "Impound Deluxe",
         'Lake_P': "Skittermaw Basin",

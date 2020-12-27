@@ -88,8 +88,9 @@ And then the mod-helper framework will convert that into a proper hotfix for
 you, and you can edit it in a much more intuitive way.
 
 These helpers (and a few more examples of how to use them) can be found in
-the `python_mod_helpers` directory, and plenty of examples of using it in
-"real life" can be found throughout Apocalyptech's mod directory.
+the [python_mod_helpers](https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers)
+directory, and plenty of examples of using it in "real life" can be found
+throughout Apocalyptech's mod directory.
 
 The code in `python_mod_helpers` dir is licensed under the GNU GPLv3 or later.
 
@@ -102,9 +103,9 @@ instructions for how to do so
 [at the BLCMods Wiki](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Contribution).
 
 If you want your mods to show up on the
-[Borderlands 3 ModCabinet wiki](https://github.com/BLCM/BL3ModCabinet/wiki), which
+[Borderlands 3 ModCabinet wiki](https://github.com/BLCM/bl3mods/wiki), which
 is the easiest way for users to find mods through github, you'll want to make sure
-to follow the [ModCabinet wiki guidelines](https://github.com/BLCM/BL3ModCabinet/wiki/Contributing-to-BL3-ModCabinet)
+to follow the [ModCabinet wiki guidelines](https://github.com/BLCM/bl3mods/wiki/Contributing-to-BL3-ModCabinet)
 as well.  The most important parts are to make sure your mod file has a `.bl3hotfix`
 extension, and contain `Name:` and `Categories:` headers at the top of the mod file.
 

@@ -36,7 +36,7 @@ mod = Mod('mayhem_level_cheats.bl3hotfix',
             "will take precedence).",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.1',
         cats='mayhem, cheat',
         )
 
@@ -47,7 +47,7 @@ modifiers = '({})'.format(','.join([Mod.get_full_cond(m, 'MayhemModifierSlotData
     '/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Hard',
     ]]))
 
-for mayhem_level_minus_one in range(10):
+for mayhem_level_minus_one in range(11):
     mayhem_level = mayhem_level_minus_one + 1
     mod.comment('Mayhem {}'.format(mayhem_level))
     for col_name in [
@@ -60,10 +60,11 @@ for mayhem_level_minus_one in range(10):
                 mayhem_level,
                 col_name,
                 enemy_scale)
-    mod.reg_hotfix(Mod.PATCH, '',
-            '/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2',
-            'PerLevelOverrides.PerLevelOverrides[{}].RandomModifierSlotsOverride'.format(mayhem_level_minus_one),
-            modifiers)
+    if mayhem_level < 11:
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2',
+                'PerLevelOverrides.PerLevelOverrides[{}].RandomModifierSlotsOverride'.format(mayhem_level_minus_one),
+                modifiers)
     mod.newline()
 
 mod.close()

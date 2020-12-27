@@ -29,8 +29,16 @@ abbreviations are:
 * tor
 * vla
 
+This mod has been updated as far as DLC5 (Designer's Cut).
+
 Changelog
 =========
+
+**v1.2.0** - Nov 10, 2020
+ * Updated with DLC5 (Designer's Cut) guns
+
+**v1.1.0** - Sep 29, 2020
+ * Updated with DLC4 guns
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

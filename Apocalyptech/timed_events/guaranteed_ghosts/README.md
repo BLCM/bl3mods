@@ -2,9 +2,9 @@ Guaranteed Ghosts
 =================
 
 When Bloody Harvest is active (or its spawn modifications are active,
-such as with my All Event Spawns Active or Timed Event Enable mods), this mod
-will guarantee that all enemies will be haunted.  Also, all urns and skull boxes
-inside Heck Hole will spawn a ghost.
+such as with my All Event Spawns Active mod), this mod will guarantee that all
+enemies will be haunted.  Also, all urns and skull boxes inside Heck Hole will
+spawn a ghost.
 
 Changelog
 =========

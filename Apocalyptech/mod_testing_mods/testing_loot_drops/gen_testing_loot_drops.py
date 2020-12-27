@@ -74,11 +74,14 @@ drop_quantity = 5
 # This one's my usual 'rotating' pool that gets used
 pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_01_Common'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_04_VeryRare'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_01_Common'
+#pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_04_VeryRare'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'
@@ -105,135 +108,58 @@ balances = [
         '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
         '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer',
 
-        # Alisma Skins (Bloody Harvest-related)
-        # Haunted Look
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Beastmaster/Skins/CustomSkin_Beastmaster_63.InvBal_CustomSkin_Beastmaster_63',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Gunner/Skins/CustomSkin_Gunner_63.InvBal_CustomSkin_Gunner_63',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Operative/Skins/CustomSkin_Operative_63.InvBal_CustomSkin_Operative_63',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/SirenBrawler/Skins/CustomSkin_Siren_63.InvBal_CustomSkin_Siren_63',
+        # Ixora COMs
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/PartSets/InvBalD_CM_Ixora_GUN_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/PartSets/InvBalD_CM_Ixora_OPE_04_VeryRare',
+        ## Various
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_01_Common',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_02_Uncommon',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_03_Rare',
+        #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/PartSets/InvBalD_CM_Ixora_SIR_04_VeryRare',
 
-        # Alisma Skins
-        # Spl4tter
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_Beastmaster_DLC4_01.InvBal_CustomSkin_Beastmaster_DLC4_01',
-        # Splatter
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_Gunner_DLC4_01.InvBal_CustomSkin_Gunner_DLC4_01',
-        # (note the extra underscores on these two!)
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_Operative__DLC4_01.InvBal_CustomSkin_Operative__DLC4_01',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_Siren__DLC4_01.InvBal_CustomSkin_Siren__DLC4_01',
+        # Weird Ixora Beastmaster Heads?
+        ## grep -A1 -B0  \"InventoryName InvData_*.json | grep string
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead03',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead33',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead35',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead36',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead37',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead39',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead40',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead41',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead42',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead43',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead44',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/InvBal_DA_BMHead45',
 
-        # Alisma Heads
-        # Lumin4ry
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_Beastmaster_DLC4_01.InvBal_CustomHead_Beastmaster_DLC4_01',
-        # Spark of Genius
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_Gunner_DLC4_01.InvBal_CustomHead_Gunner_DLC4_01',
-        # Thinking Clearly
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_Operative_DLC4_01.InvBal_CustomHead_Operative_DLC4_01',
-        # Wired Science
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_Siren_DLC4_01.InvBal_CustomHead_Siren_DLC4_01',
+        # Weird Ixora Gunner Heads?
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead03',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead33',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead35',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead36',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead37',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead39',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead40',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead41',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead42',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead43',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead44',
+        #'/Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/InvBal_DA_GNRHead45',
 
-        # Alisma Room Decorations
-        # Memory Orbs
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_01_Orbs.InvBal_RoomDeco_DLC4_01_Orbs',
-        # Psychoreaver Trophy
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_02_Trophy.InvBal_RoomDeco_DLC4_02_Trophy',
-        # Golden Buzz-axe
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_03_Axe.InvBal_RoomDeco_DLC4_03_Axe',
-        # Krieg's Moon
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_04_Moon.InvBal_RoomDeco_DLC4_04_Moon',
-        # Krieg's Mask
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_05_Mask.InvBal_RoomDeco_DLC4_05_Mask',
-
-        # Alisma Emotes
-        # 01: Rage
-        # 02: Mindblowing
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Beastmaster/CustomEmote_Beastmaster_DLC4_01.InvBal_CustomEmote_Beastmaster_DLC4_01',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Beastmaster/CustomEmote_Beastmaster_DLC4_02.InvBal_CustomEmote_Beastmaster_DLC4_02',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Gunner/CustomEmote_Gunner_DLC4_01.InvBal_CustomEmote_Gunner_DLC4_01',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Gunner/CustomEmote_Gunner_DLC4_02.InvBal_CustomEmote_Gunner_DLC4_02',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Operative/CustomEmote_Operative_DLC4_01.InvBal_CustomEmote_Operative_DLC4_01',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/Operative/CustomEmote_Operative_DLC4_02.InvBal_CustomEmote_Operative_DLC4_02',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/SirenBrawler/CustomEmote_Siren_DLC4_01.InvBal_CustomEmote_Siren_DLC4_01',
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/Emotes/SirenBrawler/CustomEmote_Siren_DLC4_02.InvBal_CustomEmote_Siren_DLC4_02',
-        
-        # Alisma ECHO Themes
-        # Message from Beyond
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.InvBal_ECHOTheme_79',
-        # Grapevine Hotline
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_01.InvBal_ECHOTheme_DLC4_01',
-        # Hotwire Handheld
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_02.InvBal_ECHOTheme_DLC4_02',
-        # Electric Cell
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_03.InvBal_ECHOTheme_DLC4_03',
-        # Hot and Cold Call
-        #'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_04.InvBal_ECHOTheme_DLC4_04',
-
-        # Alisma Trinkets
-        # Divergent Thinking
-        #'/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_01.InvBal_Trinket_DLC4_Trinket_01',
-        # King's Knight
-        #'/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_02.InvBal_Trinket_DLC4_Trinket_02',
-        # A Shrinking Feeling (Bloody Harvest Related)
-        #'/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.InvBal_Trinket_League_BloodyHarvest_2020',
-
-        # Alisma COMs
-        # Peregrine
-        #'/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Alisma',
-        # Flare
-        #'/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Alisma',
-        # Hustler
-        #'/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Alisma',
-        # Muse
-        #'/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma',
-
-        # Alisma Shields
-        # Faulty Star
-        #'/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar',
-        # Guilty Spark
-        #'/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar_Epic',
-        # Plus Ultra
-        #'/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra',
-        # Limit Break
-        #'/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra_Epic',
-
-        # Alisma Weapons
-        # Ashen Beast
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast_Epic',
-        # Blood-Starved Beast
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast',
-        # Minor Kong
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher_Epic',
-        # Major Kong
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher',
-        # Blind Bandit
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit_Epic',
-        # Blind Sage
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit',
-        # Reunion
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence_Epic',
-        # Convergence
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence',
-        # Likable Rascal
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/Balance/Balance_AR_TOR_LovableRogue_Epic',
-        # Lovable Rogue
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/Balance/Balance_AR_TOR_LovableRogue',
-        # P.A.T. Mk. II
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3_Epic',
-        # P.A.T. Mk. I
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3_Parent',
-        # P.A.T. Mk. III
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3',
-        # Sawpenny
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse_Epic',
-        # Rebound
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse',
-        # Septimator
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator_Epic',
-        # Septimator Prime
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator',
-        # Critical Mass
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice_Epic',
-        # Prompt Critical
-        #'/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice',
+        # No Weird Ixora Operative or Siren heads?
 
         # Atlas Gear (which have multiple tracker types; this isn't exhaustive)
         #'/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/Balance/Balance_ATL_AR_01_Common.Balance_ATL_AR_01_Common',

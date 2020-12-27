@@ -8,8 +8,7 @@ different things:
 * Sets the rarity weights to be improved, globally
 * Increases Eridium drop rates and quantities.
 * Guarantees specific legendary drops from nearly all the bosses which
-  have unique drops.  This has been updated through DLC3 (Bounty of Blood),
-  and updated with the drop changes as recently as the 2020-08-20 patch.
+  have unique drops.  This has been updated through DLC5 (Designer's Cut).
 * Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
   mod for that.
@@ -29,8 +28,28 @@ regardless of whether you're in Normal, TVHM, or any Mayhem mode.
 I personally recommend the use of Expanded Legendary Pools with this mod, so that
 the loot you come across is as varied as possible.
 
+For a list of what drops you should expect from bosses, while using this mod, see
+[expected_drops.md](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
+
+Note that this mod leaves Arms Race (DLC5, Stormblind Complex) basically as-is,
+since the rarity levels in there are pretty clearly engineered for specific
+effect.  This mod *does* increase the odds of legendary gear in the area-event
+reward chests, though, and increases the drop quantity for Heavyweight Harker.
+
 Changelog
 =========
+
+**v1.2.1** - Nov 12, 2020
+ * Doubled chances of legendary gear from Arms Race area-event reward
+   chests.
+
+**v1.2.0** - Nov 12, 2020
+ * Updated with Heavyweight Harker from DLC5.  This was already a
+   guaranteed drop, but it's a wide pool, so increased the quantity
+   a bit.
+
+**v1.1.0** - Oct 3, 2020
+ * Updated with DLC4 enemies
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

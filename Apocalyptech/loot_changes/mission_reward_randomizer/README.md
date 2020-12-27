@@ -15,6 +15,18 @@ skins/heads will still reward those cosmetics.
 Changelog
 =========
 
+**v1.1.1** - Oct 4, 2020
+ * Added a few missions which had been previously omitted by accident:
+   * Hostile Takeover
+   * Dump on Dumptruck
+   * Raiders of the Lost Rock
+   * Siege of Castle Crimson (DLC4)
+   * What Love Remains (DLC4)
+   * A Good Egg (DLC4)
+
+**v1.1.0** - Oct 3, 2020
+ * Updated with DLC4 (Psycho Krieg) missions
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

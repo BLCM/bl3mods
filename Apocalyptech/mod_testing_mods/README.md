@@ -7,6 +7,9 @@ so I don't have to worry about combat, and quickly levelling up characters, etc.
 
 See the individual mod folders for full READMEs.
 
+- **Arms Race Cheat** - A mod to make Arms Race completely trivial.
+- **Equal Character Gear Chance** - Makes character-specific gear equally likely
+  to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.

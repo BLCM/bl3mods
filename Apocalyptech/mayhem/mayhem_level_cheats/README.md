@@ -25,6 +25,12 @@ TODO
 Changelog
 =========
 
+**v1.1.1** - Nov 10, 2020
+ * Fixed so that Mayhem 11 remains modifierless
+
+**v1.1.0** - Nov 10, 2020
+ * Updated with Mayhem 11 parameters
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

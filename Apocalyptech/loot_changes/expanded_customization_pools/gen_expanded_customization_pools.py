@@ -26,6 +26,17 @@ from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
 # TODO: Should probably find out if the DLC emotes are actually guaranteed or not, and
 # add them in here if they aren't.
 
+# Leaving out the Final Form cosmetics, which are all just given to you automatically if
+# you have the required DLCs.  The balances, for reference:
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Beastmaster_51.InvBal_CustomSkin_Beastmaster_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Gunner_51.InvBal_CustomSkin_Gunner_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Operative_51.InvBal_CustomSkin_Operative_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin51/CustomSkin_Siren_51.InvBal_CustomSkin_Siren_51
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Beastmaster/Heads/DA_BMHead39.InvBal_DA_BMHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Gunner/Heads/DA_GNRHead39.InvBal_DA_GNRHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/Operative/Heads/DA_OPHead39.InvBal_DA_OPHead39
+#    /Game/PatchDLC/Ixora/PlayerCharacters/SirenBrawler/Heads/DA_SRNHead39.InvBal_DA_SRNHead39
+
 def set_pool(mod, pool_to_set, balances, char=None):
     parts = []
     for bal in balances:
@@ -97,7 +108,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             'Apocalyptech',
             full_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.2.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -144,7 +155,10 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             ('SirenBrawler', 'Siren'),
             ]:
 
-        # Skins
+        ###
+        ### Skins
+        ###
+
         pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot_{shortname}.ItemPool_Customizations_Skins_Loot_{shortname}'
         balances = []
         # Base Game
@@ -180,13 +194,29 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/PlayerSkins/CustomSkin_{shortname}_52.InvBal_CustomSkin_{shortname}_52')
         # DLC3 - Geranium - TODO: need to figure out if this should be in a blacklist
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerSkin/CustomSkin_{shortname}_DLC3_1.InvBal_CustomSkin_{shortname}_DLC3_1')
+        # DLC4 - Alisma - TODO: need to figure out if this should be in a blacklist
+        # Note the stupidity with the names here...
+        if shortname == 'Operative' or shortname == 'Siren':
+            alisma_underscore = '__'
+        else:
+            alisma_underscore = '_'
+        balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC4_01.InvBal_CustomSkin_{shortname}{alisma_underscore}DLC4_01')
+        # Bloody Harvest 2020
+        balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_63.InvBal_CustomSkin_{shortname}_63')
+        # DLC5 - Ixora - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin62/CustomSkin_{shortname}_62.InvBal_CustomSkin_{shortname}_62')
+
+        # Now output
         mod.comment(f'{shortname} Skins')
         set_pool(mod, pool_name, balances)
         mod.newline()
         # Technically this gets set multiple times, but whatever
         num_skins = len(balances)
 
-        # Heads
+        ###
+        ### Heads
+        ###
+
         pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_{shortname}.ItemPool_Customizations_Heads_Loot_{shortname}'
         balances = []
         # Base Game
@@ -219,13 +249,20 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/CustomHeads/CustomHead46/CustomHead_{shortname}_46.InvBal_CustomHead_{shortname}_46')
         # DLC3 - Geranium - TODO: need to figure out if this should be in a blacklist
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerHead/CustomHead38/CustomHead_{shortname}_38.InvBal_CustomHead_{shortname}_38')
+        # DLC4 - Alisma - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC4_01.InvBal_CustomHead_{shortname}_DLC4_01')
+
+        # Now output
         mod.comment(f'{shortname} Heads')
         set_pool(mod, pool_name, balances)
         mod.newline()
         # Technically this gets set multiple times, but whatever
         num_heads = len(balances)
 
-    # Weapon Skins
+    ###
+    ### Weapon Skins
+    ###
+
     balances = []
     # Base Game
     blacklist = {
@@ -241,12 +278,19 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
     # Broken DLC3 weapon skin; not adding it!
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponSkin/WeaponSkin_DLC3_1.InvBal_WeaponSkin_DLC3_1')
+    # Bloody Harvest 2020
+    balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.InvBal_WeaponSkin_BloodyHarvest_02')
+
+    # Now output
     mod.comment('Weapon Skins')
     set_pool(mod, '/Game/Gear/WeaponSkins/_Design/ItemPools/ItemPool_Customizations_WeaponSkins_Loot.ItemPool_Customizations_WeaponSkins_Loot', balances)
     mod.newline()
     num_weap_skins = len(balances)
 
-    # Weapon Trinkets
+    ###
+    ### Weapon Trinkets
+    ###
+
     balances = []
     # Base Game
     blacklist = {
@@ -282,12 +326,24 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC3 - Geranium - Commenting these because they're currently broken
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponTrinket/WeaponTrinket_DLC3_1.InvBal_WeaponTrinket_DLC3_1')
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponTrinket/WeaponTrinket_DLC3_2.InvBal_WeaponTrinket_DLC3_2')
+    # DLC4 - Alisma - TODO: Need to figure out if these should be on a blacklist
+    balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_01.InvBal_Trinket_DLC4_Trinket_01')
+    balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_02.InvBal_Trinket_DLC4_Trinket_02')
+    # Bloody Harvest 2020
+    balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.InvBal_Trinket_League_BloodyHarvest_2020'),
+    # DLC5 - Ixora - TODO: Need to figure out if these should be on a blacklist
+    balances.append('/Game/PatchDLC/Ixora/Gear/Weapons/WeaponTrinkets/_Design/WeaponTrinket_GearUp.InvBal_WeaponTrinket_GearUp')
+
+    # Now output
     mod.comment('Weapon Trinkets')
     set_pool(mod, '/Game/Gear/WeaponTrinkets/_Design/ItemPools/ItemPool_Customizations_WeaponTrinkets_Loot.ItemPool_Customizations_WeaponTrinkets_Loot', balances)
     mod.newline()
     num_trinkets = len(balances)
 
-    # ECHO Skins
+    ###
+    ### ECHO Skins
+    ###
+
     balances = []
     # Base Game
     blacklist = {
@@ -322,12 +378,25 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC3 - Geranium - TODO: figure out if any of these should be blacklisted
     for num in [73, 74, 75, 76]:
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/EchoTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+    # DLC4 - Alisma - TODO: figure out if any of these should be blacklisted
+    for num in [1, 2, 3, 4]:
+        balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_{num:02d}.InvBal_ECHOTheme_DLC4_{num:02d}')
+    # Bloody Harvest 2020
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.InvBal_ECHOTheme_79')
+    # DLC5 - Ixora - TODO: figure out if any of these should be blacklisted
+    for num in ['50', '52', '57a', '58']:
+        balances.append(f'/Game/PatchDLC/Ixora/Customizations/ECHOTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+
+    # Now output
     mod.comment('ECHO Skins')
     set_pool(mod, '/Game/PlayerCharacters/_Customizations/EchoDevice/ItemPools/ItemPool_Customizations_Echo_Loot.ItemPool_Customizations_Echo_Loot', balances)
     mod.newline()
     num_echo_skins = len(balances)
 
-    # Room Decorations
+    ###
+    ### Room Decorations
+    ###
+
     balances = []
     # Base Game
     blacklist = {
@@ -360,12 +429,23 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     for num in [1, 2, 3]:
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_Geranium_IO_{num}.RoomDecoration_Geranium_IO_{num}')
     balances.append('/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_KeyToCity.InvBal_RoomDecoration_KeyToCity')
+    # DLC4 - Alisma - TODO: Figure out if any of these should be on a blacklist
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_01_Orbs.InvBal_RoomDeco_DLC4_01_Orbs')
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_02_Trophy.InvBal_RoomDeco_DLC4_02_Trophy')
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_03_Axe.InvBal_RoomDeco_DLC4_03_Axe')
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_04_Moon.InvBal_RoomDeco_DLC4_04_Moon')
+    balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_05_Mask.InvBal_RoomDeco_DLC4_05_Mask')
+
+    # Now output
     mod.comment('Room Decorations')
     set_pool(mod, '/Game/Pickups/Customizations/_Design/ItemPools/PlayerRoomDeco/ItemPool_Customizations_RoomDeco_Loot.ItemPool_Customizations_RoomDeco_Loot', balances)
     mod.newline()
     num_decorations = len(balances)
 
-    # Now set our weighting on the main customization-drop pool
+    ###
+    ### Now set our weighting on the main customization-drop pool
+    ###
+
     mod.header('Overall customization-type weighting')
     # Keep the "average" weight in this pool to the default 0.05, in case anything weird happens to the
     # pool later.

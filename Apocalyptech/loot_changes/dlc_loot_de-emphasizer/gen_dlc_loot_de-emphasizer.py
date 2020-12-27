@@ -43,7 +43,7 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
             "so you've got interesting stuff dropping most of the time.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.2.1',
         cats='loot-system, enemy-drops, chests',
         )
 
@@ -51,6 +51,8 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
 leg_pool_guns = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', 'ItemPoolData')
 leg_pool_shields = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', 'ItemPoolData')
 leg_pool_coms = Mod.get_full_cond('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary', 'ItemPoolData')
+leg_pool_artifacts = Mod.get_full_cond('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary', 'ItemPoolData')
+leg_pool_grenades = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary', 'ItemPoolData')
 
 # Individual wepon type pools
 leg_pool_ar = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary', 'ItemPoolData')
@@ -61,42 +63,56 @@ leg_pool_sm = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool
 leg_pool_sr = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary', 'ItemPoolData')
 
 # Support functions
-def do_hotfix(char_name, object_name, attr_name, index, to_pool):
+def do_hotfix(char_name, object_name, attr_name, index, to_pool, is_map=False):
     global mod
-    mod.reg_hotfix(Mod.CHAR, char_name,
+    if is_map:
+        hf_mode = Mod.LEVEL
+    else:
+        hf_mode = Mod.CHAR
+    mod.reg_hotfix(hf_mode, char_name,
             object_name,
             attr_name.format(index),
             to_pool)
 
-def do_itempoollist(char_name, list_name, index, to_pool):
-    do_hotfix(char_name, list_name, 'ItemPools.ItemPools[{}].ItemPool', index, to_pool)
+def do_itempoollist(char_name, list_name, index, to_pool, is_map=False):
+    do_hotfix(char_name, list_name, 'ItemPools.ItemPools[{}].ItemPool', index, to_pool, is_map)
 
-def do_itempool(char_name, pool_name, index, to_pool):
-    do_hotfix(char_name, pool_name, 'BalancedItems.BalancedItems[{}].ItemPoolData', index, to_pool)
+def do_itempool(char_name, pool_name, index, to_pool, is_map=False, clear=False):
+    if clear:
+        do_hotfix(char_name, pool_name, 'BalancedItems.BalancedItems[{}].InventoryBalanceData', index, 'None', is_map)
+        do_hotfix(char_name, pool_name, 'BalancedItems.BalancedItems[{}].ResolvedInventoryBalanceData', index, 'None', is_map)
+    do_hotfix(char_name, pool_name, 'BalancedItems.BalancedItems[{}].ItemPoolData', index, to_pool, is_map)
 
-def legendary_guns_itempoollist(char_name, list_name, index):
+def legendary_guns_itempoollist(char_name, list_name, index, is_map=False):
     global leg_pool_guns
-    do_itempoollist(char_name, list_name, index, leg_pool_guns)
+    do_itempoollist(char_name, list_name, index, leg_pool_guns, is_map)
 
-def legendary_guns_itempool(char_name, pool_name, index):
+def legendary_guns_itempool(char_name, pool_name, index, is_map=False):
     global leg_pool_guns
-    do_itempool(char_name, pool_name, index, leg_pool_guns)
+    do_itempool(char_name, pool_name, index, leg_pool_guns, is_map)
 
-def legendary_shields_itempoollist(char_name, list_name, index):
+def legendary_shields_itempoollist(char_name, list_name, index, is_map=False):
     global leg_pool_shields
-    do_itempoollist(char_name, list_name, index, leg_pool_shields)
+    do_itempoollist(char_name, list_name, index, leg_pool_shields, is_map)
 
-def legendary_shields_itempool(char_name, pool_name, index):
+def legendary_shields_itempool(char_name, pool_name, index, is_map=False):
     global leg_pool_shields
-    do_itempool(char_name, pool_name, index, leg_pool_shields)
+    do_itempool(char_name, pool_name, index, leg_pool_shields, is_map)
 
-def legendary_coms_itempoollist(char_name, list_name, index):
+def legendary_coms_itempoollist(char_name, list_name, index, is_map=False):
     global leg_pool_coms
-    do_itempoollist(char_name, list_name, index, leg_pool_coms)
+    do_itempoollist(char_name, list_name, index, leg_pool_coms, is_map)
 
-def legendary_coms_itempool(char_name, pool_name, index):
+def legendary_coms_itempool(char_name, pool_name, index, is_map=False):
     global leg_pool_coms
-    do_itempool(char_name, pool_name, index, leg_pool_coms)
+    do_itempool(char_name, pool_name, index, leg_pool_coms, is_map)
+
+def zero_itempoollist(hf_mode, hf_target, poollist_name, index):
+    global mod
+    mod.reg_hotfix(hf_mode, hf_target,
+            poollist_name,
+            'ItemPools.ItemPools[{}].PoolProbability'.format(index),
+            BVCF(bvc=0))
 
 def zero_pool(hf_mode, hf_target, pool_name, index):
     global mod
@@ -428,6 +444,146 @@ for src, dst in [
             src,
             'BalancedItems',
             '((ItemPoolData={}))'.format(dst))
+mod.newline()
+
+###
+### DLC4 - Psycho Krieg
+### Continuing to be lazy here and just using MatchAll...
+###
+
+mod.header('DLC4 - Psycho Krieg and the Fantastic Fustercluck')
+
+# Main weapon pool.  This is used by standard enemies, badasses, and bosses
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Guns_All_Alisma', 4)
+
+# Extra badass purple drops
+zero_itempoollist(Mod.CHAR, 'MatchAll',
+        '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma', 10)
+
+# Main shield pool.  Only used by badasses, it seems
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_Shields_All_Alisma', 4)
+
+# Fix standard enemy shield drop (ordinarily is hardcoded to have a 1% chance of DLC
+# legendary shields, and nothing else).
+mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+        '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma',
+        'ItemPools.ItemPools[5]',
+        """(
+            ItemPool={},
+            PoolProbability={},
+            NumberOfTimesToSelectFromThisPool={}
+        )""".format(
+            Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All', 'ItemPoolData'),
+            BVCF(bva='/Game/GameData/Loot/ItemPools/Attributes/Att_Shields_DropOddsWithMayhem_Total'),
+            BVCF(bvc=1),
+            ))
+
+# Main COM pool.  Used by standard enemies, badasses, and bosses
+legendary_coms_itempool('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/ItemPool_ClassMods_All_Alisma', 4)
+
+# Boss Shields
+legendary_shields_itempoollist('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 7)
+
+# Boss Guns
+legendary_guns_itempoollist('MatchAll', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 8)
+
+mod.newline()
+
+###
+### DLC5 - Designer's Cut
+### Note that these are level-based, since the objects are tied to containers rather than characters
+###
+
+mod.header('DLC5 - Designer\'s Cut')
+
+dlc5map = 'FrostSite_P'
+for src, idx, dst in [
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_CreatureSewers_Legendary', 0, leg_pool_ar),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_CreatureSewers_Legendary', 1, leg_pool_sg),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Dam_Legendary', 0, leg_pool_sr),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Dam_Legendary', 1, leg_pool_sr),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Dam_Legendary', 2, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_HQ_Legendary', 0, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_HQ_Legendary', 1, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_HQ_Legendary', 2, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 0, leg_pool_sm),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 1, leg_pool_sm),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 2, leg_pool_coms),
+        # This last COM in ItemPool_GearUp_Event_Industry_Legendary just here to support the Provocateur COM mod, should
+        # it be enabled.  Will do nothing if not.
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Industry_Legendary', 3, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary', 0, leg_pool_grenades),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Silo_Legendary', 1, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Spaceport_Legendary', 0, leg_pool_artifacts),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Spaceport_Legendary', 1, leg_pool_artifacts),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Spaceport_Legendary', 2, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Thunderdome_Legendary', 0, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_Thunderdome_Legendary', 1, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_WaterWorks_Legendary', 0, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/Event/ItemPool_GearUp_Event_WaterWorks_Legendary', 1, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Unequippable', 0, leg_pool_sg),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Unequippable', 1, leg_pool_ar),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Unequippable', 2, leg_pool_sm),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_PS_Unequippable', 0, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_PS_Unequippable', 1, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_SR_HW_Unequippable', 0, leg_pool_sr),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_SR_HW_Unequippable', 1, leg_pool_sr),
+        # This one especially is a bit silly, should probably just redefine the whole pool like we do for
+        # ItemPool_Ixora_Guns_Legendary below...
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 0, leg_pool_sr),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 1, leg_pool_sr),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 2, leg_pool_sg),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 3, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 4, leg_pool_ar),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 5, leg_pool_sm),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 6, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 7, leg_pool_artifacts),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 8, leg_pool_grenades),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 9, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 10, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 11, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 12, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 13, leg_pool_sm),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 14, leg_pool_artifacts),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 15, leg_pool_ps),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 16, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 17, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 18, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 19, leg_pool_coms),
+        # This last COM in ItemPool_Ixora_All_Legendary just here to support the Provocateur COM mod, should
+        # it be enabled.  Will do nothing if not.
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_All_Legendary', 20, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary', 0, leg_pool_artifacts),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Artifacts_Legendary', 1, leg_pool_artifacts),
+        # Nothing actually references this one, and it's not present in the level.
+        #('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_ClassMods_Legendary', 0, leg_pool_coms),
+        #('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_ClassMods_Legendary', 1, leg_pool_coms),
+        #('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_ClassMods_Legendary', 2, leg_pool_coms),
+        #('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_ClassMods_Legendary', 3, leg_pool_coms),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Grenades_Legendary', 0, leg_pool_grenades),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Shields_Legendary', 0, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Shields_Legendary', 1, leg_pool_shields),
+        ('/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Shields_Legendary', 2, leg_pool_shields),
+        ]:
+    do_itempool(dlc5map, src, idx, dst, is_map=True, clear=True)
+
+# This object exists at the beginning of the level, but must (apparently) get loaded somehow after
+# the level-based hotfixes; seems it must tied to a BPChar which technically gets loaded after,
+# despite the fact that this is only used in Air Drop containers.  Whatever, the MatchAll char-based
+# hotfix works fine.
+mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+        '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary',
+        'BalancedItems',
+        """(
+            (
+                ItemPoolData={},
+                Weight={}
+            )
+        )""".format(
+            leg_pool_guns,
+            BVC(bvc=1),
+            ))
+
 mod.newline()
 
 # Finish

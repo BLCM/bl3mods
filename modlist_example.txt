@@ -19,42 +19,40 @@
 ### a mod.  If you specify an absolute path (starting with something
 ### like `C:\` on Windows, or `/` on Linux), that full path will be
 ### used.  If not, the file will be loaded relative to this file.
-### In the examples below, for instance, a bunch of mods from the
-### `Apocalyptech` dir are being loaded.
+### In the examples below, for instance, a bunch of mods from both
+### `Apocalyptech` and `SSpyR` are being loaded.
 ###
 ### To disable a mod (but keep it in the file in case you want to
 ### enable it again later), just prefix the filename with a # mark,
 ### to turn the line into a comment (you'll see plenty of examples
 ### of that, below, too).
 ###
-### This example file is basically just Apocalyptech's personal
-### modlist.bl3hotfix as of late September 2020 - obviously you should
-### feel free to prune and edit as much as you like!
+### NOTE: This file is just an example!  Feel free to edit this
+### however you like; the mods you might want to use are entirely up
+### to you!  We've just included a few mods which provide bugfixes
+### and Quality-of-Life improvements, and left out the majority of
+### mods available in this repo.
 ###
 
 ###
-### Enemy/Spawn Changes
+### Bugfixes
 ###
 
-# Guarantee rare spawns (and buff vehicle rare spawns)
-Apocalyptech/enemy_spawn_changes/guaranteed_rare_spawns/guaranteed_rare_spawns.bl3hotfix
+# Fix Shield drops on standard enemies in DLC2+DLC4
+Apocalyptech/loot_changes/fix_dlc_shield_drops/fix_dlc_shield_drops.bl3hotfix
 
-# Alternate NPC/Enemy Size Scaling
-#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_0.4_tiny.bl3hotfix
-#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_0.7_smol.bl3hotfix
-#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_2.0_big.bl3hotfix
-#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_3.0_huge.bl3hotfix
-#Apocalyptech/enemy_spawn_changes/sizemod/sizemod_npc_5.0_giant.bl3hotfix
+# Fixes the blank parts that Siren COMs can sometimes roll
+Apocalyptech/gear_changes/fix_siren_com_blank_parts/fix_siren_com_blank_parts.bl3hotfix
 
-# Infighting!  Enemies attack each other, too.
-#Apocalyptech/enemy_spawn_changes/infighting/infighting.bl3hotfix
+# Fix P2P Networker's missing second element
+Apocalyptech/gear_changes/p2p_networker_element_fix/p2p_networker_element_fix.bl3hotfix
+
+# Green Monster Click Click Points Fix
+SSpyR/bugfix/green_monster_clickclick_fix.bl3hotfix
 
 ###
-### QOL stuff
+### QOL Type Improvements
 ###
-
-# Challenge icons are always visible
-Apocalyptech/qol/always_visible_challenge_icons/always_visible_challenge_icons.bl3hotfix
 
 # ECHO Log loot bar is bigger
 Apocalyptech/qol/more_visible_echo_logs/more_visible_echo_logs.bl3hotfix
@@ -62,274 +60,31 @@ Apocalyptech/qol/more_visible_echo_logs/more_visible_echo_logs.bl3hotfix
 # Photo Mode Unlock
 Apocalyptech/qol/photo_mode_unlock/photo_mode_unlock.bl3hotfix
 
-# No Reload Notification
-Apocalyptech/qol/no_reload_notification/no_reload_notification.bl3hotfix
-
-# Disable email loyalty rewards
-Apocalyptech/qol/disable_email_loyalty_rewards/disable_email_loyalty_rewards.bl3hotfix
-
-###
-### Tweaks to Mayhem Mode
-###
-
-# Better Mayhem rewards (mostly just for XP; Better Loot further buffs
-# anoint rates).  Make sure this stays above Better Loot!
-Apocalyptech/mayhem/better_mayhem_rewards/better_mayhem_rewards.bl3hotfix
-
-# Vastly decreased enemy scaling in Mayhem 2.0 (conflicts with mayhem_level_cheats)
-#Apocalyptech/mayhem/decreased_mayhem_enemy_scaling/decreased_mayhem_enemy_scaling.bl3hotfix
-
-# Mayhem 2.0 Outright Cheating (conflicts with mayhem_decreased_enemy_scaling)
-Apocalyptech/mayhem/mayhem_level_cheats/mayhem_level_cheats.bl3hotfix
-
-# Various nerfs to some Mayhem 2.0 modifiers.  Nothing too drastic.
-Apocalyptech/mayhem/mayhem_modifier_nerfs/mayhem_modifier_nerfs.bl3hotfix
-
-# Mayhem 2.0 - Remove drop scaling altogether
-Apocalyptech/mayhem/no_mayhem_drop_scaling/no_mayhem_drop_scaling.bl3hotfix
-
-# Disable a few Mayhem 2.0 Modifiers
-Apocalyptech/mayhem/disable_rogue_lite_modifier/disable_rogue_lite_modifier.bl3hotfix
-Apocalyptech/mayhem/disable_lootsplosion_modifier/disable_lootsplosion_modifier.bl3hotfix
-
-# Change the booster types dropped by the "Slayer" mayhem mod
-#Apocalyptech/mayhem/slayer_modifier_booster_change/slayer_modifier_booster_change.bl3hotfix
-
 ###
 ### Gear Changes
 ###
 
-# Make (nearly) all Torgue ARs full-auto
-Apocalyptech/gear_changes/torgue_ar_full_auto/torgue_ar_full_auto.bl3hotfix
-
 # Red Text Explainer
 Apocalyptech/gear_changes/red_text_explainer/red_text_explainer.bl3hotfix
 
-# Improve Maliwan charge times
-Apocalyptech/gear_changes/better_maliwan_charge_time/better_maliwan_charge_time.bl3hotfix
-
-# Stronger Snipers
-Apocalyptech/gear_changes/stronger_snipers/stronger_snipers.bl3hotfix
-
-# Nerf OP Gear
-Apocalyptech/gear_changes/nerf_op_gear/nerf_op_gear.bl3hotfix
-
-# Turn (nearly) all uniques into legendary-rarity
-Apocalyptech/gear_changes/uniques_are_legendary/uniques_are_legendary.bl3hotfix
-
-# Removes the Sellout's Tyreen voice module
-Apocalyptech/gear_changes/silent_sellout/silent_sellout.bl3hotfix
-
 # Add anoints to weapons which don't ordinarily have them
 Apocalyptech/gear_changes/all_weapons_can_anoint/all_weapons_can_anoint.bl3hotfix
-
-# Fix P2P Networker's missing second element (doesn't make sense to use
-# with single_element_maliwan)
-#Apocalyptech/gear_changes/p2p_networker_element_fix/p2p_networker_element_fix.bl3hotfix
-
-# Single Element Maliwan (doesn't make sense to use with p2p_networker_element_fix)
-Apocalyptech/gear_changes/single_element_maliwan/single_element_maliwan.bl3hotfix
-
-# Fixes the blank parts that Siren COMs can sometimes roll
-Apocalyptech/gear_changes/fix_siren_com_blank_parts/fix_siren_com_blank_parts.bl3hotfix
-
-###
-### Gameplay Changes
-###
-
-# Movement Speed Cheats
-Apocalyptech/gameplay_changes/movement_speed_cheats/movement_speed_cheats_reasonable.bl3hotfix
-#Apocalyptech/gameplay_changes/movement_speed_cheats/movement_speed_cheats_extreme.bl3hotfix
-
-# Make NVHM GameStage level along with the char (like in TVHM/Mayhem)
-Apocalyptech/gameplay_changes/nvhm_gamestage_follows_level/nvhm_gamestage_follows_level.bl3hotfix
-
-# Vehicle Unlocks
-Apocalyptech/gameplay_changes/vehicle_unlocks/vehicle_unlocks.bl3hotfix
-
-# Alternate Universal Scalings
-#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_bl1.bl3hotfix
-#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_bl2.bl3hotfix
-#Apocalyptech/gameplay_changes/alternate_scaling/alternate_scaling_tps.bl3hotfix
-
-# Unlock DLC3 Company Tech (Coresploders, Traitorweed, Telezappers)
-Apocalyptech/gameplay_changes/unlock_dlc3_tech/unlock_dlc3_tech.bl3hotfix
-
-# Green Monster Click Click Points Fix, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/green_monster_clickclick_fix.txt
 
 ###
 ### Loot Changes
 ###
 
-# Alterations to the first couple of weapon chests in the game
-Apocalyptech/loot_changes/first_gun_chest/first_gun_chest_full_loadout.bl3hotfix
-#Apocalyptech/loot_changes/first_gun_chest/first_gun_chest_testing_gear.bl3hotfix
-
-# Fix Shield drops on standard enemies in DLC2
-Apocalyptech/loot_changes/fix_dlc2_shield_drops/fix_dlc2_shield_drops.bl3hotfix
-
-# Better Loot!  Improves loot quality and other such tweaks
-Apocalyptech/loot_changes/better_loot/better_loot.bl3hotfix
-
-# Randomize boss drops.  Make sure this occurs *after* Better Loot in the
-# file, if using both.
-Apocalyptech/loot_changes/boss_drop_randomizer/boss_drop_randomizer.bl3hotfix
-
-# Randomize mission rewards
-Apocalyptech/loot_changes/mission_reward_randomizer/mission_reward_randomizer.bl3hotfix
-
-# Get rid of DLC-specific world drops
-Apocalyptech/loot_changes/dlc_loot_de-emphasizer/dlc_loot_de-emphasizer.bl3hotfix
-
-# Shiv Legendary Drop, by SSpyR
-/home/pez/git/b2patching/sspyr-bl3modstorage/sspyrmods/archive/give_shiv_drop.txt
-
 # Only get COMs/Skins/Heads/Anoints for chars actively in the game
 Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.bl3hotfix
 
-# Unlock all weapon/item parts from the beginning of the game
-Apocalyptech/loot_changes/early_bloomer/early_bloomer.bl3hotfix
-
-# Add all uniques/legendaries to the relevant world drop pools
-Apocalyptech/loot_changes/expanded_legendary_pools/expanded_legendary_pools.bl3hotfix
-
-# More tracker darts!
-Apocalyptech/loot_changes/more_tracker_darts/more_tracker_darts.bl3hotfix
-
-# More elemental weapons
-Apocalyptech/loot_changes/more_elemental_weapons/more_elemental_weapons.bl3hotfix
-
-# Disable "projected" shields
-Apocalyptech/loot_changes/no_projected_shields/no_projected_shields.bl3hotfix
-
-# Disable non-legendary/unique slam artifacts
-Apocalyptech/loot_changes/no_slam_artifacts/no_slam_artifacts.bl3hotfix
-
-# Only spawn Atlas grenads (using this on my Zane)
-#Apocalyptech/loot_changes/only_atlas_grenades/only_atlas_grenades.bl3hotfix
-
-# Enable Pendant of Terramorphous as a valid legendary artifact drop
-Apocalyptech/loot_changes/enable_pendant_of_terra/enable_pendant_of_terra.bl3hotfix
-
 ###
-### Loot Changes (customization-related)
-
-# Add all customizations to the global drop pools
-#Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_all.bl3hotfix
-#Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards.bl3hotfix
-Apocalyptech/loot_changes/expanded_customization_pools/expanded_customization_pools_no_mission_rewards_or_earl.bl3hotfix
-
-# Only drop heads+skins from the global customization drop pool
-#Apocalyptech/loot_changes/customizations_only_heads_and_skins/customizations_only_heads_and_skins.bl3hotfix
-
-# Customization drop rates
-Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_none.bl3hotfix
-#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_improved.bl3hotfix
-#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_frequent.bl3hotfix
-#Apocalyptech/loot_changes/customization_drop_rate/customization_drop_rate_constant.bl3hotfix
-
-###
-### Loot Changes (Manufacturer locks)
+### Timed Event mods - notice that these are commented out!  You can
+### enable them just by removing the hash mark (#) in front of the
+### filenames.
 ###
 
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_atlas.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_cov.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_dahl.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_hyperion.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_jakobs.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_maliwan.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_tediore.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_torgue.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_vladof.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_custom_ted_vla.bl3hotfix
-#Apocalyptech/loot_changes/manufacturer_lock/manufacturer_lock_custom_dal_jak.bl3hotfix
-
-###
-### Economy-related mods
-###
-
-# Cheaper SDUs
-Apocalyptech/economy/cheaper_sdus/cheaper_sdus.bl3hotfix
-
-# Cheaper Slots
-Apocalyptech/economy/cheaper_slots/cheaper_slots.bl3hotfix
-
-# Improved Slot Machines
-Apocalyptech/economy/better_slots/better_slots.bl3hotfix
-
-# Cheaper Eridium economy
-Apocalyptech/economy/cheaper_eridium_economy/cheaper_eridium_economy.bl3hotfix
-
-# No cost for respec or respawn
-Apocalyptech/economy/free_respec/free_respec.bl3hotfix
-Apocalyptech/economy/free_respawn/free_respawn.bl3hotfix
-
-###
-### Mission-specific Mods
-###
-
-# More money from the malfunctioning slots in Sisterly Love
-Apocalyptech/mission_specific/sisterly_love_more_money/sisterly_love_more_money.bl3hotfix
-
-# Better gifts from Joy in Heart of Gold
-Apocalyptech/mission_specific/heart_of_gold_better_gifts/heart_of_gold_better_gifts.bl3hotfix
-
-# Allow Trials missions as soon as you get to the maps which have them
-Apocalyptech/mission_specific/no_trials_dependencies/no_trials_dependencies.bl3hotfix
-
-###
-### Timed Event mods
-###
-
-# Event-enabling mods
+# Only one of these can be active at the same time
 #Apocalyptech/timed_events/timed_event_enable/bloody_harvest_enable.bl3hotfix
 #Apocalyptech/timed_events/timed_event_enable/broken_hearts_enable.bl3hotfix
 #Apocalyptech/timed_events/timed_event_enable/cartels_enable.bl3hotfix
-
-# Enable all Timed Event enemy spawn modifications at once.  This
-# shouldn't actually require any events to be active.  Make sure
-# this appears *after* any mod which enables an event.
-#Apocalyptech/timed_events/all_event_spawns_active/all_event_spawns_active.bl3hotfix
-
-# Expand enemy spawn modifications to apply everywhere that any
-# timed event has used in the past.  Will allow ghosts+hearts in
-# DLC maps, for instance.  Doesn't do anything unless an event or
-# my all_event_spawns mod is active.
-#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_cartels.bl3hotfix
-#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_bloody_harvest.bl3hotfix
-#Apocalyptech/timed_events/expanded_event_spawners/expanded_event_spawners_broken_hearts.bl3hotfix
-
-# Guaranteed Ghosts in Bloody Harvest event
-#Apocalyptech/timed_events/guaranteed_ghosts/guaranteed_ghosts.bl3hotfix
-
-# Fewer Cartel spawns
-#Apocalyptech/timed_events/fewer_cartel_operatives/fewer_cartel_operatives.bl3hotfix
-
-###
-### Main Menu
-###
-
-#Apocalyptech/timed_events/main_menu/main_menu_normal.bl3hotfix
-#Apocalyptech/timed_events/main_menu/main_menu_halloween.bl3hotfix
-#Apocalyptech/timed_events/main_menu/main_menu_christmas.bl3hotfix
-
-###
-### Mod-testing Mods
-###
-
-# Mod-Testing Gear
-#Apocalyptech/mod_testing_mods/super_buff_craders_emp5/super_buff_craders_emp5.bl3hotfix
-#Apocalyptech/mod_testing_mods/super_buff_transformer/super_buff_transformer.bl3hotfix
-
-# Testing loot drops
-#Apocalyptech/mod_testing_mods/testing_loot_drops/testing_loot_drops.bl3hotfix
-
-# Real quick XP gains
-#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_fast.bl3hotfix
-#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_faster.bl3hotfix
-#Apocalyptech/mod_testing_mods/fast_levelling/fast_levelling_insane.bl3hotfix
-
-# Mod-testing Char Setup (for new games)
-#Apocalyptech/mod_testing_mods/modtest_char_setup/modtest_char_setup.bl3hotfix
 

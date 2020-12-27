@@ -14,6 +14,8 @@ now has a legitimate special ability.
 Note that if you use my P2P Networker Element Fix mod in conjunction with this one,
 the P2P Networker *will* have its second element.
 
+This has been updated through DLC5 (Designer's Cut).
+
 **Note:** This only applies to freshly-spawned guns.  Any Maliwan weapon
 already in your inventory (or imported via an previously-existing item code) will
 still only have the single element.  It needs to be a fresh spawn, with this
@@ -21,6 +23,19 @@ mod active.
 
 Changelog
 =========
+
+**v1.2.0** - Nov 10, 2020
+ * Updated for DLC5 (Designer's Cut) weapons (just the Superconducting Plasma Coil).
+ * Fixed some restricted-element weapons to properly have all the element
+   choices that would be available if they were multi-element (they'd previously
+   been too element-locked):
+   * Blind Bandit (purple-rarity)
+   * Sellout
+   * Shrieking Devil
+   * Terminal Polyaimourous
+
+**v1.1.0** - Sep 26, 2020
+ * Updated for DLC4 weapons
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

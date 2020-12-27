@@ -1,0 +1,28 @@
+###
+### Name: Equal Character Gear Chance
+### Version: 1.0.0
+### Author: Apocalyptech
+### Categories: loot-system
+###
+### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Adjusts the character-specific weighting so that character-specific
+### gear (such as COMs, customizations, and anointments) should drop at
+### about equal rates, instead of being weighted towards the currently-
+### active characters.  This is basically the opposite of my No Wasted
+### Equipment mod.
+###
+### This is really only intended for my own mod-testing purposes, and
+### might have some unintended consequences when used in ordinary
+### gameplay, so beware!  COMs, customizations, and character-specific
+### anointments are likely to start overpowering all other loot.
+###
+
+# This could be done more gracefully, but I'm just setting the "base"
+# character-specific weight to 200.  Each character class in-game
+# adds 0.85 to this value, which is negligible compared to the 200.
+SparkPatchEntry,(1,2,0,),/Game/GameData/Economy/Economy_Miscellaneous.Economy_Miscellaneous,CharacterWeights_Base,Value,0,,(BaseValueConstant=200,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+

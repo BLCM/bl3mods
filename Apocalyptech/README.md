@@ -24,6 +24,8 @@ of the mods you'll find in here, though:
 
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
+- **Infinite Slide** - Makes the duration of your character's slide effectively
+  infinite.
 - **Movement Speed Cheats** - Move faster!
 - **NVHM Gamestage Follows Level** - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
@@ -40,6 +42,7 @@ of the mods you'll find in here, though:
   them to have one too few ability parts.
 - **Nerf OP Gear** - Nerfs some gear which is too OP when used in Normal.
 - **P2P Networker Element Fix** - Adds a second element to the P2P Networker
+- **Provocateur COM** - Adds in a second legendary Operative COM in the Designer's Cut DLC data
 - **Red Text Explainer** - Adds a description of weapon/grenade special effects on the card.
 - **Silent Sellout** - Removes the Tyreen-themed voice module from the Sellout.
 - **Single-Element Maliwan** - Makes most Maliwan weapons only have a single element.
@@ -77,6 +80,8 @@ of the mods you'll find in here, though:
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary
+  COMs from the Designer's Cut DLC into the world drop pools.
 
 ## Mayhem Changes
 
@@ -108,6 +113,9 @@ of the mods you'll find in here, though:
 
 ## Mod-Testing Mods
 
+- **Arms Race Cheat** - A mod to make Arms Race completely trivial.
+- **Equal Character Gear Chance** - Makes character-specific gear equally likely
+  to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
@@ -141,8 +149,6 @@ of the mods you'll find in here, though:
   active.
 - **Main Menu** - Collection of mods to choose a specific main menu theme
   (including the eventless Christmas menu)
-- **Timed Event Enable** - Three mods to fully enable the three timed
-  events.  Only one can be fully active at once.
 
 ## Deprecated/Broken Mods
 
@@ -150,6 +156,13 @@ I've also got a folder to contain mods which either didn't work, or which are
 no longer needed (either because of changes to the game itself, or because it
 was obsoleted by one of my other mods).  There's a README in there which details
 most of those, so feel free to browse around if you want.
+
+## Data Processing
+
+There's also a `dataprocessing` dir here, which is various utils that I use to
+pull data from BL3, mostly using the `bl3mods` and `bl3hotfixmod` modules up
+in the main dir of this repo.  These are often in service of mod creation, though
+there's also scripts which populate some Google Sheets that I maintain as well.
 
 Licenses
 ========

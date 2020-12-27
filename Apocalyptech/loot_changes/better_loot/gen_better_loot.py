@@ -52,8 +52,8 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
-        cats='enemy-drops',
+        v='1.2.1',
+        cats='enemy-drops, loot-system',
         )
 
 def set_legendary_odds(mod, charname, row, chance, obj_name='/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds'):
@@ -164,6 +164,7 @@ for pool, index in [
         ('/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader', 10),
         ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', 10),
         ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 10),
+        ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma', 9),
         ]:
 
     # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
@@ -275,6 +276,15 @@ for label, poollist_name, pool_idx, chars in [
             ]),
         ('DLC3 Bosses', '/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium', 7, [
             'BPChar_RuinerBoss',
+            ]),
+        ('DLC4 Bosses', '/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 5, [
+            'BPChar_DarkBrick',
+            'BPChar_DarkLilith',
+            'BPChar_DarkMordecai',
+            'BPChar_DrBenedict',
+            'BPChar_PsychodinP2',
+            'BPChar_TrainBoss',
+            'BPChar_SpongeBoss',
             ]),
         ]:
 
@@ -1394,6 +1404,48 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_GerPsychoMoleMan',
             0,
             1),
+
+        # DLC4 Bosses
+        ("Locomöbius",
+            '/Alisma/Enemies/TrainBoss/_Shared/_Design/Character',
+            'BPChar_TrainBoss',
+            1,
+            3),
+        ("Psychoreaver - Weapons",
+            '/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character',
+            'BPChar_PsychodinP2',
+            0,
+            2),
+        ("Psychoreaver - Room Deco",
+            '/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character',
+            'BPChar_PsychodinP2',
+            1,
+            1),
+        ("Evil Mordecai",
+            '/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character',
+            'BPChar_DarkMordecai',
+            0,
+            2),
+        ("Evil Brick",
+            '/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character',
+            'BPChar_DarkBrick',
+            0,
+            1),
+        ("Evil Lilith",
+            '/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character',
+            'BPChar_DarkLilith',
+            0,
+            3),
+        ("SpongeBoss BulletPants",
+            '/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character',
+            'BPChar_SpongeBoss',
+            0,
+            1),
+        ("Dr. Benedict",
+            '/Alisma/Enemies/DrBenedict/_Shared/_Design/Character',
+            'BPChar_DrBenedict',
+            0,
+            3),
         ]:
     mod.comment(label)
     full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)
@@ -1430,6 +1482,10 @@ for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
         ('Terror', 'BPChar_Agonizer_9k',
             '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain',
             3,
+            4),
+        ('Heavyweight Harker', 'BPChar_FrontRider_Rider',
+            '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Enemy/ItemPoolList_GearUp_FinalBoss',
+            6,
             4),
         ]:
     mod.comment(label)
@@ -1571,6 +1627,34 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_MechRaidBossBar',
             AttributeInitializer=None,
             BaseValueScale=1
         )""")
+mod.newline()
+
+# DLC5 Legendary Chance in area chests
+mod.header('DLC5 (Designer\'s Cut) Area Challenge Chest Legendary Chances')
+for row in [
+        'CreatureSewers',
+        'WaterWorks',
+        'Thunderdome',
+        'Dam',
+        'HQ',
+        'Industry',
+        'Spaceport',
+        'Silo',
+        ]:
+    # I'm 99.9% sure that only LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26
+    # is used here, but whatever.
+    for col in [
+            'LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26',
+            'LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6',
+            'LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111',
+            ]:
+        # Default value: 0.25
+        mod.table_hotfix(Mod.LEVEL, 'FrostSite_P',
+                '/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora',
+                row,
+                col,
+                0.5)
+
 mod.newline()
 
 # Buff Anoint Drops

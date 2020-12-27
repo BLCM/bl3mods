@@ -46,6 +46,11 @@ mod = Mod('filename_to_save.bl3hotfix',
 
 Most of that is probably self-explanatory, but I'll go through a couple of points:
 
+If you're generating a mod which is really huge (such as SSpyR's runtime weapon/item
+randomizer), you can have the helper generate a compressed version by appending
+`.gz` to the filename.  In the example above, for instance, you could specify
+`filename_to_save.bl3hotfix.gz` instead.
+
 The `v=foo` line is completely optional, so don't worry about specifying a
 version if you don't want (though it's good practice to put it in your file so that
 people can compare to versions online, to know if they're out of date).

@@ -49,12 +49,27 @@ subdirs = [
         'dlc1',
         'dlc2',
         'dlc3',
+        'dlc4',
+        'dlc5',
         ]
-spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
-spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>SpawnOptions_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
+spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
+spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
 spawnoption_blacklist = {
         # There's another "SpawnOptions_CoVMix_Mine" and this one appears unused
         '/Game/PatchDLC/Event2/Enemies/_Spawning/WorldMechanicMixes/WorldMapMixes/SpawnOptions_CoVMix_Mine',
+
+        # These seem to be unused, and collide with some Dandelion objects
+        '/Alisma/Enemies/_Spawning/Loader/SpawnOptions_LoaderMix_Regular',
+        '/Alisma/Enemies/_Spawning/Loader/SpawnOptions_SurveyorMix',
+
+        # Likewise, but with a base-game object
+        '/Alisma/Enemies/_Spawning/Heavy/Individual/SpawnOptions_HeavyBasic',
+
+        # With Alisma we started looking for SpawnGroup_ and SpawnTier_ objects as well, which
+        # doesn't actually affect other DLCs for the most part, but *does* pull in a few extra
+        # objects from DCL2 which it seems we should ignore.  So, ignoring 'em.
+        '/Hibiscus/Enemies/_Spawning/_Unique/Mission/SpawnTier_SinisterSounds_FrostbiterECHOLog',
+        '/Hibiscus/Enemies/_Spawning/Tiers/Cultists/Village/Episode2/SpawnTier_Hib_Village_Cult_EP2Renewal_Friendly',
         }
 # Turns out we don't need to "randomize" teams at all, 'cause the Enraged Goliath
 # team works great all by itself.
@@ -98,19 +113,41 @@ if not os.path.exists(base_dir):
 # Figure out what SpawnOptions_* objects we care about
 data = BL3Data()
 spawnoptions = {}
-for spawnoption in data.find('', 'SpawnOptions_'):
+spawnoptions_ixora = {}
+full_options = list(data.find('', 'SpawnOptions_')) \
+        + list(data.find('', 'SpawnGroup_')) \
+        + list(data.find('', 'SpawnTier_'))
+for spawnoption in full_options:
     if spawnoption in spawnoption_blacklist:
         continue
     if 'Enemies' in spawnoption:
         last_bit = spawnoption.split('/')[-1]
-        if last_bit in spawnoptions:
-            print('ERROR: {} already in spawnoptions: {} -> {}'.format(
-                last_bit,
-                spawnoptions[last_bit],
-                spawnoption,
-                ))
-            sys.exit(2)
-        spawnoptions[last_bit] = spawnoption
+        if 'Ixora' in spawnoption:
+            # Allow Ixora spawnoptions to override non-Ixora spawnoptions, needed for
+            # SpawnOptions_SkagBadass and SpawnOptions_SkagAdultsAndBarfers
+            if last_bit in spawnoptions_ixora and 'Ixora' in spawnoptions_ixora[last_bit]:
+                print('ERROR: {} already in spawnoptions_ixora: {} -> {}'.format(
+                    last_bit,
+                    spawnoptions_ixora[last_bit],
+                    spawnoption,
+                    ))
+                sys.exit(2)
+            spawnoptions_ixora[last_bit] = spawnoption
+        else:
+            if last_bit in spawnoptions:
+                print('ERROR: {} already in spawnoptions: {} -> {}'.format(
+                    last_bit,
+                    spawnoptions[last_bit],
+                    spawnoption,
+                    ))
+                sys.exit(2)
+            spawnoptions[last_bit] = spawnoption
+
+            # Also put these in ixora, so long as they're not already there (but don't
+            # fail if they are).  Just needed for SpawnOptions_SpiderantSpiderlingRoyal
+            if last_bit not in spawnoptions_ixora:
+                spawnoptions_ixora[last_bit] = spawnoption
+
 
 # Start writing the mod
 mod = Mod('infighting.bl3hotfix',
@@ -122,12 +159,19 @@ mod = Mod('infighting.bl3hotfix',
             "thoroughly tested, but seems to do the trick!",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.2.0',
         cats='enemy, gameplay',
         )
 
 # No read our data dumps to find the SpawnFactory objects we'll modify
 for subdir in subdirs:
+
+    # Ixora has some duplicate-short-name'd spawnoptions objects...
+    if subdir == 'dlc5':
+        options_dict = spawnoptions_ixora
+    else:
+        options_dict = spawnoptions
+
     full_subdir = os.path.join(base_dir, subdir)
     for level in os.listdir(full_subdir):
         print('Processing {}...'.format(level))
@@ -144,9 +188,9 @@ for subdir in subdirs:
                 if match:
                     raw_number = int(match.group('raw_number'))
                     assert(raw_number > 0)
-                    if match.group('spawnoption') in spawnoptions:
+                    if match.group('spawnoption') in options_dict:
                         obj_real = '{}.{}:SpawnFactory_OakAI_{}'.format(
-                                spawnoptions[match.group('spawnoption')],
+                                options_dict[match.group('spawnoption')],
                                 match.group('spawnoption'),
                                 raw_number-1,
                                 )
@@ -157,9 +201,9 @@ for subdir in subdirs:
                 else:
                     match = spawn2_re.search(line)
                     if match:
-                        if match.group('spawnoption') in spawnoptions:
+                        if match.group('spawnoption') in options_dict:
                             obj_real = '{}.{}:{}'.format(
-                                    spawnoptions[match.group('spawnoption')],
+                                    options_dict[match.group('spawnoption')],
                                     match.group('spawnoption'),
                                     match.group('factory_obj'),
                                     )

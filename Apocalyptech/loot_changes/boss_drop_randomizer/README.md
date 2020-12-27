@@ -12,10 +12,22 @@ legendary shotgun, you will get a legendary shotgun of some sort.
 
 I recommend the use of my Expanded Legendary Pools mod, so that the loot you get
 is as varied as possible.  If you're interested in this mod, you might also be
-interestd in my Mission Reward Randomizer mod.
+interested in my Mission Reward Randomizer mod.
+
+Due to how loot is structured in Arms Race / Stormblind Complex, this mod will
+also randomize the legendary loot dropped by all other enemies in that area as
+well (this is identical to some functionality included in DLC Loot De-Emphasizer).
+There's no problems with using both of those mods at the same time; just a bit
+of duplication between then.
 
 Changelog
 =========
+
+**v1.2.0** - Nov 12, 2020
+ * Updated for DLC5 (Designer's Cut)
+
+**v1.1.0** - Oct 3, 2020
+ * Updated for DLC4 (Psycho Krieg) enemies
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

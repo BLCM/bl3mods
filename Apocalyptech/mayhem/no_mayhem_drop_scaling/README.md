@@ -13,6 +13,9 @@ intended to be used with Better Loot.
 Changelog
 =========
 
+**v1.1.0** - Nov 10, 2020
+ * Updated for Mayhem 11 compatibility
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

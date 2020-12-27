@@ -60,7 +60,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'at a reduced rate compared to the legendaries already in there.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.2.1',
         cats='loot-system, enemy-drops',
         )
 
@@ -100,6 +100,27 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
 # Marshal - /Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Sheriff/Balance/Balance_PS_JAK_Sheriff
 #   It's just a green Jakobs pistol.  I haven't gone through DLC3 yet, but I assume that it's just
 #   mission-related, or maybe an enemy-use gun.  Or something that's just Not Finished.
+#
+# Purple-rarity versions of all the DLC4 legendaries.  They have either the exact same effects (or worse),
+# and worse weapon stats, so despite the unique name and red text, they're just not worth having.
+#    Guilty Spark - /Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar_Epic
+#    Limit Break - /Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra_Epic
+#    Ashen Beast - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast_Epic
+#    Minor Kong - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher_Epic
+#    Blind Bandit - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit_Epic
+#    Reunion - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence_Epic
+#    Likable Rascal - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/Balance/Balance_AR_TOR_LovableRogue_Epic
+#    P.A.T. Mk. I - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3_Parent
+#    P.A.T. Mk. II - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3_Epic
+#    Sawpenny - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse_Epic
+#    Septimator - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator_Epic
+#    Critical Mass - /Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice_Epic
+#
+# Unfinished Operative COM from DLC5 (Designer's Cut).  At least says that it's got a unique ability,
+# but shares its red text with the other DLC5 Operative COM and doesn't have a title (so all you get
+# on the card is prefixes) -- had not tested to see if it actually does what it says it does.
+#     /Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L02/InvBalD_CM_Ixora_OPE_L02
+#
 
 addition_scale = 0.6
 pools = [
@@ -219,6 +240,18 @@ pools = [
                 # Stonethrower
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/Balance/Balance_AR_JAK_Stonethrow', 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Lovable Rogue
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/LovableRogue/Balance/Balance_AR_TOR_LovableRogue', 1),
+                # Rebound
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Hotfoot Teddy
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot', 1),
+
                 ### Additions
 
                 # Earworm
@@ -284,6 +317,16 @@ pools = [
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Plumage/Balance/Balance_HW_ATL_Plumage', 1),
                 # Satisfaction
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', 1),
+
+                ### DLC4 (Psycho Krieg)
+
+                # Major Kong
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Ice Age
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', 1),
 
                 ### Additions
 
@@ -426,6 +469,22 @@ pools = [
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose', 1),
                 # Unkempt Harold
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/Balance/Balance_PS_TOR_UnkemptHarold', 1),
+
+                ### DLC4 (Psycho Krieg)
+
+                # Prompt Critical
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Voice/Balance/Balance_PS_TOR_Voice', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Firefly
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/Balance/Balance_PS_VLA_Firefly', 1),
+                # Res
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya', 1),
+                # Fasterfied Tizzy
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy', 1),
+                # Snide Trickshot
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot', 1),
 
                 ### Additions
 
@@ -582,6 +641,18 @@ pools = [
                 # Splinter
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/Balance/Balance_SG_JAK_Splinter', 1*addition_scale),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Blind Sage
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BlindBandit/Balance/Balance_SG_MAL_BlindBandit', 1),
+                # Convergence
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Critical Thug / Critical Thug x2
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', 1),
+
                 ### Additions
 
                 # Phebert
@@ -713,6 +784,20 @@ pools = [
                 # Flipper
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper', 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Blood-Starved Beast
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast', 1),
+                # P.A.T. Mk. III
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Balance/Balance_SM_TED_PatMk3', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Dark Army +
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/DarkArmy/Balance/Balance_SM_TED_DarkArmy', 1),
+                # Superconducting Plasma Coil
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -810,6 +895,18 @@ pools = [
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/ImaginaryNumber/Balance/Balance_MAL_SR_ImaginaryNumber', 1),
                 # Narp
                 ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Narp/Balance/Balance_SR_HYP_Narp', 1),
+
+                ### DLC4 (Psycho Krieg)
+
+                # Septimator Prime
+                ('/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/Balance/Balance_VLA_SR_Septimator', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Binary Operator
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator', 1),
+                # Boogeyman
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/Balance/Balance_VLA_SR_Boogeyman', 1),
 
                 ### Additions
 
@@ -926,6 +1023,22 @@ pools = [
                 # Stinger
                 ('/Game/PatchDLC/Takedown2/Gear/Shields/Stinger/Balance/InvBalD_Shield_LGD_Stinger', 1),
 
+                ### DLC4 (Psycho Krieg)
+
+                # Faulty Star
+                ('/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar', 1),
+                # Plus Ultra
+                ('/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra', 1),
+
+                ### DLC5 (Designer's Cut)
+
+                # Beskar
+                ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Beskar/Balance/InvBalD_Shield_Beskar', 1),
+                # Madcap
+                ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/MadCap/Balance/InvBalD_Shield_LGD_Madcap', 1),
+                # Gas Mask
+                ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -1022,6 +1135,11 @@ pools = [
                 # Doc Hina's Miracle Bomb
                 ('/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/Balance/InvBalD_GM_SkagOil', 1*addition_scale),
 
+                ### DLC5 (Designer's Cut)
+
+                # HOT Spring
+                ('/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/Balance/InvBalD_GM_HOTSpring', 1),
+
                 ### Additions
 
                 # Exterminator
@@ -1070,6 +1188,12 @@ pools = [
                 # DLC2 - Tr4iner
                 ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Hib', 1),
 
+                # DLC4 - Peregrine
+                ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Alisma', 1),
+
+                # DLC5 - Cmdl3t
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora_BSM_L01', 1),
+
                 ]),
 
         ('Gunner COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
@@ -1085,6 +1209,12 @@ pools = [
 
                 # DLC2 - Sapper
                 ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib', 1),
+
+                # DLC4 - Flare
+                ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Alisma', 1),
+
+                # DLC5 - Eternal Flame
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora_GUN_L01', 1),
 
                 ]),
 
@@ -1102,6 +1232,16 @@ pools = [
                 # DLC2 - Conductor
                 ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Hib', 1),
 
+                # DLC4 - Hustler
+                ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Alisma', 1),
+
+                # DLC5 - Spy
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora_OPE_L01', 1),
+
+                # DLC5 - Provocateur (requires the Provocateur COM mod to work, so weight is set to
+                # zero.  The Provocateur COM mod will set it to 1)
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L02/InvBalD_CM_Ixora_OPE_L02', 0),
+
                 ]),
 
         ('Siren COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
@@ -1117,6 +1257,12 @@ pools = [
 
                 # DLC2 - Stone
                 ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib', 1),
+
+                # DLC4 - Muse
+                ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma', 1),
+
+                # DLC5 - Kensei
+                ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01', 1),
 
                 ]),
 
@@ -1137,6 +1283,15 @@ pools = [
 
                 # Vendetta
                 ('/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance', 1*addition_scale),
+
+                ### DLC5 (Designer's Cut)
+
+                # Deathrattle
+                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/Balance/InvBalD_Artifact_Deathrattle', 1),
+                # Holy Grail / Perceval's Holy Grail / King Arthur's Holy Grail
+                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Balance/InvBalD_Artifact_HolyGrail', 1),
+                # Mysterious Amulet
+                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet', 1*addition_scale),
 
                 ### Additions
 

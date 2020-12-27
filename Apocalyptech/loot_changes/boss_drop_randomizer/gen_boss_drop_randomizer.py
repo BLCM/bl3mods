@@ -38,7 +38,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
             "so you get as interesting as possible drops.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.2.0',
         cats='enemy-drops',
         )
 
@@ -176,6 +176,9 @@ for (label, char_name, pools) in sorted([
         ('Dinklebot', 'BPChar_OversphereRare01', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns', [None, SG, AR]),
             ]),
+        ('Dr. Benedict', 'BPChar_DrBenedict', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict', [SG, CM, SH]),
+            ]),
         ('Dreg / Rage', 'BPChar_Rakk_Dragon', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DregAndRage', [GM, HW]),
             ]),
@@ -191,6 +194,15 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Empowered Scholar', 'BPChar_MinionPossessed', [
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift', [SH]),
+            ]),
+        ('Evil Brick', 'BPChar_DarkBrick', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkBrick', [AR]),
+            ]),
+        ('Evil Lilith', 'BPChar_DarkLilith', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith', [SM, PS, CM]),
+            ]),
+        ('Evil Mordecai', 'BPChar_DarkMordecai', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai', [SR, CM]),
             ]),
         ('Evil St. Lawrence', 'BPChar_EnforcerBadass_Lawrence', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence', [SM]),
@@ -336,6 +348,9 @@ for (label, char_name, pools) in sorted([
         ('Loco Chantelle', 'BPChar_GoonBadass_Coco', [
             ('/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_GoatEater', [HW]),
             ]),
+        ('Locomöbius', 'BPChar_TrainBoss', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train', [SG, CM, SH]),
+            ]),
         ('Lt. Preston', 'BPChar_HeavyFootstepsOfGiants', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_LtPreston', [CM, PS]),
             ]),
@@ -398,6 +413,9 @@ for (label, char_name, pools) in sorted([
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_ElectricBanjo_GoreGirls', [AF]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_ElectricBanjo_GoreGirls', [PS, AR]),
             ]),
+        ('Psychoreaver', 'BPChar_PsychodinP2', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin', [HW, AR]),
+            ]),
         ('Queen Ant Wanette', 'BPChar_SpiderantCakeRoyalty', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_QueenAntWanette', [SH, AR]),
             ]),
@@ -457,6 +475,9 @@ for (label, char_name, pools) in sorted([
         ('Sloth', 'BPChar_Goon_Rare01', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_Piss_ThunkandSloth', [GM]),
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Piss_ThunkandSloth', [HW]),
+            ]),
+        ('SpongeBoss BulletPants', 'BPChar_SpongeBoss', [
+            ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Sponge', [SM]),
             ]),
         ('Sylestro', 'BPChar_Heavy_Bounty01', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro', [CM]),
@@ -657,6 +678,21 @@ for (label, char_name, pools) in sorted([
                         'BalancedItems.BalancedItems[{}].ItemPoolData'.format(idx),
                         leg_pools[drop_type])
     mod.newline()
+
+mod.comment('Special-case for Heavyweight Harker, in Stormblind Complex (also randomizes other enemies there)')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_FrontRider_Rider',
+        '/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary',
+        'BalancedItems',
+        """(
+            (
+                ItemPoolData={},
+                Weight={}
+            )
+        )""".format(
+            Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', 'ItemPoolData'),
+            BVC(bvc=1),
+            ))
+mod.newline()
 
 mod.comment('Remove partlock attempt for Anointed Alpha drop')
 mod.reg_hotfix(Mod.CHAR, 'BPChar_AnointedJoe',

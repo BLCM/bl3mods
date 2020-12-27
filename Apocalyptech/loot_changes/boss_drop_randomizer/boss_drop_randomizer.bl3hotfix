@@ -1,6 +1,6 @@
 ###
 ### Name: Boss Drop Randomizer
-### Version: 1.0.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -354,6 +354,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/GameData/Loot/It
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/GameData/Loot/ItemPools/Unique/ItemPool_LootOGram_ConvertedToGuns.ItemPool_LootOGram_ConvertedToGuns,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
+# Dr. Benedict
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
 # Dreg / Rage
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_Dragon),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DregAndRage.ItemPool_DregAndRage,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rakk_Dragon),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DregAndRage.ItemPool_DregAndRage,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -384,6 +395,30 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Game/PatchDLC/Hibiscu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_VoidRift.ItemPool_Hibiscus_VoidRift,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
+# Evil Brick
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkBrick.ItemPool_Alisma_Legendary_Dedicate_DarkBrick,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkBrick.ItemPool_Alisma_Legendary_Dedicate_DarkBrick,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkBrick.ItemPool_Alisma_Legendary_Dedicate_DarkBrick,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
+# Evil Lilith
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkLilith.ItemPool_Alisma_Legendary_Dedicate_DarkLilith,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+
+# Evil Mordecai
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_DarkMordecai.ItemPool_Alisma_Legendary_Dedicate_DarkMordecai,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
 
 # Evil St. Lawrence
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerBadass_Lawrence),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_StLawrence.ItemPool_StLawrence,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -832,6 +867,17 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GoonBadass_Coco),/Game/PatchDLC/Dandelio
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GoonBadass_Coco),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_GoatEater.ItemPool_GoatEater,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GoonBadass_Coco),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_GoatEater.ItemPool_GoatEater,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
 
+# Locomöbius
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train.ItemPool_Alisma_Legendary_Dedicate_Train,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
+
 # Lt. Preston
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyFootstepsOfGiants),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_LtPreston.ItemPool_LtPreston,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HeavyFootstepsOfGiants),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_LtPreston.ItemPool_LtPreston,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -1016,6 +1062,14 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01a),/Game/PatchDLC/Raid1/Gam
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01a),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_ElectricBanjo_GoreGirls.ItemPoolExpansion_ElectricBanjo_GoreGirls,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_Bounty01a),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_ElectricBanjo_GoreGirls.ItemPoolExpansion_ElectricBanjo_GoreGirls,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
 
+# Psychoreaver
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[1].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[1].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Psychodin.ItemPool_Alisma_Legendary_Dedicate_Psychodin,BalancedItems.BalancedItems[1].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary"'
+
 # Pterodomini
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerRakkRod),/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/ItemPool_GerRakkRod.ItemPool_GerRakkRod,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerRakkRod),/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/ItemPool_GerRakkRod.ItemPool_GerRakkRod,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
@@ -1196,6 +1250,11 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/GameData/Loot/ItemPoo
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Piss_ThunkandSloth.ItemPoolExpansion_Piss_ThunkandSloth,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Piss_ThunkandSloth.ItemPoolExpansion_Piss_ThunkandSloth,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_Rare01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Piss_ThunkandSloth.ItemPoolExpansion_Piss_ThunkandSloth,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
+
+# SpongeBoss BulletPants
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Sponge.ItemPool_Alisma_Legendary_Dedicate_Sponge,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Sponge.ItemPool_Alisma_Legendary_Dedicate_Sponge,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Sponge.ItemPool_Alisma_Legendary_Dedicate_Sponge,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"'
 
 # Sylestro
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Bounty01),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Sylvestro.ItemPool_Sylvestro,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
@@ -1536,6 +1595,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Yeti),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Hunt_Yeti.ItemPool_Hibiscus_Hunt_Yeti,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
+# Special-case for Heavyweight Harker, in Stormblind Complex (also randomizes other enemies there)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary.ItemPool_Ixora_Guns_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',Weight=(BaseValueConstant=1)))
 
 # Remove partlock attempt for Anointed Alpha drop
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AnointedJoe),/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/ItemPools/ItemPool_AnointedJoe.ItemPool_AnointedJoe,PartSelectionOverrides,0,,()

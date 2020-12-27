@@ -11,8 +11,16 @@ In cases where there's already an on-card explanation, I've tried to include
 "all effects on card" instead of a custom description, but there are a few
 cases where that could still be tweaked, so you'll have a double-description.
 
+This mod should be current up through DLC5 (Designer's Cut).
+
 Changelog
 =========
+
+**v1.2.0** - Nov 10, 2020
+ * Updated for DLC5 (Designer's Cut) items.
+
+**v1.1.0** - Sep 29, 2020
+ * Updated for DLC4 (Psycho Krieg) items.
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

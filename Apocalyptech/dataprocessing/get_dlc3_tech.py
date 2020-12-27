@@ -1,0 +1,139 @@
+#!/usr/bin/python3
+# vim: set expandtab tabstop=4 shiftwidth=4:
+
+import re
+import os
+import lzma
+
+# Extracts the object names we use for our Unlock DLC3 Tech mod, which lets us
+# use all the fancy "company" tech before it's been officially unlocked.
+
+# Base dir
+base_dir = '/home/pez/bl3_steam_root/OakGame/Binaries/Win64/data/dlc3'
+
+# Output file
+out_file = 'dlc3_tech.out'
+
+# regular expressions
+cond_re = re.compile(r' MissionEnableConditionObjective (?P<level_name>.+)\.(?P<obj_name>PersistentLevel\.IO_(Geranium.*_\d+|Digiline_.*))\.(?P<attr_name>Cond_.*)')
+level_re = re.compile(r'^(?P<base_level>\w*?)_\w+?\.')
+num_re = re.compile(r'(?P<base_obj>.*)_(?P<number>\d+)$')
+
+# Level excluders - you're guaranteed to have certain unlocks by the
+# time you get to certain levels, so let's not waste mod space by including
+# 'em.
+CORESPLODER = 'Coresploders'
+TRAITOR = 'Traitorweed'
+TELEZAP = 'Telezappers'
+excluders = {
+        CORESPLODER: set([
+            # You get this pretty early on in Lodge_P, but technically there's
+            # one or two that you run into before getting it, so we'll leave it.
+            'Forest_P',
+            'Facility_P',
+            'CraterBoss_P',
+            ]),
+        TRAITOR: set([
+            # This is picked up in Forest_P
+            'Facility_P',
+            'CraterBoss_P',
+            ]),
+        TELEZAP: set([
+            # This is picked up after Forest_P (technically while in
+            # Frontier_P)
+            'Facility_P',
+            'CraterBoss_P',
+            ]),
+        }
+
+# Compute levels to skip entirely.  (Coding this is probably taking more time
+# than just letting them process, but ehhh....)
+level_counts = {}
+for vals in excluders.values():
+    for val in vals:
+        if val not in level_counts:
+            level_counts[val] = 1
+        else:
+            level_counts[val] += 1
+total_excluders = set()
+for level_name, count in level_counts.items():
+    if count == len(excluders):
+        total_excluders.add(level_name)
+
+# Process
+data = {}
+for level in sorted(os.listdir(base_dir)):
+    full_level_dir = os.path.join(base_dir, level)
+    if os.path.isdir(full_level_dir):
+        if level in total_excluders:
+            print('Skipping {} (nothing to do in there)'.format(level))
+            continue
+        print('Processing {}...'.format(level))
+        objects_file = os.path.join(full_level_dir, 'UE4Tools_ObjectsDump.txt.xz')
+        if os.path.exists(objects_file):
+            with lzma.open(objects_file, 'rt', encoding='utf-8') as df:
+                for line in df:
+                    match = cond_re.search(line)
+                    if match:
+                        level_match = level_re.search(match.group('level_name'))
+                        if not level_match:
+                            raise Exception('level_re not matched: {}'.format(match.group('level_name')))
+                        base_level = level_match.group('base_level')
+                        num_match = num_re.search(match.group('obj_name'))
+                        if num_match:
+                            dump_num = int(num_match.group('number'))
+                            obj_real = '{}_{}'.format(num_match.group('base_obj'), dump_num-1)
+                        else:
+                            obj_real = match.group('obj_name')
+                        obj_full = '/Geranium/Maps/{}/{}:{}'.format(
+                                level_match.group('base_level'),
+                                match.group('level_name'),
+                                obj_real,
+                                )
+
+                        # If it's a mission-related object, leave it alone.  The game doesn't let
+                        # them get activated ahead of time anyway, so it'll save a bit of mod size.
+                        if '_M_' in obj_full:
+                            continue
+
+                        # Set up a label
+                        if 'Rocksploder' in obj_full:
+                            label = CORESPLODER
+                        elif 'Taming' in obj_full:
+                            label = TRAITOR
+                        else:
+                            label = TELEZAP
+
+                        # Skip anything in our excluders
+                        level_ref = '{}_P'.format(base_level)
+                        if level_ref in excluders[label]:
+                            continue
+
+                        # Create the top-level category if need be
+                        attr_name = (label, match.group('attr_name'))
+                        if attr_name not in data:
+                            data[attr_name] = {}
+
+                        # Store the object
+                        if level_ref not in data[attr_name]:
+                            data[attr_name][level_ref] = []
+
+                        data[attr_name][level_ref].append(obj_full)
+        else:
+            raise Exception('objects not found for {}'.format(level))
+
+with open(out_file, 'w') as df:
+    print('# Generated by get_dlc3_tech.py, in dataprocessing dir', file=df)
+    print('for attr_label, attr_name, data in [', file=df)
+    for (label, key), vals in data.items():
+        print("        ('{}', '{}', [".format(label, key), file=df)
+        for level, objects in vals.items():
+            print("            ('{}', [".format(level), file=df)
+            for obj_name in sorted(objects):
+                print("                '{}',".format(obj_name), file=df)
+            print('                ]),', file=df)
+        print('            ]),', file=df)
+    print('        ]:', file=df)
+
+print('Wrote to {}'.format(out_file))
+

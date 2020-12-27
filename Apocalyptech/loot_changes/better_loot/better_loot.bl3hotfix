@@ -1,8 +1,8 @@
 ###
 ### Name: BL3 Better Loot
-### Version: 1.0.0
+### Version: 1.2.1
 ### Author: Apocalyptech
-### Categories: enemy-drops
+### Categories: enemy-drops, loot-system
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -55,6 +55,7 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/GameData/Loo
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/ItemPools/ItemPoolList_StandardEnemyGunsandGearLoader.ItemPoolList_StandardEnemyGunsandGearLoader,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium.ItemPoolList_StandardEnemyGunsandGear_Geranium,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma.ItemPoolList_StandardEnemyGunsandGear_Alisma,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Eridium Drop Quantity Buffs
@@ -153,6 +154,15 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Game/PatchDLC/Geranium/Game
 
 # DLC3 Bosses
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_Boss_Geranium.ItemPoolList_Boss_Geranium,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+
+# DLC4 Bosses
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
 
 # Slaughters
 SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/GameData/Loot/ItemPools/ItemPoolList_SlaughterMoney.ItemPoolList_SlaughterMoney,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,5
@@ -1203,11 +1213,46 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
+# Locomöbius
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss.BPChar_TrainBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss.BPChar_TrainBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Psychoreaver - Weapons
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Psychoreaver - Room Deco
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/PsychodinP2/Design/Character/BPChar_PsychodinP2.BPChar_PsychodinP2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Mordecai
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character/BPChar_DarkMordecai.BPChar_DarkMordecai_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Character/BPChar_DarkMordecai.BPChar_DarkMordecai_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Brick
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character/BPChar_DarkBrick.BPChar_DarkBrick_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Character/BPChar_DarkBrick.BPChar_DarkBrick_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Evil Lilith
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character/BPChar_DarkLilith.BPChar_DarkLilith_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Character/BPChar_DarkLilith.BPChar_DarkLilith_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# SpongeBoss BulletPants
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss.BPChar_SpongeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss.BPChar_SpongeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Dr. Benedict
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict.BPChar_DrBenedict_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict.BPChar_DrBenedict_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
 # Pain
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Terror),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Terror.ItemPoolList_Boss_Terror,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Terror
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/GameData/Loot/ItemPools/ItemPoolList_Boss_Pain.ItemPoolList_Boss_Pain,ItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Heavyweight Harker
+SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Enemy/ItemPoolList_GearUp_FinalBoss.ItemPoolList_GearUp_FinalBoss,ItemPools.ItemPools[6].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Drop rate normalization
@@ -1341,6 +1386,35 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_UpperHalf),/Game/PatchDLC/Raid1/GameData
 
 # Maliwan Takedown Valkyrie Squad Pool
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool,BalancedItems[4].Weight,0,,(BaseValueConstant=2,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+###
+### DLC5 (Designer's Cut) Area Challenge Chest Legendary Chances
+###
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,CreatureSewers,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,CreatureSewers,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,CreatureSewers,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,WaterWorks,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,WaterWorks,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,WaterWorks,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Thunderdome,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Thunderdome,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Thunderdome,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Dam,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Dam,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Dam,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,HQ,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,HQ,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,HQ,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Industry,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Industry,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Industry,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Spaceport,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Spaceport,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Spaceport,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Silo,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Silo,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,0.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Silo,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,0.5
 
 ###
 ### Guaranteed Anointments

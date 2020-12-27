@@ -6,7 +6,7 @@ customization is as likely to drop as any other.  It also increases the
 customization drop rate, though that can be overridden with my Customization
 Drop Rate (make sure to include that *after* this mod, if you're using both).
 
-There are a few versions of this mod, depending on waht you want.  All versions
+There are a few versions of this mod, depending on what you want.  All versions
 omit the customziations you get from preorders, deluxe editions, and paid DLC,
 since those customizations aren't at all useful as drops (if you own the DLC,
 you already have them, and if you don't own the DLC, the dropped cosmetics can't
@@ -30,6 +30,15 @@ TODO
 
 Changelog
 =========
+
+**v1.2.0** - Nov 10, 2020
+ * Updated for DLC5 (Designer's Cut) Cosmetics
+
+**v1.1.1** - Sep 29, 2020
+ * Updated with the Bloody Harvest 2020 weapon skin, Porphyrophobia
+
+**v1.1.0** - Sep 29, 2020
+ * Updated for DLC4 Cosmetics
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

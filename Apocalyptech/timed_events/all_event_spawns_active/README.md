@@ -8,8 +8,7 @@ appearing alongside each other.  It *is* possible for an enemy to be both
 haunted *and* a Cartel operative!
 
 This mod does not require that the associated events be actually active, and
-doesn't unlock the missions themselves.  (Use my Timed Event Enable mods for
-that.)
+it does *not* unlock the missions themselves (or the event-specific maps).
 
 Note that each of the timed events have a predefined set of areas in which
 their effects are allowed to spawn.  No DLCs or Takedown areas will spawn

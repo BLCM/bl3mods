@@ -1,10 +1,12 @@
-from bl3hotfixmod import Mod, Balance
-from bl3data import BL3Data
+import sys
+sys.path.append('../../python_mod_helpers')
+from bl3hotfixmod.bl3hotfixmod import Mod, Balance
+from bl3data.bl3data import BL3Data
 
 # Finally better randomize some items (looking at you COMs and Artifacts)
 # Had to remove randomization of weapon materials in order to play with other randomizers
 
-mod=Mod('randomizer_runtime.bl3hotfix',
+mod=Mod('randomizer_runtime.bl3hotfix.gz',
 'Runtime Randomizer',
 'SSpyR',
 [

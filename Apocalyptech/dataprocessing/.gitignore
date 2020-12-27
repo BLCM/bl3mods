@@ -1,0 +1,10 @@
+bl3data
+bl3hotfixmod
+extracted
+*.csv
+*.csv.bak
+*.txt
+*.txt.bak
+*.json
+*.json.xz
+dlc3_tech.out

@@ -21,6 +21,7 @@
 
 import sys
 sys.path.append('../../../python_mod_helpers')
+from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 # Player characters (and related)
@@ -71,6 +72,24 @@ with open('gen_sizemod_data.txt') as df:
         if obj_ref not in pcs:
             bpchars.append(obj_ref)
 
+# Check to see if we have a "base" scaling to begin with, since
+# we can now serialize BPChars for the most part
+base_scale = {}
+print('Gathering scaling info from data, this might take a bit...')
+data = BL3Data()
+for bpchar in bpchars:
+    base_scale[bpchar] = 1
+    exports = data.get_exports(bpchar, 'GbxSkeletalMeshComponent')
+    if exports:
+        mesh = exports[0]
+        if 'RelativeScale3D' in mesh:
+            # We're assuming that each value here is equal, which seems to
+            # actually be the case, so that's not an awful assumption
+            base_scale[bpchar] = mesh['RelativeScale3D']['x']
+            #x = mesh['RelativeScale3D']['x']
+            #if x != 1:
+            #    print('{}: scaling is {}'.format(bpchar, x))
+
 # Now generate
 for label, scale in [
         ('Tiny', 0.4),
@@ -92,14 +111,14 @@ for label, scale in [
                 "remain unscaled.  Let me know if anything really game-breaking happens!",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.2.0',
             cats='enemy, joke',
             ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
             )
     for bpchar in bpchars:
 
         # Check our scaling for min/max on a per-char basis
-        this_scale = scale
+        this_scale = scale*base_scale[bpchar]
         if bpchar in scale_limits:
             scale_min, scale_max = scale_limits[bpchar]
             if scale_max is not None and scale > scale_max:
@@ -112,7 +131,7 @@ for label, scale in [
         mod.reg_hotfix(Mod.CHAR, last_bit,
                 '{}.Default__{}_C:CharacterMesh0'.format(bpchar, last_bit),
                 'RelativeScale3D',
-                f'(X={this_scale},Y={this_scale},Z={this_scale})')
+                f'(X={this_scale:g},Y={this_scale:g},Z={this_scale:g})')
     mod.close()
 
     # Doesn't seem to work, will play around with it later.
