@@ -3,12 +3,15 @@
 ###
 ### This file is used with the mitmproxy-based hotfix injection system
 ### available at https://github.com/apocalyptech/bl3hotfixmodding
-### At the moment, this is the only publicly-available BL3 hotfix
-### modding mechanism, though more are forthcoming.  Other solutions
-### are unlikely to use this file format, so if you're not using
-### mitmproxy, you can feel free to ignore this entirely.
+### 
+### This is the only method of BL3 Modding that's available to Linux
+### users, but Windows users will probably be better off using
+### c0dycode's B3HM project, which does *not* use this file at all.
+### Information on that can be found at:
 ###
-### File syntax:
+###     http://borderlandsmodding.com/bl3-running-mods/
+###
+### For any Linux users out there, though, here's the file syntax:
 ###
 ### Any line with a # in front of it is ignored, so you can use those
 ### to comment the file however you like.  (There is nothing special
