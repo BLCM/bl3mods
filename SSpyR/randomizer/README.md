@@ -5,7 +5,8 @@ If you are looking for the Enemy and Skill Randomizer mods then those are being 
 
 (Now there are two!)
 
-See Link(s) to Said Repo(s): 
+See Link(s) to Said Repo(s):
+
 https://github.com/SSpyR/RandomizerPackage/releases
 
 https://github.com/HackerSmacker/BL3GenRandomizer
