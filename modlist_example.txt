@@ -77,14 +77,3 @@ Apocalyptech/gear_changes/all_weapons_can_anoint/all_weapons_can_anoint.bl3hotfi
 # Only get COMs/Skins/Heads/Anoints for chars actively in the game
 Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.bl3hotfix
 
-###
-### Timed Event mods - notice that these are commented out!  You can
-### enable them just by removing the hash mark (#) in front of the
-### filenames.
-###
-
-# Only one of these can be active at the same time
-#Apocalyptech/timed_events/timed_event_enable/bloody_harvest_enable.bl3hotfix
-#Apocalyptech/timed_events/timed_event_enable/broken_hearts_enable.bl3hotfix
-#Apocalyptech/timed_events/timed_event_enable/cartels_enable.bl3hotfix
-
