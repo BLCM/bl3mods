@@ -5,6 +5,8 @@ If you are looking for the Enemy and Skill Randomizer mods then those are being 
 
 (Now there are two!)
 
+(Now the exe for the python version can be found in this repo! See randomizer.exe!)
+
 (Note: If you wish to generate a skill randomizer without 4th Skill Tree, currently only HackerSmacker's program will suffice)
 
 See Link(s) to Said Repo(s):
