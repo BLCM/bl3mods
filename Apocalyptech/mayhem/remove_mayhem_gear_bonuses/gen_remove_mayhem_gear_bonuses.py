@@ -24,7 +24,7 @@ sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('remove_mayhem_gear_bonuses.bl3hotfix',
-        'Remove Mayhem gear Bonuses',
+        'Remove Mayhem Gear Bonuses',
         'Apocalyptech',
         [
             "Removes the bonuses applied by Mayhem parts on your gear, so they",
