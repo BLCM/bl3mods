@@ -16,6 +16,8 @@ See the individual mod folders for full READMEs.
   be less difficult.
 - **No Mayhem Drop Scaling** - Ordinarily, higher mayhem levels makes drop quality
   improve; this gets rid of that scaling altogether.
+- **Remove Mayhem Gear Bonuses** - Gets rid of the bonuses usually applied by having
+  a Mayhem part on a piece of gear.
 - **Slayer Modifier Booster Change** - Changes the boosters dropped by the
   "Slayer" modifier to be health regen or damage reduction, instead of
   shield boosters.
