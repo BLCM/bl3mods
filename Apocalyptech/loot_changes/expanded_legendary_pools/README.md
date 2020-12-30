@@ -35,6 +35,11 @@ added into the loot pool properly.
 Changelog
 =========
 
+**v1.2.2** - Dec 30, 2020
+ * Decreased drop probability of the DLC5-added (not not legitimately-acquireable)
+   "Mysterious Amulet", since some investigation showed that it doesn't seem to
+   actually have any in-game effects yet.
+
 **v1.2.1** - Nov 23, 2020
  * Updated with Provocateur COM mod compatibility
 
