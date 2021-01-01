@@ -6,18 +6,12 @@ health/shield/armor scaling in Mahem modes by a fairly huge amount.  I actually
 do like the Mayhem modifiers themselves but hate bullet-sponginess, so this
 brings them down to a level I actually enjoy.
 
-One thing I *do* want to do in here, as well, is decrease the effectiveness
-of Mayhem-enhanced guns, because M10 weapons against M10 enemies while using
-this mod are rather too effective.
+Gear with Mayhem parts attached will end up being quite OP with this mod -- I'd
+recommend the use of something like my Remove Mayhem Gear Bonuses mod, to
+counteract that.
 
 This mod isn't compatible with my Mayhem Level Cheats mod, since they both
 touch the same vars.
-
-TODO
-====
-
-- As mentioned above, I'd like this to also decrease the effectiveness of
-  Mayhem-optimized guns.
 
 Changelog
 =========

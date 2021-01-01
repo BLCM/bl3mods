@@ -60,7 +60,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'at a reduced rate compared to the legendaries already in there.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.1',
+        v='1.2.2',
         cats='loot-system, enemy-drops',
         )
 
@@ -1290,8 +1290,8 @@ pools = [
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/Balance/InvBalD_Artifact_Deathrattle', 1),
                 # Holy Grail / Perceval's Holy Grail / King Arthur's Holy Grail
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Balance/InvBalD_Artifact_HolyGrail', 1),
-                # Mysterious Amulet
-                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet', 1*addition_scale),
+                # Mysterious Amulet (appears to legit have no in-game effects at the moment; bumping probability down)
+                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet', 0.2*addition_scale),
 
                 ### Additions
 

@@ -175,9 +175,6 @@ programmatic access to BL3 data, so long as you have it set up properly.  There
 are two data sources the package can draw from:
 
 1. Extracted BL3 data, using the technique [described by the BLCMods wiki](https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data#extracting-raw-datafiles).
-   This will require that you run the extra script linked to by that page, so
-   that the object files exist in the same directory structure that they live
-   at while in-engine.
 2. [The BL3 References database](http://apocalyptech.com/games/bl3-refs/) - the
    online version links to a MySQL/MariaDB database dump, which you'll have to
    import into your own MySQL/MariaDB database in order to use.  Alternatively,

@@ -8,19 +8,11 @@ overrides the modifier selection set so that each level chooses 2 Easy modifiers
 1 Hard modifier.
 
 Basically the only difference between Mayhem levels will be how strong you want your
-guns to be.  I actually just play on Mayhem 1 when using this, because Mayhem 10-infused
-guns are just too strong against the enemies otherwise.
+guns to be.  If you want to be able to use gear that has high Mayhem parts, without
+them being too OP, check out my Remove Mayhem Gear Bonuses mod.
 
 This mod isn't compatible with Decreased Mayhem Enemy Scaling, since they both touch
-the same vars.  Like in that mod, one thing I would like to look into is decreasing the
-effectiveness of Mayhem-enhanced guns, to address the imbalance if you take M10 guns
-in against the enemies here.
-
-TODO
-====
-
-- As mentioned above, I'd like this to also decrease the effectiveness of
-  Mayhem-optimized guns.
+the same vars.
 
 Changelog
 =========
