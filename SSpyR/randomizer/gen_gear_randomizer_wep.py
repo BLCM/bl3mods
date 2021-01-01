@@ -11,7 +11,7 @@ mod=Mod('gear_randomizer_wep.bl3hotfix.gz',
     ''
 ],
 lic=Mod.CC_BY_SA_40,
-cats='gear-general'
+cats='gear-general, randomizer'
 )
 
 data=BL3Data()
