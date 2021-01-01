@@ -39,7 +39,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
         ],
         lic=Mod.CC_BY_SA_40,
         v='1.2.0',
-        cats='enemy-drops',
+        cats='enemy-drops, randomizer',
         )
 
 # There are various ways to accomplish this, and of course I go for a
