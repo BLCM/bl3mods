@@ -193,6 +193,9 @@ don't look at these thinking that they're any good.  :)
   "structure" as the vanilla tree.  You could swap skills around all you like
   (while making sure that the max-points and icon vars are moved too) but you
   wouldn't be able to rearrange the tree at will.
+- `instant_guardian_takedown_crystals.txt` - A small little attempt to speed up
+  the crystals you have to guard for awhile in the Guardian Takedown.  I think
+  dynamic blueprinty stuff gets in the way of being able to set these vars.
 
 Licenses
 ========
