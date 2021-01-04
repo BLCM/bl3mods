@@ -36,6 +36,12 @@ since the rarity levels in there are pretty clearly engineered for specific
 effect.  This mod *does* increase the odds of legendary gear in the area-event
 reward chests, though, and increases the drop quantity for Heavyweight Harker.
 
+**Mod Compatibility Info:**
+
+This mod includes the functionality in my "Unlock Mayhem-Specific Drops" mod,
+so there's no reason to use both together (though it shouldn't hurt anything
+if you do).
+
 Changelog
 =========
 

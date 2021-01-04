@@ -80,6 +80,8 @@ of the mods you'll find in here, though:
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **Unlock Mayhem-Specific Drops** - Removes the Mayhem level restriction for drops which
+  ordinarily require Mayhem 4 or Mayhem 6.
 - **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary
   COMs from the Designer's Cut DLC into the world drop pools.
 
