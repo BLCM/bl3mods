@@ -1,0 +1,20 @@
+###
+### Name: Loot the Universe COMs to Slaughter Shaft
+### Version: 1.0.0
+### Author: Litch, with help from Apocalyptech, c0dycode, SSpyR and EpicNNG
+### Categories: enemy-drops
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+### Essentially adds class mods to drop from Slaughter Shaft
+### from any enemy, also increases drop chance for them to drop
+
+### Currently this is version 1, it will only drop base game classmods
+### i am looking into getting dlc ones too, but that will wait for version 2
+
+# Mandatory lines to make sure the items dont spawn in other areas
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Common.ItemPool_Guns_Common"',Weight=(BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_01_Common.Att_RarityWeight_01_Common"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Uncommon.ItemPool_Guns_Uncommon"',Weight=(BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon.Att_RarityWeight_02_Uncommon"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Rare.ItemPool_Guns_Rare"',Weight=(BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare.Att_RarityWeight_03_Rare"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',Weight=(BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare.Att_RarityWeight_04_VeryRare"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',Weight=(BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary"')))
+
+# Changes Class mods to drop from all enemies within Slaughter Shaft
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_All.ItemPool_Guns_All,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary.ItemPool_ClassMods_05_Legendary"',Weight=(BaseValueConstant=20.0,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary"')))
