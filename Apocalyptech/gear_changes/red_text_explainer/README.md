@@ -16,6 +16,10 @@ This mod should be current up through DLC5 (Designer's Cut).
 Changelog
 =========
 
+**v1.3.0** - *(unreleased)*
+ * Added internationalization/translation ability to sourcecode
+ * Added French translation, thanks to (name)
+
 **v1.2.0** - Nov 10, 2020
  * Updated for DLC5 (Designer's Cut) items.
 
