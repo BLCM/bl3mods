@@ -18,5 +18,5 @@
 #40% damage increase
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,PS_Plumber,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.4
 
-#fully automatic
+#Fully automatic
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Plumber/Parts/Part_PS_MAL_Barrel_Plumber.Part_PS_MAL_Barrel_Plumber,AspectList.AspectList[0].Object..WeaponUseComponent.Object..AutomaticBurstCount.BaseValue,0,,0.0
