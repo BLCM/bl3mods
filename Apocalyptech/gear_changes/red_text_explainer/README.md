@@ -18,6 +18,8 @@ translations pretty easily.  If you want to contribute a translation to this
 mod, [grab a copy of the master translation template](https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/locales/base.pot),
 fill in translations on the `msgstr` lines in there, and send it my way.  Be
 sure to put in your name/username/handle as a translated string in there.
+(You are also, of course, welcome to just upload your own translated version
+of this mod, if you don't want to bother with all that.)
 
 Changelog
 =========
