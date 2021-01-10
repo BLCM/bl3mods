@@ -975,7 +975,8 @@ artifact_balances = [
         ]
 
 # Anointments which have been removed from the spawn pool, as of the 2020-07-23 update.
-# The anointments still *exist*, but no new dropped gear will have them.
+# The anointments still *exist*, but no new dropped gear will have them, since a
+# hotfix sets their MinGameStage to 100.
 anointment_exclusions = {
         '/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_AccuracyHandling/GPart_All_SkillEnd_AccuracyHandling',
         '/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/GPart_All_SkillEnd_CritDamage',
