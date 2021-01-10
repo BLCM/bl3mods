@@ -615,6 +615,8 @@ class BL3Data(object):
                     '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Grenades_Event2',
                     '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Shields_Event2',
                     '/Game/PatchDLC/Event2/Gear/_Design/_GearExtension/GParts/GPartExpansion_Weapons_Event2',
+                    # Designer's Cut expansion (yep, just weapons)
+                    '/Game/PatchDLC/Ixora/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Ixora',
                     # These objects do exist, but they don't actually add any parts, so whatever.
                     # The BloodyHarvest ones *do* add them, but only during the event, so we're ignoring
                     # those too.
@@ -627,13 +629,16 @@ class BL3Data(object):
                     #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Hibiscus',
                     #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Shields_Hibiscus',
                     #'/Game/PatchDLC/Hibiscus/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Hibiscus',
+                    #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Geranium',
+                    #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Shields_Geranium',
+                    #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Geranium',
                     ]:
 
                 # Construct a list of anointments which this GPartExpansion provides
                 extra_anoints = []
                 expansion_data = self.get_exports(expansion_name, 'InventoryGenericPartExpansionData')[0]
                 for part in expansion_data['GenericParts']['Parts']:
-                    extra_anoints.append(part['PartData'][1])
+                    extra_anoints.append((part['PartData'][1], BVC.from_data_struct(part['Weight'])))
 
                 # Grab a list of balance collections which define the gear this expansion acts on.
                 bal_collections = [expansion_data['InventoryBalanceCollection'][1]]

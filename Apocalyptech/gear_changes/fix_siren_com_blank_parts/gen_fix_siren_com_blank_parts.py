@@ -23,7 +23,7 @@ import sys
 import collections
 sys.path.append('../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
-from bl3hotfixmod.bl3hotfixmod import Mod, BVCF
+from bl3hotfixmod.bl3hotfixmod import Mod, BVCF, Balance
 
 mod = Mod('fix_siren_com_blank_parts.bl3hotfix',
         'Fix Siren COM Blank Parts',
@@ -35,7 +35,7 @@ mod = Mod('fix_siren_com_blank_parts.bl3hotfix',
             "empty part can never be chosen.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.1.1',
         cats='gear-com, bugfix',
         )
 
@@ -44,51 +44,56 @@ data = BL3Data()
 # I suppose that we could use data introspection to find the None parts -- we're
 # even loading the balance to find the partset.  But whatever, I've already
 # hardcoded the empty part indicies.
-for bal_name, part_idx in [
+for bal_name in [
 
         # Base game COMs
-        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_01_Common', 81),
-        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_02_Uncommon', 81),
-        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_03_Rare', 81),
-        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_04_VeryRare', 81),
-        ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_05_Legendary', 76),
+        '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_01_Common',
+        '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_02_Uncommon',
+        '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_03_Rare',
+        '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_04_VeryRare',
+        '/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_05_Legendary',
 
         # Trials Dedicated COM sources
-        ('/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker', 72),
-        ('/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon', 72),
-        ('/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist', 72),
-        ('/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus', 72),
-        ('/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker', 72),
+        '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker',
+        '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon',
+        '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist',
+        '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus',
+        '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker',
 
         # Maliwan Takedown COM
-        ('/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_Raid1', 72),
+        '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_Raid1',
 
         # DLCs
-        ('/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1', 72),
-        ('/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib', 72),
-        ('/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma', 73),
+        '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1',
+        '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib',
+        '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma',
         ]:
 
-    # Set the `None` weight to zero
-    mod.reg_hotfix(Mod.PATCH, '',
-            bal_name,
-            'RuntimePartList.AllParts.AllParts[{}].Weight'.format(part_idx),
-            BVCF(bvc=0))
+    bal = Balance.from_data(data, bal_name)
 
-    # Find the category index and partset name to make sure that it's using the weight.
-    bal_obj = data.get_data(bal_name)[0]
-    partset_name = bal_obj['PartSetData'][1]
-    cat_idx = 0
-    for idx, toc in enumerate(bal_obj['RuntimePartList']['PartTypeTOC']):
-        if toc['StartIndex'] > part_idx:
+    found_part = False
+    part_idx = 0
+    for cat in bal.categories:
+        for part in cat.partlist:
+            # Our PRIMARY part will always be category index 3
+            if cat.index == 3 and part.part_name == 'None':
+                # Set the weight of the `None` part to zero
+                mod.reg_hotfix(Mod.PATCH, '',
+                        bal_name,
+                        'RuntimePartList.AllParts.AllParts[{}].Weight'.format(part_idx),
+                        BVCF(bvc=0))
+
+                # Make sure we're using weights
+                mod.reg_hotfix(Mod.PATCH, '',
+                        bal.partset_name,
+                        'ActorPartLists.ActorPartLists[{}].bUseWeightWithMultiplePartSelection'.format(cat.index),
+                        'True')
+
+                # Break out of the loop
+                found_part = True
+                break
+            part_idx += 1
+        if found_part:
             break
-        if toc['NumParts'] > 0:
-            cat_idx = idx
-
-    # Now do those updates
-    mod.reg_hotfix(Mod.PATCH, '',
-            partset_name,
-            'ActorPartLists.ActorPartLists[{}].bUseWeightWithMultiplePartSelection'.format(cat_idx),
-            'True')
 
 mod.close()
