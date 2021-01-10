@@ -565,6 +565,7 @@ class Part(object):
 
     def __init__(self, part_name, weight=1):
         self.part_name = part_name
+        self.short_name = part_name.split('/')[-1]
         if type(weight) == BVC or type(weight) == BVCF:
             self.weight = weight
         else:
@@ -714,6 +715,12 @@ class Balance(object):
     by the game.  We'll go ahead and generate those by default though, anyway,
     just so it matches the parts that are listed in the Balance.
 
+    This class *does* pull in information about the anointments for the balance
+    (in the `generics` attribute) but does NOT actually write out any data relating
+    to generics.  The attribute will be a list of tuples, the first element of
+    which is the path to the object where the anointment is coming from, and the
+    second of which is a list of `(part_name, weight)` tuples.
+
     Very arguably this should exist in bl3data instead of bl3hotfixmod...
     """
 
@@ -738,6 +745,7 @@ class Balance(object):
         self.partset_name = partset_name
         self.part_type_enum = part_type_enum
         self.categories = []
+        self.generics = []
         self.raw_bal_data = raw_bal_data
         self.raw_ps_data = raw_ps_data
 
@@ -783,6 +791,7 @@ class Balance(object):
         # Loop through the partset objects (note that we need to do the above list in reverse)
         # to grab parts by category, overwriting/appending where instructed to by the
         # PartSet object.
+        generics = [(bal_name, [])]
         partlists = []
         partset_name = None
         partset_obj = None
@@ -797,6 +806,51 @@ class Balance(object):
                 partset_mode = Balance.PS_MODE_MAPPING[partset_data['ActorPartReplacementMode']]
             else:
                 partset_mode = Balance.PS_MODE_DEFAULT
+
+            # Grab our "generic" parts (anointments, basically).  Some of the code here is duplicated
+            # below when processing part categories, alas.
+            if 'GenericParts' in partset_data and partset_data['GenericParts']:
+                category = partset_data['GenericParts']
+                if partset_mode == Balance.PS_MODE_COMPLETE:
+                    # First up: Complete
+                    if 'bEnabled' in category and category['bEnabled']:
+                        if 'Parts' in category:
+                            for part in category['Parts']:
+                                partdata = part['PartData']
+                                weight = BVC.from_data_struct(part['Weight'])
+                                if type(part['PartData']) == list:
+                                    generics[0][1].append((partdata[1], weight))
+                                else:
+                                    generics[0][1].append(('None', weight))
+
+                elif partset_mode == Balance.PS_MODE_ADDITIVE:
+                    # Next: Additive
+                    if 'bEnabled' in category and category['bEnabled']:
+                        if 'Parts' in category:
+                            for part in category['Parts']:
+                                partdata = part['PartData']
+                                weight = BVC.from_data_struct(part['Weight'])
+                                if type(part['PartData']) == list:
+                                    generics[0][1].append((partdata[1], weight))
+                                else:
+                                    generics[0][1].append(('None', weight))
+
+                elif partset_mode == Balance.PS_MODE_SELECTIVE:
+                    # Finally: Selective
+                    if 'bEnabled' in category and category['bEnabled']:
+                        generics = [(bal_name, [])]
+                        if 'Parts' in category:
+                            for part in category['Parts']:
+                                partdata = part['PartData']
+                                weight = BVC.from_data_struct(part['Weight'])
+                                if type(part['PartData']) == list:
+                                    generics[0][1].append((partdata[1], weight))
+                                else:
+                                    generics[0][1].append(('None', weight))
+
+                else:
+                    # Not sure how we'd ever get here...
+                    raise Exception('Unknown generics partset mode: {}'.format(partset_mode))
 
             # Loop through the APLs
             for idx, category in enumerate(partset_data['ActorPartLists']):
@@ -868,11 +922,17 @@ class Balance(object):
             part_type_enum = None
             #print('WARNING: No PartTypeEnum consensus for {}'.format(partset_name))
 
+        # If we have a BL3Data object to work with, find any extra anointments we'd be pulling in
+        generics.extend(data.get_extra_anoints(bal_name))
+
         # No reason not to create a Balance object now
         bal = Balance(bal_name, partset_name, part_type_enum,
                 raw_bal_data=bal_data,
                 raw_ps_data=partset_data,
                 )
+
+        # Populate the `generics` PartCategory inside the new Balance object
+        bal.generics = generics
 
         # Loop through our partlists and populate our objects
         for idx, (partlist, apl) in enumerate(zip(partlists, partset_data['ActorPartLists'])):

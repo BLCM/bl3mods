@@ -18,6 +18,15 @@ data (see the `python_mod_helpers` directory at the top of this repo).
 Changelog
 =========
 
+**v1.1.0** - Jan 10, 2021
+ * Improved accuracy of part lists, which fixes some off-by-one errors (mostly
+   just related to COMs)
+ * Allowed specifying ranges of parts to act on (using dashes), and specifying
+   multiple parts/ranges with commas
+ * Doesn't quit automatically after saving out to a file
+ * Use `d` to toggle showing dependencies/excluders
+ * Displays which Anointments no longer spawn when using GBX Hotfixes
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  
