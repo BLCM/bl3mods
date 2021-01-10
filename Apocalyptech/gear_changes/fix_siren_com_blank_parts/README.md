@@ -18,6 +18,11 @@ World Drop Ixora COMs.
 Changelog
 =========
 
+**v1.1.1** - Jan 10, 2021
+ * Fixed a bug that's been present since the June 25, 2020 BL3 patch
+   which added Action Skill Damage as a possible COM part -- this mod
+   had been zeroing out *that* part instead of the blank part.
+
 **v1.1.0** - Sep 26, 2020
  * Updated for DLC4 Siren COM
 
