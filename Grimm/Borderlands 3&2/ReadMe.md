@@ -7,7 +7,7 @@ This is a global balance and QoL mod, that has multiple versions that should ple
 
 ## GENERAL CHANGES
 
-This mod completely removes the anointed nemeies from the game, except the story ones you encounter that are needed.
+This mod completely removes the anointed enemies from the game, except the story ones you encounter that are needed.
 The CoV badasses will have Rocket launcher only 10% of the time, they will also use other guns.
 The Loot Enemies now appear about 5 times more often than normally.
 TVHM is now harder, and the elemental damage against the different types of health bars is changed.
