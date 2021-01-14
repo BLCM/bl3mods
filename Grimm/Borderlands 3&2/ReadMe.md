@@ -41,7 +41,8 @@ There are 5 Versions of this mod, that can be rougly regrouped in 3 categories :
 
  In this version, all mayhem levels will give the same xp, cash and world drop bonuses.
 
- With this version, the passive skills no longer get mayhem scaling (like fire in the skag den), and melee, action skill damage scaling is nerfed (but there is some still)
+ With this version, the passive skills no longer get mayhem scaling (like fire in the skag den), and melee, action skill damage scaling is nerfed (but there is some still).
+
  The Less World Drop version will also remove the mayhem world drop bonus. (dedicated drops are unaffected)
 
  - No Mayhem : No global damage boost.
@@ -52,7 +53,7 @@ There are 5 Versions of this mod, that can be rougly regrouped in 3 categories :
 
  In this version the mayhem levels have no scaling whatsoever, and the gear is the same for all the mayhem levels.
 
- he mayhem levels are modifiers only, which means you can play with the modifiers if you want without having a difficulty increase, and m11 is used to scale NVHM to your level if you don't want to go through TVHM.
+ The mayhem levels are modifiers only, which means you can play with the modifiers if you want without having a difficulty increase, and m11 is used to scale NVHM to your level if you don't want to go through TVHM.
 
  This is the version i recommend if you want to experience BL3 as if it was closer to BL2 and TPS.
 
