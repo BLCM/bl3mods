@@ -28,12 +28,12 @@ mod = Mod('remove_mayhem_gear_bonuses.bl3hotfix',
         'Apocalyptech',
         [
             "Removes the bonuses applied by Mayhem parts on your gear, so they",
-            "function just like gear without the Mayhem part applied.  The gear",
-            "*will* continue to display its Mayhem part on the item card, but",
-            "it won't have any effect so long as this mod is active."
+            "function just like gear without the Mayhem part applied.  Gear dropped",
+            "in Mayhem Mode will technically have a Mayhem part attached to it,",
+            "but the part will be nonfunctional and should not be shown on the card.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='mayhem, gear-general',
         )
 
@@ -52,6 +52,10 @@ for mayhem_level in range(1, 11):
             obj_name,
             'InventoryScoreModifier.BaseValueConstant',
             0)
+    mod.reg_hotfix(Mod.PATCH, '',
+            obj_name,
+            'UIStats',
+            '()')
     mod.newline()
 
 mod.close()
