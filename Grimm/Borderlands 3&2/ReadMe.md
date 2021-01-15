@@ -1,6 +1,14 @@
 Borderlands 3&2
 ===============
 
+## (IN)COMPATIBILITIES
+
+This mod is not compatible with Early Bloomer, since it already does the same thing. Running it will make anoints drop in your game even if they are removed with this mod.
+
+It is not compatible with any mod that changes the damage of guns and grenades.
+
+It is compatible however with mods that change the global scaling (like BL2 Scaling).
+
 ## MOD DESIGN
 
 This is a global balance and QoL mod, that has multiple versions that should please everyone.
