@@ -692,10 +692,17 @@ if True:
             ''
             )
             mod.newline()
-
+            
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_PrisonBadasses',
             'Options.Options[9].Factory.Object..AIActorClass',
+            ''
+            )
+            mod.newline()
+
+            mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
+            '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses',
+            'Options.Options[6].Factory.Object..AIActorClass',
             ''
             )
             mod.newline()
@@ -728,13 +735,6 @@ if True:
             )
             mod.newline()
 
-            mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
-            '/Game/NonPlayerCharacters/_Eden6/JakobsResistance/_Design/Spawning/SpawnOptions_AnointedEnforcer',
-            'Options.Options[0].Factory.Object..AIActorClass',
-            ''
-            )
-            mod.newline()
-        
         mod.comment('Removes the Anointed Goons')
         if True:
 
@@ -1899,7 +1899,7 @@ if True:
         health_damage,
         'AI_AdditionalHealthPerLevel',
         'Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86',
-        0.09
+        0.12
         )
         mod.newline()
 
