@@ -701,13 +701,6 @@ if True:
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
-            '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses',
-            'Options.Options[8].Factory.Object..AIActorClass',
-            ''
-            )
-            mod.newline()
-
-            mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses',
             'Options.Options[11].Factory.Object..AIActorClass',
             ''
