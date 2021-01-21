@@ -108,7 +108,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             'Apocalyptech',
             full_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.3.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -148,11 +148,11 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     mod.header('Customization Pool Expansions')
 
     # Skins/Heads first.
-    for (dirname, shortname) in [
-            ('Beastmaster', 'Beastmaster'),
-            ('Gunner', 'Gunner'),
-            ('Operative', 'Operative'),
-            ('SirenBrawler', 'Siren'),
+    for (dirname, shortname, abbrev) in [
+            ('Beastmaster', 'Beastmaster', 'BM'),
+            ('Gunner', 'Gunner', 'GNR'),
+            ('Operative', 'Operative', 'OP'),
+            ('SirenBrawler', 'Siren', 'SRN'),
             ]:
 
         ###
@@ -205,6 +205,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_63.InvBal_CustomSkin_{shortname}_63')
         # DLC5 - Ixora - TODO: need to figure out if this should be in a blacklist
         balances.append(f'/Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin62/CustomSkin_{shortname}_62.InvBal_CustomSkin_{shortname}_62')
+        # Broken Hearts 2021 + Others
+        balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_65.InvBal_CustomSkin_{shortname}_65')
+        balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Skins/CustomSkin_{shortname}_61.InvBal_CustomSkin_{shortname}_61')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -251,6 +254,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerHead/CustomHead38/CustomHead_{shortname}_38.InvBal_CustomHead_{shortname}_38')
         # DLC4 - Alisma - TODO: need to figure out if this should be in a blacklist
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC4_01.InvBal_CustomHead_{shortname}_DLC4_01')
+        # Introduced in Broken Hearts 2021, though not actually Broken Hearts...
+        for num in [33, 35, 36, 37]:
+            balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Heads/DA_{abbrev}Head{num}.InvBal_DA_{abbrev}Head{num}')
 
         # Now output
         mod.comment(f'{shortname} Heads')
@@ -333,6 +339,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.InvBal_Trinket_League_BloodyHarvest_2020'),
     # DLC5 - Ixora - TODO: Need to figure out if these should be on a blacklist
     balances.append('/Game/PatchDLC/Ixora/Gear/Weapons/WeaponTrinkets/_Design/WeaponTrinket_GearUp.InvBal_WeaponTrinket_GearUp')
+    # Broken Hearts 2021 + Others
+    balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_2.InvBal_Trinket_League_VDay_2')
+    balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_Twitch.InvBal_Trinket_Twitch')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -386,6 +395,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # DLC5 - Ixora - TODO: figure out if any of these should be blacklisted
     for num in ['50', '52', '57a', '58']:
         balances.append(f'/Game/PatchDLC/Ixora/Customizations/ECHOTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+    # Broken Hearts 2021 + Others
+    balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_02.InvBal_EchoTheme_Valentines_02')
+    balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Shared/ECHODevice/ECHOTheme_46.InvBal_ECHOTheme_46')
 
     # Now output
     mod.comment('ECHO Skins')
