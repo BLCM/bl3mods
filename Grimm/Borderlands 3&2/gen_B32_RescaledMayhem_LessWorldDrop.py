@@ -692,7 +692,7 @@ if True:
             ''
             )
             mod.newline()
-
+            
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_PrisonBadasses',
             'Options.Options[9].Factory.Object..AIActorClass',
@@ -702,7 +702,7 @@ if True:
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses',
-            'Options.Options[8].Factory.Object..AIActorClass',
+            'Options.Options[6].Factory.Object..AIActorClass',
             ''
             )
             mod.newline()
@@ -735,13 +735,6 @@ if True:
             )
             mod.newline()
 
-            mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
-            '/Game/NonPlayerCharacters/_Eden6/JakobsResistance/_Design/Spawning/SpawnOptions_AnointedEnforcer',
-            'Options.Options[0].Factory.Object..AIActorClass',
-            ''
-            )
-            mod.newline()
-        
         mod.comment('Removes the Anointed Goons')
         if True:
 
@@ -1084,14 +1077,14 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            0.1
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons',
             'BalancedItems.BalancedItems[1].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
@@ -1105,14 +1098,14 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons',
             'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons',
             'BalancedItems.BalancedItems[4].Weight.BaseValueScale',
-            10.0
+            0.1
             )
             mod.newline()
 
@@ -1122,7 +1115,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons_OfTheDay',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
@@ -1136,7 +1129,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Weapons_OfTheDay',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            100.0
+            1.0
             )
             mod.newline()
 
@@ -1146,35 +1139,35 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            0.1
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades',
             'BalancedItems.BalancedItems[1].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades',
             'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades',
             'BalancedItems.BalancedItems[4].Weight.BaseValueScale',
-            10.0
+            0.1
             )
             mod.newline()
 
@@ -1184,7 +1177,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Ammo_OfTheDay',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
@@ -1198,7 +1191,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Ammo_OfTheDay',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            100.0
+            1.0
             )
             mod.newline()
 
@@ -1208,35 +1201,35 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Shields',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            0.1
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Shields',
             'BalancedItems.BalancedItems[1].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Shields',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Shields',
             'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Shields',
             'BalancedItems.BalancedItems[4].Weight.BaseValueScale',
-            10.0
+            0.1
             )
             mod.newline()
 
@@ -1246,35 +1239,35 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_ClassMods',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            0.1
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_ClassMods',
             'BalancedItems.BalancedItems[1].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_ClassMods',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            1.0
+           10.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_ClassMods',
             'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_ClassMods',
             'BalancedItems.BalancedItems[4].Weight.BaseValueScale',
-            10.0
+            0.1
             )
             mod.newline()
 
@@ -1284,7 +1277,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay',
             'BalancedItems.BalancedItems[0].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
@@ -1298,14 +1291,14 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay',
             'BalancedItems.BalancedItems[2].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay',
             'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
-            1.0
+            10.0
             )
             mod.newline()
 
@@ -1319,7 +1312,7 @@ if True:
             mod.reg_hotfix(Mod.EARLYLEVEL,'MatchAll',
             '/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay',
             'BalancedItems.BalancedItems[5].Weight.BaseValueScale',
-            10.0
+            1.0
             )
             mod.newline()
 

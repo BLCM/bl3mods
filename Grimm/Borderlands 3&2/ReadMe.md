@@ -1,6 +1,14 @@
 Borderlands 3&2
 ===============
 
+## (IN)COMPATIBILITIES
+
+This mod is not compatible with Early Bloomer, since it already does the same thing. Running it will make anoints drop in your game even if they are removed with this mod.
+
+It is not compatible with any mod that changes the damage of guns and grenades.
+
+It is compatible however with mods that change the global scaling (like BL2 Scaling).
+
 ## MOD DESIGN
 
 This is a global balance and QoL mod, that has multiple versions that should please everyone.
@@ -29,23 +37,23 @@ The grenades augments were reworked so that having two of the same augments doub
 
 There are 5 Versions of this mod, that can be rougly regrouped in 3 categories : 
 
-- Vanilla Mayhem : Gives a 2.5 damage multiplier to all guns and grenades (including non uniques)
+## Vanilla Mayhem : Gives a 2.5 damage multiplier to all guns and grenades (including non uniques)
 
  This keeps the anoints and the original mayhem scaling.
 
  The No Modifier version will remove the modifiers.
 
- - Mayhem Rescaled : Gives a 2.5 damage multiplier to all guns and grenades (including non uniques)
+ ## Mayhem Rescaled : Gives a 2.5 damage multiplier to all guns and grenades (including non uniques)
 
  This will change the mayhem scaling to accomodate  for the removal of anoints. The modifiers are removed in this version as well.
 
- In this version, all mayhem levels will give the same xp, cash and world drop bonuses.
+ All mayhem levels will give the same xp, cash and world drop bonuses.
 
- With this version, the passive skills no longer get mayhem scaling (like fire in the skag den), and melee, action skill damage scaling is nerfed (but there is some still).
+ The passive skills no longer get mayhem scaling (like fire in the skag den), and melee, action skill damage scaling is nerfed (but there is some still).
 
  The Less World Drop version will also remove the mayhem world drop bonus. (dedicated drops are unaffected)
 
- - No Mayhem : No global damage boost.
+ ## No Mayhem : No global damage boost.
 
  This version is the one you want if you start a new playthrough, since it doens't boost all damage.
 

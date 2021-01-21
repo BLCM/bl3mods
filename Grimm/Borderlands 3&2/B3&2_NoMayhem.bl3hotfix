@@ -195,7 +195,7 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Z
 
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_PrisonBadasses.SpawnOptions_CotVFullMix_PrisonBadasses,Options.Options[9].Factory.Object..AIActorClass,0,,
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses.SpawnOptions_CoVMix_WetlandsVaultBadasses,Options.Options[8].Factory.Object..AIActorClass,0,,
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses.SpawnOptions_CoVMix_WetlandsVaultBadasses,Options.Options[6].Factory.Object..AIActorClass,0,,
 
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[11].Factory.Object..AIActorClass,0,,
 
@@ -204,8 +204,6 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Z
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeBadasses.SpawnOptions_Cotv_MotorcadeBadasses,Options.Options[10].Factory.Object..AIActorClass,0,,
 
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_EnforcerMix_COVSlaughter.SpawnOptions_EnforcerMix_COVSlaughter,Options.Options[4].Factory.Object..AIActorClass,0,,
-
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/NonPlayerCharacters/_Eden6/JakobsResistance/_Design/Spawning/SpawnOptions_AnointedEnforcer.SpawnOptions_AnointedEnforcer,Options.Options[0].Factory.Object..AIActorClass,0,,
 
 # Removes the Anointed Goons
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[12].Factory.Object..AIActorClass,0,,
@@ -511,7 +509,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamag
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,RadiationModifier,0,,0.5
 
 # Enemies Gain More Health Per Level
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.09
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.12
 
 # Enemies Deal Less Damage Per Level
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.024
