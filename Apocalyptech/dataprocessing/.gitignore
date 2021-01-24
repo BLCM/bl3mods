@@ -7,4 +7,7 @@ extracted
 *.txt.bak
 *.json
 *.json.xz
+*.dot
+*.png
+*.svg
 dlc3_tech.out
