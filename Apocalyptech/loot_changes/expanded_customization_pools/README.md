@@ -31,6 +31,10 @@ TODO
 Changelog
 =========
 
+**v1.3.0** - Jan 21, 2021
+ * Updated with new cosmetics added in the 2021-01-21 update (includes Broken
+   Hearts 2021 cosmetics, plus some other future cosmetics)
+
 **v1.2.0** - Nov 10, 2020
  * Updated for DLC5 (Designer's Cut) Cosmetics
 

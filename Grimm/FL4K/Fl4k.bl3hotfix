@@ -496,9 +496,6 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_D
 # EXP Loader
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCSimpleFormulas.Table_Beastmaster_DLCSimpleFormulas,Ability_Loader_EXPLode,Multiplier,0,,(BaseValueConstant=3.8)
 
-# ThroatRipper
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_13/Passive_Beastmaster_DLCSkill_13.Default__Passive_Beastmaster_DLCSkill_13_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,Initializer,0,,(DataTableValue=(DataTable=/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCSimpleFormulas.Table_Beastmaster_DLCSimpleFormulas,RowName=Presentation_DLCSkill13_CritChance),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_HuntSkillPassiveScale.Att_Beastmaster_HuntSkillPassiveScale,BaseValueScale=0.05)
-
 # Buffing Keep Then Safe Cooldown
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCPassiveConstantValues.Table_Beastmaster_DLCPassiveConstantValues,DLCSkill15_CooldownTime,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,6.0
 

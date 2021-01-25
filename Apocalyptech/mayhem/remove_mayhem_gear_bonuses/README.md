@@ -1,18 +1,22 @@
 Remove Mayhem Gear Bonuses
 ==========================
 
-Removes the bonuses applied by Mayhem parts on your gear, so they
-function just like gear without the Mayhem part applied.  The gear
-*will* continue to display its Mayhem part on the item card, but
-it won't have any effect so long as this mod is active.
+Removes the bonuses applied by Mayhem parts on your gear, so they function just
+like gear without the Mayhem part applied.  Gear dropped in Mayhem Mode will
+technically have a Mayhem part attached to it, but the part will be
+nonfunctional and should not be shown on the card.
 
-This is mostly intended to be used along with mods which nerf the
-Mayhem enemy scaling (such as my Decreased Mayhem Enemy Scaling or
-Mayhem Level Cheats mods), so that mayhem gear doesn't become too
-OP against mostly-unaugmented enemies.
+This is mostly intended to be used along with mods which nerf the Mayhem enemy
+scaling (such as my Decreased Mayhem Enemy Scaling or Mayhem Level Cheats
+mods), so that mayhem gear doesn't become too OP against mostly-unaugmented
+enemies.
 
 Changelog
 =========
+
+**v1.1.0** - Jan 14, 2021
+ * Removed mayhem level from showing up on item cards, thanks to
+   Nexus-Mistress
 
 **v1.0.0** - Dec 30, 2020
  * Initial release
