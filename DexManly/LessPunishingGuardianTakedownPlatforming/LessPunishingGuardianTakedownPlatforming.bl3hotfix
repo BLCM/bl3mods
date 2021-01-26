@@ -2,7 +2,7 @@
 ### Name: Less Punishing Guardian Takedown Platforming
 ### Version: 1.0.0
 ### Author: DexManly
-### Categories: maps, qol
+### Categories: maps
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -25,7 +25,7 @@
 ### vectors and testing changes.
 ###
 
-# First jump puzzle boudries
+# First jump puzzle boundaries
 # Invisible floor over kill zone 
 SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Engine/BasicShapes,Cube,96,"65800.000000,-33128.000000,-33000.000000|0.000000,0.000000,0.000000|60.000000,60.000000,1.000000",1
 # Patch right man cannon 'cheese' 
