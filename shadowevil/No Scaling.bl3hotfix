@@ -1,0 +1,12 @@
+###
+### Name: No Scaling
+### Version: 1.0.0
+### Author: shadowevil
+### Categories: scaling
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Att_UniversalBalanceScaler.Att_UniversalBalanceScaler:BP_ConstantValueResolver_C_0,Value,0,,(BaseValueConstant=1.00)
+
