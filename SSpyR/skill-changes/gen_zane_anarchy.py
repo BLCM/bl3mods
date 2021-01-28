@@ -3,7 +3,7 @@ from bl3hotfixmod import Mod
 # Give Commitment Negative Accuracy instead of CDR
 
 mod=Mod('zane_anarchy.bl3hotfix',
-'',
+'Zane Anarchy',
 'SSpyR',
 [
     'Turning Commitments CDR into Negative Accuracy'
