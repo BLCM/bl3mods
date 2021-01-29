@@ -1,0 +1,23 @@
+### Name: Clear Skies Event Enabler
+### Author: SSpyR
+### Categories: event
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[0].StableSeconds.BaseValueConstant,10,180.000000,270
+
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[1].StableSeconds.BaseValueConstant,10,270.000000,360
+
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[2].StableSeconds.BaseValueConstant,10,240.000000,330
+
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[3].StableSeconds.BaseValueConstant,10,120.000000,180
+
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData.FrostSiteGearUpData,DeathCircleStages.DeathCircleStages[4].StableSeconds.BaseValueConstant,9,60.000000,90
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Reaper,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.250000,1
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Badass,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.030000,.33
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Enemy,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.005000,.05
