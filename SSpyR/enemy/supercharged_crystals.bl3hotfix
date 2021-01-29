@@ -1,9 +1,0 @@
-### Name: Supercharged-Crystals Event Enabler
-### Author: SSpyR
-### Categories: event
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-
-SparkEarlyLevelPatchEntry,(1,7,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/InteractiveObjects/GuardianPadCrystal/IO_Takedown2_GuardianPad.IO_Takedown2_GuardianPad_C,0,1,ExecuteUbergraph_IO_Takedown2_GuardianPad,1,317,1:3,1:5
