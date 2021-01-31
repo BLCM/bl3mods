@@ -1,0 +1,25 @@
+###
+### Name: Patch Slaughterstar 3000 Boss Drop
+### Version: 1.0.0
+### Author: DexManly
+### Categories: maps, qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Adding a floor in front of Red Rain and Blue Fire boss locations in the 
+### Slaughterstar 3000 so that the loot dropped from them will not be lost to
+### the void. Side Effect: you can now pretty much walk up to either one. :) 
+###
+### Special thanks to apple1417. The CarWarpHelper project which was extreamly helpful in finding 
+### vectors and testing changes.
+###
+
+# Red Rain Floor
+SparkLevelPatchEntry,(1,6,0,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter,/Engine/BasicShapes,Cube,88,"0.000000,4700.000000,-800.000000|0.000000,0.000000,0.000000|30.000000,20.000000,0.500000",1
+
+# Blue Fire Floor
+SparkLevelPatchEntry,(1,6,0,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter,/Engine/BasicShapes,Cube,91,"900.000000,-6500.000000,-100.000000|0.000000,0.000000,0.000000|30.000000,14.500000,0.500000",1
+SparkLevelPatchEntry,(1,6,0,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter,/Engine/BasicShapes,Cube,88,"200.000000,-5920.000000,50.000000|0.000000,0.000000,0.000000|20.000000,0.500000,2.000000",1
