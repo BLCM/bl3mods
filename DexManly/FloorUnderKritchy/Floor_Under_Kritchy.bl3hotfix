@@ -1,0 +1,25 @@
+###
+### Name: Floor Under Kritchy
+### Version: 1.0.0
+### Author: DexManly
+### Categories: maps, qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Adding an invisible floor under Kritchy spawn (DLC2 Cursehaven) so that all the 
+### Clairvoyance drops are not dropped into the void. I kept the floor clear as to not 
+### kill the feel of the map. If you want you can change the last value to 0 to make the
+### floor visible.
+###
+### Special thanks to apple1417. The CarWarpHelper project which was extreamly helpful in finding 
+### vectors and testing changes.
+###
+
+# Kritchy Floor (Clear)
+SparkLevelPatchEntry,(1,6,0,Village_P),/Hibiscus/Maps/Village,/Engine/BasicShapes,Cube,94,"151028.000000,25295.000000,1200.000000|0.000000,0.000000,0.000000|30.000000,15.000000,0.500000",1
+
+# Kritchy Floor (Visible)
+# SparkLevelPatchEntry,(1,6,0,Village_P),/Hibiscus/Maps/Village,/Engine/BasicShapes,Cube,94,"151028.000000,25295.000000,1200.000000|0.000000,0.000000,0.000000|30.000000,15.000000,0.500000",0
