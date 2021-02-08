@@ -9,11 +9,11 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
+
 
 #: gen_red_text_explainer.py:35
 msgid "Red Text Explainer"
@@ -32,10 +32,7 @@ msgid "Inspired by Ezeith's BL2 Red Text Explainer"
 msgstr ""
 
 #: gen_red_text_explainer.py:39
-msgid ""
-"Adds explanations in the red text for all legendary/unique weapons and "
-"grenade mods.  Shields, COMs, and Artifacts have been omitted since they "
-"already detail their special functions on the card text."
+msgid "Adds explanations in the red text for all legendary/unique weapons and grenade mods.  Shields, COMs, and Artifacts have been omitted since they already detail their special functions on the card text."
 msgstr ""
 
 #: gen_red_text_explainer.py:70
@@ -927,8 +924,7 @@ msgid "Freeman"
 msgstr ""
 
 #: gen_red_text_explainer.py:413
-msgid ""
-"The right man in the wrong place can make all the difference in the world."
+msgid "The right man in the wrong place can make all the difference in the world."
 msgstr ""
 
 #: gen_red_text_explainer.py:414
@@ -1416,8 +1412,7 @@ msgid "Besiege!"
 msgstr ""
 
 #: gen_red_text_explainer.py:589
-msgid ""
-"MIRV whose children become fast-moving homing mini-MIRVs after a short time"
+msgid "MIRV whose children become fast-moving homing mini-MIRVs after a short time"
 msgstr ""
 
 #: gen_red_text_explainer.py:590
@@ -1601,9 +1596,7 @@ msgid "It's all in your head."
 msgstr ""
 
 #: gen_red_text_explainer.py:653
-msgid ""
-"reloads will sometimes drop the gun, which will run away and must be caught "
-"to retrieve the weapon"
+msgid "reloads will sometimes drop the gun, which will run away and must be caught to retrieve the weapon"
 msgstr ""
 
 #: gen_red_text_explainer.py:654
@@ -1783,9 +1776,7 @@ msgid "Stranger than things."
 msgstr ""
 
 #: gen_red_text_explainer.py:713
-msgid ""
-"cryo during day, incendiary at night, increased elemental chance with each "
-"hit"
+msgid "cryo during day, incendiary at night, increased elemental chance with each hit"
 msgstr ""
 
 #: gen_red_text_explainer.py:714
@@ -2017,9 +2008,7 @@ msgid "Damn near killed ‘em."
 msgstr ""
 
 #: gen_red_text_explainer.py:793
-msgid ""
-"fires 4 rockets in horizontal line, cycles between radiation, corrosive, and "
-"incendiary"
+msgid "fires 4 rockets in horizontal line, cycles between radiation, corrosive, and incendiary"
 msgstr ""
 
 #: gen_red_text_explainer.py:794
@@ -2043,9 +2032,7 @@ msgid "You've had this one coming a long time."
 msgstr ""
 
 #: gen_red_text_explainer.py:801
-msgid ""
-"2 slow orbs which damage nearby enemies, and fire faster rockets at them "
-"upon explosion"
+msgid "2 slow orbs which damage nearby enemies, and fire faster rockets at them upon explosion"
 msgstr ""
 
 #: gen_red_text_explainer.py:802
@@ -2377,9 +2364,7 @@ msgid "Cut Katagawa Jr.'s Junior."
 msgstr ""
 
 #: gen_red_text_explainer.py:914
-msgid ""
-"on hit, ricochet splits into 5 projectiles in horizontal (X) or vertical (Y) "
-"line"
+msgid "on hit, ricochet splits into 5 projectiles in horizontal (X) or vertical (Y) line"
 msgstr ""
 
 #: gen_red_text_explainer.py:915
@@ -2811,8 +2796,7 @@ msgid "Touch of death requires mastery of combo strikes."
 msgstr ""
 
 #: gen_red_text_explainer.py:1068
-msgid ""
-"enemies hit with empty reload take more damage for 12 sec, effect can stack"
+msgid "enemies hit with empty reload take more damage for 12 sec, effect can stack"
 msgstr ""
 
 #: gen_red_text_explainer.py:1069
@@ -2824,9 +2808,7 @@ msgid "A good death is its own reward."
 msgstr ""
 
 #: gen_red_text_explainer.py:1072
-msgid ""
-"launches a grid of damaging beams which remain stationary, alt fires "
-"singularity"
+msgid "launches a grid of damaging beams which remain stationary, alt fires singularity"
 msgstr ""
 
 #: gen_red_text_explainer.py:1073
@@ -2954,8 +2936,7 @@ msgid "Stand and Clap."
 msgstr ""
 
 #: gen_red_text_explainer.py:1126
-msgid ""
-"amp effect, on depletion releases AOE and creates a temporary amp damage area"
+msgid "amp effect, on depletion releases AOE and creates a temporary amp damage area"
 msgstr ""
 
 #: gen_red_text_explainer.py:1129
@@ -3071,8 +3052,7 @@ msgid "Particles unite!"
 msgstr ""
 
 #: gen_red_text_explainer.py:1168
-msgid ""
-"beam weapon, shoots additional projectiles at end based on trigger hold time"
+msgid "beam weapon, shoots additional projectiles at end based on trigger hold time"
 msgstr ""
 
 #: gen_red_text_explainer.py:1169
@@ -3148,9 +3128,7 @@ msgid "Take your time, Sugar..."
 msgstr ""
 
 #: gen_red_text_explainer.py:1196
-msgid ""
-"slow-moving projectile, high elemental damage and splash, heals a percentage "
-"of damage dealt"
+msgid "slow-moving projectile, high elemental damage and splash, heals a percentage of damage dealt"
 msgstr ""
 
 #: gen_red_text_explainer.py:1197
@@ -3274,8 +3252,7 @@ msgid "Look at that unsubtle blood-red coloring..."
 msgstr ""
 
 #: gen_red_text_explainer.py:1253
-msgid ""
-"kills reduce heat shot cost, increase damage and fire rate, max 3 stacks"
+msgid "kills reduce heat shot cost, increase damage and fire rate, max 3 stacks"
 msgstr ""
 
 #: gen_red_text_explainer.py:1254
@@ -3315,9 +3292,7 @@ msgid "And yet so filling!"
 msgstr ""
 
 #: gen_red_text_explainer.py:1270
-msgid ""
-"Torgue-like sticky explosion after a few seconds, initial burst does NOT do "
-"splash"
+msgid "Torgue-like sticky explosion after a few seconds, initial burst does NOT do splash"
 msgstr ""
 
 #: gen_red_text_explainer.py:1271
@@ -3341,8 +3316,7 @@ msgid "Tell your heads to chill."
 msgstr ""
 
 #: gen_red_text_explainer.py:1278
-msgid ""
-"after kill, second shot deals 200% shock or incendiary damage for 6 secs"
+msgid "after kill, second shot deals 200% shock or incendiary damage for 6 secs"
 msgstr ""
 
 #: gen_red_text_explainer.py:1279
@@ -3418,9 +3392,7 @@ msgid "Something so close, and yet... so distant."
 msgstr ""
 
 #: gen_red_text_explainer.py:1306
-msgid ""
-"on hit, creates additional wandering projectiles; reloading sends them back "
-"to enemy"
+msgid "on hit, creates additional wandering projectiles; reloading sends them back to enemy"
 msgstr ""
 
 #: gen_red_text_explainer.py:1312
@@ -3432,9 +3404,7 @@ msgid "The stacks... THE STACKS!"
 msgstr ""
 
 #: gen_red_text_explainer.py:1315
-msgid ""
-"every auto reload or kill grants 30% damage and reduces accuracy, 10 stacks "
-"max"
+msgid "every auto reload or kill grants 30% damage and reduces accuracy, 10 stacks max"
 msgstr ""
 
 #: gen_red_text_explainer.py:1316
@@ -3446,8 +3416,7 @@ msgid "Ooooh. Aaaah."
 msgstr ""
 
 #: gen_red_text_explainer.py:1319
-msgid ""
-"shoots cluster of 12 fireworks which spiral randomly and explode into hearts"
+msgid "shoots cluster of 12 fireworks which spiral randomly and explode into hearts"
 msgstr ""
 
 #: gen_red_text_explainer.py:1320
@@ -3515,8 +3484,7 @@ msgid "A hole would be something."
 msgstr ""
 
 #: gen_red_text_explainer.py:1343
-msgid ""
-"generates additional explosions around the main shot, similar to Flakker"
+msgid "generates additional explosions around the main shot, similar to Flakker"
 msgstr ""
 
 #: gen_red_text_explainer.py:1344
@@ -3672,9 +3640,7 @@ msgid "Glad you could make it."
 msgstr ""
 
 #: gen_red_text_explainer.py:1405
-msgid ""
-"main orb creates singularity on hit, and spawns additional homing orbs "
-"enroute"
+msgid "main orb creates singularity on hit, and spawns additional homing orbs enroute"
 msgstr ""
 
 #: gen_red_text_explainer.py:1406
@@ -3686,9 +3652,7 @@ msgid "That's gotta burn."
 msgstr ""
 
 #: gen_red_text_explainer.py:1409
-msgid ""
-"creates corrosive beam between enemies, shield returns bullets to mag when "
-"damaged"
+msgid "creates corrosive beam between enemies, shield returns bullets to mag when damaged"
 msgstr ""
 
 #: gen_red_text_explainer.py:1410
@@ -3712,9 +3676,7 @@ msgid "“EXTREMELY FLAMMABLE!”"
 msgstr ""
 
 #: gen_red_text_explainer.py:1419
-msgid ""
-"Fire Starter mode shoots incendiary fireballs, Hot Grease shoots arcing "
-"projectiles with kinetic damage"
+msgid "Fire Starter mode shoots incendiary fireballs, Hot Grease shoots arcing projectiles with kinetic damage"
 msgstr ""
 
 #: gen_red_text_explainer.py:1420
@@ -3758,8 +3720,7 @@ msgid "Extra, extra spicy."
 msgstr ""
 
 #: gen_red_text_explainer.py:1440
-msgid ""
-"Fire rate increases as trigger is held, generates lava pool at killed enemies"
+msgid "Fire rate increases as trigger is held, generates lava pool at killed enemies"
 msgstr ""
 
 #: gen_red_text_explainer.py:1441
@@ -3771,8 +3732,7 @@ msgid "What have they to say now?"
 msgstr ""
 
 #: gen_red_text_explainer.py:1444
-msgid ""
-"slow homing needles which stick on contact, exploding once four have landed"
+msgid "slow homing needles which stick on contact, exploding once four have landed"
 msgstr ""
 
 #: gen_red_text_explainer.py:1445
@@ -4228,9 +4188,7 @@ msgid "Mother Too"
 msgstr ""
 
 #: gen_red_text_explainer.py:1615
-msgid ""
-"Thank you for taking the time to read this flavor text. This flavor text "
-"loves you."
+msgid "Thank you for taking the time to read this flavor text. This flavor text loves you."
 msgstr ""
 
 #: gen_red_text_explainer.py:1616
@@ -4567,8 +4525,7 @@ msgid "You could have prevented this."
 msgstr ""
 
 #: gen_red_text_explainer.py:1769
-msgid ""
-"flamethrower, hold fire for more damage, locks on and chains to other enemies"
+msgid "flamethrower, hold fire for more damage, locks on and chains to other enemies"
 msgstr ""
 
 #: gen_red_text_explainer.py:1770
@@ -4654,3 +4611,4 @@ msgstr ""
 #: gen_red_text_explainer.py:1809
 msgid "Fight until the end; until your last breath."
 msgstr ""
+

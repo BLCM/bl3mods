@@ -25,7 +25,8 @@ import textwrap
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-for language in ['en', 'fr']:
+#for language in ['en', 'fr']:
+for language in ['en']:
 
     # Switch language/translation
     el = gettext.translation('base', localedir='locales', languages=[language])
@@ -57,7 +58,7 @@ for language in ['en', 'fr']:
                 *textwrap.wrap(description, width=75),
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.2.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
