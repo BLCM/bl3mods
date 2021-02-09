@@ -313,7 +313,7 @@ class Mod(object):
     def mesh_hotfix(self, map_path, mesh_path,
             location=(0,0,0),
             rotation=(0,0,0),
-            scale=(0,0,0),
+            scale=(1,1,1),
             transparent=False,
             early=False,
             notify=False):

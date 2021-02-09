@@ -181,9 +181,10 @@ mod.mesh_hotfix('/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P',
         (60, 60, 1))
 ```
 
-You can alternatively use named parameters for `location`, `rotation`, and
-`scale`, which default to `(0,0,0)`, and specify the `transparent` argument
-if the added mesh should be invisible:
+You can alternatively use named parameters instead for `location`, `rotation`,
+and `scale`.  If unspecified, they will default to `(0,0,0)` for location and
+rotation, or `(1,1,1)` for scale.  You can also specify the `transparent`
+argument if the added mesh should be invisible:
 
 ```python
 mod.mesh_hotfix('/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P',
