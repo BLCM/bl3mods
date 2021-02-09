@@ -310,6 +310,61 @@ class Mod(object):
             ), file=self.df)
         self.last_was_newline = False
 
+    def mesh_hotfix(self, map_path, mesh_path,
+            location=(0,0,0),
+            rotation=(0,0,0),
+            scale=(0,0,0),
+            transparent=False,
+            early=False,
+            notify=False):
+        """
+        Writes out a SpawnMesh-altering hotfix to the mod file
+        """
+
+        # Early-level hotfix?
+        if early:
+            hf_type = Mod.TYPE[Mod.EARLYLEVEL]
+        else:
+            hf_type = Mod.TYPE[Mod.LEVEL]
+
+        # Notify flag
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+
+        # Map path
+        map_first, map_last = map_path.rsplit('/', 1)
+
+        # Mesh path
+        mesh_first, mesh_last = mesh_path.rsplit('/', 1)
+
+        # Coordinates/transforms
+        coord_parts = []
+        for coords in [location, rotation, scale]:
+            coord_parts.append(','.join([
+                '{:.6f}'.format(n) for n in coords
+                ]))
+        coord_field = '|'.join(coord_parts)
+
+        # Transparent-or-visible
+        if transparent:
+            transparent_flag = 1
+        else:
+            transparent_flag = 0
+
+        print('{hf_type},(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}'.format(
+            hf_type=hf_type,
+            notification_flag=notification_flag,
+            map_first=map_first,
+            map_last=map_last,
+            mesh_first=mesh_first,
+            mesh_last=mesh_last,
+            coord_len=len(coord_field),
+            coord_field=coord_field,
+            transparent_flag=transparent_flag,
+            ), file=self.df)
+
     def close(self):
         """
         Closes us out

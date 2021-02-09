@@ -167,6 +167,37 @@ with some commonly-used structures like `BaseValueConstant`-based stanzas and
 English titles.  Look through the source for some more info on those, and grep
 for their use in the mod-generation scripts for examples.
 
+### Mesh Additions
+
+The library now also supports [hotfix type 6](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-6-spawnmesh),
+which is what Gearbox uses to make map alterations using hotfixes.  The most
+basic syntax for that is:
+
+```python
+mod.mesh_hotfix('/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P',
+        '/Engine/BasicShapes/Cube',
+        (65800, -33128, -33000), 
+        (0, 0, 0),
+        (60, 60, 1))
+```
+
+You can alternatively use named parameters for `location`, `rotation`, and
+`scale`, which default to `(0,0,0)`, and specify the `transparent` argument
+if the added mesh should be invisible:
+
+```python
+mod.mesh_hotfix('/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P',
+        '/Engine/BasicShapes/Cube',
+        location=(65800, -33128, -33000),
+        scale=(60, 60, 1),
+        transparent=True)
+```
+
+`mesh_hotfix` also supports an `early` parameter which you can set to `True`
+to use a `SparkEarlyLevelPatchEntry` hotfix (instead of the default
+`SparkLevelPatchEntry`).  So far it looks like that's probably not necessary,
+but it's supported nonetheless.
+
 Data Introspection
 ==================
 
