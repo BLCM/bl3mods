@@ -3,7 +3,7 @@
 ###
 ### Name: Redux Mod
 ### Author: EpicNNG - Grimm - SsPyR - 10 FPS - Apocalyptech - HackerSmasher - Apple1417 - FromDarkHell
-### Version: 1.0.5
+### Version: 1.0.6
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
@@ -14,7 +14,7 @@
 
 
 ###
-### Want to see the full changelog?? - 
+### Want to the full changelog?? - 
 ###
 
 Please remember that I,  (EpicNNG) did NOT make ALL of these changes.. If anything, I just tweaked other people's values.
@@ -148,13 +148,13 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/HealthAndDamage/Att_UniversalBal
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,-0.0075
 
 # Increase enemy health per level
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.06
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,AI_AdditionalHealthPerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,0.065
 
 # Increasing Enemy Health in NVHM
 SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough1_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,6.45
 
 # Increasing Enemy Health in TVHM
-SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,7.5
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers,Playthrough2_GlobalHealthScaler,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86,0,,8.5
 
 # Decrease Badass Psycho Health Primary
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadass),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
@@ -170,6 +170,13 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/Enemies/Heavy/_Share
 SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3
 SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_TinkBadass),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink.Table_Balance_Tink,Tink_Badass,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1
+
+# Decrease Fabricator Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,Fabrikator,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,FabrikatorPT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+SparkCharacterLoadedEntry,(1,2,0,BPChar_FabrikatorBasic),/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator.Table_Balance_Fabrikator,FabrikatorPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,15
+
 
 # Decrease Badass NOG health
 SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBadass),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1.85
@@ -568,6 +575,18 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/E
 
 # VeryRare Elemental Rarity
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalPartRarity/DataTable_Weapon_Elemental_Rarity.DataTable_Weapon_Elemental_Rarity,VeryRare,Radiation_13_2500317646FAD2F4916D158835B29E83,0,,0.5
+
+
+
+SparkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Industrial/Props/Tools/Shovel/Model/Meshes,SM_Shovel,92,"40732.000000,5345.000000,5440.000000|-67.000000,380.000000,0.000000|2.000000,2.000000,2.000000",0
+
+SparkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/_Global/Props/Toolbox/Model/Meshes,SM_Toolbox,91,"40732.000000,5335.000000,5375.000000|3.000000,0.000000,7.000000|0.600000,0.600000,0.600000",0
+
+SparkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Pandora/Landscape/Rocks/Pandora_Rocks/Meshes,SM_debris_cluster_01a,91,"40732.000000,5345.000000,5375.000000|0.000000,90.000000,0.000000|0.500000,0.500000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Pandora/Landscape/Rocks/Pandora_Rocks/Meshes,SM_debris_cluster_01a,91,"40742.000000,5345.000000,5375.000000|0.000000,40.000000,0.000000|0.500000,0.500000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Pandora/Landscape/Rocks/Pandora_Rocks/Meshes,SM_debris_cluster_01a,91,"40752.000000,5345.000000,5375.000000|0.000000,180.000000,0.000000|0.500000,0.500000,0.500000",0
+
+
 
 
 # MAKING GARCIA FULL AUTO ( CREDIT TO GRIMM! )
@@ -987,27 +1006,27 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_TrooperStealthDark),/Game/PatchDLC/Raid1
 
 
 # Shotgun Stickies
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_01.Part_SG_Torgue_Magazine_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.075,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_01.Part_SG_Torgue_Magazine_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.085,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_02.Part_SG_Torgue_Magazine_02,InventoryAttributeEffects.InventoryAttributeEffects[2].ModifierValue,0,,(BaseValueConstant=0.25,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_02.Part_SG_Torgue_Magazine_02,InventoryAttributeEffects.InventoryAttributeEffects[2].ModifierValue,0,,(BaseValueConstant=0.45,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_03.Part_SG_Torgue_Magazine_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.035,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_03.Part_SG_Torgue_Magazine_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.055,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_04.Part_SG_Torgue_Magazine_04,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.08,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/Parts/Mag/Part_SG_Torgue_Magazine_04.Part_SG_Torgue_Magazine_04,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.085,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
 # Assault Rifle Stickies
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_01.Part_AR_TOR_Magazine_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.08,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_01.Part_AR_TOR_Magazine_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.085,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_02.Part_AR_TOR_Magazine_02,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.11,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_02.Part_AR_TOR_Magazine_02,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.21,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_03.Part_AR_TOR_Magazine_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/Parts/Magazine/Part_AR_TOR_Magazine_03.Part_AR_TOR_Magazine_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.085,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
 # Pistol Stickies
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_01.Part_PS_TOR_Mag_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.12,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_01.Part_PS_TOR_Mag_01,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.32,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_02.Part_PS_TOR_Mag_02,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.18,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_02.Part_PS_TOR_Mag_02,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.38,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_03.Part_PS_TOR_Mag_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.24,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/Parts/Mag/Part_PS_TOR_Mag_03.Part_PS_TOR_Mag_03,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue,0,,(BaseValueConstant=0.44,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
 
 # Buffing Alien SR
@@ -1100,7 +1119,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 # Buffing Atlas damage
 
 
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Atlas,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.15
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Atlas,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.45
 
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Atlas,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,1.0
 
@@ -1144,6 +1163,19 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Maliwan,ElementalDamageMultiplierScale_80_D457807F45510F5C3D23D69C7D7C7964,0,,1.5
 
+
+
+
+# Buffing Rocket Launcher damage
+
+# Heavy
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Base_Data.DataTable_Weapon_Base_Data,Heavy,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,4.0
+
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Base_Data.DataTable_Weapon_Base_Data,Heavy,ReloadTimeScale_62_E2E0A3154B4CD841A6ABE3A5A7DCFDB7,0,,0.75
+
+
+# Buffing Dahl SMG damage
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_DamageScale.DataTable_Weapon_DamageScale,SMG,DAHL_59_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.75
 
 
 
@@ -1254,6 +1286,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/B
 
 # CHANGE PIXIE DREAM GUN TO PEARLESCENT
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/Balance/Balance_SG_TED_FriendZone.Balance_SG_TED_FriendZone,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/Name_TED_SG_FriendZone.Name_TED_SG_FriendZone,PartName,0,,Runaway Bride
 
 # CHANGE FLAKKER TO PEARLESCENT
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Balance/Balance_SG_Torgue_Flakker.Balance_SG_Torgue_Flakker,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common"'
@@ -1716,7 +1749,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Ta
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Redliner_Roaddog.ItemPoolExpansion_Redliner_Roaddog,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/Balance/Balance_SG_Torgue_RedLine.Balance_SG_Torgue_RedLine,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/Balance/Balance_SG_Torgue_RedLine.Balance_SG_Torgue_RedLine"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Legendary/Slide/SplatterGun/Ability_Artifact_SplatterGun.Ability_Artifact_SplatterGun_C,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Legendary/Slide/SplatterGun/Ability_Artifact_SplatterGun.Ability_Artifact_SplatterGun_C"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
 
 # GIVING RAMPAGER THE BLOOD STARVED BEAST
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun.ItemPoolExpansion_Rampager_Gun,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast.Balance_SM_DAL_ETech_AshenBeast,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast.Balance_SM_DAL_ETech_AshenBeast"',Weight=(BaseValueConstant=1,BaseValueScale=0.0085,BaseValueAttribute=/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance)),(InventoryBalanceData=/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc.Balance_PS_JAK_TheDuc,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc.Balance_PS_JAK_TheDuc"',Weight=(BaseValueConstant=0.090,BaseValueScale=1)))
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/ItemPoolExpansion_Rampager_Gun.ItemPoolExpansion_Rampager_Gun,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast.Balance_SM_DAL_ETech_AshenBeast,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast.Balance_SM_DAL_ETech_AshenBeast"',Weight=(BaseValueConstant=1,BaseValueScale=0.065,BaseValueAttribute=/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance)),(InventoryBalanceData=/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc.Balance_PS_JAK_TheDuc,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc.Balance_PS_JAK_TheDuc"',Weight=(BaseValueConstant=0.090,BaseValueScale=1)))
 
 # GIVING WENDIGO THE GOOD JUJU
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wendigo),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_SparkyBoom.ItemPool_Hibiscus_SparkyBoom,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju.Balance_DAL_AR_ETech_Juju"',Weight=(BaseValueConstant=1,BaseValueScale=0.3,BaseValueAttribute=/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance)),(InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Balance/Balance_AR_COV_SparkyBoom.Balance_AR_COV_SparkyBoom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Balance/Balance_AR_COV_SparkyBoom.Balance_AR_COV_SparkyBoom"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
@@ -1784,7 +1817,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianGemGoblin),/Game/Enemies/Guardia
 
 
 # Adjusting weights and pool of Wotan (adding Networker too) (And adding every pearl into his pool at a 0.001 chance)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon"',Weight=(BaseValueConstant=1,BaseValueScale=0.0025,BaseValueAttribute=/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth"',Weight=(BaseValueConstant=0.5,BaseValueScale=0.5)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom.Balance_SG_Torgue_TiggsBoom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom.Balance_SG_Torgue_TiggsBoom"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(ItemPoolData=ItemPoolData'"/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries"',Weight=(BaseValueConstant=1,BaseValueScale=0.60)),(ItemPoolData=ItemPoolData'"/Game/PatchDLC/Raid1/Customizations/ItemPool_Raid1_Customization.ItemPool_Raid1_Customization"',Weight=(BaseValueConstant=1)))
+SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidBoss_Pool.ItemPool_RaidBoss_Pool,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon.Balance_PS_TOR_HandCannon"',Weight=(BaseValueConstant=0.5,BaseValueScale=0.0025,BaseValueAttribute=/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/Balance/Balance_SM_MAL_KybsWorth.Balance_SM_MAL_KybsWorth"',Weight=(BaseValueConstant=0.5,BaseValueScale=0.5)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom.Balance_SG_Torgue_TiggsBoom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom.Balance_SG_Torgue_TiggsBoom"',Weight=(BaseValueConstant=0.2,BaseValueScale=0.5)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2.Balance_SM_HYP_Fork2"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner"',Weight=(BaseValueConstant=0,BaseValueScale=0)),(ItemPoolData=ItemPoolData'"/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries"',Weight=(BaseValueConstant=1,BaseValueScale=0.60)),(ItemPoolData=ItemPoolData'"/Game/PatchDLC/Raid1/Customizations/ItemPool_Raid1_Customization.ItemPool_Raid1_Customization"',Weight=(BaseValueConstant=1)))
 
 # Adjusting weights and pool of Valkyries
 SparkCharacterLoadedEntry,(1,1,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/GameData/Loot/ItemPool_RaidMiniBosses_Pool.ItemPool_RaidMiniBosses_Pool,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/VersionOmNom/Balance/InvBalD_Shield_Legendary_VersionOmNom.InvBalD_Shield_Legendary_VersionOmNom"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger.InvBalD_Shield_SlideKickRecharger"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_FrozenHeart/Balance/InvBalD_Shield_SlideKickFrozenHeart.InvBalD_Shield_SlideKickFrozenHeart"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(ItemPoolData=ItemPoolData'"/Game/PatchDLC/Raid1/Re-Engagement/ItemPool/ItemPool_Mayhem4_Legendaries.ItemPool_Mayhem4_Legendaries"',Weight=(BaseValueConstant=1,BaseValueScale=0.60)))
@@ -1880,28 +1913,34 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,ShoulderMountedCannon,DamageScalar_18_37A706AC4199ADD1D3E4AD920734B5F0,0,,6.5
 
 # Increase Phaseslam damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.5
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,4.5
 
 # Increase Fracture damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Barrage,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,2.95
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Barrage,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.95
 
 # Increase Phase Fists damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Fracture,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,2.75
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Fracture,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,4.25
 
 # Increase Phase Cast fists damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_100Fists,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.1
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_100Fists,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,4.5
 
 # Increase Phase Cast chain damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_CausalChain,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.2
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_CausalChain,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,4.75
 
 # Increase Phase Cast schism damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_Schism,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.25
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_Schism,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,4.25
 
 # Increase Phase Cast damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.35
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,5.0
 
 # Increase Rakk Attack damage
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,1.85
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,2.5
+
+# Buffing Furious Attack Gun Damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun1,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.01
+
+# Buffing Furious Attack Duration
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun1,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,7.5
 
 # Increase Drone Machine Gun damage
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_MachineGunDamageScalar,Value,0,,(BaseValueConstant=1.5,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1)
@@ -1965,13 +2004,13 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/Table_C
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/Table_CM_DLC1.Table_CM_DLC1,OperativeDLC1ClassMod,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.5
 
 # Buffing global pet skill damage (Credit to Grimm)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_SkillDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,6.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_SkillDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,125.0
 
 # Buffing global pet melee damage (Credit to Grimm)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,5.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_MeleeDamage,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,75.0
 
 # Buffing global pet ranged damage (Credit to Grimm)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,1.5
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_Pet_RangedAttack,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,2.5
 
 # Buffing Who Rescued Who ? health regen (Credit to Grimm)
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Bond3,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.006
@@ -2138,13 +2177,30 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operativ
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,ConfidentConfidence_Accuracy,Value,0,,(BaseValueConstant=0,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
 
 # Making Power Inside Just a Straight Bonus (No Reliance on Health)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun_11,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.5
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun_11,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,1.5
 
 # Getting Rid of Full Health Bonus on Power Inside
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SimpleFormulas.DataTable_Beastmaster_SimpleFormulas,HitAndRun11_TotalDamageBonus,Level,0,,(BaseValueConstant=0.0,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
 
+# Changing Ambush Preditor skills description
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Passive_Beastmaster_Ranged5.Default__Passive_Beastmaster_Ranged5_C,AbilityDescription,0,,While there are no enemies nearby, FL4K’s [skillbold]Weapon Swap Speed[/skillbold] and [skillbold]Critical Hit Damage[/skillbold] are increased.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Passive_Beastmaster_Ranged5.Default__Passive_Beastmaster_Ranged5_C:UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Swap Speed:[/skillbold] $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Passive_Beastmaster_Ranged5.Default__Passive_Beastmaster_Ranged5_C:UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Attributes/Character/Att_WeaponSwapSpeedScale.Att_WeaponSwapSpeedScale
+
+# Make Ambush Predator give Swap Speed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Status_Beastmaster_Ranged5.Status_Beastmaster_Ranged5,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Character/Att_WeaponSwapSpeedScale.Att_WeaponSwapSpeedScale
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Status_Beastmaster_Ranged5.Status_Beastmaster_Ranged5,AttributeEffects.AttributeEffects[2].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Status_Beastmaster_Ranged5.Status_Beastmaster_Ranged5,AttributeEffects.AttributeEffects[3].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged5/Status_Beastmaster_Ranged5.Status_Beastmaster_Ranged5,AttributeEffects.AttributeEffects[4].AttributeData,0,,
+
 # Buffing Ambush Predator Crit Damage
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged5,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.08
+
+# Buffing Empathic Rage damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Skill_PetEnrage_Mod1,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.5
+
+# Buffing Most Dangerous Game Crit Damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged6_Part2,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.075
 
 # Lowering Blitz Cooldown Time
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,ActiveSkillDuration_Medium,Value,0,,(BaseValueConstant=5,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
@@ -2956,7 +3012,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/UIStat_Red
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/UIStat_RedText_Rampager.UIStat_RedText_Rampager,Text,0,,[Flavor][cryo]You've had this one coming a long time.[/cryo][/Flavor]
 
 # Manic Pixie Dream Gun Red Text Change
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/UIStat_RedText_FriendZone.UIStat_RedText_FriendZone,Text,0,,[Flavor][cryo]It's all in your head.[/cryo][/Flavor]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/UIStat_RedText_FriendZone.UIStat_RedText_FriendZone,Text,0,,[Flavor][cryo][Shock]I[/Shock]t'[Shock]s[/Shock] al[Shock]l[/Shock] i[Shock]n[/Shock] y[Shock]o[/Shock]ur [Shock]h[/Shock]ea[Shock]d[/Shock].[/cryo][/Flavor]
 
 # O.P.Q. System Red Text Change
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/UIStat_RedText_OPQ.UIStat_RedText_OPQ,Text,0,,[Flavor][cryo]Are ya winning Son?[/cryo][/Flavor]
@@ -3022,7 +3078,11 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Sha
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Parts/Part_SM_DAL_Barrel_AshenBeast.Part_SM_DAL_Barrel_AshenBeast,InventoryAttributeEffects.InventoryAttributeEffects[2],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.15,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
 
 # Buffing BOTD damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_BOTD,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.95
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_BOTD,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.95
+
+# Buffing Electric Banjo damage and proc chance
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElectricBanjo_BulletProcChance,Offset,0,,(BaseValueConstant=0.65))
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_ Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElectricBanjo_DamagePercentage,Offset,0,,(BaseValueConstant=0.85))
 
 # Buffing Hunter damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Hunter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.95
@@ -3056,7 +3116,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/D
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,AR_Contained_2,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.25
 
 # Buffing Unkempt Harold damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_UnkemptHarold,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_UnkemptHarold,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.15
 
 # Buffing Convergence damage
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Parts/Part_SG_Hyp_Barrel_Convergence.Part_SG_Hyp_Barrel_Convergence,InventoryAttributeEffects.InventoryAttributeEffects[0],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=4.75,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
@@ -3095,7 +3155,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,WeddingInvitation2,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,4.75
 
 # Buffing Kaoson damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,Kaoson,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.85
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,Kaoson,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.75
 
 # Buffing Maggie damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_Maggie,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.5
@@ -3158,7 +3218,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_Linoge,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.5
 
 # Buffing ION Cannon damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,HW_IonCannon,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.0
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,HW_IonCannon,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,4.5
 
 # Buffing Superball damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,PS_Plumber,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,7.5
@@ -3167,7 +3227,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Tankman,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,12.5
 
 # Buffing Malaks Bane damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SR_MalaksBane,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,15.0
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SR_MalaksBane,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,7.0
 
 # Buffing Seventh Sense damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,PS_TheSeventh,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,5.75
@@ -3206,7 +3266,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/D
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,AR_Rowan,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.0
 
 # Buffing Nagata Damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,0,,2.35
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,0,,1.8
 
 # Buffing Hunter Seeker Damage
 (1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_HunterSeeker,Damage_12_F33DA0994756D761207677A51A156787,0,,65.0
@@ -3236,7 +3296,7 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/D
 (1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,Seeker,Damage_12_F33DA0994756D761207677A51A156787,0,,35.0
 
 # Buffing Ogre Damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Ogre,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.25
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Ogre,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.85
 
 # Buffing Satisfaction Damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,HW_Satistfaction,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.8
@@ -3351,10 +3411,16 @@ SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Ga
 SparkPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,AR_Bekah,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.5
 
 # Buffing Pixie Gun Damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TED.DataTable_WeaponBalance_Unique_TED,SG_FriendZone,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,11.5
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TED.DataTable_WeaponBalance_Unique_TED,SG_FriendZone,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,15.75
+
+# Buffing Warlord Damage
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_Warlord,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,4.65
 
 # Buffing Good Juju Damage
-SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Juju,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,11.5
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Juju,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,13.5
+
+# Making Good Juju shoot fully auto
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Parts/Part_DAL_AR_Barrel_ETech_Juju.Part_DAL_AR_Barrel_ETech_Juju,InventoryAttributeEffects.InventoryAttributeEffects[1],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.9))
 
 # Buffing R.Y.N.A.H Gun Damage
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,HW_RYNO,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,5.65
@@ -3464,16 +3530,16 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/A
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SimpleFormulas.DataTable_Gunner_SimpleFormulas,IronBear_Stomp_Damage,Multiplier,0,,(BaseValueConstant=5.750)
 
 # Nerfing Iron Bear Weapons (minigun)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.080
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.185
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.050
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.195
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.50
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.185
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.175
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Minigun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.215
 
 # Nerfing Iron Bear Weapons
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,BearFist,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,2.35
@@ -3488,40 +3554,40 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/D
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,BearFist_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,4.5
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.25
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.2
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.50
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.75
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.10
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,GL_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.65
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.10
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.30
 
 # Nerfing Iron Bear Weapons ( Target Softening )
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.225
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.325
 
 # Nerfing Iron Bear Weapons ( Target Lock )
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.20
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.75
 
 # Nerfing Iron Bear Weapons ( Nuke )
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.75
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,FalconStrike_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,3.15
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.10
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.35
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.65
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.0
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.7
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.1
 
 # Nerfing Iron Bear Weapons
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.075
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,1.25
 
 # Nerfing Iron Bear Weapons ( Railgun )
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,2.6
@@ -4723,10 +4789,22 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewa
 # MAKING ARMS RACE EASIER (Credit to Apocalyptech)
 
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyAccuracyScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.20
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.3
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.2
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthPerHumanPlayerScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.01
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScalePerDeathCircle,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.015
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,PlayerDamageTakenScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.25
+
+
+
+# ARMS RACE LEGENDARY DROP RATES
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Reaper,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.250000,0.0075
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Badass,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.030000,0.0075
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_LegendaryLootOdds_Ixora.Table_GearUp_LegendaryLootOdds_Ixora,Enemy,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,8,0.005000,0.0075
+
+
 
 
 # Increasing Spawn Rate of Loot Enemies (Credit to Grimm)
@@ -4819,356 +4897,4 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_S
 
 
 # Modifying the Krakatoa Material
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/Parts/Part_MAL_SR_Material_Krakatoa.Part_MAL_SR_Material_Krakatoa,AspectList.AspectList[0].Object..Material,0,,/Game/Gear/Weapons/SMGs/Dahl/_Shared/Model/Materials/Unique/MI_SMG_Dahl_Hellfire.MI_SMG_Dahl_Hellfire_Gameplay:PersistentLevel.BP_IO_HijackCrewChallenge_.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_10.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_10.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_Collection_EchoJournal_10.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_6.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_6.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_6.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_2.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_2.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desolate_P),/Game/Maps/Zone_4/Desolate/Desolate_Gameplay.Desolate_Gameplay:PersistentLevel.BP_IO_BroadcastControlBox_2.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Destroyer's Rift
-SparkLevelPatchEntry,(1,1,1,FinalBoss_P),/Game/Maps/Zone_0/FinalBoss/FinalBoss_P.FinalBoss_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,FinalBoss_P),/Game/Maps/Zone_0/FinalBoss/FinalBoss_P.FinalBoss_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,FinalBoss_P),/Game/Maps/Zone_0/FinalBoss/FinalBoss_P.FinalBoss_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Devil's Razor
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_Combat.Desert_Combat:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_Combat.Desert_Combat:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_Combat.Desert_Combat:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AllTerrainMotor.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AllTerrainMotor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AllTerrainMotor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_6.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_6.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_6.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_236.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_236.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_236.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1809.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1809.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1809.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1807.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1807.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_Collection_EchoJournal_1807.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Desert_P),/Game/Maps/Zone_3/Desert/Desert_M_CrewMissions.Desert_M_CrewMissions:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Droughts
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_5.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_5.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_5.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_GyroscopicRotor.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_GyroscopicRotor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_GyroscopicRotor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.EridianWritingSpawner__4.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Terrain.Prologue_Terrain:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Motor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Dustbound Archives
-SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Archive_P),/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Floating Tomb
-
-# Floodmoor Basin
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HijackCrewChallenge_5.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HijackCrewChallenge_5.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HijackCrewChallenge_5.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_502.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_502.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_502.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_BroadcastControlBox2_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_LoveModule.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_LoveModule.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_LoveModule.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_ReinforcedRearPaneling.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_ReinforcedRearPaneling.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_ReinforcedRearPaneling.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Challenges.Wetlands_Challenges:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner__39.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner__39.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner__39.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Wetlands_P),/Game/Maps/Zone_2/Wetlands/Wetlands_Combat.Wetlands_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Forgotten Basilica
-
-# Great Vault
-
-# Guts of Carnivora
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,MotorcadeInterior_P),/Game/Maps/Zone_3/MotorcadeInterior/MotorcadeInterior_Encounter.MotorcadeInterior_Encounter:PersistentLevel.BP_IO_Salvage_ClapTrapPart_SpeechProcessor.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Heart's Desire
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_Combat.Venue_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Venue_P),/Hibiscus/Maps/Venue/Venue_P.Venue_P:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Jakobs Estate
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_DoorOpeningModule.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_DoorOpeningModule.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_DoorOpeningModule.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_MultiTaskingRAM.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_MultiTaskingRAM.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_MultiTaskingRAM.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_7086.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_7086.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_7086.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_297.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_297.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_297.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Dynamic.Mansion_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Mission.Mansion_Mission:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Mission.Mansion_Mission:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mansion_P),/Game/Maps/Zone_2/Mansion/Mansion_Mission.Mansion_Mission:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Konrad's Hold
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Combat.Mine_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Combat.Mine_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Combat.Mine_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal_470.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal_470.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal_470.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal3.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal3.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal3.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Collection_EchoJournal.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_HandClamps.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_HandClamps.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_HandClamps.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Arms.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Arms.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Mine_P),/Game/Maps/Zone_3/Mine/Mine_Mission.Mine_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_Arms.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Lectra City
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_Eye.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_Eye.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_Eye.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_2.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_2.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart_2.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Mission.Towers_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_0.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Towers_P),/Game/Maps/Zone_1/Towers/Towers_Combat.Towers_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Lodge
-
-# Meridian Metroplex
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_StairClimbingUpdate.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_StairClimbingUpdate.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart2_StairClimbingUpdate.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_KillTargetCrewChallenge_2.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage_0.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage_0.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Mission.City_Mission:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage_0.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal3-AtlasTower.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal3-AtlasTower.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal3-AtlasTower.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal2-RandomParkthing.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal2-RandomParkthing.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,City_P),/Game/Maps/Zone_1/City/City_Combat.City_Combat:PersistentLevel.BP_IO_Collection_EchoJournal2-RandomParkthing.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Meridian Outskirts
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal3-OutskirtsofCity.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal3-OutskirtsofCity.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal3-OutskirtsofCity.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_BroadcastControlBox_Sabotage.BP_CrewChallengeComponent_Sabotage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Mission.Outskirts_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_UniversalTranslator.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Mission.Outskirts_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_UniversalTranslator.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Mission.Outskirts_Mission:PersistentLevel.BP_IO_Salvage_ClapTrapPart1_UniversalTranslator.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Combat.Outskirts_Combat:PersistentLevel.EridianWritingSpawner.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Combat.Outskirts_Combat:PersistentLevel.EridianWritingSpawner.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Outskirts_P),/Game/Maps/Zone_1/Outskirts/Outskirts_Combat.Outskirts_Combat:PersistentLevel.EridianWritingSpawner.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Negul Neshai
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Camp_P),/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Neon Arterial
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_3.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_3.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_3.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Collection_EchoJournal_1.BP_CrewChallengeComponent_Collection,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory_0.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory_0.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,CityVault_P),/Game/Maps/Zone_1/CityVault/CityVault_P.CityVault_P:PersistentLevel.BP_IO_Salvage_ClapTrapPart_AntennaAccessory_0.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Obsidian Forest
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__1.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Forest_P),/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Pyre of Stars
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_HuntCrewChallenge_2.BP_CrewChallengeComponent_Hunt_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.EridianWritingSpawner_.BP_ChallengeComponent_IconEridian,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_HumorSarcasmModule_1.BP_CrewChallengeComponent_Salvage,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_HumorSarcasmModule_1.BP_CrewChallengeComponent_Salvage,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Crypt_P),/Game/Maps/Zone_4/Crypt/Crypt_Dynamic.Crypt_Dynamic:PersistentLevel.BP_IO_Salvage_ClapTrapPart_HumorSarcasmModule_1.BP_CrewChallengeComponent_Salvage,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Sanctuary
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_1.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_1.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_1.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_0.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_0.BP_CrewChallengeComponent_KillTarget_Spawner,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Sanctuary3_P),/Game/Maps/Sanctuary3/Sanctuary3_P.Sanctuary3_P:PersistentLevel.IO_WantedPosterRareSpawns_C_0.BP_CrewChallengeComponent_KillTarget_Spawner,UnfogRadiusWhenChallengeActive,0,,2000
-
-# Sandblast Scar
-
-# Skittermaw Basin
-SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionRadius,0,,200000
-SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2,DetectionHalfHeight,0,,100000
-SparkLevelPatchEntry,(1,1,1,Lake_P),/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/Parts/Part_MAL_SR_Material_Krakatoa.Part_MAL_SR_Material_Krakatoa,AspectList.AspectList[0].Object..Material,0,,/Game/Gear/Weapons/SMGs/Dahl/_Shared/Model/Materials/Unique/MI_SMG_Dahl_Hellfire.MI_SMG_Dahl_Hellfire
