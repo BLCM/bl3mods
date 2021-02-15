@@ -1,0 +1,15 @@
+#
+## Name: Non Slippery Crit
+## Author: Rumo
+## Categories: gear-smg
+## Version: 1.0.0
+#
+## License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+## License URL: https://creativecommons.org/licenses/by-sa/4.0/
+#
+
+# CHANGE DROP CHANCE TO 0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/Ability_CritFail.Default__Ability_CritFail_C,DropChance,8,0.050000,0
+
+# CHANGE RED TEXT
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/UIStat_RedText_Crit.UIStat_RedText_Crit,Text,0,,[Flavor]Not slippery when wet.[/Flavor]
