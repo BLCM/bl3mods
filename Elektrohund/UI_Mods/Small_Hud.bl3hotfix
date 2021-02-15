@@ -64,5 +64,6 @@ SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout
 SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Scale,0,,(x=75.0,y=75.0)
 SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,friendEventMessage,Scale,0,,(x=75.0,y=75.0)
 SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,challengeProgressWidget,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
 
 
