@@ -1,0 +1,13 @@
+###
+### Name: No Guardian/Skill Point Notification or XP bar
+### Version: 1.0.0
+### Author: Elektrohund
+### Categories: ui, qol
+###
+### Hides the XP bar and the "Spend Skill/Guardian point" notification attached to it
+###
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Scale,0,,(x=00.0,y=00.0)
+
+
+

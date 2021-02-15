@@ -1,0 +1,42 @@
+###
+### Name: Smaller HUD - No XP Bar or Crosshair
+### Version: 1.0.0
+### Author: Elektrohund
+### Categories: ui
+###
+### Makes the HUD 25% smaller to compensate for the broken in-game slider
+### Also hides reload reminder, the crosshair and the XP bar (including the Guardian Rank / Skill Point notification)
+### Modify the values at the end of each row to change the size on your own leasure
+###
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,crosshairContainer,Scale,0,,(x=00.0,y=00.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,reloadWidgetMC,Scale,0,,(x=00.0,y=00.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Scale,0,,(x=00.0,y=00.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,interactionPrompt,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCard,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,iodCard,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Offset,0,,(x=-200.0,y=-500.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,menuDamageClipBL,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,buddyWidgets,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,shieldBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,healthBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,ammoBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,minimapContainer,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkill,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkillGrenade,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,grenadeWidgetContainer,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,petCommand,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Scale,0,,(x=85,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,missionTracker,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,echoContentWrapper,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,notificationWidget,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,connectionClip,Scale,0,,(x=75.0,y=75.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,challengeProgressWidget,Scale,0,,(x=75.0,y=75.0)
+
+
