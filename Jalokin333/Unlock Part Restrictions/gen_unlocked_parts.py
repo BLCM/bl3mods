@@ -9,16 +9,52 @@ mod = Mod('unlocked_parts.bl3hotfix',
             'This will make guns spawn with less part restrictions, using the generation of purples as a base.',
             'Does not touch elemental restrictions yet, maybe in the future.',
             'If you find any extremely over/underpowered combos or guns that do not work, please report to me on Discord.',
-            'Thanks to Grimm and apocalyptech',
+            'Thanks to Grimm, apocalyptech and Nexus-Mistress',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='gear-general',
         )
         
 data = BL3Data()
 
-#basic_exceptions are barrel, element, material, TODO: find all barrels with built-in mods (like Hellwalker)
+#basic_exceptions are barrel, element, material, TODO: add dependencies to additional acc slots other than barrel, add KriegAR barrels to exclusion, dont restrict barrel where I dont need to, fix the P2P and DoubleTap, add more elements where possible
+
+mod.comment('Removing extra meshes')
+
+for part in ['/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/Parts/Part_AR_ATL_Barrel_RebelYell',
+    '/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/BOTD/Parts/Part_DAL_AR_BOTD',
+    '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/GatlingGun/Parts/Part_AR_JAK_Barrel_GatlingGun',
+    '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/Parts/Part_AR_JAK_Barrel_Mutant',
+    '/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/Parts/Part_ATL_Barrel_RubysWrath',
+    '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/BurgerCannon/Parts/Part_HW_TOR_Barrel_BurgerCannon',
+    '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Swarm/Parts/Part_HW_TOR_Barrel_Swarm',
+    '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Tunguska/Parts/Part_HW_TOR_Barrel_Tunguska',
+    '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Parts/Part_HW_TOR_Barrel_Nukem',
+    '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Parts/Part_HW_TOR_Barrel_IceAge',
+    '/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/Parts/Part_HW_VLA_Barrel_CloudBurst',
+    '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Unforgiven/Parts/Part_PS_JAK_Barrel_Unforgiven',
+    '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/WagonWheel/Parts/Part_PS_JAK_Barrel_WagonWheel',
+    '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf',
+    '/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/Parts/Part_PS_VLA_Barrel_BoneShredder',
+    '/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Magnificent/Parts/Part_PS_VLA_Barrel_Magnificent',
+    '/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/ConferenceCall/Parts/Part_SG_Hyp_Barrel_ConferenceCall',
+    '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/Parts/Part_SG_JAK_Barrel_Hellwalker',
+    '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/TheWave/Parts/Part_SG_JAK_Barrel_TidalWave',
+    '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Parts/Part_SG_Torgue_Barrel_Flakker',
+    '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/Parts/Part_SG_Torgue_Barrel_Redline',
+    '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Bitch/Parts/Part_SM_HYP_Barrel_Bitch',
+    '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/Parts/Part_SM_TED_Barrel_PatMk3',
+    '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Soleki/Parts/Part_MAL_SR_Barrel_Soleki',
+    '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Parts/Part_MAL_SR_Barrel_FireStorm',
+    '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/Parts/Part_MAL_SR_Barrel_Storm',
+    ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+                                    part,
+                                    'AdditionalGestaltMeshPartNames',
+                                    '')
+
+mod.newline()
 
 for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets) in [
     ('Atlas AR', '/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/Balance/Balance_ATL_AR_04_VeryRare', [3], [2,9], [1,3],
@@ -69,7 +105,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju', [3,10], [''], []
             ),
-            ('/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Hail/Balance/Balance_DAL_AR_Hail', [], ['02'], []
+            ('/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Hail/Balance/Balance_DAL_AR_Hail', [9], ['02'], []
             ),
             ('/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Kaos/Balance/Balance_DAL_AR_Kaos', [], ['03'], []
             ),
@@ -143,7 +179,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Dictator/Balance/Balance_AR_VLA_Dictator', [4,5], ['03'], []
             ),
-            ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/Balance/Balance_AR_VLA_Dowsing', [4,9], ['02'], []
+            ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/DowsingRod/Balance/Balance_AR_VLA_Dowsing', [4,5,9], ['02'], []
             ),
             ('/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Faisor/Balance/Balance_AR_VLA_Faisor', [4], ['03'], []
             ),
@@ -189,29 +225,29 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             )
         ]
     ),
-    ('Torgue HW', '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/Balance/Balance_HW_TOR_04_VeryRare', [3,7], [2,9,10], [1,3,7],
+    ('Torgue HW', '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/Balance/Balance_HW_TOR_04_VeryRare', [3], [2,9,10], [1,3,7],
         [
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/BurgerCannon/Balance/Balance_HW_TOR_BurgerCannon', [3], ['','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/BurgerCannon/Balance/Balance_HW_TOR_BurgerCannon', [3], [''], []
             ),
-            ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/Balance/Balance_HW_TOR_Creamer', [], ['01','0'], []
+            ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/Balance/Balance_HW_TOR_Creamer', [], ['01'], []
             ),
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Hive/Balance/Balance_HW_TOR_Hive', [], ['01','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Hive/Balance/Balance_HW_TOR_Hive', [], ['01'], []
             ),
-            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', [], ['01','0'], []
+            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', [], ['01'], []
             ),
-            ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Balance/Balance_HW_TOR_Nukem', [], ['01','0'], []
+            ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Balance/Balance_HW_TOR_Nukem', [], ['01'], []
             ),
-            ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/Balance/Balance_HW_TOR_Plague', [3], ['','0'], []
+            ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Plague/Balance/Balance_HW_TOR_Plague', [3], [''], []
             ),
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Rampager/Balance/Balance_HW_TOR_Rampager', [], ['02','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Rampager/Balance/Balance_HW_TOR_Rampager', [], ['02'], []
             ),
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Balance/Balance_HW_TOR_RYNO', [3], ['','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Balance/Balance_HW_TOR_RYNO', [3], [''], []
             ),
-            ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', [], ['02','0'], []
+            ('/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Satisfaction/Balance/Balance_HW_TOR_Satisfaction', [], ['02'], []
             ),
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Swarm/Balance/Balance_HW_TOR_Swarm', [], ['01','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Swarm/Balance/Balance_HW_TOR_Swarm', [], ['01'], []
             ),
-            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Tunguska/Balance/Balance_HW_TOR_Tunguska', [], ['01','0'], []
+            ('/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/Tunguska/Balance/Balance_HW_TOR_Tunguska', [], ['01'], []
             )
         ]
     ),
@@ -229,13 +265,13 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
     ),
     ('Atlas Pistol', '/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/Balance/Balance_PS_ATL_04_VeryRare', [3], [2,8], [3,1],
         [
-            ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/Balance/Balance_PS_ATL_DoubleTap', [], ['01'], []
+            ('/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/DoubleTap/Balance/Balance_PS_ATL_DoubleTap', [6], ['01'], []
             ),
             ('/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Drill/Balance/Balance_PS_ATL_Drill', [], ['01'], []
             ),
-            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya', [], ['03'], []
+            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/SpiritOfMaya/Balance/Balance_PS_ATL_SpiritOfMaya', [6], ['03'], []
             ),
-            ('/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Warmonger/Balance/Balance_PS_ATL_Warmonger', [], ['02'], []
+            ('/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Warmonger/Balance/Balance_PS_ATL_Warmonger', [6], ['02'], []
             )
         ]
     ),
@@ -293,7 +329,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/Balance/Balance_PS_JAK_LittleYeeti', [], ['02'], []
             ),
-            ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', [], ['01'], []
+            ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary', [7,8], ['01'], []
             ),
             ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7', [], ['02'], []
             ),
@@ -317,7 +353,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc', [], ['01'], []
             ),
-            ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense', [3], [''], []
+            ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense', [3,8], [''], []
             ),
             ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot', [5], ['02'], []
             ),
@@ -349,7 +385,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/SuckerPunch/Balance/Balance_PS_MAL_SuckerPunch', [], ['03'], []
             ),
-            ('/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists', [3], [''], []
+            ('/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists', [], ['01'], []
             )
         ]
     ),
@@ -373,9 +409,9 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Craps/Balance/Balance_PS_TOR_Craps', [], ['02'], []
             ),
-            ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator', [3], [''], []
+            ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Devestator/Balance/Balance_PS_TOR_Devestator', [], ['02'], []
             ),
-            ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/Balance/Balance_PS_TOR_Echo', [], ['03'], []
+            ('/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/Balance/Balance_PS_TOR_Echo', [3], ['03'], []
             ),
             ('/Game/PatchDLC/Raid1/Gear/Weapons/HandCannon/Balance/Balance_PS_TOR_HandCannon', [], ['01'], []
             ),
@@ -459,7 +495,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Garcia/Balance/Balance_SG_JAK_Garcia', [], ['01'], []
             ),
-            ('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/Balance/Balance_SG_JAK_Hellwalker', [1,6,9], ['02_C'], []
+            ('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/Balance/Balance_SG_JAK_Hellwalker', [1,9], ['02'], []
             ),
             ('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Sledge/Balance/Balance_SG_JAK_LGD_Sledge', [3], [''], []
             ),
@@ -535,7 +571,7 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Balrog/Balance/Balance_SG_Torgue_Balrog', [], ['02'], []
             ),
-            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', [4], ['03'], []
+            ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', [0,4], ['03'], []
             ),
             ('/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/Balance/Balance_SG_Torgue_ETech_Shocker', [3,6], [''], []
             ),
@@ -721,11 +757,11 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
             ),
             ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Headsplosion/Balance/Balance_SR_JAK_Headsplosion', [5], ['03'], []
             ),
-            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Hunted/Balance/Balance_SR_JAK_Hunted', [], ['03'], []
+            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Hunted/Balance/Balance_SR_JAK_Hunted', [6,7], ['03'], []
             ),
-            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Balance/Balance_SR_JAK_Hunter', [], ['01'], []
+            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Balance/Balance_SR_JAK_Hunter', [6,7], ['01'], []
             ),
-            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Huntress/Balance/Balance_SR_JAK_Huntress', [], ['02'], []
+            ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Huntress/Balance/Balance_SR_JAK_Huntress', [6,7], ['02'], []
             ),
             ('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/IceQueen/Balance/Balance_SR_JAK_IceQueen', [5], ['02'], []
             ),
@@ -776,7 +812,17 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
 
     for target, exceptions, base_modslotnames, removed in targets:
         targ_bal = Balance.from_data(data, target)
-
+        
+        was_disabled = [False] * len(base_bal.categories)
+        
+        for index, cat in enumerate(base_bal.categories):
+            if (index not in (exceptions + basic_exceptions)) and (not targ_bal.categories[index].enabled) and base_bal.categories[index].enabled:
+                targ_bal.categories[index].enabled = True
+                was_disabled[index] = True
+                mod.reg_hotfix(Mod.PATCH, '',
+                                targ_bal.partset_name,
+                                'ActorPartLists[{}].bEnabled'.format(index),
+                                'true')
         
         for index in acc_slots:
         
@@ -787,6 +833,12 @@ for (label, base_rare_name, base_modslots, basic_exceptions, acc_slots, targets)
                                 'ActorPartLists[{}].MultiplePartSelectionRange.Max'.format(index),
                                 base_bal.categories[index].num_max)
                 #optional less min acc
+                if (was_disabled[index] and targ_bal.categories[index].num_min != 0):
+                    mod.reg_hotfix(Mod.PATCH, '',
+                                targ_bal.partset_name,
+                                'ActorPartLists[{}].MultiplePartSelectionRange.Min'.format(index),
+                                0)
+                    targ_bal.categories[index].num_min = 0
                 if (targ_bal.categories[index].num_min > base_bal.categories[index].num_min):
                     mod.reg_hotfix(Mod.PATCH, '',
                                 targ_bal.partset_name,
