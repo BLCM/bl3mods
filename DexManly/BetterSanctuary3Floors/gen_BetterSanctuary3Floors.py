@@ -16,13 +16,13 @@ mod = Mod('BetterSanctuary3Floors.bl3hotfix',
         ],
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='maps','qol',
+        cats='maps, qol',
         )
 
 level_Sanctuary3 = '/Game/Maps/Sanctuary3/Sanctuary3_P'
 basicCube = '/Engine/BasicShapes/Cube'
 burger = '/Game/InteractiveObjects/MissionSpecificObjects/DynastyDiner/Burger/Model/Meshes/SM_DynastyDiner_Burger'
-transparent = False
+transparent = True
 
 mod.comment("Burger AKA hotfix indicator")
 mod.mesh_hotfix(level_Sanctuary3,
