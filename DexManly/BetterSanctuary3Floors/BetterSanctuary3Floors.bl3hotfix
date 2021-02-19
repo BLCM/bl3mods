@@ -24,50 +24,50 @@
 SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Game/InteractiveObjects/MissionSpecificObjects/DynastyDiner/Burger/Model/Meshes,SM_DynastyDiner_Burger,90,"14700.000000,8269.000000,-685.000000|0.000000,0.000000,0.000000|3.000000,3.000000,3.000000",0
 
 # Floor Under Spawn and Character Quarters
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"14670.000000,7240.000000,-840.000000|0.000000,0.000000,0.000000|60.000000,50.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"14670.000000,7240.000000,-840.000000|0.000000,0.000000,0.000000|60.000000,50.000000,0.500000",1
 
 # Floor Under Left Hallway
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"13730.000000,3090.000000,-840.000000|0.000000,0.000000,0.000000|9.100000,33.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"13730.000000,3090.000000,-840.000000|0.000000,0.000000,0.000000|9.100000,33.000000,0.500000",1
 
 # Floor Under Moxxis
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12570.000000,1250.000000,-840.000000|0.000000,0.000000,0.000000|33.000000,30.000000,0.500000",0
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"11559.000000,-529.000000,-840.000000|0.000000,0.000000,0.000000|9.000000,10.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12570.000000,1250.000000,-840.000000|0.000000,0.000000,0.000000|33.000000,30.000000,0.500000",1
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"11559.000000,-529.000000,-840.000000|0.000000,0.000000,0.000000|9.000000,10.000000,0.500000",1
 
 # Floor Under Right Hallway
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"15650.000000,1890.000000,-840.000000|0.000000,0.000000,0.000000|9.100000,57.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,91,"15650.000000,1890.000000,-840.000000|0.000000,0.000000,0.000000|9.100000,57.000000,0.500000",1
 
 # Floor Under Marcus
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"17100.000000,2042.500000,-840.000000|0.000000,0.000000,0.000000|23.000000,30.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"17100.000000,2042.500000,-840.000000|0.000000,0.000000,0.000000|23.000000,30.000000,0.500000",1
 
 # Floor Under Hall to left-handed gun switch
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"15668.500000,2400.000000,-1460.000000|0.000000,0.000000,0.000000|40.000000,42.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"15668.500000,2400.000000,-1460.000000|0.000000,0.000000,0.000000|40.000000,42.000000,0.500000",1
 
 # Floor Under Shooting Range
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,94,"17200.000000,-1580.000000,-1460.000000|0.000000,0.000000,0.000000|20.000000,38.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,94,"17200.000000,-1580.000000,-1460.000000|0.000000,0.000000,0.000000|20.000000,38.000000,0.500000",1
 
 # Floor Under Zero Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"13180.000000,1000.000000,-1560.000000|0.000000,0.000000,0.000000|10.000000,10.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"13180.000000,1000.000000,-1560.000000|0.000000,0.000000,0.000000|10.000000,10.000000,0.500000",1
 
 # Floor Under Cargo Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"13850.000000,-477.000000,-2200.000000|0.000000,0.000000,0.000000|35.000000,50.000000,0.500000",0
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"15906.000000,-605.000000,-2200.000000|0.000000,0.000000,0.000000|7.000000,23.000000,0.500000",0
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"15906.000000,-2586.000000,-2200.000000|0.000000,0.000000,0.000000|7.000000,7.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"13850.000000,-477.000000,-2200.000000|0.000000,0.000000,0.000000|35.000000,50.000000,0.500000",1
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"15906.000000,-605.000000,-2200.000000|0.000000,0.000000,0.000000|7.000000,23.000000,0.500000",1
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"15906.000000,-2586.000000,-2200.000000|0.000000,0.000000,0.000000|7.000000,7.000000,0.500000",1
 
 # Floor Under DropPod Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"16709.000000,-2120.000000,-2400.000000|0.000000,0.000000,0.000000|20.000000,7.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"16709.000000,-2120.000000,-2400.000000|0.000000,0.000000,0.000000|20.000000,7.000000,0.500000",1
 
 # Bridge
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"14707.000000,-8623.000000,-720.000000|0.000000,0.000000,0.000000|20.000000,22.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"14707.000000,-8623.000000,-720.000000|0.000000,0.000000,0.000000|20.000000,22.000000,0.500000",1
 
 # Hall To Bridge
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"14697.000000,-4413.000000,-140.000000|0.000000,0.000000,0.000000|12.000000,54.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,93,"14697.000000,-4413.000000,-140.000000|0.000000,0.000000,0.000000|12.000000,54.000000,0.500000",1
 
 # Floor Under Lilith Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12400.000000,-4044.000000,-360.000000|0.000000,0.000000,0.000000|20.000000,9.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12400.000000,-4044.000000,-360.000000|0.000000,0.000000,0.000000|20.000000,9.000000,0.500000",1
 
 # Floor Under Ava Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"17000.000000,-4044.000000,-360.000000|0.000000,0.000000,0.000000|20.000000,9.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"17000.000000,-4044.000000,-360.000000|0.000000,0.000000,0.000000|20.000000,9.000000,0.500000",1
 
 # Floor Under Tannis Room
-SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12500.000000,-968.000000,-130.000000|0.000000,0.000000,0.000000|33.000000,45.000000,0.500000",0
+SparkLevelPatchEntry,(1,6,0,Sanctuary3_P),/Game/Maps/Sanctuary3,/Engine/BasicShapes,Cube,92,"12500.000000,-968.000000,-130.000000|0.000000,0.000000,0.000000|33.000000,45.000000,0.500000",1
 
