@@ -29,7 +29,7 @@ import configparser
 import pyodbc
 import re
 
-from bl3hotfixmod import BVC
+from TrevorSTroxel.bl3hotfixmod import BVC
 
 
 
