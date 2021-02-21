@@ -23,7 +23,7 @@ data = BL3Data()
 
 ##Function i uses to get only what is needed if you are choosing a JSON file
 filenames = [] #stores folder names
-with open('File_Names.txt', 'r') as filehandle:
+with open('TrevorSTroxel/File_Names.txt', 'r') as filehandle:
     for line in filehandle:
         # remove linebreak which is the last character of the string
         currentPlace = line[:-1]
@@ -31,7 +31,7 @@ with open('File_Names.txt', 'r') as filehandle:
         filenames.append(currentPlace)
 
 funcnames = [] #stores function names
-with open('Function_Names.txt', 'r') as filehandle:
+with open('TrevorSTroxel/Function_Names.txt', 'r') as filehandle:
     for line in filehandle:
         # remove linebreak which is the last character of the string
         currentPlace = line[:-1]
@@ -87,10 +87,10 @@ elif intake == "choose file":
 
 elif intake == "find all references":
     input1 = input("What do you want to search for? ")
-    info = data.get_refs_from_data(input1)
-    with open("search_results.txt", "a+") as a_file:
+    info = data.get_refs_from(input1)
+    with open("TrevorSTroxel/search_results.txt", "a+") as a_file:
         for items in info:
-            a_file.write(items + "\n")
+            a_file.write(str(items) + "\n")
     a_file.close()
     print("Look inside the search results text file")
 
@@ -118,6 +118,17 @@ elif intake == "make reg hotfix":
 
     input6 = "" #is ment to be blank. may change in the future 
 
+    if input1 == "patch":
+        input1 = mod.PATCHlevel
+    elif input1 == "level":
+        input1 = mod.LEVEL
+    elif input1 == "earlylevel":
+        input1 = mod.EARLYLEVEL
+    elif input1 == "char":
+        input1 = mod.CHAR
+
+    mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
+
     #This was me messing around with how these things work. still learning though
     # mod.reg_hotfix(
     # mod.LEVEL, 
@@ -134,13 +145,3 @@ elif intake == "make reg hotfix":
     # "0.065",
     # "")
 
-    if input1 == "patch":
-        input1 = mod.PATCHlevel
-    elif input1 == "level":
-        input1 = mod.LEVEL
-    elif input1 == "earlylevel":
-        input1 = mod.EARLYLEVEL
-    elif input1 == "char":
-        input1 = mod.CHAR
-
-    mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
