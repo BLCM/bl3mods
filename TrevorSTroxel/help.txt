@@ -1,0 +1,23 @@
+It does not matter if you types any caps in the the entry, the program will make it all lower case. 
+This more so for my sanity than anythig else
+
+List of commands (so far):
+
+mod header: creates a header for you hotfix mod
+
+choose file: if you know what information file you are looking for, you are able to choose what the excat file is.
+    NOTE: It does not matter where the file is located, the program will be able to find the exact information
+    It needs to continue.
+    NOTE 2: Later on I will add the ability to choose what you want to do with the chosen file, but for now I only have
+    it set up to loop through loot tables, and it will often break. I will be working on it so that it can be more interprative 
+    of what you want
+
+find all references: if you enter a valid name the program will return a list off all the times the name has been referenced 
+and will wright it into the reslts
+
+make reg hotfix: Will attempt to create a hotfix given the propor inputes:
+    NOTE: It requires EXACT information in order for it to work, and even then it 
+    still might not fully work because I am trying my best here. Improvements will
+    come as I continue to work on this, but just take note that it would be good to
+    look at the code that was written and check against other peoples hotfixes to make sure its correct
+    as time goes on this should be less and less of an issue, bgut for now its still a concern
