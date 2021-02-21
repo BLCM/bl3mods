@@ -29,9 +29,7 @@ import configparser
 import pyodbc
 import re
 
-from TrevorSTroxel.bl3hotfixmod import BVC
-
-
+from bl3hotfixmod import BVC
 
 class BL3Data(object):
     """
@@ -190,7 +188,7 @@ class BL3Data(object):
             #Unfortuanutly this is not public as it needs my credentials to login, 
             #but if it becomes popular enough I will try and make it a public database that is seperate from mine so that everyone can use
             self.db = pyodbc.connect('Driver={SQL Server};'
-                            'Server=<INSERT PC NAME>\SQLEXPRESS;'
+                            'Server=A-LARGE-MANS-PC\SQLEXPRESS;'
                             'Database=bl3references;'
                             'Trusted_Connection=yes;')
             self.curs = self.db.cursor()
