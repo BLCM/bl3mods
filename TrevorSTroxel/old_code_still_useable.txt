@@ -1,0 +1,42 @@
+#This again is anoth file That is mostly for me and my convience
+#Has no affect so feel free to delete if you want, or maye you'll find a use for it
+#Go wild with it, I am not your mom
+# for file in glob.glob(''):
+#     a = str(file).split("\\")[17]
+#     b = a.split(".")[0] + "\n"
+#     print(b)
+#     f = open("BL3Areas.txt", "a")
+#     f.write(b)
+#     f.close()
+
+# for file in glob.glob(''):
+#     a = str(file).split("\\")[17]
+#     b = a.split(".")[0] + "\n"
+#     print(b)
+#     f = open("BL3Areas.txt", "a")
+#     f.write(b)
+#     f.close()
+
+# for file in glob.glob(''):
+#     a = str(file).split("\\")[17]
+#     b = a.split(".")[0] + "\n"
+#     print(b)
+#     f = open("BL3Areas.txt", "a")
+#     f.write(b)
+#     f.close()
+
+# for file in glob.glob(''):
+#     a = str(file).split("\\")[17]
+#     b = a.split(".")[0] + "\n"
+#     print(b)
+#     f = open("BL3Areas.txt", "a")
+#     f.write(b)
+#     f.close()
+
+# for file in glob.glob(''):
+#     a = str(file).split("\\")[17]
+#     b = a.split(".")[0] + "\n"
+#     print(b)
+#     f = open("BL3Areas.txt", "a")
+#     f.write(b)
+#     f.close()
