@@ -17,6 +17,8 @@ from bl3data import BL3Data
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 import os
+import json
+from re import error, search
 #Global variables
 data = BL3Data()
 
@@ -72,18 +74,52 @@ if intake == "mod header":
             )
 
 elif intake == "choose file":
+    #i=4 #Whant to start tring to see if the file has a imbedded list, like 'ItemPools, then it will print it out, hen the use can select which one to choose from and loop through that data again'
     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
-    filename = askopenfilename(".json") # show an "Open" dialog box and return the path to the selected file
+    filename = askopenfilename() # show an "Open" dialog box and return the path to the selected file
     take1 = os.path.splitext(filename)[0] #Removes the files extention, as we dont need it
-    take2 = take1[filestart(take1)::] #this is the data we need to pass in information
+    proper_path = take1[filestart(take1)::] #this is the data we need to pass in information
 
-    # boss_loot will contain a serialized version of the poollist.
-    # boss_loot[0] will contain the single export, of type `ItemPoolListData`
-    boss_loot = data.get_data(take2)
+    #used to loop through a list, top make sure that the user picks what they want to iterate through
+    # A more complicated, but more user friendly version of the .get_data from bl3data, look into later how to make this patter
 
-    # Loop through the pool list
-    for pool in boss_loot[0]['ItemPools']:
-        print('Found item pool: {}'.format(pool['ItemPool'][1]))
+    Parent = data.get_data(proper_path)
+
+    for pool in Parent[0]:
+        #Best way I could figure this out. Will come back to improve on later
+        if pool == "_apoc_data_ver":
+            no = "pe"
+        elif pool == "_jwp_export_idx":
+            no = "pe"
+        elif pool == "_jwp_is_asset":
+            no = "pe"
+        elif pool == "_jwp_object_name":
+            no = "pe"
+        elif pool == "export_type":
+            no = "pe"
+        else:
+            print(pool)
+
+    ans = input("Enter a name from above ")
+    Child = Parent[0][ans]
+    for pool in Child[0]:
+        if pool == "_jwp_arr_idx":
+            no = "pe"
+        else:
+            #This now checks to see if there is anythin worth seeing, other wise it wont display it
+            #As I learn more I might have to come pack and change this, but for now it should be fine
+            test = pool
+            try:
+                for pool in Child:
+                    Chadd = ('Information you may like to know: {}'.format(pool[test][1]))
+                print(test)
+            except:
+                no = "pe"
+
+    ans2 = input("Enter a name from above ")
+    for pool in Child:
+        print('Info: {}'.format(pool[ans2][1]))
+
 
 elif intake == "find all references":
     input1 = input("What do you want to search for? ")
