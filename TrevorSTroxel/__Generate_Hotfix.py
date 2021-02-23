@@ -129,12 +129,13 @@ while True:
         input1 = input("What do you want to search for? ")
         info = data.get_refs_from_data(input1)
         for details in info:
-            list.append(details)
+            if details[0] not in list:
+                list.append(details[0])
         
         list.sort()
         with open("TrevorSTroxel/search_results.txt", "a+") as a_file:
             for items in list:
-                a_file.write(items + "\n")
+                a_file.write(str(items) + "\n")
         a_file.close()
         print("Look inside the search results text file")
 
