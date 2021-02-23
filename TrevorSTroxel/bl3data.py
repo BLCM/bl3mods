@@ -31,6 +31,7 @@ import re
 
 from bl3hotfixmod import BVC
 
+
 class BL3Data(object):
     """
     Class to assist in programmatically inspecting Borderlands 3 data as much as
@@ -207,7 +208,7 @@ class BL3Data(object):
             if not os.path.exists(json_file):
                 # PyPy3 is still on 3.6, which doesn't have capture_output
                 #subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', capture_output=True)
-                subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True) #added shell=True because on windows you will get premissions errors
             if os.path.exists(json_file):
                 with open(json_file) as df:
                     self.cache[obj_name] = json.load(df)
