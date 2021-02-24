@@ -39,24 +39,8 @@ with open('TrevorSTroxel/Function_Names.txt', 'r') as filehandle:
         filenames.append(currentPlace)
 
 #locates where the needed file position is in the string to we can grab everythin afterwards
-def filestart(string):
-    i = 0
-    index = 0
-    while index <= 0:
-        finding = "/" + filenames[i] 
-        i+=1   
-        if finding in string:
-            index = take1.find(finding) 
-    return index
 
-
-print("1. mod header")
-print("2. choose file")
-print("3. find all references")
-print("4. make reg hotfix")
-intake = input("Enter command: ")
-
-if intake == "1":
+def test1():
     input1 = input("Name of the hotfix file: ")
     input2 = input("The actual mod name: ")
     input3 = input("Author's name (You or who ever worked on it): ")
@@ -74,12 +58,19 @@ if intake == "1":
             cats = input6,
             )
 
-elif intake == "2":
+def test2():
     #i=4 #Whant to start tring to see if the file has a imbedded list, like 'ItemPools, then it will print it out, hen the use can select which one to choose from and loop through that data again'
     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
     filename = askopenfilename(filetypes=[("Choose file", ".json")]) # show an "Open" dialog box and return the path to the selected file
     take1 = os.path.splitext(filename)[0] #Removes the files extention, as we dont need it
-    proper_path = take1[filestart(take1)::] #this is the data we need to pass in information
+    i = 0
+    index = 0
+    while index <= 0:
+        finding = "/" + filenames[i] 
+        i+=1   
+        if finding in take1:
+            index = take1.find(finding) 
+    proper_path = take1[index::] #this is the data we need to pass in information
 
     #used to loop through a list, top make sure that the user picks what they want to iterate through
     # A more complicated, but more user friendly version of the .get_data from bl3data, look into later how to make this patter
@@ -126,7 +117,7 @@ elif intake == "2":
         print('Info: {}'.format(pool[ans2][1]))
 
 
-elif intake == "3":
+def test3():
     list = []
     input1 = input("What do you want to search for? ")
     info = data.get_refs_from_data(input1)
@@ -142,55 +133,55 @@ elif intake == "3":
     a_file.close()
     print("Look inside the search results text file")
 
-
-elif intake == "4":
+#This one has a lot of cleaning up to do
+def test4():
     print("NOTE: As of right now, this will be vauge because I am still learning how all the hotfixes work, so keep in mind that not all input requests won't make a lot of since")
-    print("I will work to improve on this later, but for now keep in mind that it will be confusing for what I am asking for")
-    input1 = input("Hot Fix Type: Mod.PATCH - Will create a SparkPatchEntry hotfix\n"
-    "mod.LEVEL- Will create a SparkLevelPatchEntry hotfix\n"
-    "mod.EARLYLEVEL- Will create a SparkEarlyLevelPatchEntry hotfix\n"
-    "mod.CHAR - Will create a SparkCharacterLoadedEntry hotfix\n"
-    # "Bottom onees are currently not used, do not use them"
-    # "Mod.PACKAGE - Will create a SparkStreamedPackageEntry hotfix\n"
-    # "Mod.POST - Will create a SparkPostLoadedEntry hotfix\n"
-    )
-    input2 = input("Map Location: ")
+    # print("I will work to improve on this later, but for now keep in mind that it will be confusing for what I am asking for")
+    # input1 = input("Hot Fix Type: Mod.PATCH - Will create a SparkPatchEntry hotfix\n"
+    # "mod.LEVEL- Will create a SparkLevelPatchEntry hotfix\n"
+    # "mod.EARLYLEVEL- Will create a SparkEarlyLevelPatchEntry hotfix\n"
+    # "mod.CHAR - Will create a SparkCharacterLoadedEntry hotfix\n"
+    # # "Bottom onees are currently not used, do not use them"
+    # # "Mod.PACKAGE - Will create a SparkStreamedPackageEntry hotfix\n"
+    # # "Mod.POST - Will create a SparkPostLoadedEntry hotfix\n"
+    # )
+    # input2 = input("Map Location: ")
 
-    input3 = input("File Path with JSON name and what __JWP__ Object you want to grab from that JSON file: ")
+    # input3 = input("File Path with JSON name and what __JWP__ Object you want to grab from that JSON file: ")
 
-    input4 = input("What you want to manipulate in the JSON file (WIP, will be better later on both discription and whatvalues to grab):")
-    input4a = input("Value you want to change: ")
+    # input4 = input("What you want to manipulate in the JSON file (WIP, will be better later on both discription and whatvalues to grab):")
+    # input4a = input("Value you want to change: ")
 
-    input5 = input("Type True for most things, else hit enter: ")
-    input5a = input("If you are changing a value, insert new value: ")
+    # input5 = input("Type True for most things, else hit enter: ")
+    # input5a = input("If you are changing a value, insert new value: ")
 
-    input6 = "" #is ment to be blank. may change in the future 
+    # input6 = "" #is ment to be blank. may change in the future 
 
-    if input1 == "patch":
-        input1 = mod.PATCHlevel
-    elif input1 == "level":
-        input1 = mod.LEVEL
-    elif input1 == "earlylevel":
-        input1 = mod.EARLYLEVEL
-    elif input1 == "char":
-        input1 = mod.CHAR
+    # if input1 == "patch":
+    #     input1 = mod.PATCH
+    # elif input1 == "level":
+    #     input1 = mod.LEVEL
+    # elif input1 == "earlylevel":
+    #     input1 = mod.EARLYLEVEL
+    # elif input1 == "char":
+    #     input1 = mod.CHAR
 
-    mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
+    # mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
 
 
-    #This was me messing around with how these things work. still learning though
-    # mod.reg_hotfix(
-    # mod.LEVEL, 
-    # "Anger_P", 
-    # "/Game/GameData/Regions/RegionManagerData.RegionManagerData", 
-    # "PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum",
-    # "True",
-    # "")
+#This was me messing around with how these things work. still learning though
+# mod.reg_hotfix(
+# mod.LEVEL, 
+# "Anger_P", 
+# "/Game/GameData/Regions/RegionManagerData.RegionManagerData", 
+# "PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum",
+# "True",
+# "")
 
-    # mod.reg_hotfix(mod.EARLYLEVEL, 
-    # "MatchALL", 
-    # "/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers",
-    # "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
-    # "0.065",
-    # "")
+# mod.reg_hotfix(mod.EARLYLEVEL, 
+# "MatchALL", 
+# "/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers",
+# "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
+# "0.065",
+# "")
 
