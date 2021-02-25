@@ -40,13 +40,7 @@ with open('TrevorSTroxel/Function_Names.txt', 'r') as filehandle:
 
 #locates where the needed file position is in the string to we can grab everythin afterwards
 
-def test1():
-    input1 = input("Name of the hotfix file: ")
-    input2 = input("The actual mod name: ")
-    input3 = input("Author's name (You or who ever worked on it): ")
-    input4 = input("Discription (NOTE: IT will be stored on one line for right now, will work to improve it later): ")
-    input5 = input("Version of this mod: ")
-    input6 = input("The catagory in which this mods fits to: ")
+def test1(input1, input2, input3, input4, input5, input6):
     mod = Mod(input1 + '.bl3hotfix',
             input2,
             input3,
