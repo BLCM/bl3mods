@@ -82,44 +82,44 @@ class BL3Data(object):
 
     # Hardcoded BVA values
     bva_values = {
-            }
+    }
 
     # Hardcoded part-category values
     cats_shields = [
-            'BODY',
-            'RARITY',
-            'LEGENDARY AUG',
-            'AUGMENT',
-            'ELEMENT',
-            'MATERIAL',
-            ]
+        'BODY',
+        'RARITY',
+        'LEGENDARY AUG',
+        'AUGMENT',
+        'ELEMENT',
+        'MATERIAL',
+    ]
 
     cats_grenades = [
-            'MANUFACTURER',
-            'ELEMENT',
-            'RARITY',
-            'AUGMENT',
-            'BEHAVIOR',
-            'MATERIAL',
-            ]
+        'MANUFACTURER',
+        'ELEMENT',
+        'RARITY',
+        'AUGMENT',
+        'BEHAVIOR',
+        'MATERIAL',
+    ]
 
     cats_coms = [
-            'CHARACTER',
-            'MODTYPE',
-            'RARITY',
-            'PRIMARY',
-            'SECONDARY',
-            'SKILLS',
-            '(unknown)',
-            ]
+        'CHARACTER',
+        'MODTYPE',
+        'RARITY',
+        'PRIMARY',
+        'SECONDARY',
+        'SKILLS',
+        '(unknown)',
+    ]
 
     cats_artifacts = [
-            'RARITY',
-            'LEGENDARY ABILITY',
-            'ABILITY',
-            'PRIMARY',
-            'SECONDARY',
-            ]
+        'RARITY',
+        'LEGENDARY ABILITY',
+        'ABILITY',
+        'PRIMARY',
+        'SECONDARY',
+    ]
 
     def __init__(self):
         """
@@ -139,16 +139,16 @@ class BL3Data(object):
         if not os.path.exists(self.config_file):
             config = configparser.ConfigParser()
             config['filesystem'] = {
-                    'data_dir': 'CHANGEME',
-                    'ueserialize_path': 'CHANGEME',
-                    }
+                'data_dir': 'CHANGEME',
+                'ueserialize_path': 'CHANGEME',
+            }
             #not used with my version, but is used in the normal version
             config['mysql'] = {
-                    'host': 'CHANGEME',
-                    'db': 'CHANGEME',
-                    'user': 'CHANGEME',
-                    'passwd': 'CHANGEME',
-                    }
+                'host': 'CHANGEME',
+                'db': 'CHANGEME',
+                'user': 'CHANGEME',
+                'passwd': 'CHANGEME',
+            }
             with open(self.config_file, 'w') as odf:
                 config.write(odf)
             print('Created sample config file {}'.format(self.config_file))
@@ -180,19 +180,20 @@ class BL3Data(object):
             raise Exception('Populate the "{}" section in {} to continue'.format(
                 section_name,
                 self.config_file,
-                ))
+            ))
 
     ##pretty much fom bl3data, but i use my own database to connect
     def _connect_db(self):
         if self.db is None:
             #This is for my own database as i could not get MySQL working for some reason
-            #Unfortuanutly this is not public as it needs my credentials to login, 
+            #Unfortuanutly this is not public as it needs my credentials to login,
             #but if it becomes popular enough I will try and make it a public database that is seperate from mine so that everyone can use
             self.db = pyodbc.connect('Driver={SQL Server};'
-                            'Server=A-LARGE-MANS-PC\SQLEXPRESS;'
-                            'Database=bl3references;'
-                            'Trusted_Connection=yes;')
+                                     'Server=A-LARGE-MANS-PC\SQLEXPRESS;'
+                                     'Database=bl3references;'
+                                     'Trusted_Connection=yes;')
             self.curs = self.db.cursor()
+
     def get_data(self, obj_name):
         """
         Returns a JSON-serialized version of the object `obj_name`, if possible.
@@ -208,14 +209,16 @@ class BL3Data(object):
             if not os.path.exists(json_file):
                 # PyPy3 is still on 3.6, which doesn't have capture_output
                 #subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', capture_output=True)
-                subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True) #added shell=True because on windows you will get premissions errors
+                subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE, shell=True)  # added shell=True because on windows you will get premissions errors
             if os.path.exists(json_file):
                 with open(json_file) as df:
                     self.cache[obj_name] = json.load(df)
                 if len(self.cache[obj_name]) > 0:
                     if '_apoc_data_ver' not in self.cache[obj_name][0] or self.cache[obj_name][0]['_apoc_data_ver'] < BL3Data.data_version:
                         # Regenerate if we have an old serialization
-                        subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                        subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize',
+                                        base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                         with open(json_file) as df:
                             self.cache[obj_name] = json.load(df)
             else:
@@ -307,7 +310,9 @@ class BL3Data(object):
         database.
         """
         self._connect_db()
-        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + "'%"+ str(obj_name) + "'" + " and o.id = r.to_obj and o2.id = r.from_obj"
+        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + \
+            "'%" + str(obj_name) + "'" + \
+            " and o.id = r.to_obj and o2.id = r.from_obj"
         self.curs.execute(test)
         return [row[0] for row in self.curs.fetchall()]
 
@@ -327,7 +332,9 @@ class BL3Data(object):
         database.
         """
         self._connect_db()
-        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + "'%"+ str(obj_name) + "'" + " and o.id = r.to_obj and o2.id = r.from_obj"
+        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + \
+            "'%" + str(obj_name) + "'" + \
+            " and o.id = r.to_obj and o2.id = r.from_obj"
         self.curs.execute(test)
         return[row[0] for row in self.curs.fetchall()]
 
@@ -347,7 +354,8 @@ class BL3Data(object):
         database connection to the refs database.
         """
         self._connect_db()
-        test = "select bl3object.name from bl3object where name like " + "'%" + str(short_name) + "'"
+        test = "select bl3object.name from bl3object where name like " + \
+            "'%" + str(short_name) + "'"
         self.curs.execute(test)
         return [row[0] for row in self.curs.fetchall()]
 
@@ -371,7 +379,8 @@ class BL3Data(object):
 
         # DT
         if bvc_obj.dtv and bvc_obj.dtv.table != 'None':
-            new_bvc = self.datatable_lookup(bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
+            new_bvc = self.datatable_lookup(
+                bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
             if new_bvc is not None:
                 bvc = new_bvc
 
@@ -402,7 +411,8 @@ class BL3Data(object):
                         bvc = new_bvc
                     #print('{} -> {}'.format(attr_name, bvc))
                 else:
-                    raise Exception('Unknown bva type {} for {}'.format(lookup_type, attr_name))
+                    raise Exception('Unknown bva type {} for {}'.format(
+                        lookup_type, attr_name))
 
         # AI
         if bvc_obj.ai and bvc_obj.ai != 'None':
@@ -411,7 +421,8 @@ class BL3Data(object):
                 # This uses EAttributeInitializerUsageMode::Scale, and depends on both
                 # player count and game mode (NVHM/TVHM).  This code's going to assume
                 # 1-player NVHM, which is 1, so no actual changes.
-                print('WARNING: Assuming 1-player NVHM while processing Enemy_MajorUpgrade_PerPlayer')
+                print(
+                    'WARNING: Assuming 1-player NVHM while processing Enemy_MajorUpgrade_PerPlayer')
             else:
                 raise Exception('Unknown AI: {}'.format(bvc_obj.ai))
 
@@ -465,7 +476,8 @@ class BL3Data(object):
                 if 'PartInspectionTitleOverride' in export:
                     title_name = export['PartInspectionTitleOverride'][0][1]
                     title_obj = self.get_data(title_name)
-                    ui_label = re.sub(r'\[/?.*?\]', '', title_obj[0]['Text']['string'])
+                    ui_label = re.sub(r'\[/?.*?\]', '',
+                                      title_obj[0]['Text']['string'])
 
                     # Some hardcoded overrides here
                     if ui_label.startswith('TRACKING '):
@@ -622,16 +634,19 @@ class BL3Data(object):
                     #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Weapons_Geranium',
                     #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Shields_Geranium',
                     #'/Game/PatchDLC/Geranium/Gear/_GearExtension/GParts/GPartExpansion_Grenades_Geranium',
-                    ]:
+            ]:
 
                 # Construct a list of anointments which this GPartExpansion provides
                 extra_anoints = []
-                expansion_data = self.get_exports(expansion_name, 'InventoryGenericPartExpansionData')[0]
+                expansion_data = self.get_exports(
+                    expansion_name, 'InventoryGenericPartExpansionData')[0]
                 for part in expansion_data['GenericParts']['Parts']:
-                    extra_anoints.append((part['PartData'][1], BVC.from_data_struct(part['Weight'])))
+                    extra_anoints.append(
+                        (part['PartData'][1], BVC.from_data_struct(part['Weight'])))
 
                 # Grab a list of balance collections which define the gear this expansion acts on.
-                bal_collections = [expansion_data['InventoryBalanceCollection'][1]]
+                bal_collections = [
+                    expansion_data['InventoryBalanceCollection'][1]]
                 for (extra, extra_data) in self.get_refs_to_data(bal_collections[0]):
                     if extra_data \
                             and extra_data[0]['export_type'] == 'InventoryBalanceCollectionData' \
@@ -640,13 +655,16 @@ class BL3Data(object):
 
                 # Now loop through all balances and populate our dict
                 for bal_collection in bal_collections:
-                    collection = self.get_exports(bal_collection, 'InventoryBalanceCollectionData')[0]
+                    collection = self.get_exports(
+                        bal_collection, 'InventoryBalanceCollectionData')[0]
                     if 'InventoryBalanceList' in collection:
                         for bal in collection['InventoryBalanceList']:
                             this_balance = bal['asset_path_name'].split('.')[0]
                             if this_balance not in self.balance_to_extra_anoints:
-                                self.balance_to_extra_anoints[this_balance] = []
-                            self.balance_to_extra_anoints[this_balance].append((expansion_name, extra_anoints))
+                                self.balance_to_extra_anoints[this_balance] = [
+                                ]
+                            self.balance_to_extra_anoints[this_balance].append(
+                                (expansion_name, extra_anoints))
 
         # Now, return the appropriate value
         if balance_name in self.balance_to_extra_anoints:

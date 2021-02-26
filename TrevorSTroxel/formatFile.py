@@ -42,7 +42,7 @@ a_file = open((""), "r")
 list_of_lines = a_file.readlines()
 i = 0
 k = 0
-for line in list_of_lines:    
+for line in list_of_lines:
     i += 1
     k += 1
     testing = str(line)
@@ -58,7 +58,8 @@ for line in list_of_lines:
         size = len(copystring)
         new_line = copystring[:size-2]
         list_of_lines[i - 1] = new_line
-        list_of_lines.insert(i, ") AS v(id, names)" + "\n" + "SELECT v.id, v.names FROM (VALUES" + "\n")
+        list_of_lines.insert(i, ") AS v(id, names)" +
+                             "\n" + "SELECT v.id, v.names FROM (VALUES" + "\n")
         k = 0
 
 a_file = open("", "w+")

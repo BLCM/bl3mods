@@ -1,7 +1,8 @@
 #This file was somthing i made quickly to help format JSON files whan I was first strting out
 #You can use it if you want, just know it won't do anything in the program
 
-import os, json
+import os
+import json
 list = []
 for root, dirs, files in os.walk(""):
     for file in files:

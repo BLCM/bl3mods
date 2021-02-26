@@ -22,49 +22,44 @@ from re import error, search
 data = BL3Data()
 
 ##Function i uses to get only what is needed if you are choosing a JSON file
-filenames = [] #stores folder names
-with open('TrevorSTroxel/File_Names.txt', 'r') as filehandle:
-    for line in filehandle:
-        # remove linebreak which is the last character of the string
-        currentPlace = line[:-1]
-        # add item to the list
-        filenames.append(currentPlace)
+filenames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
+             "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
 
-funcnames = [] #stores function names
-with open('TrevorSTroxel/Function_Names.txt', 'r') as filehandle:
-    for line in filehandle:
-        # remove linebreak which is the last character of the string
-        currentPlace = line[:-1]
-        # add item to the list
-        filenames.append(currentPlace)
+funcnames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
+             "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
 
 #locates where the needed file position is in the string to we can grab everythin afterwards
 
+
 def test1(input1, input2, input3, input4, input5, input6):
     mod = Mod(input1 + '.bl3hotfix',
-            input2,
-            input3,
-            [
-                input4,
-            ],
-            lic = Mod.CC_BY_SA_40,
-            v = input5,
-            cats = input6,
-            )
+              input2,
+              input3,
+              [
+                  input4,
+              ],
+              lic=Mod.CC_BY_SA_40,
+              v=input5,
+              cats=input6,
+              )
+
 
 def test2():
     #i=4 #Whant to start tring to see if the file has a imbedded list, like 'ItemPools, then it will print it out, hen the use can select which one to choose from and loop through that data again'
-    Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
-    filename = askopenfilename(filetypes=[("Choose file", ".json")]) # show an "Open" dialog box and return the path to the selected file
-    take1 = os.path.splitext(filename)[0] #Removes the files extention, as we dont need it
+    Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
+    # show an "Open" dialog box and return the path to the selected file
+    filename = askopenfilename(filetypes=[("Choose file", ".json")])
+    # Removes the files extention, as we dont need it
+    take1 = os.path.splitext(filename)[0]
     i = 0
     index = 0
     while index <= 0:
-        finding = "/" + filenames[i] 
-        i+=1   
+        finding = "/" + filenames[i]
+        i += 1
         if finding in take1:
-            index = take1.find(finding) 
-    proper_path = take1[index::] #this is the data we need to pass in information
+            index = take1.find(finding)
+    # this is the data we need to pass in information
+    proper_path = take1[index::]
 
     #used to loop through a list, top make sure that the user picks what they want to iterate through
     # A more complicated, but more user friendly version of the .get_data from bl3data, look into later how to make this patter
@@ -89,9 +84,9 @@ def test2():
     ans = input("Enter a name from above ")
     Child = Parent[0][ans]
     for pool in Child[0]:
-    #     if pool == error:
-    #     for pool in Child:
-    # else:
+        #     if pool == error:
+        #     for pool in Child:
+        # else:
         if pool == "_jwp_arr_idx":
             no = "pe"
         else:
@@ -100,7 +95,8 @@ def test2():
             test = pool
             try:
                 for pool in Child:
-                    Chadd = ('Information you may like to know: {}'.format(pool[test][1]))
+                    Chadd = (
+                        'Information you may like to know: {}'.format(pool[test][1]))
                 print(test)
 
             except:
@@ -128,6 +124,8 @@ def test3():
     print("Look inside the search results text file")
 
 #This one has a lot of cleaning up to do
+
+
 def test4():
     print("NOTE: As of right now, this will be vauge because I am still learning how all the hotfixes work, so keep in mind that not all input requests won't make a lot of since")
     # print("I will work to improve on this later, but for now keep in mind that it will be confusing for what I am asking for")
@@ -149,7 +147,7 @@ def test4():
     # input5 = input("Type True for most things, else hit enter: ")
     # input5a = input("If you are changing a value, insert new value: ")
 
-    # input6 = "" #is ment to be blank. may change in the future 
+    # input6 = "" #is ment to be blank. may change in the future
 
     # if input1 == "patch":
     #     input1 = mod.PATCH
@@ -165,17 +163,16 @@ def test4():
 
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
-# mod.LEVEL, 
-# "Anger_P", 
-# "/Game/GameData/Regions/RegionManagerData.RegionManagerData", 
+# mod.LEVEL,
+# "Anger_P",
+# "/Game/GameData/Regions/RegionManagerData.RegionManagerData",
 # "PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum",
 # "True",
 # "")
 
-# mod.reg_hotfix(mod.EARLYLEVEL, 
-# "MatchALL", 
+# mod.reg_hotfix(mod.EARLYLEVEL,
+# "MatchALL",
 # "/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers",
 # "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
 # "0.065",
 # "")
-

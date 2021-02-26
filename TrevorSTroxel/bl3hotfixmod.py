@@ -23,6 +23,7 @@ import os
 import sys
 import gzip
 
+
 class Mod(object):
     """
     Helper class for writing hotfix-injection mods for BL3
@@ -37,61 +38,61 @@ class Mod(object):
     # a bit pointless in here.  Still, putting them in for those times when I feel
     # like doing some more trial-and-error to get 'em to work.
     TYPE = {
-            PATCH: 'SparkPatchEntry',
-            LEVEL: 'SparkLevelPatchEntry',
-            EARLYLEVEL: 'SparkEarlyLevelPatchEntry',
-            CHAR: 'SparkCharacterLoadedEntry',
-            # No idea what the right syntax is for these two...
-            PACKAGE: 'SparkStreamedPackageEntry',
-            POST: 'SparkPostLoadedEntry',
-        }
+        PATCH: 'SparkPatchEntry',
+        LEVEL: 'SparkLevelPatchEntry',
+        EARLYLEVEL: 'SparkEarlyLevelPatchEntry',
+        CHAR: 'SparkCharacterLoadedEntry',
+        # No idea what the right syntax is for these two...
+        PACKAGE: 'SparkStreamedPackageEntry',
+        POST: 'SparkPostLoadedEntry',
+    }
 
     # "Known" licenses
     (CC_40,
-            CC_BY_ND_40,
-            CC_BY_SA_40,
-            CC_NC_40,
-            CC_BY_NC_ND_40,
-            CC_BY_NC_SA_40,
-            CC0,
-            PUBLICDOMAIN) = range(8)
+     CC_BY_ND_40,
+     CC_BY_SA_40,
+     CC_NC_40,
+     CC_BY_NC_ND_40,
+     CC_BY_NC_SA_40,
+     CC0,
+     PUBLICDOMAIN) = range(8)
 
     # Reporting constants to the user
     LIC_TO_LABEL = {
-            CC_40: 'CC_40',
-            CC_BY_ND_40: 'CC_BY_ND_40',
-            CC_BY_SA_40: 'CC_BY_SA_40',
-            CC_NC_40: 'CC_NC_40',
-            CC_BY_NC_ND_40: 'CC_BY_NC_ND_40',
-            CC_BY_NC_SA_40: 'CC_BY_NC_SA_40',
-            CC0: 'CC0',
-            PUBLICDOMAIN: 'PUBLICDOMAIN',
-            }
+        CC_40: 'CC_40',
+        CC_BY_ND_40: 'CC_BY_ND_40',
+        CC_BY_SA_40: 'CC_BY_SA_40',
+        CC_NC_40: 'CC_NC_40',
+        CC_BY_NC_ND_40: 'CC_BY_NC_ND_40',
+        CC_BY_NC_SA_40: 'CC_BY_NC_SA_40',
+        CC0: 'CC0',
+        PUBLICDOMAIN: 'PUBLICDOMAIN',
+    }
 
     # Known license info
     LIC_INFO = {
-            CC_40: ('Creative Commons Attribution 4.0 International (CC BY 4.0)',
+        CC_40: ('Creative Commons Attribution 4.0 International (CC BY 4.0)',
                 'https://creativecommons.org/licenses/by/4.0/'),
-            CC_BY_ND_40: ('Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)',
-                'https://creativecommons.org/licenses/by-nd/4.0/'),
-            CC_BY_SA_40: ('Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
-                'https://creativecommons.org/licenses/by-sa/4.0/'),
-            CC_NC_40: ('Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)',
-                'https://creativecommons.org/licenses/by-nc/4.0/'),
-            CC_BY_NC_ND_40: ('Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)',
-                'https://creativecommons.org/licenses/by-nc-nd/4.0/'),
-            CC_BY_NC_SA_40: ('Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
-                'https://creativecommons.org/licenses/by-nc-sa/4.0/'),
-            # These two are essentially just aliases for each other
-            CC0: ('Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
-                'https://creativecommons.org/publicdomain/zero/1.0/'),
-            PUBLICDOMAIN: ('Public Domain (Creative Commons CC0 1.0 Universal (CC0 1.0))',
-                'https://creativecommons.org/publicdomain/zero/1.0/'),
-            }
+        CC_BY_ND_40: ('Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)',
+                      'https://creativecommons.org/licenses/by-nd/4.0/'),
+        CC_BY_SA_40: ('Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)',
+                      'https://creativecommons.org/licenses/by-sa/4.0/'),
+        CC_NC_40: ('Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)',
+                   'https://creativecommons.org/licenses/by-nc/4.0/'),
+        CC_BY_NC_ND_40: ('Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)',
+                         'https://creativecommons.org/licenses/by-nc-nd/4.0/'),
+        CC_BY_NC_SA_40: ('Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)',
+                         'https://creativecommons.org/licenses/by-nc-sa/4.0/'),
+        # These two are essentially just aliases for each other
+        CC0: ('Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
+              'https://creativecommons.org/publicdomain/zero/1.0/'),
+        PUBLICDOMAIN: ('Public Domain (Creative Commons CC0 1.0 Universal (CC0 1.0))',
+                       'https://creativecommons.org/publicdomain/zero/1.0/'),
+    }
 
     def __init__(self, filename, title, author, description,
-            v=None, lic=None, cats=None,
-            ss=None, videos=None, urls=None, nexus=None):
+                 v=None, lic=None, cats=None,
+                 ss=None, videos=None, urls=None, nexus=None):
         """
         Initializes ourselves and starts writing the mod
         """
@@ -124,20 +125,24 @@ class Mod(object):
         print('### Author: {}'.format(self.author), file=self.df)
         if self.categories:
             if type(self.categories) == list:
-                print('### Categories: {}'.format(', '.join(self.categories)), file=self.df)
+                print('### Categories: {}'.format(
+                    ', '.join(self.categories)), file=self.df)
             else:
-                print('### Categories: {}'.format(self.categories), file=self.df)
+                print('### Categories: {}'.format(
+                    self.categories), file=self.df)
         print('###', file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
         # if it hasn't!)
         if self.lic is None:
             print('')
-            print('WARNING: You should specify a license with the `lic=` argument to Mod()')
+            print(
+                'WARNING: You should specify a license with the `lic=` argument to Mod()')
             print('')
             print('Available pre-configured licenses:')
             print('')
-            max_strlen = str(max([len(l) for l in Mod.LIC_TO_LABEL.values()]) + 4)
+            max_strlen = str(
+                max([len(l) for l in Mod.LIC_TO_LABEL.values()]) + 4)
             format_str = ' {:' + max_strlen + 's} {} {}'
             for lic_key, lic_label in Mod.LIC_TO_LABEL.items():
                 lic_title, lic_url = Mod.LIC_INFO[lic_key]
@@ -145,7 +150,8 @@ class Mod(object):
                 print(format_str.format('', ' ', lic_url))
                 print('')
             print('')
-            print('You can alternatively specify text for `lic=` to use any other license.')
+            print(
+                'You can alternatively specify text for `lic=` to use any other license.')
             print('Apocalyptech recommends `Mod.CC_BY_SA_40` but you do you!')
             print('')
         else:
@@ -201,9 +207,9 @@ class Mod(object):
         expanded_obj = '{}.{}'.format(object_name, object_name.split('/')[-1])
         if data_type:
             return '{}\'"{}"\''.format(
-                    data_type,
-                    expanded_obj,
-                    )
+                data_type,
+                expanded_obj,
+            )
         else:
             return expanded_obj
 
@@ -222,9 +228,9 @@ class Mod(object):
 
         if data_type:
             return '{}\'"{}"\''.format(
-                    data_type,
-                    expanded_obj,
-                    )
+                data_type,
+                expanded_obj,
+            )
         else:
             return expanded_obj
 
@@ -274,9 +280,9 @@ class Mod(object):
         Writes a regular hotfix to the mod file
         """
         if notify:
-            notification_flag=1
+            notification_flag = 1
         else:
-            notification_flag=0
+            notification_flag = 0
         print('{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
             hf_type=Mod.TYPE[hf_type],
             notification_flag=notification_flag,
@@ -286,7 +292,7 @@ class Mod(object):
             prev_val_len=len(prev_val),
             prev_val=prev_val,
             new_val=self._process_value(new_val),
-            ), file=self.df)
+        ), file=self.df)
         self.last_was_newline = False
 
     def table_hotfix(self, hf_type, package, obj_name, row_name, attr_name, new_val, prev_val='', notify=False):
@@ -294,9 +300,9 @@ class Mod(object):
         Writes a regular hotfix to the mod file
         """
         if notify:
-            notification_flag=1
+            notification_flag = 1
         else:
-            notification_flag=0
+            notification_flag = 0
         print('{hf_type},(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format(
             hf_type=Mod.TYPE[hf_type],
             notification_flag=notification_flag,
@@ -307,16 +313,16 @@ class Mod(object):
             prev_val_len=len(prev_val),
             prev_val=prev_val,
             new_val=self._process_value(new_val),
-            ), file=self.df)
+        ), file=self.df)
         self.last_was_newline = False
 
     def mesh_hotfix(self, map_path, mesh_path,
-            location=(0,0,0),
-            rotation=(0,0,0),
-            scale=(1,1,1),
-            transparent=False,
-            early=False,
-            notify=False):
+                    location=(0, 0, 0),
+                    rotation=(0, 0, 0),
+                    scale=(1, 1, 1),
+                    transparent=False,
+                    early=False,
+                    notify=False):
         """
         Writes out a SpawnMesh-altering hotfix to the mod file
         """
@@ -329,9 +335,9 @@ class Mod(object):
 
         # Notify flag
         if notify:
-            notification_flag=1
+            notification_flag = 1
         else:
-            notification_flag=0
+            notification_flag = 0
 
         # Map path
         map_first, map_last = map_path.rsplit('/', 1)
@@ -344,7 +350,7 @@ class Mod(object):
         for coords in [location, rotation, scale]:
             coord_parts.append(','.join([
                 '{:.6f}'.format(n) for n in coords
-                ]))
+            ]))
         coord_field = '|'.join(coord_parts)
 
         # Transparent-or-visible
@@ -363,7 +369,7 @@ class Mod(object):
             coord_len=len(coord_field),
             coord_field=coord_field,
             transparent_flag=transparent_flag,
-            ), file=self.df)
+        ), file=self.df)
 
     def close(self):
         """
@@ -373,6 +379,7 @@ class Mod(object):
             self.newline()
         self.df.close()
         print('Wrote mod to {}'.format(self.filename))
+
 
 class DataTableValue(object):
     """
@@ -389,10 +396,11 @@ class DataTableValue(object):
 
     def __str__(self):
         return '(DataTable={},RowName="{}",ValueName="{}")'.format(
-                Mod.get_full_cond(self.table, 'DataTable'),
-                self.row,
-                self.value,
-                )
+            Mod.get_full_cond(self.table, 'DataTable'),
+            self.row,
+            self.value,
+        )
+
 
 class BVC(object):
     """
@@ -438,8 +446,8 @@ class BVC(object):
         # DataTable
         if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
             dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
-                    row=data['DataTableValue']['RowName'],
-                    value=data['DataTableValue']['ValueName'])
+                                 row=data['DataTableValue']['RowName'],
+                                 value=data['DataTableValue']['ValueName'])
         else:
             dtv = None
 
@@ -463,10 +471,10 @@ class BVC(object):
             bvs = 1
 
         return BVC(bvc=bvc,
-                dtv=dtv,
-                bva=bva,
-                ai=ai,
-                bvs=bvs)
+                   dtv=dtv,
+                   bva=bva,
+                   ai=ai,
+                   bvs=bvs)
 
     def _get_parts(self):
         parts = []
@@ -476,9 +484,11 @@ class BVC(object):
             parts.append('DataTableValue={}'.format(self.dtv))
         # TODO: Are these always the object types for BVA/AI?
         if self.full or self.bva != 'None':
-            parts.append('BaseValueAttribute={}'.format(Mod.get_full_cond(self.bva, 'GbxAttributeData')))
+            parts.append('BaseValueAttribute={}'.format(
+                Mod.get_full_cond(self.bva, 'GbxAttributeData')))
         if self.full or self.ai != 'None':
-            parts.append('AttributeInitializer={}'.format(Mod.get_full_cond(self.ai, 'BlueprintGeneratedClass')))
+            parts.append('AttributeInitializer={}'.format(
+                Mod.get_full_cond(self.ai, 'BlueprintGeneratedClass')))
         if self.full or self.bvs != 1:
             parts.append('BaseValueScale={}'.format(round(self.bvs, 6)))
         return parts
@@ -493,6 +503,7 @@ class BVC(object):
         else:
             return '({})'.format(','.join(parts))
 
+
 class BVCF(BVC):
     """
     A BVC which always has `full=True` specified.  Just a little convenience class.
@@ -502,6 +513,7 @@ class BVCF(BVC):
 
     def __init__(self, **kwargs):
         super().__init__(full=True, **kwargs)
+
 
 class ItemPoolListEntry(object):
     """
@@ -523,12 +535,15 @@ class ItemPoolListEntry(object):
 
     def __str__(self):
         parts = []
-        parts.append('ItemPool={}'.format(Mod.get_full_cond(self.pool_name, 'ItemPool')))
+        parts.append('ItemPool={}'.format(
+            Mod.get_full_cond(self.pool_name, 'ItemPool')))
         if self.probability and self.probability.has_data():
             parts.append('PoolProbability={}'.format(self.probability))
         if self.num and self.num.has_data():
-            parts.append('NumberOfTimesToSelectFromThisPool={}'.format(self.num))
+            parts.append(
+                'NumberOfTimesToSelectFromThisPool={}'.format(self.num))
         return '({})'.format(','.join(parts))
+
 
 class ItemPoolEntry(object):
     """
@@ -549,13 +564,17 @@ class ItemPoolEntry(object):
         """
         parts = []
         if self.pool_name:
-            parts.append('ItemPoolData={}'.format(Mod.get_full_cond(self.pool_name, 'ItemPoolData')))
+            parts.append('ItemPoolData={}'.format(
+                Mod.get_full_cond(self.pool_name, 'ItemPoolData')))
         if self.balance_name:
-            parts.append('InventoryBalanceData={}'.format(Mod.get_full_cond(self.balance_name)))
-            parts.append('ResolvedInventoryBalanceData={}'.format(Mod.get_full_cond(self.balance_name, 'InventoryBalanceData')))
+            parts.append('InventoryBalanceData={}'.format(
+                Mod.get_full_cond(self.balance_name)))
+            parts.append('ResolvedInventoryBalanceData={}'.format(
+                Mod.get_full_cond(self.balance_name, 'InventoryBalanceData')))
         if self.weight:
             parts.append('Weight={}'.format(self.weight))
         return '({})'.format(','.join(parts))
+
 
 class ItemPool(object):
     """
@@ -574,7 +593,8 @@ class ItemPool(object):
         """
         if not weight:
             weight = BVC()
-        self.balanceditems.append(ItemPoolEntry(pool_name=pool_name, weight=weight))
+        self.balanceditems.append(ItemPoolEntry(
+            pool_name=pool_name, weight=weight))
 
     def add_balance(self, balance_name, weight=None):
         """
@@ -584,7 +604,8 @@ class ItemPool(object):
         """
         if not weight:
             weight = BVC()
-        self.balanceditems.append(ItemPoolEntry(balance_name=balance_name, weight=weight))
+        self.balanceditems.append(ItemPoolEntry(
+            balance_name=balance_name, weight=weight))
 
     @staticmethod
     def from_data(data, pool_name):
@@ -610,6 +631,7 @@ class ItemPool(object):
         """
         return '({})'.format(','.join([str(i) for i in self.balanceditems]))
 
+
 class Part(object):
     """
     Class to hold info about a single Part for an item/weapon.  Just the object name
@@ -628,9 +650,10 @@ class Part(object):
 
     def __str__(self):
         return '(PartData={},Weight={})'.format(
-                Mod.get_full_cond(self.part_name),
-                self.weight,
-                )
+            Mod.get_full_cond(self.part_name),
+            self.weight,
+        )
+
 
 class PartCategory(object):
     """
@@ -642,11 +665,11 @@ class PartCategory(object):
     """
 
     def __init__(self, num_min=1, num_max=1,
-            index=0,
-            partlist=None,
-            part_type_enum=None,
-            select_multiple=False, use_weight_with_mult=False,
-            enabled=True):
+                 index=0,
+                 partlist=None,
+                 part_type_enum=None,
+                 select_multiple=False, use_weight_with_mult=False,
+                 enabled=True):
         self.num_min = num_min
         self.num_max = num_max
         self.index = index
@@ -666,22 +689,23 @@ class PartCategory(object):
         Convenience for when we construct Balance objects
         """
         new = PartCategory(
-                num_min=self.num_min,
-                num_max=self.num_max,
-                index=self.index,
-                part_type_enum=self.part_type_enum,
-                partlist=list(self.partlist),
-                select_multiple=self.select_multiple,
-                use_weight_with_mult=self.use_weight_with_mult,
-                enabled=self.enabled,
-                )
+            num_min=self.num_min,
+            num_max=self.num_max,
+            index=self.index,
+            part_type_enum=self.part_type_enum,
+            partlist=list(self.partlist),
+            select_multiple=self.select_multiple,
+            use_weight_with_mult=self.use_weight_with_mult,
+            enabled=self.enabled,
+        )
         if type(other) == PartCategory:
             for part in other.partlist:
                 new.add_part_obj(part)
         elif type(other) == int and other == 0:
             pass
         else:
-            raise TypeError('PartCategory objects can only be added to other PartCategory objects')
+            raise TypeError(
+                'PartCategory objects can only be added to other PartCategory objects')
         return new
 
     def __radd__(self, other):
@@ -753,14 +777,15 @@ class PartCategory(object):
             bEnabled={enabled},
             Parts=()
         )""".format(
-                part_type_enum=Mod.get_full_cond(self.part_type_enum),
-                index=self.index,
-                select_multiple=str(self.select_multiple),
-                use_weight_with_mult=str(self.use_weight_with_mult),
-                num_min=self.num_min,
-                num_max=self.num_max,
-                enabled=str(self.enabled),
-                )
+            part_type_enum=Mod.get_full_cond(self.part_type_enum),
+            index=self.index,
+            select_multiple=str(self.select_multiple),
+            use_weight_with_mult=str(self.use_weight_with_mult),
+            num_min=self.num_min,
+            num_max=self.num_max,
+            enabled=str(self.enabled),
+        )
+
 
 class Balance(object):
     """
@@ -782,11 +807,11 @@ class Balance(object):
     # PartSet mode mappings
     (PS_MODE_COMPLETE, PS_MODE_ADDITIVE, PS_MODE_SELECTIVE) = range(3)
     PS_MODE_MAPPING = {
-            'EActorPartReplacementMode::Complete': PS_MODE_COMPLETE,
-            # Additive is the default and will likely never actually show up in dumps
-            'EActorPartReplacementMode::Additive': PS_MODE_ADDITIVE,
-            'EActorPartReplacementMode::Selective': PS_MODE_SELECTIVE,
-            }
+        'EActorPartReplacementMode::Complete': PS_MODE_COMPLETE,
+        # Additive is the default and will likely never actually show up in dumps
+        'EActorPartReplacementMode::Additive': PS_MODE_ADDITIVE,
+        'EActorPartReplacementMode::Selective': PS_MODE_SELECTIVE,
+    }
     PS_MODE_DEFAULT = PS_MODE_ADDITIVE
 
     def __init__(self, bal_name, partset_name, part_type_enum=None, raw_bal_data=None, raw_ps_data=None):
@@ -816,7 +841,8 @@ class Balance(object):
         if not bal_obj:
             raise Exception('Could not find datafile for {}'.format(bal_name))
         if len(bal_obj) != 1:
-            raise Exception('Unknown export count ({}) for: {}'.format(len(bal_obj), bal_name))
+            raise Exception('Unknown export count ({}) for: {}'.format(
+                len(bal_obj), bal_name))
         last_bit = bal_name.split('/')[-1]
         bal_data = bal_obj[0]
 
@@ -838,7 +864,8 @@ class Balance(object):
                 base_sel_name = cur_bal_data['BaseSelectionData'][1]
                 cur_bal_data = data.get_data(base_sel_name)
                 if not cur_bal_data:
-                    raise Exception('Could not find datafile for {}'.format(base_sel_name))
+                    raise Exception(
+                        'Could not find datafile for {}'.format(base_sel_name))
                 cur_bal_data = cur_bal_data[0]
             else:
                 break
@@ -853,7 +880,8 @@ class Balance(object):
         for partset_name in reversed(partset_names):
             partset_data = data.get_data(partset_name)
             if not partset_data:
-                raise Exception('Could not find datafile for {}'.format(partset_name))
+                raise Exception(
+                    'Could not find datafile for {}'.format(partset_name))
             partset_data = partset_data[0]
 
             # Figure out the mode of the PartSet APLs
@@ -874,7 +902,8 @@ class Balance(object):
                                 partdata = part['PartData']
                                 weight = BVC.from_data_struct(part['Weight'])
                                 if type(part['PartData']) == list:
-                                    generics[0][1].append((partdata[1], weight))
+                                    generics[0][1].append(
+                                        (partdata[1], weight))
                                 else:
                                     generics[0][1].append(('None', weight))
 
@@ -886,7 +915,8 @@ class Balance(object):
                                 partdata = part['PartData']
                                 weight = BVC.from_data_struct(part['Weight'])
                                 if type(part['PartData']) == list:
-                                    generics[0][1].append((partdata[1], weight))
+                                    generics[0][1].append(
+                                        (partdata[1], weight))
                                 else:
                                     generics[0][1].append(('None', weight))
 
@@ -899,13 +929,15 @@ class Balance(object):
                                 partdata = part['PartData']
                                 weight = BVC.from_data_struct(part['Weight'])
                                 if type(part['PartData']) == list:
-                                    generics[0][1].append((partdata[1], weight))
+                                    generics[0][1].append(
+                                        (partdata[1], weight))
                                 else:
                                     generics[0][1].append(('None', weight))
 
                 else:
                     # Not sure how we'd ever get here...
-                    raise Exception('Unknown generics partset mode: {}'.format(partset_mode))
+                    raise Exception(
+                        'Unknown generics partset mode: {}'.format(partset_mode))
 
             # Loop through the APLs
             for idx, category in enumerate(partset_data['ActorPartLists']):
@@ -952,7 +984,8 @@ class Balance(object):
 
                 else:
                     # Not sure how we'd ever get here...
-                    raise Exception('Unknown partset mode: {}'.format(partset_mode))
+                    raise Exception(
+                        'Unknown partset mode: {}'.format(partset_mode))
 
         # Doublecheck we have a partset (don't know how we'd get here)
         if partset_name is None or partset_data is None:
@@ -968,7 +1001,7 @@ class Balance(object):
                         print('WARNING: PartTypeEnum mismatch detected in APL[{}] - {}'.format(
                             apl_idx,
                             partset_name,
-                            ))
+                        ))
                         have_mismatch = True
                         break
                 else:
@@ -982,9 +1015,9 @@ class Balance(object):
 
         # No reason not to create a Balance object now
         bal = Balance(bal_name, partset_name, part_type_enum,
-                raw_bal_data=bal_data,
-                raw_ps_data=partset_data,
-                )
+                      raw_bal_data=bal_data,
+                      raw_ps_data=partset_data,
+                      )
 
         # Populate the `generics` PartCategory inside the new Balance object
         bal.generics = generics
@@ -999,13 +1032,13 @@ class Balance(object):
                 apl['MultiplePartSelectionRange']['Min'] = 1
 
             partcat = PartCategory(
-                    num_min=apl['MultiplePartSelectionRange']['Min'],
-                    num_max=apl['MultiplePartSelectionRange']['Max'],
-                    index=apl['PartType'],
-                    part_type_enum=apl['PartTypeEnum'][1],
-                    select_multiple=apl['bCanSelectMultipleParts'],
-                    use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
-                    enabled=apl['bEnabled'])
+                num_min=apl['MultiplePartSelectionRange']['Min'],
+                num_max=apl['MultiplePartSelectionRange']['Max'],
+                index=apl['PartType'],
+                part_type_enum=apl['PartTypeEnum'][1],
+                select_multiple=apl['bCanSelectMultipleParts'],
+                use_weight_with_mult=apl['bUseWeightWithMultiplePartSelection'],
+                enabled=apl['bEnabled'])
             for part, weight in partlist:
                 # Weird data mangling here.  A couple of artifacts seem to reference
                 # Artifact_Part_Stats_FireDamage and Artifact_Part_Stats_CryoDamage in
@@ -1036,7 +1069,8 @@ class Balance(object):
         part_type_enum based on what we already know about it.
         """
         if not self.part_type_enum:
-            raise Exception('part_type_enum must be defined for add_category_smart()')
+            raise Exception(
+                'part_type_enum must be defined for add_category_smart()')
         category.index = len(self.categories)
         category.part_type_enum = self.part_type_enum
         self.categories.append(category)
@@ -1057,9 +1091,9 @@ class Balance(object):
         Generates hotfixes to completely set the PartSet portion.
         """
         mod.reg_hotfix(hf_type, hf_package,
-                self.partset_name,
-                'ActorPartLists',
-                '({})'.format(','.join([str(c) for c in self.categories])))
+                       self.partset_name,
+                       'ActorPartLists',
+                       '({})'.format(','.join([str(c) for c in self.categories])))
 
     def hotfix_balance_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
@@ -1073,20 +1107,20 @@ class Balance(object):
             toc.append((cur_idx, len(cat)))
             cur_idx += len(cat)
         mod.reg_hotfix(hf_type, hf_package,
-                self.bal_name,
-                'RuntimePartList.PartTypeTOC',
-                '({})'.format(
-                    ','.join([
-                        '(StartIndex={},NumParts={})'.format(t[0], t[1]) for t in toc
-                        ])
-                    ))
+                       self.bal_name,
+                       'RuntimePartList.PartTypeTOC',
+                       '({})'.format(
+                           ','.join([
+                               '(StartIndex={},NumParts={})'.format(t[0], t[1]) for t in toc
+                           ])
+                       ))
 
         # Now the AllParts list
         all_parts = sum(self.categories)
         mod.reg_hotfix(hf_type, hf_package,
-                self.bal_name,
-                'RuntimePartList.AllParts',
-                '({})'.format(','.join([str(p) for p in all_parts.partlist])))
+                       self.bal_name,
+                       'RuntimePartList.AllParts',
+                       '({})'.format(','.join([str(p) for p in all_parts.partlist])))
 
     def hotfix_full(self, mod, hf_type=Mod.PATCH, hf_package=''):
         """
@@ -1095,80 +1129,80 @@ class Balance(object):
         self.hotfix_partset_full(mod, hf_type, hf_package)
         self.hotfix_balance_full(mod, hf_type, hf_package)
 
+
 LVL_TO_ENG = {
-        'Anger_P': "Castle Crimson",
-        'Archive_P': "Dustbound Archives",
-        'AtlasHQ_P': "Atlas HQ",
-        'Bar_P': "Lodge",
-        'Beach_P': "Tazendeer Ruins",
-        'BloodyHarvest_P': "Heck Hole",
-        'Camp_P': "Negul Neshai",
-        'Cartels_P': "Villa Ultraviolet",
-        'CasinoIntro_P': "Grand Opening",
-        'Chase_P': "Sapphire's Run",
-        'City_P': "Meridian Metroplex",
-        'CityBoss_P': "Forgotten Basilica",
-        'CityVault_P': "Neon Arterial",
-        'Convoy_P': "Sandblast Scar",
-        'Core_P': "Jack's Secret",
-        'COVSlaughter_P': "Slaughter Shaft",
-        'CraterBoss_P': "Crater's Edge",
-        'CreatureSlaughter_P': "Cistern of Slaughter",
-        'Crypt_P': "Pyre of Stars",
-        'Desert_P': "Devil's Razor",
-        'DesertBoss_P': "Great Vault",
-        'Desertvault_P': "Cathedral of the Twin Gods",
-        'Desolate_P': "Desolation's Edge",
-        'Eldorado_P': "Vaulthalla",
-        'Experiment_P': "Benediction of Pain",
-        'Facility_P': "Bloodsun Canyon",
-        'FinalBoss_P': "Destroyer's Rift",
-        'Forest_P': "Obsidian Forest",
-        'Frontier_P': "The Blastplains",
-        'FrostSite_P': "Stormblind Complex",
-        'GuardianTakedown_P': "Minos Prime / The Shattered Tribunal",
-        'Impound_P': "Impound Deluxe",
-        'Lake_P': "Skittermaw Basin",
-        'Lodge_P': "Ashfall Peaks",
-        'Mansion_P': "Jakobs Estate",
-        'MarshFields_P': "Ambermire",
-        'Mine_P': "Konrad's Hold",
-        'Monastery_P': "Athenas",
-        'Motorcade_P': "Splinterlands",
-        'MotorcadeFestival_P': "Carnivora",
-        'MotorcadeInterior_P': "Guts of Carnivora",
-        'OrbitalPlatform_P': "Skywell-27",
-        'Outskirts_P': "Meridian Outskirts",
-        'Prison_P': "Anvil",
-        'Prologue_P': "Droughts",
-        'ProvingGrounds_Trial1_P': "Gradient of Dawn (Survival)",
-        'ProvingGrounds_Trial4_P': "Skydrowned Pulpit (Fervor)",
-        'ProvingGrounds_Trial5_P': "Ghostlight Beacon (Cunning)",
-        'ProvingGrounds_Trial6_P': "Hall Obsidian (Supremacy)",
-        'ProvingGrounds_Trial7_P': "Precipice Anchor (Discipline)",
-        'ProvingGrounds_Trial8_P': "Wayward Tether (Instinct)",
-        'Raid_P': "Midnight's Cairn (Maliwan Takedown)",
-        'Recruitment_P': "Covenant Pass",
-        'Sacrifice_P': "Ascension Bluff",
-        'Sanctuary3_P': "Sanctuary",
-        'Sanctum_P': "The Psychoscape",
-        'Strip_P': "Spendopticon",
-        'TechSlaughter_P': "Slaughterstar 3000",
-        'TowerLair_P': "VIP Tower",
-        'Towers_P': "Lectra City",
-        'Town_P': "Vestige",
-        'Trashtown_P': "Compactor",
-        'Venue_P': "Heart's Desire",
-        'Village_P': "Cursehaven",
-        'Watership_P': "Voracious Canopy",
-        'Wetlands_P': "Floodmoor Basin",
-        'WetlandsBoss_P': "Floating Tomb",
-        'WetlandsVault_P': "Blackbarrel Cellars",
-        'Woods_P': "Cankerwood",
-        }
+    'Anger_P': "Castle Crimson",
+    'Archive_P': "Dustbound Archives",
+    'AtlasHQ_P': "Atlas HQ",
+    'Bar_P': "Lodge",
+    'Beach_P': "Tazendeer Ruins",
+    'BloodyHarvest_P': "Heck Hole",
+    'Camp_P': "Negul Neshai",
+    'Cartels_P': "Villa Ultraviolet",
+    'CasinoIntro_P': "Grand Opening",
+    'Chase_P': "Sapphire's Run",
+    'City_P': "Meridian Metroplex",
+    'CityBoss_P': "Forgotten Basilica",
+    'CityVault_P': "Neon Arterial",
+    'Convoy_P': "Sandblast Scar",
+    'Core_P': "Jack's Secret",
+    'COVSlaughter_P': "Slaughter Shaft",
+    'CraterBoss_P': "Crater's Edge",
+    'CreatureSlaughter_P': "Cistern of Slaughter",
+    'Crypt_P': "Pyre of Stars",
+    'Desert_P': "Devil's Razor",
+    'DesertBoss_P': "Great Vault",
+    'Desertvault_P': "Cathedral of the Twin Gods",
+    'Desolate_P': "Desolation's Edge",
+    'Eldorado_P': "Vaulthalla",
+    'Experiment_P': "Benediction of Pain",
+    'Facility_P': "Bloodsun Canyon",
+    'FinalBoss_P': "Destroyer's Rift",
+    'Forest_P': "Obsidian Forest",
+    'Frontier_P': "The Blastplains",
+    'FrostSite_P': "Stormblind Complex",
+    'GuardianTakedown_P': "Minos Prime / The Shattered Tribunal",
+    'Impound_P': "Impound Deluxe",
+    'Lake_P': "Skittermaw Basin",
+    'Lodge_P': "Ashfall Peaks",
+    'Mansion_P': "Jakobs Estate",
+    'MarshFields_P': "Ambermire",
+    'Mine_P': "Konrad's Hold",
+    'Monastery_P': "Athenas",
+    'Motorcade_P': "Splinterlands",
+    'MotorcadeFestival_P': "Carnivora",
+    'MotorcadeInterior_P': "Guts of Carnivora",
+    'OrbitalPlatform_P': "Skywell-27",
+    'Outskirts_P': "Meridian Outskirts",
+    'Prison_P': "Anvil",
+    'Prologue_P': "Droughts",
+    'ProvingGrounds_Trial1_P': "Gradient of Dawn (Survival)",
+    'ProvingGrounds_Trial4_P': "Skydrowned Pulpit (Fervor)",
+    'ProvingGrounds_Trial5_P': "Ghostlight Beacon (Cunning)",
+    'ProvingGrounds_Trial6_P': "Hall Obsidian (Supremacy)",
+    'ProvingGrounds_Trial7_P': "Precipice Anchor (Discipline)",
+    'ProvingGrounds_Trial8_P': "Wayward Tether (Instinct)",
+    'Raid_P': "Midnight's Cairn (Maliwan Takedown)",
+    'Recruitment_P': "Covenant Pass",
+    'Sacrifice_P': "Ascension Bluff",
+    'Sanctuary3_P': "Sanctuary",
+    'Sanctum_P': "The Psychoscape",
+    'Strip_P': "Spendopticon",
+    'TechSlaughter_P': "Slaughterstar 3000",
+    'TowerLair_P': "VIP Tower",
+    'Towers_P': "Lectra City",
+    'Town_P': "Vestige",
+    'Trashtown_P': "Compactor",
+    'Venue_P': "Heart's Desire",
+    'Village_P': "Cursehaven",
+    'Watership_P': "Voracious Canopy",
+    'Wetlands_P': "Floodmoor Basin",
+    'WetlandsBoss_P': "Floating Tomb",
+    'WetlandsVault_P': "Blackbarrel Cellars",
+    'Woods_P': "Cankerwood",
+}
 
 # Also create a lowercase version
 LVL_TO_ENG_LOWER = {}
 for k, v in list(LVL_TO_ENG.items()):
     LVL_TO_ENG_LOWER[k.lower()] = v
-
