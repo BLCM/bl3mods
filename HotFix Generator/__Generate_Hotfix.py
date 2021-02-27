@@ -12,13 +12,11 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
+from _global_lists import NonUsedInfo, List_1, List_2
 import tkinter as tk
-from tkinter import NonUsedInfo
 from re import error
 #Global variables
-data = BL3Data()
-Parent_List = []
-Child_List = []
+DATA = BL3Data()
 
 #I needed to make a window in here because i would have cirular logic orther wise
 def WindowSel():
@@ -26,39 +24,45 @@ def WindowSel():
     window.title("Hot Fix Generator")
     # window.geometry("500x500")
 
-def test1(input1, input2, input3, input4, input5, input6):
+def ModHeader(input1, input2, input3, input4, input5, input6):
     Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
 
-def test2(proper_path):
+def JSONInfo(proper_path):
     # The way that this is set up know, it will now iterate through 
     # all cache items, and then the user will have the whole list to view
     i = 0
-    Parent = data.get_data(proper_path)
+    Parent = DATA.get_data(proper_path)
     while i < len(Parent):
         for pool in Parent[i]:
             if pool not in NonUsedInfo:
-                print(pool)
+                List_1.append(pool)
         i += 1
-    ans = input("Enter a name from above: ")
-    Child = Parent[0][ans]
-    for pool in Child[0]:
-        if pool not in NonUsedInfo:
-            FilePool = pool
-            try:
-                for pool in Child:
-                    None
-                Parent_List.append(FilePool)
-                print(FilePool)
-            except:
-                None
-        ans2 = input("Enter a name from above: ")
-        for pool in Child:
-            print('Info: {}'.format(pool[ans2][1]))
+    for info in List_1:
+        Child = Parent[0][info]
+        if Child == error:
+            None
+        else:
+            for key, value in Child.items():
+                print(key + " : " + value)
+            # print(value)
+        # for pool in Child[0]:
+        #     if pool not in NonUsedInfo:
+        #         FilePool = pool
+        #         try:
+        #             for pool in Child:
+        #                 None
+        #             List_2.append(FilePool)
+        #             print(FilePool)
+        #         except:
+        #             None
+        #     ans2 = input("Enter a name from above: ")
+        #     for pool in Child:
+        #         print('Info: {}'.format(pool[ans2][1]))
 
-def test3():
+def Search():
     list = []
     input1 = input("What do you want to search for? ")
-    info = data.get_refs_from_data(input1)
+    info = DATA.get_refs_from_data(input1)
     for details in info:
         if details[0] not in list:
             list.append(details[0])
@@ -70,7 +74,7 @@ def test3():
     print("Look inside the search results text file")
 
 #This one has a lot of cleaning up to do
-def test4():
+def HotFix():
     print("NOTE: As of right now, this will be vauge because I am still learning how all the hotfixes work, so keep in mind that not all input requests won't make a lot of since")
     # print("I will work to improve on this later, but for now keep in mind that it will be confusing for what I am asking for")
     # input1 = input("Hot Fix Type: Mod.PATCH - Will create a SparkPatchEntry hotfix\n"
