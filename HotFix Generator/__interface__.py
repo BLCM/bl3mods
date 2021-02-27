@@ -1,4 +1,4 @@
-from __Generate_Hotfix import test1, test2, test3, test4
+from __Generate_Hotfix import ModHeader, JSONInfo, Search, HotFix
 from bl3data import BL3Data
 import os
 import tkinter as tk
@@ -24,7 +24,7 @@ def FileChoice():
             index = raw_path.find(Find)
     # this is the data we need to pass in information
     True_Path = raw_path[index::]
-    test2(True_Path)
+    JSONInfo(True_Path)
 
 #Creates a new window for the user to see and for the commands to be used
 
@@ -41,7 +41,7 @@ def NeWindow(func):
     def get_val():
         a, b, c, d, e, f = entry1.get(), entry2.get(), 
         entry3.get(), entry4.get(), entry5.get(), entry6.get()
-        test1(a, b, c, d, e, f)
+        ModHeader(a, b, c, d, e, f)
     #generics we can reuse for any task I have created
     entry1 = StringVar(Nwindow)
     entry2 = StringVar(Nwindow)
@@ -52,7 +52,7 @@ def NeWindow(func):
 
     #attempting to use generics to make my life easier
     #this will change a lot later on, but for now i will try to get it to work
-    if func == test1:  # creates a mod file of you to use
+    if func == ModHeader:  # creates a mod file of you to use
         Nwindow.title("Mod Header")
         text1 = 'Name of the hotfix file: '
         text2 = 'The actual mod name: '
@@ -65,16 +65,16 @@ def NeWindow(func):
         l = 6
         e = 6
         b = 1
-    elif func == test2:  # this will be more fleshed out later, but for now it I am trying to get the interfce to work
+    elif func == JSONInfo:  # this will be more fleshed out later, but for now it I am trying to get the interfce to work
         Nwindow.title("Look Through File information")
         b1text = "Choose file"
         def b1command(): return FileChoice()
         l = 0
         e = 0
         b = 1
-    elif func == test3:
+    elif func == Search:
         None
-    elif func == test4:
+    elif func == HotFix:
         None
 
     #this is the best way for the program to reuse generics, while being able to determine how many are needed for a paticular program
@@ -116,13 +116,13 @@ if __name__ == "__main__":
     window.title("Hot Fix Generator")
     # window.geometry("500x500")
     Button(text="1. Mod Header", font=("Times New Roman", 18),
-           command=lambda: NeWindow(test1))
+           command=lambda: NeWindow(ModHeader))
     Button(text="2. Choose File", font=("Times New Roman", 18),
-           command=lambda: NeWindow(test2))
+           command=lambda: NeWindow(JSONInfo))
     Button(text="3. Find All References", font=(
-        "Times New Roman", 18), command=lambda: NeWindow(test3))
+        "Times New Roman", 18), command=lambda: NeWindow(Search))
     Button(text="4. Make Regular Hotfix", font=(
-        "Times New Roman", 18), command=lambda: NeWindow(test4))
+        "Times New Roman", 18), command=lambda: NeWindow(HotFix))
 
     #this will pack everything so that I do not have to do it every time
     for c in sorted(window.children):
