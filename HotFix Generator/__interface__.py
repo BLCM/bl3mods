@@ -5,8 +5,6 @@ import tkinter as tk
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 data = BL3Data()
-Parent_List = []
-Child_List = []
 
 #This is used as a referencesto look and see what are the names of the game folders
 FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
