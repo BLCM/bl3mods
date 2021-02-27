@@ -218,7 +218,7 @@ class BL3Data(object):
                     if '_apoc_data_ver' not in self.cache[obj_name][0] or self.cache[obj_name][0]['_apoc_data_ver'] < BL3Data.data_version:
                         # Regenerate if we have an old serialization
                         subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize',
-                                        base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                                        base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
                         with open(json_file) as df:
                             self.cache[obj_name] = json.load(df)
             else:
