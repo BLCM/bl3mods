@@ -12,56 +12,48 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from __interface__ import Parent_List, Child_List
-from tkinter.filedialog import askopenfilename
-from re import search
+import tkinter as tk
+from tkinter import NonUsedInfo
+from re import error
 #Global variables
 data = BL3Data()
+Parent_List = []
+Child_List = []
 
-##Function i uses to get only what is needed if you are choosing a JSON file
-filenames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
-             "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
-
-funcnames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
-             "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
-
-#this is used to remove any data when searching files. may add or remove depending on what I learn later
-NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset",
-               "_jwp_object_name", "export_type", "_jwp_arr_idx"]
+#I needed to make a window in here because i would have cirular logic orther wise
+def WindowSel():
+    window = tk()
+    window.title("Hot Fix Generator")
+    # window.geometry("500x500")
 
 def test1(input1, input2, input3, input4, input5, input6):
-    Mod(input1 + '.bl3hotfix',
-        input2,
-        input3,
-        [
-            input4,
-        ],
-        lic=Mod.CC_BY_SA_40,
-        v=input5,
-        cats=input6,
-        )
+    Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
 
 def test2(proper_path):
+    # The way that this is set up know, it will now iterate through 
+    # all cache items, and then the user will have the whole list to view
+    i = 0
     Parent = data.get_data(proper_path)
-    for pool in Parent[0]:
-        #Best way I could figure this out. Will come back to improve on later
-        if pool not in NonUsedInfo:
-            print(pool)
-    #Improve on this as this does not cover all cases, will improve on it later
-    ans = input("Enter a name from above ")
+    while i < len(Parent):
+        for pool in Parent[i]:
+            if pool not in NonUsedInfo:
+                print(pool)
+        i += 1
+    ans = input("Enter a name from above: ")
     Child = Parent[0][ans]
     for pool in Child[0]:
         if pool not in NonUsedInfo:
-            test = pool
+            FilePool = pool
             try:
                 for pool in Child:
                     None
-                print(test)
+                Parent_List.append(FilePool)
+                print(FilePool)
             except:
                 None
-    ans2 = input("Enter a name from above ")
-    for pool in Child:
-        print('Info: {}'.format(pool[ans2][1]))
+        ans2 = input("Enter a name from above: ")
+        for pool in Child:
+            print('Info: {}'.format(pool[ans2][1]))
 
 def test3():
     list = []
