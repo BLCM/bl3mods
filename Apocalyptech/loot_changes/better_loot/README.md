@@ -12,6 +12,7 @@ different things:
 * Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
   mod for that.
+* Guarantees anointments on all gear which supports anointments
 
 Like the BL2+TPS versions of Better Loot, bosses which have more than one drop
 assigned to them will drop from the pool that many times.  For instance, the Skrakk
