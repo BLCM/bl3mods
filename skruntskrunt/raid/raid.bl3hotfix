@@ -140,24 +140,28 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].bOverrideDropOnDeathItemPools,0,,True
 # # Drop HeavyWeapons?
 # Drop Freddie Weapons?
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie',PoolProbability=(BaseValueConstant=1.0)))
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie',PoolProbability=(BaseValueConstant=1.0)))
+# Drop Legendaries from Dandelion
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Dandelion/GameData/Loot/Legendary/ItemPool_Dandelion_Guns_Legendary.ItemPool_Dandelion_Guns_Legendary',PoolProbability=(BaseValueConstant=1.0)))
 # Drop 5?
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,5
 
 ####
 # Dandelion Drops
 # Override the drops
-# Dandelion gets scraptrap
+# Dandelion gets shields
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].bOverrideDropOnDeathItemPools,0,,True
 # SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/Enemies/_Shared/_Design/ItemPools/ItemPool_COVEnemyUse_HeavyWeapons.ItemPool_COVEnemyUse_HeavyWeapons',PoolProbability=(BaseValueConstant=1.0)))
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_ScraptrapPrime.ItemPool_ScraptrapPrime',PoolProbability=(BaseValueConstant=1.0)))
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Dandelion/GameData/Loot/Legendary/ItemPool_Dandelion_Shields_Legendary.ItemPool_Dandelion_Shields_Legendary',PoolProbability=(BaseValueConstant=1.0)))
+
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,16
 
 #######
 # Petunia HP
 # 16 and 7, try 100 and 50
 # THis one does work 1000 is too much; 500 is enough? 500 was just slow. Trying 250
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,666
+# 666 I can do pretty fast
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,150
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,150
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,150
@@ -169,7 +173,7 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelio
 # Dandelion HP
 # 16 and 7, try 100 and 50
 
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,666
+SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,800
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Dandelion),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Dandellion,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250
@@ -277,19 +281,20 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Sha
 # 250 is still too easy
 # 100 is still too tough?
 # 50
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
+# 2000 is kinda slow
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT1.Table_Balance_JackBot_PT1,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Jackbot,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_JackBot),/Dandelion/Enemies/JackBot/_Shared/_Design/Balance/Table_Balance_JackBot_PT2.Table_Balance_JackBot_PT2,Default,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 
 
 # Damage
