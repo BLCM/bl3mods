@@ -217,9 +217,10 @@ are two data sources the package can draw from:
 Of the two data sources, the first is required.  In order for `bl3data` to 
 actually make use of the data, you also need to have a [JohnWickParse](https://github.com/SirWaddles/JohnWickParse)
 binary available to do data serialization, and specifically you'll probably
-want to use my own [indexed_arrays branch](https://github.com/apocalyptech/JohnWickParse/tree/indexed_arrays),
+want to use [my own JWP fork](https://github.com/apocalyptech/JohnWickParse),
 which includes some versioning information which `bl3data` uses to know if
-it should re-serialize data.  You can use the main JWP project instead, but
+it should re-serialize data (along with other fixes which lets more BL3
+data be serialized).  You can use the main JWP project instead, but
 the data library will re-serialize the data objects every time you run,
 rather than intelligently using the previous data if possible.
 
