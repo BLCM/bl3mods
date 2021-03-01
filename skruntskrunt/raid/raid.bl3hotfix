@@ -100,68 +100,48 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/G
 SparkCharacterLoadedEntry,(1,2,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion,Freddie,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
 SparkCharacterLoadedEntry,(1,2,0,BPChar_TraitorEddie),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/Table_Legendary_SpecificLootOdds_Dandelion.Table_Legendary_SpecificLootOdds_Dandelion,Freddie,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
 
-# None of this seems to work anymore?
-# check old commits?
-# Lots of Freddie loot?
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Character/BPChar_TraitorEddie.BPChar_TraitorEddie_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Character/BPChar_TraitorEddie.BPChar_TraitorEddie_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=16,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# # None of this seems to work anymore?
+# # check old commits?
+# # Lots of Freddie loot?
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Character/BPChar_TraitorEddie.BPChar_TraitorEddie_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Character/BPChar_TraitorEddie.BPChar_TraitorEddie_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=16,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# 
+# # /Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie,TraitorEddie,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,666
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie,TraitorEddie,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,150
+# 
+# 
+# 
+# # # Drop 12 items? for Freddie
+# SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,Quantity,0,,(BaseValueConstant=12)
+# SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPool_Freddie.ItemPool_Freddie,Quantity,0,,(BaseValueConstant=12)
+# 
 
-# /Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie,TraitorEddie,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,666
-SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnlyTraitorEddie),/Dandelion/Enemies/TraitorEddie/_Shared/_Design/Balance/Table_Balance_TraitorEddie.Table_Balance_TraitorEddie,TraitorEddie,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,150
-
-
-
-# # Drop 12 items? for Freddie
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/GameData/Loot/UniqueEnemyDrops/ItemPool_Freddie.ItemPool_Freddie,Quantity,0,,(BaseValueConstant=12)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/GameData/Loot/EnemyPools/ItemPool_Freddie.ItemPool_Freddie,Quantity,0,,(BaseValueConstant=12)
+# New drop 20?
+# BPChar_VIPOnlyTraitorEddie
+# 
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,20
+# or try
+# (BaseValueConstant=20,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 ##### Petunia and Dandelion ######
 
-
-#
-# moving on to petunia
-
-# /Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/
-# BPChar_VIPOnly_Petunia
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-
-# Drops for petunia
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[2].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[4].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-
-# Drops for dandelion
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[2].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[3].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[4].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-
-# From altef-4/3000_hyperion_slaughter
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,99
-
-
 # From altef-4/3000_hyperion_slaughter
 ###########
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,16.0
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,7.0
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,7.0
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,7.0
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,7.0
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_VIPOnly_Petunia),/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques.Table_Balance_Loader_Uniques,Petunia,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,1.8
-# 
 
-
+####
+# Petunia Drops
 # Override the drops
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].bOverrideDropOnDeathItemPools,0,,True
 # Drop HeavyWeapons?
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/Enemies/_Shared/_Design/ItemPools/ItemPool_COVEnemyUse_HeavyWeapons.ItemPool_COVEnemyUse_HeavyWeapons',PoolProbability=(BaseValueConstant=1.0)))
 # Drop 5?
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Petunia),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia.BPChar_VIPOnly_Petunia_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,5
+
+####
+# Dandelion Drops
+# Override the drops
 
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].bOverrideDropOnDeathItemPools,0,,True
 SparkCharacterLoadedEntry,(1,1,0,BPChar_VIPOnly_Dandelion),/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion.BPChar_VIPOnly_Dandelion_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[1].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/Enemies/_Shared/_Design/ItemPools/ItemPool_COVEnemyUse_HeavyWeapons.ItemPool_COVEnemyUse_HeavyWeapons',PoolProbability=(BaseValueConstant=1.0)))
