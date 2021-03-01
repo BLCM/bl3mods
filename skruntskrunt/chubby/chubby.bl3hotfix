@@ -1,0 +1,131 @@
+# From 
+###
+### Name: Borderlands 3&2
+### Author: Grimm
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+# Increasing Spawn Rate of Loot Enemies
+# Increasing Spawn Rate of Jabber Thieves
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix.SpawnOptions_ApeMix,Options.Options[4].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.08
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass.SpawnOptions_ApeMix_NoBadass,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.08
+
+# Increasing Spawn Rate of Shiny Grogs
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant.SpawnOptions_SaurianMix_Wetlands_NoTyrant,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands.SpawnOptions_SaurianMix_Wetlands,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_0/SpawnOptions_CoVMix_Prologue.SpawnOptions_CoVMix_Prologue,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_0/SpawnOptions_CoVMix_Sacrifice.SpawnOptions_CoVMix_Sacrifice,Options.Options[6].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions_CoVMix_CityVault.SpawnOptions_CoVMix_CityVault,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Mansion/SpawnOptions_CoVMix_Mansion1.SpawnOptions_CoVMix_Mansion1,Options.Options[9].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.5
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Marshfields/SpawnOptions_CoVMix_MarshFields.SpawnOptions_CoVMix_MarshFields,Options.Options[7].WeightParam.Range.Value,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_Prison1.SpawnOptions_CotVFullMix_Prison1,Options.Options[12].WeightParam.Range.Value,0,,0.3
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeFestival_FullMix.SpawnOptions_Cotv_MotorcadeFestival_FullMix,Options.Options[15].WeightParam.Range.Value,0,,0.275
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeInterior_FullMix.SpawnOptions_Cotv_MotorcadeInterior_FullMix,Options.Options[17].WeightParam.Range.Value,0,,0.4
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/SpawnOptions_CoVMix_Desert.SpawnOptions_CoVMix_Desert,Options.Options[10].WeightParam.Range.Value,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_4/Crypt/SpawnOptions_CoVMix_Crypt.SpawnOptions_CoVMix_Crypt,Options.Options[7].WeightParam.Range.Value,0,,0.1
+
+# Increasing Spawn Rate of Loot Bots
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_City.SpawnOptions_ServiceBotMix_City,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_RiseAndGrind.SpawnOptions_ServiceBotMix_RiseAndGrind,Options.Options[3].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_Towers.SpawnOptions_ServiceBotMix_Towers,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_Watereship.SpawnOptions_ServiceBotMix_Watereship,Options.Options[6].WeightParam.Range.Value,0,,0.15
+
+# Increasing Spawn Rate of Chubby Skags
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+
+# Increasing Spawn Rate of Engorged Rakks
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Rakk/_Mixes/SpawnOptions_Rakk_MixBadasses.SpawnOptions_Rakk_MixBadasses,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueScale,0,,2.0
+
+# Arm's race Chubby Skags
+#
+# 1 test, not noticeable
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.60
+# 1 test, not noticeable
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.99
+# 0 tests, untested
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,99
+# # 1 test, absolutely crazy
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.99
+
+
+# # toned down? 1 test, still too strong
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.30
+
+
+# # more toned down? 1 test, medium (0.12). Still 3 chubbies in skag alley.
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+
+
+# # too toned down? 2 test, small (0.04). Saw 1 chubby
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.04
+
+# # less toned down? 1 test, small (0.08) 1 test (2 player good) 1 test (4 player bad)
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.08
+
+
+# # less toned down? 1 test, small (0.16) Maybe too much
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.16
+
+
+# Arm's race worked but the skags weren't big enough or strong enough
+# # less toned down? 0 test, small (0.10) seems fine (like 1 per region but guaranteed)
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+# SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.10
+# # Make the chubby skags big
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby),/Game/Enemies/Skag/Chubby/_Design/Character/BPChar_SkagChubby.Default__BPChar_SkagChubby_C:CharacterMesh0,RelativeScale3D,0,,(X=2,Y=2,Z=2)
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/BPChar_SkagChubby_GearUp.Default__BPChar_SkagChubby_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=2,Y=2,Z=2)
+# # Buffing Chubby Health? 5.5 was a debuff 
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,15
+# # Increase Chubby Damage
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Chubby,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,15.0
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_Gearup),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,15.0
+# 
+
+
+# less toned down? 0 test, small (0.10) seems fine (like 1 per region but guaranteed)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.10
+# Make the chubby skags big
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby),/Game/Enemies/Skag/Chubby/_Design/Character/BPChar_SkagChubby.Default__BPChar_SkagChubby_C:CharacterMesh0,RelativeScale3D,0,,(X=2.5,Y=2.5,Z=2.5)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/BPChar_SkagChubby_GearUp.Default__BPChar_SkagChubby_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=2.5,Y=2.5,Z=2.5)
+# Buffing Chubby Health? 5.5 was a debuff , 15 didn't seem right, 30 was too low, 120 is OK L65M11, 120 is too low in arm's race, 240? 240 was OK in arm's race, 360---not enough, 720 not enough, 1024?
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,240
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1440
+# Increase Chubby Damage 30 kills me pretty good in L65M11, 30 was not enough in arm's race, 60.0 in arm's race wasn't enough, 120..., 200?
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance.Table_Skag_Balance,Skag_Chubby,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_Gearup),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,200.0
+

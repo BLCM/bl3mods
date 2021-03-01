@@ -1,0 +1,58 @@
+# From 
+###
+### Name: Borderlands 3&2
+### Author: Grimm
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+# Increasing Spawn Rate of Loot Enemies
+# Increasing Spawn Rate of Jabber Thieves
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix.SpawnOptions_ApeMix,Options.Options[4].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.08
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass.SpawnOptions_ApeMix_NoBadass,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.08
+
+# Increasing Spawn Rate of Shiny Grogs
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant.SpawnOptions_SaurianMix_Wetlands_NoTyrant,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands.SpawnOptions_SaurianMix_Wetlands,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_0/SpawnOptions_CoVMix_Prologue.SpawnOptions_CoVMix_Prologue,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_0/SpawnOptions_CoVMix_Sacrifice.SpawnOptions_CoVMix_Sacrifice,Options.Options[6].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions_CoVMix_CityVault.SpawnOptions_CoVMix_CityVault,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Mansion/SpawnOptions_CoVMix_Mansion1.SpawnOptions_CoVMix_Mansion1,Options.Options[9].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.5
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Marshfields/SpawnOptions_CoVMix_MarshFields.SpawnOptions_CoVMix_MarshFields,Options.Options[7].WeightParam.Range.Value,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_Prison1.SpawnOptions_CotVFullMix_Prison1,Options.Options[12].WeightParam.Range.Value,0,,0.3
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeFestival_FullMix.SpawnOptions_Cotv_MotorcadeFestival_FullMix,Options.Options[15].WeightParam.Range.Value,0,,0.275
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeInterior_FullMix.SpawnOptions_Cotv_MotorcadeInterior_FullMix,Options.Options[17].WeightParam.Range.Value,0,,0.4
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/SpawnOptions_CoVMix_Desert.SpawnOptions_CoVMix_Desert,Options.Options[10].WeightParam.Range.Value,0,,0.6
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_4/Crypt/SpawnOptions_CoVMix_Crypt.SpawnOptions_CoVMix_Crypt,Options.Options[7].WeightParam.Range.Value,0,,0.1
+
+# Increasing Spawn Rate of Loot Bots
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_City.SpawnOptions_ServiceBotMix_City,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_RiseAndGrind.SpawnOptions_ServiceBotMix_RiseAndGrind,Options.Options[3].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_Towers.SpawnOptions_ServiceBotMix_Towers,Options.Options[5].WeightParam.Range.Value,0,,0.1
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/ServiceBots/_Mixes/SpawnOptions_ServiceBotMix_Watereship.SpawnOptions_ServiceBotMix_Watereship,Options.Options[6].WeightParam.Range.Value,0,,0.15
+
+# Increasing Spawn Rate of Chubby Skags
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix.SpawnOptions_SkagFullMix,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.30
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Skags/_Mixes/Zone0/SpawnOptions_SkagEarlyMix.SpawnOptions_SkagEarlyMix,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.12
+
+# Increasing Spawn Rate of Engorged Rakks
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Rakk/_Mixes/SpawnOptions_Rakk_MixBadasses.SpawnOptions_Rakk_MixBadasses,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueScale,0,,2.0
+
+
