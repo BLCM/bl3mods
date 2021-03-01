@@ -61,11 +61,12 @@ class BL3Data(object):
            for `BL3Data.data_version` down in the code, in `get_data()`, and remove
            that check from the code.  (And then manually clear out the `.json` files
            when you suspect that an object needs re-serialization.)  Otherwise, just
-           compile up my fork/branch and use that.  Make sure you're using the
-           `indexed_arrays` branch in particular, on my own fork.
+           compile up my fork/branch and use that.  In addition to the serialization
+           versioning info, it includes other fixes which allows a wider variety of
+           data to be serialized.
 
            Vanilla JWP: https://github.com/SirWaddles/JohnWickParse
-           My fork/branch: https://github.com/apocalyptech/JohnWickParse/tree/indexed_arrays
+           My fork: https://github.com/apocalyptech/JohnWickParse
 
     The "database" section contains the values "host", "db", "user", and "passwd".
     These define the connection parameters to a MySQL database populated with BL3
@@ -76,7 +77,7 @@ class BL3Data(object):
     """
 
     # Data serialization version requirements
-    data_version = 17
+    data_version = 19
 
     # Hardcoded BVA values
     bva_values = {
