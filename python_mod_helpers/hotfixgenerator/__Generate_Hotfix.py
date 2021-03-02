@@ -37,14 +37,25 @@ def JSONInfo(proper_path):
             if pool not in NonUsedInfo:
                 List_1.append(pool)
         i += 1
+        k = 0
     for info in List_1:
-        Child = Parent[0][info]
-        if Child == error:
-            None
-        else:
+        Child = Parent[k][info]
+        try:
             for key, value in Child.items():
-                print(key + " : " + value)
-            # print(value)
+                print("{} : {}".format(key, value))
+        except Child == error:
+            while k < len(Parent):
+                k += 1
+                Child = Parent[k][info]
+                for key, value in Child.items():
+                    print("{} : {}".format(key, value))
+        except:
+            print("something else went wrong, find out what")
+        else:
+            Child = Parent[k+1][info]
+            for key, value in Child.items():
+                print("{} : {}".format(key, value))
+
         # for pool in Child[0]:
         #     if pool not in NonUsedInfo:
         #         FilePool = pool
