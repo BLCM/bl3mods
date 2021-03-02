@@ -1,6 +1,15 @@
 Constructing Borderlands 3 Mods With Code
 =========================================
 
+* [Overview](#overview)
+  * [Mesh Additions](#mesh-additions)
+* [Data Introspection](#data-introspection)
+* [Hotfix Generator](#hotfix-generator)
+* [License](#license)
+
+Overview
+--------
+
 Given the nature of BL3 modding at the moment, it's often easier to write
 mods with the assistance of code, rather than trying to write hotfixes by
 hand.  There are a couple of Python modules included here which can make
@@ -288,6 +297,14 @@ dumpster = data.get_data('/Game/GameData/Loot/ItemPools/ItemPool_Dumpster')[0]
 for item in dumpster['BalancedItems']:
     print('Item weight: {}'.format(data.process_bvc_struct(item['Weight'])))
 ```
+
+Hotfix Generator
+================
+
+Hotfix Generator, in the `hotfixgenerator` dir, is an in-progress app by
+[Trevor Troxel](https://github.com/TrevorSTroxel) which aims to streamline
+the process of writing BL3 hotfix mods.  Check out its directory for more
+information.
 
 License
 =======
