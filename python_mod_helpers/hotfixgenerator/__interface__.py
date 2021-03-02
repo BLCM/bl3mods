@@ -110,7 +110,6 @@ def NeWindow(func):
     if lb == 1:
         Listbox(Nwindow)
 
-
 if __name__ == "__main__":
     window = tk.Tk()
     window.title("Hot Fix Generator")

@@ -19,10 +19,14 @@ from re import error
 DATA = BL3Data()
 
 #I needed to make a window in here because i would have cirular logic orther wise
-def WindowSel():
-    window = tk()
-    window.title("Hot Fix Generator")
-    # window.geometry("500x500")
+Testwindow = tk()
+Testwindow.title("Hot Fix Generator")
+Testwindow.Listbox()
+tk.Listbox.pack()
+k = 0
+for i in List_1:
+    tk.Listbox.insert(k, i)
+    k += 1
 
 def ModHeader(input1, input2, input3, input4, input5, input6):
     Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
@@ -37,7 +41,8 @@ def JSONInfo(proper_path):
             if pool not in NonUsedInfo:
                 List_1.append(pool)
         i += 1
-        k = 0
+ 
+    k = 0
     for info in List_1:
         Child = Parent[k][info]
         try:
