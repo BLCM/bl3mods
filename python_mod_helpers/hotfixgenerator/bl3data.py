@@ -332,8 +332,8 @@ class BL3Data(object):
         database.
         """
         self._connect_db()
-        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + "'%" + str(obj_name) + "'" + " and o.id = r.to_obj and o2.id = r.from_obj"
-        self.curs.execute(test)
+        queue = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + "'%" + str(obj_name) + "%'" + " and o.id = r.to_obj and o2.id = r.from_obj"
+        self.curs.execute(queue)
         return[row[0] for row in self.curs.fetchall()]
 
     def get_refs_from_data(self, obj_name):
@@ -352,8 +352,7 @@ class BL3Data(object):
         database connection to the refs database.
         """
         self._connect_db()
-        test = "select bl3object.name from bl3object where name like " + \
-            "'%" + str(short_name) + "'"
+        test = "select bl3object.name from bl3object where name like " +"'%" + str(short_name) + "%'"
         self.curs.execute(test)
         return [row[0] for row in self.curs.fetchall()]
 
