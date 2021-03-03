@@ -1,3 +1,4 @@
+import json
 # #I needed to make a window in here because i would have cirular logic orther wise
 # import tkinter as tk
 # from tkinter import *
@@ -22,3 +23,35 @@
 # for i in List_1:
 #     tk.Listbox.insert(k, i)
 #     k += 1
+# from bl3data import BL3Data
+
+# DATA = BL3Data()
+
+
+# poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
+
+# # boss_loot will contain a serialized version of the poollist.
+# # boss_loot[0] will contain the single export, of type `ItemPoolListData`
+# boss_loot = DATA.get_data(poollist_name)
+
+# # Loop through the pool list
+# test = boss_loot[0]['ItemPools']
+# for pool in test:
+#     print('Found item pool: {}'.format(pool['ItemPool'][1]))
+
+json_string = """
+{
+    "researcher": {
+        "name": "Ford Prefect",
+        "species": "Betelgeusian",
+        "relatives": [
+            {
+                "name": "Zaphod Beeblebrox",
+                "species": "Betelgeusian"
+            }
+        ]
+    }
+}
+"""
+data = json.loads(json_string)
+print(data)
