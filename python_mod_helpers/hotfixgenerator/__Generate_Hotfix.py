@@ -18,6 +18,23 @@ from re import error
 #Global variables
 DATA = BL3Data()
 
+# I will attempt to put them in order in which they are needed
+#Puts in the title of the mod, and also creates the file
+def ModHeader(input1, input2, input3, input4, input5, input6):
+    Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
+
+#will work on making this is similar to interface, so that i can reuse things constantly
+def SearchResults(input):
+    Testwindow = Tk()
+    Testwindow.title("Results for: " + input)
+    Lb1 = Listbox(Testwindow, width=150)
+    k = 1
+    for i in List_1:
+        Lb1.insert(k, i)
+        k += 1
+    Lb1.pack()
+    Testwindow.mainloop()
+
 #I needed to make a window in here because i would have cirular logic orther wise
 def WindowSel(proper_path):
     Testwindow = Tk()
@@ -48,10 +65,7 @@ def WindowSel2():
     # testing.pack()
     Testwindow2.mainloop()
 
-#Puts in the title of the mod, and also creates the file
-def ModHeader(input1, input2, input3, input4, input5, input6):
-    Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
-
+#come back to this later
 #Had to split these two functions up so that user can choose what to select next
 def JSONInfo(proper_path):
     # The way that this is set up know, it will now iterate through 
@@ -105,19 +119,13 @@ def JSONInfo2(proper_path, info):
         #     for pool in Child:
         #         print('Info: {}'.format(pool[ans2][1]))
 
-def Search():
-    list = []
-    input1 = input("What do you want to search for? ")
-    info = DATA.get_refs_from_data(input1)
+def Search(input):
+    info = DATA.get_refs_from_data(input)
     for details in info:
-        if details[0] not in list:
-            list.append(details[0])
-    list.sort()
-    with open("<name>/search_results.txt", "a+") as a_file:
-        for items in list:
-            a_file.write(str(items) + "\n")
-    a_file.close()
-    print("Look inside the search results text file")
+        if details[0] not in List_1:
+            List_1.append(details[0])
+    List_1.sort()
+    SearchResults(input)
 
 #This one has a lot of cleaning up to do
 def HotFix():
