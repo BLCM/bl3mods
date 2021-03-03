@@ -1,5 +1,6 @@
 from __Generate_Hotfix import ModHeader, JSONInfo, Search, HotFix
 from bl3data import BL3Data
+from _global_lists import FileNames
 import os
 import tkinter as tk
 from tkinter import *
@@ -7,9 +8,6 @@ from tkinter.filedialog import askopenfilename
 data = BL3Data()
 
 #This is used as a referencesto look and see what are the names of the game folders
-FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
-             "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
-
 #the user is able to choose a json file
 def FileChoice():
     file = askopenfilename(filetypes=[("Choose file", ".json")])
@@ -65,27 +63,30 @@ def NeWindow(func):
         text5 = 'Version of this mod: '
         text6 = 'The catagory in which this mods fits to: '
         b1text = 'Create Mod Header'
-        def b1command(): return get_val(ModHeader)
         l = 6
         e = 6
+
+        def b1command(): return get_val(ModHeader)
         b = 1
 
     # Come back to this function later, as it is giving me to much grief right now
     elif func == JSONInfo:  # this will be more fleshed out later, but for now it I am trying to get the interfce to work
         Nwindow.title("Look Through File information")
         b1text = "Choose file"
-        def b1command(): return FileChoice()
         l = 0
-        e = 0
+        e = 0   
+
+        def b1command(): return FileChoice()
         b = 1
 
     elif func == Search:
         Nwindow.title("Find All References")
         text1 = 'Enter what you want to search for: '
         b1text = "Search"
-        def b1command(): return get_val(Search)
         l = 1
-        e = 1
+        e = 1   
+
+        def b1command(): return get_val(Search)
         b = 1
 
     elif func == HotFix:
@@ -98,6 +99,7 @@ def NeWindow(func):
         text6 = 'Leave this blank'
         l = 6
         e = 6
+
         b1text = "Generate Hotfix"
         def b1command(): return get_val(HotFix)
         b = 1
@@ -138,6 +140,7 @@ def NeWindow(func):
     if lb == 1:
         Listbox(Nwindow)
 
+#after gelizing my mistake, I now relize that I must combine two of these things in order to work
 if __name__ == "__main__":
     window = tk.Tk()
     window.title("Hot Fix Generator")
@@ -148,8 +151,8 @@ if __name__ == "__main__":
            command=lambda: NeWindow(JSONInfo), state=DISABLED) #Will reenable later once i can get it working
     Button(text="3. Find All References", font=(
         "Times New Roman", 18), command=lambda: NeWindow(Search))
-    Button(text="4. Make Regular Hotfix", font=(
-        "Times New Roman", 18), command=lambda: NeWindow(HotFix))
+    # Button(text="4. Make Regular Hotfix", font=(
+    #     "Times New Roman", 18), command=lambda: NeWindow(HotFix))
 
     #this will pack everything so that I do not have to do it every time
     for c in sorted(window.children):
