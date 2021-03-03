@@ -28,9 +28,6 @@ def FileChoice():
     JSONInfo(True_Path)
 
 #Creates a new window for the user to see and for the commands to be used
-
-
-
 def NeWindow(func):
     #these variables will determine how many things to add to the window as i need them
     l = 0
@@ -38,12 +35,17 @@ def NeWindow(func):
     b = 0
     lb = 0
     Nwindow = Tk()
+    # Used to grab the values the then entry textvariables, 
+    # So that for any function I can call them and reuse them
+    def get_val(type):
+        if type == ModHeader:
+            a, b, c, d, e, f = entry1.get(), entry2.get(), 
+            entry3.get(), entry4.get(), entry5.get(), entry6.get()
+            ModHeader(a, b, c, d, e, f)
+        elif type == Search:
+            a = entry1.get()
+            Search(a)
 
-    #used to grab the values the then entry textvariables, so that for any function I can call them and reuse them
-    def get_val():
-        a, b, c, d, e, f = entry1.get(), entry2.get(), 
-        entry3.get(), entry4.get(), entry5.get(), entry6.get()
-        ModHeader(a, b, c, d, e, f)
     #generics we can reuse for any task I have created
     entry1 = StringVar(Nwindow)
     entry2 = StringVar(Nwindow)
@@ -52,8 +54,7 @@ def NeWindow(func):
     entry5 = StringVar(Nwindow)
     entry6 = StringVar(Nwindow)
 
-    #attempting to use generics to make my life easier
-    #this will change a lot later on, but for now i will try to get it to work
+    #So now this works for the most part. the inner code still needs to work
     if func == ModHeader:  # creates a mod file of you to use
         Nwindow.title("Mod Header")
         text1 = 'Name of the hotfix file: '
@@ -63,10 +64,12 @@ def NeWindow(func):
         text5 = 'Version of this mod: '
         text6 = 'The catagory in which this mods fits to: '
         b1text = 'Create Mod Header'
-        def b1command(): return get_val()
+        def b1command(): return get_val(ModHeader)
         l = 6
         e = 6
         b = 1
+
+    # Come back to this function later, as it is giving me to much grief right now
     elif func == JSONInfo:  # this will be more fleshed out later, but for now it I am trying to get the interfce to work
         Nwindow.title("Look Through File information")
         b1text = "Choose file"
@@ -74,12 +77,22 @@ def NeWindow(func):
         l = 0
         e = 0
         b = 1
+
     elif func == Search:
-        None
+        Nwindow.title("Find All References")
+        text1 = 'Enter what you want to search for: '
+        text2 = 'NOTE: Puncuation matters, vladof and Vladof for example will give differenent results'
+        text3 = 'I will be working on this so later it will not matter, but for now it does.'
+        b1text = "Search"
+        def b1command(): return get_val(Search)
+        l = 3
+        e = 1
+        b = 1
     elif func == HotFix:
         None
 
-    #this is the best way for the program to reuse generics, while being able to determine how many are needed for a paticular program
+    # This is the best way for the program to reuse generics, 
+    # While being able to determine how many are needed for a paticular program
     if l >= 1:
         Label(Nwindow, text=text1).grid(row=0)
         if l >= 2:
@@ -109,6 +122,7 @@ def NeWindow(func):
     if b >= 1:
         Button(Nwindow, font=("Times New Roman", 18),
                text=b1text, command=b1command).grid(row=6)
+
     if lb == 1:
         Listbox(Nwindow)
 
@@ -119,7 +133,7 @@ if __name__ == "__main__":
     Button(text="1. Mod Header", font=("Times New Roman", 18),
            command=lambda: NeWindow(ModHeader))
     Button(text="2. Choose File", font=("Times New Roman", 18),
-           command=lambda: NeWindow(JSONInfo))
+           command=lambda: NeWindow(JSONInfo), state=DISABLED) #Will reenable later once i can get it working
     Button(text="3. Find All References", font=(
         "Times New Roman", 18), command=lambda: NeWindow(Search))
     Button(text="4. Make Regular Hotfix", font=(
