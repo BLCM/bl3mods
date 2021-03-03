@@ -18,23 +18,6 @@ from re import error
 #Global variables
 DATA = BL3Data()
 
-
-poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
-
-# boss_loot will contain a serialized version of the poollist.
-# boss_loot[0] will contain the single export, of type `ItemPoolListData`
-boss_loot = DATA.get_data(poollist_name)
-
-# Loop through the pool list
-test = boss_loot[0]['ItemPools']
-for pool in test:
-    print('Found item pool: {}'.format(pool['ItemPool'][1]))
-
-# Get only `ItemPoolListData` exports specifically (in this case, no actual
-# difference to just `get_data()`, `[0]` will still contain the single
-# export)
-boss_loot = DATA.get_exports(poollist_name, 'ItemPoolListData')
-
 # I will attempt to put them in order in which they are needed
 #Puts in the title of the mod, and also creates the file
 def ModHeader(input1, input2, input3, input4, input5, input6):
@@ -145,39 +128,18 @@ def Search(input):
     SearchResults(input)
 
 #This one has a lot of cleaning up to do
-def HotFix():
-    print("NOTE: As of right now, this will be vauge because I am still learning how all the hotfixes work, so keep in mind that not all input requests won't make a lot of since")
-    # print("I will work to improve on this later, but for now keep in mind that it will be confusing for what I am asking for")
-    # input1 = input("Hot Fix Type: Mod.PATCH - Will create a SparkPatchEntry hotfix\n"
-    # "mod.LEVEL- Will create a SparkLevelPatchEntry hotfix\n"
-    # "mod.EARLYLEVEL- Will create a SparkEarlyLevelPatchEntry hotfix\n"
-    # "mod.CHAR - Will create a SparkCharacterLoadedEntry hotfix\n"
-    # # "Bottom onees are currently not used, do not use them"
-    # # "Mod.PACKAGE - Will create a SparkStreamedPackageEntry hotfix\n"
-    # # "Mod.POST - Will create a SparkPostLoadedEntry hotfix\n"
-    # )
-    # input2 = input("Map Location: ")
+def HotFix(input1,input2,input3,input4,input5,input6):
+    
+    if input1 == "patch":
+        input1 = Mod.PATCH
+    elif input1 == "level":
+        input1 = Mod.LEVEL
+    elif input1 == "earlylevel":
+        input1 = Mod.EARLYLEVEL
+    elif input1 == "char":
+        input1 = Mod.CHAR
 
-    # input3 = input("File Path with JSON name and what __JWP__ Object you want to grab from that JSON file: ")
-
-    # input4 = input("What you want to manipulate in the JSON file (WIP, will be better later on both discription and whatvalues to grab):")
-    # input4a = input("Value you want to change: ")
-
-    # input5 = input("Type True for most things, else hit enter: ")
-    # input5a = input("If you are changing a value, insert new value: ")
-
-    # input6 = "" #is ment to be blank. may change in the future
-
-    # if input1 == "patch":
-    #     input1 = mod.PATCH
-    # elif input1 == "level":
-    #     input1 = mod.LEVEL
-    # elif input1 == "earlylevel":
-    #     input1 = mod.EARLYLEVEL
-    # elif input1 == "char":
-    #     input1 = mod.CHAR
-
-    # mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
+    Mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
 
 
 #This was me messing around with how these things work. still learning though
