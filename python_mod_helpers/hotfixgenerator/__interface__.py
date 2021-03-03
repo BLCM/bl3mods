@@ -21,12 +21,14 @@ def FileChoice():
         Find = "/" + FileNames[i]
         i += 1
         if Find in raw_path:
+
             index = raw_path.find(Find)
     # this is the data we need to pass in information
     True_Path = raw_path[index::]
     JSONInfo(True_Path)
 
 #Creates a new window for the user to see and for the commands to be used
+
 
 
 def NeWindow(func):

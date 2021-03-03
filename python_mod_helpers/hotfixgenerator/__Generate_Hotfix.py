@@ -13,24 +13,46 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
 from _global_lists import NonUsedInfo, List_1, List_2
-import tkinter as tk
+from tkinter import *
 from re import error
 #Global variables
 DATA = BL3Data()
 
 #I needed to make a window in here because i would have cirular logic orther wise
-Testwindow = tk()
-Testwindow.title("Hot Fix Generator")
-Testwindow.Listbox()
-tk.Listbox.pack()
-k = 0
-for i in List_1:
-    tk.Listbox.insert(k, i)
-    k += 1
+def WindowSel(proper_path):
+    Testwindow = Tk()
+    Testwindow.title("JSON File Content Display")
+    Lb1 = Listbox(Testwindow, width=30)
+    k = 1
+    for i in List_1:
+        Lb1.insert(k, i)
+        k += 1
+    Lb1.pack()
+    testing = Button(Testwindow, text="Select to see content", font=("Times New Roman", 18),
+        command= lambda: JSONInfo2(proper_path, Lb1.get(ANCHOR)))
+    testing.pack()
+    Testwindow.mainloop()
 
+#this SHOULD display the next
+def WindowSel2():
+    Testwindow2 = Tk()
+    Testwindow2.title("JSON File Content Display")
+    Lb1 = Listbox(Testwindow2, width=30)
+    k = 1
+    for i in List_2:
+        Lb1.insert(k, i)
+        k += 1
+    Lb1.pack()
+    # testing = Button(Testwindow, text="test", font=("Times New Roman", 18),
+    #     command= lambda: JSONInfo2(proper_path, Lb1.get(ANCHOR)))
+    # testing.pack()
+    Testwindow2.mainloop()
+
+#Puts in the title of the mod, and also creates the file
 def ModHeader(input1, input2, input3, input4, input5, input6):
     Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
 
+#Had to split these two functions up so that user can choose what to select next
 def JSONInfo(proper_path):
     # The way that this is set up know, it will now iterate through 
     # all cache items, and then the user will have the whole list to view
@@ -41,25 +63,33 @@ def JSONInfo(proper_path):
             if pool not in NonUsedInfo:
                 List_1.append(pool)
         i += 1
- 
+    WindowSel(proper_path)  
+
+#Thisn will run after the user chooses one of the things found inside the file they have chosen
+def JSONInfo2(proper_path, info): 
     k = 0
-    for info in List_1:
-        Child = Parent[k][info]
-        try:
+    Parent = DATA.get_data(proper_path)
+    Child = Parent[k][info]
+    try:
+        for key, value in Child.items():
+            print("{} : {}".format(key, value))
+            List_2.append(key, value)
+    except Child == error:
+        while k < len(Parent):
+            k += 1
+            Child = Parent[k][info]
             for key, value in Child.items():
                 print("{} : {}".format(key, value))
-        except Child == error:
-            while k < len(Parent):
-                k += 1
-                Child = Parent[k][info]
-                for key, value in Child.items():
-                    print("{} : {}".format(key, value))
-        except:
-            print("something else went wrong, find out what")
-        else:
-            Child = Parent[k+1][info]
-            for key, value in Child.items():
-                print("{} : {}".format(key, value))
+                List_2.append(key)
+    except:
+        print("something else went wrong, find out what")
+    WindowSel2()    
+
+    # else:
+    #     Child = Parent[k+1][info]
+    #     for key, value in Child.items():
+    #         print("{} : {}".format(key, value))
+    #         List_2.append(key)
 
         # for pool in Child[0]:
         #     if pool not in NonUsedInfo:
