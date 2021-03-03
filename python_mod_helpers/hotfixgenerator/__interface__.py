@@ -39,13 +39,14 @@ def NeWindow(func):
     # So that for any function I can call them and reuse them
     def get_val(type):
         if type == ModHeader:
-            a, b, c, d, e, f = entry1.get(), entry2.get(), 
-            entry3.get(), entry4.get(), entry5.get(), entry6.get()
+            a, b, c, d, e, f = entry1.get(), entry2.get(), entry3.get(), entry4.get(), entry5.get(), entry6.get()
             ModHeader(a, b, c, d, e, f)
         elif type == Search:
             a = entry1.get()
             Search(a)
-
+        elif type == HotFix:
+            a, b, c, d, e, f = entry1.get(), entry2.get(), entry3.get(), entry4.get(), entry5.get(), entry6.get()
+            HotFix(a, b, c, d, e, f)
     #generics we can reuse for any task I have created
     entry1 = StringVar(Nwindow)
     entry2 = StringVar(Nwindow)
@@ -86,8 +87,21 @@ def NeWindow(func):
         l = 1
         e = 1
         b = 1
+
     elif func == HotFix:
-        None
+        Nwindow.title("Creating Regular Hot Fix. NOTE: Very much a WIP, so things will be buggy")
+        text1 = 'Enter what type of hotfix you want to make: '
+        text2 = 'What Map is this affecting, or type MatchALL'
+        text3 = 'File Path with JSON name and what \n__JWP__ Object you want to grab from that JSON file: '
+        text4 = 'What you want to manipulate in the JSON file \n(WIP, will be better later on both discription and whatvalues to grab):'
+        text5 = 'Type True for most things, else hit enter: '
+        text6 = 'Leave this blank'
+        l = 6
+        e = 6
+        b1text = "Generate Hotfix"
+        def b1command(): return get_val(HotFix)
+        b = 1
+
 
     # This is the best way for the program to reuse generics, 
     # While being able to determine how many are needed for a paticular program
