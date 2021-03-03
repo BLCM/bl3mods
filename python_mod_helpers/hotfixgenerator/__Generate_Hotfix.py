@@ -18,6 +18,23 @@ from re import error
 #Global variables
 DATA = BL3Data()
 
+
+poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
+
+# boss_loot will contain a serialized version of the poollist.
+# boss_loot[0] will contain the single export, of type `ItemPoolListData`
+boss_loot = DATA.get_data(poollist_name)
+
+# Loop through the pool list
+test = boss_loot[0]['ItemPools']
+for pool in test:
+    print('Found item pool: {}'.format(pool['ItemPool'][1]))
+
+# Get only `ItemPoolListData` exports specifically (in this case, no actual
+# difference to just `get_data()`, `[0]` will still contain the single
+# export)
+boss_loot = DATA.get_exports(poollist_name, 'ItemPoolListData')
+
 # I will attempt to put them in order in which they are needed
 #Puts in the title of the mod, and also creates the file
 def ModHeader(input1, input2, input3, input4, input5, input6):
@@ -27,7 +44,7 @@ def ModHeader(input1, input2, input3, input4, input5, input6):
 def SearchResults(input):
     Testwindow = Tk()
     Testwindow.title("Results for: " + input)
-    Lb1 = Listbox(Testwindow, width=150)
+    Lb1 = Listbox(Testwindow, width = 150)
     k = 1
     for i in List_1:
         Lb1.insert(k, i)
@@ -50,7 +67,7 @@ def WindowSel(proper_path):
     testing.pack()
     Testwindow.mainloop()
 
-#this SHOULD display the next
+#this SHOULD display the next Layer of content
 def WindowSel2():
     Testwindow2 = Tk()
     Testwindow2.title("JSON File Content Display")
@@ -119,12 +136,12 @@ def JSONInfo2(proper_path, info):
         #     for pool in Child:
         #         print('Info: {}'.format(pool[ans2][1]))
 
+#now it will search for all items related to it regardless of capitalization or puncuation
 def Search(input):
-    info = DATA.get_refs_from_data(input)
+    info = DATA.get_refs_from_data(input.capitalize())
     for details in info:
         if details[0] not in List_1:
             List_1.append(details[0])
-    List_1.sort()
     SearchResults(input)
 
 #This one has a lot of cleaning up to do
