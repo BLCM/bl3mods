@@ -189,7 +189,7 @@ class BL3Data(object):
             #Unfortuanutly this is not public as it needs my credentials to login,
             #but if it becomes popular enough I will try and make it a public database that is seperate from mine so that everyone can use
             self.db = pyodbc.connect('Driver={SQL Server};'
-                                     'Server=<SQLSERVER>;'
+                                     'Server=A-LARGE-MANS-PC\SQLEXPRESS;'
                                      'Database=bl3references;'
                                      'Trusted_Connection=yes;')
             self.curs = self.db.cursor()
@@ -332,9 +332,7 @@ class BL3Data(object):
         database.
         """
         self._connect_db()
-        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + \
-            "'%" + str(obj_name) + "'" + \
-            " and o.id = r.to_obj and o2.id = r.from_obj"
+        test = "select o.name from bl3object o, bl3refs r, bl3object o2 where o.name like " + "'%" + str(obj_name) + "'" + " and o.id = r.to_obj and o2.id = r.from_obj"
         self.curs.execute(test)
         return[row[0] for row in self.curs.fetchall()]
 
