@@ -81,11 +81,9 @@ def NeWindow(func):
     elif func == Search:
         Nwindow.title("Find All References")
         text1 = 'Enter what you want to search for: '
-        text2 = 'NOTE: Puncuation matters, vladof and Vladof for example will give differenent results'
-        text3 = 'I will be working on this so later it will not matter, but for now it does.'
         b1text = "Search"
         def b1command(): return get_val(Search)
-        l = 3
+        l = 1
         e = 1
         b = 1
     elif func == HotFix:
