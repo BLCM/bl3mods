@@ -39,19 +39,45 @@ import json
 # for pool in test:
 #     print('Found item pool: {}'.format(pool['ItemPool'][1]))
 
-json_string = """
-{
-    "researcher": {
-        "name": "Ford Prefect",
-        "species": "Betelgeusian",
-        "relatives": [
-            {
-                "name": "Zaphod Beeblebrox",
-                "species": "Betelgeusian"
-            }
-        ]
-    }
-}
-"""
-data = json.loads(json_string)
-print(data)
+# json_string = """
+# {
+#     "researcher": {
+#         "name": "Ford Prefect",
+#         "species": "Betelgeusian",
+#         "relatives": [
+#             {
+#                 "name": "Zaphod Beeblebrox",
+#                 "species": "Betelgeusian"
+#             }
+#         ]
+#     }
+# }
+# """
+# data = json.loads(json_string)
+# print(data)
+from bl3hotfixmod import Mod
+
+
+mod = Mod('filename_to_save.bl3hotfix',
+        'Mod Title',
+        'Author Name',
+        [
+            'Extra description lines to show in the header',
+        ],
+        lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='qol',
+        ss='https://i.imgur.com/ClUttYw.gif',
+        videos='https://www.youtube.com/watch?v=JiEu23G4onM',
+        nexus='https://www.nexusmods.com/borderlands3/mods/128',
+        urls='https://borderlands.com/en-US/news/2020-09-10-borderlands-3-patch-hotfixes-sept-10/',
+        )
+
+#This was me messing around with how these things work. still learning though
+mod.reg_hotfix(
+mod.LEVEL,
+"Anger_P",
+"/Game/GameData/Regions/RegionManagerData.RegionManagerData",
+"PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum",
+"True",
+"")
