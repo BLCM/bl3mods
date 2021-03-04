@@ -60,8 +60,8 @@ def Search(input):
             Search_Results.append(details[0])
 ################################################################################################################################################################
 # MUCH better code. condensed and still has the same functionality
-#This is used as a referencesto look and see what are the names of the game folders
-#the user is able to choose a json file
+# This is used as a references to look and see what are the names of the game folders
+# the user is able to choose a json file
 def FileChoice():
     file = askopenfilename(filetypes=[("Choose file", ".json")])
     # Removes the files extention, as we dont need it
