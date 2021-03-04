@@ -22,6 +22,7 @@ List_3 = []
 #I will be attempting to store the users input in a list, so that later I can call them later qand execute it all at once
 Mod_Header = []
 Reg_hotfix = []
+Search_Results = []
 
 #now this is used as a reference point for users
 def Information():
@@ -33,10 +34,18 @@ def Information():
         lb1.insert(k, i)
         k += 1
     lb1.pack()
+    
     lb2 = Listbox(Nwindow, width = 35)
     k = 1
     for i in Map_Locations:
         lb2.insert(k, i)
         k += 1
     lb2.pack()
+
+    lb3 = Listbox(Nwindow, width = 100)
+    k = 1
+    for i in Search_Results:
+        lb3.insert(k, i)
+        k += 1
+    lb3.pack()
     Nwindow.mainloop()

@@ -77,9 +77,7 @@ def NeWindow(func):
         e = 6
         b1text = "Add This Regular Hotfix To The Queue"
         def b1command(): return get_val("HotFix")
-        b2text = "Click To See List Of Patch Types and Map Areas"
-        def b2command(): return Information()
-        b = 2
+        b = 1
 
     # Come back to this function later, as it is giving me to much grief right now
     elif func == JSONInfo:  # this will be more fleshed out later, but for now it I am trying to get the interfce to work
@@ -135,8 +133,8 @@ def NeWindow(func):
     #Buttons
     if b >= 1:
         Button(Nwindow, font=("Times New Roman", 18), text=b1text, command=b1command).grid(row=l)
-    if b >= 2:
-        Button(Nwindow, font=("Times New Roman", 18), text=b2text, command=b2command).grid(row=l, column=1)
+    # if b >= 2:
+        # Button(Nwindow, font=("Times New Roman", 18), text=b2text, command=b2command).grid(row=l, column=1)
 
 #after gelizing my mistake, I now relize that I must combine two of these things in order to work
 if __name__ == "__main__":
@@ -147,6 +145,7 @@ if __name__ == "__main__":
     Button(text="2. Choose File To Search Through", font=("Times New Roman", 18), command=lambda: NeWindow(JSONInfo), state=DISABLED) #Will reenable later once i can get it working
     Button(text="3. Find All References To An Object", font=( "Times New Roman", 18), command=lambda: NeWindow(Search))
     Button(text="4. Add To The HotFix", font=( "Times New Roman", 18), command=lambda: NeWindow("HotFix"))
+    Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: Information())
     Button(text="Click This To Create Your HotFix File", font=( "Times New Roman", 18), command=lambda: Create_HotFix_File())
     #this will pack everything so that I do not have to do it every time
     for c in sorted(window.children):

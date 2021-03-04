@@ -12,7 +12,7 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix
+from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, Search_Results
 from tkinter import *
 from re import error
 #Global variables
@@ -39,28 +39,27 @@ def Create_HotFix_File():
                 input1 = mod.EARLYLEVEL
             elif input1 == "char":
                 input1 = mod.CHAR
-            mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
+            mod.reg_hotfix( input1, input2, input3, input4, input5, input6)
             i += 6
 ################################################################################################################################################################
-#will work on making this is similar to interface, so that i can reuse things constantly
-def SearchResults(input):
-    Testwindow = Tk()
-    Testwindow.title("Results for: " + input)
-    Lb1 = Listbox(Testwindow, width = 150)
-    k = 1
-    for i in List_1:
-        Lb1.insert(k, i)
-        k += 1
-    Lb1.pack()
-    Testwindow.mainloop()
+# #will work on making this is similar to interface, so that i can reuse things constantly
+# def SearchResults(input):
+#     Testwindow = Tk()
+#     Testwindow.title("Results for: " + input)
+#     Lb1 = Listbox(Testwindow, width = 150)
+#     k = 1
+#     for i in List_1:
+#         Lb1.insert(k, i)
+#         k += 1
+#     Lb1.pack()
+#     Testwindow.mainloop()
 
 #now it will search for all items related to it regardless of capitalization or puncuation
 def Search(input):
     info = DATA.get_refs_from_data(input.capitalize())
     for details in info:
         if details[0] not in List_1:
-            List_1.append(details[0])
-    SearchResults(input)
+            Search_Results.append(details[0])
 ################################################################################################################################################################
 #I needed to make a window in here because i would have cirular logic orther wise
 def WindowSel(proper_path):
