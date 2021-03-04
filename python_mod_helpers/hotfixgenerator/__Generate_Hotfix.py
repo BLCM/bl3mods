@@ -8,7 +8,7 @@ At the time of coding this there is nothing like a BLCMM or other tools to make 
 so you have to manually enter all data in order for it to work, and even then my coding my be off in some way.
 
 BL3 is still in its modding infancy so if this program becomes obsolete in the future, well I still found it a great experience
-making this and I hope BL3 live as long as BL3 did, as they are tied for soem of my favorite games of all times
+making this and I hope BL3 live as long as BL2 did, as they are tied for some of my favorite games of all times
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
@@ -27,6 +27,8 @@ DATA = BL3Data()
 # for object_name, data in DATA.get_refs_to_data(poollist_name):
 #     print('Found object: {}'.format(object_name))
 ################################################################################################################################################################
+# I have to put the program like this because in order to make hotfixes in the way 
+# the bl3data/bl3hotfixmod work, it has to be executed in a row in order to work
 def Create_HotFix_File():
     #this firat part puts the header inside a new file it creats
     if len(Mod_Header) < 6:
@@ -39,7 +41,6 @@ def Create_HotFix_File():
     input4 = Mod_Header[3]
     input5 = Mod_Header[4]
     input6 = Mod_Header[5]
-
     mod = Mod(input1 + '.bl3hotfix', input2, input3,
               [input4, ], lic=Mod.CC_BY_SA_40, v=input5, cats=input6,)
     i = 0
@@ -89,12 +90,12 @@ def FileChoice():
     # JSONInfo(True_Path)
     JSONInfo(True_Path, "", "", 1)
 
+#This will be used to choose a selection choice from the file you have chosen
 def WindowSel(proper_path, info, check):
     Testwindow = Tk()
     Testwindow.title("JSON File Content Display")
-    Lb1 = Listbox(Testwindow, width=50)
-    Lb2 = Listbox(Testwindow, width=50)
     if check == 1:
+        Lb1 = Listbox(Testwindow, width=50)
         k = 1
         for i in List_1:
             Lb1.insert(k, i)
@@ -104,6 +105,7 @@ def WindowSel(proper_path, info, check):
                          command=lambda: JSONInfo(proper_path, Lb1.get(ANCHOR), "", 2))
         testing.pack()
     elif check == 2:
+        Lb2 = Listbox(Testwindow, width=50)
         k = 1
         for i in List_2:
             Lb2.insert(k, i)
@@ -113,6 +115,7 @@ def WindowSel(proper_path, info, check):
                          command=lambda: JSONInfo(proper_path, info, Lb2.get(ANCHOR), 3))
         testing.pack()
 
+#This is what parses the data that will be used to displayed
 def JSONInfo(proper_path, info, Choice, check):
     Parent = DATA.get_data(proper_path)
     i = 0

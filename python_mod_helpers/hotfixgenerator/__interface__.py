@@ -1,11 +1,14 @@
+#My files
 from __Generate_Hotfix import JSONInfo, Search, Create_HotFix_File, FileChoice
 from bl3data import BL3Data
 from _global_lists import Mod_Header, Reg_hotfix, List_Info
+################################################################################################################################################################
+#Libraies
 import tkinter as tk
 from tkinter import *
+#Global variables
 data = BL3Data()
-
-
+################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(func):
     SelectionWindow = Tk()
@@ -112,13 +115,27 @@ def SelectionWindow(func):
                text=b1text, command=b1command).grid(row=l)
     # if b >= 2:
         # Button(Nwindow, font=("Times New Roman", 18), text=b2text, command=b2command).grid(row=l, column=1)
-
-
+################################################################################################################################################################
 # Main menu.
 if __name__ == "__main__":
     MainWindow = tk.Tk()
     MainWindow.title("Hot Fix Generator")
-    # window.geometry("500x500")
+    w = 800 # width for the Tk root
+    h = 650 # height for the Tk root
+    # get screen width and height
+    ws = MainWindow.winfo_screenwidth() # width of the screen
+    hs = MainWindow.winfo_screenheight() # height of the screen
+    #width 1920
+    #highth 1080
+    # calculate x and y coordinates for the Tk root window
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
+    # set the dimensions of the screen 
+    # and where it is placed
+    MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
+    # geometry(height x width + x_cor + y_cor)
+    
+
     Button(text="Add To Mod Header Queue", font=(
         "Times New Roman", 18), command=lambda: SelectionWindow("ModHeader"))
 
@@ -141,3 +158,4 @@ if __name__ == "__main__":
     for c in sorted(MainWindow.children):
         MainWindow.children[c].pack()
     MainWindow.mainloop()
+################################################################################################################################################################
