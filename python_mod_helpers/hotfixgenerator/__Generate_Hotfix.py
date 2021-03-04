@@ -12,9 +12,12 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, Search_Results
+from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, Search_Results, FileNames, File_Results_List
+################################################################################################################################################################
 from tkinter import *
+from tkinter.filedialog import askopenfilename
 from re import error
+import os
 #Global variables
 DATA = BL3Data()
 ################################################################################################################################################################
@@ -42,26 +45,50 @@ def Create_HotFix_File():
             mod.reg_hotfix( input1, input2, input3, input4, input5, input6)
             i += 6
 ################################################################################################################################################################
-# #will work on making this is similar to interface, so that i can reuse things constantly
-# def SearchResults(input):
-#     Testwindow = Tk()
-#     Testwindow.title("Results for: " + input)
-#     Lb1 = Listbox(Testwindow, width = 150)
-#     k = 1
-#     for i in List_1:
-#         Lb1.insert(k, i)
-#         k += 1
-#     Lb1.pack()
-#     Testwindow.mainloop()
-
-#now it will search for all items related to it regardless of capitalization or puncuation
+#This swill put all your results into a list that you can look at later
+# Now it will search for all items related to it regardless of capitalization or puncuation
 def Search(input):
     info = DATA.get_refs_from_data(input.capitalize())
     for details in info:
         if details[0] not in List_1:
             Search_Results.append(details[0])
 ################################################################################################################################################################
-#I needed to make a window in here because i would have cirular logic orther wise
+#This whole section is in need of a re-due
+#Its ugly, clutered, and does not work
+
+#It now works, but it has a lot of functions. Look into how to clean this up later
+#For now it works and thats the important thing
+
+#This is used as a referencesto look and see what are the names of the game folders
+#the user is able to choose a json file
+def FileChoice():
+    file = askopenfilename(filetypes=[("Choose file", ".json")])
+    # Removes the files extention, as we dont need it
+    raw_path = os.path.splitext(file)[0]
+    i = 0
+    index = 0
+    # What this will do is that the program will search for a game file related to what I have specified,
+    # Then it will grab the index of that found search, and then procede to disregard everything before
+    # The index, and only grab what is needed to search for things
+    while index <= 0:
+        Find = "/" + FileNames[i]
+        i += 1
+        if Find in raw_path:
+            index = raw_path.find(Find)
+    # this is the data we need to pass in information
+    True_Path = raw_path[index::]
+    JSONInfo(True_Path)
+
+def JSONInfo(proper_path):
+    i = 0
+    Parent = DATA.get_data(proper_path)
+    while i < len(Parent):
+        for pool in Parent[i]:
+            if pool not in NonUsedInfo:
+                List_1.append(pool)
+        i += 1
+    WindowSel(proper_path)
+
 def WindowSel(proper_path):
     Testwindow = Tk()
     Testwindow.title("JSON File Content Display")
@@ -76,76 +103,38 @@ def WindowSel(proper_path):
     testing.pack()
     Testwindow.mainloop()
 
-#this SHOULD display the next Layer of content
-def WindowSel2():
-    Testwindow2 = Tk()
-    Testwindow2.title("JSON File Content Display")
-    Lb1 = Listbox(Testwindow2, width=30)
+#Thisn will run after the user chooses one of the things found inside the file they have chosen
+def JSONInfo2(proper_path, info): 
+    i = 0
+    Parent = DATA.get_data(proper_path)
+    Child = Parent[0][info]
+    for pool in Child[i]:
+        if pool not in NonUsedInfo:
+            List_2.append(pool)
+        i += 1
+    WindowSel2(proper_path, info)
+
+def WindowSel2(proper_path, info):
+    Testwindow = Tk()
+    Testwindow.title("JSON File Content Display")
+    Lb1 = Listbox(Testwindow, width=30)
     k = 1
     for i in List_2:
         Lb1.insert(k, i)
         k += 1
     Lb1.pack()
-    # testing = Button(Testwindow, text="test", font=("Times New Roman", 18),
-    #     command= lambda: JSONInfo2(proper_path, Lb1.get(ANCHOR)))
-    # testing.pack()
-    Testwindow2.mainloop()
+    testing = Button(Testwindow, text="Select To See Final Results", font=("Times New Roman", 18),
+        command= lambda: JSONInfo3(proper_path, info, Lb1.get(ANCHOR)))
+    testing.pack()
+    Testwindow.mainloop()
 
-#come back to this later
-#Had to split these two functions up so that user can choose what to select next
-def JSONInfo(proper_path):
-    # The way that this is set up know, it will now iterate through 
-    # all cache items, and then the user will have the whole list to view
+def JSONInfo3(proper_path, info, Choice): 
     i = 0
     Parent = DATA.get_data(proper_path)
-    while i < len(Parent):
-        for pool in Parent[i]:
-            if pool not in NonUsedInfo:
-                List_1.append(pool)
-        i += 1
-    WindowSel(proper_path)  
-
-#Thisn will run after the user chooses one of the things found inside the file they have chosen
-def JSONInfo2(proper_path, info): 
-    k = 0
-    Parent = DATA.get_data(proper_path)
-    Child = Parent[k][info]
-    try:
-        for key, value in Child.items():
-            print("{} : {}".format(key, value))
-            List_2.append(key, value)
-    except Child == error:
-        while k < len(Parent):
-            k += 1
-            Child = Parent[k][info]
-            for key, value in Child.items():
-                print("{} : {}".format(key, value))
-                List_2.append(key)
-    except:
-        print("something else went wrong, find out what")
-    WindowSel2()    
-
-    # else:
-    #     Child = Parent[k+1][info]
-    #     for key, value in Child.items():
-    #         print("{} : {}".format(key, value))
-    #         List_2.append(key)
-
-        # for pool in Child[0]:
-        #     if pool not in NonUsedInfo:
-        #         FilePool = pool
-        #         try:
-        #             for pool in Child:
-        #                 None
-        #             List_2.append(FilePool)
-        #             print(FilePool)
-        #         except:
-        #             None
-        #     ans2 = input("Enter a name from above: ")
-        #     for pool in Child:
-        #         print('Info: {}'.format(pool[ans2][1]))
+    # Loop through the pool list
+    for pool in Parent[0][info]:
+        File_Results_List.append(pool[Choice][1])
 ################################################################################################################################################################
-
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
 # mod.LEVEL,
