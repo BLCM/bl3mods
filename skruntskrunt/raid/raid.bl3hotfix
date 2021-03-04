@@ -19,7 +19,7 @@
 
 # [X] Petunia in Health
 # [X] Petunia Buffed in Damage
-# [ ] Petunia Buffed in Drops
+# [X] Petunia Buffed in Drops
 
 # [X] Dandelion in Health
 # [X] Dandelion Buffed in Damage
@@ -38,8 +38,25 @@
 # [X] Xam and Tam Buffed in Damage
 # [X] Xam and Tam Buffed in Drops
 
+<<<<<<< HEAD
 # [ ] Convert Bloodsun Canyon bosses
+=======
+# [X] Convert Bloodsun Canyon bosses
 
+# [X] Minosaur Health
+# [X] Minosaur Damage
+# [X] Minosaur Drops
+
+# [X] Jerrick Logan Health
+# [X] Jerrick Logan Damage
+# [X] Jerrick Logan Drops
+
+# [X] Caber Dowd Health
+# [X] Caber Dowd Damage
+# [X] Caber Dowd Drops
+>>>>>>> f8865d6... Raid Updates with more named enemies
+
+# [ ] Ruiner Health
 
 
 # Graveward
@@ -482,15 +499,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_TroyBoss),/Game/NonPlayerCharacters/Troy
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.BPChar_Rampager_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# The Ruiner
-SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
-SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
-SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
-
 
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/Balance/Table_Balance_PromBoss_PT1.Table_Balance_PromBoss_PT1,Rampager,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/Balance/Table_Balance_PromBoss_PT1.Table_Balance_PromBoss_PT1,Rampager,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_Shared/_Design/Balance/Table_Balance_PromBoss_PT1.Table_Balance_PromBoss_PT1,Rampager,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
 
 
 
@@ -501,24 +514,20 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_S
 # balance rowname: Ruiner_Boss
 
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=20,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-#SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-#SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[1].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-# # we added [1] and removed 1 round of parens
-# SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/PatchDLC/Geranium/GameData/Loot/Legendary/ItemPool_Geranium_Guns_Legendary',PoolProbability=(BaseValueConstant=1.0)))
-
-
-SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10000
+SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,20000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,20000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,50
+
+
+
+
 
 # The Ruiner from loot randomizer
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 
-
-# SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,ItemPools,0,,((ItemPool=ItemPoolData'"/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Shields_Legendary.ItemPool_Hibiscus_Shields_Legendary"',PoolProbability=(BaseValueConstant=0.025)),(ItemPool=ItemPoolData'"/Game/Enemies/Tink/Loot/_Design/LootPools/ItemPool_LootTink_TinkLootPackOpened.ItemPool_LootTink_TinkLootPackOpened"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/ItemPool_DiamondKeyChest.ItemPool_DiamondKeyChest"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hib_SnipeRifles_Legendary.ItemPool_Hib_SnipeRifles_Legendary"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare.ItemPool_GrenadeMods_04_VeryRare"',PoolProbability=(BaseValueConstant=0.2)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hibiscus_Shields_Legendary.ItemPool_Hibiscus_Shields_Legendary"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_VeryFew.Init_RandomLootCount_VeryFew_C"')),(ItemPool=ItemPoolData'"/Game/Enemies/Tink/Loot/_Design/LootPools/ItemPool_LootTink_TinkLootPackOpened.ItemPool_LootTink_TinkLootPackOpened"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToFour.Init_RandomLootCount_UpToFour_C"')),(ItemPool=ItemPoolData'"/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Benedict.ItemPool_Alisma_Legendary_Dedicate_Benedict"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToFour.Init_RandomLootCount_UpToFour_C"')),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/ItemPool_DiamondKeyChest.ItemPool_DiamondKeyChest"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToFour.Init_RandomLootCount_UpToFour_C"')),(ItemPool=ItemPoolData'"/Game/PatchDLC/Hibiscus/GameData/Loot/Legendary/ItemPool_Hib_SnipeRifles_Legendary.ItemPool_Hib_SnipeRifles_Legendary"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_SomeMinOne.Init_RandomLootCount_SomeMinOne_C"')),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToSix.Init_RandomLootCount_UpToSix_C"')),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_04_VeryRare.ItemPool_Shields_04_VeryRare"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToFour.Init_RandomLootCount_UpToFour_C"')),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare.ItemPool_GrenadeMods_04_VeryRare"',NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToFour.Init_RandomLootCount_UpToFour_C"')))
 
 
 
@@ -536,4 +545,60 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/Ge
 SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
+
+
+
+##### Dumptruck #####
+# BPChar: BPChar_Enforcer_BountyPrologue
+# bpchar_path: /Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue
+# balance_table: /Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique
+# balance rowname: Enforcer_BountyPrologue
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_BountyPrologue),/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue.BPChar_Enforcer_BountyPrologue_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_BountyPrologue),/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue.BPChar_Enforcer_BountyPrologue_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_BountyPrologue),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_BountyPrologue,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_BountyPrologue),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_BountyPrologue,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_BountyPrologue),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_BountyPrologue,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### MouthPiece #####
+# BPChar: BPChar_EnforcerSacrificeBoss
+# bpchar_path: /Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss
+# balance_table: /Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique
+# balance rowname: Enforcer_Mouthpiece
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss.BPChar_EnforcerSacrificeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss.BPChar_EnforcerSacrificeBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Mouthpiece,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Mouthpiece,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Mouthpiece,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### HotKarl #####
+# BPChar: BPChar_Enforcer_Bounty01
+# bpchar_path: /Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01
+# balance_table: /Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique
+# balance rowname: Enforcer_Bounty01_HotKarl
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01.BPChar_Enforcer_Bounty01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01.BPChar_Enforcer_Bounty01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Bounty01_HotKarl,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Bounty01_HotKarl,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Enforcer_Bounty01),/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique.Table_Enforcer_Balance_Unique,Enforcer_Bounty01_HotKarl,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Shiv #####
+# BPChar: BPChar_PsychoBadassPrologue
+# bpchar_path: /Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue
+# balance_table: /Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance
+# balance rowname: Psycho_Badass
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue.BPChar_PsychoBadassPrologue_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue.BPChar_PsychoBadassPrologue_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
