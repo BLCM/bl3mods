@@ -1,5 +1,5 @@
 #My files
-from __Generate_Hotfix import JSONInfo, Search, Create_HotFix_File, FileChoice
+from __Generate_Hotfix import Search, Create_HotFix_File, FileChoice
 from bl3data import BL3Data
 from _global_lists import Mod_Header, Reg_hotfix, List_Info
 ################################################################################################################################################################
