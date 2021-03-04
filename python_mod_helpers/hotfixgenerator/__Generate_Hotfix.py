@@ -19,13 +19,6 @@ from tkinter.filedialog import askopenfilename
 import os
 #Global variables
 DATA = BL3Data()
-# poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
-# # Get references to the pool
-# object_names = DATA.get_refs_to(poollist_name)
-
-# # Get serialized objects which reference the pool
-# for object_name, data in DATA.get_refs_to_data(poollist_name):
-#     print('Found object: {}'.format(object_name))
 ################################################################################################################################################################
 # I have to put the program like this because in order to make hotfixes in the way 
 # the bl3data/bl3hotfixmod work, it has to be executed in a row in order to work
@@ -68,10 +61,9 @@ def Search(input):
         if details[0] not in List_1:
             Search_Results.append(details[0])
 ################################################################################################################################################################
-# MUCH better code. condensed and still has the same functionality
-# This is used as a references to look and see what are the names of the game folders
-# the user is able to choose a json file
+# the user is able to choose a json file and search through the contents
 def FileChoice():
+    Tk().withdraw()
     file = askopenfilename(filetypes=[("Choose file", ".json")])
     # Removes the files extention, as we dont need it
     raw_path = os.path.splitext(file)[0]
@@ -80,38 +72,48 @@ def FileChoice():
     # What this will do is that the program will search for a game file related to what I have specified,
     # Then it will grab the index of that found search, and then procede to disregard everything before
     # The index, and only grab what is needed to search for things
-    while index <= 0:
-        Find = "/" + FileNames[i]
-        i += 1
-        if Find in raw_path:
-            index = raw_path.find(Find)
-    # this is the data we need to pass in information
-    True_Path = raw_path[index::]
-    # JSONInfo(True_Path)
-    JSONInfo(True_Path, "", "", 1)
+    if os.path.exists(file) == True:
+        while index <= 0:
+            Find = "/" + FileNames[i]
+            i += 1
+            if Find in raw_path:
+                index = raw_path.find(Find)
+        # this is the data we need to pass in information
+        True_Path = raw_path[index::]
+        # JSONInfo(True_Path)
+        JSONInfo(True_Path, "", "", 1)
 
 #This will be used to choose a selection choice from the file you have chosen
 def WindowSel(proper_path, info, check):
     Testwindow = Tk()
     Testwindow.title("JSON File Content Display")
+    w = 200
+    h = 200
+    ws = Testwindow.winfo_screenwidth()
+    hs = Testwindow.winfo_screenheight()
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
     if check == 1:
+        Testwindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y/4))
         Lb1 = Listbox(Testwindow, width=50)
         k = 1
         for i in List_1:
             Lb1.insert(k, i)
             k += 1
         Lb1.pack()
-        testing = Button(Testwindow, text="Select to see content", font=("Times New Roman", 18),
+        testing = Button(Testwindow, text="Select One", font=("Times New Roman", 18),
                          command=lambda: JSONInfo(proper_path, Lb1.get(ANCHOR), "", 2))
         testing.pack()
     elif check == 2:
+        Testwindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y/4))
+
         Lb2 = Listbox(Testwindow, width=50)
         k = 1
         for i in List_2:
             Lb2.insert(k, i)
             k += 1
         Lb2.pack()
-        testing = Button(Testwindow, text="Results will be located in '5. Click To Look At Stored information'", font=("Times New Roman", 18),
+        testing = Button(Testwindow, text="Click And Look At \nClick To Look At Stored information", font=("Times New Roman", 18),
                          command=lambda: JSONInfo(proper_path, info, Lb2.get(ANCHOR), 3))
         testing.pack()
 

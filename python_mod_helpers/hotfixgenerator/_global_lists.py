@@ -66,6 +66,15 @@ def ListBoxWindow(List):
 def List_Info():
     ListWindow = Tk()
     ListWindow.title("Data Table Look Up")
+    w = 500
+    h = 200 
+    # get screen width and height
+    ws = ListWindow.winfo_screenwidth() # width of the screen #width 1920
+    hs = ListWindow.winfo_screenheight() # height of the screen #height 1080
+    # Middle of the screen
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
+    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.8))
     Button(ListWindow, text="1. Look At What To Put In the 'Patch' section ",
            font=("Times New Roman", 18), command=lambda: ListBoxWindow(1))
     Button(ListWindow, text="2. Look At All The Map Names", font=(

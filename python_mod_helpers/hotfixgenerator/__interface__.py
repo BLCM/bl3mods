@@ -12,6 +12,12 @@ data = BL3Data()
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(func):
     SelectionWindow = Tk()
+    w = 500
+    h = 350 
+    ws = SelectionWindow.winfo_screenwidth()
+    hs = SelectionWindow.winfo_screenheight()
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
     #these variables will determine how many things to add to the window as i need them
     l, e, b = 0, 0, 0
     #generics we can reuse for any task I have created
@@ -37,6 +43,7 @@ def SelectionWindow(func):
 
     #So now this works for the most part. the inner code still needs to work
     if func == "ModHeader":  # creates a mod file of you to use
+        SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y))
         SelectionWindow.title("Mod Header")
         text1 = 'Name of the hotfix file: '
         text2 = 'The actual mod name: '
@@ -53,6 +60,8 @@ def SelectionWindow(func):
 
     #This will make the user put hotfix information into a queue to be executed later
     elif func == "HotFix":
+        SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
+
         SelectionWindow.title(
             "Creating Regular Hot Fix. NOTE: Very much a WIP, so things will be buggy")
         text1 = 'Enter what type of hotfix you want to make: \n(Package Tuple)'
@@ -71,7 +80,9 @@ def SelectionWindow(func):
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif func == Search:
         SelectionWindow.title("Find All References")
-        text1 = 'Enter what you want to search for: \n NOTE: To look at your search results, please click the 5th button and go from there. \nSometimes the program will take a while to load in all the data, so be patient with it.'
+        SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y))
+
+        text1 = 'Enter what you want to search for: \nSometimes the program will take a \nwhile to load in all the data, so be patient with it.'
         l = 1
         e = 1
 
@@ -120,22 +131,18 @@ def SelectionWindow(func):
 if __name__ == "__main__":
     MainWindow = tk.Tk()
     MainWindow.title("Hot Fix Generator")
-    w = 800 # width for the Tk root
-    h = 650 # height for the Tk root
+    w = 500
+    h = 350 
     # get screen width and height
-    ws = MainWindow.winfo_screenwidth() # width of the screen
-    hs = MainWindow.winfo_screenheight() # height of the screen
-    #width 1920
-    #highth 1080
-    # calculate x and y coordinates for the Tk root window
+    ws = MainWindow.winfo_screenwidth() # width of the screen #width 1920
+    hs = MainWindow.winfo_screenheight() # height of the screen #height 1080
+    # Middle of the screen
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    # set the dimensions of the screen 
-    # and where it is placed
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
     # geometry(height x width + x_cor + y_cor)
-    
-
+    #Notes: x/.. = left, x*.. = right
+    #Notes: y*.. = down, y/.. = up
     Button(text="Add To Mod Header Queue", font=(
         "Times New Roman", 18), command=lambda: SelectionWindow("ModHeader"))
 
