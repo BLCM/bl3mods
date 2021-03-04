@@ -11,3 +11,7 @@ NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset",
 List_1 = []
 List_2 = []
 List_3 = []
+
+#I will be attempting to store the users input in a list, so that later I can call them later qand execute it all at once
+ModHeader = []
+Reg_hotfix = []

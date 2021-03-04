@@ -19,7 +19,6 @@ def FileChoice():
         Find = "/" + FileNames[i]
         i += 1
         if Find in raw_path:
-
             index = raw_path.find(Find)
     # this is the data we need to pass in information
     True_Path = raw_path[index::]
