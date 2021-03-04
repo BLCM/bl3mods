@@ -12,7 +12,7 @@ making this and I hope BL3 live as long as BL3 did, as they are tied for soem of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import NonUsedInfo, List_1, List_2
+from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix
 from tkinter import *
 from re import error
 #Global variables
@@ -20,8 +20,6 @@ DATA = BL3Data()
 
 # I will attempt to put them in order in which they are needed
 #Puts in the title of the mod, and also creates the file
-def ModHeader(input1, input2, input3, input4, input5, input6):
-    Mod(input1 + '.bl3hotfix', input2, input3, [ input4 ], lic = Mod.CC_BY_SA_40, v = input5, cats = input6 )
 
 #will work on making this is similar to interface, so that i can reuse things constantly
 def SearchResults(input):
@@ -34,6 +32,14 @@ def SearchResults(input):
         k += 1
     Lb1.pack()
     Testwindow.mainloop()
+
+#now it will search for all items related to it regardless of capitalization or puncuation
+def Search(input):
+    info = DATA.get_refs_from_data(input.capitalize())
+    for details in info:
+        if details[0] not in List_1:
+            List_1.append(details[0])
+    SearchResults(input)
 
 #I needed to make a window in here because i would have cirular logic orther wise
 def WindowSel(proper_path):
@@ -119,28 +125,54 @@ def JSONInfo2(proper_path, info):
         #     for pool in Child:
         #         print('Info: {}'.format(pool[ans2][1]))
 
-#now it will search for all items related to it regardless of capitalization or puncuation
-def Search(input):
-    info = DATA.get_refs_from_data(input.capitalize())
-    for details in info:
-        if details[0] not in List_1:
-            List_1.append(details[0])
-    SearchResults(input)
 
-#This one has a lot of cleaning up to do
-def HotFix(input1,input2,input3,input4,input5,input6):
+def Create_HotFix_File():
+    if len(Mod_Header) == 0:
+        Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd",])
+    input1 = Mod_Header[0]
+    input2 = Mod_Header[1]
+    input3 = Mod_Header[2]
+    input4 = Mod_Header[3]
+    input5 = Mod_Header[4]
+    input6 = Mod_Header[5]
+    mod = Mod(input1 + '.bl3hotfix',
+            input2,
+            input3,
+            [
+                input4,
+            ],
+            lic=Mod.CC_BY_SA_40,
+            v= input5,
+            cats=input6,
+            )
     
-    if input1 == "patch":
-        input1 = Mod.PATCH
-    elif input1 == "level":
-        input1 = Mod.LEVEL
-    elif input1 == "earlylevel":
-        input1 = Mod.EARLYLEVEL
-    elif input1 == "char":
-        input1 = Mod.CHAR
-
-    Mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
-
+    i = 0
+    if i > len(Reg_hotfix):
+        None
+    else:
+        while i < len(Reg_hotfix):
+            input1 = Reg_hotfix[i]
+            input2 = Reg_hotfix[i+1]
+            input3 = Reg_hotfix[i+2]
+            input4 = Reg_hotfix[i+3]
+            input5 = Reg_hotfix[i+4]
+            input6 = Reg_hotfix[i+5]
+            if input1 == "patch":
+                input1 = mod.PATCH
+            elif input1 == "level":
+                input1 = mod.LEVEL
+            elif input1 == "earlylevel":
+                input1 = mod.EARLYLEVEL
+            elif input1 == "char":
+                input1 = mod.CHAR
+            mod.reg_hotfix(
+            input1,
+            input2,
+            input3,
+            input4,
+            input5,
+            input6)
+            i += 6
 
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
