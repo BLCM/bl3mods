@@ -16,11 +16,9 @@ from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, S
 ################################################################################################################################################################
 from tkinter import *
 from tkinter.filedialog import askopenfilename
-from re import error
 import os
 #Global variables
 DATA = BL3Data()
-
 # poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
 # # Get references to the pool
 # object_names = DATA.get_refs_to(poollist_name)
@@ -61,12 +59,7 @@ def Search(input):
         if details[0] not in List_1:
             Search_Results.append(details[0])
 ################################################################################################################################################################
-#This whole section is in need of a re-due
-#Its ugly, clutered, and does not work
-
-#It now works, but it has a lot of functions. Look into how to clean this up later
-#For now it works and thats the important thing
-
+# MUCH better code. condensed and still has the same functionality
 #This is used as a referencesto look and see what are the names of the game folders
 #the user is able to choose a json file
 def FileChoice():
@@ -85,63 +78,53 @@ def FileChoice():
             index = raw_path.find(Find)
     # this is the data we need to pass in information
     True_Path = raw_path[index::]
-    JSONInfo(True_Path)
+    # JSONInfo(True_Path)
+    JSONInfo(True_Path, "", "", 1)
 
-def JSONInfo(proper_path):
-    i = 0
+def WindowSel(proper_path, info, check):
+    Testwindow = Tk()
+    Testwindow.title("JSON File Content Display")
+    Lb1 = Listbox(Testwindow, width=30)
+    Lb2 = Listbox(Testwindow, width=30)
+    if check == 1:
+        k = 1
+        for i in List_1:
+            Lb1.insert(k, i)
+            k += 1
+        Lb1.pack()
+        testing = Button(Testwindow, text="Select to see content", font=("Times New Roman", 18),
+        command= lambda: JSONInfo(proper_path, Lb1.get(ANCHOR), "" , 2))
+        testing.pack()
+    elif check == 2:
+        k = 1
+        for i in List_2:
+            Lb2.insert(k, i)
+            k += 1
+        Lb2.pack()
+        testing = Button(Testwindow, text="Select To See Final Results", font=("Times New Roman", 18),
+            command= lambda: JSONInfo(proper_path, info, Lb2.get(ANCHOR), 3))
+        testing.pack()
+
+def JSONInfo(proper_path, info, Choice, check):
     Parent = DATA.get_data(proper_path)
-    while i < len(Parent):
-        for pool in Parent[i]:
+    i = 0
+    if check == 1:
+        while i < len(Parent):
+            for pool in Parent[i]:
+                if pool not in NonUsedInfo:
+                    List_1.append(pool)
+            i += 1
+        WindowSel(proper_path, "", 1)
+    elif check == 2:
+        Child = Parent[0][info]
+        for pool in Child[i]:
             if pool not in NonUsedInfo:
-                List_1.append(pool)
-        i += 1
-    WindowSel(proper_path)
-
-def WindowSel(proper_path):
-    Testwindow = Tk()
-    Testwindow.title("JSON File Content Display")
-    Lb1 = Listbox(Testwindow, width=30)
-    k = 1
-    for i in List_1:
-        Lb1.insert(k, i)
-        k += 1
-    Lb1.pack()
-    testing = Button(Testwindow, text="Select to see content", font=("Times New Roman", 18),
-        command= lambda: JSONInfo2(proper_path, Lb1.get(ANCHOR)))
-    testing.pack()
-    Testwindow.mainloop()
-
-#Thisn will run after the user chooses one of the things found inside the file they have chosen
-def JSONInfo2(proper_path, info): 
-    i = 0
-    Parent = DATA.get_data(proper_path)
-    Child = Parent[0][info]
-    for pool in Child[i]:
-        if pool not in NonUsedInfo:
-            List_2.append(pool)
-        i += 1
-    WindowSel2(proper_path, info)
-
-def WindowSel2(proper_path, info):
-    Testwindow = Tk()
-    Testwindow.title("JSON File Content Display")
-    Lb1 = Listbox(Testwindow, width=30)
-    k = 1
-    for i in List_2:
-        Lb1.insert(k, i)
-        k += 1
-    Lb1.pack()
-    testing = Button(Testwindow, text="Select To See Final Results", font=("Times New Roman", 18),
-        command= lambda: JSONInfo3(proper_path, info, Lb1.get(ANCHOR)))
-    testing.pack()
-    Testwindow.mainloop()
-
-def JSONInfo3(proper_path, info, Choice): 
-    i = 0
-    Parent = DATA.get_data(proper_path)
-    # Loop through the pool list
-    for pool in Parent[0][info]:
-        File_Results_List.append(pool[Choice][1])
+                List_2.append(pool)
+            i += 1
+        WindowSel(proper_path, info, 2)
+    elif check == 3:
+        for pool in Parent[0][info]:
+            File_Results_List.append(pool[Choice][1])
 ################################################################################################################################################################
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(

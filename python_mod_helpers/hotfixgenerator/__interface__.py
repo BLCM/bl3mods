@@ -100,6 +100,7 @@ def NeWindow(func):
         Entry(Nwindow, textvariable=entry6, width=100).grid(row=5, column=1)
     
     #Buttons
+
     if b >= 1:
         Button(Nwindow, font=("Times New Roman", 18), text=b1text, command=b1command).grid(row=l)
     # if b >= 2:
