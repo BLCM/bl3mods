@@ -28,65 +28,53 @@ Search_Results = []
 File_Results_List = []
 
 
-#Displays what to put in the patch nection of the hotfixes
-def Patch_Names():
-    Nwindow = Tk()
-    Nwindow.title("Names of patch types")
-    lb1 = Listbox(Nwindow, width=35)
-    k = 1
-    for i in Patch_Types:
-        lb1.insert(k, i)
-        k += 1
-    lb1.pack()
-
-#Shows all the names of the maps
-def Map_Names():
-    Nwindow = Tk()
-    Nwindow.title("List of all the map names")
-    lb2 = Listbox(Nwindow, width=30)
-    k = 1
-    for i in Map_Locations:
-        lb2.insert(k, i)
-        k += 1
-    lb2.pack()
-
-#if the user searches for something, then they can look at the results there
-def Search_Results_List():
-    Nwindow = Tk()
-    Nwindow.title("Data Table Look Up")
-    lb3 = Listbox(Nwindow, width=110)
-    k = 1
-    for i in Search_Results:
-        lb3.insert(k, i)
-        k += 1
-    lb3.pack()
-    Nwindow.mainloop()
-
-
-def File_Results():
-    Nwindow = Tk()
-    Nwindow.title("Data Table Look Up")
-    lb3 = Listbox(Nwindow, width=110)
-    k = 1
-    for i in File_Results_List:
-        lb3.insert(k, i)
-        k += 1
-    lb3.pack()
-    Nwindow.mainloop()
+def ListBoxWindow(List):
+    ListWindow = Tk()
+    ListWindow.title("Data Table Look Up")
+    if List == 1:
+        lb1 = Listbox(ListWindow, width=35)
+        k = 1
+        for i in Patch_Types:
+            lb1.insert(k, i)
+            k += 1
+        lb1.pack()
+    elif List == 2:
+        lb2 = Listbox(ListWindow, width=30)
+        k = 1
+        for i in Map_Locations:
+            lb2.insert(k, i)
+            k += 1
+        lb2.pack()
+    elif List == 3:
+        ListWindow.title("Data Table Look Up")
+        lb3 = Listbox(ListWindow, width=110)
+        k = 1
+        for i in Search_Results:
+            lb3.insert(k, i)
+            k += 1
+        lb3.pack()
+    elif List == 4:
+        lb4 = Listbox(ListWindow, width=110)
+        k = 1
+        for i in File_Results_List:
+            lb4.insert(k, i)
+            k += 1
+        lb4.pack()
+    ListWindow.mainloop()
 
 #This creates a new window that the user can use to look through information
 def List_Info():
-    Nwindow = Tk()
-    Nwindow.title("Data Table Look Up")
-    Button(Nwindow, text="1. Look At What To Put In the 'Patch' section ",
-           font=("Times New Roman", 18), command=lambda: Patch_Names())
-    Button(Nwindow, text="2. Look At All The Map Names", font=(
-        "Times New Roman", 18), command=lambda: Map_Names())
-    Button(Nwindow, text="3. Look At Your Search Results", font=(
-        "Times New Roman", 18), command=lambda: Search_Results_List())
-    Button(Nwindow, text="4. File Results", font=(
-        "Times New Roman", 18), command=lambda: File_Results())
+    ListWindow = Tk()
+    ListWindow.title("Data Table Look Up")
+    Button(ListWindow, text="1. Look At What To Put In the 'Patch' section ",
+           font=("Times New Roman", 18), command=lambda: ListBoxWindow(1))
+    Button(ListWindow, text="2. Look At All The Map Names", font=(
+        "Times New Roman", 18), command=lambda: ListBoxWindow(2))
+    Button(ListWindow, text="3. Look At Your Search Results", font=(
+        "Times New Roman", 18), command=lambda: ListBoxWindow(3))
+    Button(ListWindow, text="4. File Results", font=(
+        "Times New Roman", 18), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
-    for c in sorted(Nwindow.children):
-        Nwindow.children[c].pack()
-    Nwindow.mainloop()
+    for c in sorted(ListWindow.children):
+        ListWindow.children[c].pack()
+    ListWindow.mainloop()

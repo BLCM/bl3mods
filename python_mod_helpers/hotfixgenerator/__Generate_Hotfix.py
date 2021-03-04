@@ -92,8 +92,8 @@ def FileChoice():
 def WindowSel(proper_path, info, check):
     Testwindow = Tk()
     Testwindow.title("JSON File Content Display")
-    Lb1 = Listbox(Testwindow, width=30)
-    Lb2 = Listbox(Testwindow, width=30)
+    Lb1 = Listbox(Testwindow, width=50)
+    Lb2 = Listbox(Testwindow, width=50)
     if check == 1:
         k = 1
         for i in List_1:
