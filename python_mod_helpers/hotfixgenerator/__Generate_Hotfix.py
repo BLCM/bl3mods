@@ -29,12 +29,17 @@ DATA = BL3Data()
 ################################################################################################################################################################
 def Create_HotFix_File():
     #this firat part puts the header inside a new file it creats
-    if len(Mod_Header) == 0:
+    if len(Mod_Header) < 6:
         # If you don't give it someting, this is what I will replace it with
         Mod_Header.extend(["Chadd", "Chadd", "Chadd",
                            "Chadd", "Chadd", "Chadd"])
-    input1 = Mod_Header[0], input2 = Mod_Header[1], input3 = Mod_Header[
-        2], input4 = Mod_Header[3], input5 = Mod_Header[4], input6 = Mod_Header[5],
+    input1 = Mod_Header[0]
+    input2 = Mod_Header[1]
+    input3 = Mod_Header[2]
+    input4 = Mod_Header[3]
+    input5 = Mod_Header[4]
+    input6 = Mod_Header[5]
+
     mod = Mod(input1 + '.bl3hotfix', input2, input3,
               [input4, ], lic=Mod.CC_BY_SA_40, v=input5, cats=input6,)
     i = 0
@@ -42,8 +47,7 @@ def Create_HotFix_File():
         None
     else:
         while i < len(Reg_hotfix):
-            input1 = Reg_hotfix[i], input2 = Reg_hotfix[i+1], input3 = Reg_hotfix[i +
-                                                                                  2], input4 = Reg_hotfix[i+3], input5 = Reg_hotfix[i+4], input6 = Reg_hotfix[i+5],
+            input1 = Reg_hotfix[i], input2 = Reg_hotfix[i+1], input3 = Reg_hotfix[i+2], input4 = Reg_hotfix[i+3], input5 = Reg_hotfix[i+4], input6 = Reg_hotfix[i+5],
             if input1 == "patch":
                 input1 = mod.PATCH
             elif input1 == "level":
