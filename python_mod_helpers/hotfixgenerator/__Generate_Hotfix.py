@@ -20,6 +20,14 @@ from re import error
 import os
 #Global variables
 DATA = BL3Data()
+
+# poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
+# # Get references to the pool
+# object_names = DATA.get_refs_to(poollist_name)
+
+# # Get serialized objects which reference the pool
+# for object_name, data in DATA.get_refs_to_data(poollist_name):
+#     print('Found object: {}'.format(object_name))
 ################################################################################################################################################################
 def Create_HotFix_File():
     #this firat part puts the header inside a new file it creats
