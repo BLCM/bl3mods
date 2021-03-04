@@ -9,9 +9,11 @@ NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset",
                "_jwp_object_name", "export_type", "_jwp_arr_idx"]
 
 #will be used for deciding what kind of hotfix to apply
-Patch_Types = ['This is the list of patch types, type one', 'patch', 'level', 'earlylevel', 'char']
-#This will be used to select the map name when creating a hotfix, may change later, but for now i think this is a good idea 
-Map_Locations = ['The names of all the maps, type one', 'Anger_P','Archive_P','AtlasHQ_P','Bar_P','Beach_P','BloodyHarvest_P','COVSlaughter_P','Camp_P','Cartels_P','CasinoIntro_P','Chase_P','CityBoss_P','CityVault_P','City_P','Convoy_P','Core_P','CraterBoss_P','CreatureSlaughter_P','Crypt_P','DesertBoss_P','Desert_P','Desertvault_P','Desolate_P','Eldorado_P','Experiment_P','Facility_P','FinalBoss_P','Forest_P','Frontier_P','GuardianTakedown_P','Impound_P','Lake_P','Lodge_P','Mansion_P','MarshFields_P','Mine_P','Monastery_P','MotorcadeFestival_P','MotorcadeInterior_P','Motorcade_P','OrbitalPlatform_P','Outskirts_P','Prison_P','Prologue_P','ProvingGrounds_Trial1_P','ProvingGrounds_Trial4_P','ProvingGrounds_Trial5_P','ProvingGrounds_Trial6_P','ProvingGrounds_Trial7_P','ProvingGrounds_Trial8_P','Raid_P','Recruitment_P','Sacrifice_P','Sanctuary3_P','Sanctum_P','Strip_P','TechSlaughter_P','TowerLair_P','Towers_P','Town_P','Trashtown_P','Venue_P','Village_P','Watership_P','WetlandsBoss_P','WetlandsVault_P','Wetlands_P','Woods_P', 'MatchAll']
+Patch_Types = ['This is the list of patch types, type one',
+               'patch', 'level', 'earlylevel', 'char']
+#This will be used to select the map name when creating a hotfix, may change later, but for now i think this is a good idea
+Map_Locations = ['The names of all the maps, type one', 'Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'BloodyHarvest_P', 'COVSlaughter_P', 'Camp_P', 'Cartels_P', 'CasinoIntro_P', 'Chase_P', 'CityBoss_P', 'CityVault_P', 'City_P', 'Convoy_P', 'Core_P', 'CraterBoss_P', 'CreatureSlaughter_P', 'Crypt_P', 'DesertBoss_P', 'Desert_P', 'Desertvault_P', 'Desolate_P', 'Eldorado_P', 'Experiment_P', 'Facility_P', 'FinalBoss_P', 'Forest_P', 'Frontier_P', 'GuardianTakedown_P', 'Impound_P', 'Lake_P', 'Lodge_P', 'Mansion_P', 'MarshFields_P', 'Mine_P', 'Monastery_P',
+                 'MotorcadeFestival_P', 'MotorcadeInterior_P', 'Motorcade_P', 'OrbitalPlatform_P', 'Outskirts_P', 'Prison_P', 'Prologue_P', 'ProvingGrounds_Trial1_P', 'ProvingGrounds_Trial4_P', 'ProvingGrounds_Trial5_P', 'ProvingGrounds_Trial6_P', 'ProvingGrounds_Trial7_P', 'ProvingGrounds_Trial8_P', 'Raid_P', 'Recruitment_P', 'Sacrifice_P', 'Sanctuary3_P', 'Sanctum_P', 'Strip_P', 'TechSlaughter_P', 'TowerLair_P', 'Towers_P', 'Town_P', 'Trashtown_P', 'Venue_P', 'Village_P', 'Watership_P', 'WetlandsBoss_P', 'WetlandsVault_P', 'Wetlands_P', 'Woods_P', 'MatchAll']
 
 
 #used for storing info and grabbing it later
@@ -26,12 +28,11 @@ Search_Results = []
 File_Results_List = []
 
 
-
 #Displays what to put in the patch nection of the hotfixes
 def Patch_Names():
     Nwindow = Tk()
     Nwindow.title("Names of patch types")
-    lb1 = Listbox(Nwindow, width = 35)
+    lb1 = Listbox(Nwindow, width=35)
     k = 1
     for i in Patch_Types:
         lb1.insert(k, i)
@@ -42,7 +43,7 @@ def Patch_Names():
 def Map_Names():
     Nwindow = Tk()
     Nwindow.title("List of all the map names")
-    lb2 = Listbox(Nwindow, width = 30)
+    lb2 = Listbox(Nwindow, width=30)
     k = 1
     for i in Map_Locations:
         lb2.insert(k, i)
@@ -53,7 +54,7 @@ def Map_Names():
 def Search_Results_List():
     Nwindow = Tk()
     Nwindow.title("Data Table Look Up")
-    lb3 = Listbox(Nwindow, width = 110)
+    lb3 = Listbox(Nwindow, width=110)
     k = 1
     for i in Search_Results:
         lb3.insert(k, i)
@@ -61,10 +62,11 @@ def Search_Results_List():
     lb3.pack()
     Nwindow.mainloop()
 
+
 def File_Results():
     Nwindow = Tk()
     Nwindow.title("Data Table Look Up")
-    lb3 = Listbox(Nwindow, width = 110)
+    lb3 = Listbox(Nwindow, width=110)
     k = 1
     for i in File_Results_List:
         lb3.insert(k, i)
@@ -76,10 +78,14 @@ def File_Results():
 def List_Info():
     Nwindow = Tk()
     Nwindow.title("Data Table Look Up")
-    Button(Nwindow, text="1. Look At What To Put In the 'Patch' section ", font=("Times New Roman", 18), command=lambda: Patch_Names())
-    Button(Nwindow, text="2. Look At All The Map Names", font=("Times New Roman", 18), command=lambda:Map_Names())
-    Button(Nwindow, text="3. Look At Your Search Results", font=( "Times New Roman", 18), command=lambda: Search_Results_List())
-    Button(Nwindow, text="4. File Results", font=( "Times New Roman", 18), command=lambda: File_Results())
+    Button(Nwindow, text="1. Look At What To Put In the 'Patch' section ",
+           font=("Times New Roman", 18), command=lambda: Patch_Names())
+    Button(Nwindow, text="2. Look At All The Map Names", font=(
+        "Times New Roman", 18), command=lambda: Map_Names())
+    Button(Nwindow, text="3. Look At Your Search Results", font=(
+        "Times New Roman", 18), command=lambda: Search_Results_List())
+    Button(Nwindow, text="4. File Results", font=(
+        "Times New Roman", 18), command=lambda: File_Results())
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     for c in sorted(Nwindow.children):
         Nwindow.children[c].pack()
