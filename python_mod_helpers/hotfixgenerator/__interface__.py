@@ -119,18 +119,24 @@ if __name__ == "__main__":
     window = tk.Tk()
     window.title("Hot Fix Generator")
     # window.geometry("500x500")
-    Button(text="1. Add To Mod Header Queue", font=(
+    Button(text="Add To Mod Header Queue", font=(
         "Times New Roman", 18), command=lambda: NeWindow("ModHeader"))
-    Button(text="2. Choose File To Search Through", font=("Times New Roman", 18),
-           command=lambda: FileChoice())  # Will reenable later once i can get it working
-    Button(text="3. Find All References To An Object", font=(
-        "Times New Roman", 18), command=lambda: NeWindow(Search))
-    Button(text="4. Add To The HotFix Queue", font=(
+
+    Button(text="Add To The HotFix Queue", font=(
         "Times New Roman", 18), command=lambda: NeWindow("HotFix"))
-    Button(text="5. Click To Look At Stored information", font=(
+
+    Button(text="Choose File To Search Through", font=("Times New Roman", 18),
+           command=lambda: FileChoice())  # Will reenable later once i can get it working
+    
+    Button(text="Find All References To An Object", font=(
+        "Times New Roman", 18), command=lambda: NeWindow(Search))
+    
+    Button(text="Click To Look At Stored information", font=(
         "Times New Roman", 18), command=lambda: List_Info())
+
     Button(text="Click This To Create Your HotFix File", font=(
         "Times New Roman", 18), command=lambda: Create_HotFix_File())
+    
     #this will pack everything so that I do not have to do it every time
     for c in sorted(window.children):
         window.children[c].pack()
