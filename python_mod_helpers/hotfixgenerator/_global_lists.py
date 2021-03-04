@@ -31,7 +31,16 @@ File_Results_List = []
 def ListBoxWindow(List):
     ListWindow = Tk()
     ListWindow.title("Data Table Look Up")
+    w = 500
+    h = 200 
+    # get screen width and height
+    ws = ListWindow.winfo_screenwidth() # width of the screen #width 1920
+    hs = ListWindow.winfo_screenheight() # height of the screen #height 1080
+    # Middle of the screen
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
     if List == 1:
+        ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
         lb1 = Listbox(ListWindow, width=35)
         k = 1
         for i in Patch_Types:
@@ -39,6 +48,7 @@ def ListBoxWindow(List):
             k += 1
         lb1.pack()
     elif List == 2:
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
         lb2 = Listbox(ListWindow, width=30)
         k = 1
         for i in Map_Locations:
@@ -46,6 +56,7 @@ def ListBoxWindow(List):
             k += 1
         lb2.pack()
     elif List == 3:
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
         ListWindow.title("Data Table Look Up")
         lb3 = Listbox(ListWindow, width=110)
         k = 1
@@ -54,6 +65,7 @@ def ListBoxWindow(List):
             k += 1
         lb3.pack()
     elif List == 4:
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
         lb4 = Listbox(ListWindow, width=110)
         k = 1
         for i in File_Results_List:
@@ -74,16 +86,12 @@ def List_Info():
     # Middle of the screen
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.8))
-    Button(ListWindow, text="1. Look At What To Put In the 'Patch' section ",
-           font=("Times New Roman", 18), command=lambda: ListBoxWindow(1))
-    Button(ListWindow, text="2. Look At All The Map Names", font=(
-        "Times New Roman", 18), command=lambda: ListBoxWindow(2))
-    Button(ListWindow, text="3. Look At Your Search Results", font=(
-        "Times New Roman", 18), command=lambda: ListBoxWindow(3))
-    Button(ListWindow, text="4. File Results", font=(
-        "Times New Roman", 18), command=lambda: ListBoxWindow(4))
+    ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x, y*1.5))
+    Button(ListWindow, text="1. Look At What To Put In the 'Patch' section ",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
+    Button(ListWindow, text="2. Look At All The Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
+    Button(ListWindow, text="3. Look At Your Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
+    Button(ListWindow, text="4. File Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     for c in sorted(ListWindow.children):
-        ListWindow.children[c].pack()
+        ListWindow.children[c].pack(side=TOP)
     ListWindow.mainloop()

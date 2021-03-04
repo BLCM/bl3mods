@@ -101,19 +101,18 @@ def WindowSel(proper_path, info, check):
             Lb1.insert(k, i)
             k += 1
         Lb1.pack()
-        testing = Button(Testwindow, text="Select One", font=("Times New Roman", 18),
+        testing = Button(Testwindow, text="Select One", font=("Times New Roman", 14),
                          command=lambda: JSONInfo(proper_path, Lb1.get(ANCHOR), "", 2))
         testing.pack()
     elif check == 2:
         Testwindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y/4))
-
         Lb2 = Listbox(Testwindow, width=50)
         k = 1
         for i in List_2:
             Lb2.insert(k, i)
             k += 1
         Lb2.pack()
-        testing = Button(Testwindow, text="Click And Look At \nClick To Look At Stored information", font=("Times New Roman", 18),
+        testing = Button(Testwindow, text="Click And Look At \nClick To Look At Stored information", font=("Times New Roman", 14),
                          command=lambda: JSONInfo(proper_path, info, Lb2.get(ANCHOR), 3))
         testing.pack()
 
