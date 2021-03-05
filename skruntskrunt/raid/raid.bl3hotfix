@@ -38,10 +38,10 @@
 
 # [X] Dandelion in Health
 # [X] Dandelion Buffed in Damage
-# [ ] Dandelion Buffed in Drops
+# [#] Dandelion Buffed in Drops
 
 # [X] Jackbot in Health
-# [ ] Balance Jack
+# [#] Balance Jack
 # [X] Jackbot Buffed in Damage
 # [X] Jackbot Buffed in Drops
 
@@ -67,7 +67,17 @@
 # [X] Caber Dowd Damage
 # [X] Caber Dowd Drops
 
-# [ ] Ruiner Health
+# [X] Ruiner Health
+
+# [ ] Fix Shiv Loot Pool (investigate)
+
+# [ ] Roaddog
+
+# [ ] Demoskagons
+
+# [ ] Dumptrump loot
+
+# [ ] Buff Eista just a little
 
 
 # Graveward
@@ -406,27 +416,25 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_ToughBro),/Game/PatchDLC/Hibiscu
 # /Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique
 # GerSaurian_Saurtaur
 
+# from ./Apocalyptech/loot_changes/better_loot/gen_better_loot.py
+# ("Minosaur",
+#             '/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character',
+#             'BPChar_GerSaurianSaurtaur',
+#             0,
+#             1),
+# Minosaur
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur.BPChar_GerSaurianSaurtaur_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur.BPChar_GerSaurianSaurtaur_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# # DNW
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurianSaurtaur,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,750
-# SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurianSaurtaur,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,750
-
-## # Trying basic? instead of GerSaurianSaurtaur
-## SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance.Table_GerSaurian_Balance,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,5000
-## SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance.Table_GerSaurian_Balance,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,5000
-## 
-
-# Failure to change health
-
-# Trying basic? instead of GerSaurianSaurtaur
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1
-
-# Trying Saurtaur? instead of GerSaurianSaurtaur
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10000
-
-
+# key GerSaurian_Saurtaur
+# /Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique
+# /Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique
+# GerSaurian_Saurtaur : {
+# Latest attempt at HP
+SparkCharacterLoadedEntry,(1,2,0,GerSaurian_Saurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,20000
+SparkCharacterLoadedEntry,(1,2,0,GerSaurian_Saurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,20000
+# Damage
+SparkCharacterLoadedEntry,(1,2,0,GerSaurian_Saurtaur),/Geranium/Enemies/GerSaurian/_Shared/_Design/Balance/Table_GerSaurian_Balance_Unique.Table_GerSaurian_Balance_Unique,GerSaurian_Saurtaur,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
 
 # From ./Apocalyptech/loot_changes/better_loot/better_loot.bl3hotfix
 # This works
@@ -435,6 +443,25 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/Ge
 
 
 ###### Quartermaster ########
+# BPChar_Quartermaster_Tink
+# /Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance
+#./Apocalyptech/loot_changes/better_loot/better_loot.bl3hotfix
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Quartermaster_Tink),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Geranium.ItemPoolList_MiniBoss_Geranium,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/Tink/_Design/Character/BPChar_Quartermaster_Tink.BPChar_Quartermaster_Tink_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# Go big 8
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/Tink/_Design/Character/BPChar_Quartermaster_Tink.BPChar_Quartermaster_Tink_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Quartermaster_Mech
+# Quartermaster_Tink
+# Quartermaster_Turret
+# /Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance
+# /Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance
+
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Mech,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Mech,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Mech,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
+
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Turret,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Turret,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,100
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Quartermaster/_Shared/_Design/Balance/Table_Quartermaster_Balance.Table_Quartermaster_Balance,Quartermaster_Turret,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
@@ -449,14 +476,35 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Qu
 # /Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.
 # /Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique
 
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_PhaserPeter,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_PhaserPete,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,10000
+# /Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique
+# /Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete
+# HP works
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_PhaserPete,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_PhaserPete,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_PhaserPete,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
 
-# Logan loot
+
+
+# Logan loot. Works
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete.BPChar_GerPsychoPhaserPete_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoPhaserPete),/Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete.BPChar_GerPsychoPhaserPete_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=7,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###### Caber Dowd ###########
+# BPChar_GerPunkLarry
+# /Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry
+# /Geranium/Enemies/GerPunk_Female/_Shared/_Design/Balance/Table_GerPunk_Balance_Unique
+# /Geranium/Enemies/GerPunk_Female/_Shared/_Design/Balance/Table_GerPunk_Balance_Unique.Table_GerPunk_Balance_Unique
+# GerPunk_Larry
+
+# 1000 too much (2-3 player)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPunkLarry),/Geranium/Enemies/GerPunk_Female/_Shared/_Design/Balance/Table_GerPunk_Balance_Unique.Table_GerPunk_Balance_Unique,GerPunk_Larry,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPunkLarry),/Geranium/Enemies/GerPunk_Female/_Shared/_Design/Balance/Table_GerPunk_Balance_Unique.Table_GerPunk_Balance_Unique,GerPunk_Larry,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPunkLarry),/Geranium/Enemies/GerPunk_Female/_Shared/_Design/Balance/Table_GerPunk_Balance_Unique.Table_GerPunk_Balance_Unique,GerPunk_Larry,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,18.5
+
+# Caber Dowd Loot. Works 
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPunkLarry),/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry.BPChar_GerPunkLarry_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPunkLarry),/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry.BPChar_GerPunkLarry_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=7,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
 
 ###### Dickon Goyle #########
 # BPChar_GerPunkGreg_Rakk
@@ -522,13 +570,17 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/_S
 # BPChar: BPChar_RuinerBoss
 # bpchar_path: /Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss
 # balance_table: /Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance
-# balance rowname: Ruiner_Boss
+# balance rowname: Ruiner_Boss_PT2
 
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/BPChar_RuinerBoss.BPChar_RuinerBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,20000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,20000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,50
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,3000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,3000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,3000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,3000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,3000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/_Shared/_Design/Balance/Table_Ruiner_Balance.Table_Ruiner_Balance,Ruiner_Boss_PT2,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,50
+
 
 
 
@@ -612,4 +664,415 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psyc
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+
+
+##### Princess Tarantella II #####
+# BPChar: BPChar_SpiderantTarantella
+# bpchar_path: /Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella
+# balance_table: /Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique
+# balance rowname: Spiderant_CakeRoyalty
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella.BPChar_SpiderantTarantella_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella.BPChar_SpiderantTarantella_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderantTarantella),/Game/Enemies/Spiderant/_Shared/_Design/Balance/Table_Balance_Spiderant_Unique.Table_Balance_Spiderant_Unique,Spiderant_CakeRoyalty,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Waylon Hurd #####
+# BPChar: BPChar_GerPsychoMoleMan
+# bpchar_path: /Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan
+# balance_table: /Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique
+# balance rowname: GerPsycho_MoleMan
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/BPChar_GerPsychoMoleMan.BPChar_GerPsychoMoleMan_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerPsychoMoleMan),/Geranium/Enemies/GerPsycho_Male/_Shared/_Design/Balance/Table_GerPsycho_Balance_Unique.Table_GerPsycho_Balance_Unique,GerPsycho_MoleMan,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Lasodactyl #####
+# BPChar: BPChar_GerRakkLasodactyl
+# bpchar_path: /Geranium/Enemies/GerRakk/_Unique/Lasodactyl/_Design/Character/BPChar_GerRakkLasodactyl
+# balance_table: /Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique
+# balance rowname: GerRakkLasodactyl
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Unique/Lasodactyl/_Design/Character/BPChar_GerRakkLasodactyl.BPChar_GerRakkLasodactyl_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Unique/Lasodactyl/_Design/Character/BPChar_GerRakkLasodactyl.BPChar_GerRakkLasodactyl_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GerRakkLasodactyl),/Geranium/Enemies/GerRakk/_Shared/_Design/Balance/Table_GerRakk_Balance_Unique.Table_GerRakk_Balance_Unique,GerRakkLasodactyl,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Lectrikor #####
+# BPChar: BPChar_Biobeast_PlasmaBeast
+# bpchar_path: /Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast
+# balance_table: /Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique
+# balance rowname: PlasmaBeast
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast.BPChar_Biobeast_PlasmaBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast.BPChar_Biobeast_PlasmaBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_PlasmaBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,PlasmaBeast,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Hydragoian #####
+# BPChar: BPChar_Biobeast_CopyBeast
+# bpchar_path: /Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast
+# balance_table: /Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique
+# balance rowname: CopyBeast
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast.BPChar_Biobeast_CopyBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast.BPChar_Biobeast_CopyBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_CopyBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,CopyBeast,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Bellik Primis #####
+# BPChar: BPChar_Biobeast_AlteredBeast
+# bpchar_path: /Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast
+# balance_table: /Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique
+# balance rowname: AlteredBeast
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast.BPChar_Biobeast_AlteredBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast.BPChar_Biobeast_AlteredBeast_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Biobeast_AlteredBeast),/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique.Table_Balance_Biobeast_Unique,AlteredBeast,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Shiverous the Unscathed #####
+# BPChar: BPChar_Rare_Frost_Dragon
+# bpchar_path: /Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon
+# balance_table: /Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists
+# balance rowname: Frost_Dragon_Rare
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon.BPChar_Rare_Frost_Dragon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon.BPChar_Rare_Frost_Dragon_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Rare_Frost_Dragon),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Frost_Dragon_Rare,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Empowered Scholar #####
+# BPChar: BPChar_MinionPossessed
+# bpchar_path: /Hibiscus/Enemies/Minion/Possessed/_Design/Character/BPChar_MinionPossessed
+# balance_table: /Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists
+# balance rowname: Boss_Minion
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Hibiscus/Enemies/Minion/Possessed/_Design/Character/BPChar_MinionPossessed.BPChar_MinionPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionPossessed),/Hibiscus/Enemies/Minion/Possessed/_Design/Character/BPChar_MinionPossessed.BPChar_MinionPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MinionPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Minion,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Empowered Grawn #####
+# BPChar: BPChar_LunaticPossessed
+# bpchar_path: /Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed
+# balance_table: /Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists
+# balance rowname: Boss_Lunatic
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed.BPChar_LunaticPossessed_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_LunaticPossessed),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Boss_Lunatic,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Amach #####
+# BPChar: BPChar_ZealotPilfer_Child_Rare
+# bpchar_path: /Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare
+# balance_table: /Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists
+# balance rowname: Zealot_Pilfer_Rare
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare.BPChar_ZealotPilfer_Child_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare.BPChar_ZealotPilfer_Child_Rare_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ZealotPilfer_Child_Rare),/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists.Table_Balance_Cultists,Zealot_Pilfer_Rare,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Kritchy #####
+# BPChar: BPChar_Hib_Hunt_Kritchy
+# bpchar_path: /Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy
+# balance_table: /Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique
+# balance rowname: Hunt_Kritchy_Village
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy.BPChar_Hib_Hunt_Kritchy_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy.BPChar_Hib_Hunt_Kritchy_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Hunt_Kritchy),/Hibiscus/Enemies/_Unique/Table_Balance_Hib_Unique.Table_Balance_Hib_Unique,Hunt_Kritchy_Village,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Scraptrap Prime #####
+# BPChar: BPChar_ClaptrapQueen
+# bpchar_path: /Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen
+# balance_table: /Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1
+# balance rowname: Queen_PT2
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen.BPChar_ClaptrapQueen_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_ClaptrapQueen),/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1.Table_Balance_Claptrap_PT1,Queen_PT2,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Tyrant of Instinct #####
+# BPChar: BPChar_Saurian_TrialBoss
+# bpchar_path: /Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_TrialBoss
+# balance_table: /Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique
+# balance rowname: Saurian_TrialBoss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_TrialBoss.BPChar_Saurian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_TrialBoss.BPChar_Saurian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Tremendous Rex #####
+# BPChar: BPChar_Saurian_SlaughterBoss
+# bpchar_path: /Game/Enemies/Saurian/_Unique/SlaughterBoss/_Design/Character/BPChar_Saurian_SlaughterBoss
+# balance_table: /Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian
+# balance rowname: Saurian_Tyrant
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Unique/SlaughterBoss/_Design/Character/BPChar_Saurian_SlaughterBoss.BPChar_Saurian_SlaughterBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Unique/SlaughterBoss/_Design/Character/BPChar_Saurian_SlaughterBoss.BPChar_Saurian_SlaughterBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_SlaughterBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian.Table_Balance_Saurian,Saurian_Tyrant,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Tink of Cunning #####
+# BPChar: BPChar_Tink_TrialBoss
+# bpchar_path: /Game/Enemies/Tink/_Unique/TrialBoss/_Design/Character/BPChar_Tink_TrialBoss
+# balance_table: /Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique
+# balance rowname: Tink_TrialBoss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Unique/TrialBoss/_Design/Character/BPChar_Tink_TrialBoss.BPChar_Tink_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Unique/TrialBoss/_Design/Character/BPChar_Tink_TrialBoss.BPChar_Tink_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Skag of Survival #####
+# BPChar: BPChar_Skag_TrialBoss
+# bpchar_path: /Game/Enemies/Skag/_Unique/TrialBoss/_Design/Character/BPChar_Skag_TrialBoss
+# balance_table: /Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique
+# balance rowname: TrialBoss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Unique/TrialBoss/_Design/Character/BPChar_Skag_TrialBoss.BPChar_Skag_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Unique/TrialBoss/_Design/Character/BPChar_Skag_TrialBoss.BPChar_Skag_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Sera of Supremacy #####
+# BPChar: BPChar_Guardian_TrialBoss
+# bpchar_path: /Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss
+# balance_table: /Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique
+# balance rowname: Guardian_Trial_Boss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss.BPChar_Guardian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss.BPChar_Guardian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Mr. Titan #####
+# BPChar: BPChar_Goliath_SlaughterBoss
+# bpchar_path: /Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss
+# balance_table: /Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique
+# balance rowname: SlaughterBoss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss.BPChar_Goliath_SlaughterBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss.BPChar_Goliath_SlaughterBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_SlaughterBoss),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,SlaughterBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Hag of Fervor #####
+# BPChar: BPChar_Goon_TrialBoss
+# bpchar_path: /Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss
+# balance_table: /Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique
+# balance rowname: Goon_BossTrial
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss.BPChar_Goon_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss.BPChar_Goon_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Arbalest of Discipline #####
+# BPChar: BPChar_Mech_TrialBoss
+# bpchar_path: /Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss
+# balance_table: /Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech
+# balance rowname: Mech_TrialBoss
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss.BPChar_Mech_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss.BPChar_Mech_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech.Table_Balance_Mech,Mech_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### IndoTyrant #####
+# BPChar: BPChar_Saurian_Rare01
+# bpchar_path: /Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01
+# balance_table: /Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique
+# balance rowname: Saurian_Rare01
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01.BPChar_Saurian_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01.BPChar_Saurian_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_Rare01,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Demoskaggon #####
+# BPChar: BPChar_Skag_Rare01
+# bpchar_path: /Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01
+# balance_table: /Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique
+# balance rowname: DemoSkag
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Warden #####
+# BPChar: BPChar_Goliath_CageArena
+# bpchar_path: /Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena
+# balance_table: /Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique
+# balance rowname: CageArena
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena.BPChar_Goliath_CageArena_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena.BPChar_Goliath_CageArena_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_CageArena),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,CageArena,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### Agonizer 9000 #####
+# BPChar: BPChar_Agonizer_9k
+# bpchar_path: /Game/Enemies/Agonizer_9k/_Shared/Character/BPChar_Agonizer_9k
+# balance_table: /Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k
+# balance rowname: A9K
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Character/BPChar_Agonizer_9k.BPChar_Agonizer_9k_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Character/BPChar_Agonizer_9k.BPChar_Agonizer_9k_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Agonizer_9k),/Game/Enemies/Agonizer_9k/_Shared/Balance/Table_Balance_Agonizer_9k.Table_Balance_Agonizer_9k,A9K,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
 
