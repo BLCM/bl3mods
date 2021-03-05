@@ -666,6 +666,21 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psyc
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychoBadassPrologue),/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance.Table_Psycho_Balance,Psycho_Badass,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
+##### RoadDog #####
+# BPChar: BPChar_Goliath_Rare02
+# bpchar_path: /Game/Enemies/Goliath/_Unique/Rare02/_Design/Character/BPChar_Goliath_Rare02
+# balance_table: /Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique
+# balance rowname: Rare02
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Unique/Rare02/_Design/Character/BPChar_Goliath_Rare02.BPChar_Goliath_Rare02_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Unique/Rare02/_Design/Character/BPChar_Goliath_Rare02.BPChar_Goliath_Rare02_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare02),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare02,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
 
 
 
