@@ -129,10 +129,11 @@ def JSONInfo(proper_path, info, Choice, check):
         WindowSel(proper_path, "", 1)
     elif check == 2:
         Child = Parent[0][info]
-        for pool in Child[i]:
-            if pool not in NonUsedInfo:
-                List_2.append(pool)
-            i += 1
+        while i < len(Child):
+            for pool in Child[i]:
+                if pool not in NonUsedInfo:
+                    List_2.append(pool)
+                i += 1
         WindowSel(proper_path, info, 2)
     elif check == 3:
         for pool in Parent[0][info]:
