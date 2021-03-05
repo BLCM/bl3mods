@@ -7,8 +7,7 @@ FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "Datasm
 FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
              "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
 #this is used to remove any data when searching files. may add or remove depending on what I learn later
-NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset",
-               "_jwp_object_name", "export_type", "_jwp_arr_idx"]
+NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx"]
 
 #will be used for deciding what kind of hotfix to apply
 Patch_Types = ['This is the list of patch types, type one',
@@ -93,5 +92,5 @@ def List_Info():
     Button(ListWindow, text="4. File Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     for c in sorted(ListWindow.children):
-        ListWindow.children[c].pack(side=TOP)
+        ListWindow.children[c].pack()
     ListWindow.mainloop()

@@ -132,6 +132,6 @@ if __name__ == "__main__":
     
     #this will pack everything so that I do not have to do it every time
     for c in sorted(MainWindow.children):
-        MainWindow.children[c].pack(side=TOP)
+        MainWindow.children[c].pack()
     MainWindow.mainloop()
 ################################################################################################################################################################

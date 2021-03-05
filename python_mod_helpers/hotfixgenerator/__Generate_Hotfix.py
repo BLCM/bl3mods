@@ -56,7 +56,7 @@ def Create_HotFix_File():
 #This swill put all your results into a list that you can look at later
 # Now it will search for all items related to it regardless of capitalization or puncuation
 def Search(input):
-    info = DATA.get_refs_from_data(input.capitalize())
+    info = DATA.get_refs_from_data(input)
     for details in info:
         if details[0] not in List_1:
             Search_Results.append(details[0])
@@ -153,3 +153,6 @@ def JSONInfo(proper_path, info, Choice, check):
 # "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
 # "0.065",
 # "")
+
+
+#F:\Users\Trevor\Desktop\extracted_new\Game\GameData\Regions\RegionManagerData.json
