@@ -12,7 +12,7 @@ making this and I hope BL3 live as long as BL2 did, as they are tied for some of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, Search_Results, FileNames, File_Results_List
+from _global_lists import List_1, Mod_Header, Reg_hotfix, Search_Results, FileNames, File_Results_List
 ################################################################################################################################################################
 from tkinter import *
 from tkinter.filedialog import askopenfilename
@@ -82,19 +82,16 @@ def FileChoice():
 
 #This is stremlinded process of what I already have, but even better than before
 def File_Results_Window(True_Path):
+    I = 0
     Raw_Data = DATA.get_data(True_Path)
-    Refined_Data = flatten(Raw_Data[0], separator="/")
-    root = Tk()
-    for key, value in Refined_Data.items():
-        if "/" in str(value):
-            List_1.append(value)
-    List_1.sort()
-    lb = Listbox(root, width=110)
-    k = 1
-    for i in List_1:
-        lb.insert(k, i)
-        k += 1
-    lb.pack()
+
+    while I < len(Raw_Data):
+        File_Results_List.append(True_Path + ": index " + str(I))
+        Refined_Data = flatten(Raw_Data[I], separator="/")
+        for key, value in Refined_Data.items():
+            File_Results_List.append(str(key) + " : "+ str(value))
+        File_Results_List.append("\n")
+        I +=1
 ################################################################################################################################################################
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
@@ -111,6 +108,3 @@ def File_Results_Window(True_Path):
 # "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
 # "0.065",
 # "")
-
-
-#F:\Users\Trevor\Desktop\extracted_new\Game\GameData\Regions\RegionManagerData.json

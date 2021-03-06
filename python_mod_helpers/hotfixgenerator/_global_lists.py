@@ -6,8 +6,8 @@ FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "Datasm
              "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
 FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
              "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
-#this is used to remove any data when searching files. may add or remove depending on what I learn later
-NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx", "_jwp_object_name", "export_type"]
+# #this is used to remove any data when searching files. may add or remove depending on what I learn later
+# NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx", "_jwp_object_name", "export_type"]
 
 #will be used for deciding what kind of hotfix to apply
 Patch_Types = ['This is the list of patch types, type one',
