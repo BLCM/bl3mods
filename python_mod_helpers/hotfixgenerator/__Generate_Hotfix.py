@@ -16,6 +16,7 @@ from _global_lists import NonUsedInfo, List_1, List_2, Mod_Header, Reg_hotfix, S
 ################################################################################################################################################################
 from tkinter import *
 from tkinter.filedialog import askopenfilename
+from flatten_json import flatten
 import os
 #Global variables
 DATA = BL3Data()
@@ -69,9 +70,6 @@ def FileChoice():
     raw_path = os.path.splitext(file)[0]
     i = 0
     index = 0
-    # What this will do is that the program will search for a game file related to what I have specified,
-    # Then it will grab the index of that found search, and then procede to disregard everything before
-    # The index, and only grab what is needed to search for things
     if os.path.exists(file) == True:
         while index <= 0:
             Find = "/" + FileNames[i]
@@ -80,64 +78,22 @@ def FileChoice():
                 index = raw_path.find(Find)
         # this is the data we need to pass in information
         True_Path = raw_path[index::]
-        # JSONInfo(True_Path)
-        JSONInfo(True_Path, "", "", 1)
+        File_Results_Window(True_Path)
 
-#This will be used to choose a selection choice from the file you have chosen
-def WindowSel(proper_path, info, check):
-    Testwindow = Tk()
-    Testwindow.title("JSON File Content Display")
-    w = 200
-    h = 200
-    ws = Testwindow.winfo_screenwidth()
-    hs = Testwindow.winfo_screenheight()
-    x = (ws/2) - (w/2)
-    y = (hs/2) - (h/2)
-    if check == 1:
-        Testwindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y/4))
-        Lb1 = Listbox(Testwindow, width=50)
-        k = 1
-        for i in List_1:
-            Lb1.insert(k, i)
-            k += 1
-        Lb1.pack()
-        testing = Button(Testwindow, text="Select One", font=("Times New Roman", 14),
-                         command=lambda: JSONInfo(proper_path, Lb1.get(ANCHOR), "", 2))
-        testing.pack()
-    elif check == 2:
-        Testwindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y/4))
-        Lb2 = Listbox(Testwindow, width=50)
-        k = 1
-        for i in List_2:
-            Lb2.insert(k, i)
-            k += 1
-        Lb2.pack()
-        testing = Button(Testwindow, text="Click And Look At \nClick To Look At Stored information", font=("Times New Roman", 14),
-                         command=lambda: JSONInfo(proper_path, info, Lb2.get(ANCHOR), 3))
-        testing.pack()
-
-#This is what parses the data that will be used to displayed
-def JSONInfo(proper_path, info, Choice, check):
-    Parent = DATA.get_data(proper_path)
-    i = 0
-    if check == 1:
-        while i < len(Parent):
-            for pool in Parent[i]:
-                if pool not in NonUsedInfo:
-                    List_1.append(pool)
-            i += 1
-        WindowSel(proper_path, "", 1)
-    elif check == 2:
-        Child = Parent[0][info]
-        while i < len(Child):
-            for pool in Child[i]:
-                if pool not in NonUsedInfo:
-                    List_2.append(pool)
-                i += 1
-        WindowSel(proper_path, info, 2)
-    elif check == 3:
-        for pool in Parent[0][info]:
-            File_Results_List.append(pool[Choice][1])
+def File_Results_Window(True_Path):
+    Raw_Date = DATA.get_data(True_Path)
+    Refined_Data = flatten(Raw_Date[0], separator="/")
+    root = Tk()
+    for key, value in Refined_Data.items():
+        if "/" in str(value):
+            List_1.append(value)
+    List_1.sort()
+    lb = Listbox(root, width=110)
+    k = 1
+    for i in List_1:
+        lb.insert(k, i)
+        k += 1
+    lb.pack()
 ################################################################################################################################################################
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(

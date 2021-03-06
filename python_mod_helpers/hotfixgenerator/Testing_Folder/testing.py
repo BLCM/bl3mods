@@ -1,29 +1,45 @@
 import tkinter as tk
-import pandas as pd
-from pandastable import Table
-from re import error
-import pdb
+from tkinter import *
 from bl3data import BL3Data
+from flatten_json import flatten
 data = BL3Data()
 """
+
 JSON classifacation
 JSONInfo ends with a #, then it is a dict (or str depending on how far down it goes)
 JSONInfo ends with a list, then it is a list
 """
-NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx", "_jwp_object_name", "export_type"]
+# NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx", "_jwp_object_name", "export_type"]
 List_1 = []
-List_2 = []
-List_3 = []
-DataNeeded = []
+# List_2 = []
+# List_3 = []
+# DataNeeded = []
 
 #This will be used to grab all the other information about this particular layer
-Extra_info = []
-
+# Extra_info = []
 poollist_name = '/Game/GameData/Loot/ItemPools/ItemPoolList_Boss'
-JSONInfo = data.get_data(poollist_name)
 
-df = pd.DataFrame(JSONInfo) 
-print(df) 
+boss_loot = data.get_data(poollist_name)
+# Loop through the pool list
+for pool in boss_loot[0]['ItemPools']:
+    print('Found item pool: {}'.format(pool['ItemPool'][1]))
+
+
+JSONInfo = data.get_data(poollist_name)
+root = tk.Tk()
+test = flatten(JSONInfo[0], separator="/")
+for key, value in test.items():
+    if "/" in str(value):
+        List_1.append(value)
+List_1.sort()
+lb4 = Listbox(root, width=110)
+k = 1
+for i in List_1:
+    lb4.insert(k, i)
+    k += 1
+lb4.pack()
+
+root.mainloop()
 
 
 # patients_df = pd.read_json(r'F:\Users\Trevor\Desktop\extracted_new\Game\GameData\Loot\ItemPools\ItemPoolList_Boss.json')
@@ -74,15 +90,6 @@ print(df)
 #                             if pool not in List_2:
 #                                 List_2.append(pool)
 #             Instance_3 += 1
-    
-    
-    
-    
-    
-    
-    
-    
-    
 #     elif Hold == dict:
 #         return None
     
