@@ -80,9 +80,10 @@ def FileChoice():
         True_Path = raw_path[index::]
         File_Results_Window(True_Path)
 
+#This is stremlinded process of what I already have, but even better than before
 def File_Results_Window(True_Path):
-    Raw_Date = DATA.get_data(True_Path)
-    Refined_Data = flatten(Raw_Date[0], separator="/")
+    Raw_Data = DATA.get_data(True_Path)
+    Refined_Data = flatten(Raw_Data[0], separator="/")
     root = Tk()
     for key, value in Refined_Data.items():
         if "/" in str(value):
