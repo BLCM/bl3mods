@@ -44,7 +44,7 @@ def Create_HotFix_File():
     else:
         while i < len(Reg_hotfix):
             Package_Tuple = Reg_hotfix[i], Object_Name = Reg_hotfix[i+1], Attribute_Name = Reg_hotfix[i+2], From_Length = Reg_hotfix[i+3], From_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
-            # A Different take on the input names. MAy chane to it later if it makes more sence to mae in the long run
+            # A Different take on the input names. May chane to it later if it makes more sence to mae in the long run
             # Hotfix_Type = Reg_hotfix[i], Package = Reg_hotfix[i+1], Object_Name = Reg_hotfix[i+2], Attribute_Name = Reg_hotfix[i+3], New_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
             if Package_Tuple == "patch":
                 Package_Tuple = mod.PATCH
@@ -80,7 +80,7 @@ def File_Results_Window(True_Path):
     Raw_Data = DATA.get_data(True_Path)
     while I < len(Raw_Data):
         File_Results_List.append(True_Path + ": index " + str(I))
-        Refined_Data = flatten(Raw_Data[I], separator="/")
+        Refined_Data = flatten(Raw_Data[I], separator="[" + "]")
         for key, value in Refined_Data.items():
             File_Results_List.append(str(key) + " : "+ str(value))
         File_Results_List.append("\n")

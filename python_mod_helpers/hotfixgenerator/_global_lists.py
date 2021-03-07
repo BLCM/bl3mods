@@ -32,7 +32,6 @@ File_Results_List = []
 ################################################################################################################################################################
 def ListBoxWindow(List):
     ListWindow = Tk()
-    ListWindow.title("Data Table Look Up")
     w = 500
     h = 200 
     ws = ListWindow.winfo_screenwidth()
@@ -58,28 +57,35 @@ def ListBoxWindow(List):
 
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
 
-    # Similar to my __interface__ file, depending on what is needed they will add different things
+    # Similar to my __interface__ file, 
+    # but I had to create new windows here or it would be circular logic
+    # may move it later when I'm ont being lazy, but for now it works
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
+        ListWindow.title("Patch names")
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
         for x in Patch_Types:
             Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 2: # Displays a list of the map areas, or you can type MatchAll
+        ListWindow.title("Names of all the maps")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
         for x in Map_Locations:
             Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 3: # Has all the results of the database search
+        ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
         for x in Search_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
-
+        Info_Display_Text_Box.place(width=200)
     elif List == 4: # Displays the contents of when you looked through a file
+        ListWindow.title("JSON file information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
         for x in File_Results_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
-
-    Scroll_Bar.config( command = Info_Display_Text_Box.yview )
+        Info_Display_Text_Box.place(width=150)
+    
+    Scroll_Bar.config(command = Info_Display_Text_Box.yview)
     Info_Display_Text_Box.pack(side=BOTTOM)
     
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
@@ -105,21 +111,28 @@ def List_Info():
     ListWindow.title("Data Table Look Up")
     
     # This code sets up the positioning of the first window in the middle of the screen
-    w = 500
+    w = 350
     h = 200 
     ws = ListWindow.winfo_screenwidth()
     hs = ListWindow.winfo_screenheight()
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x, y*1.5))
+    ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x, y*1.5))
     
-    Button(ListWindow, text="'Patch' section reference ",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
+    Button(ListWindow, text="'Patch' types",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
     Button(ListWindow, text="Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
-    Button(ListWindow, text="Reference Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
-    Button(ListWindow, text="Selected File Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
+    Button(ListWindow, text="Database Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
+    Button(ListWindow, text="File Information", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     
     # This Is so that I do not have to pack everysingle time I create something
     for c in sorted(ListWindow.children):
-        ListWindow.children[c].pack()
+        ListWindow.children[c].pack(anchor="w", fill="both")
     ListWindow.mainloop()
+
+
+# This is just for testing changes, 
+# and not wanting to switch between files
+# Will be commenting out most of the time
+# if __name__ == "__main__":
+#     List_Info()
