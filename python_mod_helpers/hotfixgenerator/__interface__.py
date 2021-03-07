@@ -162,7 +162,7 @@ if __name__ == "__main__":
     
     Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
     Button(text="Add To Regular HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
-    Button(text="Add To DataTable HotFix Queue", font=("Times New Roman", 14), state=DISABLED)
+    Button(text="Add To Table HotFix Queue", font=("Times New Roman", 14), state=DISABLED)
     Button(text="Choose JSON File To Look Through", font=("Times New Roman", 14), command=lambda: FileChoice())
     Button(text="Database Search", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search"))
     Button(text="Stored Information", font=("Times New Roman", 14), command=lambda: List_Info())

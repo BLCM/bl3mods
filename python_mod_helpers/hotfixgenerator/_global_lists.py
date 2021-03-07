@@ -74,7 +74,7 @@ def ListBoxWindow(List):
 
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
-        ListWindow.geometry('%dx%d+%d+%d' % (w*2.5, h, x*1.8, y/3.5))
+        ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
         for x in Search_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
