@@ -54,49 +54,46 @@ def ListBoxWindow(List):
     Scroll_Bar = Scrollbar(ListWindow)
     Scroll_Bar.pack( side = RIGHT, fill = Y )
 
-    text = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
+    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
 
     # Similar to my __interface__ file, depending on what is needed they will add different things
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
         for x in Patch_Types:
-            text.insert('1.0', x + '\n')
-        Scroll_Bar.config( command = text.yview )
+            Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 2: # Displays a list of the map areas, or you can type MatchAll
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
         for x in Map_Locations:
-            text.insert('1.0', x + '\n')
-        Scroll_Bar.config( command = text.yview )
+            Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 3: # Has all the results of the database search
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
         for x in Search_Results:
-            text.insert('1.0', x + '\n')
-        Scroll_Bar.config( command = text.yview )
+            Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 4: # Displays the contents of when you looked through a file
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
         for x in File_Results_List:
-            text.insert('1.0', x + '\n')
-        Scroll_Bar.config( command = text.yview )
+            Info_Display_Text_Box.insert('1.0', x + '\n')
 
-    text.pack(side=BOTTOM)
+    Scroll_Bar.config( command = Info_Display_Text_Box.yview )
+    Info_Display_Text_Box.pack(side=BOTTOM)
     
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     # The function we need to find and highlight text
     def find():
-        text.tag_remove('found', '1.0', END)
+        Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
         if s:
             idx = '1.0'
             while 1:
-                idx = text.search(s, idx, nocase=1, stopindex=END)
+                idx = Info_Display_Text_Box.search(s, idx, nocase=1, stopindex=END)
                 if not idx: break
                 lastidx = '%s+%dc' % (idx, len(s))
-                text.tag_add('found', idx, lastidx)
+                Info_Display_Text_Box.tag_add('found', idx, lastidx)
                 idx = lastidx
-            text.tag_config('found', foreground='red')
+            Info_Display_Text_Box.tag_config('found', foreground='red')
         Find_String.focus_set()
     Find_Text_Button.config(command=find)
 ################################################################################################################################################################

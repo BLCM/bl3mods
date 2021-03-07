@@ -43,7 +43,9 @@ def Create_HotFix_File():
         None
     else:
         while i < len(Reg_hotfix):
-            Package_Tuple = Reg_hotfix[i], Object_Name = Reg_hotfix[i+1], Attribute_Name = Reg_hotfix[i+2], From_Length = Reg_hotfix[i+3], From_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5],
+            Package_Tuple = Reg_hotfix[i], Object_Name = Reg_hotfix[i+1], Attribute_Name = Reg_hotfix[i+2], From_Length = Reg_hotfix[i+3], From_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
+            # A Different take on the input names. MAy chane to it later if it makes more sence to mae in the long run
+            # Hotfix_Type = Reg_hotfix[i], Package = Reg_hotfix[i+1], Object_Name = Reg_hotfix[i+2], Attribute_Name = Reg_hotfix[i+3], New_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
             if Package_Tuple == "patch":
                 Package_Tuple = mod.PATCH
             elif Package_Tuple == "level":
@@ -55,24 +57,21 @@ def Create_HotFix_File():
             mod.reg_hotfix(Package_Tuple, Object_Name, Attribute_Name, From_Length, From_Value, To_Value)
             i += 6
 ################################################################################################################################################################
-
-################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
     Tk().withdraw()
-    file = askopenfilename(filetypes=[("Choose file", ".json")])
+    File_Path = askopenfilename(filetypes=[("Choose file", ".json")])
     # Removes the files extention, as we dont need it
-    raw_path = os.path.splitext(file)[0]
+    Raw_Path = os.path.splitext(File_Path)[0]
     i = 0
     index = 0
-    if os.path.exists(file) == True:
+    if os.path.exists(File_Path) == True:
         while index <= 0:
-            Find = "/" + FileNames[i]
+            Find = "/" + FileNames[i] # We search for a Key word from that corralates to an apporiate path
             i += 1
-            if Find in raw_path:
-                index = raw_path.find(Find)
-        # this is the data we need to pass in information
-        True_Path = raw_path[index::]
+            if Find in Raw_Path:
+                index = Raw_Path.find(Find)
+        True_Path = Raw_Path[index::] # This is used for the BL3Data.get_data function
         File_Results_Window(True_Path)
 
 #This is stremlinded process of what I already have, but even better than before
@@ -86,6 +85,7 @@ def File_Results_Window(True_Path):
             File_Results_List.append(str(key) + " : "+ str(value))
         File_Results_List.append("\n")
         I +=1
+################################################################################################################################################################
 ################################################################################################################################################################
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
