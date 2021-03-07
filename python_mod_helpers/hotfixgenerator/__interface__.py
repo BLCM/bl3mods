@@ -70,12 +70,12 @@ def SelectionWindow(Func):
         
         Lab = 6
         Ent = 6        
-        Label_1_Text = 'Enter what type of hotfix you want to make: \n(Package Tuple)'
-        Label_2_Text = 'What Map is this affecting, or type MatchALL: \n(Object Name)'
-        Label_3_Text = 'File Path with JSON name and what \n__JWP__ Object you want to grab from that JSON file: \n(Attribute Name)'
-        Label_4_Text = 'What you want to manipulate in the JSON file \n(WIP, will be better later on both discription and whatvalues to grab): \n("From" Length)'
-        Label_5_Text = 'Type True for most things, or type new value: \n("From" Value)'
-        Label_6_Text = 'For right now type "", \nwill give better instructions later when I understand it more: \n("To" Value)'
+        Label_1_Text = 'Hotfix Type: \n(Package Tuple)'
+        Label_2_Text = 'Map Name: \n(Object Name)'
+        Label_3_Text = 'JSON Path + _JWP_ Object: \n(Attribute Name)'
+        Label_4_Text = 'JSON Attribute: \n("From" Length)'
+        Label_5_Text = 'True or type new value: \n("From" Value)'
+        Label_6_Text = 'For right now type "", \n(Will give better instructions later when I understand it more): \n("To" Value)'
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
