@@ -10,21 +10,33 @@ I will try and take any feedback as soon as I can, but just note that I wont res
 
 # USEAGE
 
-Currently I do not have a .exe that you can run to manually start the program.
-In order to get this working you will need a program that runs python programs.
-My personal recomendation is VScode. I have created a .bat file that you can run to install all the needed libaries.
+Currently I do not have a .exe that magically runs everything you need and makes it work perfectly.
 
-Later on hopefully you will not need external hardware to run this program, but for now you will.
+In order to get this tool working, you will need a program that runs Python programs.
 
-## Program Caveat
+My personal recomendation is VScode, and install the Python extention. However any program that runsPython scrips should work fine.
 
-The program will not work proporly even if you ran the .bat file first. This is because variables in bl3data.py, `'data_dir'` and `'ueserialize_path'`, make a unique .ini file that will be different for each user. These variables will require you to go and put in your own file location. Here are some useful resources and tips to follow.
+You will need to install Python on your computer. Link: https://www.python.org/downloads/
+
+I have created a .bat file that you can run to install all the needed python libaries.
+
+## Tool Caveats
+
+The program will not work proporly even if you have python and ran the .bat file.
+
+This is because variables in bl3data.py, `'data_dir'`, `'ueserialize_path'`, and the database functions will be unique for each person.
+
+In the future I wish to solve the database issue by making a public one, but for the other variables you will have to do that on your own.
+
+## Instructions
+
+Instructions for fixing the caveats and to fully utilize the program
 
 1. 'data_dir'
    1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
    2. Once you have extracted all the data, set 'data_dir'` as the extracted_new file path.
-      1. EX: F:/Users/Name/Desktop/extracted_new
-2. 'ueserialize_path': Since this was confusing for me, I will give specific instructions.
+      1. EX: ''F:/Users/Name/Desktop/extracted_new''
+2. 'ueserialize_path': Since this was confusing for me, I will give specific instructions to help people.
    1. Download the file from here: https://github.com/apocalyptech/JohnWickParse
    2. Extract the file into a good location.
    3. Open up command line and type cd <Location/Of/Extracted/JohnWickParse>, then hit enter.
@@ -33,24 +45,26 @@ The program will not work proporly even if you ran the .bat file first. This is 
       1. This may take a minute, so be patient with it.
    6. One it is done building, get the file location where the debug file is.
    7. Get that file path and set 'ueserialize_path' equal to that.
-      1. EX: F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug
-3. If something went wrong with the nameing or other erros when creating it, go to this file location: C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini
-   1. Open it and manually change the paths to the correct path.
-
-I pull from a database I personally use, and because of that I will have to change some parts of the code to hide personal information.
-
-In the future I wish to move to a public one where anyone can grab this information, but for right now some functionality of the code will not work.
-
-## Exception
-
-If you have a SQL server and know how to insert information, then you would be able to use your own tables and database to pull information from.
-I have left in this folder some of the files I used to help format the SQL file I pulled from. You will also want a formatter, which there is one
-I used in the credits section. If you do not then my program is still useable, just know some functionality will not be useable.
+      1. EX: ''F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug''
+   8. If something went wrong or you want to change where they are located, go to this file location:
+      1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
+      2. Open it and manually change the paths to the correct path.
+3. Data Base connections.
+   1. In bl3data.py, I have modified the code to use `pyodbc` connections instead of what it normally is.
+   2. If you have a SQL server (SQLEXPRESS for example) and know how to insert information, then you would be able to use your own tables and database to pull information from.
+      1. This is what I have done, as I already had it  and I wanted to test to see if it would work.
+      2. You may change the code section to whatever suits you, but this is what I have personally done.
+   3. You will need apocalyptech MariaDB datadump, Link is in the Credits.
+      1. I have left in this folder some of the files I used to help format the SQL file I used.
+      2. **NOTE**: I did not comment my formatter files well. Reason being that it was a mach program I made to ease my pain. You will more than likely encounter erros, but I beleive in you.
+   4. You will also want a SQL formatter. Link also in the Credits.
+   5. If you do not want to make your own database and deal with all the hassle, Then this Program is still very useful, but some of the functionality will not work.
 
 # CREDITS
 
-I did not create most of these files, most of the hard work was already done.
-I decided to make something new from projects other people have done.
+I did not create all of these files, most of the hard work was already done.
+What I am doing is makeing a program stream lines the process of making BL3 mods
+
 List of resources that have helped me:
 
 - apocalyptech: This program is heavly based on the research and projects
