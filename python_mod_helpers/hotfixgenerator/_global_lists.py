@@ -10,7 +10,7 @@ FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_i
 # NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx", "_jwp_object_name", "export_type"]
 
 #will be used for deciding what kind of hotfix to apply
-Patch_Types = ['This is the list of patch types, type one',
+Patch_Types = ['This is the list of patch types',
                'patch', 'level', 'earlylevel', 'char']
 #This will be used to select the map name when creating a hotfix, may change later, but for now i think this is a good idea
 Map_Locations = ['The names of all the maps, type one', 'Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'BloodyHarvest_P', 'COVSlaughter_P', 'Camp_P', 'Cartels_P', 'CasinoIntro_P', 'Chase_P', 'CityBoss_P', 'CityVault_P', 'City_P', 'Convoy_P', 'Core_P', 'CraterBoss_P', 'CreatureSlaughter_P', 'Crypt_P', 'DesertBoss_P', 'Desert_P', 'Desertvault_P', 'Desolate_P', 'Eldorado_P', 'Experiment_P', 'Facility_P', 'FinalBoss_P', 'Forest_P', 'Frontier_P', 'GuardianTakedown_P', 'Impound_P', 'Lake_P', 'Lodge_P', 'Mansion_P', 'MarshFields_P', 'Mine_P', 'Monastery_P',
@@ -21,7 +21,8 @@ Map_Locations = ['The names of all the maps, type one', 'Anger_P', 'Archive_P', 
 List_1 = []
 List_2 = []
 List_3 = []
-#I will be attempting to store the users input in a list, so that later I can call them later qand execute it all at once
+# I will be attempting to store the users input in a list, 
+# so that later I can call them later qand execute it all at once
 Mod_Header = []
 Reg_hotfix = []
 Search_Results = []
@@ -38,40 +39,59 @@ def ListBoxWindow(List):
     # Middle of the screen
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    if List == 1:
+    #Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+    #This should add a search bar to the top of the menu to look for things
+    fram = Frame(ListWindow) 
+    Label(fram,text='Text to find:').pack(side=LEFT)
+    edit = Entry(fram)
+    edit.pack(side=LEFT, fill=BOTH, expand=1)
+    edit.focus_set()
+    butt = Button(fram, text='Find')   
+    butt.pack(side=RIGHT)  
+    fram.pack(side=TOP)
+    text = Text(ListWindow)  
+
+    if List == 1: #Displayes what you should type inside the first section of the hotfix section
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
-        lb1 = Listbox(ListWindow, width=35)
-        k = 1
-        for i in Patch_Types:
-            lb1.insert(k, i)
-            k += 1
-        lb1.pack()
-    elif List == 2:
+        for x in Patch_Types:
+            text.insert(END, x + '\n')
+        text.pack(side=BOTTOM) 
+
+    elif List == 2: #Displays a list of the map areas, or you can type MatchAll
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
-        lb2 = Listbox(ListWindow, width=30)
-        k = 1
-        for i in Map_Locations:
-            lb2.insert(k, i)
-            k += 1
-        lb2.pack()
-    elif List == 3:
+        for x in Map_Locations:
+            text.insert(END, x + '\n')
+        text.pack(side=BOTTOM) 
+
+    elif List == 3: #Has all the results of the database search
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
         ListWindow.title("Data Table Look Up")
-        lb3 = Listbox(ListWindow, width=110)
-        k = 1
-        for i in Search_Results:
-            lb3.insert(k, i)
-            k += 1
-        lb3.pack()
-    elif List == 4:
+        for x in Search_Results:
+            text.insert(END, x + '\n')
+        text.pack(side=BOTTOM) 
+
+    elif List == 4: #Displays the contents of when you looked through a file
         ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
-        lb4 = Listbox(ListWindow, width=110)
-        k = 1
-        for i in File_Results_List:
-            lb4.insert(k, i)
-            k += 1
-        lb4.pack()
-    ListWindow.mainloop()
+        for x in File_Results_List:
+            text.insert(END, x + '\n')
+        text.pack(side=BOTTOM)
+
+    # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+    # The function we need to find and highlight text
+    def find():
+        text.tag_remove('found', '1.0', END)
+        s = edit.get()
+        if s:
+            idx = '1.0'
+            while 1:
+                idx = text.search(s, idx, nocase=1, stopindex=END)
+                if not idx: break
+                lastidx = '%s+%dc' % (idx, len(s))
+                text.tag_add('found', idx, lastidx)
+                idx = lastidx
+            text.tag_config('found', foreground='red')
+        edit.focus_set()
+    butt.config(command=find)
 ################################################################################################################################################################
 #This creates a new window that the user can use to look through information
 def List_Info():
