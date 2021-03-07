@@ -75,6 +75,7 @@ def ListBoxWindow(List):
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
+        Info_Display_Text_Box.delete("1.0","end")
         for x in Search_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
@@ -82,6 +83,7 @@ def ListBoxWindow(List):
     elif List == 4: # Displays the contents of when you looked through a file
         ListWindow.title("JSON file information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        Info_Display_Text_Box.delete("1.0","end")
         for x in File_Results_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=150)
