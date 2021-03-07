@@ -84,7 +84,6 @@ def FileChoice():
 def File_Results_Window(True_Path):
     I = 0
     Raw_Data = DATA.get_data(True_Path)
-
     while I < len(Raw_Data):
         File_Results_List.append(True_Path + ": index " + str(I))
         Refined_Data = flatten(Raw_Data[I], separator="/")
