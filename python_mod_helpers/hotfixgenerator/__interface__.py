@@ -17,9 +17,9 @@ data = BL3Data()
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
-    Frame_Left = Frame(SelectionWindow)
-    Frame_Right = Frame(SelectionWindow)
-    Frame_Bottom = Frame(SelectionWindow)
+    Frame_Left = Frame(SelectionWindow, relief='ridge')
+    Frame_Right = Frame(SelectionWindow, relief='ridge')
+    Frame_Bottom = Frame(SelectionWindow, relief='ridge')
     # Default values for window sizes, can manipulate inside the functions
     w = 500
     h = 350 
@@ -103,35 +103,39 @@ def SelectionWindow(Func):
     # Reuseable variables, saves on code space and looks nicer
     # Labels
     if Lab >= 1:
-        Label(Frame_Left, text=Label_1_Text).grid(row=0)
+        Label(SelectionWindow, text=Label_1_Text).grid(row=0)
     if Lab >= 2:
-        Label(Frame_Left, text=Label_2_Text).grid(row=1)
+        Label(SelectionWindow, text=Label_2_Text).grid(row=1)
     if Lab >= 3:
-        Label(Frame_Left, text=Label_3_Text).grid(row=2)
+        Label(SelectionWindow, text=Label_3_Text).grid(row=2)
     if Lab >= 4:
-        Label(Frame_Left, text=Label_4_Text).grid(row=3)
+        Label(SelectionWindow, text=Label_4_Text).grid(row=3)
     if Lab >= 5:
-        Label(Frame_Left, text=Label_5_Text).grid(row=4)
+        Label(SelectionWindow, text=Label_5_Text).grid(row=4)
     if Lab >= 6:
-        Label(Frame_Left, text=Label_6_Text).grid(row=5)
+        Label(SelectionWindow, text=Label_6_Text).grid(row=5)
 
     # Entries
     if Ent >= 1:
-        Entry(Frame_Right, textvariable=Entry_1, width=100).grid(row=0, column=1)
+        Entry(SelectionWindow, textvariable=Entry_1, width=100).grid(row=0, column=1)
     if Ent >= 2:
-        Entry(Frame_Right, textvariable=Entry_2, width=100).grid(row=1, column=1)
+        Entry(SelectionWindow, textvariable=Entry_2, width=100).grid(row=1, column=1)
     if Ent >= 3:
-        Entry(Frame_Right, textvariable=Entry_3, width=100).grid(row=2, column=1)
+        Entry(SelectionWindow, textvariable=Entry_3, width=100).grid(row=2, column=1)
     if Ent >= 4:
-        Entry(Frame_Right, textvariable=Entry_4, width=100).grid(row=3, column=1)
+        Entry(SelectionWindow, textvariable=Entry_4, width=100).grid(row=3, column=1)
     if Ent >= 5:
-        Entry(Frame_Right, textvariable=Entry_5, width=100).grid(row=4, column=1)
+        Entry(SelectionWindow, textvariable=Entry_5, width=100).grid(row=4, column=1)
     if Ent >= 6:
-        Entry(Frame_Right, textvariable=Entry_6, width=100).grid(row=5, column=1)
+        Entry(SelectionWindow, textvariable=Entry_6, width=100).grid(row=5, column=1)
 
     # Buttons
     if Butt >= 1:
-        Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command).grid(row=Lab)
+        Button(SelectionWindow, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command).grid(row=Lab)
+    
+    Frame_Left.grid(column=0, row=0)
+    Frame_Right.grid(column=1, row=0)
+    Frame_Bottom.grid(column=0, row=1)
 ################################################################################################################################################################
 # Main menu.
 if __name__ == "__main__":
