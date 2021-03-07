@@ -1,5 +1,7 @@
 ################################################################################################################################################################
-from tkinter import *
+#Going to try to import only what I need to save on space and calculation time
+from tkinter import Tk, Frame, Label, Entry, Button, Scrollbar, Text
+from tkinter import LEFT, BOTH, RIGHT, TOP, Y, BOTTOM, END
 ################################################################################################################################################################
 # Functions I uses to get only what is needed if you are choosing a JSON file
 

@@ -14,7 +14,7 @@ from bl3hotfixmod import Mod
 from bl3data import BL3Data
 from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List
 ################################################################################################################################################################
-from tkinter import *
+from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 from flatten_json import flatten
 import os

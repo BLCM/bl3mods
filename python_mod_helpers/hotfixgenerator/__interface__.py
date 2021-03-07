@@ -1,12 +1,14 @@
+# Going to try to import only what I need to save on space and calculation time
 # My files
-from __info_function__ import Create_HotFix_File, FileChoice
 from bl3data import BL3Data
+from __info_function__ import Create_HotFix_File, FileChoice
 from _global_lists import Mod_Header, Reg_hotfix, Search_Results
 from _global_lists import List_Info
 ################################################################################################################################################################
 # Libraies
 import tkinter as tk
-from tkinter import *
+from tkinter import Entry, Button, Label, Tk, StringVar
+################################################################################################################################################################
 # Global variables
 data = BL3Data()
 ################################################################################################################################################################
@@ -140,15 +142,17 @@ if __name__ == "__main__":
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h/1.5, x, y))
-    Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
-    Button(text="Add To The HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
-    Button(text="Choose File To Search Through", font=("Times New Roman", 14), command=lambda: FileChoice())
-    Button(text="Find All References To An Object", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search"))
-    Button(text="Click To Look At Stored information", font=("Times New Roman", 14), command=lambda: List_Info())
-    Button(text="Click This To Create Your HotFix File", font=("Times New Roman", 14), command=lambda: Create_HotFix_File())
+    Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader")).grid(row=1)
+    Button(text="Add To The HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix")).grid(row=2)
+    Button(text="Choose File To Search Through", font=("Times New Roman", 14), command=lambda: FileChoice()).grid(row=3)
+    Button(text="Find All References To An Object", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search")).grid(row=4)
+    Button(text="Click To Look At Stored information", font=("Times New Roman", 14), command=lambda: List_Info()).grid(row=5)
+    Button(text="Click This To Create Your HotFix File", font=("Times New Roman", 14), command=lambda: Create_HotFix_File()).grid(row=6)
     
     #this will pack everything so that I do not have to do it every time
+    i = 1
     for c in sorted(MainWindow.children):
         MainWindow.children[c].pack()
+        i += 1
     MainWindow.mainloop()
 ################################################################################################################################################################
