@@ -1,19 +1,20 @@
 # DESCRIPTION
 
-This will be a program that will attempt to generate hotfix files for people to use in there own games.
+This application is a WIP tool for modders to help streamline the process of finding information and creating .bl3hotfix mods
 
 # NOTE
 
 I am a college student, so I will not be able to work on this all the time, but I will when I have free time.
 This will me a massive passion project for me, so there will be many errors and bugs in my program, so keep in mind.
-I will try and take any feedback as soon as I can, but just note that I wont respond to everything. Also no I am not working with
-a team, this is something I am doing all on my own
+I will try and take any feedback as soon as I can, but just note that I wont respond to everything. Also no I am not working with a team, this is something I am doing all on my own
 
 # USEAGE
 
 Currently I do not have a .exe that you can run to start generating files.
 In order to get this working you will need a program that runs python programs.
-My personal recomendation is VScode. Later on hopefully you will not need external hardware to generate hotfix files, but for now you will.
+My personal recomendation is VScode. I have created a .bat file that you can run to install all the needed libaries.
+
+Later on hopefully you will not need external hardware to generate hotfix files, but for now you will.
 
 ## Program Caveat
 
@@ -39,5 +40,3 @@ List of resources that have helped me:
 - Site that help format the SQL file: https://www.jooq.org/translate/
 - BL3 Redux Team: They inspired me to try and make this because I saw all the changes they did and what you can do with this game.
   - Link to the hotfix: https://github.com/BLCM/bl3mods/tree/master/EpicNNG
-  - Sorry I do not have links to each of the team members, I will add links to each of the team members once I find out each person who worked on it
-  - If you did work on it, message me and I will add you to this credits list of people.
