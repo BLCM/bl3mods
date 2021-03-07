@@ -1,40 +1,40 @@
 # DESCRIPTION
- 
+
 This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods
- 
+
 # NOTE
- 
+
 I am a college student, so I will not be able to work on this all the time, but I will when I have free time.
 This will be a massive passion project for me, so there will be many errors and bugs in my program.
- 
+
 Feedback and tips for how to improve this program are appreciated. I will get to them as soon as I can.
- 
+
 If you are curious about something or have a question about something, the best way to contact me is via my email, which you can find in my profile, or send me a message on Discord.
- 
+
 # USEAGE
- 
+
 Currently, I do not have a .exe that magically runs everything you need and makes it work perfectly.
- 
+
 To get this tool working, you will need a program that runs Python programs.
- 
-My recommendation is VScode and install the Python extension. However, any program that runs Python scrips should work fine.
- 
+
+My recommendation is VScode and install the Python extension. However, any program that runs Python scripts should work fine.
+
 You will need to install Python on your computer. Link: https://www.python.org/downloads/
- 
+
 I have created a .bat file that you can run to install all the needed python libraries.
- 
+
 ## Tool Caveats
- 
+
 The program will not work properly even if you have Python and run the .bat file, but they are important steps.
- 
+
 This is because variables in bl3data.py, `'data_dir'`, `'ueserialize_path'`, and the database functions will be unique for each person.
- 
+
 In the future, I wish to solve the database issue by making a public one, but for the other variables, you will have to do that on your own.
- 
+
 ## Instructions
- 
+
 Instructions to fully utilize the program. **NOTE:** You will need to open bl3data.py and search and insert the correct information into data_dir and ueserialize_path.
- 
+
 1. 'data_dir' (line 142 in bl3data.py): **Note:** You will need a copy of BL3. Duh
    1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
    2. Once you have extracted all the data, set 'data_dir' as the extracted_new file path.
@@ -57,9 +57,9 @@ Instructions to fully utilize the program. **NOTE:** You will need to open bl3da
    8. If something went wrong or you want to change the file locations, go to this file location:
       1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
       2. Open it and manually change the paths to the correct path.
- 
+
 This is an "Optional" step, as you do not technically need a database to make the program, however, you will be missing out on some features that this tool has.
- 
+
 1. Data Base connections.
    1. In bl3data.py, I have modified the '`_connect_db`' function to use `pyodbc` connections.
    2. If you have a SQL server (SQLEXPRESS for example) and know how to insert information, then you would be able to use your own tables and database to pull information from.
@@ -69,12 +69,13 @@ This is an "Optional" step, as you do not technically need a database to make th
       1. I have left my formatting files in the 'Extra_Files' folder.
       2. **NOTE**: I did not comment the formatted files very well. Reason being that it was a mach program I made to ease my pain. You will more than likely encounter errors, but I believe in you.
    4. You will also want a SQL formatter. The link is in the Credits.
- 
+
 # CREDITS
- 
+
 I did not create all of these files, most of the hard work was already done.
 
 List of resources that have helped me:
+
 - apocalyptech: Researcher and Project creator
   - GitHub: https://github.com/apocalyptech
   - Specific repository I pulled from: https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers
