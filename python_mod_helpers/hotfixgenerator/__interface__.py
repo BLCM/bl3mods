@@ -49,7 +49,7 @@ def SelectionWindow(Func):
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h/1.8, x/4, y))
-        
+
         Lab = 6
         Ent = 6
         Label_1_Text = 'Name of the hotfix file: '
@@ -58,18 +58,18 @@ def SelectionWindow(Func):
         Label_4_Text = 'Discription: '
         Label_5_Text = 'Version of this mod: '
         Label_6_Text = 'The catagory in which this mods fits to: '
-        
+
         Button_1_Text = 'Create Mod Header'
         def Button_1_Command(): return Get_Val("ModHeader")
         Butt = 1
-    
+
     #This will make the user put hotfix information into a queue to be executed later
     elif Func == "HotFix":
         SelectionWindow.title("Creating Regular Hot Fix. NOTE: Very much a WIP, so things will be buggy")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x, y/10))
-        
+
         Lab = 6
-        Ent = 6        
+        Ent = 6
         Label_1_Text = 'Hotfix Type: \n(Package Tuple)'
         Label_2_Text = 'Map Name: \n(Object Name)'
         Label_3_Text = 'JSON Path + _JWP_ Object: \n(Attribute Name)'

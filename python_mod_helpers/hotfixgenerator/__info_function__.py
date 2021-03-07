@@ -86,6 +86,7 @@ def File_Results_Window(True_Path):
         File_Results_List.append("\n")
         I +=1
 ################################################################################################################################################################
+# This area be used If I have any other functions I want to put in later
 ################################################################################################################################################################
 #This was me messing around with how these things work. still learning though
 # mod.reg_hotfix(
