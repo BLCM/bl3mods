@@ -29,34 +29,35 @@ def Create_HotFix_File():
         # If you don't give it someting, this is what I will replace it with
         Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
     
-    input1 = Mod_Header[0]
-    input2 = Mod_Header[1]
-    input3 = Mod_Header[2]
-    input4 = Mod_Header[3]
-    input5 = Mod_Header[4]
-    input6 = Mod_Header[5]
-    mod = Mod(input1 + '.bl3hotfix', input2, input3,[input4, ], lic=Mod.CC_BY_SA_40, v=input5, cats=input6,)
+    File_Name = Mod_Header[0]
+    Mod_Title = Mod_Header[1]
+    Author_Name = Mod_Header[2]
+    Description = Mod_Header[3]
+    Version = Mod_Header[4]
+    Catagory = Mod_Header[5]
+    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description, ], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
+    
     
     i = 0
     if i > len(Reg_hotfix):
         None
     else:
         while i < len(Reg_hotfix):
-            input1 = Reg_hotfix[i], input2 = Reg_hotfix[i+1], input3 = Reg_hotfix[i+2], input4 = Reg_hotfix[i+3], input5 = Reg_hotfix[i+4], input6 = Reg_hotfix[i+5],
-            if input1 == "patch":
-                input1 = mod.PATCH
-            elif input1 == "level":
-                input1 = mod.LEVEL
-            elif input1 == "earlylevel":
-                input1 = mod.EARLYLEVEL
-            elif input1 == "char":
-                input1 = mod.CHAR
-            mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
+            Package_Tuple = Reg_hotfix[i], Object_Name = Reg_hotfix[i+1], Attribute_Name = Reg_hotfix[i+2], From_Length = Reg_hotfix[i+3], From_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5],
+            if Package_Tuple == "patch":
+                Package_Tuple = mod.PATCH
+            elif Package_Tuple == "level":
+                Package_Tuple = mod.LEVEL
+            elif Package_Tuple == "earlylevel":
+                Package_Tuple = mod.EARLYLEVEL
+            elif Package_Tuple == "char":
+                Package_Tuple = mod.CHAR
+            mod.reg_hotfix(Package_Tuple, Object_Name, Attribute_Name, From_Length, From_Value, To_Value)
             i += 6
 ################################################################################################################################################################
 
 ################################################################################################################################################################
-# the user is able to choose a json file and search through the contents
+# The user is able to choose a json file and search through the contents
 def FileChoice():
     Tk().withdraw()
     file = askopenfilename(filetypes=[("Choose file", ".json")])
