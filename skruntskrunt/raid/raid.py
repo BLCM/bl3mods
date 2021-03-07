@@ -119,6 +119,21 @@ more_bosses = [
     ('Katagawa Jr.','/Game/Enemies/KatagawaJR/KJR/_Design/Character/BPChar_KJR','/Game/Enemies/KatagawaJR/_Shared/_Design/Balance/Table_Balance_KatagawaJR_PT1','KatagawaJR_Boss'),
     # Make the holograms kinda wimpy
     ('Katagawa Jr (Hologram).','/Game/Enemies/KatagawaJR/KJR/_Design/Character/BPChar_KJR','/Game/Enemies/KatagawaJR/_Shared/_Design/Balance/Table_Balance_KatagawaJR_PT1','KatagawaJR_Hologram',{'health':[DEFAULT_HEALTH/4]}),
+    ('Kratch','/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch','/Hibiscus/Enemies/Slug/_Shared/_Design/Balance/Table_Balance_Slug_PT1','Slug_Badass_Hunt_Kratch'),
+    ('Fungal Gorger','/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character/BPChar_Lost_Mush_Child','/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists','LostOne_Badass'),
+    ('AMBER LAMPS','/Game/Enemies/ServiceBot/LOOT/_Design/Character/BPChar_ServiceBot_LOOT','/Game/Enemies/ServiceBot/_Shared/_Design/Balance/Table_Balance_ServiceBot','ServiceBot_LOOT'),
+    ('Captain Traunt','/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt'),
+    # Is general traunt shared??
+    ('General Traunt','/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt'),
+    ('Gigamind','/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder','/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog_Unique','Nog_ChipHolder'),
+    ('Undertaker','/Game/Enemies/Tink/_Unique/Undertaker/_Design/Character/BPChar_TinkUndertaker','/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique','Tink_BountyPrologue'),
+    ('Trufflemunch','/Game/Enemies/Skag/_Unique/Trufflemunch/_Design/Character/BPChar_SkagTrufflemunch','/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique','Trufflemunch'),
+    ('Buttmuch','/Game/Enemies/Skag/_Unique/Buttmunch/_Design/Character/BPChar_SkagButtmunch','/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique','Buttmunch'),
+    ('Cybil Crawly','/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaA','/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique','Hunt02_Larva'),
+    ('Edie Crawly','/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaB','/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique','Hunt02_Larva'),
+    ('Martha Crawly','/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaC','/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique','Hunt02_Larva'),
+    ('Matty Crawly','//Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD','/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique','Hunt02_Larva'),
+    
 ]
 
 bosses = [mk_boss(*x) for x in more_bosses]
