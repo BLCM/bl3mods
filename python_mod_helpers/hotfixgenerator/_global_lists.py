@@ -33,7 +33,7 @@ File_Results_List = []
 def ListBoxWindow(List):
     ListWindow = Tk()
     w = 500
-    h = 200 
+    h = 350
     ws = ListWindow.winfo_screenwidth()
     hs = ListWindow.winfo_screenheight()
     x = (ws/2) - (w/2)
@@ -62,25 +62,26 @@ def ListBoxWindow(List):
     # may move it later when I'm ont being lazy, but for now it works
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
         ListWindow.title("Patch names")
-        ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
+        ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
         for x in Patch_Types:
             Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 2: # Displays a list of the map areas, or you can type MatchAll
         ListWindow.title("Names of all the maps")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
         for x in Map_Locations:
             Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
+        ListWindow.geometry('%dx%d+%d+%d' % (w*2.5, h, x*1.8, y/3.5))
         for x in Search_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
+    
     elif List == 4: # Displays the contents of when you looked through a file
         ListWindow.title("JSON file information")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
         for x in File_Results_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=150)
@@ -109,15 +110,14 @@ def ListBoxWindow(List):
 def List_Info():
     ListWindow = Tk()
     ListWindow.title("Data Table Look Up")
-    
     # This code sets up the positioning of the first window in the middle of the screen
-    w = 350
-    h = 200 
+    w = 500
+    h = 350
     ws = ListWindow.winfo_screenwidth()
     hs = ListWindow.winfo_screenheight()
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x, y*1.5))
+    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
     
     Button(ListWindow, text="'Patch' types",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
     Button(ListWindow, text="Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
@@ -125,11 +125,11 @@ def List_Info():
     Button(ListWindow, text="File Information", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     
-    # This Is so that I do not have to pack everysingle time I create something
+    # Formats all my wigits the same way
     for c in sorted(ListWindow.children):
-        ListWindow.children[c].pack(anchor="w", fill="both")
-    ListWindow.mainloop()
+        ListWindow.children[c].pack(expand=True, fill="both")
 
+    ListWindow.mainloop()
 
 # This is just for testing changes, 
 # and not wanting to switch between files

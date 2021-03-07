@@ -17,9 +17,9 @@ data = BL3Data()
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
-    Frame_Left = Frame(SelectionWindow, relief='ridge')
-    Frame_Right = Frame(SelectionWindow, relief='ridge')
-    Frame_Bottom = Frame(SelectionWindow, relief='ridge')
+    Frame_Left = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
+    Frame_Right = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
+    Frame_Bottom = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
     # Default values for window sizes, can manipulate inside the functions
     w = 500
     h = 350 
@@ -71,17 +71,17 @@ def SelectionWindow(Func):
 
     #This will make the user put hotfix information into a queue to be executed later
     elif Func == "HotFix":
-        SelectionWindow.title("Creating Regular Hot Fix. NOTE: Very much a WIP, so things will be buggy")
+        SelectionWindow.title("Creating Regular Hot Fix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
 
         Lab = 6
         Ent = 6
-        Label_1_Text = 'Hotfix Type: \n(Package Tuple)'
-        Label_2_Text = 'Map Name: \n(Object Name)'
-        Label_3_Text = 'JSON Path + _JWP_ Object: \n(Attribute Name)'
-        Label_4_Text = 'JSON Attribute: \n("From" Length)'
-        Label_5_Text = 'True or type new value: \n("From" Value)'
-        Label_6_Text = 'For right now type "", \n(Will give better instructions later when I understand it more): \n("To" Value)'
+        Label_1_Text = 'Hotfix Type: (Package Tuple)'
+        Label_2_Text = 'Map Name: (Object Name)'
+        Label_3_Text = 'JSON Path + _JWP_ Object: (Attribute Name)'
+        Label_4_Text = 'JSON Attribute: ("From" Length)'
+        Label_5_Text = 'True or type new value: ("From" Value)'
+        Label_6_Text = 'For right now type "", ("To" Value)'
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
@@ -103,35 +103,46 @@ def SelectionWindow(Func):
     # Reuseable variables, saves on code space and looks nicer
     # Labels
     if Lab >= 1:
-        Label(SelectionWindow, text=Label_1_Text).grid(row=0)
+        Label(Frame_Left, text=Label_1_Text)
     if Lab >= 2:
-        Label(SelectionWindow, text=Label_2_Text).grid(row=1)
+        Label(Frame_Left, text=Label_2_Text)
     if Lab >= 3:
-        Label(SelectionWindow, text=Label_3_Text).grid(row=2)
+        Label(Frame_Left, text=Label_3_Text)
     if Lab >= 4:
-        Label(SelectionWindow, text=Label_4_Text).grid(row=3)
+        Label(Frame_Left, text=Label_4_Text)
     if Lab >= 5:
-        Label(SelectionWindow, text=Label_5_Text).grid(row=4)
+        Label(Frame_Left, text=Label_5_Text)
     if Lab >= 6:
-        Label(SelectionWindow, text=Label_6_Text).grid(row=5)
+        Label(Frame_Left, text=Label_6_Text)
+
+    for c in sorted(Frame_Left.children):
+        Frame_Left.children[c].pack(expand=True, fill="both")
 
     # Entries
     if Ent >= 1:
-        Entry(SelectionWindow, textvariable=Entry_1, width=100).grid(row=0, column=1)
+        Entry(Frame_Right, textvariable=Entry_1, width=100)
     if Ent >= 2:
-        Entry(SelectionWindow, textvariable=Entry_2, width=100).grid(row=1, column=1)
+        Entry(Frame_Right, textvariable=Entry_2, width=100).pack(expand=True, fill="both")
     if Ent >= 3:
-        Entry(SelectionWindow, textvariable=Entry_3, width=100).grid(row=2, column=1)
+        Entry(Frame_Right, textvariable=Entry_3, width=100).pack(expand=True, fill="both")
     if Ent >= 4:
-        Entry(SelectionWindow, textvariable=Entry_4, width=100).grid(row=3, column=1)
+        Entry(Frame_Right, textvariable=Entry_4, width=100).pack(expand=True, fill="both")
     if Ent >= 5:
-        Entry(SelectionWindow, textvariable=Entry_5, width=100).grid(row=4, column=1)
+        Entry(Frame_Right, textvariable=Entry_5, width=100).pack(expand=True, fill="both")
     if Ent >= 6:
-        Entry(SelectionWindow, textvariable=Entry_6, width=100).grid(row=5, column=1)
+        Entry(Frame_Right, textvariable=Entry_6, width=100).pack(expand=True, fill="both")
+
+    for c in sorted(Frame_Right.children):
+        Frame_Right.children[c].pack(expand=True, fill="both")
 
     # Buttons
     if Butt >= 1:
-        Button(SelectionWindow, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command).grid(row=Lab)
+        Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command)
+    # if b >= 2:
+        # Button(Nwindow, font=("Times New Roman", 14), text=b2text, command=b2command).grid(row=l, column=1)
+    for c in sorted(Frame_Bottom.children):
+        Frame_Bottom.children[c].pack(expand=True, fill="both")
+    
     
     Frame_Left.grid(column=0, row=0)
     Frame_Right.grid(column=1, row=0)
@@ -148,6 +159,7 @@ if __name__ == "__main__":
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
+    
     Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
     Button(text="Add To Regular HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
     Button(text="Add To DataTable HotFix Queue", font=("Times New Roman", 14), state=DISABLED)
@@ -156,8 +168,8 @@ if __name__ == "__main__":
     Button(text="Stored Information", font=("Times New Roman", 14), command=lambda: List_Info())
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", font=("Times New Roman", 14), command=lambda: Create_HotFix_File())
     
-    #this will pack everything so that I do not have to do it every time
+    # Formats all my wigits the same way
     for c in sorted(MainWindow.children):
-        MainWindow.children[c].pack(anchor="center", expand=True, fill="both")
+        MainWindow.children[c].pack(expand=True, fill="both")
     MainWindow.mainloop()
 ################################################################################################################################################################
