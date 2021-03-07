@@ -10,15 +10,35 @@ I will try and take any feedback as soon as I can, but just note that I wont res
 
 # USEAGE
 
-Currently I do not have a .exe that you can run to start generating files.
+Currently I do not have a .exe that you can run to manually start the program.
 In order to get this working you will need a program that runs python programs.
 My personal recomendation is VScode. I have created a .bat file that you can run to install all the needed libaries.
 
-Later on hopefully you will not need external hardware to generate hotfix files, but for now you will.
+Later on hopefully you will not need external hardware to run this program, but for now you will.
 
 ## Program Caveat
 
+The program will not work proporly even if you ran the .bat file first. This is because variables in bl3data.py, `'data_dir'` and `'ueserialize_path'`, make a unique .ini file that will be different for each user. These variables will require you to go and put in your own file location. Here are some useful resources and tips to follow.
+
+1. 'data_dir'
+   1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
+   2. Once you have extracted all the data, set 'data_dir'` as the extracted_new file path.
+      1. EX: F:/Users/Name/Desktop/extracted_new
+2. 'ueserialize_path': Since this was confusing for me, I will give specific instructions.
+   1. Download the file from here: https://github.com/apocalyptech/JohnWickParse
+   2. Extract the file into a good location.
+   3. Open up command line and type cd <Location/Of/Extracted/JohnWickParse>, then hit enter.
+   4. Click this link and run the .exe file: https://win.rustup.rs/
+   5. Once you have run that, go back you your command line and type cargo build.
+      1. This may take a minute, so be patient with it.
+   6. One it is done building, get the file location where the debug file is.
+   7. Get that file path and set 'ueserialize_path' equal to that.
+      1. EX: F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug
+3. If something went wrong with the nameing or other erros when creating it, go to this file location: C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini
+   1. Open it and manually change the paths to the correct path.
+
 I pull from a database I personally use, and because of that I will have to change some parts of the code to hide personal information.
+
 In the future I wish to move to a public one where anyone can grab this information, but for right now some functionality of the code will not work.
 
 ## Exception
