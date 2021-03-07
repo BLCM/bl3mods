@@ -48,9 +48,13 @@ def SelectionWindow(Func):
         elif Type == "Search":
             Search = Entry_1.get()
             Info = data.get_refs_from_data(Search)
+            # This will clean out the previous entry so that it does not become cluttered
+            if len(Search_Results) > 0:
+                Search_Results.clear()
             for Details in Info:
                 if Details[0] not in Search_Results:
                     Search_Results.append(Details[0])
+            Search_Results.sort()
     
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
@@ -80,7 +84,7 @@ def SelectionWindow(Func):
         Label_2_Text = 'Map Name: (Object Name)'
         Label_3_Text = 'JSON Path + _JWP_ Object: (Attribute Name)'
         Label_4_Text = 'JSON Attribute: ("From" Length)'
-        Label_5_Text = 'True or type new value: ("From" Value)'
+        Label_5_Text = 'True or Type New Value: ("From" Value)'
         Label_6_Text = 'For right now type "", ("To" Value)'
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
@@ -94,7 +98,7 @@ def SelectionWindow(Func):
 
         Lab = 1
         Ent = 1
-        Label_1_Text = 'Enter what you want to search for: \nSometimes the program will take a \nwhile to load in all the data, so be patient with it.'
+        Label_1_Text = 'Enter what you want to search for: \nMay take a minute or so to finish.'
 
         Button_1_Text = "Search"
         def Button_1_Command(): return Get_Val("Search")
@@ -140,9 +144,9 @@ def SelectionWindow(Func):
         Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command)
     # if b >= 2:
         # Button(Nwindow, font=("Times New Roman", 14), text=b2text, command=b2command).grid(row=l, column=1)
+    
     for c in sorted(Frame_Bottom.children):
         Frame_Bottom.children[c].pack(expand=True, fill="both")
-    
     
     Frame_Left.grid(column=0, row=0)
     Frame_Right.grid(column=1, row=0)
