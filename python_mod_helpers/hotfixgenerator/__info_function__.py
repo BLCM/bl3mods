@@ -12,7 +12,7 @@ making this and I hope BL3 live as long as BL2 did, as they are tied for some of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import List_1, Mod_Header, Reg_hotfix, Search_Results, FileNames, File_Results_List
+from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List
 ################################################################################################################################################################
 from tkinter import *
 from tkinter.filedialog import askopenfilename
@@ -27,16 +27,16 @@ def Create_HotFix_File():
     #this firat part puts the header inside a new file it creats
     if len(Mod_Header) < 6:
         # If you don't give it someting, this is what I will replace it with
-        Mod_Header.extend(["Chadd", "Chadd", "Chadd",
-                           "Chadd", "Chadd", "Chadd"])
+        Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
+    
     input1 = Mod_Header[0]
     input2 = Mod_Header[1]
     input3 = Mod_Header[2]
     input4 = Mod_Header[3]
     input5 = Mod_Header[4]
     input6 = Mod_Header[5]
-    mod = Mod(input1 + '.bl3hotfix', input2, input3,
-              [input4, ], lic=Mod.CC_BY_SA_40, v=input5, cats=input6,)
+    mod = Mod(input1 + '.bl3hotfix', input2, input3,[input4, ], lic=Mod.CC_BY_SA_40, v=input5, cats=input6,)
+    
     i = 0
     if i > len(Reg_hotfix):
         None
@@ -54,13 +54,7 @@ def Create_HotFix_File():
             mod.reg_hotfix(input1, input2, input3, input4, input5, input6)
             i += 6
 ################################################################################################################################################################
-#This swill put all your results into a list that you can look at later
-# Now it will search for all items related to it regardless of capitalization or puncuation
-def Search(input):
-    info = DATA.get_refs_from_data(input)
-    for details in info:
-        if details[0] not in List_1:
-            Search_Results.append(details[0])
+
 ################################################################################################################################################################
 # the user is able to choose a json file and search through the contents
 def FileChoice():

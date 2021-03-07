@@ -1,16 +1,18 @@
-#My files
-from __Generate_Hotfix import Search, Create_HotFix_File, FileChoice
+# My files
+from __info_function__ import Create_HotFix_File, FileChoice
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, List_Info
+from _global_lists import Mod_Header, Reg_hotfix, Search_Results
+from _global_lists import List_Info
 ################################################################################################################################################################
-#Libraies
+# Libraies
 import tkinter as tk
 from tkinter import *
-#Global variables
+# Global variables
 data = BL3Data()
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(func):
+    # Global/Window variables
     SelectionWindow = Tk()
     # default values for window sizes, can manipulate inside the functions
     w = 500
@@ -23,19 +25,28 @@ def SelectionWindow(func):
     l, e, b = 0, 0, 0
     #generics we can reuse for any task I have created
     entry1, entry2, entry3, entry4, entry5, entry6 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    
     # Used to grab the values the then entry textvariables,
     def Get_Val(type):
+        # Puts information into a queue to be executed later
         if type == "ModHeader":
             a, b, c, d, e, f = entry1.get(), entry2.get(), entry3.get(), entry4.get(), entry5.get(), entry6.get()
             # Puts the Information to make the file into a queue to be called later
             Mod_Header.extend([a, b, c, d, e, f])
+        # Allows for the creation of multiple regular hotixes
         elif type == "HotFix":
             a, b, c, d, e, f = entry1.get(), entry2.get(), entry3.get(), entry4.get(), entry5.get(), entry6.get()
             # info is put into a regular hotfix queue for later
             Reg_hotfix.extend([a, b, c, d, e, f])
-        elif type == Search:
-            a = entry1.get()
-            Search(a)
+        # Carred over from other file
+        # This will search the database for provided information
+        elif type == "Search":
+            search = entry1.get()
+            info = data.get_refs_from_data(search)
+            for details in info:
+                if details[0] not in Search_Results:
+                    Search_Results.append(details[0])
+    
     #So now this works for the most part. the inner code still needs to work
     if func == "ModHeader":  # creates a mod file of you to use
         SelectionWindow.title("Mod Header")
@@ -67,14 +78,14 @@ def SelectionWindow(func):
         def b1command(): return Get_Val("HotFix")
         b = 1
     # The user will search for a word, and puncuation does not matter, but spelling does
-    elif func == Search:
+    elif func == "Search":
         SelectionWindow.title("Find All References")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h/4, x*1.8, y))
         text1 = 'Enter what you want to search for: \nSometimes the program will take a \nwhile to load in all the data, so be patient with it.'
         l = 1
         e = 1
         b1text = "Search"
-        def b1command(): return Get_Val(Search)
+        def b1command(): return Get_Val("Search")
         b = 1
     # This is the best way for the program to reuse generics,
     # While being able to determine how many are needed for a paticular program
@@ -126,7 +137,7 @@ if __name__ == "__main__":
     Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
     Button(text="Add To The HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
     Button(text="Choose File To Search Through", font=("Times New Roman", 14), command=lambda: FileChoice())
-    Button(text="Find All References To An Object", font=("Times New Roman", 14), command=lambda: SelectionWindow(Search))
+    Button(text="Find All References To An Object", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search"))
     Button(text="Click To Look At Stored information", font=("Times New Roman", 14), command=lambda: List_Info())
     Button(text="Click This To Create Your HotFix File", font=("Times New Roman", 14), command=lambda: Create_HotFix_File())
     
