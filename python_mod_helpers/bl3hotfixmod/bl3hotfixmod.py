@@ -269,6 +269,13 @@ class Mod(object):
         """
         return ''.join([l.strip() for l in str(value).splitlines()])
 
+    def raw_line(self, line):
+        """
+        Outputs the line to the modfile entirely as-written.  Could be useful to support hotfix types
+        which haven't been added into the library yet.
+        """
+        print(line, file=self.df)
+
     def reg_hotfix(self, hf_type, package, obj_name, attr_name, new_val, prev_val='', notify=False):
         """
         Writes a regular hotfix to the mod file
