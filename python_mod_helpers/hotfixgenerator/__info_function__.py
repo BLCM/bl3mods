@@ -28,15 +28,8 @@ def Create_HotFix_File():
     if len(Mod_Header) < 6:
         # If you don't give it someting, this is what I will replace it with
         Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
-    
-    File_Name = Mod_Header[0]
-    Mod_Title = Mod_Header[1]
-    Author_Name = Mod_Header[2]
-    Description = Mod_Header[3]
-    Version = Mod_Header[4]
-    Catagory = Mod_Header[5]
+    File_Name = Mod_Header[0], Mod_Title = Mod_Header[1], Author_Name = Mod_Header[2], Description = Mod_Header[3], Version = Mod_Header[4], Catagory = Mod_Header[5]
     mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description, ], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
-    
     
     i = 0
     if i > len(Reg_hotfix):
@@ -65,13 +58,13 @@ def FileChoice():
         True_Path = Raw_Path[index::] # This is used for the BL3Data.get_data function
         File_Results_Window(True_Path)
 
-#This is stremlinded process of what I already have, but even better than before
+# Trying to stream line the 
 def File_Results_Window(True_Path):
     I = 0
     Raw_Data = DATA.get_data(True_Path)
     while I < len(Raw_Data):
         File_Results_List.append(True_Path + ": index " + str(I))
-        Refined_Data = flatten(Raw_Data[I], separator="[" + "]")
+        Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]")
         for key, value in Refined_Data.items():
             File_Results_List.append(str(key) + " : "+ str(value))
         File_Results_List.append("\n")
@@ -79,18 +72,3 @@ def File_Results_Window(True_Path):
 ################################################################################################################################################################
 # This area be used If I have any other functions I want to put in later
 ################################################################################################################################################################
-#This was me messing around with how these things work. still learning though
-# mod.reg_hotfix(
-# mod.LEVEL,
-# "Anger_P",
-# "/Game/GameData/Regions/RegionManagerData.RegionManagerData",
-# "PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum",
-# "True",
-# "")
-
-# mod.reg_hotfix(mod.EARLYLEVEL,
-# "MatchALL",
-# "/Game/GameData/Balance/HealthAndDamage/HealthBalanceScalers/DataTable_DamageAndHealthScalers.DataTable_DamageAndHealthScalers",
-# "AI_AdditionalDamagePerLevel,Scaler_4_FE2B037B42E1F6E76E3AEBAFDCC8DB86",
-# "0.065",
-# "")

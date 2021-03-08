@@ -63,14 +63,10 @@ def SelectionWindow(Func):
                 if Details[0] not in Search_Results:
                     Search_Results.append(Details[0])
             Search_Results.sort()
-        
-
-            
-    
+    # Mod header info
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y))
-
         Lab = 6
         Ent = 6
         Label_1_Text = 'Name of the hotfix file: '
@@ -79,16 +75,14 @@ def SelectionWindow(Func):
         Label_4_Text = 'Discription: '
         Label_5_Text = 'Version of this mod: '
         Label_6_Text = 'The catagory in which this mods fits to: '
-
         Button_1_Text = 'Create Mod Header'
         def Button_1_Command(): return Get_Val("ModHeader")
         Butt = 1
-
+   
     #This will make the user put hotfix information into a queue to be executed later
     elif Func == "HotFix":
         SelectionWindow.title("Creating Regular Hot Fix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
-
         Lab = 8
         Ent = 8
         Label_1_Text = 'Hotfix Type: (hf_type)'
@@ -99,27 +93,23 @@ def SelectionWindow(Func):
         Label_6_Text = 'Lenght of the previous value, (prev_val_len)'
         Label_7_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_8_Text = 'True or New Value Type (new_val)'
-
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
         Button_2_Text = "Look at what your HotFix looks like"
         def Button_2_Command(): return Get_Val("Update Display")
         Butt = 2
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
+    
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
         SelectionWindow.title("Find All References")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y))
-
         Lab = 1
         Ent = 1
         Label_1_Text = 'Enter what you want to search for: \nMay take a minute or so to finish.'
-
         Button_1_Text = "Search"
         def Button_1_Command(): return Get_Val("Search")
         Butt = 1
-    
-    # Reuseable variables, saves on code space and looks nicer
     
     # Labels
     if Lab >= 1:
@@ -138,8 +128,6 @@ def SelectionWindow(Func):
         Label(Frame_Left, text=Label_7_Text)
     if Lab >= 8:
         Label(Frame_Left, text=Label_8_Text)
-
-    
     for c in sorted(Frame_Left.children):
         Frame_Left.children[c].pack(expand=True, fill="both")
 
@@ -160,7 +148,6 @@ def SelectionWindow(Func):
         Entry(Frame_Right, textvariable=Entry_7, width=80)
     if Ent >= 8:
         Entry(Frame_Right, textvariable=Entry_8, width=80)
-
     for c in sorted(Frame_Right.children):
         Frame_Right.children[c].pack(expand=True, fill="both")
 
@@ -169,14 +156,12 @@ def SelectionWindow(Func):
         Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command)
     if Butt >= 2:
         Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_2_Text, command=Button_2_Command)
-    
     for c in sorted(Frame_Bottom.children):
         Frame_Bottom.children[c].pack(expand=True, fill="x")
     
     Frame_Left.grid(column=0)
     Frame_Right.grid(column=1, row=0)
     Frame_Bottom.grid(row=1)
-    Frame_Bottom.grid_propagate(True)
 ################################################################################################################################################################
 # Main menu.
 if __name__ == "__main__":
@@ -189,7 +174,6 @@ if __name__ == "__main__":
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
-    
     Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
     Button(text="Add To Regular HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
     Button(text="Add To Table HotFix Queue", font=("Times New Roman", 14), state=DISABLED)
@@ -197,7 +181,6 @@ if __name__ == "__main__":
     Button(text="Database Search", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search"))
     Button(text="Stored Information", font=("Times New Roman", 14), command=lambda: List_Info())
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", font=("Times New Roman", 14), command=lambda: Create_HotFix_File())
-    
     # Formats all my wigits the same way
     for c in sorted(MainWindow.children):
         MainWindow.children[c].pack(expand=True, fill="both")
