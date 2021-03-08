@@ -23,6 +23,10 @@
 ### Balance help is appreciated
 
 # TODOS:
+# [ ] Captain Traunt Drops
+# [ ] Demoskagon Drops
+# [ ] Trufflemunch drops
+# [ ] Lavender Crawly seemed broken?
 # [ ] Eista spawns loot in a meaningful way
 # [ ] One punch drops?
 # [ ] Urist McEnforcer
@@ -394,6 +398,31 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPunkGreg_Rakk),/Geranium/Enemies/GerP
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RuinerBoss),/Geranium/Enemies/Ruiner/Boss/_Design/Character/ItemPool_RuinerBoss.ItemPool_RuinerBoss,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
+
+########
+# Demoskaggon (Manual)
+# Loot
+
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_DemoSkaggon.ItemPool_DemoSkaggon,Quantity,0,,(BaseValueConstant=12)
+
+##### Captain Traunt (Manual) #####
+# BPChar: BPChar_Heavy_Traunt
+# bpchar_path: /Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt
+# balance_table: /Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique
+# balance rowname: Heavy_Traunt
+
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Playthrough2_50_11E6C8E8493E0A73AF9B35891E7CE111,0,,1
+# SparkCharacterLoadedEntry,(1,2,0,BPChar_Heavy_Traunt),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,DemoSkag,LegendaryDropChance_Mayhem_49_A4643C45437ECBC97BC6629ECC66F6B6,0,,1
+# SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt.ItemPool_CaptTraunt,Quantity,0,,(BaseValueConstant=12)
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[51].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
+
+
 
 ############################ Insert raid.py output here #############
 
@@ -930,14 +959,14 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Saurian_Rare01),/Game/Enemies/Saurian/_S
 
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01.BPChar_Skag_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,100
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_Rare01),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,DemoSkag,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
-
+# /Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds
 
 ##### Warden #####
 # BPChar: BPChar_Goliath_CageArena
