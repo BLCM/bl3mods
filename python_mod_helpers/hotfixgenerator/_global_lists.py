@@ -9,9 +9,9 @@ from tkinter import LEFT, BOTH, RIGHT, TOP, Y, BOTTOM, END
 FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
              "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
 
-# Unused at this point. thought it would be more useful. Will keep for now but may get rid of later
-FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
-             "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
+# # Unused at this point. thought it would be more useful. Will keep for now but may get rid of later
+# FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
+#              "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
 
 #Will be used for deciding what kind of hotfix to apply
 Patch_Types = ['Mod.PATCH','Mod.LEVEL','Mod.EARLYLEVEL','Mod.CHAR','Mod.PACKAGE','Mod.POST']
@@ -51,7 +51,7 @@ def ListBoxWindow(List):
     Scroll_Bar = Scrollbar(ListWindow)
     Scroll_Bar.pack( side = RIGHT, fill = Y )
 
-    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 250, height=100, font=("Times New Roman", 10))
+    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=("Times New Roman", 10))
     Info_Display_Text_Box.delete('1.0',END)
 
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
@@ -98,7 +98,7 @@ def ListBoxWindow(List):
                 lastidx = '%s+%dc' % (idx, len(s))
                 Info_Display_Text_Box.tag_add('found', idx, lastidx)
                 idx = lastidx
-            Info_Display_Text_Box.tag_config('found', foreground='red')
+            Info_Display_Text_Box.tag_config('found', foreground='dark blue')
         Find_String.focus_set()
     Find_Text_Button.config(command=find)
 ################################################################################################################################################################
@@ -106,29 +106,21 @@ def ListBoxWindow(List):
 def List_Info():
     ListWindow = Tk()
     ListWindow.title("Data Table Look Up")
-    # This code sets up the positioning of the first window in the middle of the screen
-    w = 500
-    h = 350
-    ws = ListWindow.winfo_screenwidth()
-    hs = ListWindow.winfo_screenheight()
-    x = (ws/2) - (w/2)
-    y = (hs/2) - (h/2)
-    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
+    w, h, ws, hs = 500, 350, ListWindow.winfo_screenwidth(), ListWindow.winfo_screenheight()
+    x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     
-    Button(ListWindow, text="'Patch' types",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
-    Button(ListWindow, text="Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
-    Button(ListWindow, text="Database Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
+    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
+    Button(ListWindow, text="Patch types", command=lambda: ListBoxWindow(1))
+    Button(ListWindow, text="Map Names", command=lambda: ListBoxWindow(2))
+    Button(ListWindow, text="Database Search Results", command=lambda: ListBoxWindow(3))
     Button(ListWindow, text="File Information", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
-    # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
     
     # Formats all my wigits the same way
     for c in sorted(ListWindow.children):
+        ListWindow.children[c]["font"] = ("Times New Roman", 14)
         ListWindow.children[c].pack(expand=True, fill="both")
 
     ListWindow.mainloop()
 
-# This is just for testing changes, 
-# and not wanting to switch between files
-# Will be commenting out most of the time
 # if __name__ == "__main__":
 #     List_Info()

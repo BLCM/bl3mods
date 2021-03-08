@@ -28,7 +28,7 @@ def Create_HotFix_File():
     if len(Mod_Header) < 6:
         # If you don't give it someting, this is what I will replace it with
         Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
-    File_Name = Mod_Header[0], Mod_Title = Mod_Header[1], Author_Name = Mod_Header[2], Description = Mod_Header[3], Version = Mod_Header[4], Catagory = Mod_Header[5]
+    File_Name, Mod_Title, Author_Name, Description, Version, Catagory =  Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
     mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description, ], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
     
     i = 0
@@ -36,9 +36,24 @@ def Create_HotFix_File():
         None
     else:
         while i < len(Reg_hotfix):
-            hf_type=Reg_hotfix[i], notification_flag=Reg_hotfix[i+1], package=Reg_hotfix[i+2], obj_name=Reg_hotfix[i+3]
-            attr_name=Reg_hotfix[i+4], prev_val_len=Reg_hotfix[i+5], prev_val=Reg_hotfix[i+6], new_val=Reg_hotfix[i+7]
-            mod.reg_hotfix(hf_type, notification_flag, package, obj_name, attr_name, prev_val_len, prev_val, new_val)
+            hf_type=Reg_hotfix[i]
+            if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
+            elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
+            elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
+            elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
+            elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
+            elif hf_type == 'Mod.POST': hf_type = Mod.POST
+
+            notification_flag=Reg_hotfix[i+1]
+            package=Reg_hotfix[i+2]
+            obj_name=Reg_hotfix[i+3]
+            attr_name=Reg_hotfix[i+4]
+            
+            prev_val_len=Reg_hotfix[i+5]
+            
+            prev_val=Reg_hotfix[i+6]
+            new_val=Reg_hotfix[i+7]
+            mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
             i += 8
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents

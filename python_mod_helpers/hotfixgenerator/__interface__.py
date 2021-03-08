@@ -12,30 +12,25 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
-stan_font = ("Times New Roman", 10)
+Stan_Font = ("Times New Roman", 10)
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
-    Frame_Left = Frame(SelectionWindow,borderwidth = 7)
-    Frame_Right = Frame(SelectionWindow,borderwidth = 7)
-    Frame_Bottom = Frame(SelectionWindow,borderwidth = 7)
+    Frame_Left = Frame(SelectionWindow,borderwidth = 2)
+    Frame_Right = Frame(SelectionWindow,borderwidth = 2)
+    Frame_Bottom = Frame(SelectionWindow,borderwidth = 2)
     # Default values for window sizes, can manipulate inside the functions
-    w = 500
-    h = 350 
-    ws = SelectionWindow.winfo_screenwidth()
-    hs = SelectionWindow.winfo_screenheight()
-    x = (ws/2) - (w/2)
-    y = (hs/2) - (h/2)
+    w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
+    x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     # These variables will determine how many things to add to the window as i need them
     Lab, Ent, Butt = 0, 0, 0
     # Generics we can reuse for any task I have created
     Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
     Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
-    
-    # Used to grab the values the then entry textvariables,
-    def Get_Val(Type):
+    def Get_Val(Type): # Used to grab the values the then entry textvariables
+        
         # Puts information into a queue to be executed later
         if Type == "ModHeader":
             A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
@@ -50,8 +45,8 @@ def SelectionWindow(Func):
         
         # This will help with the writting hotfixes them
         elif Type == "Update Display":
-            A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
-            HotFix_Label["text"] = '{},(1,1,{},{}),{}\n,{},{},{},{}\n'.format(A, B, C, D, E, F, G, H)        
+            B, C, D, E, F, G, H = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
+            HotFix_Label["text"] = '(1,1,{},{}),{}\n,{},{},{},{}'.format(B, C, D, E, F, G, H)        
         
         # This will search the database for provided information
         elif Type == "Search":
@@ -64,6 +59,7 @@ def SelectionWindow(Func):
                 if Details[0] not in Search_Results:
                     Search_Results.append(Details[0])
             Search_Results.sort()
+    
     # Mod header info
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
@@ -84,8 +80,7 @@ def SelectionWindow(Func):
     elif Func == "HotFix":
         SelectionWindow.title("Creating Regular Hot Fix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
-        Lab = 8
-        Ent = 8
+        Lab, Ent, Butt = 8, 8, 2
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
         Label_3_Text = 'Map Name: (package)'
@@ -94,11 +89,11 @@ def SelectionWindow(Func):
         Label_6_Text = 'Lenght of the previous value, (prev_val_len)'
         Label_7_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_8_Text = 'True or New Value Type (new_val)'
+
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
         Button_2_Text = "Look at what your HotFix looks like"
         def Button_2_Command(): return Get_Val("Update Display")
-        Butt = 2
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
     
     # The user will search for a word, and puncuation does not matter, but spelling does
@@ -129,38 +124,42 @@ def SelectionWindow(Func):
         Label(Frame_Left, text=Label_7_Text)
     if Lab >= 8:
         Label(Frame_Left, text=Label_8_Text)
+    
     for c in sorted(Frame_Left.children):
-        Frame_Left.children[c]["font"] = stan_font
+        Frame_Left.children[c]["font"] = Stan_Font
         Frame_Left.children[c].pack(expand=True, fill="both")
 
     # Entries
     if Ent >= 1:
-        Entry(Frame_Right, textvariable=Entry_1, width=80)
+        Entry(Frame_Right, textvariable=Entry_1)
     if Ent >= 2:
-        Entry(Frame_Right, textvariable=Entry_2, width=80)
+        Entry(Frame_Right, textvariable=Entry_2)
     if Ent >= 3:
-        Entry(Frame_Right, textvariable=Entry_3, width=80)
+        Entry(Frame_Right, textvariable=Entry_3)
     if Ent >= 4:
-        Entry(Frame_Right, textvariable=Entry_4, width=80)
+        Entry(Frame_Right, textvariable=Entry_4)
     if Ent >= 5:
-        Entry(Frame_Right, textvariable=Entry_5, width=80)
+        Entry(Frame_Right, textvariable=Entry_5)
     if Ent >= 6:
-        Entry(Frame_Right, textvariable=Entry_6, width=80)
+        Entry(Frame_Right, textvariable=Entry_6)
     if Ent >= 7:
-        Entry(Frame_Right, textvariable=Entry_7, width=80)
+        Entry(Frame_Right, textvariable=Entry_7)
     if Ent >= 8:
-        Entry(Frame_Right, textvariable=Entry_8, width=80)
+        Entry(Frame_Right, textvariable=Entry_8)
+    
     for c in sorted(Frame_Right.children):
-        Frame_Right.children[c]["font"] = stan_font
+        Frame_Right.children[c]["width"]= 80
+        Frame_Right.children[c]["font"] = Stan_Font
         Frame_Right.children[c].pack(expand=True, fill="both")
 
     # Buttons
     if Butt >= 1:
-        Button(Frame_Bottom, font=("Times New Roman", 10), text=Button_1_Text, command=Button_1_Command)
+        Button(Frame_Bottom, text=Button_1_Text, command=Button_1_Command)
     if Butt >= 2:
-        Button(Frame_Bottom, font=("Times New Roman", 10), text=Button_2_Text, command=Button_2_Command)
+        Button(Frame_Bottom, text=Button_2_Text, command=Button_2_Command)
+    
     for c in sorted(Frame_Bottom.children):
-        Frame_Bottom.children[c]["font"] = stan_font
+        Frame_Bottom.children[c]["font"] = Stan_Font
         Frame_Bottom.children[c].pack(expand=True, fill="x")
     
     Frame_Left.grid(column=0)
