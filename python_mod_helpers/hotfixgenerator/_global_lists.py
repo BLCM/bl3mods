@@ -39,8 +39,6 @@ def ListBoxWindow(List):
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
-    # This should add a search bar to help find all text, 
-    # also replacing all listboxes with text to see how well that will go
     Fram_Of_Reference = Frame(ListWindow) 
     Label(Fram_Of_Reference,text='Text to find:').pack(side=LEFT)
     
@@ -57,9 +55,7 @@ def ListBoxWindow(List):
 
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
     Info_Display_Text_Box.delete('1.0',END)
-    # Similar to my __interface__ file, 
-    # but I had to create new windows here or it would be circular logic
-    # may move it later when I'm ont being lazy, but for now it works
+
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
         ListWindow.title("Patch names")
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
