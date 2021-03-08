@@ -12,7 +12,7 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
-Stan_Font = ("Times New Roman", 10)
+Stan_Font = ("Times New Roman", 12)
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(Func):
@@ -30,7 +30,6 @@ def SelectionWindow(Func):
     Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
     Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
     def Get_Val(Type): # Used to grab the values the then entry textvariables
-        
         # Puts information into a queue to be executed later
         if Type == "ModHeader":
             A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
@@ -46,7 +45,7 @@ def SelectionWindow(Func):
         # This will help with the writting hotfixes them
         elif Type == "Update Display":
             B, C, D, E, F, G, H = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
-            HotFix_Label["text"] = '(1,1,{},{}),{}\n,{},{},{},{}'.format(B, C, D, E, F, G, H)        
+            HotFix_Label["text"] = '[\n(1,1,{} , {})\n , {}\n , \n{} , {}\n , {}\n , {}\n]'.format(B, C, D, E, F, G, H)        
         
         # This will search the database for provided information
         elif Type == "Search":
@@ -79,7 +78,7 @@ def SelectionWindow(Func):
     #This will make the user put hotfix information into a queue to be executed later
     elif Func == "HotFix":
         SelectionWindow.title("Creating Regular Hot Fix.")
-        SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
+        SelectionWindow.geometry('%dx%d+%d+%d' % (w*2, h, x, y/10))
         Lab, Ent, Butt = 8, 8, 2
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
