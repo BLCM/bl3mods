@@ -12,6 +12,7 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
+stan_font = ("Times New Roman", 10)
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(Func):
@@ -100,7 +101,6 @@ def SelectionWindow(Func):
         Butt = 2
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
     
-    
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
         SelectionWindow.title("Find All References")
@@ -130,6 +130,7 @@ def SelectionWindow(Func):
     if Lab >= 8:
         Label(Frame_Left, text=Label_8_Text)
     for c in sorted(Frame_Left.children):
+        Frame_Left.children[c]["font"] = stan_font
         Frame_Left.children[c].pack(expand=True, fill="both")
 
     # Entries
@@ -150,14 +151,16 @@ def SelectionWindow(Func):
     if Ent >= 8:
         Entry(Frame_Right, textvariable=Entry_8, width=80)
     for c in sorted(Frame_Right.children):
+        Frame_Right.children[c]["font"] = stan_font
         Frame_Right.children[c].pack(expand=True, fill="both")
 
     # Buttons
     if Butt >= 1:
-        Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command)
+        Button(Frame_Bottom, font=("Times New Roman", 10), text=Button_1_Text, command=Button_1_Command)
     if Butt >= 2:
-        Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_2_Text, command=Button_2_Command)
+        Button(Frame_Bottom, font=("Times New Roman", 10), text=Button_2_Text, command=Button_2_Command)
     for c in sorted(Frame_Bottom.children):
+        Frame_Bottom.children[c]["font"] = stan_font
         Frame_Bottom.children[c].pack(expand=True, fill="x")
     
     Frame_Left.grid(column=0)
@@ -175,15 +178,16 @@ if __name__ == "__main__":
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
-    Button(text="Add To Mod Header Queue",font=("Times New Roman", 14), command=lambda: SelectionWindow("ModHeader"))
-    Button(text="Add To Regular HotFix Queue", font=("Times New Roman", 14), command=lambda: SelectionWindow("HotFix"))
-    Button(text="Add To Table HotFix Queue", font=("Times New Roman", 14), state=DISABLED)
-    Button(text="Choose JSON File To Look Through", font=("Times New Roman", 14), command=lambda: FileChoice())
-    Button(text="Database Search", font=("Times New Roman", 14), command=lambda: SelectionWindow("Search"))
-    Button(text="Stored Information", font=("Times New Roman", 14), command=lambda: List_Info())
-    Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", font=("Times New Roman", 14), command=lambda: Create_HotFix_File())
+    Button(text="Add To Mod Header Queue", command=lambda: SelectionWindow("ModHeader"))
+    Button(text="Add To Regular HotFix Queue", command=lambda: SelectionWindow("HotFix"))
+    Button(text="Add To Table HotFix Queue", state=DISABLED)
+    Button(text="Choose JSON File To Look Through", command=lambda: FileChoice())
+    Button(text="Database Search", command=lambda: SelectionWindow("Search"))
+    Button(text="Stored Information", command=lambda: List_Info())
+    Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", command=lambda: Create_HotFix_File())
     # Formats all my wigits the same way
     for c in sorted(MainWindow.children):
+        MainWindow.children[c]["font"]=("Times New Roman", 14)
         MainWindow.children[c].pack(expand=True, fill="both")
     MainWindow.mainloop()
 ################################################################################################################################################################

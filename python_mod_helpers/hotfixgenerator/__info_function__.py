@@ -66,13 +66,11 @@ def File_Results_Window(True_Path):
     while I < len(Raw_Data):
         
         Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]")
-        # test1 = Refined_Data["export_type"]
         _jwp_object_name = Refined_Data["_jwp_object_name"]
         for key, value in Refined_Data.items():
             obj_name = str(True_Path + "." + _jwp_object_name + ",")
-            attr_name = str(str(key))
-            # File_Results_List.append(str(True_Path + "." + _jwp_object_name + ",") + 
-            #                         str(str(key) + "." + str(key) + ":" + str(value)))
+            attr_name = str(key) + " : " + str(value)
+            File_Results_List.append(obj_name+attr_name)
         
         File_Results_List.append("\n")
         I +=1

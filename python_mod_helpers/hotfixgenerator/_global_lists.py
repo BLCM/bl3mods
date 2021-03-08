@@ -38,20 +38,20 @@ def ListBoxWindow(List):
     y = (hs/2) - (h/2)
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     Fram_Of_Reference = Frame(ListWindow) 
-    Label(Fram_Of_Reference,text='Text to find:').pack(side=LEFT)
+    Label(Fram_Of_Reference,text='Text to find:',font=("Times New Roman", 10)).pack(side=LEFT)
     
     Find_String = Entry(Fram_Of_Reference)
     Find_String.pack(side=LEFT, fill=BOTH, expand=1)
     Find_String.focus_set()
     
-    Find_Text_Button = Button(Fram_Of_Reference, text='Find')   
+    Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=("Times New Roman", 10))   
     Find_Text_Button.pack(side=RIGHT)  
     Fram_Of_Reference.pack(side=TOP)
 
     Scroll_Bar = Scrollbar(ListWindow)
     Scroll_Bar.pack( side = RIGHT, fill = Y )
 
-    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
+    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 250, height=100, font=("Times New Roman", 10))
     Info_Display_Text_Box.delete('1.0',END)
 
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
@@ -69,6 +69,7 @@ def ListBoxWindow(List):
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
+        Search_Results.sort()
         for x in Search_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
@@ -76,9 +77,10 @@ def ListBoxWindow(List):
     elif List == 4: # Displays the contents of when you looked through a file
         ListWindow.title("JSON file information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        File_Results_List.sort()
         for x in File_Results_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
-        Info_Display_Text_Box.place(width=150)
+        Info_Display_Text_Box.place(width=2000)
     
     Scroll_Bar.config(command = Info_Display_Text_Box.yview)
     Info_Display_Text_Box.pack(side=BOTTOM)
