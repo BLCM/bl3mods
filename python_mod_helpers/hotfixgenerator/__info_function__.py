@@ -62,11 +62,18 @@ def FileChoice():
 def File_Results_Window(True_Path):
     I = 0
     Raw_Data = DATA.get_data(True_Path)
+   
     while I < len(Raw_Data):
-        File_Results_List.append(True_Path + ": index " + str(I))
+        
         Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]")
+        # test1 = Refined_Data["export_type"]
+        _jwp_object_name = Refined_Data["_jwp_object_name"]
         for key, value in Refined_Data.items():
-            File_Results_List.append(str(key) + " : "+ str(value))
+            obj_name = str(True_Path + "." + _jwp_object_name + ",")
+            attr_name = str(str(key))
+            # File_Results_List.append(str(True_Path + "." + _jwp_object_name + ",") + 
+            #                         str(str(key) + "." + str(key) + ":" + str(value)))
+        
         File_Results_List.append("\n")
         I +=1
 ################################################################################################################################################################

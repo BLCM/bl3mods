@@ -100,6 +100,7 @@ def SelectionWindow(Func):
         Butt = 2
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
     
+    
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
         SelectionWindow.title("Find All References")
