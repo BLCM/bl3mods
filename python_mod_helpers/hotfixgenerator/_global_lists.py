@@ -1,27 +1,30 @@
 ################################################################################################################################################################
-from tkinter import *
+#Going to try to import only what I need to save on space and calculation time
+from tkinter import Tk, Frame, Label, Entry, Button, Scrollbar, Text
+from tkinter import LEFT, BOTH, RIGHT, TOP, Y, BOTTOM, END
 ################################################################################################################################################################
-##Function i uses to get only what is needed if you are choosing a JSON file
+# Functions I uses to get only what is needed if you are choosing a JSON file
+
+# This is used to help format the file path, so we can input the correct format to search for
 FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "DatasmithContent", "Engine", "Game", "GbxAI", "GbxBlockingVolumes", "GbxGameSystemCore", "GbxJira",
              "GbxSharedBlockoutAssets", "GbxSpawn", "Geranium", "Hibiscus", "HoudiniEngine", "Ixora", "MediaCompositing", "OakGame", "Paper2D", "WwiseEditor"]  # stores folder names
+
+# Unused at this point. thought it would be more useful. Will keep for now but may get rid of later
 FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
              "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
-#this is used to remove any data when searching files. may add or remove depending on what I learn later
-NonUsedInfo = ["_apoc_data_ver", "_jwp_export_idx", "_jwp_is_asset", "_jwp_arr_idx"]
 
-#will be used for deciding what kind of hotfix to apply
-Patch_Types = ['This is the list of patch types, type one',
+#Will be used for deciding what kind of hotfix to apply
+Patch_Types = ['This is the list of patch types',
                'patch', 'level', 'earlylevel', 'char']
-#This will be used to select the map name when creating a hotfix, may change later, but for now i think this is a good idea
+
+# Used to display all map names/
+# May change later, but for now i think this is a good idea
 Map_Locations = ['The names of all the maps, type one', 'Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'BloodyHarvest_P', 'COVSlaughter_P', 'Camp_P', 'Cartels_P', 'CasinoIntro_P', 'Chase_P', 'CityBoss_P', 'CityVault_P', 'City_P', 'Convoy_P', 'Core_P', 'CraterBoss_P', 'CreatureSlaughter_P', 'Crypt_P', 'DesertBoss_P', 'Desert_P', 'Desertvault_P', 'Desolate_P', 'Eldorado_P', 'Experiment_P', 'Facility_P', 'FinalBoss_P', 'Forest_P', 'Frontier_P', 'GuardianTakedown_P', 'Impound_P', 'Lake_P', 'Lodge_P', 'Mansion_P', 'MarshFields_P', 'Mine_P', 'Monastery_P',
                  'MotorcadeFestival_P', 'MotorcadeInterior_P', 'Motorcade_P', 'OrbitalPlatform_P', 'Outskirts_P', 'Prison_P', 'Prologue_P', 'ProvingGrounds_Trial1_P', 'ProvingGrounds_Trial4_P', 'ProvingGrounds_Trial5_P', 'ProvingGrounds_Trial6_P', 'ProvingGrounds_Trial7_P', 'ProvingGrounds_Trial8_P', 'Raid_P', 'Recruitment_P', 'Sacrifice_P', 'Sanctuary3_P', 'Sanctum_P', 'Strip_P', 'TechSlaughter_P', 'TowerLair_P', 'Towers_P', 'Town_P', 'Trashtown_P', 'Venue_P', 'Village_P', 'Watership_P', 'WetlandsBoss_P', 'WetlandsVault_P', 'Wetlands_P', 'Woods_P', 'MatchAll']
 
 ################################################################################################################################################################
-#used for storing info and grabbing it later
-List_1 = []
-List_2 = []
-List_3 = []
-#I will be attempting to store the users input in a list, so that later I can call them later qand execute it all at once
+# Lists I call to stroe things in. 
+# They are called globally so that they may not change.
 Mod_Header = []
 Reg_hotfix = []
 Search_Results = []
@@ -29,68 +32,103 @@ File_Results_List = []
 ################################################################################################################################################################
 def ListBoxWindow(List):
     ListWindow = Tk()
-    ListWindow.title("Data Table Look Up")
     w = 500
-    h = 200 
-    # get screen width and height
-    ws = ListWindow.winfo_screenwidth() # width of the screen #width 1920
-    hs = ListWindow.winfo_screenheight() # height of the screen #height 1080
-    # Middle of the screen
+    h = 350
+    ws = ListWindow.winfo_screenwidth()
+    hs = ListWindow.winfo_screenheight()
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    if List == 1:
-        ListWindow.geometry('%dx%d+%d+%d' % (w/1.5, h/1.2, x/2, y*1.5))
-        lb1 = Listbox(ListWindow, width=35)
-        k = 1
-        for i in Patch_Types:
-            lb1.insert(k, i)
-            k += 1
-        lb1.pack()
-    elif List == 2:
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y*1.5))
-        lb2 = Listbox(ListWindow, width=30)
-        k = 1
-        for i in Map_Locations:
-            lb2.insert(k, i)
-            k += 1
-        lb2.pack()
-    elif List == 3:
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x*1.8, y/3.5))
-        ListWindow.title("Data Table Look Up")
-        lb3 = Listbox(ListWindow, width=110)
-        k = 1
-        for i in Search_Results:
-            lb3.insert(k, i)
-            k += 1
-        lb3.pack()
-    elif List == 4:
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x/3.8, y/3.5))
-        lb4 = Listbox(ListWindow, width=110)
-        k = 1
-        for i in File_Results_List:
-            lb4.insert(k, i)
-            k += 1
-        lb4.pack()
-    ListWindow.mainloop()
+    # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+    Fram_Of_Reference = Frame(ListWindow) 
+    Label(Fram_Of_Reference,text='Text to find:').pack(side=LEFT)
+    
+    Find_String = Entry(Fram_Of_Reference)
+    Find_String.pack(side=LEFT, fill=BOTH, expand=1)
+    Find_String.focus_set()
+    
+    Find_Text_Button = Button(Fram_Of_Reference, text='Find')   
+    Find_Text_Button.pack(side=RIGHT)  
+    Fram_Of_Reference.pack(side=TOP)
+
+    Scroll_Bar = Scrollbar(ListWindow)
+    Scroll_Bar.pack( side = RIGHT, fill = Y )
+
+    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width= 120, height=100)
+    Info_Display_Text_Box.delete('1.0',END)
+
+    if List == 1: # Displayes what you should type inside the first section of the hotfix section
+        ListWindow.title("Patch names")
+        ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
+        for x in Patch_Types:
+            Info_Display_Text_Box.insert('1.0', x + '\n')
+
+    elif List == 2: # Displays a list of the map areas, or you can type MatchAll
+        ListWindow.title("Names of all the maps")
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
+        for x in Map_Locations:
+            Info_Display_Text_Box.insert('1.0', x + '\n')
+
+    elif List == 3: # Has all the results of the database search
+        ListWindow.title("Data base results")
+        ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
+        for x in Search_Results:
+            Info_Display_Text_Box.insert('1.0', x + '\n')
+        Info_Display_Text_Box.place(width=200)
+    
+    elif List == 4: # Displays the contents of when you looked through a file
+        ListWindow.title("JSON file information")
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        for x in File_Results_List:
+            Info_Display_Text_Box.insert('1.0', x + '\n')
+        Info_Display_Text_Box.place(width=150)
+    
+    Scroll_Bar.config(command = Info_Display_Text_Box.yview)
+    Info_Display_Text_Box.pack(side=BOTTOM)
+    
+    # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+    # The function we need to find and highlight text
+    def find():
+        Info_Display_Text_Box.tag_remove('found', '1.0', END)
+        s = Find_String.get()
+        if s:
+            idx = '1.0'
+            while 1:
+                idx = Info_Display_Text_Box.search(s, idx, nocase=1, stopindex=END)
+                if not idx: break
+                lastidx = '%s+%dc' % (idx, len(s))
+                Info_Display_Text_Box.tag_add('found', idx, lastidx)
+                idx = lastidx
+            Info_Display_Text_Box.tag_config('found', foreground='red')
+        Find_String.focus_set()
+    Find_Text_Button.config(command=find)
 ################################################################################################################################################################
 #This creates a new window that the user can use to look through information
 def List_Info():
     ListWindow = Tk()
     ListWindow.title("Data Table Look Up")
+    # This code sets up the positioning of the first window in the middle of the screen
     w = 500
-    h = 200 
-    # get screen width and height
-    ws = ListWindow.winfo_screenwidth() # width of the screen #width 1920
-    hs = ListWindow.winfo_screenheight() # height of the screen #height 1080
-    # Middle of the screen
+    h = 350
+    ws = ListWindow.winfo_screenwidth()
+    hs = ListWindow.winfo_screenheight()
     x = (ws/2) - (w/2)
     y = (hs/2) - (h/2)
-    ListWindow.geometry('%dx%d+%d+%d' % (w, h/1.2, x, y*1.5))
-    Button(ListWindow, text="1. Look At What To Put In the 'Patch' section ",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
-    Button(ListWindow, text="2. Look At All The Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
-    Button(ListWindow, text="3. Look At Your Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
-    Button(ListWindow, text="4. File Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
+    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
+    
+    Button(ListWindow, text="'Patch' types",font=("Times New Roman", 14), command=lambda: ListBoxWindow(1))
+    Button(ListWindow, text="Map Names", font=("Times New Roman", 14), command=lambda: ListBoxWindow(2))
+    Button(ListWindow, text="Database Search Results", font=("Times New Roman", 14), command=lambda: ListBoxWindow(3))
+    Button(ListWindow, text="File Information", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
     # Button(text="5. Click to look at the Stored information that might be helpful to you", font=( "Times New Roman", 18), command=lambda: List_Info())
+    
+    # Formats all my wigits the same way
     for c in sorted(ListWindow.children):
-        ListWindow.children[c].pack()
+        ListWindow.children[c].pack(expand=True, fill="both")
+
     ListWindow.mainloop()
+
+# This is just for testing changes, 
+# and not wanting to switch between files
+# Will be commenting out most of the time
+# if __name__ == "__main__":
+#     List_Info()

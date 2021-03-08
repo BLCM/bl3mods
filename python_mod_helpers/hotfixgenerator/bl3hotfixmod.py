@@ -283,11 +283,8 @@ class Mod(object):
             notification_flag = 1
         else:
             notification_flag = 0
-        #I am doing this because i want to be able to store all the information that the user wants to write to a file inside a list, and then later write all that information into the file
-        Result = str('{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format( hf_type=Mod.TYPE[hf_type], notification_flag=notification_flag, package=package, obj_name=Mod.get_full_cond(obj_name), attr_name=attr_name, prev_val_len=len(prev_val), prev_val=prev_val, new_val=self._process_value(new_val),))
         print('{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'.format( hf_type=Mod.TYPE[hf_type], notification_flag=notification_flag, package=package, obj_name=Mod.get_full_cond(obj_name), attr_name=attr_name, prev_val_len=len(prev_val), prev_val=prev_val, new_val=self._process_value(new_val),), file=self.df)
         self.last_was_newline = False
-        return Result
 
     def table_hotfix(self, hf_type, package, obj_name, row_name, attr_name, new_val, prev_val='', notify=False):
         """

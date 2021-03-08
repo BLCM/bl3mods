@@ -1,43 +1,105 @@
 # DESCRIPTION
 
-This will be a program that will attempt to generate hotfix files for people to use in there own games.
+This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods
 
 # NOTE
 
 I am a college student, so I will not be able to work on this all the time, but I will when I have free time.
-This will me a massive passion project for me, so there will be many errors and bugs in my program, so keep in mind.
-I will try and take any feedback as soon as I can, but just note that I wont respond to everything. Also no I am not working with
-a team, this is something I am doing all on my own
+This will be a massive passion project for me, so there will be many errors and bugs in my program.
 
-# USEAGE
+Feedback and tips for how to improve this program are appreciated. I will get to them as soon as I can.
 
-Currently I do not have a .exe that you can run to start generating files.
-In order to get this working you will need a program that runs python programs.
-My personal recomendation is VScode. Later on hopefully you will not need external hardware to generate hotfix files, but for now you will.
+If you are curious about something or have a question about something, the best way to contact me is via my email, which you can find in my profile, or send me a message on Discord.
 
-## Program Caveat
+# GETTING STARTED
 
-I pull from a database I personally use, and because of that I will have to change some parts of the code to hide personal information.
-In the future I wish to move to a public one where anyone can grab this information, but for right now some functionality of the code will not work.
+Currently, I do not have a .exe that runs everything and everything is magically ready.
 
-## Exception
+Unfortunately, you will need to do some extra work before you can get started
 
-If you have a SQL server and know how to insert information, then you would be able to use your own tables and database to pull information from.
-I have left in this folder some of the files I used to help format the SQL file I pulled from. You will also want a formatter, which there is one
-I used in the credits section. If you do not then my program is still useable, just know some functionality will not be useable.
+To get started, you will want the following:
+
+1. Python installed: https://www.python.org/downloads/
+   1. Once you have it installed, double-click on the file that ends with a .bat
+   2. This runs a script that installs all the needed Python Libraries.
+2. A program that runs Python IDE's': https://realpython.com/python-ides-code-editors-guide/
+3. A file editor (EX: Notepad++). The basic Notepad will work, but is harder to use.
+
+My recommendation is VScode.
+
+1. Download: https://code.visualstudio.com/download
+2. Also get this this extention for  VSCode: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+3. It acts like a Python IDE and can very easily edit code at the same time.
+
+## Caveats
+
+Even after doing the above, running the program will still not work, and here is why.
+
+Variables in bl3data.py: variables data_dir, ueserialize_path and function  _connect_db  will be unique for each person.
+
+In the future, _connect_db could possible be set up so that it connects to a global Database that has all the information you would need, but for now it only connects to mine, and I only have access to it.
+
+## Instructions
+
+Steps to fully utilize the program.
+
+Instructions are based in Windows, so Linux and Mac users commands will be slightly different
+
+**NOTE:** You will need to be able to open bl3data.py to edit variables.
+
+1. data_dir : **Note:** You will need a copy of BL3. Duh
+   1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
+      1. These instructions are extremly useful, and do a better job of explaining than me.
+   2. Once you have extracted all the data, set 'data_dir' as the extracted_new file path.
+      1. Look for ''data_dir'': ''CHANGEME' on line 142 in bl3data.py, and make the CHANGEME into the extracted_new file path
+      2. EX: "data_dir": ''F:/Users/Name/Desktop/extracted_new''
+   3. If you do not own the game but still want to use this program(?), there is an alternative way to get the serialized files, but I am unsure about putting in the link. I do not know if it is ok to get the serialized game files without actually owning it. If it turns out it is ok, I will put in the link in, otherwise I will remove this section talking about it.
+      1. **NO I AM NOT TALKING ABOUT PIRATING, DO NOT PIRATE THE GAME PLEASE**
+      2. My hint is to look into the BL3 Nexus page.
+      3. If you find what I am referencing, be aware that even if you have those files, I am not fully sure that the program will work.
+         1. I have not tested because I already bought the games and extracted the data.
+         2. Futher more I am just lazy and don't want to test it out something that may not work
+2. ueserialize_path:
+   1. Getting the complete JWP can be confusing, so follow these instructions.
+   2. Download the JohnWickParse file from here: https://github.com/apocalyptech/JohnWickParse
+   3. Extract the file into a location of your choice.
+   4. Open up the command line (Windows Button, type cmd , hit enter)
+   5. Type cd <File/Location/Of/Extracted/JohnWickParse>, then hit enter.
+      1. EX: C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19
+   6. Click this link and run the .exe file: https://win.rustup.rs/
+   7. Once you run the .exe, go back to your command line and type cargo build.
+      1. This may take a minute, so be patient with it.
+   8. Once it is done building, get the file location where the debug file is.
+      1. C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19\target\debug
+   9. Get that file path and set 'ueserialize_path' as the debug file path.
+      1. Look for 'ueserialize_path': 'CHANGEME' on line 143 in bl3data.py, and make the CHANGEME  to the JohnWickParse file path
+      2. EX: ueserialize_path' : 'F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug''
+3. If something went wrong or you want to change the file locations, go to this file location:
+   1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
+   2. Open it and manually change the paths to the correct path.
+
+This is an "Optional" step, as you do not technically need a database to make the program, however, you will be missing out on some features that this tool has.
+
+1. Data Base connections.
+   1. In bl3data.py, I have modified the _connect_db function to use pyodbc connections.
+   2. If you have a SQL server (SQLEXPRESS for example) and know how to insert information, then you would be able to use your own tables and database to pull information from.
+      1. This is what I have done, as I already had a Database up.
+      2. You may change the _connect_db section to whatever python DB connector you want, but this is what I have personally done.
+   3. You will need apocalyptech MariaDB data dump, Link in Credits.
+      1. I have left my formatting files in the 'Extra_Files' folder.
+      2. **NOTE**: I did not comment the formatted files very well. Reason being that it was a mach program I made to ease my pain. You will more than likely encounter errors, but I believe in you.
+   4. You will also want a SQL formatter. Link to one in the Credits.
 
 # CREDITS
 
-I did not create most of these files, most of the hard work was already done.
-I decided to make something new from projects other people have done.
+I did not create all of these files, most of the hard work was already done.
+
 List of resources that have helped me:
 
-- apocalyptech: This program is heavly based on the research and projects
-  - Github: https://github.com/apocalyptech
-  - Specific reposatory I pulled from: https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers
+- apocalyptech: Researcher and Project creator
+  - GitHub: https://github.com/apocalyptech
+  - Specific repository I pulled from: https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers
   - SQL File and Object Reference: https://apocalyptech.com/games/bl3-refs/
-- Site that help format the SQL file: https://www.jooq.org/translate/
+- Site that helped format the SQL file: https://www.jooq.org/translate/
 - BL3 Redux Team: They inspired me to try and make this because I saw all the changes they did and what you can do with this game.
   - Link to the hotfix: https://github.com/BLCM/bl3mods/tree/master/EpicNNG
-  - Sorry I do not have links to each of the team members, I will add links to each of the team members once I find out each person who worked on it
-  - If you did work on it, message me and I will add you to this credits list of people.
