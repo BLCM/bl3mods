@@ -43,19 +43,10 @@ def Create_HotFix_File():
         None
     else:
         while i < len(Reg_hotfix):
-            Package_Tuple = Reg_hotfix[i], Object_Name = Reg_hotfix[i+1], Attribute_Name = Reg_hotfix[i+2], From_Length = Reg_hotfix[i+3], From_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
-            # A Different take on the input names. May chane to it later if it makes more sence to mae in the long run
-            # Hotfix_Type = Reg_hotfix[i], Package = Reg_hotfix[i+1], Object_Name = Reg_hotfix[i+2], Attribute_Name = Reg_hotfix[i+3], New_Value = Reg_hotfix[i+4], To_Value = Reg_hotfix[i+5]
-            if Package_Tuple == "patch":
-                Package_Tuple = mod.PATCH
-            elif Package_Tuple == "level":
-                Package_Tuple = mod.LEVEL
-            elif Package_Tuple == "earlylevel":
-                Package_Tuple = mod.EARLYLEVEL
-            elif Package_Tuple == "char":
-                Package_Tuple = mod.CHAR
-            mod.reg_hotfix(Package_Tuple, Object_Name, Attribute_Name, From_Length, From_Value, To_Value)
-            i += 6
+            hf_type=Reg_hotfix[i], notification_flag=Reg_hotfix[i+1], package=Reg_hotfix[i+2], obj_name=Reg_hotfix[i+3]
+            attr_name=Reg_hotfix[i+4], prev_val_len=Reg_hotfix[i+5], prev_val=Reg_hotfix[i+6], new_val=Reg_hotfix[i+7]
+            mod.reg_hotfix(hf_type, notification_flag, package, obj_name, attr_name, prev_val_len, prev_val, new_val)
+            i += 8
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
