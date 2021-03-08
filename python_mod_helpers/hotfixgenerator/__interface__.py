@@ -17,9 +17,9 @@ data = BL3Data()
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
-    Frame_Left = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
-    Frame_Right = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
-    Frame_Bottom = Frame(SelectionWindow, relief='ridge',borderwidth = 2)
+    Frame_Left = Frame(SelectionWindow,borderwidth = 2)
+    Frame_Right = Frame(SelectionWindow,borderwidth = 2)
+    Frame_Bottom = Frame(SelectionWindow,borderwidth = 2)
     # Default values for window sizes, can manipulate inside the functions
     w = 500
     h = 350 
@@ -30,7 +30,7 @@ def SelectionWindow(Func):
     # These variables will determine how many things to add to the window as i need them
     Lab, Ent, Butt = 0, 0, 0
     # Generics we can reuse for any task I have created
-    Entry_1, Entry_2, Entry_3, Entry_4, Entry_5, Entry_6 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_1, Entry_2, Entry_3, Entry_4, Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
     
     # Used to grab the values the then entry textvariables,
     def Get_Val(Type):
@@ -39,11 +39,18 @@ def SelectionWindow(Func):
             A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
             # Puts the Information to make the file into a queue to be called later
             Mod_Header.extend([A, B, C, D, E, F])
+        
         # Allows for the creation of multiple regular hotixes
         elif Type == "HotFix":
             A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
             # Info is put into a regular hotfix queue for later
             Reg_hotfix.extend([A, B, C, D, E, F])
+        # This will be used to show what the hotfix looks like before it is added
+        # This will help with the writting them
+        elif Type == "Update Display":
+            A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
+            HotFix_Label["text"] = '{},(1,1,{},{})\n,{},{}\n,{},{},{}\n'.format(A, B, C, D, E, F, G, H)        
+        
         # This will search the database for provided information
         elif Type == "Search":
             Search = Entry_1.get()
@@ -55,6 +62,9 @@ def SelectionWindow(Func):
                 if Details[0] not in Search_Results:
                     Search_Results.append(Details[0])
             Search_Results.sort()
+        
+
+            
     
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
@@ -78,19 +88,23 @@ def SelectionWindow(Func):
         SelectionWindow.title("Creating Regular Hot Fix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x, y/10))
 
-        Lab = 6
-        Ent = 6
-        Label_1_Text = 'Hotfix Type: (Package Tuple)'
-        Label_2_Text = 'Map Name: (Object Name)'
-        Label_3_Text = 'JSON Path + _JWP_ Object: (Attribute Name)'
-        Label_4_Text = 'JSON Attribute: ("From" Length)'
-        Label_5_Text = 'True or Type New Value: ("From" Value)'
-        Label_6_Text = 'For right now type "", ("To" Value)'
+        Lab = 8
+        Ent = 8
+        Label_1_Text = 'Hotfix Type: (hf_type)'
+        Label_2_Text = '1 or 0: (notification_flag)'
+        Label_3_Text = 'Map Name: (package)'
+        Label_4_Text = 'JSON Path + JWP Object: (obj_name)'
+        Label_5_Text = 'Attribute: (attr_name)'
+        Label_6_Text = 'Lenght of the previous value, (prev_val_len)'
+        Label_7_Text = 'True, False, or Leave Blank: (prev_val)'
+        Label_8_Text = 'True or New Value Type (new_val)'
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
-        Butt = 1
-    
+        Button_2_Text = "Look at what your HotFix looks like"
+        def Button_2_Command(): return Get_Val("Update Display")
+        Butt = 2
+        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),\n{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
         SelectionWindow.title("Find All References")
@@ -118,35 +132,44 @@ def SelectionWindow(Func):
         Label(Frame_Left, text=Label_5_Text)
     if Lab >= 6:
         Label(Frame_Left, text=Label_6_Text)
+    if Lab >= 7:
+        Label(Frame_Left, text=Label_7_Text)
+    if Lab >= 8:
+        Label(Frame_Left, text=Label_8_Text)
 
+    
     for c in sorted(Frame_Left.children):
-        Frame_Left.children[c].pack(expand=True, fill="both")
+        Frame_Left.children[c].pack(fill="both")
 
     # Entries
     if Ent >= 1:
         Entry(Frame_Right, textvariable=Entry_1, width=100)
     if Ent >= 2:
-        Entry(Frame_Right, textvariable=Entry_2, width=100).pack(expand=True, fill="both")
+        Entry(Frame_Right, textvariable=Entry_2, width=100)
     if Ent >= 3:
-        Entry(Frame_Right, textvariable=Entry_3, width=100).pack(expand=True, fill="both")
+        Entry(Frame_Right, textvariable=Entry_3, width=100)
     if Ent >= 4:
-        Entry(Frame_Right, textvariable=Entry_4, width=100).pack(expand=True, fill="both")
+        Entry(Frame_Right, textvariable=Entry_4, width=100)
     if Ent >= 5:
-        Entry(Frame_Right, textvariable=Entry_5, width=100).pack(expand=True, fill="both")
+        Entry(Frame_Right, textvariable=Entry_5, width=100)
     if Ent >= 6:
-        Entry(Frame_Right, textvariable=Entry_6, width=100).pack(expand=True, fill="both")
+        Entry(Frame_Right, textvariable=Entry_6, width=100)
+    if Ent >= 7:
+        Entry(Frame_Right, textvariable=Entry_7, width=100)
+    if Ent >= 8:
+        Entry(Frame_Right, textvariable=Entry_8, width=100)
 
     for c in sorted(Frame_Right.children):
-        Frame_Right.children[c].pack(expand=True, fill="both")
+        Frame_Right.children[c].pack(fill="both")
 
     # Buttons
     if Butt >= 1:
         Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_1_Text, command=Button_1_Command)
-    # if b >= 2:
-        # Button(Nwindow, font=("Times New Roman", 14), text=b2text, command=b2command).grid(row=l, column=1)
+    if Butt >= 2:
+        Button(Frame_Bottom, font=("Times New Roman", 14), text=Button_2_Text, command=Button_2_Command)
     
     for c in sorted(Frame_Bottom.children):
-        Frame_Bottom.children[c].pack(expand=True, fill="both")
+        Frame_Bottom.children[c].pack(fill="both")
     
     Frame_Left.grid(column=0, row=0)
     Frame_Right.grid(column=1, row=0)
