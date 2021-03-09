@@ -12,7 +12,10 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
-Stan_Font = ("Times New Roman", 12)
+# Alt_Font = ("Times New Roman", 12)
+# Alt_Font = ("Wingdings 2", 12)
+Stan_Font = ("Courier New", 12)
+
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
 def SelectionWindow(Func):
@@ -107,44 +110,28 @@ def SelectionWindow(Func):
         Butt = 1
     
     # Labels
-    if Lab >= 1:
-        Label(Frame_Left, text=Label_1_Text)
-    if Lab >= 2:
-        Label(Frame_Left, text=Label_2_Text)
-    if Lab >= 3:
-        Label(Frame_Left, text=Label_3_Text)
-    if Lab >= 4:
-        Label(Frame_Left, text=Label_4_Text)
-    if Lab >= 5:
-        Label(Frame_Left, text=Label_5_Text)
-    if Lab >= 6:
-        Label(Frame_Left, text=Label_6_Text)
-    if Lab >= 7:
-        Label(Frame_Left, text=Label_7_Text)
-    if Lab >= 8:
-        Label(Frame_Left, text=Label_8_Text)
+    if Lab >= 1: Label(Frame_Left, text=Label_1_Text)
+    if Lab >= 2: Label(Frame_Left, text=Label_2_Text)
+    if Lab >= 3: Label(Frame_Left, text=Label_3_Text)
+    if Lab >= 4: Label(Frame_Left, text=Label_4_Text)
+    if Lab >= 5: Label(Frame_Left, text=Label_5_Text)
+    if Lab >= 6: Label(Frame_Left, text=Label_6_Text)
+    if Lab >= 7: Label(Frame_Left, text=Label_7_Text)
+    if Lab >= 8: Label(Frame_Left, text=Label_8_Text)
     
     for c in sorted(Frame_Left.children):
         Frame_Left.children[c]["font"] = Stan_Font
         Frame_Left.children[c].pack(expand=True, fill="both")
 
     # Entries
-    if Ent >= 1:
-        Entry(Frame_Right, textvariable=Entry_1)
-    if Ent >= 2:
-        Entry(Frame_Right, textvariable=Entry_2)
-    if Ent >= 3:
-        Entry(Frame_Right, textvariable=Entry_3)
-    if Ent >= 4:
-        Entry(Frame_Right, textvariable=Entry_4)
-    if Ent >= 5:
-        Entry(Frame_Right, textvariable=Entry_5)
-    if Ent >= 6:
-        Entry(Frame_Right, textvariable=Entry_6)
-    if Ent >= 7:
-        Entry(Frame_Right, textvariable=Entry_7)
-    if Ent >= 8:
-        Entry(Frame_Right, textvariable=Entry_8)
+    if Ent >= 1: Entry(Frame_Right, textvariable=Entry_1)
+    if Ent >= 2: Entry(Frame_Right, textvariable=Entry_2)
+    if Ent >= 3: Entry(Frame_Right, textvariable=Entry_3)
+    if Ent >= 4: Entry(Frame_Right, textvariable=Entry_4)
+    if Ent >= 5: Entry(Frame_Right, textvariable=Entry_5)
+    if Ent >= 6: Entry(Frame_Right, textvariable=Entry_6)
+    if Ent >= 7: Entry(Frame_Right, textvariable=Entry_7)
+    if Ent >= 8: Entry(Frame_Right, textvariable=Entry_8)
     
     for c in sorted(Frame_Right.children):
         Frame_Right.children[c]["width"]= 80
@@ -152,10 +139,8 @@ def SelectionWindow(Func):
         Frame_Right.children[c].pack(expand=True, fill="both")
 
     # Buttons
-    if Butt >= 1:
-        Button(Frame_Bottom, text=Button_1_Text, command=Button_1_Command)
-    if Butt >= 2:
-        Button(Frame_Bottom, text=Button_2_Text, command=Button_2_Command)
+    if Butt >= 1: Button(Frame_Bottom, text=Button_1_Text, command=Button_1_Command)
+    if Butt >= 2: Button(Frame_Bottom, text=Button_2_Text, command=Button_2_Command)
     
     for c in sorted(Frame_Bottom.children):
         Frame_Bottom.children[c]["font"] = Stan_Font
@@ -185,7 +170,7 @@ if __name__ == "__main__":
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", command=lambda: Create_HotFix_File())
     # Formats all my wigits the same way
     for c in sorted(MainWindow.children):
-        MainWindow.children[c]["font"]=("Times New Roman", 14)
+        MainWindow.children[c]["font"]=Stan_Font
         MainWindow.children[c].pack(expand=True, fill="both")
     MainWindow.mainloop()
 ################################################################################################################################################################

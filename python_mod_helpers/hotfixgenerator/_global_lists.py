@@ -27,7 +27,14 @@ Mod_Header = []
 Reg_hotfix = []
 Search_Results = []
 File_Results_List = []
+File_Results_List_Search = []
 ################################################################################################################################################################
+# All the fonts that you can use. may impliment this one day
+# fonts=list(tkFont.families())
+# fonts.sort()
+# Alt_Font = ("Times New Roman", 12)
+# Alt_Font = ("Wingdings 2", 12)
+Stan_Font = ("Courier New", 12)
 def ListBoxWindow(List):
     ListWindow = Tk()
     w = 500
@@ -38,49 +45,53 @@ def ListBoxWindow(List):
     y = (hs/2) - (h/2)
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     Fram_Of_Reference = Frame(ListWindow) 
-    Label(Fram_Of_Reference,text='Text to find:',font=("Times New Roman", 10)).pack(side=LEFT)
+    Label(Fram_Of_Reference,text='Text to find:',font=Stan_Font).pack(side=LEFT)
     
     Find_String = Entry(Fram_Of_Reference)
     Find_String.pack(side=LEFT, fill=BOTH, expand=1)
     Find_String.focus_set()
     
-    Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=("Times New Roman", 10))   
+    Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=Stan_Font)   
     Find_Text_Button.pack(side=RIGHT)  
     Fram_Of_Reference.pack(side=TOP)
 
     Scroll_Bar = Scrollbar(ListWindow)
     Scroll_Bar.pack( side = RIGHT, fill = Y )
 
-    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=("Times New Roman", 10))
+    Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0',END)
 
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
         ListWindow.title("Patch names")
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
-        for x in Patch_Types:
-            Info_Display_Text_Box.insert('1.0', x + '\n')
+        for x in Patch_Types: Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 2: # Displays a list of the map areas, or you can type MatchAll
         ListWindow.title("Names of all the maps")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
-        for x in Map_Locations:
-            Info_Display_Text_Box.insert('1.0', x + '\n')
+        for x in Map_Locations: Info_Display_Text_Box.insert('1.0', x + '\n')
 
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
         Search_Results.sort()
-        for x in Search_Results:
-            Info_Display_Text_Box.insert('1.0', x + '\n')
+        for x in Search_Results: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
     
     elif List == 4: # Displays the contents of when you looked through a file
-        ListWindow.title("JSON file information")
+        ListWindow.title("JSON File Information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
         File_Results_List.sort()
-        for x in File_Results_List:
-            Info_Display_Text_Box.insert('1.0', x + '\n')
+        for x in File_Results_List: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=2000)
+    
+    elif List == 5: # Displays the contents of when you looked through a file
+        ListWindow.title("JSON Filtered Information")
+        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        File_Results_List_Search.sort()
+        for x in File_Results_List_Search: Info_Display_Text_Box.insert('1.0', x + '\n')
+        Info_Display_Text_Box.place(width=2000)
+    
     
     Scroll_Bar.config(command = Info_Display_Text_Box.yview)
     Info_Display_Text_Box.pack(side=BOTTOM)
@@ -88,17 +99,17 @@ def ListBoxWindow(List):
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     # The function we need to find and highlight text
     def find():
+        i = 0
         Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
-        if s:
-            idx = '1.0'
-            while 1:
-                idx = Info_Display_Text_Box.search(s, idx, nocase=1, stopindex=END)
-                if not idx: break
-                lastidx = '%s+%dc' % (idx, len(s))
-                Info_Display_Text_Box.tag_add('found', idx, lastidx)
-                idx = lastidx
-            Info_Display_Text_Box.tag_config('found', foreground='dark blue')
+        File_Results_List.sort()
+        if len(File_Results_List_Search) > 0:
+            File_Results_List_Search.clear()
+        while i < len(File_Results_List):
+            if s in File_Results_List[i]:
+                File_Results_List_Search.append(File_Results_List[i])
+            i += 1
+        ListBoxWindow(5)
         Find_String.focus_set()
     Find_Text_Button.config(command=find)
 ################################################################################################################################################################
@@ -117,7 +128,7 @@ def List_Info():
     
     # Formats all my wigits the same way
     for c in sorted(ListWindow.children):
-        ListWindow.children[c]["font"] = ("Times New Roman", 14)
+        ListWindow.children[c]["font"] = Stan_Font
         ListWindow.children[c].pack(expand=True, fill="both")
 
     ListWindow.mainloop()
