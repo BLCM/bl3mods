@@ -2,7 +2,7 @@
 # My files
 from bl3data import BL3Data
 from __info_function__ import Create_HotFix_File, FileChoice
-from _global_lists import Mod_Header, Reg_hotfix, Search_Results
+from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results
 from _global_lists import List_Info
 ################################################################################################################################################################
 # Libraies
@@ -55,12 +55,12 @@ def SelectionWindow(Func):
             Search = Entry_1.get()
             Info = data.get_refs_from_data(Search)
             # This will clean out the previous entry so that it does not become cluttered
-            if len(Search_Results) > 0:
-                Search_Results.clear()
+            if len(DataBase_Results) > 0:
+                DataBase_Results.clear()
             for Details in Info:
-                if Details[0] not in Search_Results:
-                    Search_Results.append(Details[0])
-            Search_Results.sort()
+                if Details[0] not in DataBase_Results:
+                    DataBase_Results.append(Details[0])
+            DataBase_Results.sort()
     
     # Mod header info
     if Func == "ModHeader":  # Creates a mod file of you to use

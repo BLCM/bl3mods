@@ -25,9 +25,9 @@ Map_Locations = ['Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'Blood
 # They are called globally so that they may not change.
 Mod_Header = []
 Reg_hotfix = []
-Search_Results = []
+DataBase_Results = []
 File_Results_List = []
-File_Results_List_Search = []
+Search_List = []
 ################################################################################################################################################################
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
@@ -74,8 +74,8 @@ def ListBoxWindow(List):
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
-        Search_Results.sort()
-        for x in Search_Results: Info_Display_Text_Box.insert('1.0', x + '\n')
+        DataBase_Results.sort()
+        for x in DataBase_Results: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=200)
     
     elif List == 4: # Displays the contents of when you looked through a file
@@ -85,32 +85,49 @@ def ListBoxWindow(List):
         for x in File_Results_List: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=2000)
     
-    elif List == 5: # Displays the contents of when you looked through a file
+    elif List == 5: # Displays Searched information
         ListWindow.title("JSON Filtered Information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
-        File_Results_List_Search.sort()
-        for x in File_Results_List_Search: Info_Display_Text_Box.insert('1.0', x + '\n')
+        Search_List.sort()
+        for x in Search_List: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=2000)
     
     
     Scroll_Bar.config(command = Info_Display_Text_Box.yview)
-    Info_Display_Text_Box.pack(side=BOTTOM)
-    
+    Info_Display_Text_Box.pack(side=BOTTOM)    
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     # The function we need to find and highlight text
     def find():
         i = 0
         Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
-        File_Results_List.sort()
-        if len(File_Results_List_Search) > 0:
-            File_Results_List_Search.clear()
-        while i < len(File_Results_List):
-            if s in File_Results_List[i]:
-                File_Results_List_Search.append(File_Results_List[i])
-            i += 1
+        if len(Search_List) > 0:
+            Search_List.clear()
+        
+        if List == 1:
+            while i < len(Patch_Types):
+                if s in Patch_Types[i]:
+                    Search_List.append(Patch_Types[i])
+                i += 1
+        elif List == 2:
+            while i < len(Map_Locations):
+                if s in Map_Locations[i]:
+                    Search_List.append(Map_Locations[i])
+                i += 1
+        elif List == 3:
+            while i < len(DataBase_Results):
+                if s in DataBase_Results[i]:
+                    Search_List.append(DataBase_Results[i])
+                i += 1
+        elif List == 4:
+            while i < len(File_Results_List):
+                if s in File_Results_List[i]:
+                    Search_List.append(File_Results_List[i])
+                i += 1
+
         ListBoxWindow(5)
         Find_String.focus_set()
+    
     Find_Text_Button.config(command=find)
 ################################################################################################################################################################
 #This creates a new window that the user can use to look through information
