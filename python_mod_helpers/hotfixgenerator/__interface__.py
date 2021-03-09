@@ -1,8 +1,9 @@
 # Going to try to import only what I need to save on space and calculation time
 # My files
+from tkinter.constants import BOTTOM, LEFT, RIGHT
 from bl3data import BL3Data
 from __info_function__ import Create_HotFix_File, FileChoice
-from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results
+from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results, Queue_Order
 from _global_lists import List_Info, ListBoxWindow
 ################################################################################################################################################################
 # Libraies
@@ -12,9 +13,9 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
-# Alt_Font = ("Times New Roman", 12)
-# Alt_Font = ("Wingdings 2", 12)
-Stan_Font = ("Courier New", 12)
+Stan_Font = ("Times New Roman", 12)
+# Stan_Font = ("Wingdings 2", 12)
+# Stan_Font = ("Courier New", 12)
 
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
@@ -46,11 +47,12 @@ def SelectionWindow(Func):
             A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
             # Info is put into a regular hotfix queue for later
             Reg_hotfix.extend([A, B, C, D, E, F, G, H])
+            Queue_Order.append("Regular hotfix")
         
         # Gives a frame of reference to what the Mod looks like
         elif Type == "Update Display":
             B, C, D, E, F, G, H = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
-            HotFix_Label["text"] = '[\n(1,1,{} , {})\n , {}\n , \n{} , {}\n , {}\n , {}\n]'.format(B, C, D, E, F, G, H)        
+            HotFix_Label["text"] = '[(1,1,{} , {}) , {} , {} , {} , {} , {}]'.format(B, C, D, E, F, G, H)        
         
         # This will search the database for provided information
         elif Type == "Search":
@@ -93,11 +95,19 @@ def SelectionWindow(Func):
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
-        
         Button_2_Text = "Look at what your HotFix looks like"
-        def Button_2_Command(): return Get_Val("Update Display")
+        def Button_2_Command(): return Get_Val("Update Display")        
+        #Unique to this as I do not know how to do it other wise
         
-        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
+        """
+        label : entry
+        label : entry
+        label : entry
+        label : entry
+        """
+        # I will be adding custom things to the third panel for the hotfixes may make a function to call on these
+        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
+        # Button(Frame_Bottom, text = 'Click to add new line', command=).pack(side=BOTTOM)
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":

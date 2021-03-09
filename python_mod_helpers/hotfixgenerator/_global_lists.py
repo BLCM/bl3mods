@@ -28,13 +28,14 @@ Reg_hotfix = []
 DataBase_Results = []
 File_Results_List = []
 Search_List = []
+Queue_Order = []
 ################################################################################################################################################################
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
 # fonts.sort()
-# Alt_Font = ("Times New Roman", 12)
-# Alt_Font = ("Wingdings 2", 12)
-Stan_Font = ("Courier New", 12)
+Stan_Font = ("Times New Roman", 12)
+# Stan_Font = ("Wingdings 2", 12)
+# Stan_Font = ("Courier New", 12)
 def ListBoxWindow(List):
     ListWindow = Tk()
     w = 500

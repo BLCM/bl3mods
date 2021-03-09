@@ -12,7 +12,8 @@ making this and I hope BL3 live as long as BL2 did, as they are tied for some of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, ListBoxWindow
+from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, Queue_Order
+from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
@@ -44,31 +45,41 @@ def Create_HotFix_File():
     table_hotfix
     mesh_hotfix(going to be a while)
     """
-
+    NEXT_ITEM = 0
+    # Queue types = Regular hotfix, New line, Comment, Header_lines, Table hotfixes
+    queue_len = 0
     i = 0
-    if i > len(Reg_hotfix):
-        None
-    else:
-        while i < len(Reg_hotfix):
-            hf_type=Reg_hotfix[i]
-            if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
-            elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
-            elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
-            elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
-            elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
-            elif hf_type == 'Mod.POST': hf_type = Mod.POST
+    while queue_len < len(Queue_Order):
+        if Queue_Order[queue_len] == "Regular hotfix":
+            while i < len(Reg_hotfix):
+                hf_type=Reg_hotfix[i]
+                if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
+                elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
+                elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
+                elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
+                elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
+                elif hf_type == 'Mod.POST': hf_type = Mod.POST
 
-            notification_flag=Reg_hotfix[i+1]
-            package=Reg_hotfix[i+2]
-            obj_name=Reg_hotfix[i+3]
-            attr_name=Reg_hotfix[i+4]
-            
-            prev_val_len=Reg_hotfix[i+5]
-            
-            prev_val=Reg_hotfix[i+6]
-            new_val=Reg_hotfix[i+7]
-            mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
-            i += 8
+                notification_flag=Reg_hotfix[i+1]
+                package=Reg_hotfix[i+2]
+                obj_name=Reg_hotfix[i+3]
+                attr_name=Reg_hotfix[i+4]
+                
+                prev_val_len=Reg_hotfix[i+5]
+                
+                prev_val=Reg_hotfix[i+6]
+                new_val=Reg_hotfix[i+7]
+                mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
+                i += 8
+        elif Queue_Order[queue_len] == "Table hotfixes":
+            None
+        elif Queue_Order[queue_len] == "New line":
+            None
+        elif Queue_Order[queue_len] == "Comment":
+            None
+        elif Queue_Order[queue_len] == "Header_lines":
+            None
+        queue_len += 1
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
