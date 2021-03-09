@@ -12,7 +12,7 @@ making this and I hope BL3 live as long as BL2 did, as they are tied for some of
 """
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List
+from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
@@ -24,13 +24,27 @@ DATA = BL3Data()
 # I have to put the program like this because in order to make hotfixes in the way 
 # the bl3data/bl3hotfixmod work, it has to be executed in a row in order to work
 def Create_HotFix_File():
-    #this firat part puts the header inside a new file it creats
-    if len(Mod_Header) < 6:
-        # If you don't give it someting, this is what I will replace it with
-        Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
-    File_Name, Mod_Title, Author_Name, Description, Version, Catagory =  Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
-    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description, ], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
+    #Create hotfix file from information
+    # If you don't give it someting, this is what I will replace it with. Also its a little bit of an easter egg
+    if len(Mod_Header) < 6: Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
     
+    File_Name, Mod_Title, Author_Name, Description, Version, Catagory =  Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
+    # We need this to be the first step, as the rest of the program depends on it
+    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description,], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
+    
+
+    #Working on adding a queue that will go in order of commands the user have but in
+    # EX: user makes a regular hotfix then adds a comments
+    """
+    Things to add:
+    newline
+    comment
+    header_lines
+    header(?)
+    table_hotfix
+    mesh_hotfix(going to be a while)
+    """
+
     i = 0
     if i > len(Reg_hotfix):
         None
@@ -95,6 +109,9 @@ def File_Results_Window(True_Path):
             File_Results_List.append(obj_name + attr_name)
         File_Results_List.append("\n")
         I +=1
+    ListBoxWindow(4)
+
+
 ################################################################################################################################################################
 # This area be used If I have any other functions I want to put in later
 ################################################################################################################################################################

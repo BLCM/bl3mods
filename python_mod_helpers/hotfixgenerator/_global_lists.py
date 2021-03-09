@@ -60,7 +60,8 @@ def ListBoxWindow(List):
 
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0',END)
-
+################################################################################################################################################################
+#Buttons
     if List == 1: # Displayes what you should type inside the first section of the hotfix section
         ListWindow.title("Patch names")
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
@@ -70,7 +71,12 @@ def ListBoxWindow(List):
         ListWindow.title("Names of all the maps")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
         for x in Map_Locations: Info_Display_Text_Box.insert('1.0', x + '\n')
+    
 
+
+################################################################################################################################################################
+# Not buttons
+    # No longer buttons for these but these are called when you run the functions
     elif List == 3: # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
@@ -85,6 +91,7 @@ def ListBoxWindow(List):
         for x in File_Results_List: Info_Display_Text_Box.insert('1.0', x + '\n')
         Info_Display_Text_Box.place(width=2000)
     
+    #exclusively used with the find function so that it makes it easier on my life
     elif List == 5: # Displays Searched information
         ListWindow.title("JSON Filtered Information")
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
@@ -102,23 +109,26 @@ def ListBoxWindow(List):
         Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
         if len(Search_List) > 0:
-            Search_List.clear()
+            Search_List.clear() # Clears out the list so we don't geta data contamination
         
         if List == 1:
             while i < len(Patch_Types):
                 if s in Patch_Types[i]:
                     Search_List.append(Patch_Types[i])
                 i += 1
+        
         elif List == 2:
             while i < len(Map_Locations):
                 if s in Map_Locations[i]:
                     Search_List.append(Map_Locations[i])
                 i += 1
+        
         elif List == 3:
             while i < len(DataBase_Results):
                 if s in DataBase_Results[i]:
                     Search_List.append(DataBase_Results[i])
                 i += 1
+        
         elif List == 4:
             while i < len(File_Results_List):
                 if s in File_Results_List[i]:
@@ -140,8 +150,8 @@ def List_Info():
     ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
     Button(ListWindow, text="Patch types", command=lambda: ListBoxWindow(1))
     Button(ListWindow, text="Map Names", command=lambda: ListBoxWindow(2))
-    Button(ListWindow, text="Database Search Results", command=lambda: ListBoxWindow(3))
-    Button(ListWindow, text="File Information", font=("Times New Roman", 14), command=lambda: ListBoxWindow(4))
+    # Button(ListWindow, text="Database Search Results", command=lambda: ListBoxWindow(3))
+    # Button(ListWindow, text="File Information", command=lambda: ListBoxWindow(4))
     
     # Formats all my wigits the same way
     for c in sorted(ListWindow.children):

@@ -3,7 +3,7 @@
 from bl3data import BL3Data
 from __info_function__ import Create_HotFix_File, FileChoice
 from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results
-from _global_lists import List_Info
+from _global_lists import List_Info, ListBoxWindow
 ################################################################################################################################################################
 # Libraies
 import tkinter as tk
@@ -21,31 +21,33 @@ Stan_Font = ("Courier New", 12)
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
+    #These are for sotring the feilds of information
     Frame_Left = Frame(SelectionWindow,borderwidth = 2)
     Frame_Right = Frame(SelectionWindow,borderwidth = 2)
     Frame_Bottom = Frame(SelectionWindow,borderwidth = 2)
-    # Default values for window sizes, can manipulate inside the functions
+    # Default values for window sizes for all, can manipulate inside the functions
     w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
     x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     # These variables will determine how many things to add to the window as i need them
     Lab, Ent, Butt = 0, 0, 0
-    # Generics we can reuse for any task I have created
+    # To be able to grab the entry feilds
     Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
     Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    
     def Get_Val(Type): # Used to grab the values the then entry textvariables
-        # Puts information into a queue to be executed later
+        # Information about your mod
         if Type == "ModHeader":
             A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
             # Puts the Information to make the file into a queue to be called later
             Mod_Header.extend([A, B, C, D, E, F])
         
-        # Allows for the creation of multiple regular hotixes
+        # Adds to the regular hot fix queue
         elif Type == "HotFix":
             A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
             # Info is put into a regular hotfix queue for later
             Reg_hotfix.extend([A, B, C, D, E, F, G, H])
         
-        # This will help with the writting hotfixes them
+        # Gives a frame of reference to what the Mod looks like
         elif Type == "Update Display":
             B, C, D, E, F, G, H = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
             HotFix_Label["text"] = '[\n(1,1,{} , {})\n , {}\n , \n{} , {}\n , {}\n , {}\n]'.format(B, C, D, E, F, G, H)        
@@ -55,19 +57,17 @@ def SelectionWindow(Func):
             Search = Entry_1.get()
             Info = data.get_refs_from_data(Search)
             # This will clean out the previous entry so that it does not become cluttered
-            if len(DataBase_Results) > 0:
-                DataBase_Results.clear()
+            if len(DataBase_Results) > 0: DataBase_Results.clear()
             for Details in Info:
-                if Details[0] not in DataBase_Results:
-                    DataBase_Results.append(Details[0])
+                if Details[0] not in DataBase_Results: DataBase_Results.append(Details[0])
             DataBase_Results.sort()
+            ListBoxWindow(3)
     
     # Mod header info
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y))
-        Lab = 6
-        Ent = 6
+        Lab, Ent, Butt = 6, 6, 1
         Label_1_Text = 'Name of the hotfix file: '
         Label_2_Text = 'The actual mod name: '
         Label_3_Text = 'Author(s) name: '
@@ -76,9 +76,8 @@ def SelectionWindow(Func):
         Label_6_Text = 'The catagory in which this mods fits to: '
         Button_1_Text = 'Create Mod Header'
         def Button_1_Command(): return Get_Val("ModHeader")
-        Butt = 1
    
-    #This will make the user put hotfix information into a queue to be executed later
+    #Regular Hotfix Queue
     elif Func == "HotFix":
         SelectionWindow.title("Creating Regular Hot Fix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w*2, h, x, y/10))
@@ -94,20 +93,20 @@ def SelectionWindow(Func):
 
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
+        
         Button_2_Text = "Look at what your HotFix looks like"
         def Button_2_Command(): return Get_Val("Update Display")
+        
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name}\n,{attr_name},{prev_val_len},{prev_val},{new_val}')
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
         SelectionWindow.title("Find All References")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y))
-        Lab = 1
-        Ent = 1
-        Label_1_Text = 'Enter what you want to search for: \nMay take a minute or so to finish.'
+        Lab, Ent, Butt = 1, 1, 1
+        Label_1_Text = 'Enter what you want to search for: \nMay freeze on you. Do not worry, its just loading.'
         Button_1_Text = "Search"
         def Button_1_Command(): return Get_Val("Search")
-        Butt = 1
     
     # Labels
     if Lab >= 1: Label(Frame_Left, text=Label_1_Text)
@@ -164,10 +163,13 @@ if __name__ == "__main__":
     Button(text="Add To Mod Header Queue", command=lambda: SelectionWindow("ModHeader"))
     Button(text="Add To Regular HotFix Queue", command=lambda: SelectionWindow("HotFix"))
     Button(text="Add To Table HotFix Queue", state=DISABLED)
-    Button(text="Choose JSON File To Look Through", command=lambda: FileChoice())
+    
+    Button(text="JSON Information Formatter", command=lambda: FileChoice())
     Button(text="Database Search", command=lambda: SelectionWindow("Search"))
-    Button(text="Stored Information", command=lambda: List_Info())
+    Button(text="Useful Information", command=lambda: List_Info())
+    
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", command=lambda: Create_HotFix_File())
+    
     # Formats all my wigits the same way
     for c in sorted(MainWindow.children):
         MainWindow.children[c]["font"]=Stan_Font
