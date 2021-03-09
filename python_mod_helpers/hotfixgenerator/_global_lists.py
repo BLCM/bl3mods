@@ -29,6 +29,10 @@ DataBase_Results = []
 File_Results_List = []
 Search_List = []
 Queue_Order = []
+
+# These are for holding information to make comments
+Comment_str = []
+Header_lines_str = []
 ################################################################################################################################################################
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
@@ -73,8 +77,6 @@ def ListBoxWindow(List):
         ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
         for x in Map_Locations: Info_Display_Text_Box.insert('1.0', x + '\n')
     
-
-
 ################################################################################################################################################################
 # Not buttons
     # No longer buttons for these but these are called when you run the functions

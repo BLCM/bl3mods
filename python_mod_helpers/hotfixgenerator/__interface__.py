@@ -3,7 +3,7 @@
 from tkinter.constants import BOTTOM, LEFT, RIGHT
 from bl3data import BL3Data
 from __info_function__ import Create_HotFix_File, FileChoice
-from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results, Queue_Order
+from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results, Queue_Order, Comment_str, Header_lines_str
 from _global_lists import List_Info, ListBoxWindow
 ################################################################################################################################################################
 # Libraies
@@ -32,8 +32,8 @@ def SelectionWindow(Func):
     # These variables will determine how many things to add to the window as i need them
     Lab, Ent, Butt = 0, 0, 0
     # To be able to grab the entry feilds
-    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
-    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
+    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
     
     def Get_Val(Type): # Used to grab the values the then entry textvariables
         # Information about your mod
@@ -105,9 +105,14 @@ def SelectionWindow(Func):
         label : entry
         label : entry
         """
+
         # I will be adding custom things to the third panel for the hotfixes may make a function to call on these
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
-        # Button(Frame_Bottom, text = 'Click to add new line', command=).pack(side=BOTTOM)
+        Button(Frame_Bottom, text="Click to make a new line", command=lambda: Queue_Order.append("New line")).pack(side=BOTTOM)
+        
+        test = StringVar(Frame_Bottom)
+        Entry(Frame_Bottom, textvariable = test).pack(side=BOTTOM)
+        Button(Frame_Bottom, text="Fill entry above, then click me to add a comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(test.get() ) ) ).pack(side=BOTTOM)
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
