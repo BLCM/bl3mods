@@ -112,7 +112,7 @@ def SelectionWindow(Func):
         
         test = StringVar(Frame_Bottom)
         Entry(Frame_Bottom, textvariable = test).pack(side=BOTTOM)
-        Button(Frame_Bottom, text="Fill entry above, then click me to add a comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(test.get() ) ) ).pack(side=BOTTOM)
+        Button(Frame_Bottom, text="Fill entry below, then click to add a comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(test.get() ) ) ).pack(side=BOTTOM)
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
