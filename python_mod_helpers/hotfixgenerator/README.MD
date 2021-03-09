@@ -35,7 +35,7 @@ My recommendation is VScode.
 
 Even after doing the above, running the program will still not work, and here is why.
 
-Variables in bl3data.py: variables data_dir, ueserialize_path and function  _connect_db  will be unique for each person.
+Variables in bl3data.py: variable data_dir and function  _connect_db will be unique for each person.
 
 In the future, _connect_db could possible be set up so that it connects to a global Database that has all the information you would need, but for now it only connects to mine, and I only have access to it.
 
@@ -59,22 +59,7 @@ Instructions are based in Windows, so Linux and Mac users commands will be sligh
       3. If you find what I am referencing, be aware that even if you have those files, I am not fully sure that the program will work.
          1. I have not tested because I already bought the games and extracted the data.
          2. Futher more I am just lazy and don't want to test it out something that may not work
-2. ueserialize_path:
-   1. Getting the complete JWP can be confusing, so follow these instructions.
-   2. Download the JohnWickParse file from here: https://github.com/apocalyptech/JohnWickParse
-   3. Extract the file into a location of your choice.
-   4. Open up the command line (Windows Button, type cmd , hit enter)
-   5. Type cd <File/Location/Of/Extracted/JohnWickParse>, then hit enter.
-      1. EX: C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19
-   6. Click this link and run the .exe file: https://win.rustup.rs/
-   7. Once you run the .exe, go back to your command line and type cargo build.
-      1. This may take a minute, so be patient with it.
-   8. Once it is done building, get the file location where the debug file is.
-      1. C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19\target\debug
-   9. Get that file path and set 'ueserialize_path' as the debug file path.
-      1. Look for 'ueserialize_path': 'CHANGEME' on line 143 in bl3data.py, and make the CHANGEME  to the JohnWickParse file path
-      2. EX: ueserialize_path' : 'F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug''
-3. If something went wrong or you want to change the file locations, go to this file location:
+2. If something went wrong or you want to change the file locations, go to this file location:
    1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
    2. Open it and manually change the paths to the correct path.
 

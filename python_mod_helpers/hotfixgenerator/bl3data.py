@@ -140,7 +140,7 @@ class BL3Data(object):
             config = configparser.ConfigParser()
             config['filesystem'] = {
                 'data_dir': 'CHANGEME',
-                'ueserialize_path': 'CHANGEME',
+                'ueserialize_path': 'john-wick-parse.exe',
             }
             #not used with my version, but is used in the normal version
             config['mysql'] = {
