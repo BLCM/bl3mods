@@ -35,7 +35,7 @@ My recommendation is VScode.
 
 Even after doing the above, running the program will still not work, and here is why.
 
-Variables in bl3data.py: variables data_dir, ueserialize_path and function  _connect_db  will be unique for each person.
+Variables in bl3data.py: variable data_dir, ueserialize_path and function  _connect_db will be unique for each person.
 
 In the future, _connect_db could possible be set up so that it connects to a global Database that has all the information you would need, but for now it only connects to mine, and I only have access to it.
 
@@ -50,30 +50,16 @@ Instructions are based in Windows, so Linux and Mac users commands will be sligh
 1. data_dir : **Note:** You will need a copy of BL3. Duh
    1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
       1. These instructions are extremly useful, and do a better job of explaining than me.
-   2. Once you have extracted all the data, set 'data_dir' as the extracted_new file path.
-      1. Look for ''data_dir'': ''CHANGEME' on line 142 in bl3data.py, and make the CHANGEME into the extracted_new file path
-      2. EX: "data_dir": ''F:/Users/Name/Desktop/extracted_new''
+   2. Once you have extracted all the data, place the extracted_new file inside the hotfixgenerator folder, the program will do the rest
    3. If you do not own the game but still want to use this program(?), there is an alternative way to get the serialized files, but I am unsure about putting in the link. I do not know if it is ok to get the serialized game files without actually owning it. If it turns out it is ok, I will put in the link in, otherwise I will remove this section talking about it.
       1. **NO I AM NOT TALKING ABOUT PIRATING, DO NOT PIRATE THE GAME PLEASE**
       2. My hint is to look into the BL3 Nexus page.
       3. If you find what I am referencing, be aware that even if you have those files, I am not fully sure that the program will work.
          1. I have not tested because I already bought the games and extracted the data.
          2. Futher more I am just lazy and don't want to test it out something that may not work
-2. ueserialize_path:
-   1. Getting the complete JWP can be confusing, so follow these instructions.
-   2. Download the JohnWickParse file from here: https://github.com/apocalyptech/JohnWickParse
-   3. Extract the file into a location of your choice.
-   4. Open up the command line (Windows Button, type cmd , hit enter)
-   5. Type cd <File/Location/Of/Extracted/JohnWickParse>, then hit enter.
-      1. EX: C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19
-   6. Click this link and run the .exe file: https://win.rustup.rs/
-   7. Once you run the .exe, go back to your command line and type cargo build.
-      1. This may take a minute, so be patient with it.
-   8. Once it is done building, get the file location where the debug file is.
-      1. C:\Users\Name\Downloads\JohnWickParse-19\JohnWickParse-19\target\debug
-   9. Get that file path and set 'ueserialize_path' as the debug file path.
-      1. Look for 'ueserialize_path': 'CHANGEME' on line 143 in bl3data.py, and make the CHANGEME  to the JohnWickParse file path
-      2. EX: ueserialize_path' : 'F:/Users/Name/Desktop/extracted_new/JohnWickParse-indexed_arrays/target/debug''
+2. ueserialize_path
+   1. Go and download this .exe from this link: https://github.com/apocalyptech/JohnWickParse/releases/download/v19/john-wick-parse.exe
+   2. Once you have done that, grab the .exe and move it inside the hotfixgenerator file. The program should take care of the rest.
 3. If something went wrong or you want to change the file locations, go to this file location:
    1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
    2. Open it and manually change the paths to the correct path.

@@ -139,8 +139,8 @@ class BL3Data(object):
         if not os.path.exists(self.config_file):
             config = configparser.ConfigParser()
             config['filesystem'] = {
-                'data_dir': 'CHANGEME',
-                'ueserialize_path': 'CHANGEME',
+                'data_dir': 'extracted_new',
+                'ueserialize_path': 'john-wick-parse.exe',
             }
             #not used with my version, but is used in the normal version
             config['mysql'] = {
