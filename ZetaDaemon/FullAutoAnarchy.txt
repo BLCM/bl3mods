@@ -1,0 +1,1 @@
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/Parts/Part_SG_TED_Barrel_Anarchy.Part_SG_TED_Barrel_Anarchy:AspectList_WeaponUseModeAspectData.WeaponUseComponent_WeaponFireProjectileComponent,AutomaticBurstCount,0,,(BaseValue=0)
