@@ -16,7 +16,9 @@ from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, 
 from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
-from tkinter.filedialog import askopenfilename
+from tkinter.filedialog import askopenfilename, asksaveasfilename
+from tkinter import Tk, Frame, Button, Text
+from tkinter import END, RAISED
 from flatten_json import flatten
 import os
 #Global variables
@@ -128,5 +130,49 @@ def File_Results_Window(True_Path):
 
 
 ################################################################################################################################################################
-# This area be used If I have any other functions I want to put in later
+# Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
+def openBL3Hotfixfile():
+    def open_file():
+        """Open a file for editing."""
+        filepath = askopenfilename(
+            filetypes=[("Hot Fix File", "*.bl3hotfix")]
+        )
+        if not filepath:
+            return
+        txt_edit.delete(1.0, END)
+        with open(filepath, "r") as input_file:
+            text = input_file.read()
+            txt_edit.insert(END, text)
+        window.title(f"Text Editor Application - {filepath}")
+
+    def save_file():
+        """Save the current file as a new file."""
+        filepath = asksaveasfilename(
+            defaultextension="txt",
+            filetypes=[("Hot Fix File", "*.bl3hotfix")],
+        )
+        if not filepath:
+            return
+        with open(filepath, "w") as output_file:
+            text = txt_edit.get(1.0, END)
+            output_file.write(text)
+        window.title(f"Text Editor Application - {filepath}")
+
+    window = Tk()
+    window.title("Text Editor Application")
+    window.rowconfigure(0, minsize=800, weight=1)
+    window.columnconfigure(1, minsize=800, weight=1)
+
+    txt_edit = Text(window)
+    fr_buttons = Frame(window, relief= RAISED, bd=2)
+    btn_open = Button(fr_buttons, text="Open", command=open_file)
+    btn_save = Button(fr_buttons, text="Save As...", command=save_file)
+
+    btn_open.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
+    btn_save.grid(row=1, column=0, sticky="ew", padx=5)
+
+    fr_buttons.grid(row=0, column=0, sticky="ns")
+    txt_edit.grid(row=0, column=1, sticky="nsew")
+
+    window.mainloop()
 ################################################################################################################################################################
