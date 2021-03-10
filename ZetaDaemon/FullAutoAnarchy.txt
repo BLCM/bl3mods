@@ -1,1 +1,8 @@
+### Name: Full Auto Anarchy
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: gear-shotguns
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/Parts/Part_SG_TED_Barrel_Anarchy.Part_SG_TED_Barrel_Anarchy:AspectList_WeaponUseModeAspectData.WeaponUseComponent_WeaponFireProjectileComponent,AutomaticBurstCount,0,,(BaseValue=0)
