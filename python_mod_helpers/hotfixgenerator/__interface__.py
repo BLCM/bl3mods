@@ -13,7 +13,7 @@ from tkinter import DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
-Stan_Font = ("Times New Roman", 12)
+Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 12)
 # Stan_Font = ("Courier New", 12)
 
