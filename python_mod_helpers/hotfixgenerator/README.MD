@@ -50,12 +50,7 @@ Instructions are based in Windows, so Linux and Mac users commands will be sligh
    1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
       1. These instructions are extremly useful, and do a better job of explaining than me.
    2. Once you have extracted all the data, place the extracted_new file inside the hotfixgenerator folder, the program will do the rest
-   3. If you do not own the game but still want to use this program(?), there is an alternative way to get the serialized files, but I am unsure about putting in the link. I do not know if it is ok to get the serialized game files without actually owning it. If it turns out it is ok, I will put in the link in, otherwise I will remove this section talking about it.
-      1. **NO I AM NOT TALKING ABOUT PIRATING, DO NOT PIRATE THE GAME PLEASE**
-      2. My hint is to look into the BL3 Nexus page.
-      3. If you find what I am referencing, be aware that even if you have those files, I am not fully sure that the program will work.
-         1. I have not tested because I already bought the games and extracted the data.
-         2. Futher more I am just lazy and don't want to test it out something that may not work
+   3. If you are unable to follow these steps, go to this link and download the seralized files. **NOTE**: this will be a large download: https://www.nexusmods.com/borderlands3/mods/247
 2. ueserialize_path
 
    1. Go and download this .exe from this link: https://github.com/apocalyptech/JohnWickParse/releases/download/v19/john-wick-parse.exe
