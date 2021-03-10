@@ -1,4 +1,5 @@
 bl3data
+bl3save
 bl3hotfixmod
 extracted
 *.csv
@@ -11,3 +12,5 @@ extracted
 *.png
 *.svg
 dlc3_tech.out
+bl3refs.sqlite3.zip
+bl3refs.sqlite3

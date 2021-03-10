@@ -24,7 +24,7 @@ import re
 import json
 import glob
 import appdirs
-import MySQLdb
+import sqlite3
 import subprocess
 import configparser
 
@@ -48,32 +48,16 @@ class BL3Data(object):
            to a JSON object.  This is what's used to process the extracted data into
            a format we can work with, on an on-demand basis.
 
-           I'm using a custom fork of this which adds some versioning information to
-           the generated JSON, so that I can leave serializations on-disk but "force"
-           them to re-generate when there are patches, in case the data's been updated.
-           (My fork also includes various other bits of information which are useful
-           to a would-be BL3 modder, like it prints out the indexes of all the arrays,
-           etc, and puts in some extra info when objects reference other exports within
-           the object.)
+           I highly recommend you use my own JWP fork, available here:
+           https://github.com/apocalyptech/JohnWickParse/releases
 
-           If you don't use my fork, you'll end up serializing the same data over and
-           over.  If you use the "vanilla" JWP version, you'll probably want to search
-           for `BL3Data.data_version` down in the code, in `get_data()`, and remove
-           that check from the code.  (And then manually clear out the `.json` files
-           when you suspect that an object needs re-serialization.)  Otherwise, just
-           compile up my fork/branch and use that.  In addition to the serialization
-           versioning info, it includes other fixes which allows a wider variety of
-           data to be serialized.
+    The "database" section contains the single parameter "dbfile", which should be
+    the path to the SQLite BL3 reference data, available at:
 
-           Vanilla JWP: https://github.com/SirWaddles/JohnWickParse
-           My fork: https://github.com/apocalyptech/JohnWickParse
+        http://apocalyptech.com/games/bl3-refs/
 
-    The "database" section contains the values "host", "db", "user", and "passwd".
-    These define the connection parameters to a MySQL database populated with BL3
-    reference data, which can be found at: http://apocalyptech.com/games/bl3-refs/
     This is only required if you want to use the `get_refs_to()` or `get_refs_from()`
-    methods of this class, and BL3Data will not attempt any database connections
-    until either of those methods are called.
+    methods of this class.
     """
 
     # Data serialization version requirements
@@ -141,11 +125,8 @@ class BL3Data(object):
                     'data_dir': 'CHANGEME',
                     'ueserialize_path': 'CHANGEME',
                     }
-            config['mysql'] = {
-                    'host': 'CHANGEME',
-                    'db': 'CHANGEME',
-                    'user': 'CHANGEME',
-                    'passwd': 'CHANGEME',
+            config['database'] = {
+                    'dbfile': 'CHANGEME',
                     }
             with open(self.config_file, 'w') as odf:
                 config.write(odf)
@@ -156,6 +137,16 @@ class BL3Data(object):
         self.config = configparser.ConfigParser()
         self.config.read(self.config_file)
         self._enforce_config_section('filesystem')
+
+        # Transition: our old 'mysql' category is now 'database', using SQLite
+        if 'mysql' in self.config and 'database' not in self.config:
+            self.config['database'] = {
+                    'dbfile': 'CHANGEME',
+                    }
+            self.config['mysql']['notice'] = 'This mysql section is no longer used, in favor of the database section'
+            with open(self.config_file, 'w') as odf:
+                self.config.write(odf)
+            print('Updated config file {} with new database section'.format(self.config_file))
 
         # Convenience var
         self.data_dir = self.config['filesystem']['data_dir']
@@ -183,15 +174,14 @@ class BL3Data(object):
     def _connect_db(self):
         """
         Attempts to connect to the refs database, if we haven't already done so.
+        This used to connect to a MySQL/MariaDB database but we've since switched
+        to using SQLite.
         """
         if self.db is None:
-            self._enforce_config_section('mysql')
-            self.db = MySQLdb.connect(
-                    user=self.config['mysql']['user'],
-                    passwd=self.config['mysql']['passwd'],
-                    host=self.config['mysql']['host'],
-                    db=self.config['mysql']['db'],
-                    )
+            self._enforce_config_section('database')
+            if not os.path.exists(self.config['database']['dbfile']):
+                raise RuntimeError('Database file not found: {}'.format(self.config['database']['dbfile']))
+            self.db = sqlite3.connect(self.config['database']['dbfile'])
             self.curs = self.db.cursor()
 
     def get_data(self, obj_name):
@@ -311,7 +301,7 @@ class BL3Data(object):
         self.curs.execute("""select o2.name
                 from bl3object o, bl3refs r, bl3object o2
                 where
-                    o.name=%s
+                    o.name=?
                     and o.id=r.to_obj
                     and o2.id=r.from_obj
                 """, (obj_name,))
@@ -336,7 +326,7 @@ class BL3Data(object):
         self.curs.execute("""select o2.name
                 from bl3object o, bl3refs r, bl3object o2
                 where
-                    o.name=%s
+                    o.name=?
                     and o.id=r.from_obj
                     and o2.id=r.to_obj
                 """, (obj_name,))
@@ -358,7 +348,7 @@ class BL3Data(object):
         database connection to the refs database.
         """
         self._connect_db()
-        self.curs.execute('select name from bl3object where name like %s',
+        self.curs.execute('select name from bl3object where name like ?',
                 (f'%/{short_name}',))
         return [row[0] for row in self.curs.fetchall()]
 

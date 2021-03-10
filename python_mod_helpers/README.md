@@ -216,25 +216,26 @@ programmatic access to BL3 data, so long as you have it set up properly.  There
 are two data sources the package can draw from:
 
 1. Extracted BL3 data, using the technique [described by the BLCMods wiki](https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data#extracting-raw-datafiles).
-2. [The BL3 References database](http://apocalyptech.com/games/bl3-refs/) - the
-   online version links to a MySQL/MariaDB database dump, which you'll have to
-   import into your own MySQL/MariaDB database in order to use.  Alternatively,
-   you can use [my refs-creation script](https://github.com/apocalyptech/bl3hotfixmodding/blob/master/dataprocessing/populate_refs_db.py)
+2. [The BL3 References database](http://apocalyptech.com/games/bl3-refs/) - 
+   simply download the SQLite version of the database and unzip it somewhere
+   on your hard drive.  A MySQL/MariaDB dump is also available, or you could
+   use [my refs-creation script](https://github.com/apocalyptech/bl3hotfixmodding/blob/master/dataprocessing/populate_refs_db.py)
    to generate the database from your already-extracted datafiles, though
    grabbing the provided SQL dump will almost certainly be quicker.
 
 Of the two data sources, the first is required.  In order for `bl3data` to 
-actually make use of the data, you also need to have a [JohnWickParse](https://github.com/SirWaddles/JohnWickParse)
-binary available to do data serialization, and specifically you'll probably
-want to use [my own JWP fork](https://github.com/apocalyptech/JohnWickParse),
-which includes some versioning information which `bl3data` uses to know if
-it should re-serialize data (along with other fixes which lets more BL3
-data be serialized).  You can use the main JWP project instead, but
-the data library will re-serialize the data objects every time you run,
-rather than intelligently using the previous data if possible.
+actually make use of the data, you also need to have a
+[JohnWickParse](https://github.com/apocalyptech/JohnWickParse/releases)
+binary available to do data serialization (the version linked to here is my
+own fork which is optimized for BL3 usage).
 
 The refs database is only needed if you want to use the `get_refs_to()` or
 `get_refs_from()` methods, to look up references betwen objects.
+
+When you first run any methods using `bl3data`, the app will create a config file
+for you and tell you the path name.  You'll need to fill in the information
+requested in the `filesystem` section to use `bl3data`.  The `database` section
+is where you can specify the optional path to the SQLite references database.
 
 As for usage, you'll probably find it most useful to just grep through this
 project for examples.  The `dataprocessing` dir uses the library nearly everywhere,
