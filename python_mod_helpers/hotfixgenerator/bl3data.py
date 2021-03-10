@@ -28,7 +28,7 @@ import sqlite3
 import subprocess
 import configparser
 
-from bl3hotfixmod.bl3hotfixmod import BVC
+from bl3hotfixmod import BVC
 
 class BL3Data(object):
     """
@@ -122,11 +122,11 @@ class BL3Data(object):
         if not os.path.exists(self.config_file):
             config = configparser.ConfigParser()
             config['filesystem'] = {
-                    'data_dir': 'CHANGEME',
-                    'ueserialize_path': 'CHANGEME',
+                    'data_dir': 'extracted_new',
+                    'ueserialize_path': 'john-wick-parse.exe',
                     }
             config['database'] = {
-                    'dbfile': 'CHANGEME',
+                    'dbfile': 'bl3refs.sqlite3',
                     }
             with open(self.config_file, 'w') as odf:
                 config.write(odf)
