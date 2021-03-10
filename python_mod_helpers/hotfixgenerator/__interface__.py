@@ -19,6 +19,10 @@ Stan_Font = ("Times New Roman", 10)
 
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
+# test = data.get_refs_from_data("valdof")
+# for info in test:
+#     print(info)
+
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()

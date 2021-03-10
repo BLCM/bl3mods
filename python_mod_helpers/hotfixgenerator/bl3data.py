@@ -323,13 +323,15 @@ class BL3Data(object):
         database.
         """
         self._connect_db()
-        self.curs.execute("""select o2.name
+        self.curs.execute("""select o.name
                 from bl3object o, bl3refs r, bl3object o2
                 where
-                    o.name=?
+                    o.name like '%{}'
                     and o.id=r.from_obj
                     and o2.id=r.to_obj
-                """, (obj_name,))
+                """.format(obj_name))
+
+
         return [row[0] for row in self.curs.fetchall()]
 
     def get_refs_from_data(self, obj_name):
