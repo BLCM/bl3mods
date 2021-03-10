@@ -1,0 +1,24 @@
+### Name: More Max Ammo
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: cheat
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+#Shotgun ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Shotgun.Table_SDU_Shotgun,Lv10,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_Shotgun_Max.Att_Ammo_Shotgun_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=600)
+
+#Sniper Ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SniperRifle.Table_SDU_SniperRifle,Lv13,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_SniperRifle_Max.Att_Ammo_SniperRifle_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=600)
+
+#Pistol Ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Pistol.Table_SDU_Pistol,Lv10,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_Pistol_Max.Att_Ammo_Pistol_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=6000)
+
+#SMG Ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_SMG.Table_SDU_SMG,Lv10,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_SMG_Max.Att_Ammo_SMG_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=6000)
+
+#Assault Rifle Ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_AssaultRifle.Table_SDU_AssaultRifle,Lv10,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_AssaultRifle_Max.Att_Ammo_AssaultRifle_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=6000)
+
+#Heavy Ammo
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Heavy.Table_SDU_Heavy,Lv10,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_Heavy_Max.Att_Ammo_Heavy_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=60)
