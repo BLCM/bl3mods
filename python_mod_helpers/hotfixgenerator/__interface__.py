@@ -1,6 +1,6 @@
 # Going to try to import only what I need to save on space and calculation time
 # My files
-from tkinter.constants import BOTTOM, LEFT, RIGHT
+from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
 from __info_function__ import Create_HotFix_File, FileChoice
 from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results, Queue_Order, Comment_str, Header_lines_str
@@ -26,11 +26,12 @@ def SelectionWindow(Func):
     Frame_Left = Frame(SelectionWindow,borderwidth = 2)
     Frame_Right = Frame(SelectionWindow,borderwidth = 2)
     Frame_Bottom = Frame(SelectionWindow,borderwidth = 2)
+
     # Default values for window sizes for all, can manipulate inside the functions
     w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
     x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     # These variables will determine how many things to add to the window as i need them
-    Lab, Ent, Butt = 0, 0, 0
+    Lab, Ent, Butt, hotfixoptions = 0, 0, 0, 0
     # To be able to grab the entry feilds
     Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
     Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
@@ -96,23 +97,9 @@ def SelectionWindow(Func):
         Button_1_Text = "Add This Regular Hotfix To The Queue"
         def Button_1_Command(): return Get_Val("HotFix")
         Button_2_Text = "Look at what your HotFix looks like"
-        def Button_2_Command(): return Get_Val("Update Display")        
-        #Unique to this as I do not know how to do it other wise
-        
-        """
-        label : entry
-        label : entry
-        label : entry
-        label : entry
-        """
-
-        # I will be adding custom things to the third panel for the hotfixes may make a function to call on these
+        def Button_2_Command(): return Get_Val("Update Display") 
         HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
-        Button(Frame_Bottom, text="Click to make a new line", command=lambda: Queue_Order.append("New line")).pack(side=BOTTOM)
-        
-        test = StringVar(Frame_Bottom)
-        Entry(Frame_Bottom, textvariable = test).pack(side=BOTTOM)
-        Button(Frame_Bottom, text="Fill entry below, then click to add a comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(test.get() ) ) ).pack(side=BOTTOM)
+        hotfixoptions = 1
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
@@ -135,7 +122,7 @@ def SelectionWindow(Func):
     
     for c in sorted(Frame_Left.children):
         Frame_Left.children[c]["font"] = Stan_Font
-        Frame_Left.children[c].pack(expand=True, fill="both")
+        Frame_Left.children[c].pack(fill="both")
 
     # Entries
     if Ent >= 1: Entry(Frame_Right, textvariable=Entry_1)
@@ -150,19 +137,28 @@ def SelectionWindow(Func):
     for c in sorted(Frame_Right.children):
         Frame_Right.children[c]["width"]= 80
         Frame_Right.children[c]["font"] = Stan_Font
-        Frame_Right.children[c].pack(expand=True, fill="both")
+        Frame_Right.children[c].pack(fill="both")
 
     # Buttons
     if Butt >= 1: Button(Frame_Bottom, text=Button_1_Text, command=Button_1_Command)
     if Butt >= 2: Button(Frame_Bottom, text=Button_2_Text, command=Button_2_Command)
     
+    #These buttons are for the hotfix options, so that they can present more options to the users
     for c in sorted(Frame_Bottom.children):
         Frame_Bottom.children[c]["font"] = Stan_Font
-        Frame_Bottom.children[c].pack(expand=True, fill="x")
+        Frame_Bottom.children[c].pack(fill="both")
     
-    Frame_Left.grid(column=0)
-    Frame_Right.grid(column=1, row=0)
-    Frame_Bottom.grid(row=1)
+    if hotfixoptions == 1:
+        Button(Frame_Bottom, text="Click to make a new line", command=lambda: Queue_Order.append("New line")).pack(fill="both")
+        Entry(Frame_Bottom, textvariable = StringVar(Frame_Bottom)).pack(fill="both")
+        Button(Frame_Bottom, text="Fill entry above, then click to add a comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(StringVar(Frame_Bottom).get()))).pack(fill="both")
+    
+    Frame_Left.grid( row = 0, column = 0)
+    Frame_Right.grid(row = 0, column = 1)
+    Frame_Bottom.grid(row = 1)
+    # Frame_Left.pack(side=LEFT, fill="both")
+    # Frame_Right.pack(side=RIGHT, fill="both")
+    # Frame_Bottom.pack(side=BOTTOM, fill="both")
 ################################################################################################################################################################
 # Main menu.
 if __name__ == "__main__":
