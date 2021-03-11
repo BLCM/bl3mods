@@ -7,6 +7,7 @@ See the individual mod folders for full READMEs.
   times (has various exceptions).
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
+- **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible ECHO Logs** - Makes the ECHO log loot bars (and, incidentally,
   mission items) far more visible
 - **No Reload Notification** - Removes the "reload" notification when you're
