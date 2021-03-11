@@ -35,9 +35,7 @@ My recommendation is VScode.
 
 Even after doing the above, running the program will still not work, and here is why.
 
-Variables in bl3data.py: variable data_dir, ueserialize_path and function  _connect_db will be unique for each person.
-
-In the future, _connect_db could possible be set up so that it connects to a global Database that has all the information you would need, but for now it only connects to mine, and I only have access to it.
+Variables in bl3data.py: variable data_dir, ueserialize_path and function  _connect_db. This is because I can not include them as they are external products and can not included them, but i will describe hot to get them and use them
 
 ## Instructions
 
@@ -48,33 +46,25 @@ Instructions are based in Windows, so Linux and Mac users commands will be sligh
 **NOTE:** You will need to be able to open bl3data.py to edit variables.
 
 1. data_dir : **Note:** You will need a copy of BL3. Duh
+
    1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
       1. These instructions are extremly useful, and do a better job of explaining than me.
    2. Once you have extracted all the data, place the extracted_new file inside the hotfixgenerator folder, the program will do the rest
-   3. If you do not own the game but still want to use this program(?), there is an alternative way to get the serialized files, but I am unsure about putting in the link. I do not know if it is ok to get the serialized game files without actually owning it. If it turns out it is ok, I will put in the link in, otherwise I will remove this section talking about it.
-      1. **NO I AM NOT TALKING ABOUT PIRATING, DO NOT PIRATE THE GAME PLEASE**
-      2. My hint is to look into the BL3 Nexus page.
-      3. If you find what I am referencing, be aware that even if you have those files, I am not fully sure that the program will work.
-         1. I have not tested because I already bought the games and extracted the data.
-         2. Futher more I am just lazy and don't want to test it out something that may not work
+   3. If you are unable to follow these steps, go to this link and download the seralized files
+      1. These may not be the most up to date version of the game when you get them, so just be aware.
+      2. **NOTE**: this will be a large download: https://www.nexusmods.com/borderlands3/mods/247
 2. ueserialize_path
+
    1. Go and download this .exe from this link: https://github.com/apocalyptech/JohnWickParse/releases/download/v19/john-wick-parse.exe
    2. Once you have done that, grab the .exe and move it inside the hotfixgenerator file. The program should take care of the rest.
-3. If something went wrong or you want to change the file locations, go to this file location:
+3. _connect_db
+
+   1. Go to think link and download this file: https://apocalyptech.com/games/bl3-refs/bl3refs.sqlite3.zip
+   2. Extract the file and but the bl3refs.sqlite3 file inside the hotfixgenerator. The program should do the rest.
+4. If something went wrong or you want to change the file locations, go to this file location:
+
    1. C:\Users\Name\AppData\Local\bl3data\bl3data\bl3data.ini (Example)
    2. Open it and manually change the paths to the correct path.
-
-This is an "Optional" step, as you do not technically need a database to make the program, however, you will be missing out on some features that this tool has.
-
-1. Data Base connections.
-   1. In bl3data.py, I have modified the _connect_db function to use pyodbc connections.
-   2. If you have a SQL server (SQLEXPRESS for example) and know how to insert information, then you would be able to use your own tables and database to pull information from.
-      1. This is what I have done, as I already had a Database up.
-      2. You may change the _connect_db section to whatever python DB connector you want, but this is what I have personally done.
-   3. You will need apocalyptech MariaDB data dump, Link in Credits.
-      1. I have left my formatting files in the 'Extra_Files' folder.
-      2. **NOTE**: I did not comment the formatted files very well. Reason being that it was a mach program I made to ease my pain. You will more than likely encounter errors, but I believe in you.
-   4. You will also want a SQL formatter. Link to one in the Credits.
 
 # CREDITS
 
@@ -86,6 +76,5 @@ List of resources that have helped me:
   - GitHub: https://github.com/apocalyptech
   - Specific repository I pulled from: https://github.com/BLCM/bl3mods/tree/master/python_mod_helpers
   - SQL File and Object Reference: https://apocalyptech.com/games/bl3-refs/
-- Site that helped format the SQL file: https://www.jooq.org/translate/
 - BL3 Redux Team: They inspired me to try and make this because I saw all the changes they did and what you can do with this game.
   - Link to the hotfix: https://github.com/BLCM/bl3mods/tree/master/EpicNNG

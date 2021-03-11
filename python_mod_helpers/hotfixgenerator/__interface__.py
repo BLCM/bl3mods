@@ -2,7 +2,7 @@
 # My files
 from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
-from __info_function__ import Create_HotFix_File, FileChoice
+from __info_function__ import Create_HotFix_File, FileChoice, openBL3Hotfixfile
 from _global_lists import Mod_Header, Reg_hotfix, DataBase_Results, Queue_Order, Comment_str, Header_lines_str
 from _global_lists import List_Info, ListBoxWindow
 ################################################################################################################################################################
@@ -19,6 +19,10 @@ Stan_Font = ("Times New Roman", 10)
 
 ################################################################################################################################################################
 #Creates a new window for the user to see and for the commands to be used
+# test = data.get_refs_from_data("valdof")
+# for info in test:
+#     print(info)
+
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
@@ -177,6 +181,7 @@ if __name__ == "__main__":
     
     Button(text="JSON Information Formatter", command=lambda: FileChoice())
     Button(text="Database Search", command=lambda: SelectionWindow("Search"))
+    Button(text="Open your .bl3hotfix file", command=lambda: openBL3Hotfixfile())
     Button(text="Useful Information", command=lambda: List_Info())
     
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", command=lambda: Create_HotFix_File())
