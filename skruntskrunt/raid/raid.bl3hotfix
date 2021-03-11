@@ -29,17 +29,17 @@
 # [X] One punch drops?
 # [X] Trufflemunch drops
 # [X] Lavender Crawly seemed broken?
-# [ ] Multiplayer demoskagon weird
-# [ ] Buff Chupab
-# [ ] Eista spawns loot in a meaningful way
-# [ ] Too strong militant near one punch
+# [X] Multiplayer demoskagon weird
 # [X] add kratch
-# [ ] Rax
-# [ ] Max
-# [ ] El Dragon
-# [ ] Power Rangers
-# [ ] Psycho Billies
-# [ ] Katagawa Ball
+# [-] Buff Chupab
+# [-] Rax
+# [-] Max
+# [-] El Dragon
+# [-] Power Rangers
+# [-] Psycho Billies
+# [-] Katagawa Ball
+# [ ] Too strong militant near one punch
+# [ ] Eista spawns loot in a meaningful way
 
 # Graveward
 SparkCharacterLoadedEntry,(1,2,0,BPChar_EdenBoss),/Game/GameData/Loot/ItemPools/Table_LegendarySpecificLootOdds.Table_LegendarySpecificLootOdds,Graveward,LegendaryDropChance_Playthrough1_48_4189D9DA42C2B912FC25209E8C353A26,0,,1
