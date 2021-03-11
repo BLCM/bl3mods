@@ -42,25 +42,21 @@ Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Courier New", 10)
 def ListBoxWindow(List):
     ListWindow = Tk()
-    w = 500
-    h = 350
-    ws = ListWindow.winfo_screenwidth()
-    hs = ListWindow.winfo_screenheight()
-    x = (ws/2) - (w/2)
-    y = (hs/2) - (h/2)
+    w,h = 500, 350
+    ws, hs = ListWindow.winfo_screenwidth(), ListWindow.winfo_screenheight()
+    x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
-    Fram_Of_Reference = Frame(ListWindow) 
     
+    Fram_Of_Reference = Frame(ListWindow) 
+    Fram_Of_Reference.pack(side=TOP)    
     Label(Fram_Of_Reference,text='Text to find:',font=Stan_Font).pack(side=LEFT)
     Find_String = Entry(Fram_Of_Reference)
     Find_String.pack(side=LEFT, fill=BOTH, expand=1)
-    Find_String.focus_set()
+    Find_String.focus_set()    
+    Scroll_Bar = Scrollbar(ListWindow)   
+    Scroll_Bar.pack( side = RIGHT, fill = Y )     
     Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=Stan_Font)
     Find_Text_Button.pack(side=RIGHT)  
-    Fram_Of_Reference.pack(side=TOP)
-    Scroll_Bar = Scrollbar(ListWindow)
-    Scroll_Bar.pack( side = RIGHT, fill = Y )
-
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0',END)
 ################################################################################################################################################################
