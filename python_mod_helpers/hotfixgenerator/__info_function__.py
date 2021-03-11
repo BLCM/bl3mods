@@ -10,14 +10,15 @@ so you have to manually enter all data in order for it to work, and even then my
 BL3 is still in its modding infancy so if this program becomes obsolete in the future, well I still found it a great experience
 making this and I hope BL3 live as long as BL2 did, as they are tied for some of my favorite games of all times
 """
+from re import split
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, Queue_Order, Comment_str, Header_lines_str
+from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, Queue_Order, Comment_str, Header_lines_str, Search_List
 from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
-from tkinter.filedialog import askopenfilename, asksaveasfilename
-from tkinter import Tk, Frame, Button, Text
+from tkinter.filedialog import askopenfilename, asksaveasfilename, test
+from tkinter import Tk, Frame, Button, Text, Entry
 from tkinter import END, RAISED
 from flatten_json import flatten
 import os
@@ -140,6 +141,7 @@ def openBL3Hotfixfile():
         if not filepath:
             return
         txt_edit.delete(1.0, END)
+        hold_path = filepath
         with open(filepath, "r") as input_file:
             text = input_file.read()
             txt_edit.insert(END, text)
@@ -157,20 +159,41 @@ def openBL3Hotfixfile():
             text = txt_edit.get(1.0, END)
             output_file.write(text)
         window.title(f"Text Editor Application - {filepath}")
+    
+    def find():
+        i = 0
+        content_list = []
+        txt_edit.tag_remove('found', '1.0', END)
+        s = Find_String.get()
+        hold = txt_edit.get("1.0","end")
+        content_list = hold.split("\n")
+        
+        if len(Search_List) > 0:
+            Search_List.clear() # Clears out the list so we don't geta data contamination
+        while i < len(content_list):
+            if s in content_list[i]:
+                Search_List.append(content_list[i])
+            i +=1
+        ListBoxWindow(5)        
 
     window = Tk()
     window.title("Text Editor Application")
     window.rowconfigure(0, minsize=800, weight=1)
     window.columnconfigure(1, minsize=800, weight=1)
 
-    txt_edit = Text(window)
     fr_buttons = Frame(window, relief= RAISED, bd=2)
+    txt_edit = Text(window)    
+    
     btn_open = Button(fr_buttons, text="Open", command=open_file)
     btn_save = Button(fr_buttons, text="Save As...", command=save_file)
-
+    Find_Text_Button = Button(fr_buttons, text='Find', command=find)
+    Find_String = Entry(fr_buttons)
+    
     btn_open.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
     btn_save.grid(row=1, column=0, sticky="ew", padx=5)
-
+    Find_String.grid(row=2, column=0, sticky="ew", padx=5)
+    Find_Text_Button.grid(row=3, column=0, sticky="ew", padx=5)
+    
     fr_buttons.grid(row=0, column=0, sticky="ns")
     txt_edit.grid(row=0, column=1, sticky="nsew")
 

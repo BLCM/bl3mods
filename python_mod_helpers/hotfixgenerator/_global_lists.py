@@ -37,9 +37,9 @@ Header_lines_str = []
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
 # fonts.sort()
-Stan_Font = ("Times New Roman", 10)
+# Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 12)
-# Stan_Font = ("Courier New", 12)
+Stan_Font = ("Courier New", 10)
 def ListBoxWindow(List):
     ListWindow = Tk()
     w = 500
@@ -50,16 +50,14 @@ def ListBoxWindow(List):
     y = (hs/2) - (h/2)
     # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     Fram_Of_Reference = Frame(ListWindow) 
-    Label(Fram_Of_Reference,text='Text to find:',font=Stan_Font).pack(side=LEFT)
     
+    Label(Fram_Of_Reference,text='Text to find:',font=Stan_Font).pack(side=LEFT)
     Find_String = Entry(Fram_Of_Reference)
     Find_String.pack(side=LEFT, fill=BOTH, expand=1)
     Find_String.focus_set()
-    
-    Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=Stan_Font)   
+    Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=Stan_Font)
     Find_Text_Button.pack(side=RIGHT)  
     Fram_Of_Reference.pack(side=TOP)
-
     Scroll_Bar = Scrollbar(ListWindow)
     Scroll_Bar.pack( side = RIGHT, fill = Y )
 
