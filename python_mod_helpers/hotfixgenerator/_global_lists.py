@@ -37,9 +37,9 @@ Header_lines_str = []
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
 # fonts.sort()
-# Stan_Font = ("Times New Roman", 10)
+Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 12)
-Stan_Font = ("Courier New", 10)
+# Stan_Font = ("Courier New", 10)
 def ListBoxWindow(List):
     ListWindow = Tk()
     w = 500
@@ -103,39 +103,23 @@ def ListBoxWindow(List):
     
     Scroll_Bar.config(command = Info_Display_Text_Box.yview)
     Info_Display_Text_Box.pack(side=BOTTOM)    
-    # Reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
-    # The function we need to find and highlight text
+    # based on: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     def find():
         i = 0
+        content_list = []
         Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
         if len(Search_List) > 0:
             Search_List.clear() # Clears out the list so we don't geta data contamination
         
-        if List == 1:
-            while i < len(Patch_Types):
-                if s in Patch_Types[i]:
-                    Search_List.append(Patch_Types[i])
-                i += 1
+        hold = Info_Display_Text_Box.get("1.0","end")
+        content_list = hold.split("\n")
         
-        elif List == 2:
-            while i < len(Map_Locations):
-                if s in Map_Locations[i]:
-                    Search_List.append(Map_Locations[i])
-                i += 1
+        while i < len(content_list):
+            if s in content_list[i]:
+                Search_List.append(content_list[i])
+            i +=1
         
-        elif List == 3:
-            while i < len(DataBase_Results):
-                if s in DataBase_Results[i]:
-                    Search_List.append(DataBase_Results[i])
-                i += 1
-        
-        elif List == 4:
-            while i < len(File_Results_List):
-                if s in File_Results_List[i]:
-                    Search_List.append(File_Results_List[i])
-                i += 1
-
         ListBoxWindow(5)
         Find_String.focus_set()
     
