@@ -19,7 +19,9 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
+import sys
 import random
+sys.path.append('../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod
 
