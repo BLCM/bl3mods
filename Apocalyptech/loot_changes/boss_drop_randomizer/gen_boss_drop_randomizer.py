@@ -38,7 +38,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
             "so you get as interesting as possible drops.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.0',
+        v='1.2.1',
         cats='enemy-drops, randomizer',
         )
 
@@ -100,7 +100,7 @@ for (label, char_name, pools) in sorted([
         ('Aurelia', 'BPChar_AureliaBoss', [
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_IceQueen_Aurelia', [SR]),
             ('/Game/GameData/Loot/ItemPools/Unique/ItemPool_IceShield_Aurelia', [SH]),
-            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', [AR]),
+            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss', [AR, GM]),
             ]),
         ('Azalea', 'BPChar_PunkBrewHag', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Azalea', [AF, CM]),
@@ -350,6 +350,9 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Locomöbius', 'BPChar_TrainBoss', [
             ('/Game/PatchDLC/Alisma/GameData/Loot/Legendary/ItemPool_Alisma_Legendary_Dedicate_Train', [SG, CM, SH]),
+            ]),
+        ('Loot Enemies (various)', 'MatchAll', [
+            ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Loot_Enemies', [None, None, None, None, None, HW]),
             ]),
         ('Lt. Preston', 'BPChar_HeavyFootstepsOfGiants', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_LtPreston', [CM, PS]),
