@@ -196,6 +196,11 @@ don't look at these thinking that they're any good.  :)
 - `instant_guardian_takedown_crystals.txt` - A small little attempt to speed up
   the crystals you have to guard for awhile in the Guardian Takedown.  I think
   dynamic blueprinty stuff gets in the way of being able to set these vars.
+- `no_marcus_character_intros.txt` - An attempt to turn off the Marcus voiceovers
+  as you cycle through your savegames (and presumably while selecting a new
+  character).  As with my Better Vehicles attempt, though, the relevant objects
+  get loaded dynamically and I've never figured out how to trigger a hotfix for
+  that.
 
 Licenses
 ========
