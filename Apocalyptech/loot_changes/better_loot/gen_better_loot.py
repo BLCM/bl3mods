@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.1',
+        v='1.2.2',
         cats='enemy-drops, loot-system',
         )
 
@@ -773,29 +773,6 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_MinionLoot',
         1)
 mod.newline()
 
-# The 2020-07-23 update rearranged loot all over the place, and in the process lost the drop
-# for the Firestorm grenade mod entirely, which used to come from Captain Traunt.  Adding it
-# back in to Captain Traunt, for want of anywhere "better" to put it.
-mod.comment('Add Firestorm Grenade Mod back to Captain Traunt')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_Heavy_Traunt',
-        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_CaptTraunt',
-        'BalancedItems',
-        """
-        (
-            (
-                InventoryBalanceData=/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Tankman/Balance/Balance_SR_HYP_Tankman.Balance_SR_HYP_Tankman"',
-                Weight=(BaseValueConstant=1)
-            ),
-            (
-                InventoryBalanceData=/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm.InvBalD_GM_VLA_FireStorm,
-                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm.InvBalD_GM_VLA_FireStorm"',
-                Weight=(BaseValueConstant=1)
-            )
-        )
-        """)
-mod.newline()
-
 # Some more guaranteed drops which were taken from the Week 2 event
 for (label, bpchar, obj_name) in [
         ('Urist McEnforcer', 'BPChar_EnforcerUrist', '/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist.BPChar_EnforcerUrist_C:AIBalanceState_GEN_VARIABLE'),
@@ -821,11 +798,11 @@ for (label, bpchar, obj_name) in [
 for char_name, idx, num in [
 
         # Original set, base-game chars
-        ('Aurelia', 42, 1),
+        ('Aurelia', 42, 2),
         ('Holy Dumptruck', 43, 1),
         ('Mouthpiece', 44, 2),
         ('Sylestro', 50, 1),
-        ('Captain Traunt', 51, 3),
+        ('Captain Traunt', 51, 2),
         ('General Traunt', 52, 2),
         ('Billy, The Anointed', 53, 3),
         # Brood Mother's entry in here is now empty, as of 2020-07-23
@@ -1741,6 +1718,16 @@ for col in [
             'LilithEndChest',
             col,
             0)
+mod.newline()
+
+# The 2021-03-11 hotfix update added Firestorm as a drop to Aurelia but broke her Juliet's
+# Dazzle drop by accident.  This fixes that up.  Hopefully they'll fix it on their end
+# soon enough, but this'll do for now.
+mod.comment("Fix Aurelia's drop for Juliet's Dazzle")
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AureliaBoss',
+        '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss',
+        'BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData',
+        Mod.get_full_cond('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop', 'InventoryBalanceData'))
 mod.newline()
 
 # Just some testing stuff at the end of the file, to make sure that the game

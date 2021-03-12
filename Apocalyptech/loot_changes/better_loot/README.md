@@ -39,12 +39,23 @@ reward chests, though, and increases the drop quantity for Heavyweight Harker.
 
 **Mod Compatibility Info:**
 
+If you use Boss Drop Randomizer along with this mod, make sure this mod is
+*before* Boss Drop Randomzer in your mod list.
+
 This mod includes the functionality in my "Unlock Mayhem-Specific Drops" mod,
 so there's no reason to use both together (though it shouldn't hurt anything
 if you do).
 
 Changelog
 =========
+
+**v1.2.2** - Mar 11, 2021
+ * Updated to include loot changes with today's hotfixes, namely moving
+   the Firestorm grenade drop from Captain Traunt to Aurelia.  The new
+   R.Y.N.A.H.  drop added to "Loot" type enemies drops at 13%, which seems
+   reasonable, so I left that as-is.
+ * Also fixed a bug in GBX's Firestorm hotfix which removed Aurelia's
+   Juliet's Dazzle drop, though hopefully GBX fixes that up themselves soon.
 
 **v1.2.1** - Nov 12, 2020
  * Doubled chances of legendary gear from Arms Race area-event reward

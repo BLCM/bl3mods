@@ -20,6 +20,11 @@ well (this is identical to some functionality included in DLC Loot De-Emphasizer
 There's no problems with using both of those mods at the same time; just a bit
 of duplication between then.
 
+**Mod Compatibility Info:**
+
+If you use this mod along with Better Loot, make sure that this mod appears *after*
+Better Loot in your mod list.
+
 Changelog
 =========
 

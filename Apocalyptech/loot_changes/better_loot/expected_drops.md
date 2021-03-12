@@ -172,7 +172,7 @@ Athenas
 ## Athenas
 
 **Captain Traunt**
- * 3x: Tankman's Shield (m4), Kaoson (m6), Firestorm (grenade mod, my addition)
+ * 2x: Tankman's Shield (m4), Kaoson (m6)
 
 **Chupacabratch**
  * 2x: Chupa's Organ, Nagata
@@ -324,7 +324,7 @@ Eden-6
 ## Blackbarrel Cellars
 
 **Aurelia**
- * 1x: Juliet's Dazzle (m4)
+ * 2x: Juliet's Dazzle (m4), Firestorm (grenade mod)
  * 1x: Ice Queen
  * 1x: Frozen Heart
 
