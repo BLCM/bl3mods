@@ -29,7 +29,7 @@ Header
 Changelog
 =========
 **v1.4.0** - 2021-03-12
- * More automation, more mobs, better control of loot by style
+ * More automation, more bosses, better control of loot by style
 
 **v1.3.0** - 2021-03-04
  * First versioned release

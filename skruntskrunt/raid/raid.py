@@ -11,8 +11,10 @@ DEFAULT_DAMAGE=30
 DEFAULT_HEALTH=1000
 DEFAULT_NLOOT=12
 QUARTER_HEALTH=[DEFAULT_HEALTH/4 for health in HEALTHS]
+TWO_THIRDS_HEALTH=[2*DEFAULT_HEALTH/3 for health in HEALTHS]
 HALF_HEALTH=[DEFAULT_HEALTH/2 for health in HEALTHS]
 JUST_QUARTER_HEALTH={"health":QUARTER_HEALTH}
+JUST_TWO_THIRDS_HEALTH={"health":TWO_THIRDS_HEALTH}
 
 def buff_boss(boss): #bpchar, bpchar_path, balance_table, rowname, health,damage,nloot
     """ Generate hotfix code for buffing a boss """
@@ -111,7 +113,7 @@ more_bosses = [
      {"raid1":66}),
     ('Skag of Survival','/Game/Enemies/Skag/_Unique/TrialBoss/_Design/Character/BPChar_Skag_TrialBoss',"/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique","TrialBoss",
      {"raid1":62}),
-    ('Sera of Supremacy','/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss',"/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique","Guardian_Trial_Boss"),
+    ('Sera of Supremacy','/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss',"/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique","Guardian_Trial_Boss",{"raid1":49}),
     ('Mr. Titan','/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss',"/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique",'SlaughterBoss'),
     ('Hag of Fervor','/Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss',"/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique","Goon_BossTrial",{"raid1":48}),
     ('Arbalest of Discipline','/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss',"/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech","Mech_TrialBoss",{"raid1":54}), # There was also Mech_Basic
@@ -151,7 +153,7 @@ more_bosses = [
     ('Matty Crawly','//Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD','/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique','Hunt02_Larva'),
     ('Chupacabratch','/Game/Enemies/Ratch/_Unique/Hunt01/_Design/Character/BPChar_Ratch_Hunt01','/Game/Enemies/Ratch/_Shared/_Design/Balance/Table_Balance_Ratch_Unique',"Ratch_01Hunt"),
     # this is probably a bad idea
-    ('Private Beans','/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans','/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog','Nog_Badass'),
+    ('Private Beans','/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans','/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog','Nog_Badass',JUST_TWO_THIRDS_HEALTH),
     ('Rax','/Game/Enemies/Trooper/_Unique/Bounty02/Design/Character/BPChar_TrooperBounty02',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Bounty02',
      {'raid1':91,'health':HALF_HEALTH}
@@ -162,23 +164,23 @@ more_bosses = [
     ),
     ('Force Trooper Citrine','/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Rare01b',
-     {'raid1':68,'health':QUARTER_HEALTH}
+     {'raid1':68,'health':HALF_HEALTH}
     ),
     ('Force Trooper Onyx','/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Rare01a',
-     {'raid1':67,'health':QUARTER_HEALTH}
+     {'raid1':67,'health':HALF_HEALTH}
     ),
     ('Force Trooper Ruby','/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Rare01c',
-     {'raid1':69,'health':QUARTER_HEALTH}
+     {'raid1':69,'health':HALF_HEALTH}
     ),
     ('Force Trooper Tourmaline','/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01d',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Rare01d',
-     {'raid1':70,'health':QUARTER_HEALTH}
+     {'raid1':70,'health':HALF_HEALTH}
     ),
     ('Force Trooper Tourmaline','/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01e',
      '/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique','Trooper_Rare01e',
-     {'raid1':71,'health':QUARTER_HEALTH}
+     {'raid1':71,'health':HALF_HEALTH}
     ),
     ('El Dragón Jr.','/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03',
      '/Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03',
@@ -194,6 +196,8 @@ more_bosses = [
      '/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk_Unique','Punk_Bounty02',JUST_QUARTER_HEALTH),
     ('Katagawa Ball','/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere',
      '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'),
+    ('The Unstoppable','/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01',
+     '/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique','Rare01'),
 ]
 
 # manual header (open the static header file)

@@ -31,12 +31,16 @@
 # [X] Lavender Crawly seemed broken?
 # [X] Multiplayer demoskagon weird
 # [X] add kratch
-# [-] Buff Chupab
-# [-] Rax
-# [-] Max
-# [-] El Dragon
-# [-] Power Rangers
-# [-] Psycho Billies
+# [X] Beans?
+# [X] Buff Chupab
+# [-] Trials?
+# [X] Rax
+# [X] Max
+# [X] El Dragon
+# [X] Power Rangers
+# [X] Psycho Billies
+# [ ] Arbalest wasn't buffed :(
+# [-] Sera of whatever isn't dropping mad loot?
 # [-] Katagawa Ball
 # [ ] Too strong militant near one punch
 # [ ] Eista spawns loot in a meaningful way
@@ -946,8 +950,8 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Skag_TrialBoss),/Game/Enemies/Skag/_Shar
 # balance_table: /Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique
 # balance rowname: Guardian_Trial_Boss
 
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss.BPChar_Guardian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Unique/TrialBoss/_Design/Character/BPChar_Guardian_TrialBoss.BPChar_Guardian_TrialBoss_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
@@ -1458,11 +1462,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Ratch_Hunt01),/Game/Enemies/Ratch/_Share
 
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans.BPChar_NogBeans_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_NogBeans),/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans.BPChar_NogBeans_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,666.6666666666666
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,666.6666666666666
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,666.6666666666666
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,666.6666666666666
+SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,666.6666666666666
 SparkCharacterLoadedEntry,(1,2,0,BPChar_NogBeans),/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog.Table_Balance_Nog,Nog_Badass,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1509,11 +1513,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_TrooperBounty03),/Game/Enemies/Trooper/_
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[68].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[68].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,250.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,500.0
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1526,11 +1530,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[67].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[67].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,250.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,500.0
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1543,11 +1547,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[69].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[69].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,250.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,500.0
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1560,11 +1564,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[70].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[70].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,250.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,500.0
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1577,11 +1581,11 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[71].DropOnDeathItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[71].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,250.0
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,250.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,500.0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,500.0
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
@@ -1702,6 +1706,23 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique.Table_Balance_Oversphere_Unique,Oversphere_Katagawa,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique.Table_Balance_Oversphere_Unique,Oversphere_Katagawa,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique.Table_Balance_Oversphere_Unique,Oversphere_Katagawa,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
+
+
+
+##### The Unstoppable #####
+# BPChar: BPChar_Goliath_Rare01
+# bpchar_path: /Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01
+# balance_table: /Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique
+# balance rowname: Rare01
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01.BPChar_Goliath_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01.BPChar_Goliath_Rare01_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Goliath_Rare01),/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique.Table_Balance_Goliath_Unique,Rare01,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,30
 
 
 
