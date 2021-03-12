@@ -10,6 +10,7 @@ See the individual mod folders for full READMEs.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible ECHO Logs** - Makes the ECHO log loot bars (and, incidentally,
   mission items) far more visible
+- **No Panting** - Disables the panting vocal loop that plays during sprinting.
 - **No Reload Notification** - Removes the "reload" notification when you're
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
