@@ -196,6 +196,10 @@ more_bosses = [
      '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'),
 ]
 
+# manual header (open the static header file)
+for line in open('raid.bl3hotfix.HEAD').readlines():
+    print(line,end='')
+
 bosses = [mk_boss(*x) for x in more_bosses]
 
 for boss in bosses:

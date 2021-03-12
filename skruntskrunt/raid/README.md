@@ -19,7 +19,7 @@ Balance help is appreciated.
 Header
 ======
 * Name: Raid on Bloodsun Canyon, Raid on VIP Tower, and Raid Bosses
-* Version: 1.3.0
+* Version: 1.4.0
 * Author: Abram/skruntskrunt,  Apocalyptech, EpicNNG, Grimm, and more
 * Categories: enemy-drops, loot-system, mode-balance, enemy
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -28,6 +28,8 @@ Header
 
 Changelog
 =========
+**v1.4.0** - 2021-03-12
+ * More automation, more mobs, better control of loot by style
 
 **v1.3.0** - 2021-03-04
  * First versioned release
