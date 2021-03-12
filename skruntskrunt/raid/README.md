@@ -1,5 +1,5 @@
 Name: Raid on Bloodsun Canyon, Raid on VIP Tower, and Raid Bosses
-======================
+=================================================================
 
 * The Raid on Bloodsun Canyon: Fight all the named enemies in
   Bloosun Canyon who now have the strength of invincible raid boses.
@@ -14,7 +14,20 @@ stronger, and drop a lot more loot. Bosses tend to drop a lot of their
 dedicated loot pool making the long fight worthwhile as you can pick
 up the annoint you were looking for.
 
-Balance help is appreciated.
+Tougher Bosses include:
+* Graveward
+* Ruiner
+* Troy
+* Tyreen
+* Captain Traunt 
+* General Traunt 
+* Rampager
+* Power Rangers
+* Trail bosses
+* etc.
+
+Balance help is appreciated. The underlying philosophy is that a big
+spongey raid boss fight makes you deserving of dedicated drops.
 
 Header
 ======
@@ -43,3 +56,27 @@ The generation script for the mod is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../../COPYING.txt) for the full text of the license.
 
+Development Home
+================
+
+This mod is being developed on the raid branch of:
+
+https://github.com/abramhindle/bl3mods
+
+You can get latest versions there. Pull requests, patches, and
+feedback (as issues) are welcome.
+
+Bug reporting
+=============
+
+Please report bugs to this repository on github: https://github.com/abramhindle/bl3mods
+
+Dev Instructions
+================
+
+If you want to modify the software raid.py is the main generator of the hotfix.
+
+* raid.py - main program
+* raid.bl3hotfix.HEAD - header that is added to the head of raid.py output
+* raid.bl3hotfix - generated via `python3 raid.py > raid.bl3hotfix`
+* README.md - this readme
