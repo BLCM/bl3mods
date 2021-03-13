@@ -131,6 +131,9 @@ of the mods you'll find in here, though:
 
 - **Always Visible Challenge Icons** - Makes challenge icons visible at all
   times (has various exceptions).
+- **Atlas HQ Courtyard Shortcut** - Provides a way to climb up to the second
+  level in the courtyard area, to avoid having to pointlessly run around the
+  map just to get to the Atlas HQ building.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
