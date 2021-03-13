@@ -25,10 +25,13 @@ Map_Locations = ['Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'Blood
 # They are called globally so that they may not change.
 Mod_Header = []
 Reg_hotfix = []
+Table_Hotfix = []
+Mesh_Hotfix = []
+Queue_Order = []
+
 DataBase_Results = []
 File_Results_List = []
 Search_List = []
-Queue_Order = []
 
 # These are for holding information to make comments
 Comment_str = []

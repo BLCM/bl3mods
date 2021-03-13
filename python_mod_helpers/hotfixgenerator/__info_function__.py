@@ -13,7 +13,7 @@ making this and I hope BL3 live as long as BL2 did, as they are tied for some of
 from re import split
 from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, FileNames, File_Results_List, Queue_Order, Comment_str, Header_lines_str, Search_List
+from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, FileNames, File_Results_List, Queue_Order, Comment_str, Header_lines_str, Search_List
 from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
@@ -35,53 +35,73 @@ def Create_HotFix_File():
     File_Name, Mod_Title, Author_Name, Description, Version, Catagory =  Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
     # We need this to be the first step, as the rest of the program depends on it
     mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description,], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
-    
-
     #Working on adding a queue that will go in order of commands the user have but in
     # EX: user makes a regular hotfix then adds a comments
     """
     Things to add:
-    newline
-    comment
     header_lines
     header(?)
     table_hotfix
-    mesh_hotfix(going to be a while)
+    mesh_hotfix (going to be a while)
     """
+    def patch_types(hold):
+        hf_type = hold
+        if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
+        elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
+        elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
+        elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
+        elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
+        elif hf_type == 'Mod.POST': hf_type = Mod.POST
+        return hf_type
+    
+    
     # Queue types = Regular hotfix, New line, Comment, Header_lines, Table hotfixes
     queue_len = 0
     regular_hotfix = 0
+    table_hotfix = 0
+    mesh_hotfix = 0
     comment = 0
     while queue_len < len(Queue_Order):
         if Queue_Order[queue_len] == "Regular hotfix":
-            hf_type=Reg_hotfix[regular_hotfix]
-            if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
-            elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
-            elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
-            elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
-            elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
-            elif hf_type == 'Mod.POST': hf_type = Mod.POST
+            hf_type = Reg_hotfix[regular_hotfix]
+            hf_type = patch_types(hf_type)
 
             notification_flag=Reg_hotfix[regular_hotfix+1]
-            package=Reg_hotfix[regular_hotfix+2]
-            obj_name=Reg_hotfix[regular_hotfix+3]
-            attr_name=Reg_hotfix[regular_hotfix+4]
+            package = Reg_hotfix[regular_hotfix+2]
+            obj_name = Reg_hotfix[regular_hotfix+3]
+            attr_name = Reg_hotfix[regular_hotfix+4]
             
-            prev_val_len=Reg_hotfix[regular_hotfix+5]
+            # prev_val_len = Reg_hotfix[regular_hotfix+5]
             
-            prev_val=Reg_hotfix[regular_hotfix+6]
-            new_val=Reg_hotfix[regular_hotfix+7]
+            prev_val = Reg_hotfix[regular_hotfix+6]
+            new_val = Reg_hotfix[regular_hotfix+7]
             mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
             regular_hotfix += 8
         
+        # Table_Hotfix Mesh_Hotfix
         elif Queue_Order[queue_len] == "Table hotfixes":
+            hf_type = Table_Hotfix[table_hotfix]
+            hf_type = patch_types(hf_type)
+            notification_flag = Table_Hotfix[table_hotfix+1]
+            package = Table_Hotfix[table_hotfix+2]
+            obj_name = Table_Hotfix[table_hotfix+3]
+            row_name = Table_Hotfix[table_hotfix+4]
+            attr_name = Table_Hotfix[table_hotfix+5]
+            prev_val_len = Table_Hotfix[table_hotfix+6]
+            prev_val = Table_Hotfix[table_hotfix+7]
+            new_val = Table_Hotfix[table_hotfix+8]
+            
+            mod.table_hotfix(hf_type, package, obj_name, row_name, attr_name, new_val, prev_val, notification_flag)            
+            table_hotfix += 8
+        
+        elif Queue_Order[queue_len] == "Mesh hotfixes":
             None
         
         elif Queue_Order[queue_len] == "New line":
             mod.newline
         
         elif Queue_Order[queue_len] == "Comment":
-            mod.comment(comment_str=Comment_str[comment])
+            mod.comment(comment_str = Comment_str[comment])
             comment += 1
         
         elif Queue_Order[queue_len] == "Header_lines":
