@@ -34,8 +34,9 @@ File_Results_List = []
 Search_List = []
 
 # These are for holding information to make comments
-Comment_str = []
-Header_lines_str = []
+Comment_Queue = []
+Header_Lines_Queue = []
+Headers_Queue = []
 ################################################################################################################################################################
 # All the fonts that you can use. may impliment this one day
 # fonts=list(tkFont.families())
@@ -52,14 +53,19 @@ def ListBoxWindow(List):
     
     Fram_Of_Reference = Frame(ListWindow) 
     Fram_Of_Reference.pack(side=TOP)    
+    
     Label(Fram_Of_Reference,text='Text to find:',font=Stan_Font).pack(side=LEFT)
+    
     Find_String = Entry(Fram_Of_Reference)
     Find_String.pack(side=LEFT, fill=BOTH, expand=1)
     Find_String.focus_set()    
+    
     Scroll_Bar = Scrollbar(ListWindow)   
     Scroll_Bar.pack( side = RIGHT, fill = Y )     
+    
     Find_Text_Button = Button(Fram_Of_Reference, text='Find',font=Stan_Font)
     Find_Text_Button.pack(side=RIGHT)  
+    
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width = 300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0',END)
 ################################################################################################################################################################
@@ -105,18 +111,18 @@ def ListBoxWindow(List):
     # based on: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
     def find():
         i = 0
-        content_list = []
+        Content_List = []
         Info_Display_Text_Box.tag_remove('found', '1.0', END)
         s = Find_String.get()
         if len(Search_List) > 0:
             Search_List.clear() # Clears out the list so we don't geta data contamination
         
-        hold = Info_Display_Text_Box.get("1.0","end")
-        content_list = hold.split("\n")
+        Text_Content_Hold = Info_Display_Text_Box.get("1.0","end")
+        Content_List = Text_Content_Hold.split("\n")
         
-        while i < len(content_list):
-            if s in content_list[i]:
-                Search_List.append(content_list[i])
+        while i < len(Content_List):
+            if s in Content_List[i]:
+                Search_List.append(Content_List[i])
             i +=1
         
         ListBoxWindow(5)
@@ -134,8 +140,6 @@ def List_Info():
     ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
     Button(ListWindow, text="Patch types", command=lambda: ListBoxWindow(1))
     Button(ListWindow, text="Map Names", command=lambda: ListBoxWindow(2))
-    # Button(ListWindow, text="Database Search Results", command=lambda: ListBoxWindow(3))
-    # Button(ListWindow, text="File Information", command=lambda: ListBoxWindow(4))
     
     # Formats all my wigits the same way
     for c in sorted(ListWindow.children):

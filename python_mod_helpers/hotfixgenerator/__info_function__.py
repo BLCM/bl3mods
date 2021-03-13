@@ -10,126 +10,18 @@ so you have to manually enter all data in order for it to work, and even then my
 BL3 is still in its modding infancy so if this program becomes obsolete in the future, well I still found it a great experience
 making this and I hope BL3 live as long as BL2 did, as they are tied for some of my favorite games of all times
 """
-from re import split
-from bl3hotfixmod import Mod
 from bl3data import BL3Data
-from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, FileNames, File_Results_List, Queue_Order, Comment_str, Header_lines_str, Search_List
+from _global_lists import FileNames, File_Results_List, Search_List
 from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
-from tkinter.filedialog import askopenfilename, asksaveasfilename, test
+from tkinter.filedialog import askopenfilename, asksaveasfilename
 from tkinter import Tk, Frame, Button, Text, Entry
 from tkinter import END, RAISED
 from flatten_json import flatten
 import os
 #Global variables
 DATA = BL3Data()
-################################################################################################################################################################
-# I have to put the program like this because in order to make hotfixes in the way 
-# the bl3data/bl3hotfixmod work, it has to be executed in a row in order to work
-def Create_HotFix_File():
-    #Create hotfix file from information
-    # If you don't give it someting, this is what I will replace it with. Also its a little bit of an easter egg
-    if len(Mod_Header) < 6: Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
-    
-    File_Name, Mod_Title, Author_Name, Description, Version, Catagory =  Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
-    # We need this to be the first step, as the rest of the program depends on it
-    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name,[Description,], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,)
-    #Working on adding a queue that will go in order of commands the user have but in
-    # EX: user makes a regular hotfix then adds a comments
-    """
-    Things to add:
-    header_lines
-    header(?)
-    table_hotfix
-    mesh_hotfix (going to be a while)
-    """
-    def patch_types(hold):
-        if hold == 'Mod.PATCH': hold = Mod.PATCH
-        elif hold == 'Mod.LEVEL': hold = Mod.LEVEL
-        elif hold == 'Mod.EARLYLEVEL': hold = Mod.EARLYLEVEL
-        elif hold == 'Mod.CHAR': hold = Mod.CHAR
-        elif hold == 'Mod.PACKAGE': hold = Mod.PACKAGE
-        elif hold == 'Mod.POST': hold = Mod.POST
-        else: hold = '0'
-        return hold
-    
-    
-    # Queue types = Regular hotfix, New line, Comment, Header_lines, Table hotfixes
-    queue_len = 0
-    regular_hotfix_index = 0
-    table_hotfix_index = 0
-    mesh_hotfix_index = 0
-    comment = 0
-    while queue_len < len(Queue_Order):
-        if Queue_Order[queue_len] == "Regular hotfix":
-            hf_type = Reg_hotfix[regular_hotfix_index]
-            hf_type = patch_types(hf_type)
-
-            notification_flag=Reg_hotfix[regular_hotfix_index+1]
-            package = Reg_hotfix[regular_hotfix_index+2]
-            obj_name = Reg_hotfix[regular_hotfix_index+3]
-            attr_name = Reg_hotfix[regular_hotfix_index+4]
-            
-            # prev_val_len = Reg_hotfix[regular_hotfix+5]
-            
-            prev_val = Reg_hotfix[regular_hotfix_index+6]
-            new_val = Reg_hotfix[regular_hotfix_index+7]
-            mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
-            regular_hotfix_index += 8
-        
-        # Table_Hotfix Mesh_Hotfix
-        elif Queue_Order[queue_len] == "Table hotfixes":
-            hf_type = Table_Hotfix[table_hotfix_index]
-            hf_type = patch_types(hf_type)
-            notification_flag = Table_Hotfix[table_hotfix_index+1]
-            package = Table_Hotfix[table_hotfix_index+2]
-            obj_name = Table_Hotfix[table_hotfix_index+3]
-            row_name = Table_Hotfix[table_hotfix_index+4]
-            attr_name = Table_Hotfix[table_hotfix_index+5]
-            
-            prev_val_len = Table_Hotfix[table_hotfix_index+6]
-            
-            prev_val = Table_Hotfix[table_hotfix_index+7]
-            new_val = Table_Hotfix[table_hotfix_index+8]
-            
-            mod.table_hotfix(hf_type, package, obj_name, row_name, attr_name, new_val, prev_val, notification_flag)            
-            table_hotfix_index += 8
-        
-        # parkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Industrial/Props/Tools/Shovel/Model/Meshes,SM_Shovel,92,"40732.000000,5345.000000,5440.000000|-67.000000,380.000000,0.000000|2.000000,2.000000,2.000000",0
-        elif Queue_Order[queue_len] == "Mesh hotfixes":
-            mesh_path, map_path = '', ''
-            
-            hf_type = Mesh_Hotfix[mesh_hotfix_index]
-            hf_type = patch_types(hf_type)
-            notification_flag = Mesh_Hotfix[mesh_hotfix_index+1]
-            map_path = Mesh_Hotfix[mesh_hotfix_index+2]
-            mesh_path = Mesh_Hotfix[mesh_hotfix_index+3]
-            
-            location = str(Mesh_Hotfix[mesh_hotfix_index+4]).split(",")
-            # location = (numbers[0], numbers[1], numbers[2])
-            
-            rotation = str(Mesh_Hotfix[mesh_hotfix_index+5]).split(",")
-            # rotation = (numbers[0], numbers[1], numbers[2])
-            
-            scale = str(Mesh_Hotfix[mesh_hotfix_index+6]).split(",")
-            # scale = (numbers[0], numbers[1], numbers[2])
-            
-            transparent = Mesh_Hotfix[mesh_hotfix_index+7]
-            mod.mesh_hotfix(map_path, mesh_path, (int(location[0]),int(location[1]),int(location[2])), (int(rotation[0]),int(rotation[1]),int(rotation[2])), (int(scale[0]),int(scale[1]),int(scale[2])), transparent, hf_type, notification_flag)
-            # mesh_hotfix_index += 8
-        
-        elif Queue_Order[queue_len] == "New line":
-            mod.newline
-        
-        elif Queue_Order[queue_len] == "Comment":
-            mod.comment(comment_str = Comment_str[comment])
-            comment += 1
-        
-        # not yet implimented
-        elif Queue_Order[queue_len] == "Header_lines":
-            mod.header_lines
-        queue_len += 1
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
@@ -171,7 +63,6 @@ def File_Results_Window(True_Path):
         File_Results_List.append("\n")
         I +=1
     ListBoxWindow(4)
-
 
 ################################################################################################################################################################
 # Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
