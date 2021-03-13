@@ -23,7 +23,7 @@ Tougher Bosses include:
 * General Traunt 
 * Rampager
 * Power Rangers
-* Trail bosses
+* Trial bosses
 * etc.
 
 Balance help is appreciated. The underlying philosophy is that a big
