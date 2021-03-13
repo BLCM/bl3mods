@@ -62,15 +62,10 @@ def SelectionWindow(Func):
             Queue_Order.append("Table hotfixes")
         
         elif Type == "Mesh HotFix":
-            A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
+            A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             # Info is put into a regular hotfix queue for later
-            Mesh_Hotfix.extend([A, B, C, D, E, F, G, H])
-            Queue_Order.append("Mesh hotfixes")
-        
-        # Gives a frame of reference to what the Mod looks like # add more for different types of hotfixes
-        elif Type == "Update Display":
-            B, C, D, E, F, G, H = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
-            HotFix_Label["text"] = '[(1,1,{} , {}) , {} , {} , {} , {} , {}]'.format(B, C, D, E, F, G, H)        
+            Mesh_Hotfix.extend([A, B, C, D, E, F, G, H, I])
+            Queue_Order.append("Mesh hotfixes")   
         
         # This will search the database for provided information
         elif Type == "Search":
@@ -82,7 +77,17 @@ def SelectionWindow(Func):
                 if Details[0] not in DataBase_Results: DataBase_Results.append(Details[0])
             DataBase_Results.sort()
             ListBoxWindow(3)
-    
+        
+    # This is used for displaying what the hotfix will look like. use this to preview your creation before interting it
+    def Dis_Hotfix(int):
+        B, C, D, E, F, G, H, I = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
+        if int == 1:
+            HotFix_Label["text"] = '[(1,1,{} , {}), {} , {}, {}, {}, {}]'.format(B, C, D, E, F, G, H)
+        if int == 2:
+            HotFix_Label["text"] = '(1,2, {} , {}), {} , {}, {}, {}, {}, {}'.format(B, C, D, E, F, G, H, I)
+        if int == 3:
+            HotFix_Label["text"] = '(1,6, {} , {}), {} , {}, {}, {}, "{}", {}'.format(B, C, D, E, F, G, H, I)
+
     # Mod header info
     if Func == "ModHeader":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Header")
@@ -111,11 +116,11 @@ def SelectionWindow(Func):
         Label_7_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_8_Text = 'True, New Value, or Other (new_val)'
 
-        Button_1_Text = "Add This Regular Hotfix To The Queue"
+        Button_1_Text = "Add To Regular Hotfix Queue"
         def Button_1_Command(): return Get_Val("Regular HotFix")
-        Button_2_Text = "Look at what your HotFix looks like"
-        def Button_2_Command(): return Get_Val("Update Display") 
-        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
+        Button_2_Text = "Preview Your Hotfix"
+        def Button_2_Command(): return Dis_Hotfix(1)
+        HotFix_Label = Label(Frame_Bottom, text = '(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
         hotfixoptions = 1
     
     #Table Hotfix Queue
@@ -133,36 +138,34 @@ def SelectionWindow(Func):
         Label_8_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_9_Text = 'True, New Value, or Other (new_val)'
 
-        Button_1_Text = "Add This Table Hotfix To The Queue"
+        Button_1_Text = "Add To Table Hotfix Queue"
         def Button_1_Command(): return Get_Val("Table HotFix")
-        Button_2_Text = "Look at what your HotFix looks like"
-        def Button_2_Command(): return Get_Val("Update Display") 
-        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
+        Button_2_Text = "Preview Your Hotfix"
+        def Button_2_Command(): return Dis_Hotfix(2) 
+        HotFix_Label = Label(Frame_Bottom, text = '(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
         hotfixoptions = 1
 
-    #Regular Hotfix Queue
+    #Mesh Hotfix Queue
+    #Note that I still struggle to understand what the paramaters on the hotfix means, so keep than in mind
     elif Func == "Mesh HotFix":
         SelectionWindow.title("Creating Mesh HotFix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w*2, h, x, y/5))
-        Lab, Ent, Butt = 8, 8, 2
+        Lab, Ent, Butt = 8, 8, 1 # I need to figure out how to display it proporly, so right no i will disable this feature
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
-        Label_3_Text = '(map_last)'
-        Label_4_Text = '(map_first)'
-        Label_5_Text = '(mesh_first)'
-        Label_6_Text = '(mesh_last)'
-        Label_7_Text = '(coord_len)'
-        Label_8_Text = '(coord_field)'
-        Label_9_Text = '(transparent_flag)'        
+        Label_3_Text = '(map_path)'
+        Label_4_Text = '(mesh_path)'
+        Label_5_Text = 'Enter Numbers Like So: n,n,n (location)'
+        Label_6_Text = 'Enter Numbers Like So: n,n,n (rotation)'
+        Label_7_Text = 'Enter Numbers Like So: n,n,n (scale)'
+        Label_8_Text = 'Transparent: True or False'
 
-        Button_1_Text = "Add This Regular Hotfix To The Queue"
+        Button_1_Text = "Add To Mesh Hotfix Queue"
         def Button_1_Command(): return Get_Val("Mesh HotFix")
-        Button_2_Text = "Look at what your HotFix looks like"
-        def Button_2_Command(): return Get_Val("Update Display") 
-        HotFix_Label = Label(Frame_Bottom, text = '{hf_type},(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}')
+        Button_2_Text = "Preview Your Hotfix"
+        def Button_2_Command(): return Dis_Hotfix(3)
+        # HotFix_Label = Label(Frame_Bottom, text = '(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}')
         hotfixoptions = 1
-    
-    
     
     # The user will search for a word, and puncuation does not matter, but spelling does
     elif Func == "Search":
@@ -214,9 +217,9 @@ def SelectionWindow(Func):
         Frame_Bottom.children[c].pack(fill="both")
     
     if hotfixoptions == 1:
-        Button(Frame_Bottom, text="Click To Make A New Line", command=lambda: Queue_Order.append("New line")).pack(fill="both")
+        Button(Frame_Bottom, text="Click To Make A New Line", font=Stan_Font, command=lambda: Queue_Order.append("New line")).pack(fill="both")
         Entry(Frame_Bottom, textvariable = StringVar(Frame_Bottom)).pack(fill="both")
-        Button(Frame_Bottom, text="Fill Entry Above, Then Click To Add A Comment", command=lambda: (Queue_Order.append("Comment"), Comment_str.append(StringVar(Frame_Bottom).get()))).pack(fill="both")
+        Button(Frame_Bottom, text="Fill Entry Above, Then Click To Add A Comment", font=Stan_Font, command=lambda: (Queue_Order.append("Comment"), Comment_str.append(StringVar(Frame_Bottom).get()))).pack(fill="both")
     
     Frame_Left.grid( row = 0, column = 0)
     Frame_Right.grid(row = 0, column = 1)
@@ -233,15 +236,15 @@ if __name__ == "__main__":
     ws, hs = MainWindow.winfo_screenwidth(), MainWindow.winfo_screenheight()
     x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
-    Button(text="Add To Mod Header Queue", command=lambda: SelectionWindow("ModHeader"))
-    Button(text="Add To Regular HotFix Queue", command=lambda: SelectionWindow("Regular HotFix"))
-    Button(text="Add To Table HotFix Queue", command=lambda: SelectionWindow("Table HotFix"))
-    Button(text="Add To Mesh HotFix Queue", command=lambda: SelectionWindow("Mesh HotFix"), state=DISABLED)
+    Button(text = "Add Mod Header", command=lambda: SelectionWindow("ModHeader"))
+    Button(text = "Add Regular HotFix", command=lambda: SelectionWindow("Regular HotFix"))
+    Button(text = "Add Table HotFix", command=lambda: SelectionWindow("Table HotFix"))
+    Button(text = "Add Mesh HotFix", command=lambda: SelectionWindow("Mesh HotFix"))
     
-    Button(text="JSON Information Formatter", command=lambda: FileChoice())
-    Button(text="Database Search", command=lambda: SelectionWindow("Search"))
-    Button(text="Open your .bl3hotfix file", command=lambda: openBL3Hotfixfile())
-    Button(text="Useful Information", command=lambda: List_Info())
+    Button(text = "JSON Information Formatter", command=lambda: FileChoice())
+    Button(text = "Database Search", command=lambda: SelectionWindow("Search"))
+    Button(text = "Open A .bl3hotfix File", command=lambda: openBL3Hotfixfile())
+    Button(text = "Useful Information", command=lambda: List_Info())
     
     Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking", command=lambda: Create_HotFix_File())
     

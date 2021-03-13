@@ -45,57 +45,79 @@ def Create_HotFix_File():
     mesh_hotfix (going to be a while)
     """
     def patch_types(hold):
-        hf_type = hold
-        if hf_type == 'Mod.PATCH': hf_type = Mod.PATCH
-        elif hf_type == 'Mod.LEVEL': hf_type = Mod.LEVEL
-        elif hf_type == 'Mod.EARLYLEVEL': hf_type = Mod.EARLYLEVEL
-        elif hf_type == 'Mod.CHAR': hf_type = Mod.CHAR
-        elif hf_type == 'Mod.PACKAGE': hf_type = Mod.PACKAGE
-        elif hf_type == 'Mod.POST': hf_type = Mod.POST
-        return hf_type
+        if hold == 'Mod.PATCH': hold = Mod.PATCH
+        elif hold == 'Mod.LEVEL': hold = Mod.LEVEL
+        elif hold == 'Mod.EARLYLEVEL': hold = Mod.EARLYLEVEL
+        elif hold == 'Mod.CHAR': hold = Mod.CHAR
+        elif hold == 'Mod.PACKAGE': hold = Mod.PACKAGE
+        elif hold == 'Mod.POST': hold = Mod.POST
+        else: hold = '0'
+        return hold
     
     
     # Queue types = Regular hotfix, New line, Comment, Header_lines, Table hotfixes
     queue_len = 0
-    regular_hotfix = 0
-    table_hotfix = 0
-    mesh_hotfix = 0
+    regular_hotfix_index = 0
+    table_hotfix_index = 0
+    mesh_hotfix_index = 0
     comment = 0
     while queue_len < len(Queue_Order):
         if Queue_Order[queue_len] == "Regular hotfix":
-            hf_type = Reg_hotfix[regular_hotfix]
+            hf_type = Reg_hotfix[regular_hotfix_index]
             hf_type = patch_types(hf_type)
 
-            notification_flag=Reg_hotfix[regular_hotfix+1]
-            package = Reg_hotfix[regular_hotfix+2]
-            obj_name = Reg_hotfix[regular_hotfix+3]
-            attr_name = Reg_hotfix[regular_hotfix+4]
+            notification_flag=Reg_hotfix[regular_hotfix_index+1]
+            package = Reg_hotfix[regular_hotfix_index+2]
+            obj_name = Reg_hotfix[regular_hotfix_index+3]
+            attr_name = Reg_hotfix[regular_hotfix_index+4]
             
             # prev_val_len = Reg_hotfix[regular_hotfix+5]
             
-            prev_val = Reg_hotfix[regular_hotfix+6]
-            new_val = Reg_hotfix[regular_hotfix+7]
+            prev_val = Reg_hotfix[regular_hotfix_index+6]
+            new_val = Reg_hotfix[regular_hotfix_index+7]
             mod.reg_hotfix(hf_type, package, obj_name, attr_name, new_val, prev_val, notification_flag)
-            regular_hotfix += 8
+            regular_hotfix_index += 8
         
         # Table_Hotfix Mesh_Hotfix
         elif Queue_Order[queue_len] == "Table hotfixes":
-            hf_type = Table_Hotfix[table_hotfix]
+            hf_type = Table_Hotfix[table_hotfix_index]
             hf_type = patch_types(hf_type)
-            notification_flag = Table_Hotfix[table_hotfix+1]
-            package = Table_Hotfix[table_hotfix+2]
-            obj_name = Table_Hotfix[table_hotfix+3]
-            row_name = Table_Hotfix[table_hotfix+4]
-            attr_name = Table_Hotfix[table_hotfix+5]
-            prev_val_len = Table_Hotfix[table_hotfix+6]
-            prev_val = Table_Hotfix[table_hotfix+7]
-            new_val = Table_Hotfix[table_hotfix+8]
+            notification_flag = Table_Hotfix[table_hotfix_index+1]
+            package = Table_Hotfix[table_hotfix_index+2]
+            obj_name = Table_Hotfix[table_hotfix_index+3]
+            row_name = Table_Hotfix[table_hotfix_index+4]
+            attr_name = Table_Hotfix[table_hotfix_index+5]
+            
+            prev_val_len = Table_Hotfix[table_hotfix_index+6]
+            
+            prev_val = Table_Hotfix[table_hotfix_index+7]
+            new_val = Table_Hotfix[table_hotfix_index+8]
             
             mod.table_hotfix(hf_type, package, obj_name, row_name, attr_name, new_val, prev_val, notification_flag)            
-            table_hotfix += 8
+            table_hotfix_index += 8
         
+        # parkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Industrial/Props/Tools/Shovel/Model/Meshes,SM_Shovel,92,"40732.000000,5345.000000,5440.000000|-67.000000,380.000000,0.000000|2.000000,2.000000,2.000000",0
         elif Queue_Order[queue_len] == "Mesh hotfixes":
-            None
+            mesh_path, map_path = '', ''
+            
+            hf_type = Mesh_Hotfix[mesh_hotfix_index]
+            hf_type = patch_types(hf_type)
+            notification_flag = Mesh_Hotfix[mesh_hotfix_index+1]
+            map_path = Mesh_Hotfix[mesh_hotfix_index+2]
+            mesh_path = Mesh_Hotfix[mesh_hotfix_index+3]
+            
+            location = str(Mesh_Hotfix[mesh_hotfix_index+4]).split(",")
+            # location = (numbers[0], numbers[1], numbers[2])
+            
+            rotation = str(Mesh_Hotfix[mesh_hotfix_index+5]).split(",")
+            # rotation = (numbers[0], numbers[1], numbers[2])
+            
+            scale = str(Mesh_Hotfix[mesh_hotfix_index+6]).split(",")
+            # scale = (numbers[0], numbers[1], numbers[2])
+            
+            transparent = Mesh_Hotfix[mesh_hotfix_index+7]
+            mod.mesh_hotfix(map_path, mesh_path, (int(location[0]),int(location[1]),int(location[2])), (int(rotation[0]),int(rotation[1]),int(rotation[2])), (int(scale[0]),int(scale[1]),int(scale[2])), transparent, hf_type, notification_flag)
+            # mesh_hotfix_index += 8
         
         elif Queue_Order[queue_len] == "New line":
             mod.newline
@@ -104,6 +126,7 @@ def Create_HotFix_File():
             mod.comment(comment_str = Comment_str[comment])
             comment += 1
         
+        # not yet implimented
         elif Queue_Order[queue_len] == "Header_lines":
             mod.header_lines
         queue_len += 1
