@@ -67,6 +67,7 @@ def File_Results_Window(True_Path):
 ################################################################################################################################################################
 # Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
 def openBL3Hotfixfile():
+    
     def open_file():
         """Open a file for editing."""
         filepath = askopenfilename(

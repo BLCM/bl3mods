@@ -2,15 +2,16 @@
 # My files
 # from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
+from bl3hotfixmod import LVL_TO_ENG
 from __info_function__ import FileChoice, openBL3Hotfixfile
 from __hotfix_control import Create_HotFix_File
-from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, DataBase_Results, Queue_Order, Comment_Queue, Headers_Queue
+from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, DataBase_Results, Queue_Order, Comment_Queue, Headers_Queue, Patch_Types
 from _global_lists import List_Info, ListBoxWindow
 ################################################################################################################################################################
 # Libraies
 import tkinter as tk
-from tkinter import Entry, Button, Label, Tk, StringVar, Frame
-# from tkinter import DISABLED
+from tkinter import Entry, Button, Label, Tk, StringVar, Frame, Listbox
+from tkinter import END # DISABLED
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
@@ -20,24 +21,23 @@ Stan_Font = ("Times New Roman", 10)
 ################################################################################################################################################################
 # for info in test:
 #     print(info)
-
 def SelectionWindow(Func):
     # Global/Window variables
     SelectionWindow = Tk()
     #These are for sotring the feilds of information
-    Frame_Left = Frame(SelectionWindow,borderwidth = 2)
-    Frame_Right = Frame(SelectionWindow,borderwidth = 2)
-    Frame_Bottom = Frame(SelectionWindow,borderwidth = 2)
-
+    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
+    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
+    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
+    
     # Default values for window sizes for all, can manipulate inside the functions
     w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
     x,y = (ws/2) - (w/2), (hs/2) - (h/2)
     # These variables will determine how many things to add to the window as I need them
     Lab, Ent, Butt, HotFix_Options = 0, 0, 0, 0
     # To be able to grab the entry feilds
-    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
-    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right), StringVar(Frame_Right)
-    Entry_9 = StringVar(Frame_Right)
+    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_9 = StringVar(SelectionWindow)
     
     # Used to grab the values the then entry textvariables
     def Get_Val(Type): 
@@ -78,16 +78,18 @@ def SelectionWindow(Func):
     def Dis_Hotfix(int):
         B, C, D, E, F, G, H, I = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
         if int == 1:
-            HotFix_Label["text"] = '[(1,1,{} , {}), {} , {}, {}, {}, {}]'.format(B, C, D, E, F, G, H)
-        if int == 2:
-            HotFix_Label["text"] = '(1,2, {} , {}), {} , {}, {}, {}, {}, {}'.format(B, C, D, E, F, G, H, I)
+            HotFix_Label_Text = '(1,1,{} , {}), {}, {}, {}, {}, {}'.format(B, C, D, E, F, G, H)
+        elif int == 2:
+            HotFix_Label_Text = '(1,2,{} , {}), {}, {}, {}, {}, {}, {}'.format(B, C, D, E, F, G, H, I)
         # Does nothing at the current moment
-        if int == 3:
-            HotFix_Label["text"] = '(1,6, {} , {}), {} , {}, {}, {}, "{}", {}'.format(B, C, D, E, F, G, H, I)
+        elif int == 3:
+            HotFix_Label_Text = '(1,6,{} , {}), {}, {}, {}, {}, "{}", {}'.format(B, C, D, E, F, G, H, I)
+        Label_Config(HotFix_Label_Text)
+
 
     # Mod header info
     if Func == "Mod Info":  # Creates a mod file of you to use
-        SelectionWindow.title("Mod Header")
+        SelectionWindow.title("Mod Info")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w, h, x/4, y))
         Lab, Ent, Butt = 6, 6, 1
         Label_1_Text = 'Name of the hotfix file: '
@@ -117,10 +119,11 @@ def SelectionWindow(Func):
         Button_1_Text = "Add To Regular Hotfix Queue"
         def Button_1_Command(): return Get_Val("Regular HotFix")
         Button_2_Text = "Preview Your Hotfix"
-        def Button_2_Command(): return Dis_Hotfix(1)
+        def Button_2_Command(): Dis_Hotfix(1)
         
-        HotFix_Label = Label(Frame_Bottom, text = '(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
+        HotFix_Label_Text = '(1,1,{notification_flag},{package}),{obj_name},{attr_name},{prev_val_len},{prev_val},{new_val}'
         HotFix_Options = 1
+
     
     # Table Hotfix
     elif Func == "Table HotFix":
@@ -141,8 +144,9 @@ def SelectionWindow(Func):
         Button_1_Text = "Add To Table Hotfix Queue"
         def Button_1_Command(): return Get_Val("Table HotFix")
         Button_2_Text = "Preview Your Hotfix"
-        def Button_2_Command(): return Dis_Hotfix(2) 
-        HotFix_Label = Label(Frame_Bottom, text = '(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}')
+        def Button_2_Command(): Dis_Hotfix(2) 
+        
+        HotFix_Label_Text = '(1,2,{notification_flag},{package}),{obj_name},{row_name},{attr_name},{prev_val_len},{prev_val},{new_val}'
         HotFix_Options = 1
 
     # Mesh Hotfix
@@ -163,8 +167,9 @@ def SelectionWindow(Func):
         Button_1_Text = "Add To Mesh Hotfix Queue"
         def Button_1_Command(): return Get_Val("Mesh HotFix")
         # Button_2_Text = "Preview Your Hotfix"
-        # def Button_2_Command(): return Dis_Hotfix(3)
-        # HotFix_Label = Label(Frame_Bottom, text = '(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}')
+        # def Button_2_Command(): Dis_Hotfix(3)
+        
+        # HotFix_Label_Text = '(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}'
         HotFix_Options = 1
     
     # The user will search for a word, and puncuation does not matter, but spelling does
@@ -177,59 +182,74 @@ def SelectionWindow(Func):
         def Button_1_Command(): return Get_Val("Search")
     
     # Labels
-    if Lab >= 1: Label(Frame_Left, text=Label_1_Text)
-    if Lab >= 2: Label(Frame_Left, text=Label_2_Text)
-    if Lab >= 3: Label(Frame_Left, text=Label_3_Text)
-    if Lab >= 4: Label(Frame_Left, text=Label_4_Text)
-    if Lab >= 5: Label(Frame_Left, text=Label_5_Text)
-    if Lab >= 6: Label(Frame_Left, text=Label_6_Text)
-    if Lab >= 7: Label(Frame_Left, text=Label_7_Text)
-    if Lab >= 8: Label(Frame_Left, text=Label_8_Text)
-    if Lab >= 9: Label(Frame_Left, text=Label_9_Text)
+    i = 1
+    while i <= Lab:
+        Label_Text = "Label_"+ str(i) + "_Text"
+        for key, value in locals().items():
+            if key == Label_Text:
+                Label(SelectionWindow, text=value).grid(row = i, column=0)
+                break
+        i+=1
     
-    for c in sorted(Frame_Left.children):
-        Frame_Left.children[c]["font"] = Stan_Font
-        Frame_Left.children[c].pack(fill="both")
-
     # Entries
-    if Ent >= 1: Entry(Frame_Right, textvariable=Entry_1)
-    if Ent >= 2: Entry(Frame_Right, textvariable=Entry_2)
-    if Ent >= 3: Entry(Frame_Right, textvariable=Entry_3)
-    if Ent >= 4: Entry(Frame_Right, textvariable=Entry_4)
-    if Ent >= 5: Entry(Frame_Right, textvariable=Entry_5)
-    if Ent >= 6: Entry(Frame_Right, textvariable=Entry_6)
-    if Ent >= 7: Entry(Frame_Right, textvariable=Entry_7)
-    if Ent >= 8: Entry(Frame_Right, textvariable=Entry_8)
-    if Ent >= 9: Entry(Frame_Right, textvariable=Entry_9)
-    
-    for c in sorted(Frame_Right.children):
-        Frame_Right.children[c]["width"]= 80
-        Frame_Right.children[c]["font"] = Stan_Font
-        Frame_Right.children[c].pack(fill="both")
+    i = 1
+    while i <= Ent:
+        Entry_Var = "Entry_" + str(i)
+        for key, value in locals().items():
+            if key == Entry_Var:
+                Entry(SelectionWindow, textvariable = value, width=50).grid(row = i, column=1)
+                break
+        i+=1
 
     # Buttons
-    if Butt >= 1: Button(Frame_Bottom, text=Button_1_Text, command=Button_1_Command)
-    if Butt >= 2: Button(Frame_Bottom, text=Button_2_Text, command=Button_2_Command)
-    
-    #These buttons are for the hotfix options, so that they can present more options to the users
-    for c in sorted(Frame_Bottom.children):
-        Frame_Bottom.children[c]["font"] = Stan_Font
-        Frame_Bottom.children[c].pack(fill="both")
-    
+    i, k = 1, 0
+    while i <= Butt:
+        Text = "Button_"+ str(i) + "_Text"
+        Command = "Button_"+ str(i) + "_Command"
+        k = 0
+        for key, value in locals().items():
+            if key == Text:
+                text_hold = value
+                k += 1
+            if key == Command:
+                command_hold = value
+                k += 1
+            if k == 2:
+                Button(SelectionWindow, text = text_hold, command = command_hold).grid(row = Lab + i, column = 0)
+                break
+        i+=1
+
     # Exclusive to hotfixes
     if HotFix_Options == 1:
-        Button(Frame_Bottom, text="Insert New Line Into Hotfix", font=Stan_Font, command=lambda: Queue_Order.append("New line")).pack(fill="both")
-        Entry(Frame_Bottom, textvariable = StringVar(Frame_Bottom)).pack(fill="both")
-        Button(Frame_Bottom, text="Fill Entry Above, Then Click To Add A Comment", font=Stan_Font, command=lambda: (Queue_Order.append("Comment"), Comment_Queue.append(StringVar(Frame_Bottom).get()))).pack(fill="both")
-        Entry(Frame_Bottom, textvariable = StringVar(Frame_Bottom)).pack(fill="both")
-        Button(Frame_Bottom, text="Fill Entry Above, Then Click To Add A Header", font=Stan_Font, command=lambda: (Queue_Order.append("Header"), Headers_Queue.append(StringVar(Frame_Bottom).get()))).pack(fill="both")
+        test1 = StringVar(SelectionWindow)
+        test2 = StringVar(SelectionWindow)
+
+        Label(SelectionWindow, text = HotFix_Label_Text).grid(row=Lab+Butt+1, column=0)
+
+        Button(SelectionWindow, text="Insert New Line Into Hotfix", font=Stan_Font, command=lambda: Queue_Order.append("New line")).grid(row=Lab+Butt+2, column=0)
+        
+        Entry(SelectionWindow, textvariable = StringVar(SelectionWindow), width=50).grid(row=Lab+Butt+3, column=1)
+        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Comment", command=lambda: (Queue_Order.append("Comment"), Comment_Queue.append(test1.get()))).grid(row=Lab+Butt+3, column=0)
+        
+        Entry(SelectionWindow, textvariable = StringVar(SelectionWindow),width=50).grid(row=Lab+Butt+4, column=1)
+        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Header", command=lambda: (Queue_Order.append("Header"), Headers_Queue.append(test2.get()))).grid(row=Lab+Butt+4, column=0)
+
+
+
     
-    Frame_Left.grid( row = 0, column = 0)
-    Frame_Right.grid(row = 0, column = 1)
-    Frame_Bottom.grid(row = 1)
-    # Frame_Left.pack(side=LEFT, fill="both")
-    # Frame_Right.pack(side=RIGHT, fill="both")
-    # Frame_Bottom.pack(side=BOTTOM, fill="both")
+    
+    for c in sorted(SelectionWindow.children):
+        SelectionWindow.children[c]["font"] = Stan_Font
+        # SelectionWindow.children[c]["width"]= 80
+        # SelectionWindow.children[c].pack(fill="both")
+    
+    
+    # SelectionWindow.grid( row = 0, column = 0)
+    # SelectionWindow.grid(row = 0, column = 1)
+    # SelectionWindow.grid(row = 1)
+    # SelectionWindow.pack(side=LEFT, fill="both")
+    # SelectionWindow.pack(side=RIGHT, fill="both")
+    # SelectionWindow.pack(side=BOTTOM, fill="both")
 ################################################################################################################################################################
 # Main menu.
 if __name__ == "__main__":
