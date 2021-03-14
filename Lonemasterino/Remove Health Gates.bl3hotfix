@@ -1,0 +1,32 @@
+###
+### Name: Health Gate Remover
+### Version: 1.0.0
+### Author: Lonemasterino
+### Categories: cheat
+###
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+#Graveward
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EdenBoss),/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss.Default__BPChar_EdenBoss_C:DefaultDamageComponent,DamageEvents,0,,()
+
+#Rampager
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Rampager),/Game/Enemies/PrometheaBoss/Rampager/_Design/Character/BPChar_Rampager.Default__BPChar_Rampager_C:DefaultDamageComponent,DamageEvents,0,,()
+
+#Valkyries (Free Valk Skip; everything else isn't an option since their script breaks too hard and doesn't unlock the door after killing them)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossBar/_Design/Character/BPChar_MechRaidBossBar.Default__BPChar_MechRaidBossBar_C:DefaultDamageComponent,DamageEvents,0,,((EventName=DE_StartPhase1,HealthPool=None,EventHealthPercent=1,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossA/_Design/Character/BPChar_MechRaidBossA.Default__BPChar_MechRaidBossA_C:DefaultDamageComponent,DamageEvents,0,,((EventName="DE_Low Health",HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.4,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossB/_Design/Character/BPChar_MechRaidBossB.Default__BPChar_MechRaidBossB_C:DefaultDamageComponent,DamageEvents,0,,((EventName="DE_Low Health",HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.4,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossC/_Design/Character/BPChar_MechRaidBossC.Default__BPChar_MechRaidBossC_C:DefaultDamageComponent,DamageEvents,0,,((EventName="DE_Low Health",HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.4,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+
+#Wotan
+SparkCharacterLoadedEntry,(1,1,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid.Default__BPChar_BehemothRaid_C:DefaultDamageComponent,DamageEvents,0,,((EventName=Stage4,HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.5,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=Stage1_Mobile,HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_02_Secondary.ResourcePool_AI_Health_02_Secondary"',EventHealthPercent=0.01,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=BCoreShieldOff,HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.45,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+
+#Anathema
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMiniboss.Default__BPChar_GuardianBruteMiniboss_C:DefaultDamageComponent,DamageEvents,0,,()
+
+#Scourge
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Boss/_Design/Character/BPChar_GuardianBruteBoss.Default__BPChar_GuardianBruteBoss_C:DefaultDamageComponent,DamageEvents,0,,((EventName=DE_PrimaryAt1,HealthPool='"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.01,EventType=EDamageReactionEventType=Health,Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
