@@ -601,27 +601,28 @@ def round5():
             ("BPChar_TrooperMedic_C","Factory_SpawnFactory_OakAI_3"),
             ("BPChar_TrooperFlash_C","Factory_SpawnFactory_OakAI_4"),
         ]))
-    #BOSS 2
-    gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss2',
-        float(boss_size[1]),[
-            ("/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic","Factory_SpawnFactory_OakAI"),
-        ])
-    
-    #BOSS 1 !bug here
-    gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss1',
-        float(boss_size[0]),[
-            ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
-        ])
+    # Let's try it without generating bosses
+    # #BOSS 2
+    # gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss2',
+    #     float(boss_size[1]),[
+    #         ("/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic","Factory_SpawnFactory_OakAI"),
+    #     ])
+    # 
+    # #BOSS 1 !bug here
+    # gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss1',
+    #     float(boss_size[0]),[
+    #         ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
+    #     ])
 
 # [ ] round1?
 round1()
 # [ ] round2?
 round2()
 # # [ ] round3?
-# round3()
+round3()
 # # [ ] round4?
-# round4()
+round4()
 # # [ ] round5?
-# round5()
+round5()
 
 mod.close()
