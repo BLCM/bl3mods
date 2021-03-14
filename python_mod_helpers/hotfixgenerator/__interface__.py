@@ -6,12 +6,12 @@ from bl3hotfixmod import LVL_TO_ENG
 from __info_function__ import FileChoice, openBL3Hotfixfile
 from __hotfix_control import Create_HotFix_File
 from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, DataBase_Results, Queue_Order, Comment_Queue, Headers_Queue, Patch_Types
-from _global_lists import List_Info, ListBoxWindow
+from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 # Libraies
 import tkinter as tk
 from tkinter import Entry, Button, Label, Tk, StringVar
-from tkinter import DISABLED
+from tkinter import DISABLED, TOP, BOTTOM
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
@@ -39,38 +39,31 @@ def SelectionWindow(Func):
     # These variables will determine how many things to add to the window as I need them
     Lab, Ent, Butt, HotFix_Options = 0, 0, 0, 0
     # To be able to grab the entry feilds
-    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(
-        SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
-    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(
-        SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
-    Entry_9, Entry_10, Entry_11 = StringVar(SelectionWindow), StringVar(
-        SelectionWindow), StringVar(SelectionWindow)
+    Entry_1, Entry_2, Entry_3, Entry_4 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_5, Entry_6, Entry_7, Entry_8 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
+    Entry_9, Entry_10, Entry_11 = StringVar(SelectionWindow), StringVar(SelectionWindow), StringVar(SelectionWindow)
 
     # Used to grab the values the then entry textvariables
     def Get_Val(Type):
         # Information about your mod
         if Type == "Mod Info":
-            A, B, C, D, E, F = Entry_1.get(), Entry_2.get(
-            ), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
+            A, B, C, D, E, F = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get()
             # Puts the Information to make the file into a queue to be called later
             Mod_Header.extend([A, B, C, D, E, F])
 
         # Adds to the regular hot fix queue
         elif Type == "Regular HotFix":
-            A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(
-            ), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
+            A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
             Reg_hotfix.extend([A, B, C, D, E, F, G, H])
             Queue_Order.append("Regular hotfix")
 
         elif Type == "Table HotFix":
-            A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(
-            ), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
+            A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             Table_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Table hotfixes")
 
         elif Type == "Mesh HotFix":
-            A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(
-            ), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
+            A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             Mesh_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Mesh hotfixes")
 
@@ -89,8 +82,7 @@ def SelectionWindow(Func):
 
     # This is used for displaying what the hotfix will look like. use this to preview your creation before interting it
     def Dis_Hotfix(ints):
-        B, C, D, E, F, G, H, I = Entry_2.get(), Entry_3.get(), Entry_4.get(
-        ), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
+        B, C, D, E, F, G, H, I = Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
         if ints == 1:
             Hotfix_Label_Display.config(
                 text='(1,1,{} , {}), {}, {}, \n{}, {}, {}'.format(B, C, D, E, F, G, H))
@@ -131,7 +123,6 @@ def SelectionWindow(Func):
     elif Func == "Regular HotFix":
         SelectionWindow.title("Creating Regular HotFix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w*1.2, h, x, y/10))
-
         Lab, Ent, Butt = 8, 8, 2
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
@@ -141,12 +132,10 @@ def SelectionWindow(Func):
         Label_6_Text = 'Lenght of the previous value, (prev_val_len)'
         Label_7_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_8_Text = 'True, New Value, or Other (new_val)'
-
         Button_1_Text = "Add To Regular Hotfix Queue"
         def Button_1_Command(): return Get_Val("Regular HotFix")
         Button_2_Text = "Preview Your Hotfix"
         def Button_2_Command(): Dis_Hotfix(1)
-
         HotFix_Label_Text = '(1,1,{notification_flag},{package}),{obj_name},\n{attr_name},{prev_val_len},{prev_val},{new_val}'
         HotFix_Options = 1
 
@@ -154,7 +143,6 @@ def SelectionWindow(Func):
     elif Func == "Table HotFix":
         SelectionWindow.title("Creating Table HotFix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w*1.2, h, x, y/7))
-
         Lab, Ent, Butt = 9, 9, 2
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
@@ -165,12 +153,10 @@ def SelectionWindow(Func):
         Label_7_Text = 'Lenght of the previous value, (prev_val_len)'
         Label_8_Text = 'True, False, or Leave Blank: (prev_val)'
         Label_9_Text = 'True, New Value, or Other (new_val)'
-
         Button_1_Text = "Add To Table Hotfix Queue"
         def Button_1_Command(): return Get_Val("Table HotFix")
         Button_2_Text = "Preview Your Hotfix"
         def Button_2_Command(): Dis_Hotfix(2)
-
         HotFix_Label_Text = '(1,2,{notification_flag},{package}),{obj_name},{row_name},\n{attr_name},{prev_val_len},{prev_val},{new_val}'
         HotFix_Options = 1
 
@@ -178,9 +164,7 @@ def SelectionWindow(Func):
     elif Func == "Mesh HotFix":
         SelectionWindow.title("Creating Mesh HotFix.")
         SelectionWindow.geometry('%dx%d+%d+%d' % (w*1.2, h, x, y/5))
-        # I need to figure out how to display it proporly, so right no i will disable this feature
         Lab, Ent, Butt = 8, 8, 2
-
         Label_1_Text = 'Hotfix Type: (hf_type)'
         Label_2_Text = '1 or 0: (notification_flag)'
         Label_3_Text = '(map_path)'
@@ -189,12 +173,10 @@ def SelectionWindow(Func):
         Label_6_Text = 'Enter Numbers Like So: n,n,n (rotation)'
         Label_7_Text = 'Enter Numbers Like So: n,n,n (scale)'
         Label_8_Text = 'Transparent: True or False'
-
         Button_1_Text = "Add To Mesh Hotfix Queue"
         def Button_1_Command(): return Get_Val("Mesh HotFix")
         Button_2_Text = "Preview Your Hotfix"
         def Button_2_Command(): Dis_Hotfix(3)
-
         HotFix_Label_Text = '(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},\n{mesh_last},{coord_len},"{coord_field}",{transparent_flag}'
         HotFix_Options = 1
 
@@ -232,7 +214,6 @@ def SelectionWindow(Func):
     # Buttons
     i, k = 1, 0
     while i <= Butt:
-        # This is used to check my generic variable names that I have, and grab the value to put inside the things i need
         Text = "Button_" + str(i) + "_Text"
         Command = "Button_" + str(i) + "_Command"
         k = 0
@@ -253,19 +234,11 @@ def SelectionWindow(Func):
     if HotFix_Options == 1:
         Hotfix_Label_Display.config(text=HotFix_Label_Text)
         Hotfix_Label_Display.grid(row=Lab+Butt+1, column=0)
-
-        Button(SelectionWindow, text="Insert New Line Into Hotfix", font=Stan_Font,
-               command=lambda: Queue_Order.append("New line")).grid(row=Lab+Butt+2, column=0, sticky="W")
-
-        Entry(SelectionWindow, textvariable=Entry_10, width=50).grid(
-            row=Lab+Butt+3, column=1, sticky="E")
-        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Comment", command=lambda: (Queue_Order.append(
-            "Comment"), Comment_Queue.append(Entry_10.get()))).grid(row=Lab+Butt+3, column=0, sticky="W")
-
-        Entry(SelectionWindow, textvariable=Entry_11, width=50).grid(
-            row=Lab+Butt+4, column=1, sticky="E")
-        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Header", command=lambda: (Queue_Order.append(
-            "Header"), Headers_Queue.append(Entry_11.get())), state=DISABLED).grid(row=Lab+Butt+4, column=0, sticky="W")
+        Button(SelectionWindow, text="Insert New Line Into Hotfix", font=Stan_Font,command=lambda: Queue_Order.append("New line")).grid(row=Lab+Butt+2, column=0, sticky="W")
+        Entry(SelectionWindow, textvariable=Entry_10, width=50).grid(row=Lab+Butt+3, column=1, sticky="E")
+        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Comment", command=lambda: (Queue_Order.append("Comment"), Comment_Queue.append(Entry_10.get()))).grid(row=Lab+Butt+3, column=0, sticky="W")
+        Entry(SelectionWindow, textvariable=Entry_11, width=50).grid(row=Lab+Butt+4, column=1, sticky="E")
+        Button(SelectionWindow, text="Fill Entry, Then Click To Add A Header", command=lambda: (Queue_Order.append("Header"), Headers_Queue.append(Entry_11.get())), state=DISABLED).grid(row=Lab+Butt+4, column=0, sticky="W")
 
     for c in sorted(SelectionWindow.children):
         SelectionWindow.children[c]["font"] = Stan_Font
@@ -277,26 +250,24 @@ def SelectionWindow(Func):
 if __name__ == "__main__":
     MainWindow = tk.Tk()
     MainWindow.title("Hot Fix Generator")
-    w, h = 500, 350
+    w, h = 500, 400
     ws, hs = MainWindow.winfo_screenwidth(), MainWindow.winfo_screenheight()
     x, y = (ws/2) - (w/2), (hs/2) - (h/2)
     MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y))
-    Button(text="Add Mod Header", command=lambda: SelectionWindow("Mod Info"))
-    Button(text="Add Regular HotFix",
-           command=lambda: SelectionWindow("Regular HotFix"))
-    Button(text="Add Table HotFix",
-           command=lambda: SelectionWindow("Table HotFix"))
-    Button(text="Add Mesh HotFix", command=lambda: SelectionWindow("Mesh HotFix"))
-    Button(text="Database Search", command=lambda: SelectionWindow("Search"))
-
-    Button(text="JSON Information Formatter", command=lambda: FileChoice())
-    Button(text="Open A .bl3hotfix File", command=lambda: openBL3Hotfixfile())
-    Button(text="Useful Information", command=lambda: List_Info())
-    Button(text="Create Your HotFix File\nNOTE: Fill Out Queues Before Clicking",
-           command=lambda: Create_HotFix_File())
+    
+    Button(MainWindow,text="Add Mod Header", command=lambda: SelectionWindow("Mod Info"))
+    Button(MainWindow,text="Add Regular HotFix",command=lambda: SelectionWindow("Regular HotFix"))
+    Button(MainWindow,text="Add Table HotFix",command=lambda: SelectionWindow("Table HotFix"))
+    Button(MainWindow,text="Add Mesh HotFix", command=lambda: SelectionWindow("Mesh HotFix"))
+    Button(MainWindow,text="Database Search", command=lambda: SelectionWindow("Search"))
+    Button(MainWindow,text="JSON Information Formatter", command=lambda: FileChoice())
+    Button(MainWindow,text="Open A .bl3hotfix File", command=lambda: openBL3Hotfixfile())
+    Button(MainWindow,text="Patch types", command=lambda: ListBoxWindow(1))
+    Button(MainWindow,text="Map Names", command=lambda: ListBoxWindow(2))
+    Button(MainWindow,text="Create Your Hotfix File", command=lambda: Create_HotFix_File())
 
     # Formats all my wigits the same way
-    for c in sorted(MainWindow.children):
+    for c in MainWindow.children:
         MainWindow.children[c]["font"] = Stan_Font
         MainWindow.children[c].pack(expand=True, fill="both")
     MainWindow.mainloop()

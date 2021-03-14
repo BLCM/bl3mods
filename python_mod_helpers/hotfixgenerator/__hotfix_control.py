@@ -61,8 +61,7 @@ def Create_HotFix_File():
                 # prev_val_len = Reg_hotfix[regular_hotfix+5]
                 prev_val = Reg_hotfix[Reg_Index+6]
                 new_val = Reg_hotfix[Reg_Index+7]
-                mod.reg_hotfix(hf_type, package, obj_name,
-                               attr_name, new_val, prev_val, notification_flag)
+                mod.reg_hotfix(hf_type, package, obj_name,attr_name, new_val, prev_val, notification_flag)
             except:
                 print("Something went wrong")
             finally:
@@ -81,14 +80,12 @@ def Create_HotFix_File():
                 # prev_val_len = Table_Hotfix[table_hotfix_index+6]
                 prev_val = Table_Hotfix[Table_Index+7]
                 new_val = Table_Hotfix[Table_Index+8]
-                mod.table_hotfix(hf_type, package, obj_name, row_name,
-                                 attr_name, new_val, prev_val, notification_flag)
+                mod.table_hotfix(hf_type, package, obj_name, row_name,attr_name, new_val, prev_val, notification_flag)
             except:
                 print("Something went wrong")
             finally:
                 Table_Index += 8
 
-        # parkLevelPatchEntry,(1,6,0,Desert_P),/Game/Maps/Zone_3/Desert,/Game/LevelArt/Environments/Industrial/Props/Tools/Shovel/Model/Meshes,SM_Shovel,92,"40732.000000,5345.000000,5440.000000|-67.000000,380.000000,0.000000|2.000000,2.000000,2.000000",0
         elif Queue_Order[Queue_Index] == "Mesh hotfixes":
             mesh_path, map_path = '', ''
             try:
@@ -101,8 +98,7 @@ def Create_HotFix_File():
                 rotation = str(Mesh_Hotfix[Mesh_Index+5]).split(",")
                 scale = str(Mesh_Hotfix[Mesh_Index+6]).split(",")
                 transparent = Mesh_Hotfix[Mesh_Index+7]
-                mod.mesh_hotfix(map_path, mesh_path, (int(location[0]), int(location[1]), int(location[2])), (int(rotation[0]), int(
-                    rotation[1]), int(rotation[2])), (int(scale[0]), int(scale[1]), int(scale[2])), transparent, hf_type, notification_flag)
+                mod.mesh_hotfix(map_path, mesh_path, (int(location[0]), int(location[1]), int(location[2])), (int(rotation[0]), int(rotation[1]), int(rotation[2])), (int(scale[0]), int(scale[1]), int(scale[2])), transparent, hf_type, notification_flag)
             except:
                 print("Something went wrong")
             finally:

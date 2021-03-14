@@ -140,25 +140,3 @@ def ListBoxWindow(List):
 
     Find_Text_Button.config(command=find)
 ################################################################################################################################################################
-#This creates a new window that the user can use to look through information
-
-
-def List_Info():
-    ListWindow = Tk()
-    ListWindow.title("Data Table Look Up")
-    w, h, ws, hs = 500, 350, ListWindow.winfo_screenwidth(), ListWindow.winfo_screenheight()
-    x, y = (ws/2) - (w/2), (hs/2) - (h/2)
-
-    ListWindow.geometry('%dx%d+%d+%d' % (w, h, x, y*1.5))
-    Button(ListWindow, text="Patch types", command=lambda: ListBoxWindow(1))
-    Button(ListWindow, text="Map Names", command=lambda: ListBoxWindow(2))
-
-    # Formats all my wigits the same way
-    for c in sorted(ListWindow.children):
-        ListWindow.children[c]["font"] = Stan_Font
-        ListWindow.children[c].pack(expand=True, fill="both")
-
-    ListWindow.mainloop()
-
-# if __name__ == "__main__":
-#     List_Info()
