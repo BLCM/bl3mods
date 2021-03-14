@@ -22,6 +22,7 @@ mod = Mod('3000_simple.bl3hotfix',
 from gen_3000_Char_list import *
 from gen_3000_helper_functions import *
 from decimal import Decimal
+import boss
 
 #additional or multiply health/dmg scalling, false = (src_health|src_dmg) + (base_hs|base_ds), true = (src_health|src_dmg) * (base_hs|base_ds)
 health_dmg_multiply = False
@@ -41,33 +42,6 @@ size = 1
 boss_size = '1.5,3.75'.split(',')
 #mob speed
 mob_speed = 1.5
-
-def HS(etype, value):
-    if etype in "Normal":
-        return Decimal(math.log(((100/float(value))/1)*base_hs*12.0))
-    elif etype in "VeryGood":
-        return Decimal(math.log(((100/float(value))/1)*base_hs*3.0))
-    elif etype in "Badass":
-        return Decimal(math.log(((100/float(value))/1)*base_hs*1.2))
-    elif etype in "SuperBadass":
-        return Decimal(math.log(((100/float(value))/1)*base_hs*1.5))
-    elif etype in "UltimateBadass":
-        return Decimal(math.log(((100/float(value))/1)*base_hs*1.7))
-    else:
-        return Decimal(math.log(((100/float(value))/1)*base_hs*1.2))
-def DS(etype,value):
-    if etype in "Normal":
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.0))
-    elif etype in "VeryGood":
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.2))
-    elif etype in "Badass":
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.5))
-    elif etype in "SuperBadass":
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.7))
-    elif etype in "UltimateBadass":
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.9))
-    else:
-        return Decimal(math.log(((float(value)/0.1)/1)*base_ds*1.0))
 
 HM = ['HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12',
     'HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49',
@@ -193,6 +167,8 @@ gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBall
 #              "Factory_SpawnFactory_OakAI_5"),
 #         ])
 
+def replace_enemy(l):
+    return [(boss.choose_random_slaughter_boss()[1],x[1]) for x in l]
 
 #wave 1a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1',
@@ -203,51 +179,51 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_Te
 
 #wave 1b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1b_TrooperBscShtGn',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2")
-    ])
+    ]))
 #wave 2a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave2a_Trooper',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperBadass_C_FIX","Factory_SpawnFactory_OakAI"),
         ("BPChar_TrooperShotgun_C_FIX","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMelee_C_FIX","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBasic_C_FIX","SpawnFactory_OakAI_2"),
-    ])
+    ]))
 #wave 2b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave2b_TrprShtMleJtpk',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
         ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
-    ])
+    ]))
 #wave 3a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3a',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_2"),
         ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_3"),
         ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
-    ])
+    ]))
 #wave 3b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
         ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
         ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_4"),
         ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
-    ])
+    ]))
 
 #ROUND 2 fix on 3a medic, basic, jetpack, badass
 
 #wave 1_0
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave1',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBasicDark_C","SpawnFactory_OakAI_2"),
@@ -256,10 +232,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_TrooperMedic_C","SpawnFactory_OakAI_5"),
         ("BPChar_TrooperFlash_C","SpawnFactory_OakAI_6"),
         ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_7"),
-    ])
+    ]))
 #wave 2a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave2a',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBasicDark_C","SpawnFactory_OakAI_2"),
@@ -268,10 +244,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
         ("BPChar_TrooperFlashDark_C","SpawnFactory_OakAI_6"),
         ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 2b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave2b',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_10"),
@@ -282,10 +258,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_TrooperFlashDark_C","SpawnFactory_OakAI_6"),
         ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
         ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 3a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave3a',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgunDark_C_FIX.SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMeleeDark_C_FIX.SpawnFactory_OakAI_1"),
         ("BPChar_HeavyGunner_C_FIX.SpawnFactory_OakAI_10"),
@@ -294,10 +270,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_TrooperBadass_C_FIX.SpawnFactory_OakAI_4"),
         ("BPChar_TrooperMedicDark_C_FIX.SpawnFactory_OakAI_5"),
         ("BPChar_TrooperFlashDark_C_FIX.SpawnFactory_OakAI_6"),
-    ])
+    ]))
 #wave 3b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave3b',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
@@ -308,20 +284,20 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_TrooperFlashDark_C","SpawnFactory_OakAI_6"),
         ("BPChar_Heavy_Acidrain_C","SpawnFactory_OakAI_7"),
         ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_8"),
-    ])
+    ]))
 #wave 4a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4a',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
         ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
         ("BPChar_Heavy_Acidrain_C","SpawnFactory_OakAI_7"),
         ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 4b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4b',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
         ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
         ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
@@ -329,73 +305,73 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_Te
         ("BPChar_Heavy_Icebreaker_C","SpawnFactory_OakAI_4"),
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
         ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
-    ])
+    ]))
 
 #ROUND 3 FIX on 2a dark heavy, dogs, nogs
 
 #wave 1a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave1a',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperFlashDark_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_NogBasic_C","SpawnFactory_OakAI_16"),
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_2"),
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_3"),
-    ])
+    ]))
 #wave 1b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave1b',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_19"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_Heavy_BadassDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_NogBasic_C","SpawnFactory_OakAI_26"),
         ("BPChar_NogNinja_C","SpawnFactory_OakAI_27"),
-    ])
+    ]))
 #wave 2a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave2a',
-    size,[
+    size,replace_enemy([
         ("BPChar_FrontrunnerBasic_C_FIX.Factory_SpawnFactory_OakAI"),
         ("BPChar_HeavyGunnerDark_C_FIX.SpawnFactory_OakAI_24"),
         ("BPChar_Heavy_PowerhouseDark_C_FIX.SpawnFactory_OakAI_25"),
         ("BPChar_NogBasic_C_FIX.SpawnFactory_OakAI_26"),
         ("BPChar_Heavy_BasicDark_C_FIX.SpawnFactory_OakAI_28"),
-    ])
+    ]))
 #wave 2b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave2b',
-    size,[
+    size,replace_enemy([
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_NogBasic_C","SpawnFactory_OakAI_26"),
         ("BPChar_NogNinja_C","SpawnFactory_OakAI_27"),
         ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
         ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_29"),
-    ])
+    ]))
 #wave 3a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave3a',
-    size,[
+    size,replace_enemy([
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_NogBasic_C","SpawnFactory_OakAI_26"),
         ("BPChar_NogNinja_C","SpawnFactory_OakAI_27"),
         ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
-    ])
+    ]))
 #wave 3b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave3b',
-    size,[
+    size,replace_enemy([
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_NogBasic_C","SpawnFactory_OakAI_26"),
         ("BPChar_NogNinja_C","SpawnFactory_OakAI_27"),
         ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
         ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_29"),
-    ])
+    ]))
 #wave 4a
 gen_mod('/Game/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
-    ])
+    ]))
 #wave 4a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave4a',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
@@ -404,13 +380,13 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_Te
         ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_5"),
         ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_6"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_7"),
-    ])
+    ]))
 
 #ROUND 4 fix on 4a? fix, dogs, dark medic 3b? heavy spawn
 
 #wave_1
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave1',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_1"),
@@ -419,10 +395,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_5"),
         ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_6"),
         ("BPChar_Oversphere_C","SpawnFactory_OakAI_7"),
-    ])
+    ]))
 #wave 2
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave2',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_1"),
@@ -433,10 +409,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_6"),
         ("BPChar_Oversphere_C","SpawnFactory_OakAI_7"),
         ("BPChar_OversphereDefender_C","SpawnFactory_OakAI_8"),
-    ])
+    ]))
 #wave 3a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave3a',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_1"),
@@ -449,10 +425,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_Oversphere_C","SpawnFactory_OakAI_7"),
         ("BPChar_OversphereDefender_C","SpawnFactory_OakAI_8"),
         ("BPChar_TrooperJetpackDark_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 3b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave3b',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_TrooperBasicDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_1"),
@@ -464,10 +440,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_Oversphere_C","SpawnFactory_OakAI_7"),
         ("BPChar_OversphereDefender_C","SpawnFactory_OakAI_8"),
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 4a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4a',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_Frontrunner_Badass_C_FIX.SpawnFactory_OakAI_0"),
         ("BPChar_FrontrunnerJammer_C_FIX.SpawnFactory_OakAI_1"),
@@ -476,10 +452,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_TrooperBasicDark_C_FIX.SpawnFactory_OakAI_16"),
         ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_17"),
         ("BPChar_FrontrunnerStriker_C_FIX.SpawnFactory_OakAI_20"),
-    ])
+    ]))
 #wave 4b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b',
-    size,[
+    size,replace_enemy([
         ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_OversphereDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_18"),
@@ -489,13 +465,13 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_Te
         ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_126"),
         ("BPChar_MechBasic_C","SpawnFactory_OakAI_27"),
         ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_30"),
-    ])
+    ]))
 
 #ROUND 5 fix on 3a fix darc centurion, basic_mech
 
 #wave_1a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave1a',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechChargerDark_C","SpawnFactory_OakAI_10"),
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_12"),
@@ -503,20 +479,20 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_15"),
         ("BPChar_OversphereDefenderDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
-    ])
+    ]))
 #wave_1b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave1b',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechChargerDark_C","SpawnFactory_OakAI_10"),
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_12"),
         ("BPChar_TrooperFlashDark_C","SpawnFactory_OakAI_13"),
         ("BPChar_OversphereDefenderDark_C","SpawnFactory_OakAI_24"),
         ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
-    ])
+    ]))
 #wave 2a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave2a',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_TrooperBasicDark_C","SpawnFactory_OakAI_12"),
         ("BPChar_TrooperFlashDark_C","SpawnFactory_OakAI_13"),
@@ -524,10 +500,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_OversphereBadass_C","SpawnFactory_OakAI_24"),
         ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_OversphereDefenderDark_C","SpawnFactory_OakAI_26"),
-    ])
+    ]))
 #wave 2b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave2b',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_MechChargerDark_C","SpawnFactory_OakAI_14"),
         ("BPChar_MechGrenadierDark_C","SpawnFactory_OakAI_15"),
@@ -535,10 +511,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_OversphereBadass_C","SpawnFactory_OakAI_24"),
         ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
         ("BPChar_OversphereDefenderDark_C","SpawnFactory_OakAI_26"),
-    ])
+    ]))
 #wave 3a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave3a',
-    size,[
+    size,replace_enemy([
         ("BPChar_HeavyGunnerDark_C_FIX.SpawnFactory_OakAI_0"),
         ("BPChar_Heavy_BadassDark_C_FIX.SpawnFactory_OakAI_1"),
         ("BPChar_MechBasicDark_C_FIX.SpawnFactory_OakAI_11"),
@@ -548,10 +524,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_FrontrunnerStriker_C_FIX.SpawnFactory_OakAI_2"),
         ("BPChar_OversphereBadass_C","SpawnFactory_OakAI_24"),
         ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
-    ])
+    ]))
 #wave 3b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave3b',
-    size,[
+    size,replace_enemy([
         ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_Heavy_BadassDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
@@ -563,10 +539,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_OversphereDefenderDark_C","SpawnFactory_OakAI_26"),
         ("BPChar_Frontrunner_Badass_C","SpawnFactory_OakAI_3"),
         ("BPChar_OversphereStingerDark_C","SpawnFactory_OakAI_4"),
-    ])
+    ]))
 #wave 4a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave4a',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_0"),
         ("BPChar_MechChargerDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_FrontrunnerStriker_C","SpawnFactory_OakAI_10"),
@@ -575,10 +551,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_MechMGDark_C","SpawnFactory_OakAI_7"),
         ("BPChar_FrontrunnerBasic_C","SpawnFactory_OakAI_8"),
         ("BPChar_FrontrunnerJammer_C","SpawnFactory_OakAI_9"),
-    ])
+    ]))
 #wave 4b
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave4b',
-    size,[
+    size,replace_enemy([
         ("BPChar_MechBasicDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_MechChargerDark_C","SpawnFactory_OakAI_14"),
         ("BPChar_MechGrenadierDark_C","SpawnFactory_OakAI_15"),
@@ -587,10 +563,10 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_FrontrunnerJammer_C","SpawnFactory_OakAI_3"),
         ("BPChar_Frontrunner_Badass_C","SpawnFactory_OakAI_4"),
         ("BPChar_FrontrunnerStriker_C","SpawnFactory_OakAI_5"),
-    ])
+    ]))
 #wave 5a
 gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_TechSlaughter_Round5Wave5',
-    size,[
+    size,replace_enemy([
         ("BPChar_NogBadassDark_C","SpawnFactory_OakAI_1"),
         ("BPChar_TrooperBadassDark_C","SpawnFactory_OakAI_11"),
         ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_12"),
@@ -600,31 +576,31 @@ gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round5/SpawnOptions_Te
         ("BPChar_OversphereBadass_C","SpawnFactory_OakAI_2"),
         ("BPChar_MechMGDark_C","SpawnFactory_OakAI_3"),
         ("BPChar_Frontrunner_Badass_C","SpawnFactory_OakAI_5"),
-    ])
+    ]))
 #wave5b
 gen_mod('/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds',
-    size,[
+    size,replace_enemy([
         ("BPChar_TrooperBasic_C","Factory_SpawnFactory_OakAI"),
         ("BPChar_TrooperMedic_C","Factory_SpawnFactory_OakAI_3"),
         ("BPChar_TrooperFlash_C","Factory_SpawnFactory_OakAI_4"),
-    ])
+    ]))
 #BOSS 2
 gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss2',
     float(boss_size[1]),[
-        ("BPChar_GiganticMech2_C","Factory_SpawnFactory_OakAI"),
+        ("/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic","Factory_SpawnFactory_OakAI"),
     ])
 
 #BOSS 1 !bug here
 gen_mod('/Game/Enemies/_Spawning/Maliwan/Mechs/_Unique/SpawnOptions_Mech_TechSlaughterBoss1',
     float(boss_size[0]),[
-        ("BPChar_GiganticMech2_C","Factory_SpawnFactory_OakAI"),
+        ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
     ])
 
 
 
 
 # gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1b_TrooperBscShtGn',
-#         size,[
+#         size,replace_enemy([
 #             "BPChar_TrooperShotgun_C.SpawnFactory_OakAI_0",
 #             "BPChar_TrooperBasic_C.SpawnFactory_OakAI_2"
 #         ])
