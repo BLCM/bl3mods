@@ -46,7 +46,9 @@ def FileChoice():
 def File_Results_Window(True_Path):
     I = 0
     Raw_Data = DATA.get_data(True_Path)
-    Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]") # I slightly modified the flatten libary to make my program format easier, it may not work for all users and I may need to copy over what i modified into my code so that it will work for all users
+    # I slightly modified the flatten libary to make my program format easier, 
+    # it may not work for all users and I may need to copy over what i modified into my code so that it will work for all users
+    Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]") 
     _jwp_object_name = Refined_Data["_jwp_object_name"]
 
     """
