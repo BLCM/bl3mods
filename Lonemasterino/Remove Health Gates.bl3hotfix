@@ -4,6 +4,10 @@
 ### Author: Lonemasterino
 ### Categories: cheat
 ###
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
 
 #Graveward
 SparkCharacterLoadedEntry,(1,1,0,BPChar_EdenBoss),/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss.Default__BPChar_EdenBoss_C:DefaultDamageComponent,DamageEvents,0,,()
