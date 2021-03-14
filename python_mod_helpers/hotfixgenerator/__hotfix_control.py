@@ -19,12 +19,11 @@ def Create_HotFix_File():
     # If you don't give it someting, this is what I will replace it with as the program needs to be able to call apon this file later to inset things into it
     # Also its a little bit of an easter egg
     if len(Mod_Header) < 6:
-        Mod_Header.extend(["Chadd", "Chadd", "Chadd",
-                           "Chadd", "Chadd", "Chadd"])
+        Mod_Header.extend(["Chadd", "Chadd", "Chadd", "Chadd", "Chadd", "Chadd"])
 
     # We need this to be the first step, as the rest of the program depends on it
     File_Name, Mod_Title, Author_Name, Description, Version, Catagory = Mod_Header[0], Mod_Header[1], Mod_Header[2], Mod_Header[3], Mod_Header[4], Mod_Header[5]
-    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name, [Description, ], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,) # Very important, as the rest of the porgram relies on this working as it writes to these filese
+    mod = Mod(File_Name + '.bl3hotfix', Mod_Title, Author_Name, [Description,], lic=Mod.CC_BY_SA_40, v=Version, cats=Catagory,) # Very important, as the rest of the porgram relies on this working as it writes to these filese
 
     """
     Things to add:
@@ -32,23 +31,15 @@ def Create_HotFix_File():
     """
     # Used to assign mod types, may change later if not working
     def patch_types(hold):
-        if hold == 'Mod.PATCH':
-            hold = Mod.PATCH
-        elif hold == 'Mod.LEVEL':
-            hold = Mod.LEVEL
-        elif hold == 'Mod.EARLYLEVEL':
-            hold = Mod.EARLYLEVEL
-        elif hold == 'Mod.CHAR':
-            hold = Mod.CHAR
-        elif hold == 'Mod.PACKAGE':
-            hold = Mod.PACKAGE
-        elif hold == 'Mod.POST':
-            hold = Mod.POST
-        else:
-            hold = Mod.PATCH
+        if hold == 'Mod.PATCH': hold = Mod.PATCH
+        elif hold == 'Mod.LEVEL': hold = Mod.LEVEL
+        elif hold == 'Mod.EARLYLEVEL': hold = Mod.EARLYLEVEL
+        elif hold == 'Mod.CHAR': hold = Mod.CHAR
+        elif hold == 'Mod.PACKAGE': hold = Mod.PACKAGE
+        elif hold == 'Mod.POST': hold = Mod.POST
+        else: hold = Mod.PATCH
         return hold
 
-    
     """
     The main and most important part of the code.
     What this will do is attempt to put the hotfixes inside of your desired code
@@ -70,10 +61,8 @@ def Create_HotFix_File():
                 prev_val = Reg_hotfix[Reg_Index+6]
                 new_val = Reg_hotfix[Reg_Index+7]
                 mod.reg_hotfix(hf_type, package, obj_name,attr_name, new_val, prev_val, notification_flag)
-            except:
-                print("Something went wrong") #Hopefully this prints out if the hotfix wents wrong and it will continue one like normal
-            finally:
-                Reg_Index += 8 #Once everything is done, this command will be ran and hopefully it works as i intended it
+            except: print("Something went wrong") #Hopefully this prints out if the hotfix wents wrong and it will continue one like normal
+            finally: Reg_Index += 8 #Once everything is done, this command will be ran and hopefully it works as i intended it
 
         # Table_Hotfix Mesh_Hotfix
         elif Queue_Order[Queue_Index] == "Table hotfixes":
@@ -89,10 +78,8 @@ def Create_HotFix_File():
                 prev_val = Table_Hotfix[Table_Index+7]
                 new_val = Table_Hotfix[Table_Index+8]
                 mod.table_hotfix(hf_type, package, obj_name, row_name,attr_name, new_val, prev_val, notification_flag)
-            except:
-                print("Something went wrong")
-            finally:
-                Table_Index += 8
+            except: print("Something went wrong")
+            finally: Table_Index += 8
 
         elif Queue_Order[Queue_Index] == "Mesh hotfixes":
             try:
@@ -107,31 +94,21 @@ def Create_HotFix_File():
                 scale = str(Mesh_Hotfix[Mesh_Index+6]).split(",")
                 transparent = Mesh_Hotfix[Mesh_Index+7]
                 mod.mesh_hotfix(map_path, mesh_path, (int(location[0]), int(location[1]), int(location[2])), (int(rotation[0]), int(rotation[1]), int(rotation[2])), (int(scale[0]), int(scale[1]), int(scale[2])), transparent, hf_type, notification_flag)
-            except:
-                print("Something went wrong")
-            finally:
-                Mesh_Index += 8
+            except: print("Something went wrong")
+            finally: Mesh_Index += 8
 
         elif Queue_Order[Queue_Index] == "New line":
-            try:
-                mod.newline
-            except:
-                print("Something went wrong")
+            try: mod.newline
+            except: print("Something went wrong")
 
         elif Queue_Order[Queue_Index] == "Comment":
-            try:
-                mod.comment(comment_str=Comment_Queue[Comment_Index]) # If the user wronte a comment, then it will be called here and it should move on to hte next one
-            except:
-                print("Something went wrong")
-            finally:
-                Comment_Index += 1
+            try: mod.comment(comment_str=Comment_Queue[Comment_Index]) # If the user wronte a comment, then it will be called here and it should move on to hte next one
+            except: print("Something went wrong")
+            finally: Comment_Index += 1
 
         # not yet implimented
         elif Queue_Order[Queue_Index] == "Header":
-            try:
-                mod.header_lines(Headers_Queue[Header_Index])
-            except:
-                print("Something went wrong")
-            finally:
-                Header_Index += 1
+            try: mod.header_lines(Headers_Queue[Header_Index])
+            except: print("Something went wrong")
+            finally: Header_Index += 1
         Queue_Index += 1

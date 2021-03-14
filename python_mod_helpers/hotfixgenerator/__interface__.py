@@ -2,35 +2,29 @@
 # My files
 # from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
-from bl3hotfixmod import LVL_TO_ENG
+# from bl3hotfixmod import LVL_TO_ENG
 from __info_function__ import FileChoice, openBL3Hotfixfile
 from __hotfix_control import Create_HotFix_File
-from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, DataBase_Results, Queue_Order, Comment_Queue, Headers_Queue, Patch_Types
+from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, DataBase_Results, Queue_Order, Comment_Queue, Headers_Queue # Patch_Types
 from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 # Libraies
 import tkinter as tk
 from tkinter import Entry, Button, Label, Tk, StringVar
-from tkinter import DISABLED, TOP, BOTTOM
+from tkinter import DISABLED # TOP, BOTTOM
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
 Stan_Font = ("Times New Roman", 10)
-# Stan_Font = ("Wingdings 2", 12)
-# Stan_Font = ("Courier New", 12)
+# Stan_Font = ("Wingdings 2", 10)
+# Stan_Font = ("Courier New", 10)
 ################################################################################################################################################################
 # for info in test:
 #     print(info)
 
 def SelectionWindow(Func):
-    # Global/Window variables
     SelectionWindow = Tk()
     Hotfix_Label_Display = Label(SelectionWindow) # Had to put this up here as it would not work any other way
-    #These are for sotring the feilds of information
-    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
-    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
-    # SelectionWindow = Frame(SelectionWindow,borderwidth = 2)
-
     # Default values for window sizes for all, can manipulate inside the functions
     w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
     x, y = (ws/2) - (w/2), (hs/2) - (h/2)
@@ -50,20 +44,21 @@ def SelectionWindow(Func):
             Mod_Header.extend([A, B, C, D, E, F])
 
         # Adds to the regular hot fix queue
-        elif Type == "Regular HotFix":
+        elif Type == "Regular Hotfix":
             A, B, C, D, E, F, G, H = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get()
             Reg_hotfix.extend([A, B, C, D, E, F, G, H])
             Queue_Order.append("Regular hotfix")
 
-        elif Type == "Table HotFix":
+        elif Type == "Table Hotfix":
             A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             Table_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Table hotfixes")
 
-        elif Type == "Mesh HotFix":
+        elif Type == "Mesh Hotfix":
             A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             Mesh_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Mesh hotfixes")
+        
         # This will search the database for provided information
         elif Type == "Search":
             Search = Entry_1.get()
@@ -71,8 +66,7 @@ def SelectionWindow(Func):
             # This will clean out the previous entry so that it does not become cluttered
             if len(DataBase_Results) > 0: DataBase_Results.clear()
             for Details in Info:
-                if Details[0] not in DataBase_Results:
-                    DataBase_Results.append(Details[0])
+                if Details[0] not in DataBase_Results: DataBase_Results.append(Details[0])
             DataBase_Results.sort()
             ListBoxWindow(3)
 
@@ -117,7 +111,7 @@ def SelectionWindow(Func):
         def Button_1_Command(): return Get_Val("Mod Info")
 
     # Regular Hotfix
-    elif Func == "Regular HotFix":
+    elif Func == "Regular Hotfix":
         SelectionWindow.title("Creating Regular HotFix.")
         SelectionWindow.geometry('+%d+%d' % ( x, y/10))
         Lab, Ent, Butt = 8, 8, 2
@@ -137,7 +131,7 @@ def SelectionWindow(Func):
         HotFix_Options = 1
 
     # Table Hotfix
-    elif Func == "Table HotFix":
+    elif Func == "Table Hotfix":
         SelectionWindow.title("Creating Table HotFix.")
         SelectionWindow.geometry('+%d+%d' % (x, y/7))
         Lab, Ent, Butt = 9, 9, 2
@@ -158,7 +152,7 @@ def SelectionWindow(Func):
         HotFix_Options = 1
 
     # Mesh Hotfix
-    elif Func == "Mesh HotFix":
+    elif Func == "Mesh Hotfix":
         SelectionWindow.title("Creating Mesh HotFix.")
         SelectionWindow.geometry('+%d+%d' % ( x, y/5))
         Lab, Ent, Butt = 8, 8, 2
