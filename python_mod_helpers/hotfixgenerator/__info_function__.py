@@ -73,12 +73,11 @@ def openBL3Hotfixfile():
     def open_file():
         """Open a file for editing."""
         filepath = askopenfilename(
-            filetypes=[("Hot Fix File", "*.bl3hotfix")]
+            filetypes=[("BL3HotFix File", "*.bl3hotfix")]
         )
         if not filepath:
             return
         txt_edit.delete(1.0, END)
-        hold_path = filepath
         with open(filepath, "r") as input_file:
             text = input_file.read()
             txt_edit.insert(END, text)
@@ -88,7 +87,7 @@ def openBL3Hotfixfile():
         """Save the current file as a new file."""
         filepath = asksaveasfilename(
             defaultextension="txt",
-            filetypes=[("Hot Fix File", "*.bl3hotfix")],
+            filetypes=[("BL3HotFix File", "*.bl3hotfix")],
         )
         if not filepath:
             return

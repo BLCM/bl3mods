@@ -64,14 +64,12 @@ def SelectionWindow(Func):
             A, B, C, D, E, F, G, H, I = Entry_1.get(), Entry_2.get(), Entry_3.get(), Entry_4.get(), Entry_5.get(), Entry_6.get(), Entry_7.get(), Entry_8.get(), Entry_9.get()
             Mesh_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Mesh hotfixes")
-
         # This will search the database for provided information
         elif Type == "Search":
             Search = Entry_1.get()
             Info = data.get_refs_from_data(Search)
             # This will clean out the previous entry so that it does not become cluttered
-            if len(DataBase_Results) > 0:
-                DataBase_Results.clear()
+            if len(DataBase_Results) > 0: DataBase_Results.clear()
             for Details in Info:
                 if Details[0] not in DataBase_Results:
                     DataBase_Results.append(Details[0])
@@ -184,7 +182,7 @@ def SelectionWindow(Func):
         SelectionWindow.title("Find All References")
         SelectionWindow.geometry('+%d+%d' % (x*1.8, y))
         Lab, Ent, Butt = 1, 1, 1
-        Label_1_Text = 'Enter what you want to search for: \nMay freeze on you. Do not worry, its just loading.'
+        Label_1_Text = 'Enter what you want to search for: \nNOTE: May pause on you.'
         Button_1_Text = "Search"
         def Button_1_Command(): return Get_Val("Search")
 
@@ -196,7 +194,7 @@ def SelectionWindow(Func):
         for key, value in locals().items():
             if key == Label_Text:
                 Label(SelectionWindow, text=value).grid(row=i, column=0, sticky="W")  # Lables are but to the west side of the window
-                break #Breaks after appling it so that we move on to the next generic text name
+                break # Breaks after appling it so that we move on to the next generic text name
         i += 1
 
     # Entries
@@ -233,9 +231,12 @@ def SelectionWindow(Func):
     if HotFix_Options == 1:
         Hotfix_Label_Display.config(text=HotFix_Label_Text)
         Hotfix_Label_Display.grid(row=Lab+Butt+1, column=0)
+        
         Button(SelectionWindow, text="Insert New Line Into Hotfix", font=Stan_Font,command=lambda: Queue_Order.append("New line")).grid(row=Lab+Butt+2, column=0, sticky="W") # Calles the new line function
+        
         Entry(SelectionWindow, textvariable=Entry_10, width=50).grid(row=Lab+Butt+3, column=1, sticky="E") #Fill this with a comment
         Button(SelectionWindow, text="Fill Entry, Then Click To Add A Comment", command=lambda: (Queue_Order.append("Comment"), Comment_Queue.append(Entry_10.get()))).grid(row=Lab+Butt+3, column=0, sticky="W") # Grabs the comment
+        
         Entry(SelectionWindow, textvariable=Entry_11, width=50).grid(row=Lab+Butt+4, column=1, sticky="E") # Fill for header
         Button(SelectionWindow, text="Fill Entry, Then Click To Add A Header", command=lambda: (Queue_Order.append("Header"), Headers_Queue.append(Entry_11.get())), state=DISABLED).grid(row=Lab+Butt+4, column=0, sticky="W") # Works but not in the way i intend, will work on it a bit later
 
@@ -248,11 +249,11 @@ def SelectionWindow(Func):
 # Main menu.
 if __name__ == "__main__":
     MainWindow = tk.Tk()
-    MainWindow.title("Hot Fix Generator")
-    w, h = 500, 400
+    MainWindow.title("Hotfix Generator")
+    w, h = 270, 300
     ws, hs = MainWindow.winfo_screenwidth(), MainWindow.winfo_screenheight()
     x, y = (ws/2) - (w/2), (hs/2) - (h/2)
-    MainWindow.geometry('+%d+%d' % ( x, y)) # What this does is it centers the window while not taking up asny more space than it needs to
+    MainWindow.geometry('%dx%d+%d+%d' % (w, h, x, y)) # What this does is it centers the window while not taking up asny more space than it needs to
     
     # All main menu buttons
     Button(MainWindow,text="Add Mod Header", command=lambda: SelectionWindow("Mod Info"))

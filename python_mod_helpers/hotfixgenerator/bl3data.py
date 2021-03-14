@@ -326,7 +326,7 @@ class BL3Data(object):
         self.curs.execute("""select o.name
                 from bl3object o, bl3refs r, bl3object o2
                 where
-                    o.name like '%{}'
+                    o.name like '%{}%'
                     and o.id=r.from_obj
                     and o2.id=r.to_obj
                 """.format(obj_name))
