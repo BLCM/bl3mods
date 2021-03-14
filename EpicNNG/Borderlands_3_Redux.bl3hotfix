@@ -3,7 +3,7 @@
 ###
 ### Name: Redux Mod
 ### Author: EpicNNG - Grimm - SsPyR - 10 FPS - Apocalyptech - HackerSmasher - Apple1417 - FromDarkHell
-### Version: 1.0.8
+### Version: 1.0.9
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
@@ -4964,9 +4964,7 @@ SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/T
 
 # LOOT ENEMY POOLS
 
-SparkPatchEntry(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Loot_Enemies.ItemPool_Loot_Enemies,BalancedItems,0,,((ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_ETech_All.ItemPool_SMGs_ETech_All"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_Anshin.ItemPool_Shields_Anshin"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/PatchDLC/Event2/Enemies/Tiny/_Shared/_Design/ItemPools/ItemPool_EridiumBackpackBadass.ItemPool_EridiumBackpackBadass"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SniperRifles_ETech_Rare.ItemPool_SniperRifles_ETech_Rare"',PoolProbability=(BaseValueConstant=0.1)),(ItemPool=ItemPoolData'"/Game/GameData/Loot/ItemPools/LootGoliath/ItemPool_SniperAndHeavy_All_Bonus3.ItemPool_SniperAndHeavy_All_Bonus3"',PoolProbability=(BaseValueConstant=0.1)),
-
-
+SparkPatchEntry(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Loot_Enemies.ItemPool_Loot_Enemies,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/Balance/Balance_HW_ATL_RubysWrath.Balance_HW_ATL_RubysWrath,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/Balance/Balance_HW_ATL_RubysWrath.Balance_HW_ATL_RubysWrath"',Weight=(BaseValueConstant=0.1)))
 
 
 # Increasing Spawn Rate of Loot Enemies (Credit to Grimm)
