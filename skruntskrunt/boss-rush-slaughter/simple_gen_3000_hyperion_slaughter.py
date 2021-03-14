@@ -97,18 +97,26 @@ def enemy_legendaries(etype):
 def get_bpchar(s):
     return s.split('/')[-1]
 
+def print_and_comment(s):
+    print(s)
+    mod.comment(s)
+
 healh_chance = 52
 def gen_mod(so, scale, list):
     c = len(list)
     global healh_chance
     healh_chance -= 1
     for idx, val in enumerate(list):
-        #tval = val.split('.')
-        #val = tval[0]
+        if (isinstance(val[0],tuple)):
+            # this means we're using (name,bpchar,balance,balancerow,extras)
+            print_and_comment(f'Deploying {val[0][0]}')
+            # new tuple of bpchar and prior spawn factory
+            val = (val[0][1],val[1])
+        else:
+            print_and_comment(f'Deploying {val[0]}')            
         if val == 'empty':
             continue
         var = val
-        # var = eval(val+"(0)").split(".")
         obj = var[1].replace("_C'","")
         print(var,obj,val)
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', Mod.get_full(so), 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx)), "BlueprintGeneratedClass'{}.{}_C'".format(var[0],get_bpchar(var[0])))
@@ -141,15 +149,6 @@ def gen_mod(so, scale, list):
 
 # "BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK.BPChar_LoaderEXP_JUNK_C'",
             
-gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
-        size,[
-            ("/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01", "Factory_SpawnFactory_OakAI"), # ??
-            ("/Game/Enemies/ServiceBot/LOOT/_Design/Character/BPChar_ServiceBot_LOOT","Factory_SpawnFactory_OakAI_1"),
-            ("/Game/Enemies/Skag/_Unique/Buttmunch/_Design/Character/BPChar_SkagButtmunch","Factory_SpawnFactory_OakAI_2"),
-            ("/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue","Factory_SpawnFactory_OakAI_3"),
-            ("/Game/Enemies/Heavy/_Unique/FootstepsOfGiants/_Design/Character/BPChar_HeavyFootstepsOfGiants","Factory_SpawnFactory_OakAI_4"),
-            ("/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans","Factory_SpawnFactory_OakAI_5"),
-        ])
 
 # gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
 #         size,[
@@ -168,16 +167,29 @@ gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBall
 #         ])
 
 def replace_enemy(l):
-    return [(boss.choose_random_slaughter_boss()[1],x[1]) for x in l]
+    return [(boss.choose_random_slaughter_boss(),x[1]) for x in l]
 
 def round1():
+
+    gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
+            size,replace_enemy([
+                ("/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01", "Factory_SpawnFactory_OakAI"), # ??
+                ("/Game/Enemies/ServiceBot/LOOT/_Design/Character/BPChar_ServiceBot_LOOT","Factory_SpawnFactory_OakAI_1"),
+                ("/Game/Enemies/Skag/_Unique/Buttmunch/_Design/Character/BPChar_SkagButtmunch","Factory_SpawnFactory_OakAI_2"),
+                ("/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue","Factory_SpawnFactory_OakAI_3"),
+                ("/Game/Enemies/Heavy/_Unique/FootstepsOfGiants/_Design/Character/BPChar_HeavyFootstepsOfGiants","Factory_SpawnFactory_OakAI_4"),
+                ("/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans","Factory_SpawnFactory_OakAI_5"),
+            ]))
+
+
     #wave 1a
+    # Junk loader is the test enemy that we know works
     gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1',
              size,[
                  ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK","SpawnFactory_OakAI_2")
              ])
     
-    
+    # After this point everything is random
     #wave 1b
     gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1b_TrooperBscShtGn',
         size,replace_enemy([
@@ -601,10 +613,15 @@ def round5():
             ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
         ])
 
+# [ ] round1?
 round1()
-#round2()
-#round3()
-#round4()
-#round5()
+# [ ] round2?
+round2()
+# # [ ] round3?
+# round3()
+# # [ ] round4?
+# round4()
+# # [ ] round5?
+# round5()
 
 mod.close()
