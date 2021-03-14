@@ -44,8 +44,9 @@
 # [X] Arbalist weak
 # [X] Chupa drops too much
 # [X] Demoskagon drops too much
-# [ ] Test Trials again
-# [ ] Test Traunt again
+# [X] Test Trials again
+# [X] Test Traunt again
+# [ ] Heckle?
 # [ ] Too strong militant near one punch
 # [ ] Eista spawns loot in a meaningful way
 
@@ -96,9 +97,10 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Game/PatchDLC
 # # REPLACE EISTA DROP PATTERN WITH LOOT TINK PATTERN
 # # [ ] Untested
 # SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Hibiscus/NonPlayerCharacters/Eista/_Design/Character/BPChar_Hib_EistaChild_Radiation.BPChar_Hib_EistaChild_Radiation_C:AIBalanceState_GEN_VARIABLE,DropLootPattern,0,,LootSpawnPatternData'/Game/Enemies/Tink/Loot/_Design/LootPools/'
-# 
-
-
+#
+# Stolen from Alef's hyperion slaughter 3000
+# Drop Loot like Crazy Earl
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Hibiscus/NonPlayerCharacters/Eista/_Design/Character/BPChar_Hib_EistaChild_Radiation.BPChar_Hib_EistaChild_Radiation_C:AIBalanceState_GEN_VARIABLE,DropLootPattern,0,,LootSpawnPatternData'/Game/GameData/Loot/SpawnPatterns/LootSpawnPattern_CrazyEarlDoor.LootSpawnPattern_CrazyEarlDoor'
 
 # Freddie!
 
