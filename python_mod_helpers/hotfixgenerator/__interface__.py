@@ -99,8 +99,6 @@ def SelectionWindow(Func):
                 text='(1,2,{} , {}), {}, {}, \n{}, {}, {}, {}'.format(B, C, D, E, F, G, H, I))
         # Does nothing at the current moment
         elif ints == 3:
-            notification_flag = B
-            
             map_first, map_last = C.rsplit('/', 1)
             mesh_first, mesh_last = D.rsplit('/', 1)
             location = E.split(",")
@@ -113,7 +111,7 @@ def SelectionWindow(Func):
                 ]))
             coord_field = '|'.join(coord_parts)
             Hotfix_Label_Display.config(
-                text='(1,6,{}, {}), {}, {}, \n{}, {}, "{}", {})'.format(notification_flag, map_last, map_first, mesh_first, mesh_last, len(coord_field), coord_field, H))
+                text='(1,6,{}, {}), {}, {}, \n{}, {}, "{}", {})'.format(B, map_last, map_first, mesh_first, mesh_last, len(coord_field), coord_field, H))
 
     # Mod header info
     if Func == "Mod Info":  # Creates a mod file of you to use
@@ -271,7 +269,6 @@ def SelectionWindow(Func):
 
     for c in sorted(SelectionWindow.children):
         SelectionWindow.children[c]["font"] = Stan_Font
-        # SelectionWindow.children[c].pack(expand=True, fill="both")
     SelectionWindow.mainloop()
 
 
