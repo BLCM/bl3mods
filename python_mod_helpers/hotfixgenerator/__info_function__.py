@@ -24,8 +24,6 @@ import os
 DATA = BL3Data()
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
-
-
 def FileChoice():
     Tk().withdraw()
     File_Path = askopenfilename(filetypes=[("Choose file", ".json")])
@@ -44,16 +42,15 @@ def FileChoice():
         True_Path = Raw_Path[index::]
         File_Results_Window(True_Path)
 
-# Trying to stream line the
-
-
+# Trying to stream line the process of using the 'get_data' functions
 def File_Results_Window(True_Path):
     I = 0
     Raw_Data = DATA.get_data(True_Path)
-    Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]")
+    Refined_Data = flatten(Raw_Data[I], separator="[", replace_separators="]") # I slightly modified the flatten libary to make my program format easier, it may not work for all users and I may need to copy over what i modified into my code so that it will work for all users
     _jwp_object_name = Refined_Data["_jwp_object_name"]
 
     """
+    I commented these out beause these are important, but i have not yet found a proper use for them
     _jwp_object_name = Refined_Data["_jwp_object_name"]
     _jwp_arr_idx = Refined_Data["_jwp_arr_idx"]
     _jwp_is_asset = Refined_Data["_jwp_is_asset"]
@@ -61,7 +58,7 @@ def File_Results_Window(True_Path):
     _jwp_export_idx = Refined_Data["_jwp_export_idx"]
     _apoc_data_ver = Refined_Data["_apoc_data_ver"]
     """
-    obj_name = str(True_Path + "." + _jwp_object_name + ", ")
+    obj_name = str(True_Path + "." + _jwp_object_name + ", ") # This will allow the users to copy the object path into the program so that they have an easier time moddign
     while I < len(Raw_Data):
         for key, value in Refined_Data.items():
             attr_name = str(key) + " : " + str(value)
@@ -72,10 +69,7 @@ def File_Results_Window(True_Path):
 
 ################################################################################################################################################################
 # Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
-
-
 def openBL3Hotfixfile():
-
     def open_file():
         """Open a file for editing."""
         filepath = askopenfilename(

@@ -74,7 +74,6 @@ def ListBoxWindow(List):
         ListWindow, yscrollcommand=Scroll_Bar, width=300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0', END)
 ################################################################################################################################################################
-#Buttons
     if List == 1:  # Displayes what you should type inside the first section of the hotfix section
         ListWindow.title("Patch names")
         ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
@@ -92,7 +91,7 @@ def ListBoxWindow(List):
     # No longer buttons for these but these are called when you run the functions
     elif List == 3:  # Has all the results of the database search
         ListWindow.title("Data base results")
-        ListWindow.geometry('%dx%d+%d+%d' % (w*2.1, h, x, y/3.5))
+        ListWindow.geometry('+%d+%d' % ( x, y/3.5))
         DataBase_Results.sort()
         for x in DataBase_Results:
             Info_Display_Text_Box.insert('1.0', x + '\n')
@@ -100,7 +99,7 @@ def ListBoxWindow(List):
 
     elif List == 4:  # Displays the contents of when you looked through a file
         ListWindow.title("JSON File Information")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        ListWindow.geometry('+%d+%d' % (x/3.8, y/3.5))
         File_Results_List.sort()
         for x in File_Results_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
@@ -109,7 +108,7 @@ def ListBoxWindow(List):
     #exclusively used with the find function so that it makes it easier on my life
     elif List == 5:  # Displays Searched information
         ListWindow.title("JSON Filtered Information")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x/3.8, y/3.5))
+        ListWindow.geometry('+%d+%d' % (x/3.8, y/3.5))
         Search_List.sort()
         for x in Search_List:
             Info_Display_Text_Box.insert('1.0', x + '\n')
