@@ -23,7 +23,7 @@ Tougher Bosses include:
 * General Traunt 
 * Rampager
 * Power Rangers
-* Trail bosses
+* Trial bosses
 * etc.
 
 Balance help is appreciated. The underlying philosophy is that a big
@@ -32,7 +32,7 @@ spongey raid boss fight makes you deserving of dedicated drops.
 Header
 ======
 * Name: Raid on Bloodsun Canyon, Raid on VIP Tower, and Raid Bosses
-* Version: 1.4.0
+* Version: 1.4.1
 * Author: Abram/skruntskrunt,  Apocalyptech, EpicNNG, Grimm, and more
 * Categories: enemy-drops, loot-system, mode-balance, enemy
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -41,6 +41,9 @@ Header
 
 Changelog
 =========
+**v1.4.1** - 2021-03-15
+ * Minor bug fix
+
 **v1.4.0** - 2021-03-12
  * More automation, more bosses, better control of loot by style
 
