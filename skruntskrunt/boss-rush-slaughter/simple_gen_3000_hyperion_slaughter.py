@@ -11,7 +11,7 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 import math
 mod = Mod('3000_simple.bl3hotfix',
-        '3000 Boss Rush slaughter',
+        '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
         'altef_4 feat. SkruntSkrunt',
         ['turns maliwan slaughter star 3000',
         'into a boss rush slaughter'],
