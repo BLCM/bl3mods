@@ -138,6 +138,8 @@ of the mods you'll find in here, though:
   Travel machine to some more useful locations.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
+- **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The
+  Droughts have the usual porta-potty weapon attachments when looting.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
 - **More Visible ECHO Logs** - Makes the ECHO log loot bars (and, incidentally,
   mission items) far more visible
