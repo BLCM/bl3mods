@@ -355,15 +355,89 @@ safe_bosses = [
     ('Lani Dixon','/Geranium/Enemies/GerPunk_Female/_Unique/Number/_Design/Character/BPChar_GerPunkNumber',None,None),
     ('Pterodomini','/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/BPChar_GerRakkRod',None,None),
     ('Slithermaw','/Geranium/Enemies/GerRakk/_Unique/Mother/_Design/Character/BPChar_GerRakkMother',None,None),
-    ('Wrendon Esk','/Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless',None,None),
+    #('Wrendon Esk','/Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless',None,None), # he gets stuck alot
     # booted up just fine?
-    #('','',None,None),
-    #('','',None,None),
-    #('','',None,None),
-    #('','',None,None),
-    #('','',None,None),
+    # ('Skrakk','/Game/Enemies/Rakk/_Unique/HuntSkrakk/_Design/Character/BPChar_Rakk_HuntSkrakk',None,None), # flies poorly
+    ('Jabbermogwai','/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01',None,None),
+    ('Blinding Banshee','/Game/Enemies/Nekrobug/_Unique/Hunt01/_Design/Character/BPChar_Nekrobug_Hunt01',None,None),
+    ('Chonk Stomp','/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/BPChar_Saurian_Hunt01',None,None),
+    ('Sheega','/Game/Enemies/Punk_Female/_Unique/SkagLady/_Design/Character/BPChar_PunkSkagLady',None,None),
+    ('The Tink-Train','/Game/Enemies/Goon/_Unique/MonsterTrucker/_Design/Character/BPChar_GoonMonsterTrucker',None,None),
+    ('Azalea','/Game/Enemies/Punk_Female/_Unique/BrewHag/_Design/Character/BPChar_PunkBrewHag',None,None),
+    ('Manvark','/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',None,None),
+    ('Lagromar','/Game/Enemies/Tink/_Unique/Demon/_Design/Character/BPChar_TinkDemon',None,None),
+    ('Procurer','/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer',None,None),
+    ('Ipswitch Dunne','/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerEnforcerDispatcher',None,None),
+    # These guys can cause problems
+    ('Captain Traunt','/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt',{"raid1":51}),
+    ('General Traunt','/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt',{"raid1":52}),
+    ('Katagawa Ball','/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere',
+     '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'), # 
+    ('Warden','/Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena',"/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique","CageArena"),
+    ('Bellik Primis','/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast','/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique',"AlteredBeast"), # works
+    # Killavolt kinda works but then we got blocked?
+    ('Killavolt (Kenneth)','/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Character/BPChar_EnforcerKillaVolt','/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique','Enforcer_KillaVolt'),
 ]
 
-def choose_random_slaughter_boss(bosses=safe_bosses):
+# I use this for testing
+dumb_bosses = [
+    # ('Skrakk','/Game/Enemies/Rakk/_Unique/HuntSkrakk/_Design/Character/BPChar_Rakk_HuntSkrakk',None,None), # Bad?
+    ('Jabbermogwai','/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01',None,None),
+    ('Blinding Banshee','/Game/Enemies/Nekrobug/_Unique/Hunt01/_Design/Character/BPChar_Nekrobug_Hunt01',None,None),
+    ('Chonk Stomp','/Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/BPChar_Saurian_Hunt01',None,None),
+    ('Sheega','/Game/Enemies/Punk_Female/_Unique/SkagLady/_Design/Character/BPChar_PunkSkagLady',None,None),
+    ('The Tink-Train','/Game/Enemies/Goon/_Unique/MonsterTrucker/_Design/Character/BPChar_GoonMonsterTrucker',None,None),
+    ('Azalea','/Game/Enemies/Punk_Female/_Unique/BrewHag/_Design/Character/BPChar_PunkBrewHag',None,None),
+    ('Manvark','/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',None,None),
+    ('Lagromar','/Game/Enemies/Tink/_Unique/Demon/_Design/Character/BPChar_TinkDemon',None,None),
+    ('Procurer','/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer',None,None),
+    ('Ipswitch Dunne','/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerEnforcerDispatcher',None,None),
+    # works
+    # Is general traunt shared??
+    # works
+    ('Captain Traunt','/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt',{"raid1":51}),
+    ('General Traunt','/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt','/Game/Enemies/Heavy/_Shared/_Design/Balance/Table_Balance_Heavy_Unique','Heavy_Traunt',{"raid1":52}),
+    # works
+    #('Gigamind','/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder','/Game/Enemies/Nog/_Shared/_Design/Balance/Table_Balance_Nog_Unique','Nog_ChipHolder'),
+    # works
+    ('Katagawa Ball','/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere',
+     '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'), # might work
+    # works
+    ('Warden','/Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena',"/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique","CageArena"),
+    # ('Empowered Grawn','/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character/BPChar_LunaticPossessed',"/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists",'Boss_Lunatic'), # infinite immunity phase
+    # ('Dinklebot','/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01',None,None), # doesn't work
+    # ('MouthPiece',
+    #  '/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss',
+    #  '/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique',
+    #  'Enforcer_Mouthpiece'), # gets in a "Beatings per minute" loop
+    # works
+    ('Bellik Primis','/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast','/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique',"AlteredBeast"), # works
+    # ('Shiverous the Unscathed','/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon',"/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists","Frost_Dragon_Rare"), #gets stuck up top
+    # Killavolt kinda works but then we got blocked?
+    ('Killavolt (Kenneth)','/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Character/BPChar_EnforcerKillaVolt','/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique','Enforcer_KillaVolt'),
+    # ('Katagawa Jr.','/Game/Enemies/KatagawaJR/KJR/_Design/Character/BPChar_KJR','/Game/Enemies/KatagawaJR/_Shared/_Design/Balance/Table_Balance_KatagawaJR_PT1','KatagawaJR_Boss'),# appears dies then locks?
+    # ('Dreg','/Game/Enemies/Rakk/_Unique/Dragon/_Design/Character/BPChar_Rakk_Dragon',None,None), # they don't engage
+    # ('Vice','/Game/Enemies/Rakk/_Unique/DragonCryo/_Design/Character/BPChar_Rakk_DragonCryo',None,None), # they don't engage
+]
+
+# Want list:
+# * Katagawa Ball?
+# * Warden?
+# * Gigamind?
+# * Mokdan Urgash (DLC4)
+# * The Caretaker (DLC4)
+# * General Blisterpus (DLC4)
+# * ward watcher alpha (DLC4)
+# * ward watcher beta  (DLC4)
+# * black heart king   (DLC4)
+# * evil brick
+# * sponge boss bullet pants
+# * [X] Jabbermogwai
+# * Queen iOsaur iOsaur, Queen of the Scaleon
+# * [X] Skrakk
+# * [ ] Long Arm the Smasher
+# * Apollo
+# * Artemis
+def choose_random_slaughter_boss(bosses=dumb_bosses):
     return random.choice(bosses)
     
