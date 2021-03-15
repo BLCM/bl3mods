@@ -134,6 +134,8 @@ of the mods you'll find in here, though:
 - **Atlas HQ Courtyard Shortcut** - Provides a way to climb up to the second
   level in the courtyard area, to avoid having to pointlessly run around the
   map just to get to the Atlas HQ building.
+- **Atlas HQ Fast Travel** - A collection of mods to move the Atlas HQ Fast
+  Travel machine to some more useful locations.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
