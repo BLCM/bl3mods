@@ -44,8 +44,9 @@
 # [X] Arbalist weak
 # [X] Chupa drops too much
 # [X] Demoskagon drops too much
-# [ ] Test Trials again
-# [ ] Test Traunt again
+# [X] Test Trials again
+# [X] Test Traunt again
+# [ ] Heckle?
 # [ ] Too strong militant near one punch
 # [ ] Eista spawns loot in a meaningful way
 
@@ -96,9 +97,10 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Game/PatchDLC
 # # REPLACE EISTA DROP PATTERN WITH LOOT TINK PATTERN
 # # [ ] Untested
 # SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Hibiscus/NonPlayerCharacters/Eista/_Design/Character/BPChar_Hib_EistaChild_Radiation.BPChar_Hib_EistaChild_Radiation_C:AIBalanceState_GEN_VARIABLE,DropLootPattern,0,,LootSpawnPatternData'/Game/Enemies/Tink/Loot/_Design/LootPools/'
-# 
-
-
+#
+# Stolen from Alef's hyperion slaughter 3000
+# Drop Loot like Crazy Earl
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Hibiscus/NonPlayerCharacters/Eista/_Design/Character/BPChar_Hib_EistaChild_Radiation.BPChar_Hib_EistaChild_Radiation_C:AIBalanceState_GEN_VARIABLE,DropLootPattern,0,,LootSpawnPatternData'/Game/GameData/Loot/SpawnPatterns/LootSpawnPattern_CrazyEarlDoor.LootSpawnPattern_CrazyEarlDoor'
 
 # Freddie!
 
@@ -1428,12 +1430,12 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaC),/Game/Enemies/Varki
 
 ##### Matty Crawly #####
 # BPChar: BPChar_VarkidHunt02_LarvaD
-# bpchar_path: //Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD
+# bpchar_path: /Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD
 # balance_table: /Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique
 # balance rowname: Hunt02_Larva
 
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt02_LarvaD),//Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD.BPChar_VarkidHunt02_LarvaD_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt02_LarvaD),//Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD.BPChar_VarkidHunt02_LarvaD_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt02_LarvaD),/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD.BPChar_VarkidHunt02_LarvaD_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_VarkidHunt02_LarvaD),/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Larva/BPChar_VarkidHunt02_LarvaD.BPChar_VarkidHunt02_LarvaD_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique.Table_Varkid_Balance_Unique,Hunt02_Larva,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique.Table_Varkid_Balance_Unique,Hunt02_Larva,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
 SparkCharacterLoadedEntry,(1,2,0,BPChar_VarkidHunt02_LarvaD),/Game/Enemies/Varkid/_Shared/_Design/Balance/Table_Varkid_Balance_Unique.Table_Varkid_Balance_Unique,Hunt02_Larva,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1000
