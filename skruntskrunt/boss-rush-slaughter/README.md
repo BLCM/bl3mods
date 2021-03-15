@@ -3,16 +3,16 @@
 
 Billy, one of the Billy sisters, was cheesed that vault hunters had attacked her and her sisters. Billy broke into a stash of stolen Maliwan equipment and found what Katagawa-Jr was using to produce his clones. Billy had an idea, what if she cloned the Saurians of the Borderlands and made theme park featuring them. Instantly she realized that it was a dumb idea and questioned why anyone would entertain such an idea. But could she use this cloning machine to clone Saurians and other defeated Badasses to defeat the Vault Hunters once and for all?
 
-Thank you to the true hero: alef-4. His careful modding to produce the Hyperion slaughter star 3000 allowed me to spend very little time changing his mod.
+Thank you to the true hero: altef_4. His careful modding to produce the Hyperion slaughter star 3000 allowed me to spend very little time changing his mod.
 
-This is a boss rush mod that can generate different configurations of a boss rush. It is directly based on alef-4's research and source code. It shows none of the love and care and careful effort that alef-4 used. This is built in the style of Isaac of Binding Boss Rush: just excessive and unfair. And that is the point. An insane boss rush for OP Level 65 builds at Mayhem 10 or 11.
+This is a boss rush mod that can generate different configurations of a boss rush. It is directly based on altef_4's research and source code. It shows none of the love and care and careful effort that altef_4 used. This is built in the style of Isaac of Binding Boss Rush: just excessive and unfair. And that is the point. An insane boss rush for OP Level 65 builds at Mayhem 10 or 11.
 
 Header
 ======
 * Name: Boss Rush: Billy and the Clone-a-saurus
 * Version: 0.9.0
-* Author: Abram/skruntskrunt, alef-4, Apocalyptech, Grimm, and more!
-* Categories: enemy
+* Author: Abram/skruntskrunt, altef_4, Apocalyptech, Grimm, and more!
+* Categories: gameplay
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * License URL: https://creativecommons.org/licenses/by-sa/4.0/
 
