@@ -10,6 +10,10 @@ sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 import math
+SEED=42
+our_seed = SEED
+random.seed(our_seed)
+
 mod = Mod('3000_simple.bl3hotfix',
         '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
         'altef_4 feat. SkruntSkrunt',
@@ -18,6 +22,8 @@ mod = Mod('3000_simple.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='0.9',
         cats='gameplay',)
+
+mod.comment(f'Seed for this generation: {our_seed}')
 
 from gen_3000_Char_list import *
 from gen_3000_helper_functions import *
