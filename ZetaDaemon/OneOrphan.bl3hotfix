@@ -1,0 +1,30 @@
+### Name: Orphan Maker
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: gear-shotguns
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,InventoryAttributeEffects.InventoryAttributeEffects[2],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=2.0,DataTableValue=(DataTable=(export=0),RowName=None,ValueName=None),BaseValueAttribute=(export=0),AttributeInitializer=(export=0),BaseValueScale=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,GestaltMeshPartName,0,,JAK_SG_Barrel_02
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Balance/Balance_SG_JAK_OnePunch.Balance_SG_JAK_OnePunch,RuntimePartList.AllParts[5],0,,(PartData=/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/Parts/Barrel/Barrel_01/Part_SG_JAK_Barrel_01_B_Stat,Weight=(BaseValueConstant=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Balance/Balance_SG_JAK_OnePunch.Balance_SG_JAK_OnePunch,RuntimePartList.AllParts[21],0,,(PartData=/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/Parts/Scope/Part_SG_JAK_Scope_01",Weight=(BaseValueConstant=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Name_JAK_SG_OnePunch.Name_JAK_SG_OnePunch,PartName,0,,Orphan Maker
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/UIStat_OnePump.UIStat_OnePump,FormatText,0,,Critical Hits ricochet 1 bullet at the nearest enemy.
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/UIStat_RedText_OnePunch.UIStat_RedText_OnePunch,Text,0,,[Flavor]Makes Orphans. Often.[/Flavor]
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,InventoryAttributeEffects.InventoryAttributeEffects[4],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.5,DataTableValue=(DataTable=(export=0),RowName=None,ValueName=None),BaseValueAttribute=(export=0),AttributeInitializer=(export=0),BaseValueScale=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,InventoryAttributeEffects.InventoryAttributeEffects[7],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,InventoryAttributeEffects.InventoryAttributeEffects[5],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.0))
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/OnePunch/Parts/Part_SG_JAK_Barrel_OnePunch.Part_SG_JAK_Barrel_OnePunch,InventoryAttributeEffects.InventoryAttributeEffects[6],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=2.0))
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SG_OnePumpChump,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0
