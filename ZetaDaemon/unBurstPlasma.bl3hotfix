@@ -1,0 +1,12 @@
+### Name: No Burst Plasma Coil
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: gear-smg
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Parts/Part_SM_MAL_Barrel_PlasmaCoil.Part_SM_MAL_Barrel_PlasmaCoil:WeaponUseModeAspectData_1.WeaponUseComponent_BPWeaponFireProjectile_MAL_SMG,AspectList.AspectList[0].Object..WeaponUseComponent.Object..ResetFireSequenceTime,0,,(BaseValue=0)
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Parts/Part_SM_MAL_Barrel_PlasmaCoil.Part_SM_MAL_Barrel_PlasmaCoil:WeaponUseModeAspectData_1.WeaponUseComponent_BPWeaponFireProjectile_MAL_SMG,AspectList.AspectList[0].Object..WeaponUseComponent.Object..FireSequenceLength,0,,0
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Parts/Part_SM_MAL_Barrel_PlasmaCoil.Part_SM_MAL_Barrel_PlasmaCoil:WeaponUseModeAspectData_1.WeaponUseComponent_BPWeaponFireProjectile_MAL_SMG,AspectList.AspectList[0].Object..WeaponUseComponent.Object..FireRate,0,,(BaseValue=3)
