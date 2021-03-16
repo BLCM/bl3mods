@@ -15,3 +15,11 @@ Greatly increase the ammount of ammo you can hold with the highest level SDU pur
 
 -Full Auto Anarchy
 Makes the Anarchy full auto to save your finger from having to constantly spam click
+
+-Orphan Maker
+Recreates the BL2 Orphan Maker by replacing the One Pump Chump Shotgun. Has two pellets to match the non-vertical grip version of the Orphan Maker.
+Doesn't have the self damage as I have no idea how to implement it and I dont even want to anyway.
+
+-No Burst Plasma Coil
+Removes the 16 round burst on the Plasma Coil but reduces the fire rate a fair bit to compensate for the constant firing without a delay.
+Makes the Plasma Coil a bit more reliable and consistant to use in my opinion.
