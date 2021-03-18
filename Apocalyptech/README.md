@@ -91,8 +91,8 @@ of the mods you'll find in here, though:
   (might actually nerf Anointment chances, given more recent GBX patches)
 - **Decreased Mayhem Enemy Scaling** - Nearly completely removes the extra health
   given to enemies in Mayhem modes.  Conflicts with Mayhem Level Cheats.
-- **Disable Lootsplosion Modifier** - Disables the "Lootsplosion" Mayhem modifier
-- **Disable Rogue Lite Modifier** - Disables the "Rogue Lite" Mayhem modifier
+- **Disable Mayhem Modifiers** - A collection of mods to individually disable each
+  Mayhem Modifier, so you can choose which ones you want to show up.
 - **Mayhem Level Cheats** - Hardcodes Easy+Easy+Hard modifiers at all mayhem levels,
   and sets a flat enemy scaling across all levels as well.  Conflicts with Decreased
   Mayhem Enemy Scaling.
