@@ -23,7 +23,7 @@ import os
 #Global variables
 DATA = BL3Data()
 patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry'] # to make sure we get the different patch types highlighted
-color_types = ["blue", "dark green", "red" , "dark blue", "magenta", "yellow", "black"]
+color_types = ["blue", "dark blue", "red" , "dark red", "yellow", "dark yellow", "green"]
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
@@ -86,14 +86,15 @@ def openBL3Hotfixfile():
         # this is attempting to make certain text in the hotfix file a certain color so that it is easier to search through
         for i in range(len(patch_types)):
             i = i-1 # this is we start at zero
+            # reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
             idx = 1.0
-            while 1:
-                idx = txt_edit.search(patch_types[i],idx,nocase=1,stopindex=END)
-                if not idx: break
-                lastidx = '%s+%dc' % (idx, len(patch_types[i]))
-                txt_edit.tag_add(patch_types[i], idx, lastidx)            
-                idx = lastidx
-            txt_edit.tag_config(patch_types[i], foreground=color_types[i])
+            while 1: # this loops forevedr untill an error appears
+                idx = txt_edit.search(patch_types[i],idx,nocase=1,stopindex=END) # grabs the first instance of when the word is found
+                if not idx: break # breaks if we are at the end
+                lastidx = '%s+%dc' % (idx, len(patch_types[i])) # this pasically makes it so it grabs the start and end of the word we are seatching for
+                txt_edit.tag_add(patch_types[i], idx, lastidx) # adds a tabg the we use to add color later         
+                idx = lastidx # we start our search from the last index
+            txt_edit.tag_config(patch_types[i], foreground=color_types[i]) # colors it
     
         window.title(f"Text Editor Application - {filepath}")
 
