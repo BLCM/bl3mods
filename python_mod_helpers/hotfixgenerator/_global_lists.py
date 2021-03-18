@@ -2,6 +2,7 @@
 #Going to try to import only what I need to save on space and calculation time
 from tkinter import Tk, Frame, Label, Entry, Button, Scrollbar, Text
 from tkinter import LEFT, BOTH, RIGHT, TOP, Y, BOTTOM, END
+from bl3hotfixmod import LVL_TO_ENG
 ################################################################################################################################################################
 # Functions I uses to get only what is needed if you are choosing a JSON file
 
@@ -13,14 +14,14 @@ FileNames = ["Alisma", "CohtmlPlugin", "Config", "Content", "Dandelion", "Datasm
 # FuncNames = ["get_data", "find", "find_data", "glob", "glob_data", "get_export_idx",
 #              "get_exports", "get_parts_category_name", "get_extra_anoints"]  # stores function names
 
-#Will be used for deciding what kind of hotfix to apply
-Patch_Types = ['Mod.PATCH', 'Mod.LEVEL', 'Mod.EARLYLEVEL',
-               'Mod.CHAR', 'Mod.PACKAGE', 'Mod.POST']
 
-# Used to display all map names
 Map_Locations = ['Anger_P', 'Archive_P', 'AtlasHQ_P', 'Bar_P', 'Beach_P', 'BloodyHarvest_P', 'COVSlaughter_P', 'Camp_P', 'Cartels_P', 'CasinoIntro_P', 'Chase_P', 'CityBoss_P', 'CityVault_P', 'City_P', 'Convoy_P', 'Core_P', 'CraterBoss_P', 'CreatureSlaughter_P', 'Crypt_P', 'DesertBoss_P', 'Desert_P', 'Desertvault_P', 'Desolate_P', 'Eldorado_P', 'Experiment_P', 'Facility_P', 'FinalBoss_P', 'Forest_P', 'Frontier_P', 'GuardianTakedown_P', 'Impound_P', 'Lake_P', 'Lodge_P', 'Mansion_P', 'MarshFields_P', 'Mine_P', 'Monastery_P',
                  'MotorcadeFestival_P', 'MotorcadeInterior_P', 'Motorcade_P', 'OrbitalPlatform_P', 'Outskirts_P', 'Prison_P', 'Prologue_P', 'ProvingGrounds_Trial1_P', 'ProvingGrounds_Trial4_P', 'ProvingGrounds_Trial5_P', 'ProvingGrounds_Trial6_P', 'ProvingGrounds_Trial7_P', 'ProvingGrounds_Trial8_P', 'Raid_P', 'Recruitment_P', 'Sacrifice_P', 'Sanctuary3_P', 'Sanctum_P', 'Strip_P', 'TechSlaughter_P', 'TowerLair_P', 'Towers_P', 'Town_P', 'Trashtown_P', 'Venue_P', 'Village_P', 'Watership_P', 'WetlandsBoss_P', 'WetlandsVault_P', 'Wetlands_P', 'Woods_P', 'MatchAll']
 
+
+#Will be used for deciding what kind of hotfix to apply
+Patch_Types = ['Mod.PATCH', 'Mod.LEVEL', 'Mod.EARLYLEVEL',
+               'Mod.CHAR', 'Mod.PACKAGE', 'Mod.POST']
 ################################################################################################################################################################
 # Lists I call to stroe things in.
 # They are called globally so that they may not change.
@@ -72,19 +73,7 @@ def ListBoxWindow(List):
     Info_Display_Text_Box = Text(ListWindow, yscrollcommand=Scroll_Bar, width=300, height=100, font=Stan_Font)
     Info_Display_Text_Box.delete('1.0', END)
 ################################################################################################################################################################
-    if List == 1:  # Displayes what you should type inside the first section of the hotfix section
-        ListWindow.title("Patch names")
-        ListWindow.geometry('%dx%d+%d+%d' % (w/1.1, h/1.2, x/2, y*1.5))
-        for x in Patch_Types: Info_Display_Text_Box.insert('1.0', x + '\n')
-
-    elif List == 2:  # Displays a list of the map areas, or you can type MatchAll
-        ListWindow.title("Names of all the maps")
-        ListWindow.geometry('%dx%d+%d+%d' % (w, h, x*1.8, y*1.5))
-        for x in Map_Locations: Info_Display_Text_Box.insert('1.0', x + '\n')
-################################################################################################################################################################
-# Not buttons
-    # No longer buttons for these but these are called when you run the functions
-    elif List == 3:  # Has all the results of the database search
+    if List == 3:  # Has all the results of the database search
         ListWindow.title("Data base results")
         ListWindow.geometry('+%d+%d' % ( x, y/3.5))
         DataBase_Results.sort()

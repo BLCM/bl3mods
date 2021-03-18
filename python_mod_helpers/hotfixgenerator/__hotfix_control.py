@@ -1,12 +1,9 @@
 # I have to put the program like this because in order to make hotfixes in the way
 # the bl3data/bl3hotfixmod work, it has to be executed in a row in order to work
 from bl3hotfixmod import Mod
-from bl3data import BL3Data
 from _global_lists import Mod_Header, Reg_hotfix, Table_Hotfix, Mesh_Hotfix, Queue_Order, Comment_Queue, Headers_Queue
 ################################################################################################################################################################
-DATA = BL3Data()
 #####################################################################################################################################################################################
-
 def Create_HotFix_File():
     # All these are different indexes because they are all going to pull from different queues, and I need to kepp track of them indifidually.
     Queue_Index = 0 # This is a special one. one you add sometihng to a hotfix or call a new line, that command is added a queue list and thats how my program knows what order to go in when creating your hotfix
