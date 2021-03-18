@@ -88,7 +88,7 @@ def SelectionWindow(Func):
     if Func == "Mod Info":  # Creates a mod file of you to use
         SelectionWindow.title("Mod Info")
         SelectionWindow.geometry('+%d+%d' % ( x/4, y)) # this makes it so it only grows to the size it needs to, while still appearing in a specified location
-        Lab_Ent, Butt = 6, 2
+        Lab_Ent, Butt = 6, 2 # ,since it starts at zero, the range function will only do 0, 1, so if we specify that it is 2 then it will do 0, than one, thenstop
         # Though these are not assigned to anything, they are in the system local dictionary, 
         # Meaning that I can grab them for use later without having them assigned to anything
         Label_1_Text = 'Name of the hotfix file: '
@@ -105,7 +105,7 @@ def SelectionWindow(Func):
     elif Func == "Search":
         SelectionWindow.title("Find All References")
         SelectionWindow.geometry('+%d+%d' % (x*1.8, y))
-        Lab_Ent, Butt = 2, 2 # this is a weid quirk of my new system, even though I only need one button, label and entry, i have to say two for some reason. Will look more into this later
+        Lab_Ent, Butt = 2, 2 # same deal here, I only need one but I need to clarify that i need two
         Label_1_Text = 'Enter what you want to search for: \nNOTE: May pause on you.'
         
         Button_1_Text = "Search"
@@ -114,7 +114,7 @@ def SelectionWindow(Func):
     # Regular Hotfix
     elif Func == "Regular Hotfix":
         SelectionWindow.title("Creating Regular HotFix.")
-        SelectionWindow.geometry('+%d+%d' % ( x, y/10))
+        SelectionWindow.geometry('+%d+%d' % (x, y/10))
         Lab_Ent, Butt, HotFix_Options, dropBox = 8, 2, 1, 3
         
         Label_1_Text = 'Hotfix Type: (hf_type)'
@@ -198,6 +198,8 @@ def SelectionWindow(Func):
                 else: 
                     Entry(SelectionWindow, textvariable=value, width=50).grid(row = i, column=1, sticky="E") # normal entries to enter your data
                     k += 1
+                    
+            # this is to insure that both label and optionmenu/entry are created before moving on to the next set that needs to be created
             if  k == 2:
                 break
 
