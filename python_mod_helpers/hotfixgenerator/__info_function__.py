@@ -22,7 +22,8 @@ from flatten_json import flatten
 import os
 #Global variables
 DATA = BL3Data()
-patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry']
+patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry'] # to make sure we get the different patch types highlighted
+color_types = ["blue", "dark green", "red" , "dark blue", "magenta", "yellow", "black"]
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
@@ -84,7 +85,7 @@ def openBL3Hotfixfile():
         
         # this is attempting to make certain text in the hotfix file a certain color so that it is easier to search through
         for i in range(len(patch_types)):
-            i = i-1
+            i = i-1 # this is we start at zero
             idx = 1.0
             while 1:
                 idx = txt_edit.search(patch_types[i],idx,nocase=1,stopindex=END)
@@ -92,7 +93,7 @@ def openBL3Hotfixfile():
                 lastidx = '%s+%dc' % (idx, len(patch_types[i]))
                 txt_edit.tag_add(patch_types[i], idx, lastidx)            
                 idx = lastidx
-            txt_edit.tag_config(patch_types[i], foreground="light green")
+            txt_edit.tag_config(patch_types[i], foreground=color_types[i])
     
         window.title(f"Text Editor Application - {filepath}")
 
