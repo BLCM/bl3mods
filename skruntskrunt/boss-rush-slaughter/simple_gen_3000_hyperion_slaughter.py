@@ -1,32 +1,55 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-""" RUN command for Arch
-cd bl3hotfixmodding_OLD
-mitmdump --ignore-hosts '^(?![0-9\.]+:)(?!([^\.:]+\.)*discovery\.services\.gearboxsoftware\.com:)' -s hfinject.py
-"""
+# Boss Rush 3000 Slaughter Generator
+# Copyright (C) 2021 abram/skruntksrunt, altef-4, Christopher J. Kucera
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# 
+import argparse
 import sys
 sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 import math
 SEED=42
-our_seed = SEED
-random.seed(our_seed)
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
+    parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
+    parser.add_argument('--time', action='store_true', default=False, help='Use time for a seed')
+    return parser.parse_args()
+
+args = parse_args()
+our_seed = int(args.seed)
+if not args.time:
+    random.seed(our_seed)
 
 mod = Mod('3000_simple.bl3hotfix',
-        '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
-        'altef_4 feat. SkruntSkrunt',
-        ['turns maliwan slaughter star 3000',
-        'into a boss rush slaughter'],
-        lic=Mod.CC_BY_SA_40,
-        v='0.9',
-        cats='gameplay',)
+          '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
+          'altef_4 feat. SkruntSkrunt',
+          ['turns maliwan slaughter star 3000',
+           'into a boss rush slaughter'],
+          lic=Mod.CC_BY_SA_40,
+          v='0.9',
+          cats='gameplay',
+)
 
-mod.comment(f'Seed for this generation: {our_seed}')
+mod.comment( f'Seed for this generation: {our_seed}' )
 
-from gen_3000_Char_list import *
-from gen_3000_helper_functions import *
+# from gen_3000_Char_list import *
+# from gen_3000_helper_functions import *
 from decimal import Decimal
 import boss
 
