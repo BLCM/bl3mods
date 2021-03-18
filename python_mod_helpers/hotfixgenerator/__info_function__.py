@@ -67,18 +67,15 @@ def File_Results_Window(True_Path):
             File_Results_List.append(obj_name + attr_name)
         File_Results_List.append("\n")
         I += 1
-    ListBoxWindow(4)
+    ListBoxWindow(2)
 
 ################################################################################################################################################################
 # Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
 def openBL3Hotfixfile():
     def open_file():
         """Open a file for editing."""
-        filepath = askopenfilename(
-            filetypes=[("BL3HotFix File", "*.bl3hotfix")]
-        )
-        if not filepath:
-            return
+        filepath = askopenfilename(filetypes=[("BL3HotFix File", "*.bl3hotfix")])
+        if not filepath: return
         txt_edit.delete(1.0, END)
         with open(filepath, "r") as input_file:
             text = input_file.read()
@@ -87,12 +84,8 @@ def openBL3Hotfixfile():
 
     def save_file():
         """Save the current file as a new file."""
-        filepath = asksaveasfilename(
-            defaultextension="txt",
-            filetypes=[("BL3HotFix File", "*.bl3hotfix")],
-        )
-        if not filepath:
-            return
+        filepath = asksaveasfilename(defaultextension="txt", filetypes=[("BL3HotFix File", "*.bl3hotfix")])
+        if not filepath: return
         with open(filepath, "w") as output_file:
             text = txt_edit.get(1.0, END)
             output_file.write(text)
@@ -106,14 +99,14 @@ def openBL3Hotfixfile():
         hold = txt_edit.get("1.0", "end")
         content_list = hold.split("\n")
 
-        if len(Search_List) > 0:
-            Search_List.clear()  # Clears out the list so we don't geta data contamination
+        if len(Search_List) > 0: Search_List.clear()  # Clears out the list so we don't geta data contamination
         while i < len(content_list):
-            if s in content_list[i]:
-                Search_List.append(content_list[i])
+            if s in content_list[i]: Search_List.append(content_list[i])
             i += 1
-        ListBoxWindow(5)
+        ListBoxWindow(3)
 
+    # this is used for creating the window users see when opening their hotfix file.
+    # reason why i did not call my own was because I wanted to not mess with anything as icopied this over from a nother site
     window = Tk()
     window.title("Text Editor Application")
     window.rowconfigure(0, minsize=800, weight=1)
