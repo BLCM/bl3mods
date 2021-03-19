@@ -89,14 +89,14 @@
         ],
         "wave 3a":"",
         "/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave3a":[
-            ["BPChar_TrooperShotgunDark_C_FIX.SpawnFactory_OakAI_0"],
-            ["BPChar_TrooperMeleeDark_C_FIX.SpawnFactory_OakAI_1"],
-            ["BPChar_HeavyGunner_C_FIX.SpawnFactory_OakAI_10"],
-            ["BPChar_TrooperBasicDark_C_FIX.SpawnFactory_OakAI_2"],
-            ["BPChar_TrooperJetpackDark_C_FIX.SpawnFactory_OakAI_3"],
-            ["BPChar_TrooperBadass_C_FIX.SpawnFactory_OakAI_4"],
-            ["BPChar_TrooperMedicDark_C_FIX.SpawnFactory_OakAI_5"],
-            ["BPChar_TrooperFlashDark_C_FIX.SpawnFactory_OakAI_6"]
+            ["BPChar_TrooperShotgunDark_C_FIX","SpawnFactory_OakAI_0"],
+            ["BPChar_TrooperMeleeDark_C_FIX","SpawnFactory_OakAI_1"],
+            ["BPChar_HeavyGunner_C_FIX","SpawnFactory_OakAI_10"],
+            ["BPChar_TrooperBasicDark_C_FIX","SpawnFactory_OakAI_2"],
+            ["BPChar_TrooperJetpackDark_C_FIX","SpawnFactory_OakAI_3"],
+            ["BPChar_TrooperBadass_C_FIX","SpawnFactory_OakAI_4"],
+            ["BPChar_TrooperMedicDark_C_FIX","SpawnFactory_OakAI_5"],
+            ["BPChar_TrooperFlashDark_C_FIX","SpawnFactory_OakAI_6"]
         ],
         "wave 3b":"",
         "/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave3b":[
@@ -131,7 +131,6 @@
             ["BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"]
         ]
     },
-
     "round3":{
         "wave 1a":"",
         "/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave1a":[

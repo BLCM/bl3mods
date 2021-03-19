@@ -23,11 +23,14 @@ sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 import math
+import json
+
 SEED=42
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
+    parser.add_argument('--json', type=str, default=None, help='JSON Input to specify each round (example-bpchar.json)')
     parser.add_argument('--time', action='store_true', default=False, help='Use time for a seed')
     return parser.parse_args()
 
@@ -46,7 +49,7 @@ mod = Mod('3000_simple.bl3hotfix',
           cats='gameplay',
 )
 
-mod.comment( f'Seed for this generation: {our_seed}' )
+mod.comment( f'Seed for this generation (simple_gen_3000_hyperion_slaughter.py): {our_seed}' )
 
 # from gen_3000_Char_list import *
 # from gen_3000_helper_functions import *
@@ -131,12 +134,12 @@ def print_and_comment(s):
     mod.comment(s)
 
 healh_chance = 52
-def gen_mod(so, scale, list):
-    c = len(list)
+def gen_mod(so, scale, my_list):
+    c = len(my_list)
     global healh_chance
     healh_chance -= 1
-    for idx, val in enumerate(list):
-        if (isinstance(val[0],tuple)):
+    for idx, val in enumerate(my_list):
+        if (isinstance(val[0],tuple) or isinstance(val[0],list)):
             # this means we're using (name,bpchar,balance,balancerow,extras)
             print_and_comment(f'Deploying {val[0][0]}')
             # new tuple of bpchar and prior spawn factory
@@ -146,6 +149,10 @@ def gen_mod(so, scale, list):
         if val == 'empty':
             continue
         var = val
+        if len(var) < 2:
+            print("Var < 2")
+            print(var)
+        assert len(var) >= 2
         obj = var[1].replace("_C'","")
         print(var,obj,val)
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', Mod.get_full(so), 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx)), "BlueprintGeneratedClass'{}.{}_C'".format(var[0],get_bpchar(var[0])))
@@ -643,15 +650,35 @@ def round5():
     #         ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
     #     ])
 
-# [ ] round1?
-round1()
-# [ ] round2?
-round2()
-# # [ ] round3?
-round3()
-# # [ ] round4?
-round4()
-# # [ ] round5?
-round5()
 
+def gen_mod_from_data(data):
+    mod.comment( f'Seed for this from json data: {data.get("seed","Seed not found")}' )
+    rounds = ["round1","round2","round3","round4","round5"]
+    for curr_round_name in rounds:
+        curr_round = data[curr_round_name]
+        waves = [x for x in curr_round.keys() if x[0] == '/']
+        for wave_name in waves:
+            wave = curr_round[wave_name]
+            #gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b',
+            gen_mod(wave_name,size,wave)
+
+def default_mod():
+    # [ ] round1?
+    round1()
+    # [ ] round2?
+    round2()
+    # # [ ] round3?
+    round3()
+    # # [ ] round4?
+    round4()
+    # # [ ] round5?
+    round5()
+            
+if args.json is None:
+    default_mod()
+else:
+    data =json.load(open(args.json))
+    mod.comment(f"Based on {args.json}")
+    gen_mod_from_data(data)
+        
 mod.close()
