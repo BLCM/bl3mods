@@ -1,6 +1,6 @@
 ###
 ### Name: Movement Speed Cheats - Normal
-### Version: 1.0.1
+### Version: 1.0.2
 ### Author: Apocalyptech
 ### Categories: cheat
 ###
@@ -86,4 +86,16 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Cha
 # Skag - Eridian
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C:CharMoveComp,MaxWalkSpeed,0,,(Value=168,BaseValue=840)
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C:CharMoveComp,MaxSprintSpeed,0,,(Value=900,BaseValue=900)
+
+# Loader - BUL
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_BUL.Default__BPChar_PetLoader_BUL_C:CharMoveComp,MaxWalkSpeed,0,,(Value=275,BaseValue=600)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_BUL.Default__BPChar_PetLoader_BUL_C:CharMoveComp,MaxSprintSpeed,0,,(Value=900,BaseValue=900)
+
+# Loader - ION
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_ION.Default__BPChar_PetLoader_ION_C:CharMoveComp,MaxWalkSpeed,0,,(Value=240,BaseValue=600)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_ION.Default__BPChar_PetLoader_ION_C:CharMoveComp,MaxSprintSpeed,0,,(Value=900,BaseValue=900)
+
+# Loader - WAR
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_WAR.Default__BPChar_PetLoader_WAR_C:CharMoveComp,MaxWalkSpeed,0,,(Value=300,BaseValue=600)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_WAR.Default__BPChar_PetLoader_WAR_C:CharMoveComp,MaxSprintSpeed,0,,(Value=900,BaseValue=900)
 

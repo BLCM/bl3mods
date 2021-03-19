@@ -34,6 +34,13 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 # getall bpchar_player_c walkspeed_zerog
 
 def do_move(mod, obj_name, var_name, val, base, multiplier):
+    """
+    I am about 95% certain that setting `Value` here doesn't do anything; that seems to be
+    dynamically set by the engine and basically relates to the speed at which the BPChar
+    is currently walking (or has most recently walked).  Doesn't seem to *always* correlate
+    with what's going on in the game, but it definitely gets reset.  So `BaseValue` is
+    almost certainly the only one which actually matters here.
+    """
     new_val = int(val*multiplier)
     new_base = int(base*multiplier)
     mod.reg_hotfix(Mod.PATCH, '',
@@ -80,7 +87,7 @@ for (label, suffix, multiplier, desc_override) in [
             'Apocalyptech',
             mod_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.0.1',
+            v='1.0.2',
             cats='cheat',
             )
 
@@ -137,6 +144,15 @@ for (label, suffix, multiplier, desc_override) in [
             ('Skag - Eridian',
                 '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C',
                 168, 840, 900, 900),
+            ('Loader - BUL',
+                '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_BUL.Default__BPChar_PetLoader_BUL_C',
+                275, 600, 900, 900),
+            ('Loader - ION',
+                '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_ION.Default__BPChar_PetLoader_ION_C',
+                240, 600, 900, 900),
+            ('Loader - WAR',
+                '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_WAR.Default__BPChar_PetLoader_WAR_C',
+                300, 600, 900, 900),
             ]:
 
         mod.comment(label)
