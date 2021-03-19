@@ -2,7 +2,7 @@ Movement Speed Cheats
 =====================
 
 These mods increase your movement speed in the game, which also applies
-to Iron Bear and FL4K's pets.  There are two variants:
+to Iron Bear and FL4K's pets.  There are three variants:
 
 * **Reasonable** - Personally, I find this a very pleasant pace at
   which to play the game.  Still rather cheaty, but not ridiculuous.
