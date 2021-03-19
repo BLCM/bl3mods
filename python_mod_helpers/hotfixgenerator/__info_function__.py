@@ -22,7 +22,9 @@ from flatten_json import flatten
 import os
 #Global variables
 DATA = BL3Data()
-Stan_font = ("Times New Roman", 10)
+Stan_Font = ("Times New Roman", 10)
+# Stan_Font = ("Wingdings 2", 10)
+# Stan_Font = ("Courier New", 10)
 patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry'] # to make sure we get the different patch types highlighted
 color_types = ["blue", "dark blue", "red" , "dark red", "green", "dark green", "dark gray"]
 ################################################################################################################################################################
