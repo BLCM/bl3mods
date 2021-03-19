@@ -50,7 +50,7 @@ mod = Mod(args.output,
           cats='gameplay',
 )
 
-mod.comment( f'Seed for this generation (simple_gen_3000_hyperion_slaughter.py): {our_seed}' )
+mod.comment( f'Seed for this generation (gen_boss_rush_3000.py): {our_seed}' )
 
 # from gen_3000_Char_list import *
 # from gen_3000_helper_functions import *
