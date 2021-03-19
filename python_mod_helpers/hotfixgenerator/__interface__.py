@@ -176,7 +176,6 @@ def SelectionWindow(Func):
         def Button_2_Command(): Display_Hotfix(3)
         HotFix_Label_Text = '(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},\n{mesh_last},{coord_len},"{coord_field}",{transparent_flag}'
 
-    
     # Labels, Entries/DropBox
     # The reason I do it like this is so that I only create what I need for each different window, saving resources and code space
     # What this should do now is give the user a list of all locations, patch types and notification flags, so that users have an easier time with creating their mod
