@@ -28,15 +28,17 @@ mod = Mod('no_cryo_penalty.bl3hotfix',
         'Apocalyptech',
         [
             "Gets rid of the movement penalty you'd otherwise suffer when a cryo",
-            "effect is applied to your character.  This is obviously rather cheaty!",
+            "effect is applied to your character, and allows sliding while frozen.",
+            "This is obviously rather cheaty!",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='cheat',
         )
 
 # We could also just redefine the whole curve to only have a single point, but
 # whatever.
+mod.comment('Remove the speed debuff')
 mod.reg_hotfix(Mod.PATCH, '',
 		'/Game/GameData/StatusEffects/Cryo_PenaltyCurvePlayer',
 		'FloatCurve.Keys.Keys[1].Value',
@@ -45,5 +47,14 @@ mod.reg_hotfix(Mod.PATCH, '',
 		'/Game/GameData/StatusEffects/Cryo_PenaltyCurvePlayer',
 		'FloatCurve.Keys.Keys[2].Value',
 		1)
+mod.newline()
+
+# Now make it so we can slide while frozen, too
+mod.comment('Allow sliding while frozen')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/PlayerCharacters/_Shared/_Design/Sliding/ControlledMove_Global_Sliding.Default__ControlledMove_Global_Sliding_C',
+        'bSpeedAffectedByCryo',
+        'False')
+mod.newline()
 
 mod.close()
