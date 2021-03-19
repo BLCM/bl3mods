@@ -47,7 +47,7 @@ Dev Instructions
 
 If you want to modify the software raid.py is the main generator of the hotfix.
 
-* `simple_gen_3000_hyperion_slaughter.py` - main program
-* `3000_simple.bl3hotfix` - generated via `python3 simple_gen_3000_hyperion_slaughter.py`
+* `gen_boss_rush_3000.py` - main program
+* `boss_rush_3000.bl3hotfix` - generated via `python3 gen_boss_rush_3000.py`
 * `README.md` - this readme
 * `billy-and-the-cloneasaurus.bl3hotfix` - a very saurian themed generation of the boss rush
