@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -49,24 +49,38 @@ def do_sprint(mod, obj_name, val, base, multiplier):
 
 # We're actually generating two separate mods here, in the absence of
 # something like BLCMM
-for (label, suffix, multiplier) in [
-        ('Reasonable Improvements', 'reasonable', 1.5),
-        ('Extreme Improvements', 'extreme', 2.25),
+for (label, suffix, multiplier, desc_override) in [
+        ('Normal', 'normal', 1, [
+            "Sets character (and pet, and Iron Bear) movement speed back to the defaults.",
+            "Of use if you want to revert your movement speed after using one of the other",
+            "movement speed mods, without having to quit the entire game to do so.",
+            "",
+            "I'd wanted it while testing my No Cryo Penalty mod, so perhaps other mod-makers",
+            "will find it useful in some cirumstances.",
+            ]),
+        ('Reasonable Improvements', 'reasonable', 1.5, None),
+        ('Extreme Improvements', 'extreme', 2.25, None),
         ]:
+
+    # Fill in our description
+    if desc_override is None:
+        mod_desc = [
+                "Increases character (and pet, and Iron Bear) movement speed by {}x,".format(multiplier),
+                "",
+                "Not yet sure how this interacts with stuff like speed while crouching,",
+                "FFYL, climbing ladders, etc.",
+            ]
+    else:
+        mod_desc = desc_override
 
     # Mod header
     mod_filename = 'movement_speed_cheats_{}.bl3hotfix'.format(suffix)
     mod = Mod(mod_filename,
             'Movement Speed Cheats - {}'.format(label),
             'Apocalyptech',
-            [
-                "Increases character (and pet, and Iron Bear) movement speed by {}x,".format(multiplier),
-                "",
-                "Not yet sure how this interacts with stuff like speed while crouching,",
-                "FFYL, climbing ladders, etc.",
-            ],
+            mod_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.0.1',
             cats='cheat',
             )
 

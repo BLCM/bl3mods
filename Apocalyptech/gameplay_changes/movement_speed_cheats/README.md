@@ -8,9 +8,16 @@ to Iron Bear and FL4K's pets.  There are two variants:
   which to play the game.  Still rather cheaty, but not ridiculuous.
 * **Extreme** - This is what I use while testing mods.  Not really
   intended for actual play.
+* **Normal** - This sets the movement speeds back to their normal
+  values.  This could be useful if you want to revert a previously-
+  applied movement speed mod without having to quit the game entirely.
+  Probably only of interest to mod authors under specific circumstances.
 
 Changelog
 =========
+
+**v1.0.1** - Mar 19, 2021
+ * Added a "normal" option
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release
