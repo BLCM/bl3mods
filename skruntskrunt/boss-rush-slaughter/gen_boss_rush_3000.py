@@ -26,12 +26,13 @@ import math
 import json
 
 SEED=42
-
+OUTPUT='boss_rush_3000.bl3hotfix'
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--json', type=str, default=None, help='JSON Input to specify each round (example-bpchar.json)')
     parser.add_argument('--time', action='store_true', default=False, help='Use time for a seed')
+    parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     return parser.parse_args()
 
 args = parse_args()
@@ -39,7 +40,7 @@ our_seed = int(args.seed)
 if not args.time:
     random.seed(our_seed)
 
-mod = Mod('3000_simple.bl3hotfix',
+mod = Mod(args.output,
           '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
           'altef_4 feat. SkruntSkrunt',
           ['turns maliwan slaughter star 3000',
