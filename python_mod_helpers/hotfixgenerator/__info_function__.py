@@ -23,7 +23,7 @@ import os
 #Global variables
 DATA = BL3Data()
 patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry'] # to make sure we get the different patch types highlighted
-color_types = ["blue", "dark blue", "red" , "dark red", "yellow", "dark yellow", "green"]
+color_types = ["blue", "dark blue", "red" , "dark red", "green", "dark green", "yellow"]
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
@@ -84,18 +84,37 @@ def openBL3Hotfixfile():
             txt_edit.insert(END, text)
         
         # this is attempting to make certain text in the hotfix file a certain color so that it is easier to search through
+        c = 0 # for colors
         for i in range(len(patch_types)):
             i = i-1 # this is we start at zero
             # reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
             idx = 1.0
-            while 1: # this loops forevedr untill an error appears
+            while 1: # this loops forever untill an error appears
                 idx = txt_edit.search(patch_types[i],idx,nocase=1,stopindex=END) # grabs the first instance of when the word is found
                 if not idx: break # breaks if we are at the end
                 lastidx = '%s+%dc' % (idx, len(patch_types[i])) # this pasically makes it so it grabs the start and end of the word we are seatching for
                 txt_edit.tag_add(patch_types[i], idx, lastidx) # adds a tabg the we use to add color later         
                 idx = lastidx # we start our search from the last index
-            txt_edit.tag_config(patch_types[i], foreground=color_types[i]) # colors it
-    
+            if c > len(color_types): c = 0 # this is to insure that if we are highlighting a lot of words, they stay the same types of colors consistantly
+            txt_edit.tag_config(patch_types[i], foreground=color_types[c]) # colors it
+            c += 1
+        # if i wanted to add more hilighting I would need to make another loop for another set of words
+        
+        c = 0
+        for i in range(len(FileNames)):
+            # reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+            idx = 1.0
+            while 1: # this loops forever untill an error appears
+                idx = txt_edit.search("/"+FileNames[i], idx, nocase=1, stopindex=END)
+                if not idx: break
+                lastidx = '%s+%dc' % (idx, len(FileNames[i])+1) #compensate for the / I added
+                txt_edit.tag_add(FileNames[i], idx, lastidx)    
+                idx = lastidx
+            if c >= len(color_types): 
+                c = 0
+            txt_edit.tag_config(FileNames[i], foreground=color_types[c]) # colors it
+            c += 1
+        
         window.title(f"Text Editor Application - {filepath}")
 
     def save_file():

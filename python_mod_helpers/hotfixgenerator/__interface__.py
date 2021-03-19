@@ -198,7 +198,7 @@ def SelectionWindow(Func):
                 else: 
                     Entry(SelectionWindow, textvariable=value, width=50).grid(row = i, column=1, sticky="E") # normal entries to enter your data
                     k += 1
-                    
+
             # this is to insure that both label and optionmenu/entry are created before moving on to the next set that needs to be created
             if  k == 2:
                 break
@@ -243,6 +243,7 @@ def SelectionWindow(Func):
 
 ################################################################################################################################################################
 # Main menu.
+
 if __name__ == "__main__":
     MainWindow = tk.Tk()
     MainWindow.title("Hotfix Generator")
