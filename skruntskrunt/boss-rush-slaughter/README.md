@@ -23,6 +23,25 @@ Thank you to the true hero: altef_4. His careful modding to produce
 the Hyperion slaughter star 3000 allowed me to spend very little time
 changing his mod.
 
+Header
+======
+* Name: Boss Rush: Billy and the Clone-a-saurus
+* Version: 0.9.1
+* Author: Abram/skruntskrunt,  altef-4, Apocalyptech, Grimm, and more
+* Categories: gameplay
+* License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+* License URL: https://creativecommons.org/licenses/by-sa/4.0/
+* Code License: GNU Public License Version 3
+
+Changelog
+=========
+**v0.9.1** - 2021-03-22
+ * Bug fixing
+
+**v0.9** - 2021-03-18
+ * First versioned release
+
+
 Known Bugs
 ==========
 
@@ -55,15 +74,6 @@ Enemies I didn't enable because they were troublesome:
 * Slittermaw, gets stuck
 * Wrendon Esk, gets stuck
 
-Header
-======
-* Name: Boss Rush: Billy and the Clone-a-saurus
-* Version: 0.9.0
-* Author: Abram/skruntskrunt, altef_4, Apocalyptech, Grimm, and more!
-* Categories: gameplay
-* License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-* License URL: https://creativecommons.org/licenses/by-sa/4.0/
-
 Licenses
 ========
 
@@ -78,6 +88,8 @@ References
 ==========
 
 3000 Hyperion Slaughter by altef-4: https://github.com/BLCM/bl3mods/wiki/3000-hyperion-slaughter
+
+Principal Skinner's great American Novel: Billy and the Cloneasaurus https://www.youtube.com/watch?v=ik0BPKM9WQg
 
 Development Home
 ================
@@ -111,3 +123,12 @@ hyperion slaughter star.
 * `example_bpchars.json` - used as a template for generating these mods
 * `boss_rush_3000.42.bl3hotfix` - boss rush with seed 42 (good dinos)
 * `boss_rush_3000.666.bl3hotfix` - boss rush with seed 666 (General Traunt, lots of fun)
+* `Makefile` - this describes the workflow to generate a mod. I usually just type
+  `make boss_rush_3000.9999.bl3hotfix` where 9999 is the seed and it makes the mod for me.
+
+How do you make `boss_rush_3000.42.bl3hotfix`?
+
+```shell
+python3 bpchar-gen.py --json gen_bpchars.42.json --seed 42
+python3 gen_boss_rush_3000.py --json gen_bpchars.42.json --seed 42 --output boss_rush_3000.42.bl3hotfix
+```

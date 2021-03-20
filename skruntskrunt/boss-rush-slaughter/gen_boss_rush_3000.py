@@ -41,12 +41,12 @@ if not args.time:
     random.seed(our_seed)
 
 mod = Mod(args.output,
-          '3000 Boss Rush slaughter: Billy and the Clone-a-saurus',
+          'Boss Rush Slaughter 3000: Billy and the Clone-a-saurus',
           'altef_4 feat. SkruntSkrunt',
           ['turns maliwan slaughter star 3000',
-           'into a boss rush slaughter'],
+           'into a boss rush slaughter 3000'],
           lic=Mod.CC_BY_SA_40,
-          v='0.9',
+          v='0.9.1',
           cats='gameplay',
 )
 
