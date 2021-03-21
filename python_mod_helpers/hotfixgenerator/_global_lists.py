@@ -75,7 +75,7 @@ def ListBoxWindow(List):
         ListWindow.geometry('+%d+%d' % ( x, y/3.5))
         DataBase_Results.sort()
         for x in DataBase_Results: Info_Display_Text_Box.insert('1.0', x + '\n')
-        Info_Display_Text_Box.place(width=200)
+        Info_Display_Text_Box.place(width=2000)
 
     elif List == 2:  # Displays the contents of when you looked through a file
         ListWindow.title("JSON File Information")
