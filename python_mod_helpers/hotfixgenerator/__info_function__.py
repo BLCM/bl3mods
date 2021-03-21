@@ -148,7 +148,7 @@ def openBL3Hotfixfile():
 
     fr_buttons = Frame(window, relief=RAISED, bd=2)
     Scroll_Bar = Scrollbar(window, orient="vertical")   
-    txt_edit = Text(window, yscrollcommand=Scroll_Bar, font=Stan_font)
+    txt_edit = Text(window, yscrollcommand=Scroll_Bar, font=Stan_Font)
     Scroll_Bar.config(command=txt_edit.yview)
     
     btn_open = Button(fr_buttons, text="Open", command=open_file)

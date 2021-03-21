@@ -21,6 +21,7 @@ Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 10)
 # Stan_Font = ("Courier New", 10)
 ################################################################################################################################################################
+
 def SelectionWindow(Func):
     SelectionWindow = Tk()
     Hotfix_Label_Display = Label(SelectionWindow) # Had to put this up here as it would not work any other way
@@ -52,14 +53,13 @@ def SelectionWindow(Func):
         elif Type == "Mesh Hotfix":
             Mesh_Hotfix.extend([A, B, C, D, E, F, G, H, I])
             Queue_Order.append("Mesh hotfixes")
-        
         # This will search the database for provided information
         elif Type == "Search":
             Info = data.get_refs_from_data(A)
             # This will clean out the previous entry so that it does not become cluttered
             if len(DataBase_Results) > 0: DataBase_Results.clear()
             # puts the database results into a tkinter Text window so that the user can look at this information
-            for Details in Info:
+            for Details in Info: #the reason this looks weird is because of how python gets data from databases, it adds extra characters to the return result, so this helps make it cleaner
                 if Details[0] not in DataBase_Results: DataBase_Results.append(Details[0])
             DataBase_Results.sort() # sorts the results because it produces a cleaner result
             ListBoxWindow(1) # Calls the function to display the 
@@ -79,7 +79,6 @@ def SelectionWindow(Func):
             rotation = F.split(",")
             scale = G.split(",")
             coord_parts = []
-            
             for coords in [location, rotation, scale]: coord_parts.append(','.join(['{:.6f}'.format(int(n)) for n in coords]))
             coord_field = '|'.join(coord_parts)
             Hotfix_Label_Display.config(text='(1,6,{}, {}), {}, \n{}, {}, {}, "{}", {})'.format(B, map_last, map_first, mesh_first, mesh_last, len(coord_field), coord_field, H))
@@ -131,7 +130,6 @@ def SelectionWindow(Func):
         Button_2_Text = "Preview Your Hotfix"
         def Button_2_Command(): Display_Hotfix(1)
         HotFix_Label_Text = '(1,1,{notification_flag},{package}),{obj_name},\n{attr_name},{prev_val_len},{prev_val},{new_val}'
-
 
     # Table Hotfix
     elif Func == "Table Hotfix":
@@ -242,7 +240,6 @@ def SelectionWindow(Func):
 
 ################################################################################################################################################################
 # Main menu.
-
 if __name__ == "__main__":
     MainWindow = tk.Tk()
     MainWindow.title("Hotfix Generator")
