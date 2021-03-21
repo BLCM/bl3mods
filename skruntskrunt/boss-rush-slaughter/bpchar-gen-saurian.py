@@ -54,6 +54,8 @@ def matching_bosses(substring, bosses=boss.safe_bosses):
 
 dinosaur_names = ['Minosaur','IndoTyrant','Tyrant of Instinct','Abbadoxis','Chonk Stomp','Ipswitch Dunne','Tremendous Rex']
 
+# maybe GerSaurianHamatarus is bad?
+# or SaurianLaser
 more_saurians = [
     '/Geranium/Enemies/GerSaurian/HamtaurusBadass/_Design/Character/BPChar_GerSaurianHamtaurusBadass',
     '/Geranium/Enemies/GerSaurian/Hamtaurus/_Design/Character/BPChar_GerSaurianHamtaurus',
@@ -67,6 +69,10 @@ more_saurians = [
 ]
 
 dinosaurs = flatten([matching_bosses(x) for x in dinosaur_names]) + more_saurians
+# override
+#dinosaurs = ['/Game/Enemies/Saurian/_Unique/Laser/_Design/Character/BPChar_SaurianLaser']
+#dinosaurs = [ '/Geranium/Enemies/GerSaurian/Hamtaurus/_Design/Character/BPChar_GerSaurianHamtaurus' ]
+
 maliwan_names = [
     'Force Trooper',
     'Rax',
@@ -91,17 +97,17 @@ previous = {}
 
 pools = {
     'round1':flatten([
-        matching_bosses('Psychobill'),
+        matching_bosses('Pyschobillies'),
         matching_bosses('Force Trooper'),
         dinosaurs
     ]),
     'round2':flatten([
-        matching_bosses('Psychobill'),
+        matching_bosses('Pyschobillies'),
         maliwans,
         bugs,
     ]),
     'round3':flatten([
-        matching_bosses('Psychobill'),
+        matching_bosses('Pyschobillies'),
         matching_bosses('Force Trooper'),
         matching_bosses('Max'),
         matching_bosses('Rax'),
@@ -109,14 +115,14 @@ pools = {
 
     ]),
     'round4':flatten([
-        matching_bosses('Psychobill'),
+        matching_bosses('Pyschobillies'),
         matching_bosses('Traunt'),
         matching_bosses('Warden'),
         maliwans,
         bugs,
     ]),
     'round5':flatten([
-        matching_bosses('Psychobill'),
+        matching_bosses('Pyschobillies'),
         matching_bosses('Traunt'),
         matching_bosses('Warden'),
         matching_bosses('Killavolt'),
