@@ -36,7 +36,7 @@ Header
 Changelog
 =========
 **v0.9.1** - 2021-03-22
- * Bug fixing
+ * Bug fixing and adding the ability to better control mob deployment via json definition files
 
 **v0.9** - 2021-03-18
  * First versioned release
