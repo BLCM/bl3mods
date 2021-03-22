@@ -1,6 +1,6 @@
 # DESCRIPTION
 
-This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods
+This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods. If you would like a the package with the executable of this program with minimal hassle, go to my presonal repository of this: https://github.com/TrevorSTroxel/bl3mods. If you are reading this from the official bl3 modding page, then there will only be my code here.
 
 # NOTE
 
@@ -16,26 +16,26 @@ I now have a magical .exe file that does everything that is needed in order to g
 ## Instructions
 
 `data_dir`: **Note:** You will need a copy of BL3. Duh
-
-1. 1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
+1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
       1. These instructions are extremly useful, and do a better job of explaining than me.
    2. Once you have extracted all the data, place the `extracted_new` folder inside the hotfixgenerator folder, the program will do the rest
    3. If you are unable to follow these steps, go to this link and download the seralized files
       1. These may not be the most up to date version of the game when you get them, so just be aware.
       2. **NOTE**: this will be a large download: https://www.nexusmods.com/borderlands3/mods/247
-2. `ueserialize_path`
 
+2. `ueserialize_path`
    1. Go and download this .exe from this link: https://github.com/apocalyptech/JohnWickParse/releases/download/v19/john-wick-parse.exe
    2. Once you have done that, grab the .exe and move it inside the hotfixgenerator folder.
-3. `_connect_db`
 
+3. `_connect_db`
    1. Go to think link and download this file: https://apocalyptech.com/games/bl3-refs/bl3refs.sqlite3.zip
    2. Extract the file and put the bl3refs.sqlite3 file inside the hotfixgenerator.
-4. If something went wrong or you want to change the file locations, go to this file location:
 
+4. If something went wrong or you want to change the file locations, go to this file location:
    1. `C:\Users\<Name>\AppData\Local\bl3data\bl3data\bl3data.ini` (`<Name>` will be different depending on your computer)
-   2. Open the file and manually change the paths to the correct path. The basic Notepad should work fine
-5. Once you finish the previous steps, go to `hotfixgenerator/dist` and click on the .exe that is located there, `__interface__.exe`. If everything went right you should now have the program running.
+   2. Open the file and manually change the paths to the correct path. The basic Notepad should work fine.
+
+5. If you have downloaded my package from my github, then putting the `extracted_new` should be the only step you need to get this program working. if you are getting this from the official repository, then you will eed to follow all three steps.
 
 # CREDITS
 
