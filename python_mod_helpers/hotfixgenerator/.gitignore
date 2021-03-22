@@ -1,6 +1,0 @@
-# this will hopefully ignore these files when trying to do a pull request so that it will be acceppted
-/dist
-/Extra_Files
-/Testing_Folder
-*.exe
-*.sqlite3
