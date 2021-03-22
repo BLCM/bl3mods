@@ -1,19 +1,16 @@
 # DESCRIPTION
 
-This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods. If you would like a the package with the executable of this program with minimal hassle, go to my presonal repository of this: https://github.com/TrevorSTroxel/bl3mods. If you are reading this from the official bl3 modding page, then there will only be my code here.
+This application is a WIP tool for modders to help streamline the process of finding information and creating. bl3hotfix mods. If you would like a the package with the executable of this program with minimal hassle, go to my presonal repository of this: https://github.com/TrevorSTroxel/bl3mods. <br></br>
+If you are reading this from the official bl3 modding page, then there will only be my code here. You can still make it work if you know what you are doing, but I would judt reccomend getting my release to make your life easier
 
 # NOTE
 
-I am a college student, so I will not be able to work on this all the time, but I will when I have free time.
-This will be a massive passion project for me, so there will be many errors and bugs in my program.
+I am a college student, so I will not be able to work on this all the time, but I will when I have free time.<br></br>
 Feedback and tips for how to improve this program are appreciated. I will get to them as soon as I can.
 If you are curious about something or have a question about something, the best way to contact me is via my email, which you can find in my profile, or send me a message on Discord.
 
 # GETTING STARTED
-
-I now have a magical .exe file that does everything that is needed in order to get the program working, for the most part. You will also need to follow the instructions below before you can get fully started.
-
-## Instructions
+I now have a magical .exe file that does everything that is needed in order to get the program working. If you would like to build this on your own, you will need to follow the instructions below before you can get fully started.
 
 `data_dir`: **Note:** You will need a copy of BL3. Duh
 1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
@@ -22,6 +19,7 @@ I now have a magical .exe file that does everything that is needed in order to g
    3. If you are unable to follow these steps, go to this link and download the seralized files
       1. These may not be the most up to date version of the game when you get them, so just be aware.
       2. **NOTE**: this will be a large download: https://www.nexusmods.com/borderlands3/mods/247
+      3. If you have downloaded 
 
 2. `ueserialize_path`
    1. Go and download this .exe from this link: https://github.com/apocalyptech/JohnWickParse/releases/download/v19/john-wick-parse.exe
@@ -34,8 +32,6 @@ I now have a magical .exe file that does everything that is needed in order to g
 4. If something went wrong or you want to change the file locations, go to this file location:
    1. `C:\Users\<Name>\AppData\Local\bl3data\bl3data\bl3data.ini` (`<Name>` will be different depending on your computer)
    2. Open the file and manually change the paths to the correct path. The basic Notepad should work fine.
-
-5. If you have downloaded my package from my github, then putting the `extracted_new` should be the only step you need to get this program working. if you are getting this from the official repository, then you will eed to follow all three steps.
 
 # CREDITS
 
@@ -50,3 +46,4 @@ List of resources that have helped me:
   - Link to the hotfix: https://github.com/BLCM/bl3mods/tree/master/EpicNNG
 - HackerSmacker: Tech Genius
   - He told me many good tips and tricks to make my program even better than what it is right now.
+  - Github: https://github.com/HackerSmacker
