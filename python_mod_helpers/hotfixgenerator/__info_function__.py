@@ -16,12 +16,17 @@ from _global_lists import ListBoxWindow
 ################################################################################################################################################################
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename, asksaveasfilename
-from tkinter import Tk, Frame, Button, Text, Entry
+from tkinter import Tk, Frame, Button, Text, Entry, Scrollbar
 from tkinter import END, RAISED
 from flatten_json import flatten
 import os
 #Global variables
 DATA = BL3Data()
+Stan_Font = ("Times New Roman", 10)
+# Stan_Font = ("Wingdings 2", 10)
+# Stan_Font = ("Courier New", 10)
+patch_types = ['SparkPatchEntry','SparkLevelPatchEntry','SparkEarlyLevelPatchEntry','SparkCharacterLoadedEntry','SparkStreamedPackageEntry', 'SparkPostLoadedEntry'] # to make sure we get the different patch types highlighted
+color_types = ["blue", "dark blue", "red" , "dark red", "green", "dark green", "dark gray"]
 ################################################################################################################################################################
 # The user is able to choose a json file and search through the contents
 def FileChoice():
@@ -67,32 +72,54 @@ def File_Results_Window(True_Path):
             File_Results_List.append(obj_name + attr_name)
         File_Results_List.append("\n")
         I += 1
-    ListBoxWindow(4)
+    ListBoxWindow(2)
 
 ################################################################################################################################################################
 # Reference: https://www.studytonight.com/tkinter/text-editor-application-using-tkinter
 def openBL3Hotfixfile():
     def open_file():
         """Open a file for editing."""
-        filepath = askopenfilename(
-            filetypes=[("BL3HotFix File", "*.bl3hotfix")]
-        )
-        if not filepath:
-            return
+        filepath = askopenfilename(filetypes=[("BL3HotFix File", "*.bl3hotfix")])
+        if not filepath: return
         txt_edit.delete(1.0, END)
         with open(filepath, "r") as input_file:
             text = input_file.read()
             txt_edit.insert(END, text)
+        
+        # this is attempting to make certain text in the hotfix file a certain color so that it is easier to search through
+        c = 0 # for colors
+        for i in range(len(patch_types)):
+            # reference: https://www.geeksforgeeks.org/search-string-in-text-using-python-tkinter/
+            idx = 1.0
+            while True: # this loops forever untill an error appears
+                idx = txt_edit.search(patch_types[i],idx,stopindex=END) # grabs the first instance of when the word is found
+                if not idx: break # breaks if we are at the end
+                lastidx = '%s+%dc' % (idx, len(patch_types[i])) # this pasically makes it so it grabs the start and end of the word we are seatching for
+                txt_edit.tag_add(patch_types[i], idx, lastidx) # adds a tabg the we use to add color later         
+                idx = lastidx # we start our search from the last index
+            if c >= len(color_types): c = 0 # this is to insure that if we are highlighting a lot of words, they stay the same types of colors consistantly
+            txt_edit.tag_config(patch_types[i], foreground=color_types[c]) # colors it
+            c += 1
+        # if i wanted to add more hilighting I would need to make another loop for another set of words
+        c = 0
+        for i in range(len(FileNames)):
+            idx = 1.0
+            while True: # this loops forever untill an error appears
+                idx = txt_edit.search("/"+FileNames[i], idx, stopindex=END)
+                if not idx: break
+                lastidx = '%s+%dc' % (idx, len(FileNames[i])+1) #compensate for the "/" I added
+                txt_edit.tag_add(FileNames[i], idx, lastidx)    
+                idx = lastidx
+            if c >= len(color_types): c = 0
+            txt_edit.tag_config(FileNames[i], foreground=color_types[c])
+            c += 1
+        
         window.title(f"Text Editor Application - {filepath}")
 
     def save_file():
         """Save the current file as a new file."""
-        filepath = asksaveasfilename(
-            defaultextension="txt",
-            filetypes=[("BL3HotFix File", "*.bl3hotfix")],
-        )
-        if not filepath:
-            return
+        filepath = asksaveasfilename(defaultextension="txt", filetypes=[("BL3HotFix File", "*.bl3hotfix")])
+        if not filepath: return
         with open(filepath, "w") as output_file:
             text = txt_edit.get(1.0, END)
             output_file.write(text)
@@ -106,22 +133,24 @@ def openBL3Hotfixfile():
         hold = txt_edit.get("1.0", "end")
         content_list = hold.split("\n")
 
-        if len(Search_List) > 0:
-            Search_List.clear()  # Clears out the list so we don't geta data contamination
+        if len(Search_List) > 0: Search_List.clear()  # Clears out the list so we don't geta data contamination
         while i < len(content_list):
-            if s in content_list[i]:
-                Search_List.append(content_list[i])
+            if s in content_list[i]: Search_List.append(content_list[i])
             i += 1
-        ListBoxWindow(5)
+        ListBoxWindow(3)
 
+    # this is used for creating the window users see when opening their hotfix file.
+    # reason why i did not call my own was because I wanted to not mess with anything as icopied this over from a nother site
     window = Tk()
     window.title("Text Editor Application")
     window.rowconfigure(0, minsize=800, weight=1)
     window.columnconfigure(1, minsize=800, weight=1)
 
     fr_buttons = Frame(window, relief=RAISED, bd=2)
-    txt_edit = Text(window)
-
+    Scroll_Bar = Scrollbar(window, orient="vertical")   
+    txt_edit = Text(window, yscrollcommand=Scroll_Bar, font=Stan_Font)
+    Scroll_Bar.config(command=txt_edit.yview)
+    
     btn_open = Button(fr_buttons, text="Open", command=open_file)
     btn_save = Button(fr_buttons, text="Save As...", command=save_file)
     Find_Text_Button = Button(fr_buttons, text='Find', command=find)
@@ -131,9 +160,11 @@ def openBL3Hotfixfile():
     btn_save.grid(row=1, column=0, sticky="ew", padx=5)
     Find_String.grid(row=2, column=0, sticky="ew", padx=5)
     Find_Text_Button.grid(row=3, column=0, sticky="ew", padx=5)
-
+    
+    Scroll_Bar.grid(column=2, sticky="nsw")
+    
     fr_buttons.grid(row=0, column=0, sticky="ns")
     txt_edit.grid(row=0, column=1, sticky="nsew")
-
+    
     window.mainloop()
 ################################################################################################################################################################
