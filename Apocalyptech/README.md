@@ -126,6 +126,8 @@ of the mods you'll find in here, though:
 - **No Cryo Penalty** - Removes the player cryo movement speed debuff.
 - **Super Buff: Crader's EM-P5** - Absurdly OP Crader's EM-P5 buffs.
 - **Super Buff: Transformer** - Absurdly OP Transformer shield.
+- **Testing Enemy Spawns** - Used to spawn in specific enemies wihthout having
+  to travel to their usual spawn points, used for testing enemy-specific mods.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
 
 ## Quality of Life Mods
