@@ -20,11 +20,6 @@ Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 10)
 # Stan_Font = ("Courier New", 10)
 ################################################################################################################################################################
-SelectionWindow = Tk()
-Hotfix_Label_Display = Label(SelectionWindow) # Had to put this up here as it would not work any other way
-# Default values for window sizes for all, can manipulate inside the functions
-w, h, ws, hs = 500, 350, SelectionWindow.winfo_screenwidth(), SelectionWindow.winfo_screenheight()
-x, y = (ws/2) - (w/2), (hs/2) - (h/2)
 def SelectionWindow(Func):
     SelectionWindow = Tk()
     Hotfix_Label_Display = Label(SelectionWindow) # Had to put this up here as it would not work any other way
