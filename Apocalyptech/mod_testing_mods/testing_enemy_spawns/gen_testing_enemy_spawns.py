@@ -81,6 +81,8 @@ mod = Mod('testing_enemy_spawns.bl3hotfix',
             "Update the generation script to suit!",
         ],
         lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='resource',
         )
 
 data = BL3Data()
@@ -90,7 +92,7 @@ added_more = True
 while added_more:
     added_more = False
 
-    for obj_name in list(spawnoptions):
+    for obj_name in sorted(list(spawnoptions)):
 
         if obj_name not in seen:
 

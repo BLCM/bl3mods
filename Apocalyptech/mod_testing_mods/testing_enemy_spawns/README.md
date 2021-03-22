@@ -20,7 +20,7 @@ that Rampger will get locked up on its first immunity phase, though.)
 Changelog
 =========
 
-Mar 22, 2021
+**v1.0.0** - Mar 22, 2021
  * Initial Release
  
 Licenses
