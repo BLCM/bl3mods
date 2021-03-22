@@ -11,35 +11,11 @@ If you are curious about something or have a question about something, the best 
 
 # GETTING STARTED
 
-Currently, I do not have a .exe that runs everything and everything is magically ready.
-Unfortunately, you will need to do some extra work before you can get started.
-To get started, you will want the following:
-
-1. My `py_check.bat` will attempt to get python and install it for you, but if you already have python or you want to install it manually, go to the next step
-2. Python installed: https://www.python.org/downloads/
-   1. Once you have it installed, double-click on the file called `py_libs.py`
-      1. If this does not work on your machine,
-   2. This runs a script that installs all the needed Python Libraries.
-      1. This may take a minute as I also slight modify one of the installed libaries to make this program work.
-3. A program that runs Python IDE's': https://realpython.com/python-ides-code-editors-guide/
-4. A file editor (EX: Notepad++). The basic Notepad will work, but is harder to use.
-
-My recommendation is VScode.
-
-1. Download: https://code.visualstudio.com/download
-2. Also get this this extention for  VSCode: https://marketplace.visualstudio.com/items?itemName=ms-python.python
-3. It acts like a Python IDE and can very easily edit code at the same time.
-
-## Caveats
-
-Even after doing the above, running the program will still not work, and here is why.
-
-Variables in bl3data.py: variable `data_dir`, `ueserialize_path` and function `_connect_db`. This is because I can not include them as they are external products and can not included them, but I will describe how to get them and use them
+I now have a magical .exe file that does everything that is needed in order to get the program working, for the most part. Go to `hotfixgenerator/dist` and click on the .exe that is located there, `__interface__.exe`. But before you do, look at the instructions below before running anything
 
 ## Instructions
 
 Steps to fully utilize the program.
-Instructions are based in Windows, so Linux and Mac users commands will be slightly different
 **NOTE:** You will need to be able to open bl3data.py to edit variables.
 
 1. `data_dir`: **Note:** You will need a copy of BL3. Duh
@@ -74,3 +50,5 @@ List of resources that have helped me:
   - SQL File and Object Reference: https://apocalyptech.com/games/bl3-refs/
 - BL3 Redux Team: They inspired me to try and make this because I saw all the changes they did and what you can do with this game.
   - Link to the hotfix: https://github.com/BLCM/bl3mods/tree/master/EpicNNG
+- HackerSmacker: Tech Genius
+  - He told me many good tips and tricks to make my program even better than what it is right now.
