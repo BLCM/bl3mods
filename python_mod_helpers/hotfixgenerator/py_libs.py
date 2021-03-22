@@ -4,24 +4,27 @@ import os
 from os import path
 from sys import platform
 
-# I am attempting to make it easier to install python libaries for users. I do not have a lot of experiences with other platforms with installing python libaries, so this will probable be wrong
+# I am attempting to make it easier to install python libaries for users. 
+# I do not have a lot of experiences with mac and linux platforms with installing python libaries, so this will probable be wrong and I will have to come back and change it
+print("Installing needed Python libraries...")
+#this insures that the user will install pip into there machines and that the rest of the commands work
+subprocess.check_call([sys.executable, 'python', '-m', 'pip', 'install', '-U', 'pip'])
 if platform == "linux" or platform == "linux2":
     subprocess.check_call([sys.executable, 'sudo', 'pip', 'install', '--user', 'appdirs'])
     subprocess.check_call([sys.executable, 'sudo', 'pip', 'install', '--user', 'pyodbc'])
     subprocess.check_call([sys.executable, 'sudo', 'pip', 'install', '--user', 'flatten-json'])
 elif platform == "mac":
     subprocess.check_call([sys.executable, 'easy_install', 'pip'])
-    subprocess.check_call([sys.executable, 'pip', 'install', 'appdirs'])
-    subprocess.check_call([sys.executable, 'pip', 'install', 'pyodbc'])
-    subprocess.check_call([sys.executable, 'pip', 'install', 'flatten-json'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'appdirs'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyodbc'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flatten-json'])
 elif platform == "win32":
     # implement pip as a subprocess:
-    None
-    # subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'appdirs'])
-    # subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyodbc'])
-    # subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flatten-json'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'appdirs'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyodbc'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'flatten-json'])
 
-
+print("I am slightly modifying one of the libaries that was just installed, so this may take a moment")
 found_it = ''
 for r, d, f in os.walk("C:\\"): # change the hard drive, if you want
     if "flatten_json\__init__.py" in found_it:
