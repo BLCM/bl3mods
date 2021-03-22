@@ -36,7 +36,7 @@ Header
 Changelog
 =========
 **v0.9.1** - 2021-03-22
- * Bug fixing and adding the ability to better control mob deployment via json definition files
+ * Bug fixing and adding the ability to better control mob deployment via json definition files.
 
 **v0.9** - 2021-03-18
  * First versioned release
@@ -90,6 +90,19 @@ References
 3000 Hyperion Slaughter by altef-4: https://github.com/BLCM/bl3mods/wiki/3000-hyperion-slaughter
 
 Principal Skinner's great American Novel: Billy and the Cloneasaurus https://www.youtube.com/watch?v=ik0BPKM9WQg
+
+Alternatives
+============
+
+You can try these premade hotfix mods with seeds. I like the saurian ones the best.
+
+* `boss_rush_3000.42.bl3hotfix.txt`
+* `boss_rush_3000.666.bl3hotfix.txt`
+* `boss_rush_3000.787.bl3hotfix.txt`
+* `boss_rush_3000.saurian.41.bl3hotfix.txt`
+* `boss_rush_3000.saurian.42.bl3hotifx.txt`
+
+See them at https://github.com/BLCM/bl3mods/tree/master/skruntskrunt/boss-rush-slaughter
 
 Development Home
 ================
