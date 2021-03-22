@@ -151,7 +151,7 @@ safe_bosses = [
     ('Anointed X-4','/Game/Enemies/Psycho_Male/_Unique/AnointedX4/Character/BPChar_PsychoAnointedX4',None,None),
     ('Archer Rowe','/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss',None,None),
     ('Big Donny','/Game/Enemies/Tink/_Unique/MotorcadeBigD/_Design/Character/BPChar_TinkMotorcadeBigD',None,None),
-    ('Billy, the Anointe','/Game/Enemies/Goliath/Anointed/_Design/Character/BPChar_MansionBos',None,None),
+    ('Billy, the Anointed','/Game/Enemies/Goliath/Anointed/_Design/Character/BPChar_MansionBoss',None,None),
     ('Holder','/Game/NonPlayerCharacters/_Pandora/PrisonerHugs/_Design/Character/BPChar_PrisonerHugs',None,None),
     ('King Bobo','/Game/Enemies/Ape/_Unique/KingBobo/_Design/Character/BPChar_ApeKingBobo',None,None),
     ('King Gnasher','/Game/Enemies/Ape/_Unique/JungleMonarch/_Design/Character/BPChar_ApeJungleMonarch',None,None),

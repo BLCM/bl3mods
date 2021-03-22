@@ -52,6 +52,10 @@ def flatten(l):
 def matching_bosses(substring, bosses=boss.safe_bosses):
     return [boss[1] for boss in bosses if substring in boss[0]]
 
+def matching_bosses_exact(substring, bosses=boss.safe_bosses):
+    return [boss[1] for boss in bosses if substring == boss[0]]
+
+
 dinosaur_names = ['Minosaur','IndoTyrant','Tyrant of Instinct','Abbadoxis','Chonk Stomp','Ipswitch Dunne','Tremendous Rex']
 
 # maybe GerSaurianHamatarus is bad?
@@ -76,18 +80,17 @@ dinosaurs = flatten([matching_bosses(x) for x in dinosaur_names]) + more_saurian
 maliwan_names = [
     'Force Trooper',
     'Rax',
-    'Max',
     'Beans',
     'Archer Rowe',
     'Atomic',
     'Sylestro'
 ]
-maliwans = flatten([matching_bosses(x) for x in maliwan_names])
-bugs_names = ['Crawly','Wanette','Antalope','Princess Tarantella II','Manvark']
+maliwans = flatten([matching_bosses(x) for x in maliwan_names]) + matching_bosses_exact('Max')
+bugs_names = ['Crawly','Wanette','Antalope','Princess Tarantella II',]
 more_bugs = [
-    '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Badass/BPChar_VarkidHunt02_Badass',
-    '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Adult/BPChar_VarkidHunt02_AdultA',
-    '/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',
+    # '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Badass/BPChar_VarkidHunt02_Badass',
+    # '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Adult/BPChar_VarkidHunt02_AdultA',
+    # '/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',
     '/Game/Enemies/Varkid/SuperBadass/_Design/Character/BPChar_VarkidSuperBadass',
     '/Game/Enemies/Varkid/Badass/_Design/Character/BPChar_VarkidBadass'
 ]
@@ -107,10 +110,11 @@ pools = {
         bugs,
     ]),
     'round3':flatten([
-        matching_bosses('Pyschobillies'),
-        matching_bosses('Force Trooper'),
-        matching_bosses('Max'),
-        matching_bosses('Rax'),
+        matching_bosses('Wick'),
+        matching_bosses('Warty'),
+        matching_bosses('DEGEN-3'),
+        matching_bosses('Yeti'),
+        maliwans,
         dinosaurs
 
     ]),
