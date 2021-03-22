@@ -1,6 +1,5 @@
 # Going to try to import only what I need to save on space and calculation time
 # My files
-# from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
 from __info_function__ import FileChoice, openBL3Hotfixfile
 from __hotfix_control import Create_HotFix_File

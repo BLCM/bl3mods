@@ -15,12 +15,14 @@ Currently, I do not have a .exe that runs everything and everything is magically
 Unfortunately, you will need to do some extra work before you can get started.
 To get started, you will want the following:
 
-1. Python installed: https://www.python.org/downloads/
+1. My `py_check.bat` will attempt to get python and install it for you, but if you already have python or you want to install it manually, go to the next step
+2. Python installed: https://www.python.org/downloads/
    1. Once you have it installed, double-click on the file called `py_libs.py`
+      1. If this does not work on your machine,
    2. This runs a script that installs all the needed Python Libraries.
       1. This may take a minute as I also slight modify one of the installed libaries to make this program work.
-2. A program that runs Python IDE's': https://realpython.com/python-ides-code-editors-guide/
-3. A file editor (EX: Notepad++). The basic Notepad will work, but is harder to use.
+3. A program that runs Python IDE's': https://realpython.com/python-ides-code-editors-guide/
+4. A file editor (EX: Notepad++). The basic Notepad will work, but is harder to use.
 
 My recommendation is VScode.
 
