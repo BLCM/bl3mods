@@ -11,16 +11,13 @@ If you are curious about something or have a question about something, the best 
 
 # GETTING STARTED
 
-I now have a magical .exe file that does everything that is needed in order to get the program working, for the most part. Go to `hotfixgenerator/dist` and click on the .exe that is located there, `__interface__.exe`. But before you do, look at the instructions below before running anything
+I now have a magical .exe file that does everything that is needed in order to get the program working, for the most part. You will also need to follow the instructions below before you can get fully started.
 
 ## Instructions
 
-Steps to fully utilize the program.
-**NOTE:** You will need to be able to open bl3data.py to edit variables.
+`data_dir`: **Note:** You will need a copy of BL3. Duh
 
-1. `data_dir`: **Note:** You will need a copy of BL3. Duh
-
-   1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
+1. 1. Follow instructions at: https://github.com/BLCM/BLCMods/wiki/Accessing-Borderlands-3-Data
       1. These instructions are extremly useful, and do a better job of explaining than me.
    2. Once you have extracted all the data, place the `extracted_new` folder inside the hotfixgenerator folder, the program will do the rest
    3. If you are unable to follow these steps, go to this link and download the seralized files
@@ -38,10 +35,11 @@ Steps to fully utilize the program.
 
    1. `C:\Users\<Name>\AppData\Local\bl3data\bl3data\bl3data.ini` (`<Name>` will be different depending on your computer)
    2. Open the file and manually change the paths to the correct path. The basic Notepad should work fine
+5. Once you finish the previous steps, go to `hotfixgenerator/dist` and click on the .exe that is located there, `__interface__.exe`. If everything went right you should now have the program running.
 
 # CREDITS
 
-I did not create all of these files, most of the hard work was already done.
+I did not create all of these files and resources, most of the hard work was already done.
 List of resources that have helped me:
 
 - apocalyptech: Researcher and provided many of the resources I have used.
