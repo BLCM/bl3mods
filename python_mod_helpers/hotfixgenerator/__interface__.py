@@ -1,6 +1,5 @@
 # Going to try to import only what I need to save on space and calculation time
 # My files
-# from tkinter.constants import BOTTOM, LEFT, RIGHT, TOP
 from bl3data import BL3Data
 from __info_function__ import FileChoice, openBL3Hotfixfile
 from __hotfix_control import Create_HotFix_File
@@ -10,7 +9,10 @@ from _global_lists import ListBoxWindow
 # Libraies
 import tkinter as tk
 from tkinter import Entry, Button, Label, OptionMenu, Tk, StringVar
-from tkinter import DISABLED # TOP, BOTTOM
+from tkinter import DISABLED
+import subprocess
+import sys
+import os
 ################################################################################################################################################################
 # Global variables
 data = BL3Data()
@@ -21,7 +23,6 @@ Stan_Font = ("Times New Roman", 10)
 # Stan_Font = ("Wingdings 2", 10)
 # Stan_Font = ("Courier New", 10)
 ################################################################################################################################################################
-
 def SelectionWindow(Func):
     SelectionWindow = Tk()
     Hotfix_Label_Display = Label(SelectionWindow) # Had to put this up here as it would not work any other way
