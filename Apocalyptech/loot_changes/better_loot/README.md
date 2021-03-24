@@ -18,6 +18,8 @@ different things:
     Potty loot.
   * The Jakobs chests in Knotty Peak (when you first meet Wainwright) will only
     contain Jakobs gear, and be at least blue rarity.
+  * All Eridian ammo chests in Vault of the Serpent (in Tazendeer -- the vault
+    which Typhon and Leda opened) will contain only Eridium.
 
 Like the BL2+TPS versions of Better Loot, bosses which have more than one drop
 assigned to them will drop from the pool that many times.  For instance, the Skrakk
@@ -63,6 +65,8 @@ Changelog
    in The Droughts have standard loot definitions.
  * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
    at least blue-quality Jakobs gear.
+ * All Eridian ammo chests in Vault of the Serpent (in Tazendeer) will contain
+   only Eridium.
 
 **v1.2.2** - Mar 11, 2021
  * Updated to include loot changes with today's hotfixes, namely moving

@@ -1873,6 +1873,18 @@ for pool in [
 
 mod.newline()
 
+# All Eridian ammo crates in the Vault of the Sepent (in Tazendeer Ruins; the one that Typhon
+# and Leda opened + looted ages ago) will contain eridium, not ammo.
+mod.comment('Vault of the Serpet ammo crates contain Eridium')
+new_lootdef = Mod.get_full_cond('/Game/Missions/Plot/EPXX_Beachhead/LootDef_M_BeachHead_Eridian_AmmoCrate_EridiumOnly', 'LootableBalanceData')
+for idx in [0, 1, 2, 3, 4, 7, 8, 9]:
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'Beach_P',
+            # No idea where the `.Loot` comes from in the object name here, but it's necessary.
+            f'/Game/Maps/Zone_4/Beach/Beach_TempleVaultInterior.Beach_TempleVaultInterior:PersistentLevel.BPIO_Lootable_Eridian_AmmoCrate_{idx}.Loot',
+            'BalanceData',
+            new_lootdef)
+mod.newline()
+
 # Bugfixes!
 mod.header('Bugfixes')
 
