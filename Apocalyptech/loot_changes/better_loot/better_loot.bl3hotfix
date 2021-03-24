@@ -1471,6 +1471,9 @@ SparkEarlyLevelPatchEntry,(1,1,0,Beach_P),/Game/Maps/Zone_4/Beach/Beach_TempleVa
 SparkEarlyLevelPatchEntry,(1,1,0,Beach_P),/Game/Maps/Zone_4/Beach/Beach_TempleVaultInterior.Beach_TempleVaultInterior:PersistentLevel.BPIO_Lootable_Eridian_AmmoCrate_8.Loot,BalanceData,0,,LootableBalanceData'"/Game/Missions/Plot/EPXX_Beachhead/LootDef_M_BeachHead_Eridian_AmmoCrate_EridiumOnly.LootDef_M_BeachHead_Eridian_AmmoCrate_EridiumOnly"'
 SparkEarlyLevelPatchEntry,(1,1,0,Beach_P),/Game/Maps/Zone_4/Beach/Beach_TempleVaultInterior.Beach_TempleVaultInterior:PersistentLevel.BPIO_Lootable_Eridian_AmmoCrate_9.Loot,BalanceData,0,,LootableBalanceData'"/Game/Missions/Plot/EPXX_Beachhead/LootDef_M_BeachHead_Eridian_AmmoCrate_EridiumOnly.LootDef_M_BeachHead_Eridian_AmmoCrate_EridiumOnly"'
 
+# Ava's 'Invasion of Privacy' Chest is legendary in addition to The Boo
+SparkEarlyLevelPatchEntry,(1,1,0,Monastery_P),/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/LootDef_InvasionOfPrivacy_WeaponsCache.LootDef_InvasionOfPrivacy_WeaponsCache,DefaultLoot.DefaultLoot[0].ItemAttachments.ItemAttachments[0].ItemPool,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Legendary.ItemPool_AR_Shotgun_SMG_Legendary"'
+
 ###
 ### Bugfixes
 ###

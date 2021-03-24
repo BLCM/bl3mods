@@ -1885,6 +1885,14 @@ for idx in [0, 1, 2, 3, 4, 7, 8, 9]:
             new_lootdef)
 mod.newline()
 
+# Ensure that the non-Boo gun in Ava's chest in Invasion of Privacy is legendary
+mod.comment("Ava's 'Invasion of Privacy' Chest is legendary in addition to The Boo")
+mod.reg_hotfix(Mod.EARLYLEVEL, 'Monastery_P',
+        '/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/LootDef_InvasionOfPrivacy_WeaponsCache',
+        'DefaultLoot.DefaultLoot[0].ItemAttachments.ItemAttachments[0].ItemPool',
+        Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Legendary', 'ItemPoolData'))
+mod.newline()
+
 # Bugfixes!
 mod.header('Bugfixes')
 

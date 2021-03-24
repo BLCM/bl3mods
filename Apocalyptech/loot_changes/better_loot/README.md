@@ -16,6 +16,8 @@ different things:
 * Improves a few specific containers:
   * The start-game Porta Potties in The Droughts will now have the usual Porta
     Potty loot.
+  * Ava's chest in Invasion of Privacy will always have a legendary item in the
+    second slot.
   * The Jakobs chests in Knotty Peak (when you first meet Wainwright) will only
     contain Jakobs gear, and be at least blue rarity.
   * All Eridian ammo chests in Vault of the Serpent (in Tazendeer -- the vault
@@ -63,6 +65,8 @@ Changelog
 **v1.3.0** - *unreleased, might be 1.2.3 instead*
  * Incorporated Droughts Stocked Porta-Potties mod, to make all porta-potties
    in The Droughts have standard loot definitions.
+ * Ava's chest in Invasion of Privacy will always have a legendary item in the
+   second slot.
  * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
    at least blue-quality Jakobs gear.
  * All Eridian ammo chests in Vault of the Serpent (in Tazendeer) will contain
