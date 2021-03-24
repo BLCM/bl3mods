@@ -21,7 +21,7 @@
 
 import sys
 sys.path.append('../../../python_mod_helpers')
-from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, ItemPoolListEntry
+from bl3hotfixmod.bl3hotfixmod import Mod, BVC, BVCF, ItemPool, ItemPoolListEntry
 
 mod = Mod('better_loot.bl3hotfix',
         'BL3 Better Loot',
@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.2',
+        v='1.2.3',
         cats='enemy-drops, loot-system',
         )
 
@@ -1670,6 +1670,208 @@ for (label, row_name, chance) in [
                     BaseValueScale=1
                 )""".format(chance=chance))
     mod.newline()
+
+# Container contents
+mod.header('Container Content Changes')
+
+mod.comment('All porta-potties in The Droughts have ordinary porta-potty loot')
+lootdef = Mod.get_full_cond('/Game/Lootables/_Design/Data/Industrial/LootDef_Industrial_PortaPotty', 'LootableBalanceData')
+for submap, index in [
+        ('Dynamic', 61),
+        ('Dynamic', 224),
+        ('Dynamic', 740),
+        ('Dynamic', 1044),
+        ('Dynamic', 1844),
+        ('Terrain', 0),
+        ('Terrain', 61),
+        ]:
+
+    base_obj_name = f'/Game/Maps/Zone_0/Prologue/Prologue_{submap}.Prologue_{submap}:PersistentLevel.BPIO_Lootable_Industrial_PortaPotty_{index}'
+    loot_obj_name = f'{base_obj_name}.Loot'
+
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'Prologue_P',
+            base_obj_name,
+            'LootDefinition',
+            lootdef)
+
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'Prologue_P',
+            loot_obj_name,
+            'BalanceData',
+            lootdef)
+
+mod.newline()
+
+# It's always bugged me that these two chests aren't Jakobs-only.  A bit silly to go to
+# all this work just to tweak a couple chests which are only seen once per playthrough,
+# but c'est la vie!
+mod.comment("Wainwright's chests in Knotty Peak are Jakobs-Only")
+
+# Some rarity attrs to use
+uncommon = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon'
+rare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare'
+veryrare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare'
+legendary = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary'
+
+# Set up the pools we're going to use.  There aren't really any manufacturer-specifc
+# pools in the base data, so we're grabbing some pools which don't ordinarily exist
+# in Wetlands_P and making use of those, instead.  UE4's dynamic object loading is aces.
+# Snipers first.
+pool_1gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashDrip')
+#pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_02_Uncommon', weight=BVC(bva=uncommon, bvs=0.5))
+pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
+pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+jak_sniper_leg = [
+        '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Monocle/Balance/Balance_SR_JAK_Monocle',
+        '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Hunted/Balance/Balance_SR_JAK_Hunted',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/CockyBastard/Balance/Balance_SR_JAK_CockyBastard',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher/Balance/Balance_SR_JAK_Skullmasher',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/UnseenThreat/Balance/Balance_SR_JAK_UnseenThreat',
+        '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite',
+        ]
+for bal in jak_sniper_leg:
+    pool_1gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_sniper_leg)))
+
+# Now ARs + Shotguns
+pool_2gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashExplosion')
+#pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
+#pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
+pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
+pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
+pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+jak_ar_shot_leg = [
+        # ARs
+        '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/GatlingGun/Balance/Balance_AR_JAK_04_GatlingGun',
+        '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/LeadSprinkler/Balance/Balance_AR_JAK_LeadSprinkler',
+        '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/RowansCall/Balance/Balance_AR_JAK_RowansCall',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Clairvoyance/Balance/Balance_AR_JAK_Clairvoyance',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Mutant/Balance/Balance_AR_JAK_Mutant',
+        '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/StoneThrow/Balance/Balance_AR_JAK_Stonethrow',
+
+        # Shotguns
+        '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/Balance/Balance_SG_JAK_Hellwalker',
+        '/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/TheWave/Balance/Balance_SG_JAK_Unique_Wave',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/Balance_SG_JAK_TheCure',
+        '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/Balance/Balance_SG_JAK_SpeakEasy',
+        ]
+for bal in jak_ar_shot_leg:
+    pool_2gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_ar_shot_leg)))
+
+# Finally pistols
+pool_4gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashTrickle')
+#pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
+pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
+pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+jak_pistol_leg = [
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Doc/Balance/Balance_PS_JAK_Doc',
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/Balance/Balance_PS_JAK_Maggie',
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/MelsCompanion/Balance/Balance_PS_JAK_MelsCompanion',
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/TheDuc/Balance/Balance_PS_JAK_TheDuc',
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Unforgiven/Balance/Balance_PS_JAK_Unforgiven',
+        '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/WagonWheel/Balance/Balance_PS_JAK_WagonWheel',
+        '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/Balance/Balance_PS_JAK_LittleYeeti',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill_Legendary',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
+        '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Balance/Balance_PS_JAK_Rose'
+        '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot',
+        ]
+for bal in jak_pistol_leg:
+    pool_4gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_pistol_leg)))
+
+# Change the loot definition to a lootdef that's ordinarily not present
+mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
+        '/Game/Missions/Plot/EP08_PrisonBreak/SpawnOptions_PrisonBreak_JakobsLootable',
+        'Options.Options[0].Factory.Object..LootableBalanceDataOverride',
+        Mod.get_full_cond('/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashSmall', 'LootableBalanceData'))
+
+# Introduce some GameStage variance to items dropped from the pool
+mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
+        '/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashSmall',
+        'DefaultLootGameStageVarianceFormula',
+        Mod.get_full_cond('/Game/GameData/Balance/GameStageOffsets/Init_LootGameStage_MinorVariance.Init_LootGameStage_MinorVariance_C', 'BlueprintGeneratedClass'))
+
+# Define the loot that'll get spawned in
+mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
+        '/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashSmall',
+        'DefaultLoot',
+        """(
+            (
+                ConfigurationName="Two Guns",
+                Weight=(BaseValueConstant=1,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_2gun},
+                        AttachmentPointName="MiddleLeft",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_2gun},
+                        AttachmentPointName="MiddleRight",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    )
+                )
+            ),
+            (
+                ConfigurationName="Four Guns",
+                Weight=(BaseValueConstant=1,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_4gun},
+                        AttachmentPointName="TopLeft",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_4gun},
+                        AttachmentPointName="TopRight",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_4gun},
+                        AttachmentPointName="BottomLeft",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_4gun},
+                        AttachmentPointName="BottomRight",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    )
+                )
+            ),
+            (
+                ConfigurationName="One Gun",
+                Weight=(BaseValueConstant=1,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_1gun},
+                        AttachmentPointName="Middle",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    )
+                )
+            )
+        )""".format(
+                # Defaults
+                #pool_name_1gun=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_SniperAndHeavy_All', 'ItemPoolData'),
+                #pool_name_2gun=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_ARandSMG_All', 'ItemPoolData'),
+                #pool_name_4gun=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Pistols_All', 'ItemPoolData'),
+                # Our redirections
+                pool_name_1gun=Mod.get_full_cond(pool_1gun.pool_name, 'ItemPoolData'),
+                pool_name_2gun=Mod.get_full_cond(pool_2gun.pool_name, 'ItemPoolData'),
+                pool_name_4gun=Mod.get_full_cond(pool_4gun.pool_name, 'ItemPoolData'),
+                ))
+
+# Now that the pools have been loaded in all UE4-dynamic-like, set their contents
+for pool in [
+        pool_1gun,
+        pool_2gun,
+        pool_4gun,
+        ]:
+    mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
+            pool.pool_name,
+            'BalancedItems',
+            str(pool))
+
+mod.newline()
 
 # Bugfixes!
 mod.header('Bugfixes')

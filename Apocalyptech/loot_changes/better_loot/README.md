@@ -13,6 +13,11 @@ different things:
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
   mod for that.
 * Guarantees anointments on all gear which supports anointments
+* Improves a few specific containers:
+  * The start-game Porta Potties in The Droughts will now have the usual Porta
+    Potty loot.
+  * The Jakobs chests in Knotty Peak (when you first meet Wainwright) will only
+    contain Jakobs gear, and be at least blue rarity.
 
 Like the BL2+TPS versions of Better Loot, bosses which have more than one drop
 assigned to them will drop from the pool that many times.  For instance, the Skrakk
@@ -46,8 +51,18 @@ This mod includes the functionality in my "Unlock Mayhem-Specific Drops" mod,
 so there's no reason to use both together (though it shouldn't hurt anything
 if you do).
 
+This mod also includes the functionality of my "Droughts Stocked Porta-Potties"
+mod, so there's no reason to use both together (though it shouldn't hurt
+anything if you do).
+
 Changelog
 =========
+
+**v1.3.0** - *unreleased, might be 1.2.3 instead*
+ * Incorporated Droughts Stocked Porta-Potties mod, to make all porta-potties
+   in The Droughts have standard loot definitions.
+ * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
+   at least blue-quality Jakobs gear.
 
 **v1.2.2** - Mar 11, 2021
  * Updated to include loot changes with today's hotfixes, namely moving
