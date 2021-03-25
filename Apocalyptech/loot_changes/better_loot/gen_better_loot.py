@@ -1893,6 +1893,268 @@ mod.reg_hotfix(Mod.EARLYLEVEL, 'Monastery_P',
         Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Legendary', 'ItemPoolData'))
 mod.newline()
 
+# Prisa's Pop's loot stash, during Get Quick, Slick
+mod.comment("Prisa's Pop's loot stash has a guaranteed legendary")
+
+# We need a spare LootDef; be sure to not use the same one as for the Knotty Peak chests
+mod.reg_hotfix(Mod.EARLYLEVEL, 'Wetlands_P',
+        # No idea where the `.Loot` comes from in the object name here, but it's necessary.
+        '/Game/Maps/Zone_2/Wetlands/Wetlands_M_DriveAwayThePain.Wetlands_M_DriveAwayThePain:PersistentLevel.BPIO_Lootable_Industrial_Refrigerator_2.Loot',
+        'BalanceData',
+        Mod.get_full_cond('/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashMedium', 'LootableBalanceData'))
+
+# Introduce some GameStage variance to items dropped from the pool
+mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
+        '/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashMedium',
+        'DefaultLootGameStageVarianceFormula',
+        Mod.get_full_cond('/Game/GameData/Balance/GameStageOffsets/Init_LootGameStage_MinorVariance.Init_LootGameStage_MinorVariance_C', 'BlueprintGeneratedClass'))
+
+# Define the loot that'll get spawned in.  Interesting that *this* statement seems to require
+# an EARLYLEVEL, whereas the Knotty Peak Jakobs chests, above, don't.  Must just be something
+# to do with how/when they're spawned into the level.
+mod.reg_hotfix(Mod.EARLYLEVEL, 'Wetlands_P',
+        '/Game/Lootables/_Design/Data/SlotMachine/LootDef_SlotMachine_CashMedium',
+        'DefaultLoot',
+        # Duplicating the stock Fridge LootDef, but omitting the SkinsAndMisc configuration
+        # (and guaranteeing a legendary, of course)
+        """(
+            (
+                ConfigurationName="TwoHandedGun",
+                Weight=(BaseValueConstant=1,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_ar_smg_leg},
+                        AttachmentPointName="Door_Left_Socket",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Right_Socket",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Freezer_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Freezer_Right",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    )
+                )
+            ),
+            (
+                ConfigurationName="Grenades",
+                Weight=(BaseValueConstant=0.2,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Left_Socket",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Right_Socket",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_grenade_leg},
+                        AttachmentPointName="Freezer_Left",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_grenade_all},
+                        AttachmentPointName="Freezer_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    )
+                )
+            ),
+            (
+                ConfigurationName="Shields",
+                Weight=(BaseValueConstant=0.2,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Left_Socket",
+                        Probability=(BaseValueConstant=0.1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Right_Socket",
+                        Probability=(BaseValueConstant=0.1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_shields_leg},
+                        AttachmentPointName="Freezer_Left",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_shields_all},
+                        AttachmentPointName="Freezer_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    )
+                )
+            ),
+            (
+                ConfigurationName="ClassMods",
+                Weight=(BaseValueConstant=0.2,BaseValueScale=1),
+                ItemAttachments=(
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Left_Socket",
+                        Probability=(BaseValueConstant=0.1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_ar_smg_all},
+                        AttachmentPointName="Door_Right_Socket",
+                        Probability=(BaseValueConstant=0.1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="Bottom_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfOne_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Left",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_small_item},
+                        AttachmentPointName="ShelfTwo_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_com_leg},
+                        AttachmentPointName="Freezer_Left",
+                        Probability=(BaseValueConstant=1,BaseValueScale=1)
+                    ),
+                    (
+                        ItemPool={pool_name_com_all},
+                        AttachmentPointName="Freezer_Right",
+                        Probability=(BaseValueConstant=0.5,BaseValueScale=1)
+                    )
+                )
+            )
+        )""".format(
+                pool_name_ar_smg_leg=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Legendary', 'ItemPoolData'),
+                pool_name_ar_smg_all=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Guns/ItemPool_ARandSMG_All', 'ItemPoolData'),
+                pool_name_grenade_leg=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary', 'ItemPoolData'),
+                pool_name_grenade_all=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_All', 'ItemPoolData'),
+                pool_name_shields_leg=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary', 'ItemPoolData'),
+                pool_name_shields_all=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All', 'ItemPoolData'),
+                pool_name_com_leg=Mod.get_full_cond('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_05_Legendary', 'ItemPoolData'),
+                pool_name_com_all=Mod.get_full_cond('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods', 'ItemPoolData'),
+                pool_name_small_item=Mod.get_full_cond('/Game/GameData/Loot/ItemPools/ItemPool_SmallItemChest', 'ItemPoolData'),
+                ))
+mod.newline()
+
 # Bugfixes!
 mod.header('Bugfixes')
 

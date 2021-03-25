@@ -18,6 +18,8 @@ different things:
     Potty loot.
   * Ava's chest in Invasion of Privacy will always have a legendary item in the
     second slot.
+  * Prisa's pop's stash at the end of Get Quick, Slick will have one guaranteed
+    legendary.
   * The Jakobs chests in Knotty Peak (when you first meet Wainwright) will only
     contain Jakobs gear, and be at least blue rarity.
   * All Eridian ammo chests in Vault of the Serpent (in Tazendeer -- the vault
@@ -67,6 +69,8 @@ Changelog
    in The Droughts have standard loot definitions.
  * Ava's chest in Invasion of Privacy will always have a legendary item in the
    second slot.
+ * Prisa's pop's stash at the end of Get Quick, Slick will have one guaranteed
+   legendary.
  * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
    at least blue-quality Jakobs gear.
  * All Eridian ammo chests in Vault of the Serpent (in Tazendeer) will contain
