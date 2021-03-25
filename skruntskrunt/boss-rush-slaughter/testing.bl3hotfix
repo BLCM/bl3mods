@@ -17,17 +17,28 @@ SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlau
 # Z 300 instead of 100
 # Y 0 instead of -1900
 # Y -1900 was south more (right side)
-SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=0.0,Y=0.0,Z=300.0)
+# Mantikore dies at 300, trying 500
+# Still dies at 500?
+# and at 750
+# what about 100?
+# what about 2000? A little high but works
+# what about X? 2000 it does work but it does drop smaller mobs into no where
+# X 3000 still misses the lip
+# X 3500 misses teh lip
+# 4000 seems just right but a little close
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=4000.0,Y=0.0,Z=2000.0)
 
 #SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=6150.0,Y=0.0,Z=5000.0)
 #SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6.SpawnPointComponent,RelativeLocation,0,,(X=6000.0,Y=0.0,Z=2000.0)
 #SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=1000.0,Y=1000.0,Z=2000.0)
 
-SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,Description,0,,(FormatText='Billie and the Cloneasaurus.')
-SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary,0,,(FormatText='Billie and the Cloneasaurus.')
-#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
-#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
-
+#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1:Description,FormatText,0,,Billie and the Cloneasaurus.
+#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1:PreAcceptanceSummary,FormatText,0,,Billie and the Cloneasaurus.
+#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1:PostAcceptanceSummary,FormatText,0,,Billie and the Cloneasaurus.
+##SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary,0,,(FormatText='Billie and the Cloneasaurus.')
+##SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+##SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+#
 
 
 
@@ -35,9 +46,41 @@ SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_Te
 # SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK.BPChar_LoaderBasicJUNK_C'
 
 #WORKS OMG Omega Mantakore
-#SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
 
-SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic.BPChar_FabrikatorBasic_C'
+
+
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+
+#      "Table_Balance_Nekrobug_Unique",
+#      "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique"
+#    "RowName": "Nekrobug_BetterTimes"
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,10000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,40
+
+
+
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[0].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant,0,,1
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[1].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant,0,,1
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.Round1Wave.SpawnerComponent,SpawnerComponent.Object..SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant,0,,1
+
+
+
+
+# Fabricator!
+#SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic.BPChar_FabrikatorBasic_C'
 
 # Works
 # SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss.BPChar_EdenBoss_C'
