@@ -1,0 +1,46 @@
+# This just sets the spawn points to 2 locations
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4',OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6')
+# (OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4',OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6')
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,bRandomizeSpawnPoints,0,,True
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[0].SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4',OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6')
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[0].bRandomize,0,,True
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[1].SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4',OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6')
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[1].bRandomize,0,,True
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[2].SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4',OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6')
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPointGroups.SpawnPointGroups[2].bRandomize,0,,True
+
+
+
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6.SpawnPointComponent,RelativeLocation,0,,(X=15150.0,Y=0.0,Z=5000.0)
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=0.0,Y=-1900.0,Z=100.0)
+
+#SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=6150.0,Y=0.0,Z=5000.0)
+#SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6.SpawnPointComponent,RelativeLocation,0,,(X=6000.0,Y=0.0,Z=2000.0)
+#SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4.SpawnPointComponent,RelativeLocation,0,,(X=1000.0,Y=1000.0,Z=2000.0)
+
+SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,Description,0,,(FormatText='Billie and the Cloneasaurus.')
+SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary,0,,(FormatText='Billie and the Cloneasaurus.')
+#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+#SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+
+
+
+
+# Deploying /Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK
+# SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK.BPChar_LoaderBasicJUNK_C'
+
+#WORKS OMG Omega Mantakore
+#SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C'
+
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic.BPChar_FabrikatorBasic_C'
+
+# Works
+# SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss.BPChar_EdenBoss_C'
+
+SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=70.0,Y=70.0,Z=119.0)
+SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..SpawnOrigin,0,,(X=1500,Y=0,Z=0)
+SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..CollisionHandling,0,,AlwaysSpawn
+SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..bOverrideCollisionHandling,0,,True
+SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1,Options.Options[0].Factory.Object..SpawnDetails,0,,(Critical=AlwaysSpawn)
+SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1.SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1:SpawnFactory_OakAI_2,TeamOverride,0,,Team'"/Game/Common/_Design/Teams/Team_Maliwan.Team_Maliwan"'
+
