@@ -65,10 +65,10 @@ SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwa
 #      "Table_Balance_Nekrobug_Unique",
 #      "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique"
 #    "RowName": "Nekrobug_BetterTimes"
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,10000
-SparkCharacterLoadedEntry,(1,2,0,BPChar_Hib_Eista),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,40
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,500
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,500
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,500
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique.Table_Balance_Nekrobug_Unique,Nekrobug_BetterTimes,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,40
 
 
 
