@@ -23,7 +23,6 @@ Changelog
 **v1.0** - 2021-03-26
  * First versioned release
 
-
 Licenses
 ========
 
@@ -33,6 +32,13 @@ All the mods in this repository are currently licensed under
 The generation script for the mod is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../../COPYING.txt) for the full text of the license.
+
+B3HM Hotfix Url:
+================
+
+You can use this totally unsafe URL for your hotfixer it'll always be the latest version but you trust that I won't mess with you, use at your own risk:
+
+https://raw.githubusercontent.com/abramhindle/bl3mods/omega/skruntskrunt/omegamantakoreraid/omegamantakoreraid.bl3hotfix
 
 References
 ==========
