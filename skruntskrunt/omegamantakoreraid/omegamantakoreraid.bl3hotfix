@@ -10,6 +10,7 @@
 
 ###
 ### Spawn the Omega Mantakore for the first wave of the Slaughter Star 3000
+### Totally wrecks Red Rain and Blue Rain :(
 ###
 
 
@@ -28,7 +29,7 @@ SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlau
 
 
 # From altef-4
-SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6.SpawnPointComponent,RelativeLocation,0,,(X=15150.0,Y=0.0,Z=5000.0)
+# SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_6.SpawnPointComponent,RelativeLocation,0,,(X=15150.0,Y=0.0,Z=5000.0)
 
 # This sets the spawn point to the east platform (Red Rain?)
 # Z 200 instead of 100
@@ -86,6 +87,18 @@ SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlau
 SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.Round1Wave.SpawnerComponent,SpawnerComponent.Object..SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant,0,,1
 
 
+# Omega loot
+
+# just these 2 lines did not work
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=12,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,True
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C:AIBalanceState_GEN_VARIABLE,PlayThroughs.PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary',PoolProbability=(BaseValueConstant=1.0)))
+
+# Drop 5?
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BetterTimes),/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes.BPChar_Nekrobug_BetterTimes_C:AIBalanceState_GEN_VARIABLE,BPlayThroughs.PlayThroughs[0].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,12
 
 
 # Fabricator!
