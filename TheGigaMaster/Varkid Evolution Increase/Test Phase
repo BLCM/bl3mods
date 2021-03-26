@@ -7,7 +7,7 @@
 ###License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ###License URL: https://creativecommons.org/licenses/by-sa/4.0/
 
-
+#This is to test if it's working. buffing all values on normal to 100%.
 
 
 ###Tired of varkids never leveling up and evolving? Ever think you shouldn't be able to just run over these creatures and worry about having to take them out quick? If so, this mod is for you!
@@ -53,25 +53,25 @@
 
 #Increase larva to adult from 60% to 90%
 
-SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_LarvaToAdult.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=0.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_LarvaToAdult.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 
 #Increase adult to badass from 30% to 45%
 
-SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_AdultToBadass.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=.45,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_AdultToBadass.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 
 #Increase badass to superbadass from 10% to 15%
 
-SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_BadassToSuper.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_BadassToSuper.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 
 #Increase superbadass to ultimate badass (AKA Raid) from 0% to 1%
 
-SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_SuperToRaid.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=.01,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,2,0,MatchAll),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance.Table_VarkidShared_EvolutionChance,EvolveChance_SuperToRaid.OnePlayer_PT1.BaseValueConstant,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 
