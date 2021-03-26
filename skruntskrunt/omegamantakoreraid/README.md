@@ -3,7 +3,7 @@ OmegaMantikore Raid
 
 Fight the raid-level Omega Mantikore at the start of the Hyperion Slaughter Star.
 
-Warning: this will move Red Rain closer.
+Warning: this seems to make blue rain drop off of the map :(
 
 For the modders, this is a demo stolen from altef-4's code of how to move a spawn location for a particular wave, move it physically in space, and then spawn a big baddie there. You can steal this further and jam it into your mod maybe move him somewhere fun.
 
@@ -11,7 +11,7 @@ Header
 ======
 * Name: OmegaMantakoreRaid
 * Version: 1.0
-* Author: skruntskrunt feat. `altef_4`
+* Author: skruntskrunt feat. altef_4
 * Categories: mode-balance, enemy
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -20,7 +20,7 @@ Header
 Changelog
 =========
 
-**v1.0** - 2021-03-26
+**v0.9** - 2021-03-26
  * First versioned release
 
 Licenses
