@@ -1,6 +1,6 @@
 import sys
 
-from bl3hotfixmod.bl3hotfixmod import mod 
+from bl3hotfixmod import Mod 
 
 mod = Mod('varkid.bl3hotfix',
 	'Varkid Evolution Increase',
