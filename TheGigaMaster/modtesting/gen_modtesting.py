@@ -1,4 +1,5 @@
 import sys
+sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod import Mod
 
 mod = Mod('varkid.bl3hotfix',
