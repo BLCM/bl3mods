@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#vim: set expandtab tabstop=4 shiftwidth=4:
+		
 import sys
 sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
