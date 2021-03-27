@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../../python_mod_helpers')
-from bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfix import Mod
 
 mod = Mod('varkid.bl3hotfix',
 	'Varkid Evolution Increase',
