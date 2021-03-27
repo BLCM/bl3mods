@@ -1,22 +1,17 @@
-#!/usr/bin/env python3
-#vim: set expandtab tabstop=4 shiftwidth=4:
-		
 import sys
-sys.path.append('../../python_mod_helpers')
-from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod import Mod
 	  
-mod = Mod('varkid.bl3hotfix',
-	'Varkid Evolution Increase',
-	'TheGigaMaster',
-	[
-		'testing'
-	],
-	lic=Mod.CC_BY_SA_40,
-	v='0.2',
-	cats='enemy','scaling',
-	)
+mod = Mod('whereismyfile.bl3hotfix',
+        'Varkid Testing',
+        'TheGigaMaster',
+        [
+            "testing shit here"
+        ],
+        lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='gameplay, qol',
+        )
 
-mod.comment('increase varkid to adult to 100 chance')
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
     '/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance',
     'EvolveChance_LarvaToAdult.OnePlayer_PT1',
@@ -31,9 +26,7 @@ mod.reg_hotfix(Mod.CHAR, 'MatchAll',
 		AttributeInitializer=None,
 		BaseValueScale=1
     )
-    """)
-mod.comment('adult to badass 100 chance')
-mod.newline()
+    """),
 
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
     '/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance',
@@ -49,9 +42,7 @@ mod.reg_hotfix(Mod.CHAR, 'MatchAll',
 		AttributeInitializer=None,
 		BaseValueScale=1
     )
-    """)
-mod.comment('badass to superbadass 100 chance')
-mod.newline()
+    """),
 
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
     '/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance',
@@ -67,10 +58,8 @@ mod.reg_hotfix(Mod.CHAR, 'MatchAll',
 		AttributeInitializer=None,
 		BaseValueScale=1
     )
-    """)
+    """),
 
-mod.comment('badass to superbadass 100 chance')
-mod.newline()
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
     '/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_VarkidShared_EvolutionChance',
     'EvolveChance_SuperToRaid.OnePlayer_PT1',
@@ -85,5 +74,5 @@ mod.reg_hotfix(Mod.CHAR, 'MatchAll',
 		AttributeInitializer=None,
 		BaseValueScale=1
     )
-    """)
+    """),
 mod.close()
