@@ -64,7 +64,9 @@ Have fun with going from "Ok this is a good challenge" to "God has abandoned us"
 
 ## Future Ideas
 Increase all spawns to make super badass 75%+ and "Raid" 50%. 
+
 Daddy has the belt in hand.
+
 And he is not taking no for an answer.
 
 #
