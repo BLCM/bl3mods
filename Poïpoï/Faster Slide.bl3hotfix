@@ -1,0 +1,16 @@
+###
+### Name: Faster Slide
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### Makes slides 2.5x faster, to match a max level Snowdrift Artifact's slide speed. Infinite Slide mod is recommended.
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Siren/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
