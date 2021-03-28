@@ -1,0 +1,73 @@
+###
+### Name: No DOT Screams
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: qol
+###
+
+### Disables the player character screams when affected by DOT (Burning, Corroding, etc)
+
+# Operative
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,ShockPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,ShockPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,FirePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,FirePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,CorrosivePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,CorrosivePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,CryoPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,CryoPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,RadiationPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Operative.Sounds_PL_Operative,RadiationPainLoopStop,0,,None
+
+# Gunner
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,ShockPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,ShockPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,FirePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,FirePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,CorrosivePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,CorrosivePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,CryoPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,CryoPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,RadiationPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Gunner.Sounds_PL_Gunner,RadiationPainLoopStop,0,,None
+
+# Beastmaster
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,ShockPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,ShockPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,FirePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,FirePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,CorrosivePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,CorrosivePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,CryoPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,CryoPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,RadiationPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Beastmaster.Sounds_PL_Beastmaster,RadiationPainLoopStop,0,,None
+
+# Siren
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,ShockPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,ShockPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,FirePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,FirePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,CorrosivePainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,CorrosivePainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,CryoPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,CryoPainLoopStop,0,,None
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,RadiationPainLoop,0,,None
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/_Shared/_Design/Audio/Sounds_PL_Siren.Sounds_PL_Siren,RadiationPainLoopStop,0,,None
+
