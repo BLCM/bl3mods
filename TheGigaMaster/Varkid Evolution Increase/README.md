@@ -93,6 +93,6 @@ As someone who didn't know how to even open a .JSON file to creating my own mod 
 
 I plan on updating this periodically, so keep an eye out if a new version releases. 
 
-If you find any issues, please DM me on ShadowEvil Discord @SkyMaster. Any feedback/tips/advice/balance suggestions are appreciated. 
+If you find any issues, please DM me on ShadowEvil Discord @TheGigaMaster. Any feedback/tips/advice/balance suggestions are appreciated. 
 
 Have fun! 
