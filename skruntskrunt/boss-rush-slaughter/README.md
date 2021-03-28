@@ -91,6 +91,8 @@ References
 
 Principal Skinner's great American Novel: Billy and the Cloneasaurus https://www.youtube.com/watch?v=ik0BPKM9WQg
 
+Thanks to professor portal, rockroze1, helgenen, u4fun, governmentoast, and others for play testing.
+
 Alternatives
 ============
 
