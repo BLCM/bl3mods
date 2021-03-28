@@ -7,7 +7,7 @@ Tired of varkids never leveling up and evolving? Ever think you should not be ab
 
 On normal mode, evolution chance is increased by ~50%, and on TVHM, evolution chance is ~doubled. 
 
-No health adjustments were made, only changes to evolution rate were adjusted.
+No health adjustments were made, only changes to evolution chances were adjusted.
 
 ## Normal Mode
 
