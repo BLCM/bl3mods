@@ -41,6 +41,12 @@ Increase badass to superbadass from 20% to 40% TVHM
 
 Increase superbadass to ultimate badass (AKA Raid) from 10% to 20% TVHM (currently not in game)
 
+## Screenshots
+
+https://i.imgur.com/Mpy9jYk.jpg
+
+https://i.imgur.com/pGL5rqt.jpeg
+
 ## Raid Information
 
 One interesting thing to note is that after super badass, the game says SuperToRaid for the final evolution stage. In BL2, it was a 3 step process:
