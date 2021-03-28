@@ -41,21 +41,6 @@ Increase badass to superbadass from 20% to 40% TVHM
 
 Increase superbadass to ultimate badass (AKA Raid) from 10% to 20% TVHM (currently not in game)
 
-## Other sutff
-
-I'm pretty sure once we get the new raid boss, the part of "superbadass -> raid" will become active, but we'll see.
-
-## Future Ideas
-Increase all spawns to make ultimate badass 75%+ and "Raid" 50%. Daddy has the belt in hand.
-And he is not taking no for an answer.
-
-#
-
-Normal enemies can jump into pods and evolve. IE a tink can jump into a pod and evolve into a badass tink.
-Tink's have turrets, so idk how that would interact. that'd be a lot of work, but a lot of fun.
-Certain enemies wouldn't be able to evolve such as goliaths, bosses, mini-bosses, etc.
-imagine you're just running and gunning, then a normal enemies just upgrades.
-
 ## Raid Information
 
 One interesting thing to note is that after super badass, the game says SuperToRaid for the final evolution stage. In BL2, it was a 3 step process:
@@ -76,3 +61,18 @@ So, what does this mean?
 The game is skipping an evolution step, and once a varkid reaches superbadass, it has a chance go straight to Raid. 
 However, currently I don't think Raid is in the game, so we will have to wait and see what happens.
 Have fun with going from "Ok this is a good challenge" to "God has abandoned us" by completely spiking in difficulty.
+
+## Future Ideas
+Increase all spawns to make ultimate badass 75%+ and "Raid" 50%. Daddy has the belt in hand.
+And he is not taking no for an answer.
+
+#
+
+Normal enemies can jump into pods and evolve. IE a tink can jump into a pod and evolve into a badass tink.
+Tink's have turrets, so idk how that would interact. that'd be a lot of work, but a lot of fun.
+Certain enemies wouldn't be able to evolve such as goliaths, bosses, mini-bosses, etc.
+imagine you're just running and gunning, then a normal enemies just upgrades.
+
+## Other sutff
+
+I'm pretty sure once we get the new raid boss, the part of "superbadass -> raid" will become active, but we'll see.
