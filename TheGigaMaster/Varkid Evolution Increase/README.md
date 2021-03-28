@@ -9,10 +9,6 @@ On normal mode, evolution chance is increased by ~50%, and on TVHM, evolution ch
 
 No health adjustments were made, only changes to evolution rate were adjusted.
 
-This is the first time I've ever made a mod, let alone do anything involving code (excpet for printing Hello, World! in 9th grade).
-So if things don't go quite as expected, don't be shocked when it breaks. Any feedback/tips/advice/balance suggestions are appreciated! 
-At some point, I may make variations of this mod to allow players to choose how hard will be by increasing/decrasing evolution chance.
-
 ## Normal Mode
 
 The aim of normal mode was to make badasses more frequent and to rarely fight larva. 
@@ -68,6 +64,9 @@ The game is skipping an evolution step, and once a varkid reaches superbadass, i
 However, currently I don't think "Raid" is in the game, so we will have to wait and see what happens.
 It'll be fun to go from "Ok this is a good challenge" to "God has abandoned us" by completely spiking in difficulty.
 
+
+I'm pretty sure once we get the new raid boss, the part of "superbadass -> raid" will become active, but we'll see.
+
 ## Future Ideas
 Increase all spawns to make super badass 75%+ and "Raid" 50%. 
 
@@ -82,6 +81,18 @@ Tink's have turrets, so idk how that would interact. that'd be a lot of work, bu
 Certain enemies wouldn't be able to evolve such as goliaths, bosses, mini-bosses, etc.
 imagine you're just running and gunning, then a normal enemies just upgrades.
 
-## Other sutff
+## Final Information
 
-I'm pretty sure once we get the new raid boss, the part of "superbadass -> raid" will become active, but we'll see.
+This is the first time I've ever made a mod, let alone do anything involving code (excpet for printing Hello, World! in 9th grade).
+So if things don't go quite as expected, don't be shocked when it breaks.
+
+At some point, I may make variations of this mod to allow players to choose how hard will be by increasing/decrasing evolution chances.
+
+This mod was made tons of help and teaching from all the people on the ShowEvil Discord. I would not have of known where to begin without their help and support.
+As someone who didn't know how to even open a .JSON file to creating my own mod in a weekend, they were there to help, no matter how dumb the question was.
+
+I plan on updating this periodically, so keep an eye out if a new version releases. 
+
+If you find any issues, please DM me on ShadowEvil Discord @SkyMaster. Any feedback/tips/advice/balance suggestions are appreciated. 
+
+Have fun! 
