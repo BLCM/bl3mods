@@ -1,4 +1,7 @@
-# Varkid Evolution Chance Increase
+Varkid Evolution Chance Increase
+================================
+
+## Description
 
 Tired of varkids never leveling up and evolving? Ever think you should not be able to just run over these creatures? Bored of not worrying about having to take them out quick? If so, this mod is for you!
 
@@ -7,12 +10,10 @@ On normal mode, evolution chance is increased by ~50%, and on TVHM, evolution ch
 No health adjustments were made, only changes to evolution rate were adjusted.
 
 This is the first time I've ever made a mod, let alone do anything involving code (excpet for printing Hello, World! in 9th grade).
-So if things don't go quite as expected, don't be shocked when it breaks. Any feedback/tips/advice is appreciated! 
-At some point, I may make variations of this mod to choose how hard it will be.
+So if things don't go quite as expected, don't be shocked when it breaks. Any feedback/tips/advice/balance suggestions are appreciated! 
+At some point, I may make variations of this mod to allow players to choose how hard will be by increasing/decrasing evolution chance.
 
-#
-
-Normal Mode
+## Normal Mode
 
 The aim of normal mode was to make badasses more frequent and to rarely fight larva. 
 Becuase let's be honest, no one wants to fight larva. Unless you've just stared a new game or are going in undergeared.
@@ -26,9 +27,7 @@ Increase badass to superbadass from 10% to 15%
 
 Increase superbadass to raid from 0% to 5% (currently not in game)
 
-#
-
-TVHM
+## TVHM
 
 On TVHM, you'd better be ready. Mama isn't holding your hand anymore, the gloves are coming off.
 You'd better pray you don't run into a Super Badass level difficulty as soon as you start TVHM and are undergeared.
@@ -42,25 +41,22 @@ Increase badass to superbadass from 20% to 40% TVHM
 
 Increase superbadass to ultimate badass (AKA Raid) from 10% to 20% TVHM (currently not in game)
 
-#
+## Other sutff
 
 I'm pretty sure once we get the new raid boss, the part of "superbadass -> raid" will become active, but we'll see.
 
-#
-
-Future idea - increase all spawns to make ultimate badass 75%+ and "Raid" 50%. Daddy has the belt in hand.
+## Future Ideas
+Increase all spawns to make ultimate badass 75%+ and "Raid" 50%. Daddy has the belt in hand.
 And he is not taking no for an answer.
 
 #
 
-Future idea - normal enemies can jump into pods and evolve. IE a tink can jump into a pod and evolve into a badass tink.
+Normal enemies can jump into pods and evolve. IE a tink can jump into a pod and evolve into a badass tink.
 Tink's have turrets, so idk how that would interact. that'd be a lot of work, but a lot of fun.
 Certain enemies wouldn't be able to evolve such as goliaths, bosses, mini-bosses, etc.
 imagine you're just running and gunning, then a normal enemies just upgrades.
 
-#
-
-Extra Random Information
+## Raid Information
 
 One interesting thing to note is that after super badass, the game says SuperToRaid for the final evolution stage. In BL2, it was a 3 step process:
 
