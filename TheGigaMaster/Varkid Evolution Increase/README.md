@@ -63,7 +63,8 @@ However, currently I don't think Raid is in the game, so we will have to wait an
 Have fun with going from "Ok this is a good challenge" to "God has abandoned us" by completely spiking in difficulty.
 
 ## Future Ideas
-Increase all spawns to make ultimate badass 75%+ and "Raid" 50%. Daddy has the belt in hand.
+Increase all spawns to make super badass 75%+ and "Raid" 50%. 
+Daddy has the belt in hand.
 And he is not taking no for an answer.
 
 #
