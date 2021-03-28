@@ -47,26 +47,26 @@ https://i.imgur.com/Mpy9jYk.jpg
 
 https://i.imgur.com/pGL5rqt.jpeg
 
-## Raid Information
+## "Raid" Information
 
-One interesting thing to note is that after super badass, the game says SuperToRaid for the final evolution stage. In BL2, it was a 3 step process:
+One interesting thing to note is that after super badass, the game says "SuperToRaid" for the final evolution stage. In BL2, it was a 3 step process:
 
-super badass -> ultimate badass -> Verminvirous/supreme badass
+super badass -> ultimate badass -> Verminvirous/supreme badass (AKA "Raid")
 
 In BL3, there is no ultimate badass stage.
 Digging deeper, it appears that the game decides to go from
 
-super badass -> Verminvirous/supreme badass
+super badass -> Verminvirous/supreme badass (AKA "Raid")
 
 They are omitting an evolution stage.
-Upon a quick look at the wiki, the spawn chance values for ultimate badass -> Verminvirous/Supreme badass match the vaules for the SuperToRaid chance.
+Upon a quick look at the wiki, the spawn chance values for ultimate badass -> Verminvirous/Supreme badass match the vaules for the "SuperToRaid" chance.
 This spawn rate is at 0% for normal mode and only a 7.5% chance in TVHM, which matches up with what's in the game data.
 
 So, what does this mean?
 
-The game is skipping an evolution step, and once a varkid reaches superbadass, it has a chance go straight to Raid. 
-However, currently I don't think Raid is in the game, so we will have to wait and see what happens.
-Have fun with going from "Ok this is a good challenge" to "God has abandoned us" by completely spiking in difficulty.
+The game is skipping an evolution step, and once a varkid reaches superbadass, it has a chance go straight to "Raid". 
+However, currently I don't think "Raid" is in the game, so we will have to wait and see what happens.
+It'll be fun to go from "Ok this is a good challenge" to "God has abandoned us" by completely spiking in difficulty.
 
 ## Future Ideas
 Increase all spawns to make super badass 75%+ and "Raid" 50%. 
