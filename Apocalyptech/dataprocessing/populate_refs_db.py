@@ -23,10 +23,10 @@ import io
 import sys
 import time
 import struct
+import appdirs
 import MySQLdb
 import subprocess
-
-from bl3data.bl3data import BL3Data
+import configparser
 
 # create table bl3object
 # (
@@ -62,11 +62,21 @@ blacklist_from = {
 blacklist_to = {
         }
 
-# Abusing our bl3data class to connect to the DB, here.
-data = BL3Data()
-data._connect_db()
-db = data.db
-curs = data.curs
+# We used to abuse our bl3data class to connect to the DB, here, but that
+# moved over to using SQLite instead, so that class doesn't actually do
+# "real" database connections anymore.  So we'll manually read in its INI
+# file, and expect to see the old-style database connection parameters
+# in there.
+config_dir = appdirs.user_config_dir('bl3data')
+config_file = os.path.join(config_dir, 'bl3data.ini')
+config = configparser.ConfigParser()
+config.read(config_file)
+db = MySQLdb.connect(
+        user=config['mysql']['user'],
+        passwd=config['mysql']['passwd'],
+        host=config['mysql']['host'],
+        db=config['mysql']['db'])
+curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
