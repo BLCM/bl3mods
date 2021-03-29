@@ -9,6 +9,8 @@ On normal mode, evolution chance is increased by ~50%, and on TVHM, evolution ch
 
 No health adjustments were made, only changes to evolution chances were adjusted.
 
+This may be added in the future, as sometimes they still feel too easy to kill until they evolve.
+
 ## Normal Mode
 
 The aim of normal mode was to make badasses more frequent and to rarely fight larva. 
