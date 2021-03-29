@@ -82,31 +82,31 @@ SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attributes/Table_V
 # Normal
 
 # Players 1 Pt1 (normal)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,1P_PT1,Range,0,,(Value=4,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,1P_PT1,Range,0,,(Value=4,Variance=1)
 
 # Players 2 Pt1 (normal)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,2P_PT1,Range,0,,(Value=3,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,2P_PT1,Range,0,,(Value=3,Variance=1)
 
 # Players 3 Pt1 (normal)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT1,Range,0,,(Value=2,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT1,Range,0,,(Value=2,Variance=1)
 
 # Players 4 Pt1 (normal)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,4P_PT1,Range,0,,(Value=1,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,4P_PT1,Range,0,,(Value=2,Variance=1)
 
 
 # TVHM
 
 # Players 1 Pt 2 (TVHM)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,1P_PT2,Range,0,,(Value=2,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,1P_PT2,Range,0,,(Value=2,Variance=1)
 
 # Players 2 Pt 2 (TVHM)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,2P_PT2,Range,0,,(Value=1,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,2P_PT2,Range,0,,(Value=2,Variance=1)
 
 # Players 3 Pt 2 (TVHM)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT2,Range,0,,(Value=1,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT2,Range,0,,(Value=2Variance=1)
 
 # Players 4 Pt 2 (TVHM)
-SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT2,Range,0,,(Value=1,Variance=0)
+SparkPatchEntry,(1,2,0,),/Game/Enemies/Varkid/_Shared/_Design/Attribute/Table_VarkidShared_EvolutionDelay.Table_VarkidShared_EvolutionDelay,3P_PT2,Range,0,,(Value=2,Variance=1)
 
 
 
