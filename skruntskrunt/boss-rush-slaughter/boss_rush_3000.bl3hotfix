@@ -16,6 +16,9 @@
 ###
 
 # Seed for this generation (gen_boss_rush_3000.py): 42
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,Description.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PreAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PostAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
 # Deploying Junpai Goat Eater
 SparkEarlyLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_PunkBadass_Gaud.BPChar_PunkBadass_Gaud_C'
 SparkLevelPatchEntry,(1,1,0,TechSlaughter_P),/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix.SpawnOptions_KatagawaBallAdds_MeleeMix,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=70.0,Y=70.0,Z=119.0)

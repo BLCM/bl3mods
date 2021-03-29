@@ -16,6 +16,9 @@
 ###
 
 # Seed for this generation (gen_boss_rush_3000.py): 42
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,Description.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PreAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PostAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
 # Based on gen_bpchars_saurian.42.json
 # Seed for this from json data: 42
 # Deploying /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
