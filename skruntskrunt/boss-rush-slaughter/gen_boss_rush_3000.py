@@ -52,6 +52,12 @@ mod = Mod(args.output,
 
 mod.comment( f'Seed for this generation (gen_boss_rush_3000.py): {our_seed}' )
 
+# Mission Story
+story = "Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up."
+for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
+    mod.reg_hotfix(Mod.LEVEL, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
+
+
 # from gen_3000_Char_list import *
 # from gen_3000_helper_functions import *
 from decimal import Decimal
