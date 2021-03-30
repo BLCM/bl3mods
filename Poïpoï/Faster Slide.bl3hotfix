@@ -12,5 +12,5 @@
 
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Siren/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
