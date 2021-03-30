@@ -1,0 +1,13 @@
+###
+### Name: No Barrier AmpShot VFX
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: char-operative, av-char, qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### Removes the Amped visual effects when firing through Zane's barrier. Your shots will still be amped, but now you can see what you're shooting at.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,AmpedShotSettingsByType.EWeaponShotModifierType::GameType2,0,,None
