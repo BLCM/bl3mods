@@ -1,0 +1,14 @@
+###
+### Name: Slide Jumper
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: cheat, joke
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### I felt jumping out of a fast slide felt disappointingly slow, so this makes jumps out of a slide faster and cover a longer distance, Titanfall/Apex Legends style.
+### This is intended to be used with my Faster Slide mod or a high level Snowdrift artifact.
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Sliding/SlidingData_Shared.SlidingData_Shared,JumpHorizontalSpeedScale,0,,6

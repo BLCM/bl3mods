@@ -1,0 +1,28 @@
+###
+### Name: Legendary Arms Race
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: cheat, armsrace
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### Greatly increases chance of obtaining higher quality loot in Arms Race (4x Legendaries). 
+### If you want to tweak the drop rates, download this file, tweak the final number (corresponding to %chance) of each line to your liking, then add this modified local file to your hotfixes list.
+### I recommend to keep at least 1% drop chance for White & Green, or you might find empty chests. Also, you might want to make sure it all adds up to 100%, although I'm not sure it makes a difference.
+
+# White Items
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Common,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,1
+
+# Green Items
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Uncommon,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,1
+
+# Blue Items
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Rare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,70
+
+# Purple Items
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,VeryRare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,26
+
+# Legendary Items
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,4
