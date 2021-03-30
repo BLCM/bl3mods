@@ -9,6 +9,7 @@
 ###
 
 ### Makes slides 2.5x faster, to match a max level Snowdrift Artifact's slide speed. Infinite Slide mod is recommended.
+### BE CAREFUL! This also affects forced slides, so YOU WILL DIE to Graveward's forced slide if you're not ready for it!
 
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C,Att_SlideSpeedMultiplier,0,,(Value=2.5,BaseValue=2.5)
