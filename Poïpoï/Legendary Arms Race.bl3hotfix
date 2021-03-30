@@ -9,7 +9,7 @@
 ###
 
 ### Greatly increases chance of obtaining higher quality loot in Arms Race (4x Legendaries). 
-### If you want to tweak the drop rates, download this file, tweak the final number (corresponding to %chance) of each line to your liking.
+### If you want to tweak the drop rates, download this file, tweak the final number (corresponding to %chance) of each line to your liking, then add this modified local file to your hotfixes list.
 ### I recommend to keep at least 1% drop chance for White & Green, or you might find empty chests. Also, you might want to make sure it all adds up to 100%, altough I'm not sure it makes a difference.
 
 # White Items
