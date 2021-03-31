@@ -60,7 +60,7 @@ boss_rush_3000.saurian.%.bl3hotfix.txt: boss_rush_3000.saurian.%.bl3hotfix
 
 boss_rush.new.42.bl3hotfix: bpchar-gen-new.py $(GEN)
 	python3 bpchar-gen-new.py --json gen_bpchars_new.42.json --seed 42 --nomix
-	python3 $(GEN) --json gen_bpchars_new.42.json --seed 42 --output boss_rush.new.42.bl3hotfix
+	python3 $(GEN) --json gen_bpchars_new.42.json --seed 42 --output boss_rush.new.42.bl3hotfix --maxmobs 35
 
 
 boss_rush.new.%.bl3hotfix: bpchar-gen-new.py $(GEN)

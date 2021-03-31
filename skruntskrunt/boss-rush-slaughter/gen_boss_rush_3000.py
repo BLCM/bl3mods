@@ -30,6 +30,7 @@ OUTPUT='boss_rush_3000.bl3hotfix'
 DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
 DEFAULT_TOUGH=0.2
+MAX_MOBS=1000
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
@@ -39,6 +40,7 @@ def parse_args():
     parser.add_argument('--tough', type=float, default=DEFAULT_TOUGH, help='Proportion of tough mobs')
     parser.add_argument('--health', type=float, default=DEFAULT_HEALTH, help='Tough mob health multiplier')
     parser.add_argument('--damage', type=float, default=DEFAULT_DAMAGE, help='Tough mob damage multiplier')
+    parser.add_argument('--maxmobs',type=int,default=MAX_MOBS, help='How many maximum different characters to load for the level')
     return parser.parse_args()
 
 args = parse_args()
@@ -48,7 +50,8 @@ if not args.time:
 
 our_default_damage = float(args.damage)
 our_default_health = float(args.health)
-    
+our_max_mobs = int(args.maxmobs)
+
 mod = Mod(args.output,
           'Boss Rush Slaughter 3000: Billy and the Clone-a-saurus',
           'altef_4 feat. SkruntSkrunt',
@@ -215,8 +218,9 @@ def gen_mod(so, scale, my_list):
 #              "Factory_SpawnFactory_OakAI_5"),
 #         ])
 
+_replace_enemy_uniq = set()
 def replace_enemy(l):
-    return [(boss.choose_random_slaughter_boss(),x[1]) for x in l]
+    return replace_if_too_many([(boss.choose_random_slaughter_boss(),x[1]) for x in l], _replace_enemy_uniq)
 
 def round1():
 
@@ -783,15 +787,32 @@ def gen_safe_spawns():
                 'SpawnPointGroups.SpawnPointGroups[{}].bRandomize'.format(i),
                 random_spawn,"",True)
 
+def replace_if_too_many(wave, uniq_mobs, our_max_mobs=our_max_mobs):
+    outwave = []
+    for mob in wave:
+        if len(uniq_mobs) > our_max_mobs:
+            mob = (random.choice(sorted(list(uniq_mobs))),mob[1])
+        else:
+            if isinstance(mob[0],tuple) or isinstance(mob[0],list):
+                uniq_mobs.add(mob[0][1]) # adds the bpchar path instead
+            else:
+                uniq_mobs.add(mob[0])
+        outwave.append(mob)
+    return outwave    
+            
+    
+            
 def gen_mod_from_data(data):
     mod.comment( f'Seed for this from json data: {data.get("seed","Seed not found")}' )
     rounds = ["round1","round2","round3","round4","round5"]
+    uniq_mobs = set()
     for curr_round_name in rounds:
         curr_round = data[curr_round_name]
         waves = [x for x in curr_round.keys() if x[0] == '/']
         for wave_name in waves:
             wave = curr_round[wave_name]
             #gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b',
+            replace_if_too_many(wave, uniq_mobs)
             gen_mod(wave_name,size,wave)
 
 def default_mod():
