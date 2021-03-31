@@ -23,6 +23,9 @@ Thank you to the true hero: altef_4. His careful modding to produce
 the Hyperion slaughter star 3000 allowed me to spend very little time
 changing his mod.
 
+You'll know the mod is loaded if the mission description of the
+Slaughterstar 3000 mentions Billie.
+
 Header
 ======
 * Name: Boss Rush: Billy and the Clone-a-saurus
@@ -35,6 +38,9 @@ Header
 
 Changelog
 =========
+**v0.9.2** - 2021-03-28
+ * Some bug fixes and added a mission description.
+ 
 **v0.9.1** - 2021-03-22
  * Bug fixing and adding the ability to better control mob deployment via json definition files.
 

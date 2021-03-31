@@ -27,12 +27,18 @@ import json
 
 SEED=42
 OUTPUT='boss_rush_3000.bl3hotfix'
+DEFAULT_HEALTH=100
+DEFAULT_DAMAGE=40
+DEFAULT_TOUGH=0.2
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--json', type=str, default=None, help='JSON Input to specify each round (example-bpchar.json)')
     parser.add_argument('--time', action='store_true', default=False, help='Use time for a seed')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--tough', type=float, default=DEFAULT_TOUGH, help='Proportion of tough mobs')
+    parser.add_argument('--health', type=float, default=DEFAULT_HEALTH, help='Tough mob health multiplier')
+    parser.add_argument('--damage', type=float, default=DEFAULT_DAMAGE, help='Tough mob damage multiplier')
     return parser.parse_args()
 
 args = parse_args()
@@ -40,6 +46,9 @@ our_seed = int(args.seed)
 if not args.time:
     random.seed(our_seed)
 
+our_default_damage = float(args.damage)
+our_default_health = float(args.health)
+    
 mod = Mod(args.output,
           'Boss Rush Slaughter 3000: Billy and the Clone-a-saurus',
           'altef_4 feat. SkruntSkrunt',
@@ -71,7 +80,8 @@ base_hs = 6
 #damage scalling
 base_ds = 0.8
 
-
+# what proportion of mobs to buff
+toughen_mobs = float(args.tough)
 
 #size mod
 size_mod = True
@@ -82,12 +92,6 @@ boss_size = '1.5,3.75'.split(',')
 #mob speed
 mob_speed = 1.5
 
-HM = ['HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12',
-    'HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49',
-    'HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2',
-    'HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863',
-    'HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113',
-    'DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF']
 
 
 ready_list = []
@@ -141,6 +145,7 @@ def print_and_comment(s):
     mod.comment(s)
 
 healh_chance = 52
+chosen_mobs = set()
 def gen_mod(so, scale, my_list):
     c = len(my_list)
     global healh_chance
@@ -152,7 +157,7 @@ def gen_mod(so, scale, my_list):
             # new tuple of bpchar and prior spawn factory
             val = (val[0][1],val[1])
         else:
-            print_and_comment(f'Deploying {val[0]}')            
+            print_and_comment(f'Deploying {val[0]}')
         if val == 'empty':
             continue
         var = val
@@ -162,6 +167,7 @@ def gen_mod(so, scale, my_list):
         assert len(var) >= 2
         obj = var[1].replace("_C'","")
         print(var,obj,val)
+        chosen_mobs.add(var[0])
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', Mod.get_full(so), 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx)), "BlueprintGeneratedClass'{}.{}_C'".format(var[0],get_bpchar(var[0])))
         if obj not in ready_list:
             ready_list.append(obj)
@@ -758,7 +764,7 @@ def gen_safe_spawns():
     mod.comment("Now we're going to remove the balconey as a spawn point")
     random_spawn = True
     full_Spawn_list = safe_spawn_string
-    for m in set(missions.values()):
+    for m in sorted(set(missions.values())):
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
                     "{}.{}.SpawnerComponent".format(Tech_mission,m),
                     'SpawnPoints',
@@ -800,13 +806,44 @@ def default_mod():
     # # [ ] round5?
     round5()
 
-gen_safe_spawns()
     
+def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage):
+    my_boss = boss.mk_boss(*boss_tuple)
+    # replace boss health with some multiplier
+    my_boss['health'] = [healthbuff for h in my_boss['health']]
+    my_boss['nloot'] = 0 # disable loot buffs
+    my_boss['damage'] = damagebuff
+    if my_boss['balance_table']:
+        print(f"Buffing: {my_boss['name']}")
+        mod.raw_line(boss.buff_boss( my_boss ))
+    
+def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
+    # this is the proportion of tough mobs
+    if toughen_mobs > 0.0:
+        if toughen_mobs > 1.0:
+            toughen_mobs /= 100.0;
+    cmobs = sorted(list(chosen_mobs))
+    n = len(cmobs)
+    nmobs = min(round(n * toughen_mobs),n)
+    tough_mobs = random.choices(cmobs, k=nmobs)
+    boss_definitions = [x for x in [boss.find_boss(mob) for mob in tough_mobs] if not x is None]
+    print(f"{len(boss_definitions)/len(tough_mobs)} balance tables found")
+    for our_boss in boss_definitions:
+        buff(our_boss)
+
+# generate safe spawns (remove balconies)    
+gen_safe_spawns()
+
+# generate the mobs
 if args.json is None:
     default_mod()
 else:
     data =json.load(open(args.json))
     mod.comment(f"Based on {args.json}")
     gen_mod_from_data(data)
-        
+
+# buff some of them
+if toughen_mobs > 0.0:
+    toughen_up_mobs(toughen_mobs)
+
 mod.close()

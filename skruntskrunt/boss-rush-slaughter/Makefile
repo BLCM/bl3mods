@@ -2,7 +2,7 @@
 MOD=boss_rush_3000.bl3hotfix
 GEN=gen_boss_rush_3000.py
 SEED=42
-DISTFILES=$(MOD) boss_rush_3000.42.bl3hotfix.txt boss_rush_3000.666.bl3hotfix.txt boss_rush_3000.saurian.42.bl3hotifx.txt
+DISTFILES=$(MOD) boss_rush_3000.42.bl3hotfix.txt boss_rush_3000.666.bl3hotfix.txt boss_rush_3000.saurian.42.bl3hotfix.txt
 
 mod: $(MOD)
 
@@ -47,23 +47,23 @@ dist: $(DISTFILES)
 
 # saurian theme
 #
-boss_rush_3000.saurian.42.bl3hotifx: bpchar-gen-saurian.py $(GEN)
+boss_rush_3000.saurian.42.bl3hotfix: bpchar-gen-saurian.py $(GEN)
 	python3 bpchar-gen-saurian.py --json gen_bpchars_saurian.42.json --seed 42 --nomix
-	python3 $(GEN) --json gen_bpchars_saurian.42.json --seed 42 --output boss_rush_3000.saurian.42.bl3hotifx
+	python3 $(GEN) --json gen_bpchars_saurian.42.json --seed 42 --output boss_rush_3000.saurian.42.bl3hotfix
 
 boss_rush_3000.saurian.%.bl3hotfix: bpchar-gen-saurian.py $(GEN)
 	python3 bpchar-gen-saurian.py --json gen_bpchars_saurian.$*.json --seed $* --nomix
-	python3 $(GEN) --json gen_bpchars_saurian.$*.json --seed $* --output boss_rush_3000.saurian.$*.bl3hotifx
+	python3 $(GEN) --json gen_bpchars_saurian.$*.json --seed $* --output boss_rush_3000.saurian.$*.bl3hotfix
 
-boss_rush_3000.saurian.%.bl3hotifx.txt: boss_rush_3000.saurian.%.bl3hotifx
+boss_rush_3000.saurian.%.bl3hotfix.txt: boss_rush_3000.saurian.%.bl3hotfix
 	mv $< $@
 
 boss_rush.new.42.bl3hotfix: bpchar-gen-new.py $(GEN)
 	python3 bpchar-gen-new.py --json gen_bpchars_new.42.json --seed 42 --nomix
-	python3 $(GEN) --json gen_bpchars_new.42.json --seed 42 --output boss_rush.new.42.bl3hotifx
+	python3 $(GEN) --json gen_bpchars_new.42.json --seed 42 --output boss_rush.new.42.bl3hotfix
 
 
 boss_rush.new.%.bl3hotfix: bpchar-gen-new.py $(GEN)
 	python3 bpchar-gen-new.py --json gen_bpchars_new.$*.json --seed $* --nomix
-	python3 $(GEN) --json gen_bpchars_new.$*.json --seed $* --output boss_rush.new.$*.bl3hotifx
+	python3 $(GEN) --json gen_bpchars_new.$*.json --seed $* --output boss_rush.new.$*.bl3hotfix
 

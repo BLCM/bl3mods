@@ -55,6 +55,7 @@ def matching_bosses(substring, bosses=boss.safe_bosses):
 def matching_bosses_exact(substring, bosses=boss.safe_bosses):
     return [boss[1] for boss in bosses if substring == boss[0]]
 
+all_safe_bosses = [boss[1] for boss in boss.safe_bosses]
 
 dinosaur_names = ['Minosaur','IndoTyrant','Tyrant of Instinct','Abbadoxis','Chonk Stomp','Ipswitch Dunne','Tremendous Rex']
 
@@ -94,9 +95,9 @@ maliwan_names = [
 maliwans = flatten([matching_bosses(x) for x in maliwan_names]) + matching_bosses_exact('Max')
 bugs_names = ['Crawly','Wanette','Antalope','Princess Tarantella II',]
 more_bugs = [
-    # '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Badass/BPChar_VarkidHunt02_Badass',
-    # '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Adult/BPChar_VarkidHunt02_AdultA',
-    # '/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',
+    '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Badass/BPChar_VarkidHunt02_Badass',
+    '/Game/Enemies/Varkid/_Unique/Hunt02/_Design/Adult/BPChar_VarkidHunt02_AdultA',
+    '/Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01',
     '/Game/Enemies/Varkid/SuperBadass/_Design/Character/BPChar_VarkidSuperBadass',
     '/Game/Enemies/Varkid/Badass/_Design/Character/BPChar_VarkidBadass'
 ]
@@ -140,17 +141,17 @@ newbosses = """/Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/B
 /Alisma/Enemies/AliPsycho/_Unique/TheBlackKing/_Design/Character/BPChar_AliPsycho_TheBlackKing
 /Alisma/Enemies/HyperionPunk/_Unique/TheWarden/_Design/Character/BPChar_HyperionPunk_TheWarden""".split("\n")
 
-
+allbosses = newbosses + all_safe_bosses
 
 previous = {}
 
 pools = {
     'round1':flatten([
-        newbosses,
+        allbosses,
         dinosaurs
     ]),
     'round2':flatten([
-        newbosses,
+        allbosses,
         bugs,
     ]),
     'round3':flatten([
@@ -158,7 +159,7 @@ pools = {
         matching_bosses('Warty'),
         matching_bosses('DEGEN-3'),
         matching_bosses('Yeti'),
-        newbosses,
+        allbosses,
         dinosaurs
 
     ]),
@@ -168,7 +169,7 @@ pools = {
         bugs,
     ]),
     'round5':flatten([
-        newbosses,
+        allbosses,
         matching_bosses('Traunt'),
         matching_bosses('Warden'),
         matching_bosses('Killavolt'),
