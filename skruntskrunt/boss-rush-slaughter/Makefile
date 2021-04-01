@@ -1,9 +1,9 @@
 .PHONY: bk clean bpcharmod
 MOD=boss_rush_3000.bl3hotfix
 GEN=gen_boss_rush_3000.py
-SEED=42
+SEED=1848
 DISTFILES=$(MOD) boss_rush_3000.42.bl3hotfix.txt boss_rush_3000.666.bl3hotfix.txt boss_rush_3000.saurian.42.bl3hotfix.txt
-MAXMOBS=40
+MAXMOBS=35
 COMMONARGS=--maxmobs $(MAXMOBS)
 mod: $(MOD)
 
@@ -11,7 +11,7 @@ clean:
 	rm -f 3000_simple.bl3hotfix gen_bpchars.json boss_rush_3000-42.bl3hotfix gen_bpchars.42.json
 
 $(MOD): boss.py $(GEN)
-	python3 $(GEN)
+	python3 $(GEN) --seed $(SEED)
 
 bk:
 	cp boss_rush_3000.bl3hotfix "boss_rush_3000.bl3hotfix.$(shell date --iso=seconds)"
