@@ -29,7 +29,7 @@ SEED=42
 OUTPUT='boss_rush_3000.bl3hotfix'
 DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
-DEFAULT_TOUGH=0.2
+DEFAULT_TOUGH=0.4
 MAX_MOBS=1000
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
