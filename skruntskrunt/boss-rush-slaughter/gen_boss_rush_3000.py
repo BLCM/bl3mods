@@ -71,7 +71,7 @@ mod.comment( f'Seed for this generation (gen_boss_rush_3000.py): {our_seed}' )
 
 for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
     for level in [Mod.EARLYLEVEL, Mod.LEVEL]:
-        mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
+        mod.reg_hotfix(level, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
 
 
 # from gen_3000_Char_list import *
