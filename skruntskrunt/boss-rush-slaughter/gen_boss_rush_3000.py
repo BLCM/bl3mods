@@ -52,22 +52,26 @@ our_default_damage = float(args.damage)
 our_default_health = float(args.health)
 our_max_mobs = int(args.maxmobs)
 
+# Mission Story
+story = "Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000, filling it with Badasses and Saurians. Torgue wants you to go clean this mess up."
+
 mod = Mod(args.output,
           'Boss Rush Slaughter 3000: Billy and the Clone-a-saurus',
-          'altef_4 feat. SkruntSkrunt',
-          ['turns maliwan slaughter star 3000',
-           'into a boss rush slaughter 3000'],
+          'skruntskrunt and altef_4',
+          ['Turns maliwan slaughter star 3000',
+           'into a boss rush slaughter 3000',
+           story,
+           "Based on altef_4's Hyperion Slaughter 3000"],
           lic=Mod.CC_BY_SA_40,
-          v='0.9.2',
+          v='0.9.3',
           cats='gameplay',
 )
 
 mod.comment( f'Seed for this generation (gen_boss_rush_3000.py): {our_seed}' )
 
-# Mission Story
-story = "Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000, filling it with Badasses and Saurians. Torgue wants you to go clean this mess up."
 for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
-    mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
+    for level in [Mod.EARLYLEVEL, Mod.LEVEL]:
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
 
 
 # from gen_3000_Char_list import *
