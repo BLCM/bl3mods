@@ -29,7 +29,7 @@ SEED=42
 OUTPUT='boss_rush_3000.bl3hotfix'
 DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
-DEFAULT_TOUGH=0.4
+DEFAULT_TOUGH=0.2
 MAX_MOBS=1000
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
@@ -169,7 +169,7 @@ def gen_mod(so, scale, my_list):
             print(var)
         assert len(var) >= 2
         obj = var[1].replace("_C'","")
-        print(var,obj,val)
+        print_and_comment(f"{var},{obj},{val}")
         chosen_mobs.add(var[0])
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', Mod.get_full(so), 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx)), "BlueprintGeneratedClass'{}.{}_C'".format(var[0],get_bpchar(var[0])))
         if obj not in ready_list:
@@ -238,9 +238,9 @@ def round1():
     #wave 1a
     # Junk loader is the test enemy that we know works
     gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1',
-             size,[
+             size,replace_enemy([
                  ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK","SpawnFactory_OakAI_2")
-             ])
+             ]))
     
     # After this point everything is random
     #wave 1b
@@ -835,7 +835,7 @@ def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage)
     my_boss['nloot'] = 0 # disable loot buffs
     my_boss['damage'] = damagebuff
     if my_boss['balance_table']:
-        print(f"Buffing: {my_boss['name']}")
+        print_and_comment(f"Buffing: {my_boss['name']}")
         mod.raw_line(boss.buff_boss( my_boss ))
     
 def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
@@ -848,7 +848,7 @@ def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     nmobs = min(round(n * toughen_mobs),n)
     tough_mobs = random.choices(cmobs, k=nmobs)
     boss_definitions = [x for x in [boss.find_boss(mob) for mob in tough_mobs] if not x is None]
-    print(f"{len(boss_definitions)/len(tough_mobs)} balance tables found")
+    print_and_comment(f"{len(boss_definitions)/len(tough_mobs)} balance tables found")
     for our_boss in boss_definitions:
         buff(our_boss)
 
