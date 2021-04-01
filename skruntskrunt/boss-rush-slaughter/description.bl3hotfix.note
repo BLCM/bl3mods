@@ -1,0 +1,56 @@
+#       "Description" : {
+#          "FormatText" : {
+#             "string" : "Show endless waves of Maliwan troops that they'll need more than numbers and a home field advantage to take you down.",
+#             "key" : "31E5740E49C317348D418A9720DFB54F",
+#             "namespace" : ""
+#          }
+#       },
+
+#      "PostAcceptanceSummary" : {
+#         "FormatText" : {
+#            "key" : "E6136FA946A9801DAF7544B9247836C7",
+#            "string" : "Show endless waves of Maliwan troops that they'll need more than numbers and a home field advantage to take you down.",
+#            "namespace" : ""
+#         }
+#      },
+#      "PreAcceptanceSummary" : {
+#         "FormatText" : {
+#            "key" : "D97079AA4B848F093B0801A0836B0BB6",
+#            "string" : "Show endless waves of Maliwan troops that they'll need more than numbers and a home field advantage to take you down.",
+#            "namespace" : ""
+#         }
+#      },
+#
+
+
+# Default__Mission_TechSlaughter1_C
+
+
+# Doesn't work
+# SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,Description.Object..FormatText,0,,Billie and the Cloneasaurus.
+# SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+# SparkPatchEntry,(1,1,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+
+# Doesn't work
+# SparkPatchEntry,(1,2,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,Description,FormatText,0,,Billie and the Cloneasaurus.
+# SparkPatchEntry,(1,2,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary,FormatText,0,,Billie and the Cloneasaurus.
+# SparkPatchEntry,(1,2,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary,FormatText,0,,Billie and the Cloneasaurus.
+#SparkPatchEntry,(1,2,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PostAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+#SparkPatchEntry,(1,2,0,),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1,PreAcceptanceSummary.Object..FormatText,0,,Billie and the Cloneasaurus.
+
+#SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/CreatureSlaughter/Mission_CreatureSlaughter.Default__Mission_CreatureSlaughter_C
+#Default__Mission_CreatureSlaughter_C.Description.FormatText
+
+# Doesn't work
+# SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,Description,0,,(FormatText='Billie1')
+# SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PreAcceptanceSummary,0,,(FormatText='Billie1')
+
+# OMG It works Did it work??
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,Description.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PreAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C,PostAcceptanceSummary.FormatText,0,,Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000 filling it with Badasses and Saurians, Torgue wants you to go clean this mess up.
+
+# SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1_C:Description,FormatText,0,,Billie333
+# SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Mission_TechSlaughter1_C:PreAcceptanceSummary,FormatText,0,,Billie333
+
+
