@@ -44,12 +44,12 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Bala
 
 # Change Name
 
-#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Name_JAK_SG_Fakobs.Name_JAK_SG_Fakobs,PartName,0,,Erectile Dysfunction
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Name_JAK_SG_Fakobs.Name_JAK_SG_Fakobs,PartName,0,,Erectile Dysfunction
 
 
 # Fakobs Red Text Changes
 
-#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]Ask your doctor if Viagra is right for you.[/Flavor]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]Ask your doctor if Viagra is right for you.[/Flavor]
 
 
 # Change damage at source
