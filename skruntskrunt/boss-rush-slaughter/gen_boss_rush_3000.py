@@ -226,7 +226,7 @@ _replace_enemy_uniq = set()
 def replace_enemy(l):
     return replace_if_too_many([(boss.choose_random_slaughter_boss(),x[1]) for x in l], _replace_enemy_uniq)
 
-def round1():
+def round1(end_boss=false):
 
     gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
             size,replace_enemy([
@@ -279,17 +279,22 @@ def round1():
             ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
         ]))
     #wave 3b
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b',
-        size,replace_enemy([
-            ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_0"),
-            ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
-            ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
-            ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
-            ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_4"),
-            ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
-        ]))
+    endwavename = '/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b'
+    endspawner = "SpawnFactory_OakAI_0"
+    if end_boss:
+        gen_endboss(wave=endwavename,spawner=endspawner)
+    else:
+        gen_mod(endwavename,
+                size,replace_enemy([
+                    ("BPChar_TrooperShotgun_C",endspawner),
+                    ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
+                    ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
+                    ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
+                    ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_4"),
+                    ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
+                ]))
         
-def round2():
+def round2(end_boss=false):
     #ROUND 2 fix on 3a medic, basic, jetpack, badass
 
     #wave 1_0
@@ -378,7 +383,7 @@ def round2():
             ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
         ]))
 
-def round3():
+def round3(end_boss=false):
     #ROUND 3 FIX on 2a dark heavy, dogs, nogs
     
     #wave 1a
@@ -454,7 +459,7 @@ def round3():
             ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_7"),
         ]))
 
-def round4():
+def round4(end_boss=false):
     #ROUND 4 fix on 4a? fix, dogs, dark medic 3b? heavy spawn
     
     #wave_1
@@ -819,15 +824,15 @@ def gen_mod_from_data(data):
             replace_if_too_many(wave, uniq_mobs)
             gen_mod(wave_name,size,wave)
 
-def default_mod():
+def default_mod(end_boss=false):
     # [ ] round1?
-    round1()
+    round1(end_boss=end_boss)
     # [ ] round2?
-    round2()
+    round2(end_boss=end_boss)
     # # [ ] round3?
-    round3()
+    round3(end_boss=end_boss)
     # # [ ] round4?
-    round4()
+    round4(end_boss=end_boss)
     # # [ ] round5?
     round5()
 
@@ -856,6 +861,89 @@ def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     for our_boss in boss_definitions:
         buff(our_boss)
 
+far_spawn = "far"
+close_spawn = "close"
+boss_spawns = {
+    far_spawn:{
+    
+    },
+    close_spawn: {
+
+    }
+}
+OPTIONS=4
+BPCHAR=1
+good_endbosses = [
+    ("Graveward","/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss",
+     "/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1","EdenBoss",
+     {"spawn":far}),
+    ("OmegaMantikore","/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes",
+     "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique",
+     "Nekrobug_BetterTimes",
+     {"spawn":close}),
+    ("Fabrikator","/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic",
+     "/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator",
+     "FabrikatorPT2",
+     {"spawn":close}),
+    ("Wotan","/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid",
+     "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
+     "Behemoth_Raid",
+     {"spawn":close}),
+    ("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
+     "Oversphere_Katagawa",
+     {"spawn":close}),
+]
+
+def limit_wave_to_no(wave,n):
+    ''' limits the number of entities in the wave to n '''
+    raise "Unfinished"
+
+def generate_spawn( spawn_entry ):
+    ''' generate a spawn by moving an existing one 
+        spawn_entry is:
+        {
+          "name":"OriginalSpawnName", # the spawn name in the code
+          "location":(x,y,z), # where to move it
+          "myname":"what I call this spawn",
+        }
+        this will move OriginalSpawnName to location
+    '''
+    # make an entry
+    raise "Didhn't finish generate_spawn"
+
+def set_wave_spawns_to( wave, spawns ):
+    ''' set the spawns for this `wave` to `spawns`
+        `spawns` is a list of spawn name strings
+    '''
+    raise "Didn't finish set_wave_spawns_to"
+
+
+def gen_endboss(boss=None,wave=None,spawner="Factory_SpawnFactory_OakAI",buff=None):
+    if wave is None or spawner is None:
+        raise "Wave or spawner is not set in gen_endboss"
+    my_boss = None
+    if boss is None:
+        my_boss = random.choice(good_endbosses)
+    else:
+        candidate_boss = [x for x in good_endbosses if x[0] == boss or x[1] == boss]
+        if len(candidate_boss) <= 1:
+            raise f"Boss not found: {boss}"
+        my_boss = candidate_boss[0]
+    # make sure the spawn exists
+    our_spawn = boss_spawns[boss[OPTIONS]["spawn"]]
+    generate_spawn( our_spawn )
+    set_wave_spawns_to( wave, [our_spawn["name"]] )
+    # limit wave spawn to only 1
+    limit_wave_to_n(wave,1)
+    # replace that wave with only our boss
+    gen_mod(wave,size,[ (boss[BPCHAR], spawner) for x in range(6) ])
+    # buff our boss
+    if buff is not None:
+        buff(boss)
+    
+
+    
+        
 # generate safe spawns (remove balconies)    
 gen_safe_spawns()
 
