@@ -31,6 +31,7 @@ DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
 DEFAULT_TOUGH=0.2
 MAX_MOBS=1000
+BUFF_NAME=" the more difficult"
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
@@ -77,7 +78,9 @@ for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
 # from gen_3000_Char_list import *
 # from gen_3000_helper_functions import *
 from decimal import Decimal
+# my imports
 import boss
+import mobnames
 
 #additional or multiply health/dmg scalling, false = (src_health|src_dmg) + (base_hs|base_ds), true = (src_health|src_dmg) * (base_hs|base_ds)
 health_dmg_multiply = False
@@ -852,6 +855,17 @@ def default_mod(end_boss=False):
     # # [ ] round5?
     round5()
 
+def rename_mob(bpchar, newname):
+    mod.comment(f"Rename {bpchar} to '{newname}'")
+    attr = 'DisplayName'
+    if not bpchar in mobnames.mobname_dict:
+        mod.comment(f"WARNING: Cannot rename {bpchar} to '{newname}' as we are missing UIName")
+        return
+    uiname = mobnames.mobname_dict[bpchar]
+    mod.reg_hotfix(mod.PATCH,'',
+                   uiname,
+                   attr,
+                   newname)
     
 def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage):
     my_boss = boss.mk_boss(*boss_tuple)
@@ -862,6 +876,7 @@ def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage)
     if my_boss['balance_table']:
         print_and_comment(f"Buffing: {my_boss['name']}")
         mod.raw_line(boss.buff_boss( my_boss ))
+    rename_mob(my_boss["bpchar_path"],my_boss["name"]+BUFF_NAME)
     
 def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     # this is the proportion of tough mobs
