@@ -226,7 +226,7 @@ _replace_enemy_uniq = set()
 def replace_enemy(l):
     return replace_if_too_many([(boss.choose_random_slaughter_boss(),x[1]) for x in l], _replace_enemy_uniq)
 
-def round1(end_boss=false):
+def round1(end_boss=False):
 
     gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
             size,replace_enemy([
@@ -294,7 +294,7 @@ def round1(end_boss=false):
                     ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
                 ]))
         
-def round2(end_boss=false):
+def round2(end_boss=False):
     #ROUND 2 fix on 3a medic, basic, jetpack, badass
 
     #wave 1_0
@@ -383,7 +383,7 @@ def round2(end_boss=false):
             ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
         ]))
 
-def round3(end_boss=false):
+def round3(end_boss=False):
     #ROUND 3 FIX on 2a dark heavy, dogs, nogs
     
     #wave 1a
@@ -459,7 +459,7 @@ def round3(end_boss=false):
             ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_7"),
         ]))
 
-def round4(end_boss=false):
+def round4(end_boss=False):
     #ROUND 4 fix on 4a? fix, dogs, dark medic 3b? heavy spawn
     
     #wave_1
@@ -824,7 +824,7 @@ def gen_mod_from_data(data):
             replace_if_too_many(wave, uniq_mobs)
             gen_mod(wave_name,size,wave)
 
-def default_mod(end_boss=false):
+def default_mod(end_boss=False):
     # [ ] round1?
     round1(end_boss=end_boss)
     # [ ] round2?
@@ -865,10 +865,14 @@ far_spawn = "far"
 close_spawn = "close"
 boss_spawns = {
     far_spawn:{
-    
+        "name":balconey_spawns[0],
+        "location":(0.0,0.0,2000.0),
+        "myname":far_spawn,
     },
     close_spawn: {
-
+        "name":balconey_spawns[1],
+        "location":(4000.0,0.0,2000.0),
+        "myname":close_spawn,
     }
 }
 OPTIONS=4
@@ -876,27 +880,40 @@ BPCHAR=1
 good_endbosses = [
     ("Graveward","/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss",
      "/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1","EdenBoss",
-     {"spawn":far}),
+     {"spawn":far_spawn}),
     ("OmegaMantikore","/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes",
      "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique",
      "Nekrobug_BetterTimes",
-     {"spawn":close}),
+     {"spawn":close_spawn}),
     ("Fabrikator","/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic",
      "/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator",
      "FabrikatorPT2",
-     {"spawn":close}),
+     {"spawn":close_spawn}),
     ("Wotan","/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid",
      "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
      "Behemoth_Raid",
-     {"spawn":close}),
+     {"spawn":close_spawn}),
     ("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
      "Oversphere_Katagawa",
-     {"spawn":close}),
+     {"spawn":close_spawn}),
 ]
 
-def limit_wave_to_no(wave,n):
+def limit_wave_to_n(wave,n):
     ''' limits the number of entities in the wave to n '''
-    raise "Unfinished"
+    mod.comment(f"limit_wave_to_n: Limit wave {wave} to {n}")
+    path1=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_{wave}.SpawnerComponent'
+    path2=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{wave}.SpawnerComponent'
+    obj1='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[0].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    obj2='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[1].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    obj3='SpawnerComponent.Object..SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    for t in [(path1,obj1),(path1,obj2),(path2,obj3)]:
+        path,obj = t
+        mod.reg_hotfix(
+                    Mod.EARLYLEVEL, 
+                    'TechSlaughter_P',
+                    path,   
+                    obj,
+                    1,'',True)
 
 def generate_spawn( spawn_entry ):
     ''' generate a spawn by moving an existing one 
@@ -909,13 +926,43 @@ def generate_spawn( spawn_entry ):
         this will move OriginalSpawnName to location
     '''
     # make an entry
-    raise "Didhn't finish generate_spawn"
+    spawnpoint = spawn_entry["name"]
+    (x,y,z) = spawn_entry["location"]
+    mod.comment(f"generate_spawn: {spawn_entry.get('myname','')} {spawnpoint} moved to ({x},{y},{z})")
+    mod.reg_hotfix(
+            Mod.EARLYLEVEL, 'TechSlaughter_P',
+            #f"{Tech_mission}.{wave}.SpawnerComponent",
+            f"/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{spawnpoint}.SpawnPointComponent",
+            "RelativeLocation",
+            f'(X={x},Y={y},Z={z})','',True)
 
 def set_wave_spawns_to( wave, spawns ):
     ''' set the spawns for this `wave` to `spawns`
         `spawns` is a list of spawn name strings
     '''
-    raise "Didn't finish set_wave_spawns_to"
+    # raise "Didn't finish set_wave_spawns_to"
+    mod.comment(f"set_wave_spawns_to: Set {wave} to {spawns}")
+    m = wave
+    # SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4')
+    spawn_list = ",".join(spawns)
+    fspawn_list = '({})'.format(spawn_list), 
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "{}.{}.SpawnerComponent".format(Tech_mission,wave),
+                'SpawnPoints',
+                fspawn_list,'',True)
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+                'bRandomizeSpawnPoints',
+                True,"",True) # this was False
+    for i in range(3):
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+            "{}.{}.SpawnerComponent".format(Tech_mission,m),
+            'SpawnPointGroups.SpawnPointGroups[{}].SpawnPoints'.format(i),
+            fspawn_list,'',True)
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+            "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+            'SpawnPointGroups.SpawnPointGroups[{}].bRandomize'.format(i),
+            True,"",True)
 
 
 def gen_endboss(boss=None,wave=None,spawner="Factory_SpawnFactory_OakAI",buff=None):
@@ -930,13 +977,13 @@ def gen_endboss(boss=None,wave=None,spawner="Factory_SpawnFactory_OakAI",buff=No
             raise f"Boss not found: {boss}"
         my_boss = candidate_boss[0]
     # make sure the spawn exists
-    our_spawn = boss_spawns[boss[OPTIONS]["spawn"]]
+    our_spawn = boss_spawns[my_boss[OPTIONS]["spawn"]]
     generate_spawn( our_spawn )
     set_wave_spawns_to( wave, [our_spawn["name"]] )
     # limit wave spawn to only 1
     limit_wave_to_n(wave,1)
     # replace that wave with only our boss
-    gen_mod(wave,size,[ (boss[BPCHAR], spawner) for x in range(6) ])
+    gen_mod(wave,size,[ (my_boss[BPCHAR], spawner) for x in range(6) ])
     # buff our boss
     if buff is not None:
         buff(boss)
@@ -949,7 +996,7 @@ gen_safe_spawns()
 
 # generate the mobs
 if args.json is None:
-    default_mod()
+    default_mod(end_boss=True)
 else:
     data =json.load(open(args.json))
     mod.comment(f"Based on {args.json}")
