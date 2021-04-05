@@ -947,15 +947,15 @@ good_endbosses = [
     #  "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
     #  "Behemoth_Raid",
     #  {"spawn":close_spawn}),
-    ("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
-     "Oversphere_Katagawa",
-     {"spawn":close_spawn}),
+    #("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
+    # "Oversphere_Katagawa",
+    # {"spawn":close_spawn}),
 ]
 
 def limit_wave_to_n(wave,n):
     ''' limits the number of entities in the wave to n '''
     mod.comment(f"limit_wave_to_n: Limit wave {wave} to {n}")
-    path1=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_{wave}.SpawnerComponent'
+    path1=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{wave}.SpawnerComponent'
     path2=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{wave}.SpawnerComponent'
     obj1='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[0].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
     obj2='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[1].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
@@ -1046,11 +1046,11 @@ def gen_endboss(boss=None,wave=None,wavecode=None,spawners=["Factory_SpawnFactor
     # short_wave = wave.split("_")[-1]
     short_wave = missions[wavecode]
     set_wave_spawns_to( short_wave, [our_spawn["name"]] )
-    # limit wave spawn to only 1
-    limit_wave_to_n(short_wave,1)
     # replace that wave with only our boss
     mod.comment(f"gen_mod({wave},{size},{[ (my_boss[BPCHAR], sspawn) for sspawn in spawners ]})")
     gen_mod(wave,size,[ (my_boss[BPCHAR], sspawn) for sspawn in spawners ])
+    # limit wave spawn to only 1
+    limit_wave_to_n(short_wave,1)
     # buff our boss
     #if buff is not None:
     buff(my_boss)
