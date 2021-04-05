@@ -273,20 +273,27 @@ def round1(end_boss=False):
             ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
         ]))
     #wave 3a
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3a',
-        size,replace_enemy([
-            ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
-            ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_1"),
-            ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_2"),
-            ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_3"),
-            ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
-        ]))
+    pentulimatewavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3a'
+    pentulimatespawner="SpawnFactory_OakAI_0"
+    penspawns = [f"SpawnFactory_OakAI_{i}" for i in range(5)]
     #wave 3b
     endwavename = '/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b'
     endspawner = "SpawnFactory_OakAI_0"
+    endspawns = [f"SpawnFactory_OakAI_{i}" for i in range(6)]
     if end_boss:
-        gen_endboss(wave=endwavename,spawner=endspawner,wavecode=132)
+        gen_endboss(wave=pentulimatewavename,spawners=penspawns,wavecode=131)
+        gen_endboss(wave=endwavename,spawners=endspawns,wavecode=132)
     else:
+        # wave 3a
+        gen_mod(pentulimatewavename,
+                size,replace_enemy([
+                    ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
+                    ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_1"),
+                    ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_2"),
+                    ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_3"),
+                    ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
+                ]))
+        # wave 3b
         gen_mod(endwavename,
                 size,replace_enemy([
                     ("BPChar_TrooperShotgun_C",endspawner),
@@ -738,6 +745,17 @@ balconey_spawns = [
     "{}'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
 ]
 
+c_balconey_spawns = [
+    "{}_C'{}.{}_12'".format(SP,Tech_mission,SP), # balconey?
+    "{}_C'{}.{}_15'".format(SP,Tech_mission,SP), # balconey?
+    "{}_C'{}.{}_39'".format(SP,Tech_mission,SP), # balconey?
+    #LEFT
+    "{}_C'{}.{}_41'".format(SP,Tech_mission,SP),#LBalcon Right
+    "{}_C'{}.{}_20'".format(SP,Tech_mission,SP),#LBalcon Center
+    "{}_C'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
+]
+
+
 boss_spawns = [
     "{}_C'{}.{}_4'".format(SP,Tech_mission,SP),#boss Mech_0 Right Lift
     "{}_C'{}.{}_6'".format(SP,Tech_mission,SP),#boss Mech Left Lift Down
@@ -792,12 +810,13 @@ missions = { # stolen from altef-4 gen_3000_Char_list.py
         562: "OakMissionSpawner_Round5Wave_13"
 }
 
-
+final_round_spawns = set([missions[x] for x in [442,242,132,341]])
+safe_missions = sorted(set(missions.values()).difference(final_round_spawns))
 def gen_safe_spawns():
     mod.comment("Now we're going to remove the balconey as a spawn point")
     random_spawn = True
     full_Spawn_list = safe_spawn_string
-    for m in sorted(set(missions.values())):
+    for m in safe_missions: #sorted(set(missions.values())):
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
                     "{}.{}.SpawnerComponent".format(Tech_mission,m),
                     'SpawnPoints',
@@ -848,6 +867,8 @@ def default_mod(end_boss=False):
     # [ ] round1?
     round1(end_boss=end_boss)
     # [ ] round2?
+    # just override for now XXX
+    end_boss = False
     round2(end_boss=end_boss)
     # # [ ] round3?
     round3(end_boss=end_boss)
@@ -902,29 +923,30 @@ boss_spawns = {
         "myname":far_spawn,
     },
     close_spawn: {
-        "name":balconey_spawns[1],
-        "location":(4000.0,0.0,2000.0),
+        "name":balconey_spawns[3],
+        # changed to 1000.0 for Y
+        "location":(4000.0,1000.0,1000.0),
         "myname":close_spawn,
     }
 }
 OPTIONS=4
 BPCHAR=1
 good_endbosses = [
-    ("Graveward","/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss",
-     "/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1","EdenBoss",
-     {"spawn":far_spawn}),
+    #("Graveward","/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss",
+    # "/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1","EdenBoss",
+    # {"spawn":far_spawn}),
     ("OmegaMantikore","/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes",
      "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique",
      "Nekrobug_BetterTimes",
      {"spawn":close_spawn}),
-    ("Fabrikator","/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic",
-     "/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator",
-     "FabrikatorPT2",
-     {"spawn":close_spawn}),
-    ("Wotan","/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid",
-     "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
-     "Behemoth_Raid",
-     {"spawn":close_spawn}),
+    #("Fabrikator","/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic",
+    # "/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator",
+    # "FabrikatorPT2",
+    # {"spawn":close_spawn}),
+    # ("Wotan","/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid",
+    #  "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
+    #  "Behemoth_Raid",
+    #  {"spawn":close_spawn}),
     ("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
      "Oversphere_Katagawa",
      {"spawn":close_spawn}),
@@ -999,9 +1021,10 @@ def set_wave_spawns_to( wave, spawns ):
             True,"",True)
 _endbosses = None
 
-def gen_endboss(boss=None,wave=None,wavecode=None,spawner="Factory_SpawnFactory_OakAI"):
+def gen_endboss(boss=None,wave=None,wavecode=None,spawners=["Factory_SpawnFactory_OakAI"]):
     global _endbosses
-    if wave is None or spawner is None:
+    mod.comment(f"gen_endboss({boss},{wave},{wavecode})")
+    if wave is None or spawners is None:
         raise "Wave or spawner is not set in gen_endboss"
     my_boss = None
     if boss is None:
@@ -1026,7 +1049,8 @@ def gen_endboss(boss=None,wave=None,wavecode=None,spawner="Factory_SpawnFactory_
     # limit wave spawn to only 1
     limit_wave_to_n(short_wave,1)
     # replace that wave with only our boss
-    gen_mod(wave,size,[ (my_boss[BPCHAR], spawner) for x in range(6) ])
+    mod.comment(f"gen_mod({wave},{size},{[ (my_boss[BPCHAR], sspawn) for sspawn in spawners ]})")
+    gen_mod(wave,size,[ (my_boss[BPCHAR], sspawn) for sspawn in spawners ])
     # buff our boss
     #if buff is not None:
     buff(my_boss)
