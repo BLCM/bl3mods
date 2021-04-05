@@ -285,7 +285,7 @@ def round1(end_boss=False):
     endwavename = '/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b'
     endspawner = "SpawnFactory_OakAI_0"
     if end_boss:
-        gen_endboss(wave=endwavename,spawner=endspawner)
+        gen_endboss(wave=endwavename,spawner=endspawner,wavecode=132)
     else:
         gen_mod(endwavename,
                 size,replace_enemy([
@@ -379,7 +379,7 @@ def round2(end_boss=False):
     endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4b'
     endspawner = "SpawnFactory_OakAI_0"
     if end_boss:
-        gen_endboss(wave=endwavename,spawner=endspawner)
+        gen_endboss(wave=endwavename,spawner=endspawner,wavecode=242)
     else:
         gen_mod(endwavename,
             size,replace_enemy([
@@ -459,7 +459,7 @@ def round3(end_boss=False):
     endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave4a'
     endspawner='Factory_SpawnFactory_OakAI'
     if end_boss:
-        gen_endboss(wave=endwavename,spawner=endspawner)
+        gen_endboss(wave=endwavename,spawner=endspawner,wavecode=341)
     else:
         gen_mod(endwavename,
             size,replace_enemy([
@@ -549,7 +549,7 @@ def round4(end_boss=False):
     endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b'
     endspawner="Factory_SpawnFactory_OakAI"
     if end_boss:
-        gen_endboss(wave=endwavename,spawner=endspawner)
+        gen_endboss(wave=endwavename,spawner=endspawner,wavecode=442)
     else:
         gen_mod(endwavename,
             size,replace_enemy([
@@ -737,6 +737,7 @@ balconey_spawns = [
     "{}'{}.{}_20'".format(SP,Tech_mission,SP),#LBalcon Center
     "{}'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
 ]
+
 boss_spawns = [
     "{}_C'{}.{}_4'".format(SP,Tech_mission,SP),#boss Mech_0 Right Lift
     "{}_C'{}.{}_6'".format(SP,Tech_mission,SP),#boss Mech Left Lift Down
@@ -959,11 +960,13 @@ def generate_spawn( spawn_entry ):
     # make an entry
     spawnpoint = spawn_entry["name"]
     (x,y,z) = spawn_entry["location"]
+    path =  spawnpoint.split("'")[1]
     mod.comment(f"generate_spawn: {spawn_entry.get('myname','')} {spawnpoint} moved to ({x},{y},{z})")
     mod.reg_hotfix(
             Mod.EARLYLEVEL, 'TechSlaughter_P',
             #f"{Tech_mission}.{wave}.SpawnerComponent",
-            f"/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{spawnpoint}.SpawnPointComponent",
+            #f"/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{spawnpoint}.SpawnPointComponent",
+            f"{path}.SpawnPointComponent",
             "RelativeLocation",
             f'(X={x},Y={y},Z={z})','',True)
 
@@ -976,7 +979,7 @@ def set_wave_spawns_to( wave, spawns ):
     m = wave
     # SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4')
     spawn_list = ",".join(spawns)
-    fspawn_list = '({})'.format(spawn_list), 
+    fspawn_list = f'({spawn_list})' #.format(spawn_list), 
     mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
                 "{}.{}.SpawnerComponent".format(Tech_mission,wave),
                 'SpawnPoints',
@@ -995,7 +998,8 @@ def set_wave_spawns_to( wave, spawns ):
             'SpawnPointGroups.SpawnPointGroups[{}].bRandomize'.format(i),
             True,"",True)
 _endbosses = None
-def gen_endboss(boss=None,wave=None,spawner="Factory_SpawnFactory_OakAI"):
+
+def gen_endboss(boss=None,wave=None,wavecode=None,spawner="Factory_SpawnFactory_OakAI"):
     global _endbosses
     if wave is None or spawner is None:
         raise "Wave or spawner is not set in gen_endboss"
@@ -1016,9 +1020,11 @@ def gen_endboss(boss=None,wave=None,spawner="Factory_SpawnFactory_OakAI"):
     # make sure the spawn exists
     our_spawn = boss_spawns[my_boss[OPTIONS]["spawn"]]
     generate_spawn( our_spawn )
-    set_wave_spawns_to( wave, [our_spawn["name"]] )
+    # short_wave = wave.split("_")[-1]
+    short_wave = missions[wavecode]
+    set_wave_spawns_to( short_wave, [our_spawn["name"]] )
     # limit wave spawn to only 1
-    limit_wave_to_n(wave,1)
+    limit_wave_to_n(short_wave,1)
     # replace that wave with only our boss
     gen_mod(wave,size,[ (my_boss[BPCHAR], spawner) for x in range(6) ])
     # buff our boss

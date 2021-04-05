@@ -5,14 +5,14 @@ SEED=1848
 DISTFILES=$(MOD) boss_rush_3000.42.bl3hotfix.txt boss_rush_3000.666.bl3hotfix.txt boss_rush_3000.saurian.42.bl3hotfix.txt
 DEPS=boss.py mobnames.py $(GEN)
 MAXMOBS=30
-COMMONARGS=--maxmobs $(MAXMOBS)
+COMMONARGS=--maxmobs $(MAXMOBS) --tough 0.0 
 mod: $(MOD)
 
 clean: 
-	rm -f 3000_simple.bl3hotfix gen_bpchars.json boss_rush_3000-42.bl3hotfix gen_bpchars.42.json
+	rm -f 3000_simple.bl3hotfix gen_bpchars.json boss_rush_3000-42.bl3hotfix gen_bpchars.42.json $(DISTFILES)
 
 $(MOD): boss.py $(GEN) $(DEPS)
-	python3 $(GEN) --seed $(SEED)
+	python3 $(GEN) --seed $(SEED) $(COMMONARGS)
 
 bk:
 	cp boss_rush_3000.bl3hotfix "boss_rush_3000.bl3hotfix.$(shell date --iso=seconds)"
