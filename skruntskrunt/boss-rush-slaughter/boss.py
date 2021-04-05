@@ -321,7 +321,7 @@ easy_bosses = [
 
 ]
 
-safe_bosses = easy_bosses
+# safe_bosses = easy_bosses
 
 # I use this for testing
 dumb_bosses = [
