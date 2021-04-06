@@ -1,0 +1,13 @@
+###
+### Name: ShowMeThePurplex5
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: cheat
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Single.InvData_Eridium_Single,MonetaryValue,0,,(BaseValueConstant=5.0).
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Stack.InvData_Eridium_Stack,MonetaryValue,0,,(BaseValueConstant=20.0)
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Ingot.InvData_Eridium_Ingot,MonetaryValue,0,,(BaseValueConstant=5.0)
