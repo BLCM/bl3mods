@@ -27,12 +27,20 @@ import json
 
 SEED=42
 OUTPUT='boss_rush_3000.bl3hotfix'
+DEFAULT_HEALTH=100
+DEFAULT_DAMAGE=40
+DEFAULT_TOUGH=0.2
+MAX_MOBS=1000
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--json', type=str, default=None, help='JSON Input to specify each round (example-bpchar.json)')
     parser.add_argument('--time', action='store_true', default=False, help='Use time for a seed')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--tough', type=float, default=DEFAULT_TOUGH, help='Proportion of tough mobs')
+    parser.add_argument('--health', type=float, default=DEFAULT_HEALTH, help='Tough mob health multiplier')
+    parser.add_argument('--damage', type=float, default=DEFAULT_DAMAGE, help='Tough mob damage multiplier')
+    parser.add_argument('--maxmobs',type=int,default=MAX_MOBS, help='How many maximum different characters to load for the level')
     return parser.parse_args()
 
 args = parse_args()
@@ -40,17 +48,31 @@ our_seed = int(args.seed)
 if not args.time:
     random.seed(our_seed)
 
+our_default_damage = float(args.damage)
+our_default_health = float(args.health)
+our_max_mobs = int(args.maxmobs)
+
+# Mission Story
+story = "Billie got her hands on the Katagawa's cloning machine and made a mess of the Slaughterstar 3000, filling it with Badasses and Saurians. Torgue wants you to go clean this mess up."
+
 mod = Mod(args.output,
           'Boss Rush Slaughter 3000: Billy and the Clone-a-saurus',
-          'altef_4 feat. SkruntSkrunt',
-          ['turns maliwan slaughter star 3000',
-           'into a boss rush slaughter 3000'],
+          'skruntskrunt and altef_4',
+          ['Turns maliwan slaughter star 3000',
+           'into a boss rush slaughter 3000',
+           story,
+           "Based on altef_4's Hyperion Slaughter 3000"],
           lic=Mod.CC_BY_SA_40,
-          v='0.9.1',
+          v='0.9.3',
           cats='gameplay',
 )
 
 mod.comment( f'Seed for this generation (gen_boss_rush_3000.py): {our_seed}' )
+
+for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
+    for level in [Mod.EARLYLEVEL, Mod.LEVEL]:
+        mod.reg_hotfix(level, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
+
 
 # from gen_3000_Char_list import *
 # from gen_3000_helper_functions import *
@@ -65,7 +87,8 @@ base_hs = 6
 #damage scalling
 base_ds = 0.8
 
-
+# what proportion of mobs to buff
+toughen_mobs = float(args.tough)
 
 #size mod
 size_mod = True
@@ -76,12 +99,6 @@ boss_size = '1.5,3.75'.split(',')
 #mob speed
 mob_speed = 1.5
 
-HM = ['HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12',
-    'HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49',
-    'HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2',
-    'HealthMultiplier_04_Quaternary_18_1B102342416A40A8DC163EA34FE48863',
-    'HealthMultiplier_05_Quinary_20_EC017977469D43823CC907990EEF7113',
-    'DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF']
 
 
 ready_list = []
@@ -135,6 +152,7 @@ def print_and_comment(s):
     mod.comment(s)
 
 healh_chance = 52
+chosen_mobs = set()
 def gen_mod(so, scale, my_list):
     c = len(my_list)
     global healh_chance
@@ -146,7 +164,7 @@ def gen_mod(so, scale, my_list):
             # new tuple of bpchar and prior spawn factory
             val = (val[0][1],val[1])
         else:
-            print_and_comment(f'Deploying {val[0]}')            
+            print_and_comment(f'Deploying {val[0]}')
         if val == 'empty':
             continue
         var = val
@@ -155,7 +173,8 @@ def gen_mod(so, scale, my_list):
             print(var)
         assert len(var) >= 2
         obj = var[1].replace("_C'","")
-        print(var,obj,val)
+        print_and_comment(f"{var},{obj},{val}")
+        chosen_mobs.add(var[0])
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', Mod.get_full(so), 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx)), "BlueprintGeneratedClass'{}.{}_C'".format(var[0],get_bpchar(var[0])))
         if obj not in ready_list:
             ready_list.append(obj)
@@ -203,8 +222,9 @@ def gen_mod(so, scale, my_list):
 #              "Factory_SpawnFactory_OakAI_5"),
 #         ])
 
+_replace_enemy_uniq = set()
 def replace_enemy(l):
-    return [(boss.choose_random_slaughter_boss(),x[1]) for x in l]
+    return replace_if_too_many([(boss.choose_random_slaughter_boss(),x[1]) for x in l], _replace_enemy_uniq)
 
 def round1():
 
@@ -222,9 +242,9 @@ def round1():
     #wave 1a
     # Junk loader is the test enemy that we know works
     gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1',
-             size,[
+             size,replace_enemy([
                  ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderBasicJUNK","SpawnFactory_OakAI_2")
-             ])
+             ]))
     
     # After this point everything is random
     #wave 1b
@@ -651,16 +671,152 @@ def round5():
     #         ("/Game/Enemies/Mech/_Unique/TrialBoss/_Design/Character/BPChar_Mech_TrialBoss","Factory_SpawnFactory_OakAI"),
     #     ])
 
+# remove balconies
 
+Tech_mission = '/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel'
+DC = 'SpawnMesh_DoorCargo'
+DS = 'SpawnMesh_DoorSmall'
+SP = 'OakSpawnPoint'
+safe_spawns = [ # altef-4 made this
+        #RIGHT
+        "{}_C'{}.{}_6'".format(DC,Tech_mission,DC),
+        "{}_C'{}.{}_0'".format(DC,Tech_mission,DC),
+        "{}_C'{}.{}_7'".format(DC,Tech_mission,DC),
+        #"{}'{}.{}_12'".format(SP,Tech_mission,SP), # balconey?
+        #"{}'{}.{}_15'".format(SP,Tech_mission,SP), # balconey?
+        #"{}'{}.{}_39'".format(SP,Tech_mission,SP), # balconey?
+        #LEFT
+        "{}_C'{}.{}_5'".format(DC,Tech_mission,DC),
+        #"{}'{}.{}_41'".format(SP,Tech_mission,SP),#LBalcon Right
+        #"{}'{}.{}_20'".format(SP,Tech_mission,SP),#LBalcon Center
+        #"{}'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
+        "{}_C'{}.{}_2'".format(DC,Tech_mission,DC),
+        "{}_C'{}.{}_1'".format(DC,Tech_mission,DC),
+        "{}_C'{}.{}_4'".format(DC,Tech_mission,DC),
+        "{}_C'{}.{}_3'".format(DC,Tech_mission,DC),
+        #"{}'{}.{}_8'".format(SP,Tech_mission,SP),#Lift
+        "{}_C'{}.{}_3'".format(DC,Tech_mission,DC),
+        #CENTER
+        "{}'{}.{}_57'".format(SP,Tech_mission,SP),
+        "{}_C'{}.{}_2'".format(DS,Tech_mission,DS),
+        "{}_C'{}.{}_0'".format(DS,Tech_mission,DS),
+        "{}_C'{}.{}_3'".format(DS,Tech_mission,DS),
+        # "{}_C'{}.{}_4'".format(SP,Tech_mission,SP),#boss Mech_0 Right Lift
+        # "{}_C'{}.{}_6'".format(SP,Tech_mission,SP),#boss Mech Left Lift Down
+]
+balconey_spawns = [
+    "{}'{}.{}_12'".format(SP,Tech_mission,SP), # balconey?
+    "{}'{}.{}_15'".format(SP,Tech_mission,SP), # balconey?
+    "{}'{}.{}_39'".format(SP,Tech_mission,SP), # balconey?
+    #LEFT
+    "{}'{}.{}_41'".format(SP,Tech_mission,SP),#LBalcon Right
+    "{}'{}.{}_20'".format(SP,Tech_mission,SP),#LBalcon Center
+    "{}'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
+]
+boss_spawns = [
+    "{}_C'{}.{}_4'".format(SP,Tech_mission,SP),#boss Mech_0 Right Lift
+    "{}_C'{}.{}_6'".format(SP,Tech_mission,SP),#boss Mech Left Lift Down
+]
+
+safe_spawn_string = ",".join(safe_spawns)
+# safe_spawn_string = ",".join(balconey_spawns)
+
+missions = { # stolen from altef-4 gen_3000_Char_list.py
+        111: "OakMissionSpawner_Round1Wave",
+        112: "OakMissionSpawner_Round1Wave",
+        121: "OakMissionSpawner_Round1Wave_0",
+        122: "OakMissionSpawner_Round1Wave_0",
+        123: "Round1Wave",
+        131: "OakMissionSpawner_Round1Wave_5",
+        211: "OakMissionSpawner_Round2Wave",
+        132: "OakMissionSpawner_Round1Wave_5",
+        221: "OakMissionSpawner_Round2Wave_1",
+        222: "OakMissionSpawner_Round2Wave_1",
+        231: "OakMissionSpawner_Round2Wave_2",
+        232: "OakMissionSpawner_Round2Wave_2",
+        233: "Round2Wave3Dropship",
+        241: "OakMissionSpawner_Round2Wave_3",
+        242: "OakMissionSpawner_Round2Wave_3",
+        311: "OakMissionSpawner_Round3Wave",
+        312: "OakMissionSpawner_Round3Wave",
+        321: "OakMissionSpawner_Round3Wave_4",
+        322: "OakMissionSpawner_Round3Wave_4",
+        323: "Round3Wave2_BehindDropship",
+        331: "OakMissionSpawner_Round3Wave_5",
+        332: "OakMissionSpawner_Round3Wave_5",
+        341: "OakMissionSpawner_Round3Wave_6",
+        411: "OakMissionSpawner_Round4Wave",
+        421: "OakMissionSpawner_Round4Wave_7",
+        431: "OakMissionSpawner_Round4Wave_8",
+        432: "OakMissionSpawner_Round4Wave_8",
+        441: "OakMissionSpawner_Round4Wave_9",
+        442: "OakMissionSpawner_Round4Wave_9",
+        443: "Round4_Wave_5",
+        511: "OakMissionSpawner_Round5Wave",
+        512: "OakMissionSpawner_Round5Wave",
+        521: "OakMissionSpawner_Round5Wave_0",
+        522: "OakMissionSpawner_Round5Wave_0",
+        531: "OakMissionSpawner_Round5Wave_10",
+        532: "OakMissionSpawner_Round5Wave_10",
+        533: "Round5Wave3_Dropship",
+        541: "OakMissionSpawner_Round5Wave_11",
+        542: "OakMissionSpawner_Round5Wave_11",
+        551: "OakMissionSpawner_Round5Wave_12",
+        552: "OakMissionSpawner_Round5Wave_12",
+        561: "OakMissionSpawner_Round5Wave_13",
+        562: "OakMissionSpawner_Round5Wave_13"
+}
+
+
+def gen_safe_spawns():
+    mod.comment("Now we're going to remove the balconey as a spawn point")
+    random_spawn = True
+    full_Spawn_list = safe_spawn_string
+    for m in sorted(set(missions.values())):
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                    "{}.{}.SpawnerComponent".format(Tech_mission,m),
+                    'SpawnPoints',
+                    '({})'.format(full_Spawn_list),'',True)
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                    "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+                    'bRandomizeSpawnPoints',
+                    random_spawn,"",True) # this was False
+        for i in range(3):
+            mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "{}.{}.SpawnerComponent".format(Tech_mission,m),
+                'SpawnPointGroups.SpawnPointGroups[{}].SpawnPoints'.format(i),
+                '({})'.format(full_Spawn_list),'',True)
+            mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+                'SpawnPointGroups.SpawnPointGroups[{}].bRandomize'.format(i),
+                random_spawn,"",True)
+
+def replace_if_too_many(wave, uniq_mobs, our_max_mobs=our_max_mobs):
+    outwave = []
+    for mob in wave:
+        if len(uniq_mobs) > our_max_mobs:
+            mob = (random.choice(sorted(list(uniq_mobs))),mob[1])
+        else:
+            if isinstance(mob[0],tuple) or isinstance(mob[0],list):
+                uniq_mobs.add(mob[0][1]) # adds the bpchar path instead
+            else:
+                uniq_mobs.add(mob[0])
+        outwave.append(mob)
+    return outwave    
+            
+    
+            
 def gen_mod_from_data(data):
     mod.comment( f'Seed for this from json data: {data.get("seed","Seed not found")}' )
     rounds = ["round1","round2","round3","round4","round5"]
+    uniq_mobs = set()
     for curr_round_name in rounds:
         curr_round = data[curr_round_name]
         waves = [x for x in curr_round.keys() if x[0] == '/']
         for wave_name in waves:
             wave = curr_round[wave_name]
             #gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b',
+            replace_if_too_many(wave, uniq_mobs)
             gen_mod(wave_name,size,wave)
 
 def default_mod():
@@ -674,12 +830,45 @@ def default_mod():
     round4()
     # # [ ] round5?
     round5()
-            
+
+    
+def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage):
+    my_boss = boss.mk_boss(*boss_tuple)
+    # replace boss health with some multiplier
+    my_boss['health'] = [healthbuff for h in my_boss['health']]
+    my_boss['nloot'] = 0 # disable loot buffs
+    my_boss['damage'] = damagebuff
+    if my_boss['balance_table']:
+        print_and_comment(f"Buffing: {my_boss['name']}")
+        mod.raw_line(boss.buff_boss( my_boss ))
+    
+def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
+    # this is the proportion of tough mobs
+    if toughen_mobs > 0.0:
+        if toughen_mobs > 1.0:
+            toughen_mobs /= 100.0;
+    cmobs = sorted(list(chosen_mobs))
+    n = len(cmobs)
+    nmobs = min(round(n * toughen_mobs),n)
+    tough_mobs = random.choices(cmobs, k=nmobs)
+    boss_definitions = [x for x in [boss.find_boss(mob) for mob in tough_mobs] if not x is None]
+    print_and_comment(f"{len(boss_definitions)/len(tough_mobs)} balance tables found")
+    for our_boss in boss_definitions:
+        buff(our_boss)
+
+# generate safe spawns (remove balconies)    
+gen_safe_spawns()
+
+# generate the mobs
 if args.json is None:
     default_mod()
 else:
     data =json.load(open(args.json))
     mod.comment(f"Based on {args.json}")
     gen_mod_from_data(data)
-        
+
+# buff some of them
+if toughen_mobs > 0.0:
+    toughen_up_mobs(toughen_mobs)
+
 mod.close()

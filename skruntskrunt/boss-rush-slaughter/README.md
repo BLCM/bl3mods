@@ -23,6 +23,9 @@ Thank you to the true hero: altef_4. His careful modding to produce
 the Hyperion slaughter star 3000 allowed me to spend very little time
 changing his mod.
 
+You'll know the mod is loaded if the mission description of the
+Slaughterstar 3000 mentions Billie.
+
 Header
 ======
 * Name: Boss Rush: Billy and the Clone-a-saurus
@@ -35,6 +38,16 @@ Header
 
 Changelog
 =========
+**v0.9.3** - 2021-03-21
+ * Remove balconey spawns (reduces mission blocking bugs)
+ * Add a description of the mod in the mission text
+ * Reduce the total number of mobs to to avoid sound bugs (too many unique mobs, sound skips)
+ * Toughen Mobs randomly (25% get buffed)
+ * Add lots more variety of mobs
+
+**v0.9.2** - 2021-03-28
+ * Some bug fixes and added a mission description.
+ 
 **v0.9.1** - 2021-03-22
  * Bug fixing and adding the ability to better control mob deployment via json definition files.
 
@@ -96,13 +109,13 @@ Thanks to professor portal, rockroze1, helgenen, u4fun, governmentoast, and othe
 Alternatives
 ============
 
-You can try these premade hotfix mods with seeds. I like the saurian ones the best.
+You can try these premade hotfix mods with seeds. I like the saurian ones the best. You might need to download them and remove the `.txt` extension.
 
-* `boss_rush_3000.42.bl3hotfix.txt`
-* `boss_rush_3000.666.bl3hotfix.txt`
-* `boss_rush_3000.787.bl3hotfix.txt`
-* `boss_rush_3000.saurian.41.bl3hotfix.txt`
-* `boss_rush_3000.saurian.42.bl3hotifx.txt`
+* https://raw.githubusercontent.com/BLCM/bl3mods/master/skruntskrunt/boss-rush-slaughter/boss_rush_3000.saurian.42.bl3hotifx.txt
+* https://raw.githubusercontent.com/BLCM/bl3mods/master/skruntskrunt/boss-rush-slaughter/boss_rush_3000.42.bl3hotfix.txt
+* https://raw.githubusercontent.com/BLCM/bl3mods/master/skruntskrunt/boss-rush-slaughter/boss_rush_3000.666.bl3hotfix.txt
+* https://raw.githubusercontent.com/BLCM/bl3mods/master/skruntskrunt/boss-rush-slaughter/boss_rush_3000.bl3hotfix
+* https://raw.githubusercontent.com/BLCM/bl3mods/master/skruntskrunt/boss-rush-slaughter/billy-and-the-cloneasaurus.bl3hotfix
 
 See them at https://github.com/BLCM/bl3mods/tree/master/skruntskrunt/boss-rush-slaughter
 

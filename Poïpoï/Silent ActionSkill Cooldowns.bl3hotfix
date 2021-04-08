@@ -1,0 +1,27 @@
+###
+### Name: Silent ActionSkill Cooldowns
+### Version: 1.0.0
+### Author: Poïpoï
+### Categories: qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### Disables UI sounds related to the usage of ActionSkills (Cooldown timer, cooldown end notification, usage fail notification).
+
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/HUD.HUD,skill_used_fail,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/HUD.HUD,skill_ready,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/HUD.HUD,skill_used_success,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/HUD.HUD,skill2_ready,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/HUD.HUD,PetAttackReady,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill_PreReady_5SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill2_PreReady_5SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill_PreReady_4SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill2_PreReady_4SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill_PreReady_3SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill2_PreReady_3SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill_PreReady_2SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill2_PreReady_2SecondsRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill_PreReady_1SecondRemaining,wwisesound,0,,None
+SparkPatchEntry,(1,2,0,),Game/UI/_Shared/_Design/Audio/ActionSKill.ActionSkill,Skill2_PreReady_1SecondsRemaining,wwisesound,0,,None

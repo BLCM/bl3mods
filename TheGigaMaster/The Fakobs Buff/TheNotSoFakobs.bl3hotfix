@@ -1,0 +1,60 @@
+###
+### Name: The Not So Fakobs
+### Author: TheGigaMaster
+### Version: 0.5.0
+### Categories: gear-shotgun
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### 
+
+
+
+###
+### Buffs the everliving daylights out of the gun "The Shoddy" (AKA The Fakobs)
+### The gun is obtainable from the sidequest "Money Back Guarantee" in DLC 3
+### In essense, the gun has become a 1 shot destroyer.
+### However, it still requires that you be directly on top of your enemy.
+###
+###
+### Changes:
+### The item is now classified as a legendary item.
+### Name change and red text change.
+### Buffs: Increased damage by 25x
+###
+### I plan on making more changes, but this is just a start.
+### 
+
+
+
+# Fakobs chanes to make
+# Change pellet count to 1
+# increase acc and handeling to 100%
+# Reload time = 0.5 sec
+#
+# Alternate name ideas
+# Gun: Jacob's Deliverance 
+# Red Text: Deliver me, I pray thee, from the hand of my brother... Genesis 32:11
+
+
+
+
+# Change Fakobs TO legendary
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Balance/Balance_SG_JAK_Fakobs.Balance_SG_JAK_Fakobs,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+
+
+# Change Name
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Name_JAK_SG_Fakobs.Name_JAK_SG_Fakobs,PartName,0,,Erectile Dysfunction
+
+
+# Fakobs Red Text Changes
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]Ask your doctor if Viagra is right for you.[/Flavor]
+
+
+# Change damage at source
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/Parts/Part_SG_JAK_Trigger_Fakobs.Part_SG_JAK_Trigger_Fakobs,InventoryAttributeEffects.InventoryAttributeEffects[1],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=25.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
+
+
+# item code = BL3(AwAAAAA9AoA8T3wBE1wI10HpxIhwJBhr3CEEAAAAAAAYYwA=)
