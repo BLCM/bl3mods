@@ -855,7 +855,7 @@ def default_mod(end_boss=False):
     round3(end_boss=end_boss)
     # # [ ] round4?
     # disabling round4 end_boss for now
-    round4(end_boss=False)
+    round4(end_boss=end_boss)
     # # [ ] round5?
     round5()
 
