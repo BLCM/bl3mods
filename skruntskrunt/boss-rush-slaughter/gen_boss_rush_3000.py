@@ -1069,12 +1069,11 @@ def gen_endboss(boss=None,wave=None,wavecode=None,spawners=["Factory_SpawnFactor
         raise "Wave or spawner is not set in gen_endboss"
     my_boss = None
     if boss is None:
-        if _endbosses is None:
-            _endbosses= random.sample(good_endbosses,len(good_endbosses))
-        if len(_endbosses) > 0:
-            my_boss = _endbosses.pop()
-        else:
-            my_boss = random.choice(good_endbosses)
+        if _endbosses is None or len(_endbosses) < 1: 
+            # _endbosses= random.sample(good_endbosses,len(good_endbosses))
+            _endbosses = good_endbosses.copy()
+            random.shuffle(_endbosses)
+        my_boss = _endbosses.pop()
     elif (isinstance(boss,tuple) or isinstance(boss,list)):
         # if the boss is a boss tuple just roll with it
         my_boss = boss

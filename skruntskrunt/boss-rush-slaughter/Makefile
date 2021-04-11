@@ -1,3 +1,6 @@
+# make dist - make everything we expect to distribute
+# make mod - make the boss rush by default
+
 .PHONY: bk clean bpcharmod
 MOD=boss_rush_3000.bl3hotfix
 GEN=gen_boss_rush_3000.py
@@ -5,7 +8,9 @@ SEED=1848
 DISTFILES=$(MOD) boss_rush_3000.42.bl3hotfix.txt boss_rush_3000.666.bl3hotfix.txt boss_rush_3000.saurian.42.bl3hotfix.txt
 DEPS=boss.py mobnames.py $(GEN)
 MAXMOBS=30
-COMMONARGS=--maxmobs $(MAXMOBS) --tough 0.0 
+TOUGH=0.2
+COMMONARGS=--maxmobs $(MAXMOBS) --tough $(TOUGH)
+
 mod: $(MOD)
 
 clean: 
