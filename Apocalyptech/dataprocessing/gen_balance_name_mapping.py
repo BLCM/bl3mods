@@ -22,17 +22,20 @@ import csv
 import json
 import lzma
 
-# Generating a mapping of "short" balance name to english label, for use
-# in bl3-cli-saveedit.  I basically already did this for my Balance
-# spreadsheets, so I may as well just reuse that data.
+# Generating a mapping of balance name to english label, for use in
+# bl3-cli-saveedit.  I basically already did this for my Balance
+# spreadsheets, so I may as well just reuse that data.  Note that we're
+# now using an alternate CSV export from my balance-sheet-generation
+# which uses full object paths, on account of the Mysterious Amulet and
+# Mysterious Artifact, as of DLC5+6, which share the same short name.
 
-output_file = 'short_name_balance_mapping.json.xz'
+output_file = 'balance_name_mapping.json.xz'
 files = [
-        'artifact_balances.csv',
-        'com_balances.csv',
-        'grenade_balances.csv',
-        'gun_balances.csv',
-        'shield_balances.csv',
+        'artifact_balances_long.csv',
+        'com_balances_long.csv',
+        'grenade_balances_long.csv',
+        'gun_balances_long.csv',
+        'shield_balances_long.csv',
         ]
 
 rarity_map = {
@@ -46,17 +49,27 @@ rarity_map = {
         '05/legendary': 'Legendary',
         }
 
-# Main Mapping object.  Filling in some hardcodes here, first.
-mapping = {
-        'balance_atl_ar_portals': 'Portals and Shite',
-        'balance_eridian_fabricator': 'Eridian Fabricator',
-        'balance_ps_tediore_babymaker_salvage': 'Baby Maker (fixed part)',
-        'balance_ps_jak_lovedrill': 'Love Drill (mission version)',
-        'balance_sm_hyp_shortstick': 'Short Stick',
-        'balance_ps_jak_theseventhsense_missionweapon': 'Seventh Sense (mission version)',
-        'balance_ps_jak_ss_l': 'Seventh Sense (ghost Burton version)',
-        'balance_ps_jak_seventhsense': 'Seventh Sense (unknown version)',
+artifact_non_named_types = {
+        'Common',
+        'Uncommon',
+        'Rare',
+        'Very Rare',
+        'Legendary',
         }
+
+# Main Mapping object.  Filling in some hardcodes here, first.
+mapping = {}
+for k,v in {
+        '/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/Portal/Balance/Balance_ATL_AR_Portals': 'Portals and Shite',
+        '/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Balance/Balance_Eridian_Fabricator': 'Eridian Fabricator',
+        '/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/Balance/Salvage/Balance_PS_Tediore_BabyMaker_Salvage': 'Baby Maker (fixed part)',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Balance/Balance_PS_JAK_LoveDrill': 'Love Drill (mission version)',
+        '/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick': 'Short Stick',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon': 'Seventh Sense (mission version)',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SS_L': 'Seventh Sense (ghost Burton version)',
+        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense': 'Seventh Sense (unknown version)',
+        }.items():
+    mapping[k.lower()] = v
 
 # Now loop through our CSVs and pull out the info.
 for filename in files:
@@ -88,13 +101,14 @@ for filename in files:
                         rarity_map[rarity],
                         )
             elif 'Type/Name' in row:
-                if rarity_map[rarity] == 'Legendary' and row['Type/Name'] != 'Legendary':
+                # Just used for Artifacts
+                if row['Type/Name'] in artifact_non_named_types:
+                    label = '{} Artifact'.format(rarity_map[rarity])
+                else:
                     label = '{} {} Artifact'.format(
                             row['Type/Name'],
                             rarity_map[rarity],
                             )
-                else:
-                    label = '{} Artifact'.format(rarity_map[rarity])
             else:
                 if 'grenade' in filename:
                     type_name = 'Grenade'
