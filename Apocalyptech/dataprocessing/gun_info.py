@@ -220,12 +220,12 @@ for balance_name in args.balance_names:
             red_text = red_text.replace('[Flavor]', '')
             red_text = red_text.replace('[/Flavor]', '')
             red_text = red_text.replace('"', '\\"')
-            print('        ("{}",'.format(title))
-            print('            \'{}\','.format(red_text_name))
-            print('            "{}",'.format(red_text))
-            print('            "unknown"),')
+            print('            (_("{}"),'.format(title))
+            print('                \'{}\','.format(red_text_name))
+            print('                _("{}"),'.format(red_text))
+            print('                _("unknown")),')
         else:
-            print('        # {}: NO RED TEXT!'.format(title))
+            print('            # {}: NO RED TEXT!'.format(title))
     else:
         print('Name: {}'.format(title))
         if red_text:

@@ -1,6 +1,6 @@
 ###
 ### Name: Red Text Explainer
-### Version: 1.2.0
+### Version: 1.3.0
 ### Author: Apocalyptech
 ### Categories: qol, gear-general
 ###
@@ -1070,4 +1070,37 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/UIS
 
 # HOT Spring
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/UIStat_RedText_HOTSpring.UIStat_RedText_HOTSpring,Text,0,,[Flavor]Please, call me doctor.[/Flavor] (all effects on card)
+
+# Free Radical
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/UIStat_RedText_Deatomizer.UIStat_RedText_Deatomizer,Text,0,,[Flavor]Don't be so negative.[/Flavor] (sends out homing projectiles towards hit target)
+
+# Ionic Disruptor
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/UIStat_RedText_Disruptor.UIStat_RedText_Disruptor,Text,0,,[Flavor]I can bring you in warm, or... not at all.[/Flavor] (all effects on card)
+
+# Redeye Rocket Pod
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Redeye/UIStat_RedText_Redeye.UIStat_RedText_Redeye,Text,0,,[Flavor]Even oppression itself fears Vladof.[/Flavor] (all effects on card)
+
+# Atlas Replay
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/UIStat_RedText_Replay.UIStat_RedText_Replay,Text,0,,[Flavor]Anybody else want to negotiate?[/Flavor] (tracker darts in horizontal line, increased fire rate per tracked enemy)
+
+# Bird of Prey
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/UIStat_RedText_BirdofPrey.UIStat_RedText_BirdofPrey,Text,0,,[Flavor]Someone's getting a treat![/Flavor] (additional projectile deals 600% base damage)
+
+# Guardian 4N631
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_RedText_Guardian.UIStat_RedText_Guardian,Text,0,,[Flavor]You're alive for a reason. Go get 'em kid.[/Flavor] (shoots slow orbs which flap like a bird and reflect off walls)
+
+# Mechanic
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/UIStat_RedText_Mechanic.UIStat_RedText_Mechanic,Text,0,,[Flavor]Let's get you rollin'![/Flavor] (shoots [bold]explosive[/bold] car wheels)
+
+# Kickcharger
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/UIStat_RedText_Kickcharger.UIStat_RedText_Kickcharger,Text,0,,[Flavor]Let it slide.[/Flavor] (shots pierce enemies)
+
+# Torrent
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/UIStat_RedText_Torrent.UIStat_RedText_Torrent,Text,0,,[Flavor]haha gun go brrrr[/Flavor] (bullets follow corkscrew pattern, every 10th bullet is a +380% damage [shock]shock[/shock])
+
+# Mesmer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/UIStat_RedText_Mesmer.UIStat_RedText_Mesmer,Text,0,,[Flavor]Sink into the floor. Sink.[/Flavor] (all effects on card)
+
+# Ringer / The Big Ringer / Dead Ringer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/UIStat_RedText_Ringer.UIStat_RedText_Ringer,Text,0,,[Flavor]Obviously you're not a golfer.[/Flavor] (all effects on card)
 
