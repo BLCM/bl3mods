@@ -18,6 +18,10 @@ World Drop Ixora COMs.
 Changelog
 =========
 
+**v1.2.0** - Apr 12, 2021
+ * Added Kensei and Death's Blessings COMs (from Designer's Cut and
+   Director's Cut DLCs, respectively)
+
 **v1.1.1** - Jan 10, 2021
  * Fixed a bug that's been present since the June 25, 2020 BL3 patch
    which added Action Skill Damage as a possible COM part -- this mod

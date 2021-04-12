@@ -35,7 +35,7 @@ mod = Mod('fix_siren_com_blank_parts.bl3hotfix',
             "empty part can never be chosen.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.1.1',
+        v='1.2.0',
         cats='gear-com, bugfix',
         )
 
@@ -67,6 +67,8 @@ for bal_name in [
         '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1',
         '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Hib',
         '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma',
+        '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01',
+        '/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora2_SRN_L01',
         ]:
 
     bal = Balance.from_data(data, bal_name)
