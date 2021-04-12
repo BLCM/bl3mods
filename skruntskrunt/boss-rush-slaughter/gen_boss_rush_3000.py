@@ -31,6 +31,19 @@ DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
 DEFAULT_TOUGH=0.2
 MAX_MOBS=1000
+BUFF_NAMES=[
+    " the more difficult",
+    " the roided",
+    " the spectacular",
+    " the slightly buffed",
+    " the unnerfed",
+    " the impermiable",
+    " the kinda tankie",
+    " the buff",
+    " the tough",
+    " the badder",
+    ", a real baddie"
+]
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
@@ -74,18 +87,11 @@ for okey in ['Description','PreAcceptanceSummary','PostAcceptanceSummary']:
         mod.reg_hotfix(level, 'MatchAll', '/Game/Missions/Side/Slaughters/TechSlaughter/Mission_TechSlaughter1.Default__Mission_TechSlaughter1_C',f'{okey}.FormatText',story)
 
 
-# from gen_3000_Char_list import *
-# from gen_3000_helper_functions import *
 from decimal import Decimal
+# my imports
 import boss
+import mobnames
 
-#additional or multiply health/dmg scalling, false = (src_health|src_dmg) + (base_hs|base_ds), true = (src_health|src_dmg) * (base_hs|base_ds)
-health_dmg_multiply = False
-health_dmg_with_log = False
-#health scalling
-base_hs = 6
-#damage scalling
-base_ds = 0.8
 
 # what proportion of mobs to buff
 toughen_mobs = float(args.tough)
@@ -115,15 +121,6 @@ def rev(cnt, idx):
     else:
         return idx
 
-def enemy_type(etype):
-    return {
-        'Normal': "'/Game/GameData/ZoneMap/POI_Types/POI_CrewChallengeEnemy.POI_CrewChallengeEnemy'",
-        'None': "'/Game/GameData/ZoneMap/POI_Types/POI_Enemy.POI_Enemy'",
-        'VeryGood': "'/Game/GameData/ZoneMap/POI_Types/POI_CrewChallengeEnemy.POI_CrewChallengeEnemy'",
-        'Badass': "'/Game/GameData/ZoneMap/POI_Types/POI_CrewChallengeEnemy.POI_CrewChallengeEnemy'",
-        'SuperBadass': "'/Game/GameData/ZoneMap/POI_Types/POI_Boss.POI_Boss'",
-        'UltimateBadass': "'/Game/GameData/ZoneMap/POI_Types/POI_Boss.POI_Boss'",
-    }.get(etype,'!ERR_etype.{}'.format(etype))
 def enemy_icon(etype):
     return {
         'None': "POISprite'/Game/UI/_Shared/InWorldAndMapIcons/MinimapIcon_Enemy.MinimapIcon_Enemy'",
@@ -134,15 +131,6 @@ def enemy_icon(etype):
         'UltimateBadass': "POISprite'/Game/UI/_Shared/InWorldAndMapIcons/MinimapIcon_Boss.MinimapIcon_Boss'",
     }.get(etype,'!ERR_etype.{}'.format(etype))
     
-def enemy_legendaries(etype):
-    return {
-        'None': 1,
-        'Normal': 2,
-        'VeryGood': 3,
-        'Badass': 6,
-        'SuperBadass': 10,
-        'UltimateBadass': 15,
-    }.get(etype,'!ERR_etype.{}'.format(etype))
 
 def get_bpchar(s):
     return s.split('/')[-1]
@@ -151,12 +139,9 @@ def print_and_comment(s):
     print(s)
     mod.comment(s)
 
-healh_chance = 52
 chosen_mobs = set()
 def gen_mod(so, scale, my_list):
     c = len(my_list)
-    global healh_chance
-    healh_chance -= 1
     for idx, val in enumerate(my_list):
         if (isinstance(val[0],tuple) or isinstance(val[0],list)):
             # this means we're using (name,bpchar,balance,balancerow,extras)
@@ -189,7 +174,7 @@ def gen_mod(so, scale, my_list):
                 f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
             mod.reg_hotfix(Mod.LEVEL, 'TechSlaughter_P', Mod.get_full(so),
                 'Options.Options[{}].Factory.Object..SpawnOrigin'.format(rev(c,idx)),
-                f'(X={1500},Y={0},Z={0})')
+                f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
             mod.reg_hotfix(Mod.LEVEL, 'TechSlaughter_P', Mod.get_full(so),
                 'Options.Options[{}].Factory.Object..CollisionHandling'.format(rev(c,idx)),
                 'AlwaysSpawn')
@@ -203,30 +188,12 @@ def gen_mod(so, scale, my_list):
             mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P', '{}:{}'.format(Mod.get_full(so),val[1]), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
 
 
-# "BlueprintGeneratedClass'/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK.BPChar_LoaderEXP_JUNK_C'",
-            
-
-# gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
-#         size,[
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI"), # ??
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI_1"),
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI_2"),
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI_3"),
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI_4"),
-#             ("/Game/PatchDLC/Dandelion/Enemies/Loader/JUNK_Loaders/_Design/Character/BPChar_LoaderEXP_JUNK",
-#              "Factory_SpawnFactory_OakAI_5"),
-#         ])
 
 _replace_enemy_uniq = set()
 def replace_enemy(l):
     return replace_if_too_many([(boss.choose_random_slaughter_boss(),x[1]) for x in l], _replace_enemy_uniq)
 
-def round1():
+def round1(end_boss=False):
 
     gen_mod('/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',
             size,replace_enemy([
@@ -270,26 +237,48 @@ def round1():
             ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
         ]))
     #wave 3a
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3a',
-        size,replace_enemy([
-            ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
-            ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_1"),
-            ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_2"),
-            ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_3"),
-            ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
-        ]))
+    pentulimatewavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3a'
+    pentulimatespawner="SpawnFactory_OakAI_0"
+    penspawns = [f"SpawnFactory_OakAI_{i}" for i in range(5)]
+    # what if we replace spawns?
+    penspawns = ["Factory_SpawnFactory_OakAI" for i in range(5)]
+    round3a = [
+        ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
+        ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_1"),
+        ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_2"),
+        ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_3"),
+        ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_4"),
+    ]
+    penspawns = [x[1] for x in round3a]
+
     #wave 3b
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b',
-        size,replace_enemy([
-            ("BPChar_TrooperShotgun_C","SpawnFactory_OakAI_0"),
-            ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
-            ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
-            ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
-            ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_4"),
-            ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
-        ]))
+    endwavename = '/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave3b'
+    endspawner = "SpawnFactory_OakAI_0"
+    #endspawns = [f"SpawnFactory_OakAI_{i}" for i in range(6)]
+    #endspawns = ["Factory_SpawnFactory_OakAI" for i in range(5)]
+    
+    round3b = [
+        ("BPChar_TrooperShotgun_C",endspawner),
+        ("BPChar_TrooperMelee_C","SpawnFactory_OakAI_1"),
+        ("BPChar_TrooperBasic_C","SpawnFactory_OakAI_2"),
+        ("BPChar_TrooperJetpack_C","SpawnFactory_OakAI_3"),
+        ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_4"),
+        ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_5"),
+    ]
+    endspawns = [x[1] for x in round3b]
+    if end_boss:
+        # was 132 for code
+        gen_endboss(wave=pentulimatewavename,spawners=penspawns,wavecode=121)
+        gen_endboss(wave=endwavename,spawners=endspawns,wavecode=121)
+    else:
+        # wave 3a
+        gen_mod(pentulimatewavename,
+                size,replace_enemy(round3a))
+        # wave 3b
+        gen_mod(endwavename,
+                size,replace_enemy(round3b))
         
-def round2():
+def round2(end_boss=False):
     #ROUND 2 fix on 3a medic, basic, jetpack, badass
 
     #wave 1_0
@@ -357,28 +346,42 @@ def round2():
             ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_8"),
         ]))
     #wave 4a
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4a',
-        size,replace_enemy([
-            ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
-            ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
-            ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
-            ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
-            ("BPChar_Heavy_Acidrain_C","SpawnFactory_OakAI_7"),
-            ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_9"),
-        ]))
     #wave 4b
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4b',
-        size,replace_enemy([
-            ("BPChar_TrooperBadass_C","SpawnFactory_OakAI_0"),
-            ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
-            ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
-            ("BPChar_NogBasic_C","SpawnFactory_OakAI_12"),
-            ("BPChar_Heavy_Icebreaker_C","SpawnFactory_OakAI_4"),
-            ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
-            ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
-        ]))
+    penendwavename = '/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4a'
+    endspawner = "SpawnFactory_OakAI_0"
+    round4a = [
+        ("BPChar_TrooperMeleeDark_C","SpawnFactory_OakAI_1"),
+        ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
+        ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
+        ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
+        ("BPChar_Heavy_Acidrain_C","SpawnFactory_OakAI_7"),
+        ("BPChar_Heavy_Basic_C","SpawnFactory_OakAI_9"),
+    ]
+    round4b = [
+        ("BPChar_TrooperBadass_C",endspawner),
+        ("BPChar_HeavyGunner_C","SpawnFactory_OakAI_10"),
+        ("BPChar_Heavy_Badass_C","SpawnFactory_OakAI_11"),
+        ("BPChar_NogBasic_C","SpawnFactory_OakAI_12"),
+        ("BPChar_Heavy_Icebreaker_C","SpawnFactory_OakAI_4"),
+        ("BPChar_TrooperMedicDark_C","SpawnFactory_OakAI_5"),
+        ("BPChar_Heavy_Powerhouse_C","SpawnFactory_OakAI_8"),
+    ]
 
-def round3():
+    penspawns = [x[1] for x in round4a]
+    endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round2/SpawnOptions_TechSlaughter_Round2Wave4b'
+    # endspawns = ["Factory_SpawnFactory_OakAI" for i in range(7)]
+    endspawns = [x[1] for x in round4b]
+    if end_boss:
+        gen_endboss(wave=penendwavename,spawners=penspawns,wavecode=242)
+        gen_endboss(wave=endwavename,spawners=endspawns,wavecode=242)
+    else:
+    #wave 4a
+        gen_mod(penendwavename,
+                size,replace_enemy(round4a))
+        gen_mod(endwavename,
+                size,replace_enemy(round4b))
+
+def round3(end_boss=False):
     #ROUND 3 FIX on 2a dark heavy, dogs, nogs
     
     #wave 1a
@@ -437,26 +440,43 @@ def round3():
             ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_29"),
         ]))
     #wave 4a
-    gen_mod('/Game/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement',
-        size,replace_enemy([
-            ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
-        ]))
-    #wave 4a
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave4a',
-        size,replace_enemy([
-            ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
-            ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
-            ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
-            ("BPChar_Oversphere_C","SpawnFactory_OakAI_3"),
-            ("BPChar_NogBasicDark_C","SpawnFactory_OakAI_4"),
-            ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_5"),
-            ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_6"),
-            ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_7"),
-        ]))
-
-def round4():
-    #ROUND 4 fix on 4a? fix, dogs, dark medic 3b? heavy spawn
+    endspawner='Factory_SpawnFactory_OakAI'
+    round4a = [("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),]
+    # what if we avoid that?
+    round4a = [("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI_30"),]
+    round4b = [
+        ("BPChar_Oversphere_C",endspawner),
+        ("BPChar_Heavy_PowerhouseDark_C","SpawnFactory_OakAI_25"),
+        ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_28"),
+        ("BPChar_Oversphere_C","SpawnFactory_OakAI_3"),
+        ("BPChar_NogBasicDark_C","SpawnFactory_OakAI_4"),
+        ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_5"),
+        ("BPChar_NogNogromancer_C","SpawnFactory_OakAI_6"),
+        ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_7"),
+    ]
+    # just least 3a 
+    penendwavename='/Game/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement'
+    pendspawners = ["Factory_SpawnFactory_OakAI"]
+    penspawns = [x[1] for x in round4a]
+    gen_mod(penendwavename,
+            size,replace_enemy(round4a))
     
+    #wave 4b
+    endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round3/SpawnOptions_TechSlaughter_Round3Wave4a'
+    endspawners= [endspawner,"SpawnFactory_OakAI_25","SpawnFactory_OakAI_28","SpawnFactory_OakAI_3","SpawnFactory_OakAI_4","SpawnFactory_OakAI_5","SpawnFactory_OakAI_6","SpawnFactory_OakAI_7"]
+    endspawns =  [x[1] for x in round4b]
+
+    if end_boss:
+        # 4a
+        # gen_endboss(wave=penendwavename,spawners=penspawns,wavecode=341)
+        # 4b
+        # is 341 right?
+        gen_endboss(wave=endwavename,spawners=endspawns,wavecode=341)
+    else:
+        gen_mod(endwavename,
+            size,replace_enemy(round4b))
+
+def round4(end_boss=False):
     #wave_1
     gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave1',
         size,replace_enemy([
@@ -515,30 +535,38 @@ def round4():
             ("BPChar_TrooperShotgunDark_C","SpawnFactory_OakAI_9"),
         ]))
     #wave 4a
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4a',
-        size,replace_enemy([
-            ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
-            ("BPChar_Frontrunner_Badass_C_FIX","SpawnFactory_OakAI_0"),
-            ("BPChar_FrontrunnerJammer_C_FIX","SpawnFactory_OakAI_1"),
-            ("BPChar_OversphereDark_C","SpawnFactory_OakAI_11"),
-            ("BPChar_TrooperMedicDark_C_FIX","SpawnFactory_OakAI_15"),
-            ("BPChar_TrooperBasicDark_C_FIX","SpawnFactory_OakAI_16"),
-            ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_17"),
-            ("BPChar_FrontrunnerStriker_C_FIX","SpawnFactory_OakAI_20"),
-        ]))
     #wave 4b
-    gen_mod('/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b',
-        size,replace_enemy([
-            ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
-            ("BPChar_OversphereDark_C","SpawnFactory_OakAI_11"),
-            ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_18"),
-            ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_22"),
-            ("BPChar_Heavy_BadassDark_C","SpawnFactory_OakAI_23"),
-            ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
-            ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_126"),
-            ("BPChar_MechBasic_C","SpawnFactory_OakAI_27"),
-            ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_30"),
-        ]))
+    penendwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4a'
+    endwavename='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round4/SpawnOptions_TechSlaughter_Round4Wave4b'
+    endspawner="Factory_SpawnFactory_OakAI"
+    endspawners=[endspawner for i in range(8)]
+    if end_boss:
+        gen_endboss(wave=penendwavename,spawners=endspawners,wavecode=442)
+        gen_endboss(wave=endwavename,   spawners=endspawners,wavecode=442)
+    else:
+        gen_mod(penendwavename,
+                size,replace_enemy([
+                    ("BPChar_Oversphere_C","Factory_SpawnFactory_OakAI"),
+                    ("BPChar_Frontrunner_Badass_C_FIX","SpawnFactory_OakAI_0"),
+                    ("BPChar_FrontrunnerJammer_C_FIX","SpawnFactory_OakAI_1"),
+                    ("BPChar_OversphereDark_C","SpawnFactory_OakAI_11"),
+                    ("BPChar_TrooperMedicDark_C_FIX","SpawnFactory_OakAI_15"),
+                    ("BPChar_TrooperBasicDark_C_FIX","SpawnFactory_OakAI_16"),
+                    ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_17"),
+                    ("BPChar_FrontrunnerStriker_C_FIX","SpawnFactory_OakAI_20"),
+                ]))
+        gen_mod(endwavename,
+            size,replace_enemy([
+                ("BPChar_Oversphere_C",endspawner),
+                ("BPChar_OversphereDark_C","SpawnFactory_OakAI_11"),
+                ("BPChar_HeavyGunnerDark_C","SpawnFactory_OakAI_18"),
+                ("BPChar_Heavy_BasicDark_C","SpawnFactory_OakAI_22"),
+                ("BPChar_Heavy_BadassDark_C","SpawnFactory_OakAI_23"),
+                ("BPChar_OversphereHarbingerDark_C","SpawnFactory_OakAI_25"),
+                ("BPChar_OversphereStinger_C","SpawnFactory_OakAI_126"),
+                ("BPChar_MechBasic_C","SpawnFactory_OakAI_27"),
+                ("BPChar_NogNinjaDark_C","SpawnFactory_OakAI_30"),
+            ]))
 
 def round5():
     #ROUND 5 fix on 3a fix darc centurion, basic_mech
@@ -672,6 +700,8 @@ def round5():
     #     ])
 
 # remove balconies
+# OakSpawnPoint_12 is at -3796,3129,1496 (balconie)
+# OakSpawnPoint_4 is at -175, 7028, -901
 
 Tech_mission = '/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel'
 DC = 'SpawnMesh_DoorCargo'
@@ -713,6 +743,9 @@ balconey_spawns = [
     "{}'{}.{}_20'".format(SP,Tech_mission,SP),#LBalcon Center
     "{}'{}.{}_49'".format(SP,Tech_mission,SP),#LBalcon Left
 ]
+
+
+
 boss_spawns = [
     "{}_C'{}.{}_4'".format(SP,Tech_mission,SP),#boss Mech_0 Right Lift
     "{}_C'{}.{}_6'".format(SP,Tech_mission,SP),#boss Mech Left Lift Down
@@ -767,12 +800,16 @@ missions = { # stolen from altef-4 gen_3000_Char_list.py
         562: "OakMissionSpawner_Round5Wave_13"
 }
 
-
+# I don't know what should be round 4 final round
+# removing round 4 didn't solve my problem
+# perhaps too omega spawns are because round 3 is wrong?
+final_round_spawns = set([missions[x] for x in [242,122,341]])
+safe_missions = sorted(set(missions.values()).difference(final_round_spawns))
 def gen_safe_spawns():
     mod.comment("Now we're going to remove the balconey as a spawn point")
     random_spawn = True
     full_Spawn_list = safe_spawn_string
-    for m in sorted(set(missions.values())):
+    for m in safe_missions: #sorted(set(missions.values())):
         mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
                     "{}.{}.SpawnerComponent".format(Tech_mission,m),
                     'SpawnPoints',
@@ -819,18 +856,32 @@ def gen_mod_from_data(data):
             replace_if_too_many(wave, uniq_mobs)
             gen_mod(wave_name,size,wave)
 
-def default_mod():
+def default_mod(end_boss=False):
     # [ ] round1?
-    round1()
+    round1(end_boss=end_boss)
     # [ ] round2?
-    round2()
+    # just override for now XXX
+    # end_boss = False
+    round2(end_boss=end_boss)
     # # [ ] round3?
-    round3()
+    round3(end_boss=end_boss)
     # # [ ] round4?
-    round4()
+    # disabling round4 end_boss for now
+    round4(end_boss=end_boss)
     # # [ ] round5?
     round5()
 
+def rename_mob(bpchar, newname):
+    mod.comment(f"Rename {bpchar} to '{newname}'")
+    attr = 'DisplayName'
+    if not bpchar in mobnames.mobname_dict:
+        mod.comment(f"WARNING: Cannot rename {bpchar} to '{newname}' as we are missing UIName")
+        return
+    uiname = mobnames.mobname_dict[bpchar]
+    mod.reg_hotfix(mod.PATCH,'',
+                   uiname,
+                   attr,
+                   newname)
     
 def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage):
     my_boss = boss.mk_boss(*boss_tuple)
@@ -841,7 +892,7 @@ def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage)
     if my_boss['balance_table']:
         print_and_comment(f"Buffing: {my_boss['name']}")
         mod.raw_line(boss.buff_boss( my_boss ))
-    
+    rename_mob(my_boss["bpchar_path"],my_boss["name"]+random.choice(BUFF_NAMES))    
 def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     # this is the proportion of tough mobs
     if toughen_mobs > 0.0:
@@ -856,12 +907,242 @@ def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     for our_boss in boss_definitions:
         buff(our_boss)
 
+far_spawn = "far"
+close_spawn = "close"
+red_spawn = "red"
+og_red_spawn = "og_red"
+boss_spawns = {
+    far_spawn:{
+        "name":balconey_spawns[0],
+        "location":(-2000.0,1000.0,1000.0),
+        "myname":far_spawn,
+    },
+    close_spawn: {
+        "name":balconey_spawns[3],
+        # changed to 1000.0 for Y 1000.0 for Z
+        # changed X to 3500 0 for Y 1000 for Z
+        "location":(3500.0,0.0,1000.0),
+        "myname":close_spawn,
+    },
+    red_spawn: {
+        "name":boss_spawns[0],
+        "location":(3500.0,0.0,1000.0),
+        "myname":red_spawn,
+    },
+    og_red_spawn: {
+        "name":boss_spawns[0],
+        # OakSpawnPoint_4 is at -175, 7028, -901
+        "location":(-175,7028,-901),
+        "myname":og_red_spawn,
+    },
+}
+OPTIONS=4
+BPCHAR=1
+katagawa = ("Katagawa Ball","/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere","/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique",
+            "Oversphere_Katagawa",
+            {"spawn":red_spawn}) #red spawn works # close does not
+wotan = ("Wotan","/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid",
+         "/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth",
+         "Behemoth_Raid",
+         {"spawn":close_spawn}) # was red_spawn
+omega = ("OmegaMantikore","/Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes",
+         "/Game/Enemies/Nekrobug/_Shared/_Design/Balance/Table_Balance_Nekrobug_Unique",
+         "Nekrobug_BetterTimes",
+         {"spawn":close_spawn})
+graveward =("Graveward","/Game/Enemies/EdenBoss/_Shared/_Design/Character/BPChar_EdenBoss",
+             "/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1","EdenBoss",
+            {"spawn":far_spawn}) # og_red_spawn in the right direction too far away # red_spawn right direction, too close
+fabrikator = ("Fabrikator","/Game/PatchDLC/Dandelion/Enemies/Fabrikator/Basic/_Design/Character/BPChar_FabrikatorBasic",
+              "/Game/PatchDLC/Dandelion/Enemies/Fabrikator/_Shared/_Design/Balance/Table_Balance_Fabrikator",
+              "FabrikatorPT2",
+              {"spawn":close_spawn})
+benedict = ("Dr Benedict",
+            '/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict',
+            "/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1",
+            "Basic",
+            {"spawn":close_spawn})
+_close_spawn = {"spawn":close_spawn}
+warden =    ('Warden','/Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageArena',"/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique","CageArena",_close_spawn)
+bellikprimis= ('Bellik Primis','/Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast','/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique',"AlteredBeast",_close_spawn) # works
+killavolt=('Killavolt (Kenneth)','/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Character/BPChar_EnforcerKillaVolt','/Game/Enemies/Enforcer/_Shared/_Design/Balance/Table_Enforcer_Balance_Unique','Enforcer_KillaVolt',_close_spawn)
+
+good_endbosses = [
+    # fabrikator, # untested
+    # graveward,
+    omega,
+    wotan,
+    # benedict,
+    bellikprimis,
+    # katagawa,
+]
+
+def limit_wave_to_n(wave,n):
+    ''' limits the number of entities in the wave to n '''
+    mod.comment(f"limit_wave_to_n: Limit wave {wave} to {n}")
+    path1=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{wave}.SpawnerComponent'
+    path2=f'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{wave}.SpawnerComponent'
+    obj1='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[0].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    obj2='SpawnerComponent.Object..SpawnerStyle.Object.Waves.Waves[1].SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    obj3='SpawnerComponent.Object..SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant'
+    for t in [(path1,obj1),(path1,obj2),(path2,obj3)]:
+        path,obj = t
+        mod.reg_hotfix(
+                    Mod.EARLYLEVEL, 
+                    'TechSlaughter_P',
+                    path,   
+                    obj,
+                    1,'',True)
+        # we are trying to remove the initializer
+        #      "NumActorsParam" : {
+        # "AttributeInitializationData" : {
+        #    "AttributeInitializer" : [
+        #       "PCF_ScaleBy25PercentPerAdditionalPlayer_C",
+        #       "/Game/GameData/Balance/PlayerCountFormulas/PCF_ScaleBy25PercentPerAdditionalPlayer"
+        #    ],
+        #    "BaseValueConstant" : 6
+        # }
+        mod.reg_hotfix(
+                    Mod.EARLYLEVEL, 
+                    'TechSlaughter_P',
+                    path,   
+                    obj.replace("BaseValueConstant","AttributeInitializer"),
+                    'None','',True)
+
+def generate_spawn( spawn_entry ):
+    ''' generate a spawn by moving an existing one 
+        spawn_entry is:
+        {
+          "name":"OriginalSpawnName", # the spawn name in the code
+          "location":(x,y,z), # where to move it
+          "myname":"what I call this spawn",
+        }
+        this will move OriginalSpawnName to location
+    '''
+    # make an entry
+    spawnpoint = spawn_entry["name"]
+    (x,y,z) = spawn_entry["location"]
+    path =  spawnpoint.split("'")[1]
+    mod.comment(f"generate_spawn: {spawn_entry.get('myname','')} {spawnpoint} moved to ({x},{y},{z})")
+    for (obj,val) in [("RelativeLocation",f'(X={x},Y={y},Z={z})'),
+                      ('bFilterByTag','None'),
+                      ('SpawnAction','None'),
+                      ('FilterMatchType','None'),
+                      ('Tags','None'),
+                      # # not sure we can rotate the spawn point
+                      #('StretchyPoint',"(Rotation=(W=0.999,X=0,Y=0.0,Z=0.001))"),
+                      #('StretchyPoint',"(Rotation=(W=0.707,X=0,Y=0.0,Z=0.707))"),
+                      #('StretchyPoint',"(Rotation=(w=0.707,x=0,y=0.0,z=0.707))"),
+    ]:
+        mod.reg_hotfix(
+            Mod.EARLYLEVEL, 'TechSlaughter_P',
+            #f"{Tech_mission}.{wave}.SpawnerComponent",
+            #f"/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{spawnpoint}.SpawnPointComponent",
+            f"{path}.SpawnPointComponent",
+            #"RelativeLocation",
+            obj,
+            val,'',True)
+
+    
+def set_wave_spawns_to( wave, spawns ):
+    ''' set the spawns for this `wave` to `spawns`
+        `spawns` is a list of spawn name strings
+    '''
+    # raise "Didn't finish set_wave_spawns_to"
+    mod.comment(f"set_wave_spawns_to: Set {wave} to {spawns}")
+    m = wave
+    # SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave.SpawnerComponent,SpawnPoints,0,,(OakSpawnPoint_C'/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakSpawnPoint_4')
+    spawn_list = ",".join(spawns)
+    fspawn_list = f'({spawn_list})' #.format(spawn_list), 
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "{}.{}.SpawnerComponent".format(Tech_mission,wave),
+                'SpawnPoints',
+                fspawn_list,'',True)
+    mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+                "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+                'bRandomizeSpawnPoints',
+                True,"",True) # this was False
+    for i in range(3):
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+            "{}.{}.SpawnerComponent".format(Tech_mission,m),
+            'SpawnPointGroups.SpawnPointGroups[{}].SpawnPoints'.format(i),
+            fspawn_list,'',True)
+        mod.reg_hotfix(Mod.EARLYLEVEL, 'TechSlaughter_P',
+            "/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.{}.SpawnerComponent".format(m),
+            'SpawnPointGroups.SpawnPointGroups[{}].bRandomize'.format(i),
+            True,"",True)
+
+_endbosses = None
+
+def gen_endboss(boss=None,wave=None,wavecode=None,spawners=["Factory_SpawnFactory_OakAI"]):
+    global _endbosses
+    mod.comment(f"gen_endboss({boss},{wave},{wavecode})")
+    if wave is None or spawners is None:
+        raise "Wave or spawner is not set in gen_endboss"
+    my_boss = None
+    if boss is None:
+        if _endbosses is None or len(_endbosses) < 1: 
+            # _endbosses= random.sample(good_endbosses,len(good_endbosses))
+            _endbosses = good_endbosses.copy()
+            random.shuffle(_endbosses)
+        my_boss = _endbosses.pop()
+    elif (isinstance(boss,tuple) or isinstance(boss,list)):
+        # if the boss is a boss tuple just roll with it
+        my_boss = boss
+    else:
+        candidate_boss = [x for x in good_endbosses if x[0] == boss or x[1] == boss]
+        if len(candidate_boss) <= 1:
+            raise f"Boss not found: {boss}"
+        my_boss = candidate_boss[0]
+    mod.comment(f"gen_endboss: spawning {my_boss}")
+    # make sure the spawn exists
+    our_spawn = boss_spawns[my_boss[OPTIONS]["spawn"]]
+    generate_spawn( our_spawn )
+    # short_wave = wave.split("_")[-1]
+    short_wave = missions[wavecode]
+    set_wave_spawns_to( short_wave, [our_spawn["name"]] )
+    # replace that wave with only our boss
+    mod.comment(f"gen_mod({wave},{size},{[ (my_boss[BPCHAR], sspawn) for sspawn in spawners ]})")
+    gen_mod(wave,size,[ (my_boss[BPCHAR], sspawn) for sspawn in spawners])
+    # limit wave spawn to only 1
+    # disabled temporarily
+    limit_wave_to_n(short_wave,1)
+    # buff our boss
+    #if buff is not None:
+    buff(my_boss)
+    
+
+    
+        
 # generate safe spawns (remove balconies)    
 gen_safe_spawns()
 
+def force_boss_drop(b=graveward):
+    gen_endboss(boss=b,wave='/Game/Enemies/_Spawning/Slaughters/TechSlaughter/Round1/SpawnOptions_TechSlaughter_Round1Wave1a_Trooper1',wavecode=111,spawners=["Factory_SpawnFactory_OakAI" for i in range (6)])
+    gen_endboss(boss=b,wave='/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_1/SpawnOptions_KatagawaBallAdds_MeleeMix',wavecode=111,spawners=["Factory_SpawnFactory_OakAI" for i in range (6)])
+
+def debug_make_tiny_waves():
+    # limit the missions to very few
+    for r in [1,2,3]:
+        for w in [1,2,3,4]:
+            for a in [1,2]:
+                k = 100*r + 10*w + a
+                if k in missions:
+                    limit_wave_to_n(missions[k],1)
+    
 # generate the mobs
 if args.json is None:
-    default_mod()
+    default_mod(end_boss=True)
+    # force_boss_drop(b=graveward)
+    # nothing:    
+    # added for debug
+    # limit_wave_to_n(missions[111],1) # only 1 the first wave
+    # limit_wave_to_n(missions[112],6)
+    # limit_wave_to_n(missions[121],1)
+    # limit_wave_to_n(missions[122],9)
+    # limit_wave_to_n(missions[123],1) # this seems to be the drop ship phase
+    # limit_wave_to_n(missions[131],6)
+    # limit_wave_to_n(missions[132],3)
+    # debug_make_tiny_waves()
 else:
     data =json.load(open(args.json))
     mod.comment(f"Based on {args.json}")

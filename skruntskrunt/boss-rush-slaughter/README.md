@@ -38,6 +38,13 @@ Header
 
 Changelog
 =========
+
+**v0.9.4** - 2021-04-11
+ * Made round end bosses, every round has end bosses
+ * Changing of names of tough monsters
+ * Lots of bug fixing.
+ * Massive debugging.
+
 **v0.9.3** - 2021-03-21
  * Remove balconey spawns (reduces mission blocking bugs)
  * Add a description of the mod in the mission text
@@ -160,3 +167,10 @@ How do you make `boss_rush_3000.42.bl3hotfix`?
 python3 bpchar-gen.py --json gen_bpchars.42.json --seed 42
 python3 gen_boss_rush_3000.py --json gen_bpchars.42.json --seed 42 --output boss_rush_3000.42.bl3hotfix
 ```
+
+TODOs
+=====
+
+* [ ] Check Wotan spawn, to see if he can move if we use different spawns
+* [ ] Get graveward to spawn properley (steal red rain's spawn and switch red rain's spawn?)
+* [ ] Remove Boss Corpses
