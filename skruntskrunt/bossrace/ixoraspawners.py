@@ -99,7 +99,8 @@ for entry in  raw_ixora_spawn_list:
 
 def get_bpchar(s):
     return s.split('/')[-1]
-    
+
+done_so = set()
 for entry in raw_ixora_spawn_list:
     idx = 0
     if (len(entry) == 3):
@@ -120,5 +121,26 @@ for entry in raw_ixora_spawn_list:
                    f'Options.Options[{idx}].Factory.Object..AIActorClass',
                    f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
     )
+    extend = (70,70,119)
+    scale = 1.0
+    if not so in done_so:
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                   f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
+                   f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
+                   'AlwaysSpawn')
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
+                   'True')
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                   '(Critical=AlwaysSpawn)')
+    done_so.add(so)
 
+
+    
 mod.close()
