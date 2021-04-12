@@ -31,7 +31,19 @@ DEFAULT_HEALTH=100
 DEFAULT_DAMAGE=40
 DEFAULT_TOUGH=0.2
 MAX_MOBS=1000
-BUFF_NAME=" the more difficult"
+BUFF_NAMES=[
+    " the more difficult",
+    " the roided",
+    " the spectacular",
+    " the slightly buffed",
+    " the unnerfed",
+    " the impermiable",
+    " the kinda tankie",
+    " the buff",
+    " the tough",
+    " the badder",
+    ", a real baddie"
+]
 def parse_args():
     parser = argparse.ArgumentParser(description='Boss Rush 3000 Slaughter Generator')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
@@ -880,8 +892,7 @@ def buff(boss_tuple,healthbuff=our_default_health,damagebuff=our_default_damage)
     if my_boss['balance_table']:
         print_and_comment(f"Buffing: {my_boss['name']}")
         mod.raw_line(boss.buff_boss( my_boss ))
-    rename_mob(my_boss["bpchar_path"],my_boss["name"]+BUFF_NAME)
-    
+    rename_mob(my_boss["bpchar_path"],my_boss["name"]+random.choice(BUFF_NAMES))    
 def toughen_up_mobs(toughen_mobs, chosen_mobs=chosen_mobs):
     # this is the proportion of tough mobs
     if toughen_mobs > 0.0:
