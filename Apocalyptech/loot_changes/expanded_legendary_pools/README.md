@@ -18,6 +18,7 @@ all items from:
 * DLC3 (Bounty of Blood)
 * DLC4 (Psycho Krieg and the Fantastic Fustercluck)
 * DLC5 (Designer's Cut)
+* DLC6 (Director's Cut) and Vault Card #1
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will
@@ -34,6 +35,9 @@ added into the loot pool properly.
 
 Changelog
 =========
+
+**v1.3.0** - Apr 11, 2021
+ * Added DLC6 (Director's Cut) and Vault Card #1 items
 
 **v1.2.2** - Dec 30, 2020
  * Decreased drop probability of the DLC5-added (not not legitimately-acquireable)

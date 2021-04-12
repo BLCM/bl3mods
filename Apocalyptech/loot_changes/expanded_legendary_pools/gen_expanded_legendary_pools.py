@@ -60,7 +60,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'at a reduced rate compared to the legendaries already in there.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.2',
+        v='1.3.0',
         cats='loot-system, enemy-drops',
         )
 
@@ -121,6 +121,13 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
 # on the card is prefixes) -- had not tested to see if it actually does what it says it does.
 #     /Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L02/InvBalD_CM_Ixora_OPE_L02
 #
+# Mysterious Amulet from DLC5 -- no actual drop source, I'm not sure if it actually has an effect
+# on anything, and it appears to be a *legit* drop from DLC6, though as "Mysterious Artifact" instead.
+# They're visually identical, so we're not gonna bother having this one in here.
+#    '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'
+#
+# There's a `_FixedParts` variant for all Vault Card #1 items, which I think is just the version that's shown when
+# you inspect it on the card.  Not bothering with those.
 
 addition_scale = 0.6
 pools = [
@@ -328,6 +335,15 @@ pools = [
                 # Ice Age
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Redeye Rocket Pod
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Redeye/Balance/Balance_HW_VLA_Redeye', 1),
+                # Mechanic
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/Balance/Balance_HW_COV_Mechanic', 1),
+                # Kickcharger
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/Balance/Balance_HW_VLA_ETech_Kickcharger', 1),
+
                 ### Additions
 
                 # Freeman
@@ -485,6 +501,13 @@ pools = [
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy', 1),
                 # Snide Trickshot
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot', 1),
+
+                ### DLC6 (Director's Cut) + associated
+
+                # Free Radical
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer', 1),
+                # Atlas Replay
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay', 1),
 
                 ### Additions
 
@@ -653,6 +676,11 @@ pools = [
                 # Critical Thug / Critical Thug x2
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Guardian 4N631
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/Balance/Balance_SG_HYP_Guardian', 1),
+
                 ### Additions
 
                 # Phebert
@@ -798,6 +826,11 @@ pools = [
                 # Superconducting Plasma Coil
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil', 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Torrent
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Balance/Balance_SM_DAL_Torrent', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -907,6 +940,13 @@ pools = [
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator', 1),
                 # Boogeyman
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/Balance/Balance_VLA_SR_Boogeyman', 1),
+
+                ### DLC6 (Director's Cut) + associated
+
+                # Ionic Disruptor
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/Balance/Balance_SR_JAK_Disruptor', 1),
+                # Bird of Prey
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/Balance/Balance_SR_JAK_BirdofPrey', 1),
 
                 ### Additions
 
@@ -1039,6 +1079,15 @@ pools = [
                 # Gas Mask
                 ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator', 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Re-Volter
+                ('/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/InvBalD_Shield_Revolter', 1),
+                # Super Soldier
+                ('/Game/PatchDLC/VaultCard/Gear/Shields/Unique/SuperSoldier/Balance/InvBalD_Shield_SuperSoldier', 1),
+                # Infernal Wish
+                ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Balance/InvBalD_Shield_InfernalWish', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -1140,6 +1189,13 @@ pools = [
                 # HOT Spring
                 ('/Game/PatchDLC/Ixora/Gear/GrenadeMods/HOTSpring/Balance/InvBalD_GM_HOTSpring', 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Mesmer
+                ('/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/Balance/InvBalD_GM_Mesmer', 1),
+                # Ringer / The Big Ringer / Dead Ringer
+                ('/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/Balance/InvBalD_GM_Ringer', 1),
+
                 ### Additions
 
                 # Exterminator
@@ -1194,6 +1250,9 @@ pools = [
                 # DLC5 - Cmdl3t
                 ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora_BSM_L01', 1),
 
+                # DLC6 - Roll Reversal
+                ('/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora2_BSM_L01', 1),
+
                 ]),
 
         ('Gunner COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
@@ -1215,6 +1274,9 @@ pools = [
 
                 # DLC5 - Eternal Flame
                 ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora_GUN_L01', 1),
+
+                # DLC6 - Primary Heat Exchanger
+                ('/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora2_GUN_L01', 1),
 
                 ]),
 
@@ -1242,6 +1304,9 @@ pools = [
                 # zero.  The Provocateur COM mod will set it to 1)
                 ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L02/InvBalD_CM_Ixora_OPE_L02', 0),
 
+                # DLC6 - Critical Mass
+                ('/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora2_OPE_L01', 1),
+
                 ]),
 
         ('Siren COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
@@ -1263,6 +1328,9 @@ pools = [
 
                 # DLC5 - Kensei
                 ('/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01', 1),
+
+                # DLC6 - Death's Blessings
+                ('/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora2_SRN_L01', 1),
 
                 ]),
 
@@ -1290,8 +1358,23 @@ pools = [
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/Balance/InvBalD_Artifact_Deathrattle', 1),
                 # Holy Grail / Perceval's Holy Grail / King Arthur's Holy Grail
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Balance/InvBalD_Artifact_HolyGrail', 1),
-                # Mysterious Amulet (appears to legit have no in-game effects at the moment; bumping probability down)
-                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet', 0.2*addition_scale),
+
+                ### DLC6 (Director's Cut) + associated
+
+                # Mysterious Artifact
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet', 1*addition_scale),
+                # Company Man (various) - gonna give this a 2x chance of spawning but spread out over the 9 variants.
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Atlas/Balance/InvBalD_Artifact_CompanyMan_Atlas', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/Balance/InvBalD_Artifact_CompanyMan_CoV', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Dahl/Balance/InvBalD_Artifact_CompanyMan_Dahl', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Hyperion/Balance/InvBalD_Artifact_CompanyMan_Hyperion', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Jakobs/Balance/InvBalD_Artifact_CompanyMan_Jakobs', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Maliwan/Balance/InvBalD_Artifact_CompanyMan_Maliwan', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Tediore/Balance/InvBalD_Artifact_CompanyMan_Tediore', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Torgue/Balance/InvBalD_Artifact_CompanyMan_Torgue', (1/9)*2),
+                ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Vladof/Balance/InvBalD_Artifact_CompanyMan_Vladof', (1/9)*2),
+                # Toboggan
+                ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan', 1),
 
                 ### Additions
 
