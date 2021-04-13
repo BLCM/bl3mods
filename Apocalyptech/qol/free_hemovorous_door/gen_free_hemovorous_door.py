@@ -33,7 +33,7 @@ mod = Mod('free_hemovorous_door.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol, cheat, maps',
-        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/free_hemovorous_door/screenshot.png',
+        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/free_hemovorous_door/screenshot.jpg',
         )
 
 mod.reg_hotfix(Mod.LEVEL, 'SacrificeBoss_p',
