@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+import json
 import sys
 sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
@@ -156,10 +157,13 @@ for entry in raw_ixora_spawn_list:
 
         # Might have to override more... especially loot and names
     done_so.add(so)
+
+spawnpoints = json.load(open('spawnpoints.json'))
 pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
-for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
-    for i in range(0,n):
-        sp = f"{prefix}_{i}"
+#for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
+#    for i in range(0,n):
+for sp in spawnpoints:
+        #sp = f"{prefix}_{i}"
         for (obj,val) in [('SpawnAction','None'),
                           ('bFilterByTag','None'),
                           ('FilterMatchType','None'),
@@ -170,9 +174,10 @@ for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
                 obj,
                 val,'',True)
 
-    
 mod.close()
 
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
 # - [ ] Big Mobs not moving in the pit
+# - Pit is called ThunderDome, the spawn points are not detailed
+# Maybe we need to address SpawnerComponent and deal with style?
