@@ -165,6 +165,10 @@ Pandora
    * Eternal Flame COM
    * Spy COM
    * Kensei COM
+   * Kickcharger
+   * Toboggan
+   * Torrent
+   * Infernal Wish
 
 Athenas
 -------

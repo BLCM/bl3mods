@@ -64,7 +64,7 @@ anything if you do).
 Changelog
 =========
 
-**v1.3.0** - *(unreleased)*
+**v1.3.0** - Apr 13, 2021
  * Updated with DLC6 (Director's Cut) enemies.
  * Buffed up non-unique loot drops for Hemovorous the Invincible and The Seer
  * Some tweaks/improvements to a few "special" chests throughout the game:
