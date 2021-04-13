@@ -1,0 +1,17 @@
+###
+### Name: ReVolter 150% Nerf
+### Author: TheGigaMaster
+### Version: 1.0
+### Categories: gear-general, gear-shield, qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Nerfs the bonus damage the ReVolter provides from 200% to 50%.
+### This is to balance the fact that this shield is the most over powered shield
+### and completely negates using almost anything else for a large number of builds.
+###
+
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,Re-Volter,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.5
