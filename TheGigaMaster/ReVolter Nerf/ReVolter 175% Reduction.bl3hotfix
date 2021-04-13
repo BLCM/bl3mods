@@ -13,7 +13,7 @@
 ### This is to balance the fact that this shield is the most over powered shield
 ### and completely negates using almost anything else for a large number of builds.
 ###
-### This version of them mod nerfs this shield into the dirt.
+### There's 2 versions of this mod, so choose which you want.
 ###
 
 SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,Re-Volter,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.25
