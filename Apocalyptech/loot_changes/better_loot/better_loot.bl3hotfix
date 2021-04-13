@@ -1,6 +1,6 @@
 ###
 ### Name: BL3 Better Loot
-### Version: 1.3.0
+### Version: 1.3.1
 ### Author: Apocalyptech
 ### Categories: enemy-drops, loot-system
 ###
@@ -56,6 +56,7 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Enemies/Load
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus.ItemPoolList_StandardEnemyGunsandGear_Hibiscus,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium.ItemPoolList_StandardEnemyGunsandGear_Geranium,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma.ItemPoolList_StandardEnemyGunsandGear_Alisma,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Ixora2.ItemPoolList_StandardEnemyGunsandGear_Ixora2,ItemPools[10].PoolProbability,0,,(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Eridium Drop Quantity Buffs
@@ -163,6 +164,15 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_DrBenedict),/Game/PatchDLC/Alisma/GameDa
 SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychodinP2),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
 SparkCharacterLoadedEntry,(1,1,0,BPChar_TrainBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
 SparkCharacterLoadedEntry,(1,1,0,BPChar_SpongeBoss),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools.ItemPools[5].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+
+# DLC6 Minibosses
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Enforcer_Gravekeeper),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2.ItemPoolList_MiniBoss_Ixora2,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Goliath_CyberpunkBouncer),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2.ItemPoolList_MiniBoss_Ixora2,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Punk_BanditChief),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2.ItemPoolList_MiniBoss_Ixora2,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+
+# DLC6 Bosses
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBrute_Redeemer),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2.ItemPoolList_Boss_Ixora2,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Varkid_RaidBoss),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2.ItemPoolList_Boss_Ixora2,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,3
 
 # Slaughters
 SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/GameData/Loot/ItemPools/ItemPoolList_SlaughterMoney.ItemPoolList_SlaughterMoney,ItemPools.ItemPools[7].NumberOfTimesToSelectFromThisPool.BaseValueScale,0,,5

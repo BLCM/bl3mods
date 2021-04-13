@@ -64,6 +64,9 @@ anything if you do).
 Changelog
 =========
 
+**v1.3.1** - Apr 13, 2021
+ * Added DLC6 enemies to the improved Eridium drop sections.
+
 **v1.3.0** - Apr 13, 2021
  * Updated with DLC6 (Director's Cut) enemies.
  * Buffed up non-unique loot drops for Hemovorous the Invincible and The Seer

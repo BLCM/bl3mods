@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.3.0',
+        v='1.3.1',
         cats='enemy-drops, loot-system',
         )
 
@@ -165,6 +165,7 @@ for pool, index in [
         ('/Game/PatchDLC/Hibiscus/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Hibiscus', 10),
         ('/Game/PatchDLC/Geranium/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Geranium', 10),
         ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Alisma', 9),
+        ('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Ixora2', 10),
         ]:
 
     # Eridium.  80%, what the hell.  There's a lot to spend Eridium on.  Default is 0.8% but is modified
@@ -285,6 +286,15 @@ for label, poollist_name, pool_idx, chars in [
             'BPChar_PsychodinP2',
             'BPChar_TrainBoss',
             'BPChar_SpongeBoss',
+            ]),
+        ('DLC6 Minibosses', '/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2', 7, [
+            'BPChar_Enforcer_Gravekeeper',
+            'BPChar_Goliath_CyberpunkBouncer',
+            'BPChar_Punk_BanditChief',
+            ]),
+        ('DLC6 Bosses', '/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2', 7, [
+            'BPChar_GuardianBrute_Redeemer',
+            'BPChar_Varkid_RaidBoss',
             ]),
         ]:
 
