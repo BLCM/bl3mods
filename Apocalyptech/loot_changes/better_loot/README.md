@@ -8,7 +8,7 @@ different things:
 * Sets the rarity weights to be improved, globally
 * Increases Eridium drop rates and quantities.
 * Guarantees specific legendary drops from nearly all the bosses which
-  have unique drops.  This has been updated through DLC5 (Designer's Cut).
+  have unique drops.  This has been updated through DLC6 (Director's Cut).
 * Unlocks Mayhem 4/Mayhem 6 drops for the named enemies as well.  Not sure if this
   unlocks world Mayhem 4 drops or not, but you can use my Expanded Legendary Pools
   mod for that.
@@ -64,17 +64,20 @@ anything if you do).
 Changelog
 =========
 
-**v1.3.0** - *unreleased, might be 1.2.3 instead*
- * Incorporated Droughts Stocked Porta-Potties mod, to make all porta-potties
-   in The Droughts have standard loot definitions.
- * Ava's chest in Invasion of Privacy will always have a legendary item in the
-   second slot.
- * Prisa's pop's stash at the end of Get Quick, Slick will have one guaranteed
-   legendary.
- * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
-   at least blue-quality Jakobs gear.
- * All Eridian ammo chests in Vault of the Serpent (in Tazendeer) will contain
-   only Eridium.
+**v1.3.0** - *(unreleased)*
+ * Updated with DLC6 (Director's Cut) enemies.
+ * Buffed up non-unique loot drops for Hemovorous the Invincible and The Seer
+ * Some tweaks/improvements to a few "special" chests throughout the game:
+   * Incorporated Droughts Stocked Porta-Potties mod, to make all porta-potties
+     in The Droughts have standard loot definitions.
+   * Ava's chest in Invasion of Privacy will always have a legendary item in the
+     second slot.
+   * Prisa's pop's stash at the end of Get Quick, Slick will have one guaranteed
+     legendary.
+   * Set the two chests in Knotty Peak (when you first meet Wainwright) to be
+     at least blue-quality Jakobs gear.
+   * All Eridian ammo chests in Vault of the Serpent (in Tazendeer) will contain
+     only Eridium.
 
 **v1.2.2** - Mar 11, 2021
  * Updated to include loot changes with today's hotfixes, namely moving

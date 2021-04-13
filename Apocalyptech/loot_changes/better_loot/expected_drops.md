@@ -818,3 +818,34 @@ Psycho Krieg and the Fantastic Fustercluck (DLC4 - Alisma) - Krieg's Mind
  * 2x Major Kong, Rebound
  * 1x Psychoreaver Trophy Room Deco
 
+Director's Cut (DLC6 - Ixora2)
+------------------------------
+
+## Eschaton Row (Promethea)
+
+**Sumo**
+ * 1x Re-Volter
+
+## Enoch's Grove (Eden-6)
+
+**The Gravekeeper**
+ * 1x Mesmer
+
+## Karass Canyon (Pandora)
+
+**Beef Plissken**
+ * 1x Free Radical
+
+## Darkthirst Dominion (Pandora)
+
+**Hemovorous the Invincible**
+ * 1x Company Man
+ * 3x Atlas Replay, Ionic Disruptor, Ringer (in vanilla, the probability of this
+      pool's drop depends on Mayhem level, and includes another Company Man)
+
+## Scryer's Crypt (Nekrotafeyo)
+
+**The Seer**
+ * 2x Redeye Rocket Pod, Roll Reversal COM, Primary Heat Exchanger COM,
+      Critical Mass COM, Death's Blessings COM
+

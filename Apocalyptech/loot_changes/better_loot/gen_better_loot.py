@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.3',
+        v='1.3.0',
         cats='enemy-drops, loot-system',
         )
 
@@ -1423,29 +1423,81 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_DrBenedict',
             0,
             3),
+
+        # DLC6 Bosses
+        ('Beef Plissken',
+            '/Ixora2/Enemies/CotV/Punk/BanditChief/_Design/Character',
+            'BPChar_Punk_BanditChief',
+            0,
+            1),
+        # Hemo's second ItemPool is for Company Man, which is already guaranteed
+        ('Hemovorous the Invincible - Weapon Drops',
+            '/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Character',
+            'BPChar_Varkid_RaidBoss',
+            0,
+            3),
+        ('Sumo',
+            '/Ixora2/Enemies/CotV/Golaith/Cyberpunk_Bouncer/_Design/Character',
+            'BPChar_Goliath_CyberpunkBouncer',
+            0,
+            1),
+        ('The Gravekeeper',
+            '/Ixora2/Enemies/CotV/Enforcer/Gravekeeper/_Design/Character',
+            'BPChar_Enforcer_Gravekeeper',
+            0,
+            1),
+        ('The Seer',
+            '/Ixora2/Enemies/Guardian/Redeemer/_Design/Character',
+            'BPChar_GuardianBrute_Redeemer',
+            0,
+            2),
         ]:
     mod.comment(label)
     full_obj_name = '{}/{}.{}_C:AIBalanceState_GEN_VARIABLE'.format(bpchar_obj_base, bpchar_name, bpchar_name)
-    mod.reg_hotfix(Mod.CHAR, bpchar_name,
-            full_obj_name,
-            'DropOnDeathItemPools.ItemPools[{}].PoolProbability'.format(bpchar_idx),
-            """(
-                BaseValueConstant=1,
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1
-            )""")
-    mod.reg_hotfix(Mod.CHAR, bpchar_name,
-            full_obj_name,
-            'DropOnDeathItemPools.ItemPools[{}].NumberOfTimesToSelectFromThisPool'.format(bpchar_idx),
-            """(
-                BaseValueConstant={},
-                DataTableValue=(DataTable=None,RowName="",ValueName=""),
-                BaseValueAttribute=None,
-                AttributeInitializer=None,
-                BaseValueScale=1
-            )""".format(bpchar_qty))
+
+    # Really weird and stupid hard-coding here for Hemovorous.  Basically: once loaded,
+    # Hemovorous's BPChar *really really* likes to stay loaded.  It'll even survive a
+    # quit to the title screen and back.  Meaning that Character-based hotfixes won't
+    # fire anymore, so changes made to this mod won't actually take effect properly.
+    # I admit this is *more* a problem for myself and other mod authors during development,
+    # but it could also affect users who may be tweaking their mod lists while still
+    # in-game.  Anyway, the trick is to duplicate hotfixes, and use both Char-based
+    # and Level-based for Hemovorus tweaks.  The Char-based one fires the first time,
+    # and then the Level-based one fires on subsequent level loads.  Unfortunately the
+    # Level-based one fires too quickly to be used on the first Hemovorous load, so
+    # we seemingly *do* need both.
+    if bpchar_name == 'BPChar_Varkid_RaidBoss':
+        mod.comment('Using both Level and Char based hotfixes due to some oddities in Hemo\'s BPChar-loading behavior')
+        targets = [
+                (Mod.CHAR, bpchar_name),
+                (Mod.LEVEL, 'SacrificeBoss_p'),
+                ]
+    else:
+        targets = [
+                (Mod.CHAR, bpchar_name),
+                ]
+
+    for hf_type, hf_target in targets:
+        mod.reg_hotfix(hf_type, hf_target,
+                full_obj_name,
+                'DropOnDeathItemPools.ItemPools[{}].PoolProbability'.format(bpchar_idx),
+                """(
+                    BaseValueConstant=1,
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1
+                )""")
+        mod.reg_hotfix(hf_type, hf_target,
+                full_obj_name,
+                'DropOnDeathItemPools.ItemPools[{}].NumberOfTimesToSelectFromThisPool'.format(bpchar_idx),
+                """(
+                    BaseValueConstant={},
+                    DataTableValue=(DataTable=None,RowName="",ValueName=""),
+                    BaseValueAttribute=None,
+                    AttributeInitializer=None,
+                    BaseValueScale=1
+                )""".format(bpchar_qty))
     mod.newline()
 
 # A few more which can talk right to an ItemPoolList
@@ -1472,7 +1524,50 @@ for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
             BVCF(bvc=drop_qty))
     mod.newline()
 
-# There's at least one case of gera which doesn't drop evenly, so smooth that out.
+# Miscellaneous pool tweaks
+mod.header('Miscellaneous Pool Tweaks')
+
+# Hemovorous has a guaranteed Company Man drop, but then *also* has Company man in a
+# four-item pool whose droprate depends on your current Mayhem level.  Rather than
+# "pollute" those drops, we're removing Company Man from that four-item pool.
+mod.comment('Have Hemovorous drop only a single Company Man')
+mod.comment('Using both Level and Char based hotfixes due to some oddities in Hemo\'s BPChar-loading behavior')
+for hf_type, hf_target in [
+        (Mod.CHAR, 'BPChar_Varkid_RaidBoss'),
+        (Mod.LEVEL, 'SacrificeBoss_p'),
+        ]:
+    mod.reg_hotfix(hf_type, hf_target,
+            '/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_VarkidRaidBoss',
+            'BalancedItems.BalancedItems[3].Weight.BaseValueScale',
+            0)
+mod.newline()
+
+# Hemovorous has a pretty pathetic set of drops compared to the Takedown bosses; let's
+# make it at least drop from the Ixora Boss itempoolist a few times.
+mod.comment('Buff up Hemovorous\'s non-unique drops')
+mod.comment('Using both Level and Char based hotfixes due to some oddities in Hemo\'s BPChar-loading behavior')
+for hf_type, hf_target in [
+        (Mod.CHAR, 'BPChar_Varkid_RaidBoss'),
+        (Mod.LEVEL, 'SacrificeBoss_p'),
+        ]:
+    mod.reg_hotfix(hf_type, hf_target,
+            '/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Character/BPChar_Varkid_RaidBoss.BPChar_Varkid_RaidBoss_C:AIBalanceState_GEN_VARIABLE',
+            'DropOnDeathItemPools.ItemPoolLists',
+            '({poollist},{poollist},{poollist})'.format(
+                poollist=Mod.get_full_cond('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2', 'ItemPoolListData'),
+                ))
+mod.newline()
+
+mod.comment('Buff up The Seer\'s non-unique drops')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_GuardianBrute_Redeemer',
+        '/Ixora2/Enemies/Guardian/Redeemer/_Design/Character/BPChar_GuardianBrute_Redeemer.BPChar_GuardianBrute_Redeemer_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPoolLists',
+        '({poollist},{poollist},{poollist})'.format(
+            poollist=Mod.get_full_cond('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2', 'ItemPoolListData'),
+            ))
+mod.newline()
+
+# There's at least one case of gear which doesn't drop evenly, so smooth that out.
 mod.header('Drop rate normalization')
 
 mod.comment('Hot Karl')
