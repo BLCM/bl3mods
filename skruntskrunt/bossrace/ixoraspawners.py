@@ -122,6 +122,7 @@ for entry in raw_ixora_spawn_list:
                    f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
     )
     extend = (70,70,119)
+    extend = (250,250,250)
     scale = 1.0
     if not so in done_so:
         mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
@@ -129,7 +130,9 @@ for entry in raw_ixora_spawn_list:
                    f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
         mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                    'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
-                   f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
+                    #f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
+                    # was 1500 1500 1500
+                    f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
         mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                    'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
                    'AlwaysSpawn')
@@ -137,10 +140,38 @@ for entry in raw_ixora_spawn_list:
                    'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
                    'True')
         mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..ItemPoolToDropOnDeathAdditive'.format(idx),
+                   'True')
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                   'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
+                   'False')
+        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                    'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
                    '(Critical=AlwaysSpawn)')
+        mod.reg_hotfix(Mod.EARLYLEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
+
+        #      "bUseActorProperties" : true,
+        #      "ItemPoolToDropOnDeathAdditive" : false,
+
+
+        # Might have to override more... especially loot and names
     done_so.add(so)
 
+for i in range(0,784):
+    sp = f"OakSpawnPoint_{i}"
+    ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+    for (obj,val) in [('SpawnAction','None'),
+                      ('bFilterByTag','None'),
+                      ('FilterMatchType','None'),
+                      ('Tags','None')]:
+        mod.reg_hotfix(
+            Mod.EARLYLEVEL, IXORA_MAP,
+            f"{ixora_path}.{sp}.SpawnPointComponent",
+            obj,
+            val,'',True)
 
     
 mod.close()
+
+# TODOS
+# - [ ] Big Mobs not moving in the pit
