@@ -156,22 +156,23 @@ for entry in raw_ixora_spawn_list:
 
         # Might have to override more... especially loot and names
     done_so.add(so)
-
-for i in range(0,784):
-    sp = f"OakSpawnPoint_{i}"
-    ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
-    for (obj,val) in [('SpawnAction','None'),
-                      ('bFilterByTag','None'),
-                      ('FilterMatchType','None'),
-                      ('Tags','None')]:
-        mod.reg_hotfix(
-            Mod.EARLYLEVEL, IXORA_MAP,
-            f"{ixora_path}.{sp}.SpawnPointComponent",
-            obj,
-            val,'',True)
+pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
+    for i in range(0,n):
+        sp = f"{prefix}_{i}"
+        for (obj,val) in [('SpawnAction','None'),
+                          ('bFilterByTag','None'),
+                          ('FilterMatchType','None'),
+                          ('Tags','None')]:
+            mod.reg_hotfix(
+                Mod.EARLYLEVEL, IXORA_MAP,
+                f"{pp_ixora_path}.{sp}.SpawnPointComponent",
+                obj,
+                val,'',True)
 
     
 mod.close()
 
 # TODOS
+# - Current test is the pit to see if the trial boss spawns
 # - [ ] Big Mobs not moving in the pit
