@@ -350,7 +350,7 @@ chars = [
 
         # DLC6 (Director's Cut)
         ("The Gravekeeper", 'BPChar_Enforcer_Gravekeeper'),
-        ("Raging Sumo", 'BPChar_Goliath_CyberpunkBouncer'),
+        ("Sumo", 'BPChar_Goliath_CyberpunkBouncer'),
         ("The Seer", 'BPChar_GuardianBrute_Redeemer'),
         ("Beef Plissken", 'BPChar_Punk_BanditChief'),
         ("Hemovorous the Invincible", 'BPChar_Varkid_RaidBoss'),
