@@ -15,6 +15,12 @@ skins/heads will still reward those cosmetics.
 Changelog
 =========
 
+**v1.2.0** - Apr 12, 2021
+ * Updated with DLC6 (Director's Cut) missions (which is just the
+   last mission in Ava's questline)
+ * Updated to use Level-based hotfixes; the mod doesn't seem to actually
+   work right without that anymore.  Wonder how long that's been broken!
+
 **v1.1.1** - Oct 4, 2020
  * Added a few missions which had been previously omitted by accident:
    * Hostile Takeover
