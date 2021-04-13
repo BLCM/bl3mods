@@ -11,7 +11,7 @@ In cases where there's already an on-card explanation, I've tried to include
 "all effects on card" instead of a custom description, but there are a few
 cases where that could still be tweaked, so you'll have a double-description.
 
-This mod should be current up through DLC5 (Designer's Cut).
+This mod should be current up through DLC6 (Director's Cut).
 
 **Translation Information:** The code which generates this mod now supports
 translations pretty easily.  If you want to contribute a translation to this
@@ -19,14 +19,15 @@ mod, [grab a copy of the master translation template](https://raw.githubusercont
 fill in translations on the `msgstr` lines in there, and send it my way.  Be
 sure to put in your name/username/handle as a translated string in there.
 (You are also, of course, welcome to just upload your own translated version
-of this mod, if you don't want to bother with all that.)
+of this mod, if you don't want to bother with all that.)  Feel free to contact
+me if you have any questions about that!
 
 Changelog
 =========
 
-**v1.3.0** - *(unreleased)*
+**v1.3.0** - Apr 12, 2021
+ * Updated for DLC6 (Director's Cut) and Vault Card 1 items.
  * Added internationalization/translation ability to sourcecode
- * Added French translation, thanks to (name)
 
 **v1.2.0** - Nov 10, 2020
  * Updated for DLC5 (Designer's Cut) items.

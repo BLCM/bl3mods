@@ -49,6 +49,7 @@ for base_path in [
         '/Game/PatchDLC/Geranium/GameData/FastTravel',
         '/Game/PatchDLC/Alisma/GameData/FastTravel',
         '/Game/PatchDLC/Ixora/GameData/FastTravel',
+        '/Game/PatchDLC/Ixora2/GameData/FastTravel',
         ]:
     for prefix in ['FTS_', 'RTS_', 'LTS_']:
         object_names.extend(list(data.find(base_path, prefix)))

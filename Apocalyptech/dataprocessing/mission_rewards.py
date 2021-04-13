@@ -48,6 +48,8 @@ mission_data += list(bl3data.find_data('/Game/PatchDLC/CitizenScience/Missions',
 mission_data += list(bl3data.find_data('/Game/PatchDLC/Geranium/Missions', 'Mission_'))
 mission_data += list(bl3data.find_data('/Game/PatchDLC/Alisma/Missions', 'ALI_EP'))
 mission_data += list(bl3data.find_data('/Game/PatchDLC/Alisma/Missions', 'ALI_SM_'))
+mission_data += list(bl3data.find_data('/Game/PatchDLC/Ixora/Missions', 'Mission_'))
+mission_data += list(bl3data.find_data('/Game/PatchDLC/Ixora2/Missions', 'Mission_'))
 
 # Missions not not alert on, when we would otherwise have output.  Just so's I
 # don't keep getting messages for missions that I've looked at and don't care about.

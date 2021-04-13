@@ -16,6 +16,9 @@ be redeemed).  The variants:
 * **No Mission Rewards** - Excludes the customizations you'd get as mission rewards
 * **No Mission Rewards or Earl** - Excludes the mission reward customizations, and
   all the ones that you can otherwise buy at Earl's shop in Sanctuary.
+* **No Mission Rewards, Earl, or Vault Cards** - Excludes the mission reward
+  customizations, the ones found inside Vault Cards, and all the ones that you can
+  otherwise buy at Earl's shop in Sanctuary.
 
 Note that DLC cosmetics that you get via missions might still need some tweaking
 to get excluded properly from the above variants.  Also note that slot machine
@@ -30,6 +33,10 @@ TODO
 
 Changelog
 =========
+
+**v1.4.0** - Apr 11, 2021
+ * Updated with DLC6 (Director's Cut), Vault Card 1, and Cartels 2021 cosmetics
+ * Added a new variant which omits Vault Card cosmetics
 
 **v1.3.0** - Jan 21, 2021
  * Updated with new cosmetics added in the 2021-01-21 update (includes Broken

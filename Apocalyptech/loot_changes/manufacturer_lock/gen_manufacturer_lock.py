@@ -314,6 +314,15 @@ type_pools = [
                 # Ice Age
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/Balance/Balance_HW_TOR_IceAge', TOR, 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Redeye Rocket Pod
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Redeye/Balance/Balance_HW_VLA_Redeye', VLA, 1),
+                # Mechanic
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/Balance/Balance_HW_COV_Mechanic', COV, 1),
+                # Kickcharger
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/Balance/Balance_HW_VLA_ETech_Kickcharger', VLA, 1),
+
                 ### Additions
 
                 # Freeman
@@ -485,6 +494,13 @@ type_pools = [
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy', COV, 1),
                 # Snide Trickshot
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot', JAK, 1),
+
+                ### DLC6 (Director's Cut) + associated
+
+                # Free Radical
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer', MAL, 1),
+                # Atlas Replay
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay', ATL, 1),
 
                 ### Additions
 
@@ -664,6 +680,11 @@ type_pools = [
                 # Critical Thug / Critical Thug x2
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/Balance/Balance_SG_Torgue_CriticalThug', TOR, 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Guardian 4N631
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/Balance/Balance_SG_HYP_Guardian', HYP, 1),
+
                 ### Additions
 
                 # Phebert
@@ -815,6 +836,11 @@ type_pools = [
                 # Superconducting Plasma Coil
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/Balance/Balance_SM_MAL_PlasmaCoil', MAL, 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Torrent
+                ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Balance/Balance_SM_DAL_Torrent', DAL, 1),
+
                 ### Additions
 
                 # Hellfire
@@ -931,6 +957,13 @@ type_pools = [
                 # Boogeyman
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/Balance/Balance_VLA_SR_Boogeyman', VLA, 1),
 
+                ### DLC6 (Director's Cut) + associated
+
+                # Ionic Disruptor
+                ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/Balance/Balance_SR_JAK_Disruptor', JAK, 1),
+                # Bird of Prey
+                ('/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/Balance/Balance_SR_JAK_BirdofPrey', JAK, 1),
+
                 ### Additions
 
                 # Brashi's Dedication
@@ -997,7 +1030,7 @@ for (man, man_label) in eng_manufacturers.items():
                 "details",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.3.0',
             cats='loot-system',
             )
 

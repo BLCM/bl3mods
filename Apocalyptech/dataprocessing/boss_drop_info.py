@@ -101,6 +101,7 @@ pool_exclusions = {
         '/Hibiscus/Enemies/Lunatic/_Shared/_Design/Weapon/ItemPool_Lunatics_Shotguns',
         '/Hibiscus/Enemies/Zealot/Pilfer/_Design/Weapon/ItemPool_Zealots_EnemyUse_SR_E_Pilfer',
         '/Hibiscus/NonPlayerCharacters/_Generic/Gideon/_Design/Character/ItemPool_EnemyUse_AS_Guideon',
+        '/Game/Enemies/Enforcer/Gun/_Design/Character/ItemPool_EnforcerGun_Shotguns',
 
         # Extra noise we don't care about
         '/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashDrip',
@@ -333,6 +334,26 @@ chars = [
         ("Vorducken", 'BPChar_GerSaurianDevourer_Pygmimus'),
         ("Waylon Hurd", 'BPChar_GerPsychoMoleMan'),
         ("Wrendon Esk", 'BPChar_GyroPainless'),
+
+        # DLC4 (Psycho Krieg and the Fantastic Fustercluck)
+        ("Dr. Benedict", 'BPChar_DrBenedict'),
+        ("Evil Brick", 'BPChar_DarkBrick'),
+        ("Evil Lilith", 'BPChar_DarkLilith'),
+        ("Evil Mordecai", 'BPChar_DarkMordecai'),
+        ("Locomöbius", 'BPChar_TrainBoss'),
+        ("Psychoreaver (phase 2)", 'BPChar_PsychodinP2'),
+        ("SpongeBoss BulletPants", 'BPChar_SpongeBoss'),
+
+        # DLC5 (Designer's Cut)
+        # TODO: no drops?
+        ("Heavyweight Harker", 'BPChar_FrontRider_Rider'),
+
+        # DLC6 (Director's Cut)
+        ("The Gravekeeper", 'BPChar_Enforcer_Gravekeeper'),
+        ("Sumo", 'BPChar_Goliath_CyberpunkBouncer'),
+        ("The Seer", 'BPChar_GuardianBrute_Redeemer'),
+        ("Beef Plissken", 'BPChar_Punk_BanditChief'),
+        ("Hemovorous the Invincible", 'BPChar_Varkid_RaidBoss'),
         ]
 
 # Some enemies get an extra pool via a SpawnOptions object, which isn't really
@@ -410,6 +431,16 @@ class MyBVC(BVC):
     def from_data_struct(data_struct):
         # Calling a super staticmethod: https://stackoverflow.com/a/26807879/2013126
         bvc = super(MyBVC, MyBVC).from_data_struct(data_struct)
+
+        # Shortly before the DLC6 release I updated my serialization pipeline, and in
+        # the process I had a lot of ints (`1`, etc) start showing up as floats (`1.0`).
+        # This makes doing diffs against my previous output more difficult, so I'm
+        # normalizing those back down to ints.
+        if int(bvc.bvc) == round(bvc.bvc, 6):
+            bvc.bvc = int(bvc.bvc)
+        if int(bvc.bvs) == round(bvc.bvs, 6):
+            bvc.bvs = int(bvc.bvs)
+
         return MyBVC(bvc=bvc.bvc,
                 dtv=bvc.dtv,
                 bva=bvc.bva,

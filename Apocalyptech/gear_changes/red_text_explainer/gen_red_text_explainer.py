@@ -58,7 +58,7 @@ for language in ['en']:
                 *textwrap.wrap(description, width=75),
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.3.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
@@ -1809,6 +1809,75 @@ for language in ['en']:
                 '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/UIStat_RedText_Ventilator',
                 _("Fight until the end; until your last breath."),
                 # +50% FFYL time
+                ON_CARD),
+
+            # DLC6 (Director's Cut), Vault Card #1, and associated
+            (_("Free Radical"),
+                '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/UIStat_RedText_Deatomizer',
+                _("Don't be so negative."),
+                _("sends out homing projectiles towards hit target")),
+            (_("Ionic Disruptor"),
+                '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/UIStat_RedText_Disruptor',
+                _("I can bring you in warm, or... not at all."),
+                # Shot pierces shields, melee gives damage buff (nerf?  hm.) to melee'd enemy
+                ON_CARD),
+            (_("Redeye Rocket Pod"),
+                '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Redeye/UIStat_RedText_Redeye',
+                _("Even oppression itself fears Vladof."),
+                # On kill, add 1 to burst-fire.  Max 4, resets after killing badass/boss.
+                ON_CARD),
+            (_("Atlas Replay"),
+                '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/UIStat_RedText_Replay',
+                _("Anybody else want to negotiate?"),
+                _("tracker darts in horizontal line, increased fire rate per tracked enemy")),
+            (_("Bird of Prey"),
+                '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/UIStat_RedText_BirdofPrey',
+                _("Someone's getting a treat!"),
+                # all except the 600% thing is already on the card
+                _("additional projectile deals 600% base damage")),
+            (_("Guardian 4N631"),
+                '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_RedText_Guardian',
+                _("You're alive for a reason. Go get 'em kid."),
+                # Also on card: damage increases w/ distance
+                _("shoots slow orbs which flap like a bird and reflect off walls")),
+            (_("Mechanic"),
+                '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/UIStat_RedText_Mechanic',
+                _("Let's get you rollin'!"),
+                # Also some extra on-card stats
+                _("shoots explosive car wheels")),
+            (_("Kickcharger"),
+                '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/UIStat_RedText_Kickcharger',
+                _("Let it slide."),
+                # Also the charging mechanic already listed on the card
+                _("shots pierce enemies")),
+            (_("Torrent"),
+                '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/UIStat_RedText_Torrent',
+                _("haha gun go brrrr"),
+                _("bullets follow corkscrew pattern, every 10th bullet is a +380% damage shock")),
+            (_("Re-Volter"),
+                '/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/UIStat_RedText_Revolter',
+                _("Please conduct yourself."),
+                # Card mentions the "shock-enraged" bit but doesn't really explain what it is
+                _("shock-enraged player will deal 200% bonus shock damage")),
+            (_("Mesmer"),
+                '/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/UIStat_RedText_Mesmer',
+                _("Sink into the floor. Sink."),
+                # enemies damaged by grenade fight for the player for 10sec
+                ON_CARD),
+            (_("Ringer / The Big Ringer / Dead Ringer"),
+                '/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/UIStat_RedText_Ringer',
+                _("Obviously you're not a golfer."),
+                # bowl grenade into enemies, or shoot to make it explode more quickly
+                ON_CARD),
+            (_("Super Soldier"),
+                '/Game/PatchDLC/VaultCard/Gear/Shields/Unique/SuperSoldier/UIStat_RedText_SuperSoldier',
+                _("Roland, out."),
+                # various buffs while shield is full, and when shield charges
+                ON_CARD),
+            (_("Infernal Wish"),
+                '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/UIStat_RedText_InfernalWish',
+                _("It's there always, this dark passenger."),
+                # +1 projectile when not depleted, +50% amp while full, can cause self-combustion
                 ON_CARD),
             ]:
 

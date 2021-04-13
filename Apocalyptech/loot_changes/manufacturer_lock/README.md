@@ -29,10 +29,13 @@ abbreviations are:
 * tor
 * vla
 
-This mod has been updated as far as DLC5 (Designer's Cut).
+This mod has been updated as far as DLC6 (Director's Cut).
 
 Changelog
 =========
+
+**v1.3.0** - Apr 11, 2020
+ * Updated with DLC6 (Director's Cut), Vault Card 1, and related guns
 
 **v1.2.0** - Nov 10, 2020
  * Updated with DLC5 (Designer's Cut) guns

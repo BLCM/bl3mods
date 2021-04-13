@@ -122,6 +122,7 @@ for (label, balance_name) in [
         ("Anarchy", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Anarchy/Balance/Balance_SG_TED_Anarchy'),
         ("Ashen Beast", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/Balance/Balance_SM_DAL_ETech_AshenBeast_Epic'),
         ("ASMD", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/ASMD/Balance/Balance_MAL_SR_ASMD'),
+        ("Atlas Replay", '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay'),
         ("AutoAimè", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/Balance/Balance_SR_DAL_AutoAime'),
         ("Baby Maker ++", '/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/Balance/Balance_PS_Tediore_BabyMaker'),
         ("Backburner", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner'),
@@ -131,6 +132,7 @@ for (label, balance_name) in [
         ("Bearcat", '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Bearcat/Balance/Balance_AR_TOR_Bearcat'),
         ("Bekah", '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/Bekah/Balance/Balance_AR_JAK_Bekah'),
         ("Binary Operator", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/Balance/Balance_MAL_SR_BinaryOperator'),
+        ("Bird of Prey", '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofPrey/Balance/Balance_SR_JAK_BirdofPrey'),
         ("Bitch", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Bitch/Balance/Balance_SM_HYP_Bitch'),
         ("Bite Size", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/Balance/Balance_PS_JAK_BiteSize'),
         ("Black Flame", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Brew/Balance/Balance_SG_TOR_Brewha'),
@@ -196,6 +198,7 @@ for (label, balance_name) in [
         ("Flakker", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Balance/Balance_SG_Torgue_Flakker'),
         ("Flama Diddle", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/Balance/Balance_SG_TED_Omen'),
         ("Flipper", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper'),
+        ("Free Radical", '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer'),
         ("Freeman", '/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/Freeman/Balance/Balance_HW_ATL_Freeman'),
         ("Frequency", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Frequency/Balance/Balance_SG_MAL_Frequency'),
         ("Frozen Devil", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/Balance/Balance_PS_MAL_FrozenDevil'),
@@ -206,6 +209,7 @@ for (label, balance_name) in [
         ("Globetrottr", '/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Balance/Balance_HW_COV_Globetrotter'),
         ("Good Juju", '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juju/Balance/Balance_DAL_AR_ETech_Juju'),
         ("Grease Trap", '/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/Balance/Balance_PS_MAL_GreaseTrap'),
+        ("Guardian 4N631", '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/Balance/Balance_SG_HYP_Guardian'),
         ("Gunerang", '/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/Gunerang/Balance/Balance_PS_TED_Gunerang'),
         ("Hail", '/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Hail/Balance/Balance_DAL_AR_Hail'),
         ("Hand of Glory", '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/HandOfGlory/Balance/Balance_AR_JAK_HandOfGlory'),
@@ -231,6 +235,7 @@ for (label, balance_name) in [
         ("Insider", '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider'),
         ("ION CANNON", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Balance/Balance_HW_VLA_IonCannon'),
         ("ION LASER", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/Balance/Balance_SM_MAL_IonLaser'),
+        ("Ionic Disruptor", '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/Balance/Balance_SR_JAK_Disruptor'),
         ("Jericho", '/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/Balance/Balance_HW_VLA_CloudBurst'),
         ("Juliet's Dazzle", '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop'),
         ("Just Kaus", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/Balance/Balance_SM_HYP_JustCaustic'),
@@ -239,6 +244,7 @@ for (label, balance_name) in [
         ("Kaoson", '/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/Balance/Balance_SM_DAHL_Kaoson'),
         ("Kenulox", '/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/WorldDestroyer/Balance/Balance_SR_DAL_WorldDestroyer'),
         ("Kevin's Chilly", '/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Kevins/Balance/Balance_SM_MAL_Kevins'),
+        ("Kickcharger", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/Balance/Balance_HW_VLA_ETech_Kickcharger'),
         ("Kill-o'-the-Wisp", '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Wisp/Balance/Balance_SG_MAL_Wisp'),
         ("King's Call / Queen's Call", '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/GodMother/Balance/Balance_PS_JAK_GodMother'),
         ("Krakatoa", '/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Krakatoa/Balance/Balance_MAL_SR_Krakatoa'),
@@ -265,6 +271,7 @@ for (label, balance_name) in [
         ("Manic Pixie Dream Gun", '/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/Balance/Balance_SG_TED_FriendZone'),
         ("Marshal", '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Sheriff/Balance/Balance_PS_JAK_Sheriff'),
         ("Masterwork Crossbow", '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/MasterworkCrossbow/Balance/Balance_SR_HYP_Masterwork'),
+        ("Mechanic", '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/Balance/Balance_HW_COV_Mechanic'),
         ("Melt Facer", '/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/MeltFacer/Balance/Balance_SG_HYP_MeltFacer'),
         ("Mind-Killer", '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/MouthPiece2/Balance/Balance_SG_MAL_Mouthpiece2'),
         ("Minor Kong", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Balance/Balance_HW_COV_BanditLauncher_Epic'),
@@ -317,6 +324,7 @@ for (label, balance_name) in [
         ("R.Y.N.A.H.", '/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Balance/Balance_HW_TOR_RYNO'),
         ("Rebel Yell", '/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/Balance/Balance_ATL_AR_RebelYell'),
         ("Rebound", '/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Balance/Balance_AR_COV_Sawhorse'),
+        ("Redeye Rocket Pod", '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Redeye/Balance/Balance_HW_VLA_Redeye'),
         ("Redistributor (legendary version)", '/Game/PatchDLC/Raid1/Gear/Weapons/Fork2/Balance/Balance_SM_HYP_Fork2'),
         ("Redistributor (mission reward)", '/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Fork/Balance/Balance_SM_HYP_Fork'),
         ("Redline", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/RedLiner/Balance/Balance_SG_Torgue_RedLine'),
@@ -403,6 +411,7 @@ for (label, balance_name) in [
         ("Thumper", '/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/Balance/Balance_SG_Torgue_Thumper'),
         ("Thunderball Fists", '/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/ThunderballFist/Balance/Balance_PS_MAL_ThunderballFists'),
         ("Tiggs' Boom", '/Game/PatchDLC/Raid1/Gear/Weapons/TiggsBoom/Balance/Balance_SG_Torgue_TiggsBoom'),
+        ("Torrent", '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Balance/Balance_SM_DAL_Torrent'),
         ("Traitor's Death", '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/TraitorsDeath/Balance/Balance_AR_JAK_TraitorsDeath'),
         ("Trevonator", '/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Trev/Balance/Balance_SG_MAL_Trev'),
         ("Try-Bolt", '/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/TryBolt/Balance/Balance_AR_TOR_TryBolt'),
@@ -475,6 +484,7 @@ for (sname, sobj) in [
         ("Golden Touch", '/Game/Gear/Shields/_Design/_Uniques/GoldenTouch/Balance/InvBalD_Shield_GoldenTouch'),
         ("Guilty Spark", '/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/FaultyStar/Balance/InvBalD_Shield_Legendary_FaultyStar_Epic'),
         ("Impaler", '/Game/Gear/Shields/_Design/_Uniques/Impaler/Balance/InvBalD_Shield_LGD_Impaler'),
+        ("Infernal Wish", '/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Balance/InvBalD_Shield_InfernalWish'),
         ("Initiative", '/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/Initiative/Balance/InvBalD_Shield_Initiative'),
         ("Limit Break", '/Game/PatchDLC/Alisma/Gear/Shields/_Uniques/PlusUltra/Balance/InvBalD_Shield_Legendary_PlusUltra_Epic'),
         ("Loop of 4N631", '/Game/Gear/Shields/_Design/_Uniques/LoopOf4N631/Balance/InvBalD_Shield_HYP_LoopOf4N631'),
@@ -491,6 +501,7 @@ for (sname, sobj) in [
         ("Re-Charger Berner", '/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner'),
         ("Re-Charger", '/Game/Gear/Shields/_Design/_Uniques/Re-Charger/Balance/InvBalD_Shield_LGD_ReCharger'),
         ("Re-Router", '/Game/Gear/Shields/_Design/_Uniques/Vamp/Balance/InvBalD_Shield_Legendary_Vamp'),
+        ("Re-Volter", '/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/InvBalD_Shield_Revolter'),
         ("Rectifier", '/Game/Gear/Shields/_Design/_Uniques/Rectifier/Balance/InvBalD_Shield_LGD_Rectifier'),
         ("Red Card Re-Charger", '/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/SlideKick_Recharger/InvBalD_Shield_SlideKickRecharger'),
         ("Red Card", '/Game/Gear/Shields/_Design/_Uniques/SlideKick/Balance/InvBalD_Shield_LGD_SlideKick'),
@@ -502,6 +513,7 @@ for (sname, sobj) in [
         ("Shooting Star", '/Game/Gear/Shields/_Design/_Uniques/ShootingStar/Balance/InvBalD_Shield_LGD_ShootingStar'),
         ("Stinger", '/Game/PatchDLC/Takedown2/Gear/Shields/Stinger/Balance/InvBalD_Shield_LGD_Stinger'),
         ("Stop-Gap", '/Game/Gear/Shields/_Design/_Uniques/StopGap/Balance/InvBalD_Shield_LGD_StopGap'),
+        ("Super Soldier", '/Game/PatchDLC/VaultCard/Gear/Shields/Unique/SuperSoldier/Balance/InvBalD_Shield_SuperSoldier'),
         ("The Transformer", '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer'),
         ("Torch", '/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/Torch/Balance/InvBalD_Shield_Legendary_Torch'),
         ("Unpaler", '/Game/Gear/Shields/_Design/_Uniques/Unpaler/Balance/InvBalD_Shield_LGD_Unpaler'),
@@ -546,8 +558,8 @@ for (gname, gobj) in [
         ("Diamond Butt Bomb", '/Game/Gear/GrenadeMods/_Design/_Unique/ButtStallion/Balance/InvBalD_GM_ButtStallion'),
         ("Doc Hina's Miracle Bomb", '/Game/PatchDLC/Geranium/Gear/Grenade/SkagOil/Balance/InvBalD_GM_SkagOil'),
         ("ECHO-2", '/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/Balance/InvBalD_GM_EchoV2'),
-        ("EMP", '/Game/Gear/GrenadeMods/_Design/_Unique/EMP/Balance/InvBalD_GM_EMP'),
         ("Elemental Persistent Contact Grenade", '/Game/Gear/GrenadeMods/_Design/_Unique/Mogwai/Balance/InvBalD_GM_Mogwai'),
+        ("EMP", '/Game/Gear/GrenadeMods/_Design/_Unique/EMP/Balance/InvBalD_GM_EMP'),
         ("Epicenter", '/Game/Gear/GrenadeMods/_Design/_Unique/Epicenter/Balance/InvBalD_GM_Epicenter'),
         ("Exterminator", '/Game/Gear/GrenadeMods/_Design/_Unique/BirthdaySuprise/Balance/InvBalD_GM_BirthdaySuprise'),
         ("Fastball", '/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Balance/InvBalD_GM_TED_Fastball'),
@@ -561,12 +573,14 @@ for (gname, gobj) in [
         ("It's Piss", '/Game/Gear/GrenadeMods/_Design/_Unique/Piss/Balance/InvBalD_GM_Piss'),
         ("Kryll", '/Game/Gear/GrenadeMods/_Design/_Unique/Kryll/Balance/InvBalD_GM_Kryll'),
         ("Lightspeed", '/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/Balance/InvBalD_GM_HYP_Lightspeed'),
+        ("Mesmer", '/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/Balance/InvBalD_GM_Mesmer'),
         ("Moxxi's Bouncing Pair", '/Game/Gear/GrenadeMods/_Design/_Unique/MoxiesBosom/Balance/InvBalD_GM_PAN_MoxiesBosom'),
-        ("NOG Potion #9", '/Game/Gear/GrenadeMods/_Design/_Unique/WizardOfNOG/Balance/InvBalD_GM_WizardOfNOG'),
         ("Nagata", '/Game/Gear/GrenadeMods/_Design/_Unique/Nagate/Balance/InvBalD_GM_Nagate'),
+        ("NOG Potion #9", '/Game/Gear/GrenadeMods/_Design/_Unique/WizardOfNOG/Balance/InvBalD_GM_WizardOfNOG'),
         ("Porcelain Pipe Bomb", '/Game/Gear/GrenadeMods/_Design/_Unique/ToiletBombs/Balance/InvBalD_GM_TOR_ToiletBombs'),
         ("Quasar", '/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/Balance/InvBalD_GM_Quasar'),
         ("Red Queen", '/Game/Gear/GrenadeMods/_Design/_Unique/RedQueen/Balance/InvBalD_GM_RedQueen'),
+        ("Ringer / The Big Ringer / Dead Ringer", '/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/Balance/InvBalD_GM_Ringer'),
         ("Rubber Cheddar Shredder", '/Game/Gear/GrenadeMods/_Design/_Unique/CashMoneyPreorder/Balance/InvBalD_GM_CashMoneyPreorder'),
         ("Slider", '/Game/PatchDLC/Dandelion/Gear/Grenade/Slider/Balance/InvBalD_GM_TED_Slider'),
         ("Storm Front", '/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/Balance/InvBalD_GM_StormFront'),
@@ -625,27 +639,27 @@ for glob_pattern, re_pat, extra_label in [
             ))
 # Base-game Legendary COMs as dropped by Trials Bosses (as of M4/Maliwan Takedown) update
 for (cname, cobj) in [
-		('Beastmaster - Bounty Hunter', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_BountyHunter'),
-		('Beastmaster - Cosmic Stalker', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_CosmicStalker'),
-		('Beastmaster - DE4DEYE', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_DE4DEYE'),
-		('Beastmaster - Friend-Bot', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_FriendBot'),
-		('Beastmaster - Rakk Commander', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RakkCommander'),
-		('Beastmaster - Red Fang', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RedFang'),
-		('Gunner - Bear Trooper', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BearTrooper'),
-		('Gunner - Blast Master', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BlastMaster'),
-		('Gunner - Bloodletter', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter'),
-		('Gunner - Mind Sweeper', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_MindSweeper'),
-		('Gunner - Rocketeer', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_Rocketeer'),
-		('Operative - Cold Warrior', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_ColdWarrior'),
-		('Operative - Executor', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Executor'),
-		('Operative - Shockerator', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_FireBrand'),
-		('Operative - Infiltrator', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Infiltrator'),
-		('Operative - Techspert', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Techspert'),
-		('Siren - Breaker', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker'),
-		('Siren - Dragon', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon'),
-		('Siren - Elementalist', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist'),
-		('Siren - Nimbus', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus'),
-		('Siren - Phasezerker', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker'),
+        ('Beastmaster - Bounty Hunter', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_BountyHunter'),
+        ('Beastmaster - Cosmic Stalker', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_CosmicStalker'),
+        ('Beastmaster - DE4DEYE', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_DE4DEYE'),
+        ('Beastmaster - Friend-Bot', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_FriendBot'),
+        ('Beastmaster - Rakk Commander', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RakkCommander'),
+        ('Beastmaster - Red Fang', '/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RedFang'),
+        ('Gunner - Bear Trooper', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BearTrooper'),
+        ('Gunner - Blast Master', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BlastMaster'),
+        ('Gunner - Bloodletter', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter'),
+        ('Gunner - Mind Sweeper', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_MindSweeper'),
+        ('Gunner - Rocketeer', '/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_Rocketeer'),
+        ('Operative - Cold Warrior', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_ColdWarrior'),
+        ('Operative - Executor', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Executor'),
+        ('Operative - Shockerator', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_FireBrand'),
+        ('Operative - Infiltrator', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Infiltrator'),
+        ('Operative - Techspert', '/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_Techspert'),
+        ('Siren - Breaker', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker'),
+        ('Siren - Dragon', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon'),
+        ('Siren - Elementalist', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist'),
+        ('Siren - Nimbus', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus'),
+        ('Siren - Phasezerker', '/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker'),
         ]:
     com_balances.append(('{} (Trials boss drop only)'.format(cname), 'COM', '05/Legendary', cobj))
 # Post-base-game Legendary COMs
@@ -653,18 +667,22 @@ for (cname, cobj) in [
         ("Beastmaster - Cmdl3t", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora_BSM_L01'),
         ("Beastmaster - Peregrine", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Alisma'),
         ("Beastmaster - R4kk P4k", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_Raid1'),
+        ("Beastmaster - Roll Reversal", '/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/BSM/L01/InvBalD_CM_Ixora2_BSM_L01'),
         ("Beastmaster - St4ckbot", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_DLC1'),
         ("Beastmaster - Tr4iner", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/InvBalD_CM_Beastmaster_Hib'),
         ("Gunner - Eternal Flame", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora_GUN_L01'),
         ("Gunner - Flare", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Alisma'),
         ("Gunner - Green Monster", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_DLC1'),
+        ("Gunner - Primary Heat Exchanger", '/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/GUN/L01/InvBalD_CM_Ixora2_GUN_L01'),
         ("Gunner - Raging Bear", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/InvBalD_CM_Gunner_Raid1'),
         ("Gunner - Sapper", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib'),
         ("Operative - Antifreeze", '/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_Raid1'),
         ("Operative - Conductor", '/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Hib'),
+        ("Operative - Critical Mass", '/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora2_OPE_L01'),
         ("Operative - Hustler", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/OPE/InvBalD_CM_Operative_Alisma'),
         ("Operative - Seein' Dead", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_DLC1'),
         ("Operative - Spy", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/OPE/L01/InvBalD_CM_Ixora_OPE_L01'),
+        ("Siren - Death's Blessings", '/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora2_SRN_L01'),
         ("Siren - Golden Rule", '/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/SRN/InvBalD_CM_Siren_DLC1'),
         ("Siren - Kensei", '/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01'),
         ("Siren - Muse", '/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma'),
@@ -684,15 +702,26 @@ artifact_balances_base = [
         ]
 artifact_balances_legendary = [
         # Not bothering to do anything fancy here since there's so few.
+        ("Company Man (Atlas)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Atlas/Balance/InvBalD_Artifact_CompanyMan_Atlas'),
+        ("Company Man (CoV)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/Balance/InvBalD_Artifact_CompanyMan_CoV'),
+        ("Company Man (Dahl)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Dahl/Balance/InvBalD_Artifact_CompanyMan_Dahl'),
+        ("Company Man (Hyperion)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Hyperion/Balance/InvBalD_Artifact_CompanyMan_Hyperion'),
+        ("Company Man (Jakobs)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Jakobs/Balance/InvBalD_Artifact_CompanyMan_Jakobs'),
+        ("Company Man (Maliwan)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Maliwan/Balance/InvBalD_Artifact_CompanyMan_Maliwan'),
+        ("Company Man (Tediore)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Tediore/Balance/InvBalD_Artifact_CompanyMan_Tediore'),
+        ("Company Man (Torgue)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Torgue/Balance/InvBalD_Artifact_CompanyMan_Torgue'),
+        ("Company Man (Vladof)", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Vladof/Balance/InvBalD_Artifact_CompanyMan_Vladof'),
         ("Deathrattle", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/Balance/InvBalD_Artifact_Deathrattle'),
         ("Electric Banjo", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/ElectricBanjo/Balance/InvBalD_Artifact_ElectricBanjo'),
         ("Grave", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/Grave/Balance/InvBalD_Artifact_Grave'),
         ("Holy Grail", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Balance/InvBalD_Artifact_HolyGrail'),
         ("Lunacy", 'Artifact', '05/Legendary', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy'),
         ("Mysterious Amulet", 'Artifact', '04/Very Rare', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
+        ("Mysterious Artifact", 'Artifact', '04/Very Rare', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
         ("Pearl of Ineffable Knowledge", 'Artifact', '05/Legendary', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK'),
         ("Phoenix Tears", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/PhoenixTears/Balance/InvBalD_Artifact_PhoenixTears'),
         ("Road Warrior", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/RoadWarrior/Balance/InvBalD_Artifact_RoadWarrior'),
+        ("Toboggan", 'Artifact', '05/Legendary', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan'),
         ("Unleash the Dragon", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/ElDragonJr/Balance/InvBalD_Artifact_ElDragonJr'),
         ("Vault Hunter's Relic", 'Artifact', '05/Legendary', '/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/VaultHunterRelic/Balance/InvBalD_Artifact_Relic'),
         ("Vendetta", 'Artifact', '04/Very Rare', '/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance'),
@@ -726,9 +755,9 @@ artifact_balances = artifact_balances_base + artifact_balances_legendary
 # Loop through
 part_cache = {}
 title_cache = {}
-for (filename, balances, man_col_name, type_col_name, partset_names) in [
-        ('gun_balances.csv', gun_balances, 'Manufacturer/Name', 'Gun Type', None),
-        ('shield_balances.csv', shield_balances, 'Manufacturer/Name', None, [
+for (filename, filename_long, balances, man_col_name, type_col_name, partset_names) in [
+        ('gun_balances.csv', 'gun_balances_long.csv', gun_balances, 'Manufacturer/Name', 'Gun Type', None),
+        ('shield_balances.csv', 'shield_balances_long.csv', shield_balances, 'Manufacturer/Name', None, [
             'BODY',
             'RARITY',
             'LEGENDARY AUG',
@@ -736,7 +765,7 @@ for (filename, balances, man_col_name, type_col_name, partset_names) in [
             'ELEMENT',
             'MATERIAL',
             ]),
-        ('grenade_balances.csv', grenade_balances, 'Manufacturer/Name', None, [
+        ('grenade_balances.csv', 'grenade_balances_long.csv', grenade_balances, 'Manufacturer/Name', None, [
             'MANUFACTURER',
             'ELEMENT',
             'RARITY',
@@ -744,7 +773,7 @@ for (filename, balances, man_col_name, type_col_name, partset_names) in [
             'BEHAVIOR',
             'MATERIAL',
             ]),
-        ('com_balances.csv', com_balances, 'Character/Name', None, [
+        ('com_balances.csv', 'com_balances_long.csv', com_balances, 'Character/Name', None, [
             'CHARACTER',
             'MODTYPE',
             'RARITY',
@@ -753,7 +782,7 @@ for (filename, balances, man_col_name, type_col_name, partset_names) in [
             'SKILLS',
             '(unknown)',
             ]),
-        ('artifact_balances.csv', artifact_balances, 'Type/Name', None, [
+        ('artifact_balances.csv', 'artifact_balances_long.csv', artifact_balances, 'Type/Name', None, [
             'RARITY',
             'LEGENDARY ABILITY',
             'ABILITY',
@@ -764,84 +793,83 @@ for (filename, balances, man_col_name, type_col_name, partset_names) in [
 
     print('Processing {}'.format(filename))
     with open(filename, 'w') as odf:
+        with open(filename_long, 'w') as odf_long:
 
-        writer = csv.writer(odf)
-        header = [man_col_name]
-        if type_col_name:
-            header.append(type_col_name)
-        header.extend([
-            'Rarity',
-            'Balance',
-            'Category',
-            'Min Parts',
-            'Max Parts',
-            'Weight',
-            'Part',
-            'Dependencies',
-            'Excluders',
-            ])
-        writer.writerow(header)
+            writer = csv.writer(odf)
+            writer_long = csv.writer(odf_long)
+            header = [man_col_name]
+            if type_col_name:
+                header.append(type_col_name)
+            header.extend([
+                'Rarity',
+                'Balance',
+                'Category',
+                'Min Parts',
+                'Max Parts',
+                'Weight',
+                'Part',
+                'Dependencies',
+                'Excluders',
+                ])
+            writer.writerow(header)
+            writer_long.writerow(header)
 
-        for manufacturer, gun_type, rarity, bal_name in balances:
+            for manufacturer, gun_type, rarity, bal_name in balances:
 
-            # Grab a Balance object
-            bal = Balance.from_data(data, bal_name)
+                # Grab a Balance object
+                bal = Balance.from_data(data, bal_name)
 
-            # Quick check...  Thus far all examples of this also have the manufacturers enumerated in the
-            # parts list, so probably we don't need to worry.
-            # (actually just commenting this for now)
-            #if len(bal.raw_bal_data['Manufacturers']) > 1:
-            #    # Excluding reporting for the ones that I've already looked at
-            #    if bal_name not in {
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/Chupa/Balance/InvBalD_GM_Chupa',
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm',
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/Balance/InvBalD_GM_Quasar',
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/Balance/InvBalD_GM_StormFront',
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/Balance/InvBalD_GM_TranFusion',
-            #            '/Game/Gear/GrenadeMods/_Design/_Unique/WidowMaker/Balance/InvBalD_GM_WidowMaker',
-            #            }:
-            #        print('WARNING: {} has {} manufacturers'.format(bal_name, len(bal.raw_bal_data['Manufacturers'])))
+                # Quick check...  Thus far all examples of this also have the manufacturers enumerated in the
+                # parts list, so probably we don't need to worry.
+                # (actually just commenting this for now)
+                #if len(bal.raw_bal_data['Manufacturers']) > 1:
+                #    # Excluding reporting for the ones that I've already looked at
+                #    if bal_name not in {
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/Chupa/Balance/InvBalD_GM_Chupa',
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/FireStorm/Balance/InvBalD_GM_VLA_FireStorm',
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/Balance/InvBalD_GM_Quasar',
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/Balance/InvBalD_GM_StormFront',
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/TranFusion/Balance/InvBalD_GM_TranFusion',
+                #            '/Game/Gear/GrenadeMods/_Design/_Unique/WidowMaker/Balance/InvBalD_GM_WidowMaker',
+                #            }:
+                #        print('WARNING: {} has {} manufacturers'.format(bal_name, len(bal.raw_bal_data['Manufacturers'])))
 
-            # Loop through partlists
-            seen_labels = set()
-            for apl_idx, category in enumerate(bal.categories):
+                # Loop through partlists
+                seen_labels = set()
+                for apl_idx, category in enumerate(bal.categories):
 
-                # Check for multiple-part selection
-                if category.select_multiple:
-                    parts_min = category.num_min
-                    parts_max = category.num_max
-                    # Some items (such as the Storm Front grenade) have a bunch of parts defined
-                    # in a multi-select category but have Min/Max of 0.  These parts are never
-                    # actually selected, so ignore 'em.
-                    if parts_min == 0 and parts_max == 0:
-                        # Turns out there's a few guns too, but those rows were already getting pruned later.
-                        #print('Skipping category {} for {}; zero min/max on multi-select'.format(apl_idx, partset_name))
-                        continue
-                else:
-                    parts_min = 1
-                    parts_max = 1
+                    # Check for multiple-part selection
+                    if category.select_multiple:
+                        parts_min = category.num_min
+                        parts_max = category.num_max
+                        # Some items (such as the Storm Front grenade) have a bunch of parts defined
+                        # in a multi-select category but have Min/Max of 0.  These parts are never
+                        # actually selected, so ignore 'em.
+                        if parts_min == 0 and parts_max == 0:
+                            # Turns out there's a few guns too, but those rows were already getting pruned later.
+                            #print('Skipping category {} for {}; zero min/max on multi-select'.format(apl_idx, partset_name))
+                            continue
+                    else:
+                        parts_min = 1
+                        parts_max = 1
 
-                processed_parts = []
+                    processed_parts = []
 
-                for part_idx, part in enumerate(category.partlist):
+                    for part_idx, part in enumerate(category.partlist):
 
-                    part_name = part.part_name
-                    weight = data.process_bvc(part.weight)
+                        part_name = part.part_name
+                        weight = data.process_bvc(part.weight)
 
-                    # Populate the cache, if we need to
-                    if part_name not in part_cache:
-                        if part_name == 'None':
-                            part_cache[part_name] = (set(), set())
-                        else:
-                            excluders = set()
-                            dependencies = set()
-                            part_data = data.get_data(part_name)
-                            found_export = False
+                        # Populate the cache, if we need to
+                        if part_name not in part_cache:
+                            if part_name == 'None':
+                                part_cache[part_name] = (set(), set())
+                            else:
+                                excluders = set()
+                                dependencies = set()
+                                part_data = data.get_data(part_name)
+                                found_export = False
 
-                            # For some reason, we have a single part object that we can't serialize usefully.
-                            # Its .uasset file doesn't include the strings Excluders, Dependencies, or
-                            # PartInspectionTitleOverride, so we should be good to just leave it alone.
-                            if part_name != '/Game/Gear/GrenadeMods/_Design/PartSets/Part_Manufacturer/GM_Part_Manufacturer_06_Pangolin':
                                 for export in part_data:
                                     if export['export_type'].startswith('BPInvPart_'):
                                         found_export = True
@@ -874,60 +902,101 @@ for (filename, balances, man_col_name, type_col_name, partset_names) in [
                                         break
                                 if not found_export:
                                     raise Exception('Could not find export for {}'.format(part_name))
-                            part_cache[part_name] = (excluders, dependencies)
 
-                    # Read from Cache
-                    (excluders, dependencies) = part_cache[part_name]
-                    processed_parts.append((part_name, excluders, dependencies, weight))
+                                part_cache[part_name] = (excluders, dependencies)
 
-                # If we have no parts, skip it
-                if len(processed_parts) == 0:
-                    continue
+                        # Read from Cache
+                        (excluders, dependencies) = part_cache[part_name]
+                        processed_parts.append((part_name, excluders, dependencies, weight))
 
-                # Special case!  A partset with literally just *one* part, with a name of None.
-                # No reason to show this, has no actual bearing on the weapon.
-                if len(processed_parts) == 1 and processed_parts[0][0] == 'None':
-                    continue
+                    # If we have no parts, skip it
+                    if len(processed_parts) == 0:
+                        continue
 
-                # Figure out what the main label should be for this part type
-                label_text = data.get_parts_category_name([p[0] for p in processed_parts], bal_name, apl_idx)
+                    # Special case!  A partset with literally just *one* part, with a name of None.
+                    # No reason to show this, has no actual bearing on the weapon.
+                    if len(processed_parts) == 1 and processed_parts[0][0] == 'None':
+                        continue
 
-                # Hardcoded fixes.  Grr.
-                if label_text is None:
-                    if bal.partset_name == '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/PartSet_PS_TOR_Nurf' and apl_idx == 1:
-                        # BODY ACCESSORY vs. BARREL ACCESSORY
-                        label_text = 'BODY ACCESSORY'
-                    elif bal.partset_name == '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Ogre/Balance/InvPart_VLA_AR_Ogre' and apl_idx == 10:
-                        # IRON SIGHTS vs. RAIL
-                        label_text = 'RAIL'
-                    else:
-                        raise Exception('Possible contention (or unknowns) in {}, APL {}'.format(bal_name, apl_idx))
+                    # Figure out what the main label should be for this part type
+                    label_text = data.get_parts_category_name([p[0] for p in processed_parts], bal_name, apl_idx)
 
-                # Make sure we're not re-using a label
-                if len(processed_parts) > 0:
-                    idx = 1
-                    label_base = label_text
-                    while label_text in seen_labels:
-                        idx += 1
-                        label_text = '{} {}'.format(label_base, idx)
-                    seen_labels.add(label_text)
+                    # Hardcoded fixes.  Grr.
+                    if label_text is None:
+                        if bal.partset_name == '/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Balance/PartSet_PS_TOR_Nurf' and apl_idx == 1:
+                            # BODY ACCESSORY vs. BARREL ACCESSORY
+                            label_text = 'BODY ACCESSORY'
+                        elif bal.partset_name == '/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Ogre/Balance/InvPart_VLA_AR_Ogre' and apl_idx == 10:
+                            # IRON SIGHTS vs. RAIL
+                            label_text = 'RAIL'
+                        else:
+                            raise Exception('Possible contention (or unknowns) in {}, APL {}'.format(bal_name, apl_idx))
 
-                for (part_name, excluders, dependencies, weight) in processed_parts:
-                    datarow = [manufacturer]
-                    if type_col_name:
-                        datarow.append(gun_type)
-                    datarow.extend([
-                        rarity,
-                        bal_name.split('/')[-1],
-                        label_text,
-                        parts_min,
-                        parts_max,
-                        weight,
-                        part_name.split('/')[-1],
-                        ', '.join(sorted([d.split('/')[-1] for d in dependencies])),
-                        ', '.join(sorted([e.split('/')[-1] for e in excluders])),
-                        ])
-                    writer.writerow(datarow)
+                    # Make sure we're not re-using a label
+                    if len(processed_parts) > 0:
+                        idx = 1
+                        label_base = label_text
+                        while label_text in seen_labels:
+                            idx += 1
+                            label_text = '{} {}'.format(label_base, idx)
+                        seen_labels.add(label_text)
 
-        print('... done!')
+                    for (part_name, excluders, dependencies, weight) in processed_parts:
+                        datarow = [manufacturer]
+                        datarow_long = [manufacturer]
+                        if type_col_name:
+                            datarow.append(gun_type)
+                            datarow_long.append(gun_type)
+
+                        # Shortly before the April 8, 2021 patch, I updated my serialization pipeline a bit,
+                        # which resulted in weights getting reported as always floats, even if the weight was
+                        # 1 (so they'd be 1.0).  I always check diffs of the newly-generated CSVs after adding
+                        # new data, to make sure that nothing weird has happened, and this int->float reporting
+                        # made doing so difficult.  So we'll check the rounding value and fudge it.
+                        if round(weight, 6) == int(weight):
+                            weight = int(weight)
+
+                        # The DLC6 patch introduced a "Mysterious Artifact," which looks identical to
+                        # the "Mysterious Amulet" introduced in the DLC5 patch, and has the same "short" name.
+                        # We're going to report the full path for these, rather than just the short name,
+                        # because otherwise it'd be impossible to know which one we're referring to.  Do this
+                        # for the individual part, as well.
+                        if 'InvBalD_Artifact_MysteriousAmulet' in bal_name:
+                            bal_name_report = bal_name
+                        else:
+                            bal_name_report = bal_name.split('/')[-1]
+                        if 'Artifact_Part_Ability_MysteriousAmulet' in part_name:
+                            part_name_report = part_name
+                        else:
+                            part_name_report = part_name.split('/')[-1]
+
+                        # Write out to our "main" CSV
+                        datarow.extend([
+                            rarity,
+                            bal_name_report,
+                            label_text,
+                            parts_min,
+                            parts_max,
+                            weight,
+                            part_name_report,
+                            ', '.join(sorted([d.split('/')[-1] for d in dependencies])),
+                            ', '.join(sorted([e.split('/')[-1] for e in excluders])),
+                            ])
+                        writer.writerow(datarow)
+
+                        # Write out to an alternate "long" CSV (used by bl3-cli-saveedit mostly)
+                        datarow_long.extend([
+                            rarity,
+                            bal_name,
+                            label_text,
+                            parts_min,
+                            parts_max,
+                            weight,
+                            part_name,
+                            ', '.join(sorted(dependencies)),
+                            ', '.join(sorted(excluders)),
+                            ])
+                        writer_long.writerow(datarow_long)
+
+            print('... done!')
 

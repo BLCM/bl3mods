@@ -61,17 +61,22 @@ def set_pool(mod, pool_to_set, balances, char=None):
             'BalancedItems',
             '({})'.format(','.join(parts)))
 
-for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in [
-        ('All Customizations', 'All', 'all',
-            True, True,
+for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_texts) in [
+        ('All Customizations', 'all',
+            True, True, True,
             ["literally all \"useful\" customizations will world-drop."]),
-        ('All but Mission Rewards', 'NoMiss', 'no_mission_rewards',
-            True, False,
+        ('All but Mission Rewards', 'no_mission_rewards',
+            False, True, True,
             ["all customizations except for mission rewards",
             "will world-drop (non-main-game mission rewards *are* included)."]),
-        ('All but Mission Rewards and Earl\'s Shop', 'NoMissEarl', 'no_mission_rewards_or_earl',
-            False, False,
+        ('All but Mission Rewards and Earl\'s Shop', 'no_mission_rewards_or_earl',
+            False, False, True,
             ["all customizations except for mission rewards",
+            "and those available in Earl's shop will world-drop (non-main-game mission",
+            "rewards *are* included)."]),
+        ('All but Mission Rewards, Earl\'s Shop, and Vault Cards', 'no_mission_rewards_earl_or_vaultcard',
+            False, False, False,
+            ["all customizations except for mission rewards, Vault Card rewards,",
             "and those available in Earl's shop will world-drop (non-main-game mission",
             "rewards *are* included)."]),
         ]:
@@ -108,7 +113,7 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
             'Apocalyptech',
             full_desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.4.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -208,6 +213,16 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         # Broken Hearts 2021 + Others
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_65.InvBal_CustomSkin_{shortname}_65')
         balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Skins/CustomSkin_{shortname}_61.InvBal_CustomSkin_{shortname}_61')
+        # DLC6 - Ixora2 - TODO: need to figure out if this should be in a blacklist
+        balances.append(f'/Game/PatchDLC/Ixora2/PlayerCharacters/_Shared/Skins/CustomSkin_{shortname}_66.InvBal_CustomSkin_{shortname}_66')
+        # Vault Card #1
+        if drop_vaultcard:
+            balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_67.InvBal_CustomSkin_{shortname}_67')
+            balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_68.InvBal_CustomSkin_{shortname}_68')
+            balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_69.InvBal_CustomSkin_{shortname}_69')
+            balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_70.InvBal_CustomSkin_{shortname}_70')
+        # Cartels 2021
+        balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_48.InvBal_CustomSkin_{shortname}_48')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -257,6 +272,9 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
         # Introduced in Broken Hearts 2021, though not actually Broken Hearts...
         for num in [33, 35, 36, 37]:
             balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Heads/DA_{abbrev}Head{num}.InvBal_DA_{abbrev}Head{num}')
+        # Vault Card 1
+        if drop_vaultcard:
+            balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomHeads/CustomHead47/CustomHead_{shortname}_47.InvBal_CustomHead_{shortname}_47')
 
         # Now output
         mod.comment(f'{shortname} Heads')
@@ -286,6 +304,12 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponSkin/WeaponSkin_DLC3_1.InvBal_WeaponSkin_DLC3_1')
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.InvBal_WeaponSkin_BloodyHarvest_02')
+    # Vault Card 1
+    if drop_vaultcard:
+        for num in [1, 2, 3]:
+            balances.append(f'/Game/PatchDLC/VaultCard/Customizations/WeaponSkin/WeaponSkin_VC1_{num}.InvBal_WeaponSkin_VC1_{num}')
+    # Cartels 2021
+    balances.append(f'/Game/PatchDLC/Event2/Gear/_Design/WeaponSkins/WeaponSkin_Event2_2.InvBal_WeaponSkin_Event2_2')
 
     # Now output
     mod.comment('Weapon Skins')
@@ -342,6 +366,12 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # Broken Hearts 2021 + Others
     balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_2.InvBal_Trinket_League_VDay_2')
     balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_Twitch.InvBal_Trinket_Twitch')
+    # Vault Card 1
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4]:
+            balances.append(f'/Game/PatchDLC/VaultCard/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC1_{num}.InvBal_WeaponTrinket_VC1_{num}')
+    # Cartels 2021
+    balances.append('/Game/PatchDLC/Event2/Gear/_Design/WeaponTrinkets/WeaponTrinket_Cartels_2021.InvBal_WeaponTrinket_Cartels_2021')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -398,6 +428,12 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     # Broken Hearts 2021 + Others
     balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_02.InvBal_EchoTheme_Valentines_02')
     balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Shared/ECHODevice/ECHOTheme_46.InvBal_ECHOTheme_46')
+    # Vault Card 1
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4]:
+            balances.append(f'/Game/PatchDLC/VaultCard/Customizations/EchoDevice/ECHOTheme_VC1_{num}.InvBal_ECHOTheme_VC1_{num}')
+    # Cartels 2021
+    balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_40.InvBal_ECHOTheme_40')
 
     # Now output
     mod.comment('ECHO Skins')
@@ -447,6 +483,12 @@ for (label, prefix, filename_addition, drop_earl, drop_mission, extra_texts) in 
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_03_Axe.InvBal_RoomDeco_DLC4_03_Axe')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_04_Moon.InvBal_RoomDeco_DLC4_04_Moon')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_05_Mask.InvBal_RoomDeco_DLC4_05_Mask')
+    # Vault Card 1
+    if drop_vaultcard:
+        for num in [1, 2, 3]:
+            balances.append(f'/Game/PatchDLC/VaultCard/Customizations/RoomDeco/RoomDecoration_VC1_{num}.InvBal_RoomDecoration_VC1_{num}')
+    # Cartels 2021
+    balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_2.InvBal_RoomDecoration_Event2_2')
 
     # Now output
     mod.comment('Room Decorations')

@@ -1,6 +1,6 @@
 ###
 ### Name: Fix Siren COM Blank Parts
-### Version: 1.1.1
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: gear-com, bugfix
 ###
@@ -45,4 +45,8 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/InvB
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/SRN/PartSet_CM_Siren_Hib.PartSet_CM_Siren_Hib,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/InvBalD_CM_Siren_Alisma.InvBalD_CM_Siren_Alisma,RuntimePartList.AllParts.AllParts[73].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/ClassMods/_Design/SRN/PartSet_CM_Siren_Alisma.PartSet_CM_Siren_Alisma,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora_SRN_L01.InvBalD_CM_Ixora_SRN_L01,RuntimePartList.AllParts.AllParts[73].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/PartSet_CM_Ixora_SRN_L01.PartSet_CM_Ixora_SRN_L01,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora2_SRN_L01.InvBalD_CM_Ixora2_SRN_L01,RuntimePartList.AllParts.AllParts[73].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/PartSet_CM_Ixora2_SRN_L01.PartSet_CM_Ixora2_SRN_L01,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
 
