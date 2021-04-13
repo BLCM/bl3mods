@@ -10,4 +10,4 @@ The 150% version will reduce the bonus damage to 50%, which is on par with a ASE
 
 ## Changelog
 
-1.0 - Release
+1.0.0 - Release
