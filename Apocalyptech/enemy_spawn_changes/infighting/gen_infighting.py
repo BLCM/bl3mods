@@ -51,6 +51,7 @@ subdirs = [
         'dlc3',
         'dlc4',
         'dlc5',
+        'dlc6',
         ]
 spawn_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.SpawnFactory_OakAI_(?P<raw_number>\d+)')
 spawn2_re = re.compile(r' SpawnFactory_OakAI (?P<spawnoption>Spawn(Options|Group|Tier)_.*)\.\1\.(?P<factory_obj>Factory_SpawnFactory_OakAI(_\d+)?)')
@@ -159,7 +160,7 @@ mod = Mod('infighting.bl3hotfix',
             "thoroughly tested, but seems to do the trick!",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.0',
+        v='1.3.0',
         cats='enemy, gameplay',
         )
 

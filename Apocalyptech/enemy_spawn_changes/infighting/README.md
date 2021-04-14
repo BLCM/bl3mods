@@ -12,8 +12,16 @@ weirdly non-aggressive in general, such as some Belliks in Obsidian Forest.
 
 Amusingly, DLC3 riders can end up attacking their own mounts!
 
+Varkid evolutions might reset their usual allegiances; all the enemies in
+the Hemovorous fight seem to continue to focus on you.  The Revenants in
+Scryer's Crypt (and the adds during The Seer battle) likewise always attack
+the player.
+
 Changelog
 =========
+
+**v1.3.0** - Apr 14, 2020
+ * Updated with DLC6 enemies
 
 **v1.2.0** - Nov 11, 2020
  * Updated with DLC5 enemies
