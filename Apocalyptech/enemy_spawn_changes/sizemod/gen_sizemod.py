@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -26,6 +26,10 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 # Player characters (and related)
 pcs = {
+        '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_Base',
+        '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_BUL',
+        '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_ION',
+        '/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/BPChar_PetLoader_WAR',
         '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster',
         '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_StandIn_Beastmaster',
         '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_StandIn_Beastmaster_SkillScreen',
@@ -39,6 +43,7 @@ pcs = {
         '/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/Character/BPChar_PetSpiderant',
         '/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/Character/BPChar_PetSpiderant_Evo1_Fire',
         '/Game/PlayerCharacters/Beastmaster/Pet/Spiderant/_Design/Character/BPChar_PetSpiderant_Evo2_King',
+        '/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3',
         '/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner',
         '/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_StandIn_Gunner',
         '/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_StandIn_Gunner_SkillScreen',
@@ -111,7 +116,7 @@ for label, scale in [
                 "remain unscaled.  Let me know if anything really game-breaking happens!",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.3.0',
             cats='enemy, joke',
             ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
             )

@@ -25,6 +25,10 @@ the size scaling.
 Changelog
 =========
 
+**v1.3.0** - Apr 14, 2020
+ * Updated with DLC6 BPChars
+ * Correctly exclude FL4K's Loader Pet from alterations
+
 **v1.2.0** - Nov 11, 2020
  * Updated with DLC5 BPChars
 
