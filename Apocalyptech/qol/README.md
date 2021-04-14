@@ -10,6 +10,8 @@ See the individual mod folders for full READMEs.
   map just to get to the Atlas HQ building.
 - **Atlas HQ Fast Travel** - A collection of mods to move the Atlas HQ Fast
   Travel machine to some more useful locations.
+- **Beef Plissken Loot Pattern Fix** - Changes Beef Plissken's loot pattern to
+  drop right around where he was, instead of potentially off the edge of the map.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The
