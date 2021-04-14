@@ -8,8 +8,23 @@ added with the DLC.  That's certainly nice the first time through, but I found
 I wanted their drops in subsequent plays to just match all other world drops
 from base game enemies.  That's what this mod does!
 
-This mod is definitely intended to be used alongside my Expanded Legendary Pools mod,
-which adds all DLC gear into the world drop pools.
+This mod is definitely intended to be used alongside my Expanded Legendary Pools
+mod, which adds all DLC gear into the world drop pools.
+
+**Note about Arms Race / Heavyweight Harker:**
+
+Due to how the Arms Race / DLC5 loot pools are set up, and how Heavyweight
+Harker's drops are set up, this mod ends up effectively randomizing Heavyweight
+Harker's unique drops as well.  For now that's just an unavoidable side effect
+of this, alas!  I may be able to figure out a way around that at a later date.
+
+**Note about Purple Skill Tree COMs and Director's Cut:**
+
+DLC6 (Director's Cut) adds in drops for the non-legendary Purple Tree COMs
+which were added to the data in DLC5 (Designer's Cut), for DLC6 enemies.  This
+mod will remove those drops -- I highly recommend using my "World Drop Designer's
+Cut COMs" mod to put those mods into the global world drop pool instead, which
+allows them to drop from any source which drops COMs.
 
 **Notes on Mod Compatibility:**
 
@@ -21,6 +36,9 @@ Provocateur drops.
 
 Changelog
 =========
+
+**v1.3.0** - Apr 14, 2021
+ * Updated for DLC6 (Director's Cut)
 
 **v1.2.1** - Nov 23, 2020
  * Updated for compatibility with Provocateur COM mod.

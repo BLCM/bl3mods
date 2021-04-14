@@ -1,6 +1,6 @@
 ###
 ### Name: DLC Loot De-Emphasizer
-### Version: 1.2.1
+### Version: 1.3.0
 ### Author: Apocalyptech
 ### Categories: loot-system, enemy-drops, chests
 ###
@@ -426,4 +426,18 @@ SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/Item
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Shields_Legendary.ItemPool_Ixora_Shields_Legendary,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Shields_Legendary.ItemPool_Ixora_Shields_Legendary,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary"'
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/ItemPool_Ixora_Guns_Legendary.ItemPool_Ixora_Guns_Legendary,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',Weight=(BaseValueConstant=1)))
+
+###
+### DLC6 - Director's Cut
+###
+
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Artifacts_All_Ixora2.ItemPool_Artifacts_All_Ixora2,BalancedItems.BalancedItems[5].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2.ItemPool_ClassMods_All_Ixora2,BalancedItems.BalancedItems[1].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2.ItemPool_ClassMods_All_Ixora2,BalancedItems.BalancedItems[3].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2.ItemPool_ClassMods_All_Ixora2,BalancedItems.BalancedItems[5].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2.ItemPool_ClassMods_All_Ixora2,BalancedItems.BalancedItems[7].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2.ItemPool_ClassMods_All_Ixora2,BalancedItems.BalancedItems[9].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_GrenadeMods_All_Ixora2.ItemPool_GrenadeMods_All_Ixora2,BalancedItems.BalancedItems[4].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Guns_All_Ixora2.ItemPool_Guns_All_Ixora2,BalancedItems.BalancedItems[5].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Shields_All_Ixora2.ItemPool_Shields_All_Ixora2,BalancedItems.BalancedItems[5].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 

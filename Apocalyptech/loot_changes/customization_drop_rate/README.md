@@ -32,6 +32,9 @@ don't care about overt cheating, that'd be the quicker option.
 Changelog
 =========
 
+**v1.2.0** - Apr 14, 2020
+ * Updated for DLC6
+
 **v1.1.0** - Oct 3, 2020
  * Updated for DLC4
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -61,7 +61,7 @@ for (label, filename, rate, desc) in [
             'Apocalyptech',
             desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.1.0',
+            v='1.2.0',
             cats='enemy-drops',
             )
 
@@ -93,6 +93,10 @@ for (label, filename, rate, desc) in [
             # Yep, it's really in there twice
             ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 3),
             ('/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma', 4),
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Ixora2', 9),
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2', 6),
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2', 6),
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Ixora2', 9),
             ]:
 
         # Defaults vary depending on pool; for base-game it's 0.5%.

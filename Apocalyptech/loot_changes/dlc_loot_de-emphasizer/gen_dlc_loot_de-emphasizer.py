@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -43,7 +43,7 @@ mod = Mod('dlc_loot_de-emphasizer.bl3hotfix',
             "so you've got interesting stuff dropping most of the time.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.1',
+        v='1.3.0',
         cats='loot-system, enemy-drops, chests',
         )
 
@@ -585,6 +585,34 @@ mod.reg_hotfix(Mod.CHAR, 'MatchAll',
             ))
 
 mod.newline()
+
+###
+### DLC6 - Director's Cut
+### Continuing to be lazy here and just using MatchAll...
+###
+
+mod.header("DLC6 - Director's Cut")
+
+# Artifacts
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Artifacts_All_Ixora2', 5)
+
+# COMs (removes purple-tree COMs entirely; use World Drop Designer's Cut COMs to put 'em into world drop pools)
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2', 1)
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2', 3)
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2', 5)
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2', 7)
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_ClassMods_All_Ixora2', 9)
+
+# Grenades
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_GrenadeMods_All_Ixora2', 4)
+
+# Guns
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Guns_All_Ixora2', 5)
+# Nothing seems to actually reference this one, don't bother.
+#zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_SniperAndHeavy_All_Ixora2', 5)
+
+# Shields
+zero_pool(Mod.CHAR, 'MatchAll', '/Game/PatchDLC/Ixora2/GameData/Loot/ItemPool_Shields_All_Ixora2', 5)
 
 # Finish
 mod.close()

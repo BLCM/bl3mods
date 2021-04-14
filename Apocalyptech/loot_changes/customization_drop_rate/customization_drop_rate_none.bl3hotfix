@@ -1,6 +1,6 @@
 ###
 ### Name: Customization Drop Rate: None
-### Version: 1.1.0
+### Version: 1.2.0
 ### Author: Apocalyptech
 ### Categories: enemy-drops
 ###
@@ -50,6 +50,10 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/E
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Alisma.ItemPoolList_BadassEnemyGunsGear_Alisma,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools[3].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Loot/EnemyPools/ItemPoolList_Boss_Alisma.ItemPoolList_Boss_Alisma,ItemPools[4].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_BadassEnemyGunsGear_Ixora2.ItemPoolList_BadassEnemyGunsGear_Ixora2,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2.ItemPoolList_Boss_Ixora2,ItemPools[6].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_MiniBoss_Ixora2.ItemPoolList_MiniBoss_Ixora2,ItemPools[6].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_StandardEnemyGunsandGear_Ixora2.ItemPoolList_StandardEnemyGunsandGear_Ixora2,ItemPools[9].PoolProbability,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 ###
 ### Remove cosmetics from containers
