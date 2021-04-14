@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -58,7 +58,7 @@ SoftPath = collections.namedtuple('SoftPath', ['SpawnerPathName', 'SpawnerSubPat
 
 class ScriptedSpawner(object):
 
-    map_re = re.compile(r'^(?P<obj_path>/.+/Maps/(Zone_\d+/)?[^/]+)/(?P<obj_base>[^/\.]+)\.(?P=obj_base)$')
+    map_re = re.compile(r'^(?P<obj_path>/.+/Maps/(Zone_\d+/|Mystery/)?[^/]+)/(?P<obj_base>[^/\.]+)\.(?P=obj_base)$')
     spawner_re = re.compile(r' Oak(Mission(Rare)?)?Spawner (?P<level_base_obj>.*?)\.(?P=level_base_obj)\.(?P<attribute>.*?)(_(?P<num_suffix>\d+))?$')
 
     def __init__(self, description, soft_paths=None):
@@ -543,6 +543,59 @@ for cat_name, subdir, level_names in [
                 'FrostSite_Mission.PersistentLevel.OakSpawner_StarterChest_',
                 ])),
             ]),
+        ('DLC6', 'dlc6', [
+            ('SacrificeBoss_p', set([
+                # Ammo Crates
+                'SacrificeBoss_Combat.PersistentLevel.OakSpawner_AmmoCrates',
+                # Maybe don't have Hemovorous itself be haunted or cartel...
+                'SacrificeBoss_Combat.PersistentLevel.OakSpawner_RaidBoss',
+                ])),
+            ('Cabin_P', set([
+                # Clay
+                'Cabin_Mission.PersistentLevel.OakMissionSpawner_Clay',
+                ])),
+            ('Noir_P', set([
+                # Friendly NPCs
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_Witness_2',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_Witness',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_Lorelai',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_EntranceSoldierC',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_EntranceSoldierB',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_EntranceSoldierA',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_BloodySoldier',
+                'Noir_Mission.PersistentLevel.OakMissionSpawner_ApartmentSoldiers',
+                # Chests
+                'Noir_Combat.PersistentLevel.OakSpawner_EridiumCrystalsCHEST',
+                'Noir_Combat.PersistentLevel.OakSpawner_EridiumCrystals',
+                ])),
+            ('PandoraMystery_p', set([
+                # Body parts
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartsC_Loot',
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartsC',
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartsB_Loot',
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartsB',
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartA_Loot',
+                'PandoraMystery_Combat.PersistentLevel.OakMissionSpawner_SkagBodyPartA',
+                # Beef Plissken and related; I think the haunt/cartel thing would end up being weird
+                # during the plotline.
+                'PandoraMystery_Mission.PersistentLevel.OakMissionSpawner_Warchief',
+                'PandoraMystery_Mission.PersistentLevel.OakMissionSpawner_RedeemerSpirit',
+                # Claptrap
+                'PandoraMystery_Mission.PersistentLevel.OakMissionSpawner_Claptrap',
+                # Crystals + Chests
+                'PandoraMystery_IO.PersistentLevel.EridianCrystals',
+                'PandoraMystery_IO.PersistentLevel.EridianChests',
+                ])),
+            ('NekroMystery_p', set([
+                # The Seer; might be a bit much
+                'NekroMystery_Boss.PersistentLevel.OakMissionSpawner_Redeemer',
+                # Crystals + Chests
+                'NekroMystery_Gameplay.PersistentLevel.EridianCrystals',
+                'NekroMystery_Gameplay.PersistentLevel.EridianChests',
+                # Ava
+                'NekroMystery_Mission.PersistentLevel.OakMissionSpawner_Ava',
+                ])),
+            ]),
         ]:
     for level_name, excluders in level_names:
         print('Processing extra spawns from {} {} ({})'.format(cat_name, LVL_TO_ENG[level_name], level_name))
@@ -619,7 +672,7 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "through DLC4 (Psycho Krieg), though.",
             ],
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.3.0',
             cats='event, enemy, maps',
             )
 

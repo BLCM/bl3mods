@@ -15,10 +15,13 @@ mod just expands the range that the spawn modifications can show up in.
 
 Note also that these still don't seem to work inside Covenant Pass and The
 Droughts, so those are the main known exceptions.  This has been updated through
-DLC5 (Designer's Cut), though.
+DLC6 (Director's Cut), though.
 
 Changelog
 =========
+
+**v1.3.0** - Apr 14, 2020
+ * Addition of DLC6 (Director's Cut) maps
 
 **v1.2.0** - Nov 11, 2020
  * Addition of DLC5 (Designer's Cut) map
