@@ -38,7 +38,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
             "so you get as interesting as possible drops.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.2.1',
+        v='1.3.0',
         cats='enemy-drops, randomizer',
         )
 
@@ -656,30 +656,52 @@ for (label, char_name, pools) in sorted([
         ('Waylon Hurd', 'BPChar_GerPsychoMoleMan', [
             ('/Geranium/Enemies/GerPsycho_Male/_Unique/MoleMan/_Design/Character/ItemPool_MoleMan', [SG]),
             ]),
+
+        # DLC6 Drops (Wonder why I haven't been more consistent with keeping these DLCs separated out?)
+        ('Beef Pliskken', 'BPChar_Punk_BanditChief', [
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_BanditChief', [PS]),
+            ]),
+        ('Hemovorous the Invincible', 'BPChar_Varkid_RaidBoss', [
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_VarkidRaidBoss', [PS, SR, GM, CM]),
+            ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/ItemPool_CompanyMan', [CM, CM, CM, CM, CM, CM, CM, CM, CM]),
+            ]),
+        ('Sumo', 'BPChar_Goliath_CyberpunkBouncer', [
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_CyberpunkBouncer', [SH]),
+            ]),
+        ('The Gravekeeper', 'BPChar_Enforcer_Gravekeeper', [
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_Gravekeeper', [GM]),
+            ]),
+        ('The Seer', 'BPChar_GuardianBrute_Redeemer', [
+            ('/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_Redeemer', [HW, CM, CM, CM, CM]),
+            ]),
         ]):
 
     mod.comment(label)
-    if char_name is None:
-        hf_type = Mod.PATCH
-        hf_target = ''
-    else:
-        hf_type = Mod.CHAR
-        hf_target = char_name
+
+    # Set up hotfix targets.  This is complex for Hemovorous because for some weird reason, that
+    # BPChar *loves* to stay loaded, and even survives a quit to the title screen.  Which means
+    # that hotfixes won't get re-applied when going back into the level, unless we *also* do
+    # a Level hotfix.  Unfortunately *just* a Level hotfix isn't sufficient.
+    targets = [(Mod.CHAR, char_name)]
+    if char_name == 'BPChar_Varkid_RaidBoss':
+        targets.append((Mod.LEVEL, 'SacrificeBoss_p'))
+
     for pool_name, contents in pools:
         for idx, drop_type in enumerate(contents):
             if drop_type is not None:
-                mod.reg_hotfix(hf_type, hf_target,
-                        pool_name,
-                        'BalancedItems.BalancedItems[{}].InventoryBalanceData'.format(idx),
-                        'None')
-                mod.reg_hotfix(hf_type, hf_target,
-                        pool_name,
-                        'BalancedItems.BalancedItems[{}].ResolvedInventoryBalanceData'.format(idx),
-                        'None')
-                mod.reg_hotfix(hf_type, hf_target,
-                        pool_name,
-                        'BalancedItems.BalancedItems[{}].ItemPoolData'.format(idx),
-                        leg_pools[drop_type])
+                for hf_type, hf_target in targets:
+                    mod.reg_hotfix(hf_type, hf_target,
+                            pool_name,
+                            'BalancedItems.BalancedItems[{}].InventoryBalanceData'.format(idx),
+                            'None')
+                    mod.reg_hotfix(hf_type, hf_target,
+                            pool_name,
+                            'BalancedItems.BalancedItems[{}].ResolvedInventoryBalanceData'.format(idx),
+                            'None')
+                    mod.reg_hotfix(hf_type, hf_target,
+                            pool_name,
+                            'BalancedItems.BalancedItems[{}].ItemPoolData'.format(idx),
+                            leg_pools[drop_type])
     mod.newline()
 
 mod.comment('Special-case for Heavyweight Harker, in Stormblind Complex (also randomizes other enemies there)')

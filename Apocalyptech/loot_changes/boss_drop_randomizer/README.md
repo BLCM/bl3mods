@@ -28,6 +28,9 @@ Better Loot in your mod list.
 Changelog
 =========
 
+**v1.3.0** - Apr 14, 2021
+ * Updated for DLC6 (Director's Cut)
+
 **v1.2.1** - Mar 11, 2021
  * Updated with loot changes for today's hotfixes, namely to randomize Aurelia's
    new grenade drop, and "Loot" enemies' new heavy weapon drop.
