@@ -24,10 +24,11 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 sys.path.append('../boss-rush-slaughter')
 import boss
+import ixorabosses
 OUTPUT='bossrace.bl3hotfix'
 BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
-SEED=42
+SEED=None#42
 our_seed = SEED
 if our_seed is not None:
     random.seed(our_seed)
@@ -110,7 +111,7 @@ for entry in raw_ixora_spawn_list:
         row,factory = entry
     so = row
     # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
-    mob = random.choice(boss.safe_bosses)
+    mob = random.choice(ixorabosses.safe_bosses)
     bpchar = mob[BPCHAR]
     mod.comment(f"so:{row} factory:{factory} bpchar:{bpchar}")
     mod.reg_hotfix(Mod.EARLYLEVEL,
@@ -165,7 +166,7 @@ pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:Persis
 for sp in spawnpoints:
         #sp = f"{prefix}_{i}"
         for (obj,val) in [('SpawnAction','None'),
-                          ('bFilterByTag','None'),
+                          ('bFilterByTag','False'), # was None
                           ('FilterMatchType','None'),
                           ('Tags','None')]:
             mod.reg_hotfix(
@@ -179,5 +180,11 @@ mod.close()
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
 # - [ ] Big Mobs not moving in the pit
+
+# Thoughts:
 # - Pit is called ThunderDome, the spawn points are not detailed
 # Maybe we need to address SpawnerComponent and deal with style?
+# Big bosses have problems spawning
+# Even gigamind?
+# Flyers have problems spawning there's some aspect of spawn points
+# Traunt would spawn and attack but staying in the same spot and not doing damage
