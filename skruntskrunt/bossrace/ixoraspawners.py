@@ -30,9 +30,9 @@ BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
 SEED=None#42
 our_seed = SEED
-if our_seed is not None:
-    random.seed(our_seed)
-
+if our_seed is None:
+    our_seed = random.randint(0,2**32-1)
+random.seed(our_seed)
 
 mod = Mod(OUTPUT,
           'Boss Race',
@@ -42,6 +42,8 @@ mod = Mod(OUTPUT,
           v='0.1.0',
           cats='gameplay',
 )
+
+mod.comment(f"Seed {our_seed}")
 
 # @piggy:~/projects/bl3data/extracted_new/frost-site/pp$ for file in `cat SpawnOptions`; do echo; bash json-of.sh $file | fgrep jwp_object_name | sed -e "s#^#'$file',#"; done | fgrep Factory | sed -e 's/"_jwp_object_name" : //'
 raw_ixora_spawn_list = [
