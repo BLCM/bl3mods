@@ -130,7 +130,7 @@ params = {
     "extend":(119,119,119),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
     "UseActorProperties":"False",# maybe coop doesn't see it
-    'bosses':ixorabosses.safe_bosses,
+    'bosses':ixorabosses.heavy_bosses,
     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
 }
 
