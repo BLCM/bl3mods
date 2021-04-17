@@ -61,7 +61,7 @@ raw_ixora_spawn_list = [
     ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkShotgunner_GearUp',      "SpawnFactory_OakAI_0"),
     ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkAssaulter_GearUp',      "SpawnFactory_OakAI_0"),
     ('/Ixora/Enemies/_Spawning/CotV/Enforcer/SpawnOptions_MaliEnforcerGun_GearUp',      "Factory_SpawnFactory_OakAI"),
-    ('/Ixora/Enemies/_Spawning/CotV/Enforcer/SpawnOptions_Enforcer_Reaper',      "Factory_SpawnFactory_OakAI"),
+    # ('/Ixora/Enemies/_Spawning/CotV/Enforcer/SpawnOptions_Enforcer_Reaper',      "Factory_SpawnFactory_OakAI"), # disable replacement of revenants
     ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Frontrunner_GearUp',      "Factory_SpawnFactory_OakAI"),
     ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Nullhound_GearUp',      "Factory_SpawnFactory_OakAI"),
     ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Gunwolf_GearUp',      "Factory_SpawnFactory_OakAI"),
@@ -104,68 +104,82 @@ for entry in  raw_ixora_spawn_list:
 def get_bpchar(s):
     return s.split('/')[-1]
 
-done_so = set()
-for entry in raw_ixora_spawn_list:
-    idx = 0
-    if (len(entry) == 3):
-        row, factory, idx = entry
-    else:
-        row,factory = entry
-    so = row
-    # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
-    mob = random.choice(ixorabosses.safe_bosses)
-    bpchar = mob[BPCHAR]
-    mod.comment(f"so:{row} factory:{factory} bpchar:{bpchar}")
-    mod.reg_hotfix(Mod.EARLYLEVEL,
-                   IXORA_MAP,
-                   row,
-                   #f'{row}.{factory}',
-                   #f'{factory}.AIActorClass',
-                   #'AIActorClass',
-                   f'Options.Options[{idx}].Factory.Object..AIActorClass',
-                   f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
-    )
-    extend = (70,70,119)
-    extend = (250,250,250)
-    scale = 1.0
-    if not so in done_so:
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
-                   f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
-                    #f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
-                    # was 1500 1500 1500
-                    f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
-                   'AlwaysSpawn')
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
-                   'True')
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..ItemPoolToDropOnDeathAdditive'.format(idx),
-                   'True')
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
-                   'False')
-        mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
-                   'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
-                   '(Critical=AlwaysSpawn)')
-        mod.reg_hotfix(Mod.EARLYLEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
+def make_ixora_spawns():
+    done_so = set()
+    for entry in raw_ixora_spawn_list:
+        idx = 0
+        if (len(entry) == 3):
+            row, factory, idx = entry
+        else:
+            row,factory = entry
+        so = row
+        # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
+        # mob = random.choice(ixorabosses.safe_bosses)
+        mob = random.choice(ixorabosses.heavy_bosses)
+        bpchar = mob[BPCHAR]
+        mod.comment(f"so:{row} factory:{factory} bpchar:{bpchar}")
+        mod.reg_hotfix(Mod.EARLYLEVEL,
+                       IXORA_MAP,
+                       row,
+                       #f'{row}.{factory}',
+                       #f'{factory}.AIActorClass',
+                       #'AIActorClass',
+                       f'Options.Options[{idx}].Factory.Object..AIActorClass',
+                       f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
+        )
+        extend = (70,70,119)
+        # extend = (250,250,250)
+        scale = 1.0
+        if not so in done_so:
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                       f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                       f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
+                       'None')
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
+                        #f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
+                        # was 1500 1500 1500
+                        f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
+            # We used AlwaysSpawn and it didn't necessarily work
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
+                       'AdjustIfPossibleButAlwaysSpawn')
+            #'AlwaysSpawn')
+            #"CollisionHandling" : "ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn",
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
+                       'True')
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..ItemPoolToDropOnDeathAdditive'.format(idx),
+                       'True')
+            # should this be true or false?
+            # False was what we were using
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
+                       'False')
+            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                       '(Critical=AlwaysSpawn)')
+            mod.reg_hotfix(Mod.EARLYLEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
+    
+            #      "bUseActorProperties" : true,
+            #      "ItemPoolToDropOnDeathAdditive" : false,
+    
+    
+            # Might have to override more... especially loot and names
+        done_so.add(so)
 
-        #      "bUseActorProperties" : true,
-        #      "ItemPoolToDropOnDeathAdditive" : false,
-
-
-        # Might have to override more... especially loot and names
-    done_so.add(so)
-
-spawnpoints = json.load(open('spawnpoints.json'))
-pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
-#for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
-#    for i in range(0,n):
-for sp in spawnpoints:
+def modify_spawnpoints():
+    spawnpoints = json.load(open('spawnpoints.json'))
+    pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+    #for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
+    #    for i in range(0,n):
+    for sp in spawnpoints:
         #sp = f"{prefix}_{i}"
         for (obj,val) in [('SpawnAction','None'),
                           ('bFilterByTag','False'), # was None
@@ -177,6 +191,9 @@ for sp in spawnpoints:
                 obj,
                 val,'',True)
 
+make_ixora_spawns()
+modify_spawnpoints()
+            
 mod.close()
 
 # TODOS
