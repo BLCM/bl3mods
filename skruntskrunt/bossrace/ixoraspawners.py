@@ -109,6 +109,7 @@ def get_bpchar(s):
 #     "extend":(70,70,119),
 #     "collision":'AlwaysSpawn',
 #     "UseActorProperties":"True",
+#     'bosses':ixorabosses.heavy_bosses,
 # }
 ## Doesn't spawn heavies in pit after first round
 # params = {
@@ -116,12 +117,21 @@ def get_bpchar(s):
 #     # "collision":'AlwaysSpawn',
 #     "collision":'AdjustIfPossibleButDontSpawnIfColliding',
 #     "UseActorProperties":"True",
+#     'bosses':ixorabosses.heavy_bosses,
 # }
 # 
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"True",# maybe coop doesn't see it
+#     'bosses':ixorabosses.safe_bosses,
+# }
 params = {
     "extend":(119,119,119),
-    'collision':'AdjustIfPossibleButAlwaysSpawn'
-    "UseActorProperties":"True",
+    'collision':'AdjustIfPossibleButAlwaysSpawn',
+    "UseActorProperties":"False",# maybe coop doesn't see it
+    'bosses':ixorabosses.safe_bosses,
+    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
 }
 
 
@@ -135,8 +145,8 @@ def make_ixora_spawns():
             row,factory = entry
         so = row
         # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
-        # mob = random.choice(ixorabosses.safe_bosses)
-        mob = random.choice(ixorabosses.heavy_bosses)
+        mob = random.choice(params['bosses'])
+        #mob = random.choice(ixorabosses.heavy_bosses)
         bpchar = mob[BPCHAR]
         mod.comment(f"so:{row} factory:{factory} bpchar:{bpchar}")
         mod.reg_hotfix(Mod.EARLYLEVEL,
