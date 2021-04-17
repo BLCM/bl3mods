@@ -31,6 +31,10 @@ If anything feels broken/OP or underpowered, please contact me on Discord. I rea
 
 Discord: SkyMaster#6302
 
+I update the test builds/constant changes on my personal repository found here: https://github.com/TheGigaMaster/Personal-BL3-mods/tree/main/Weapon%20Overhaul
+
+This version of the mod (the official one) will be updated once a section has been completed and balanced.
+
 
 # Highlighted Changes
 
