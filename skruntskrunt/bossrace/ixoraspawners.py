@@ -104,6 +104,27 @@ for entry in  raw_ixora_spawn_list:
 def get_bpchar(s):
     return s.split('/')[-1]
 
+## Doesn't work on heavies in pit
+# params = {
+#     "extend":(70,70,119),
+#     "collision":'AlwaysSpawn',
+#     "UseActorProperties":"True",
+# }
+## Doesn't spawn heavies in pit after first round
+# params = {
+#     "extend":(70,70,119),
+#     # "collision":'AlwaysSpawn',
+#     "collision":'AdjustIfPossibleButDontSpawnIfColliding',
+#     "UseActorProperties":"True",
+# }
+# 
+params = {
+    "extend":(119,119,119),
+    'collision':'AdjustIfPossibleButAlwaysSpawn'
+    "UseActorProperties":"True",
+}
+
+
 def make_ixora_spawns():
     done_so = set()
     for entry in raw_ixora_spawn_list:
@@ -127,8 +148,9 @@ def make_ixora_spawns():
                        f'Options.Options[{idx}].Factory.Object..AIActorClass',
                        f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
         )
-        extend = (70,70,119)
+        # extend = (70,70,119)
         # extend = (250,250,250)
+        extend = params["extend"]
         scale = 1.0
         if not so in done_so:
             mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
@@ -148,8 +170,9 @@ def make_ixora_spawns():
             # We used AlwaysSpawn and it didn't necessarily work
             mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
-                       'AdjustIfPossibleButAlwaysSpawn')
-            #'AlwaysSpawn')
+                       params["collision"])
+                       #'AdjustIfPossibleButAlwaysSpawn')
+                       #'AlwaysSpawn')
             #"CollisionHandling" : "ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn",
             mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
@@ -161,7 +184,7 @@ def make_ixora_spawns():
             # False was what we were using
             mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
-                       'False')
+                           params["UseActorProperties"])
             mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
                        '(Critical=AlwaysSpawn)')
@@ -199,7 +222,7 @@ mod.close()
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
 # - [ ] Big Mobs not moving in the pit
-
+# - [ ] Tiers of Big Guys
 # Thoughts:
 # - Pit is called ThunderDome, the spawn points are not detailed
 # Maybe we need to address SpawnerComponent and deal with style?
