@@ -6,7 +6,7 @@ Almost all legendary/unique weapons are buffed and some are nerfed to balance ou
 
 The motto I use is "Start low and go slow", so most guns only have a minor increase to damage to start. This will change as I get feedback, which is critical to balance; Please give any and all feedback,no matter how trivial it may feel!
 
-For a full list of changes, see the link below.
+For a full list of changes, see the tab "List of Weapon Changes" in the document listed below.
 
 Discord: SkyMaster#6302
 
