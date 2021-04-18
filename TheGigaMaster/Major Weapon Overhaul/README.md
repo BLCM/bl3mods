@@ -6,7 +6,7 @@ Almost all legendary/unique weapons are buffed and some are nerfed to balance ou
 
 The motto I use is "Start low and go slow", so most guns only have a minor increase to damage to start. This will change as I get feedback, which is critical to balance; Please give any and all feedback,no matter how trivial it may feel!
 
-For a full list of changes, see the link below.
+For a full list of changes, see the tab "List of Weapon Changes" in the document listed below.
 
 Discord: SkyMaster#6302
 
@@ -69,14 +69,10 @@ Subject to change based on feedback.
 # Known Issues
 
 - Buffs that aren't working that need to be investigated and fixed
-  - SMG's
-    - Sleeping Giant
-    - Redistirbutor
+
   - Pistols
     - Roisen's Thorns
-    - Bone Shredder
   - Assault Rifles
-    - Embrace the Pain
     - Pain is Power
     - Bekha
     - Traitor's Death
@@ -94,6 +90,8 @@ To find what weapons are buffed/nerfed, please refer to the spreadsheet above (a
 Items highlighted in green are buffed, and red are nerfed. I'll be working on creating a sheet which just lists all the item buffs/nerfs in a simple easy to read format. However, that's a later thing, as I'm still laying the groundwork for the mod and adding items, then I will work on balance and fine tuning.
 
 #
+
+0.1.8.2 - Fixed the following guns: SMG's: Sleeping Giant, Redistributor. Pistols: Bone Shredder. AR's: Embrace the Pain
 
 0.1.8.1 - Added and balanced Guardian Takedown Weapons with red text changes included. These guns should feel considerably more powerful compared to the base game stats they have.
 
