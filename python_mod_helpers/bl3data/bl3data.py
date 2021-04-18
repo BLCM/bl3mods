@@ -21,6 +21,7 @@
 
 import os
 import re
+import sys
 import json
 import glob
 import appdirs
@@ -184,6 +185,28 @@ class BL3Data(object):
             self.db = sqlite3.connect(self.config['database']['dbfile'])
             self.curs = self.db.cursor()
 
+    def _serialize_path(self, base_path):
+        """
+        Attempts to serialize the given `base_path`.
+        """
+        try:
+            # PyPy3 is still on 3.6, which doesn't have capture_output
+            return subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path],
+                    encoding='utf-8',
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    )
+        except FileNotFoundError as e:
+            first_label = 'Could not find JohnWickParse executable at: {}'.format(self.config['filesystem']['ueserialize_path'])
+            print('')
+            print('='*len(first_label))
+            print(first_label)
+            print('')
+            print('Make sure that the path to JWP in the "filesystem" section in')
+            print('{} is up to date!'.format(self.config_file))
+            print('')
+            sys.exit(1)
+
     def get_data(self, obj_name):
         """
         Returns a JSON-serialized version of the object `obj_name`, if possible.
@@ -199,9 +222,7 @@ class BL3Data(object):
             uasset_file = '{}.uasset'.format(base_path)
             umap_file = '{}.umap'.format(base_path)
             if not os.path.exists(json_file):
-                # PyPy3 is still on 3.6, which doesn't have capture_output
-                #subprocess.run([self.config['filesystem']['ueserialize_path'], base_path], encoding='utf-8', capture_output=True)
-                subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                self._serialize_path(base_path)
             if os.path.exists(json_file):
                 with open(json_file) as df:
                     self.cache[obj_name] = json.load(df)
@@ -212,7 +233,7 @@ class BL3Data(object):
                     if os.path.exists(uasset_file) or os.path.exists(umap_file):
                         if '_apoc_data_ver' not in self.cache[obj_name][0] or self.cache[obj_name][0]['_apoc_data_ver'] < BL3Data.data_version:
                             # Regenerate if we have an old serialization
-                            subprocess.run([self.config['filesystem']['ueserialize_path'], 'serialize', base_path], encoding='utf-8', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                            self._serialize_path(base_path)
                             with open(json_file) as df:
                                 self.cache[obj_name] = json.load(df)
             else:
