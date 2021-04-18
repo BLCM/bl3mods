@@ -1,7 +1,7 @@
 ###
 ### Name: Weapon Balance Overhaul
 ### Author: TheGigaMaster, EpicNNG
-### Version: 0.1.8.1
+### Version: 0.1.8.2
 ### Categories: major-pack, gear-changes, gear-general, gear-pack, gear-ar, gear-pistol, gear-heavy, gear-shotgun, gear-smg, gear-sniper
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -23,7 +23,11 @@
 ###
 
 # For other modders: Some weapons have a LevelEntryPatch and others have a EarlyLevelEntryPatch.
-# If it has the EarlyLevelEntryPatch, I've tested it and it won't work without it. I use it prn.
+
+
+# Linc (Drill in file)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,PS_Drill,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.95
+
 
 ## other things to do
 # buff dedicated drops
@@ -96,9 +100,6 @@
 
 
 ## ATLAS
-
-# Linc (Drill in file)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,PS_Drill,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.95
 
 # Multi-tap 
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,PS_Multitap,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.50
@@ -236,7 +237,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 ## VLADOF
 
 # Bone Shredder (PS_BoneShredder)	
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,PS_BoneShredder,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.00
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/Parts/Part_PS_VLA_Barrel_BoneShredder.Part_PS_VLA_Barrel_BoneShredder,InventoryAttributeEffects.InventoryAttributeEffects[5],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.725,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
 
 # Infininty (PS_Infiniti)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,PS_Infiniti,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.5
@@ -299,12 +300,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Vanquisher (SM_Vanquisher)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_Vanquisher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.680
 
-
-## NOT WORKING
-
-# Sleeping Giant (direct file modification)
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/SleepingGiant/Part/Part_SM_DAL_Barrel_SleepingGiant.Part_SM_DAL_Barrel_SleepingGiant,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0],AttributeEffects.AttributeEffects[0],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.35,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
-
+# Sleeping Giant
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/SleepingGiant/Parts/Part_SM_DAL_Barrel_SleepingGiant.Part_SM_DAL_Barrel_SleepingGiant,InventoryAttributeEffects.InventoryAttributeEffects[0],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
 
 ## HYPERION
 
@@ -329,7 +326,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_XZ,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.188
 
 # Redistirbutor (SM_Fork)	
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Fork,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.500
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Balance/DataTable_Raid1_Weapons.DataTable_Raid1_Weapons,SM_Fork2,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.200
 
 # Lovemachine	1 -> 3.35
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,L0V3M4CH1N3,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.125
@@ -414,13 +411,14 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/
 # Sawbar (AR_SAWBAR) 
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,AR_SAWBAR,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.40
 
+# Embrace the Pain (AR_KreigDamage)
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Parts/Damage/Part_AR_COV_Barrel_HeatDamage.Part_AR_COV_Barrel_HeatDamage,InventoryAttributeEffects.InventoryAttributeEffects[1],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.875,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
+
 # NEEDS REWORKED
 
 # Pain is Power (AR_CHAOS) 
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,AR_CHAOS,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.4
 
-# Embrace the Pain (AR_KreigDamage)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,AR_KreigDamage,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.960
 
 
 ## DAHL
