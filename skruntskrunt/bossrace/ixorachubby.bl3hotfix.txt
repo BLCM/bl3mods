@@ -1,0 +1,39 @@
+###
+### Name: Ixora Chubby Mayhem
+### Version: 1.0.0
+### Author: Abram/skruntskrunt, Grimm, and more
+### Based-on: Borderlands 3&2 by Grimm
+### Categories: enemy-drops, enemy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### This mod boosts chubby skag frequency, chubby damage, chubby HP,
+### chubby size, and makes chubby skags more common in Borderlands 3
+### Arm's race. Chubby skags become tanky hunts where your COOP
+### partners will get flattened but hey at least you get some loot.
+### The chubby spawn rate is rather high and you can expect at least 2
+### in arm's race to spawn. 
+###
+### Balance help is appreciated.
+
+###
+### Name: 
+### Author: Grimm
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+# Arm's race Chubby Skags
+
+# less toned down? 0 test, small (0.10) seems fine (like 1 per region but guaranteed)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Ixora/Enemies/_Spawning/_Mixes/Spawn_Mix_Skags.Spawn_Mix_Skags,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueConstant,0,,0.10
+# Make the chubby skags big
+SparkCharacterLoadedEntry,(1,1,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/BPChar_SkagChubby_GearUp.Default__BPChar_SkagChubby_GearUp_C:CharacterMesh0,RelativeScale3D,0,,(X=2.5,Y=2.5,Z=2.5)
+# Buffing Chubby Health? 5.5 was a debuff , 15 didn't seem right, 30 was too low, 120 is OK L65M11, 120 is too low in arm's race, 240? 240 was OK in arm's race, 360---not enough, 720 not enough, 1024?
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_GearUp),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,Skag_Chubby,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1440
+# Increase Chubby Damage 30 kills me pretty good in L65M11, 30 was not enough in arm's race, 60.0 in arm's race wasn't enough, 120..., 200?
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SkagChubby_Gearup),/Ixora/Enemies/Creatures/_Shared/Design/Balance/Table_Skag_Balance_GearUp,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,200.0
+
