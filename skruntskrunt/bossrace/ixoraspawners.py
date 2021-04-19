@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+
 import json
 import sys
 sys.path.append('../../python_mod_helpers')
@@ -25,16 +26,36 @@ import random
 sys.path.append('../boss-rush-slaughter')
 import boss
 import ixorabosses
+import argparse
+
 OUTPUT='bossrace.bl3hotfix'
 BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
 SEED=None#42
+CHUBBY=True # include the Chubby mod for Arm's Race
 our_seed = SEED
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='Boss Race Generator')
+    parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
+    parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
+    return parser.parse_args()
+
+args = parse_args()
+our_seed = args.seed
+chubby_mod = not args.nochubby
+
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
+else:
+    our_seed = int(our_seed)
+
 random.seed(our_seed)
 
-mod = Mod(OUTPUT,
+DFL_LEVEL=Mod.EARLYLEVEL
+output_filename = args.output
+mod = Mod(output_filename,
           'Boss Race',
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
@@ -180,14 +201,15 @@ def get_bpchar(s):
 #     'heavy':False,
 #     'modify_spawnpoints':False,
 # }
-# 
+#
+# # some failed spawns?
 params = {
     "extend":(119,119,119),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
     "UseActorProperties":"False",# maybe coop doesn't see it
     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
     'heavy':False,
-    'modify_spawnpoints':True,
+    'modify_spawnpoints':False,
 }
 
 
@@ -210,69 +232,48 @@ def make_ixora_spawns():
         mod.reg_hotfix(Mod.EARLYLEVEL,
                        IXORA_MAP,
                        row,
-                       #f'{row}.{factory}',
-                       #f'{factory}.AIActorClass',
-                       #'AIActorClass',
                        f'Options.Options[{idx}].Factory.Object..AIActorClass',
                        f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
         )
-        # extend = (70,70,119)
-        # extend = (250,250,250)
         extend = params["extend"]
         scale = 1.0
         if not so in done_so:
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
                        f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
                        f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
                        'None')
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
-                        #f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
-                        # was 1500 1500 1500
-                        #f'(X={1500},Y={0},Z={0})')# what if we change to X to 0 from 1500
                         params["SpawnOrigin"])
             # We used AlwaysSpawn and it didn't necessarily work
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
                        params["collision"])
-                       #'AdjustIfPossibleButAlwaysSpawn')
-                       #'AlwaysSpawn')
-            #"CollisionHandling" : "ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn",
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
                        'True')
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..ItemPoolToDropOnDeathAdditive'.format(idx),
                        'True')
-            # should this be true or false?
-            # False was what we were using
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
                            params["UseActorProperties"])
-            mod.reg_hotfix(Mod.LEVEL, IXORA_MAP, Mod.get_full(so),
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
                        '(Critical=AlwaysSpawn)')
-            mod.reg_hotfix(Mod.EARLYLEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
+            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
     
-            #      "bUseActorProperties" : true,
-            #      "ItemPoolToDropOnDeathAdditive" : false,
-    
-    
-            # Might have to override more... especially loot and names
         done_so.add(so)
 
 def modify_spawnpoints():
     spawnpoints = json.load(open('spawnpoints.json'))
     pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
-    #for (prefix,n) in [('OakSpawnPoint',784),('SpawnMesh_DoorSmall',363)]:
-    #    for i in range(0,n):
     for sp in spawnpoints:
-        #sp = f"{prefix}_{i}"
         for (obj,val) in [('SpawnAction','None'),
                           ('bFilterByTag','False'), # was None
                           ('FilterMatchType','None'),
@@ -283,9 +284,15 @@ def modify_spawnpoints():
                 obj,
                 val,'',True)
 
-make_ixora_spawns()
-# modify_spawnpoints()
+
             
+make_ixora_spawns()
+if params.get("modify_spawnpoints",False):
+    modify_spawnpoints()
+
+if chubby_mod:
+    mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
+    
 mod.close()
 
 # TODOS

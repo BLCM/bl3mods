@@ -133,7 +133,7 @@ safe_bosses = [
     ('Gorgeous Armada','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_TinkBadass_Giorgio',None,None),
     ('Evil St. Lawrence','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_EnforcerBadass_Lawrence',None,None),
     # ('Junpai Goat Eater','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_PunkBadass_Gaud',None,None),
-    ('Loco Chantelle','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coc',None,None),
+    # ('Loco Chantelle','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coc',None,None),
     ('Gmork','/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child',None,None),
     ('Tom','/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro',None,None),
     ('Voltborn','/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare',None,None),
@@ -193,7 +193,7 @@ safe_bosses = [
     ("Hyperion Warden",'/Alisma/Enemies/HyperionPunk/_Unique/TheWarden/_Design/Character/BPChar_HyperionPunk_TheWarden',"/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk","Punk_Badass"),
     ("Scraptrap Queen",'/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen',"/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1","Queen"),
     ("Kormash",'/Geranium/Enemies/LodgeBoss/_Design/Character/BPChar_SploderBoss',"/Geranium/Enemies/GerEnforcer/_Shared/_Design/Balance/Table_GerEnforcer_Balance_Unique","GerEnforcer_SploderBoss"),
-    ("Hildr",'/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossC/_Design/Character/BPChar_MechRaidBossC',"/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1","MechRaidBossC"),
+    # ("Hildr",'/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossC/_Design/Character/BPChar_MechRaidBossC',"/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1","MechRaidBossC"),
     #("Rota",'/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossB/_Design/Character/BPChar_MechRaidBossB',"/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1","Mech_RaidBossB"),
     #("Sigrdrifa",'/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossA/_Design/Character/BPChar_MechRaidBossA',"/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1","Mech_RaidBossA"),
     ("Aurelia",'/Game/NonPlayerCharacters/Aurelia/_TheBoss/_Design/Character/BPChar_AureliaBoss',"/Game/NonPlayerCharacters/Aurelia/_TheBoss/_Design/Balance/Table_Balance_AureliaBoss","AureliaBoss"),
@@ -226,9 +226,9 @@ easy_bosses = [
     ('Big Donny','/Game/Enemies/Tink/_Unique/MotorcadeBigD/_Design/Character/BPChar_TinkMotorcadeBigD',"/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique","Tink_MotorcadeBigD"),
     ('Atomic','/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01',None,None),
     ('Baron Noggin','/Game/Enemies/Nog/_Unique/Nog01_Bounty/_Design/Character/BPChar_Nog01_Bounty',None,None), # E
-    ('Crushjaw','/Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01',None,None), # E
-    ('Sky Bully','/Game/Enemies/Tink/_Unique/Bounty01/_Design/Character/BPChar_Tink_Bounty01',None,None), # E
-    ('Warty','/Game/Enemies/Psycho_Male/_Unique/Rare03/_Design/Character/BPChar_PsychoRare01','/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance_Unique','Rare01',{"raid1":64}), # E
+    # ('Crushjaw','/Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01',None,None), # E
+    # ('Sky Bully','/Game/Enemies/Tink/_Unique/Bounty01/_Design/Character/BPChar_Tink_Bounty01',None,None), # E
+    # ('Warty','/Game/Enemies/Psycho_Male/_Unique/Rare03/_Design/Character/BPChar_PsychoRare01','/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance_Unique','Rare01',{"raid1":64}), # E
     ('Sheega','/Game/Enemies/Punk_Female/_Unique/SkagLady/_Design/Character/BPChar_PunkSkagLady',None,None), # E
     ('Rudy Varlope','/Dandelion/Enemies/Looters/_Unique/GreatEscape/_Design/Character/BPChar_GreatEscape_Rudy',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","RudyVarlope"), # E
     ('Coco Chantelle','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coco',"/Dandelion/Enemies/Looters/Goon/_Shared/_Design/Balance/Table_Balance_GoonLooter","Goon_BadassLooter"), # E
@@ -321,12 +321,13 @@ medium_bosses = [
     ("Dandellion",'/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion',"/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques","Dandellion"), # M
     ("Petunia",'/Dandelion/Enemies/Loader/_Unique/VIPOnly/Petunia_FreddieBot/_Design/Character/BPChar_VIPOnly_Petunia',"/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques","Petunia"), # M
     ("Facemelt",'/Dandelion/Enemies/Loader/_Unique/AcidTrip/Facemelt/_Design/Character/BPChar_AcidTrip_Facemelt',"/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques","Facemelt"), # M
-    ("DebtCollector",'/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader',"/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques","DebtCollector"), # M
+    # ("DebtCollector",'/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader',"/Game/PatchDLC/Dandelion/Enemies/Loader/_Shared/_Design/Balance/Table_Balance_Loader_Uniques","DebtCollector"), # M
     ("GeneralBlisterPuss",'/Alisma/Enemies/AliEnforcer/_Unique/GeneralBlisterPuss/BPChar_GeneralBlisterPuss',"/Alisma/Enemies/AliEnforcer/_Shared/_Design/Balance/Table_Balance_AliEnforcer_Unique","GeneralBlisterPuss"), # M
     ("TheBlackRook",'/Alisma/Enemies/AliEnforcer/_Unique/TheBlackRook/BPChar_AliEnforcer_TheBlackRook',"/Alisma/Enemies/AliEnforcer/_Shared/_Design/Balance/Table_Balance_AliEnforcer_Unique","TheBlackRook"), # M
     ("TheBlackKing",'/Alisma/Enemies/AliPsycho/_Unique/TheBlackKing/_Design/Character/BPChar_AliPsycho_TheBlackKing',"/Alisma/Enemies/AliPsycho/_Shared/_Design/Balance/Table_Balance_AliPsycho_Unique","TheBlackKing"), # M
 
 ]
+
 hard_bosses = [
     ('Lectrikor','/Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast',"/Geranium/Enemies/Biobeast/_Shared/_Design/Balance/Table_Balance_Biobeast_Unique","PlasmaBeast"),
     ('Amach','/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare',"/Hibiscus/Enemies/_Shared/_Design/Balance/Table_Balance_Cultists","Zealot_Pilfer_Rare"),

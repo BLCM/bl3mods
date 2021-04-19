@@ -1,8 +1,10 @@
 Boss Race
 =================================
 
-So do you want to get in a boss race?
-Arm's Race with different mobs! Bosses! With their loot!
+So do you want to get in a boss race? Arm's Race with different mobs!
+Bosses! With their loot! Spawns named enemies in the place of normal
+Arm's race mobs, except for Skags and Spider Ants. Also makes Chubby
+Skags common in arm's race.
 
 Header
 ======
@@ -17,8 +19,10 @@ Header
 Changelog
 =========
 
-**v0.1.0** - 
- * It's not released what are you doing here
+**v0.1.0** - 2021-04-18
+ * Boss Race released
+ * Tiers of enemy difficulty
+ * 
 
 Known Bugs
 ==========
