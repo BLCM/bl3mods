@@ -231,7 +231,7 @@ easy_bosses = [
     # ('Warty','/Game/Enemies/Psycho_Male/_Unique/Rare03/_Design/Character/BPChar_PsychoRare01','/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance_Unique','Rare01',{"raid1":64}), # E
     ('Sheega','/Game/Enemies/Punk_Female/_Unique/SkagLady/_Design/Character/BPChar_PunkSkagLady',None,None), # E
     ('Rudy Varlope','/Dandelion/Enemies/Looters/_Unique/GreatEscape/_Design/Character/BPChar_GreatEscape_Rudy',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","RudyVarlope"), # E
-    ('Coco Chantelle','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coco',"/Dandelion/Enemies/Looters/Goon/_Shared/_Design/Balance/Table_Balance_GoonLooter","Goon_BadassLooter"), # E
+    # ('Coco Chantelle','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_GoonBadass_Coco',"/Dandelion/Enemies/Looters/Goon/_Shared/_Design/Balance/Table_Balance_GoonLooter","Goon_BadassLooter"), # E
     ('Golden Bullion','/Dandelion/Enemies/Looters/_Unique/RegainingOnesFeet/_Design/Character/BPChar_RegainingFeet_GoldenBullion',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","GoldenBullion"), # E
     ('Handsome Jacket','/Dandelion/Enemies/Looters/_Unique/ThePlan/JacksuitLooters/_Design/Character/BPChar_ThePlan_HandsomeJacket',"/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk","Punk_Badass"), # E
     ('Handsome Slacks','/Dandelion/Enemies/Looters/_Unique/ThePlan/JacksuitLooters/_Design/Character/BPChar_ThePlan_HandsomeSlacks',"/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk","Punk_Badass"), # E
