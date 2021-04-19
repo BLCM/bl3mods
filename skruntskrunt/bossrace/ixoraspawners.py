@@ -162,13 +162,35 @@ def get_bpchar(s):
 #     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
 #     'heavy':True,
 # }
+# # someone didn't spawn??
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':False,
+#     'modify_spawnpoints':True,
+# }
+# # spawn issues?
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':False,
+#     'modify_spawnpoints':False,
+# }
+# 
 params = {
     "extend":(119,119,119),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
     "UseActorProperties":"False",# maybe coop doesn't see it
     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
     'heavy':False,
+    'modify_spawnpoints':True,
 }
+
+
 
 def make_ixora_spawns():
     done_so = set()
@@ -262,7 +284,7 @@ def modify_spawnpoints():
                 val,'',True)
 
 make_ixora_spawns()
-modify_spawnpoints()
+# modify_spawnpoints()
             
 mod.close()
 
