@@ -311,7 +311,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Crossroad  	
 
 # Crossroad damage
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Crossroad,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.720
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Crossroad,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.840
 
 # Giving the Crossroads a 4th pellet (Credit: EpicNNG)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/Parts/Part_SM_HYP_Barrel_Crossroad.Part_SM_HYP_Barrel_Crossroad,InventoryAttributeEffects.InventoryAttributeEffects[2],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot"',ModifierValue=(BaseValueConstant=4.0))
