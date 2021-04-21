@@ -49,9 +49,7 @@ CURRENT PROGRESS: BASE GAME and NO DLC'S. Still need to do base game rocket laun
   - Facepuncher = +5% (subject to bigger buff based on feedback)
   - Hyperion snipers create holes in heads instead of shooting a party popper
 - Guardian Takedown Guns
-  - Smog = 20% dmg
-  - Web Slinger = + 200% damage
-  - Globetrottr = + 15% damage
+  - These guns have been buffed to feel more powerful, especially the webslinger.
 
 ## Nerfs
 
@@ -90,6 +88,18 @@ To find what weapons are buffed/nerfed, please refer to the spreadsheet above (a
 Items highlighted in green are buffed, and red are nerfed. I'll be working on creating a sheet which just lists all the item buffs/nerfs in a simple easy to read format. However, that's a later thing, as I'm still laying the groundwork for the mod and adding items, then I will work on balance and fine tuning.
 
 #
+
+0.1.8.3 - Balanced some weapons that felt overpowered. The following adjustments were made:
+- BOTD down to 30% buff
+- Smog up to 30% buff
+- Rowans/Lucians call down ot 85%
+- Carrier up to 40%
+- Duc up to 35%
+- Handsom Jackhammer up to 42.5%
+- Predatory lending up to 87.5%
+- Destructo Spinner up to 40%
+- Hunted/Hunter/Huntress up to 22.5%
+- Crossroad up to 130%
 
 0.1.8.2 - Fixed the following guns: SMG's: Sleeping Giant, Redistributor. Pistols: Bone Shredder. AR's: Embrace the Pain
 
@@ -164,12 +174,12 @@ Items highlighted in green are buffed, and red are nerfed. I'll be working on cr
 - Base Game
   - Crossroad 
     - Gave back 4th projectile and tightened spread up
-    - + 115% damage to match MH 10
+    - + 130% damage to match MH 10
   - King's/Queen's call
     - Damage increased by 45%. This will be tinkered with and a ROF buff is planned.
 
 - Guardian Takedown
-  - Smog = 20% dmg
+  - Smog = 30% dmg
   - Web Slinger = + 200% damage
   - Globetrottr = + 15% damage
 

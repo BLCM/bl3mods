@@ -1,7 +1,7 @@
 ###
 ### Name: Weapon Balance Overhaul
 ### Author: TheGigaMaster, EpicNNG
-### Version: 0.1.8.2
+### Version: 0.1.8.3
 ### Categories: major-pack, gear-changes, gear-general, gear-pack, gear-ar, gear-pistol, gear-heavy, gear-shotgun, gear-smg, gear-sniper
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -168,7 +168,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_Companion,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.2
 
 # The Duc (PS_TheDuc)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_TheDuc,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.440
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_TheDuc,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.620
 
 # The Flood (PS_Doc)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,PS_Doc,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.95
@@ -311,7 +311,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Crossroad  	
 
 # Crossroad damage
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Crossroad,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.720
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Crossroad,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.840
 
 # Giving the Crossroads a 4th pellet (Credit: EpicNNG)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/Parts/Part_SM_HYP_Barrel_Crossroad.Part_SM_HYP_Barrel_Crossroad,InventoryAttributeEffects.InventoryAttributeEffects[2],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot"',ModifierValue=(BaseValueConstant=4.0))
@@ -320,7 +320,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/Parts/Part_SM_HYP_Barrel_Crossroad.Part_SM_HYP_Barrel_Crossroad,InventoryAttributeEffects.InventoryAttributeEffects[4],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread"',ModifierValue=(BaseValueConstant=1))
 
 # Handsom Jackhammer (SM_Handsome)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Handsome,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.210
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Handsome,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.423
 
 # Hyperfocus XZ41 (SM_XZ)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_XZ,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.188
@@ -332,7 +332,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Balance/DataTabl
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,L0V3M4CH1N3,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.125
 
 # Predatory Lending (SM_PredatoryLending)	
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_PredatoryLending,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.400
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_PredatoryLending,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.500
 
 
 ## MALIWAN
@@ -347,7 +347,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_Cutsman,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.675
 
 # Destrcutro Spinner (SM_DestructoSpin) 
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_DestructoSpin,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.6
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_DestructoSpin,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.800
 
 # Devoted (SM_Devoted)	
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_Devoted,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.063
@@ -400,7 +400,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTabl
 ## ATLAS
 
 # Carrier 
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,AR_Carrier,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.56
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,AR_Carrier,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.680
 
 # RebelYell
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/Parts/Part_AR_ATL_Barrel_RebelYell.Part_AR_ATL_Barrel_RebelYell,InventoryAttributeEffects.InventoryAttributeEffects[0],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.295,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
@@ -427,7 +427,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_Barrage,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.35
 
 # Breath of the Dying (AR_BOTD) 
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_BOTD,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,4.620
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_BOTD,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.795
 
 # Good Juju (Juju)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Juju,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.148
@@ -464,7 +464,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,AR_HandOfGlory,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.125
 
 # Rowans Call 
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,AR_Rowan,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.15
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,AR_Rowan,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.850
 
 
 ## TORGUE
@@ -498,7 +498,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Faisor,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.34
 
 # Lucian's Call (AR_LuciansCall)	
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_LuciansCall,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.867
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_LuciansCall,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.145
 
 # Ogre (AR_Ogre)	
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Ogre,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.125
@@ -686,13 +686,13 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Monocle,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.265
 
 # Hunted damage
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Hunted,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.92
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Hunted,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.980
 
 # Hunter damage
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Hunter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.150
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Hunter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.225
 
 # Huntress damage
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Huntress,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.92
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Huntress,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.980
 
 # Ice Queen (SR_IceQueen)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_IceQueen,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.125
@@ -743,7 +743,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 ## WEAPONS
 
 # Smog 
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,SM_Smog,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.59971
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,SM_Smog,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.81635
 
 # Web Slinger (uses 1.0 as base, but something else buffs it at some other point so I play around that lmao)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_WebSlinger,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,12.49861
