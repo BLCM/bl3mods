@@ -1,4 +1,4 @@
-Boss Race
+Boss Race: Try Till You Die
 =========
 
 So do you want to get in a boss race? Arm's Race with different mobs!
@@ -6,10 +6,13 @@ Bosses! With their loot! Spawns named enemies in the place of normal
 Arm's race mobs, except for Skags and Spider Ants. Also makes Chubby
 Skags common in arm's race.
 
+I win 10% of the games. It's hard. You should also try different seeds by
+clicking the read more link 42 different configurations are available to try.
+
 Header
 ======
 * Name: Boss Race
-* Version: 0.1.0
+* Version: 0.1.1
 * Author: Abram/skruntskrunt,  altef-4, Apocalyptech, Grimm, and more
 * Categories: gameplay
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -19,10 +22,12 @@ Header
 Changelog
 =========
 
+**v0.1.1** - 2021-04-22
+ * Trying to avoid lockups in Plunderdome and Watertreatment plant
+
 **v0.1.0** - 2021-04-18
  * Boss Race released
  * Tiers of enemy difficulty
- * 
 
 Different Seeds
 ===============
@@ -92,6 +97,9 @@ References
 ==========
 
 3000 Hyperion Slaughter by altef-4: https://github.com/BLCM/bl3mods/wiki/3000-hyperion-slaughter
+
+Thanks to U4fun, Rockroze1, professor portal, govnerment toast, sedentarydiver, jayboch, and more 
+for helping me test this.
 
 Development Home
 ================

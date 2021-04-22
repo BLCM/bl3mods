@@ -111,7 +111,7 @@ default: mod
 mod: $(MOD)
 
 $(MOD): $(EXE)
-	python3 $(EXE)
+	python3 $(EXE) --seed $(SEED)
 clean:
 	rm -f bossrace.bl3hotfix
 	rm -f $(DISTFILES)
@@ -129,3 +129,7 @@ seeds/bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix.txt
 	mv $< $@
 
 dist: seeds $(DISTFILES) 
+
+gen:
+	rm -f $(MOD)
+	make $(MOD)
