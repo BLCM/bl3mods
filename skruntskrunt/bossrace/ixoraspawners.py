@@ -203,13 +203,21 @@ def get_bpchar(s):
 # }
 #
 # # some failed spawns?
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':False,
+#     'modify_spawnpoints':False,
+# }
 params = {
     "extend":(119,119,119),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
     "UseActorProperties":"False",# maybe coop doesn't see it
     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
     'heavy':False,
-    'modify_spawnpoints':False,
+    'modify_spawnpoints':True,
 }
 
 

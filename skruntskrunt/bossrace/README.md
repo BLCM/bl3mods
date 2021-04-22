@@ -1,10 +1,12 @@
-Boss Race
+Boss Race: Try Till You Die
 =========
 
 So do you want to get in a boss race? Arm's Race with different mobs!
 Bosses! With their loot! Spawns named enemies in the place of normal
 Arm's race mobs, except for Skags and Spider Ants. Also makes Chubby
 Skags common in arm's race.
+
+I win 10% of the games.
 
 Header
 ======
@@ -19,10 +21,12 @@ Header
 Changelog
 =========
 
+**v0.1.1** - 2021-04-22
+ * Trying to avoid lockups in Plunderdome and Watertreatment plant
+
 **v0.1.0** - 2021-04-18
  * Boss Race released
  * Tiers of enemy difficulty
- * 
 
 Different Seeds
 ===============
