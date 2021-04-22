@@ -1,0 +1,25 @@
+###
+### Name: Guardian Angel 400% Nerf
+### Author: TheGigaMaster
+### Version: 1.0
+### Categories: gear-shotgun
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Link: https://docs.google.com/document/d/1Jg-smX-cGkAAyGvOKmCcHwFGQ9NkzQXqKXVYuREzB5Y/edit?usp=sharing
+###
+
+###
+### Nerf's the damage of the new Guardian Angel shotgun
+### 2 versions of this mod have been made
+### One nerfs the damage to 100%, and the other to 250%.
+###
+
+
+# nerf damage from 500% to 100%
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1.0
+
