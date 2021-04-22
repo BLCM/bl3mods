@@ -60,7 +60,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.0',
+          v='0.1.1',
           cats='gameplay',
 )
 

@@ -11,7 +11,7 @@ I win 10% of the games.
 Header
 ======
 * Name: Boss Race
-* Version: 0.1.0
+* Version: 0.1.1
 * Author: Abram/skruntskrunt,  altef-4, Apocalyptech, Grimm, and more
 * Categories: gameplay
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
