@@ -6,7 +6,8 @@ Bosses! With their loot! Spawns named enemies in the place of normal
 Arm's race mobs, except for Skags and Spider Ants. Also makes Chubby
 Skags common in arm's race.
 
-I win 10% of the games.
+I win 10% of the games. It's hard. You should also try different seeds by
+clicking the read more link 42 different configurations are available to try.
 
 Header
 ======
@@ -96,6 +97,9 @@ References
 ==========
 
 3000 Hyperion Slaughter by altef-4: https://github.com/BLCM/bl3mods/wiki/3000-hyperion-slaughter
+
+Thanks to U4fun, Rockroze1, professor portal, govnerment toast, sedentarydiver, jayboch, and more 
+for helping me test this.
 
 Development Home
 ================
