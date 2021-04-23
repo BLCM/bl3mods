@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.3.1',
+        v='1.3.2',
         cats='enemy-drops, loot-system',
         )
 
@@ -1183,13 +1183,14 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             '/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character',
             'BPChar_ZealotPilfer_Child_Rare',
             0,
-            1),
+            2),
         ('Empowered Scholar',
             '/Hibiscus/Enemies/Minion/Possessed/_Design/Character',
             'BPChar_MinionPossessed',
             0,
-            1),
-        # Tom and Xam drop the exact same things, so we'd expect 2x Souldrenders in total.  Whatever.
+            2),
+        # Tom and Xam drop the exact same things -- their pools now have 2 items,
+        # so we'll just keep them at 1x drop each.
         ('Tom',
             '/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character',
             'BPChar_LostTwo_BigBro',
@@ -1210,7 +1211,7 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             '/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character',
             'BPChar_HeartBoss',
             0,
-            1),
+            2),
         ('Eleanor and the Heart - Emote',
             '/Hibiscus/Enemies/HeartBoss/_Shared/_Design/Character',
             'BPChar_HeartBoss',
@@ -1220,43 +1221,45 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             '/Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character',
             'BPChar_Rare_Frost_Dragon',
             0,
-            1),
+            2),
         ('Voltborn',
             '/Hibiscus/Enemies/_Unique/Rare_Shocker/Character',
             'BPChar_ZealotNightmareShocker_Rare',
             0,
-            1),
+            2),
         # Data only has Kukuwajack dropping Frozen Devil, but SparkCharacterLoadedEntry682 adds Anarchy
         ('Kukuwajack',
             '/Hibiscus/Enemies/_Unique/Hunt_Hampton/Character',
             'BPChar_Hib_Hunt_Hampton',
             0,
             2),
-        ('Empowered Grawn - Artifact',
+        ('Empowered Grawn - Artifact and COM',
             '/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character',
             'BPChar_LunaticPossessed',
             0,
-            1),
+            2),
         ('Empowered Grawn - Room Decoration',
             '/Hibiscus/Enemies/Lunatic/Possessed/_Design/Character',
             'BPChar_LunaticPossessed',
             1,
             1),
-        ('Gmork',
+        # Gmork's drops are slightly weird on account of them using PlayThroughs, though I think
+        # that's only the case for in PT1?  Pretty sure TVHM will still use this one:
+        ('Gmork (TVHM Drops)',
             '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character',
             'BPChar_Gmork_B_Wolf_Child',
             0,
-            1),
+            2),
         ('Fungal Gorger',
             '/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character',
             'BPChar_Lost_Mush_Child',
             0,
-            1),
+            2),
         ('Wendigo',
             '/Hibiscus/Enemies/Wendigo/Design/Character',
             'BPChar_Wendigo',
             1,
-            1),
+            2),
 
         # Guardian Takedown bosses
         ('Anathema the Relentless',
@@ -1510,6 +1513,18 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
                 )""".format(bpchar_qty))
     mod.newline()
 
+# Fix for GMork in Normal -- TVHM seems to use the main DropOnDeathItemPools struct
+mod.comment('Gmork (non-TVHM drops)')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Gmork_B_Wolf_Child',
+        '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs.PlayThroughs[0].DropOnDeathItemPools.ItemPools.ItemPools[0].PoolProbability.BaseValueConstant',
+        1)
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Gmork_B_Wolf_Child',
+        '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs.PlayThroughs[0].DropOnDeathItemPools.ItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant',
+        2)
+mod.newline()
+
 # A few more which can talk right to an ItemPoolList
 for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
         # Yes, this is correct, the object names for Pain/Terror are mismatched.
@@ -1575,6 +1590,21 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_GuardianBrute_Redeemer',
         '({poollist},{poollist},{poollist})'.format(
             poollist=Mod.get_full_cond('/Game/PatchDLC/Ixora2/GameData/Loot/EnemyPools/ItemPoolList_Boss_Ixora2', 'ItemPoolListData'),
             ))
+mod.newline()
+
+# Gmork *only* has its unique drop pool defined; give it ItemPoolList_BadassEnemyGunsGear too,
+# like all other DLC3 Hunt creatures.  Note that we must do this both on the DODIP structure
+# *and* the PT structure.
+mod.comment('Add in Badass gear drops to Gmork')
+ba_gmork = Mod.get_full_cond('/Game/GameData/Loot/ItemPools/ItemPoolList_BadassEnemyGunsGear', 'ItemPoolListData')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Gmork_B_Wolf_Child',
+        '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE',
+        'DropOnDeathItemPools.ItemPoolLists',
+        f'({ba_gmork})')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_Gmork_B_Wolf_Child',
+        '/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child.BPChar_Gmork_B_Wolf_Child_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs.PlayThroughs[0].DropOnDeathItemPools.ItemPoolLists',
+        f'({ba_gmork})')
 mod.newline()
 
 # There's at least one case of gear which doesn't drop evenly, so smooth that out.
@@ -2278,6 +2308,50 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
         '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE',
         'PlayThroughs[0].DropOnDeathItemPools.ItemPools',
         '()')
+mod.newline()
+
+# The 2021-04-22 hotfix adds various dedicated drops on DLC3 bosses, but their addition of
+# Insider to Tom/Xam is broken and won't actually apply.  They'll theoretically fix that
+# up at some point, but for now I'm doing it here myself.
+mod.comment('Fix Tom/Xam Insider addition')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_LostTwo_BigBro',
+        '/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender.Balance_DAL_AR_Soulrender,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender.Balance_DAL_AR_Soulrender"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider"',
+                Weight=(BaseValueConstant=1)
+            )
+        )""")
+mod.newline()
+
+# The 2021-04-22 hotfix adds various dedicated drops on DLC3 bosses, but their addition of
+# Sapper COM to Empowered Grawn is broken and won't actually apply.  They'll theoretically fix that
+# up at some point, but for now I'm doing it here myself.
+mod.comment('Fix Empowered Grawn Sapper COM addition')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_LunaticPossessed',
+        '/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy',
+        'BalancedItems',
+        """
+        (
+            (
+                InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy.InvBalD_Artifact_Lunacy,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy.InvBalD_Artifact_Lunacy"',
+                Weight=(BaseValueConstant=1)
+            ),
+            (
+                InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib.InvBalD_CM_Gunner_Hib,
+                ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib.InvBalD_CM_Gunner_Hib"',
+                Weight=(BaseValueConstant=1)
+            )
+        )""")
 mod.newline()
 
 mod.comment('Fix Hightower Crew drops')

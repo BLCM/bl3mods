@@ -64,6 +64,15 @@ anything if you do).
 Changelog
 =========
 
+**v1.3.2** - Apr 23, 2021
+ * Updated with extra drop sources added in GBX's 2021-04-22 hotfix (for DLC2
+   enemies)
+   * Put in fixes for two GBX additions which are still currently broken,
+     namely: adding Insider to Tom/Xam, and adding Sapper COM to Empowered
+     Grawn
+ * Fixed some edge cases with Gmork drops, and added the standard "Badass"
+   pool list to Gmork's drops, to match the other Hunt creatures in DLC2.
+
 **v1.3.1** - Apr 13, 2021
  * Added DLC6 enemies to the improved Eridium drop sections.
 

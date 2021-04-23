@@ -661,54 +661,54 @@ Guns, Love, and Tentacles (DLC2 - Hibiscus) - Xylourgos
  * 2x Anarchy, Seeryul Killur, Oldridian, Flama Diddle, Insider
 
 **Amach (rare spawn)**
- * 1x Unseen Threat
+ * 2x Unseen Threat, Seeryul Killer
 
 ## Dustbound Archives
 
 **Empowered Scholar**
- * 1x Void Rift
+ * 2x Void Rift, Oldridian
 
 ## Heart's Desire
 
 **Tom**
- * 1x Soulrender
+ * 1x Soulrender, Insider
 
 **Xam**
- * 1x Soulrender
+ * 1x Soulrender, Insider
 
 **Kratch**
  * 1x Tactical Tentacle Trinket, Occult Glow ECHO Theme
 
 **Eleanor and the Heart**
- * 1x Love Drill (legendary version)
+ * 2x Love Drill (legendary version), Old God
  * 1x Marry Me emote
 
 ## Negul Neshai
 
 **Shiverous the Unscathed (rare spawn)**
- * 1x Hydrafrost
+ * 2x Hydrafrost, Tr4iner COM
 
 **Voltborn (rare spawn)**
- * 1x Shocker
+ * 2x Shocker, Conductor COM
 
 **Kukuwajack**
  * 2x Frozen Devil, Anarchy
  * (Data only has Frozen Devil, but SparkCharacterLoadedEntry682 adds Anarchy)
 
 **Empowered Grawn**
- * 1x Lunacy Artifact
+ * 2x Lunacy Artifact, Sapper COM
  * 1x Lunatic Shield Room Decoration
 
 ## Cankerwood
 
 **Gmork**
- * 1x Nothingness
+ * 2x Nothingness, Torch
 
 **Fungal Gorger (rare spawn)**
- * 1x Mutant
+ * 2x Mutant, Stone COM
 
 **Wendigo**
- * 1x Stauros' Burn
+ * 2x Stauros' Burn, Flama Diddle
 
 Bounty of BLood (DLC3 - Geranium) - Gehenna
 -------------------------------------------
