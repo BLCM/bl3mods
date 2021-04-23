@@ -28,6 +28,9 @@ Better Loot in your mod list.
 Changelog
 =========
 
+**v1.3.1** - Apr 23, 2021
+ * Updated for new DLC2 drops added by yesterday's hotfixes
+
 **v1.3.0** - Apr 14, 2021
  * Updated for DLC6 (Director's Cut)
 
