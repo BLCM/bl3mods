@@ -36,6 +36,12 @@ added into the loot pool properly.
 Changelog
 =========
 
+**v1.4.0** - Apr 24, 2021
+ * Added in setting the gun-type drop weights on the main Legendary Gun pool,
+   to match the total weighting available in each gun type.  Effectively, all
+   legendary guns are now equally-likely when the man Legendary Gun pool is
+   used.
+
 **v1.3.0** - Apr 11, 2021
  * Added DLC6 (Director's Cut) and Vault Card #1 items
 

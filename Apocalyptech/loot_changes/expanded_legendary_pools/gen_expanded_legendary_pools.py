@@ -60,7 +60,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'at a reduced rate compared to the legendaries already in there.',
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.3.0',
+        v='1.4.0',
         cats='loot-system, enemy-drops',
         )
 
@@ -131,7 +131,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
 
 addition_scale = 0.6
 pools = [
-        ('ARs', '/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary',
+        ('ARs', 0, '/Game/GameData/Loot/ItemPools/Guns/AssaultRifles/ItemPool_AssaultRifles_Legendary.ItemPool_AssaultRifles_Legendary',
             [
                 ### Original Pool
 
@@ -279,7 +279,7 @@ pools = [
                 ('/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/BigSucc/Balance_AR_VLA_BigSucc.Balance_AR_VLA_BigSucc', 0.2*addition_scale),
                 ]),
 
-        ('Heavy Weapons', '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary',
+        ('Heavy Weapons', 1, '/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary',
             [
                 ### Original pool
 
@@ -366,7 +366,7 @@ pools = [
                 ('/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/Mongol/Balance/Balance_HW_VLA_Mongol.Balance_HW_VLA_Mongol', 1*addition_scale),
                 ]),
 
-        ('Pistols', '/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary',
+        ('Pistols', 3, '/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary',
             [
                 ### Original pool
 
@@ -561,7 +561,7 @@ pools = [
                 ('/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/TheLeech/Balance/Balance_PS_VLA_TheLeech.Balance_PS_VLA_TheLeech', 1*addition_scale),
                 ]),
 
-        ('Shotguns', '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary',
+        ('Shotguns', 4, '/Game/GameData/Loot/ItemPools/Guns/Shotguns/ItemPool_Shotguns_Legendary.ItemPool_Shotguns_Legendary',
             [
                 ### Original pool
 
@@ -715,7 +715,7 @@ pools = [
                 ('/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Thumper/Balance/Balance_SG_Torgue_Thumper.Balance_SG_Torgue_Thumper', 1*addition_scale),
                 ]),
 
-        ('SMGs', '/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary',
+        ('SMGs', 5, '/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_Legendary.ItemPool_SMGs_Legendary',
             [
                 ### Original pool
 
@@ -867,7 +867,7 @@ pools = [
                 ('/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/SpiderMind/Balance/Balance_SM_TED_SpiderMind.Balance_SM_TED_SpiderMind', 1*addition_scale),
                 ]),
 
-        ('Snipers', '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary',
+        ('Snipers', 2, '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRifles_Legendary.ItemPool_SnipeRifles_Legendary',
             [
                 ### Original pool
 
@@ -974,7 +974,7 @@ pools = [
                 ('/Game/Gear/Weapons/_Shared/NPC_Weapons/Zero/ZeroForPlayer/Balance_SR_HYP_ZeroForPlayer.Balance_SR_HYP_ZeroForPlayer', 1*addition_scale),
                 ]),
 
-        ('Shields', '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary',
+        ('Shields', None, '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_05_Legendary.ItemPool_Shields_05_Legendary',
             [
                 ### Original pool
 
@@ -1120,7 +1120,7 @@ pools = [
                 ('/Game/Gear/Shields/_Design/_Uniques/_XPLootBooster/Balance/InvBalD_Shield_XPLootBooster.InvBalD_Shield_XPLootBooster', 1*addition_scale),
                 ]),
 
-        ('Grenades', '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary',
+        ('Grenades', None, '/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary',
             [
                 ### Original pool
 
@@ -1230,7 +1230,7 @@ pools = [
                 ('/Game/Gear/GrenadeMods/_Design/_Unique/WizardOfNOG/Balance/InvBalD_GM_WizardOfNOG.InvBalD_GM_WizardOfNOG', 1*addition_scale),
                 ]),
 
-        ('Beastmaster COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary',
+        ('Beastmaster COMs', None, '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary.ItemPool_ClassMods_Beastmaster_05_Legendary',
             [
                 # Stock COMs
                 ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Beastmaster_05_Legendary', 6),
@@ -1255,7 +1255,7 @@ pools = [
 
                 ]),
 
-        ('Gunner COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
+        ('Gunner COMs', None, '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary.ItemPool_ClassMods_Gunner_05_Legendary',
             [
                 # Stock COMs
                 ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Gunner_05_Legendary', 5),
@@ -1280,7 +1280,7 @@ pools = [
 
                 ]),
 
-        ('Operative COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary.ItemPool_ClassMods_Operative_05_Legendary',
+        ('Operative COMs', None, '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary.ItemPool_ClassMods_Operative_05_Legendary',
             [
                 # Stock COMs
                 ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Operative_05_Legendary', 5),
@@ -1309,7 +1309,7 @@ pools = [
 
                 ]),
 
-        ('Siren COMs', '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
+        ('Siren COMs', None, '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_05_Legendary.ItemPool_ClassMods_Siren_05_Legendary',
             [
                 # Stock COMs
                 ('/Game/Gear/ClassMods/_Design/BalanceDefs/InvBalD_ClassMod_Siren_05_Legendary', 5),
@@ -1334,7 +1334,7 @@ pools = [
 
                 ]),
 
-        ('Artifacts', '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary',
+        ('Artifacts', None, '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary.ItemPool_Artifacts_05_Legendary',
             [
                 ### Original Pool
 
@@ -1395,10 +1395,36 @@ pools = [
 
     ]
 
-for (label, pool, balances) in pools:
+mod.header('Expand Legendary Pools')
+legendary_weight_params = []
+total_weight = 0
+for (label, leg_gun_idx, pool, balances) in pools:
     mod.comment(label)
     set_pool(mod, pool, balances)
     mod.newline()
+
+    # Collect info about the total weights contained in each gun category
+    if leg_gun_idx is not None:
+        legendary_weight_params.append((
+            leg_gun_idx,
+            label,
+            sum([b[1] for b in balances]),
+            ))
+        total_weight += legendary_weight_params[-1][2]
+
+mod.newline()
+
+mod.header('Redistribute legendary gun drops evenly')
+for idx, label, weight in sorted(legendary_weight_params):
+    mod.comment('{}: {}%'.format(
+        label,
+        int(round(weight/total_weight, 6)*100),
+        ))
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary',
+            f'BalancedItems.BalancedItems[{idx}].Weight.BaseValueConstant',
+            round(weight, 6))
+mod.newline()
 
 mod.close()
 
