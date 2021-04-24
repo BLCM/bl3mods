@@ -211,12 +211,81 @@ def get_bpchar(s):
 #     'heavy':False,
 #     'modify_spawnpoints':False,
 # }
+# # sane
+#params = {
+#    "extend":(119,119,119),
+#    'collision':'AdjustIfPossibleButAlwaysSpawn',
+#    "UseActorProperties":"False",# maybe coop doesn't see it
+#    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#    'heavy':False,
+#    'modify_spawnpoints':True,
+#}
+# # still didn't work on heavies
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # 
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# Play with spawn origin
+# # DID NOT SPAWN WELL
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"True",
+#     'SpawnOrigin':f'(X={0},Y={0},Z={0})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# COOP ISSUES
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"True",
+#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+
+
 params = {
     "extend":(119,119,119),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",# maybe coop doesn't see it
-    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+    "UseActorProperties":"False",
+    'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
     'heavy':False,
+    "SpawnDetails":True,
+    "SpecialEffects":True,
+    'modify_spawnpoints':True,
+}
+# a little weird
+params = {
+    "extend":(119,119,119),
+    'collision':'AdjustIfPossibleButAlwaysSpawn',
+    "UseActorProperties":"False",
+    'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+    'heavy':False,
+    "SpawnDetails":True,
+    "SpecialEffects":True,
     'modify_spawnpoints':True,
 }
 
@@ -278,19 +347,38 @@ def make_ixora_spawns():
     
         done_so.add(so)
 
+
+# Maybe we should on SpawnerComponent
+#      "SpawnDetails" : {
+#         "Critical" : "ESpawnerCritical::AlwaysSpawn",
+#         "bOverrideCritical" : true
+#      },
+
+        
 def modify_spawnpoints():
     spawnpoints = json.load(open('spawnpoints.json'))
     pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+    objvals =  [('SpawnAction','None'),
+                ('bFilterByTag','False'), # was None
+                ('FilterMatchType','None'),
+                ('Tags','None')]
+    if params["SpecialEffects"]:
+        objvals.append(('SpecialEffect','None'))
     for sp in spawnpoints:
-        for (obj,val) in [('SpawnAction','None'),
-                          ('bFilterByTag','False'), # was None
-                          ('FilterMatchType','None'),
-                          ('Tags','None')]:
+        for (obj,val) in objvals:
             mod.reg_hotfix(
                 Mod.EARLYLEVEL, IXORA_MAP,
                 f"{pp_ixora_path}.{sp}.SpawnPointComponent",
                 obj,
                 val,'',True)
+        # danger!!!
+        if params["SpawnDetails"]:
+            for (obj,val) in [('SpawnDetails','(Critical=AlwaysSpawn,bOverrideCritical=True)'),]:
+                mod.reg_hotfix(
+                    Mod.EARLYLEVEL, IXORA_MAP,
+                    f"{pp_ixora_path}.{sp}.SpawnerComponent",
+                    obj,
+                    val,'',True)
 
 
             

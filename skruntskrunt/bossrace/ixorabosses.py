@@ -322,7 +322,8 @@ medium_bosses = [
     ('Yvan','/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_Yvan',"/Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Balance/Table_Balance_RagingBot","Raging_Yvan"), # M
     ('Steel Dragon','/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part3/_Design/Character/BPChar_DoItForDigby_SteelDragon',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","SteelDragon"), # M
     ('BloodBucket','/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part2/Character/BPChar_DoItForDigby_BloodBucket',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","BloodBucket"), # M
-    ('ThirdRail','/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","ThirdRail"), # M
+    # I've never seen ThirdRail spawn
+    # ('ThirdRail','/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","ThirdRail"), # M
     ('Giorgio','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_TinkBadass_Giorgio',"/Dandelion/Enemies/Looters/Tink/_Shared/_Design/Balance/Table_Balance_TinkLooters","Tink_Badass"), # M
     ('Lawrence','/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_EnforcerBadass_Lawrence',"/Dandelion/Enemies/Looters/Enforcer/_Shared/_Design/Balance/Table_Enforcer_BalanceLooters","Enforcer_Badass"), # M
     ('TonyBordel LLC','/Dandelion/Enemies/Looters/_Unique/OneMansTrash/_Design/Character/BPChar_OneMansTrash_TonyBordel',"/Dandelion/Enemies/Looters/_Shared/Balance/Table_Looters_Balance_Unique","TonyBordel"), # M
@@ -354,7 +355,8 @@ hard_bosses = [
     #('Tink of Cunning','/Game/Enemies/Tink/_Unique/TrialBoss/_Design/Character/BPChar_Tink_TrialBoss',"/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique","Tink_TrialBoss", {"raid1":66}), # H
     ('Mr. Titan','/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss',"/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique",'SlaughterBoss'), # H
     ('Caber Dowd','/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry',None,None), # H
-    ('Maxitrillion','/Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01',None,None), # H
+    # Too annoying
+    # ('Maxitrillion','/Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01',None,None), # H
     ('Tom','/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro',None,None), # H
     ('Voltborn','/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare',None,None), # H
     ('Xam','/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_ToughBro',None,None), # H
