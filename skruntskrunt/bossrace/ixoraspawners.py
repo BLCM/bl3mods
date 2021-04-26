@@ -277,13 +277,57 @@ params = {
     "SpecialEffects":True,
     'modify_spawnpoints':True,
 }
-# a little weird
+# # a little weird
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+#
+# # Traunt moved but sigdriftia did not.?
+# params = {
+#     "extend":(160,160,160),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# Sigdriftia spawns but doesn't move
 params = {
-    "extend":(119,119,119),
+    "extend":(180,180,180),
     'collision':'AdjustIfPossibleButAlwaysSpawn',
     "UseActorProperties":"False",
     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
-    'heavy':False,
+    'heavy':True,
+    "SpawnDetails":True,
+    "SpecialEffects":True,
+    'modify_spawnpoints':True,
+}
+# They fall through the map
+params = {
+    "extend":(180,180,180),
+    'collision':'AdjustIfPossibleButAlwaysSpawn',
+    "UseActorProperties":"False",
+    'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
+    'heavy':True,
+    "SpawnDetails":True,
+    "SpecialEffects":True,
+    'modify_spawnpoints':True,
+}
+params = {
+    "extend":(180,180,180),
+    'collision':'AdjustIfPossibleButAlwaysSpawn',
+    "UseActorProperties":"False",
+    'SpawnOrigin':f'(X=0,Y=0,Z=-100)',
+    'heavy':True,
     "SpawnDetails":True,
     "SpecialEffects":True,
     'modify_spawnpoints':True,
@@ -342,7 +386,8 @@ def make_ixora_spawns():
                            params["UseActorProperties"])
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
-                       '(Critical=AlwaysSpawn)')
+                       '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
+            # AdjustIfPossibleButAlwaysSpawn
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
     
         done_so.add(so)
@@ -354,7 +399,13 @@ def make_ixora_spawns():
 #         "bOverrideCritical" : true
 #      },
 
-        
+#              "SpawnDetails" : {
+#         "RespawnStyle" : "ERespawnStyle::Never",
+#         "Critical" : "ESpawnerCritical::Critical",
+#         "bOverrideRespawnStyle" : true,
+#         "bOverrideCritical" : true
+#      },
+
 def modify_spawnpoints():
     spawnpoints = json.load(open('spawnpoints.json'))
     pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"

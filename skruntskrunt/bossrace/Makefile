@@ -1,6 +1,6 @@
 MOD=bossrace.bl3hotfix
 EXE=ixoraspawners.py
-SEED=42
+SEED ?= 42
 DISTFILES=$(MOD) bossrace.rand.bl3hotfix \
 	seeds/bossrace.1.bl3hotfix.txt \
 	seeds/bossrace.2.bl3hotfix.txt \
