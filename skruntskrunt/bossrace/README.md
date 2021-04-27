@@ -9,6 +9,8 @@ Skags common in arm's race.
 I win 10% of the games. It's hard. You should also try different seeds by
 clicking the read more link 42 different configurations are available to try.
 
+For more seeds visit this page: https://github.com/BLCM/bl3mods/tree/master/skruntskrunt/bossrace
+
 Header
 ======
 * Name: Boss Race
@@ -21,6 +23,10 @@ Header
 
 Changelog
 =========
+
+**v0.1.2** - 2021-04-27
+ * More tuning and removal of enemies that cause problems
+ * Trying to avoid lockups in Plunderdome and Watertreatment plant
 
 **v0.1.1** - 2021-04-22
  * Trying to avoid lockups in Plunderdome and Watertreatment plant

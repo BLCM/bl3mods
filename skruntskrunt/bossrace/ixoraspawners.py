@@ -60,7 +60,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.1',
+          v='0.1.2',
           cats='gameplay',
 )
 
@@ -211,13 +211,204 @@ def get_bpchar(s):
 #     'heavy':False,
 #     'modify_spawnpoints':False,
 # }
+# # sane
+#params = {
+#    "extend":(119,119,119),
+#    'collision':'AdjustIfPossibleButAlwaysSpawn',
+#    "UseActorProperties":"False",# maybe coop doesn't see it
+#    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#    'heavy':False,
+#    'modify_spawnpoints':True,
+#}
+# # still didn't work on heavies
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # 
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",# maybe coop doesn't see it
+#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# Play with spawn origin
+# # DID NOT SPAWN WELL
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"True",
+#     'SpawnOrigin':f'(X={0},Y={0},Z={0})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# COOP ISSUES
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"True",
+#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+
+# 
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # a little weird
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+#
+# # Traunt moved but sigdriftia did not.?
+# params = {
+#     "extend":(160,160,160),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # Sigdriftia spawns but doesn't move
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # They fall through the map, traunt doesn't though
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+#
+# Nothing spawns
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=0,Y=0,Z=-100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # Some spawning issues
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=-100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # Trying none? No spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':'None',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # # No spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":False,
+#     'modify_spawnpoints':False,
+# }
+# # # mod spawn but no special?
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":False,
+#     'modify_spawnpoints':True,
+# }
+# # All true? & Z=200 it didn't spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=200)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # ?? well the heavies do spawn :/ but sigdrifia just rotates :(
+# params = {
+#      "extend":(99,99,180),
+#      'collision':'AdjustIfPossibleButAlwaysSpawn',
+#      "UseActorProperties":"False",
+#      'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#      'heavy':True,
+#      "SpawnDetails":True,
+#      "SpecialEffects":True,
+#      'modify_spawnpoints':True,
+# }
 params = {
-    "extend":(119,119,119),
-    'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",# maybe coop doesn't see it
-    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-    'heavy':False,
-    'modify_spawnpoints':True,
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
 }
 
 
@@ -273,24 +464,50 @@ def make_ixora_spawns():
                            params["UseActorProperties"])
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
-                       '(Critical=AlwaysSpawn)')
+                       '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
+            # AdjustIfPossibleButAlwaysSpawn
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
     
         done_so.add(so)
 
+
+# Maybe we should on SpawnerComponent
+#      "SpawnDetails" : {
+#         "Critical" : "ESpawnerCritical::AlwaysSpawn",
+#         "bOverrideCritical" : true
+#      },
+
+#              "SpawnDetails" : {
+#         "RespawnStyle" : "ERespawnStyle::Never",
+#         "Critical" : "ESpawnerCritical::Critical",
+#         "bOverrideRespawnStyle" : true,
+#         "bOverrideCritical" : true
+#      },
+
 def modify_spawnpoints():
     spawnpoints = json.load(open('spawnpoints.json'))
     pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+    objvals =  [('SpawnAction','None'),
+                ('bFilterByTag','False'), # was None
+                ('FilterMatchType','None'),
+                ('Tags','None')]
+    if params["SpecialEffects"]:
+        objvals.append(('SpecialEffect','None'))
     for sp in spawnpoints:
-        for (obj,val) in [('SpawnAction','None'),
-                          ('bFilterByTag','False'), # was None
-                          ('FilterMatchType','None'),
-                          ('Tags','None')]:
+        for (obj,val) in objvals:
             mod.reg_hotfix(
                 Mod.EARLYLEVEL, IXORA_MAP,
                 f"{pp_ixora_path}.{sp}.SpawnPointComponent",
                 obj,
                 val,'',True)
+        # danger!!!
+        if params["SpawnDetails"]:
+            for (obj,val) in [('SpawnDetails','(Critical=AlwaysSpawn,bOverrideCritical=True)'),]:
+                mod.reg_hotfix(
+                    Mod.EARLYLEVEL, IXORA_MAP,
+                    f"{pp_ixora_path}.{sp}.SpawnerComponent",
+                    obj,
+                    val,'',True)
 
 
             
