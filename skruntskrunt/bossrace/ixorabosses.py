@@ -368,11 +368,13 @@ hard_bosses = [
     ("Dr Benedict",'/Alisma/Enemies/DrBenedict/_Shared/_Design/Character/BPChar_DrBenedict',"/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1","Basic"), # H
     # 1
     ("Enforcer_Reaper",'/Ixora/Enemies/CotV/Enforcer/Reaper/_Design/Character/BPChar_Enforcer_Reaper',"/Ixora/Enemies/CotV/Enforcer/_Shared/_Design/Balance/Table_Balance_Enforcer_Ixora","Enforcer_Reaper"), # H
-    ("SpongeBoss",'/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss',"/Alisma/Enemies/_Unique/SpongeBoss/_Design/Balance/Table_Balance_SpongeBoss","SpongeBoss"), # H
+    # too hard in arm's race
+    # ("SpongeBoss",'/Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss',"/Alisma/Enemies/_Unique/SpongeBoss/_Design/Balance/Table_Balance_SpongeBoss","SpongeBoss"), # H
     #("Security Sergeant",'/Alisma/Enemies/Constructor/_Unique/SecuritySergeant/_Design/Character/BPChar_Constructor_SecuritySergeant',"/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor","Basic"), # H
     #("Security Chief",'/Alisma/Enemies/Constructor/_Unique/SecurityChief/_Design/Character/BPChar_Constructor_SecurityChief',"/Game/PatchDLC/Dandelion/Enemies/Constructor/_Shared/_Design/Balance/Table_Balance_Constructor","Basic"), # H
     #("Hyperion Warden",'/Alisma/Enemies/HyperionPunk/_Unique/TheWarden/_Design/Character/BPChar_HyperionPunk_TheWarden',"/Game/Enemies/Punk_Female/_Shared/_Design/Balance/Table_Balance_Punk","Punk_Badass"), # H
-    ("Scraptrap Queen",'/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen',"/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1","Queen"), # H
+    # scraptrap is too hard
+    #("Scraptrap Queen",'/Game/PatchDLC/Dandelion/Enemies/Claptrap/Claptrap_Queen/_Design/Character/BPChar_ClaptrapQueen',"/Game/PatchDLC/Dandelion/Enemies/Claptrap/_Shared/_Design/Balance/Table_Balance_Claptrap_PT1","Queen"), # H
     ("Kormash",'/Geranium/Enemies/LodgeBoss/_Design/Character/BPChar_SploderBoss',"/Geranium/Enemies/GerEnforcer/_Shared/_Design/Balance/Table_GerEnforcer_Balance_Unique","GerEnforcer_SploderBoss"), # H
     ('OnePunch','/Game/Enemies/Psycho_Male/_Unique/OnePunch/Design/Character/BPChar_OnePunch','/Game/Enemies/Psycho_Male/_Shared/_Design/Balance/Table_Psycho_Balance_Unique','OnePunch'),
     #("Hildr",'/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossC/_Design/Character/BPChar_MechRaidBossC',"/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1","MechRaidBossC"), # H

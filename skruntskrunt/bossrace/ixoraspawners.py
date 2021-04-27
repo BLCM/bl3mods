@@ -60,7 +60,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.1',
+          v='0.1.2',
           cats='gameplay',
 )
 
@@ -266,17 +266,17 @@ def get_bpchar(s):
 #     'modify_spawnpoints':True,
 # }
 
-
-params = {
-    "extend":(119,119,119),
-    'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",
-    'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-    'heavy':False,
-    "SpawnDetails":True,
-    "SpecialEffects":True,
-    'modify_spawnpoints':True,
-}
+# 
+# params = {
+#     "extend":(119,119,119),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#     'heavy':False,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
 # # a little weird
 # params = {
 #     "extend":(119,119,119),
@@ -300,37 +300,115 @@ params = {
 #     "SpecialEffects":True,
 #     'modify_spawnpoints':True,
 # }
-# Sigdriftia spawns but doesn't move
+# # Sigdriftia spawns but doesn't move
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # They fall through the map, traunt doesn't though
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+#
+# Nothing spawns
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=0,Y=0,Z=-100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # Some spawning issues
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=-100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # Trying none? No spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':'None',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # # No spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":False,
+#     'modify_spawnpoints':False,
+# }
+# # # mod spawn but no special?
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":False,
+#     'modify_spawnpoints':True,
+# }
+# # All true? & Z=200 it didn't spawn
+# params = {
+#     "extend":(180,180,180),
+#     'collision':'AdjustIfPossibleButAlwaysSpawn',
+#     "UseActorProperties":"False",
+#     'SpawnOrigin':f'(X=1500,Y=0,Z=200)',
+#     'heavy':True,
+#     "SpawnDetails":True,
+#     "SpecialEffects":True,
+#     'modify_spawnpoints':True,
+# }
+# # ?? well the heavies do spawn :/ but sigdrifia just rotates :(
+# params = {
+#      "extend":(99,99,180),
+#      'collision':'AdjustIfPossibleButAlwaysSpawn',
+#      "UseActorProperties":"False",
+#      'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+#      'heavy':True,
+#      "SpawnDetails":True,
+#      "SpecialEffects":True,
+#      'modify_spawnpoints':True,
+# }
 params = {
-    "extend":(180,180,180),
-    'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",
-    'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
-    'heavy':True,
-    "SpawnDetails":True,
-    "SpecialEffects":True,
-    'modify_spawnpoints':True,
-}
-# They fall through the map
-params = {
-    "extend":(180,180,180),
-    'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",
-    'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
-    'heavy':True,
-    "SpawnDetails":True,
-    "SpecialEffects":True,
-    'modify_spawnpoints':True,
-}
-params = {
-    "extend":(180,180,180),
-    'collision':'AdjustIfPossibleButAlwaysSpawn',
-    "UseActorProperties":"False",
-    'SpawnOrigin':f'(X=0,Y=0,Z=-100)',
-    'heavy':True,
-    "SpawnDetails":True,
-    "SpecialEffects":True,
-    'modify_spawnpoints':True,
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
 }
 
 
