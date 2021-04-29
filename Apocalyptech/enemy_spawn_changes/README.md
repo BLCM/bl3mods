@@ -6,6 +6,8 @@ See the individual mod folders for full READMEs.
 - **Guaranteed Rare Spawns** - Guarantees that all rare spawns will spawn at 100%.
 - **Infighting** - Enemies will attack each other.
 - **Sizemod** - A collection of mods to make enemies and NPCs bigger, or smaller.
+- **Unlocked Vermivorous** - Allows Vermivorous to spawn during the Hemovorous
+  fight regardless of Mayhem level.
 
 Licenses
 ========
