@@ -400,6 +400,7 @@ def get_bpchar(s):
 #      "SpecialEffects":True,
 #      'modify_spawnpoints':True,
 # }
+# # Works OK v0.1.2 was this
 params = {
      "extend":(99,99,180),
      'collision':'AdjustIfPossibleButAlwaysSpawn',
@@ -410,6 +411,287 @@ params = {
      "SpecialEffects":True,
      'modify_spawnpoints':True,
 }
+# billy the annointed got stuck
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":False,
+     'modify_spawnpoints':False,
+}
+# billy worked? No. Not in the pit
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+}
+# Disabled Billy
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+}
+# added navcollisionsize
+# removed lowercase SpawnExtent
+# didn't spawn in pit?
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Y to 180
+# Switch to 80,80,80 NavCollision
+# sigdriftia spawns but doesn't move
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=80,Y=80,Z=80)',
+}
+# added NavBox.BoxExtent
+# Rota stands still
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=80,Y=80,Z=80)',
+}
+# 180 NavCollisionSize
+# spawn no move :(
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# 180 extend
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# just always spawn
+# rota doesn't move in WTF
+params = {
+     "extend":(180,180,180),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Just overdo it
+# nope still no movement
+params = {
+     "extend":(1800,1800,1800),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=1800,Y=1800,Z=1800)',
+}
+# Nuke it?
+# Rota doesn't move
+params = {
+     "extend":'None',#(180,180,180),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# ok add Adjust
+# no still no movement spawns
+params = {
+     "extend":'None',#(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# 200 extend
+# sigdrifia doesn't move
+params = {
+     "extend":(200,200,200),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# tesitng this now
+
+# navbox fix?
+# some sunk into the ground
+params = {
+     "extend":(150,150,150),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={0},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Nothing spawns
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Don't touch y Z is still 1500
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={0},Z={1500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# make spawn og X bigger
+# they all fell down in WTF
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={2500},Y={0},Z={500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# interesting...
+# spawn don't move but fall down
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={2500},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# 0 out X
+# spawn no move
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={0},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# try -500 X
+# spawn no move fall
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={-500},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# OK try use actor properties
+# spawn no move fall :(
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"True",
+     'SpawnOrigin':f'(X={-500},Y={-500},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Hmmm
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':True,
+}
+
 
 
 
@@ -437,12 +719,18 @@ def make_ixora_spawns():
         extend = params["extend"]
         scale = 1.0
         if not so in done_so:
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
-                       f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
-                       f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
+            if not extend == 'None':
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               'None')
+
+            #mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+            #           'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+            #           f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
                        'None')
@@ -493,6 +781,12 @@ def modify_spawnpoints():
                 ('Tags','None')]
     if params["SpecialEffects"]:
         objvals.append(('SpecialEffect','None'))
+    if params.get("NavCollisionSize",False):
+        v = params["NavCollisionSize"]
+        if v == True:
+            v = '(X=80.0,Y=80.0,Z=80.0)'
+        objvals.append(('NavCollisionSize',v))
+        objvals.append(('NavBox.Object..BoxExtent',v))
     for sp in spawnpoints:
         for (obj,val) in objvals:
             mod.reg_hotfix(
@@ -517,7 +811,7 @@ if params.get("modify_spawnpoints",False):
 
 if chubby_mod:
     mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
-    
+
 mod.close()
 
 # TODOS
