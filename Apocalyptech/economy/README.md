@@ -7,6 +7,8 @@ being used, which gives you far more Eridium than usual.
 
 See the individual mod folders for full READMEs.
 
+- **Anointment Re-Roll Cost** - A collection of mods to alter the cost of the
+  Anointment Re-Roll machine in Sanctuary.
 - **Better Slots** - Better results for slot machines.
 - **Cheaper Eridium Economy** - Makes Earl's shop and Eridium slot machines cheaper.
 - **Cheaper SDUs** - Vastly reduce the SDU costs.
