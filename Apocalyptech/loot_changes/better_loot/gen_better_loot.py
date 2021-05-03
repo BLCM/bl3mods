@@ -52,7 +52,7 @@ mod = Mod('better_loot.bl3hotfix',
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.3.2',
+        v='1.3.3',
         cats='enemy-drops, loot-system',
         )
 
@@ -1332,15 +1332,16 @@ for (label, bpchar_obj_base, bpchar_name, bpchar_idx, bpchar_qty) in [
             'BPChar_GerSaurianHorsemen4',
             0,
             1),
-        # Both of these seem to drop from the same pool, not sure which one's the "real" one.
-        # Just do both.
-        ("Ipswitch Dunne (v1)",
+        # Ipswitch Dunne is a rider on a Saurian, but if you kill one, the other dies
+        # automatically.  The only DropOnDeathItemPools to get triggered is for the
+        # one you directly killed, though, so we have to alter both.
+        ("Ipswitch Dunne (Ipswitch)",
             '/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character',
             'BPChar_GerEnforcerDispatcher',
             0,
             1),
-        ("Ipswitch Dunne (v2)",
-            '/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character',
+        ("Ipswitch Dunne (Saurian)",
+            '/Geranium/Enemies/GerSaurian/_Unique/Dispatcher/_Design/Character',
             'BPChar_GerSaurianDispatcher',
             0,
             1),

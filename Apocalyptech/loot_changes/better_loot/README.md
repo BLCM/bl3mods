@@ -64,6 +64,10 @@ anything if you do).
 Changelog
 =========
 
+**v1.3.3** - May 3, 2021
+ * Guaranteed boss drop when you kill Ipswitch Dunne's Saurian (we had an
+   invalid object path for that, previously)
+
 **v1.3.2** - Apr 23, 2021
  * Updated with extra drop sources added in GBX's 2021-04-22 hotfix (for DLC2
    enemies)

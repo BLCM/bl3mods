@@ -1,6 +1,6 @@
 ###
 ### Name: BL3 Better Loot
-### Version: 1.3.2
+### Version: 1.3.3
 ### Author: Apocalyptech
 ### Categories: enemy-drops, loot-system
 ###
@@ -1172,13 +1172,13 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Quartermaster_Tink),/Geranium/Enemies/Qu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianHorsemen4),/Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Character/BPChar_GerSaurianHorsemen4.BPChar_GerSaurianHorsemen4_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianHorsemen4),/Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Character/BPChar_GerSaurianHorsemen4.BPChar_GerSaurianHorsemen4_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# Ipswitch Dunne (v1)
+# Ipswitch Dunne (Ipswitch)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerEnforcerDispatcher),/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerEnforcerDispatcher.BPChar_GerEnforcerDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerEnforcerDispatcher),/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerEnforcerDispatcher.BPChar_GerEnforcerDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# Ipswitch Dunne (v2)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianDispatcher),/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerSaurianDispatcher.BPChar_GerSaurianDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianDispatcher),/Geranium/Enemies/GerEnforcer/_Unique/Dispatcher/_Design/Character/BPChar_GerSaurianDispatcher.BPChar_GerSaurianDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+# Ipswitch Dunne (Saurian)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianDispatcher),/Geranium/Enemies/GerSaurian/_Unique/Dispatcher/_Design/Character/BPChar_GerSaurianDispatcher.BPChar_GerSaurianDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianDispatcher),/Geranium/Enemies/GerSaurian/_Unique/Dispatcher/_Design/Character/BPChar_GerSaurianDispatcher.BPChar_GerSaurianDispatcher_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Pterodomini
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerRakkRod),/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/BPChar_GerRakkRod.BPChar_GerRakkRod_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
