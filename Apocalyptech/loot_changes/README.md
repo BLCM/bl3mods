@@ -31,6 +31,10 @@ See the individual mod folders for full READMEs.
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **Red Chest Timer Reset** - Prevents red chests from saving their open state to the
+  savegame, so they can be re-opened more quickly.
+- **Reopenable Gear Chests** - Removes the unlock timer from all red and white chests in the
+  game, so they can be re-opened after switching maps.
 - **Unlock Mayhem-Specific Drops** - Removes the Mayhem level restriction for drops which
   ordinarily require Mayhem 4 or Mayhem 6.
 - **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary

@@ -84,6 +84,10 @@ of the mods you'll find in here, though:
 - **No Wasted Equipment** - COMs, Customizations, and class-specific anointments will always
   match the player(s) currently in the game.
 - **Only Atlas Grenades** - Non-legendary/unique grenades will always be Atlas.
+- **Red Chest Timer Reset** - Prevents red chests from saving their open state to the
+  savegame, so they can be re-opened more quickly.
+- **Reopenable Gear Chests** - Removes the unlock timer from all red and white chests in the
+  game, so they can be re-opened after switching maps.
 - **Unlock Mayhem-Specific Drops** - Removes the Mayhem level restriction for drops which
   ordinarily require Mayhem 4 or Mayhem 6.
 - **World Drop Designer's Cut COMs** - Adds some ordinarily non-droppable non-legendary
@@ -122,6 +126,8 @@ of the mods you'll find in here, though:
 ## Mod-Testing Mods
 
 - **Arms Race Cheat** - A mod to make Arms Race completely trivial.
+- **Droughts Chest Moves** - Moves white+red chests in The Droughts to near the
+  Highway fast travel station, used for testing out some chest-related mods.
 - **Equal Character Gear Chance** - Makes character-specific gear equally likely
   to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.

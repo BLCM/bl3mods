@@ -8,6 +8,8 @@ so I don't have to worry about combat, and quickly levelling up characters, etc.
 See the individual mod folders for full READMEs.
 
 - **Arms Race Cheat** - A mod to make Arms Race completely trivial.
+- **Droughts Chest Moves** - Moves white+red chests in The Droughts to near the
+  Highway fast travel station, used for testing out some chest-related mods.
 - **Equal Character Gear Chance** - Makes character-specific gear equally likely
   to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
