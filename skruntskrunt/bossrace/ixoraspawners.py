@@ -40,11 +40,13 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
+    parser.add_argument('--nobias',action='store_true', default=False, help='Disable Item Rarity Biasing')
     return parser.parse_args()
 
 args = parse_args()
 our_seed = args.seed
 chubby_mod = not args.nochubby
+bias_items = not args.nobias
 
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
@@ -862,7 +864,22 @@ def modify_spawnpoints():
                     obj,
                     val,'',True)
 
-
+def bias_item_rarity():
+    # we can't guarantee initial chest but we can bias against it
+    GEARUP = "/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard"
+    WHITE  = "Common"
+    GREEN  =  "Uncommon"
+    BLUE   = "Rare"
+    PURPLE = "VeryRare"
+    ORANGE = "Legendary"
+    BASEWEIGHT = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
+    mod.comment("This is stolen from Poïpoï's Legendary Arm's race CC-BY-SA 4.0 ")
+    mod.comemnt("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
+    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),WHITE ,BASEWEIGHT,  1)   # 30
+    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),GREEN ,BASEWEIGHT, 74)   # 50
+    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),BLUE  ,BASEWEIGHT, 20)   # 15
+    # mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),PURPLE,BASEWEIGHT,  4)   #  4
+    # mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),ORANGE,BASEWEIGHT,  1)   #  1
             
 make_ixora_spawns()
 if params.get("modify_spawnpoints",False):
@@ -871,11 +888,14 @@ if params.get("modify_spawnpoints",False):
 if chubby_mod:
     mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
 
+if bias_items:
+    bias_item_rarity()
+    
 mod.close()
 
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
-# - [ ] Starting Chest Better?
+# - [?] Starting Chest Better?
 # - [ ] Big Mobs not moving in the pit
 # - [ ] Tiers of Big Guys
 # Thoughts:
