@@ -679,7 +679,7 @@ params = {
      'modify_spawnpoints':True,
      'NavCollisionSize':'(X=180,Y=180,Z=180)',
 }
-# Hmmm
+# Hmmm last successful play
 params = {
      "extend":(99,99,180),
      'collision':'AdjustIfPossibleButAlwaysSpawn',
@@ -691,6 +691,49 @@ params = {
      'modify_spawnpoints':True,
      'NavCollisionSize':True,
 }
+# heavy test with IrrelevantAction
+# didn't move
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+     'IrrelevantAction':True,     
+}
+# Now with critical
+# Respawn
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+     'IrrelevantAction':True,
+     'Critical':'Critical',
+     'RespawnStyle':True,
+}
+# works
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':True,
+}
+
 
 
 
@@ -750,10 +793,20 @@ def make_ixora_spawns():
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
                            params["UseActorProperties"])
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+            # respawn_style=""
+            # if params.get("RespawnStyle"
+            # respawn_style=",{params.get("Critical","AlwaysSpawn")}
+            if params.get("IrrelevantAction",False):
+                action = params.get("IrrelevantAction")
+                if action == True:
+                    action = "Nothing"
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                       f'(Critical={params.get("Critical","AlwaysSpawn")},bOverrideCritical=True,IrrelevantAction={action},bOverrideIrrelevantAction=True)')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
                        '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
-            # AdjustIfPossibleButAlwaysSpawn
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
     
         done_so.add(so)
@@ -795,8 +848,14 @@ def modify_spawnpoints():
                 obj,
                 val,'',True)
         # danger!!!
-        if params["SpawnDetails"]:
-            for (obj,val) in [('SpawnDetails','(Critical=AlwaysSpawn,bOverrideCritical=True)'),]:
+        if params.get("SpawnDetails",False):
+            details = {'Critical':params.get("Critical","AlwaysSpawn"),
+                       'bOverrideCritical':'True'}
+            if params.get("IrrelevantAction",False):
+                details["IrrelevantAction"] = 'Nothing'
+                details["bOverrideIrrelevantAction"] = 'True'
+            spdetails = ",".join([f'{x}={details[x]}' for x in details])
+            for (obj,val) in [('SpawnDetails',spdetails)]:
                 mod.reg_hotfix(
                     Mod.EARLYLEVEL, IXORA_MAP,
                     f"{pp_ixora_path}.{sp}.SpawnerComponent",
@@ -816,6 +875,7 @@ mod.close()
 
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
+# - [ ] Starting Chest Better?
 # - [ ] Big Mobs not moving in the pit
 # - [ ] Tiers of Big Guys
 # Thoughts:
