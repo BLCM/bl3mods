@@ -12,6 +12,8 @@ See the individual mod folders for full READMEs.
   Travel machine to some more useful locations.
 - **Beef Plissken Loot Pattern Fix** - Changes Beef Plissken's loot pattern to
   drop right around where he was, instead of potentially off the edge of the map.
+- **Black Markets Everywhere** - Enables all potential spawns for the Black Market
+  vending machine -- maps with the machine will have 2-3 available at all times.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The

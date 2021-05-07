@@ -4,6 +4,8 @@ Apocalyptech's Loot-Related BL3 Mods
 See the individual mod folders for full READMEs.
 
 - **Better Loot** - Improve the quality of loot, and set guaranteed drops for bosses.
+- **Black Market World Drops** - Makes the Black Market vending machines use the world
+  drop legendary pools.
 - **Boss Drop Randomizer** - Randomizes drops from bosses
 - **Customization Drop Rate** - A set of mods to change the drop rates for customizations,
   from none at all, to much more than usual.

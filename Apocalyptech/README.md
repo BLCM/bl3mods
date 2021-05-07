@@ -57,6 +57,8 @@ of the mods you'll find in here, though:
 ## Loot Changes
 
 - **Better Loot** - Improve the quality of loot, and set guaranteed drops for bosses.
+- **Black Market World Drops** - Makes the Black Market vending machines use the world
+  drop legendary pools.
 - **Boss Drop Randomizer** - Randomizes drops from bosses
 - **Customization Drop Rate** - A set of mods to change the drop rates for customizations,
   from none at all, to much more than usual.
@@ -151,6 +153,8 @@ of the mods you'll find in here, though:
   Travel machine to some more useful locations.
 - **Beef Plissken Loot Pattern Fix** - Changes Beef Plissken's loot pattern to
   drop right around where he was, instead of potentially off the edge of the map.
+- **Black Markets Everywhere** - Enables all potential spawns for the Black Market
+  vending machine -- maps with the machine will have 2-3 available at all times.
 - **Disable Email Loyalty Rewards** - Disables the emailed rewards you get
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The

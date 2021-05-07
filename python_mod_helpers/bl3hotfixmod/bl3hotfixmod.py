@@ -381,6 +381,19 @@ class Mod(object):
         self.df.close()
         print('Wrote mod to {}'.format(self.filename))
 
+    @staticmethod
+    def get_level_info(level_name):
+        """
+        Given a level identifier `level_name` (such as "Prologue_P"), returns a tuple.
+        The first element will be the case-normalized version of the level name,
+        and the second will be the english name of the level.
+        """
+        global LVL_TO_ENG
+        global LVL_CASE_NORM
+
+        level_name = LVL_CASE_NORM[level_name.lower()]
+        return(level_name, LVL_TO_ENG[level_name])
+
 class DataTableValue(object):
     """
     Class to make dealing with datatable values (inside BVC tuples) easier
@@ -1183,4 +1196,9 @@ LVL_TO_ENG = {
 LVL_TO_ENG_LOWER = {}
 for k, v in list(LVL_TO_ENG.items()):
     LVL_TO_ENG_LOWER[k.lower()] = v
+
+# Also a normalization mapping
+LVL_CASE_NORM = {}
+for k in list(LVL_TO_ENG.keys()):
+    LVL_CASE_NORM[k.lower()] = k
 
