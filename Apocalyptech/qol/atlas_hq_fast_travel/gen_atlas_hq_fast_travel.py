@@ -194,6 +194,16 @@ class Station:
         to leave it in here.
         """
 
+        # TODO: So one problem with this mod is that when you fast-travel into the
+        # map from outside, you end up getting dumped into the original Fast Travel
+        # spot first.  You can then do an in-map fast travel over to the real
+        # station, at least, which is pretty quick.  I'm honestly not sure if there's
+        # anything we can do about that at the moment -- I assume that the player's
+        # location must be set real early on in the level-loading process, before
+        # hotfixes have been processed.  I did try converting all these to EARLYLEVEL
+        # instead, but that didn't change anything.  So yeah, might be something
+        # that requires a hypothetical SDK.  Still, better than nothing!
+
         # Sub-objects we'll be touching
         sm_obj_name = f'{self.obj_name}.SkeletalMesh'
         aa_obj_name = f'{self.obj_name}.ActivationArea'
@@ -385,7 +395,7 @@ for title, filename, moves, desc in [
             'Apocalyptech',
             desc,
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.0.1',
             cats='qol, maps',
             ss=[f'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/atlas_hq_fast_travel/screenshot_{filename}.jpg'],
             )
@@ -395,6 +405,17 @@ for title, filename, moves, desc in [
         mod.comment(station.obj_name_last)
         station.move_to(mod, location)
         mod.newline()
+
+    # Update the location for the station when we're *not* already at Atlas HQ
+    # We're assuming here that the first entry in the `moves` list is the one
+    # describing where the FT station itself is going.
+    loc = moves[0][1]
+    mod.header('Update global game map FT location')
+    mod.reg_hotfix(Mod.PATCH, '',
+            '/Game/GameData/ZoneMap/ZoneMapData/ZoneMapData_AtlasHQ',
+            'ZoneMapPOIList.ZoneMapPOIList[3].PointOfInterestTransform.Translation',
+            f'(x={loc.x},y={loc.y},z={loc.z})')
+    mod.newline()
 
     # Close
     mod.close()

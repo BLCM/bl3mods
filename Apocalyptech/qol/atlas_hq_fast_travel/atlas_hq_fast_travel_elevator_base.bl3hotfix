@@ -1,6 +1,6 @@
 ###
 ### Name: Atlas HQ Fast Travel: Base of Elevator
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: Apocalyptech
 ### Categories: qol, maps
 ###
@@ -19,9 +19,9 @@
 ###
 
 # FastTravelStationObject_1547
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.SkeletalMesh,RelativeLocation,0,,(x=-25151,y=1338.9989,z=105)
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.SkeletalMesh,RelativeRotation,0,,(pitch=0,yaw=-90.00006,roll=0)
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.ActivationArea,RelativeLocation,0,,(x=645.046,y=-11.335785,z=0)
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.SkeletalMesh,RelativeLocation,0,,(x=-25151.0,y=1338.9989,z=105.0)
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.SkeletalMesh,RelativeRotation,0,,(pitch=0.0,yaw=-90.00006,roll=0.0)
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.ActivationArea,RelativeLocation,0,,(x=645.046,y=-11.335785,z=0.0)
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.ActivationArea,DetectionRadius,0,,2700.301
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.ActivationArea,DetectionHalfHeight,0,,300
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.FastTravelStationObject_1547.OakTravelStationResurrectComponent,RelativeLocation,0,,(x=0,y=0,z=0)
@@ -30,10 +30,16 @@ SparkLevelPatchEntry,(1,1,0,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtya
 
 # Checkpoint_ControlRoomTwo
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.SkeletalMesh,RelativeLocation,0,,(x=12154.898,y=8611.153,z=-1699.1996)
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.SkeletalMesh,RelativeRotation,0,,(pitch=0,yaw=135.63383,roll=0)
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.ActivationArea,RelativeLocation,0,,(x=1786.0347,y=625.00183,z=-155)
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.SkeletalMesh,RelativeRotation,0,,(pitch=0.0,yaw=135.63383,roll=0.0)
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.ActivationArea,RelativeLocation,0,,(x=1786.0347,y=625.00183,z=-155.0)
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.ActivationArea,DetectionRadius,0,,2700.301
-SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.ActivationArea,DetectionHalfHeight,0,,500
+SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.ActivationArea,DetectionHalfHeight,0,,500.0
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.OakTravelStationResurrectComponent,RelativeLocation,0,,(x=0,y=0,z=0)
 SparkLevelPatchEntry,(1,1,1,AtlasHQ_P),/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_Courtyard_Dynamic.AtlasHQ_Courtyard_Dynamic:PersistentLevel.Checkpoint_ControlRoomTwo.OakTravelStationResurrectComponent,bActivateOnEnterArea,0,,True
+
+###
+### Update global game map FT location
+###
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/ZoneMap/ZoneMapData/ZoneMapData_AtlasHQ.ZoneMapData_AtlasHQ,ZoneMapPOIList.ZoneMapPOIList[3].PointOfInterestTransform.Translation,0,,(x=-25151.0,y=1338.9989,z=105.0)
 
