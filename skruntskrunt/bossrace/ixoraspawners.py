@@ -874,13 +874,42 @@ def bias_item_rarity():
     ORANGE = "Legendary"
     BASEWEIGHT = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
     mod.comment("This is stolen from Poïpoï's Legendary Arm's race CC-BY-SA 4.0 ")
-    mod.comemnt("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
-    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),WHITE ,BASEWEIGHT,  1)   # 30
-    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),GREEN ,BASEWEIGHT, 74)   # 50
-    mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),BLUE  ,BASEWEIGHT, 20)   # 15
-    # mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),PURPLE,BASEWEIGHT,  4)   #  4
-    # mod.reg_hotfix(DFL_LEVEL, GEARUP, Mod.get_full(so),ORANGE,BASEWEIGHT,  1)   #  1
-            
+    mod.comment("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, WHITE ,BASEWEIGHT,  1)   # 30
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, GREEN ,BASEWEIGHT, 749)   # 50
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, BLUE  ,BASEWEIGHT, 200)   # 15
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, PURPLE,BASEWEIGHT,  40)   #  4
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, ORANGE,BASEWEIGHT,  10)   #  1
+
+    # Ok now we manipulate the itempools instead
+    valuename = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
+    # 1% chance here
+    valuevalue = "Legendary"
+    pistol_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_PS_Equippable"
+    pistol_key = "BalancedItems[0].ItemPoolData"
+    pistol_key2 = "BalancedItems[0].Weight.DataTableValue"
+    pistol_v2 = "None"
+    uc_pistols = "/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Uncommon"
+    itempool_pistols = f"ItemPoolData'\"{uc_pistols}\"'"
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key, itempool_pistols)
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key2, pistol_v2)
+    smg_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Equippable"
+    smg_key = pistol_key
+    smg_key2 = "BalancedItems[0].Weight.DataTableValue"
+    smg_v2 = "None"
+    uc_smg = "/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Uncommon"
+    itempool_smg = f"ItemPoolData'\"{uc_smg}\"'"
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key, itempool_smg)
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key2, smg_v2)
+    shield_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_Shields_Equippable"
+    shield_key = pistol_key
+    shield_key2 = smg_key2
+    shield_v2 = smg_v2
+    uc_shield = "/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_02_Uncommon"
+    itempool_shield = f"ItemPoolData'\"{uc_shield}\"'"    
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key, itempool_shield)
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key2, shield_v2)
+    
 make_ixora_spawns()
 if params.get("modify_spawnpoints",False):
     modify_spawnpoints()
