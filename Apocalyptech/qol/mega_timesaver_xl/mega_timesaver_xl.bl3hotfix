@@ -1,6 +1,6 @@
 ###
 ### Name: Mega TimeSaver XL
-### Version: 0.9.0
+### Version: 0.9.1
 ### Author: Apocalyptech
 ### Categories: qol
 ###
@@ -29,16 +29,16 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/GameplayGlobals.GameplayGlobals,MassPick
 
 # Pickup flight speeds (likewise, I suspect many of these don't actually do much)
 # The `AutoLootContainer` ones definitely do help, at least.
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/AutoLootContainerPickupFlyToSettings.AutoLootContainerPickupFlyToSettings,LinearSpeed,0,,1500
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/AutoLootContainerPickupFlyToSettings.AutoLootContainerPickupFlyToSettings,LinearAcceleration,0,,1300
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/AutoLootContainerPickupFlyToSettings.AutoLootContainerPickupFlyToSettings,LinearSpeed,0,,1500.0
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/AutoLootContainerPickupFlyToSettings.AutoLootContainerPickupFlyToSettings,LinearAcceleration,0,,1300.0
 SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerEchoLogPickupFlyToSettings.ContainerEchoLogPickupFlyToSettings,LinearSpeed,0,,2000
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerEchoLogPickupFlyToSettings.ContainerEchoLogPickupFlyToSettings,LinearAcceleration,0,,1000
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerEchoLogPickupFlyToSettings.ContainerEchoLogPickupFlyToSettings,LinearAcceleration,0,,1000.0
 SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerPickupFlyToSettings.ContainerPickupFlyToSettings,LinearSpeed,0,,2000
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerPickupFlyToSettings.ContainerPickupFlyToSettings,LinearAcceleration,0,,1000
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/ContainerPickupFlyToSettings.ContainerPickupFlyToSettings,LinearAcceleration,0,,1000.0
 SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedEchoLogPickupFlyToSettings.DroppedEchoLogPickupFlyToSettings,LinearSpeed,0,,2000
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedEchoLogPickupFlyToSettings.DroppedEchoLogPickupFlyToSettings,LinearAcceleration,0,,1000
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedEchoLogPickupFlyToSettings.DroppedEchoLogPickupFlyToSettings,LinearAcceleration,0,,1000.0
 SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedPickupFlyToSettings.DroppedPickupFlyToSettings,LinearSpeed,0,,2000
-SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedPickupFlyToSettings.DroppedPickupFlyToSettings,LinearAcceleration,0,,1000
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/_Design/DroppedPickupFlyToSettings.DroppedPickupFlyToSettings,LinearAcceleration,0,,1000.0
 
 ###
 ### Containers: Simple Animation Speedups

@@ -72,6 +72,11 @@ TODO
 Changelog
 =========
 
+**v0.9.1** - May 10, 2021
+ * Mod file was rebuilt using some updated backend infrastructure; no
+   actual changes, but some values changed from integers to floats
+   (`1000` -> `1000.0`, for instance)
+
 **v0.9.0** - March 10, 2021
  * Initial beta release.  Incomplete, but should be handy regardless!
  

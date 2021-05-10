@@ -46,7 +46,7 @@ mod = Mod('mega_timesaver_xl.bl3hotfix',
             "speed.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='0.9.0',
+        v='0.9.1',
         cats='qol',
         )
 
@@ -1188,5 +1188,37 @@ if False:
             '/Game/Lootables/_Design/Classes/Global/BPIO_Lootable_BonePile.Default__BPIO_Lootable_BonePile_C',
             'ShouldAttachLoot',
             'True')
+
+if False:
+
+    elev_scale=2
+
+    # these don't do anything
+    if False:
+        for thing in [Mod.LEVEL, Mod.EARLYLEVEL]:
+
+            mod.reg_hotfix(thing, 'AtlasHQ_P',
+                    '/Game/Missions/Plot/Ep06_OfficeSpaceInvaders/Elevator_Ep06_AtlasHQ_V2.Default__Elevator_Ep06_AtlasHQ_V2_C',
+                    'ElevatorSpeed',
+                    250*elev_scale)
+
+            mod.reg_hotfix(thing, 'AtlasHQ_P',
+                    '/Game/Missions/Plot/Ep06_OfficeSpaceInvaders/Elevator_Ep06_AtlasHQ_V2.Default__Elevator_Ep06_AtlasHQ_V2_C',
+                    'ElevatorTravelTime',
+                    47/elev_scale)
+
+    # This does, but the one that moves just has the value get overwritten dynamically.  blueprinty things, I'm guessing.  ><
+    for num in [0, 2]:
+
+        mod.reg_hotfix(Mod.LEVEL, 'AtlasHQ_P',
+                f'/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_M_EP06OfficeSpaceInvaders.AtlasHQ_M_EP06OfficeSpaceInvaders:PersistentLevel.Elevator_Ep06_AtlasHQ_V_{num}',
+                'ElevatorSpeed',
+                #250*elev_scale)
+                2000)
+
+        mod.reg_hotfix(Mod.LEVEL, 'AtlasHQ_P',
+                f'/Game/Maps/Zone_1/AtlasHQ/AtlasHQ_M_EP06OfficeSpaceInvaders.AtlasHQ_M_EP06OfficeSpaceInvaders:PersistentLevel.Elevator_Ep06_AtlasHQ_V_{num}',
+                'ElevatorTravelTime',
+                47/elev_scale)
 
 mod.close()
