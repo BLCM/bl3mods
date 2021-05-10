@@ -39,6 +39,24 @@ mod = Mod('faster_cost_spin.txt',
 # /Game/UI/CurrencyWidget/BPWidget_CurrencyWidget
 # /Game/UI/ItemCard/BPWidget_GFxItemCard
 
+# Does not seem to update attr
+#mod.reg_hotfix(Mod.PATCH, '',
+#        '/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C',
+#        'DelayAfterResurrect',
+#        0.1)
+
+# Does not seem to update attr
+#mod.reg_hotfix(Mod.PATCH, '',
+#        '/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C',
+#        'CostSpinTimeOnResurrect',
+#        0.1)
+
+# Does not actually change the value
+#mod.reg_hotfix(Mod.PATCH, '',
+#        '/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C',
+#        'MaxTimeUntilStopAdvancing',
+#        0.1)
+
 # Does change the value, but doesn't seem to affect the card
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/UI/CurrencyWidget/BPWidget_CurrencyWidget.Default__BPWidget_CurrencyWidget_C',
