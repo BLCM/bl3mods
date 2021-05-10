@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -27,7 +27,8 @@ mod = Mod('vehicle_unlocks.bl3hotfix',
         'Vehicle Unlocks',
         'Apocalyptech',
         [
-            "Unlocks most vehicle parts/skins from the beginning of the game.  Wheel",
+            "Sets enemy vehicle spawns to use all vehicle parts/skins from the beginning of",
+            "the game, for ease of collecting the  widest possible number of parts.  Wheel",
             "types, unfortunately, can't be unlocked early, but the others should be",
             "available as soon as the associated vehicles are.  Vehicles will always",
             "pull from the entire available part/skin pools, so there will be a much",
@@ -39,7 +40,7 @@ mod = Mod('vehicle_unlocks.bl3hotfix',
             "there's ingame sources for the Monster Wheels."
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='gameplay, vehicle',
         )
 

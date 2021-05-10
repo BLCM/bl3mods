@@ -1,6 +1,6 @@
 ###
 ### Name: Vehicle Unlocks
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: Apocalyptech
 ### Categories: gameplay, vehicle
 ###
@@ -9,7 +9,8 @@
 ###
 
 ###
-### Unlocks most vehicle parts/skins from the beginning of the game.  Wheel
+### Sets enemy vehicle spawns to use all vehicle parts/skins from the beginning of
+### the game, for ease of collecting the  widest possible number of parts.  Wheel
 ### types, unfortunately, can't be unlocked early, but the others should be
 ### available as soon as the associated vehicles are.  Vehicles will always
 ### pull from the entire available part/skin pools, so there will be a much
