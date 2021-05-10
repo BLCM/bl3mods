@@ -501,7 +501,7 @@ E /Game/Enemies/ServiceBot/_Unique/JanitorBot/_Design/Character/BPChar_ServiceBo
 E /Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01
 I /Game/Enemies/ServiceBot/_Unique/Abomination/_Design/Character/BPChar_ServiceBot_Abomination
 E /Game/Enemies/ServiceBot/_Unique/Maliwan/_Design/Character/BPChar_ServiceBot_Maliwan
-E /Game/Enemies/ServiceBot/_Unique/PattyWorker/_Design/Character/BPChar_ServiceBot_PattyWorker
+I /Game/Enemies/ServiceBot/_Unique/PattyWorker/_Design/Character/BPChar_ServiceBot_PattyWorker
 I /Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01_Larva
 I /Game/Enemies/Varkid/_Unique/Hunt01/_Design/Character/BPChar_VarkidHunt01
 I /Game/Enemies/Varkid/_Unique/BossFodder/_Design/Character/BPChar_VarkidBossFodder
@@ -700,6 +700,16 @@ M /Dandelion/Enemies/Loader/_Unique/AcidTrip/Facemelt/_Design/Character/BPChar_A
 M /Dandelion/Enemies/Loader/_Unique/Impound/_Design/Character/BPChar_BudLoader
 M /Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader"""
 
+cartels = """M /Game/PatchDLC/Event2/Enemies/Tiny/Psycho/Badass/_Design/Character/BPChar_PsychoBadassTinyEvent2
+M /Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo
+M /Game/PatchDLC/Event2/Enemies/Cyber/Punk/TechLt/_Design/Character/BPChar_PunkCyberLt
+M /Game/PatchDLC/Event2/Enemies/Meat/Punk/RoasterLT/_Design/Character/BPChar_Punk_Roaster
+M /Game/PatchDLC/Event2/Enemies/Meat/Tink/TenderizerLt/_Design/Character/BPChar_Tink_Tenderizer
+H /Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2
+E /Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Law/BPChar_ServiceBot_LAWEvent2
+E /Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Officer/BPChar_ServiceBot_Officer"""
+
+bpchars_text_tuple = bpchars_text_tuple + "\n" + cartels
 
 def tuple_line_to_bpchar(l):
     difficulty,bpchar = l.split(" ")
