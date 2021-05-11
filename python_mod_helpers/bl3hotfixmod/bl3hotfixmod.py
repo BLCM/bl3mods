@@ -91,9 +91,35 @@ class Mod(object):
 
     def __init__(self, filename, title, author, description,
             v=None, lic=None, cats=None,
-            ss=None, videos=None, urls=None, nexus=None):
+            ss=None, videos=None, urls=None, nexus=None,
+            quiet_meshes=False,
+            ):
         """
-        Initializes ourselves and starts writing the mod
+        Initializes ourselves and starts writing the mod.
+
+        First up, parameters which mostly just alter the mod header:
+
+        `filename` - The full filename to write to
+        `title` - The mod title
+        `author` - The mod author
+        `description` - A list of strings which serve as the main mod description text
+        `v` - Mod version
+        `lic` - Mod license (can be a string or one of our license constants)
+        `cats` - Categories to use, for ModCabinet integration
+        `ss` - Screenshot URL(s).  Can be a single string, or a list of strings
+        `videos` - Video URL(s).  Can be a single string, or a list of strings
+        `urls` - Extra URL(s).  Can be a single string, or a list of strings
+        `nexus` - Nexus Mods URL, in case you're uploading there as well
+
+        And then, some extra control parameters (just the one for now, actually):
+
+        `quiet_meshes` - This library can do StaticMesh injection, to allow
+            meshes to be used in any level, even if they're not ordinarily allowed
+            there.  To do so, we automatically write out some hotfixes behind the
+            scenes, and include some comments so it's obvious what's been
+            automatically added.  Setting `quiet_meshes` to `True` will suppress
+            those comments (though the necessary hotfixes will still be written,
+            of course).  See `_ensure_mesh()` for some info on this.
         """
         self.filename = filename
         self.title = title
@@ -107,6 +133,8 @@ class Mod(object):
         self.urls = urls
         self.nexus = nexus
         self.last_was_newline = True
+        self.ensured_meshes = {}
+        self.quiet_meshes = quiet_meshes
 
         self.source = os.path.basename(sys.argv[0])
 
@@ -317,34 +345,128 @@ class Mod(object):
             ), file=self.df)
         self.last_was_newline = False
 
+    def _reset_meshes(self):
+        """
+        This method will revert our StaticMesh injection "helper" object to its
+        vanilla state, for any map in which we've been injecting StaticMeshes.
+        This is intended to be used at the end of the mod, and is automatically
+        called by our `close()` method.  If you want to clean it up by hand
+        earlier than that, though, feel free.
+
+        See `_ensure_mesh()` for a full description of our mesh-injection technique.
+        """
+
+        reported = False
+        for hf_type, keys in self.ensured_meshes.items():
+            for hf_key, meshes in keys.items():
+                if len(meshes) > 0:
+                    if not reported:
+                        if not self.quiet_meshes:
+                            self.comment('bl3hotfixmod - auto-resetting staticmeshes')
+                        reported = True
+                    self._ensure_mesh(
+                            '/Game/Gear/Game/Resonator/Model/Meshes/SM_Eridian_Resonator',
+                            hf_type,
+                            hf_key,
+                            doing_reset=True)
+                    meshes.clear()
+
+    def _ensure_mesh(self, mesh_path, hf_type, hf_key, doing_reset=False):
+        """
+        Ensures that the given StaticMesh `mesh_path` is loaded by BL3/UE4,
+        by temporarily setting it as the mesh on an object.  The hotfix type
+        `hf_type` and trigger `hf_key` will be used, and should match the
+        hotfix parameters being used to inject the StaticMesh into the map.
+        (In general, `hf_type` should always be `Mod.LEVEL`, and `hf_key`
+        should be the level identifier.)  This function will "remember" which
+        StaticMesh objects have already been ensured in each level, and only do
+        the injection hotfixes where necessary.  Setting `doing_reset` to
+        `True` will prevent those checks, and is intended to be used by our
+        close-of-mod `_reset_meshes()` function.
+
+        To do the injection, we're using an object chosen mostly arbitrarily to
+        do this; specifically:
+
+            /Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator
+
+        The only real criteria for which object to use is that we needed an
+        object which is available on every map, and the Resonator seemed like
+        a good fit (it's even available at the main menu).
+
+        The `_reset_meshes()` function should be used to return the Resonator to
+        its vanilla mesh before the mod is closed -- this is handled
+        automatically by our `close()` method, but if you want to trigger the
+        cleanup by hand, feel free.
+        """
+
+        # Check our history of meshes, unless we're doing our resets.
+        if not doing_reset:
+            if hf_type not in self.ensured_meshes:
+                self.ensured_meshes[hf_type] = {}
+            if hf_key not in self.ensured_meshes[hf_type]:
+                self.ensured_meshes[hf_type][hf_key] = set()
+            if mesh_path.lower() in self.ensured_meshes[hf_type][hf_key]:
+                return
+            if not self.quiet_meshes:
+                self.comment('bl3hotfixmod - auto-injecting staticmesh')
+            self.ensured_meshes[hf_type][hf_key].add(mesh_path.lower())
+
+        # If we got here, do the mesh injection
+        self.reg_hotfix(hf_type, hf_key,
+                '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
+                'StaticMeshComponent.Object..StaticMesh',
+                Mod.get_full_cond(mesh_path, 'StaticMesh'))
+
     def mesh_hotfix(self, map_path, mesh_path,
             location=(0,0,0),
             rotation=(0,0,0),
             scale=(1,1,1),
             transparent=False,
             early=False,
-            notify=False):
+            notify=False,
+            ensure=False):
         """
-        Writes out a SpawnMesh-altering hotfix to the mod file
+        Writes out a SpawnMesh-altering hotfix to the mod file.
+
+        `map_path` is the full path to the "main" `_P` map where this is being put
+        `mesh_path` is the full path to the mesh to be added
+        `location`, `rotation`, and `scale` define the physical parameters of the mesh
+        `transparent` defines whether or not the mesh is visible; you'd use this to
+            create invisible walls/floors and the like
+        `early` can be used to use EARLYLEVEL hotfixes instead of "regular" level hotfixes.
+            This isn't actually recommended, though, since it never seems to be necessary
+            for these hotfixes
+        `notify` can be used to set the "notify" flag on hotfixes.  Like `early`, this
+            doesn't seem like it's ever necessary, so best to leave it alone.
+        `ensure` can be used to "inject" StaticMesh objects into levels which don't
+            ordinarily have them loaded.  Without this flag, you'll be limited to the
+            StaticMeshes which are loaded into the level by default.  Setting `ensure`
+            to `True` will auto-generate some hotfixes to do the generation, and at
+            least one more hotfix at mod closing, to clean up that work.  See the docstring
+            for `_ensure_mesh()` for some details on that.
         """
 
         # Early-level hotfix?
         if early:
-            hf_type = Mod.TYPE[Mod.EARLYLEVEL]
+            hf_type = Mod.EARLYLEVEL
         else:
-            hf_type = Mod.TYPE[Mod.LEVEL]
-
-        # Notify flag
-        if notify:
-            notification_flag=1
-        else:
-            notification_flag=0
+            hf_type = Mod.LEVEL
 
         # Map path
         map_first, map_last = map_path.rsplit('/', 1)
 
         # Mesh path
         mesh_first, mesh_last = mesh_path.rsplit('/', 1)
+
+        # If we haven't ensured that the mesh is available yet, do so.
+        if ensure:
+            self._ensure_mesh(mesh_path, hf_type, map_last)
+
+        # Notify flag
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
 
         # Coordinates/transforms
         coord_parts = []
@@ -361,7 +483,7 @@ class Mod(object):
             transparent_flag = 0
 
         print('{hf_type},(1,6,{notification_flag},{map_last}),{map_first},{mesh_first},{mesh_last},{coord_len},"{coord_field}",{transparent_flag}'.format(
-            hf_type=hf_type,
+            hf_type=Mod.TYPE[hf_type],
             notification_flag=notification_flag,
             map_first=map_first,
             map_last=map_last,
@@ -376,8 +498,16 @@ class Mod(object):
         """
         Closes us out
         """
+        # Make sure we've got a newline at the end
         if not self.last_was_newline:
             self.newline()
+
+        # Reset static meshes (assuming we have any), and re-check that newline
+        self._reset_meshes()
+        if not self.last_was_newline:
+            self.newline()
+
+        # Now close out and report
         self.df.close()
         print('Wrote mod to {}'.format(self.filename))
 
