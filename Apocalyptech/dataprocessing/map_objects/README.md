@@ -143,6 +143,12 @@ library, which is what `get_map_obj_type.py` to access its data.  I'm also
 going to be using that for a few mod-generation scripts.  If I ever make
 this a bit more official, that'll probably want a rewrite.
 
+TODO
+----
+
+* We correct for off-by-one errors but we're *not* doing it for inner
+  objects.  For instance, `Prologue_Dynamic.Prologue_Dynamic.PersistentLevel.SpawnPoint_EridiumCrystal_Small__44.SpawnRoot`
+
 Fin
 ---
 
