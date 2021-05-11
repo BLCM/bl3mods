@@ -33,7 +33,7 @@ mod = Mod('atlas_hq_courtyard_shortcut.bl3hotfix',
             "all the way around.",
         ],
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='qol, maps',
         ss=['https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/atlas_hq_courtyard_shortcut/screenshot.jpg'],
         )

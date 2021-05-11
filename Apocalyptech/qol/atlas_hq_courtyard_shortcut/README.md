@@ -19,6 +19,9 @@ around.
 Changelog
 =========
 
+**v1.0.1** - May 11, 2021
+ * Fixed up in-mod description (no functionality changes)
+
 **v1.0.0** - Mar 13, 2021
  * Initial release
  
