@@ -1,7 +1,7 @@
 Money Grenade Changes
 =====================
 
-This is a collection of mods which alters the "Money" grenade part to make enemies
+This is a collection of mods which alter the "Money" grenade part to make enemies
 drop things *other* than money when damaged.  This is mostly a joke mod, without any
 attempt at balancing or anything like that.  There are currently four variants:
 
