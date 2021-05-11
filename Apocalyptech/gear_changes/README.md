@@ -12,6 +12,8 @@ See the individual mod folders for full READMEs.
 - **Better Maliwan Charge Time** - Improves the charge time on most Maliwan guns
 - **Fix Siren COM Blank Parts** - Fixes a (rare) bug with Siren COMs which would cause
   them to have one too few ability parts.
+- **Money Grenade Changes** - Collection of mods which alter the "Money" grenade part to drop things
+  other than money.
 - **Nerf OP Gear** - Nerfs some gear which is too OP when used in Normal.
 - **P2P Networker Element Fix** - Adds a second element to the P2P Networker
 - **Provocateur COM** - Adds in a second legendary Operative COM in the Designer's Cut DLC data
