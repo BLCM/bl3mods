@@ -36,9 +36,9 @@ text into the map:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-		'this is a line of text',
-		(48725, 27789, -3421),
-		)
+        'this is a line of text',
+        (48725, 27789, -3421),
+        )
 ```
 
 The first argument is an active `Mod` object, which you've already
@@ -53,13 +53,13 @@ of strings, to create a text block.  For instance:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-		[
-			'you dont have to be crazy',
-			'to hunt vaults here',
-			'but it helps',
-			],
-		(48725, 27789, -3421),
-		)
+        [
+            'you dont have to be crazy',
+            'to hunt vaults here',
+            'but it helps',
+            ],
+        (48725, 27789, -3421),
+        )
 ```
 
 The last required argument is the position in the map.  The easiest
@@ -94,14 +94,14 @@ font instead, with the `font` parameter:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-		[
-			'you dont have to be crazy',
-			'to hunt vaults here',
-			'but it helps',
-			],
-		(48725, 27789, -3421),
-		font=TextMesh.titlecard,
-		)
+        [
+            'you dont have to be crazy',
+            'to hunt vaults here',
+            'but it helps',
+            ],
+        (48725, 27789, -3421),
+        font=TextMesh.titlecard,
+        )
 ```
 
 Rotations
@@ -118,9 +118,9 @@ The syntax for that is:
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
         'this is a line of text',
-		(48725, 27789, -3421),
+        (48725, 27789, -3421),
         rotation=(0, 0, 0),
-		)
+        )
 ```
 
 The value shown there of `(0, 0, 0)` means that the text won't be
@@ -147,9 +147,9 @@ could use:
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
         'this is a line of text',
-		(48725, 27789, -3421),
+        (48725, 27789, -3421),
         rotation=(0, 180, 0),
-		)
+        )
 ```
 
 Negative values can also be used for the rotation parameters.  Doubtless
@@ -167,15 +167,15 @@ values:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-		[
-			'you dont have to be crazy',
-			'to hunt vaults here',
-			'but it helps',
-			],
-		(48725, 27789, -3421),
+        [
+            'you dont have to be crazy',
+            'to hunt vaults here',
+            'but it helps',
+            ],
+        (48725, 27789, -3421),
         align=TextMesh.Align.CENTER,
         valign=TextMesh.VAlign.MIDDLE,
-		)
+        )
 ```
 
 The valid values for `align` are:
