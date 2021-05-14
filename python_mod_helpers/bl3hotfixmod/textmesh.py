@@ -241,10 +241,95 @@ class TextMesh:
         def __str__(self):
             return self.name.capitalize()
 
+    # Font 1: Yellow block text
+    yellowblocks = Font('Yellow Blocks', '/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{}',
+            char_spacing=5,
+            line_spacing=9,
+            line_z_offset=2,
+            letters=[
+                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+                Letter('A', 51.408050, 99.852646, -25.698353, 49.926346),
+                Letter('B', 52.664890, 99.974990, -22.635244, 49.980854),
+                Letter('C', 50.975678, 102.010380, -25.486248, 49.984303),
+                Letter('D', 48.666516, 99.960006, -24.333258, 49.980003),
+                Letter('E', 36.435250, 103.467292, -16.705948, 51.733660),
+                Letter('F', 33.876038, 104.168952, -16.721985, 52.084476),
+                Letter('G', 48.960976, 104.936120, -24.480488, 49.964710),
+                Letter('H', 55.768120, 107.433930, -26.116295, 51.949196),
+                Letter('I', 23.795388, 100.061988, -10.601769, 50.031006),
+                Letter('J', 51.924220, 105.250610, -21.417486, 49.102474),
+                Letter('K', 57.960086, 100.061988, -22.741297, 50.031000),
+                Letter('L', 34.975926, 100.062004, -16.361795, 50.031000),
+                Letter('M', 73.586944, 103.600472, -35.025703, 50.032330),
+                Letter('N', 52.365070, 99.142944, -24.007483, 49.571472),
+                Letter('O', 52.158554, 101.402400, -25.558758, 49.972797),
+                Letter('P', 53.232220, 108.187960, -24.848257, 52.326210),
+                Letter('Q', 57.132748, 118.236428, -27.558954, 42.869305),
+                Letter('R', 52.631380, 103.394776, -24.901249, 50.282400),
+                Letter('S', 54.432938, 101.428560, -23.022789, 49.959710),
+                Letter('T', 43.706780, 102.300270, -10.469986, 51.150116),
+                Letter('U', 53.523464, 103.754616, -24.488916, 49.547970),
+                Letter('V', 52.194954, 100.016388, -11.717011, 50.008180),
+                Letter('W', 86.998986, 105.262116, -25.749828, 50.992580),
+                Letter('X', 51.986862, 104.227776, -23.439910, 48.738735),
+                Letter('Y', 53.430030, 103.986366, -8.987263, 51.993183),
+                Letter('Z', 43.618886, 102.788440, -19.835200, 49.980003),
+                ])
+
+    # Font 2: Title Card Text
+    titlecard = Font('Character Title Card', '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/Countach/SM_Cinematic_Letter_Countach_{}',
+            char_spacing=3,
+            line_spacing=11,
+            line_z_offset=1,
+            letters=[
+                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+                Letter('0', 39.453506, 62.659370, -0.000008, 0.000008),
+                Letter('2', 41.084824, 62.659378, -0.000015, 0.000010),
+                Letter('3', 39.453506, 62.659370, -0.000008, 0.000006),
+                Letter('4', 37.000000, 62.659374, 0.000015, 0.000004),
+                Letter('6', 39.453496, 62.659378, 0.000017, 0.000006),
+                Letter('7', 39.932800, 62.659370, 0.000000, 0.000002),
+                Letter('9', 39.453520, 62.659378, -0.000015, 0.000004),
+                Letter('A', 36.193756, 62.659378, -0.000015, 0.000006),
+                Letter('&', 38.790206, 62.659378, 0.000000, 0.000006, 'Ampersand'),
+                Letter('B', 41.084870, 62.659370, 0.000015, 0.000004),
+                Letter(')', 25.657814, 71.154694, 0.000000, -0.000004, 'BracketClose'),
+                Letter('(', 25.799206, 71.154694, -0.000006, -0.000004, 'BracketOpen'),
+                Letter('C', 39.453492, 62.659374, 0.000000, 0.000004),
+                Letter(',', 14.103134, 19.923439, -0.000015, 0.000000, 'Comma'),
+                Letter('D', 41.084840, 62.659378, 0.000000, 0.000004),
+                Letter('E', 38.190644, 62.659370, 0.000015, 0.000002),
+                Letter('!', 21.028130, 62.659378, -0.000004, 0.000006, 'ExclamationMark'),
+                Letter('F', 38.190644, 62.659370, 0.000015, 0.000002),
+                Letter('G', 39.453492, 62.659374, 0.000000, -0.000006),
+                Letter('H', 42.651550, 62.659378, 0.000000, -0.000004),
+                Letter('I', 26.635926, 62.659370, 0.000000, -0.000006),
+                Letter('J', 32.029694, 62.659374, -0.000015, -0.000002),
+                Letter('K', 44.903138, 62.659374, 0.000038, -0.000002),
+                Letter('L', 28.207824, 62.659378, -0.000031, 0.000000),
+                Letter('M', 54.460938, 62.659374, -0.000002, -0.000002),
+                Letter('N', 42.651550, 62.659374, -0.000002, -0.000002),
+                Letter('O', 39.453496, 62.659378, -0.000002, -0.000002),
+                Letter('P', 41.084816, 62.659370, 0.000011, -0.000004),
+                Letter('.', 11.554688, 9.473438, -0.000008, -0.000007, 'Period'),
+                Letter('R', 41.084808, 62.659378, 0.000015, -0.000004),
+                Letter('S', 39.453506, 62.659378, 0.000038, -0.000004),
+                Letter('T', 34.026550, 62.659370, -0.000031, -0.000008),
+                Letter('U', 40.595276, 62.659374, -0.000031, -0.000006),
+                Letter('V', 36.278076, 62.659378, 0.000000, -0.000006),
+                Letter('W', 53.482788, 62.659374, 0.000000, -0.000008),
+                Letter('X', 45.667176, 62.659374, 0.000031, -0.000008),
+                Letter('Y', 36.278076, 62.659378, -0.000061, -0.000008),
+                Letter('Z', 42.607850, 62.659370, 0.000031, -0.000010),
+                ])
+
+
     @staticmethod
-    def inject_text(mod, font, level,
+    def inject_text(mod,
+            level,
             text,
             origin,
+            font=yellowblocks,
             rotation=(0,0,0),
             scale=1,
             align=Align.CENTER,
@@ -259,9 +344,6 @@ class TextMesh:
 
         `mod` - The active Mod object in which to add our hotfixes
 
-        `font` - The Font object to use, which will determine which StaticMeshes
-            to reference.
-
         `level` - The level to add the text to; should be the full path of the
             `*_P` level reference (don't bother with `*_Dynamic` or `*_Combat`, etc)
 
@@ -269,6 +351,9 @@ class TextMesh:
             the level.
 
         `origin` - An x,y,z tuple describing where to put the text
+
+        `font` - The Font object to use, which will determine which StaticMeshes
+            to reference.  Defaults to our `yellowblocks` font.
 
         `rotation` - a pitch,yaw,roll tuple describing any rotations on the text,
             specified in degrees (not radians).  You may need to do some
@@ -396,14 +481,16 @@ class TextMesh:
             mod.newline()
 
     @staticmethod
-    def inject_compass(mod, level, origin):
+    def inject_compass(mod, level, origin, quiet=False):
         """
         Given a point `origin` within `level`, injects a "compass" around that point,
         to easily show the player which direction the axes go in.  Will put the necessary
         hotfixes into the active Mod object `mod`.  The text identifiers will be
         "POS X", "NEG X", "POS Y", "NEG Y", "POS Z", and "NEG Z" (if the `origin` point
         is taken from a character's position while they're on the ground, the "NEG Z"
-        label will end up under the ground)
+        label will end up under the ground).  If `quiet` is set to `True`, it will be
+        passed along to `inject_text` to prevent descriptive comments from being added
+        to the mod file.
         """
 
         distance = 250
@@ -416,91 +503,10 @@ class TextMesh:
                 ('NEG Z', (0, 0, -distance), (0, 0, 90)),
                 ]:
 
-            TextMesh.inject_text(mod, TextMesh.titlecard, level,
+            TextMesh.inject_text(mod, level,
                     text,
                     (origin[0]+rel_pos[0], origin[1]+rel_pos[1], origin[2]+rel_pos[2]),
                     rotation=rotation,
+                    font=TextMesh.titlecard,
+                    quiet=quiet,
                     )
-
-    # Font 1: Yellow block text
-    yellowblocks = Font('Yellow Blocks', '/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{}',
-            char_spacing=5,
-            line_spacing=9,
-            line_z_offset=2,
-            letters=[
-                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
-                Letter('A', 51.408050, 99.852646, -25.698353, 49.926346),
-                Letter('B', 52.664890, 99.974990, -22.635244, 49.980854),
-                Letter('C', 50.975678, 102.010380, -25.486248, 49.984303),
-                Letter('D', 48.666516, 99.960006, -24.333258, 49.980003),
-                Letter('E', 36.435250, 103.467292, -16.705948, 51.733660),
-                Letter('F', 33.876038, 104.168952, -16.721985, 52.084476),
-                Letter('G', 48.960976, 104.936120, -24.480488, 49.964710),
-                Letter('H', 55.768120, 107.433930, -26.116295, 51.949196),
-                Letter('I', 23.795388, 100.061988, -10.601769, 50.031006),
-                Letter('J', 51.924220, 105.250610, -21.417486, 49.102474),
-                Letter('K', 57.960086, 100.061988, -22.741297, 50.031000),
-                Letter('L', 34.975926, 100.062004, -16.361795, 50.031000),
-                Letter('M', 73.586944, 103.600472, -35.025703, 50.032330),
-                Letter('N', 52.365070, 99.142944, -24.007483, 49.571472),
-                Letter('O', 52.158554, 101.402400, -25.558758, 49.972797),
-                Letter('P', 53.232220, 108.187960, -24.848257, 52.326210),
-                Letter('Q', 57.132748, 118.236428, -27.558954, 42.869305),
-                Letter('R', 52.631380, 103.394776, -24.901249, 50.282400),
-                Letter('S', 54.432938, 101.428560, -23.022789, 49.959710),
-                Letter('T', 43.706780, 102.300270, -10.469986, 51.150116),
-                Letter('U', 53.523464, 103.754616, -24.488916, 49.547970),
-                Letter('V', 52.194954, 100.016388, -11.717011, 50.008180),
-                Letter('W', 86.998986, 105.262116, -25.749828, 50.992580),
-                Letter('X', 51.986862, 104.227776, -23.439910, 48.738735),
-                Letter('Y', 53.430030, 103.986366, -8.987263, 51.993183),
-                Letter('Z', 43.618886, 102.788440, -19.835200, 49.980003),
-                ])
-
-    # Font 2: Title Card Text
-    titlecard = Font('Character Title Card', '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/Countach/SM_Cinematic_Letter_Countach_{}',
-            char_spacing=3,
-            line_spacing=11,
-            line_z_offset=1,
-            letters=[
-                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
-                Letter('0', 39.453506, 62.659370, -0.000008, 0.000008),
-                Letter('2', 41.084824, 62.659378, -0.000015, 0.000010),
-                Letter('3', 39.453506, 62.659370, -0.000008, 0.000006),
-                Letter('4', 37.000000, 62.659374, 0.000015, 0.000004),
-                Letter('6', 39.453496, 62.659378, 0.000017, 0.000006),
-                Letter('7', 39.932800, 62.659370, 0.000000, 0.000002),
-                Letter('9', 39.453520, 62.659378, -0.000015, 0.000004),
-                Letter('A', 36.193756, 62.659378, -0.000015, 0.000006),
-                Letter('&', 38.790206, 62.659378, 0.000000, 0.000006, 'Ampersand'),
-                Letter('B', 41.084870, 62.659370, 0.000015, 0.000004),
-                Letter(')', 25.657814, 71.154694, 0.000000, -0.000004, 'BracketClose'),
-                Letter('(', 25.799206, 71.154694, -0.000006, -0.000004, 'BracketOpen'),
-                Letter('C', 39.453492, 62.659374, 0.000000, 0.000004),
-                Letter(',', 14.103134, 19.923439, -0.000015, 0.000000, 'Comma'),
-                Letter('D', 41.084840, 62.659378, 0.000000, 0.000004),
-                Letter('E', 38.190644, 62.659370, 0.000015, 0.000002),
-                Letter('!', 21.028130, 62.659378, -0.000004, 0.000006, 'ExclamationMark'),
-                Letter('F', 38.190644, 62.659370, 0.000015, 0.000002),
-                Letter('G', 39.453492, 62.659374, 0.000000, -0.000006),
-                Letter('H', 42.651550, 62.659378, 0.000000, -0.000004),
-                Letter('I', 26.635926, 62.659370, 0.000000, -0.000006),
-                Letter('J', 32.029694, 62.659374, -0.000015, -0.000002),
-                Letter('K', 44.903138, 62.659374, 0.000038, -0.000002),
-                Letter('L', 28.207824, 62.659378, -0.000031, 0.000000),
-                Letter('M', 54.460938, 62.659374, -0.000002, -0.000002),
-                Letter('N', 42.651550, 62.659374, -0.000002, -0.000002),
-                Letter('O', 39.453496, 62.659378, -0.000002, -0.000002),
-                Letter('P', 41.084816, 62.659370, 0.000011, -0.000004),
-                Letter('.', 11.554688, 9.473438, -0.000008, -0.000007, 'Period'),
-                Letter('R', 41.084808, 62.659378, 0.000015, -0.000004),
-                Letter('S', 39.453506, 62.659378, 0.000038, -0.000004),
-                Letter('T', 34.026550, 62.659370, -0.000031, -0.000008),
-                Letter('U', 40.595276, 62.659374, -0.000031, -0.000006),
-                Letter('V', 36.278076, 62.659378, 0.000000, -0.000006),
-                Letter('W', 53.482788, 62.659374, 0.000000, -0.000008),
-                Letter('X', 45.667176, 62.659374, 0.000031, -0.000008),
-                Letter('Y', 36.278076, 62.659378, -0.000061, -0.000008),
-                Letter('Z', 42.607850, 62.659370, 0.000031, -0.000010),
-                ])
-
