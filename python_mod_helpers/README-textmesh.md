@@ -71,26 +71,47 @@ TextMesh.inject_text(mod,
 Available Fonts
 ---------------
 
-There are two "fonts" available in the Borderlands 3 data.  First up is
-`TextMesh.yellowblocks`, a chunky yellow block text, such as seen on the
-gateway to Ellie's scrapyard when you first head to unlock Outrunners in 
-he Droughts.  This font only has letters!  Numbers and punctuation are
-not supported.  These meshes *do* have collision information, so they
-are climbable and will stop NPC/Player movement.
+There are four "fonts" available in the Borderlands 3 data, though only one
+contains the complete set of 26 letters.  First up is `TextMesh.yellowblocks`,
+a chunky yellow block text, such as seen on the gateway to Ellie's scrapyard
+when you first head to unlock Outrunners in he Droughts.  This font only has
+letters, but it's the only one to contain a complete alphabet.  Numbers and
+punctuation are not supported.  These meshes *do* have collision information,
+so they are climbable and will stop NPC/Player movement.
 
 ![Yellow Blocks](screenshots/textmesh_font_yellowblocks.jpg)
 
 The second is `TextMesh.titlecard`, which is the font used for NPC/Boss
-title cards throughout the game.  These meshes do *not* have any collision
-info, so anything can just walk right through.  This font is missing the
-letter "Q", but does include some numbers (1, 5, and 8 are missing from
-those, though).  It also includes some punctuation: `& ( ) . , !`
+title cards throughout the game.  It's based on the font
+[Countach](https://fonts.adobe.com/fonts/countach).  These meshes do
+*not* have any collision info, so anything can just walk right through.
+This font is missing the letter "Q", but does include some numbers (1,
+5, and 8 are missing from those, though).  It also includes some
+punctuation: `& ( ) . , !`
 
 ![Title Card](screenshots/textmesh_font_titlecard.jpg)
 
+The third font is `TextMesh.titlecard2`, another font used in NPC/Boss
+title cards.  This one is based on the font [Posterama](https://www.monotype.com/fonts/posterama).
+Its character set is quite limited, though, only containing fourteen
+characters (and no digits or punctuation).  The letters included
+are: A, B, C, E, G, H, I, L, M, N, R, T, V, and Y.
+
+![Title Card 2](screenshots/textmesh_font_titlecard2.jpg)
+
+The fourth (and final) font is `TextMesh.zero`, and it's the most
+limited of the bunch.  Only the letters Z, E, R, and O are included
+here.  Despite the obvious assumption, this does *not* appear to be
+the font used in Zer0's intro title card, unless it's been stretched
+and altered by the title card processing code.  The "O" does not
+contain a slash, for instance, and the characters would have to be
+stretched out considerably to get them close to the card.
+
+![Zer0 Font](screenshots/textmesh_font_zero.jpg)
+
 The `yellowblocks` font is the default, and will be used when no font
-is specified.  You can specify it explicitly, or use the `titlecard`
-font instead, with the `font` parameter:
+is specified.  You can specify it explicitly, or use any of the other
+fonts, with the `font` parameter:
 
 ```python
 TextMesh.inject_text(mod,

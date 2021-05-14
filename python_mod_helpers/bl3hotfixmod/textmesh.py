@@ -88,9 +88,11 @@ class Font:
         `char_spacing` - Extra spacing to put inbetween characters
         `line_spacing` - Extra spacing to put inbetween lines
         `line_z_offset` - How much we need to lower the text so that it's oriented properly
-            along the Z axis, in units of line height.  This varies depending on the font
-            (just due to how the StaticMesh objects are structured, I guess).  Just determined
-            via trial-and-error.
+            along the Z axis, in units of line height.  This varies depending on the font.
+            This could actually be programmatically determined from the Letter `origin_w`
+            and `origin_h` values -- This value should be 1 when the origin values are
+            approximately zero, and 2 when the origin values are approximately half the
+            total letter height.
         `letters` - A list of `Letter` objects belonging to this font.
         """
         self.name = name
@@ -213,10 +215,22 @@ class TextMesh:
             movement.
 
         `titlecard` - Used for the character title cards which introduce the main
-            NPCs and Bosses.  These meshes don't have any collision info, so anything
-            can just walk right through.  This font is missing the letter "Q", but
-            does include some numbers (1, 5, and 8 are missing from those, though).
-            Also includes some punctuation: & ( ) . , !
+            NPCs and Bosses, based on the Countach font.  These meshes don't have
+            any collision info, so anything can just walk right through.  This font
+            is missing the letter "Q", but does include some numbers (1, 5, and 8
+            are missing from those, though).  Also includes some punctuation:
+            & ( ) . , !
+
+        `titlecard2` - Another font used in character title cards, this time based
+            on the font Posterama.  Like `titlecard`, these meshes don't have
+            collision info.  This font set is quite limited, and only contains the
+            following 14 letters: A, B, C, E, G, H, I, L, M, N, R, T, V, Y
+
+        `zero` - An *extremely* limited font which only contains the four letters
+            Z, E, R, and O.  Despite the object paths implying that this is used
+            in title cards, this is *not* the font used for Zer0's name on his
+            card, unless they've been stretched out and altered for display
+            purposes (the "O" does *not* have the slash through it, either).
     """
 
     class Align(enum.Enum):
@@ -276,7 +290,7 @@ class TextMesh:
                 Letter('Z', 43.618886, 102.788440, -19.835200, 49.980003),
                 ])
 
-    # Font 2: Title Card Text
+    # Font 2: Title Card Text, based on Countach
     titlecard = Font('Character Title Card', '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/Countach/SM_Cinematic_Letter_Countach_{}',
             char_spacing=3,
             line_spacing=11,
@@ -323,6 +337,96 @@ class TextMesh:
                 Letter('Z', 42.607850, 62.659370, 0.000031, -0.000010),
                 ])
 
+    # Font 3: Another partial title-card font, based on Posterama
+    titlecard2 = Font('Partial Title Card', '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/Posterama/SM_Cinematic_Letter_Posterama_{}',
+            char_spacing=6,
+            line_spacing=11,
+            line_z_offset=1,
+            letters=[
+                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+                Letter('A', 50.266052, 51.800004, 0.000031, 0.000004),
+                Letter('B', 36.351014, 51.000000, -0.000031, 0.000000),
+                Letter('C', 45.640840, 52.526300, 0.000015, 0.000002),
+                Letter('E', 30.795350, 50.973346, 0.000000, -0.000006),
+                Letter('G', 46.011506, 52.600000, -0.000015, -0.000002),
+                Letter('H', 40.404694, 50.946502, -0.000015, 0.000006),
+                Letter('I', 7.279694, 50.946434, -0.000015, 0.000002),
+                Letter('L', 31.201516, 50.973220, -0.000019, 0.000008),
+                Letter('M', 48.776550, 51.737374, -0.000031, -0.000006),
+                Letter('N', 41.349976, 52.522712, 0.000000, 0.000004),
+                Letter('R', 39.425126, 51.000000, -0.000038, 0.000000),
+                Letter('T', 39.543762, 50.973214, 0.000000, -0.000006),
+                Letter('V', 50.606140, 51.980200, 0.000000, 0.000002),
+                Letter('Y', 44.103028, 51.000000, 0.000000, 0.000000),
+                ])
+
+    # Font 4: Another partial title-card font
+    zero = Font('Zer0', '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/SM_Cinematic_Letter_{}',
+            char_spacing=3,
+            line_spacing=11,
+            line_z_offset=2,
+            letters=[
+                # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+                Letter('E', 17.600000, 65.100000, -8.799998, 32.550000),
+                Letter('O', 21.000000, 66.900000, -10.500004, 32.550000),
+                Letter('R', 21.500000, 65.366580, -10.750002, 32.683285),
+                Letter('Z', 22.634376, 65.100000, -11.317188, 32.550000),
+                ])
+
+    # Font X: A complete set of digits
+    # Not gonna bother with these, actually:
+    #   1) It's just that weird writing style that they made up for Promethea signs
+    #   2) They're gigantic
+    #   3) They're visually oriented around the Y axis rather than X, so we'd have to
+    #      make our processing more generic, and I don't feel like doing that at
+    #      the moment
+    #   4) They're also untextured, just having a grey checkerboard pattern on 'em
+    #digits = Font('Promethea Digits', '/Game/LevelArt/Environments/Promethea/Props/Screens/Model/Meshes/SM_HologramLetters_Letter{}',
+    #        char_spacing=3,
+    #        line_spacing=11,
+    #        line_z_offset=1,
+    #        letters=[
+    #            # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+    #            Letter('0', 360.000000, 1867.844600, 0.000000, 0.000000),
+    #            Letter('1', 360.000000, 1873.114800, 0.000000, -0.000061),
+    #            Letter('2', 360.000000, 1792.121800, 0.000000, 0.000000),
+    #            Letter('3', 360.000000, 1871.175800, 0.000000, 0.000061),
+    #            Letter('4', 360.000000, 1900.519200, 0.000000, 0.000000),
+    #            Letter('5', 360.000000, 1862.805200, 0.000000, 0.000000),
+    #            Letter('6', 360.000000, 1865.222200, 0.000000, 0.000000),
+    #            Letter('7', 360.000000, 1869.637400, 0.000000, 0.000000),
+    #            Letter('8', 360.000000, 1610.808000, 0.000000, 0.000061),
+    #            Letter('9', 360.000000, 1870.806800, 0.000000, 0.000000),
+    #            ])
+
+    # Font X: Borderlands Title (used in fake-out cinematic after Pandora Vault)
+    # Not keeping this one:
+    #   1) As above, they're oriented around the Y axis rather than X
+    #   2) The numbers look weird anyway
+    #   3) The letters seem to glitch out a bit depending on what angle you're looking at, too.
+    #title = Font('Borderlands Title', '/Game/Cinematics/Props/Logo/Model/Meshes/SM_BL_{}',
+    #        char_spacing=3,
+    #        line_spacing=11,
+    #        line_z_offset=2,
+    #        letters=[
+    #            # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
+    #            Letter('1', 21.250012, 68.606020, 0.000000, 34.387500),
+    #            Letter('2', 21.250012, 69.082276, 0.000001, 34.387510),
+    #            Letter('3', 21.250012, 69.405000, 0.000000, 34.387500),
+    #            Letter('4', 21.250012, 68.670000, 0.000000, 34.387500),
+    #            Letter('A', 21.250008, 39.240000, 0.000001, 19.620000),
+    #            Letter('B', 21.250006, 39.240000, 0.000001, 19.620000),
+    #            Letter('D', 21.250006, 39.240000, 0.000001, 19.620000),
+    #            Letter('E', 21.250006, 39.240000, 0.000001, 19.620000),
+    #            Letter('L', 21.250006, 39.240000, 0.000001, 19.620000),
+    #            Letter('N', 21.250008, 39.240000, 0.000001, 19.620000),
+    #            Letter('O', 21.250006, 39.780002, 0.000001, 19.590002),
+    #            Letter('R', 21.250006, 39.240000, 0.000001, 19.620000),
+    #            Letter('S', 21.250006, 39.780002, 0.000001, 19.590002),
+    #            Letter('X', 21.250008, 39.780002, 0.000001, 19.590002, 'Borderlands'),
+    #            Letter('Y', 21.250006, 39.240000, 0.000001, 19.620000, 'D2'),
+    #            Letter('Z', 21.250006, 39.240000, 0.000001, 19.620000, 'R2'),
+    #            ])
 
     @staticmethod
     def inject_text(mod,
