@@ -327,8 +327,8 @@ class TextMesh:
     @staticmethod
     def inject_text(mod,
             level,
-            text,
             origin,
+            text,
             font=yellowblocks,
             rotation=(0,0,0),
             scale=1,
@@ -342,15 +342,19 @@ class TextMesh:
         for enabling arbitrary StaticMesh objects in any level, to have the
         widest possible range of alphabet meshes to do so.
 
+        Positional arguments (all required):
+
         `mod` - The active Mod object in which to add our hotfixes
 
         `level` - The level to add the text to; should be the full path of the
             `*_P` level reference (don't bother with `*_Dynamic` or `*_Combat`, etc)
 
+        `origin` - An x,y,z tuple describing where to put the text
+
         `text` - A string or list of strings describing the text to inject into
             the level.
 
-        `origin` - An x,y,z tuple describing where to put the text
+        And then optional arguments:
 
         `font` - The Font object to use, which will determine which StaticMeshes
             to reference.  Defaults to our `yellowblocks` font.
@@ -504,8 +508,8 @@ class TextMesh:
                 ]:
 
             TextMesh.inject_text(mod, level,
-                    text,
                     (origin[0]+rel_pos[0], origin[1]+rel_pos[1], origin[2]+rel_pos[2]),
+                    text,
                     rotation=rotation,
                     font=TextMesh.titlecard,
                     quiet=quiet,

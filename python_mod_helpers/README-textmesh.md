@@ -36,8 +36,8 @@ text into the map:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-        'this is a line of text',
         (48725, 27789, -3421),
+        'this is a line of text',
         )
 ```
 
@@ -45,28 +45,26 @@ The first argument is an active `Mod` object, which you've already
 started earlier in your mod-generation script.  The next argument is
 the full path to the map name.  So far, I've only actually used the
 `*_P` mapnames; there's probably no reason to ever bother with the
-other map paths like `*_Dynamic` or `*_Combat`.
+other map paths like `*_Dynamic` or `*_Combat`.  The next argument
+is the position in the map.  The easiest way to figure out coordinates
+in BL3 is [apple1417's BL3TP project](https://github.com/apple1417/BL3TP/releases),
+which will give you a window which shows your current ingame position
+at all times.
 
-The next argument is the actual text to inject into the map.  This
-can be just a single string (as you see above), or it can be a list
-of strings, to create a text block.  For instance:
+The final required argument is the actual text to inject into the
+map.  This can be just a single string (as you see above), or it
+can be a list of strings, to create a text block.  For instance:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+        (48725, 27789, -3421),
         [
             'you dont have to be crazy',
             'to hunt vaults here',
             'but it helps',
             ],
-        (48725, 27789, -3421),
         )
 ```
-
-The last required argument is the position in the map.  The easiest
-way to figure out coordinates in BL3 is
-[apple1417's BL3TP project](https://github.com/apple1417/BL3TP/releases),
-which will give you a window which shows your current ingame position
-at all times.
 
 Available Fonts
 ---------------
@@ -94,12 +92,12 @@ font instead, with the `font` parameter:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+        (48725, 27789, -3421),
         [
             'you dont have to be crazy',
             'to hunt vaults here',
             'but it helps',
             ],
-        (48725, 27789, -3421),
         font=TextMesh.titlecard,
         )
 ```
@@ -117,8 +115,8 @@ The syntax for that is:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-        'this is a line of text',
         (48725, 27789, -3421),
+        'this is a line of text',
         rotation=(0, 0, 0),
         )
 ```
@@ -146,8 +144,8 @@ could use:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-        'this is a line of text',
         (48725, 27789, -3421),
+        'this is a line of text',
         rotation=(0, 180, 0),
         )
 ```
@@ -167,12 +165,12 @@ values:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+        (48725, 27789, -3421),
         [
             'you dont have to be crazy',
             'to hunt vaults here',
             'but it helps',
             ],
-        (48725, 27789, -3421),
         align=TextMesh.Align.CENTER,
         valign=TextMesh.VAlign.MIDDLE,
         )
@@ -229,8 +227,8 @@ make it double size, etc.  You can specify it like so:
 
 ```python
 TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
-        'this is a line of text',
         (48725, 27789, -3421),
+        'this is a line of text',
         scale=2,
         )
 ```
