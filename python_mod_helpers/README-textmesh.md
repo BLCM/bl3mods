@@ -10,6 +10,7 @@ StaticMesh Text Blocks
 * [Alignment](#alignment)
 * [Scaling](#scaling)
 * [Compass](#compass)
+* [TODO](#todo)
 
 Overview
 --------
@@ -255,4 +256,26 @@ the compass.
 If you're using a point taken from a character's position while
 standing on the ground, the "negative Z" label will end up under
 the ground, but most folks probably won't care about that.
+
+TODO
+----
+
+There's a few things which might be good to have in here which
+aren't currently supported.
+
+- We could probably press some characters like `i` into service as
+  punctuation of various sorts.  It could probably be converted
+  into periods, commas, quotation marks, and dahses, given appropriate
+  rotations and scaling.
+  - Likewise, we could probably combine `o` and `i` on the `titlecard`
+    font, to provide a makeshift letter `q`.  It'd be nice to fill in
+    the missing digits as well, though I don't know if we'd be able
+    to do much better than just using `i`, `s`, and `b`.
+- I'd like to add some kind of `wobble` parameter which would
+  randomly make various letters look kind of wobbly, somewhat in fitting
+  with their general usage in-game.  I'd want to add in some normal
+  distribution stuff in here (either via `numpy` or my own implementation),
+  a way to optionally control the random seed used, and probably the
+  ability to specify it on a per-axis basis.  We'll see if I ever get
+  around to that, given all the components.
 
