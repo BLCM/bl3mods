@@ -225,7 +225,15 @@ Scaling
 These text meshes can also be scaled up or down to suit, using the
 `scale` parameter.  This is just a single number at the moment -- `1`
 is the default, `0.5` would make the text half-size, and `2` would
-make it double size, etc.
+make it double size, etc.  You can specify it like so:
+
+```python
+TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+        'this is a line of text',
+        (48725, 27789, -3421),
+        scale=2,
+        )
+```
 
 ![Text Scaling](screenshots/textmesh_scaling.jpg)
 
