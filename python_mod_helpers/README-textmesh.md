@@ -35,7 +35,8 @@ The most basic usage of the library would be adding a single line of
 text into the map:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         'this is a line of text',
         )
@@ -56,7 +57,8 @@ map.  This can be just a single string (as you see above), or it
 can be a list of strings, to create a text block.  For instance:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         [
             'you dont have to be crazy',
@@ -91,7 +93,8 @@ is specified.  You can specify it explicitly, or use the `titlecard`
 font instead, with the `font` parameter:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         [
             'you dont have to be crazy',
@@ -114,7 +117,8 @@ parameter.
 The syntax for that is:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         'this is a line of text',
         rotation=(0, 0, 0),
@@ -143,7 +147,8 @@ text face the exact opposite direction that they do by default, you
 could use:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         'this is a line of text',
         rotation=(0, 180, 0),
@@ -164,7 +169,8 @@ Here's an example where both are being explicitly set to their default
 values:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         [
             'you dont have to be crazy',
@@ -226,7 +232,8 @@ is the default, `0.5` would make the text half-size, and `2` would
 make it double size, etc.  You can specify it like so:
 
 ```python
-TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+TextMesh.inject_text(mod,
+        '/Game/Maps/Zone_0/Prologue/Prologue_P',
         (48725, 27789, -3421),
         'this is a line of text',
         scale=2,
