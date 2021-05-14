@@ -239,7 +239,7 @@ StaticMesh Text Blocks
 The game data includes two sets of StaticMesh letters, which can be used as
 "fonts" to write out text blocks in the game world.  This would be incredibly
 cumbersome to do by hand, even with the `mesh_hotfix` method, so a separate
-library is available to make it much easier.  See [README-meshtext.md](README-meshtext.md)
+library is available to make it much easier.  See [README-textmesh.md](README-textmesh.md)
 for documentation on using this library.
 
 ![StaticMesh Text Example](screenshots/textmesh_example.jpg)
