@@ -19,8 +19,8 @@ The game data includes two sets of StaticMesh letters, which can be used as
 cumbersome to do by hand, even with the `mesh_hotfix` method, so a separate
 library is available to make it much easier.
 
-Usage
------
+Basic Usage
+-----------
 
 This library lives inside the `bl3hotfixmod` subdir, and works alongside the
 main mod-writing helper there.  To use this in your apps, include the
