@@ -297,6 +297,14 @@ TODO
 There's a few things which might be good to have in here which
 aren't currently supported.
 
+- Character spacing, at least for the `titlecard` font, could still use
+  some work.  Specifically, the letter A seems to be shifted too far to
+  the right.  It doesn't always look bad, but some chars like V, K, and T
+  are maybe shifted slightly left, too, which can exacerbate it.
+  `Katagawa` ends up with a somewhat isolated `at` at the beginning, and
+  `Ava` has a big ol' space after the V.  `Name` looks basically fine,
+  though if you look closely you can tell that the `A` could use some
+  nudging.
 - We could probably press some characters like `i` into service as
   punctuation of various sorts.  It could probably be converted
   into periods, commas, quotation marks, and dahses, given appropriate
