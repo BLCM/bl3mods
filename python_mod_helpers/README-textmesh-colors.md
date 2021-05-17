@@ -1,3 +1,6 @@
+TextMesh MI Coloration
+======================
+
 This page is an index of the available MaterialInterface/MaterialInstance objects used
 to [color title card text](README-textmesh.md#colors) when major NPCs/Bosses are
 introduced in the game.  (I'm honestly not sure why it's sometimes "Interface" and
