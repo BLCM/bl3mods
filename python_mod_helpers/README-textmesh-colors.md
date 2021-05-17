@@ -28,7 +28,7 @@ Base Game
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_Character`
    ![MI_Cinematics_Character](screenshots/textmesh_colors/basegame/character.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_Character_Letters_Opaque`
-   ![MI_Cinematics_Character_Letters_Opaque](screenshots/textmesh_colors/basegame/opaque.jpg)
+   ![MI_Cinematics_Character_Letters_Opaque](screenshots/textmesh_colors/basegame/character_letters_opaque.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_CityBoss`
    ![MI_Cinematics_CityBoss](screenshots/textmesh_colors/basegame/cityboss.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_ClayName`
@@ -68,21 +68,21 @@ Base Game
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_Rampagername`
    ![MI_Cinematics_Rampagername](screenshots/textmesh_colors/basegame/rampagername.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Amara`
-   ![MI_Cinematics_RnR_Amara](screenshots/textmesh_colors/basegame/amara.jpg)
+   ![MI_Cinematics_RnR_Amara](screenshots/textmesh_colors/basegame/rnr_amara.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Amara_Sub`
-   ![MI_Cinematics_RnR_Amara_Sub](screenshots/textmesh_colors/basegame/sub.jpg)
+   ![MI_Cinematics_RnR_Amara_Sub](screenshots/textmesh_colors/basegame/rnr_amara_sub.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Green`
-   ![MI_Cinematics_RnR_Green](screenshots/textmesh_colors/basegame/green.jpg)
+   ![MI_Cinematics_RnR_Green](screenshots/textmesh_colors/basegame/rnr_green.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Moze`
-   ![MI_Cinematics_RnR_Moze](screenshots/textmesh_colors/basegame/moze.jpg)
+   ![MI_Cinematics_RnR_Moze](screenshots/textmesh_colors/basegame/rnr_moze.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_White`
-   ![MI_Cinematics_RnR_White](screenshots/textmesh_colors/basegame/white.jpg)
+   ![MI_Cinematics_RnR_White](screenshots/textmesh_colors/basegame/rnr_white.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Yellow`
-   ![MI_Cinematics_RnR_Yellow](screenshots/textmesh_colors/basegame/yellow.jpg)
+   ![MI_Cinematics_RnR_Yellow](screenshots/textmesh_colors/basegame/rnr_yellow.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_Zane`
-   ![MI_Cinematics_RnR_Zane](screenshots/textmesh_colors/basegame/zane.jpg)
+   ![MI_Cinematics_RnR_Zane](screenshots/textmesh_colors/basegame/rnr_zane.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RnR_ZaneSub`
-   ![MI_Cinematics_RnR_ZaneSub](screenshots/textmesh_colors/basegame/zanesub.jpg)
+   ![MI_Cinematics_RnR_ZaneSub](screenshots/textmesh_colors/basegame/rnr_zanesub.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_RyhsName`
    ![MI_Cinematics_RyhsName](screenshots/textmesh_colors/basegame/ryhsname.jpg)
  - `/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_SacrificeName`
@@ -158,7 +158,7 @@ DLC2 (Guns, Love, and Tentacles)
  - `/Hibiscus/Cinematics/Sequences/SEQ5100_DeathTrapReborn/TitleCard/MI_Cinematics_DeathTrapColor1`
    ![MI_Cinematics_DeathTrapColor1](screenshots/textmesh_colors/dlc2/deathtrapcolor1.jpg)
  - `/Hibiscus/Cinematics/Sequences/SEQ5100_DeathTrapReborn/TitleCard/MI_Cinematics_DeathTrapColor1_2`
-   ![MI_Cinematics_DeathTrapColor1_2](screenshots/textmesh_colors/dlc2/2.jpg)
+   ![MI_Cinematics_DeathTrapColor1_2](screenshots/textmesh_colors/dlc2/deathtrapcolor1_2.jpg)
  - `/Hibiscus/Cinematics/Sequences/SEQ4030_Eista/TitleCard/MI_Cinematics_EistaColor1`
    ![MI_Cinematics_EistaColor1](screenshots/textmesh_colors/dlc2/eistacolor1.jpg)
  - `/Hibiscus/Cinematics/Sequences/SEQ4030_Eista/TitleCard/MI_Cinematics_EleanorBlack`
@@ -168,7 +168,7 @@ DLC2 (Guns, Love, and Tentacles)
  - `/Hibiscus/Cinematics/Sequences/SEQ6100_Eleanor/TitleCard/MI_Cinematics_EleanorColor1`
    ![MI_Cinematics_EleanorColor1](screenshots/textmesh_colors/dlc2/eleanorcolor1.jpg)
  - `/Hibiscus/Cinematics/_Desing/Enemies/Frostbiters/MI_CineOnly_Frostbiter_M_Body`
-   ![MI_CineOnly_Frostbiter_M_Body](screenshots/textmesh_colors/dlc2/body.jpg)
+   ![MI_CineOnly_Frostbiter_M_Body](screenshots/textmesh_colors/dlc2/frostbiter_m_body.jpg)
  - `/Hibiscus/Cinematics/Sequences/SEQ1040_Gaige/TitleCard/MI_Cinematics_GaigeBlack`
    ![MI_Cinematics_GaigeBlack](screenshots/textmesh_colors/dlc2/gaigeblack.jpg)
  - `/Hibiscus/Cinematics/Sequences/SEQ1040_Gaige/TitleCard/MI_Cinematics_GaigeColor1`
