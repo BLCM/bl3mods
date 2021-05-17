@@ -30,15 +30,43 @@ import statistics
 
 class Point:
     """
-    A somewhat badly-named class; is just a placement of a specific mesh at an x,y,z
+    A somewhat badly-named class; is just a placement of a specific letter at an x,y,z
     coordinate, before any transforms (rotation, scaling, etc) have been performed.
     """
 
-    def __init__(self, mesh_path, x, y, z):
-        self.mesh_path = mesh_path
+    def __init__(self, letter, x, y, z):
+        self.letter = letter
         self.x = x
         self.y = y
         self.z = z
+
+class LetterMIStatus:
+    """
+    Some status vars to keep track of, when applying global MIs to fonts.
+    The `used` set keeps track of the (lowercased) map names in which this
+    letter's been used already.  The `mi` dict keeps track of which MIs to
+    apply in which levels -- the keys are the lowercased map names, and the
+    values are the full path to the MIs in question.  The special-case `*`
+    value can be used for the map name, to have the MI to apply to any
+    map which isn't explicitly named.
+    """
+
+    def __init__(self):
+        self.used = set()
+        self.mi = {}
+
+    def _is_level_used(self, level):
+        """
+        Returns `True` if we've been used on the specified `level` (which should be
+        just the "final" end `*_P` level name.
+        """
+        return level.lower() in self.used
+
+    def _set_level_used(self, level):
+        """
+        Sets ourselves to be in a "used" state on the given `level`.
+        """
+        self.used.add(level.lower())
 
 class Letter:
     """
@@ -62,26 +90,137 @@ class Letter:
         self.origin_h = origin_h
         self.mesh_path = None
         self.mesh_override = mesh_override
+        self.font = None
 
         # A couple computed params
         self.w_offset = (self.width/2)+self.origin_w
         self.h_offset = (self.height/2)+self.origin_h
 
-    def set_mesh_path(self, pattern):
+        # Info used by MI-setting
+        self.mistatus = {}
+
+    def _finalize(self, font, pattern):
         """
-        Once we're added into a Font, call this to populate our full object path.
+        Once we're added into a Font, call this to finish setting up our data, such as linking
+        back to the Font we belong to, and populating our full object path.
         """
+        self.font = font
         if self.mesh_override:
             self.mesh_path = pattern.format(self.mesh_override)
         else:
             self.mesh_path = pattern.format(self.letter)
+
+    def _ensure_mistatus(self, mod):
+        """
+        Makes sure that we have a LetterMIStatus object for the given mod.
+        Returns the LetterMIStatus object, for convenience
+        """
+        if mod not in self.mistatus:
+            self.mistatus[mod] = LetterMIStatus()
+        return self.mistatus[mod]
+
+    def _is_level_used(self, mod, level):
+        """
+        Returns `True` if we've been used in the active `mod`, on the specified
+        `level` (which should be just the "final" end `*_P` level name.
+        """
+        mistatus = self._ensure_mistatus(mod)
+        return mistatus._is_level_used(level)
+
+    def _set_level_used(self, mod, level):
+        """
+        Sets ourselves to be in a "used" state in the active `mod`, on the given
+        `level`.  If this is the first time we're being used, we will also create
+        a hotfix using the Mod `mod` to set the MaterialInterface/MaterialInstance,
+        if we have one defined for this level.
+        """
+        mistatus = self._ensure_mistatus(mod)
+        level_lower = level.lower()
+        if not self._is_level_used(mod, level):
+            mistatus._set_level_used(level)
+            if self.font.supports_mi:
+                self._hotfix_level_mi(mod, level)
+
+    def set_level_mi(self, mod, mi, level='*'):
+        """
+        Sets the MaterialInterface/MaterialInstance `mi` on ourselves, in the
+        active `mod`, for the given `level`.  The special-case level `*` value
+        can be used to have the MI apply to all levels.  If we have already been
+        used in the specified level(s), will also create hotfixes for the given
+        levels, using `mod`, to set the MIs.
+        """
+        if not self.font.supports_mi:
+            print('WARNING: font {} does not support MaterialInterface/MaterialInstance coloration'.format(self.font.name))
+            return
+        mistatus = self._ensure_mistatus(mod)
+        level_lower = level.lower()
+        # Eh, don't bother checking for this, actually.  It seems to work just fine, and might
+        # even happen on purpose if someone wants nearly all letters to be one color but
+        # override on just a few.  Not worth complaining about.
+        #if level_lower in mistatus.mi:
+        #    if mistatus.mi[level_lower].lower() != mi.lower():
+        #        print('WARNING: Changing {} {}\'s MI in {} from {} to {}'.format(
+        #            self.font.name,
+        #            self.letter,
+        #            level,
+        #            mistatus.mi[level_lower].split('/')[-1],
+        #            mi.split('/')[-1],
+        #            ))
+        #        print('          This is unsupported and will result in undefined behavior!')
+        mistatus.mi[level_lower] = mi
+        if level == '*':
+            # If we're setting a wildcard, loop through all levels in which we've been used...
+            for used_level_lower in mistatus.used:
+                # ... and if there is NOT a specific MI set up for that level, hotfix ours in.
+                if used_level_lower not in mistatus.mi:
+                    # Note that we aren't trying to use `MatchAll` here because then we'd have
+                    # to be much more cautious about hotfix ordering
+                    self._hotfix_level_mi(mod, used_level_lower)
+        else:
+            # If we're setting a specific level, and we've been used on this level, hotfix the MI
+            if self._is_level_used(mod, level):
+                self._hotfix_level_mi(mod, level)
+
+    def _hotfix_level_mi(self, mod, level):
+        """
+        Given a Mod object `mod`, and a specific level `level`, hotfix our custom MI, if
+        we have one set.  If a specific MI hasn't been set for `level`, we'll fall back
+        to the wildcard (assuming that's present).
+        """
+        if not self.font.supports_mi:
+            print('WARNING: font {} does not support MaterialInterface/MaterialInstance coloration'.format(self.font.name))
+            return
+        mistatus = self._ensure_mistatus(mod)
+        level_lower = level.lower()
+        if level_lower in mistatus.mi:
+            mod.comment('bl3hotfixmod.textmesh - setting {}\'s {} in {} to use {}'.format(
+                self.font.name,
+                self.letter,
+                level,
+                mistatus.mi[level_lower].split('/')[-1]
+                ))
+            mod.reg_hotfix(mod.LEVEL, level,
+                    self.mesh_path,
+                    'StaticMaterials.StaticMaterials[0].MaterialInterface',
+                    mod.get_full_cond(mistatus.mi[level_lower], 'MaterialInstanceConstant'))
+        elif '*' in mistatus.mi:
+            mod.comment('bl3hotfixmod.textmesh - setting {}\'s {} in {} (via wildcard) to use {}'.format(
+                self.font.name,
+                self.letter,
+                level,
+                mistatus.mi['*'].split('/')[-1]
+                ))
+            mod.reg_hotfix(mod.LEVEL, level,
+                    self.mesh_path,
+                    'StaticMaterials.StaticMaterials[0].MaterialInterface',
+                    mod.get_full_cond(mistatus.mi['*'], 'MaterialInstanceConstant'))
 
 class Font:
     """
     Aggregate info about a specific Font
     """
 
-    def __init__(self, name, obj_pattern, char_spacing, line_spacing, line_z_offset, letters):
+    def __init__(self, name, obj_pattern, char_spacing, line_spacing, line_z_offset, supports_mi, letters):
         """
         `name` - English description of the font; only used in mod comments.
         `obj_pattern` - Format string to generate the StaticMesh object paths
@@ -93,6 +232,8 @@ class Font:
             and `origin_h` values -- This value should be 1 when the origin values are
             approximately zero, and 2 when the origin values are approximately half the
             total letter height.
+        `supports_mi` - `True` if this font supports setting coloration info via
+            MaterialInterface/MaterialInstance objects, or `False` otherwise
         `letters` - A list of `Letter` objects belonging to this font.
         """
         self.name = name
@@ -100,9 +241,10 @@ class Font:
         self.char_spacing = char_spacing
         self.line_spacing = line_spacing
         self.line_z_offset = line_z_offset
+        self.supports_mi = supports_mi
         self.letters = {}
         for letter in letters:
-            letter.set_mesh_path(obj_pattern)
+            letter._finalize(self, obj_pattern)
             self.letters[letter.letter] = letter
 
         # Compute the width of our "space" char, and also our character-derived line height.
@@ -135,6 +277,20 @@ class Font:
                 total += self.space_width
                 first_in_sequence = True
         return total
+
+    def set_level_mi(self, mod, mi, level='*'):
+        """
+        Sets the MaterialInterface/MaterialInstance `mi` on all letters in this font,
+        for the given `level`.  The wildcard `*` can be used for the level to indicate
+        it should be active on all levels.  The active Mod object `mod` will be used
+        to add in appropriate MI hotfixes for all letters which have already been
+        used in the specified level(s).
+        """
+        if not self.supports_mi:
+            print('WARNING: font {} does not support MaterialInterface/MaterialInstance coloration'.format(self.name))
+            return
+        for letter in self.letters.values():
+            letter.set_level_mi(mod, mi, level)
 
 def rotate_points(points, rot_y, rot_z, rot_x):
     """
@@ -260,6 +416,7 @@ class TextMesh:
             char_spacing=5,
             line_spacing=9,
             line_z_offset=2,
+            supports_mi=False,
             letters=[
                 # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
                 Letter('A', 51.408050, 99.852646, -25.698353, 49.926346),
@@ -295,6 +452,7 @@ class TextMesh:
             char_spacing=3,
             line_spacing=11,
             line_z_offset=1,
+            supports_mi=True,
             letters=[
                 # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
                 Letter('0', 39.453506, 62.659370, -0.000008, 0.000008),
@@ -342,6 +500,7 @@ class TextMesh:
             char_spacing=6,
             line_spacing=11,
             line_z_offset=1,
+            supports_mi=True,
             letters=[
                 # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
                 Letter('A', 50.266052, 51.800004, 0.000031, 0.000004),
@@ -365,6 +524,7 @@ class TextMesh:
             char_spacing=3,
             line_spacing=11,
             line_z_offset=2,
+            supports_mi=True,
             letters=[
                 # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
                 Letter('E', 17.600000, 65.100000, -8.799998, 32.550000),
@@ -385,6 +545,7 @@ class TextMesh:
     #        char_spacing=3,
     #        line_spacing=11,
     #        line_z_offset=1,
+    #        supports_mi=True,
     #        letters=[
     #            # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
     #            Letter('0', 360.000000, 1867.844600, 0.000000, 0.000000),
@@ -408,6 +569,7 @@ class TextMesh:
     #        char_spacing=3,
     #        line_spacing=11,
     #        line_z_offset=2,
+    #        supports_mi=False,
     #        letters=[
     #            # Values here are the y + z values in the StaticMesh objects, under ExtendedBounds.(BoxExtent|Origin)
     #            Letter('1', 21.250012, 68.606020, 0.000000, 34.387500),
@@ -553,7 +715,7 @@ class TextMesh:
                     else:
                         cur_y -= font.char_spacing
                     letter_obj = font.letters[letter.upper()]
-                    points.append(Point(letter_obj.mesh_path, cur_x, cur_y-letter_obj.w_offset, cur_z+letter_obj.h_offset))
+                    points.append(Point(letter_obj, cur_x, cur_y-letter_obj.w_offset, cur_z+letter_obj.h_offset))
                     cur_y -= letter_obj.width
                 else:
                     cur_y -= font.space_width
@@ -569,7 +731,7 @@ class TextMesh:
             # either introducing a numpy dependency or implementing my own.  Don't feel
             # like doing either at the moment, so ehh.
             mod.mesh_hotfix(level,
-                    point.mesh_path,
+                    point.letter.mesh_path,
                     location=(
                         (rotated_x*scale)+origin[0],
                         (rotated_y*scale)+origin[1],
@@ -583,6 +745,7 @@ class TextMesh:
                     scale=(scale, scale, scale),
                     ensure=True,
                     )
+            point.letter._set_level_used(mod, level.split('/')[-1])
 
         # If we're not quiet, make sure we end with a newline
         if not quiet:
