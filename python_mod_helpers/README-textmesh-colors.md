@@ -1,3 +1,19 @@
+This page is an index of the available MaterialInterface/MaterialInstance objects used
+to [color title card text](README-textmesh.md#colors) when major NPCs/Bosses are
+introduced in the game.  (I'm honestly not sure why it's sometimes "Interface" and
+sometimes "Instance.")  You could probably try applying any MI in the game to these
+characters, but these are the ones which we know will work fine with the letters and
+look good.
+
+Note that DLC3 mostly just uses prerendered intro cards, so we've hardly got any MI objects
+from there at all.  (Or, alas, access to the font they used.)
+
+* [Base Game](#base-game)
+* [DLC1 (Moxxi's Heist of the Handsome Jackpot)](#dlc1-moxxis-heist-of-the-handsome-jackpot)
+* [DLC2 (Guns, Love, and Tentacles)](#dlc2-guns-love-and-tentacles)
+* [DLC3 (Bounty of Blood)](#dlc3-bounty-of-blood)
+* [DLC4 (Psycho Krieg and the Fantastic Fustercluck](#dlc4-psycho-krieg-and-the-fantastic-fustercluck)
+
 Base Game
 ---------
 
@@ -49,7 +65,8 @@ Base Game
 
 ![MI_Cinematics_CarnivoraName](screenshots/textmesh_colors/basegame/carnivoraname.jpg)
 
-`/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_Character`
+`/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_Character` - This
+is the default used when no custom MI is specified.
 
 ![MI_Cinematics_Character](screenshots/textmesh_colors/basegame/character.jpg)
 

@@ -9,6 +9,10 @@ StaticMesh Text Blocks
 * [Rotations](#rotations)
 * [Alignment](#alignment)
 * [Scaling](#scaling)
+* [Colors](#colors)
+  * [API Method](#api-method)
+  * [Manual Method](#manual-method)
+  * [Advanced: Per-Textblock Coloration](#advanced-per-textblock-coloration)
 * [Compass](#compass)
 * [TODO](#todo)
 
@@ -265,6 +269,165 @@ TextMesh.inject_text(mod,
 
 At the moment, there's no way to "stretch" the text along one
 specific axis.
+
+Colors
+------
+
+![Text Colors](screenshots/textmesh_colors.jpg)
+
+The `titlecard`, `titlecard2`, and `zero` fonts all support custom
+colorization, using the various colors that you observe in the title
+cards throughout the game.  The method supported directly by this API
+can only change coloration per letter on a *level* basis, so if you
+specify that the letter "M" on the `titlecard` font should use the
+`MI_Cinematics_AgonizerName` coloration on a specific level, then all
+hotfix-added instances of letter "M" will be that color.  You won't
+be able to have separate text blocks have different colors on the same
+level unless they happen to not share any letters in common.  This
+method *shouldn't* interfere with any regular NPC/Boss title cards,
+though if there's a title card which uses text that *doesn't* explicitly
+set its own coloration, it might pick up on your changes instead.
+
+Keep in mind that this will be true even if multiple mods are adding
+text to the same map -- whichever mod is executed *last* will determine
+the colors used for the letters it's using, within the map.
+
+The available coloration objects (MaterialInterface/MaterialInstance
+objects, actually) can be seen in [README-textmesh-colors.md](README-textmesh-colors.md).
+
+### API Method
+
+The method used to set MI coloration on a font, for a particular level
+(or for all levels) is `set_level_mi`.  It can be used either on a
+Font object as a whole, or on a specific letter.  For instance, to have
+all letters in `titlecard` use `MI_Cinematics_AureliaName`, on all levels
+that you're touching in your mod:
+
+```python
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_AureliaName',
+    )
+```
+
+If you want to have different colors used in different maps, in the same
+mod file, you can optionally specify a level as well.  For instance, this
+would use `MI_Cinematics_AureliaName` in The Droughts, but
+`MI_Cinematics_BrickName` in Ascension Bluff:
+
+```python
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_AureliaName',
+    'Prologue_P',
+    )
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_BrickName',
+    'Sacrifice_P',
+    )
+```
+
+You can also mix-and-match specifying the level.  For instance, this will
+use `MI_Cinematics_AureliaName` for The Droughts, but use `MI_Cinematics_BrickName` for
+any other level seen in the mod file:
+
+```python
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_AureliaName',
+    'Prologue_P',
+    )
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_BrickName',
+    )
+```
+
+You can also do the same thing on a per-letter basis, if desired.  Make sure to use the
+uppercase letter when specifying this format.  For instance:
+
+```python
+TextMesh.titlecard.set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_AureliaName',
+    )
+TextMesh.titlecard.letters['E'].set_level_mi(mod,
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_BrickName',
+    )
+TextMesh.inject_text(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+		(48725, 27789, -3421),
+		'some text in prologue',
+		font=TextMesh.titlecard,
+		)
+```
+
+![Specific Letter Colors](screenshots/textmesh_letter_colors.jpg)
+
+You can use the `set_level_mi` functions at any point in your mod file --
+if you've already injected text into a level, it'll output the necessary
+hotfixes to colorize all the text that's already been put down.  If you want
+to ensure that there aren't any spurious hotfixes injected into your mod
+file while setting the color information, though, it's recommended to set
+your colors *before* injecting any text into the file.  Still, if you'd
+prefer all the coloration hotfixes to be in one spot at the end of the
+mod, rather than interleaved with the text injection, feel free to do it
+at the end.
+
+### Manual Method
+
+If you prefer to manage font coloration by hand, though, it's quite easy
+to do.  Simply set the `StaticMaterials.StaticMaterials[0].MaterialInterface`
+attribute on the letter's `StaticMesh` object to the desired MI.  For instance:
+
+```python
+mod.reg_hotfix(Mod.LEVEL, 'Prologue_P',
+    '/Game/Cinematics/Props/Characters_TitleCard/Model/Meshes/Countach/SM_Cinematic_Letter_Countach_T',
+    'StaticMaterials.StaticMaterials[0].MaterialInterface',
+    Mod.get_full_cond('/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_TerrorName', 'MaterialInstanceConstant'))
+```
+
+### Advanced: Per-Textblock Coloration
+
+**NOTE:** This method isn't really feasible yet, but I wanted to get it
+documented regardless.
+
+The coloration methods above operate on a per-level basis, so that all instances
+of a given letter within the same level will share the same coloration.
+It *is* technically possible to define these on a per-instance basis
+instead, so that you could have the same letters use different colors
+throughout a map, or even in the same text block.
+
+When we add in new StaticMeshes via hotfixes, new `StaticMeshActor` objects are
+added underneath the main `PersistentLevel` map object, with a number suffix on
+the end.  Each subsequently-added StaticMesh will end up stored under more objects
+like that, with increasing number suffixes.  For instance, the first StaticMesh
+added to The Droughts via hotfix will be contained in the object
+`/Game/Maps/Zone_0/Prologue/Prologue_P.Prologue_P:PersistentLevel.StaticMeshActor_6`.
+The sub-object `.StaticMeshComponent0` from there has an `OverrideMaterials`
+array which can be used to set the coloration.
+
+The difficulty here is knowing what those indexes will end up being.  On Athenas,
+for instance, the first-added StaticMesh object will have a suffix of `_8`, instead
+of The Droughts' `_6`.  Complicating this is that any GBX or other-mod StaticMesh
+additions in the map will also end up increasing this number, so a mod on its own
+isn't going to know what objects to start altering.
+
+It's certainly possible to do, of course, if you're very sure of the indexes.  The
+[coloration example screenshots](README-textmesh-colors.md) were created by figuring
+out the "base" Athenas index and keeping track of how many meshes were being added.
+The mod line to set a color on a specific placed letter on the map would look like:
+
+```python
+mod.reg_hotfix(Mod.LEVEL, 'Monastery_P',
+        '/Game/Maps/Zone_1/Monastery/Monastery_P.Monastery_P:PersistentLevel.StaticMeshActor_8.StaticMeshComponent0',
+        'OverrideMaterials',
+        '({})'.format(
+            Mod.get_full_cond('/Game/Cinematics/Props/Characters_TitleCard/Model/Materials/MI_Cinematics_TerrorName', 'MaterialInstanceConstant')),
+        )
+```
+
+In order to make this a general-purpose solution, though, B3HM would have to have a
+mapping of the "base" `StaticMeshActor` index number for every map in the game, keep
+track of all hotfix StaticMesh additions in each level, notice when a mod is attempting
+to apply color to a specifically-placed StaticMesh, and then fix those indicies as
+needed.  Given the complexity of the solution and the relative unimportance of this
+"feature," I suspect it'll never be actually supported, but it's at least fun to know
+about.
 
 Compass
 -------
