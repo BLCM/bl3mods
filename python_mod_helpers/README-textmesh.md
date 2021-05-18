@@ -14,6 +14,7 @@ StaticMesh Text Blocks
   * [Manual Method](#manual-method)
   * [Advanced: Per-Textblock Coloration](#advanced-per-textblock-coloration)
 * [Compass](#compass)
+* [Point Grid](#point-grid)
 * [TODO](#todo)
 
 Overview
@@ -453,6 +454,51 @@ the compass.
 If you're using a point taken from a character's position while
 standing on the ground, the "negative Z" label will end up under
 the ground, but most folks probably won't care about that.
+
+Point Grid
+----------
+
+This is even more special-purpose, and is probably mostly useless
+to boot, given [apple1417's BL3TP project](https://github.com/apple1417/BL3TP/releases),
+but this library includes an `inject_point_grid` function to draw
+out a set of 3D points within the specified cuboid area in a map.
+This might be useful to get an idea of where the coordinates to
+various map objects are, or distances between them, though apple1417's
+project is probably better for those purposes anyway.  Regardless,
+the basic syntax is:
+
+```python
+TextMesh.inject_point_grid(mod, '/Game/Maps/Zone_0/Prologue/Prologue_P',
+    origin=(46825, 23545, -3831),
+    size=(-10000, -10000, 10000),
+    increment=1000,
+    )
+```
+
+The `origin` parameter is the point to start drawing the grid, and the
+`size` determines how big of an area to draw.  Note that the `size`
+values can be negative.  The `increment` argument specifies how far
+apart to draw each point.  `increment` is actually an optional argument
+which defaults to the `1000` shown in the example.  That example above
+will yield this result:
+
+![Point Grid Example](screenshots/textmesh_pointgrid.jpg)
+
+There are a few display limitations with this, namely that we don't
+have a font which has a complete set of digits.  The numbers 1, 5, and 8
+are represented by `i`, `s`, and `b`, respectively.  Additionally, we
+don't have a dash for a negative sign, so negative numbers will be
+prefixed with an exclamation mark (`!`) instead.
+
+Other optional arguments to `inject_point_grid` are `label_rotation`,
+which should be a rotation tuple which defines how the coordinate labels
+are rotated (the default is `(0,45,0)`), and `label_scale`, which
+determines the scale to use for the coordinate labels (which defaults
+to `1`).
+
+Note that this method ends up generating pretty large modfiles, for
+even relatively small grids.  The example above is nearly 7MB, for
+instance.
 
 TODO
 ----

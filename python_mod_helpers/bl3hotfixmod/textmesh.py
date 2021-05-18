@@ -787,3 +787,57 @@ class TextMesh:
                     font=TextMesh.titlecard,
                     quiet=quiet,
                     )
+
+    @staticmethod
+    def inject_point_grid(mod, level, origin, size,
+            increment=1000,
+            label_rotation=(0,45,0),
+            label_scale=1,
+            ):
+        """
+        Injects a "point grid" into the given `mod` file, labelling world positions
+        with a small red sphere at the specified intervals in x, y, and z directions.
+        Given the limitations of the available character set, the digits 1, 5, and 8
+        will be replaced with "i", "s", and "b", respectively.  Also, since we don't
+        have a dash symbol, negative numbers will be prefixed with an exclamation
+        point instead.
+
+        `level` - The full path of the level in which to inject the grid
+        `origin` - The point of origin at which to start the grid, as (x, y, z)
+        `size` - A tuple describing the size of the grid, as (size_x, size_y, size_z).
+            The sizes *can* be negative to go backwards along an axis instead of
+            forwards
+        `increment` - How often to draw a point (applies to all axes)
+        `label_rotation` - Rotation for label, defaults to (0, 45, 0)
+        `label_scale` - Scale for text coordinate labels, defaults to 1
+        """
+
+        start_x, max_x = sorted([origin[0], origin[0]+size[0]])
+        start_y, max_y = sorted([origin[1], origin[1]+size[1]])
+        start_z, max_z = sorted([origin[2], origin[2]+size[2]])
+
+        cur_x = start_x
+        while cur_x <= max_x:
+            cur_y = start_y
+            while cur_y <= max_y:
+                cur_z = start_z
+                while cur_z <= max_z:
+                    mod.mesh_hotfix(level,
+                            '/GbxSharedBlockoutAssets/IOMission/IOMissionSphere/Model/Mesh/SM_IO_Mission_Sphere',
+                            (cur_x, cur_y, cur_z),
+                            ensure=True)
+                    coord_text = '({}, {}, {})'.format(int(cur_x), int(cur_y), int(cur_z))
+                    coord_text = coord_text.replace('1', 'i').replace('5', 's').replace('8', 'B').replace('-', '!')
+                    TextMesh.inject_text(mod,
+                            level,
+                            (cur_x, cur_y, cur_z),
+                            coord_text.split(' '),
+                            rotation=label_rotation,
+                            scale=label_scale,
+                            align=TextMesh.Align.LEFT,
+                            font=TextMesh.titlecard,
+                            )
+                    cur_z += increment
+                cur_y += increment
+            cur_x += increment
+
