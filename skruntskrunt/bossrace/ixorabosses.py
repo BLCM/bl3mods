@@ -415,7 +415,7 @@ I /Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_Trial
 M /Game/Enemies/Saurian/_Unique/Shield/_Design/Character/BPChar_SaurianShield
 I /Game/Enemies/Saurian/_Unique/Queen/_Design/Character/BPChar_SaurianQueen
 I /Game/Enemies/Saurian/_Unique/Grog_Poison_Fodder/Character/BPChar_Saurian_Grog_Poison_Fodder
-E /Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber
+I /Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber
 E /Game/Enemies/Tink/_Unique/GameshowEnforcer/_Design/Character/BPChar_TinkGameshowEnforcer
 E /Game/Enemies/Tink/_Unique/Stagehand/_Design/Character/BPChar_TinkStagehand
 E /Game/Enemies/Tink/_Unique/BlueBasic/_Design/Character/BPChar_TinkBlueBasic
