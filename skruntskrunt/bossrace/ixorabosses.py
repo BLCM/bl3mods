@@ -436,8 +436,8 @@ E /Game/Enemies/Tink/_Unique/BrewKid/_Design/Character/BPChar_TinkBrewKid
 E /Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b
 E /Game/Enemies/Trooper/_Unique/Bounty02/Design/Character/BPChar_TrooperBounty02
 E /Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01
-E /Game/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMeleeDark
-E /Game/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMelee
+I /Game/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMeleeDark
+I /Game/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMelee
 E /Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c
 E /Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e
 E /Game/Enemies/Trooper/_Unique/ChumpBasic/_Design/Character/BPChar_TrooperChumpBasicDark
@@ -576,9 +576,9 @@ I /Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/SpiderBrain/Charact
 I /Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/Character/BPChar_BehemothRaid
 I /Game/PatchDLC/Raid1/Enemies/Oversphere/_Unique/BadassHarbinger/_Design/Character/BPChar_BadassHarbinger
 I /Game/PatchDLC/Raid1/Enemies/Oversphere/_Unique/RaidBoss/_Design/Character/BPChar_Oversphere_RaidBoss
-E /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMelee_BloodyHarvest
-E /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/Gatekeeper/_Design/Character/BPChar_Trooper_BloodyHarvest_Gatekeeper
-E /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/ChumpBasic/_Design/Character/BPChar_TrooperChumpBasic_BloodyHarvest
+I /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/ChumpMelee/_Design/Character/BPChar_TrooperChumpMelee_BloodyHarvest
+I /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/Gatekeeper/_Design/Character/BPChar_Trooper_BloodyHarvest_Gatekeeper
+I /Game/PatchDLC/BloodyHarvest/Enemies/Trooper/_Unique/ChumpBasic/_Design/Character/BPChar_TrooperChumpBasic_BloodyHarvest
 I /Game/PatchDLC/BloodyHarvest/Enemies/Ratch/_Unique/Bloody/_Design/Character/BPChar_RatchBloody
 I /Game/PatchDLC/BloodyHarvest/Enemies/Ratch/_Unique/BloodyGatekeeper/_Design/Character/BPChar_RatchBloodyBadassGatekeeper
 I /Game/PatchDLC/BloodyHarvest/Enemies/Ratch/_Unique/BloodyHive/_Design/Character/BPChar_RatchBloodyHive
@@ -630,7 +630,7 @@ M /Geranium/Enemies/GerPunk_Female/_Unique/SOS_Doc/_Design/Character/BPChar_GerP
 M /Geranium/Enemies/GerPunk_Female/_Unique/LBN_Bandit/_Design/Character/BPChar_GerPunkLBN_Bandit
 M /Geranium/Enemies/GerPunk_Female/_Unique/Number/_Design/Character/BPChar_GerPunkNumber
 M /Geranium/Enemies/GerPunk_Female/_Unique/LBN_Keem/_Design/Character/BPChar_GerPunkLBN_Keem
-M /Geranium/Enemies/GerPunk_Female/_Unique/JL_Half/_Design/Character/BPChar_GerPunkJL_Half
+I /Geranium/Enemies/GerPunk_Female/_Unique/JL_Half/_Design/Character/BPChar_GerPunkJL_Half
 I /Geranium/Enemies/GerPunk_Female/_Unique/Greg/_Design/Character/BPChar_GerPunkGreg
 I /Geranium/Enemies/GerPunk_Female/_Unique/Greg/_Design/Character/BPChar_GerPunkGreg_Rakk
 M /Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast
