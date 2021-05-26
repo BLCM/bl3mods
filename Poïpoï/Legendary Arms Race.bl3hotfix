@@ -19,10 +19,10 @@ SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/T
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Uncommon,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,1
 
 # Blue Items
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Rare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,30
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Rare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,70
 
 # Purple Items
 SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,VeryRare,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,26
 
 # Legendary Items
-SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,44
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard.Table_GearUp_ItemRarity_Standard,Legendary,BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191,0,,4
