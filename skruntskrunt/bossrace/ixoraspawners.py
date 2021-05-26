@@ -34,9 +34,11 @@ IXORA_MAP = 'FrostSite_P'
 SEED=None#42
 CHUBBY=True # include the Chubby mod for Arm's Race
 our_seed = SEED
+version = '0.2.0'
+
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Boss Race Generator')
+    parser = argparse.ArgumentParser(description=f'Boss Race Generator v{version}')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
@@ -64,7 +66,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.3',
+          v=version,
           cats='gameplay',
 )
 
@@ -877,7 +879,7 @@ def bias_item_rarity():
     BASEWEIGHT = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
     mod.comment("This is stolen from Poïpoï's Legendary Arm's race CC-BY-SA 4.0 ")
     mod.comment("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
-    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, WHITE ,BASEWEIGHT,  1)   # 30
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, WHITE ,BASEWEIGHT,   1)   # 30
     mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, GREEN ,BASEWEIGHT, 749)   # 50
     mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, BLUE  ,BASEWEIGHT, 200)   # 15
     mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, PURPLE,BASEWEIGHT,  40)   #  4
