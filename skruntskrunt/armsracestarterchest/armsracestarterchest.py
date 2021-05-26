@@ -88,6 +88,22 @@ def mod_header(output_filename,colour="green"):
     )
     return mod
 
+def bias_item_rarity(mod):
+    # we can't guarantee initial chest but we can bias against it
+    GEARUP = "/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard"
+    WHITE  = "Common"
+    GREEN  =  "Uncommon"
+    BLUE   = "Rare"
+    PURPLE = "VeryRare"
+    ORANGE = "Legendary"
+    BASEWEIGHT = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
+    mod.comment("This is stolen from Poïpoï's Legendary Arm's race CC-BY-SA 4.0 ")
+    mod.comment("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, WHITE ,BASEWEIGHT,   1)   # 30
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, GREEN ,BASEWEIGHT, 749)   # 50
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, BLUE  ,BASEWEIGHT, 200)   # 15
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, PURPLE,BASEWEIGHT,  40)   #  4
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, ORANGE,BASEWEIGHT,  10)   #  1
     
 def change_chest_rarity(mod, colour="green",change_key=False):
     # Ok now we manipulate the itempools instead
@@ -126,10 +142,13 @@ def change_chest_rarity(mod, colour="green",change_key=False):
 
 def gen_mod_for_colour(filename, colour):
     mod = mod_header(filename, colour=colour)
+    bias_item_rarity(mod)
     change_chest_rarity(mod, colour=colour,change_key=False)
     mod.close()
 
 for colour in colours:
+    if colour == "white":
+        continue
     filename = f'armsracestarter-{colour}.bl3hotfix'
     gen_mod_for_colour(filename, colour)
 
