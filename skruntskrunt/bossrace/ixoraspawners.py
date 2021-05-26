@@ -67,7 +67,7 @@ mod = Mod(output_filename,
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats='gameplay',
+          cats=['gameplay','armsrace'],
 )
 
 mod.comment(f"Seed {our_seed}")
