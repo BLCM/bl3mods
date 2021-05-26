@@ -34,17 +34,23 @@ IXORA_MAP = 'FrostSite_P'
 SEED=None#42
 CHUBBY=True # include the Chubby mod for Arm's Race
 our_seed = SEED
+version = '0.2.0'
+
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Boss Race Generator')
+    parser = argparse.ArgumentParser(description=f'Boss Race Generator v{version}')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
+    parser.add_argument('--bias',action='store_true', default=False, help='Bias Item Rarity against whites')
+    parser.add_argument('--nogreen',action='store_true', default=False, help='Disable Green Chest')
     return parser.parse_args()
 
 args = parse_args()
 our_seed = args.seed
 chubby_mod = not args.nochubby
+bias_items = args.bias
+green_chest = not args.nogreen
 
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
@@ -60,7 +66,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.2',
+          v=version,
           cats='gameplay',
 )
 
@@ -400,6 +406,7 @@ def get_bpchar(s):
 #      "SpecialEffects":True,
 #      'modify_spawnpoints':True,
 # }
+# # Works OK v0.1.2 was this
 params = {
      "extend":(99,99,180),
      'collision':'AdjustIfPossibleButAlwaysSpawn',
@@ -410,6 +417,330 @@ params = {
      "SpecialEffects":True,
      'modify_spawnpoints':True,
 }
+# billy the annointed got stuck
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":False,
+     'modify_spawnpoints':False,
+}
+# billy worked? No. Not in the pit
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+}
+# Disabled Billy
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+}
+# added navcollisionsize
+# removed lowercase SpawnExtent
+# didn't spawn in pit?
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Y to 180
+# Switch to 80,80,80 NavCollision
+# sigdriftia spawns but doesn't move
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=80,Y=80,Z=80)',
+}
+# added NavBox.BoxExtent
+# Rota stands still
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=80,Y=80,Z=80)',
+}
+# 180 NavCollisionSize
+# spawn no move :(
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# 180 extend
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# just always spawn
+# rota doesn't move in WTF
+params = {
+     "extend":(180,180,180),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Just overdo it
+# nope still no movement
+params = {
+     "extend":(1800,1800,1800),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=1800,Y=1800,Z=1800)',
+}
+# Nuke it?
+# Rota doesn't move
+params = {
+     "extend":'None',#(180,180,180),
+     'collision':'AlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# ok add Adjust
+# no still no movement spawns
+params = {
+     "extend":'None',#(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# 200 extend
+# sigdrifia doesn't move
+params = {
+     "extend":(200,200,200),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
+}
+# tesitng this now
+
+# navbox fix?
+# some sunk into the ground
+params = {
+     "extend":(150,150,150),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={0},Z={180})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Nothing spawns
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Don't touch y Z is still 1500
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1500},Y={0},Z={1500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# make spawn og X bigger
+# they all fell down in WTF
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={2500},Y={0},Z={500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# interesting...
+# spawn don't move but fall down
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={2500},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# 0 out X
+# spawn no move
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={0},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# try -500 X
+# spawn no move fall
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={-500},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# OK try use actor properties
+# spawn no move fall :(
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"True",
+     'SpawnOrigin':f'(X={-500},Y={-500},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+}
+# Hmmm last successful play
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':True,
+}
+# heavy test with IrrelevantAction
+# didn't move
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+     'IrrelevantAction':True,     
+}
+# Now with critical
+# Respawn
+params = {
+     "extend":(180,180,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
+     'heavy':True,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':'(X=180,Y=180,Z=180)',
+     'IrrelevantAction':True,
+     'Critical':'Critical',
+     'RespawnStyle':True,
+}
+# works
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':True,
+}
+
+
 
 
 
@@ -437,12 +768,18 @@ def make_ixora_spawns():
         extend = params["extend"]
         scale = 1.0
         if not so in done_so:
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
-                       f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
-                       f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
+            if not extend == 'None':
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               'None')
+
+            #mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+            #           'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+            #           f'(x={scale * float(extend[0])},y={scale * float(extend[1])},z={scale * float(extend[2])})')
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
                        'None')
@@ -462,10 +799,20 @@ def make_ixora_spawns():
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
                            params["UseActorProperties"])
-            mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+            # respawn_style=""
+            # if params.get("RespawnStyle"
+            # respawn_style=",{params.get("Critical","AlwaysSpawn")}
+            if params.get("IrrelevantAction",False):
+                action = params.get("IrrelevantAction")
+                if action == True:
+                    action = "Nothing"
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                       f'(Critical={params.get("Critical","AlwaysSpawn")},bOverrideCritical=True,IrrelevantAction={action},bOverrideIrrelevantAction=True)')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
                        '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
-            # AdjustIfPossibleButAlwaysSpawn
             mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
     
         done_so.add(so)
@@ -493,6 +840,12 @@ def modify_spawnpoints():
                 ('Tags','None')]
     if params["SpecialEffects"]:
         objvals.append(('SpecialEffect','None'))
+    if params.get("NavCollisionSize",False):
+        v = params["NavCollisionSize"]
+        if v == True:
+            v = '(X=80.0,Y=80.0,Z=80.0)'
+        objvals.append(('NavCollisionSize',v))
+        objvals.append(('NavBox.Object..BoxExtent',v))
     for sp in spawnpoints:
         for (obj,val) in objvals:
             mod.reg_hotfix(
@@ -501,27 +854,90 @@ def modify_spawnpoints():
                 obj,
                 val,'',True)
         # danger!!!
-        if params["SpawnDetails"]:
-            for (obj,val) in [('SpawnDetails','(Critical=AlwaysSpawn,bOverrideCritical=True)'),]:
+        if params.get("SpawnDetails",False):
+            details = {'Critical':params.get("Critical","AlwaysSpawn"),
+                       'bOverrideCritical':'True'}
+            if params.get("IrrelevantAction",False):
+                details["IrrelevantAction"] = 'Nothing'
+                details["bOverrideIrrelevantAction"] = 'True'
+            spdetails = ",".join([f'{x}={details[x]}' for x in details])
+            for (obj,val) in [('SpawnDetails',spdetails)]:
                 mod.reg_hotfix(
                     Mod.EARLYLEVEL, IXORA_MAP,
                     f"{pp_ixora_path}.{sp}.SpawnerComponent",
                     obj,
                     val,'',True)
 
+def bias_item_rarity():
+    # we can't guarantee initial chest but we can bias against it
+    GEARUP = "/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_ItemRarity_Standard"
+    WHITE  = "Common"
+    GREEN  =  "Uncommon"
+    BLUE   = "Rare"
+    PURPLE = "VeryRare"
+    ORANGE = "Legendary"
+    BASEWEIGHT = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
+    mod.comment("This is stolen from Poïpoï's Legendary Arm's race CC-BY-SA 4.0 ")
+    mod.comment("at https://github.com/BLCM/bl3mods/blob/master/Po%C3%AFpo%C3%AF/Legendary%20Arms%20Race.bl3hotfix")
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, WHITE ,BASEWEIGHT,   1)   # 30
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, GREEN ,BASEWEIGHT, 749)   # 50
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, BLUE  ,BASEWEIGHT, 200)   # 15
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, PURPLE,BASEWEIGHT,  40)   #  4
+    mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, ORANGE,BASEWEIGHT,  10)   #  1
 
-            
+def change_chest_rarity(change_key=False):
+    # Ok now we manipulate the itempools instead
+    valuename = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
+    # 1% chance here
+    valuevalue = "Legendary"
+    pistol_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_PS_Equippable"
+    pistol_key =  "BalancedItems.BalancedItems[0].ItemPoolData"
+    pistol_key2 = "BalancedItems.BalancedItems[0].Weight.DataTableValue"
+    pistol_v2 = "None"
+    # Could use this
+    '(DataTable=None,RowName="",ValueName="")'
+    # could us this for weight instead
+    '(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)'
+    uc_pistols = "/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Uncommon"
+    itempool_pistols = f"ItemPoolData'\"{uc_pistols}\"'"
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key, itempool_pistols)
+    smg_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Equippable"
+    smg_key = pistol_key
+    smg_key2 = pistol_key2
+    smg_v2 = "None"
+    uc_smg = "/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Uncommon"
+    itempool_smg = f"ItemPoolData'\"{uc_smg}\"'"
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key, itempool_smg)
+    shield_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_Shields_Equippable"
+    shield_key = pistol_key
+    shield_key2 = smg_key2
+    shield_v2 = smg_v2
+    uc_shield = "/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_02_Uncommon"
+    itempool_shield = f"ItemPoolData'\"{uc_shield}\"'"    
+    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key, itempool_shield)
+    if change_key:
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key2, smg_v2)
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key2, pistol_v2)
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key2, shield_v2)
+    
 make_ixora_spawns()
 if params.get("modify_spawnpoints",False):
     modify_spawnpoints()
 
 if chubby_mod:
     mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
+
+if bias_items:
+    bias_item_rarity()
+
+if green_chest:
+    change_chest_rarity()
     
 mod.close()
 
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
+# - [X] Starting Chest Better?
 # - [ ] Big Mobs not moving in the pit
 # - [ ] Tiers of Big Guys
 # Thoughts:
