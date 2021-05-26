@@ -388,7 +388,7 @@ hard_bosses = [
 bpchars_text_tuple="""E /Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01
 E /Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01
 I /Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss
-E /Game/Enemies/Goon/_Unique/MonsterTrucker/_Design/Character/BPChar_GoonMonsterTrucker
+I /Game/Enemies/Goon/_Unique/MonsterTrucker/_Design/Character/BPChar_GoonMonsterTrucker
 I /Game/Enemies/Guardian/_Unique/BossFodder/Design/Character/BPChar_GuardianSpectreBossFodder
 I /Game/Enemies/Guardian/_Unique/BossFodder/Design/Character/BPChar_GuardianWraithBossFodder
 E /Game/Enemies/Guardian/_Unique/EdenVault02/_Design/Character/BPChar_Guardian_EdenVault02
@@ -417,7 +417,7 @@ I /Game/Enemies/Saurian/_Unique/Queen/_Design/Character/BPChar_SaurianQueen
 I /Game/Enemies/Saurian/_Unique/Grog_Poison_Fodder/Character/BPChar_Saurian_Grog_Poison_Fodder
 I /Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber
 I /Game/Enemies/Tink/_Unique/GameshowEnforcer/_Design/Character/BPChar_TinkGameshowEnforcer
-E /Game/Enemies/Tink/_Unique/Stagehand/_Design/Character/BPChar_TinkStagehand
+I /Game/Enemies/Tink/_Unique/Stagehand/_Design/Character/BPChar_TinkStagehand
 E /Game/Enemies/Tink/_Unique/BlueBasic/_Design/Character/BPChar_TinkBlueBasic
 I /Game/Enemies/Tink/_Unique/BossFodder/_Design/Character/BPChar_TinkBossFodder
 E /Game/Enemies/Tink/_Unique/Rare01/_Design/Character/BPChar_Tink_Rare01
