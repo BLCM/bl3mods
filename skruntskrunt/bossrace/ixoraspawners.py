@@ -40,13 +40,15 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
-    parser.add_argument('--nobias',action='store_true', default=False, help='Disable Item Rarity Biasing')
+    parser.add_argument('--bias',action='store_true', default=False, help='Bias Item Rarity against whites')
+    parser.add_argument('--nogreen',action='store_true', default=False, help='Disable Green Chest')
     return parser.parse_args()
 
 args = parse_args()
 our_seed = args.seed
 chubby_mod = not args.nochubby
-bias_items = not args.nobias
+bias_items = args.bias
+green_chest = not args.nogreen
 
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
@@ -62,7 +64,7 @@ mod = Mod(output_filename,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
-          v='0.1.2',
+          v='0.1.3',
           cats='gameplay',
 )
 
@@ -881,26 +883,29 @@ def bias_item_rarity():
     mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, PURPLE,BASEWEIGHT,  40)   #  4
     mod.table_hotfix(DFL_LEVEL, IXORA_MAP, GEARUP, ORANGE,BASEWEIGHT,  10)   #  1
 
+def change_chest_rarity(change_key=False):
     # Ok now we manipulate the itempools instead
     valuename = "BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191"
     # 1% chance here
     valuevalue = "Legendary"
     pistol_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_PS_Equippable"
-    pistol_key = "BalancedItems[0].ItemPoolData"
-    pistol_key2 = "BalancedItems[0].Weight.DataTableValue"
+    pistol_key =  "BalancedItems.BalancedItems[0].ItemPoolData"
+    pistol_key2 = "BalancedItems.BalancedItems[0].Weight.DataTableValue"
     pistol_v2 = "None"
+    # Could use this
+    '(DataTable=None,RowName="",ValueName="")'
+    # could us this for weight instead
+    '(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)'
     uc_pistols = "/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Uncommon"
     itempool_pistols = f"ItemPoolData'\"{uc_pistols}\"'"
     mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key, itempool_pistols)
-    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key2, pistol_v2)
     smg_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_AR_SG_SMG_Equippable"
     smg_key = pistol_key
-    smg_key2 = "BalancedItems[0].Weight.DataTableValue"
+    smg_key2 = pistol_key2
     smg_v2 = "None"
     uc_smg = "/Game/GameData/Loot/ItemPools/Guns/ItemPool_AR_Shotgun_SMG_Uncommon"
     itempool_smg = f"ItemPoolData'\"{uc_smg}\"'"
     mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key, itempool_smg)
-    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key2, smg_v2)
     shield_equippable = "/Game/PatchDLC/Ixora/GameData/Loot/ItemPools/Chest/ItemPool_GearUp_Chest_Shields_Equippable"
     shield_key = pistol_key
     shield_key2 = smg_key2
@@ -908,7 +913,10 @@ def bias_item_rarity():
     uc_shield = "/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_02_Uncommon"
     itempool_shield = f"ItemPoolData'\"{uc_shield}\"'"    
     mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key, itempool_shield)
-    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key2, shield_v2)
+    if change_key:
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key2, smg_v2)
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key2, pistol_v2)
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key2, shield_v2)
     
 make_ixora_spawns()
 if params.get("modify_spawnpoints",False):
@@ -919,12 +927,15 @@ if chubby_mod:
 
 if bias_items:
     bias_item_rarity()
+
+if green_chest:
+    change_chest_rarity()
     
 mod.close()
 
 # TODOS
 # - Current test is the pit to see if the trial boss spawns
-# - [?] Starting Chest Better?
+# - [X] Starting Chest Better?
 # - [ ] Big Mobs not moving in the pit
 # - [ ] Tiers of Big Guys
 # Thoughts:
