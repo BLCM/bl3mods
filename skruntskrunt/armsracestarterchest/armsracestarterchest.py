@@ -84,7 +84,7 @@ def mod_header(output_filename,colour="green"):
           [f"Makes the Arm's Race Starter Chest items of {colour} colour"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats='gameplay', # fix this
+          cats=['gameplay','armsrace'], # fix this
     )
     return mod
 

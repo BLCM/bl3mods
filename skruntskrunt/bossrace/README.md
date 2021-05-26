@@ -137,4 +137,3 @@ Bug reporting
 =============
 
 Please report bugs to this repository on github: https://github.com/abramhindle/bl3mods
-
