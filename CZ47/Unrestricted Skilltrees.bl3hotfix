@@ -1,0 +1,148 @@
+###
+### Name: Unrestricted Skilltrees
+### 
+### Author: CZ47
+### Categories: cheat, skill-system
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This mod allows you to spend points without restrictions.
+### It sets the amount of skillpoints necessary to unlock the next tiers to 0. 
+### So you can spec into a capstone only if you want for example.
+###
+
+
+
+#Amara
+
+#Orange Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_FistOfTheElements.AbilityTree_Siren_FistOfTheElements,Tiers.Tiers[2].OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_FistOfTheElements.AbilityTree_Siren_FistOfTheElements,Tiers.Tiers[3].OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_FistOfTheElements.AbilityTree_Siren_FistOfTheElements,Tiers.Tiers[4].OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_FistOfTheElements.AbilityTree_Siren_FistOfTheElements,Tiers.Tiers[5].OakPlayerAbilityTreeTierData_8.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_FistOfTheElements.AbilityTree_Siren_FistOfTheElements,Tiers.Tiers[6].OakPlayerAbilityTreeTierData_7.BranchPointsToUnlock,0,,0
+
+#Purple Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Character/AbilityTree_Siren_DLCTree.AbilityTree_Siren_DLCTree,Tiers.Tiers[2].OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Character/AbilityTree_Siren_DLCTree.AbilityTree_Siren_DLCTree,Tiers.Tiers[3].OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Character/AbilityTree_Siren_DLCTree.AbilityTree_Siren_DLCTree,Tiers.Tiers[4].OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Character/AbilityTree_Siren_DLCTree.AbilityTree_Siren_DLCTree,Tiers.Tiers[5].OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Character/AbilityTree_Siren_DLCTree.AbilityTree_Siren_DLCTree,Tiers.Tiers[6].OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+#Green Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl,Tiers.Tiers[5].OakPlayerAbilityTreeTierData_0.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_Brawl.AbilityTree_Siren_Brawl,Tiers.Tiers[6].OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+
+#Blue Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_MysticalAssault.AbilityTree_Siren_MysticalAssault,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_MysticalAssault.AbilityTree_Siren_MysticalAssault,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_MysticalAssault.AbilityTree_Siren_MysticalAssault,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_MysticalAssault.AbilityTree_Siren_MysticalAssault,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/Inventory/AbilityTree_Siren_MysticalAssault.AbilityTree_Siren_MysticalAssault,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+
+
+
+#Fl4k
+
+
+#Orange Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_RangedSupport.AbilityTree_Branch_RangedSupport,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_RangedSupport.AbilityTree_Branch_RangedSupport,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_RangedSupport.AbilityTree_Branch_RangedSupport,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_RangedSupport.AbilityTree_Branch_RangedSupport,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_RangedSupport.AbilityTree_Branch_RangedSupport,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+#Purple Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+#Green Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_HitAndRun.AbilityTree_Branch_HitAndRun,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_HitAndRun.AbilityTree_Branch_HitAndRun,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_HitAndRun.AbilityTree_Branch_HitAndRun,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_HitAndRun.AbilityTree_Branch_HitAndRun,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_HitAndRun.AbilityTree_Branch_HitAndRun,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+#Blue Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_Bond.AbilityTree_Branch_Bond,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_Bond.AbilityTree_Branch_Bond,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_Bond.AbilityTree_Branch_Bond,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_Bond.AbilityTree_Branch_Bond,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/SkillTree/AbilityTree_Branch_Bond.AbilityTree_Branch_Bond,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+
+
+
+#Moze
+
+
+#Orange Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Guardian.AbilityTree_Branch_Guardian,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Guardian.AbilityTree_Branch_Guardian,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Guardian.AbilityTree_Branch_Guardian,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Guardian.AbilityTree_Branch_Guardian,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Guardian.AbilityTree_Branch_Guardian,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+
+#Purple Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[2].OakPlayerAbilityTreeTierData_8.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[3].OakPlayerAbilityTreeTierData_9.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[4].OakPlayerAbilityTreeTierData_10.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[5].OakPlayerAbilityTreeTierData_11.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[6].OakPlayerAbilityTreeTierData_12.BranchPointsToUnlock,0,,0
+
+#Green Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_BottomlessMag.AbilityTree_Branch_BottomlessMag,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_BottomlessMag.AbilityTree_Branch_BottomlessMag,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_BottomlessMag.AbilityTree_Branch_BottomlessMag,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_BottomlessMag.AbilityTree_Branch_BottomlessMag,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_7.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_BottomlessMag.AbilityTree_Branch_BottomlessMag,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+
+#Blue Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+
+
+
+#Zane
+
+
+#Orange Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Gadgeteer.AbilityTree_Operative_Gadgeteer,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Gadgeteer.AbilityTree_Operative_Gadgeteer,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Gadgeteer.AbilityTree_Operative_Gadgeteer,Tiers.Tiers[4].OakPlayerAbilityTreeTierData_0.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Gadgeteer.AbilityTree_Operative_Gadgeteer,Tiers.Tiers[5].OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Gadgeteer.AbilityTree_Operative_Gadgeteer,Tiers.Tiers[6].OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+
+#Purple Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Character/AbilityTree_Operative_DLCTree.AbilityTree_Operative_DLCTree,Tiers.Tiers[2].OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Character/AbilityTree_Operative_DLCTree.AbilityTree_Operative_DLCTree,Tiers.Tiers[3].OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Character/AbilityTree_Operative_DLCTree.AbilityTree_Operative_DLCTree,Tiers.Tiers[4].OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Character/AbilityTree_Operative_DLCTree.AbilityTree_Operative_DLCTree,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Character/AbilityTree_Operative_DLCTree.AbilityTree_Operative_DLCTree,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+
+#Green Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Rampart.AbilityTree_Operative_Rampart,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_6.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Rampart.AbilityTree_Operative_Rampart,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_7.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Rampart.AbilityTree_Operative_Rampart,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_8.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Rampart.AbilityTree_Operative_Rampart,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_9.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Rampart.AbilityTree_Operative_Rampart,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_11.BranchPointsToUnlock,0,,0
+
+#Blue Tree Unlock
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Hitman.AbilityTree_Operative_Hitman,Tiers.Tiers[2].Tiers_OakPlayerAbilityTreeTierData_1.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Hitman.AbilityTree_Operative_Hitman,Tiers.Tiers[3].Tiers_OakPlayerAbilityTreeTierData_2.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Hitman.AbilityTree_Operative_Hitman,Tiers.Tiers[4].Tiers_OakPlayerAbilityTreeTierData_3.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Hitman.AbilityTree_Operative_Hitman,Tiers.Tiers[5].Tiers_OakPlayerAbilityTreeTierData_4.BranchPointsToUnlock,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/Inventory/AbilityTree_Operative_Hitman.AbilityTree_Operative_Hitman,Tiers.Tiers[6].Tiers_OakPlayerAbilityTreeTierData_5.BranchPointsToUnlock,0,,0
+
+
