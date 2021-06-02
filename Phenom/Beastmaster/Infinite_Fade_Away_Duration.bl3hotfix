@@ -1,0 +1,22 @@
+###
+### Name: Infinite Fade Away Duration
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, skill-system, char-beastmaster
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Fade away has an infinite duration.
+###
+### Made for tests purpose.
+###
+###	If you use Guerilla In The Mist, you can cancel Fade Away by reloading the map (Fast Travel) or dying as you wish.
+###
+
+
+# Infinite Fade Away duration
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,-1.0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant_Mod3,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,-1.0
