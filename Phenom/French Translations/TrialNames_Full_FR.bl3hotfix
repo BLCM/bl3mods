@@ -1,0 +1,31 @@
+###
+### Name: Trial Names FR
+### Version: 1.0.0
+### Author: Phenom
+### Categories: qol-ui, translation
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Just a french translation of the DexManly's TrialNames_Full mod.
+###
+### All credits go to him.
+###
+### Add trial names to the galaxy map proving grounds.
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-1.PlanetMapData_ProvingGround-1,SubHeader,0,,Terrain d'entraînement - Survie
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-4.PlanetMapData_ProvingGround-4,SubHeader,0,,Terrain d'entraînement - Ferveur
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-5.PlanetMapData_ProvingGround-5,SubHeader,0,,Terrain d'entraînement - Ruse
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-6.PlanetMapData_ProvingGround-6,SubHeader,0,,Terrain d'entraînement - Suprémacie
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-7.PlanetMapData_ProvingGround-7,SubHeader,0,,Terrain d'entraînement - Discipline
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-8.PlanetMapData_ProvingGround-8,SubHeader,0,,Terrain d'entraînement - Instinct
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-1.PlanetMapData_ProvingGround-1,DisplayName,0,,Gradient de l’Aube (Survie)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-4.PlanetMapData_ProvingGround-4,DisplayName,0,,Chaire céleste (Ferveur)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-5.PlanetMapData_ProvingGround-5,DisplayName,0,,Balise fantomatique (Ruse)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-6.PlanetMapData_ProvingGround-6,DisplayName,0,,Couloir d’obsidienne (Suprémacie)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-7.PlanetMapData_ProvingGround-7,DisplayName,0,,Ancre du précipice (Discipline)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/PlanetMapData_ProvingGround-8.PlanetMapData_ProvingGround-8,DisplayName,0,,Lien imprévisible (Instinct)
