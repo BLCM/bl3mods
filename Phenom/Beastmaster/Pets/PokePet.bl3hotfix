@@ -18,10 +18,6 @@
 ### It's a joke mod, not totally tested, use at your own risk.
 ###
 
-###
-### PokePet
-###
-
 ### SKAG
 # Guard Skag
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag.Default__BPChar_PetSkag_C:CharacterMesh0,RelativeScale3D,0,,(X=0.30,Y=0.30,Z=0.30)
