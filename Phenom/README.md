@@ -9,10 +9,9 @@
    * No Action Skills Cooldown Beastmaster
    * Infinite Fade Away Duration
    * Infinite Gamma Burst Duration
-  * Pets
-    * Instant Pet Respawn
-    * PetZilla
-    * PokePet
+   * Instant Pet Respawn
+   * PetZilla
+   * PokePet
  
 * French translations
   * Trial Names FR (DexManly)
