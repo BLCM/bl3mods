@@ -1,0 +1,30 @@
+###
+### Name: Unlimited Bank & Backpack
+### Version: 2.0.0
+### Author: Phenom
+### Categories: cheat, inventory
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Are you a True Vault Hunter ?
+### Tediore has created for you The Portable Digistruct Backpack, a new thecnology which digitize your stuff and give you an unlimited space to store them.
+### You say cheated ? We say totaly lore friendly.
+### Who is useless now ?
+### By using our technolgy you agree to our confidentiality agreement (which mean we know everything about you and we can sell your personal data's infos).
+###
+### Modify the base backpack space to unlimited.
+### Modify the bank SDU Lv1 to unlimited.
+###
+### The unlimited space also reduce the lags in huge inventory.
+###
+
+# Unlimited backpack space
+# Modify the base backpack space from 16 to unlimited
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Character/BPChar_Player.BPChar_Player_C:InventoryList_GEN_VARIABLE,MaxInventoryItems,0,,(BaseValue=-100)
+
+# Unlimited bank space
+# Modify the Bank SDU Lv1 from 5 to unlimited
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Bank.Table_SDU_Bank,Lv1,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Character/Att_PlayerBankMax.Att_PlayerBankMax"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=-1000)
