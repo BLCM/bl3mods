@@ -1,0 +1,19 @@
+###
+### Name: TVHM Scale From Level 1
+### Version: 1.0.0
+### Author: Phenom
+### Categories: scaling
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### TVHM now scale from level 1 instead of 30.
+###
+### You can start a new game directly in TVHM by unlocking it with a save editor.
+###
+
+# Scale TVHM from level 1 instead of 30
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
