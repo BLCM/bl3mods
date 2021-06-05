@@ -1,0 +1,16 @@
+###
+### Name: Unlimited Vehicles Boost
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, vehicle
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### The vehicles have an infinite boost.
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseOnIdleRegenerationRate,0,,100.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseOnIdleRegenerationDelay,0,,0
