@@ -23,14 +23,12 @@
 ###	-Uniques Are Legendary (Apocalyptech)
 ###
 ###
-###	All credits go to: Apocalyptech, SsPyr, EpicNNG
+### All credits go to: Apocalyptech, SsPyr, EpicNNG
 ###
 
 
 
-###
 ### Adjusting Veterans Machine Pool to Only Have Quest Rewards (SsPyr)
-###
 
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_CrazyEarl.DA_ItemPool_VendingMachine_CrazyEarl,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_CrazyEarl_MissionRewards.DA_ItemPool_VendingMachine_CrazyEarl_MissionRewards"',Weight=(BaseValueConstant=3,DataTableValue=(),BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare.Att_RarityWeight_03_Rare"'BaseValueScale=0.3),Quantity=(BaseValueConstant=15.0)))
 
