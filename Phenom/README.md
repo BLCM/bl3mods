@@ -2,8 +2,10 @@
 
 * General
   * Unlimited Bank & Backpack
+  * Unlimited Vehicles Boost
   * TVHM Scale From Level 1
   * Legendary Price Scaling
+  * Better Vending Machines
 
 * Beastmaster
    * No Action Skills Cooldown Beastmaster
