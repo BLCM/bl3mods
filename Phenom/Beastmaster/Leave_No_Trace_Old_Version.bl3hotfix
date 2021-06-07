@@ -1,0 +1,17 @@
+###
+### Name: Leave No Trace old Version (Instant Cooldown)
+### Version: 1.0.0
+### Author: Phenom
+### Categories: skill-system, char-beastmaster
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Leave No Trace cooldown return to his base value (0.1) which mean instant.
+###
+### Gearbox nerfed it from 0.1 to 2.0 then to 0.3.
+###
+
+SparkPatchEntry,(1,7,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged1/Passive_Beastmaster_Ranged1.Passive_Beastmaster_Ranged1_C,0,1,ExecuteUbergraph_Passive_Beastmaster_Ranged1,1,312,8:0.100000,3:0.1
