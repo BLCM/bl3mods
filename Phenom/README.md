@@ -14,7 +14,7 @@
    * Instant Pet Respawn
    * PetZilla
    * PokePet
-   * Leave No Trace Old version
+   * Leave No Trace Old Version
  
  * Operative
    * No Action Skills Cooldown Operative
