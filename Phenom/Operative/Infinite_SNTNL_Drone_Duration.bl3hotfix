@@ -1,0 +1,18 @@
+###
+### Name: Infinite SNTNL Drone Duration
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, skill-system, char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### SNTNL Drone has an infinite duration.
+###
+### You can cancel it by reloading the map (Fast Travel) or dying as you wish.
+###
+
+# Drone SNTNL
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_Duration,Value,0,,(BaseValueConstant=-1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)

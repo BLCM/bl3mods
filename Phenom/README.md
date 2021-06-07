@@ -14,6 +14,11 @@
    * Instant Pet Respawn
    * PetZilla
    * PokePet
+   * Leave No Trace Old Version
+ 
+ * Operative
+   * No Action Skills Cooldown Operative
+   * Infinite SNTNL Drone Duration
  
 * French translations
   * Trial Names FR (DexManly)
