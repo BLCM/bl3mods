@@ -18,6 +18,7 @@ The following is a chart showing the values in *this mod* (in all playthroughs a
 | RADIATION  | 100%  |  120%  |  75%  |
 
 However, the .bl3hotfix file can be edited in a text editor such as Notepad++ to easily alter the influence of elemental damage to your own liking.
+
 The elemental damage values of the *unmodded* game can be found here: https://borderlands.fandom.com/wiki/Elemental_damage#Borderlands_3
 
 Contact the Author
