@@ -6,6 +6,7 @@
   * TVHM Scale From Level 1
   * Legendary Price Scaling
   * Better Vending Machines
+  * Moxxi's Tipping Jar Rewards
 
 * Beastmaster
    * No Action Skills Cooldown Beastmaster
