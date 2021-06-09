@@ -25,5 +25,5 @@
   * Trial Names FR (DexManly)
 
 ## Special thanks:
+* Apocalyptech for all his help and contribution to the Borderlands modding community
 * c0dycode for his B3HM
-* Apocalyptech for his help and contribution in the Borderlands modding community
