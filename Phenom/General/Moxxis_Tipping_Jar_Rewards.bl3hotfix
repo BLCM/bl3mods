@@ -1,0 +1,31 @@
+###
+### Name: Moxxi's Tipping Jar Rewards
+### Version: 1.0.0
+### Author: Phenom
+### Categories: loot-sources
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Moxxi's Tipping Jar Rewards now includes all her stuff (with equal drop chance):
+###
+###	-Hail
+###	-Crit
+###	-Moxxi's Vibra-Pulse
+###	-Moxxi's Embrace
+###	-Moxxi's Endowment
+###	-Moxxi's Bouncing Pair
+###	-Slow Hand
+###	-Creamer
+###	-Heart Breaker
+###
+### Tweaked (and fixed) from EpicNNG's Redux Mod.
+###
+
+###
+### Add all Moxxi's Gears to her Tipping Jar
+###
+
+SparkPatchEntry,(1,1,0,),/Game/InteractiveObjects/TipJar/ItemPool_MoxxiTip_GunRewards.ItemPool_MoxxiTip_GunRewards,BalancedItems,0,,((InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Hail/Balance/Balance_DAL_AR_Hail.Balance_DAL_AR_Hail,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Hail/Balance/Balance_DAL_AR_Hail.Balance_DAL_AR_Hail"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/Balance/Balance_SM_MAL_Crit.Balance_SM_MAL_Crit,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/Balance/Balance_SM_MAL_Crit.Balance_SM_MAL_Crit"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/Balance/Balance_SM_MAL_VibraPulse.Balance_SM_MAL_VibraPulse,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/VibraPulse/Balance/Balance_SM_MAL_VibraPulse.Balance_SM_MAL_VibraPulse"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/Gear/Shields/_Design/_Uniques/MoxxisEmbrace/Balance/InvBalD_Shield_MoxxisEmbrace.InvBalD_Shield_MoxxisEmbrace,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/Shields/_Design/_Uniques/MoxxisEmbrace/Balance/InvBalD_Shield_MoxxisEmbrace.InvBalD_Shield_MoxxisEmbrace"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/Gear/GrenadeMods/_Design/_Unique/MoxiesBosom/Balance/InvBalD_GM_PAN_MoxiesBosom.InvBalD_GM_PAN_MoxiesBosom,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/GrenadeMods/_Design/_Unique/MoxiesBosom/Balance/InvBalD_GM_PAN_MoxiesBosom.InvBalD_GM_PAN_MoxiesBosom"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Artifacts/MoxxisEndowment/InvBalD_Artifact_MoxxisEndowment.InvBalD_Artifact_MoxxisEndowment,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Artifacts/MoxxisEndowment/InvBalD_Artifact_MoxxisEndowment.InvBalD_Artifact_MoxxisEndowment"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/Balance/Balance_HW_TOR_Creamer.Balance_HW_TOR_Creamer,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/Balance/Balance_HW_TOR_Creamer.Balance_HW_TOR_Creamer"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand.Balance_SG_HYP_SlowHand,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/SlowHand/Balance/Balance_SG_HYP_SlowHand.Balance_SG_HYP_SlowHand"',Weight=(BaseValueConstant=1,BaseValueScale=1)),(InventoryBalanceData=/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/HeartBreaker/Balance/Balance_SG_HYP_HeartBreaker.Balance_SG_HYP_HeartBreaker,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/HeartBreaker/Balance/Balance_SG_HYP_HeartBreaker.Balance_SG_HYP_HeartBreaker"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
