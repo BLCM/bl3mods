@@ -9,13 +9,14 @@
   * Moxxi's Tipping Jar Rewards
 
 * Beastmaster
+   * Leave No Trace Old Version (Instant Cooldown)
    * No Action Skills Cooldown Beastmaster
    * Infinite Fade Away Duration
    * Infinite Gamma Burst Duration
    * Instant Pet Respawn
    * PetZilla
    * PokePet
-   * Leave No Trace Old Version (Instant Cooldown)
+   * PokePetZilla
  
  * Operative
    * No Action Skills Cooldown Operative
