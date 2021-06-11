@@ -9,7 +9,7 @@ Elemental Damage Chart
 The following is a chart showing the values in this mod (in all playthroughs and Mayhem levels):
 |            | FLESH | SHIELD | ARMOR |
 |   :---:    |   ---:|    ---:|   ---:|
-| NONE       |  120% |   100% |   75% |
+| NONE       |  110% |   100% |   80% |
 | INCENDIARY |  150% |    80% |   75% |
 | SHOCK      |   80% |   150% |   75% |
 | CORROSIVE  |   80% |    80% |  155% |
@@ -23,6 +23,8 @@ The elemental damage values of the *unmodded* game can be found here: https://bo
 Changelog
 ---------
 **v1.0.1:** Made non-elemental damage have the same penalty to armor as other elements, but increased its bonus against flesh by 20% to balance it against cryogenic and radiation damage. Increased corrosive's bonus against armor by 5% to (imperceptibly) further push it toward being actually useful.
+
+**v1.0.2:** Remembered enemies's attacks also use these numbers, so partially reverted non-elemental damage's bonus against flesh to 10% (from 20%), and conversely reduced its penalty to armor back down to 20% (from 25%) to compensate.
 
 Contact the Author
 ------------------
