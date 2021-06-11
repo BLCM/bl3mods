@@ -2,7 +2,7 @@
 ### Name: No Action Skills Cooldown Beastmaster
 ### Version: 1.0.0
 ### Author: Phenom
-### Categories: cheat, skill-system, char-beastmaster
+### Categories: cheat, char-beastmaster
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -17,7 +17,6 @@
 ###	-Fade Away
 ###	-Gravity Snare
 ###
-
 
 # Instant Pet Attack Command cooldown
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_AttackCommmand,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
