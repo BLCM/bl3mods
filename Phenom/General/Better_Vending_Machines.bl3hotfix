@@ -23,7 +23,7 @@
 ###	-Uniques Are Legendary (Apocalyptech)
 ###
 ###
-### All credits go to: Apocalyptech, SsPyr, EpicNNG
+### All credits go to: Apocalyptech, SsPyr, Grimm
 ###
 
 
@@ -35,7 +35,7 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPo
 
 
 ###
-### Adjusting Vending Machine Pool (tweaked from EpicNNG's Redux Mod)
+### Adjusting Vending Machine Pool (tweaked from Grimm's code)
 ###
 
 ### Adjusting Weapon Machine Pool
