@@ -123,6 +123,12 @@ clean:
 bossrace.rand.bl3hotfix: $(EXE)
 	python3 $(EXE) --output bossrace.rand.bl3hotfix
 
+mitosis.bossrace.bl3hotfix: $(EXE)
+	python3 $(EXE) --output mitosis.bossrace.bl3hotfix --seed $(SEED) --mitosis
+
+mitosis.bl3hotfix: $(EXE)
+	python3 $(EXE) --output mitosis.bl3hotfix --seed $(SEED) --justmitosis
+
 bossrace.%.bl3hotfix: $(EXE)
 	python3 $(EXE) --seed $* --output bossrace.$*.bl3hotfix
 

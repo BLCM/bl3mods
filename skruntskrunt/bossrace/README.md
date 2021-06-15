@@ -21,7 +21,7 @@ Header
 * Name: Boss Race
 * Version: 0.2.0
 * Author: Abram/skruntskrunt,  altef-4, Apocalyptech, Grimm, and more
-* Categories: gameplay
+* Categories: gameplay, armsrace
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * License URL: https://creativecommons.org/licenses/by-sa/4.0/
 * Code License: GNU Public License Version 3
