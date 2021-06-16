@@ -48,6 +48,7 @@ mod = Mod('filename_to_save.bl3hotfix',
             'Extra description lines to show in the header, if you want.',
             'You can leave this as an empty list.',
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='scaling',
@@ -60,6 +61,12 @@ If you're generating a mod which is really huge (such as SSpyR's runtime weapon/
 randomizer), you can have the helper generate a compressed version by appending
 `.gz` to the filename.  In the example above, for instance, you could specify
 `filename_to_save.bl3hotfix.gz` instead.
+
+The `contact=foo` line is completely optional, and is just used if you want to
+give users a way to contact you about your mods.  You can actually use any of
+four variables here: `contact`, `contact_url`, `contact_email`, and/or
+`contact_discord`.  Keep in mind that this information will be public, so only
+put info in here if you're okay with that.
 
 The `v=foo` line is completely optional, so don't worry about specifying a
 version if you don't want (though it's good practice to put it in your file so that
