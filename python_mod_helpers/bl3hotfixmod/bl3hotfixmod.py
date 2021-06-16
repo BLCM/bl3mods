@@ -92,6 +92,7 @@ class Mod(object):
     def __init__(self, filename, title, author, description,
             v=None, lic=None, cats=None,
             ss=None, videos=None, urls=None, nexus=None,
+            contact=None, contact_email=None, contact_url=None, contact_discord=None,
             quiet_meshes=False,
             ):
         """
@@ -110,6 +111,10 @@ class Mod(object):
         `videos` - Video URL(s).  Can be a single string, or a list of strings
         `urls` - Extra URL(s).  Can be a single string, or a list of strings
         `nexus` - Nexus Mods URL, in case you're uploading there as well
+        `contact` - Generic contact info
+        `contact_email` - Contact email address
+        `contact_url` - Contact URL
+        `contact_discord` - Contact Discord info
 
         And then, some extra control parameters (just the one for now, actually):
 
@@ -132,6 +137,10 @@ class Mod(object):
         self.videos = videos
         self.urls = urls
         self.nexus = nexus
+        self.contact = contact
+        self.contact_email = contact_email
+        self.contact_url = contact_url
+        self.contact_discord = contact_discord
         self.last_was_newline = True
         self.ensured_meshes = {}
         self.quiet_meshes = quiet_meshes
@@ -150,6 +159,14 @@ class Mod(object):
         if self.version is not None:
             print('### Version: {}'.format(self.version), file=self.df)
         print('### Author: {}'.format(self.author), file=self.df)
+        if self.contact:
+            print('### Contact: {}'.format(self.contact), file=self.df)
+        if self.contact_email:
+            print('### Contact (Email): {}'.format(self.contact_email), file=self.df)
+        if self.contact_url:
+            print('### Contact (URL): {}'.format(self.contact_url), file=self.df)
+        if self.contact_discord:
+            print('### Contact (Discord): {}'.format(self.contact_discord), file=self.df)
         if self.categories:
             if type(self.categories) == list:
                 print('### Categories: {}'.format(', '.join(self.categories)), file=self.df)
