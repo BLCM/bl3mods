@@ -39,6 +39,7 @@ mod = Mod('vehicle_unlocks.bl3hotfix',
             "Technicals in Sandblast Scar to the Monster Wheels variety, so that",
             "there's ingame sources for the Monster Wheels."
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.1',
         cats='gameplay, vehicle',

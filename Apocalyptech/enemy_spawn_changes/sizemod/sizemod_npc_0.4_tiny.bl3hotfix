@@ -1,7 +1,8 @@
 ###
 ### Name: Sizemod: NPC Tiny-lands (0.4x)
-### Version: 1.3.0
+### Version: 1.3.1
 ### Author: Apocalyptech
+### Contact: https://apocalyptech.com/contact.php
 ### Categories: enemy, joke
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -429,7 +430,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereShared),/Game/Enemies/Oversphe
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereStinger),/Game/Enemies/Oversphere/Stinger/_Design/Character/BPChar_OversphereStinger.Default__BPChar_OversphereStinger_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereStingerDark),/Game/Enemies/Oversphere/Stinger/_Design/Character/BPChar_OversphereStingerDark.Default__BPChar_OversphereStingerDark_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereJackie),/Game/Enemies/Oversphere/_Unique/Jackie/_Design/Character/BPChar_OversphereJackie.Default__BPChar_OversphereJackie_C:CharacterMesh0,RelativeScale3D,0,,(X=0.2,Y=0.2,Z=0.2)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere.Default__BPChar_Oversphere_KatagawaSphere_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Oversphere_KatagawaSphere),/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere.Default__BPChar_Oversphere_KatagawaSphere_C:CharacterMesh0,RelativeScale3D,0,,(X=1.4,Y=1.4,Z=1.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereVRBig),/Game/Enemies/Oversphere/_Unique/OversphereVRBig/Character/BPChar_OversphereVRBig.Default__BPChar_OversphereVRBig_C:CharacterMesh0,RelativeScale3D,0,,(X=2,Y=2,Z=2)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereVR),/Game/Enemies/Oversphere/_Unique/OversphereVR/_Design/Character/BPChar_OversphereVR.Default__BPChar_OversphereVR_C:CharacterMesh0,RelativeScale3D,0,,(X=0.2,Y=0.2,Z=0.2)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_OversphereRare01),/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.Default__BPChar_OversphereRare01_C:CharacterMesh0,RelativeScale3D,0,,(X=0.08,Y=0.08,Z=0.08)
@@ -827,7 +828,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_HyperionTurretBasic),/Game/PatchDLC/Dand
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HyperionTurretCryo),/Game/PatchDLC/Dandelion/Enemies/HyperionTurret/Cryo/_Design/Character/BPChar_HyperionTurretCryo.Default__BPChar_HyperionTurretCryo_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HyperionTurretFire),/Game/PatchDLC/Dandelion/Enemies/HyperionTurret/Fire/_Design/Character/BPChar_HyperionTurretFire.Default__BPChar_HyperionTurretFire_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_HyperionTurret),/Game/PatchDLC/Dandelion/Enemies/HyperionTurret/_Shared/_Design/Character/BPChar_HyperionTurret.Default__BPChar_HyperionTurret_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_LoaderBadass),/Game/PatchDLC/Dandelion/Enemies/Loader/Badass/_Design/Character/BPChar_LoaderBadass.Default__BPChar_LoaderBadass_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_LoaderBadass),/Game/PatchDLC/Dandelion/Enemies/Loader/Badass/_Design/Character/BPChar_LoaderBadass.Default__BPChar_LoaderBadass_C:CharacterMesh0,RelativeScale3D,0,,(X=0.44,Y=0.44,Z=0.44)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_LoaderBadass_Venchy),/Game/PatchDLC/Dandelion/Enemies/Loader/Badass/_Design/Character/BPChar_LoaderBadass_Venchy.Default__BPChar_LoaderBadass_Venchy_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_LoaderBasic),/Game/PatchDLC/Dandelion/Enemies/Loader/Basic/_Design/Character/BPChar_LoaderBasic.Default__BPChar_LoaderBasic_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Loader_BL2),/Game/PatchDLC/Dandelion/Enemies/Loader/BL2_Loader/_Design/Character/BPChar_Loader_BL2.Default__BPChar_Loader_BL2_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
@@ -1087,7 +1088,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianHorsemen4),/Geranium/Enemies/G
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerPunkHorsemen4),/Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Rider/BPChar_GerPunkHorsemen4.Default__BPChar_GerPunkHorsemen4_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianLBN_GunGrog),/Geranium/Enemies/GerSaurian/_Unique/LBN_GunGrog/_Design/Character/BPChar_GerSaurianLBN_GunGrog.Default__BPChar_GerSaurianLBN_GunGrog_C:CharacterMesh0,RelativeScale3D,0,,(X=0.28,Y=0.28,Z=0.28)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianLBN_GunPred),/Geranium/Enemies/GerSaurian/_Unique/LBN_GunPred/_Design/Character/BPChar_GerSaurianLBN_GunPred.Default__BPChar_GerSaurianLBN_GunPred_C:CharacterMesh0,RelativeScale3D,0,,(X=0.5,Y=0.5,Z=0.5)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur.Default__BPChar_GerSaurianSaurtaur_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur),/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur.Default__BPChar_GerSaurianSaurtaur_C:CharacterMesh0,RelativeScale3D,0,,(X=0.5,Y=0.5,Z=0.5)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSaurtaur_Punk),/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur_Punk.Default__BPChar_GerSaurianSaurtaur_Punk_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GerSaurianSV_Daisy),/Geranium/Enemies/GerSaurian/_Unique/SV_Daisy/_Design/Character/BPChar_GerSaurianSV_Daisy.Default__BPChar_GerSaurianSV_Daisy_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_SaurianSV_PGrog),/Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog.Default__BPChar_SaurianSV_PGrog_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
@@ -1247,7 +1248,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Drizzen),/Hibiscus/Enemies/Wolf/A
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Badass),/Hibiscus/Enemies/Wolf/Badass/_Design/Character/BPChar_Wolven_Badass.Default__BPChar_Wolven_Badass_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_WolfBasic),/Hibiscus/Enemies/Wolf/Basic/_Design/Character/BPChar_WolfBasic.Default__BPChar_WolfBasic_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_WolfBasic_Ghost),/Hibiscus/Enemies/Wolf/Basic/_Design/Character/BPChar_WolfBasic_Ghost.Default__BPChar_WolfBasic_Ghost_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
-SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Feeder),/Hibiscus/Enemies/Wolf/Beta/_Design/Character/BPChar_Wolven_Feeder.Default__BPChar_Wolven_Feeder_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Feeder),/Hibiscus/Enemies/Wolf/Beta/_Design/Character/BPChar_Wolven_Feeder.Default__BPChar_Wolven_Feeder_C:CharacterMesh0,RelativeScale3D,0,,(X=0.448,Y=0.448,Z=0.448)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Howler),/Hibiscus/Enemies/Wolf/Pup/_Design/Character/BPChar_Wolven_Howler.Default__BPChar_Wolven_Howler_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Wolven_Shared),/Hibiscus/Enemies/Wolf/_Shared/_Design/Character/BPChar_Wolven_Shared.Default__BPChar_Wolven_Shared_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Zealot_Badass),/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass.Default__BPChar_Zealot_Badass_C:CharacterMesh0,RelativeScale3D,0,,(X=0.4,Y=0.4,Z=0.4)

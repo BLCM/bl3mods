@@ -18,6 +18,9 @@ World Drop Ixora COMs.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.2.0** - Apr 12, 2021
  * Added Kensei and Death's Blessings COMs (from Designer's Cut and
    Director's Cut DLCs, respectively)

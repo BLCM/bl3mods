@@ -64,6 +64,9 @@ anything if you do).
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.3** - May 3, 2021
  * Guaranteed boss drop when you kill Ipswitch Dunne's Saurian (we had an
    invalid object path for that, previously)

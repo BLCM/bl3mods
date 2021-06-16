@@ -72,6 +72,9 @@ TODO
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v0.9.1** - May 10, 2021
  * Mod file was rebuilt using some updated backend infrastructure; no
    actual changes, but some values changed from integers to floats

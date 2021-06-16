@@ -33,8 +33,9 @@ mod = Mod('nvhm_gamestage_follows_level.bl3hotfix',
             "Makes Normal/NVHM mode always scale to your player level, like it",
             "does in TVHM or Mayhem mode.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='scaling',
         )
 

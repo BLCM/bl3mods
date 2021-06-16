@@ -16,6 +16,9 @@ to Iron Bear and FL4K's pets.  There are three variants:
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.2** - Mar 19, 2021
  * Added FL4K's Pet Loaders, from DLC5 (Designer's Cut)
 

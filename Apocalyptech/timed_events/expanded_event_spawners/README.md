@@ -20,6 +20,11 @@ DLC6 (Director's Cut), though.
 Changelog
 =========
 
+**v1.3.1** - Jun 16, 2021
+ * Added contact info to mod header
+ * Due to the nature of the mod-construction script, this does rebuild
+   the mod, though there shouldn't be any functionality differences.
+
 **v1.3.0** - Apr 14, 2020
  * Addition of DLC6 (Director's Cut) maps
 

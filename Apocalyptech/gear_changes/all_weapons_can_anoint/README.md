@@ -12,6 +12,9 @@ Should be up to date with DLC5 (Designer's Cut).
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.2.0** - Sep 26, 2020
  * Updated with DLC5 (Designer's Cut) items (which is just Res)
 

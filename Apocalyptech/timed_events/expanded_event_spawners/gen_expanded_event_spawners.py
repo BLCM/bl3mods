@@ -671,8 +671,9 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "and Covenant Pass won't have any, for instance.  This is up to date",
                 "through DLC4 (Psycho Krieg), though.",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.3.1',
             cats='event, enemy, maps',
             )
 

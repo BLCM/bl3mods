@@ -19,6 +19,9 @@ around.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.1** - May 11, 2021
  * Fixed up in-mod description (no functionality changes)
 

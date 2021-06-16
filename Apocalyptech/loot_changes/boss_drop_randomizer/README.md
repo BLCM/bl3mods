@@ -28,6 +28,9 @@ Better Loot in your mod list.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.1** - Apr 23, 2021
  * Updated for new DLC2 drops added by yesterday's hotfixes
 

@@ -60,6 +60,7 @@ for (label, filename, rate, desc) in [
             'Customization Drop Rate: {}'.format(label),
             'Apocalyptech',
             desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.2.0',
             cats='enemy-drops',

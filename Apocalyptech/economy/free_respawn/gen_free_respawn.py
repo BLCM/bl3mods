@@ -29,6 +29,7 @@ mod = Mod('free_respawn.bl3hotfix',
         [
             "No cost to respawn after death",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='cheat, economy',

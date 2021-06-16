@@ -20,6 +20,9 @@ the player.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.0** - Apr 14, 2020
  * Updated with DLC6 enemies
 

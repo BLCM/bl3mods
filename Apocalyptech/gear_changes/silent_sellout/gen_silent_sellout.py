@@ -29,6 +29,7 @@ mod = Mod('silent_sellout.bl3hotfix',
         [
             "Removes the Tyreen-themed voice module from the Sellout",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='gear-general, qol',

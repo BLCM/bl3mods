@@ -10,6 +10,9 @@ shields, grenade mods, COMs, and relics.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - May 7, 2020
  * Initial release
  

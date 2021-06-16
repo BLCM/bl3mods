@@ -36,6 +36,9 @@ added into the loot pool properly.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.4.0** - Apr 24, 2021
  * Added in setting the gun-type drop weights on the main Legendary Gun pool,
    to match the total weighting available in each gun type.  Effectively, all

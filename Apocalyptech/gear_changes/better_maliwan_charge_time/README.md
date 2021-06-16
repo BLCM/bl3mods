@@ -17,6 +17,9 @@ TODO
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.0** - Apr 12, 2020
  * Updated for DLC6 (Director's Cut), which is just Free Radical
  * Added the following weapons I hadn't figured out in earlier versions:

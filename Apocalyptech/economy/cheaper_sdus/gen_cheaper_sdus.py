@@ -34,6 +34,7 @@ mod = Mod('cheaper_sdus.bl3hotfix',
         [
             "Makes the purchaseable SDUs in the game significantly cheaper.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='cheat, economy',

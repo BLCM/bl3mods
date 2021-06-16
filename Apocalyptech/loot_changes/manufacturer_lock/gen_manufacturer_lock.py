@@ -1029,6 +1029,7 @@ for (man, man_label) in eng_manufacturers.items():
                 "three-letter manufacturer codes as the arguments.  See sourcecode for",
                 "details",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.3.0',
             cats='loot-system',

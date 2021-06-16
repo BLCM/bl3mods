@@ -9,6 +9,9 @@ so you should be able to wear out those pants in no time.
 Changelog
 =========
 
+June 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - December 24, 2020
  * Initial release
  

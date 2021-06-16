@@ -8,6 +8,9 @@ most useful, since actually aiming grenades was often not really an option.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  
