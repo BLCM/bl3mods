@@ -403,14 +403,14 @@ I /Game/Enemies/Goliath/_Unique/CageArena/_Design/Character/BPChar_Goliath_CageA
 M /Game/Enemies/Goliath/_Unique/Rare02/_Design/Character/BPChar_Goliath_Rare02
 M /Game/Enemies/Goliath/_Unique/Rare03/Character/BPChar_Goliath_Rare03
 M /Game/Enemies/Goliath/_Unique/Bounty01/_Design/Character/BPChar_Goliath_Bounty01
-M /Game/Enemies/Goliath/_Unique/PlayerFriendly/_Design/Character/BPChar_Goliath_Badass_Friendly
+I /Game/Enemies/Goliath/_Unique/PlayerFriendly/_Design/Character/BPChar_Goliath_Badass_Friendly
 I /Game/Enemies/Tink_SentryRocketPod/_Unique/GrowingPains/_Design/Character/BPChar_Tink_SentryRocketPodGrowingPains
 I /Game/Enemies/Tink_SentryRocketPod/_Unique/Blockade/_Design/Character/BPChar_Tink_SentryRocketPodBlockade
 I /Game/Enemies/Tink_SentryRocketPod/_Unique/BigD/_Design/Character/BPChar_Tink_SentryRocketPodBigD
 E /Game/Enemies/Saurian/_Unique/Laser/_Design/Character/BPChar_SaurianLaser
 I /Game/Enemies/Saurian/_Unique/Hunt01/_Design/Character/BPChar_Saurian_Hunt01
 I /Game/Enemies/Saurian/_Unique/SlaughterBoss/_Design/Character/BPChar_Saurian_SlaughterBoss
-M /Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01
+I /Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01
 I /Game/Enemies/Saurian/_Unique/TrialBoss/_Design/Character/BPChar_Saurian_TrialBoss
 M /Game/Enemies/Saurian/_Unique/Shield/_Design/Character/BPChar_SaurianShield
 I /Game/Enemies/Saurian/_Unique/Queen/_Design/Character/BPChar_SaurianQueen
@@ -458,8 +458,8 @@ I /Game/Enemies/Nekrobug/_Unique/HopperSwarm/_Design/Character/BPChar_Nekrobug_H
 I /Game/Enemies/Nekrobug/_Unique/BetterTimes/_Design/Character/BPChar_Nekrobug_BetterTimes
 M /Game/Enemies/Nekrobug/_Unique/BadVibes/_Design/Character/BPChar_Nekrobug_BadVibes
 H /Game/Enemies/Spiderant/_Unique/Hunt01/_Design/Character/BPChar_Spiderant_Hunt01
-H /Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella
-H /Game/Enemies/Spiderant/_Unique/CakeRoyalty/_Design/Character/BPChar_SpiderantCakeRoyalty
+I /Game/Enemies/Spiderant/_Unique/Tarantella/_Design/Character/BPChar_SpiderantTarantella
+I /Game/Enemies/Spiderant/_Unique/CakeRoyalty/_Design/Character/BPChar_SpiderantCakeRoyalty
 I /Game/Enemies/Rakk/_Unique/Hunt01/_Design/Character/BPChar_Rakk_Hunt01
 I /Game/Enemies/Rakk/_Unique/HuntSkrakk/_Design/Character/BPChar_Rakk_HuntSkrakk
 I /Game/Enemies/Rakk/_Unique/Dragon/_Design/Character/BPChar_Rakk_Dragon
@@ -498,7 +498,7 @@ M /Game/Enemies/Nog/_Unique/Nog01_Bounty/_Design/Character/BPChar_Nog01_Bounty
 M /Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder
 M /Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_TrooperBasic_GigamindAdds
 E /Game/Enemies/ServiceBot/_Unique/JanitorBot/_Design/Character/BPChar_ServiceBot_JanitorBot
-E /Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01
+I /Game/Enemies/ServiceBot/_Unique/Rare01/_Design/Character/BPChar_ServiceBot_Rare01
 I /Game/Enemies/ServiceBot/_Unique/Abomination/_Design/Character/BPChar_ServiceBot_Abomination
 E /Game/Enemies/ServiceBot/_Unique/Maliwan/_Design/Character/BPChar_ServiceBot_Maliwan
 I /Game/Enemies/ServiceBot/_Unique/PattyWorker/_Design/Character/BPChar_ServiceBot_PattyWorker
@@ -544,7 +544,7 @@ I /Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt
 M /Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01
 M /Game/Enemies/Heavy/_Unique/FootstepsOfGiants/_Design/Character/BPChar_HeavyFootstepsOfGiants
 I /Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt
-M /Game/Enemies/Enforcer/_Unique/FilmBuff/_Design/Character/BPChar_KillaVoltNPC
+I /Game/Enemies/Enforcer/_Unique/FilmBuff/_Design/Character/BPChar_KillaVoltNPC
 M /Game/Enemies/Enforcer/_Unique/BlueBasic/_Design/Character/BPChar_EnforcerBlueBasic
 M /Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Character/BPChar_EnforcerKillaVolt
 M /Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist
@@ -601,14 +601,14 @@ H /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaur
 M /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_GrogPoison
 M /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Grog
 M /Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1
-M /Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Rider/BPChar_GerTinkHorsemen1
+I /Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Rider/BPChar_GerTinkHorsemen1
 H /Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur
-M /Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur_Punk
+I /Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur_Punk
 M /Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog
 M /Geranium/Enemies/GerSaurian/_Unique/LBN_GunPred/_Design/Character/BPChar_GerSaurianLBN_GunPred
 M /Geranium/Enemies/GerSaurian/_Unique/SV_Daisy/_Design/Character/BPChar_GerSaurianSV_Daisy
 M /Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Character/BPChar_GerSaurianHorsemen4
-M /Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Rider/BPChar_GerPunkHorsemen4
+I /Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Rider/BPChar_GerPunkHorsemen4
 M /Geranium/Enemies/GerSaurian/_Unique/LBN_GunGrog/_Design/Character/BPChar_GerSaurianLBN_GunGrog
 I /Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless
 M /Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete
@@ -635,8 +635,8 @@ I /Geranium/Enemies/GerPunk_Female/_Unique/Greg/_Design/Character/BPChar_GerPunk
 I /Geranium/Enemies/GerPunk_Female/_Unique/Greg/_Design/Character/BPChar_GerPunkGreg_Rakk
 M /Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast
 M /Geranium/Enemies/Biobeast/_Unique/Biobetsy/_Design/Character/BPChar_Biobeast_Biobetsy
-M /Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast
-M /Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast_Copy
+I /Geranium/Enemies/Biobeast/_Unique/AlteredBeast/_Design/Character/BPChar_Biobeast_AlteredBeast
+I /Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast_Copy
 M /Geranium/Enemies/Biobeast/_Unique/CopyBeast/_Design/Character/BPChar_Biobeast_CopyBeast
 M /Geranium/Enemies/Biobeast/_Unique/BigJohn/_Design/Character/BPChar_Biobeast_BigJohn
 M /Geranium/Enemies/GerTink/_Unique/Prohibitor/_Design/Character/BPChar_GerTinkProhibitor
@@ -645,16 +645,16 @@ I /Hibiscus/Enemies/_Unique/Mission_Other/NekroBug_Spirit/Character/BPChar_Hib_N
 I /Hibiscus/Enemies/_Unique/Mission_Other/NekroBug_Spirit/Character/BPChar_Hib_Nekro_SpiritBadass
 M /Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character/BPChar_Lost_Mush_Child
 H /Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child
-M /Hibiscus/Enemies/_Unique/Mission/SM_WhereIBelong/BPChar_SlugCarrier_WhereIBelong
-M /Hibiscus/Enemies/_Unique/Mission/EP1_SlugMama/BPChar_SlugCarrier_Child_Mama
+I /Hibiscus/Enemies/_Unique/Mission/SM_WhereIBelong/BPChar_SlugCarrier_WhereIBelong
+I /Hibiscus/Enemies/_Unique/Mission/EP1_SlugMama/BPChar_SlugCarrier_Child_Mama
 I /Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_PilferEyeBasic_Child_Rare
 M /Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare
 M /Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch
 M /Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti_Adds_ApeCryo
 M /Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti
 M /Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare
-M /Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy
-M /Hibiscus/Enemies/_Unique/Hunt_Hampton/Character/BPChar_Hib_Hunt_Hampton
+I /Hibiscus/Enemies/_Unique/Hunt_Kritchy/Character/BPChar_Hib_Hunt_Kritchy
+I /Hibiscus/Enemies/_Unique/Hunt_Hampton/Character/BPChar_Hib_Hunt_Hampton
 I /Hibiscus/Enemies/_Unique/Rare_Frost_Dragon/Character/BPChar_Rare_Frost_Dragon
 M /Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character/BPChar_Spinsmouth
 I /Hibiscus/Enemies/FlyingSlug/Badass/_Design/Character/BPChar_FlyingSlugLakeUnique
@@ -664,7 +664,7 @@ I /Alisma/Enemies/_Unique/SpongeBoss/_Design/Character/BPChar_SpongeBoss
 I /Alisma/Enemies/Constructor/_Unique/SecuritySergeant/_Design/Character/BPChar_Constructor_SecuritySergeant
 I /Alisma/Enemies/Constructor/_Unique/SecurityChief/_Design/Character/BPChar_Constructor_SecurityChief
 M /Alisma/Enemies/AliPsycho/_Unique/TheBlackKing/_Design/Character/BPChar_AliPsycho_TheBlackKing
-M /Alisma/Enemies/HibPsycho/_Unique/TheCellNeighbor/_Design/Character/BPChar_HibPsycho_TheCellNeighbor
+I /Alisma/Enemies/HibPsycho/_Unique/TheCellNeighbor/_Design/Character/BPChar_HibPsycho_TheCellNeighbor
 I /Alisma/Enemies/Loader/_Unique/BigChestDaddy/_Design/Character/BPChar_Loader_BigChestDaddy
 I /Alisma/Enemies/Loader/_Unique/ISeeYou/_Design/Character/BPChar_Loader_ISeeYou
 I /Alisma/Enemies/Loader/_Unique/TouchySandy/_Design/Character/BPChar_Loader_TouchySandy
@@ -700,7 +700,7 @@ M /Dandelion/Enemies/Loader/_Unique/AcidTrip/Facemelt/_Design/Character/BPChar_A
 M /Dandelion/Enemies/Loader/_Unique/Impound/_Design/Character/BPChar_BudLoader
 M /Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader"""
 
-cartels = """M /Game/PatchDLC/Event2/Enemies/Tiny/Psycho/Badass/_Design/Character/BPChar_PsychoBadassTinyEvent2
+cartels = """I /Game/PatchDLC/Event2/Enemies/Tiny/Psycho/Badass/_Design/Character/BPChar_PsychoBadassTinyEvent2
 M /Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo
 M /Game/PatchDLC/Event2/Enemies/Cyber/Punk/TechLt/_Design/Character/BPChar_PunkCyberLt
 M /Game/PatchDLC/Event2/Enemies/Meat/Punk/RoasterLT/_Design/Character/BPChar_Punk_Roaster
@@ -709,13 +709,40 @@ H /Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_Tro
 E /Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Law/BPChar_ServiceBot_LAWEvent2
 E /Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Officer/BPChar_ServiceBot_Officer"""
 
+maliwanmechs = """M /Game/Enemies/Mech/Basic/_Design/Character/UIName_MechBasicDark_PT2
+M /Game/Enemies/Mech/Basic/_Design/Character/BPChar_MechBasicDark
+E /Game/PatchDLC/Raid1/Enemies/Mech/BasicMini/_Design/Character/BPChar_MechBasicMini
+M /Game/Enemies/Mech/Charger/_Design/Character/BPChar_MechCharger
+H /Game/Enemies/Mech/Grenadier/_Design/Character/BPChar_MechGrenadier
+M /Game/Enemies/Mech/MG/_Design/Character/BPChar_MechMG
+H /Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Gunner/_Design/Character/BPChar_BehemothGunnerEvent2
+H /Game/PatchDLC/Raid1/Enemies/Behemoth/Gunner/_Design/Character/BPChar_BehemothGunner
+H /Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Mini/_Design/Character/BPChar_BehemothMiniWalker_Event2
+M /Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/Character/BPChar_BehemothCarrier
+E /Game/PatchDLC/Raid1/Enemies/Behemoth/MiniWalker/_Design/Character/BPChar_BehemothMiniWalker
+M /Game/PatchDLC/Raid1/Enemies/Behemoth/Rocketeer/_Design/Character/BPChar_BehemothRocketeer
+M /Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Character/BPChar_Behemoth"""
+
 bpchars_text_tuple = bpchars_text_tuple + "\n" + cartels
+#+ maliwanmechs
+
+#bpchars_text_tuple = maliwanmechs
+override = False
 
 def tuple_line_to_bpchar(l):
     difficulty,bpchar = l.split(" ")
     return (bpchar,bpchar,None,None)
 
 bt=bpchars_text_tuple.split("\n")
-easy_bosses   = easy_bosses   + [tuple_line_to_bpchar(x) for x in bt if x[0] == "E"]
-medium_bosses = medium_bosses + [tuple_line_to_bpchar(x) for x in bt if x[0] == "M"]
-hard_bosses   = hard_bosses   + [tuple_line_to_bpchar(x) for x in bt if x[0] == "H"]
+
+def bosses_of_type(bt,btype="E"):
+    return [tuple_line_to_bpchar(x) for x in bt if x[0] == btype]
+
+if override:
+    easy_bosses   = bosses_of_type(bt,"E")
+    medium_bosses = bosses_of_type(bt,"M")
+    hard_bosses   = bosses_of_type(bt,"H")
+else:
+    easy_bosses   = easy_bosses   + bosses_of_type(bt,"E")
+    medium_bosses = medium_bosses + bosses_of_type(bt,"M")
+    hard_bosses   = hard_bosses   + bosses_of_type(bt,"H")

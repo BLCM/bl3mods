@@ -19,15 +19,19 @@ then go from there.
 Header
 ======
 * Name: Boss Race
-* Version: 0.2.0
+* Version: 0.2.1
 * Author: Abram/skruntskrunt,  altef-4, Apocalyptech, Grimm, and more
-* Categories: gameplay
+* Categories: gameplay, armsrace
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * License URL: https://creativecommons.org/licenses/by-sa/4.0/
 * Code License: GNU Public License Version 3
 
 Changelog
 =========
+
+**v0.2.1** - 2021-06-16
+ * Fixed some spawn issues.
+ * Added new mobs, removed a bunch of mobs that block Plunderdome and Watertreatment plant
 
 **v0.2.0** - 2021-05-25
  * Green Chests! Your starting chest is green.
