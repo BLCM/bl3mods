@@ -114,7 +114,7 @@ default: mod
 
 mod: $(MOD)
 
-$(MOD): $(EXE)
+$(MOD): $(EXE) ixorabosses.py
 	python3 $(EXE) --seed $(SEED)
 clean:
 	rm -f bossrace.bl3hotfix
@@ -129,7 +129,7 @@ mitosis.bossrace.bl3hotfix: $(EXE)
 mitosis.bl3hotfix: $(EXE)
 	python3 $(EXE) --output mitosis.bl3hotfix --seed $(SEED) --justmitosis
 
-bossrace.%.bl3hotfix: $(EXE)
+bossrace.%.bl3hotfix: $(EXE) ixorabosses.py
 	python3 $(EXE) --seed $* --output bossrace.$*.bl3hotfix
 
 bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix
@@ -138,7 +138,7 @@ bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix
 $(GENDIR)/bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix.txt
 	mv $< $@
 
-dist: seeds $(GENDIR) $(DISTFILES) 
+dist: seeds $(GENDIR) $(DISTFILES) $(EXE) ixorabosses.py
 
 gen:
 	rm -f $(MOD)

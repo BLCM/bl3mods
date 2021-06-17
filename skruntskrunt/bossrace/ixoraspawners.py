@@ -32,10 +32,10 @@ import argparse
 OUTPUT='bossrace.bl3hotfix'
 BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
-SEED=None#42
+SEED=None # 42
 CHUBBY=True # include the Chubby mod for Arm's Race
 our_seed = SEED
-version = '0.2.0'
+version = '0.2.1'
 
 
 def parse_args():

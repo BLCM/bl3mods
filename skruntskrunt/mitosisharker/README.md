@@ -8,7 +8,7 @@ Add multiple Harkers to the end boss fight.
 Header
 ======
 * Name: Mitosis Harker
-* Version: 0.2.0
+* Version: 0.2.1
 * Author: Abram/skruntskrunt
 * Categories: armsrace
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -18,7 +18,7 @@ Header
 Changelog
 =========
 
-**v0.2.0** - 2021-05-25
+**v0.2.1** - 2021-06-16
  * Initial Release of Mitosis Harker
 
 Known Bugs
