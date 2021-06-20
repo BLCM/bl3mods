@@ -6,6 +6,11 @@ Reduces the time it takes to "rev up" the crude engines of COV weapons (to about
 
 This mod has not been tested with every single COV weapon, so there may be a legendary or unique which still ready at their unmodded speed. Let me know if anything is amiss.
 
+Credits
+-------
+**Lions-666** on DeviantArt for recreating the [COV logo in HD](https://www.deviantart.com/lions-666/art/Cov-821199043), which I used for the mod's image.
+**Apocalyptech** for doing a fantastic job with documentation on the modding process and helping out in Discord wherever I had questions.
+
 Changelog
 ---------
 **v1.0.1:** Increased COV guns' equip time from **0.4** to **0.5**. I think that's in seconds, so probably not noticeable, but this seems closer to my target equip time: about the same as most other manufacturers'.
