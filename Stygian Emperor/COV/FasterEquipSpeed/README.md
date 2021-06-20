@@ -8,8 +8,8 @@ This mod has not been tested with every single COV weapon, so there may be a leg
 
 Credits
 -------
-**Lions-666** on DeviantArt for recreating the [COV logo in HD](https://www.deviantart.com/lions-666/art/Cov-821199043), which I used for the mod's image.
-**Apocalyptech** for doing a fantastic job with documentation on the modding process and helping out in Discord wherever I had questions.
+- **Lions-666** on DeviantArt for recreating the [COV logo in HD](https://www.deviantart.com/lions-666/art/Cov-821199043), which I used for the mod's image.
+- **Apocalyptech** for doing a fantastic job with documentation on the modding process and helping out in Discord wherever I had questions.
 
 Changelog
 ---------
