@@ -10,6 +10,7 @@ RARITY_MODIFIERS = [
     "VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA",
 ]
 CHEST_GEMS = ["TrialsChestNoGem","TrialsChestOneGem","TrialsChestTwoGems","TrialsChestThreeGems"]
+MISSION_NUMBERS=[1,4,5,6,7,8]
 LEVELS = sorted(["ProvingGrounds_Trial8_P","ProvingGrounds_Trial7_P","ProvingGrounds_Trial6_P","ProvingGrounds_Trial5_P","ProvingGrounds_Trial4_P","ProvingGrounds_Trial1_P"])
 QUANTITY = "Quantity.BaseValueConstant"
 BASE_QUANTITY = 4
@@ -20,8 +21,23 @@ HEALTH_MODIFIERS = ["HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82
                     "HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49"
 ]
 ITEMPOOL_ENTRY="BalancedItems"
+# Do you want to amp up the damage of the raid bosses?
+DAMAGE_MULTIPLIER=1.5 # GB was too nice to players
 
 bosses = {
+    # interestingly enough Skag of survival was done differently than the other bosses in the hotfixes
+    # I think I'll stick to what I did in my RAID mod thank you very much.
+    "BPChar_Skag_TrialBoss":{
+        "bpchar":"BPChar_Skag_TrialBoss",
+        "balance_name":"TrialBoss",
+        "level":"ProvingGrounds_Trial1_P",
+        "balance_table":"/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique",
+        "item_pool":"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag",
+        # this is combined the OG drops + the gearbox drops
+        "assign_loot":"",
+        "health":[800], 
+        "damage":2, # upped her damage
+    },
     "BPChar_Goon_TrialBoss":{
         "bpchar":"BPChar_Goon_TrialBoss",
         "balance_name":"Goon_BossTrial",
@@ -114,7 +130,7 @@ def trial_names(mod):
     mod.comment(f"Dexmanly's trial names")
     for (level, subheader, displayname) in TRIAL_NAMES:        
         mod.reg_hotfix(Mod.LEVEL, 'MatchAll', level, SUBHEADER, subheader)
-        mod.reg_hotfix(Mod.LEVEL, 'MatchAll', level, displayname, displayname)
+        mod.reg_hotfix(Mod.LEVEL, 'MatchAll', level, DISPLAYNAME, displayname)
 
 def change_trial_drops(mod,levels=LEVELS,gems=CHEST_GEMS,rarities=RARITY_MODIFIERS):
     for level in levels:
@@ -135,21 +151,37 @@ def buff_boss(mod,boss):
     mod.reg_hotfix(Mod.PATCH, '', boss["item_pool"], ITEMPOOL_ENTRY, boss["assign_loot"])
     # buff the boss
     # - XP
-    mod.reg_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], EXPERIENCE_MODIFIER, XPVALUE)
+    mod.table_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], boss["balance_name"], EXPERIENCE_MODIFIER, XPVALUE)
     # - DAMAGE
     if not boss["damage"] is None:
-        mod.reg_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], DAMAGE_MODIFIER, boss["damage"])
+        mod.table_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], boss["balance_name"], DAMAGE_MODIFIER, DAMAGE_MULTIPLIER * boss["damage"])
     # - HEALTH
     for (healthv, healthm) in zip(boss["health"],HEALTH_MODIFIERS):
-        mod.reg_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], healthm, healthv)
+        mod.table_hotfix(Mod.CHAR, boss['bpchar'], boss["balance_table"], boss["balance_name"], healthm, healthv)
 
 def buff_all_bosses(mod,bosses=bosses):
     for boss in bosses:
         buff_boss(mod, bosses[boss])
 
+def eridium_reward_for_mission(mod,mission_number):
+    level = f"ProvingGrounds_Trial{mission_number}_P"
+    mission = f'/Game/Missions/Side/ProvingGrounds/ProvingGrounds{mission_number}/Mission_ProvingGrounds_Mission0{mission_number}:Default__Mission_ProvingGrounds_Mission0{mission_number}_C.RewardData'
+    curr_type      = "CurrencyType"
+    curr_reward    = "CurrencyReward.BaseValueAttribute"
+    eridium_type   = "InventoryCategoryData'\"/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_Eridium\"'"
+    mission_reward = "GbxAttributeData'\"/Game/GameData/Economy/Mission/Att_RewardCredits_SideMission_VeryLarge\"'"
+    mod.reg_hotfix(Mod.LEVEL, level, mission, curr_type, eridium_type)
+    mod.reg_hotfix(Mod.LEVEL, level, mission, curr_reward, mission_reward)
+    
+        
 trial_names(mod)
 change_trial_drops(mod)
 buff_all_bosses(mod)
+for i in MISSION_NUMBERS:
+    eridium_reward_for_mission(mod,mission_number=i)
 
 
 mod.close()
+
+# Ideas:
+# - Award 500 eridium instead of money?
