@@ -2,8 +2,9 @@
 ### Name: Increased Endgame Difficulty
 ### Version: 1.0.0
 ### Author: CZ47
-### Author: Apocalyptech (used https://raw.githubusercontent.com/BLCM/bl3mods/84cddb7344963b494362da700808791ec558eda0/Apocalyptech/mayhem/mayhem_level_cheats/mayhem_level_cheats.bl3hotfix
-### to set modifiers)
+### Contact: =]#7647
+### Shoutout  to Apocalyptech (used https://raw.githubusercontent.com/BLCM/bl3mods/84cddb7344963b494362da700808791ec558eda0/Apocalyptech/mayhem/mayhem_level_cheats/mayhem_level_cheats.bl3hotfix
+### to set my own modifiers)
 
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -153,45 +154,14 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,CashScalar_22_B7B11DC94BBB45C94A96279146EC193E,0,,2.0
 
 
-
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,MayhemStatusEffect_53_7567CFEB4E1077623BE84EBC11D10EB8,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Mayhem/SE_Mayhem2_Mayhem_CoreMod_8.SE_Mayhem2_Mayhem_CoreMod_8
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,MayhemStatusEffect_53_7567CFEB4E1077623BE84EBC11D10EB8,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Mayhem/SE_Mayhem2_Mayhem_CoreMod_9.SE_Mayhem2_Mayhem_CoreMod_9
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,MayhemStatusEffect_53_7567CFEB4E1077623BE84EBC11D10EB8,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Mayhem/SE_Mayhem2_Mayhem_CoreMod_10.SE_Mayhem2_Mayhem_CoreMod_10
+#referring M11 Mayhemscaling to the adjusted M1 scaling
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,MayhemStatusEffect_53_7567CFEB4E1077623BE84EBC11D10EB8,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Mayhem/SE_Mayhem2_Mayhem_CoreMod_1.SE_Mayhem2_Mayhem_CoreMod_1
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,PlayerStatusEffect_52_8037BC414105A487E0528192801A716F,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_10.SE_Mayhem2_Player_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,PlayerStatusEffect_52_8037BC414105A487E0528192801A716F,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_10.SE_Mayhem2_Player_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,PlayerStatusEffect_52_8037BC414105A487E0528192801A716F,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_10.SE_Mayhem2_Player_CoreMod_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,PlayerStatusEffect_52_8037BC414105A487E0528192801A716F,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Player/SE_Mayhem2_Player_CoreMod_1.SE_Mayhem2_Player_CoreMod_1
-
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,CompanionStatusEffect_88_C8BE7FA049759DABE2C43CA62CA09C50,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Companions/SE_Mayhem2_Companions_CoreMod_10.SE_Mayhem2_Companions_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,CompanionStatusEffect_88_C8BE7FA049759DABE2C43CA62CA09C50,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Companions/SE_Mayhem2_Companions_CoreMod_10.SE_Mayhem2_Companions_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,CompanionStatusEffect_88_C8BE7FA049759DABE2C43CA62CA09C50,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Companions/SE_Mayhem2_Companions_CoreMod_10.SE_Mayhem2_Companions_CoreMod_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,CompanionStatusEffect_88_C8BE7FA049759DABE2C43CA62CA09C50,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Companions/SE_Mayhem2_Companions_CoreMod_1.SE_Mayhem2_Companions_CoreMod_1
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,PetStatusEffect_76_31783C474A2F89CE6211BAB1634A735D,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Pet/SE_Mayhem2_Pet_CoreMod_10.SE_Mayhem2_Pet_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,PetStatusEffect_76_31783C474A2F89CE6211BAB1634A735D,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Pet/SE_Mayhem2_Pet_CoreMod_10.SE_Mayhem2_Pet_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,PetStatusEffect_76_31783C474A2F89CE6211BAB1634A735D,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Pet/SE_Mayhem2_Pet_CoreMod_10.SE_Mayhem2_Pet_CoreMod_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,PetStatusEffect_76_31783C474A2F89CE6211BAB1634A735D,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Pet/SE_Mayhem2_Pet_CoreMod_1.SE_Mayhem2_Pet_CoreMod_1
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,EnemyStatusEffect_108_E55F940F4896B8C94715649C6F3CFE56,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Enemy/SE_Mayhem2_Enemy_CoreMod_10.SE_Mayhem2_Enemy_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,EnemyStatusEffect_108_E55F940F4896B8C94715649C6F3CFE56,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Enemy/SE_Mayhem2_Enemy_CoreMod_10.SE_Mayhem2_Enemy_CoreMod_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,EnemyStatusEffect_108_E55F940F4896B8C94715649C6F3CFE56,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Enemy/SE_Mayhem2_Enemy_CoreMod_10.SE_Mayhem2_Enemy_CoreMod_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,EnemyStatusEffect_108_E55F940F4896B8C94715649C6F3CFE56,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Enemy/SE_Mayhem2_Enemy_CoreMod_1.SE_Mayhem2_Enemy_CoreMod_1
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,VehicleDamageDealtCDM_100_ABFD7E90444FA2584EF61AA4B4335584,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Dealt_10.CDM_Mayhem2_Vehicle_Damage_Dealt_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,VehicleDamageDealtCDM_100_ABFD7E90444FA2584EF61AA4B4335584,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Dealt_10.CDM_Mayhem2_Vehicle_Damage_Dealt_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,VehicleDamageDealtCDM_100_ABFD7E90444FA2584EF61AA4B4335584,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Dealt_10.CDM_Mayhem2_Vehicle_Damage_Dealt_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,VehicleDamageDealtCDM_100_ABFD7E90444FA2584EF61AA4B4335584,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Dealt_1.CDM_Mayhem2_Vehicle_Damage_Dealt_1
-
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,VehicleDamageTakenCDM_99_1123B3AB4D4149DF4071D185AEEDF502,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Taken_10.CDM_Mayhem2_Vehicle_Damage_Taken_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,VehicleDamageTakenCDM_99_1123B3AB4D4149DF4071D185AEEDF502,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Taken_10.CDM_Mayhem2_Vehicle_Damage_Taken_10
-#SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,VehicleDamageTakenCDM_99_1123B3AB4D4149DF4071D185AEEDF502,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Taken_10.CDM_Mayhem2_Vehicle_Damage_Taken_10
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,VehicleDamageTakenCDM_99_1123B3AB4D4149DF4071D185AEEDF502,0,,/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Vehicle/CDM_Mayhem2_Vehicle_Damage_Taken_1.CDM_Mayhem2_Vehicle_Damage_Taken_1
-
-
 
 
 
@@ -261,5 +231,4 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2.OverrideM
 
 # Mayhem 10
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2.OverrideModSet_Mayhem2,PerLevelOverrides.PerLevelOverrides[9].RandomModifierSlotsOverride,0,,(MayhemModifierSlotDataAsset'"/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Easy.ModSet_Mayhem2_Easy"')
-
 
