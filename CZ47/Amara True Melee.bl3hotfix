@@ -55,7 +55,7 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/
 
 
 # Buffing Restless 5% > 12% per stack
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,CooldownRate,FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A,0,,0.10
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,CooldownRate,FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A,0,,0.12
 
 
 # Making Jabcross give AS Cooldown Rate on Melee instead of 15% Gundamage omegalul
