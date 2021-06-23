@@ -79,9 +79,14 @@ ERIDIUM_50 = "(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium
 # 6
 ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=40,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
 # OK just dupe it?
-# 225 eridium at base_quantity += 4
+# 180 - 225 eridium at base_quantity += 4
 ERIDIUM_ITEM = "," + ",".join(ERIDIUM_50 for i in range(5))
 BASE_QUANTITY += 5
+
+# this is a possibility
+# didn't seem to work
+# ERIDIUM_ITEM = ",(ItemPool=ItemPoolData'\"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500\"',PoolProbability=(BaseValueConstant=1.0))"
+# BASE_QUANTITY=5
 
 bosses = {
     # interestingly enough Skag of survival was done differently than the other bosses in the hotfixes
