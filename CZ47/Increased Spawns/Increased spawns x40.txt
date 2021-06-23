@@ -23,7 +23,7 @@
 ### Shoutout to SkruntSkrunt for the initial help with looking for ways to modify spawns.
 ###
 ### Maps this is verified to be working on: Both Takedowns, Circles of slaughter and Arms Race
-### Currently doesn't work in the Proving grounds =(
+### Currently doesn't work on the Proving grounds =(
 ###
 ###
 
