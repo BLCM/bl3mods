@@ -23,9 +23,10 @@
 ### Shoutout to SkruntSkrunt for the initial help with looking for ways to modify spawns.
 ###
 ### Maps this is verified to be working on: Both Takedowns, Circles of slaughter and Arms Race
-### Currently doesn't work in the Proving grounds =(
+### Currently doesn't work on the Proving grounds =(
 ###
-###
+### Want more preset spawn changes?
+### Check 'em out here: https://github.com/CZ-47/bl3mods-1/tree/master/CZ47/Increased%20Spawns
 
 
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,Add1IfAtLeast1MorePlayer,OnePlayer_PT1,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=10)
