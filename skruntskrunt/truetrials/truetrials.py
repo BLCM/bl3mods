@@ -13,7 +13,7 @@ CHEST_GEMS = ["TrialsChestNoGem","TrialsChestOneGem","TrialsChestTwoGems","Trial
 MISSION_NUMBERS=[1,4,5,6,7,8]
 LEVELS = sorted(["ProvingGrounds_Trial8_P","ProvingGrounds_Trial7_P","ProvingGrounds_Trial6_P","ProvingGrounds_Trial5_P","ProvingGrounds_Trial4_P","ProvingGrounds_Trial1_P"])
 QUANTITY = "Quantity.BaseValueConstant"
-BASE_QUANTITY = 5
+BASE_QUANTITY = 5 # include eridium
 XPVALUE = "NewEnumerator7"
 EXPERIENCE_MODIFIER="ExperienceType_8_73D53DF14EC1787599308F9A13A91D97"
 DAMAGE_MODIFIER = "DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF"
@@ -26,20 +26,62 @@ DAMAGE_MULTIPLIER=1.5 # GB was too nice to players
 
 # ERIDIUM start with a , please
 # missing attribute initializer
-# drops 6!
-ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=12,BaseValueScale=12,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToSix\"'))"
+# drops 6! # this one literally says drop 6
+# ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=12,BaseValueScale=12,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToSix\"'))"
 #ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1,BaseValueScale=40))"
-# drops 0!
+# drops 0! # this has conflicts so it won't work
 #ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium.ItemPool_Eridium\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Buttload.Init_RandomLootCount_Buttload_C\"'),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=80,BaseValueScale=80))"
-# drops 6!
+# drops 6! but this wouldn't work
 #ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),Quantity=(BaseValueConstant=30))"
 # drops 6?
-#ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),Quantity=(BaseValueConstant=30),NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),Quantity=(BaseValueConstant=30),NumberOfTimesToSelectFromThisPool=(AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
 # disable eridium item
 #ERIDIUM_ITEM=""
 # drops 6 or so?
 #ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=12,BaseValueScale=12,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_UpToSix\"'))"
 ERIDIUM_ITEM=""
+# Apoc said: PoolProbability and  NumberOfTimesToSelectFromThisPool matter
+# Crazy is 20 to 60
+# use
+# re: the eridium drops, note that Quantity is only a field inside ItemPool objects, not ItemPoolList objects -- for those you only have PoolProbability and NumberOfTimesToSelectFromThisPool
+# I'd've expected a "Crazy" attr to drop more than 6, but you could just override NumberOfTimesToSelectFromThisPool with whatever number you'd like.  Or use BaseValueScale in there to scale up the "crazy" counts
+# alternative use Eridium_Stack instead?
+# 26
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazycd.Init_RandomLootCount_Crazy_C\"'))"
+# 6
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=40,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazycd.Init_RandomLootCount_Crazy_C\"'))"
+# 1
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=12,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazycd.Init_RandomLootCount_Crazy_C\"'))"
+# ???
+# 30
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# trying insane numbers
+# 10???
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=127,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# Now trying big numbers
+# 6
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=250,BaseValueScale=5))"
+# 6
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=250,BaseValueScale=10,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# Try stack?
+# 9 or 10?
+ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 30??
+# ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 30?
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 6
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=10,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 53
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=20,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 25?
+ERIDIUM_50 = "(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=20,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# 6
+ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=40,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+# OK just dupe it?
+# 225 eridium at base_quantity += 4
+ERIDIUM_ITEM = "," + ",".join(ERIDIUM_50 for i in range(5))
+BASE_QUANTITY += 5
 
 bosses = {
     # interestingly enough Skag of survival was done differently than the other bosses in the hotfixes
