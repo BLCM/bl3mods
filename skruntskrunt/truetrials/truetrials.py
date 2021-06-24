@@ -72,12 +72,15 @@ ERIDIUM_ITEM=",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/It
 ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
 # 6
 ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueScale=10,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+
+
 # 53
 ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=20,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
 # 25?
 ERIDIUM_50 = "(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=20,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
 # 6
 ERIDIUM_ITEM=",(ItemPoolData=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=40,BaseValueScale=5,AttributeInitializer=BlueprintGeneratedClass'\"/Game/GameData/Loot/ItemPools/Init_RandomLootCount_Crazy.Init_RandomLootCount_Crazy_C\"'))"
+
 # OK just dupe it?
 # 180 - 225 eridium at base_quantity += 4
 ERIDIUM_ITEM = "," + ",".join(ERIDIUM_50 for i in range(5))
@@ -85,8 +88,14 @@ BASE_QUANTITY += 5
 
 # this is a possibility
 # didn't seem to work
-# ERIDIUM_ITEM = ",(ItemPool=ItemPoolData'\"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500\"',PoolProbability=(BaseValueConstant=1.0))"
-# BASE_QUANTITY=5
+ERIDIUM_ITEM = ",(ItemPool=ItemPoolData'\"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500\"',PoolProbability=(BaseValueConstant=1.0))"
+# didn't work
+ERIDIUM_ITEM = ",(ItemPool=ItemPoolData'\"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500\"',PoolProbability=(BaseValueConstant=1.0),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=4))"
+BASE_QUANTITY=6
+
+ERIDIUM_ITEM = ",(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack\"',PoolProbability=(BaseValueConstant=0.4),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=30)),(ItemPool=ItemPoolData'\"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_EridiumCrystal_Large.ItemPool_EridiumCrystal_Large\"',PoolProbability=(BaseValueConstant=0.5),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=22)),(ItemPool=ItemPoolData'\"/Game/PatchDLC/Ixora2/InteractiveObjects/DiscoveryIO/ItemPool_Eridium500.ItemPool_Eridium500\"',PoolProbability=(BaseValueConstant=0.99))"
+BASE_QUANTITY=6
+
 
 bosses = {
     # interestingly enough Skag of survival was done differently than the other bosses in the hotfixes
@@ -99,7 +108,7 @@ bosses = {
         "item_pool":"/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag",
         # this is combined the OG drops + the gearbox drops
         "assign_loot":f"((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter.InvBalD_ClassMod_Gunner_BloodLetter,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter.InvBalD_ClassMod_Gunner_BloodLetter\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker.InvBalD_ClassMod_Siren_Breaker,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker.InvBalD_ClassMod_Siren_Breaker\"'),(InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob.Balance_SG_Torgue_ETech_TheLob,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob.Balance_SG_Torgue_ETech_TheLob\"'),(InventoryBalanceData=/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7.Balance_PS_JAK_Lucky7,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7.Balance_PS_JAK_Lucky7\"'),(InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/TheButcher/Balance/Balance_SG_HYP_TheButcher.Balance_SG_HYP_TheButcher,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/TheButcher/Balance/Balance_SG_HYP_TheButcher.Balance_SG_HYP_TheButcher\"',Weight=(BaseValueConstant=1)){ERIDIUM_ITEM})", # added butcher
-        "health":[800], 
+        "health":[10], # was 800
         "damage":2, # upped her damage
     },
     "BPChar_Goon_TrialBoss":{
