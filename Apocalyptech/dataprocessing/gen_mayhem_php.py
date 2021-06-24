@@ -122,10 +122,31 @@ with open(filename, 'w') as df:
             tabledata['LootQuality_56_03E220E0495C6B37CD6C7195F5EA289B'],
             tabledata['PetHealth_84_E5B903B4452F4310CCD13C931474E12B'],
             tabledata['CompanionHealth_89_294A6BE7439072AE9F934CAA127D8D83'],
+            tabledata['DropWeightCommonScalar_21_59A2FB124E32B955768A7B9D93C25A99'],
+            tabledata['DropWeightUncommonScalar_25_809615334E7F0DB3B8712DAC221015C3'],
+            tabledata['DropWeightRareScalar_27_A09CF5314C51796896A83EA0806C7520'],
+            tabledata['DropWeightVeryRareScalar_29_F2CA570046CD50A7C514EDB0AE1BE591'],
+            tabledata['DropWeightLegendaryScalar_31_D9DA03C54065EA981BE218B11942C24E'],
+            tabledata['DamageScalarActionSkill_60_39AF483140740A38FC71BA897155CBFF'],
+            tabledata['DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946'],
+            tabledata['DamageScalarSlide_68_B48D0E3A4DF57196839BB58D5AE3E638'],
+            tabledata['DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26'],
+            tabledata['DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C'],
+            tabledata['DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC'],
+            tabledata['DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F'],
+            tabledata['DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE'],
+            tabledata['DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77'],
+            tabledata['DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2'],
+            tabledata['DropNumberChanceSimpleScalar_40_115637764B3918F01E6FAFADDC005388'],
+            tabledata['DropEridiumChanceSimpleScalar_41_E89AD7E9473FDF3CBED395BA6641FA68'],
             ])
 
         print("    new MayhemLevel({},".format(idx+1), file=df)
-        print("        {}, {}, {}, {}, {}, {},".format(*m2scaling[-1]), file=df)
+        print("        {}, {}, {}, {}, {}, {},".format(*m2scaling[-1][:6]), file=df)
+        print("        {}, {}, {}, {}, {},".format(*m2scaling[-1][6:11]), file=df)
+        print("        {}, {}, {}, {}, {},".format(*m2scaling[-1][11:16]), file=df)
+        print("        {}, {}, {}, {}, {},".format(*m2scaling[-1][16:21]), file=df)
+        print("        {}, {},".format(*m2scaling[-1][21:]), file=df)
         print("        array(", file=df)
         for modset in m2['RandomModifierSlotsOverride']:
             print("            ${},".format(pool_map[modset[1]]), file=df)
