@@ -1,0 +1,21 @@
+###
+### Name: 
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: char-siren, gear-com
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### Reverts Amara's Spiritual Driver COM from weapondamage
+### back to V1 damage.
+### 
+### 
+### 
+
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/SE_Siren_CM_Raid1.SE_Siren_CM_Raid1,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
+
+
