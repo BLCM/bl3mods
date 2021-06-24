@@ -97,6 +97,20 @@ weren't actually intended to be mods themselves.
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
 
+I had a collection of timed-event-enabling mods publicly available prior to
+the availability of B3HM as a modding tool.  Gearbox asked us to not do mods
+which enabled those events, though, since they were still using them as
+marketing tools, so we removed 'em from the repo.  As of the patch on June
+24, 2021, though, GBX has added the ability to enable them at will directly
+from the main menu (which I'd been expecting them to do eventually - yay!).
+Anyway, I'm moving these mods back in here just for my own historical
+packrattery, but they're not really useful anymore (and are possibly/probably
+not even functional, given the new event framework).
+
+- `timed_event_enable_bloody_harvest` - The event-enabler mod for 2019+2020 Bloody Harvests
+- `timed_event_enable_broken_hearts` - The event-enabler mod for 2020+2021 Broken Heartses
+- `timed_event_enable_cartels` - The event-enabler mod for 2020+2021 Cartelses
+
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least
 I'll probably not use them again) with my Crader EM-P5 and Back Ham setup:
