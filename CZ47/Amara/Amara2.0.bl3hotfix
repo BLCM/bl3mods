@@ -279,8 +279,6 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/Da
 
 
 
-
-
 ## CLASSMOD CHANGES
 
 # Changing Stone COM chance to stack rush on hit to 50%
@@ -301,9 +299,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIr
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,MaxDamageDuration,0,,10
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,bCanHurtSelf,0,,false
 
-# Changing phasezerker to synergize well with the other changes: increasing status effect chance and damage with rush stacks (card unchanged)
+# Changing phasezerker to synergize well with the other changes: increasing status effect chance and damage with rush stacks
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/StatusEffect_Siren_ClassMod_Unique04.StatusEffect_Siren_ClassMod_Unique04,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_StatusEffectDamage.Att_Weapon_StatusEffectDamage
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/StatusEffect_Siren_ClassMod_Unique04.StatusEffect_Siren_ClassMod_Unique04,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_StatusEffectChance.Att_Weapon_StatusEffectChance
-
-
-
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/UI/UIStat_CM_SR_Unique_04_Desc.UIStat_CM_SR_Unique_04_Desc,FormatText,0,,On [skill]Action Skill Used[/skill], Amara gains her [skill]Max Rush Stack[/skill] count, but they decay over time. Amara gains 3% [skill]Status Effect Damage[/skill] and 3% [skill]Status Effect Damage[/skill] based on the number of [skill]Rush Stacks[/skill].<br>Max Rush Stacks: [skill]$VALUE$[/skill]
