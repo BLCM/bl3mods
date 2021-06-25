@@ -3,7 +3,7 @@
 ###
 ### Name: Redux
 ### Author: EpicNNG
-### Version: 1.1.4
+### Version: 1.1.5
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
@@ -3156,13 +3156,15 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/_Generic/Terror9/GPart_All_Passive_TerrorProjectilesPerShot/Game/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Beastmaster/AtkCmdTerrorFireDmg/GPart_Beast_AttackCmd_TerrorFireDMG.GPart_Beast_AttackCmd_TerrorFireDMG,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Removing Anoint from Pool
-SparkPatchEntry,(1,1,0,),/Game/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Gunner/ReloadTerrorNova/GPart_Gunner_Reload_TerrorNova.GPart_Gunner_Reload_TerrorNova,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Gunner/ReloadTerrorNova/GPart_Gunner_Reload_TerrorNova.GPart_Gunner_Reload_TerrorNova,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Removing Anoint from Pool
-SparkPatchEntry,(1,1,0,),/Game/BloodyHarvest/Gear/Weapons/EndGameParts/Character/OP1/GPart_Operative_DroneActiveTerrorLifesteal.GPart_Operative_DroneActiveTerrorLifesteal,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/Character/OP1/GPart_Operative_DroneActiveTerrorLifesteal.GPart_Operative_DroneActiveTerrorLifesteal,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Removing Anoint from Pool
-SparkPatchEntry,(1,1,0,),/Game/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Siren/Grasp_TerrorSkulls/GPart_Siren_Grasp_TerrorSkulls.GPart_Siren_Grasp_TerrorSkulls,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Siren/Grasp_TerrorSkulls/GPart_Siren_Grasp_TerrorSkulls.GPart_Siren_Grasp_TerrorSkulls,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/Character/Beastmaster/AtkCmdTerrorFireDmg/GPart_Beast_AttackCmd_TerrorFireDMG.GPart_Beast_AttackCmd_TerrorFireDMG,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # Removing Anoint from Pool
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CooldownRate/GPart_All_SkillEnd_CooldownRate.GPart_All_SkillEnd_CooldownRate,MinGameStage,0,,(BaseValueConstant=100,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
