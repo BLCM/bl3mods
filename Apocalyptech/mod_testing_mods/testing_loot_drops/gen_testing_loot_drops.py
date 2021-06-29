@@ -109,6 +109,9 @@ balances = [
         '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
         '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer',
 
+        # Mysterious Amulet
+        #'/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet',
+
         # Ixora COMs
         ## Various
         #'/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/BSM/PartSets/InvBalD_CM_Ixora_BSM_01_Common',
