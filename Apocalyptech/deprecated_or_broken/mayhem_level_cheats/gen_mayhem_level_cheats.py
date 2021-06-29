@@ -23,7 +23,7 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-mod = Mod('mayhem_level_cheats.bl3hotfix',
+mod = Mod('mayhem_level_cheats.txt',
         'Mayhem Level Cheats',
         'Apocalyptech',
         [

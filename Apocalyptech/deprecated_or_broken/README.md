@@ -96,6 +96,11 @@ weren't actually intended to be mods themselves.
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
+- `mayhem_level_cheats` - Some old Mayhem Mode cheats that I was using for
+  quite awhile; namely restricting enemy scaling to 2x and forcing specific
+  modifier configs for each level.  Since releasing my Mayhem Mode Configurator,
+  though, this mod's kind of obsolete, and I grew to not really want this
+  exact config anyway.  So, moving this over here as a deprecated mod.
 
 I had a collection of timed-event-enabling mods publicly available prior to
 the availability of B3HM as a modding tool.  Gearbox asked us to not do mods

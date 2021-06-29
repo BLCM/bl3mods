@@ -14,6 +14,9 @@ them being too OP, check out my Remove Mayhem Gear Bonuses mod.
 This mod isn't compatible with Decreased Mayhem Enemy Scaling, since they both touch
 the same vars.
 
+**Note:** This is pretty obsolete as of the release of my
+[Mayhem Mode Configurator](https://apocalyptech.com/games/bl3-mayhem/).
+
 Changelog
 =========
 
