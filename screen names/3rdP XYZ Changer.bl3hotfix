@@ -1,0 +1,24 @@
+###
+### Name: 3rdP XYZ Changer
+### Author: screen names
+### Version: 1.0
+###
+### ### Categories: qol, Resource
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+
+###
+### Usage: Change the third person xyz via a hotfix, no need to use a cheat table.
+###
+
+###
+### Special Thanks to apocalyptech, couldn't have done this without him. Someone buy them a beer.
+###
+
+# Edit the XYZ at the end of both of these values
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_OffsetCameraRelative_0,LocationOffset,0,,(x=-150,y=25,z=55)
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPersonViewModel.CameraMode_ThirdPersonViewModel:CameraBehavior_OffsetCameraRelative_0,LocationOffset,0,,(x=-150,y=25,z=55)
