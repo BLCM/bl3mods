@@ -3,10 +3,10 @@ True Trials
 
 I heard you like raid bosses? This mod compiles the True Trials Weekly
 events into 1 mod so you can play every trial like a true trial.
-Copies Gearbox's loot. Weakens the Hag slightly. Borrowing from
-Gearboxes Weekly Events, RAID-IFY all the trials, and also restore
-both the weekly event drops and the original drops. It also changes
-Trial Names using DexManly's code.
+Basically copies Gearbox's loot. Weakens the Hag slightly. Borrowing
+from Gearboxes Weekly Events, RAID-IFY all the trials, and also
+restore both the weekly event drops and the original drops. It also
+changes Trial Names using DexManly's code.
 
 When I read Gearbox's hotfixes they raidified the trial bosses exactly
 how I'd do em too.
@@ -18,7 +18,7 @@ how I'd do em too.
 Header
 ======
 * Name: True Trials
-* Version: 0.1.0
+* Version: 0.1.1
 * Author: skruntskrunt, DexManly
 * Categories: gameplay
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -27,6 +27,11 @@ Header
 
 Changelog
 =========
+
+**v0.1.1** - 2021-07-01 
+ * Make bosses drop some eridium
+ * Happy Canada Day (please visit and review https://nctr.ca/records/reports/ before you celebrate)
+
 
 **v0.1.0** - 2021-06-21
  * Initial True Trials
