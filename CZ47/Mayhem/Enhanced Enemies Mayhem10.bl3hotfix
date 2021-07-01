@@ -1,0 +1,27 @@
+###
+### Name: Enhanced Enemies Mayhem10
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: mayhem, enemy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+###
+### An attempt at making enemies more difficult to deal with
+### in a different way than just making them tankier.
+### Added enemy features: +reloadspeed, +chargespeed, 
+### +attackspeed (I think only applies to those with guns), -burstfire delay, +movespeed, +slight firerate
+### 
+### Currrently only applies to M10/11
+### 
+### For optimal mayhem, use this with my increased spawns mod:
+### https://github.com/BLCM/bl3mods/wiki/Increased%20Spawns%20%28from%20Increased%20spawns%20x10.bl3hotfix%29
+### and increased difficulty through Apocalyptech's mayhem mod (configure yourself):
+### https://apocalyptech.com/games/bl3-mayhem/
+### 
+### 
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/StatusEffects/Enemy/SE_Mayhem2_Enemy_CoreMod_10.SE_Mayhem2_Enemy_CoreMod_10,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceReceiverMultiplier_Environmental.Att_DamageSourceReceiverMultiplier_Environmental"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=3.0,DataTableValue=(DataTable=Datatable'"/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet"',RowName="10",ValueName="DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ResetFireSequenceTime.Att_Weapon_ResetFireSequenceTime"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1000.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=-10.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Character/Att_GroundSpeedScale.Att_GroundSpeedScale"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=4.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=-4.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_TapedReloadTime.Att_Weapon_TapedReloadTime"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=-4.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ChargeTime.Att_Weapon_ChargeTime"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=-4.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_EquipTime.Att_Weapon_EquipTime"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=-4.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.75)))
+
