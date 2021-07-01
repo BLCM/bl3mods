@@ -386,7 +386,7 @@ hard_bosses = [
 
 # Easy E, Medium M, Hard H, Ignore I
 bpchars_text_tuple="""E /Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01
-E /Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01
+I /Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01
 I /Game/Enemies/Goon/_Unique/TrialBoss/_Design/Character/BPChar_Goon_TrialBoss
 I /Game/Enemies/Goon/_Unique/MonsterTrucker/_Design/Character/BPChar_GoonMonsterTrucker
 I /Game/Enemies/Guardian/_Unique/BossFodder/Design/Character/BPChar_GuardianSpectreBossFodder
