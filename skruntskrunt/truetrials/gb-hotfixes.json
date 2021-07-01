@@ -1,0 +1,502 @@
+[
+   {
+      "key" : "SparkLevelPatchEntry9100",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9101",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9102",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9103",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9104",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9105",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9106",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9107",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9108",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9109",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9110",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9111",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9112",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9113",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9114",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9115",
+      "value" : "(1,2,0,ProvingGrounds_Trial7_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkPatchEntry2073",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech,BalancedItems,785,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_FriendBot.InvBalD_ClassMod_Beastmaster_FriendBot,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_FriendBot.InvBalD_ClassMod_Beastmaster_FriendBot\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_Raid1.InvBalD_CM_Operative_Raid1,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/InvBalD_CM_Operative_Raid1.InvBalD_CM_Operative_Raid1\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/Mayhem4/Att_CharacterWeight_Operative_M4.Att_CharacterWeight_Operative_M4\"'))),((InventoryBalanceData=/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper.Balance_SM_MAL_Flipper,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/Balance/Balance_SM_MAL_Flipper.Balance_SM_MAL_Flipper\"'),(InventoryBalanceData=/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/Balance/Balance_SM_DAHL_Kaoson.Balance_SM_DAHL_Kaoson,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Kaoson/Balance/Balance_SM_DAHL_Kaoson.Balance_SM_DAHL_Kaoson\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/Mayhem4/Att_CharacterWeight_Operative_M4.Att_CharacterWeight_Operative_M4\"')))"
+   },
+   {
+      "key" : "SparkPatchEntry2074",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossMech.ItemPool_TrialBossMech,Quantity.BaseValueConstant,8,1.000000,2"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1424",
+      "value" : "(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Unique.Table_Balance_Mech_Unique,Mech_TrialBoss,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1425",
+      "value" : "(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Unique.Table_Balance_Mech_Unique,Mech_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,30.000000,800.000000"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1426",
+      "value" : "(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Unique.Table_Balance_Mech_Unique,Mech_TrialBoss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,5.000000,500.000000"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1427",
+      "value" : "(1,2,0,BPChar_Mech_TrialBoss),/Game/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Unique.Table_Balance_Mech_Unique,Mech_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,1.150000,2.3"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9200",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9201",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9202",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9203",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9204",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9205",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9206",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9207",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9208",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9209",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9210",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9211",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9212",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9213",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9214",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9215",
+      "value" : "(1,2,0,ProvingGrounds_Trial4_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkPatchEntry2075",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGoon.ItemPool_TrialBossGoon,BalancedItems,617,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_FireBrand.InvBalD_ClassMod_Operative_FireBrand,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Operative/InvBalD_ClassMod_Operative_FireBrand.InvBalD_ClassMod_Operative_FireBrand\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker.InvBalD_ClassMod_Siren_Phasezerker,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Phasezerker.InvBalD_ClassMod_Siren_Phasezerker\"')),((InventoryBalanceData=/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/Balance/Balance_PS_JAK_Maggie.Balance_PS_JAK_Maggie,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/Balance/Balance_PS_JAK_Maggie.Balance_PS_JAK_Maggie\"'),(InventoryBalanceData=/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence.Balance_SG_HYP_Convergence,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/Balance/Balance_SG_HYP_Convergence.Balance_SG_HYP_Convergence\"'))"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1428",
+      "value" : "(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1429",
+      "value" : "(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,15.000000,2000.0"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1430",
+      "value" : "(1,2,0,BPChar_Goon_TrialBoss),/Game/Enemies/Goon/_Shared/_Design/Balance/Table_Balance_Goon_Unique.Table_Balance_Goon_Unique,Goon_BossTrial,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,9,15.000000,2000.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9300",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9301",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9302",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9303",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9304",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9305",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9306",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9307",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9308",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9309",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9310",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9311",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9312",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9313",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9314",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9315",
+      "value" : "(1,2,0,ProvingGrounds_Trial8_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkPatchEntry2076",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian.ItemPool_TrialBossSaurian,BalancedItems,665,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_CosmicStalker.InvBalD_ClassMod_Beastmaster_CosmicStalker,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_CosmicStalker.InvBalD_ClassMod_Beastmaster_CosmicStalker\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RedFang.InvBalD_ClassMod_Beastmaster_RedFang,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/BeastMaster/InvBalD_ClassMod_Beastmaster_RedFang.InvBalD_ClassMod_Beastmaster_RedFang\"')),((InventoryBalanceData=/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner.Balance_HW_VLA_ETech_BackBurner,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Backburner/Balance/Balance_HW_VLA_ETech_BackBurner.Balance_HW_VLA_ETech_BackBurner\"'),(InventoryBalanceData=/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy.Balance_PS_COV_Tizzy,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Balance/Balance_PS_COV_Tizzy.Balance_PS_COV_Tizzy\"'))"
+   },
+   {
+      "key" : "SparkPatchEntry2077",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSaurian.ItemPool_TrialBossSaurian,Quantity.BaseValueConstant,8,1.000000,2"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1431",
+      "value" : "(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1432",
+      "value" : "(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,35.000000,800.000000"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1433",
+      "value" : "(1,2,0,BPChar_Saurian_TrialBoss),/Game/Enemies/Saurian/_Shared/_Design/Balance/Table_Balance_Saurian_Unique.Table_Balance_Saurian_Unique,Saurian_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,2.000000,4"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9400",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9401",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9402",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9403",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9404",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9405",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9406",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9407",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9408",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9409",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9410",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9411",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9412",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9413",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9414",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9415",
+      "value" : "(1,2,0,ProvingGrounds_Trial6_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkPatchEntry2078",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian,BalancedItems,585,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus.InvBalD_ClassMod_Siren_Nimbus,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Nimbus.InvBalD_ClassMod_Siren_Nimbus\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist.InvBalD_ClassMod_Siren_Elementalist,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Elementalist.InvBalD_ClassMod_Siren_Elementalist\"')),((InventoryBalanceData=/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Balance/Balance_AR_VLA_Monarch.Balance_AR_VLA_Monarch,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Balance/Balance_AR_VLA_Monarch.Balance_AR_VLA_Monarch\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/Att_Mayhem2_Only_DropChance.Att_Mayhem2_Only_DropChance\"')),(InventoryBalanceData=/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay.Balance_PS_ATL_Replay,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay.Balance_PS_ATL_Replay\"'))"
+   },
+   {
+      "key" : "SparkPatchEntry2079",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossGuardian.ItemPool_TrialBossGuardian,Quantity.BaseValueConstant,8,1.000000,2.000000"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1434",
+      "value" : "(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1435",
+      "value" : "(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,24.000000,800.000000"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1436",
+      "value" : "(1,2,0,BPChar_Guardian_TrialBoss),/Game/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Unique.Table_Balance_Guardian_Unique,Guardian_Trial_Boss,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,8,0.500000,50.000000"
+   },
+   {
+      "key" : "SparkPatchEntry2072",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossTink.ItemPool_TrialBossTink,BalancedItems,749,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon.InvBalD_ClassMod_Siren_Dragon,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Dragon.InvBalD_ClassMod_Siren_Dragon\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_Raid1.InvBalD_CM_Beastmaster_Raid1,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/BSM/InvBalD_CM_Beastmaster_Raid1.InvBalD_CM_Beastmaster_Raid1\"',Weight=(BaseValueAttribute=GbxAttributeData'\"/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/Mayhem4/Att_CharacterWeight_Beastmaster_M4.Att_CharacterWeight_Beastmaster_M4\"'))),((InventoryBalanceData=/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Balance/Balance_AR_VLA_Sickle.Balance_AR_VLA_Sickle,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Balance/Balance_AR_VLA_Sickle.Balance_AR_VLA_Sickle\"'),(InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher/Balance/Balance_SR_JAK_Skullmasher.Balance_SR_JAK_Skullmasher,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Skullmasher/Balance/Balance_SR_JAK_Skullmasher.Balance_SR_JAK_Skullmasher\"'))"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1421",
+      "value" : "(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1422",
+      "value" : "(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,20.000000,800"
+   },
+   {
+      "key" : "SparkCharacterLoadedEntry1423",
+      "value" : "(1,2,0,BPChar_Tink_TrialBoss),/Game/Enemies/Tink/_Shared/_Design/Balance/Table_Balance_Tink_Unique.Table_Balance_Tink_Unique,Tink_TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,1.100000,2.200000"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9000",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9001",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9002",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9003",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9004",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9005",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9006",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9007",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9008",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9009",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9010",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9011",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9012",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9013",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9014",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry9015",
+      "value" : "(1,2,0,ProvingGrounds_Trial5_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkPatchEntry2067",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag,BalancedItems,591,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter.InvBalD_ClassMod_Gunner_BloodLetter,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Gunner/InvBalD_ClassMod_Gunner_BloodLetter.InvBalD_ClassMod_Gunner_BloodLetter\"'),(InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker.InvBalD_ClassMod_Siren_Breaker,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Raid1/Gear/ClassMods/Siren/InvBalD_ClassMod_Siren_Breaker.InvBalD_ClassMod_Siren_Breaker\"')),((InventoryBalanceData=/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob.Balance_SG_Torgue_ETech_TheLob,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/Balance/Balance_SG_Torgue_ETech_TheLob.Balance_SG_Torgue_ETech_TheLob\"'),(InventoryBalanceData=/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7.Balance_PS_JAK_Lucky7,ResolvedInventoryBalanceData=InventoryBalanceData'\"/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Balance/Balance_PS_JAK_Lucky7.Balance_PS_JAK_Lucky7\"'))"
+   },
+   {
+      "key" : "SparkPatchEntry2068",
+      "value" : "(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TrialBossSkag.ItemPool_TrialBossSkag,Quantity.BaseValueConstant,8,1.000000,2"
+   },
+   {
+      "key" : "SparkPatchEntry2069",
+      "value" : "(1,2,0,),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,ExperienceType_8_73D53DF14EC1787599308F9A13A91D97,14,NewEnumerator6,NewEnumerator7"
+   },
+   {
+      "key" : "SparkPatchEntry2070",
+      "value" : "(1,2,0,),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,9,20.000000,800"
+   },
+   {
+      "key" : "SparkPatchEntry2071",
+      "value" : "(1,2,0,),/Game/Enemies/Skag/_Shared/_Design/Balance/Table_Skag_Balance_Unique.Table_Skag_Balance_Unique,TrialBoss,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,8,0.500000,2"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1439",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1440",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1441",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1442",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestNoGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1443",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1444",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1445",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1446",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestOneGem,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1447",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1448",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1449",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1450",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestTwoGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1451",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1452",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,UncommonWeightModifier_12_A1CB19B648A9D93482D9DC83713A2FB5,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1453",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,RareWeightModifier_16_F11E138D458B57D473F062A6C52A5F58,0,,0.0"
+   },
+   {
+      "key" : "SparkLevelPatchEntry1454",
+      "value" : "(1,2,0,ProvingGrounds_Trial1_P),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,TrialsChestThreeGems,VeryRareWeightModifier_17_8A0A186D4D4FC53ADDFB71A8A7F589DA,0,,0.0"
+   }
+]
