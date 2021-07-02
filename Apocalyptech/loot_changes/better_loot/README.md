@@ -64,6 +64,11 @@ anything if you do).
 Changelog
 =========
 
+**v1.4.0** - *(unreleased)*
+ * Fixed guaranteed drops for Muldock, the Anointed (and possibly also Artemis,
+   Mincemeat, and the runnable version of Private Beans, though I didn't
+   verify if those were broken).
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 
