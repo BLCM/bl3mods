@@ -53,7 +53,7 @@ mod = Mod('better_loot.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.4.0',
+        v='1.3.4',
         cats='enemy-drops, loot-system',
         )
 

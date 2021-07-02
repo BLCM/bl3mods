@@ -64,10 +64,12 @@ anything if you do).
 Changelog
 =========
 
-**v1.4.0** - *(unreleased)*
+**v1.3.4** - Jul 2, 2021
  * Fixed guaranteed drops for Muldock, the Anointed (and possibly also Artemis,
    Mincemeat, and the runnable version of Private Beans, though I didn't
    verify if those were broken).
+ * Updated "expected drops" list to include event cosmetics, for Captain Haunt
+   and Joey Ultraviolet.
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
