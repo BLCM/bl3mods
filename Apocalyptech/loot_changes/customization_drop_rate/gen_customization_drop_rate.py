@@ -62,7 +62,7 @@ for (label, filename, rate, desc) in [
             desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.2.0',
+            v='1.2.1',
             cats='enemy-drops',
             )
 
@@ -154,6 +154,31 @@ for (label, filename, rate, desc) in [
                             inneridx,
                             ),
                         rate)
+        mod.newline()
+
+        mod.header('Remove seasonal event cosmetics from their main drop sources')
+
+        # We could use BPChar_HarvestBoss to get just Haunt, but the MatchAll should
+        # take care of loot ghosts, too.
+        mod.comment('Captain Haunt + Loot Ghosts')
+        mod.reg_hotfix(Mod.CHAR, 'MatchAll',
+                '/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary',
+                'BalancedItems.BalancedItems[4].Weight.BaseValueScale',
+                0)
+        mod.newline()
+
+        mod.comment('Joey Ultraviolet')
+        mod.reg_hotfix(Mod.CHAR, 'BPChar_CartelBoss',
+                '/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss',
+                'BalancedItems.BalancedItems[9].Weight.BaseValueScale',
+                0)
+        mod.newline()
+
+        mod.comment('Loot Hearts')
+        mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
+                '/Game/PatchDLC/EventVDay/Enemies/Hearts/_Shared/LootPool/ItemPool_VDay_LootHeart',
+                'BalancedItems.BalancedItems[7].Weight.BaseValueScale',
+                0)
         mod.newline()
 
     mod.close()

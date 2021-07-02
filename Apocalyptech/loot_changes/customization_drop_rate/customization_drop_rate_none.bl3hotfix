@@ -1,6 +1,6 @@
 ###
 ### Name: Customization Drop Rate: None
-### Version: 1.2.0
+### Version: 1.2.1
 ### Author: Apocalyptech
 ### Contact: https://apocalyptech.com/contact.php
 ### Categories: enemy-drops
@@ -76,4 +76,17 @@ SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Lootables/_Design/Data/Industri
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Lootables/_Design/Data/Industrial/LootDef_Industrial_Refrigerator.LootDef_Industrial_Refrigerator,DefaultLoot.DefaultLoot[4].ItemAttachments.ItemAttachments[9].Probability.BaseValueScale,0,,0
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Lootables/_Design/Data/Jakobs/LootDef_GER_Industrial_Refrigerator.LootDef_GER_Industrial_Refrigerator,DefaultLoot.DefaultLoot[4].ItemAttachments.ItemAttachments[8].Probability.BaseValueScale,0,,0
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Lootables/_Design/Data/Jakobs/LootDef_GER_Industrial_Refrigerator.LootDef_GER_Industrial_Refrigerator,DefaultLoot.DefaultLoot[4].ItemAttachments.ItemAttachments[9].Probability.BaseValueScale,0,,0
+
+###
+### Remove seasonal event cosmetics from their main drop sources
+###
+
+# Captain Haunt + Loot Ghosts
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary.ItemPool_BloodyHarvest_Legendary,BalancedItems.BalancedItems[4].Weight.BaseValueScale,0,,0
+
+# Joey Ultraviolet
+SparkCharacterLoadedEntry,(1,1,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/GameData/Loot/ItemPool_Event02_UniqueBoss.ItemPool_Event02_UniqueBoss,BalancedItems.BalancedItems[9].Weight.BaseValueScale,0,,0
+
+# Loot Hearts
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/EventVDay/Enemies/Hearts/_Shared/LootPool/ItemPool_VDay_LootHeart.ItemPool_VDay_LootHeart,BalancedItems.BalancedItems[7].Weight.BaseValueScale,0,,0
 
