@@ -6,6 +6,8 @@ See the individual mod folders for full READMEs.
 - **All Event Spawns Active** - Turns on Bloody Harvest, Broken Hearts,
   and Revenge of the Cartels spawn alterations (does not actually enable
   the events themselves)
+- **Event Rewards** - A collection of mods to set the Seasonal Event
+  challenge rewards to the year of your choice.
 - **Expanded Event Spawners** - One mod for each of the three events; will
   expand the areas in which the event spawns will occur.
 - **Fewer Cartel Operatives** - Reduces the number of Cartel operatives
