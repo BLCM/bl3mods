@@ -38,6 +38,12 @@ mod = Mod('all_event_spawns_active.bl3hotfix',
         cats='event, enemy',
         )
 
+# Prior to the June 24, 2021 patch (which added "endless" seasonal events which you
+# can toggle from the main menu), a regular PATCH hotfix worked fine for this.  After
+# that patch, though, the engine ends up overwriting this attribute after hotfixes
+# have run, and it seems to do so after level loads, as well (or at least after
+# LEVEL hotfixes have run).  Fortunately, switching this over to a CHAR-based hotfix
+# works just fune, so that's what we're doing now.
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/GameData/Spawning/GlobalSpawnDLCData',
         'DLCs',
