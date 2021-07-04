@@ -43,7 +43,7 @@ mod = Mod('all_event_spawns_active.bl3hotfix',
 # that patch, though, the engine ends up overwriting this attribute after hotfixes
 # have run, and it seems to do so after level loads, as well (or at least after
 # LEVEL hotfixes have run).  Fortunately, switching this over to a CHAR-based hotfix
-# works just fune, so that's what we're doing now.
+# works just fine, so that's what we're doing now.
 mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/GameData/Spawning/GlobalSpawnDLCData',
         'DLCs',
