@@ -1,5 +1,5 @@
 ###
-### Name: 
+### Name: V1 Spiritual Driver
 ### Version: 1.0.0
 ### Author: CZ47
 ### Contact: =]#7647
@@ -10,12 +10,11 @@
 ### 
 ### 
 ### Reverts Amara's Spiritual Driver COM from weapondamage
-### back to V1 damage.
+### back to V1 damage. (Like on release)
 ### 
 ### 
 ### 
 
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/SRN/SE_Siren_CM_Raid1.SE_Siren_CM_Raid1,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
-
 

@@ -1,0 +1,103 @@
+###
+### Name: Purple Tree Fl4k Overhaul
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: char-overhaul, skill-system, char-beastmaster, bugfix
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### Making all Loader passives scale with Barbaric Yawp and changing BUL Loader passive to be shield damage
+### Better Toys: into slam damage and radius
+### Wooly Armor > Overcharged: When fl4k's shield is full, regen ammo and nades
+### Monkey Do: True amp + no element conversion
+### Capacitance: Grants fl4k 100% reflect chance (deals double damage), and 20% (or 40% with 2pts) firerate and movespeed
+### 
+### 
+
+
+## Loader Bonuses: Making all pet passives scale with Barbaric Yawp
+# BUL Loader  (also making it shield damage instead of capacity)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Base.Status_Beastmaster_PetLoaderBuff_Base,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Shield.Att_DamageSourceInstigatorMultiplier_Shield
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Base.Status_Beastmaster_PetLoaderBuff_Base,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.1333)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader.Augment_Pet_Loader,Description,0,,FL4K's [actionskill]ION Loader[/actionskill] upgrades into an [actionskill]BUL Loader[/actionskill], discarding its sniper rifle and equipping a [skillbold]Shotgun[/skillbold]. FL4K's [actionskill]BUL Loader[/actionskill] also gains increased [skillbold]Damage Resistance[/skillbold] and a powerful [skillbold]Roundhouse Melee Attack[/skillbold]. While accompanied by the [actionskill]BUL Loader[/actionskill], FL4K gains increased [skillbold]Shield Damage[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [actionskill]BUL Loader[/actionskill] briefly turns into a [skillbold]Bulldozer[/skillbold] to [skillbold]charge at enemies[/skillbold] and [skillbold]knock them up[/skillbold].
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader.Augment_Pet_Loader,StatDataItems.StatDataItems[0].Object..FormatText,0,,[skillbold]Shield Damage:[/skillbold] $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader.Augment_Pet_Loader,StatDataItems.StatDataItems[0].Object..Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Shield.Att_DamageSourceInstigatorMultiplier_Shield
+
+# ION Loader
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[2].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[3].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[4].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+
+# Making the damagereduction bonus from pet a positive value on the card to avoid confusion.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo1.Augment_Pet_Loader_Evo1,StatDataItems.StatDataItems[0].Object..SignStyle,0,,Positive
+
+# WAR Loader
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
+
+
+
+### SKILLS
+
+## Better Toys
+# Changing it into slam damage and radius
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_ButtStomp.Att_DamageSourceInstigatorMultiplier_ButtStomp
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[0].ModifierType,0,,Scale
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/GroundSlam/Att_Players_GroundSlam_Radius.Att_Players_GroundSlam_Radius
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[1].ModifierType,0,,Scale
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/StatusEffect_Beastmaster_DLCSkill_4.StatusEffect_Beastmaster_DLCSkill_4,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
+
+# Buffing values slightly
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCPassiveConstantValues.Table_Beastmaster_DLCPassiveConstantValues,DLCSkill4_ShieldRegenRate,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.1666
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCPassiveConstantValues.Table_Beastmaster_DLCPassiveConstantValues,DLCSkill4_ShieldRegenDelay,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.3
+
+# Editing card descriptions
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/Passive_Beastmaster_DLCSkill_4.Default__Passive_Beastmaster_DLCSkill_4_C,AbilityDescription,0,,FL4K gains increased [skillbold]Slam Damage[/skillbold] and [skillbold]Slam Radius[/skillbold].
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/Passive_Beastmaster_DLCSkill_4.Default__Passive_Beastmaster_DLCSkill_4_C,StatDataItems.StatDataItems[0].Object..Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_ButtStomp.Att_DamageSourceInstigatorMultiplier_ButtStomp
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/Passive_Beastmaster_DLCSkill_4.Default__Passive_Beastmaster_DLCSkill_4_C,StatDataItems.StatDataItems[0].Object..FormatText,0,,[skillbold]Slam Damage[/skillbold]: $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/Passive_Beastmaster_DLCSkill_4.Default__Passive_Beastmaster_DLCSkill_4_C,StatDataItems.StatDataItems[1].Object..Attribute,0,,/Game/PlayerCharacters/_Shared/_Design/GroundSlam/Att_Players_GroundSlam_Radius.Att_Players_GroundSlam_Radius
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_04/Passive_Beastmaster_DLCSkill_4.Default__Passive_Beastmaster_DLCSkill_4_C,StatDataItems.StatDataItems[1].Object..FormatText,0,,[skillbold]Slam Radius[/skillbold]: $VALUE$
+
+
+## Wooly Armor > Overcharged
+# Changing wooly armor to grant 5% ammo and nade regen when shields are full.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/Passive_Beastmaster_DLCSkill_17.Default__Passive_Beastmaster_DLCSkill_17_C,AbilityDescription,0,,While FL4K's shield are full, they regenerate [skillbold]Weapon & Grenade Ammo[/skillbold].
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/Passive_Beastmaster_DLCSkill_17.Default__Passive_Beastmaster_DLCSkill_17_C,StatDataItems.StatDataItems[0].Object..Attribute,0,,Att_Players_AmmoRegen
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/Passive_Beastmaster_DLCSkill_17.Default__Passive_Beastmaster_DLCSkill_17_C,StatDataItems.StatDataItems[0].Object..FormatText,0,,[skillbold]Ammo Regen/s:[/skillbold] $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/Passive_Beastmaster_DLCSkill_17.Default__Passive_Beastmaster_DLCSkill_17_C,AbilityName,0,,Overcharged
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/Passive_Beastmaster_DLCSkill_17.Default__Passive_Beastmaster_DLCSkill_17_C,AbilityEffects,0,,((StatusEffectData=StatusEffectData'"/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/StatusEffect_Beastmaster_DLCSkill_17.StatusEffect_Beastmaster_DLCSkill_17"',TargetResolutionStrategies=(GbxAbilityEffectTargetResolutionData_Self'"/Game/PlayerCharacters/_Shared/_Design/Skills/TargetResolution_Self.TargetResolution_Self"'),Condition=None))
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/StatusEffect_Beastmaster_DLCSkill_17.StatusEffect_Beastmaster_DLCSkill_17,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_AmmoRegen.Att_Players_AmmoRegen"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/StatusEffect_Beastmaster_DLCSkill_17.StatusEffect_Beastmaster_DLCSkill_17:OakPassiveAbilityAttributeEffectMutatorData_5"'),(AttributeData=GbxAttributeData'"/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_GrenadeRegen.Att_Players_GrenadeRegen"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_17/StatusEffect_Beastmaster_DLCSkill_17.StatusEffect_Beastmaster_DLCSkill_17:OakPassiveAbilityAttributeEffectMutatorData_5"'))
+
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCPassiveConstantValues.Table_Beastmaster_DLCPassiveConstantValues,DLCSkill17_DamageReduction,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.05
+
+
+## Monkey Do
+# True amp 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_09/WeaponMod_Beastmaster_DLCSkill_9.WeaponMod_Beastmaster_DLCSkill_9,bDistributeBetweenProjectiles,0,,false
+
+# Disables element conversion
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_09/WeaponMod_Beastmaster_DLCSkill_9.WeaponMod_Beastmaster_DLCSkill_9,DamageType,0,,
+
+
+## Capacitance
+# Capacitance now grants FL4K 100% reflect chance (deals double damage), and 25% (or 50% with 2pts) firerate and movespeed
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/Passive_Beastmaster_DLCSkill_18.Default__Passive_Beastmaster_DLCSkill_18_C,StatDataItems.StatDataItems[0].Object..Attribute,0,,Att_Weapon_FireRate
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/Passive_Beastmaster_DLCSkill_18.Default__Passive_Beastmaster_DLCSkill_18_C,StatDataItems.StatDataItems[0].Object..FormatText,0,,[skillbold]Frenzy Bonus:[/skillbold] $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/Passive_Beastmaster_DLCSkill_18.Default__Passive_Beastmaster_DLCSkill_18_C,AbilityDescription,0,,Whenever FL4K activates their [actionskill]Action Skill[/actionskill], FL4K enters a [skillbold]Frenzy[/skillbold].<br>They immediately begin [skillbold]recharging their shield[/skillbold] and gain 100% [skillbold]Reflect Chance[/skillbold]. Reflected projectiles deal [skillbold]double[/skillbold] damage.<br><br>Additionally, FL4K's [skillbold]firerate[/skillbold] and [skillbold]movement speed[/skillbold] are increased as well.<br>This skill has a short cooldown.
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/StatusEffect_Beastmaster_DLCSkill_18.StatusEffect_Beastmaster_DLCSkill_18,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_BulletReflectOffSelfChance.Att_BulletReflectOffSelfChance"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_BulletReflectOffSelfDamageTakenScale.Att_BulletReflectOffSelfDamageTakenScale"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_BulletReflectOffSelfDamageScale.Att_BulletReflectOffSelfDamageScale"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=2.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/StatusEffect_Beastmaster_DLCSkill_18.StatusEffect_Beastmaster_DLCSkill_18:Mutator_OakPassiveAbilityAttributeEffectMutatorData"'),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Character/Att_GroundSpeedScale.Att_GroundSpeedScale"',ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_18/StatusEffect_Beastmaster_DLCSkill_18.StatusEffect_Beastmaster_DLCSkill_18:Mutator_OakPassiveAbilityAttributeEffectMutatorData"')))
+
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCPassiveConstantValues.Table_Beastmaster_DLCPassiveConstantValues,DLCSkill18_Capacity,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.2
+
+
+
+
+
