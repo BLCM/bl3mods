@@ -150,7 +150,7 @@ mod = Mod('truetrials.bl3hotfix',
         ],
         lic=Mod.CC_BY_SA_40,
         v='0.1.1',
-        cats='gameplay',
+        cats=['gameplay','trials'],
 )
 
 def trial_names(mod):
