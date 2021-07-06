@@ -16,6 +16,9 @@ out to the main menu and it should work then.
 Changelog
 =========
 
+Jul 6, 2021 *(no version number change)*
+ * Added new `trials` mod category to mod header
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 
