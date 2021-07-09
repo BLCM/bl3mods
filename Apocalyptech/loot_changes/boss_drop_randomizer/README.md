@@ -28,6 +28,9 @@ Better Loot in your mod list.
 Changelog
 =========
 
+**v1.3.2** - Jul 9, 2021
+ * Added Loot Hearts and Loot Ghosts
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 
