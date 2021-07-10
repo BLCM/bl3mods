@@ -54,6 +54,9 @@ weren't actually intended to be mods themselves.
   won't be able to harm you if they switch.  It's a bit weird.  Anyway, was kind
   of hoping to make a gun which would just generate more and more enemies
   against you, but the Team thing got in my way.  So a Claptrap gun it remains.
+- `trivial_vc.txt` - Silly little mod to reduce the required quantity of Vault
+  Card challenge targets to 1.  Don't really feel like officially making it a mod,
+  but it *does* seem to work just fine.
 
 ## Deprecated/Testing Mods
 
