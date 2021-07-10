@@ -220,6 +220,11 @@ don't look at these thinking that they're any good.  :)
   character).  As with my Better Vehicles attempt, though, the relevant objects
   get loaded dynamically and I've never figured out how to trigger a hotfix for
   that.
+- `faster_vladof_mode_change` - This is sort of only half-failed...  Getting the
+  mode-switch animations to complete faster is pretty easy, but I cannot for the
+  life of me get the animations to *look* decent, and it bothers me enough that
+  I'm not willing to "officially" release this thing.  Essentially the same problem
+  that I have with the vehicle animations in my Mega Timesaver XL mod.  Pffffff.
 
 Licenses
 ========
