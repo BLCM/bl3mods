@@ -57,6 +57,11 @@ weren't actually intended to be mods themselves.
 - `trivial_vc.txt` - Silly little mod to reduce the required quantity of Vault
   Card challenge targets to 1.  Don't really feel like officially making it a mod,
   but it *does* seem to work just fine.
+- `droughts_eridium_moves.txt` - Similar to my mod-testing Droughts Chest Moves
+  mod, this moves all small eridium piles in The Droughts to near the Highway Fast
+  Travel location, and converts them all to the always-visible type.  Works fine,
+  but it's pretty custom-purpose so it didn't seem worth making into an official
+  mod, even as a "resource" type.
 
 ## Deprecated/Testing Mods
 
