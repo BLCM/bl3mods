@@ -1,6 +1,6 @@
 ###
 ### Name: Iron Bear - Unlimited Fuel
-### Version: 1.0.0
+### Version: 1.0.0 FullRefund
 ### Author: Stygian Emperor
 ### Contact (Email): stygianemperor@gmail.com
 ### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
@@ -15,8 +15,12 @@
 ### 
 ### DESCRIPTION
 ### Makes Iron Bear/Iron Cub use no fuel, so it will only leave if destroyed through 
-### damage or if exited by Moze. Note: This mod does not alter action skill cooldown;
-### if Iron Bear leaves, it will take the normal amount of time to be usable again.
+### damage or if exited by Moze. 
+### 
+### FULL REFUND
+### This version also makes Iron Bear have no cooldown time if you exit it early. 
+### However, if Iron Bear is destroyed, it will take the normal amount of time to be 
+### usable again.
 ### 
 ### TO DO
 ### - See if I can unlock Iron Cub's hardpoints while it is active, as otherwise 
@@ -26,6 +30,10 @@
 ## Fuel passively regenerates very quickly rather than depletes (just in case)
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Pools/ResourcePool_IronBear_Duration.ResourcePool_IronBear_Duration,BaseConsumptionRate,0,,-100.0
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Pools/ResourcePool_IronBear_Duration.ResourcePool_IronBear_Duration,BaseOnIdleRegenerationDelay,0,,0.0
+
+## No Cooldown Time on Early Exit (Defaults: 0.65, 90.0)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Global_IronBear_Duration,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.99
+# SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Global_IronBear_Duration,Cooldown_4_8A38A09E46E89B75CDB6F39A50278802,0,,99.0
 
 ## Weapons cost no fuel (not every augment will be listed)
 # Minigun

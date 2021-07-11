@@ -1,7 +1,12 @@
 Iron Bear - Unlimited Fuel
 --------------------------
 Makes Iron Bear/Iron Cub use no fuel, so it will only leave if destroyed through damage or if exited by Moze. 
-**Note:** This mod does not alter action skill cooldown; if Iron Bear leaves, it will take the normal amount of time to be usable again.
+
+Files (Use only one!)
+-----
+- **IronBearUnlimitedFuel:** This does not alter action skill cooldown; if Iron Bear leaves for any reason, it will take the normal amount of time to be usable again.
+
+- **IronBearUnlimitedFuel_FullRefund:** If Moze exits Iron Bear early, 100% of Iron Bear's cooldown will be refunded and Iron Bear will be usable again immediately.
 
 To Do
 -----
@@ -9,6 +14,8 @@ To Do
 
 Changelog
 ---------
+- **v1.0.0 + FullRefund (7/10/21):** Added *Full Refund* option.
+
 - **v1.0.0 (7/8/21):** Initial release.
 
 Contact the Author
