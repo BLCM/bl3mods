@@ -23,6 +23,13 @@ import sys
 import enum
 from bl3data.bl3data import BL3Data
 
+# This was just used to spot-check my All Weapons Can Anoint mod.  That
+# had been constructed pretty much by hand originally, based on datamining
+# from FDH, but that list had omitted the Scream of Terror grenade, so I
+# figured I should look at the data myself.  This also uncovered problems
+# in the anointment list for Superstreamer and Faulty Star, so those are
+# now fixed up in the mod, too.
+
 data = BL3Data()
 
 for name, bal_name in [
