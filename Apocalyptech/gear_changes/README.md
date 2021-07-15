@@ -10,6 +10,8 @@ See the individual mod folders for full READMEs.
 
 - **All Weapons Can Anoint** - Makes it so all weapons (apart from The Shoddy) can have anointments.
 - **Better Maliwan Charge Time** - Improves the charge time on most Maliwan guns
+- **Fabricator Changes** - A collection of mods that makes the Fabricator full-auto, and alters
+  what it fires (Eridium, more Fabricators, or Guns as usual).
 - **Fix Siren COM Blank Parts** - Fixes a (rare) bug with Siren COMs which would cause
   them to have one too few ability parts.
 - **Money Grenade Changes** - Collection of mods which alter the "Money" grenade part to drop things
