@@ -30,6 +30,11 @@
 ### to turn the line into a comment (you'll see plenty of examples
 ### of that, below, too).
 ###
+### You can also include other modlist files, if you wanted to be able
+### to easily enable/disable groups of mods all at once.  To do so,
+### start a line with `!include` -- see an example at the end of this
+### file.
+###
 ### NOTE: This file is just an example!  Feel free to edit this
 ### however you like; the mods you might want to use are entirely up
 ### to you!  We've just included a few mods which provide bugfixes
@@ -79,4 +84,10 @@ Apocalyptech/gear_changes/all_weapons_can_anoint/all_weapons_can_anoint.bl3hotfi
 
 # Only get COMs/Skins/Heads/Anoints for chars actively in the game
 Apocalyptech/loot_changes/no_wasted_equipment/no_wasted_equipment.bl3hotfix
+
+###
+### Include Other Files
+###
+
+!include modlist_other.txt
 
