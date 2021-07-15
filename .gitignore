@@ -1,5 +1,4 @@
-modlist.txt
-modlist_testing.txt
-modlist.json
+modlist*.txt
+modlist*.json
 *.swp
 __pycache__
