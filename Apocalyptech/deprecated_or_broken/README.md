@@ -75,10 +75,6 @@ weren't actually intended to be mods themselves.
 - `datatable.txt` - Was used to test out how DataTable values interact with
   the rest of the BVC tuple - turns out that they probably override everything
   except for BVSC, which gets multiplied at the end as per usual.
-- `free_fabricator.txt` - This actually doesn't do what it *says* it does;
-  it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
-  Useful!  (Actually I suppose it *could* be useful to give Eridium to
-  other co-op players.)
 - `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
   set the Takedown to scale to the number of players.  This'll let you
   keep it that way forever, if you want.  Turns out that GBX decided
