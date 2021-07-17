@@ -3,7 +3,7 @@
 ###
 ### Name: Redux
 ### Author: EpicNNG
-### Version: 1.1.6
+### Version: 1.1.7
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
@@ -642,10 +642,10 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/E
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Corrosive_9_FCB69C7740260C055C8D32B7E96603D1,0,,2.0
 
 # Increasing DOTs Damage
-SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Cryo_10_FE2073AF44E3E00A723784B1D44C2D50,0,,2.15
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Cryo_10_FE2073AF44E3E00A723784B1D44C2D50,0,,0.45
 
 # Increasing DOTs Damage
-SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale,Cryo_10_FE2073AF44E3E00A723784B1D44C2D50,0,,2.15
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale,Cryo_10_FE2073AF44E3E00A723784B1D44C2D50,0,,0.95
 
 # Increasing DOTs Damage
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Elemental/ElementalDamageScale/DataTable_Weapon_ElementalDamage.DataTable_Weapon_ElementalDamage,DamageScale_DOT,Radiation_13_2500317646FAD2F4916D158835B29E83,0,,2.15
