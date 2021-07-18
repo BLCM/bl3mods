@@ -1,7 +1,9 @@
 ###
 ### Name: True Melee Amara
 ### 
+### Version: 1.0.2
 ### Author: CZ47
+### Contact: =]#7647
 ### Categories: char-overhaul, char-siren, bugfix
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -10,7 +12,7 @@
 ###
 ### This mod buffs Amara to be able to do True melee at endgame. 
 ### Some changes:
-### -Find your center is 50% mult now (+1 point from the Breaker COM, makes this 200%)
+### -Find your center is 100% mult melee and 200% with +1 point from COM
 ### -no cooldown on Blitz
 ### -Personal space's V2 now applies to everything, including melee and Action skills
 ### -Forceful Expression also applies to everything
@@ -18,8 +20,10 @@
 ### -Kensei duration increase and other com buffs (COMs rework is planned)
 ### -Augments no longer penalize you for equipping them
 ### -Tempest shock %, Expedite and samsara is fixed to reflect their card values.
+### -Added Cryo and Slow immunity to Clear the Mind.
 ###
 ### Special thanks to Lonemasterino (PS hotfix help), RamenDeliveryTruck (FE hotfix) and the creators of the Redux mod (used as a reference to get started)
+
 
 
 
@@ -74,16 +78,8 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,JabCross_GunDamage,Value,0,,(BaseValueConstant=0.15)
 
 
-
-# Find your center 50% melee (when using the breaker com for +1 FYC, this value becomes 200%)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,FindYourCenter_MeleeDamage,Value,0,,(BaseValueConstant=1.5,DataTableValue=None,BaseValueScale=1.0)
-
 # Making Find your center mult 
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-
-# Updating Full Skill Description #2
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/PassiveSkill_Siren_FindYourCenter.Default__PassiveSkill_Siren_FindYourCenter_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Melee Damage:[/skillbold] $VALUE$
-
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,PreAdd
 
 
 # Removing cooldown from Blitz
@@ -94,6 +90,11 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 
 # Updating Full Skill Description #2
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Overrun/PassiveSkill_Siren_Overrun.Default__PassiveSkill_Siren_Overrun_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+
+
+# Clear the Mind now grants Cryo immunity as well. (Kill Skill)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/Passive_Siren_DLCSkill_7.Default__Passive_Siren_DLCSkill_7_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Amara [skillbold]ignores enemies Elemental Damage Resistance[/skillbold] for a short time. This does not affect [skillbold]Elemental Immunity[/skillbold].<br><br>Additionally, Amara gains [skillbold]Cryo Immunity[/skillbold] for the duration.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/StatusEffect_Siren_DLCSkill_7.StatusEffect_Siren_DLCSkill_7,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/PlayerCharacters/_Shared/_DLC/Ixora/Attributes/Att_DLC_ShouldIgnoreEnemyResistance.Att_DLC_ShouldIgnoreEnemyResistance"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Cryo.Att_DamageReceiverMultiplier_Cryo"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.0)),(AttributeData=GbxAttributeData'"/Game/GameData/StatusEffects/Cryo/Att_CryoIdleDelay.Att_CryoIdleDelay"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)))
 
 
 
@@ -241,9 +242,3 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/Table_CM_Ix
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,DamageInterval,0,,0.01
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,MaxDamageDuration,0,,10
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,bCanHurtSelf,0,,false
-
-
-
-
-
-
