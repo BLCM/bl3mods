@@ -1,7 +1,9 @@
 ###
 ### Name: True Melee Amara
 ### 
+### Version: 1.0.2
 ### Author: CZ47
+### Contact: =]#7647
 ### Categories: char-overhaul, char-siren, bugfix
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -10,7 +12,7 @@
 ###
 ### This mod buffs Amara to be able to do True melee at endgame. 
 ### Some changes:
-### -Find your Center is now Mult that stacks well with a +1 point from COM
+### -Find your center is 100% mult melee and 200% with +1 point from COM
 ### -no cooldown on Blitz
 ### -Personal space's V2 now applies to everything, including melee and Action skills
 ### -Forceful Expression also applies to everything
@@ -19,7 +21,9 @@
 ### -Augments no longer penalize you for equipping them
 ### -Tempest shock %, Expedite and samsara is fixed to reflect their card values.
 ### -Added Cryo and Slow immunity to Clear the Mind.
+###
 ### Special thanks to Lonemasterino (PS hotfix help), RamenDeliveryTruck (FE hotfix) and the creators of the Redux mod (used as a reference to get started)
+
 
 
 
@@ -238,9 +242,3 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/Table_CM_Ix
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,DamageInterval,0,,0.01
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,MaxDamageDuration,0,,10
 SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,bCanHurtSelf,0,,false
-
-
-
-
-
-
