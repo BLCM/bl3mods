@@ -75,15 +75,8 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/Da
 
 
 
-# Find your center 50% melee (when using the breaker com for +1 FYC, this value becomes 200%)
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,FindYourCenter_MeleeDamage,Value,0,,(BaseValueConstant=1.5,DataTableValue=None,BaseValueScale=1.0)
-
 # Making Find your center mult 
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-
-# Updating Full Skill Description #2
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/PassiveSkill_Siren_FindYourCenter.Default__PassiveSkill_Siren_FindYourCenter_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Melee Damage:[/skillbold] $VALUE$
-
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,PreAdd
 
 
 # Removing cooldown from Blitz
