@@ -10,7 +10,7 @@
 ###
 ### This mod buffs Amara to be able to do True melee at endgame. 
 ### Some changes:
-### -Find your center is 50% mult now (+1 point from the Breaker COM, makes this 200%)
+### -Find your Center is now Mult that stacks well with a +1 point from COM
 ### -no cooldown on Blitz
 ### -Personal space's V2 now applies to everything, including melee and Action skills
 ### -Forceful Expression also applies to everything
@@ -18,7 +18,7 @@
 ### -Kensei duration increase and other com buffs (COMs rework is planned)
 ### -Augments no longer penalize you for equipping them
 ### -Tempest shock %, Expedite and samsara is fixed to reflect their card values.
-###
+### -Added Cryo and Slow immunity to Clear the Mind.
 ### Special thanks to Lonemasterino (PS hotfix help), RamenDeliveryTruck (FE hotfix) and the creators of the Redux mod (used as a reference to get started)
 
 
