@@ -74,7 +74,6 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,JabCross_GunDamage,Value,0,,(BaseValueConstant=0.15)
 
 
-
 # Making Find your center mult 
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,PreAdd
 
@@ -87,6 +86,11 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 
 # Updating Full Skill Description #2
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Overrun/PassiveSkill_Siren_Overrun.Default__PassiveSkill_Siren_Overrun_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+
+
+# Clear the Mind now grants Cryo immunity as well. (Kill Skill)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/Passive_Siren_DLCSkill_7.Default__Passive_Siren_DLCSkill_7_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Amara [skillbold]ignores enemies Elemental Damage Resistance[/skillbold] for a short time. This does not affect [skillbold]Elemental Immunity[/skillbold].<br><br> Additionally, Amara gains [skillbold]Cryo Immunity[/skillbold] for the duration.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/StatusEffect_Siren_DLCSkill_7.StatusEffect_Siren_DLCSkill_7,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/PlayerCharacters/_Shared/_DLC/Ixora/Attributes/Att_DLC_ShouldIgnoreEnemyResistance.Att_DLC_ShouldIgnoreEnemyResistance"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Cryo.Att_DamageReceiverMultiplier_Cryo"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.0)),(AttributeData=GbxAttributeData'"/Game/GameData/StatusEffects/Cryo/Att_CryoIdleDelay.Att_CryoIdleDelay"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)))
 
 
 
