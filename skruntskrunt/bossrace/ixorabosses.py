@@ -606,7 +606,7 @@ H /Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaur
 I /Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur_Punk
 M /Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog
 M /Geranium/Enemies/GerSaurian/_Unique/LBN_GunPred/_Design/Character/BPChar_GerSaurianLBN_GunPred
-M /Geranium/Enemies/GerSaurian/_Unique/SV_Daisy/_Design/Character/BPChar_GerSaurianSV_Daisy
+I /Geranium/Enemies/GerSaurian/_Unique/SV_Daisy/_Design/Character/BPChar_GerSaurianSV_Daisy
 M /Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Character/BPChar_GerSaurianHorsemen4
 I /Geranium/Enemies/GerSaurian/_Unique/Horsemen4/_Design/Rider/BPChar_GerPunkHorsemen4
 M /Geranium/Enemies/GerSaurian/_Unique/LBN_GunGrog/_Design/Character/BPChar_GerSaurianLBN_GunGrog
