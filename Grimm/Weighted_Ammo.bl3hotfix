@@ -15,13 +15,35 @@
 ###
 
 
+# General Changes
 # Ammo loot is based on missing ammo
+# Health
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed,ValueResolver,0,,SimpleMathValueResolver'/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Health/Att_HealthMaxValue.Att_HealthMaxValue,BaseValueScale=1)
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,1.5
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Health/Att_HealthCurrentValue.Att_HealthCurrentValue
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds,ValueResolver,0,,SimpleMathValueResolver'/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ValueResolver_SimpleMathValueResolver'
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Health/Att_HealthMaxValue.Att_HealthMaxValue,BaseValueScale=1)
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,1.5
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Health/Att_HealthCurrentValue.Att_HealthCurrentValue
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
+
 # AR Ammo
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed,ValueResolver,0,,SimpleMathValueResolver'/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver'
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Ammo/Att_Ammo_AssaultRifle_Max.Att_Ammo_AssaultRifle_Max,BaseValueScale=1)
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoAssaultRifle_CurrentValue.Att_AmmoAssaultRifle_CurrentValue
 
@@ -31,7 +53,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedOnly.Att_Ammo_AssaultRifle_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Ammo/Att_Ammo_AssaultRifle_Max.Att_Ammo_AssaultRifle_Max,BaseValueScale=1)
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedOnly.Att_Ammo_AssaultRifle_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedOnly.Att_Ammo_AssaultRifle_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedOnly.Att_Ammo_AssaultRifle_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoAssaultRifle_CurrentValue.Att_AmmoAssaultRifle_CurrentValue
 
@@ -44,7 +66,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedandGreed.Att_Ammo_Grenade_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoGrenade_CurrentValue.Att_AmmoGrenade_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedandGreed.Att_Ammo_Grenade_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedandGreed.Att_Ammo_Grenade_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedandGreed.Att_Ammo_Grenade_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -54,7 +76,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedOnly.Att_Ammo_Grenade_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoGrenade_CurrentValue.Att_AmmoGrenade_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedOnly.Att_Ammo_Grenade_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedOnly.Att_Ammo_Grenade_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedOnly.Att_Ammo_Grenade_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -65,7 +87,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedandGreed.Att_Ammo_Heavy_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoHeavy_CurrentValue.Att_AmmoHeavy_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedandGreed.Att_Ammo_Heavy_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedandGreed.Att_Ammo_Heavy_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedandGreed.Att_Ammo_Heavy_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -75,7 +97,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedOnly.Att_Ammo_Heavy_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoHeavy_CurrentValue.Att_AmmoHeavy_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedOnly.Att_Ammo_Heavy_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedOnly.Att_Ammo_Heavy_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedOnly.Att_Ammo_Heavy_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -86,7 +108,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedandGreed.Att_Ammo_Pistol_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoPistol_CurrentValue.Att_AmmoPistol_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedandGreed.Att_Ammo_Pistol_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedandGreed.Att_Ammo_Pistol_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedandGreed.Att_Ammo_Pistol_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -96,7 +118,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedOnly.Att_Ammo_Pistol_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoPistol_CurrentValue.Att_AmmoPistol_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedOnly.Att_Ammo_Pistol_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedOnly.Att_Ammo_Pistol_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedOnly.Att_Ammo_Pistol_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -107,7 +129,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedandGreed.Att_Ammo_Shotgun_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoShotgun_CurrentValue.Att_AmmoShotgun_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedandGreed.Att_Ammo_Shotgun_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedandGreed.Att_Ammo_Shotgun_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedandGreed.Att_Ammo_Shotgun_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -117,7 +139,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedOnly.Att_Ammo_Shotgun_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoShotgun_CurrentValue.Att_AmmoShotgun_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedOnly.Att_Ammo_Shotgun_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedOnly.Att_Ammo_Shotgun_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedOnly.Att_Ammo_Shotgun_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -128,7 +150,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedandGreed.Att_Ammo_SMG_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_Ammo_SMG_Max.Att_Ammo_SMG_Max
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedandGreed.Att_Ammo_SMG_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedandGreed.Att_Ammo_SMG_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedandGreed.Att_Ammo_SMG_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -138,7 +160,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedOnly.Att_Ammo_SMG_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_Ammo_SMG_Max.Att_Ammo_SMG_Max
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedOnly.Att_Ammo_SMG_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedOnly.Att_Ammo_SMG_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedOnly.Att_Ammo_SMG_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -149,7 +171,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedandGreed.Att_Ammo_Sniper_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoSniperRifle_CurrentValue.Att_AmmoSniperRifle_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedandGreed.Att_Ammo_Sniper_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedandGreed.Att_Ammo_Sniper_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedandGreed.Att_Ammo_Sniper_Resolver_NeedandGreed:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -159,7 +181,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedOnly.Att_Ammo_Sniper_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueAttribute,0,,/Game/GameData/Attributes/Ammo/Att_AmmoSniperRifle_CurrentValue.Att_AmmoSniperRifle_CurrentValue
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedOnly.Att_Ammo_Sniper_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,8
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedOnly.Att_Ammo_Sniper_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,ValueB.BaseValueScale,0,,5
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedOnly.Att_Ammo_Sniper_Resolver_NeedOnly:ValueResolver_SimpleMathValueResolver,Operator,0,,ESimpleMathValueResolverOperatorType::Divide
 
@@ -177,3 +199,15 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Ammo/ItemPoo
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Ammo/ItemPool_Ammo.ItemPool_Ammo,BalancedItems.BalancedItems[5].Weight.BaseValueAttribute,0,,/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedOnly.Att_Ammo_SMG_Resolver_NeedOnly
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Ammo/ItemPool_Ammo.ItemPool_Ammo,BalancedItems.BalancedItems[6].Weight.BaseValueAttribute,0,,/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedOnly.Att_Ammo_Sniper_Resolver_NeedOnly
+
+# Ammo Crate Pool
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,BalancedItems,0,,((ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_AssaultRifle.DA_InventoryBalance_Ammo_AssaultRifle,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_AssaultRifle.DA_InventoryBalance_Ammo_AssaultRifle"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Pistol.DA_InventoryBalance_Ammo_Pistol,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Pistol.DA_InventoryBalance_Ammo_Pistol"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Pistol_Resolver_NeedandGreed.Att_Ammo_Pistol_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Shotgun.DA_InventoryBalance_Ammo_Shotgun,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Shotgun.DA_InventoryBalance_Ammo_Shotgun"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Shotgun_Resolver_NeedandGreed.Att_Ammo_Shotgun_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_SMG.DA_InventoryBalance_Ammo_SMG,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_SMG.DA_InventoryBalance_Ammo_SMG"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_SMG_Resolver_NeedandGreed.Att_Ammo_SMG_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_SniperRifle.DA_InventoryBalance_Ammo_SniperRifle,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_SniperRifle.DA_InventoryBalance_Ammo_SniperRifle"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Sniper_Resolver_NeedandGreed.Att_Ammo_Sniper_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Heavy.DA_InventoryBalance_Ammo_Heavy,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Heavy.DA_InventoryBalance_Ammo_Heavy"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Heavy_Resolver_NeedandGreed.Att_Ammo_Heavy_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Grenade.DA_InventoryBalance_Ammo_Grenade,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Ammo/DA_InventoryBalance_Ammo_Grenade.DA_InventoryBalance_Ammo_Grenade"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_Grenade_Resolver_NeedandGreed.Att_Ammo_Grenade_Resolver_NeedandGreed)),(ItemPoolData=None,InventoryBalanceData=/Game/Pickups/Health/DA_InventoryBalance_Health.DA_InventoryBalance_Health,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Pickups/Health/DA_InventoryBalance_Health.DA_InventoryBalance_Health"',Weight=(BaseValueAttribute=/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed)))
+
+# Ammo Chest Global
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Lootables/_Design/Data/Global/LootDef_Global_AmmoChest.LootDef_Global_AmmoChest,DefaultLoot.DefaultLoot[0].ItemAttachments,0,,((ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopRight),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomRight))
+
+# Ammo Chest CoV
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Lootables/_Design/Data/CoV/LootDef_COV_AmmoChest.LootDef_COV_AmmoChest,DefaultLoot.DefaultLoot[0].ItemAttachments,0,,((ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopRight),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomRight))
+
+# Ammo Chest CoV
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Lootables/_Design/Data/Eridian/LootDef_Eridian_AmmoCrate.LootDef_Eridian_AmmoCrate,DefaultLoot.DefaultLoot[0].ItemAttachments,0,,((ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomMiddle),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=TopRight),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomLeft),(ItemPool=/Game/GameData/Loot/ItemPools/ItemPool_AmmoCrate.ItemPool_AmmoCrate,AttachmentPointName=BottomRight))
