@@ -181,10 +181,15 @@ for fact in facts:
     val    = fact[SPAWNOPTIONS][option]
     spawn_option  = random.choice(raw_ixora_spawn_list)[0]
     # options = option.split('.Waves.')
-    options = option.split('.')
-    head = ".".join(options[:len(options)-1])
-    tail = options[-1]
+    # SpawnerComponent hacks
+    options = option.split('.SpawnerComponent.')
+    head = ".".join(options[:len(options)-1]) + ".SpawnerComponent"
+    tail = "SpawnerComponent." + options[-1]
     spawn_option = "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
+    spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"
+    
+    # this works:
+    #SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.ProvingGrounds_Trial1_Dynamic:PersistentLevel.OakSpawner_E1C.SpawnerComponent,SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions,0,,SpawnOptionData'/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva.SpawnOptions_VarkidLarva'
     mod.reg_hotfix(DFL_LEVEL,                   
                    level,
                    f'{path}:PersistentLevel.{head}',
