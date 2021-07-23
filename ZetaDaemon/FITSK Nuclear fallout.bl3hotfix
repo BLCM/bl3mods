@@ -1,0 +1,17 @@
+###
+### Name: Radiation Fire in the Skag Den (Nuclear Fallout)
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: char-gunner
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/ConditionalDamage_FireInSkagDen.ConditionalDamage_FireInSkagDen,OverrideDamageType,0,,/Game/GameData/DamageTypes/Radiation/DmgType_Radiation_Impact.DmgType_Radiation_Impact_C
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/ConditionalDamage_IronBear_FireInSkagDen.ConditionalDamage_IronBear_FireInSkagDen,OverrideDamageType,0,,/Game/GameData/DamageTypes/Radiation/DmgType_Radiation_Impact.DmgType_Radiation_Impact_C
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C,AbilityName,0,,Nuclear Fallout
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C,AbilityDescription,0,,Whenever Moze deals [skillbold]Splash Damage[/skillbold], she deals bonus [skillbold]Radiation Damage[/skillbold]
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Bonus Radiation Damage:[/skillbold] $VALUE$
