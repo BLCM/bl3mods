@@ -293,8 +293,8 @@ params = {
 make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
 
 facts = json.load(open(args.input))
-# spawnpoints = facts["spawnpoints"]
-# modify_spawnpointsww( mod, path, level, params, spawnpoints )
+spawnpoints = facts["spawnpoints"]
+modify_spawnpoints( mod, path, level, params, spawnpoints )
 
 
 # ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_88.SpawnerComponent.SpawnerStyle_SpawnerStyle_Encounter.SpawnerStyle_SpawnerStyle_Den,SpawnOptions,167,SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2.SpawnOptions_Guardian_Possessed_FullMixTD2',SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2.SpawnOptions_Guardian_FullMix_TD2'"
