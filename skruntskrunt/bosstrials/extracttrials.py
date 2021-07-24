@@ -45,6 +45,11 @@ def deep_get(h, keys, dfl=-1):
 def main(args):
     jwp = json.load(open(args.input))
     oakmissionspawners = [x for x in jwp if x.get(EXPORT_TYPE,None) == OAKMISSIONSPAWNER]
+    spawn_points = [oms[NAME] for oms in oakmissionspawners]
+    all_facts = {
+        "spawnoptions":None,
+        "spawnpoints" :spawn_points,
+    }
     facts = []
     # resolve spawner components
     # print("Resolve Spawner Components")
@@ -90,8 +95,10 @@ def main(args):
             fact[NUMACTORS] = {fact_key: fact_val}
             facts.append(fact)
     print(json.dumps(facts,indent=1))
+    all_facts["spawnoptions"] = facts
+    all_facts["spawnpoints"] = spawn_points
     with open(args.output,'w') as fd:
-        json.dump(facts,fd,indent=1)
+        json.dump(all_facts,fd,indent=1)
     
 if __name__ == "__main__":
     args = parse_args()

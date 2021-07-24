@@ -106,6 +106,9 @@ raw_ixora_spawn_list = [
     #('/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/SpawnOptions_FrontRider_Rider',      "Factory_SpawnFactory_OakAI"),
     #('/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/SpawnOptions_FrontRider_Mount',      "Factory_SpawnFactory_OakAI"),
 ]
+raw_ixora_spawn_list = [
+    ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY])
+]
 
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
@@ -138,9 +141,12 @@ difficulty_pools = {
 def get_bpchar(s):
     return s.split('/')[-1]
 
-def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list):
+def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
+    done_so = set()
     for entry in raw_ixora_spawn_list:
         row,factory,idx,pools = entry
+        so = row
+        # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
         pool = "any"
         if len(pools) > 0:
             pool = random.choice(pools)
@@ -155,6 +161,87 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list):
                        f'Options.Options[{idx}].Factory.Object..AIActorClass',
                        f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
         )
+        extend = params["extend"]
+        scale = 1.0
+        if not so in done_so:
+            if not extend == 'None':
+                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               f'(X={scale * float(extend[0])},Y={scale * float(extend[1])},Z={scale * float(extend[2])})')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnExtent'.format(idx),
+                               'None')
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
+                       'None')
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
+                        params["SpawnOrigin"])
+            # We used AlwaysSpawn and it didn't necessarily work
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
+                       params["collision"])
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..bOverrideCollisionHandling'.format(idx),
+                       'True')
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..ItemPoolToDropOnDeathAdditive'.format(idx),
+                       'True')
+            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
+                           params["UseActorProperties"])
+            if params.get("IrrelevantAction",False):
+                action = params.get("IrrelevantAction")
+                if action == True:
+                    action = "Nothing"
+                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                       f'(Critical={params.get("Critical","AlwaysSpawn")},bOverrideCritical=True,IrrelevantAction={action},bOverrideIrrelevantAction=True)')
+            else:
+                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+                       '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
+            mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))    
+        done_so.add(so)
+
+
+def modify_spawnpoints(mod, path, level, params,spawpoints):
+    # path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
+    path = f'{path}:PersistentLevel'
+    objvals =  [('SpawnAction','None'),
+                ('bFilterByTag','False'), # was None
+                ('FilterMatchType','None'),
+                ('Tags','None')]
+    if params["SpecialEffects"]:
+        objvals.append(('SpecialEffect','None'))
+    if params.get("NavCollisionSize",False):
+        v = params["NavCollisionSize"]
+        if v == True:
+            v = '(X=80.0,Y=80.0,Z=80.0)'
+        objvals.append(('NavCollisionSize',v))
+        objvals.append(('NavBox.Object..BoxExtent',v))
+    for sp in spawnpoints:
+        for (obj,val) in objvals:
+            mod.reg_hotfix(
+                Mod.EARLYLEVEL, level,
+                f"{path}.{sp}.SpawnPointComponent",
+                obj,
+                val,'',True)
+        # danger!!!
+        if params.get("SpawnDetails",False):
+            details = {'Critical':params.get("Critical","AlwaysSpawn"),
+                       'bOverrideCritical':'True'}
+            if params.get("IrrelevantAction",False):
+                details["IrrelevantAction"] = 'Nothing'
+                details["bOverrideIrrelevantAction"] = 'True'
+            spdetails = ",".join([f'{x}={details[x]}' for x in details])
+            for (obj,val) in [('SpawnDetails',spdetails)]:
+                mod.reg_hotfix(
+                    Mod.EARLYLEVEL, level,
+                    f"{path}.{sp}.SpawnerComponent",
+                    obj,
+                    val,'',True)
 
 
 
@@ -170,32 +257,58 @@ BASEVALUECONSTANT="BaseValueConstant"
 
 path,level = trial_path( args.trial )
 
-make_ixora_spawns( mod, level, raw_ixora_spawn_list )
+params = {
+     "extend":(99,99,180),
+     'collision':'AdjustIfPossibleButAlwaysSpawn',
+     "UseActorProperties":"False",
+     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'heavy':False,
+     "SpawnDetails":True,
+     "SpecialEffects":True,
+     'modify_spawnpoints':True,
+     'NavCollisionSize':True,
+}
+
+make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
 
 facts = json.load(open(args.input))
+spawnpoints = facts["spawnpoints"]
+modify_spawnpoints( mod, path, level, params, spawnpoints )
+
+
 # ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_88.SpawnerComponent.SpawnerStyle_SpawnerStyle_Encounter.SpawnerStyle_SpawnerStyle_Den,SpawnOptions,167,SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2.SpawnOptions_Guardian_Possessed_FullMixTD2',SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2.SpawnOptions_Guardian_FullMix_TD2'"
 # ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_96.SpawnerComponent.SpawnerStyle_Encounter_3,Waves.Waves[0].Advancement.Percent,8,0.300000,.66"
 
-for fact in facts:
-    option = list(fact[SPAWNOPTIONS].keys())[0]
-    val    = fact[SPAWNOPTIONS][option]
-    spawn_option  = random.choice(raw_ixora_spawn_list)[0]
-    # options = option.split('.Waves.')
-    # SpawnerComponent hacks
-    options = option.split('.SpawnerComponent.')
-    head = ".".join(options[:len(options)-1]) + ".SpawnerComponent"
-    tail = "SpawnerComponent." + options[-1]
-    spawn_option = "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
-    spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"
-    
-    # this works:
-    #SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.ProvingGrounds_Trial1_Dynamic:PersistentLevel.OakSpawner_E1C.SpawnerComponent,SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions,0,,SpawnOptionData'/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva.SpawnOptions_VarkidLarva'
-    mod.reg_hotfix(DFL_LEVEL,                   
-                   level,
-                   f'{path}:PersistentLevel.{head}',
-                   # f'{path}:{head}',
-                   f'{tail}',
-                   f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
-    )
+def reassign_spawnoptions(mod,spawnoption_facts):
+    for fact in spawnoption_facts:
+        option = list(fact[SPAWNOPTIONS].keys())[0]
+        val    = fact[SPAWNOPTIONS][option]
+        spawn_option  = random.choice(raw_ixora_spawn_list)[0]
+        # options = option.split('.Waves.')
+        # SpawnerComponent hacks
+        options = option.split('.SpawnerComponent.')
+        head = ".".join(options[:len(options)-1]) + ".SpawnerComponent"
+        tail = "SpawnerComponent." + options[-1]
+        # spawn_option = "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
+        spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"    
+        # this works:
+        # SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.ProvingGrounds_Trial1_Dynamic:PersistentLevel.OakSpawner_E1C.SpawnerComponent,SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions,0,,SpawnOptionData'/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva.SpawnOptions_VarkidLarva'
+        mod.reg_hotfix(DFL_LEVEL,                   
+                       level,
+                       f'{path}:PersistentLevel.{head}',
+                       # f'{path}:{head}',
+                       f'{tail}',
+                       f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
+        )
 
+spawnoption_facts = facts["spawnoptions"]
+reassign_spawnoptions(mod,spawnoption_facts)
+
+        
 mod.close()
+
+# we're not going to get anywhere until we loosen up the spawn restrictions
+
+# Notes
+# It doesn't really like us changing the spawnoptiondata.
+# I did manage to get billy to spawn instead of spiderants
