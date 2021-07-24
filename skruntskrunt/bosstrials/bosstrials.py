@@ -291,10 +291,26 @@ params = {
      'NavCollisionSize':True,
 }
 
-make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
+def mk_spawn_list(spawnoption_facts,n=8):
+    sp = set()
+    choices = ['heavy']#[EASY,MEDIUM,HARD]
+    for fact in spawnoption_facts:
+        option = list(fact[SPAWNOPTIONS].keys())[0]
+        val    = fact[SPAWNOPTIONS][option]
+        sp.add(val)
+    out = []
+    for x in sp:
+        for i in range(n):
+            out.append( (x,None,i,[random.choice(choices)]) )
+    return out
 
 facts = json.load(open(args.input))
 spawnpoints = facts["spawnpoints"]
+spawnoption_facts = facts["spawnoptions"]
+spawn_list = mk_spawn_list( spawnoption_facts )
+# make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
+make_ixora_spawns( mod, level, spawn_list, params )
+
 modify_spawnpoints( mod, path, level, params, spawnpoints )
 
 
