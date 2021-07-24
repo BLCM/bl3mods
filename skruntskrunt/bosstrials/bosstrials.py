@@ -106,7 +106,7 @@ raw_ixora_spawn_list = [
     #('/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/SpawnOptions_FrontRider_Rider',      "Factory_SpawnFactory_OakAI"),
     #('/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/SpawnOptions_FrontRider_Mount',      "Factory_SpawnFactory_OakAI"),
 ]
-raw_ixora_spawn_list = [
+debug_raw_ixora_spawn_list = [
     # ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
@@ -125,8 +125,8 @@ else:
     our_seed = int(our_seed)
 
 random.seed(our_seed)
-#DFL_LEVEL=Mod.EARLYLEVEL
-DFL_LEVEL=Mod.LEVEL
+DFL_LEVEL=Mod.EARLYLEVEL
+# DFL_LEVEL=Mod.LEVEL
 output_filename = args.output
 mod = Mod(output_filename,
           title,
@@ -164,7 +164,7 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
         bpchar = mob[BPCHAR]
         mod.comment(f"so:{row} factory:{factory}")
         mod.comment(f"bpchar:{bpchar}")
-        mod.reg_hotfix(Mod.EARLYLEVEL,
+        mod.reg_hotfix(DFL_LEVEL,
                        mapcode,
                        row,
                        f'Options.Options[{idx}].Factory.Object..AIActorClass',
@@ -245,7 +245,7 @@ def modify_spawnpoints(mod, path, level, params,spawpoints):
     for sp in spawnpoints:
         for (obj,val) in objvals:
             mod.reg_hotfix(
-                Mod.EARLYLEVEL, level,
+                DFL_LEVEL, level,
                 f"{path}.{sp}.SpawnPointComponent",
                 obj,
                 val,'',True)
@@ -259,7 +259,7 @@ def modify_spawnpoints(mod, path, level, params,spawpoints):
             spdetails = ",".join([f'{x}={details[x]}' for x in details])
             for (obj,val) in [('SpawnDetails',spdetails)]:
                 mod.reg_hotfix(
-                    Mod.EARLYLEVEL, level,
+                    DFL_LEVEL, level,
                     f"{path}.{sp}.SpawnerComponent",
                     obj,
                     val,'',True)
@@ -312,9 +312,10 @@ def reassign_spawnoptions(mod,spawnoption_facts):
         head = ".".join(options[:len(options)-1]) + ".SpawnerComponent"
         tail = "SpawnerComponent." + options[-1]
         # spawn_option = "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
-        spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"    
+        # spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"    
         # this works:
         # SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.ProvingGrounds_Trial1_Dynamic:PersistentLevel.OakSpawner_E1C.SpawnerComponent,SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions,0,,SpawnOptionData'/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva.SpawnOptions_VarkidLarva'
+        # EarlyLevel worked, but it didn't let us change the mobs?w
         mod.reg_hotfix(DFL_LEVEL,                   
                        level,
                        f'{path}:PersistentLevel.{head}',
@@ -323,8 +324,8 @@ def reassign_spawnoptions(mod,spawnoption_facts):
                        f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
         )
 
-# spawnoption_facts = facts["spawnoptions"]
-# reassign_spawnoptions(mod,spawnoption_facts)
+spawnoption_facts = facts["spawnoptions"]
+reassign_spawnoptions(mod,spawnoption_facts)
 
         
 mod.close()
