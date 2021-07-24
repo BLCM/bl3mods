@@ -25,7 +25,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ResourceWeightAttributeValueResolver_0,MinBelowThresholdWeight,0,,(BaseValueConstant=2.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ResourceWeightAttributeValueResolver_0,MaxBelowThresholdWeight,0,,(BaseValueConstant=20.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_Resolver_NeedandGreed.Att_Health_Resolver_NeedandGreed:ResourceWeightAttributeValueResolver_0,MaxBelowThresholdWeight,0,,(BaseValueConstant=15.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ResourceWeightAttributeValueResolver_0,ResourceThreshold,0,,(BaseValueConstant=0.4,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
@@ -35,7 +35,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/A
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ResourceWeightAttributeValueResolver_0,MinBelowThresholdWeight,0,,(BaseValueConstant=2.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ResourceWeightAttributeValueResolver_0,MaxBelowThresholdWeight,0,,(BaseValueConstant=20.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Health_DropOdds.Att_Health_DropOdds:ResourceWeightAttributeValueResolver_0,MaxBelowThresholdWeight,0,,(BaseValueConstant=15.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/Attributes/Att_Ammo_AssaultRifle_Resolver_NeedandGreed.Att_Ammo_AssaultRifle_Resolver_NeedandGreed:ResourceWeightAttributeValueResolver_0,ResourceThreshold,0,,(BaseValueConstant=0.4,DataTableValue=(DataTable=None,RowName=None,ValueName=None))
 
