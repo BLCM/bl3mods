@@ -107,7 +107,16 @@ raw_ixora_spawn_list = [
     #('/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/SpawnOptions_FrontRider_Mount',      "Factory_SpawnFactory_OakAI"),
 ]
 raw_ixora_spawn_list = [
-    ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY])
+    # ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_1", 2, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_2", 3, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_3", 4, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_4", 5, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_5", 6, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_6", 7, [EASY]),
+    ("/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic", "SpawnFactory_OakAI", 0, [EASY]),
 ]
 
 if our_seed is None:
@@ -161,8 +170,17 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
                        f'Options.Options[{idx}].Factory.Object..AIActorClass',
                        f"BlueprintGeneratedClass'{bpchar}.{get_bpchar(bpchar)}_C'",
         )
+        # nope team didn't help
+        # mod.reg_hotfix(Mod.EARLYLEVEL,
+        #                mapcode,
+        #                row,
+        #                f'Options.Options[{idx}].Factory.Object..CachedTeam',
+        #                mod.get_full_cond(f"/Game/Common/_Design/Teams/Team_Maliwan",'Team')
+        # )
+
         extend = params["extend"]
         scale = 1.0
+        # return# disable this stuff
         if not so in done_so:
             if not extend == 'None':
                 mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
@@ -191,24 +209,27 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
             mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..bUseActorProperties'.format(idx),
                            params["UseActorProperties"])
-            if params.get("IrrelevantAction",False):
-                action = params.get("IrrelevantAction")
-                if action == True:
-                    action = "Nothing"
-                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
-                       f'(Critical={params.get("Critical","AlwaysSpawn")},bOverrideCritical=True,IrrelevantAction={action},bOverrideIrrelevantAction=True)')
-            else:
-                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
-                       '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
-            mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))    
+            # # Disabled This stuff
+            # if params.get("IrrelevantAction",False):
+            #     action = params.get("IrrelevantAction")
+            #     if action == True:
+            #         action = "Nothing"
+            #     mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+            #            'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+            #            f'(Critical={params.get("Critical","AlwaysSpawn")},bOverrideCritical=True,IrrelevantAction={action},bOverrideIrrelevantAction=True)')
+            # else:
+            #     mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+            #            'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
+            #            '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
+            # perhaps team was the issue?
+            # mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))    
         done_so.add(so)
 
 
 def modify_spawnpoints(mod, path, level, params,spawpoints):
     # path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
     path = f'{path}:PersistentLevel'
+    mod.comment(f"Modifying SpawnPoints for {path}")
     objvals =  [('SpawnAction','None'),
                 ('bFilterByTag','False'), # was None
                 ('FilterMatchType','None'),
@@ -272,14 +293,15 @@ params = {
 make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
 
 facts = json.load(open(args.input))
-spawnpoints = facts["spawnpoints"]
-modify_spawnpoints( mod, path, level, params, spawnpoints )
+# spawnpoints = facts["spawnpoints"]
+# modify_spawnpointsww( mod, path, level, params, spawnpoints )
 
 
 # ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_88.SpawnerComponent.SpawnerStyle_SpawnerStyle_Encounter.SpawnerStyle_SpawnerStyle_Den,SpawnOptions,167,SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2.SpawnOptions_Guardian_Possessed_FullMixTD2',SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2.SpawnOptions_Guardian_FullMix_TD2'"
 # ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_96.SpawnerComponent.SpawnerStyle_Encounter_3,Waves.Waves[0].Advancement.Percent,8,0.300000,.66"
 
 def reassign_spawnoptions(mod,spawnoption_facts):
+    mod.comment("Reassigning SpawnOptions")
     for fact in spawnoption_facts:
         option = list(fact[SPAWNOPTIONS].keys())[0]
         val    = fact[SPAWNOPTIONS][option]
@@ -301,8 +323,8 @@ def reassign_spawnoptions(mod,spawnoption_facts):
                        f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
         )
 
-spawnoption_facts = facts["spawnoptions"]
-reassign_spawnoptions(mod,spawnoption_facts)
+# spawnoption_facts = facts["spawnoptions"]
+# reassign_spawnoptions(mod,spawnoption_facts)
 
         
 mod.close()
