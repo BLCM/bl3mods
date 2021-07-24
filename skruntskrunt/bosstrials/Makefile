@@ -9,3 +9,6 @@ bosstrials.1.bl3hotfix: trial1.json bosstrials.py
 	python3 bosstrials.py --in trial1.json --output bosstrials.1.bl3hotfix --trial 1 --seed 42
 
 default: bosstrials.1.bl3hotfix trial1.json
+
+spawnoptions.1.json: extractspawnoptions.py trial1.json
+	python3 extractspawnoptions.py --input trial1.json --output spawnoptions.1.json

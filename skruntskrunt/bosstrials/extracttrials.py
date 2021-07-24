@@ -45,7 +45,8 @@ def deep_get(h, keys, dfl=-1):
 def main(args):
     jwp = json.load(open(args.input))
     oakmissionspawners = [x for x in jwp if x.get(EXPORT_TYPE,None) == OAKMISSIONSPAWNER]
-    spawn_points = [oms[NAME] for oms in oakmissionspawners]
+    spawn_points = [x[NAME] for x in jwp if 'SpawnPointComponent' in x]
+    # spawn_points = [oms[NAME] for oms in oakmissionspawners]
     all_facts = {
         "spawnoptions":None,
         "spawnpoints" :spawn_points,
@@ -76,6 +77,7 @@ def main(args):
         else:
             print(f"Doesn't have waves? {oms[NAME]}")
     # output it
+    sos = set()
     for oms in oakmissionspawners:
         st = oms[SPAWNERCOMPONENT][SPAWNERSTYLE]
         for wave_i,wave in enumerate(st.get(WAVES,[])):
@@ -83,6 +85,7 @@ def main(args):
             # print(i,wave)
             # print(wave[SPAWNERSTYLE])
             so = wave[SPAWNERSTYLE][SPAWNOPTIONS][1]
+            sos.add(so)
             fact = {SPAWNOPTIONS:None, NUMACTORS:None}
             fact_key = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{WAVES}.{WAVES}[{wave_i}].{SPAWNERSTYLE}.{SPAWNOPTIONS}'
             fact_val = f'{so}'
@@ -97,6 +100,7 @@ def main(args):
     print(json.dumps(facts,indent=1))
     all_facts["spawnoptions"] = facts
     all_facts["spawnpoints"] = spawn_points
+    all_facts["spawnoption_list"] = sorted(list(sos))
     with open(args.output,'w') as fd:
         json.dump(all_facts,fd,indent=1)
     

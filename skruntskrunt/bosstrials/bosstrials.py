@@ -146,6 +146,7 @@ difficulty_pools = {
     "heavy":ixorabosses.heavy_bosses,
     "all":ixorabosses.safe_bosses,
     "any":ixorabosses.easy_bosses + ixorabosses.medium_bosses + ixorabosses.hard_bosses,
+    "cartels":[ixorabosses.tuple_line_to_bpchar(x) for x in ixorabosses.cartels.split("\n")]
 }
 
 def get_bpchar(s):
@@ -280,7 +281,7 @@ BASEVALUECONSTANT="BaseValueConstant"
 path,level = trial_path( args.trial )
 
 params = {
-     "extend":(99,99,180),
+     "extend":(150,150,180),
      'collision':'AdjustIfPossibleButAlwaysSpawn',
      "UseActorProperties":"False",
      'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
@@ -304,10 +305,17 @@ def mk_spawn_list(spawnoption_facts,n=8):
             out.append( (x,None,i,[random.choice(choices)]) )
     return out
 
+def load_so(filename,choices=None):
+    if choices is None:
+        choices = ["cartels"]#[EASY,MEDIUM,HARD]
+    arr = json.load(open(filename))
+    return [(x[0],x[1],x[2],[random.choice(choices)]) for x in arr]
+
 facts = json.load(open(args.input))
 spawnpoints = facts["spawnpoints"]
 spawnoption_facts = facts["spawnoptions"]
-spawn_list = mk_spawn_list( spawnoption_facts )
+# spawn_list = mk_spawn_list( spawnoption_facts )
+spawn_list = load_so("spawnoptions.1.json")
 # make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
 make_ixora_spawns( mod, level, spawn_list, params )
 
@@ -352,3 +360,8 @@ mod.close()
 # Notes
 # It doesn't really like us changing the spawnoptiondata.
 # I did manage to get billy to spawn instead of spiderants
+# ...
+# Theory: by properly assigning single spawns we can probably
+#         spawn everyone safely
+#         We'll need each spawnoption
+# ... we're kinda stuck, maybe skags or rakks?
