@@ -106,8 +106,9 @@ raw_ixora_spawn_list = [
     #('/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/SpawnOptions_FrontRider_Rider',      "Factory_SpawnFactory_OakAI"),
     #('/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/SpawnOptions_FrontRider_Mount',      "Factory_SpawnFactory_OakAI"),
 ]
-debug_raw_ixora_spawn_list = [
-    # ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
+
+raw_ixora_spawn_list = [
+    ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_1", 2, [EASY]),
@@ -324,8 +325,8 @@ def reassign_spawnoptions(mod,spawnoption_facts):
                        f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
         )
 
-spawnoption_facts = facts["spawnoptions"]
-reassign_spawnoptions(mod,spawnoption_facts)
+# spawnoption_facts = facts["spawnoptions"]
+# reassign_spawnoptions(mod,spawnoption_facts)
 
         
 mod.close()
