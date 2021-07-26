@@ -1,0 +1,25 @@
+###
+### Name: Silence Messy Breakup
+### Version: 1.0.0
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: gear-shield, av-gear, qol
+###
+### Screenshot: 
+### Nexus: 
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+
+### 
+### DESCRIPTION
+### Removes the GenIVIV-themed voice module from the Messy Breakup. Reverse-engineered
+### from Apocalyptech's Silent Sellout mod.
+### 
+
+
+## Remove Messy Breakup Dialog
+SparkPatchEntry,(1,1,0,),/Game/Gear/Shields/_Design/_Uniques/MessyBreakup/Projectile/DroneProj_MessyBreakup.DroneProj_MessyBreakup_C:OakDialog_GEN_VARIABLE,DialogScripts,0,,()
+SparkPatchEntry,(1,1,0,),/Game/Gear/Shields/_Design/_Uniques/MessyBreakup/Projectile/DroneProj_MessyBreakup_BackupDrone.DroneProj_MessyBreakup_BackupDrone_C:OakDialog_GEN_VARIABLE,DialogScripts,0,,()
