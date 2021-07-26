@@ -1,5 +1,5 @@
 Silence Messy Breakup
-------------------------------------
+---------------------
 Created by **Stygian Emperor**
 
 Removes the GenIVIV-themed voice module from the Messy Breakup.
