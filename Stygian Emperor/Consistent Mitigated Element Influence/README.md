@@ -1,26 +1,32 @@
-Relaxed Skill Requirements
---------------------------
-Created by **Stygian Emperor**
+Consistent & Mitigated Element Influence on Damage
+--------------------------------------------------
+This edit was created by **Stygian Emperor** based on the original mod, *No Elemental Penalties*, by **CZ47**. 
 
-Changes the point investment requirement for each tier of any given skill tree. I made this (based on **CZ47**'s **Unrestricted Skilltrees**) in order to let me skip most skills in which I had no interest (LOOKING AT YOU ZANE'S BLUE TREE), but not allow me to reach the capstones any easier to keep my characters somewhat on-level.
+By default, this reduces elemental penalties & bonuses vs, health, armor, and shields, but does not remove them entirely. It primarily brings TVHM and Mayhem mode in-line with playthrough 1, but shifts the balance subtly to generally make non-elemental and corrosive damage more useful throughout the game.
 
-Skill Investment Required Per Tier
-----------------------------------
-The following table shows how many skill points must be invested in a given tree to unlock a skill tier within that tree:
-|   Tier  |  Base Game  |  This Mod  |
-| ------: | ----------: | ---------: |
-|      1  |           0 |          0 |
-|      2  |           5 |          0 |
-|      3  |          10 |          5 |
-|      4  |          15 |         10 |
-|      5  |          20 |         15 |
-|      6  |          25 |         25 |
+I made this setup specifically because I did not enjoy swapping weapons constantly against every single non-boss enemy in higher Mayhem levels, but uploaded it in case anyone else wanted an easy way to mess with these numbers.
 
-However, the .bl3hotfix file can be edited in a text editor such as Notepad++ to easily alter the investment requirements to your own liking ~~(which is basically all I did to make this)~~.
+Elemental Damage Chart
+----------------------
+The following is a chart showing the values in this mod (in all playthroughs and Mayhem levels):
+|            | FLESH | SHIELD | ARMOR |
+|   :---:    |   ---:|    ---:|   ---:|
+| NONE       |  110% |   100% |   80% |
+| INCENDIARY |  150% |    80% |   75% |
+| SHOCK      |   80% |   150% |   75% |
+| CORROSIVE  |   80% |    80% |  155% |
+| CRYOGENIC  |  100% |    80% |  120% |
+| RADIATION  |  100% |   120% |   75% |
 
-Credits
--------
-- **CZ47**, from whom I basically cribbed this whole mod. Check out **Unrestricted Skilltrees** for this concept taken to 100%.
+However, the .bl3hotfix file can be edited in a text editor such as Notepad++ to easily alter the influence of elemental damage to your own liking.
+
+The elemental damage values of the *unmodded* game can be found here: https://borderlands.fandom.com/wiki/Elemental_damage#Borderlands_3
+
+Changelog
+---------
+**v1.0.1:** Made non-elemental damage have the same penalty to armor as other elements, but increased its bonus against flesh by 20% to balance it against cryogenic and radiation damage. Increased corrosive's bonus against armor by 5% to (imperceptibly) further push it toward being actually useful.
+
+**v1.0.2:** Remembered enemies's attacks also use these numbers, so partially reverted non-elemental damage's bonus against flesh to 10% (from 20%), and conversely reduced its penalty to armor back down to 20% (from 25%) to compensate.
 
 Contact the Author
 ------------------
