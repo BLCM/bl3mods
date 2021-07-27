@@ -1,0 +1,79 @@
+###
+### Name: Moze Skill - Reactive Armor (WCICATG Replacement)
+### Version: 1.0.0
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: char-gunner, element
+###
+### Screenshot: https://i.imgur.com/N1FTGwW.jpg
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### DESCRIPTION
+### Replaces Moze's tier 4 passive skill, Why Can't I Carry All These Grenades?, with a
+### skill that's actually useful to her at high levels: Reactive Armor, which increases
+### Moze's and Iron Bear's/Cub's resistance to splash, fire, and radiation damage; 
+### including self-damage. I tried to get it to scale better and not have the in-game 
+### skill card lie to you but it was not possible for someone who doesn't know coding.
+### 
+### Refer to the following table for actual numbers:
+###                       ___________________________________________
+###                       |              REACTIVE ARMOR             ‡
+###                       |            RESISTANCE BY RANK           ‡                       --> off the charts! -->
+###                       |------1------|------2------|------3------‡-----*4*-----|-----*5*-----|-----*6*-----|-----*7*-----|-----*8*-----|
+### SPLASH/RADIATION/FIRE | 27%/ 6%/ 6% | 30%/12%/12% | 33%/17%/17% ‡ 36%/21%/21% | 39%/25%/25% | 41%/29%/29% | 43%/32%/32% | 45%/35%/35% |
+### 
+### *Ranks above 3 can only be legitimately attained through the Grenadier class mod.*
+###
+
+
+### MECHANICS
+## Damage resistance is calculated with diminishing returns. Formula: 1-(1/(1+Value)) where Value is a decimal (Thanks CZ47)
+
+# Change the main number the skill uses (for Splash, Fire, & Radiation) 
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_WhyCantICarryAllTheseGrenades,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,-0.0666
+
+# unused (is dramatically affected by DamageScalar value for no reason). Change number the skill uses (meant for Fire & Radiation)
+# SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_WhyCantICarryAllTheseGrenades,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,0,,-1.0
+
+
+## Grenade Capacity Changed to Splash, Fire, & Radiation Resistance
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_ReceivedRadiusDamage_DamageMultiplier.Att_ReceivedRadiusDamage_DamageMultiplier"',ModifierType=EGbxAttributeModifierType::Scale,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable="/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance",RowName=P_WhyCantICarryAllTheseGrenades,ValueName=DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=4.5),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData"'),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Fire.Att_DamageReceiverMultiplier_Fire"',ModifierType=EGbxAttributeModifierType::Scale,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable="/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance",RowName=P_WhyCantICarryAllTheseGrenades,ValueName=DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData"'),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Radiation.Att_DamageReceiverMultiplier_Radiation"',ModifierType=EGbxAttributeModifierType::Scale,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable="/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance",RowName=P_WhyCantICarryAllTheseGrenades,ValueName=DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.0),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA.Status_Gunner_AllTheseGrenades_GrenadeCapacity_DA:Mutator_OakPlayerAbilityAttributeEffectMutatorData"'))
+
+
+
+### DISPLAY TEXT
+
+## Name
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C,AbilityName.string,0,,Reactive Armor
+
+
+## Description
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C,AbilityDescription.string,0,,Moze and [actionskill]Iron Bear[/actionskill] take greatly reduced [skillbold]Splash Damage[/skillbold] and slightly reduced [skillbold]Fire and Radiation Damage[/skillbold], including from their own weapons.
+
+
+## Numbers Displayed
+# Displays Fire Resist (and by extension Radiation Resist because they're increased the same, which it's supposed to) (must disable entry below)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Fire.Att_DamageReceiverMultiplier_Fire
+
+# Displays Splash Resist instead (for testing purposes) (must disable entry above)
+# SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/Damage/Att_ReceivedRadiusDamage_DamageMultiplier.Att_ReceivedRadiusDamage_DamageMultiplier
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,SignStyle,0,,EUIStatValueSignStyle::Positive
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,RoundingMode,0,,EUIStatValueRoundingMode::None
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayAsPercentage,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bCalculateWithReductionMath,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayPlusSign,0,,true
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/WhyCantICarryAllTheseGrenades/PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades.Default__PassiveSkill_Gunner_WhyCantICarryAllTheseGrenades_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Splash, Fire, & Radiation Resistance:[/skillbold] $VALUE$<br>[skillbold]Additional Splash Damage Resistance:[/skillbold] $VALUE$
+
+
+## Flavor Text
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/AbilityTree_Branch_Explosions.AbilityTree_Branch_Explosions,Tiers.Tiers[4].Object..Items.Items[1].Object..FlavorText,0,,[skillflavor]Ahahaha, don' 'old on ta dat end ovit![/skillflavor]
