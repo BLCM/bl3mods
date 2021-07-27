@@ -17,6 +17,7 @@ The in-game skill card tells you the correct numbers for fire and radiation resi
 |  Splash  |   27%  |   30%  |   33%  |  *36%* |  *39%* |  *41%* |  *43%* |  *45%* |
 |   Fire   |    6%  |   12%  |   17%  |  *21%* |  *25%* |  *29%* |  *32%* |  *35%* |
 | Radiation|    6%  |   12%  |   17%  |  *21%* |  *25%* |  *29%* |  *32%* |  *35%* |
+
 *Ranks above 3 can only be legitimately attained through the* ***Grenadier*** *class mod.*
 
 Credits
