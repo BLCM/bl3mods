@@ -9,6 +9,16 @@ If anyone knows how to make that happen, please let me know, and I'll give you *
 
 **£££ LODS of EMONE £££**
 
+Reactive Armor Resistance By Rank
+---------------------------------
+The in-game skill card tells you the correct numbers for fire and radiation resistance, but incorrectly states that your splash resistance is always double that number. Technically this is only true for Rank 3 of the skill; an unfortunate limitation of my modding capabilities. Refer to the following table for the *actual* numbers for every rank:
+|Resistance| Rank 1 | Rank 2 | Rank 3 |*Rank 4*|*Rank 5*|*Rank 6*|*Rank 7*|*Rank 8*|
+| :------: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: |
+|  Splash  |   27%  |   30%  |   33%  |  *36%* |  *39%* |  *41%* |  *43%* |  *45%* |
+|   Fire   |    6%  |   12%  |   17%  |  *21%* |  *25%* |  *29%* |  *32%* |  *35%* |
+| Radiation|    6%  |   12%  |   17%  |  *21%* |  *25%* |  *29%* |  *32%* |  *35%* |
+*Ranks above 3 can only be legitimately attained through the* ***Grenadier*** *class mod.*
+
 Credits
 -------
 - **Apocalyptech** who understands more than I could *possibly* know.
