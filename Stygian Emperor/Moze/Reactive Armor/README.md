@@ -5,7 +5,8 @@ Created by **Stygian Emperor**
 Replaces Moze's tier-4 passive skill, *Why Can't I Carry All These Grenades?*, with a skill that is actually useful to her at high levels: *Reactive Armor*, which increases Moze's and Iron Bear's/Cub's resistance to splash, fire, and radiation damage - including self-damage. I tried to get it to scale better and not have 
 the in-game skill card basically *lie to you,* but it was not possible for someone like me who doesn't know what coding even is. 
 
-If anyone knows how to make that happen, please let me know, and I'll give you **50%** of all the **store credit** this mod makes. £££ LODS of EMONE £££
+If anyone knows how to make that happen, please let me know, and I'll give you **50%** of all the **store credit** this mod makes. 
+**£££ LODS of EMONE £££**
 
 Credits
 -------
