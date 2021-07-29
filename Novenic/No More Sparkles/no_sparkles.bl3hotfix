@@ -1,0 +1,26 @@
+###
+### Name: No More Sparkles
+### Version: 1.0
+### Author: Novenic
+### Categories: qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Screenshot: https://i.imgur.com/OY7I0mk.jpg
+### Screenshot: https://i.imgur.com/Mj5kkUZ.jpg
+### Screenshot: https://i.imgur.com/04BjRDm.jpg
+### Screenshot: https://i.imgur.com/NHj7KYT.jpg
+### Nexus: https://www.nexusmods.com/borderlands3/mods/273
+### 
+
+###
+### Removes sparkles from certain interactable objects
+###
+
+SparkPatchEntry,(1,1,0,),/Game/Common/Effects/Systems/Energy/PS_Global_Generic_Attract_Sparkle.PS_Global_Generic_Attract_Sparkle,Emitters,0,,()
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Hibiscus/Common/Effects/Particles/Globals/Lootables/PS_Global_Generic_Attract_Sparkle_Hib.PS_Global_Generic_Attract_Sparkle_Hib,FixedRelativeBoundingBox.Max,0,,(X=-49.0,Y=-49.0,Z=-49.0)
+
+
+
