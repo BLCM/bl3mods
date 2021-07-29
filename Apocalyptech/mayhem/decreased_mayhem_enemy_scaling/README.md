@@ -16,6 +16,9 @@ touch the same vars.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.1.0** - Nov 10, 2020
  * Updated with Mayhem 11 Scaling Tweak
 

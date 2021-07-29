@@ -41,6 +41,9 @@ both of them together (though it shouldn't hurt anything if you *do*).
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Jan 3, 2020
  * Initial release
  

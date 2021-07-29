@@ -1,0 +1,39 @@
+###
+### Name: Faster COV Equip Speed
+### Version: 1.0.1
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: gear-brand
+###
+### Screenshot: https://i.imgur.com/W5p6II1.png
+### Nexus: https://www.nexusmods.com/borderlands3/mods/265
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### CHANGELOG
+### v1.0.1: Increased COV guns' equip time from 0.4 to 0.5. I think that's in seconds, 
+### so probably not noticeable, but this seems closer to my target equip time: about the
+### same as most other manufacturers'.
+###
+### DESCRIPTION
+### Reduces the time it takes to "rev up" the crude engines of COV weapons (to about 1/4
+### of unmodded) to make them ready to fire in approximately the same time it takes to
+### switch to most other manufacturers' guns. However, the readying animations remain
+### unchanged, so you will see your character's hand move impossibly quickly over the
+### weapons' starters immediately after drawing them.
+### 
+### This mod has not been tested with every single COV weapon, so there may be a legendary 
+### or unique which still ready at their unmodded speed. Let me know if anything is amiss.
+###
+### CREDITS
+### Lions-666 on DeviantArt for recreating the COV logo in HD, used for the mod's image.
+### https://www.deviantart.com/lions-666/art/Cov-821199043
+### Apocalyptech for doing a fantastic job with documentation on the modding process and 
+### helping out in Discord wherever I had questions.
+###
+###
+
+# CoV Equip Speed (Default: 2.0)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,EquipTimeScale_68_391D5B8C4D0759E7FA619A8947BE0458,0,,0.5

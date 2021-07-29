@@ -14,6 +14,9 @@ do, though.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Mar 15, 2021
  * Initial release
  

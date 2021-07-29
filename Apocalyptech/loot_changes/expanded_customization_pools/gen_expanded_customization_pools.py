@@ -112,6 +112,7 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             'Expanded Customization Pools: {}'.format(label),
             'Apocalyptech',
             full_desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.4.0',
             cats='loot-system, enemy-drops',

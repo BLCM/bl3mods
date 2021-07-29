@@ -1,0 +1,35 @@
+###
+### Name: No Action Skills Cooldown Beastmaster
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, skill-system, char-beastmaster
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### The Beastmaster action skills have no cooldown.
+###
+###	-Pet Attack Command
+###	-Gamma Burst
+###	-Rakk Attack
+###	-Fade Away
+###	-Gravity Snare
+###
+
+
+# Instant Pet Attack Command cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_AttackCommmand,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Gamma Burst cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Skill_PetEnrage,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Rakk Attack cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,1.0
+
+# Instant Fade Away cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Gravity Snare cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,AntiGravityTrap,Cooldown_20_735A4D0A498632382644F385DC1382EB,0,,0

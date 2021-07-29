@@ -2,6 +2,7 @@
 ### Name: No Wasted Equipment
 ### Version: 1.0.0
 ### Author: Apocalyptech
+### Contact: https://apocalyptech.com/contact.php
 ### Categories: loot-system, qol
 ###
 ### Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -13,6 +14,8 @@
 ### customizations, or anointments for any character other than the one
 ### you're currently playing.  Theoretically this should work just fine
 ### in multiplayer, though I haven't tested it at all in that mode.
+###
+### This does *not* affect specific gear drops from named enemies/bosses!
 ###
 
 # Yep, this single statement should do it!  Rather nicer than the BL2/TPS versions.

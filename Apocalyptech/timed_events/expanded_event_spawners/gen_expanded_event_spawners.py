@@ -271,7 +271,7 @@ class SpawnDLC(object):
         #        print('Spawner: {}'.format(s.description), file=df)
         #        print('', file=df)
         #        for path in sorted(s.soft_paths):
-        #            print('  - {} {}'.format(path.SpawnerPathName, path.SpawnerSubPathString), file=df)
+        #            print("            '{}.{}',".format(path.SpawnerPathName.split('.')[-1], path.SpawnerSubPathString), file=df)
         #        print('', file=df)
 
         for exp in self.expansions:
@@ -297,6 +297,27 @@ for cat_name, subdir, level_names in [
         #        'Prologue_Dynamic.PersistentLevel.OakMissionSpawner_ClaptrapDynamic',
         #        'Prologue_Dynamic.PersistentLevel.OakMissionSpawner_Ellie',
         #        'Prologue_Dynamic.PersistentLevel.OakMissionSpawner_Tannis',
+        #        ])),
+        #    ]),
+
+        # The majority of enemies in Negul Neshai don't seem to pick up Hearts or Cartels spawners,
+        # though Ghosts work fine without.  Had tried adding in our own processing here, but it
+        # didn't end up helping out at all (even though this code adds quite a few more spawners).
+        #('DLC2', 'dlc2', [
+        #    ('Camp_P', set([
+        #        # Deathtrap
+        #        'Camp_BossFight.PersistentLevel.OakMissionSpawner_DeathTrapPostMission',
+        #        'Camp_Plot_M.PersistentLevel.OakMissionSpawner_Deathtrap',
+        #        # Mancubus statue
+        #        'Camp_Bunkers.PersistentLevel.OakMissionSpawner_Crew_Mancubus_Statue',
+        #        # Chests / Crystals / Other Objects
+        #        'Camp_Loot.PersistentLevel.EridianChests',
+        #        'Camp_Loot.PersistentLevel.EridianCrystals',
+        #        'Camp_Loot.PersistentLevel.OakMissionSpawner_PortalChest',
+        #        'Camp_Side_M_ResearchCamp.PersistentLevel.OakMissionSpawner_IntoTheDeep_EchoLog',
+        #        'Camp_Side_M_ResearchCamp.PersistentLevel.OakMissionSpawner_IntoTheDeep_FrozenEchoHolder',
+        #        # Turret
+        #        'Camp_Plot_M.PersistentLevel.SpawnOptions_Hib_DahlTurret_2',
         #        ])),
         #    ]),
 
@@ -671,8 +692,9 @@ for (label, filename, _), spawndlc in zip(expansion_objs, spawndlcs):
                 "and Covenant Pass won't have any, for instance.  This is up to date",
                 "through DLC4 (Psycho Krieg), though.",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.3.1',
             cats='event, enemy, maps',
             )
 

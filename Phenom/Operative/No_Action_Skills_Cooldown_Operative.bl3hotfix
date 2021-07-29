@@ -1,0 +1,30 @@
+###
+### Name: No Action Skills Cooldown Operative
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, skill-system, char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### The Operative action skills have no cooldown.
+###
+###	-Digi-Clone
+###	-Drone SNTNL
+###	-Barrier
+###	-MNTIS Shoulder Cannon
+###
+
+# Digi-Clone
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DigiClone_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# Drone SNTNL
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# Barrier
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DeployBarrier_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# MNTIS Shoulder Cannon
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,ShoulderMountedCannon,Cooldown_20_735A4D0A498632382644F385DC1382EB,0,,0.1

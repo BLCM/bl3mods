@@ -31,6 +31,9 @@ COM Blank Parts happens after this one, it'll end up disabling the wrong part.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Nov 24, 2020
  * Initial Release
  

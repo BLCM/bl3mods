@@ -38,11 +38,11 @@ for event, menunum in [
             'Apocalyptech',
             [
                 "Sets the main menu to have the {} visuals.  No actual effect on".format(event_cap),
-                "gameplay or anything (use the `eventname_enable.bl3hotfix` mods to actually",
-                "turn timed events back on).",
+                "gameplay or anything.",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.0.0',
+            v='1.0.1',
             cats='event, ui',
             )
 

@@ -21,6 +21,9 @@ proper attribute to use after I'd failed to do so myself!
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - May 1, 2021
  * Initial Release
  

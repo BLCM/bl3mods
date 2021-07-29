@@ -15,6 +15,9 @@ it serves that purpose as well.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.1.0** - Oct 3, 2020
  * Renamed to be non-DLC2 specific, and added fixes for DLC4.
 

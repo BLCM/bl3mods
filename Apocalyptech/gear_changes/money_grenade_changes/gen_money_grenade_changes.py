@@ -131,6 +131,7 @@ class ModConfig:
                 [
                     f"Changes the 'Money' grenade part to drop {self.desc_text} instead of money.",
                 ],
+                contact='https://apocalyptech.com/contact.php',
                 lic=Mod.CC_BY_SA_40,
                 v='1.0.0',
                 cats='joke, gear-grenade, cheat',

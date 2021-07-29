@@ -42,6 +42,7 @@ for label, scale, extra in [
                 "Mayhem levels, so you'd actually want to *reduce* the scaling to make Mayhem",
                 "harder.)",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.0.0',
             cats='scaling',

@@ -35,6 +35,9 @@ Maps which contain the machines:
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - May 7, 2021
  * Initial release
  

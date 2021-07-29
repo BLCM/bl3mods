@@ -10,6 +10,9 @@ I can't imagine it'd be of any use to anyone else, really, but here it is just i
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

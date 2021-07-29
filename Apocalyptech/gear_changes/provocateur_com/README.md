@@ -41,6 +41,9 @@ correctly get added to that mod's updated pools.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.1** - Nov 23, 2020
  * Updated for compatibility with Expanded Legendary Pools
 

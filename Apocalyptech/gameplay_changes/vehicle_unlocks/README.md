@@ -37,6 +37,9 @@ to make the parts available to yourself.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.1** - May 10, 2021
  * No functionality changes, just updating the README and in-mod
    description to be a bit more accurate.

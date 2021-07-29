@@ -39,6 +39,7 @@ for (label, scale) in [
                 "I wanted a way to quickly level a character up for testing purposes",
                 "so that's what this mod provides.  Increases XP gains by {}x.".format(round(scale/10), 0),
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.0.0',
             cats='cheat',

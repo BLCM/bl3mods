@@ -31,8 +31,9 @@ mod = Mod('no_projected_shields.bl3hotfix',
         [
             'Makes shields never spawn with the "projected" effect',
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='gear-general, gear-shield',
         )
 

@@ -57,8 +57,9 @@ for language in ['en']:
                 '',
                 *textwrap.wrap(description, width=75),
             ],
+            contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.3.1',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',

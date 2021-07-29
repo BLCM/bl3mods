@@ -25,6 +25,10 @@ the size scaling.
 Changelog
 =========
 
+**v1.3.1** - Jun 16, 2021
+ * Tweaked some scaling values due to data patches we must've missed with DLC6
+ * Added contact info to mod header
+
 **v1.3.0** - Apr 14, 2020
  * Updated with DLC6 BPChars
  * Correctly exclude FL4K's Loader Pet from alterations

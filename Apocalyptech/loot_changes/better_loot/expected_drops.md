@@ -478,7 +478,7 @@ Events
 ## Bloody Harvest
 
 **Captain Haunt:**
- * 4x: Ghast Call, Scream of Terror, Fearmonger, Stalker
+ * 4x: Ghast Call, Scream of Terror, Fearmonger, Stalker, Bloody Harvest Cosmetics
 
 ## Revenge of the Cartels
 
@@ -511,6 +511,7 @@ Events
    * O.P.Q. System
    * Wattson
    * Yellowcake
+   * Cartels Cosmetics
 
 Takedowns
 ---------

@@ -50,6 +50,7 @@ for short_name, cat_name in [
                 [
                     f"Disables the '{modifier_name}' {cat_name} mayhem modifier.",
                 ],
+                contact='https://apocalyptech.com/contact.php',
                 lic=Mod.CC_BY_SA_40,
                 v='1.0.0',
                 cats='mayhem',

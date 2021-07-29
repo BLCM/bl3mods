@@ -7,6 +7,10 @@ I really dislike that part and tend to auto-trash shields which use it.
 Changelog
 =========
 
+**v1.1.0** - Jun 16, 2021
+ * Updated with relevant DLC5 (Gas Mask) and DLC6 (Re-Volter) shields
+ * Added contact info to mod header
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

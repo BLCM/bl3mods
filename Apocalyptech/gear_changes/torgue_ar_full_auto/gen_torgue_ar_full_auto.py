@@ -31,6 +31,7 @@ mod = Mod('torgue_ar_full_auto.bl3hotfix',
             "burst-fire modes.  In general only 'generic' ARs needed fixing, apart from the",
             "Alchemist and Contained Blast."
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='gear-brand',

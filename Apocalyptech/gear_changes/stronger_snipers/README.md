@@ -8,6 +8,9 @@ crit bonus, and Jakobs rifles get an additional 10% crit bonus.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

@@ -24,7 +24,7 @@ import math
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
-level_to = 65
+level_to = 72
 
 mod = Mod('modtest_char_setup.bl3hotfix',
         'Modtest Char Setup (at beginning of the game)',
@@ -54,8 +54,9 @@ mod = Mod('modtest_char_setup.bl3hotfix',
             "This is obviously intended to be used alongside my EM-P5 and",
             "Transformer Super Buff mods.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='cheat',
         )
 

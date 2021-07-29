@@ -34,6 +34,9 @@ TODO
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.4.0** - Apr 11, 2021
  * Updated with DLC6 (Director's Cut), Vault Card 1, and Cartels 2021 cosmetics
  * Added a new variant which omits Vault Card cosmetics

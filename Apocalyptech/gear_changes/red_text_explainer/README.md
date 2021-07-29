@@ -25,6 +25,9 @@ me if you have any questions about that!
 Changelog
 =========
 
+**v1.3.1** - Jun 16, 2021
+ * Added contact info to mod header and translation files
+
 **v1.3.0** - Apr 12, 2021
  * Updated for DLC6 (Director's Cut) and Vault Card 1 items.
  * Added internationalization/translation ability to sourcecode

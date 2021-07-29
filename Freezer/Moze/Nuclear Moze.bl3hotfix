@@ -1,0 +1,29 @@
+###
+### Name: Nuclear Moze
+### Author: Freezer
+### Version: 1.0
+### Categories: skill-system, char-gunner
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Makes Fire in the Skag Den and Stroke the Embers to give Radiation damage instead of Incendiary
+### Additionally renames them
+###
+
+# Changing Fire in the Skag Den to give Radiation damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/ConditionalDamage_FireInSkagDen.ConditionalDamage_FireInSkagDen,OverrideDamageType,0,,/Game/GameData/DamageTypes/Radiation/DmgType_Radiation_Impact.DmgType_Radiation_Impact_C
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/ConditionalDamage_FireInSkagDen.ConditionalDamage_FireInSkagDen,OptionalOverrideDamageSource,0,,DamageSource_Passive_Skill.DamageSource_Passive_Skill_C
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/ConditionalDamage_IronBear_FireInSkagDen.ConditionalDamage_IronBear_FireInSkagDen,OverrideDamageType,0,,/Game/GameData/DamageTypes/Radiation/DmgType_Radiation_Impact.DmgType_Radiation_Impact_C
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C,AbilityName,0,,Nuclear Devastation
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C,AbilityDescription,0,,Whenever Moze deals [skillbold]Splash Damage[/skillbold], she deals bonus [skillbold]Radiation Damage[/skillbold]
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/FireInTheSkagDen/PassiveSkill_Gunner_FireInSkagDen.Default__PassiveSkill_Gunner_FireInSkagDen_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Bonus Radiation Damage:[/skillbold] $VALUE$
+
+# Changing Stroke the Embers to give Radiation damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/StokeTheEmbers/StatusEffect_Gunner_StokeTheEmbers.StatusEffect_Gunner_StokeTheEmbers,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/StokeTheEmbers/PassiveSkill_Gunner_StokeTheEmbers.Default__PassiveSkill_Gunner_StokeTheEmbers_C,AbilityName,0,,Nuclear Reactor
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/StokeTheEmbers/PassiveSkill_Gunner_StokeTheEmbers.Default__PassiveSkill_Gunner_StokeTheEmbers_C,AbilityDescription,0,,Increases Moze and [actionskill]Iron Bear's[/actionskill][skillbold] Radiation Damage[/skillbold]
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/StokeTheEmbers/PassiveSkill_Gunner_StokeTheEmbers.Default__PassiveSkill_Gunner_StokeTheEmbers_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/StokeTheEmbers/PassiveSkill_Gunner_StokeTheEmbers.Default__PassiveSkill_Gunner_StokeTheEmbers_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Radiation Damage:[/skillbold] $VALUE$

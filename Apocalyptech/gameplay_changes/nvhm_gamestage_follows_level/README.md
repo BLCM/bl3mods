@@ -8,6 +8,10 @@ it!
 Changelog
 =========
 
+**v1.1.0** - Jun 16, 2021
+ * Added support for DLC5 and DLC6
+ * Added contact info to mod header
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

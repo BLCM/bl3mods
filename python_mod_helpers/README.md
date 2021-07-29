@@ -3,6 +3,7 @@ Constructing Borderlands 3 Mods With Code
 
 * [Overview](#overview)
   * [Mesh Additions](#mesh-additions)
+  * [StaticMesh Text Blocks](#staticmesh-text-blocks)
 * [Data Introspection](#data-introspection)
 * [Hotfix Generator](#hotfix-generator)
 * [License](#license)
@@ -47,6 +48,7 @@ mod = Mod('filename_to_save.bl3hotfix',
             'Extra description lines to show in the header, if you want.',
             'You can leave this as an empty list.',
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='scaling',
@@ -59,6 +61,12 @@ If you're generating a mod which is really huge (such as SSpyR's runtime weapon/
 randomizer), you can have the helper generate a compressed version by appending
 `.gz` to the filename.  In the example above, for instance, you could specify
 `filename_to_save.bl3hotfix.gz` instead.
+
+The `contact=foo` line is completely optional, and is just used if you want to
+give users a way to contact you about your mods.  You can actually use any of
+four variables here: `contact`, `contact_url`, `contact_email`, and/or
+`contact_discord`.  Keep in mind that this information will be public, so only
+put info in here if you're okay with that.
 
 The `v=foo` line is completely optional, so don't worry about specifying a
 version if you don't want (though it's good practice to put it in your file so that
@@ -207,6 +215,41 @@ mod.mesh_hotfix('/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P',
 to use a `SparkEarlyLevelPatchEntry` hotfix (instead of the default
 `SparkLevelPatchEntry`).  So far it looks like that's probably not necessary,
 but it's supported nonetheless.
+
+By default, you can only make use of StaticMeshes which are already available
+in the level, while using this hotfix type.  One way around this is to use
+*another* hotfix first, to create a reference to a new StaticMesh.  Thanks to
+the dynamic object-loading capabilities of UE4, this will let you use the
+new mesh in one of these hotfixes.  The `mesh_hotfix` method now supports
+doing this transparently behind-the-scenes, so long as you add the parameter
+`ensure=True`, such as this statement which adds the DLC1 Neon Peach mesh
+into The Droughts (near the Highway fast travel):
+
+```python
+mod.mesh_hotfix('/Game/Maps/Zone_0/Prologue/Prologue_P',
+        '/Dandelion/LevelArt/Manufacturers/Hyperion/Props/Casino/NeonSigns/Model/Meshes/SM_Hyp_Neon_Peach',
+        location=(45949, 21627, -3720),
+        ensure=True,
+        )
+```
+
+When using `ensure=True`, the library will use the Eridian Resonator object to
+swap in the requested meshes, and then swap it back to the "stock" Resonator
+object when the mod is closed.  By default, the library will add in comments
+along with these mesh-swapping hotfixes, so it's obvious where it's put things
+in automatically.  If you prefer not to see these comments, pass in
+`quiet_meshes=True` to your initial `Mod()` object creation.
+
+StaticMesh Text Blocks
+======================
+
+The game data includes two sets of StaticMesh letters, which can be used as
+"fonts" to write out text blocks in the game world.  This would be incredibly
+cumbersome to do by hand, even with the `mesh_hotfix` method, so a separate
+library is available to make it much easier.  See [README-textmesh.md](README-textmesh.md)
+for documentation on using this library.
+
+![StaticMesh Text Example](screenshots/textmesh_example.jpg)
 
 Data Introspection
 ==================

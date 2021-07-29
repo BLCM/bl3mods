@@ -15,6 +15,10 @@ No gameplay changes or anything!  Just the main menu style.
 Changelog
 =========
 
+**v1.0.1** - Jun 16, 2021
+ * Added contact info to mod header
+ * Updated in-mod description slightly
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

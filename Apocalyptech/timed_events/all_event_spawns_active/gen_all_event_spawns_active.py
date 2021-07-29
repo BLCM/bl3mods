@@ -28,19 +28,23 @@ mod = Mod('all_event_spawns_active.bl3hotfix',
         'Apocalyptech',
         [
             "Enables Bloody Harvest, Broken Hearts, and Revenge of the Cartels spawn",
-            "modifications at the same time.  Shouldn't require the events to be",
-            "actually active in order to work.  Enemies *can* be both Haunted and",
-            "Cartel, fwiw!",
-            "",
-            "This should appear in your modlist *after* any mod which enables an event,",
-            "otherwise this statement will get overwritten.",
+            "modifications at the same time.  This does *not* enable the full event;",
+            "you'll still have to enable a single event of your choice from the main",
+            "menu for that.  Enemies *can* be both Haunted and Cartel, fwiw!",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='event, enemy',
         )
 
-mod.reg_hotfix(Mod.PATCH, '',
+# Prior to the June 24, 2021 patch (which added "endless" seasonal events which you
+# can toggle from the main menu), a regular PATCH hotfix worked fine for this.  After
+# that patch, though, the engine ends up overwriting this attribute after hotfixes
+# have run, and it seems to do so after level loads, as well (or at least after
+# LEVEL hotfixes have run).  Fortunately, switching this over to a CHAR-based hotfix
+# works just fine, so that's what we're doing now.
+mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/GameData/Spawning/GlobalSpawnDLCData',
         'DLCs',
         """(

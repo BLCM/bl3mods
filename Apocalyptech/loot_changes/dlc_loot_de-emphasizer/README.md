@@ -37,6 +37,9 @@ Provocateur drops.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.0** - Apr 14, 2021
  * Updated for DLC6 (Director's Cut)
 

@@ -51,8 +51,9 @@ mod = Mod('better_loot.bl3hotfix',
             "I'd recommend using my Early Bloomer mod in conjunction with this,",
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.3',
+        v='1.3.4',
         cats='enemy-drops, loot-system',
         )
 
@@ -945,16 +946,32 @@ for char_name, char_obj, pool_name, qty in [
             '/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/ItemPool_InvasionOfPrivacy_BeansRunnable',
             1),
         ]:
+
+    # NOTE: We used to use `char_obj` as the hotfix targets here, but as of
+    # July 2021, at least, doing so doesn't seem to work, at least for Muldock.
+    # The ItemPool we're editing exists from the start of the level load, and even
+    # after confirming that there are no Anointed Enforcers present at the beginning,
+    # and re-checking the pool after Muldock *does* spawn in, the pool just doesn't
+    # update.  It's possible that BPChar_EnforcerAnointed has technically *loaded*
+    # at the level start, presumably before ItemPool_Muldock loads, even though
+    # there's no Anointed Enforcers present yet, which is the only explanation that
+    # makes any sense.  At any rate, changing these to `MatchAll` instead lets these
+    # trigger properly, so I guess we're just doing that from now on.  I did *not*
+    # verify whether Artemis, Mincemeat, or Beans were affected in the same way, but
+    # I did check that their drops work fine after this change, so go figure.  My
+    # guess is that something changed in the engine (perhaps w/ the crossplay patch
+    # on June 24?) to break this, but it's possible it was something earlier (or
+    # also possible that my earlier testing was just false positives, of course).
     mod.comment(char_name)
-    mod.reg_hotfix(Mod.CHAR, char_obj,
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
             pool_name,
-            'Quantity',
-            BVC(bvc=qty))
+            'Quantity.BaseValueConstant',
+            qty)
     # The `ItemPool_Guns_All` entry to clear will always be the last one
-    mod.reg_hotfix(Mod.CHAR, char_obj,
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
             pool_name,
             'BalancedItems.BalancedItems[{}].Weight.BaseValueScale'.format(qty),
-            BVCF(bvc=0))
+            0)
     mod.newline()
 
 # Mayhem 2.0 Gear Additions.  Yet another way of doing it, yay!

@@ -14,6 +14,9 @@ enemies.
 Changelog
 =========
 
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.1.0** - Jan 14, 2021
  * Removed mayhem level from showing up on item cards, thanks to
    Nexus-Mistress

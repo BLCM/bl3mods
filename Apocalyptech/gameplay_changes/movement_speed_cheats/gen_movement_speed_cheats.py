@@ -86,6 +86,7 @@ for (label, suffix, multiplier, desc_override) in [
             'Movement Speed Cheats - {}'.format(label),
             'Apocalyptech',
             mod_desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.0.2',
             cats='cheat',
