@@ -8,7 +8,7 @@ Because **Grimm** helped me so much with the stats scaling, he gets **50%** of a
 
 **£££ LODS of EMONE £££**
 
-Reactive Armor Resistance By Rank
+Reactive Armor Resistance by Rank
 ---------------------------------
 Refer to the following chart for actual resistance numbers, as, due to a current limitation of hotfix-modding, the splash resistance claimed by the skill card varies slightly from the value displayed in-game (except for at rank 3):
 |Resistance| Rank 1 | Rank 2 | Rank 3 |*Rank 4*|*Rank 5*|*Rank 6*|*Rank 7*|*Rank 8*|
@@ -19,15 +19,17 @@ Refer to the following chart for actual resistance numbers, as, due to a current
 
 *Ranks above 3 can only be legitimately attained through the* ***Grenadier*** *class mod.*
 
+(From my testing, it seems like the splash and other elemental resistances stack when hit by an elemental splash, though I'm not sure whether that's linearly.)
+
 Changelog
 ---------
 **v1.0.1** (7/27/2021)**:** The stats increase more satisfyingly per rank, and the skill card's claim that your splash resistance is only double your fire/rad resistance until rank 3 is more accurate.
 
 Credits
 -------
-- **Grimm** for making the **Fl4k** mod from which I reverse-engineered part of this. And now special thanks for rewriting my shitty trog-code!
-- **CZ47** for making the **Amara 2.0** mod from which I reverse-engineered the rest of this, and letting me in on the games' super-secret damage resistance formula.
-- **Apocalyptech** who understands more than I could *possibly* know.
+- **Grimm**, for making the **Fl4k** mod from which I reverse-engineered part of this. And now special thanks for rewriting my shitty trog-code!
+- **CZ47**, for making the **Amara 2.0** mod from which I reverse-engineered the rest of this, and letting me in on the games' super-secret damage resistance formula.
+- **Apocalyptech**, who understands more than I could *possibly* know.
 
 Contact the Author
 ------------------
