@@ -13,13 +13,13 @@ Reactive Armor Resistance by Rank
 Refer to the following chart for actual resistance numbers, as, due to a current limitation of hotfix-modding, the splash resistance claimed by the skill card varies slightly from the value displayed in-game (except for at rank 3):
 |Resistance| Rank 1 | Rank 2 | Rank 3 |*Rank 4*|*Rank 5*|*Rank 6*|*Rank 7*|*Rank 8*|
 | :------: | -----: | -----: | -----: | -----: | -----: | -----: | -----: | -----: |
-|  Splash  | 14.3%  | 25.0%  | 33.3%  ‡*40.0%* |*45.5%* |*50.0%* |*53.8%* |*57.1%* |
-|   Fire   |  6.2%  | 11.8%  | 16.7%  ‡*21.1%* |*25.0%* |*28.6%* |*31.8%* |*34.8%* |
-| Radiation|  6.2%  | 11.8%  | 16.7%  ‡*21.1%* |*25.0%* |*28.6%* |*31.8%* |*34.8%* |
+|  Splash  | 14.3%  | 25.0%  | 33.3%  |*40.0%* |*45.5%* |*50.0%* |*53.8%* |*57.1%* |
+|   Fire   |  6.2%  | 11.8%  | 16.7%  |*21.1%* |*25.0%* |*28.6%* |*31.8%* |*34.8%* |
+| Radiation|  6.2%  | 11.8%  | 16.7%  |*21.1%* |*25.0%* |*28.6%* |*31.8%* |*34.8%* |
 
 *Ranks above 3 can only be legitimately attained through the* ***Grenadier*** *class mod.*
 
-(From my testing, it seems like the splash and other elemental resistances stack when hit by an elemental splash, though I'm not sure whether that's linearly.)
+(From my testing, it seems like the splash and other elemental resistances stack when hit by an elemental splash, though I'm not sure whether that's additively.)
 
 Changelog
 ---------
