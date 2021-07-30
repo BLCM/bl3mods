@@ -19,7 +19,7 @@ Refer to the following chart for actual resistance numbers, as, due to a current
 
 *Ranks above 3 can only be legitimately attained through the* ***Grenadier*** *class mod.*
 
-(From my testing, it seems like the splash and other elemental resistances stack when hit by an elemental splash, though I'm not sure whether that's linearly.)
+(From my testing, it seems like the splash and other elemental resistances stack when hit by an elemental splash, though I'm not sure whether that's additively.)
 
 Changelog
 ---------
