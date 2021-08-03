@@ -55,8 +55,7 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 
 
 # Fixing Tempest Shock to give 50% shock instead of 40%
-SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,ElementalEffect_SpecificDamage,FivePointSmall_19_B4A397164A67CA1A1F8DA0AA05927FFF,0,,0.06
-
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Tempest/StatusEffect_Siren_Tempest_DA.StatusEffect_Siren_Tempest_DA,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,,0,(DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="ElementalEffect_Damage",ValueName="FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A"))
 
 # Buffing Restless 5% > 12% per stack
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,CooldownRate,FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A,0,,0.12
