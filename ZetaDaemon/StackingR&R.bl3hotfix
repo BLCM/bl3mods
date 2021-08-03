@@ -1,0 +1,13 @@
+###
+### Name: Stacking Rage And Recover
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: char-beastmaster
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Status_Beastmaster_HitAndRun3_Regen_DA.Status_Beastmaster_HitAndRun3_Regen_DA,StackingStrategy,0,,/Game/GameData/StackingStrategy/StackingStrategy_Capped_5.StackingStrategy_Capped_5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Passive_Beastmaster_HitAndRun_3.Default__Passive_Beastmaster_HitAndRun_3_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, FL4K and FL4K’s [actionskill]pet[/actionskill] [skillbold]regenerate health[/skillbold] for a few seconds. This stacks 5 times.
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Passive_Beastmaster_HitAndRun_3.Default__Passive_Beastmaster_HitAndRun_3_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Health Regeneration:[/skillbold] $VALUE$ of Max Health/sec
