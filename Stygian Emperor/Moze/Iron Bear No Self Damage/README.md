@@ -4,7 +4,7 @@ Makes Iron Bear/Iron Cub deal no self-damage, so it can have even a chance to us
 
 Changelog
 ---------
-- **v1.0.0 (7/8/21):** Initial release.
+- **v1.0.0 (8/4/21):** Initial release.
 
 Credits
 ---------
