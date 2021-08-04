@@ -1,0 +1,51 @@
+###
+### Name: Iron Bear - No Self-Damage
+### Version: 1.0.0
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: char-gunner
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### DESCRIPTION
+### Makes Iron Bear/Iron Cub deal no self-damage, so it can have even a chance to use
+### its splash weapons, especially at higher mayhem levels. I don't know why this 
+### isn't how it works by default.
+### 
+
+
+###
+### MINIGUN
+###
+
+## Exploding Bullets (Augment 3)
+# Projectiles deal no self-damage 
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtInstigator,0,,false
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtSelf,0,,false
+
+
+###
+### FLAMETHROWER
+###
+
+# No Self-Damage
+# (RUNS OFF GRENADE LAUNCHER)
+
+
+###
+### MISSILE LAUNCHER
+###
+
+## All Projectiles deal no self-damage 
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/FalconStrike/DamageData/DamageData_FalconStrike.Default__DamageData_FalconStrike_C,bCanHurtInstigator,0,,false
+
+
+###
+### GRENADE LAUNCHER
+###
+
+## All Projectiles deal no self-damage
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/GrenadeLauncher/DamageData/DamageData_GrenadeLauncher_Normal.Default__DamageData_GrenadeLauncher_Normal_C,bCanHurtInstigator,0,,false
