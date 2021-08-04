@@ -21,15 +21,6 @@
 ### MINIGUN
 ###
 
-## No Augment
-
-
-## Let Off Some Steam (Augment 1)
-
-
-## General Winter (Augment 2)
-
-
 ## Exploding Bullets (Augment 3)
 # Projectiles deal no self-damage 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/Minigun/DamageData/DamageData_Minigun_ExplodingBullets.Default__DamageData_Minigun_ExplodingBullets_C,bCanHurtInstigator,0,,false
@@ -58,34 +49,3 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 
 ## All Projectiles deal no self-damage
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/HardPoints/GrenadeLauncher/DamageData/DamageData_GrenadeLauncher_Normal.Default__DamageData_GrenadeLauncher_Normal_C,bCanHurtInstigator,0,,false
-
-
-## No Augment
-
-## Shaped Charge (Augment 1)
-
-## Musical Chairs (Augment 2)
-
-## Lock & Speedload (Augment 3)
-
-
-
-###
-### RAILGUN
-###
-
-
-###
-### BEAR FIST
-###
-
-
-###
-### SPECIALIST BEAR (IN PROGRESS)
-###
-
-
-###
-### IRON CUB AI BUFFS
-###
-
