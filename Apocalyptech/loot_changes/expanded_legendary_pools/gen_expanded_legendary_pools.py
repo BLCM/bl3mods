@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -61,7 +61,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.4.0',
+        v='1.5.0',
         cats='loot-system, enemy-drops',
         )
 
@@ -127,7 +127,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
 # They're visually identical, so we're not gonna bother having this one in here.
 #    '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'
 #
-# There's a `_FixedParts` variant for all Vault Card #1 items, which I think is just the version that's shown when
+# There's a `_FixedParts` variant for all Vault Card items, which I think is just the version that's shown when
 # you inspect it on the card.  Not bothering with those.
 
 addition_scale = 0.6
@@ -832,6 +832,14 @@ pools = [
                 # Torrent
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Balance/Balance_SM_DAL_Torrent', 1),
 
+                ### Vault Card 2
+
+                # Gold Rush
+                ('/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/Balance/Balance_SM_HYP_GoldRush', 1),
+
+                # Troubleshooter
+                ('/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troubleshooter/Balance/Balance_SM_HYP_ETech_Troubleshooter', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -1197,6 +1205,11 @@ pools = [
                 # Ringer / The Big Ringer / Dead Ringer
                 ('/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/Balance/InvBalD_GM_Ringer', 1),
 
+                ### Vault Card 2
+
+                # Pyroburst
+                ('/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/Balance/InvBalD_GM_Pyroburst', 1),
+
                 ### Additions
 
                 # Exterminator
@@ -1376,6 +1389,11 @@ pools = [
                 ('/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Vladof/Balance/InvBalD_Artifact_CompanyMan_Vladof', (1/9)*2),
                 # Toboggan
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan', 1),
+
+                ### Vault Card 2
+
+                # Shlooter
+                ('/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/InvBalD_Artifact_Shlooter', 1),
 
                 ### Additions
 

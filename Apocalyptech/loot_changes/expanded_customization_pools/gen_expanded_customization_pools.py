@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -114,7 +114,7 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             full_desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.4.0',
+            v='1.5.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -224,6 +224,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_70.InvBal_CustomSkin_{shortname}_70')
         # Cartels 2021
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_48.InvBal_CustomSkin_{shortname}_48')
+        # Vault Card #2
+        if drop_vaultcard:
+            for num in [75, 76, 77, 78]:
+                balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -273,9 +277,11 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
         # Introduced in Broken Hearts 2021, though not actually Broken Hearts...
         for num in [33, 35, 36, 37]:
             balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Heads/DA_{abbrev}Head{num}.InvBal_DA_{abbrev}Head{num}')
-        # Vault Card 1
         if drop_vaultcard:
+            # Vault Card 1
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomHeads/CustomHead47/CustomHead_{shortname}_47.InvBal_CustomHead_{shortname}_47')
+            # Vault Card 2
+            balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/_Shared/CustomHeads/CustomHead_{shortname}_49.InvBal_CustomHead_{shortname}_49')
 
         # Now output
         mod.comment(f'{shortname} Heads')
@@ -311,6 +317,9 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/WeaponSkin/WeaponSkin_VC1_{num}.InvBal_WeaponSkin_VC1_{num}')
     # Cartels 2021
     balances.append(f'/Game/PatchDLC/Event2/Gear/_Design/WeaponSkins/WeaponSkin_Event2_2.InvBal_WeaponSkin_Event2_2')
+    # Vault Card 2
+    if drop_vaultcard:
+        balances.append(f'/Game/PatchDLC/VaultCard2/Gear/_Design/WeaponSkins/WeaponSkin_VC2_1.InvBal_WeaponSkin_VC2_1')
 
     # Now output
     mod.comment('Weapon Skins')
@@ -373,6 +382,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC1_{num}.InvBal_WeaponTrinket_VC1_{num}')
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/Gear/_Design/WeaponTrinkets/WeaponTrinket_Cartels_2021.InvBal_WeaponTrinket_Cartels_2021')
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4, 5, 6]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC2_{num}.InvBal_WeaponTrinket_VC2_{num}')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -435,6 +448,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/EchoDevice/ECHOTheme_VC1_{num}.InvBal_ECHOTheme_VC1_{num}')
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_40.InvBal_ECHOTheme_40')
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4, 5]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Customizations/EchoDevice/ECHOTheme_VC2_{num}.InvBal_ECHOTheme_VC2_{num}')
 
     # Now output
     mod.comment('ECHO Skins')
@@ -490,6 +507,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/RoomDeco/RoomDecoration_VC1_{num}.InvBal_RoomDecoration_VC1_{num}')
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_2.InvBal_RoomDecoration_Event2_2')
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Customizations/RoomDeco/RoomDecoration_VC2_{num}.InvBal_RoomDecoration_VC2_{num}')
 
     # Now output
     mod.comment('Room Decorations')

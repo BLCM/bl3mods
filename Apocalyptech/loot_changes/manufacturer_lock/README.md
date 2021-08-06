@@ -34,10 +34,13 @@ This mod has been updated as far as DLC6 (Director's Cut).
 Changelog
 =========
 
+**v1.4.0** - Aug 6, 2021
+ * Updated with Vault Card 2 guns
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 
-**v1.3.0** - Apr 11, 2020
+**v1.3.0** - Apr 11, 2021
  * Updated with DLC6 (Director's Cut), Vault Card 1, and related guns
 
 **v1.2.0** - Nov 10, 2020

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -59,7 +59,7 @@ for language in ['en']:
             ],
             contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.3.1',
+            v='1.4.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
@@ -1880,6 +1880,22 @@ for language in ['en']:
                 _("It's there always, this dark passenger."),
                 # +1 projectile when not depleted, +50% amp while full, can cause self-combustion
                 ON_CARD),
+
+            # Vault Card 1
+            (_("Gold Rush"),
+                '/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/UIStat_RedText_GoldRush',
+                _("Pay dirt."),
+                # Mostly on-card
+                _("also buffs reload speed, max 20 stacks")),
+            (_("Troubleshooter"),
+                '/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troubleshooter/UIStat_RedText_Troubleshooter',
+                _("Tickles your fancy."),
+                # Also does the on-card element-changing thing
+                _("element-switching orbs ricochet")),
+            (_("Pyroburst"),
+                '/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst',
+                _("KEKW"),
+                _("after impact, bounces 5 times while spawning homing elemental orbs")),
             ]:
 
         # Eh, let's omit shields by default; I am 99% sure that all of them already
