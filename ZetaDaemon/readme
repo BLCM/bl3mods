@@ -33,3 +33,8 @@ Changes the bonus damage of Fire in the Skag Den to be radiation instead of fire
 -Stacking Rage And Recover
 Lets Rage and Recover stack up to 5 times so that you almost always gain a new stack of the health regen after a kill rather than it just re-triggering the kill skill.
 Adds a mention of the stacking on the description, also changes it to say 'Max Health/sec' rather than 'Missing Health/sec' as apparently thats what it should be.
+
+-Drop fixes - Soulrender
+Fixes the Soulrender not dropping from Tom and Xam, hopefully will be actually fixed by gearbox soon but I'm putting this up in the meantime.
+Credit to Apple1417 for actually figuring out what went wrong and what needed fixing, I'm just putting it up for people to use :)
+Also looking into the Juliets Dazzle but haven't gotten that one working yet
