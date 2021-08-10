@@ -35,14 +35,25 @@ mod = Mod('cheaper_sdus.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.1.0',
+        v='1.2.0',
         cats='cheat, economy',
         )
+
+# This is stupid, but so is this updated object.
+row_hardcodes = {
+        'Table_SDU_Bank': {
+            23: 'NewRow',
+            24: 'NewRow_0',
+            25: 'NewRow_1',
+            26: 'NewRow_2',
+            27: 'NewRow_3',
+            },
+        }
 
 for table, levels in [
         ('Table_SDU_AssaultRifle', 10),
         ('Table_SDU_Backpack', 13),
-        ('Table_SDU_Bank', 23),
+        ('Table_SDU_Bank', 28),
         ('Table_SDU_Grenade', 10),
         ('Table_SDU_Heavy', 13),
         ('Table_SDU_LostLoot', 10),
@@ -54,9 +65,13 @@ for table, levels in [
     mod.comment(table)
     price = start_price
     for level in range(levels):
+        if table in row_hardcodes and level in row_hardcodes[table]:
+            row_name = row_hardcodes[table][level]
+        else:
+            row_name = 'Lv{}'.format(level+1)
         mod.table_hotfix(Mod.PATCH, '',
                 '/Game/Pickups/SDU/{}'.format(table),
-                'Lv{}'.format(level+1),
+                row_name,
                 'SDUPrice',
                 price)
         if price < max_price:

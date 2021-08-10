@@ -9,6 +9,10 @@ high.
 Changelog
 =========
 
+**v1.2.0** - Aug 9, 2021
+ * Added the extra five bank SDUs added in last week's Vault Card 2
+   patch.
+
 **v1.1.0** - Jun 29, 2021
  * Added some missing SDU levels which were added all the way back
    in last September
