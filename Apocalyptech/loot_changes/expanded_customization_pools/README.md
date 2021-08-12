@@ -37,6 +37,9 @@ TODO
 Changelog
 =========
 
+**v1.5.1** - Aug 11, 2021
+ * Updated with some Heads that were bundled with the VC2 update but overlooked here.
+
 **v1.5.0** - Aug 6, 2021
  * Updated with Vault Card 2 cosmetics
 

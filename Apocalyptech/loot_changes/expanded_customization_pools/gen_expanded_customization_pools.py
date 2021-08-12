@@ -114,7 +114,7 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             full_desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.5.0',
+            v='1.5.1',
             cats='loot-system, enemy-drops',
             )
 
@@ -282,6 +282,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomHeads/CustomHead47/CustomHead_{shortname}_47.InvBal_CustomHead_{shortname}_47')
             # Vault Card 2
             balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/_Shared/CustomHeads/CustomHead_{shortname}_49.InvBal_CustomHead_{shortname}_49')
+        # Introduced with VC2 but not actually *on* VC2
+        balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/{dirname}/Heads/DA_{abbrev}Head03.InvBal_DA_{abbrev}Head03')
 
         # Now output
         mod.comment(f'{shortname} Heads')
