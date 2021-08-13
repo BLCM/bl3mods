@@ -62,6 +62,10 @@ weren't actually intended to be mods themselves.
   Travel location, and converts them all to the always-visible type.  Works fine,
   but it's pretty custom-purpose so it didn't seem worth making into an official
   mod, even as a "resource" type.
+- `moodlock_*.txt` - Sets NPC dialogue "mood" to the specified value, which just
+  affects their facial expressions.  I was hoping it would be more amusing than
+  it is, but in the end it's kind of "meh," so I'm tossing it in here rather than
+  doing a "real" release.
 
 ## Deprecated/Testing Mods
 
