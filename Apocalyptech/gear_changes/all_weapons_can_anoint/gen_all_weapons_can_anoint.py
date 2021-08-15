@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -34,7 +34,7 @@ mod = Mod('all_weapons_can_anoint.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.0',
+        v='1.3.1',
         cats='gear-anointments',
         )
 
@@ -565,8 +565,6 @@ weapons = [
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/Balance_SG_JAK_TheCure',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/Balance/PartSet_SG_JAK_TheCure',
             JAK_SG),
-        # There are two more Seventh Sense balances in "SeventhSense" (without "The"), but I think if those are
-        # used at all, it's just as an enemy-use-only version.
         ("Seventh Sense (mission version)",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense_MissionWeapon',
@@ -574,6 +572,12 @@ weapons = [
         ("Seventh Sense (legendary version)",
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense',
             '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/InvPartSet_PS_JAK_TheSeventhSense',
+            JAK_PS),
+        # There is one more Seventh Sense balance in "SeventhSense" (without "The"), but it's just the ghost
+        # version that Burton uses inside the vision-realm or whatever.
+        ("Seventh Sense (purple version)",
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense',
+            '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/InvPartSet_PS_JAK_SeventhSense',
             JAK_PS),
 
         # DLC3 Weapons

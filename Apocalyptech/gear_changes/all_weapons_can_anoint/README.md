@@ -16,7 +16,11 @@ Should be up to date with DLC6 (Director's Cut).
 Changelog
 =========
 
-**v1.3.0** - Jul 12, 2020
+**v1.3.1** - Aug 14, 2021
+ * Added purple Seventh Sense variant, since that's actually been available
+   via the Diamond Armory since DLC5.
+
+**v1.3.0** - Jul 12, 2021
  * Added Scream of Terror shield
  * Added gear which *could* get anointments, but whose pool omitted (or
    severely restricted) base-game anointments, so that in general the only
