@@ -2,7 +2,7 @@ Mountaineer
 ===========
 
 Allows the player to walk up (nearly) vertical surfaces.  True 90-degree
-walls (an overhangs) will generally still defeat the player, though the "step
+walls (and overhangs) will generally still defeat the player, though the "step
 height" which allows the player to climb stairs has also been increased by
 about 10x, which will let you walk right on past many obstacles.  The step
 height can be easily increased even further -- just edit the MaxStepHeight
