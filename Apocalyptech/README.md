@@ -137,6 +137,7 @@ of the mods you'll find in here, though:
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
+- **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
 - **No Cryo Penalty** - Removes the player cryo movement speed debuff.
 - **Super Buff: Crader's EM-P5** - Absurdly OP Crader's EM-P5 buffs.
 - **Super Buff: Transformer** - Absurdly OP Transformer shield.
