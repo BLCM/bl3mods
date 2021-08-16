@@ -1,0 +1,56 @@
+###
+### Name: Assorted Character Buffs
+### Author: SpiderLenny
+### Categories: char-operative,char-gunner,char-siren,char-beastmaster,cheat
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###A compilation of various skill tree and COM changes I made when trying to figure out how modding works. 
+###Most are likely heavily unbalanced, but I figured I might as well upload them for giggles.
+###Not all of the changes have been tested current patch, so some might not work, but I'll get to that eventually.
+
+#Unnerfing Commitment
+#Changes Commitment to stack to 10 times, as opposed to the 2 it does post nerf.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/StatusEffect_Operative_DLCSkill_6.StatusEffect_Operative_DLCSkill_6,StackingStrategy,0,,/Game/GameData/StackingStrategy/StackingStrategy_Capped_10.StackingStrategy_Capped_10
+
+#Zane Death Follows Close Buff
+#Increased the kill skill effect bonus to 100%
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DeathFollowsClose_ModBonus,Value,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+#Zane Hustler Buff
+#Makes hustler's crit chance bonus cap near instantly. Likely not very strong due to how fake crits work and the strength of Zane's other COMs.
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Alisma/Gear/ClassMods/Design/Table_CM_Alisma.Table_CM_Alisma,OperativeAlismaClassMod,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,1.0
+
+#Zane Seein Dead Buff
+#Makes Seein Dead proc kill skills on every shot. Probably also not all that useful, since commitment doesn't stack infinitely anymore.
+SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_03,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,1.0
+
+#attempts to buff megavore
+#Increases Megavore's chance to crit to 50%. Fun for playing sniper lottery.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_Ranged_Capstone,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.5
+
+#Moze
+#Increases Short Fuse's chance to activate to 50%. Does seem to work, but not sure how it impacts short fuse's semi-deterministic proc rates.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_ShortFuse,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,0,,0.5
+
+#attempts to buff TTB (amara)
+#Greatly increases the link range on Ties That Bind (from about 2000 to 10000) and slightly increases the damage linked enemies take. The commented out statements don't do anything.
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,WebRadius,Value,0,,(BaseValueConstant=10000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,WebBaseDamageScalar,Value,0,,(BaseValueConstant=0.3,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,WebSecondaryDamageScalar,Value,0,,(BaseValueConstant=0.31,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+#SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Defs/EQS/EQS_Siren_PhaseGrasp_FindAdditionalTarget.EQS_Siren_PhaseGrasp_FindAdditionalTarget[1],DistanceMax,DefaultValue,0,,20000
+#SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Defs/EQS/EQS_Siren_PhaseGrasp.EQS_Siren_PhaseGrasp[1],DistanceMax,DefaultValue,0,,20000
+
+#Deflection Buff
+#Increses deflection's proc chance to 34% per point, with or without phasegrasp active. Should always proc with 3 points. Damage on bounce is unchanged.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Deflection_RicochetChance,Value,0,,(BaseValueConstant=0.34,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Deflection_ActionSkillRicochetChance,Value,0,,(BaseValueConstant=0.34,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+#Torgue Cross promotion
+#Sets TCP proc chance to 20% per point. At 5 points, your explosions should always make Mr. Torgue shed a tear.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_TorgueSelfPromotion,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.2
+
+#Running On Fumes Buff
+#Increases Running on Fumes' duration to 30 seconds.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/Table_Gunner_DLCPassiveConstantValues.Table_Gunner_DLCPassiveConstantValues,DLCSkill13_ActiveTime,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,30
