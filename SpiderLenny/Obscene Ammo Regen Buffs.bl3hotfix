@@ -9,7 +9,7 @@
 ###Made when trying to figure out how ammo works. Massively increases all sources of %ammo regen. Anoint Buffs have not been tested as of yet.
 
 #Ammo Regen Anoint Buffs
-SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_CloneActive_RegenAmmo,GameStage_5_7193729B453E1712D9DF4F8F73B3880E,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_CloneActive_RegenAmmo,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,3.0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_BloodyHarvest_EndGameParts.DataTable_BloodyHarvest_EndGameParts,GPart_TerrorAmmoRegen_T1,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_BloodyHarvest_EndGameParts.DataTable_BloodyHarvest_EndGameParts,GPart_TerrorAmmoRegen_T2,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_BloodyHarvest_EndGameParts.DataTable_BloodyHarvest_EndGameParts,GPart_TerrorAmmoRegen_T3,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.5
