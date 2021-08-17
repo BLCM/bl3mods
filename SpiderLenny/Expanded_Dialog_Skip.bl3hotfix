@@ -7,7 +7,7 @@
 ###
 
 ###
-### 
+### NOTE: DLC 3 seems to break with the mod, so I've disabled it for now. I'll test others to see if they also break.
 ### !!ORIGINAL MOD BY GRIMM! I just expanded it to include DLC and Sidequests. Left the takedowns, arms race, and most dialogue you don't need to wait on.
 ### Some stuff might be missing, as I haven't extensively tested the mod yet.!!
 ### This mod deletes all the dialog from the main quest. This will make the game faster.
@@ -72,7 +72,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Scrip
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Scripted/DialogScript_DLC1_Main_Missions.DialogScript_DLC1_Main_Missions,TimeSlots,0,,()
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Scripted/DialogScript_DLC3_Main_Missions.DialogScript_DLC3_Main_Missions,TimeSlots,0,,()
+#SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Scripted/DialogScript_DLC3_Main_Missions.DialogScript_DLC3_Main_Missions,TimeSlots,0,,()
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Scripted/DialogScript_DLC2_Main_Missions.DialogScript_DLC2_Main_Missions,TimeSlots,0,,()
 
