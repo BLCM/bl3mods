@@ -1,0 +1,25 @@
+###
+### Name: CalmCoolCollected Techspert
+### Version: 1.0.0
+### Author: DexManly
+### Categories: gear-com,char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This mod replaces Really Expensive Jacket with Calm Cool Collected on the Techspert class mod. 
+### The com will only be able to spawn with +1 in the skill and when the mod isn't loaded you will 
+### have ReallyExpensiveJacket instead. If are already have CCC, the health regen shows as +6% instead
+### of +3%.
+###
+### I dont think anyone has ever been excited to use the techspert and I felt that CCC is such a unique
+### and powerful skill. Maybe this will draw some people in to some different buid diversity. Zane has
+### some real competitive coms now...sorry critical mass...not you
+###
+### Special thanks to Grimm for the help on this one.
+###
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Operative/ClassMod_Part_Skill_Operative_ReallyExpensiveJacket.ClassMod_Part_Skill_Operative_ReallyExpensiveJacket:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/CalmCoolCollected/PassiveSkill_Operative_CalmCoolCollected.PassiveSkill_Operative_CalmCoolCollected_C
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Operative/ClassMod_Part_Skill_Operative_ReallyExpensiveJacket.ClassMod_Part_Skill_Operative_ReallyExpensiveJacket:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,runUpScore
