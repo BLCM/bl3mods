@@ -1,0 +1,33 @@
+###
+### Name: Zane The Hunter
+### Version: 1.0.0
+### Author: PHM2D
+### Categories: skill-system, char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+# Commitment Stack 5x
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/StatusEffect_Operative_DLCSkill_6.StatusEffect_Operative_DLCSkill_6,StackingStrategy,0,,/Game/GameData/StackingStrategy/StackingStrategy_Capped_5.StackingStrategy_Capped_5
+
+# Commitment Description Update
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/Passive_OperativeDLC_6.Default__Passive_OperativeDLC_6_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. Zane gains increased [skillbold]Gun Damage[/skillbold] and [skillbold]Action Skill Cooldown Rate[/skillbold]. This effect stacks five times.
+
+# Violent Speed Stack 5x
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/Violent_Speed/StatusEffect_Operative_Violent_Speed_MoveSpeed.StatusEffect_Operative_Violent_Speed_MoveSpeed,StackingStrategy,0,StatusEffectStackingStrategyData_Capped,/Game/GameData/StackingStrategy/StackingStrategy_Capped_5.StackingStrategy_Capped_5
+
+# Violent Speed Description Update
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/Violent_Speed/Passive_Operative_Violent_Speed.Default__Passive_Operative_Violent_Speed_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Zane gains increased [skillbold]Movement Speed[/skillbold] for a few seconds. This effect stacks five times.
+
+# Violent Violence Stack 5x
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/StatusEffect_Operative_ViolentViolence.StatusEffect_Operative_ViolentViolence,StackingStrategy,0,StatusEffectStackingStrategyData_Capped,/Game/GameData/StackingStrategy/StackingStrategy_Capped_5.StackingStrategy_Capped_5
+
+# Violent Violence Description Update
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Zane gains increased [skillbold]Fire Rate[/skillbold] for a few seconds. This effect stacks five times.
+
+# Death Follows Close 50% Bonus
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DeathFollowsClose_ModBonus,Value,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# Death Follows Close 15 Seconds Cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DeathFollowsClose_KillSkillTime,Value,0,,(BaseValueConstant=15.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
