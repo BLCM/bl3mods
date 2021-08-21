@@ -1,0 +1,68 @@
+###
+### Name: No Elemental Penalties/Bonuses
+### 
+### Author: CZ47
+### Categories: element, gameplay
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+###
+### This mod removes all elemental penalties/bonuses (makes everything neutral).
+### Originally made to make testing easier without having to take ele resistances into account.
+### 
+### 
+
+
+##Flesh 
+#Mayhem/TVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh_PT2,RadiationModifier,0,,1.0
+
+#NVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Flesh,RadiationModifier,0,,1.0
+
+
+##Shield
+#Mayhem/TVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield_PT2,RadiationModifier,0,,1.0
+
+#NVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Shield,RadiationModifier,0,,1.0
+
+
+##Armor
+#Mayhem/TVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor_PT2,RadiationModifier,0,,1.0
+
+#NVHM
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,NonelementalModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,CorrosiveModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,CryoModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,FireModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,ShockModifier,0,,1.0
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DataTable_HealthTypeBalance.DataTable_HealthTypeBalance,Armor,RadiationModifier,0,,1.0

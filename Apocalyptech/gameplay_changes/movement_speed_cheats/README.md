@@ -16,6 +16,12 @@ to Iron Bear and FL4K's pets.  There are three variants:
 Changelog
 =========
 
+**v1.1.0** - Aug 16, 2021
+ * Added speedups to:
+   * Ladder climbing/descending speed
+   * Speed while crouched
+   * FFYL movement speed
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 

@@ -28,6 +28,7 @@ of the mods you'll find in here, though:
 
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
+- **Enemy Equips** - A set of mods to alter what kind of gear enemies use.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
   infinite.
 - **Movement Speed Cheats** - Move faster!
@@ -42,6 +43,8 @@ of the mods you'll find in here, though:
 
 - **All Weapons Can Anoint** - Makes it so all weapons (apart from The Shoddy) can have anointments.
 - **Better Maliwan Charge Time** - Improves the charge time on most Maliwan guns
+- **Fabricator Changes** - A collection of mods that makes the Fabricator full-auto, and alters
+  what it fires (Eridium, more Fabricators, or Guns as usual).
 - **Fix Siren COM Blank Parts** - Fixes a (rare) bug with Siren COMs which would cause
   them to have one too few ability parts.
 - **Money Grenade Changes** - Collection of mods which alter the "Money" grenade part to drop things
@@ -105,9 +108,6 @@ of the mods you'll find in here, though:
   given to enemies in Mayhem modes.  Conflicts with Mayhem Level Cheats.
 - **Disable Mayhem Modifiers** - A collection of mods to individually disable each
   Mayhem Modifier, so you can choose which ones you want to show up.
-- **Mayhem Level Cheats** - Hardcodes Easy+Easy+Hard modifiers at all mayhem levels,
-  and sets a flat enemy scaling across all levels as well.  Conflicts with Decreased
-  Mayhem Enemy Scaling.
 - **Mayhem Modifier Nerfs** - Nerfs for various Mayhem modifiers that I wanted to
   be less difficult.
 - **No Mayhem Drop Scaling** - Ordinarily, higher mayhem levels makes drop quality
@@ -137,6 +137,7 @@ of the mods you'll find in here, though:
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
+- **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
 - **No Cryo Penalty** - Removes the player cryo movement speed debuff.
 - **Super Buff: Crader's EM-P5** - Absurdly OP Crader's EM-P5 buffs.
 - **Super Buff: Transformer** - Absurdly OP Transformer shield.
@@ -177,6 +178,8 @@ of the mods you'll find in here, though:
 - **All Event Spawns Active** - Turns on Bloody Harvest, Broken Hearts,
   and Revenge of the Cartels spawn alterations (does not actually enable
   the events themselves)
+- **Event Rewards** - A collection of mods to set the Seasonal Event
+  challenge rewards to the year of your choice.
 - **Expanded Event Spawners** - One mod for each of the three events; will
   expand the areas in which the event spawns will occur.
 - **Fewer Cartel Operatives** - Reduces the number of Cartel operatives
@@ -203,10 +206,10 @@ there's also scripts which populate some Google Sheets that I maintain as well.
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

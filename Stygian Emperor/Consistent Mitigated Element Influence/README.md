@@ -1,6 +1,8 @@
 Consistent & Mitigated Element Influence on Damage
 --------------------------------------------------
-This edit was created by **Stygian Emperor** based on the original mod, *No Elemental Penalties*, by **CZ47**. By default, this reduces elemental penalties & bonuses vs, health, armor, and shields, but does not remove them entirely. It primarily brings TVHM and Mayhem mode in-line with playthrough 1, but shifts the balance subtly to generally make non-elemental and corrosive damage more useful throughout the game.
+This edit was created by **Stygian Emperor** based on the original mod, *No Elemental Penalties*, by **CZ47**. 
+
+By default, this reduces elemental penalties & bonuses vs, health, armor, and shields, but does not remove them entirely. It primarily brings TVHM and Mayhem mode in-line with playthrough 1, but shifts the balance subtly to generally make non-elemental and corrosive damage more useful throughout the game.
 
 I made this setup specifically because I did not enjoy swapping weapons constantly against every single non-boss enemy in higher Mayhem levels, but uploaded it in case anyone else wanted an easy way to mess with these numbers.
 
@@ -24,7 +26,7 @@ Changelog
 ---------
 **v1.0.1:** Made non-elemental damage have the same penalty to armor as other elements, but increased its bonus against flesh by 20% to balance it against cryogenic and radiation damage. Increased corrosive's bonus against armor by 5% to (imperceptibly) further push it toward being actually useful.
 
-**v1.0.2:** Remembered enemies' attacks also use these numbers, so partially reverted non-elemental damage's bonus against flesh to 10% (from 20%), and conversely reduced its penalty to armor back down to 20% (from 25%) to compensate.
+**v1.0.2:** Remembered enemies's attacks also use these numbers, so partially reverted non-elemental damage's bonus against flesh to 10% (from 20%), and conversely reduced its penalty to armor back down to 20% (from 25%) to compensate.
 
 Contact the Author
 ------------------

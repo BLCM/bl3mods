@@ -1,0 +1,305 @@
+###
+### Name: Amara 2.0
+### Version: 4.0.2
+### Author: CZ47
+### Contact: =]#7647
+### Categories: char-siren, char-overhaul, gear-com
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### This is my own take at a char overhaul that is in no way meant to be balanced.
+### I buffed everything a lil too much and added some unnecessary changes.
+### Just for fun :)
+### This overhaul contains my True Melee Amara mod and more.
+### 
+
+
+
+## SKILL BUFFS
+
+# Personal Space general V2
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/PersonalSpace/ConditionalMod_PersonalSpace.ConditionalMod_PersonalSpace,DamageSourceFilter,0,,
+
+# Changing Card description Personal Space
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/PersonalSpace/PassiveSkill_Siren_PersonalSpace.Default__PassiveSkill_Siren_PersonalSpace_C,AbilityDescription,0,,Amara deals [skillbold]Bonus Damage[/skillbold] based on the distance to her target. The closer the target, the greater the bonus.
+
+# Combobreaker 20% > 25%
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill13_ResetChance,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.25
+
+# BBE Stack duration 8s > 15s
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill16_StackDuration,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,15.0
+
+# Clear the Mind duration 8s > 12s
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill7_ActiveTime,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,12.0
+
+# Go with the flow movespeed 3% > 7%
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill4_MoveSpeed,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.07
+
+# Go with the flow gundamage 7% > 10%
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill4_WeaponDamage,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.10
+
+# Lowering Do unto others Cooldown 4s
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,DoUntoOthers_Cooldown,Value,0,,(BaseValueConstant=4.0)
+
+# Buffing Do unto others
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,DoUntoOthersDamage,Level,0,,(BaseValueConstant=1.5,DataTableValue=(DataTable=None,RowName="",ValueName=""))
+
+# Buffing Vigor Movespeed 3.33% > 5% (activates on kill, regardless how the enemy died)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Vigor_MoveSpeed,Value,0,,(BaseValueConstant=0.05,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+# Buffing Gundamage Dread 15% > 30%
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Dread/StatusEffect_Siren_Dread.StatusEffect_Siren_Dread,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.15)
+
+# BUFFING SAMSARA REGEN (inactive)
+# SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Samsara_Regen,Value,0,,(BaseValueConstant=0.02,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+# Buffing Samsara Gundamage Values
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Samsara_GunDamage,Value,0,,(BaseValueConstant=0.0333)
+
+# Buffing Forceful Expression Bonus 18% > 40% and making it apply to everything
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Channeler_BonusDamage,Multiplier,0,,(BaseValueConstant=0.4,DataTableValue=(DataTable=None,RowName="",ValueName=""))
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Corrosive.ConditionalDamage_SirenEmpowered_Corrosive,ConditionalDamage_SirenEmpowered_Corrosive,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Cryo.ConditionalDamage_SirenEmpowered_Cryo,ConditionalDamage_SirenEmpowered_Cryo,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Incendiary.ConditionalDamage_SirenEmpowered_Incendiary,ConditionalDamage_SirenEmpowered_Incendiary,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Shock.ConditionalDamage_SirenEmpowered_Shock,ConditionalDamage_SirenEmpowered_Shock,DamageSourceFilter,0,,
+
+
+
+## SKILL CHANGES
+
+# Fixing Samsara Missing Health% to Max Health%
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/StatusEffect_Siren_Samsara.StatusEffect_Siren_Samsara,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/PassiveSkill_Siren_Samsara.Default__PassiveSkill_Siren_Samsara_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
+
+# Fixing Tempest Shock 40% > 50%
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Tempest/StatusEffect_Siren_Tempest_DA.StatusEffect_Siren_Tempest_DA,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,,0,(DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="ElementalEffect_Damage",ValueName="FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A"))
+
+# Clear the Mind now grants Cryo immunity as well.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/Passive_Siren_DLCSkill_7.Default__Passive_Siren_DLCSkill_7_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Amara [skillbold]ignores enemies Elemental Damage Resistance[/skillbold] for a short time. This does not affect [skillbold]Elemental Immunity[/skillbold].<br><br>Additionally, Amara gains [skillbold]Cryo Immunity[/skillbold] for the duration.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/DLCSkill_07/StatusEffect_Siren_DLCSkill_7.StatusEffect_Siren_DLCSkill_7,AttributeEffects,0,,((AttributeData=GbxAttributeData'"/Game/PlayerCharacters/_Shared/_DLC/Ixora/Attributes/Att_DLC_ShouldIgnoreEnemyResistance.Att_DLC_ShouldIgnoreEnemyResistance"',ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeData=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Cryo.Att_DamageReceiverMultiplier_Cryo"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.0)),(AttributeData=GbxAttributeData'"/Game/GameData/StatusEffects/Cryo/Att_CryoIdleDelay.Att_CryoIdleDelay"',ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)))
+
+#Changing Violent Tapestry into giving weapondamage and cooldown per stack
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/StatusEffect_Siren_ViolentTapestry_DA.StatusEffect_Siren_ViolentTapestry_DA,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Siren/Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance.Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/StatusEffect_Siren_ViolentTapestry_DA.StatusEffect_Siren_ViolentTapestry_DA,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/StatusEffect_Siren_ViolentTapestry_DA.StatusEffect_Siren_ViolentTapestry_DA,AttributeEffects.AttributeEffects[2].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/StatusEffect_Siren_ViolentTapestry_DA.StatusEffect_Siren_ViolentTapestry_DA,AttributeEffects.AttributeEffects[3].AttributeData,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/StatusEffect_Siren_ViolentTapestry_DA.StatusEffect_Siren_ViolentTapestry_DA,AttributeEffects.AttributeEffects[4].AttributeData,0,,
+
+# Adjusting Violent Tapestry Card
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/PassiveSkill_Siren_ViolentTapestry.Default__PassiveSkill_Siren_ViolentTapestry_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage
+
+# Adjusting Text on Violent Tapestry Card
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/PassiveSkill_Siren_ViolentTapestry.Default__PassiveSkill_Siren_ViolentTapestry_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Cooldown Rate, Gun Damage:[/skillbold] $VALUE$ per stack consumed
+
+# Updating Violent Tapestry's Full Skill Description 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/ViolentTapestry/PassiveSkill_Siren_ViolentTapestry.Default__PassiveSkill_Siren_ViolentTapestry_C,AbilityDescription,0,,Applying a [skillbold]Status Effect[/skillbold] grants Amara a stack of [skillbold]Rush[/skillbold]. Activating her action skill consumes all [skillbold]Rush[/skillbold] stacks.<br><br>For every stack of Rush consumed, Amara's [skillbold]Cooldown Rate and Gun Damage[/skillbold] is temporarily increased.
+
+# Changing Restless from cooldown to bonus projectiles %
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Restless/StatusEffect_Siren_Restless_DA.StatusEffect_Siren_Restless_DA,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot
+
+# Adjusting Restless Card
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Restless/PassiveSkill_Siren_Restless.Default__PassiveSkill_Siren_Restless_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot
+
+# Adjusting Text on Restless Card
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Restless/PassiveSkill_Siren_Restless.Default__PassiveSkill_Siren_Restless_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Bonus Projectiles:[/skillbold] $VALUE$
+
+# Updating Restless' Full Skill Description 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Restless/PassiveSkill_Siren_Restless.Default__PassiveSkill_Siren_Restless_C,AbilityDescription,0,,Amara's weapons gain [skillbold]Bonus Projectiles[/skillbold].
+
+# Changing Restless 5% > 10% per stack
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,CooldownRate,FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A,0,,0.10
+
+# Making Wrath V1
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/StatusEffect_Siren_Wrath.StatusEffect_Siren_Wrath,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/StatusEffect_Siren_Wrath_Bonus.StatusEffect_Siren_Wrath_Bonus,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
+
+# Adjusting Cards for V1 Changes
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/Passive_Siren_Wrath.Default__Passive_Siren_Wrath_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/Passive_Siren_Wrath.Default__Passive_Siren_Wrath_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier
+
+# Adjusting Cards for V1 Changes
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/Passive_Siren_Wrath.Default__Passive_Siren_Wrath_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Bonus Damage:[/skillbold] $VALUE$
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/Passive_Siren_Wrath.Default__Passive_Siren_Wrath_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Bonus Damage:[/skillbold] $VALUE$ after action skill use
+
+# Updating Full Skill Description 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/RuinTree/Wrath/Passive_Siren_Wrath.Default__Passive_Siren_Wrath_C,AbilityDescription,0,,Amara gains increased [skillbold]Damage[/skillbold]. This effect is [skillbold]increased[/skillbold] after she activates her action skill for a few seconds."
+
+# Buffing Wrath Damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Wrath_DamageBonus,Value,0,,(BaseValueConstant=0.0833)
+
+# Making Jabcross give AS Cooldown Rate instead of 15% Gundamage omegalul
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/BareKnuckle/StatusEffect_Siren_BareKnuckle_DA.StatusEffect_Siren_BareKnuckle_DA,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Siren/Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance.Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance
+
+# Adjusting Jabcross Card for AS Cooldown Rate
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/BareKnuckle/PassiveSkill_Siren_BareKnuckle.Default__PassiveSkill_Siren_BareKnuckle_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,Attribute,0,,/Game/PlayerCharacters/_Shared/_Design/Attributes/Siren/Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance.Att_ActionSkill_Siren_SkillCooldownRate_PhaseTrance
+
+# Adjusting Jabcross Card for AS Cooldown Rate changes
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/BareKnuckle/PassiveSkill_Siren_BareKnuckle.Default__PassiveSkill_Siren_BareKnuckle_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Action Skill Cooldown Rate:[/skillbold] $VALUE$
+
+# Updating Jabcross Full Skill Description 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/BareKnuckle/PassiveSkill_Siren_BareKnuckle.Default__PassiveSkill_Siren_BareKnuckle_C,AbilityDescription,0,,Whenever Amara deals melee damage to an enemy, she gains increased [skillbold]Action Skill Damage[/skillbold] and increased [skillbold]Action Skill Cooldown Rate[/skillbold] for a few seconds.
+
+# Buffing Jabcross AS Cooldown Rate Value
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,JabCross_GunDamage,Value,0,,(BaseValueConstant=0.15)
+
+
+# Making Find your center mult 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/FindYourCenter/StatusEffect_Siren_FindYourCenter.StatusEffect_Siren_FindYourCenter,AttributeEffects.AttributeEffects[0].ModifierType,0,,PreAdd
+
+
+# Removing cooldown from Blitz
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Blitz_CooldownTime,Value,0,,(BaseValueConstant=0,DataTableValue=None,BaseValueScale=1.0)
+
+# Updating Full Skill Description 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Overrun/PassiveSkill_Siren_Overrun.Default__PassiveSkill_Siren_Overrun_C,AbilityDescription,0,,[skillbold]Melee Override[/skillbold]. Press {OakPC_Melee} while aiming at an enemy to make Amara dash a short distance forward and perform a special melee strike, dealing [skillbold]Elemental Melee Damage[/skillbold].
+
+# Updating Full Skill Description #2
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Overrun/PassiveSkill_Siren_Overrun.Default__PassiveSkill_Siren_Overrun_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+
+
+
+## ACTION SKILL BUFFS
+
+# Decrease Phasegrasp cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,15.0
+
+# Decrease Eternal fist cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Essence,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,20.0
+
+# Decrease Fist over matter cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Force,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,16.0
+
+# Increase Ties that Bind cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Web,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,26.0
+
+
+# Increase Phaseslam damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.0
+
+# Decrease Phaseslam cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,20.0
+
+
+# Increase Downfall damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Barrage,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.5
+
+# Decrease Downfall cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Barrage,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,20.0
+
+
+# Increase Fracture damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Fracture,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,2.75
+
+# Decrease Fracture cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Fracture,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,22.0
+
+
+
+# Increase Phase Cast damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.2
+
+# Decrease Phase Cast cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,16.0
+
+
+# Increase Phase Cast Tandava damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_100Fists,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.3
+
+# Decrease Phase Cast Tandava cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_100Fists,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,24.0
+
+
+# Increase Phase Cast Reverberation damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_CausalChain,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,2.0
+
+# Decrease Phase Cast Reverberation cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_CausalChain,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,24.0
+
+
+# Increase Phase Cast Deliverance damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_Schism,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,3.6
+
+# Decrease Phase Cast Deliverance cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_Schism,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,20.0
+
+# Buffing projectiles spawned off Deliverance
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Cast_Schism_ProjectileScalar,Value,0,,(BaseValueConstant=1,DataTableValue=None,BaseValueScale=1.0)
+
+
+# Decrease Phaseflare cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack1,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,30.0
+
+# Decrease Glow Up cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack2,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,20.0
+
+# Decrease Light Fantastic cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack5,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,26.0
+
+# Decrease Shooting Star cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack7,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,32.0
+
+
+# Reverting Expedite to its pre-patch state (the augment works, but Ascendant doesn't do anything for it yet)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/StatusEffects/StatusEffect_Siren_Quicken.StatusEffect_Siren_Quicken,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues"',RowName="Quicken_CooldownRatePerKill",ValueName="Base_17_28B25EC8493D1EB6C2138A962F659BCD"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+
+# Removing penalties from augments
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_Inevitable,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_MalignantAura,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_Paralysis,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_Paralysis,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_PunchDrunk,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_PunchDrunk,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+
+# Adjusting cards for augments changes
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_Allure.Augment_PhaseTrance_Effect_Allure:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_BrightStar.Augment_PhaseTrance_Effect_BrightStar:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_Glamour.Augment_PhaseTrance_Effect_Glamour:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_Glamour.Augment_PhaseTrance_Effect_Glamour:UIStatData_OakPassiveAbilityAttributeInitializer_1,FormatText,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_StillnessOfMind.Augment_PhaseTrance_Effect_StillnessOfMind:UIStatData_OakPassiveAbilityAttributeInitializer_0,FormatText,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_StillnessOfMind.Augment_PhaseTrance_Effect_StillnessOfMind:UIStatData_OakPassiveAbilityAttributeInitializer_1,FormatText,0,,
+
+# Updating Full Skill Description for augments changes
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_StillnessOfMind.Augment_PhaseTrance_Effect_StillnessOfMind,Description,0,,Enemies damaged by Amara's [actionskill]Action Skill[/actionskill] become [skillbold]phaselocked[/skillbold] until they are damaged or the duration ends.<br><br>If Amara targets an enemy with [actionskill]Phasegrasp[/actionskill], enemies near the [actionskill]Grasped[/actionskill] target are [skillbold]phaselocked[/skillbold].
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Phasetrance/Components/Effect/Augment_PhaseTrance_Effect_Glamour.Augment_PhaseTrance_Effect_Glamour,Description,0,,Enemies damaged by Amara's action skill become [skillbold]confused[/skillbold] and temporarily attack their allies.<br><br>If Amara targets an enemy with [actionskill]Phasegrasp[/actionskill], enemies near the [actionskill]Grasped[/actionskill] target are [skillbold]confused as well[/skillbold].
+
+
+# Buffing All PhaseGrasp Immune damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Grasp_ImmuneDamage,Level,0,,(BaseValueConstant=1.5,DataTableValue=(DataTable=None,RowName="",ValueName=""))
+
+# Setting Fist over matter's Immune damage to 0 as the AS activates on targets that can't be lifted regardless
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Grasp_ImmuneDamage_Force,Level,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""))
+
+# Buffing Fist over matter's base damage
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Force,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,2.0
+
+# Buffing Revelation
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Nova_DamageCalc,Level,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""))
+
+
+
+## CLASSMOD CHANGES
+
+# Changing Stone COM chance to stack rush on hit to 50%
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/Table_CM_Hib.Table_CM_Hib,SirenHibiscusClassMod,Value_C_6_3F98C9DC474EDF4757401A9211583E20,0,,0.5
+
+# Changing Stone COM damage reduction to 6% per stack
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/Table_CM_Hib.Table_CM_Hib,SirenHibiscusClassMod,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.06
+
+# Breaker increased damage reduction (60%)
+SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/DataTable_CM_Siren_Unique.DataTable_CM_Siren_Unique,Unique_03,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,-1.5
+
+# Extending Kensei's duration from 6s to 12s
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/Table_CM_Ixora.Table_CM_Ixora,SirenL01,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,12.0
+
+# Buffing Nimbus Cloud, changing tickrate, no more selfdamage, increased radius
+#SparkPatchEntry,(1,2,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/DataTable_CM_Siren_Unique.DataTable_CM_Siren_Unique,Unique_05,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,250000.0 (this doesn't do anything)
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,DamageInterval,0,,0.01
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,MaxDamageDuration,0,,10
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/Damage_Siren_ClassMod_Unique05.Default__Damage_Siren_ClassMod_Unique05_C,bCanHurtSelf,0,,false
+
+# Changing phasezerker to synergize well with the other changes: increasing status effect chance and damage with rush stacks
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/StatusEffect_Siren_ClassMod_Unique04.StatusEffect_Siren_ClassMod_Unique04,AttributeEffects.AttributeEffects[0].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_StatusEffectDamage.Att_Weapon_StatusEffectDamage
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/StatusEffect_Siren_ClassMod_Unique04.StatusEffect_Siren_ClassMod_Unique04,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Weapons/Att_Weapon_StatusEffectChance.Att_Weapon_StatusEffectChance
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_04/UI/UIStat_CM_SR_Unique_04_Desc.UIStat_CM_SR_Unique_04_Desc,FormatText,0,,On [skill]Action Skill Used[/skill], Amara gains her [skill]Max Rush Stack[/skill] count, but they decay over time. Amara gains 3% [skill]Status Effect Damage[/skill] and 3% [skill]Status Effect Chance[/skill] based on the number of [skill]Rush Stacks[/skill].<br>Max Rush Stacks: [skill]$VALUE$[/skill]

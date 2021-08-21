@@ -32,6 +32,10 @@ don't care about overt cheating, that'd be the quicker option.
 Changelog
 =========
 
+**v1.2.1** - Jul 2, 2021
+ * `None` variant now blocks dropping of seasonal event cosmetics from
+   Joey Ultraviolet, Captain Haunt, Loot Ghosts, and Loot Hearts.
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 

@@ -54,6 +54,18 @@ weren't actually intended to be mods themselves.
   won't be able to harm you if they switch.  It's a bit weird.  Anyway, was kind
   of hoping to make a gun which would just generate more and more enemies
   against you, but the Team thing got in my way.  So a Claptrap gun it remains.
+- `trivial_vc.txt` - Silly little mod to reduce the required quantity of Vault
+  Card challenge targets to 1.  Don't really feel like officially making it a mod,
+  but it *does* seem to work just fine.
+- `droughts_eridium_moves.txt` - Similar to my mod-testing Droughts Chest Moves
+  mod, this moves all small eridium piles in The Droughts to near the Highway Fast
+  Travel location, and converts them all to the always-visible type.  Works fine,
+  but it's pretty custom-purpose so it didn't seem worth making into an official
+  mod, even as a "resource" type.
+- `moodlock_*.txt` - Sets NPC dialogue "mood" to the specified value, which just
+  affects their facial expressions.  I was hoping it would be more amusing than
+  it is, but in the end it's kind of "meh," so I'm tossing it in here rather than
+  doing a "real" release.
 
 ## Deprecated/Testing Mods
 
@@ -67,10 +79,6 @@ weren't actually intended to be mods themselves.
 - `datatable.txt` - Was used to test out how DataTable values interact with
   the rest of the BVC tuple - turns out that they probably override everything
   except for BVSC, which gets multiplied at the end as per usual.
-- `free_fabricator.txt` - This actually doesn't do what it *says* it does;
-  it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
-  Useful!  (Actually I suppose it *could* be useful to give Eridium to
-  other co-op players.)
 - `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
   set the Takedown to scale to the number of players.  This'll let you
   keep it that way forever, if you want.  Turns out that GBX decided
@@ -96,6 +104,25 @@ weren't actually intended to be mods themselves.
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
+- `mayhem_level_cheats` - Some old Mayhem Mode cheats that I was using for
+  quite awhile; namely restricting enemy scaling to 2x and forcing specific
+  modifier configs for each level.  Since releasing my Mayhem Mode Configurator,
+  though, this mod's kind of obsolete, and I grew to not really want this
+  exact config anyway.  So, moving this over here as a deprecated mod.
+
+I had a collection of timed-event-enabling mods publicly available prior to
+the availability of B3HM as a modding tool.  Gearbox asked us to not do mods
+which enabled those events, though, since they were still using them as
+marketing tools, so we removed 'em from the repo.  As of the patch on June
+24, 2021, though, GBX has added the ability to enable them at will directly
+from the main menu (which I'd been expecting them to do eventually - yay!).
+Anyway, I'm moving these mods back in here just for my own historical
+packrattery, but they're not really useful anymore (and are possibly/probably
+not even functional, given the new event framework).
+
+- `timed_event_enable_bloody_harvest` - The event-enabler mod for 2019+2020 Bloody Harvests
+- `timed_event_enable_broken_hearts` - The event-enabler mod for 2020+2021 Broken Heartses
+- `timed_event_enable_cartels` - The event-enabler mod for 2020+2021 Cartelses
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least
@@ -201,14 +228,19 @@ don't look at these thinking that they're any good.  :)
   character).  As with my Better Vehicles attempt, though, the relevant objects
   get loaded dynamically and I've never figured out how to trigger a hotfix for
   that.
+- `faster_vladof_mode_change` - This is sort of only half-failed...  Getting the
+  mode-switch animations to complete faster is pretty easy, but I cannot for the
+  life of me get the animations to *look* decent, and it bothers me enough that
+  I'm not willing to "officially" release this thing.  Essentially the same problem
+  that I have with the vehicle animations in my Mega Timesaver XL mod.  Pffffff.
 
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

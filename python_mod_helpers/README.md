@@ -353,7 +353,8 @@ information.
 License
 =======
 
-Both bl3hotfixmod and bl3data are licensed under the
-[GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
+As of 2021-08-15, Both bl3hotfixmod and bl3data are licensed under the
+[3-clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
+Prior to that date, they were licensed under [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](COPYING.txt) for the full text of the license.
 

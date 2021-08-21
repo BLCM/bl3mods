@@ -19,6 +19,7 @@ all items from:
 * DLC4 (Psycho Krieg and the Fantastic Fustercluck)
 * DLC5 (Designer's Cut)
 * DLC6 (Director's Cut) and Vault Card #1
+* Vault Card #2
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will
@@ -35,6 +36,9 @@ added into the loot pool properly.
 
 Changelog
 =========
+
+**v1.5.0** - Aug 6, 2021
+ * Updated with Vault Card 2 items
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header

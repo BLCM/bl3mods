@@ -15,6 +15,8 @@
 ### you're currently playing.  Theoretically this should work just fine
 ### in multiplayer, though I haven't tested it at all in that mode.
 ###
+### This does *not* affect specific gear drops from named enemies/bosses!
+###
 
 # Yep, this single statement should do it!  Rather nicer than the BL2/TPS versions.
 # Default weighting: 0.15 (the character Atts add 0.85 when the char is present)

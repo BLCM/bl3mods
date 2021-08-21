@@ -1,4 +1,4 @@
-modlist.txt
-modlist.json
+modlist*.txt
+modlist*.json
 *.swp
 __pycache__

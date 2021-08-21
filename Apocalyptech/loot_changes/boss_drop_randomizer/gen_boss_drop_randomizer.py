@@ -39,7 +39,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.1',
+        v='1.3.2',
         cats='enemy-drops, randomizer',
         )
 
@@ -134,7 +134,8 @@ for (label, char_name, pools) in sorted([
         ('Buttmunch', 'BPChar_SkagButtmunch', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Buttmunch', [AR]),
             ]),
-        ('Captain Haunt', 'BPChar_HarvestBoss', [
+        # Using MatchAll for this on account of Loot Ghosts, who don't have thier own BPChar (they're projectiles)
+        ('Captain Haunt (and Loot Ghosts)', 'MatchAll', [
             ('/Game/PatchDLC/BloodyHarvest/GameData/Loot/ItemPool_BloodyHarvest_Legendary', [SG, SR, SH, GM]),
             ]),
         ('Captain Thunk', 'BPChar_TinkRare02', [
@@ -354,6 +355,11 @@ for (label, char_name, pools) in sorted([
             ]),
         ('Loot Enemies (various)', 'MatchAll', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_Loot_Enemies', [None, None, None, None, None, HW]),
+            ]),
+        # Loot Hearts are a projectile, and don't have their own BPChar
+        ('Loot Hearts', 'MatchAll', [
+            ('/Game/PatchDLC/EventVDay/GameData/Challenges/ChallengeRewards/ItemPool_VDay_Weapon_PolyAim', [SM]),
+            ('/Game/PatchDLC/EventVDay/GameData/Challenges/ChallengeRewards/ItemPool_VDay_Weapon_WeddingInvitation', [SR]),
             ]),
         ('Lt. Preston', 'BPChar_HeavyFootstepsOfGiants', [
             ('/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_LtPreston', [CM, PS]),

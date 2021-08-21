@@ -1,0 +1,31 @@
+###
+### Name: Custom Loader Names
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: bugfix, char-beastmaster, text
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### Allows you to customize Loaders' names.
+### Change "PET NAME X" into whatever you'd like.
+### Want coloured text or even special icons for Pet Names (or any strings I believe for modders)? 
+### Use this sheet: https://docs.google.com/spreadsheets/d/1ypRJUv0Fh_T9dsUqnh3uN9KzWW9z5pJ8B4MlqJf8m78/edit#gid=0
+###
+### Format: [tagname]PET NAME[/tagname]
+### Example1: [flavor]PET NAME 1[/flavor]
+### Example2: [EridiumIcon]PET NAME 2
+### 
+### Shoutout to Apocalyptech and FromDarkHell for finding these UI Tags!
+### 
+
+# ION LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_Evo1_IONLoader.UIName_PetLoader_Evo1_IONLoader,DisplayName,0,,[ImpactIcon][ImpactIcon][ImpactIcon]
+
+# BUL LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_BULLoader.UIName_PetLoader_BULLoader,DisplayName,0,,[flavor]PET NAME 2[/flavor]
+
+# WAR LOADER
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/Character/UIName_PetLoader_Evo2_WARLoader.UIName_PetLoader_Evo2_WARLoader,DisplayName,0,,[EridiumIcon]PET NAME 3

@@ -1,0 +1,19 @@
+###
+### Name: Melee Amara Adjustments
+### Author: Freezer
+### Version: 1.0
+### Categories: char-siren, skill-system
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Buffs Blitz Distance and Combo Breaker proc chance
+###
+
+# Buffing Blitz Distance
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Blitz_TravelDistance,Value,0,,(BaseValueConstant=15,DataTableValue=None,BaseValueAttribute=None,BaseValueScale=1.0)
+
+# Buffing Combo Breaker proc chance
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,DLCSkill13_ResetChance,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,0.50

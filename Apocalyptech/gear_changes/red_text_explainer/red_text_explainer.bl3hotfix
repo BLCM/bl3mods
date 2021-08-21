@@ -1,6 +1,6 @@
 ###
 ### Name: Red Text Explainer
-### Version: 1.3.1
+### Version: 1.4.0
 ### Author: Apocalyptech
 ### Contact: https://apocalyptech.com/contact.php
 ### Categories: qol, gear-general
@@ -1104,4 +1104,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/U
 
 # Ringer / The Big Ringer / Dead Ringer
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/UIStat_RedText_Ringer.UIStat_RedText_Ringer,Text,0,,[Flavor]Obviously you're not a golfer.[/Flavor] (all effects on card)
+
+# Gold Rush
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/UIStat_RedText_GoldRush.UIStat_RedText_GoldRush,Text,0,,[Flavor]Pay dirt.[/Flavor] (also buffs reload speed, max 20 stacks)
+
+# Troubleshooter
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troubleshooter/UIStat_RedText_Troubleshooter.UIStat_RedText_Troubleshooter,Text,0,,[Flavor]Tickles your fancy.[/Flavor] (element-switching orbs ricochet)
+
+# Pyroburst
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst.UIStat_RedText_Pyroburst,Text,0,,[Flavor]KEKW[/Flavor] (after impact, bounces 5 times while spawning homing elemental orbs)
 

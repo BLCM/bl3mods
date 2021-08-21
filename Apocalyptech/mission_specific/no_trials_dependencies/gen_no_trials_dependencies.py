@@ -42,7 +42,7 @@ mod = Mod('no_trials_dependencies.bl3hotfix',
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='quest-changes',
+        cats='quest-changes, trials',
         )
 
 mission_dep = Mod.get_full_cond('/Game/Missions/Plot/Mission_Ep01_ChildrenOfTheVault.Mission_Ep01_ChildrenOfTheVault_C', 'Mission')

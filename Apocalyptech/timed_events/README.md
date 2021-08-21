@@ -6,6 +6,8 @@ See the individual mod folders for full READMEs.
 - **All Event Spawns Active** - Turns on Bloody Harvest, Broken Hearts,
   and Revenge of the Cartels spawn alterations (does not actually enable
   the events themselves)
+- **Event Rewards** - A collection of mods to set the Seasonal Event
+  challenge rewards to the year of your choice.
 - **Expanded Event Spawners** - One mod for each of the three events; will
   expand the areas in which the event spawns will occur.
 - **Fewer Cartel Operatives** - Reduces the number of Cartel operatives
@@ -18,10 +20,10 @@ See the individual mod folders for full READMEs.
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

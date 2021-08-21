@@ -1,23 +1,31 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
-# Borderlands 3 Hotfix Modding Library is free software: you can redistribute it
-# and/or modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation, either version 3 of
-# the License, or (at your option) any later version.
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of the development team nor the
+#       names of its contributors may be used to endorse or promote products
+#       derived from this software without specific prior written permission.
 #
-# Borderlands 3 Hotfix Modding Library is distributed in the hope that it will
-# be useful, but WITHOUT ANY WARRANTY; without even the implied
-# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with Borderlands 3 Hotfix Modding Library.  If not, see
-# <https://www.gnu.org/licenses/>.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL CJ KUCERA BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import os
 import sys
@@ -729,9 +737,21 @@ class ItemPool(object):
     Some abstraction to easily build up ItemPools.
     """
 
-    def __init__(self, pool_name):
+    def __init__(self, pool_name, pools=[], balances=[]):
         self.pool_name = pool_name
         self.balanceditems = []
+
+        # Populate initial values if specified
+        for pool in pools:
+            if type(pool) == tuple:
+                self.add_pool(*pool)
+            else:
+                self.add_pool(pool)
+        for balance in balances:
+            if type(balance) == tuple:
+                self.add_balance(*balance)
+            else:
+                self.add_balance(balance)
 
     def add_pool(self, pool_name, weight=None):
         """

@@ -8,17 +8,14 @@ appearing alongside each other.  It *is* possible for an enemy to be both
 haunted *and* a Cartel operative!
 
 This mod does not require that the associated events be actually active, and
-it does *not* unlock the missions themselves (or the event-specific maps).
-
-Note that each of the timed events have a predefined set of areas in which
-their effects are allowed to spawn.  No DLCs or Takedown areas will spawn
-Haunted enemies, for instance, since Bloody Harvest was released prior to
-that point (though the upcoming 2020 re-release of Bloody Harvest might
-address that).  If you'd like these spawns to be available *everywhere*,
-use my Expanded Event Spawners mods.
+it does *not* unlock the missions themselves (or the event-specific maps).  You'll
+have to enable the event of your choice from the main menu for that.
 
 Changelog
 =========
+
+**v1.1.0** - Jul 4, 2021
+ * Fixed to work again after June 24th's Endless Seasonal Events update
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header

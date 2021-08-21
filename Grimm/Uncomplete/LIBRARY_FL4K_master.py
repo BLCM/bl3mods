@@ -1,0 +1,1016 @@
+Gamma_Burst=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill3_LightningTrap/ActionSkill/ActionSkill_PetEnrage.Default__ActionSkill_PetEnrage_C'            
+        ],
+        [
+            "You open a [actionskill]Rift[/actionskill] at a target location, teleporting your [red]Pet[/red] which deals [skillbold]Radiation Damage[/skillbold] to nearby enemies and granting it immortality for the duration. <br>Additionally, your [red]Pet[/red] becomes irradiated, growing in size and dealing bonus [skillbold]Radiation Damage[/skillbold] when it attacks.<br>Using [actionskill]Gamma Burst[/actionskill] while your [red]Pet[/red] is downed or dead will [skillbold]Revive[/skillbold] it at the targeted location with 30% of its health, but will double [skillbold]Action Skill Cooldown Time[/skillbold]."
+        ]
+    ],
+    [   #Added Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'
+        ],
+        [
+            'Skill_PetEnrage'            
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            1.2
+        ]
+    ],
+    [   #Explosion Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'
+        ],
+        [
+            'Skill_PetEnrage'            
+        ],
+        [
+            'Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453'
+        ],
+        [
+            3.0
+        ]
+    ]
+]
+
+Gamma_Burst_A1=[
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill3_LightningTrap/Augments/Augment_Beastmaster_Enrage_Mod2'            
+        ],
+        [
+            "While [actionskill]Gamma Burst[/actionskill] is active, your [red]Pet[/red] is surrounded by a [skillbold]Radiation Aura[/skillbold], constantly damaging all nearby enemies."
+        ]
+    ],
+    [   #Aura Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'
+        ],
+        [
+            'Skill_PetEnrage_Mod2'            
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.08
+        ]
+    ]
+]
+
+Gamma_Burst_A2=[
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill3_LightningTrap/Augments/Augment_Beastmaster_Enrage_Mod1'            
+        ],
+        [
+            "For the duration of [actionskill]Gamma Burst[/actionskill], you gain[skillbold]Damage[/skillbold]."
+        ]
+    ]
+]
+
+Gamma_Burst_A3=[
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill3_LightningTrap/Augments/Augment_Beastmaster_Enrage_Mod3'            
+        ],
+        [
+            "When you or your [red]Pet[/red] kill an enemy while [actionskill]Gamma Burst[/actionskill] is active, the duration of [actionskill]Gamma Burst[/actionskill] is extended and your [red]Pet[/red] gains [skillbold]Damage[/skillbold]. These effects can stack up to 5 times."
+        ]
+    ]
+]
+
+Gamma_Burst_A4=[
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill3_LightningTrap/Augments/Augment_Beastmaster_Enrage_Mod4'            
+        ],
+        [
+            "After using [actionskill]Gamma Burst[/actionskill], the [actionskill]Rift[/actionskill] remains for the duration of the skill. While standing near the [actionskill]Rift[/actionskill], you and your allies rapidly [skillbold]Regenerate Health[/skillbold]."
+        ]
+    ]
+]
+
+Base_Skag=[
+    [
+        [
+            'AttributeEffects'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Base'            
+        ],
+        [
+            """
+                (
+                    (
+                        AttributeData=GbxAttributeData'\"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage\"',
+                        ModifierType=EGbxAttributeModifierType::Scale,
+                        BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=None,BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,BaseValueScale=0.2)
+                    )
+                )
+            """
+        ]
+    ],
+    [
+        [
+            'MaxSprintSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag.Default__BPChar_PetSkag_C:CharMoveComp'            
+        ],
+        [
+            '(Value=900.0,BaseValue=900.0)'
+        ]
+    ],
+    [
+        [
+            'MaxWalkSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag.Default__BPChar_PetSkag_C:CharMoveComp'            
+        ],
+        [
+            '(Value=650.0,BaseValue=650.0)'
+        ]
+    ],
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag'            
+        ],
+        [
+            "You are joined by a loyal [red]Skag[/red] companion. While accompanied by the [red]Skag[/red], your [skillbold]Gun Damage[/skillbold] is increased.<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [red]Skag[/red] to vomit acid at enemies dealing [skillbold]Corrosive Damage[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag.Augment_Pet_Skag:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            "[skillbold]Gun Damage:[/skillbold] $VALUE$"
+        ]
+    ],
+    [
+        [
+            'Attribute'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag.Augment_Pet_Skag:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            "/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"
+        ]
+    ],
+    [
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'Skag_Vomit'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            1.8
+        ]
+    ]
+]
+
+Evo1_Skag=[
+    [
+        [
+            'AttributeEffects'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo2'            
+        ],
+        [
+            """
+                (
+                    (
+                        AttributeData=GbxAttributeData'\"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation\"',
+                        ModifierType=EGbxAttributeModifierType::Scale,
+                        BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=None,BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,BaseValueScale=0.2)
+                    )
+                )
+            """
+        ]
+    ],
+    [
+        [
+            'MaxSprintSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C:CharMoveComp'            
+        ],
+        [
+            '(Value=900.0,BaseValue=900.0)'
+        ]
+    ],
+    [
+        [
+            'MaxWalkSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C:CharMoveComp'            
+        ],
+        [
+            '(Value=650.0,BaseValue=650.0)'
+        ]
+    ],
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass'            
+        ],
+        [
+            "Your [red]Skag[/red] evolves into a [red]Eridian Skag[/red]. While accompanied by the [red]Eridian Skag[/red], your [skillbold]Radiation Damage[/skillbold] is increased.<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [red]Eridian Skag[/red] to pull nearby enemies in by generating a [skillbold]Singularity[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            '[skillbold]Radiation Damage:[/skillbold] $VALUE$'
+        ]
+    ],
+    [
+        [
+            'Attribute'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            '/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation'
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_Badass.Augment_Pet_Skag_Badass:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            ''
+        ]
+    ],
+    [
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'Skag_Vortex'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            1.5
+        ]
+    ]
+]
+
+Evo2_Skag=[
+    [
+        [
+            'AttributeEffects'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/StatusEffects/Status_Beastmaster_PetSkagBuff_Evo1'            
+        ],
+        [
+            """
+                (
+                    (
+                        AttributeData=/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier,
+                        ModifierType=EGbxAttributeModifierType::Scale,
+                        BaseModifierValue=(BaseValueConstant=1.0,DataTableValue=None,BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,BaseValueScale=0.15)
+                    )
+                )
+            """
+        ]
+    ],
+    [
+        [
+            'MaxSprintSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo1_Horned.Default__BPChar_PetSkag_Evo1_Horned_C:CharMoveComp'            
+        ],
+        [
+            '(Value=900.0,BaseValue=900.0)'
+        ]
+    ],
+    [
+        [
+            'MaxWalkSpeed'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo1_Horned.Default__BPChar_PetSkag_Evo1_Horned_C:CharMoveComp'            
+        ],
+        [
+            '(Value=650.0,BaseValue=650.0)'
+        ]
+    ],
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned'            
+        ],
+        [
+            "Your [red]Skag[/red] evolves into an [red]Horned Skag[/red]. While accompanied by the [red]Horned Skag[/red], your [skillbold]Damage[/skillbold] is increased.<br><br>Hold {OakPC_ActionSkill} to issue an [skillbold]Attack Command[/skillbold], which will cause the [red]Horned Skag[/red] to charge at enemies and knock them into the air."
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            ''
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            '[skillbold]Damage:[/skillbold] $VALUE$'
+        ]
+    ],
+    [
+        [
+            'Attribute'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/Augments/Augment_Pet_Skag_GreatHorned.Augment_Pet_Skag_GreatHorned:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            '/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier'
+        ]
+    ],
+    [   #Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'Skag_HornAttack'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            3.0
+        ]
+    ],
+    [   #Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'Skag_HornAttack_2'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            2.5
+        ]
+    ]
+]
+
+Ferocity=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond7/Passive_Beastmaster_Bond7.Default__Passive_Beastmaster_Bond7_C'            
+        ],
+        [
+            'Your [red]Pet[/red] gains [skillbold]Damage[/skillbold]. This effect increases with the number of player in the game. <br>[skillbold]True Takedowns[/skillbold] are considered 4 players.'
+        ]
+    ],
+    [
+        [
+            'PerGradeUpgrade'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond7/Status_Beastmaster_Bond7_PetDamage_DA2.Status_Beastmaster_Bond7_PetDamage_DA2:Mutator_OakPassiveAbilityAttributeEffectMutatorData'            
+        ],
+        [
+            """
+            (
+                BaseValueAttribute=/Game/GameData/Attributes/PlayerCount.PlayerCount,
+                BaseValueScale=0.1
+            )
+            """
+        ]
+    ]
+]
+
+Persistence_Hunter=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond1/Passive_Beastmaster_Bond_1.Default__Passive_Beastmaster_Bond_1_C'            
+        ],
+        [
+            "You gain [skillbold]Gun Damage[/skillbold] and [skillbold]Action Skill Duration[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'Buffs.Buffs[0].PassiveAbilityClassPtr'
+        ],
+        [
+            '/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/BeastMaster/ClassMod_Part_Skill_BeastMaster_LifeTraining.ClassMod_Part_Skill_BeastMaster_LifeTraining:AspectList_OakPassiveAbilityBuffAspectData'            
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond1/Passive_Beastmaster_Bond_1.Passive_Beastmaster_Bond_1_C'
+        ]
+    ],
+    [
+        [
+            'Buffs.Buffs[0].ItemFrameName'
+        ],
+        [
+            '/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/BeastMaster/ClassMod_Part_Skill_BeastMaster_LifeTraining.ClassMod_Part_Skill_BeastMaster_LifeTraining:AspectList_OakPassiveAbilityBuffAspectData'            
+        ],
+        [
+            'PersistenceHunter'
+        ]
+    ],
+    [   #Gun Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond1'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.05
+        ]
+    ]
+]
+
+Go_For_The_Eyes=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond4/Passive_Beastmaster_Bond4.Default__Passive_Beastmaster_Bond4_C'            
+        ],
+        [
+            'When your [red]Pet[/red] attacks an enemy, the first [skillbold]Melee Attack[/skillbold] is an automatic [skillbold]Critical Hit[/skillbold] that deals increased damage.'
+        ]
+    ],
+    [   #Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond4'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.2
+        ]
+    ]
+]
+
+Who_Rescued_Who=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond3/Passive_Beastmaster_Bond3.Default__Passive_Beastmaster_Bond3_C'            
+        ],
+        [
+            "Whenever your [red]Pet[/red] deals damage, you gain [skillbold]Health Regeneration[/skillbold] for a few seconds. Whenever you deal damage to an enemy, your [red]Pet[/red] health is restored for a portion of the damage dealt."
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond3/Passive_Beastmaster_Bond3.Default__Passive_Beastmaster_Bond3_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            '[skillbold]Health Regeneration:[/skillbold] $VALUE$'
+        ]
+    ],
+    [
+        [
+            'bDisplayPlusSign'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond3/Passive_Beastmaster_Bond3.Default__Passive_Beastmaster_Bond3_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            'false'
+        ]
+    ],
+    [   #Health Regeneration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond3'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.006
+        ]
+    ],
+    [   #Duration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond3'
+        ],
+        [
+            'Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1'
+        ],
+        [
+            4.0
+        ]
+    ]
+]
+
+He_Bites=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond11/Passive_Beastmaster_Bond11.Default__Passive_Beastmaster_Bond11_C'            
+        ],
+        [
+            "Your [red]Pet[/red] reflects a portion of the [skillbold]Damage Taken[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'bDisplayPlusSign'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond11/Passive_Beastmaster_Bond11.Default__Passive_Beastmaster_Bond11_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            'false'
+        ]
+    ],
+    [   #Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond11'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.1
+        ]
+    ]
+]
+
+Frenzy=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond_Frenzy/Passive_Beastmaster_Bond_Frenzy.Default__Passive_Beastmaster_Bond_Frenzy_C'            
+        ],
+        [
+            "When your [red]Pet[/red] deals damage, you and your [red]Pet[/red] gain a stack of [skillbold]Frenzy[/skillbold] that increases [skillbold]Damage[/skillbold]. The stacks decay after 10 seconds."
+        ]
+    ],
+    [   #Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SimpleFormulas'            
+        ],
+        [
+            'Frenzy_Damage'
+        ],
+        [
+            'Level.BaseValueAttribute'
+        ],
+        [
+            ''
+        ]
+    ],
+    [   #Duration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SimpleFormulas'            
+        ],
+        [
+            'Frenzy_Duration'
+        ],
+        [
+            'Level.BaseValueAttribute'
+        ],
+        [
+            ''
+        ]
+    ],
+    [   #Duration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Frenzy'
+        ],
+        [
+            'Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1'
+        ],
+        [
+            10.0
+        ]
+    ]
+]
+
+Psycho_Head_on_A_Stick=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond5/Passive_Beastmaster_Bond5.Default__Passive_Beastmaster_Bond5_C'            
+        ],
+        [
+            "[skillbold]Kill Skill[/skillbold]. <br>Whenever you kill an enemy, your [red]Pet[/red] gains increased [skillbold]Movement Speed[/skillbold] and [skillbold]Damage[/skillbold]."
+        ]
+    ],
+    [   #Move Speed
+        [
+            'PerGradeUpgrade'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond5/Status_Beastmaster_Bond5_PetMoveSpdAndDamage_DA.Status_Beastmaster_Bond5_PetMoveSpdAndDamage_DA:Mutator_OakPassiveAbilityAttributeEffectMutatorData'            
+        ],
+        [
+            """
+            (
+                BaseValueConstant=0.15,
+                DataTableValue=(Datatable=None,RowName=None,ValueName=None),
+                BaseValueScale=1.0
+            )
+            """
+        ]
+    ],
+    [   #Damage
+        [
+            'PerGradeUpgrade'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond5/Status_Beastmaster_Bond5_PetMoveSpdAndDamage_DA.Status_Beastmaster_Bond5_PetMoveSpdAndDamage_DA:Mutator_OakPassiveAbilityAttributeEffectMutatorData_0'            
+        ],
+        [
+            """
+            (
+                BaseValueConstant=0.15,
+                DataTableValue=(Datatable=None,RowName=None,ValueName=None),
+                BaseValueScale=1.0
+            )
+            """
+        ]
+    ],
+    [   #Duration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond5'
+        ],
+        [
+            'Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1'
+        ],
+        [
+            10.0
+        ]
+    ]
+]
+
+Hive_Mind=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/_Shared/_Design/Abilities/Ability_PetShared_GeneticLink.Default__Ability_PetShared_GeneticLink_C'            
+        ],
+        [
+            "Damage taken is [skillbold]Shared[/skillbold] with your [red]Pet[/red], granting it [skillbold]Damage[/skillbold]."
+        ]
+    ],
+    [   #Pet Damage
+        [
+            'Value.BaseValueConstant'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/_Shared/_Design/Abilities/Att_PetShared_GenericLinkBonusDamage.Att_PetShared_GenericLinkBonusDamage:ValueResolver_ConstantAttributeValueResolver'            
+        ],
+        [
+            0.0833333333333
+        ]
+    ],
+    [   #Damage Shared
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_GeneticLink'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            -0.0833333333333
+        ]
+    ],
+    [   #Duration
+        [
+            'Value.BaseValueConstant'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/_Shared/_Design/Abilities/Att_PetShared_GenericLinkBonusDuration.Att_PetShared_GenericLinkBonusDuration:ValueResolver_ConstantAttributeValueResolver'            
+        ],
+        [
+            10.0
+        ]
+    ]
+]
+
+Barbaric_Yawp=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun6/Passive_Beastmaster_HitAndRun_6.Default__Passive_Beastmaster_HitAndRun_6_C'            
+        ],
+        [
+            "Your [red]Pet[/red] has increased [skillbold]Bonuses[/skillbold]."
+        ]
+    ]
+]
+
+Mutated_Defense=[
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/_Shared/_Design/Augments/Augment_Pet_Global_MutatedDefenses'            
+        ],
+        [
+            "When your [red]Pet[/red] is at low health, it gains [skillbold]Damage Reduction[/skillbold] and [skillbold]Health Regeneration[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'Description'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/Pet/_Shared/_Design/Augments/Augment_Pet_Global_MutatedDefenses.Augment_Pet_Global_MutatedDefenses:SupplementalStat_UIStatData_OakPassiveAbilityAttributeInitializer'            
+        ],
+        [
+            "for $VALUE$ seconds"
+        ]
+    ],
+    [   #Damage Reduction
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'Skag_Phase'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.75
+        ]
+    ]
+]
+
+Pack_Tactics=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond9/Passive_Beastmaster_Bond9.Default__Passive_Beastmaster_Bond9_C'            
+        ],
+        [
+            "You and your [red]Pet[/red] gain [skillbold]Radiation Damage[/skillbold] and [skillbold]Maximum Health[/skillbold]."
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond9/Passive_Beastmaster_Bond9.Default__Passive_Beastmaster_Bond9_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            "[skillbold]Radiation Damage:[/skillbold] $VALUE$"
+        ]
+    ],
+    [
+        [
+            'Attribute'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond9/Passive_Beastmaster_Bond9.Default__Passive_Beastmaster_Bond9_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute'            
+        ],
+        [
+            '/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation'
+        ]
+    ],
+    [
+        [
+            'FormatText'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond9/Passive_Beastmaster_Bond9.Default__Passive_Beastmaster_Bond9_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0'            
+        ],
+        [
+            "[skillbold]Maximum Health:[/skillbold] $VALUE$"
+        ]
+    ],
+    [
+        [
+            'AttributeEffects.AttributeEffects[0].AttributeData'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond9/Status_Beastmaster_Bond9'            
+        ],
+        [
+            '/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation'
+        ]
+    ],
+    [   #Radiation Damage
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond9'
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            0.12
+        ]
+    ],
+    [   #Maximum Health
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond9'
+        ],
+        [
+            'Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9'
+        ],
+        [
+            0.1
+        ]
+    ]
+]
+
+Shared_Spirit=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond8/Passive_Beastmaster_Bond8.Default__Passive_Beastmaster_Bond8_C'            
+        ],
+        [
+            "While you are under half health, a portion of all damage you take is [skillbold]Converted[/skillbold] into healing for your [red]Pet[/red] instead."
+        ]
+    ],
+    [
+        [
+            'LowHealth'
+        ],
+        [
+            '/Game/GameData/Stances/Conditions/Condition_IsLowOnHealth.Default__Condition_IsLowOnHealth_C'            
+        ],
+        [
+            0.5
+        ]
+    ],
+    [   #Damage Reduction
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'
+        ],
+        [
+            'P_Bond8'            
+        ],
+        [
+            'Scalar_5_230D633C4A306BF04AB690B7CD89D6AA'
+        ],
+        [
+            -0.35
+        ]
+    ]
+]
+
+Dominance=[
+    [
+        [
+            'AbilityDescription'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond10/Passive_Beastmaster_Bond10.Default__Passive_Beastmaster_Bond10_C'            
+        ],
+        [
+            "Whenever you attack an enemy with a [skillbold]Melee Attack[/skillbold] or [skillbold]Score a Critical Hit With a Weapon While Aiming Down Sights[/skillbold] you establish [skillbold]Dominance[/skillbold] over that enemy, turning it into an ally. Duration is doubled if the enemy is a [skillbold]Beast[/skillbold]. <br>Other enemies are more likely to attack the [skillbold]Dominated Enemy[/skillbold] and it constantly loses health until it dies or the effect ends. A [skillbold]Radiation Nova[/skillbold] is created centered on that enemy at the end. [skillbold]Dominance[/skillbold] can only be used once per enemy and on only one enemy at a time.",
+        ]
+    ],
+    [   #Damage
+        [
+            'ValueA.BaseValueConstant'
+        ],
+        [
+            '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond10/Att_Bond10_DominateEndDamage.Att_Bond10_DominateEndDamage:ValueResolver_SimpleMathValueResolver'            
+        ],
+        [
+            0.8
+        ]
+    ],
+    [   #Duration
+        [
+            '/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance'            
+        ],
+        [
+            'P_Bond_Capstone'
+        ],
+        [
+            'Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9'
+        ],
+        [
+            10.0
+        ]
+    ]
+]

@@ -12,8 +12,16 @@ for Siren COMs, Siren Skins/Heads, an Siren-specific anointments (you *will* sti
 This *should* adjust itself automatically whenever players enter/leave a co-op session,
 though that is currently untested by myself.
 
+**Note:** This does *not* apply to situations where a boss (or boss-like enemy) has a
+specific legendary COM drop.  For instance, the Hag of Fervor will continue to drop
+Zane's Shockerator COM.  My Boss Drop Randomizer mod would take care of those instances,
+but of course that also affects all other boss drops, so possibly not what you want.
+
 Changelog
 =========
+
+Jul 6, 2021 *(no version number change)*
+ * Clarified named enemy drops in the mod header
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header

@@ -30,9 +30,18 @@ TODO
 
 - DLC Cosmetics could use some going-over, to see if they need to be excluded from
   the "No Mission Rewards" variants.
+- This doesn't actually touch emotes at all, which don't ordinarily world-drop.
+  Perhaps we should add those in?  Still, the only ones which are "random" in a sense
+  are the Vault Card ones, so it might not be worth it.
 
 Changelog
 =========
+
+**v1.5.1** - Aug 11, 2021
+ * Updated with some Heads that were bundled with the VC2 update but overlooked here.
+
+**v1.5.0** - Aug 6, 2021
+ * Updated with Vault Card 2 cosmetics
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header

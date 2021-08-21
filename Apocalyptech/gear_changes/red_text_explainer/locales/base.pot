@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-06-16 11:49-0500\n"
+"POT-Creation-Date: 2021-08-06 12:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4758,5 +4758,41 @@ msgstr ""
 
 #: gen_red_text_explainer.py:1880
 msgid "It's there always, this dark passenger."
+msgstr ""
+
+#: gen_red_text_explainer.py:1885
+msgid "Gold Rush"
+msgstr ""
+
+#: gen_red_text_explainer.py:1887
+msgid "Pay dirt."
+msgstr ""
+
+#: gen_red_text_explainer.py:1889
+msgid "also buffs reload speed, max 20 stacks"
+msgstr ""
+
+#: gen_red_text_explainer.py:1890
+msgid "Troubleshooter"
+msgstr ""
+
+#: gen_red_text_explainer.py:1892
+msgid "Tickles your fancy."
+msgstr ""
+
+#: gen_red_text_explainer.py:1894
+msgid "element-switching orbs ricochet"
+msgstr ""
+
+#: gen_red_text_explainer.py:1895
+msgid "Pyroburst"
+msgstr ""
+
+#: gen_red_text_explainer.py:1897
+msgid "KEKW"
+msgstr ""
+
+#: gen_red_text_explainer.py:1898
+msgid "after impact, bounces 5 times while spawning homing elemental orbs"
 msgstr ""
 

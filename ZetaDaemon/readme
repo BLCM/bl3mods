@@ -23,3 +23,18 @@ Doesn't have the self damage as I have no idea how to implement it and I dont ev
 -No Burst Plasma Coil
 Removes the 16 round burst on the Plasma Coil but reduces the fire rate a fair bit to compensate for the constant firing without a delay.
 Makes the Plasma Coil a bit more reliable and consistant to use in my opinion.
+
+-Better Brainstormer
+Gives a double damage boost to the brainstormer to make it have similar damage to the reflux as theyre basically the same gun
+
+-Radiation Fire in the Skag Den (Nuclear Fallout)
+Changes the bonus damage of Fire in the Skag Den to be radiation instead of fire
+
+-Stacking Rage And Recover
+Lets Rage and Recover stack up to 5 times so that you almost always gain a new stack of the health regen after a kill rather than it just re-triggering the kill skill.
+Adds a mention of the stacking on the description, also changes it to say 'Max Health/sec' rather than 'Missing Health/sec' as apparently thats what it should be.
+
+-Drop fixes - Soulrender
+Fixes the Soulrender not dropping from Tom and Xam, hopefully will be actually fixed by gearbox soon but I'm putting this up in the meantime.
+Credit to Apple1417 for actually figuring out what went wrong and what needed fixing, I'm just putting it up for people to use :)
+Also looking into the Juliets Dazzle but haven't gotten that one working yet

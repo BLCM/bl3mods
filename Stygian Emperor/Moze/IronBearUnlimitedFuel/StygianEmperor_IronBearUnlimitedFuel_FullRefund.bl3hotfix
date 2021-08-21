@@ -1,0 +1,77 @@
+###
+### Name: Iron Bear - Unlimited Fuel
+### Version: 1.0.0 FullRefund
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: char-gunner, cheat
+###
+### Screenshot: https://i.imgur.com/N1PVWLT.png
+### Nexus: https://www.nexusmods.com/borderlands3/mods/271
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### DESCRIPTION
+### Makes Iron Bear/Iron Cub use no fuel, so it will only leave if destroyed through 
+### damage or if exited by Moze. 
+### 
+### FULL REFUND
+### This version also makes Iron Bear have no cooldown time if you exit it early. 
+### However, if Iron Bear is destroyed, it will take the normal amount of time to be 
+### usable again.
+### 
+### TO DO
+### - See if I can unlock Iron Cub's hardpoints while it is active, as otherwise 
+###   changing them will require Iron Cub to be destroyed or the player to zone.
+### 
+
+## Fuel passively regenerates very quickly rather than depletes (just in case)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Pools/ResourcePool_IronBear_Duration.ResourcePool_IronBear_Duration,BaseConsumptionRate,0,,-100.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Pools/ResourcePool_IronBear_Duration.ResourcePool_IronBear_Duration,BaseOnIdleRegenerationDelay,0,,0.0
+
+## No Cooldown Time on Early Exit (Defaults: 0.65, 90.0)
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Global_IronBear_Duration,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.99
+# SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Global_IronBear_Duration,Cooldown_4_8A38A09E46E89B75CDB6F39A50278802,0,,99.0
+
+## Weapons cost no fuel (not every augment will be listed)
+# Minigun
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Minigun,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Minigun Augment 1
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Minigun_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Minigun Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Minigun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+
+# Flamethrower
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Salamander,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Flamethrower Augment 2
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Salamander_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Flamethrower Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Salamander_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+
+# Grenade Launcher
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_GL,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Grenade Launcher Augment 2
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_GL_Singularity,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Grenade Launcher Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_GL_Burst,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+
+# Missile Launcher
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Missiles,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Missile Launcher Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Missiles_Nuke,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+
+# Railgun
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Railgun,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Railgun Augment 1
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Railgun_Mod1,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Railgun Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Railgun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+
+# Bear Fist
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_BearFist,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Bear Fist Augment 2
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_BearFist_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
+# Bear Fist Augment 3
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_BearFist_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.0
