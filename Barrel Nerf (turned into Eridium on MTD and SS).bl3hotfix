@@ -1,0 +1,36 @@
+###
+### Name: Barrel Nerf (turned into Eridium on MTD and SS)
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: cheat, slaughters, takedowns 
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### Replaces barrels with Eridium Jars in MTD and Slaughter Shaft.
+### On other maps barrels and their clouds don't deal any damage instead.
+### Barrel puddles still deal damage since changing this would affect too many other puddles.
+###
+
+#Unfortunately only MTD and the slaughtershaft reference the SpawnOptions for Barrels.
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/DLCData/SpawnDLCExpansion_Ixora2_Eridium.SpawnDLCExpansion_Ixora2_Eridium,GlobalReplacement,0,,((SpawnOptionData'"/Game/InteractiveObjects/ExplodingBarrels/_Shared/_Design/Spawning/SpawnOptions_ExplosiveBarrels.SpawnOptions_ExplosiveBarrels"',SpawnOptionData'"/Game/PatchDLC/Ixora2/Lootables/Eridium/SpawnOption_EridianJar_IxoraAndBase.SpawnOption_EridianJar_IxoraAndBase"'),(SpawnOptionData'"/Game/InteractiveObjects/ExplodingBarrels/_Shared/_Design/Spawning/SpawnOptions_Fancy_ExplosiveBarrels.SpawnOptions_Fancy_ExplosiveBarrels"',SpawnOptionData'"/Game/PatchDLC/Ixora2/Lootables/Eridium/SpawnOption_EridianJar_IxoraAndBase.SpawnOption_EridianJar_IxoraAndBase"'),(SpawnOptionData'"/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianCrystal_Small.SpawnOption_EridianCrystal_Small"',SpawnOptionData'"/Game/PatchDLC/Ixora2/Lootables/Eridium/SpawnOption_EridianCrystal_IxoraAndBase.SpawnOption_EridianCrystal_IxoraAndBase"'),(SpawnOptionData'"/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianJar.SpawnOption_EridianJar"',SpawnOptionData'"/Game/PatchDLC/Ixora2/Lootables/Eridium/SpawnOption_EridianJar_IxoraAndBase.SpawnOption_EridianJar_IxoraAndBase"'),(SpawnOptionData'"/Game/PatchDLC/Dandelion/Lootables/SpawnOption_EridianJar_Rep.SpawnOption_EridianJar_Rep"',SpawnOptionData'"/Game/PatchDLC/Ixora2/Lootables/Eridium/SpawnOption_EridianJar_IxoraAndBase.SpawnOption_EridianJar_IxoraAndBase"'))
+
+
+#Barrel damage nerf
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_IO_Balance.DataTable_IO_Balance,Barrel,Damage_13_560366A1463D4183F137F3AB10204686,0,,0
+
+#Barrel Cloud damage nerf
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_IO_Balance.DataTable_IO_Balance,Barrel_Cloud,Damage_13_560366A1463D4183F137F3AB10204686,0,,0
+
+#Barrel Puddle damage nerf (doesn't seem to work)
+SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_IO_Balance.DataTable_IO_Balance,Barrel_Puddle,Damage_13_560366A1463D4183F137F3AB10204686,0,,0
+
+#These remove puddle damage too, but this also nerfs other puddles like from grenades/guns etc. Enable at your own risk.
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_IO_Balance.DataTable_IO_Balance,ElementalPuddle_Basic,Damage_13_560366A1463D4183F137F3AB10204686,0,,0
+#SparkPatchEntry,(1,2,0,),/Game/GameData/Balance/HealthAndDamage/DamageBalanceScalers/DataTable_IO_Balance.DataTable_IO_Balance,ElementalPuddle_Lava,Damage_13_560366A1463D4183F137F3AB10204686,0,,0
+
+
+
+
