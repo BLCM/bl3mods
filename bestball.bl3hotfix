@@ -1,0 +1,8 @@
+###Name: Fastball buff
+###Author: SpiderLenny
+###Categories: gear-grenade
+###License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+#Increases the Fastball's damage by roughly 400% in hopes of making it good again.
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Fastball,Damage_12_F33DA0994756D761207677A51A156787,0,,24.0
