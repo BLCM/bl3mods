@@ -1,0 +1,75 @@
+###
+### Name: A Few General Fixes
+### 
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: char-siren, char-beastmaster, bugfix, gear-shield
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### A few small fixes, no other shenanigans. 
+###
+### Expedite (Ascendant doesn't boost this)
+### Tempest 40% shock > 50% shock at 5/5
+### Samsara Max Health Regen instead of Missing Health Regen
+### Deep well -20% Heat Per Shot instead of -15%
+### Ion Loader now provides proper damagereduction instead of increased damage intake
+### All Loaders scale with Barbaric Yawp
+### Shooting Star Shield works on all maps (Credits to Lonemasterino for this one)
+### 
+### 
+
+
+## Amara
+
+# Expedite
+# This reverts Expedite to its previous state before the new patch unfortunately enough broke it.
+# This way it works at the very least even though Ascendant doesn't provide a boost for it.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/StatusEffects/StatusEffect_Siren_Quicken.StatusEffect_Siren_Quicken,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues"',RowName="Quicken_CooldownRatePerKill",ValueName="Base_17_28B25EC8493D1EB6C2138A962F659BCD"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
+
+# Samsara 
+# The card states it provides Health Regen based on Max health, but currently it's Missing Health Regen.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/StatusEffect_Siren_Samsara.StatusEffect_Siren_Samsara,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/PassiveSkill_Siren_Samsara.Default__PassiveSkill_Siren_Samsara_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
+
+# Tempest
+# Tempest states that it gives a total of 50% bonus shock damage at 5/5, however currently at max it only gives a 40% bonus. (20 + 20 instead of 30 + 20), this fixes that.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Tempest/StatusEffect_Siren_Tempest_DA.StatusEffect_Siren_Tempest_DA,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,,0,(DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="ElementalEffect_Damage",ValueName="FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A"))
+
+# Deep well currently only Provides -15% Heat per Shot instead of 20%, this fixes that.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/DeepWell/StatusEffect_Siren_DeepWell.StatusEffect_Siren_DeepWell,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,0,,(DataTableValue=(DataTable=Datatable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="Accuracy_Impulse",ValueName="FivePointLarge_23_BD95FA214ED4F962354446B3B30B08AD"))
+
+
+
+## Fl4k
+
+# Fixing the Loader giving you proper damagereduction instead of increased damage intake and making all pet passives scale with Barbaric Yawp
+# BUL Loader
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Base.Status_Beastmaster_PetLoaderBuff_Base,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.2)
+
+# ION Loader
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[2].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[3].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo1.Status_Beastmaster_PetLoaderBuff_Evo1,AttributeEffects.AttributeEffects[4].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.3)
+
+# Making the damagereduction bonus from pet a positive value on the card to avoid confusion.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo1.Augment_Pet_Loader_Evo1,StatDataItems.StatDataItems[0].Object..SignStyle,0,,Positive
+
+# WAR Loader
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
+
+
+
+## Gear
+
+# Shooting Star Shield (Credits to Lonemasterino for this one)
+# This shield has a very cool effect, but unfortunately due to collioson with the world, it hardly ever works
+# Allowing it to go through the world would be a great way of bringing it back into usage.
+SparkPatchEntry,(1,1,0,),Game/Gear/Shields/_Design/_Uniques/ShootingStar/LightProjectile_Shield_ShootingStar.Default__LightProjectile_Shield_ShootingStar_C,bPenetratesWorld,0,,true
+
+

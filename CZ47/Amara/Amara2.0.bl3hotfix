@@ -1,6 +1,6 @@
 ###
 ### Name: Amara 2.0
-### Version: 4.0.2
+### Version: 4.0.3
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: char-siren, char-overhaul, gear-com
@@ -72,6 +72,9 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Pas
 # Fixing Samsara Missing Health% to Max Health%
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/StatusEffect_Siren_Samsara.StatusEffect_Siren_Samsara,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/PassiveSkill_Siren_Samsara.Default__PassiveSkill_Siren_Samsara_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
+
+# Deep well currently only Provides -15% Heat per Shot instead of -20%, this fixes that.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/DeepWell/StatusEffect_Siren_DeepWell.StatusEffect_Siren_DeepWell,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,0,,(DataTableValue=(DataTable=Datatable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="Accuracy_Impulse",ValueName="FivePointLarge_23_BD95FA214ED4F962354446B3B30B08AD"))
 
 # Fixing Tempest Shock 40% > 50%
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Tempest/StatusEffect_Siren_Tempest_DA.StatusEffect_Siren_Tempest_DA,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,,0,(DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="ElementalEffect_Damage",ValueName="FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A"))
