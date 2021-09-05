@@ -15,7 +15,7 @@ TWO_THIRDS_HEALTH=[2*DEFAULT_HEALTH/3 for health in HEALTHS]
 HALF_HEALTH=[DEFAULT_HEALTH/2 for health in HEALTHS]
 JUST_QUARTER_HEALTH={"health":QUARTER_HEALTH}
 JUST_TWO_THIRDS_HEALTH={"health":TWO_THIRDS_HEALTH}
-
+ITEM_POOL_INDEX='item_pool_index'
 def buff_boss(boss): #bpchar, bpchar_path, balance_table, rowname, health,damage,nloot
     """ Generate hotfix code for buffing a boss """
     out = []
@@ -31,8 +31,12 @@ def buff_boss(boss): #bpchar, bpchar_path, balance_table, rowname, health,damage
         out.append(f"SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[{boss['raid1']}].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,{boss['nloot']}")
     else:
         # DLC style Loot manipulation
-        out.append(f"SparkCharacterLoadedEntry,(1,1,0,{boss['bpchar']}),{boss['bpchar_path']}.{boss['bpchar']}_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)")
-        out.append(f"SparkCharacterLoadedEntry,(1,1,0,{boss['bpchar']}),{boss['bpchar_path']}.{boss['bpchar']}_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[0].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant={boss['nloot']},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)")
+        # this is for Alisma and locomobius
+        item_pool_index = boss.get(ITEM_POOL_INDEX,0)
+        if item_pool_index != 0:
+            out.append(f"# item_pool_index: {item_pool_index}")
+        out.append(f"SparkCharacterLoadedEntry,(1,1,0,{boss['bpchar']}),{boss['bpchar_path']}.{boss['bpchar']}_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[{item_pool_index}].PoolProbability,0,,(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)")
+        out.append(f"SparkCharacterLoadedEntry,(1,1,0,{boss['bpchar']}),{boss['bpchar_path']}.{boss['bpchar']}_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools[{item_pool_index}].NumberOfTimesToSelectFromThisPool,0,,(BaseValueConstant={boss['nloot']},DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)")
     for healthname,health in zip(HEALTHS,boss['health']):
         out.append(f"SparkCharacterLoadedEntry,(1,2,0,{boss['bpchar']}),{boss['balance_table']}.{basename(boss['balance_table'])},{boss['rowname']},{healthname},0,,{health}")
     out.append(f"SparkCharacterLoadedEntry,(1,2,0,{boss['bpchar']}),{boss['balance_table']}.{basename(boss['balance_table'])},{boss['rowname']},{DAMAGE},0,,{boss['damage']}")
@@ -52,6 +56,7 @@ def mk_boss(name, bpchar_path, balance_table, rowname,options=None):
         'health':options.get('health',[DEFAULT_HEALTH,DEFAULT_HEALTH,DEFAULT_HEALTH,DEFAULT_HEALTH,DEFAULT_HEALTH]),
         'damage':options.get('damage',DEFAULT_DAMAGE),
         'raid1':options.get('raid1',None),
+        ITEM_POOL_INDEX:options.get(ITEM_POOL_INDEX,0),
     }
 
 # name, BP Path, Balance Table, Row Key in Balance Table
@@ -198,6 +203,8 @@ more_bosses = [
      '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'),
     ('The Unstoppable','/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01',
      '/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique','Rare01'),
+    # ('LoboMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH for health in HEALTHS],"damage":10,"nloot":12,ITEM_POOL_INDEX:1}),
+    ('LoboMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH*3 for health in HEALTHS],"damage":10,"nloot":12,'item_pool_index':1}),
 ]
 
 # manual header (open the static header file)
