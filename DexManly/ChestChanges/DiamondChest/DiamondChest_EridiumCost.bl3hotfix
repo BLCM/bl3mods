@@ -1,0 +1,18 @@
+###
+### Name: Diamond Chest: Eridium Cost
+### Version: 1.0.0
+### Author: DexManly
+### Categories: chests,loot-system,cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This mod changes the Diamond Chest to use Eridium instead of Diamond Keys. Feel free to download and change the BaseValueConstant
+### on the last line from 1500.0 to whatever you want it to cost.
+###
+
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,ActionText,0,,Use Eridium ([eridiumicon]%i)
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,CurrencyType,0,,/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_Eridium
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,Cost.BaseValueConstant,0,,1500.0
