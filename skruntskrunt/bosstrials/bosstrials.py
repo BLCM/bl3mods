@@ -54,6 +54,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=f'Boss Trial Generator v{version}')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--input', type=str, default='trial1.json',help='Trial Input JSON')
+    parser.add_argument('--spawnoptions', type=str, default='spawnoptions.1.json',help='Spawn Options for the Trial')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--trial', type=int, default=1, help='Trial number {MISSION_NUMBERS}')
     return parser.parse_args()
@@ -129,6 +130,7 @@ random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
 # DFL_LEVEL=Mod.LEVEL
 output_filename = args.output
+spawnoptions_filename = args.spawnoptions
 mod = Mod(output_filename,
           title,
           'skruntskrunt',
@@ -139,6 +141,9 @@ mod = Mod(output_filename,
 )
 mod.comment(f"Seed {our_seed}")
 
+debug_pool = """M /Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo"""
+
+
 difficulty_pools = {
     EASY:ixorabosses.easy_bosses,
     MEDIUM:ixorabosses.medium_bosses,
@@ -146,7 +151,7 @@ difficulty_pools = {
     "heavy":ixorabosses.heavy_bosses,
     "all":ixorabosses.safe_bosses,
     "any":ixorabosses.easy_bosses + ixorabosses.medium_bosses + ixorabosses.hard_bosses,
-    "cartels":[ixorabosses.tuple_line_to_bpchar(x) for x in ixorabosses.cartels.split("\n")]
+    "debug":[ixorabosses.tuple_line_to_bpchar(x) for x in debug_pool.split("\n")]
 }
 
 def get_bpchar(s):
@@ -307,7 +312,8 @@ def mk_spawn_list(spawnoption_facts,n=8):
 
 def load_so(filename,choices=None):
     if choices is None:
-        choices = ["cartels"]#[EASY,MEDIUM,HARD]
+        # choices = ["debug"]#[EASY,MEDIUM,HARD]
+        choices = [EASY,MEDIUM,HARD]
     arr = json.load(open(filename))
     return [(x[0],x[1],x[2],[random.choice(choices)]) for x in arr]
 
@@ -315,7 +321,7 @@ facts = json.load(open(args.input))
 spawnpoints = facts["spawnpoints"]
 spawnoption_facts = facts["spawnoptions"]
 # spawn_list = mk_spawn_list( spawnoption_facts )
-spawn_list = load_so("spawnoptions.1.json")
+spawn_list = load_so( spawnoptions_filename )
 # make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
 make_ixora_spawns( mod, level, spawn_list, params )
 
@@ -365,3 +371,12 @@ mod.close()
 #         spawn everyone safely
 #         We'll need each spawnoption
 # ... we're kinda stuck, maybe skags or rakks?
+# ... varkid or skags, something with their spawns..
+
+# Sept 6
+# [?] Gem Chest fix?
+# Franco with trial 8 worked good
+# trial 8 default seed, locked after lagomars
+# Trial 7 fervor worked
+# Trial 6 Supremecy locked second
+# Trial 5 Discipline got blocked

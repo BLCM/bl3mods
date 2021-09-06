@@ -1,0 +1,384 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkSuicide"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Goliaths/Variants/SpawnOptions_GoliathMidget"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkPsycho"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkShotgun"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C3B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Goliaths/Variants/SpawnOptions_GoliathMidget"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C3B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C3B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C3B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkPsycho"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Goons/Variants/SpawnOptions_GoonBadass"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Goons/Variants/SpawnOptions_GoonBadass"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C4C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  }
+ ],
+ "spawnpoints": [
+  "BP_TinkPile_13",
+  "BP_TinkPile_16",
+  "BP_TinkPile_1937",
+  "OakMissionSpawner_GemGuardian",
+  "OakMissionSpawner_GemGuardian_0",
+  "OakMissionSpawner_GemGuardian_1",
+  "OakMissionSpawner_Guardian_0",
+  "Spawner_Boss_0",
+  "Spawner_BossAdds",
+  "Spawner_E1C",
+  "Spawner_E1C2A",
+  "Spawner_E1C2B",
+  "Spawner_E2C",
+  "Spawner_E2C3A",
+  "Spawner_E2C3B",
+  "Spawner_E2C_0",
+  "Spawner_E3C",
+  "Spawner_E3C4A",
+  "Spawner_E3C4B",
+  "Spawner_E3C4C",
+  "OakSpawner_Crystals_Small",
+  "OakSpawnPoint_0",
+  "OakSpawnPoint_1",
+  "OakSpawnPoint_10",
+  "OakSpawnPoint_11",
+  "OakSpawnPoint_12",
+  "OakSpawnPoint_13",
+  "OakSpawnPoint_14",
+  "OakSpawnPoint_17",
+  "OakSpawnPoint_2",
+  "OakSpawnPoint_3",
+  "OakSpawnPoint_4",
+  "OakSpawnPoint_5",
+  "OakSpawnPoint_6",
+  "OakSpawnPoint_7",
+  "OakSpawnPoint_8",
+  "OakSpawnPoint_9",
+  "Spawner_Dropship_E3C",
+  "Spawner_SpawnAnchorEridian_E1_",
+  "Spawner_SpawnAnchorEridian_E3C",
+  "SpawnMesh_DoorSmall_0",
+  "SpawnMesh_DoorSmall_1",
+  "SpawnMesh_DoorSmall_10",
+  "SpawnMesh_DoorSmall_11",
+  "SpawnMesh_DoorSmall_1167",
+  "SpawnMesh_DoorSmall_12",
+  "SpawnMesh_DoorSmall_13",
+  "SpawnMesh_DoorSmall_14",
+  "SpawnMesh_DoorSmall_15",
+  "SpawnMesh_DoorSmall_16",
+  "SpawnMesh_DoorSmall_17",
+  "SpawnMesh_DoorSmall_18",
+  "SpawnMesh_DoorSmall_1864",
+  "SpawnMesh_DoorSmall_2",
+  "SpawnMesh_DoorSmall_20",
+  "SpawnMesh_DoorSmall_2052",
+  "SpawnMesh_DoorSmall_23",
+  "SpawnMesh_DoorSmall_27",
+  "SpawnMesh_DoorSmall_3",
+  "SpawnMesh_DoorSmall_3007",
+  "SpawnMesh_DoorSmall_31",
+  "SpawnMesh_DoorSmall_35",
+  "SpawnMesh_DoorSmall_3633",
+  "SpawnMesh_DoorSmall_38",
+  "SpawnMesh_DoorSmall_4",
+  "SpawnMesh_DoorSmall_466",
+  "SpawnMesh_DoorSmall_477",
+  "SpawnMesh_DoorSmall_5",
+  "SpawnMesh_DoorSmall_639",
+  "SpawnMesh_DoorSmall_7",
+  "SpawnMesh_DoorSmall_702",
+  "SpawnMesh_DoorSmall_8",
+  "SpawnMesh_DoorSmall_9",
+  "SpawnMesh_ZipLine_10",
+  "SpawnMesh_ZipLine_2",
+  "SpawnMesh_ZipLine_4",
+  "SpawnMesh_ZipLine_5",
+  "SpawnMesh_ZipLine_6",
+  "SpawnMesh_ZipLine_7",
+  "SpawnMesh_ZipLine_752",
+  "SpawnPoint_IO_SmallCrystal",
+  "SpawnPoint_IO_SmallCrystal_42",
+  "SpawnPoint_IO_SmallCrystal_43",
+  "SpawnPoint_IO_SmallCrystal_44",
+  "SpawnPoint_IO_SmallCrystal_45",
+  "SpawnPoint_IO_SmallCrystal_46",
+  "SpawnPoint_IO_SmallCrystal_47",
+  "SpawnPoint_IO_SmallCrystal_48",
+  "SpawnPoint_IO_SmallCrystal_49",
+  "SpawnPoint_IO_SmallCrystal_50",
+  "SpawnPoint_IO_SmallCrystal_51",
+  "SpawnPoint_IO_SmallCrystal_52",
+  "SpawnPoint_IO_SmallCrystal_53",
+  "SpawnPoint_IO_SmallCrystal_54",
+  "SpawnPoint_IO_SmallCrystal_55",
+  "SpawnPoint_IO_SmallCrystal_56",
+  "SpawnPoint_IO_SmallCrystal_57",
+  "SpawnPoint_IO_SmallCrystal_58"
+ ],
+ "spawnoption_list": [
+  "/Game/Enemies/_Spawning/CotV/Goliaths/Variants/SpawnOptions_GoliathMidget",
+  "/Game/Enemies/_Spawning/CotV/Goons/Variants/SpawnOptions_GoonBadass",
+  "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkPsycho",
+  "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkShotgun",
+  "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkSuicide",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault",
+  "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds",
+  "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+ ]
+}

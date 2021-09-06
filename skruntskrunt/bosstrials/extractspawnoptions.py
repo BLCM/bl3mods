@@ -62,8 +62,14 @@ def main(args):
             factory = option["Factory"]["_jwp_export_dst_name"]
             factoryid = option["Factory"][EXPORT]
             actor = find_jwp_by_id(jso, factoryid)[0]
-            asset = actor["AIActorClass"]["asset_path_name"]
-            entries.append( (so, factory, idx, asset) )
+            if "AIActorClass" in actor:
+                asset = actor["AIActorClass"]["asset_path_name"]
+                entries.append( (so, factory, idx, asset) )
+            else:
+                # this is a spawnfactory container instead?
+                # these are external SpawnOptions we can't do much about :(
+                # TODO DEAL WITH THIS
+                print(f"Missing AIAactorCLass {so} {factory} {idx}", actor)
     with open(args.output,'w') as fd:
         json.dump(entries,fd,indent=1)
     
