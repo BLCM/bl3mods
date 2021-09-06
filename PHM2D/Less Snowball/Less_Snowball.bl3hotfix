@@ -1,0 +1,22 @@
+###
+### Name: Less Snowball
+### Version: 1.0.0
+### Author: PHM2D
+### Categories: gear-general, gear-artifact
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Increases snowdrift cooldown time.
+### Increases snowdrift slide speed.
+###
+
+# Snowdrift Cooldown
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_Cooldown,Multiplier,0,,(BaseValueConstant=5.0))
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_Cooldown,Offset,0,,(BaseValueConstant=55.0))
+
+# Snowdrift Slide Speed
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_SlideSpeed,Multiplier,0,,(BaseValueConstant=0.01191))
+SparkEarlyLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,SLIDE_Snowdrift_SlideSpeed,Offset,0,,(BaseValueConstant=0.99))
