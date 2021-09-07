@@ -1,6 +1,6 @@
 ###
 ### Name: Raid on Bloodsun Canyon, Raid on VIP Tower, and Raid Bosses
-### Version: 1.4.0
+### Version: 1.4.1
 ### Author: Abram/skruntskrunt,  Apocalyptech, EpicNNG, Grimm, alef-4, and more
 ### Categories: enemy-drops, loot-system, mode-balance, enemy
 ###
@@ -21,35 +21,6 @@
 ### stronger, and drop a lot more loot.
 ###
 ### Balance help is appreciated
-
-# TODOS:
-# [X] Captain Traunt Drops
-# [X] Demoskagon Drops
-# [X] Urist McEnforcer
-# [X] One punch drops?
-# [X] Trufflemunch drops
-# [X] Lavender Crawly seemed broken?
-# [X] Multiplayer demoskagon weird
-# [X] add kratch
-# [X] Beans?
-# [X] Buff Chupab
-# [X] Trials?
-# [X] Rax
-# [X] Max
-# [X] El Dragon
-# [X] Power Rangers
-# [X] Psycho Billies
-# [X] Sera of whatever isn't dropping loot?
-# [X] Katagawa Ball
-# [X] Arbalist weak
-# [X] Chupa drops too much
-# [X] Demoskagon drops too much
-# [X] Test Trials again
-# [X] Test Traunt again
-# [ ] Heckle?
-# [ ] Too strong militant near one punch
-# [ ] Eista spawns loot in a meaningful way
-
 
 ########## This stuff is all bespoke stolen code ##################
 
