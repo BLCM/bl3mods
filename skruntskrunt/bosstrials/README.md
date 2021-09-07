@@ -2,9 +2,9 @@ Boss Trials
 ==============
 
 Replace mobs in Trials / Proving Grounds with named Badasses and
-bosses.
+bosses. Spice up the proving grounds!
 
-Currently supports: Fervor, Cunning, Instinct
+Currently supports Trials of: Fervor, Cunning, Instinct
 
 WARNING: This mod is in Alpha stages, there's lots of weirdness in
 many trials that prevents enemies from properly spawning.
