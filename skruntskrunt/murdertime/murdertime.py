@@ -24,6 +24,7 @@ sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 sys.path.append('../boss-rush-slaughter')
+sys.path.append('../bossrace')
 import boss
 import ixorabosses
 import argparse
@@ -32,7 +33,7 @@ import pandas
 OUTPUT='murdercanetimer.bl3hotfix'
 BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
-SEED=None # 42
+SEED=42 # 42
 our_seed = SEED
 version = '0.1.0'
 title = 'MurdercaneTime'
