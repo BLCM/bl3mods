@@ -28,7 +28,9 @@ Changelog
 
 **v0.1.0** - 2021-04-18
  * MurderCaneTime released
- * Fast
+   * Fast: 30 seconds per change and transition
+   * Grow: it grows quickly and stays there a while before it collapses on itself and shrinks quickly.
+   * Double: Doubles the transitions and stable times of the mudercane
 
 
 Known Bugs
