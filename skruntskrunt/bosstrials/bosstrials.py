@@ -42,6 +42,26 @@ HARD="hard"
 
 LEVELS = sorted(["ProvingGrounds_Trial8_P","ProvingGrounds_Trial7_P","ProvingGrounds_Trial6_P","ProvingGrounds_Trial5_P","ProvingGrounds_Trial4_P","ProvingGrounds_Trial1_P"])
 MISSION_NUMBERS=[1,4,5,6,7,8]
+INSTINCT="Instinct"
+FERVOR="Fervor"
+CUNNING="Cunning"
+SUPREMACY="Supremacy"
+DISCIPLINE="Discipline"
+SURVIVAL="Survival"
+TITLES = {
+    1:SURVIVAL,
+    "ProvingGrounds_Trial1_P":SURVIVAL,
+    4:FERVOR,
+    "ProvingGrounds_Trial4_P":FERVOR,
+    5:CUNNING,
+    "ProvingGrounds_Trial5_P":CUNNING,
+    6:SUPREMACY,
+    "ProvingGrounds_Trial6_P":SUPREMACY,
+    7:DISCIPLINE,
+    "ProvingGrounds_Trial7_P":DISCIPLINE,
+    8:INSTINCT,
+    "ProvingGrounds_Trial8_P":INSTINCT,
+}
 
 # Default__ProvingGrounds_Trial{trial}_Dynamic_C
 
@@ -62,7 +82,13 @@ def parse_args():
 args = parse_args()
 our_seed = args.seed
 
-title = 'Boss Trials'
+if our_seed is None:
+    our_seed = random.randint(0,2**32-1)
+else:
+    our_seed = int(our_seed)
+
+our_trial = args.trial
+title = f'Boss Trials: {TITLES[our_trial]} seed {our_seed}'
 # we abuse ixora to fill in the trials?
 raw_ixora_spawn_list = [
     ('/Ixora/Enemies/_Spawning/CotV/Tink/SpawnOptions_MaliTinkSuicide_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
@@ -121,10 +147,6 @@ raw_ixora_spawn_list = [
     ("/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic", "SpawnFactory_OakAI", 0, [EASY]),
 ]
 
-if our_seed is None:
-    our_seed = random.randint(0,2**32-1)
-else:
-    our_seed = int(our_seed)
 
 random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
@@ -137,9 +159,10 @@ mod = Mod(output_filename,
           ["Turns Trials into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats=['gameplay'],
+          cats=['trials','gameplay'],
 )
 mod.comment(f"Seed {our_seed}")
+mod.comment(f"Trial {our_trial}")
 
 debug_pool = """M /Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo"""
 
@@ -376,7 +399,16 @@ mod.close()
 # Sept 6
 # [?] Gem Chest fix?
 # Franco with trial 8 worked good
+# seed 41
 # trial 8 default seed, locked after lagomars
 # Trial 7 fervor worked
 # Trial 6 Supremecy locked second
-# Trial 5 Discipline got blocked
+# Trial 5 Discipline got blocked - after bridge / fallen guardian no spawn
+# Trial Cunning (5?) works on seed 42
+# Trial Fervor works on seed 41 42
+# Trial 6 (s 42) supremecy blocks on 2nd door, no maliwan mob spawns?
+# Trial 8 instinct seed 42 works
+# Seed 41: Fervor
+# Seed 42: Fervor, Cunning, Instinct
+# Seed 1:  Cunning, Fervor
+# I bet you discipline gets blocked because of that robot ball.
