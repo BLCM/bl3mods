@@ -203,8 +203,8 @@ more_bosses = [
      '/Game/Enemies/Oversphere/_Shared/_Design/Balance/Table_Balance_Oversphere_Unique','Oversphere_Katagawa'),
     ('The Unstoppable','/Game/Enemies/Goliath/_Unique/Rare01/Character/BPChar_Goliath_Rare01',
      '/Game/Enemies/Goliath/_Shared/_Design/Balance/Table_Balance_Goliath_Unique','Rare01'),
-    # ('LoboMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH for health in HEALTHS],"damage":10,"nloot":12,ITEM_POOL_INDEX:1}),
-    ('LoboMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH*3 for health in HEALTHS],"damage":10,"nloot":12,'item_pool_index':1}),
+    # ('LocoMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH for health in HEALTHS],"damage":10,"nloot":12,ITEM_POOL_INDEX:1}),
+    ('LocoMobius','/Alisma/Enemies/TrainBoss/_Shared/_Design/Character/BPChar_TrainBoss','/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1','Basic',{"health":[DEFAULT_HEALTH*4 for health in HEALTHS],"damage":10,"nloot":20,'item_pool_index':1}),
 ]
 
 # manual header (open the static header file)
