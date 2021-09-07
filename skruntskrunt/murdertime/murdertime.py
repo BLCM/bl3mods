@@ -24,6 +24,7 @@ sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 import random
 sys.path.append('../boss-rush-slaughter')
+sys.path.append('../bossrace')
 import boss
 import ixorabosses
 import argparse
