@@ -1,0 +1,403 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagPup"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidBadass"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E1C_1.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagPup"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C_2.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagBadass"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C_2.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E2C_2.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E2C_2.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagSpitter"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakSpawner_E3C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"
+   },
+   "NumActorsParam": {
+    "OakSpawner_E3C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  }
+ ],
+ "spawnpoints": [
+  "OakMissionSpawner_BossAdds",
+  "OakMissionSpawner_GemGuardian",
+  "OakMissionSpawner_GemGuardian_0",
+  "OakMissionSpawner_GemGuardian_1",
+  "OakMissionSpawner_Guardian_0",
+  "OakSpawner_Boss",
+  "OakSpawner_E1C",
+  "OakSpawner_E1C_0",
+  "OakSpawner_E1C_1",
+  "OakSpawner_E2C",
+  "OakSpawner_E2C2A",
+  "OakSpawner_E2C2B",
+  "OakSpawner_E2C_2",
+  "OakSpawner_E3C",
+  "OakSpawner_E3C2A",
+  "OakSpawner_E3C2B",
+  "OakSpawner_E3C_3",
+  "OakSpawner_Crystals_Small",
+  "BossMain",
+  "OakSpawnPoint64",
+  "OakSpawnPoint_0",
+  "OakSpawnPoint_1",
+  "OakSpawnPoint_10",
+  "OakSpawnPoint_11",
+  "OakSpawnPoint_120",
+  "OakSpawnPoint_2",
+  "OakSpawnPoint_6",
+  "OakSpawnPoint_7",
+  "OakSpawnPoint_70",
+  "OakSpawnPoint_8",
+  "OakSpawnPoint_84",
+  "OakSpawnPoint_9",
+  "OakSpawnPoint_94",
+  "OakSpawnPoint_96",
+  "SpawnPoint_E1_HighRight_6",
+  "SpawnPoint_E3_3",
+  "SpawnPoint_E3_31",
+  "SpawnPoint_E3_6",
+  "SpawnMesh_EridianGuardianMonolith_2",
+  "SpawnMesh_EridianGuardianMonolith_3",
+  "SpawnMesh_EridianGuardianMonolith_4",
+  "SpawnMesh_EridianGuardianMonolith_5",
+  "SpawnMesh_RakkNest_0",
+  "SpawnMesh_RakkNest_1",
+  "SpawnMesh_RakkNest_2",
+  "SpawnMesh_RakkNest_3",
+  "SpawnMesh_SkagDen",
+  "SpawnMesh_SkagDen10",
+  "SpawnMesh_SkagDen_0",
+  "SpawnMesh_SkagDen_1",
+  "SpawnMesh_SkagDen_10",
+  "SpawnMesh_SkagDen_11",
+  "SpawnMesh_SkagDen_12",
+  "SpawnMesh_SkagDen_13",
+  "SpawnMesh_SkagDen_18",
+  "SpawnMesh_SkagDen_19",
+  "SpawnMesh_SkagDen_2",
+  "SpawnMesh_SkagDen_20",
+  "SpawnMesh_SkagDen_21",
+  "SpawnMesh_SkagDen_3",
+  "SpawnMesh_SkagDen_4",
+  "SpawnMesh_SkagDen_5",
+  "SpawnMesh_SkagDen_6",
+  "SpawnMesh_SkagDen_7",
+  "SpawnMesh_SkagDen_8",
+  "SpawnMesh_SpiderantNest_0",
+  "SpawnMesh_SpiderantNest_1",
+  "SpawnMesh_SpiderantNest_2",
+  "SpawnMesh_SpiderantNest_3",
+  "SpawnMesh_SpiderantNest_4",
+  "SpawnMesh_SpiderantNest_5",
+  "SpawnMesh_SpiderantNest_6",
+  "SpawnMesh_SpiderantNest_7",
+  "SpawnMesh_VarkidSpire_0",
+  "SpawnMesh_VarkidSpire_1",
+  "SpawnMesh_VarkidSpire_2",
+  "SpawnMesh_VarkidSpire_3",
+  "SpawnMesh_VarkidSpire_4",
+  "SpawnMesh_VarkidSpire_5",
+  "SpawnMesh_VarkidSpire_6",
+  "SpawnMesh_VarkidSpire_7",
+  "SpawnMesh_VarkidSpire_8",
+  "SpawnMesh_VarkidSpire_9",
+  "SpawnPoint_SmallCrystal",
+  "SpawnPoint_SmallCrystal_0",
+  "SpawnPoint_SmallCrystal_1",
+  "SpawnPoint_SmallCrystal_10",
+  "SpawnPoint_SmallCrystal_11",
+  "SpawnPoint_SmallCrystal_12",
+  "SpawnPoint_SmallCrystal_13",
+  "SpawnPoint_SmallCrystal_14",
+  "SpawnPoint_SmallCrystal_15",
+  "SpawnPoint_SmallCrystal_16",
+  "SpawnPoint_SmallCrystal_2",
+  "SpawnPoint_SmallCrystal_3",
+  "SpawnPoint_SmallCrystal_4",
+  "SpawnPoint_SmallCrystal_5",
+  "SpawnPoint_SmallCrystal_6",
+  "SpawnPoint_SmallCrystal_7",
+  "SpawnPoint_SmallCrystal_8",
+  "SpawnPoint_SmallCrystal_9"
+ ],
+ "spawnoption_list": [
+  "/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic",
+  "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagBadass",
+  "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagPup",
+  "/Game/Enemies/_Spawning/Skags/Variants/SpawnOptions_SkagSpitter",
+  "/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook",
+  "/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling",
+  "/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll",
+  "/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix",
+  "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidBadass",
+  "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"
+ ]
+}
