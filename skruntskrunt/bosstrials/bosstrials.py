@@ -63,6 +63,25 @@ TITLES = {
     "ProvingGrounds_Trial8_P":INSTINCT,
 }
 
+# These spawn options cause a lot of trouble so we ignore them
+ignore_list = [
+    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'),
+    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
+
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"),
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark"),
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"),
+    ('ProvingGrounds_Trial7_P','/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix'),
+]
+
 # Default__ProvingGrounds_Trial{trial}_Dynamic_C
 
 def trial_path(trial):
@@ -180,7 +199,7 @@ difficulty_pools = {
 def get_bpchar(s):
     return s.split('/')[-1]
 
-def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
+def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ignore_list):
     done_so = set()
     for entry in raw_ixora_spawn_list:
         row,factory,idx,pools = entry
@@ -192,6 +211,13 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
         mod.comment(f"From Pool: {pool}")
         mob = random.choice(difficulty_pools[pool])
         bpchar = mob[BPCHAR]
+        # we ignore after the random choice
+        # to maintain our seeds better        
+        if (mapcode,row) in ignore_list:
+            print(mapcode,row)
+            mod.comment(f"Ignoring: so:{row} factory:{factory}")
+            mod.comment(f"Ignoring: bpchar:{bpchar}")
+            continue
         mod.comment(f"so:{row} factory:{factory}")
         mod.comment(f"bpchar:{bpchar}")
         mod.reg_hotfix(DFL_LEVEL,
@@ -412,3 +438,8 @@ mod.close()
 # Seed 42: Fervor, Cunning, Instinct
 # Seed 1:  Cunning, Fervor
 # I bet you discipline gets blocked because of that robot ball.
+# 42 seed, trial of survival worked when skag mix wasn't manipulated
+# 42 seed, trial of discipline worked when /Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix wasn't touched
+# 6 trial of supremecy dark mix ? no
+# heavy mix? no
+# 57 debug survival did not work
