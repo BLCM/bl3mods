@@ -65,20 +65,21 @@ TITLES = {
 
 # These spawn options cause a lot of trouble so we ignore them
 ignore_list = [
-    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'),
-    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
+    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'), # solves it on most seeds
+    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic'), # ? untested
+    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
+    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
 
-    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
-    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
-    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"),
     ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark"),
-    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"),
     ('ProvingGrounds_Trial7_P','/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix'),
 ]
 

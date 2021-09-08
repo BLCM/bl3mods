@@ -73,8 +73,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkSuicide.SpawnOptions_TinkSuicide,Options.Options[0].Factory.Object..bUseActorProperties,0,,False
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault factory:SpawnFactory_OakAI_0
-# bpchar:/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Hibiscus/Enemies/_Unique/Hunt_Kratch/Character/BPChar_SlugBadass_Kratch.BPChar_SlugBadass_Kratch_C'
+# bpchar:/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti_Adds_ApeCryo
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti_Adds_ApeCryo.BPChar_Yeti_Adds_ApeCryo_C'
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=150.0,Y=150.0,Z=180.0)
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[0].Factory.Object..UINameOverride,0,,None
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[0].Factory.Object..SpawnOrigin,0,,(X=1000,Y=0,Z=180)
@@ -88,8 +88,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault.SpawnOptions_GoonMix_DesertVault,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue.BPChar_Enforcer_BountyPrologue_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds factory:SpawnFactory_OakAI_0
-# bpchar:/Game/Enemies/Ape/_Unique/JungleMonarch/_Design/Character/BPChar_ApeJungleMonarch
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Ape/_Unique/JungleMonarch/_Design/Character/BPChar_ApeJungleMonarch.BPChar_ApeJungleMonarch_C'
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_HamBadass
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_HamBadass.BPChar_GerSaurianDevourer_HamBadass_C'
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=150.0,Y=150.0,Z=180.0)
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[0].Factory.Object..UINameOverride,0,,None
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[0].Factory.Object..SpawnOrigin,0,,(X=1000,Y=0,Z=180)
@@ -103,8 +103,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds factory:SpawnFactory_OakAI_9
-# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1.BPChar_GerSaurianHorsemen1_C'
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds.SpawnOptions_TinkBadassMix_ProvingGrounds,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog.BPChar_SaurianSV_PGrog_C'
 # From Pool: easy
 # so:/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds factory:Factory_SpawnFactory_OakAI
 # bpchar:/Game/Enemies/Saurian/_Unique/Laser/_Design/Character/BPChar_SaurianLaser
@@ -122,8 +122,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds.SpawnOptions_TinkMix_ProvingGrounds,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Saurian/_Unique/Laser/_Design/Character/BPChar_SaurianLaser.BPChar_SaurianLaser_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds factory:Factory_SpawnFactory_OakAI_1
-# bpchar:/Geranium/Enemies/GerSaurian/_Unique/LBN_GunGrog/_Design/Character/BPChar_GerSaurianLBN_GunGrog
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds.SpawnOptions_TinkMix_ProvingGrounds,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/LBN_GunGrog/_Design/Character/BPChar_GerSaurianLBN_GunGrog.BPChar_GerSaurianLBN_GunGrog_C'
+# bpchar:/Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial5_P),/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds.SpawnOptions_TinkMix_ProvingGrounds,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerPsycho_Male/_Unique/PhaserPete/_Design/Character/BPChar_GerPsychoPhaserPete.BPChar_GerPsychoPhaserPete_C'
 # From Pool: easy
 # so:/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds factory:Factory_SpawnFactory_OakAI_2
 # bpchar:/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/b/BPChar_Punk_Bounty01b

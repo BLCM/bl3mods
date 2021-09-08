@@ -554,7 +554,7 @@ M /Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforce
 M /Game/Enemies/Enforcer/_Unique/Bounty02/_Design/Character/BPChar_Enforcer_Bounty02
 M /Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01
 M /Game/Enemies/Enforcer/_Unique/WardenGuard/_Design/Character/BPChar_EnforcerMeleeWardenGuard
-M /Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss
+I /Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss
 M /Game/Enemies/Enforcer/_Unique/RedMelee/_Design/Character/BPChar_EnforcerRedMelee
 M /Game/Enemies/Enforcer/_Unique/Dentist/_Design/Character/BPChar_EnforcerDentist
 M /Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/Character/BPChar_AnointedJoe
@@ -675,7 +675,7 @@ H /Alisma/Enemies/AliGoliath/_Unique/TheBlackKing/_Design/Character/BPChar_AliGo
 I /Alisma/Enemies/BulletRider/_Unique/AP/_Design/Character/BPChar_BulletRider_AP
 M /Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_PsychoShark
 M /Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_DoubleDownDomina
-E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_GorgeousRoger
+I /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_GorgeousRoger
 E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_BomberGary
 E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_MachineGunMikey
 I /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_Yvan

@@ -51,8 +51,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[0].Factory.Object..bUseActorProperties,0,,False
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses factory:Factory_SpawnFactory_OakAI_8
-# bpchar:/Geranium/Enemies/GerPunk_Female/_Unique/GS_Leader/_Design/Character/BPChar_GerPunkGS_Leader
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerPunk_Female/_Unique/GS_Leader/_Design/Character/BPChar_GerPunkGS_Leader.BPChar_GerPunkGS_Leader_C'
+# bpchar:/Geranium/Enemies/GerPunk_Female/_Unique/SOS_Doc/_Design/Character/BPChar_GerPunkSOS_Doc
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerPunk_Female/_Unique/SOS_Doc/_Design/Character/BPChar_GerPunkSOS_Doc.BPChar_GerPunkSOS_Doc_C'
 # From Pool: easy
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses factory:Factory_SpawnFactory_OakAI_6
 # bpchar:/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e
@@ -67,8 +67,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder.BPChar_NogChipHolder_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses factory:Factory_SpawnFactory_OakAI
-# bpchar:/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01.BPChar_Ape_Hunt01_C'
+# bpchar:/Game/Enemies/Ape/_Unique/Squire/_Design/Character/BPChar_ApeSquire
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Game/Enemies/Ape/_Unique/Squire/_Design/Character/BPChar_ApeSquire.BPChar_ApeSquire_C'
 # From Pool: hard
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses factory:SpawnFactory_OakAI_4
 # bpchar:/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro
@@ -95,12 +95,12 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[11].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_EnforcerBadass_Lawrence.BPChar_EnforcerBadass_Lawrence_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses factory:SpawnFactory_OakAI_9
-# bpchar:/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part2/Character/BPChar_DoItForDigby_BloodBucket
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[12].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Looters/_Unique/DoItForDigby_Part2/Character/BPChar_DoItForDigby_BloodBucket.BPChar_DoItForDigby_BloodBucket_C'
+# bpchar:/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[12].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail.BPChar_MeetTimothy_ThirdRail_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault factory:SpawnFactory_OakAI_0
-# bpchar:/Geranium/Enemies/GerEnforcer/_Unique/LBN_Doctor/_Design/Character/BPChar_GerEnforcerLBN_Doctor_NoShield
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault.SpawnOptions_EnforcerMix_DesertVault,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerEnforcer/_Unique/LBN_Doctor/_Design/Character/BPChar_GerEnforcerLBN_Doctor_NoShield.BPChar_GerEnforcerLBN_Doctor_NoShield_C'
+# bpchar:/Geranium/Enemies/GerEnforcer/_Unique/LBN_Doctor/_Design/Character/BPChar_GerEnforcerLBN_Doctor
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault.SpawnOptions_EnforcerMix_DesertVault,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerEnforcer/_Unique/LBN_Doctor/_Design/Character/BPChar_GerEnforcerLBN_Doctor.BPChar_GerEnforcerLBN_Doctor_C'
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault.SpawnOptions_EnforcerMix_DesertVault,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=150.0,Y=150.0,Z=180.0)
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault.SpawnOptions_EnforcerMix_DesertVault,Options.Options[0].Factory.Object..UINameOverride,0,,None
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault.SpawnOptions_EnforcerMix_DesertVault,Options.Options[0].Factory.Object..SpawnOrigin,0,,(X=1000,Y=0,Z=180)
@@ -129,8 +129,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawnin
 SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault.SpawnOptions_GoliathMix_DesertVault,Options.Options[0].Factory.Object..bUseActorProperties,0,,False
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault factory:SpawnFactory_OakAI_0
-# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1
-SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault.SpawnOptions_GoliathMix_DesertVault,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1.BPChar_GerSaurianHorsemen1_C'
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog
+SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial4_P),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault.SpawnOptions_GoliathMix_DesertVault,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerSaurian/_Unique/SV_PGrog/_Design/Character/BPChar_SaurianSV_PGrog.BPChar_SaurianSV_PGrog_C'
 # From Pool: medium
 # so:/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault factory:Factory_SpawnFactory_OakAI
 # bpchar:/Dandelion/Enemies/Loader/_Unique/VIPOnly/Dandelion_FreddieBot/_Design/Character/BPChar_VIPOnly_Dandelion

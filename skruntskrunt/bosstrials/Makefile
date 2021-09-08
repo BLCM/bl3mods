@@ -1,4 +1,4 @@
-SEED=42
+SEED=57
 test:	extracttrials.py
 	python3 extracttrials.py --input ~/projects/bl3data/extracted_new/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.json
 
@@ -19,6 +19,15 @@ trial7.json: extracttrials.py
 
 trial8.json: extracttrials.py
 	python3 extracttrials.py --input ~/projects/bl3data/extracted_new/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_Dynamic.json --output trial8.json
+
+bosstrials.1.debug.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.debug.json
+	python3 bosstrials.py --in trial1.json --output bosstrials.1.debug.bl3hotfix --spawnoptions  spawnoptions.1.debug.json --trial 1 --seed $(SEED)
+
+bosstrials.7.debug.bl3hotfix: trial7.json bosstrials.py spawnoptions.7.debug.json
+	python3 bosstrials.py --in trial7.json --output bosstrials.7.debug.bl3hotfix --spawnoptions  spawnoptions.7.debug.json --trial 7 --seed $(SEED)
+
+bosstrials.6.debug.bl3hotfix: trial6.json bosstrials.py spawnoptions.6.debug.json
+	python3 bosstrials.py --in trial6.json --output bosstrials.6.debug.bl3hotfix --spawnoptions  spawnoptions.6.debug.json --trial 6 --seed $(SEED)
 
 bosstrials.1.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.json
 	python3 bosstrials.py --in trial1.json --output bosstrials.1.bl3hotfix --spawnoptions  spawnoptions.1.json --trial 1 --seed $(SEED)
