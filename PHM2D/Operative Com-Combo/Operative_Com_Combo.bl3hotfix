@@ -1,0 +1,27 @@
+###
+### Name: Operative Com-Combo
+### Version: 1.0.0
+### Author: PHM2D
+### Categories: char-operative, gear-com
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This hotfix mod makes the following changes to the skills of the operative class mods:
+### Violent Violence	replaced by	Commitment
+### Playing Dirty	replaced by	Refreshment
+###
+
+# Violent Violence to Commitment
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/Passive_OperativeDLC_6.Passive_OperativeDLC_6_C
+
+# Violent Violence to Commitment Name
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,Commitment
+
+# Playing Dirty to Refreshment
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/Refreshment/PassiveSkill_Operative_Refreshment.PassiveSkill_Operative_Refreshment_C
+
+# Playing Dirty to Refreshment Name
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,Refreshment
