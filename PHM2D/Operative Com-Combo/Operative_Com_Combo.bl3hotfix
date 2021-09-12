@@ -15,13 +15,13 @@
 ###
 
 # Violent Violence to Commitment
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/Passive_OperativeDLC_6.Passive_OperativeDLC_6_C
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/Passive_OperativeDLC_6.Passive_OperativeDLC_6_C
 
 # Violent Violence to Commitment Name
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,Commitment
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,Commitment
 
-# Playing Dirty to Refreshment
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/GoodMisfortune/PassiveSkill_Operative_GoodMisfortune.PassiveSkill_Operative_GoodMisfortune_C
+# Playing Dirty to Good Misfortune
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/GoodMisfortune/PassiveSkill_Operative_GoodMisfortune.PassiveSkill_Operative_GoodMisfortune_C
 
-# Playing Dirty to Refreshment Name
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,GoodMisfortune
+# Playing Dirty to Good Misfortune
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,GoodMisfortune
