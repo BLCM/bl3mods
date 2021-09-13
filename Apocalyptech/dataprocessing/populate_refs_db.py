@@ -188,7 +188,7 @@ for (dirpath, dirnames, filenames) in os.walk('extracted'):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~181700, as of 2021-08-05 (vault card 2) (216648 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~181700, as of 2021-09-09 (2yr anniversary) (216760 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
