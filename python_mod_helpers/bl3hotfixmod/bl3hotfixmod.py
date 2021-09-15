@@ -152,6 +152,7 @@ class Mod(object):
         self.last_was_newline = True
         self.ensured_meshes = {}
         self.quiet_meshes = quiet_meshes
+        self.seen_streaming_warning = False
 
         self.source = os.path.basename(sys.argv[0])
 
@@ -451,7 +452,7 @@ class Mod(object):
             notify=False,
             ensure=False):
         """
-        Writes out a SpawnMesh-altering hotfix to the mod file.
+        Writes out a SpawnMesh addition hotfix to the mod file.
 
         `map_path` is the full path to the "main" `_P` map where this is being put
         `mesh_path` is the full path to the mesh to be added
@@ -518,6 +519,98 @@ class Mod(object):
             coord_field=coord_field,
             transparent_flag=transparent_flag,
             ), file=self.df)
+
+    def streaming_hotfix(self, map_path, obj_path,
+            expected_index,
+            location=(0,0,0),
+            rotation=(0,0,0),
+            scale=(1,1,1),
+            notify=False):
+        """
+        Writes out a Blueprint Stream/addition hotfix to the mod file.
+
+        `map_path` is the full path to the "main" `_P` map where this is being put
+        `obj_path` is the full path to the object to be added
+        `expected_index` is the expected numerical index of the added blueprint object;
+            this is needed because the actual type-11 hotfix ignores location/rotation/scale,
+            so we need to inject more hotfixes after the fact to move the new object
+            around, and need to know the path to the object in order to do so.  It appears
+            that indexes will start at 0, even "bumping up" hardcoded in-map objects.  Note
+            that this implies that mods which add the same type of object to the same map
+            will end up conflicting with each other, since you'll have no way of knowing
+            how they're ordered in users' mod lists.
+        `location`, `rotation`, and `scale` define the physical parameters of the object
+        `notify` can be used to set the "notify" flag on hotfixes.  This doesn't
+            seem like it's ever necessary, so best to leave it alone.
+
+        NOTE: These are finnicky, and these may not be reliable at the moment.
+        """
+
+        if not self.seen_streaming_warning:
+            self.seen_streaming_warning = True
+            print("WARNING: Blueprint Stream hotfixes (type 11) are rather finnicky, and often")
+            print("don't seem to work how you'd hope them to.  The position/rotation/scaling")
+            print("changes in particular often seem to not actually 'take', leaving your added")
+            print("object at the origin point (0,0,0).  Mods using this type may not be reliable.")
+            print("")
+            self.comment('WARNING: type-11 hotfixes (and associated positioning params) may not work right...')
+
+        # Map path
+        map_first, map_last = map_path.rsplit('/', 1)
+
+        # Object path
+        obj_first, obj_last = obj_path.rsplit('/', 1)
+
+        # Notify flag
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+
+        # Coordinates/transforms - these values are actually ignored by type-11 hotfixes, so
+        # we're just putting in the defaults, to make that more obvious to anyone looking
+        # at the mod file
+        coord_parts = []
+        for coords in [(0,0,0), (0,0,0), (1,1,1)]:
+            coord_parts.append(','.join([
+                '{:.6f}'.format(n) for n in coords
+                ]))
+        coord_field = '|'.join(coord_parts)
+
+        # First the hotfix to add it to the map
+        print('{hf_type},(1,11,{notification_flag},{map_last}),{map_first},{obj_first},{obj_last},{coord_len},"{coord_field}"'.format(
+            hf_type=Mod.TYPE[Mod.EARLYLEVEL],
+            notification_flag=notification_flag,
+            map_first=map_first,
+            map_last=map_last,
+            obj_first=obj_first,
+            obj_last=obj_last,
+            coord_len=len(coord_field),
+            coord_field=coord_field,
+            ), file=self.df)
+
+        # ... and then we need another one to actually move the thing to the proper location, etc
+        direct_obj = '{}.{}:PersistentLevel.{}_C_{}.RootComponent'.format(
+                map_path,
+                map_last,
+                obj_last,
+                expected_index,
+                )
+        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
+                direct_obj,
+                'RelativeLocation',
+                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*location),
+                notify=True)
+        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
+                direct_obj,
+                'RelativeRotation',
+                '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*rotation),
+                notify=True)
+        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
+                direct_obj,
+                'RelativeScale3D',
+                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*scale),
+                notify=True)
 
     def close(self):
         """
