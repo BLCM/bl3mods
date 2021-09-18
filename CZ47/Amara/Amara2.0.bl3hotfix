@@ -60,10 +60,10 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/Da
 
 # Buffing Forceful Expression Bonus 18% > 40% and making it apply to everything
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Channeler_BonusDamage,Multiplier,0,,(BaseValueConstant=0.4,DataTableValue=(DataTable=None,RowName="",ValueName=""))
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Corrosive.ConditionalDamage_SirenEmpowered_Corrosive,ConditionalDamage_SirenEmpowered_Corrosive,DamageSourceFilter,0,,
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Cryo.ConditionalDamage_SirenEmpowered_Cryo,ConditionalDamage_SirenEmpowered_Cryo,DamageSourceFilter,0,,
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Incendiary.ConditionalDamage_SirenEmpowered_Incendiary,ConditionalDamage_SirenEmpowered_Incendiary,DamageSourceFilter,0,,
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Shock.ConditionalDamage_SirenEmpowered_Shock,ConditionalDamage_SirenEmpowered_Shock,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Corrosive.ConditionalDamage_SirenEmpowered_Corrosive,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Cryo.ConditionalDamage_SirenEmpowered_Cryo,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Incendiary.ConditionalDamage_SirenEmpowered_Incendiary,DamageSourceFilter,0,,
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Empowered/ConditionalDamage_SirenEmpowered_Shock.ConditionalDamage_SirenEmpowered_Shock,DamageSourceFilter,0,,
 
 
 
