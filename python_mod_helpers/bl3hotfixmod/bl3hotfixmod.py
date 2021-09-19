@@ -30,6 +30,132 @@
 import os
 import sys
 import gzip
+import string
+
+class _StreamingBlueprintPosition:
+    """
+    Class to hold positioning information for objects created with type-11
+    hotfixes.  These statements have to be delayed, and it's probably good
+    practice to "bunch them up," so to speak, so it'll be nice to have a
+    way to store that information temporarily while building the mod.
+    """
+
+    def __init__(self, obj_name, location, rotation, scale):
+        self.obj_name = obj_name
+        self.location = location
+        self.rotation = rotation
+        self.scale = scale
+
+    def do_positioning(self, mod, map_name):
+        mod.comment('Doing repositioning for {} in {}'.format(
+            self.obj_name.split('.')[-1],
+            map_name,
+            ))
+        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                self.obj_name,
+                'RelativeLocation',
+                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
+                notify=True)
+        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                self.obj_name,
+                'RelativeRotation',
+                '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
+                notify=True)
+        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                self.obj_name,
+                'RelativeScale3D',
+                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
+                notify=True)
+
+class _StreamingBlueprintHelper:
+    """
+    A class to provide some support for dealing with type-11 hotfixes (Streaming
+    Blueprint).
+
+    Its primary purpose is to help "delay" the hotfix processing long enough for
+    the new object to exist, so that the subsequent positioning hotfixes have an
+    object reference to work with.
+
+    Each instance of this object is tied to a specific level, and the class can
+    also be used to "queue up" the post-injection positioning hotixes within a
+    level, in case you're injecting more than one.
+
+    NOTE: The timing we're using here is pretty dependent on loading meshes that do
+    *not* exist in the level already, so any edits to the map which have already
+    loaded these meshes prior to trying this delay will interfere with the process.
+    """
+
+    used_sm_letters_by_map = {
+            'atlashq_p': set(['A', 'B', 'F', 'I', 'K', 'L', 'N', 'O', 'Q', 'S']),
+            'bar_p': set(['A', 'C', 'D', 'E', 'G', 'H', 'L', 'N', 'O', 'R', 'S', 'U', 'V']),
+            'cityvault_p': set(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y']),
+            'covslaughter_p': set(['C', 'O', 'V']),
+            'creatureslaughter_p': set(['C', 'O', 'V']),
+            'desert_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'T', 'W']),
+            'finalboss_p': set(['B', 'M', 'N', 'O', 'T', 'W']),
+            'mansion_p': set(['A', 'E', 'M', 'T']),
+            'marshfields_p': set(['A', 'C', 'E', 'K', 'L', 'T']),
+            'motorcade_p': set(['B', 'C', 'E', 'I', 'J', 'K', 'L', 'N', 'R', 'W']),
+            'motorcadefestival_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'K', 'L', 'N', 'O', 'S', 'T']),
+            'motorcadeinterior_p': set(['C', 'E', 'L', 'M', 'O', 'W']),
+            'prologue_p': set(['A', 'C', 'E', 'G', 'I', 'K', 'L', 'O', 'P', 'R', 'S', 'T', 'Y']),
+            'sanctuary3_p': set(['A', 'C', 'E', 'I', 'L', 'M', 'N', 'O', 'P', 'R', 'T', 'X', 'Z']),
+            'strip_p': set(['J', 'K', 'M', 'O', 'P', 'R', 'S', 'T', 'W']),
+            'towers_p': set(['A', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y']),
+            'trashtown_p': set(['A', 'H', 'I', 'L', 'N', 'R', 'S', 'T']),
+            'wetlands_p': set(['A', 'E', 'G', 'L', 'M', 'O', 'S', 'T']),
+            'woods_p': set(['H', 'M', 'S', 'U']),
+            }
+
+    def __init__(self, mod, map_name):
+        self.map_name = map_name
+        self.mod = mod
+        self.positions = []
+        to_lower = map_name.lower()
+        if to_lower == 'MatchAll':
+            raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
+        self.avail_meshes = []
+        for letter in string.ascii_uppercase:
+            if to_lower in self.used_sm_letters_by_map and letter in self.used_sm_letters_by_map[to_lower]:
+                continue
+            self.avail_meshes.append(f'/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{letter}')
+        # Use 'em in order
+        self.avail_meshes.reverse()
+
+    def consume(self, count=2):
+        if count > len(self.avail_meshes):
+            raise RuntimeError('Not enough free meshes to properly delay hotfix execution!')
+        for _ in range(count):
+            yield self.avail_meshes.pop()
+
+    def add_positioning(self, *args):
+        self.positions.append(_StreamingBlueprintPosition(*args))
+
+    def finish(self, count=2):
+        if self.positions:
+            self.mod.comment('Injecting an artificial delay before proceeding with positioning of streamed Blueprints in {}'.format(
+                self.map_name,
+                ))
+
+            # First the delay
+            for mesh_name in self.consume(count):
+                self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
+                        '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
+                        'StaticMeshComponent.Object..StaticMesh',
+                        self.mod.get_full_cond(mesh_name, 'StaticMesh'))
+            # Revert it right away; no sense waiting for it.
+            self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
+                    '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
+                    'StaticMeshComponent.Object..StaticMesh',
+                    self.mod.get_full_cond('/Game/Gear/Game/Resonator/Model/Meshes/SM_Eridian_Resonator', 'StaticMesh'))
+
+            # And now the individual repositioning
+            for pos in self.positions:
+                pos.do_positioning(self.mod, self.map_name)
+
+            # Now clear out the list of positions and end with a newline
+            self.positions = []
+            self.mod.newline()
 
 class Mod(object):
     """
@@ -152,7 +278,10 @@ class Mod(object):
         self.last_was_newline = True
         self.ensured_meshes = {}
         self.quiet_meshes = quiet_meshes
+
+        # Some vars to help out with type-11 (streaming blueprint) hotfixes
         self.seen_streaming_warning = False
+        self.streaming_helpers = {}
 
         self.source = os.path.basename(sys.argv[0])
 
@@ -525,7 +654,9 @@ class Mod(object):
             location=(0,0,0),
             rotation=(0,0,0),
             scale=(1,1,1),
-            notify=False):
+            notify=False,
+            finish=False,
+            ):
         """
         Writes out a Blueprint Stream/addition hotfix to the mod file.
 
@@ -542,6 +673,12 @@ class Mod(object):
         `location`, `rotation`, and `scale` define the physical parameters of the object
         `notify` can be used to set the "notify" flag on hotfixes.  This doesn't
             seem like it's ever necessary, so best to leave it alone.
+        `finish` can be set to `False` to avoid "finishing" the injection immediately;
+            the delaying StaticMesh hotfixes and the positioning hotfixes won't be
+            written out right away.  They'll be written at the end of the mod instead
+            (or when another `streaming_hotfix` call is made with the value set to `True`)
+
+        Returns the full object name of what we believe the created object should be.
 
         NOTE: These are finnicky, and these may not be reliable at the moment.
         """
@@ -589,28 +726,31 @@ class Mod(object):
             coord_field=coord_field,
             ), file=self.df)
 
-        # ... and then we need another one to actually move the thing to the proper location, etc
-        direct_obj = '{}.{}:PersistentLevel.{}_C_{}.RootComponent'.format(
+        # Figure out what our actual object names are likely to be
+        direct_obj = '{}.{}:PersistentLevel.{}_C_{}'.format(
                 map_path,
                 map_last,
                 obj_last,
                 expected_index,
                 )
-        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
-                direct_obj,
-                'RelativeLocation',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*location),
-                notify=True)
-        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
-                direct_obj,
-                'RelativeRotation',
-                '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*rotation),
-                notify=True)
-        self.reg_hotfix(Mod.EARLYLEVEL, map_last,
-                direct_obj,
-                'RelativeScale3D',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*scale),
-                notify=True)
+        root_obj = '{}.RootComponent'.format(direct_obj)
+
+        # Get our _StreamingBlueprintHelper (or create a new one)
+        map_lower = map_last.lower()
+        if map_lower not in self.streaming_helpers:
+            self.streaming_helpers[map_lower] = _StreamingBlueprintHelper(self, map_last)
+        helper = self.streaming_helpers[map_lower]
+
+        # Add our positioning info to the helper
+        helper.add_positioning(root_obj, location, rotation, scale)
+
+        # If we've been told to "finish" the hotfix (ie: delay a bit, and then do
+        # our positioning hotfixes), do so now.
+        if finish:
+            helper.finish()
+
+        # And return the main object's name
+        return direct_obj
 
     def close(self):
         """
@@ -622,6 +762,12 @@ class Mod(object):
 
         # Reset static meshes (assuming we have any), and re-check that newline
         self._reset_meshes()
+        if not self.last_was_newline:
+            self.newline()
+
+        # See if we have any streaming blueprint (type 11) hotfixes to finish
+        for helper in self.streaming_helpers.values():
+            helper.finish()
         if not self.last_was_newline:
             self.newline()
 
