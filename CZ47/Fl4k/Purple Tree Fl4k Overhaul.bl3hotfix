@@ -1,6 +1,6 @@
 ###
 ### Name: Purple Tree Fl4k Overhaul
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: char-overhaul, skill-system, char-beastmaster, bugfix
@@ -8,11 +8,13 @@
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
 ### 
-### Making all Loader passives scale with Barbaric Yawp and changing BUL Loader passive to be shield damage
-### Better Toys: into slam damage and radius
-### Wooly Armor > Overcharged: When fl4k's shield is full, regen ammo and nades
-### Monkey Do: True amp + no element conversion
-### Capacitance: Grants fl4k 100% reflect chance (deals double damage), and 20% (or 40% with 2pts) firerate and movespeed
+### Fixed the Loaders' bonuses not scaling with Barbaric Yawp investment.
+### Fixed the ION Loader's bonus granting Fl4k Damage Reduction instead of increased Damage Intake.
+### BUL Loader now grants Fl4k bonus Shield Damage instead of bonus Shield Capacity.
+### Better Toys now grants Fl4k increased Slam Damage & Radius instead of Shield Recharge Rate & Delay. Additionally these values have been buffed.
+### Wooly Armor is now known as Overcharged. When Fl4k's shield is full, Fl4k regenerates ammo and grenades at a rate of 5%/s  and 25%/s respectively.
+### Monkey Do now amps all pellets properly and no longer converts the gun's element into kinetic damage.
+### Capacitance now grants FL4K 100% reflect chance, 25% firerate and movespeed. Reflected projectiles deal double damage.speed
 ### 
 ### 
 
