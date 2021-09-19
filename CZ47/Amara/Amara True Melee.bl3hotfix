@@ -11,21 +11,51 @@
 ###
 ###
 ### This mod buffs Amara to be able to do True melee at endgame. 
-### Some changes:
-### -Find your center is 100% mult melee and 200% with +1 point from COM
-### -no cooldown on Blitz
-### -Personal space's V2 now applies to everything, including melee and Action skills
-### -Forceful Expression also applies to everything
-### -AS buffs (damage and cooldown)
-### -Kensei duration increase and other com buffs (COMs rework is planned)
-### -Augments no longer penalize you for equipping them
-### -Tempest shock %, Expedite and samsara is fixed to reflect their card values.
-### -Added Cryo and Slow immunity to Clear the Mind.
+###
+### Personal space's V2 bonus now applies to everything instead of just bullets, including melee and Action skills.
+### Forceful Expression now grants Amara 40% bonus elemental damage. This bonus element applies to all damagesources.
+### Fixed Samsara to now grant Amara Max### Health % Regen instead of Missing Health % Regen.
+### Fixed Deep Well to grant ### 20% Heat per Shot for COV weapons instead of ### 15% =)
+### Fixed Tempest to now grant Amara 10% shock per point instead of 8%.
+### Fixed Expedite to grant Amara 30% AS Cooldown per AS Damage kill. Ascendant currently does NOT boost this further.
+### Buffed Restless from 5% to 12% per point.
+### Buffed Combobreaker to 25%.
+### Changed how Find your center's melee bonus interacts in the formula to buff Amara's total melee dealt. (Mult Value)
+### Changed Jabcross's Weapon Damage bonus after melee into AS Cooldown after melee.
+### Removed Blitz' cooldown.
+### Clear the Mind now grants Amara Cryo and Slow immunity after a kill for a short duration.
+### Decreased the following Action Skills' cooldown in the Grasp family:
+### 	Phasegrasp: 15s
+### 	Eternal Fist: 20s
+### 	Fist over matter: 16s
+### Buffed all PhaseGrasp Immune damage.
+### Buffed Fist over matter's base damage.
+### Increased Ties that Bind's cooldown duration to 26s.
+### Decreased the following Action Skills' cooldown in the Slam family:
+### 	PhaseSlam: 20s
+### 	Downfall: 20s
+### 	Fracture: 22s
+### Buffed the damage of all PhaseSlam Action Skills.
+### Decreased the following Action Skills' cooldown in the Cast family:
+###	 PhaseCast: 16s
+### 	 Tandava: 24s
+###	 Reverberation: 24s
+###	 Deliverance: 20s
+### Buffed the damage of all PhaseCast Action Skills including Deliverance's projectiles.
+### Decreased the following Action Skills' cooldown in the Flare family:
+### 	PhaseFlare: 30s
+### 	Glow Up: 20s
+### 	Shooting Star: 26s
+### 	Light Fantastic: 32s
+### Action Skill Augments no longer penalize Amara when equipping them.
+### Buffed Revelation.
+### Kensei's duration is increased to 10s.
+### Buffed the Stone's rush stack chance to 50% and increased the Damage Reduction amount to 6% per stack.
+### Buffed the Breaker's damage reduction value up to 60%
+### Nimbus no longer deals selfdamage and its dot deals damage more frequently.
 ###
 ### Special thanks to Lonemasterino (PS hotfix help), RamenDeliveryTruck (FE hotfix) and the creators of the Redux mod (used as a reference to get started)
-
-
-
+###
 
 
 # SKILL BUFFS
