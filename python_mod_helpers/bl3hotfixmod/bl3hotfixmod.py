@@ -48,7 +48,7 @@ class _StreamingBlueprintPosition:
 
     def do_positioning(self, mod, map_name):
         mod.comment('Doing repositioning for {} in {}'.format(
-            self.obj_name.split('.')[-1],
+            self.obj_name.split('.')[-2],
             map_name,
             ))
         mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
