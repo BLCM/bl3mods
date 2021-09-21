@@ -123,14 +123,14 @@ class _StreamingBlueprintHelper:
         # Use 'em in order
         self.avail_meshes.reverse()
 
-    def get_next_index(self, obj_last, index=None):
-        obj_last_lower = obj_last.lower()
+    def get_next_index(self, obj_name, index=None):
+        obj_name_lower = obj_name.lower()
         if index is None:
-            if obj_last_lower in self.obj_next_indicies:
-                index = self.obj_next_indicies[obj_last_lower]
+            if obj_name_lower in self.obj_next_indicies:
+                index = self.obj_next_indicies[obj_name_lower]
             else:
                 index = 0
-        self.obj_next_indicies[obj_last_lower] = index + 1
+        self.obj_next_indicies[obj_name_lower] = index + 1
         return index
 
     def consume(self, count=2):
@@ -754,7 +754,7 @@ class Mod(object):
                 map_path,
                 map_last,
                 obj_last,
-                helper.get_next_index(obj_last, index),
+                helper.get_next_index(obj_path, index),
                 )
         root_obj = '{}.{}'.format(direct_obj, positioning_obj)
 
