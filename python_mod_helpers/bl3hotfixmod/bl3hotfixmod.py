@@ -111,6 +111,7 @@ class _StreamingBlueprintHelper:
         self.map_name = map_name
         self.mod = mod
         self.positions = []
+        self.obj_next_indicies = {}
         to_lower = map_name.lower()
         if to_lower == 'MatchAll':
             raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
@@ -121,6 +122,16 @@ class _StreamingBlueprintHelper:
             self.avail_meshes.append(f'/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{letter}')
         # Use 'em in order
         self.avail_meshes.reverse()
+
+    def get_next_index(self, obj_last, index=None):
+        obj_last_lower = obj_last.lower()
+        if index is None:
+            if obj_last_lower in self.obj_next_indicies:
+                index = self.obj_next_indicies[obj_last_lower]
+            else:
+                index = 0
+        self.obj_next_indicies[obj_last_lower] = index + 1
+        return index
 
     def consume(self, count=2):
         if count > len(self.avail_meshes):
@@ -650,7 +661,7 @@ class Mod(object):
             ), file=self.df)
 
     def streaming_hotfix(self, map_path, obj_path,
-            expected_index,
+            index=None,
             location=(0,0,0),
             rotation=(0,0,0),
             scale=(1,1,1),
@@ -663,14 +674,15 @@ class Mod(object):
 
         `map_path` is the full path to the "main" `_P` map where this is being put
         `obj_path` is the full path to the object to be added
-        `expected_index` is the expected numerical index of the added blueprint object;
+        `index` is the expected numerical index of the added blueprint object;
             this is needed because the actual type-11 hotfix ignores location/rotation/scale,
             so we need to inject more hotfixes after the fact to move the new object
             around, and need to know the path to the object in order to do so.  It appears
             that indexes will start at 0, even "bumping up" hardcoded in-map objects.  Note
             that this implies that mods which add the same type of object to the same map
             will end up conflicting with each other, since you'll have no way of knowing
-            how they're ordered in users' mod lists.
+            how they're ordered in users' mod lists.  If this is left as `None`, this
+            library will start numbering at 0 automatically.
         `location`, `rotation`, and `scale` define the physical parameters of the object
         `notify` can be used to set the "notify" flag on hotfixes.  This doesn't
             seem like it's ever necessary, so best to leave it alone.
@@ -731,20 +743,20 @@ class Mod(object):
             coord_field=coord_field,
             ), file=self.df)
 
-        # Figure out what our actual object names are likely to be
-        direct_obj = '{}.{}:PersistentLevel.{}_C_{}'.format(
-                map_path,
-                map_last,
-                obj_last,
-                expected_index,
-                )
-        root_obj = '{}.{}'.format(direct_obj, positioning_obj)
-
         # Get our _StreamingBlueprintHelper (or create a new one)
         map_lower = map_last.lower()
         if map_lower not in self.streaming_helpers:
             self.streaming_helpers[map_lower] = _StreamingBlueprintHelper(self, map_last)
         helper = self.streaming_helpers[map_lower]
+
+        # Figure out what our actual object names are likely to be
+        direct_obj = '{}.{}:PersistentLevel.{}_C_{}'.format(
+                map_path,
+                map_last,
+                obj_last,
+                helper.get_next_index(obj_last, index),
+                )
+        root_obj = '{}.{}'.format(direct_obj, positioning_obj)
 
         # Add our positioning info to the helper
         helper.add_positioning(root_obj, location, rotation, scale)
