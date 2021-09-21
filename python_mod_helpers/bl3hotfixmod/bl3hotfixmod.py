@@ -656,6 +656,7 @@ class Mod(object):
             scale=(1,1,1),
             notify=False,
             finish=False,
+            positioning_obj='RootComponent',
             ):
         """
         Writes out a Blueprint Stream/addition hotfix to the mod file.
@@ -677,6 +678,10 @@ class Mod(object):
             the delaying StaticMesh hotfixes and the positioning hotfixes won't be
             written out right away.  They'll be written at the end of the mod instead
             (or when another `streaming_hotfix` call is made with the value set to `True`)
+        `positioning_obj` can be set, to specify the subobject used to actually position the
+            injected object in the world.  This is usually a SkeletalMeshComponent object,
+            and is often named `RootComponent`, but is sometimes something else.  (For
+            instance, slot machines use `Cabinet` instead.)
 
         Returns the full object name of what we believe the created object should be.
 
@@ -733,7 +738,7 @@ class Mod(object):
                 obj_last,
                 expected_index,
                 )
-        root_obj = '{}.RootComponent'.format(direct_obj)
+        root_obj = '{}.{}'.format(direct_obj, positioning_obj)
 
         # Get our _StreamingBlueprintHelper (or create a new one)
         map_lower = map_last.lower()
