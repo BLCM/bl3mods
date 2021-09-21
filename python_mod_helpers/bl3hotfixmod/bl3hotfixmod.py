@@ -85,6 +85,18 @@ class _StreamingBlueprintHelper:
     loaded these meshes prior to trying this delay will interfere with the process.
     """
 
+    # These positioning object names are *not* at all exhaustive!
+    positioning_obj_default = 'RootComponent'
+    positioning_obj_names = {
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_claptrap': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_hijinx': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_vaultline': 'Cabinet',
+            '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
+            '/game/interactiveobjects/stationarymannedturret/io_groundturret': 'SK_MannedTurret',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
+            }
+
     used_sm_letters_by_map = {
             'atlashq_p': set(['A', 'B', 'F', 'I', 'K', 'L', 'N', 'O', 'Q', 'S']),
             'bar_p': set(['A', 'C', 'D', 'E', 'G', 'H', 'L', 'N', 'O', 'R', 'S', 'U', 'V']),
@@ -141,6 +153,13 @@ class _StreamingBlueprintHelper:
 
     def add_positioning(self, *args):
         self.positions.append(_StreamingBlueprintPosition(*args))
+
+    def get_positioning_obj(self, obj_name):
+        obj_name_lower = obj_name.lower()
+        if obj_name_lower in self.positioning_obj_names:
+            return self.positioning_obj_names[obj_name_lower]
+        else:
+            return self.positioning_obj_default
 
     def finish(self, count=2):
         if self.positions:
@@ -667,7 +686,7 @@ class Mod(object):
             scale=(1,1,1),
             notify=False,
             finish=False,
-            positioning_obj='RootComponent',
+            positioning_obj=None,
             ):
         """
         Writes out a Blueprint Stream/addition hotfix to the mod file.
@@ -691,9 +710,9 @@ class Mod(object):
             written out right away.  They'll be written at the end of the mod instead
             (or when another `streaming_hotfix` call is made with the value set to `True`)
         `positioning_obj` can be set, to specify the subobject used to actually position the
-            injected object in the world.  This is usually a SkeletalMeshComponent object,
-            and is often named `RootComponent`, but is sometimes something else.  (For
-            instance, slot machines use `Cabinet` instead.)
+            injected object in the world.  If not specified, this will use a small hardcoded
+            mapping to see if we know what the object name is, defaulting to `RootComponent`
+            if not (which is what's used for objects like vending machines).
 
         Returns the full object name of what we believe the created object should be.
 
@@ -756,7 +775,10 @@ class Mod(object):
                 obj_last,
                 helper.get_next_index(obj_path, index),
                 )
-        root_obj = '{}.{}'.format(direct_obj, positioning_obj)
+        if positioning_obj is None:
+            root_obj = '{}.{}'.format(direct_obj, helper.get_positioning_obj(obj_path))
+        else:
+            root_obj = '{}.{}'.format(direct_obj, positioning_obj)
 
         # Add our positioning info to the helper
         helper.add_positioning(root_obj, location, rotation, scale)
