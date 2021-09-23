@@ -85,16 +85,71 @@ class _StreamingBlueprintHelper:
     loaded these meshes prior to trying this delay will interfere with the process.
     """
 
-    # These positioning object names are *not* at all exhaustive!
+    # These positioning object names are *not* at all exhaustive!  Objects
+    # that we *do* know should work fine, though:
+    #  - /Alisma/Lootables/_Design/Classes/Hyperion/BPIO_Ali_Lootable_Hyperion_RedChest
+    #  - /Dandelion/Lootables/_Design/Classes/Hyperion/BPIO_Lootable_Hyperion_RedChest
+    #  - /Game/InteractiveObjects/AtlasDefenseTurret/_Shared/_Design/IO_AtlasDefenseTurret
+    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console
+    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Platform
+    #  - /Game/InteractiveObjects/GameSystemMachines/QuickChange/BP_QuickChange
+    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Ammo
+    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl
+    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Health
+    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Weapons
+    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_ClapTrap
+    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_HiJinx
+    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_LootBoxer
+    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_VaultLine
+    #  - /Game/InteractiveObjects/StationaryMannedTurret/IO_GroundTurret
+    #  - /Game/Lootables/_Design/Classes/Atlas/BPIO_Lootable_Atlas_RedChest
+    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate
+    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate_Slaughter
+    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_RedChest
+    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChest
+    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChestCrystal
+    #  - /Game/Lootables/_Design/Classes/Global/BPIO_Lootable_Global_WhiteCrate
+    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_RedChest
+    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_WhiteChest
+    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest
+    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest_Slaughter
+    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_WhiteChest
+    #  - /Game/PatchDLC/Event2/Lootables/_Design/BPIO_Lootable_Jakobs_WhiteChest_Cartels
+    #  - /Game/PatchDLC/Ixora2/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/BP_VendingMachine_BlackMarket
+    #  - /Geranium/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console_Ger
+    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_RedChest
+    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_WhiteChest
+    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_RedChest
+    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_WhiteChest
     positioning_obj_default = 'RootComponent'
     positioning_obj_names = {
+            '/alisma/lootables/_design/classes/hyperion/bpio_ali_lootable_hyperion_redchest': 'Mesh_Chest1',
+            '/dandelion/lootables/_design/classes/hyperion/bpio_lootable_hyperion_redchest': 'Mesh_Chest1',
+            '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_claptrap': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_hijinx': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_vaultline': 'Cabinet',
-            '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
             '/game/interactiveobjects/stationarymannedturret/io_groundturret': 'SK_MannedTurret',
-            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
+            '/game/lootables/_design/classes/atlas/bpio_lootable_atlas_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate_slaughter': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechestcrystal': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/global/bpio_lootable_global_whitecrate': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_whitechest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest_slaughter': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_whitechest': 'Mesh_Chest1',
+            '/game/patchdlc/event2/lootables/_design/bpio_lootable_jakobs_whitechest_cartels': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_redchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_portalchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_redchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_whitechest': 'Mesh_Chest1',
             }
 
     used_sm_letters_by_map = {
