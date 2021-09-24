@@ -846,6 +846,20 @@ class Mod(object):
         # And return the main object's name
         return direct_obj
 
+    def finish_streaming(self):
+        """
+        Used to explicitly "finish" our Streaming Blueprint hotfix statements, so
+        that their object names can be used in other hotfixes.  This is also
+        triggered on a per-level basis by specifying the `finish` argument to
+        `streaming_hotfix()`, or automatically when the modfile is closed, but
+        this is another way to call it.
+        """
+
+        for helper in self.streaming_helpers.values():
+            helper.finish()
+        if not self.last_was_newline:
+            self.newline()
+
     def close(self):
         """
         Closes us out
@@ -860,10 +874,7 @@ class Mod(object):
             self.newline()
 
         # See if we have any streaming blueprint (type 11) hotfixes to finish
-        for helper in self.streaming_helpers.values():
-            helper.finish()
-        if not self.last_was_newline:
-            self.newline()
+        self.finish_streaming()
 
         # Now close out and report
         self.df.close()
