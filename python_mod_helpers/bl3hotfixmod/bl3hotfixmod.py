@@ -47,10 +47,11 @@ class _StreamingBlueprintPosition:
         self.scale = scale
 
     def do_positioning(self, mod, map_name):
-        mod.comment('Doing repositioning for {} in {}'.format(
-            self.obj_name.split('.')[-2],
-            map_name,
-            ))
+        if not mod.quiet_streaming:
+            mod.comment('Doing repositioning for {} in {}'.format(
+                self.obj_name.split('.')[-2],
+                map_name,
+                ))
         mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
                 self.obj_name,
                 'RelativeLocation',
@@ -218,9 +219,10 @@ class _StreamingBlueprintHelper:
 
     def finish(self, count=2):
         if self.positions:
-            self.mod.comment('Injecting an artificial delay before proceeding with positioning of streamed Blueprints in {}'.format(
-                self.map_name,
-                ))
+            if not self.mod.quiet_streaming:
+                self.mod.comment('Injecting an artificial delay before proceeding with positioning of streamed Blueprints in {}'.format(
+                    self.map_name,
+                    ))
 
             # First the delay
             for mesh_name in self.consume(count):
@@ -312,7 +314,8 @@ class Mod(object):
             v=None, lic=None, cats=None,
             ss=None, videos=None, urls=None, nexus=None,
             contact=None, contact_email=None, contact_url=None, contact_discord=None,
-            quiet_meshes=False,
+            quiet_meshes=False, quiet_streaming=False,
+            aggressive_streaming=True,
             ):
         """
         Initializes ourselves and starts writing the mod.
@@ -335,7 +338,7 @@ class Mod(object):
         `contact_url` - Contact URL
         `contact_discord` - Contact Discord info
 
-        And then, some extra control parameters (just the one for now, actually):
+        And then, some extra control parameters:
 
         `quiet_meshes` - This library can do StaticMesh injection, to allow
             meshes to be used in any level, even if they're not ordinarily allowed
@@ -344,6 +347,19 @@ class Mod(object):
             automatically added.  Setting `quiet_meshes` to `True` will suppress
             those comments (though the necessary hotfixes will still be written,
             of course).  See `_ensure_mesh()` for some info on this.
+        `quiet_streaming` - Likewise, this library can do Streaming Blueprint
+            injection, which also requires some extra injected hotfixes to work
+            properly.  Setting this to `True` will suppress warnings/notices
+            about this, including to the console while generating.
+        `aggressive_streaming` - This library has helper code to aggressively
+            help out with handling Streaming Blueprint (type 11) hotfixes which
+            are really better handled in mod-injection software like B3HM or
+            Apoc's mitmproxy-based hfinject.py.  Support for this is present in
+            hfinject.py, and is forthcoming in B3HM.  For now, if using B3HM,
+            leave `aggressive_streaming` at its default of `True`, and if using
+            hfinject.py, set it to `False` instead.  (Though is should be noted
+            that there's not really any downside to always leaving it on, apart
+            from some wasted hotfixes.)
         """
         self.filename = filename
         self.title = title
@@ -363,9 +379,11 @@ class Mod(object):
         self.last_was_newline = True
         self.ensured_meshes = {}
         self.quiet_meshes = quiet_meshes
+        self.quiet_streaming = quiet_streaming
+        self.aggressive_streaming = aggressive_streaming
 
         # Some vars to help out with type-11 (streaming blueprint) hotfixes
-        self.seen_streaming_warning = False
+        self.seen_streaming_warning = quiet_streaming
         self.streaming_helpers = {}
 
         self.source = os.path.basename(sys.argv[0])
@@ -760,10 +778,12 @@ class Mod(object):
         `location`, `rotation`, and `scale` define the physical parameters of the object
         `notify` can be used to set the "notify" flag on hotfixes.  This doesn't
             seem like it's ever necessary, so best to leave it alone.
-        `finish` can be set to `False` to avoid "finishing" the injection immediately;
-            the delaying StaticMesh hotfixes and the positioning hotfixes won't be
-            written out right away.  They'll be written at the end of the mod instead
-            (or when another `streaming_hotfix` call is made with the value set to `True`)
+        `finish` only has an effect when the Mod-level `aggressive_streaming` param is
+            set to `True`.  `finish` can be set to `False` in those cases to avoid
+            "finishing" the injection immediately; the delaying StaticMesh hotfixes and
+            the positioning hotfixes won't be written out right away.  They'll be written
+            at the end of the mod instead (or when another `streaming_hotfix` call is made
+            with the value set to `True`)
         `positioning_obj` can be set, to specify the subobject used to actually position the
             injected object in the world.  If not specified, this will use a small hardcoded
             mapping to see if we know what the object name is, defaulting to `RootComponent`
@@ -835,30 +855,39 @@ class Mod(object):
         else:
             root_obj = '{}.{}'.format(direct_obj, positioning_obj)
 
-        # Add our positioning info to the helper
-        helper.add_positioning(root_obj, location, rotation, scale)
+        # If we're in "aggressive streaming" mode, queue up positions and check for
+        # the `finish` arg.  Otherwise just position right away.
+        if self.aggressive_streaming:
+            # Add our positioning info to the helper
+            helper.add_positioning(root_obj, location, rotation, scale)
 
-        # If we've been told to "finish" the hotfix (ie: delay a bit, and then do
-        # our positioning hotfixes), do so now.
-        if finish:
-            helper.finish()
+            # If we've been told to "finish" the hotfix (ie: delay a bit, and then do
+            # our positioning hotfixes), do so now.
+            if finish:
+                helper.finish()
+        else:
+            pos = _StreamingBlueprintPosition(root_obj, location, rotation, scale)
+            pos.do_positioning(self, map_last)
 
         # And return the main object's name
         return direct_obj
 
     def finish_streaming(self):
         """
-        Used to explicitly "finish" our Streaming Blueprint hotfix statements, so
-        that their object names can be used in other hotfixes.  This is also
-        triggered on a per-level basis by specifying the `finish` argument to
-        `streaming_hotfix()`, or automatically when the modfile is closed, but
-        this is another way to call it.
+        Only has an effect when the Mod-level attr `aggressive_streaming` is
+        `True`.  In those cases, used to explicitly "finish" our Streaming
+        Blueprint hotfix statements, so that their object names can be used in
+        other hotfixes.  This is also triggered on a per-level basis by
+        specifying the `finish` argument to `streaming_hotfix()`, or
+        automatically when the modfile is closed, but this is another way to
+        call it.
         """
 
-        for helper in self.streaming_helpers.values():
-            helper.finish()
-        if not self.last_was_newline:
-            self.newline()
+        if self.aggressive_streaming:
+            for helper in self.streaming_helpers.values():
+                helper.finish()
+            if not self.last_was_newline:
+                self.newline()
 
     def close(self):
         """
