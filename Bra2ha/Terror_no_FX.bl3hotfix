@@ -1,0 +1,24 @@
+###
+### Name: Terror no effects
+### Version: 1.0.1
+### Author: CZ47 & Bra2ha
+### Categories: qol-ui, 
+### Disables the applied terror sound and visual effects 
+
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_High_Play.WE_HUD_StatusEffect_Terror_Lp_High_Play,RequiredBank,0,,
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_High_Stop.WE_HUD_StatusEffect_Terror_Lp_High_Stop,RequiredBank,0,,
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_Med_Play.WE_HUD_StatusEffect_Terror_Lp_Med_Play,RequiredBank,0,,
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_Med_Stop.WE_HUD_StatusEffect_Terror_Lp_Med_Stop,RequiredBank,0,,
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_Low_Play.WE_HUD_StatusEffect_Terror_Lp_Low_Play,RequiredBank,0,,
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_Low_Stop.WE_HUD_StatusEffect_Terror_Lp_Low_Stop,RequiredBank,0,,
+
+
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/StatusEffect_BloodyHarvest_Terror1.StatusEffect_BloodyHarvest_Terror1,PresentationData.Object..bUsesScreenParticle,0,,false
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/StatusEffect_BloodyHarvest_Terror2.StatusEffect_BloodyHarvest_Terror2,PresentationData.Object..bUsesScreenParticle,0,,false
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/StatusEffect_BloodyHarvest_Terror3.StatusEffect_BloodyHarvest_Terror3,PresentationData.Object..bUsesScreenParticle,0,,false
