@@ -3,9 +3,10 @@
 ### Version: 1.0.1
 ### Author: Bra2ha & CZ47
 ### Categories: qol-ui, 
-### Disables the applied terror sound and visual effects
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+### Disables the applied terror sound and visual effects
 
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/BloodyHarvest/Audio/Events/HUD/StatusEffects/HUD_StatusEffect_Terror/WE_HUD_StatusEffect_Terror_Lp_High_Play.WE_HUD_StatusEffect_Terror_Lp_High_Play,RequiredBank,0,,
