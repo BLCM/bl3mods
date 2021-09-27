@@ -122,6 +122,8 @@ class _StreamingBlueprintHelper:
     #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_WhiteChest
     #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_RedChest
     #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_WhiteChest
+    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Console
+    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Platform
     positioning_obj_default = 'RootComponent'
     positioning_obj_names = {
             '/alisma/lootables/_design/classes/hyperion/bpio_ali_lootable_hyperion_redchest': 'Mesh_Chest1',
@@ -151,6 +153,7 @@ class _StreamingBlueprintHelper:
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_portalchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_redchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
             }
 
     used_sm_letters_by_map = {
