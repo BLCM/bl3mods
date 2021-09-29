@@ -13,24 +13,24 @@
 ###
 
 ## Enemy Damage
-# NVHM (OG Health: 0.75)
+# NVHM (OG Value: 0.75)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT1,0,,(BaseValueConstant=1.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# TVHM (OG Health: 0.9)
+# TVHM (OG Value: 0.9)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT2,0,,(BaseValueConstant=1.45,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 ## Enemy Health
-# NVHM (OG Health: 1.0)
+# NVHM (OG Value: 1.0)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# TVHM (OG Health: 1.0)
+# TVHM (OG Value: 1.0)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 
 ## Boss Enemy Health
-# NVHM (OG Health: 1.0)
+# NVHM (OG Value: 1.0)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
-# TVHM (OG Health: 1.0)
+# TVHM (OG Value: 1.0)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
