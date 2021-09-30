@@ -66,14 +66,14 @@ TITLES = {
 # These spawn options cause a lot of trouble so we ignore them
 ignore_list = [
     ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'), # solves it on most seeds
-    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic'), # ? untested
-    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
-    ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
+    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic'), # ? untested
+    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
 
     #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
     #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
@@ -444,3 +444,24 @@ mod.close()
 # 6 trial of supremecy dark mix ? no
 # heavy mix? no
 # 57 debug survival did not work
+
+# On Survival on 57 one of these is causing problems:
+# bpchar:/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c # Red Trooper
+# bpchar:/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue # Dumptruck 
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant # vorducken
+# bpchar:/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/Character/BPChar_AnointedJoe # Annointed Alpha
+# bpchar:/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/b/BPChar_Punk_Bounty01b # Billee
+# bpchar:/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss # Titan
+# bpchar:/Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue # Shiv
+# bpchar:/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare # amach
+# survival still failing on seed 57
+# this caused a problem?
+# # From Pool: medium
+# # so:/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix factory:SpawnFactory_OakAI_2
+# # bpchar:/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader
+# SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix.SpawnOptions_VarkidFullMix,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader.BPChar_SisterlyLove_DebtCollectorLoader_C'
+# 
+# 1.10 works
+# seed 11 on survival did not work
+# seed 11 crashed others on discipline
