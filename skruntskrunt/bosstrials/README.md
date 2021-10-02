@@ -2,19 +2,15 @@ Boss Trials
 ==============
 
 Replace mobs in Trials / Proving Grounds with named Badasses and
-bosses. Spice up the proving grounds!
-
-Currently supports Trials of: Fervor, Cunning, Instinct
-
-WARNING: This mod is in Alpha stages, there's lots of weirdness in
-many trials that prevents enemies from properly spawning.
+bosses. Spice up the proving grounds trials with 6 different boss
+rushes!
 
 Works well with True Trials mod.
 
 Header
 ======
 * Name: Boss Trials
-* Version: 0.1.0
+* Version: 0.1.1
 * Author: skruntskrunt
 * Categories: gameplay, trials
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -24,13 +20,17 @@ Header
 Changelog
 =========
 
+**v0.1.1** - 2021-10-02
+ * Curate a set of working trials, all 6 trials work!
+ * Release a definitive version that combines all trials into 1 hotfix
+
 **v0.1.0** - 2021-09-06
  * Initial Boss Trials
 
 Known Bugs
 ==========
 
-Survival, Supremecy, and Discipline get locked by spawns that don't activate. If you know how to fix this I'd really like to know how to address it.
+Sometimes Survival, Supremecy, and Discipline get locked by spawns that don't activate. If you know how to fix this I'd really like to know how to address it. I have hand currated some seeds that work to get around this but that is slow and adhoc.
 
 Please report bugs to this repository on github: https://github.com/abramhindle/bl3mods
 
@@ -49,8 +49,8 @@ See [COPYING.txt](../../COPYING.txt) for the full text of the license.
 References
 ==========
 
-Thanks to Rockroze1, professor portal, government toast, QualityControl, and more 
-for helping me test this.
+Thanks to Rockroze1, professor portal, philipambrose, ssucka,
+government toast, QualityControl, and more for helping me test this.
 
 Development Home
 ================
