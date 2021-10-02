@@ -34,7 +34,7 @@ OUTPUT='bosstrials.bl3hotfix'
 BPCHAR=1
 SEED=None # 42
 our_seed = SEED
-version = '0.1.0'
+version = '0.1.1'
 
 EASY="easy"
 MEDIUM="medium"
@@ -176,7 +176,7 @@ spawnoptions_filename = args.spawnoptions
 mod = Mod(output_filename,
           title,
           'skruntskrunt',
-          ["Turns Trials into a weird boss rush"],
+          ["Turns Proving Grounds Trials into a weird boss rush trials."],
           lic=Mod.CC_BY_SA_40,
           v=version,
           cats=['trials','gameplay'],
