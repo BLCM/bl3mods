@@ -597,7 +597,7 @@ E /Geranium/Enemies/GerSaurian/_Unique/SV_Predator/_Design/Character/BPChar_Saur
 I /Geranium/Enemies/GerSaurian/_Unique/Grogzilla/_Design/Character/BPChar_GerSaurianGrogzilla
 I /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Pygmimus
 M /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_HamBadass
-H /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
+I /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
 M /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_GrogPoison
 M /Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Grog
 M /Geranium/Enemies/GerSaurian/_Unique/Horsemen1/_Design/Character/BPChar_GerSaurianHorsemen1
@@ -675,7 +675,7 @@ H /Alisma/Enemies/AliGoliath/_Unique/TheBlackKing/_Design/Character/BPChar_AliGo
 I /Alisma/Enemies/BulletRider/_Unique/AP/_Design/Character/BPChar_BulletRider_AP
 M /Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_PsychoShark
 M /Dandelion/Enemies/Looters/_Unique/DoubleDown/_Design/Character/BPChar_DoubleDown_DoubleDownDomina
-E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_GorgeousRoger
+I /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_GorgeousRoger
 E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_BomberGary
 E /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_MachineGunMikey
 I /Dandelion/Enemies/Looters/_Unique/RagingBot/_Design/Character/BPChar_RagingBot_Yvan

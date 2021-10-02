@@ -1,4 +1,4 @@
-SEED=42
+SEED=19
 test:	extracttrials.py
 	python3 extracttrials.py --input ~/projects/bl3data/extracted_new/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.json
 
@@ -20,6 +20,15 @@ trial7.json: extracttrials.py
 trial8.json: extracttrials.py
 	python3 extracttrials.py --input ~/projects/bl3data/extracted_new/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_Dynamic.json --output trial8.json
 
+bosstrials.1.debug.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.debug.json
+	python3 bosstrials.py --in trial1.json --output bosstrials.1.debug.bl3hotfix --spawnoptions  spawnoptions.1.debug.json --trial 1 --seed $(SEED)
+
+bosstrials.7.debug.bl3hotfix: trial7.json bosstrials.py spawnoptions.7.debug.json
+	python3 bosstrials.py --in trial7.json --output bosstrials.7.debug.bl3hotfix --spawnoptions  spawnoptions.7.debug.json --trial 7 --seed $(SEED)
+
+bosstrials.6.debug.bl3hotfix: trial6.json bosstrials.py spawnoptions.6.debug.json
+	python3 bosstrials.py --in trial6.json --output bosstrials.6.debug.bl3hotfix --spawnoptions  spawnoptions.6.debug.json --trial 6 --seed $(SEED)
+
 bosstrials.1.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.json
 	python3 bosstrials.py --in trial1.json --output bosstrials.1.bl3hotfix --spawnoptions  spawnoptions.1.json --trial 1 --seed $(SEED)
 
@@ -38,6 +47,8 @@ bosstrials.survival.bl3hotfix: trial1.json bosstrials.py
 	python3 bosstrials.py --in trial1.json --output bosstrials.1.bl3hotfix --trial 1 --seed $(SEED)
 
 default: bosstrials.1.bl3hotfix bosstrials.4.bl3hotfix bosstrials.5.bl3hotfix bosstrials.6.bl3hotfix bosstrials.7.bl3hotfix bosstrials.8.bl3hotfix
+clean:
+	rm -f bosstrials.1.bl3hotfix bosstrials.4.bl3hotfix bosstrials.5.bl3hotfix bosstrials.6.bl3hotfix bosstrials.7.bl3hotfix bosstrials.8.bl3hotfix
 
 
 spawnoptions.1.json: extractspawnoptions.py trial1.json
@@ -67,4 +78,44 @@ bosstrials.5.1.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
 bosstrials.8.42.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
 	python3 bosstrials.py --in trial8.json --output bosstrials.8.42.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed 42
 
-dist:	bosstrials.4.41.bl3hotfix bosstrials.4.42.bl3hotfix bosstrials.4.1.bl3hotfix bosstrials.5.42.bl3hotfix bosstrials.5.1.bl3hotfix bosstrials.8.42.bl3hotfix 
+MIX1 =	bosstrials.1.16.bl3hotfix \
+	bosstrials.4.13.bl3hotfix \
+	bosstrials.5.16.bl3hotfix \
+	bosstrials.6.18.bl3hotfix \
+	bosstrials.7.19.bl3hotfix \
+	bosstrials.8.15.bl3hotfix
+
+# This is the currated mix
+bosstrials.bl3hotfix: bosstrials.bl3hotfix.header $(MIX1)
+	cat $^ > $@
+
+
+bosstrials.1.%.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.json
+	python3 bosstrials.py --in trial1.json --output bosstrials.1.$*.bl3hotfix --spawnoptions  spawnoptions.1.json --trial 1 --seed $*
+bosstrials.4.%.bl3hotfix: trial4.json bosstrials.py spawnoptions.4.json
+	python3 bosstrials.py --in trial4.json --output bosstrials.4.$*.bl3hotfix --spawnoptions  spawnoptions.4.json --trial 4 --seed $*
+bosstrials.5.%.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
+	python3 bosstrials.py --in trial5.json --output bosstrials.5.$*.bl3hotfix --spawnoptions  spawnoptions.5.json --trial 5 --seed $*
+bosstrials.6.%.bl3hotfix: trial6.json bosstrials.py spawnoptions.6.json
+	python3 bosstrials.py --in trial6.json --output bosstrials.6.$*.bl3hotfix --spawnoptions  spawnoptions.6.json --trial 6 --seed $*
+bosstrials.7.%.bl3hotfix: trial7.json bosstrials.py spawnoptions.7.json
+	python3 bosstrials.py --in trial7.json --output bosstrials.7.$*.bl3hotfix --spawnoptions  spawnoptions.7.json --trial 7 --seed $*
+bosstrials.8.%.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
+	python3 bosstrials.py --in trial8.json --output bosstrials.8.$*.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed $*
+
+
+# bosstrials.4.42.bl3hotfix: trial4.json bosstrials.py spawnoptions.4.json
+# 	python3 bosstrials.py --in trial4.json --output bosstrials.4.42.bl3hotfix --spawnoptions  spawnoptions.4.json --trial 4 --seed 42
+# bosstrials.4.1.bl3hotfix: trial4.json bosstrials.py spawnoptions.4.json
+# 	python3 bosstrials.py --in trial4.json --output bosstrials.4.1.bl3hotfix --spawnoptions  spawnoptions.4.json --trial 4 --seed 1
+# bosstrials.5.42.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
+# 	python3 bosstrials.py --in trial5.json --output bosstrials.5.42.bl3hotfix --spawnoptions  spawnoptions.5.json --trial 5 --seed 42
+# bosstrials.5.1.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
+# 	python3 bosstrials.py --in trial5.json --output bosstrials.5.1.bl3hotfix --spawnoptions  spawnoptions.5.json --trial 5 --seed 1
+# bosstrials.8.42.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
+# 	python3 bosstrials.py --in trial8.json --output bosstrials.8.42.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed 42
+
+
+
+dist:	bosstrials.4.41.bl3hotfix bosstrials.4.42.bl3hotfix bosstrials.4.1.bl3hotfix bosstrials.5.42.bl3hotfix bosstrials.5.1.bl3hotfix bosstrials.8.42.bl3hotfix bosstrials.bl3hotfix
+

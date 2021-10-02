@@ -34,7 +34,7 @@ OUTPUT='bosstrials.bl3hotfix'
 BPCHAR=1
 SEED=None # 42
 our_seed = SEED
-version = '0.1.0'
+version = '0.1.1'
 
 EASY="easy"
 MEDIUM="medium"
@@ -62,6 +62,26 @@ TITLES = {
     8:INSTINCT,
     "ProvingGrounds_Trial8_P":INSTINCT,
 }
+
+# These spawn options cause a lot of trouble so we ignore them
+ignore_list = [
+    ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'), # solves it on most seeds
+    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic'), # ? untested
+    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
+    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
+
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"),
+    ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark"),
+    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"),
+    ('ProvingGrounds_Trial7_P','/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix'),
+]
 
 # Default__ProvingGrounds_Trial{trial}_Dynamic_C
 
@@ -156,7 +176,7 @@ spawnoptions_filename = args.spawnoptions
 mod = Mod(output_filename,
           title,
           'skruntskrunt',
-          ["Turns Trials into a weird boss rush"],
+          ["Turns Proving Grounds Trials into a weird boss rush trials."],
           lic=Mod.CC_BY_SA_40,
           v=version,
           cats=['trials','gameplay'],
@@ -180,7 +200,7 @@ difficulty_pools = {
 def get_bpchar(s):
     return s.split('/')[-1]
 
-def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
+def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ignore_list):
     done_so = set()
     for entry in raw_ixora_spawn_list:
         row,factory,idx,pools = entry
@@ -192,6 +212,13 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params):
         mod.comment(f"From Pool: {pool}")
         mob = random.choice(difficulty_pools[pool])
         bpchar = mob[BPCHAR]
+        # we ignore after the random choice
+        # to maintain our seeds better        
+        if (mapcode,row) in ignore_list:
+            print(mapcode,row)
+            mod.comment(f"Ignoring: so:{row} factory:{factory}")
+            mod.comment(f"Ignoring: bpchar:{bpchar}")
+            continue
         mod.comment(f"so:{row} factory:{factory}")
         mod.comment(f"bpchar:{bpchar}")
         mod.reg_hotfix(DFL_LEVEL,
@@ -412,3 +439,29 @@ mod.close()
 # Seed 42: Fervor, Cunning, Instinct
 # Seed 1:  Cunning, Fervor
 # I bet you discipline gets blocked because of that robot ball.
+# 42 seed, trial of survival worked when skag mix wasn't manipulated
+# 42 seed, trial of discipline worked when /Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix wasn't touched
+# 6 trial of supremecy dark mix ? no
+# heavy mix? no
+# 57 debug survival did not work
+
+# On Survival on 57 one of these is causing problems:
+# bpchar:/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c # Red Trooper
+# bpchar:/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue # Dumptruck 
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
+# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant # vorducken
+# bpchar:/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/Character/BPChar_AnointedJoe # Annointed Alpha
+# bpchar:/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/b/BPChar_Punk_Bounty01b # Billee
+# bpchar:/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss # Titan
+# bpchar:/Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue # Shiv
+# bpchar:/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare # amach
+# survival still failing on seed 57
+# this caused a problem?
+# # From Pool: medium
+# # so:/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix factory:SpawnFactory_OakAI_2
+# # bpchar:/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader
+# SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix.SpawnOptions_VarkidFullMix,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader.BPChar_SisterlyLove_DebtCollectorLoader_C'
+# 
+# 1.10 works
+# seed 11 on survival did not work
+# seed 11 crashed others on discipline
