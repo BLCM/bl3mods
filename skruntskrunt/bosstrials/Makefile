@@ -78,12 +78,12 @@ bosstrials.5.1.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
 bosstrials.8.42.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
 	python3 bosstrials.py --in trial8.json --output bosstrials.8.42.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed 42
 
-MIX1 =	bosstrials.1.15.bl3hotfix \
+MIX1 =	bosstrials.1.16.bl3hotfix \
 	bosstrials.4.13.bl3hotfix \
 	bosstrials.5.16.bl3hotfix \
 	bosstrials.6.18.bl3hotfix \
 	bosstrials.7.19.bl3hotfix \
-	bosstrials.8.14.bl3hotfix
+	bosstrials.8.15.bl3hotfix
 
 # This is the currated mix
 bosstrials.bl3hotfix: bosstrials.bl3hotfix.header $(MIX1)
@@ -117,5 +117,5 @@ bosstrials.8.%.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
 
 
 
-dist:	bosstrials.4.41.bl3hotfix bosstrials.4.42.bl3hotfix bosstrials.4.1.bl3hotfix bosstrials.5.42.bl3hotfix bosstrials.5.1.bl3hotfix bosstrials.8.42.bl3hotfix 
+dist:	bosstrials.4.41.bl3hotfix bosstrials.4.42.bl3hotfix bosstrials.4.1.bl3hotfix bosstrials.5.42.bl3hotfix bosstrials.5.1.bl3hotfix bosstrials.8.42.bl3hotfix bosstrials.bl3hotfix
 
