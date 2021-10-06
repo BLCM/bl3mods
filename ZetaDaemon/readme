@@ -38,3 +38,10 @@ Adds a mention of the stacking on the description, also changes it to say 'Max H
 Fixes the Soulrender not dropping from Tom and Xam, hopefully will be actually fixed by gearbox soon but I'm putting this up in the meantime.
 Credit to Apple1417 for actually figuring out what went wrong and what needed fixing, I'm just putting it up for people to use :)
 Also looking into the Juliets Dazzle but haven't gotten that one working yet
+
+-Mayhem Rescaling (ALPHA)
+A major overhall/reworking targeting mayhem levels 5-11 with balance changes to anointments and gear, aiming to balance the health of enemies around the scaling guns recieve in mayhem levels as well as making anointments provide less damage so they aren't a crutch for builds.
+Is currently in an APLHA stage with enemy health scaling changed along with the mayhem level scaling of things like pets, action skill, enviroment, ect using the formulas from vanilla keeping it in line.
+Anointments have also been changed to balance with the scaling changes but will continue to be tweaked for better balancing.
+Currently the only item changed is the re-volter reducing it's shock damage to 100% and providing a 25% penatly to gun damage while shock enraged.
+No changes are final as I want to take community feedback into account to make a truly fun and well balanced game experience.
