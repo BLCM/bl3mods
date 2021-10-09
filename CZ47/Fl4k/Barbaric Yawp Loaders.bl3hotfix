@@ -1,6 +1,6 @@
 ###
 ### Name: Barbaric Yawp Loaders
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: bugfix, char-beastmaster
@@ -28,6 +28,6 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSki
 
 # WAR Loader
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=0.12)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2,AttributeEffects.AttributeEffects[1].BaseModifierValue,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_Beastmaster_PetBuffPassiveScale.Att_Beastmaster_PetBuffPassiveScale,AttributeInitializer=None,BaseValueScale=-0.12)
 
 
