@@ -1,0 +1,97 @@
+###
+### Name: Burst Fire Skill Descriptions
+### Version: 1.0.0
+### Author: ZetaDaemon
+### Categories: skill-system, char-gunner, char-operative, char-beastmaster, bugfix
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+# Violent Violence
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C,StatDataItems,0,,(UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute',UIStatData_OakPassiveAbilityAttributeInitializer'/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer',UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0')
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,StatusEffectData,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/StatusEffect_Operative_ViolentViolence.StatusEffect_Operative_ViolentViolence
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayAsPercentage,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayPlusSign,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bUseFormatText,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Burst Fire Delay:[/skillbold] $VALUE$,
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,BasePriority,0,,0.5
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,SectionName,0,,Primary
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/ViolentViolence/PassiveSkill_Operative_ViolentViolence.Default__PassiveSkill_Operative_ViolentViolence_C,AbilityDescription,0,,[skillbold]Kill Skill[/skillbold]. After killing an enemy, Zane gains increased [skillbold]Fire Rate[/skillbold] and [skillbold]Burst Fire Delay[/skillbold] for a few seconds. This effect stacks twice.
+
+
+
+# Domino Effect
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C,StatDataItems,0,,(UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute',UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0',UIStatData_OakPassiveAbilityAttributeInitializer'/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer',UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1')
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,StatusEffectData,0,,/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/StatusEffect_Operative_DLCSkill_16.StatusEffect_Operative_DLCSkill_16
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,bDisplayAsPercentage,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,bDisplayPlusSign,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,bUseFormatText,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,FormatText,0,,[skillbold]Burst Fire Delay:[/skillbold] $VALUE$,
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,BasePriority,0,,150.0
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_1,SectionName,0,,Primary
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_16/Passive_OperativeDLC_16.Default__Passive_OperativeDLC_16_C,AbilityDescription,0,,Whenever Zane scores a [skillbold]Critical Hit[/skillbold], he gains increased [skillbold]Fire Rate[/skillbold], [skillbold]Burst Fire Delay[/skillbold] and [skillbold]Reload Speed[/skillbold] for a short time. If he scores a [skillbold]Critical Hit[/skillbold] with his [actionskill]Action Skill[/actionskill], he [skillbold]doubles this effect[/skillbold].
+
+
+
+# War Loader
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2,StatDataItems,0,,(UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute',UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0')
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,StatusEffectData,0,,/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Pet/Loader/_Design/StatusEffects/Status_Beastmaster_PetLoaderBuff_Evo2.Status_Beastmaster_PetLoaderBuff_Evo2
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayAsPercentage,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayPlusSign,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bUseFormatText,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Burst Fire Delay:[/skillbold] $VALUE$,
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,BasePriority,0,,0.5
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,SectionName,0,,Primary
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/ActionSkill/Augments/Augment_Pet_Loader_Evo2.Augment_Pet_Loader_Evo2,Description,0,,FL4K's [actionskill]ION Loader[/actionskill] upgrades into a [actionskill]WAR Loader[/actionskill], discarding its sniper rifle and equipping an [skillbold]Incendiary Shotgun[/skillbold] and [skillbold]Grenades[/skillbold]. While accompanied by the [actionskill]WAR Loader[/actionskill], FL4K gains increased [skillbold]Fire Rate[/skillbold] and [skillbold]Burst Fire Delay[/skillbold].<br><br>When FL4K issues an [skillbold]Attack Command[/skillbold], the [actionskill]WAR Loader[/actionskill] unleashes a [skillbold]barrage of missiles[/skillbold] at the target.
+
+
+
+# Fired Up
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C,StatDataItems,0,,(UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute',UIStatData_OakPassiveAbilityAttributeInitializer'/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer',UIStatData_OakPassiveAbilityAttributeInitializer'/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0',UIStatData_OakPassiveAbilityAttribute'/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0')
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,StatusEffectData,0,,/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/StatusEffect_Gunner_DLCSkill_7.StatusEffect_Gunner_DLCSkill_7
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayAsPercentage,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bDisplayPlusSign,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,bUseFormatText,0,,true
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,FormatText,0,,[skillbold]Burst Fire Delay:[/skillbold] $VALUE$,
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,BasePriority,0,,0.75
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_0,SectionName,0,,Primary
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Passives/DLCSkill_07/Passive_Gunner_DLCSkill_7.Default__Passive_Gunner_DLCSkill_7_C,AbilityDescription,0,,Whenever Moze or [actionskill]Iron Bear[/actionskill] applies a [skillbold]Status Effect[/skillbold] to an enemy, she gains increased [skillbold]Fire Rate[/skillbold] and [skillbold]Burst Fire Delay[/skillbold] for a short time. This effect stacks.
