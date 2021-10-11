@@ -13,32 +13,75 @@ specific vehicle parts -- even if you already have the parts unlocked,
 you can still hijack the specific vehicles and turn them in to
 complete the challenge.
 
-Note that wheel types are *not* included here, since those are
-technically considered different vehicle types by the game, and
-are referenced differently in the game objects.
+There are three variants of the mod:
 
-This mod also adds Monster Wheels to a few specific vehicles, so
-you'll have an easier source for those:
+* **Vehicle Unlocks**: Keeps maps locked to the vehicle types it could always
+  spawn, so maps which only spawned Outrunners will continue to only
+  spawn Outrunners (though you'll get all possible varieties of
+  Outrunners)
+* **Vehicle Unlocks+**: *Completely* unlocks vehicles, so every map which can
+  spawn enemy vehicles will have a mix of Outrunners, Technicals,
+  Cyclones, and Jetbeasts.  The spawners *do* retain a slight bias
+  towards the original vehicle types, though.  This variant basically
+  requires that you own DLC3 (Bounty of Blood).
+* **Vehicle Unlocks (Legacy)**: This is the pre-v2.0 version of the mod which was
+  *not* able to alter wheel/chassis types, so for instance there was
+  no level which would spawn a Zip Outrunner, or a Barbed Technical.
+  The Standard/Plus versions *might* be a little unreliable in
+  multiplayer, though, so if you play in MP and some enemy vehicles
+  are invisible to guests, for instance, you might want to fall back
+  to this version.
+
+This mod also adds Monster Wheels to a few specific vehicles, though
+there's not much reason to now that v2.0 adds in full chassis/wheel
+randomization in levels:
 
 * Clever Girl (Floodmoor Basin)
 * Festive Flesh-Eater (Splinterlands)
 * Skagzilla (The Droughts)
-* Any Technical in Sandblast Scar
+* The Legacy version also adds Monster Wheels to every Technical
+  in Sandblast Scar
 
-One downside, of course, is that enemy vehicles won't be so strongly
-"themed" to their maps, but personally I'd rather see as wide a
-variety as possible.
+The Standard/Plus versions of the mod also add in some rare "stolen"
+vehicle spawns, in some maps, which feature drivers/riders which
+aren't ordinarily found on vehicles in the game.  Also, vehicles
+with heavy armor are no longer labelled as "Heavy."  In lieu of that
+(since heavy armor can pop up on any vehicle spawn now), some
+vehicle spawns have a chance to spawn with Badass riders.
 
-Despite the word "unlock" in the mod title, note that this does *not*
-automatically unlock vehicle parts in your own Catch-A-Ride menus.  You'll
-still have to hijack enemy vehicles and scan them in (or use a save editor)
-to make the parts available to yourself.
+**Note:** Despite the word "unlock" in the mod title, note that this does
+*not* automatically unlock vehicle parts in your own Catch-A-Ride menus.
+You'll still have to hijack enemy vehicles and scan them in (or use a save
+editor) to make the parts available to yourself.
+
+**Multiplayer Note:** It's possible that the Standard/Plus versions
+might behave a bit oddly in multiplayer -- guests might not be able to
+see Jetbeasts in a level which doesn't ordinarily have them, for instance,
+though in my (very limited) testing, subsequent Jetbeasts are often visible.
+For best results, make sure that all connected players are running the same
+mod.  If there's still unexpected behavior that you find unacceptable,
+though, you may just have to drop back to the Legacy version.
 
 Changelog
 =========
 
+**v2.0.0** - October 11, 2021
+ * Complete rewrite which allows us to spawn alternate wheel/chassis types
+   in addition to randomizing the rest of the parts, and in fact allows us
+   to add in whole vehicle types (like adding Jetbeasts to The Droughts,
+   for instance).  Also:
+   * Added jokey "stolen" vehicle spawns to some maps
+   * Added badass enemy riders in lieu of dedicated "heavy armor" spawns
+   * Standardized vehicle naming to omit team/faction, but always report
+     chassis/wheel type.
+ * Split into three variants:
+   * "Vehicle Unlocks," which doesn't add new vehicle types to maps
+   * "Vehicle Unlocks+," which *does* add new vehicle types to maps
+   * "Vehicle Unlocks (Legacy)," which is just the old v1.0.1 version of the mod
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
+ * This is the last update for the "Legacy" version
 
 **v1.0.1** - May 10, 2021
  * No functionality changes, just updating the README and in-mod
