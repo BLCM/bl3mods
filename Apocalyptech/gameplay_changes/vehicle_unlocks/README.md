@@ -15,16 +15,16 @@ complete the challenge.
 
 There are three variants of the mod:
 
-* **Vehicle Unlocks**: Keeps maps locked to the vehicle types it could always
+* [**Vehicle Unlocks**](https://github.com/BLCM/bl3mods/wiki/Vehicle%20Unlocks): Keeps maps locked to the vehicle types it could always
   spawn, so maps which only spawned Outrunners will continue to only
   spawn Outrunners (though you'll get all possible varieties of
   Outrunners)
-* **Vehicle Unlocks+**: *Completely* unlocks vehicles, so every map which can
+* [**Vehicle Unlocks+**](https://github.com/BLCM/bl3mods/wiki/Vehicle%20Unlocks%2B): *Completely* unlocks vehicles, so every map which can
   spawn enemy vehicles will have a mix of Outrunners, Technicals,
   Cyclones, and Jetbeasts.  The spawners *do* retain a slight bias
   towards the original vehicle types, though.  This variant basically
   requires that you own DLC3 (Bounty of Blood).
-* **Vehicle Unlocks (Legacy)**: This is the pre-v2.0 version of the mod which was
+* [**Vehicle Unlocks (Legacy)**](https://github.com/BLCM/bl3mods/wiki/Vehicle%20Unlocks%20%28Legacy%29): This is the pre-v2.0 version of the mod which was
   *not* able to alter wheel/chassis types, so for instance there was
   no level which would spawn a Zip Outrunner, or a Barbed Technical.
   The Standard/Plus versions *might* be a little unreliable in
