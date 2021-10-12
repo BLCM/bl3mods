@@ -1,0 +1,27 @@
+###
+### Name: Taste of Defeet
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: mayhem, cheat, joke
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### This mod replaces the Mayhem Modifier "Galaxy Brain" with "Taste of Defeet".
+###
+### This modifier scales up the feet of all entities that make use of the "L_Foot" and "R_Foot" Bone by x3.
+### No, this was not my idea, don't ask.
+### 
+### IMPORTANT NOTE: This mod *only* applies after you load into a map, swap away and back to this modifier 
+### OR swap to this modifier if you weren't already on it.
+### This modifier will then persist on map travel etc, but will be removed again on save quitting at which time you need to reapply the process above.
+### 
+### 
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=L_Foot),Scale=3.0),(BoneRef=(BoneName=R_Foot),Scale=3.0)))
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,Taste of Defeet
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Description,0,,You know what they say about big feet.
+
