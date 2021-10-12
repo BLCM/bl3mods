@@ -1,6 +1,6 @@
 ###
 ### Name: THICCLANDS3
-### Version: 1.1.1
+### Version: 1.1.2
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: mayhem, cheat, joke
@@ -10,7 +10,7 @@
 ### 
 ### This mod replaces the Mayhem Modifier "Galaxy Brain" with "THICCLANDS3".
 ###
-### This modifier scales up the thighs of all entities that make use of the "L_Thigh", "R_Thigh", "L_Hip" and "R_Hip" Bone by x2. (Ava Excluded)
+### This modifier scales up the thighs of most entities that have some sort of Bone structure. (Ava Excluded)
 ### Don't ask.
 ### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
@@ -25,8 +25,8 @@
 # Changing the Bones the modifier resizes
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=R_Thigh),Scale=2),(BoneRef=(BoneName=L_Thigh),Scale=2),(BoneRef=(BoneName=R_Hip),Scale=2),(BoneRef=(BoneName=L_Hip),Scale=2)))
 
-# Excluding Ava (she has a larger head instead)
-SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,((/Game/NonPlayerCharacters/Ava/Model/Rig/SK_Ava_Skeleton.SK_Ava_Skeleton,(Bones=((BoneRef=(BoneName=Head),Scale=2)))))
+# Ava (large head), Tediore raptors and Wotan needed an override as well
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,((/Game/NonPlayerCharacters/Ava/Model/Rig/SK_Ava_Skeleton.SK_Ava_Skeleton,(Bones=((BoneRef=(BoneName=Head),Scale=2)))),(/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/Model/Rig/SK_Behemoth_Skeleton.SK_Behemoth_Skeleton,(Bones=((BoneRef=(BoneName=BL_Thigh),Scale=2),(BoneRef=(BoneName=BR_Thigh),Scale=2),(BoneRef=(BoneName=FL_Thigh),Scale=2),(BoneRef=(BoneName=FR_Thigh),Scale=2)))),(/Game/Gear/Weapons/SMGs/Tediore/_Shared/Model/Rig/SK_SM_TED_RaptorLegs_Skeleton.SK_SM_TED_RaptorLegs_Skeleton,(Bones=((BoneRef=(BoneName=R_Raptor_Hip),Scale=3),(BoneRef=(BoneName=R_Raptor_Thigh),Scale=2),(BoneRef=(BoneName=L_Raptor_Hip),Scale=3),(BoneRef=(BoneName=L_Raptor_Thigh),Scale=2)))),(/Game/Gear/Weapons/Shotguns/Tediore/_Shared/Model/Rig/SK_SG_TED_SpiderLegs_Skeleton.SK_SG_TED_SpiderLegs_Skeleton,(Bones=((BoneRef=(BoneName=L_Back_Leg_Thigh),Scale=2),(BoneRef=(BoneName=L_Front_Leg_Thigh),Scale=2),(BoneRef=(BoneName=R_Back_Leg_Thigh),Scale=2),(BoneRef=(BoneName=R_Front_Leg_Thigh),Scale=2)))),(/Game/Gear/Weapons/Pistols/Tediore/Shared/Model/Rig/SK_PS_TED_SpiderLegs_Skeleton.SK_PS_TED_SpiderLegs_Skeleton,(Bones=((BoneRef=(BoneName=FL_Thigh),Scale=2),(BoneRef=(BoneName=FR_Thigh),Scale=2),(BoneRef=(BoneName=BL_Thigh),Scale=2),(BoneRef=(BoneName=BR_Thigh),Scale=2)))))
 
 # Changing modifier name and description
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,[EXTRA HARD] THICCLANDS3
