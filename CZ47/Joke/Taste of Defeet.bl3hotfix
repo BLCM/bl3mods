@@ -12,6 +12,7 @@
 ### This mod replaces the Mayhem Modifier "Galaxy Brain" with "Taste of Defeet".
 ###
 ### This modifier scales up the feet of all entities that make use of the "L_Foot" and "R_Foot" Bone by x3.
+### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### No, this was not my idea, don't ask.
 ### 
 ### IMPORTANT NOTE: This mod *only* applies after you load into a map, swap away and back to this modifier 
@@ -24,4 +25,3 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shar
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,Taste of Defeet
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Description,0,,You know what they say about big feet.
-
