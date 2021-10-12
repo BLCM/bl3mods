@@ -36,7 +36,7 @@ mod = Mod('no_hidden_eridium.bl3hotfix',
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='gameplay, qol',
+        cats='maps',
         )
 
 # This is one easy way to accomplish it for every map before DLC6, but the Director's
