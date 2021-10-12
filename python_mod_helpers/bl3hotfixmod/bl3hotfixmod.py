@@ -86,6 +86,8 @@ class _StreamingBlueprintHelper:
     loaded these meshes prior to trying this delay will interfere with the process.
     """
 
+    # TODO: Should probably *not* specify a default here.  Just have a known list, and
+    # raise an exception if we don't know what the var should be.
     # These positioning object names are *not* at all exhaustive!  Objects
     # that we *do* know should work fine, though:
     #  - /Alisma/Lootables/_Design/Classes/Hyperion/BPIO_Ali_Lootable_Hyperion_RedChest
@@ -103,6 +105,8 @@ class _StreamingBlueprintHelper:
     #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_LootBoxer
     #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_VaultLine
     #  - /Game/InteractiveObjects/StationaryMannedTurret/IO_GroundTurret
+    #  - /Game/InteractiveObjects/Switches/Circuit_Breaker/_Design/IO_Switch_Circuit_Breaker_V1
+    #  - /Game/InteractiveObjects/Switches/Lever/Design/IO_Switch_Industrial_Prison
     #  - /Game/Lootables/_Design/Classes/Atlas/BPIO_Lootable_Atlas_RedChest
     #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate
     #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate_Slaughter
@@ -135,6 +139,8 @@ class _StreamingBlueprintHelper:
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_vaultline': 'Cabinet',
             '/game/interactiveobjects/stationarymannedturret/io_groundturret': 'SK_MannedTurret',
+            '/game/interactiveobjects/switches/circuit_breaker/_design/io_switch_circuit_breaker_v1': 'DefaultSceneRoot',
+            '/game/interactiveobjects/switches/lever/design/io_switch_industrial_prison': 'DefaultSceneRoot',
             '/game/lootables/_design/classes/atlas/bpio_lootable_atlas_redchest': 'Mesh_Chest1',
             '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate': 'Mesh_Chest1',
             '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate_slaughter': 'Mesh_Chest1',
