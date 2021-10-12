@@ -1,6 +1,6 @@
 ###
 ### Name: THICCLANDS3
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: mayhem, cheat, joke
@@ -14,8 +14,9 @@
 ### This modifier scales up the thighs of all entities that make use of the "L_Thigh" and "R_Thigh" Bone by x2.
 ### Don't ask.
 ### (When scaling the number too high up, you'll find that characters sink into the floor.)
-### 
-### IMPORTANT NOTE: This mod *only* applies after you load into a map, swap away and back to this modifier 
+### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
+###
+### IMPORTANT NOTE: The mayhem modifier sometimes only applies after you load into a map, swap away and back to this modifier 
 ### OR swap to this modifier if you weren't already on it.
 ### This modifier will then persist on map travel etc, but will be removed again on save quitting at which time you need to reapply the process above.
 ### 
@@ -25,3 +26,11 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shar
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,[EXTRA HARD] THICCLANDS3
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Description,0,,All thighs are extra thicc. Bonk!
+
+# Adding the modifier to the Girth Blaster to dynamically create thicc thighs.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf,AspectList,0,,(WeaponUseModeAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponUseModeAspectData',WeaponBonusAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponBonusAspectData',WeaponAttributeEffectsAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponAttributeEffectsAspectData',WeaponAttachmentEffectAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponAttachmentEffectAspectData',InventoryAbilityAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:Thicc')
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:Thicc,Abilities,0,,((Ability=BlueprintGeneratedClass'"/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/Ability_Mayhem2_Bighetti.Ability_Mayhem2_Bighetti_C"'))
+
+# Adding the modifier to the Buttplug to dynamically create thicc thighs.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug,AspectList,0,,(WeaponUseModeAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponUseModeAspectData_0',WeaponBonusAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_WeaponBonusAspectData',WeaponAudioAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponAudioAspectData_0',InventoryConditionalDamageAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_InventoryConditionalDamageAspectData',InventoryAbilityAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc')
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc,Abilities,0,,((Ability=BlueprintGeneratedClass'"/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/Ability_Mayhem2_Bighetti.Ability_Mayhem2_Bighetti_C"'))
