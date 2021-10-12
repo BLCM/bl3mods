@@ -10,7 +10,7 @@
 ### 
 ### This mod replaces the Mayhem Modifier "Galaxy Brain" with "THICCLANDS3".
 ###
-### This modifier scales up the thighs of all entities that make use of the "L_Thigh" and "R_Thigh" Bone by x2. (Ava excluded)
+### This modifier scales up the thighs of all entities that make use of the "L_Thigh", "R_Thigh", "L_Hip" and "R_Hip" Bone by x2. (Ava Excluded)
 ### Don't ask.
 ### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
