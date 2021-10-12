@@ -1,6 +1,6 @@
 ###
 ### Name: THICCLANDS3
-### Version: 1.0.2
+### Version: 1.0.3
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: mayhem, cheat, joke
@@ -15,6 +15,8 @@
 ### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
 ###
+### Mayhem 11 has an easy modifier to get easier access this mod without having to deal with other modifiers.
+### 
 ### IMPORTANT NOTE: The mayhem modifier sometimes only applies after you load into a map, swap away and back to this modifier 
 ### OR swap to this modifier if you weren't already on it.
 ### This modifier will then persist on map travel etc, but will be removed again on save quitting at which time you need to reapply the process above.
@@ -33,3 +35,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/
 # Adding the modifier to the Buttplug to dynamically create thicc thighs.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug,AspectList,0,,(WeaponUseModeAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponUseModeAspectData_0',WeaponBonusAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_WeaponBonusAspectData',WeaponAudioAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponAudioAspectData_0',InventoryConditionalDamageAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_InventoryConditionalDamageAspectData',InventoryAbilityAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc')
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc,Abilities,0,,((Ability=BlueprintGeneratedClass'"/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/Ability_Mayhem2_Bighetti.Ability_Mayhem2_Bighetti_C"'))
+
+# Adding the Easy Modifier pool to M11
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2.OverrideModSet_Mayhem2,PerLevelOverrides.PerLevelOverrides[10].RandomModifierSlotsOverride,0,,(MayhemModifierSlotDataAsset'"/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Easy.ModSet_Mayhem2_Easy"')
