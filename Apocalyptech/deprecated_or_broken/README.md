@@ -66,6 +66,10 @@ weren't actually intended to be mods themselves.
   affects their facial expressions.  I was hoping it would be more amusing than
   it is, but in the end it's kind of "meh," so I'm tossing it in here rather than
   doing a "real" release.
+- `its_raining_skags.txt` - Repurposes the Eridium Cluster spawner in The
+  Droughts to provide a rain of skags near the Highway fast travel.  I couldn't
+  quite figure out having them *constantly* falling; they get to about 20 or
+  so and then you need to kill one to get another to fall down.
 
 ## Deprecated/Testing Mods
 
