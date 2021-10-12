@@ -11,18 +11,17 @@
 ### 
 ### This mod replaces the Mayhem Modifier "Galaxy Brain" with "THICCLANDS3".
 ###
-### This modifier scales up the thighs of all entities that make use of the "L_Thigh" and "R_Thigh" Bone by x1.8.
+### This modifier scales up the thighs of all entities that make use of the "L_Thigh" and "R_Thigh" Bone by x2.
 ### Don't ask.
+### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### 
 ### IMPORTANT NOTE: This mod *only* applies after you load into a map, swap away and back to this modifier 
 ### OR swap to this modifier if you weren't already on it.
 ### This modifier will then persist on map travel etc, but will be removed again on save quitting at which time you need to reapply the process above.
 ### 
 ### 
-
-SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=R_Thigh),Scale=1.8),(BoneRef=(BoneName=L_Thigh),Scale=1.8)))
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=R_Thigh),Scale=2),(BoneRef=(BoneName=L_Thigh),Scale=2)))
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,()
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,[EXTRA HARD] THICCLANDS3
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Description,0,,All thighs are extra thicc. Bonk!
-
