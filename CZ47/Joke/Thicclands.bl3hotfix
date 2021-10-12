@@ -1,6 +1,6 @@
 ###
 ### Name: THICCLANDS3
-### Version: 1.1.0
+### Version: 1.1.1
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: mayhem, cheat, joke
@@ -10,7 +10,7 @@
 ### 
 ### This mod replaces the Mayhem Modifier "Galaxy Brain" with "THICCLANDS3".
 ###
-### This modifier scales up the thighs of all entities that make use of the "L_Thigh" and "R_Thigh" Bone by x2. (Ava excluded)
+### This modifier scales up the thighs of all entities that make use of the "L_Thigh", "R_Thigh", "L_Hip" and "R_Hip" Bone by x2. (Ava Excluded)
 ### Don't ask.
 ### (When scaling the number too high up, you'll find that characters sink into the floor.)
 ### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
@@ -24,7 +24,6 @@
 ### 
 # Changing the Bones the modifier resizes
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=R_Thigh),Scale=2),(BoneRef=(BoneName=L_Thigh),Scale=2),(BoneRef=(BoneName=R_Hip),Scale=2),(BoneRef=(BoneName=L_Hip),Scale=2)))
-SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,()
 
 # Excluding Ava (she has a larger head instead)
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,((/Game/NonPlayerCharacters/Ava/Model/Rig/SK_Ava_Skeleton.SK_Ava_Skeleton,(Bones=((BoneRef=(BoneName=Head),Scale=2)))))
