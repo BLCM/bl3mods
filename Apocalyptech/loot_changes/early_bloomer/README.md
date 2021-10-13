@@ -4,15 +4,17 @@ Early Bloomer
 Unlocks all weapon types, elements, manufacturers, anointments, etc, from the very
 beginning of the game, in addition to unlocking all available inventory slots.
 
+This mod also allows use of the Eridian Resonator from the beginning of the game
+(the device that lets you harvest Eridium clusters).  It does *not* unlock the
+Analyzer, which translates the Eridian messages -- I wasn't able to figure out
+how to do that one via mods.  The Analyzer can be unlocked with savegame
+editing, though.
+
 The first few chests encountered in Covenant Pass are still locked to providing
 pistols-only, but you'll start seeing the full variety of in-game pistols even
 from that point.  The mod also removes the level-locking of the Polyaimorous,
 Wedding Invitation, and Superstreamer -- to make use of those, you'd likely
 need to be using my Expanded Legendary Pools mod.
-
-This mod does *not* unlock the Eridian Resonator or Translator -- I wasn't able
-to figure out how to do those via mods.  Those can be unlocked with savegame
-editing, though, so I'm unlikely to try for that any longer in here.
 
 **Compatibility Info:**
 
@@ -25,6 +27,9 @@ which happen *after* this mod.
 
 Changelog
 =========
+
+**v1.1.0** - Oct 13, 2021
+ * Added unlock for Eridian Resonator
 
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
