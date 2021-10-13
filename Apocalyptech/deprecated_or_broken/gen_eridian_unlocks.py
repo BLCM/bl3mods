@@ -19,6 +19,8 @@
 # along with this Borderlands 3 Hotfix Mod.  If not, see
 # <https://www.gnu.org/licenses/>.
 
+import sys
+sys.path.append('../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod
 
 mod = Mod('eridian_unlocks.txt',
@@ -44,14 +46,37 @@ mod = Mod('eridian_unlocks.txt',
         lic=Mod.CC_BY_SA_40,
         )
 
-# Resonator unlock.  Kind of stupid, really, but it works great!
 mod.comment('Always allow Resonator')
+
 mod.reg_hotfix(Mod.PATCH, '',
-        '/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator',
+        '/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator',
         'OverrideCondition.Object..Conditions',
-        """(
-            Condition_CompareDistance_C'/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator:OverrideCondition_GbxCondition_List:Conditions_Condition_CompareDistance'
-        )""")
+        '({},{})'.format(
+            mod.get_full_cond('/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator:OverrideCondition_GbxCondition_List.Conditions_Condition_CompareDistance', 'Condition_CompareDistance_C'),
+            mod.get_full_cond('/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator:OverrideCondition_GbxCondition_List.Conditions_Condition_CanUseResonator', 'Condition_CanUseResonator_C'),
+            ))
+
 mod.newline()
+
+# Tried doing a bit of this, but the subobject creation didn't work, and I suspect
+# that there's some stuff in the ubergraph/blueprint anyway
+#mod.comment('Analyzer')
+#
+#mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll',
+#        '/Game/InteractiveObjects/EridianWriting/IO_EridianWriting.IO_EridianWriting_C:Usable_GEN_VARIABLE',
+#        'EnabledCondition',
+#        mod.get_full_cond('/Game/InteractiveObjects/EridianWriting/IO_EridianWriting.IO_EridianWriting_C:Apoc_Allow_Translate_Cond', 'Condition_IsTrue_C'))
+#
+#mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll',
+#        '/Game/InteractiveObjects/EridianWriting/IO_EridianWriting.IO_EridianWriting_C:UsableNoAnalyzer_GEN_VARIABLE',
+#        'EnabledCondition',
+#        mod.get_full_cond('/Game/InteractiveObjects/EridianWriting/IO_EridianWriting.IO_EridianWriting_C:Apoc_Disallow_Translate_Cond', 'Condition_IsTrue_C'))
+#
+#mod.reg_hotfix(Mod.EARLYLEVEL, 'MatchAll',
+#        '/Game/InteractiveObjects/EridianWriting/IO_EridianWriting.IO_EridianWriting_C:Apoc_Disallow_Translate_Cond',
+#        'bInvertCondition',
+#        'True')
+#
+#mod.newline()
 
 mod.close()

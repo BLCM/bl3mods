@@ -94,17 +94,10 @@ weren't actually intended to be mods themselves.
   of event.  Still, keeping it around for awhile.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
   from the beginning of the game, though currently all it does is the
-  Resonator.
-  - **NOTE:** This currently does have a couple weird side effects, namely:
-    - Meleeing enemies will use the Resonator animation, though it
-      continues to do damage as usual
-    - You won't be able to attach the empty blood pack to Ace Baron, during
-      the Meridian Outskirts mission "Healers and Dealers."
-    - You won't be able to melee the varkid poop pile in Demon in the Dark,
-      in Konrad's Hold
-  - Given the problems above, and the fact that there's some actual savegame
-    editing forthcoming which can unlock this gear properly, without any
-    fuss, I'm moving the mod into this deprecated section.
+  Resonator.  Unlocking the Analyzer seems to be trickier, and the fact
+  that there's some actual savegame editing which can unlock this gear
+  properly, without any fuss, I'm moving the mod into this deprecated
+  section.
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
