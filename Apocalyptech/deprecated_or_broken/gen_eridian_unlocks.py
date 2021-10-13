@@ -42,11 +42,15 @@ mod = Mod('eridian_unlocks.txt',
             "At the moment, only the Resonator is unlocked.  I've partially figured",
             "out unlocking the Analyzer, though it behaves pretty weirdly so it's",
             "not in here yet.",
+            "",
+            "NOTE: this'll probably never actually be a standalone mod; if I figure",
+            "out other unlocks in the future, I'm likely to just fold it into",
+            "Early Bloomer, as I did with the Resonator.",
         ],
         lic=Mod.CC_BY_SA_40,
         )
 
-mod.comment('Always allow Resonator')
+mod.comment('Always allow Resonator (included in Early Bloomer v1.1.0+)')
 
 mod.reg_hotfix(Mod.PATCH, '',
         '/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator',

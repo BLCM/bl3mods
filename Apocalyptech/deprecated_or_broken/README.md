@@ -97,7 +97,9 @@ weren't actually intended to be mods themselves.
   Resonator.  Unlocking the Analyzer seems to be trickier, and the fact
   that there's some actual savegame editing which can unlock this gear
   properly, without any fuss, I'm moving the mod into this deprecated
-  section.
+  section.  Also, if I ever do figure out more, I'm almost certainly going
+  to just fold it into Early Bloomer rather than release as a separate
+  mod (which is, in fact, what I did with the Resonator).
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
