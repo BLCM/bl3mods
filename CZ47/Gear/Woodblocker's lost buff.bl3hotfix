@@ -1,0 +1,20 @@
+###
+### Name: Woodblocker's lost buff
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: gear-sniper, bugfix
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### This brings back the crit and recoil buff the Woodblocker received on 2020-02-27
+### and then lost on 2021-07-29.
+### 
+### Crit bonus +100%, recoil -50%
+### 
+
+# Crit buff
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/Parts/Part_SR_HYP_Barrel_Woodblocks.Part_SR_HYP_Barrel_Woodblocks,InstigatorAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_CriticalHitDamageBonus.Att_CriticalHitDamageBonus"',ModifierValue=(BaseValueConstant=1.000000)))
+# Recoil buff
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/Woodblocks/Parts/Part_SR_HYP_Barrel_Woodblocks.Part_SR_HYP_Barrel_Woodblocks,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.000000,DataTableValue=(DataTable=DataTable'"/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP"',RowName="SR_Quad",ValueName="DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53"))),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=10.000000)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_SwayZoomScale.Att_Weapon_SwayZoomScale"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.700000)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.500000)))
