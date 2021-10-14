@@ -29,13 +29,13 @@ mod = Mod('no_hidden_eridium.bl3hotfix',
         [
             "DLC6 (Director's Cut) added in the chance for eridium clusters and",
             "eridium jars to spawn in a 'spectral' variety which requires the",
-            "player to have a Mysterious Amulet equipped to destroy.  The visual",
+            "player to have a Mysterious Amulet equipped to see.  The visual",
             "effect is neat, but this mod makes it so that all eridium cluster/jar",
-            "spawns are ordinary, and don't require the Amulet to break.",
+            "spawns are ordinary, and don't require the Amulet to discover.",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='maps',
         )
 
