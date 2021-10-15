@@ -1,0 +1,7 @@
+### Name: Heavy Rain for Fl4k
+### Version: 1.0.0
+### Author: LessHandsomeJack
+### Contact: Discord (LessHandsomeJack#9455)
+### Categories: Beastmaster Changes
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Character/AbilityTree_Beastmaster_DLCTree.AbilityTree_Beastmaster_DLCTree,Tiers.Tiers[1].Object..Items.Items[1].Object..AbilityClass,0,,BlueprintGeneratedClass'"Passive_Siren_DLCSkill_3.Passive_Siren_DLCSkill_3_C"'
