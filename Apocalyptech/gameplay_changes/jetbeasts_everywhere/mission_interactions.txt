@@ -1,0 +1,49 @@
+Droughts
+
+    - Lock consoles until activated by Ellie's quest
+    - Scanning stolen vehicle should advance quest
+    - Digistructing the first time should advance quest
+    - Stations should respawn fuel Technical (only 4 of 'em, as it turns out)
+
+Sanctuary
+
+    - Spawned vehicles shouldn't be usable
+
+Meridian Outskirts
+
+    - Lorelei spawning her Cyclone (turns out to not be tied to CAR objects at all)
+
+Meridian Metroplex
+
+    - Lorelei unlocking Cyclones (turns out to not be tied to CAR objects at all)
+    - Digistructing vehicle from first console should open door, lower forcefield, etc
+
+Neon Arterial
+
+    - Stations should respawn Project DD
+
+Floodmoor Basin
+
+    - The single station near Mudhaven should be able to respawn Prisa's Outrunner
+
+Splinterlands
+
+    - All stations should be able to respawn the Golden Chariot
+
+Carnivora
+
+    - Spawning a vehicle for the chase? (not actually a requirement)
+
+Sandblast Scar
+
+    - Stations should respawn Vaughn's Technical
+
+Desolation's Edge
+
+    - Stations not active until power is activated
+
+Blastplains
+
+    - Initial Jetbeast pickup (turns out to be unrelated to CAR objects)
+    - Digistructing vehicle at endgame should trigger ride-to-Crater's-Edge
+

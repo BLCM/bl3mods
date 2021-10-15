@@ -8,6 +8,9 @@ See the individual mod folders for full READMEs.
 - **Enemy Equips** - A set of mods to alter what kind of gear enemies use.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
   infinite.
+- **Jetbeasts (Almost) Everywhere** - Adds Jetbeast-spawning Catch-A-Ride
+  consoles wherever regular ones are found, with the exception of Skittermaw
+  Basin.
 - **Movement Speed Cheats** - Move faster!
 - **No Hidden Eridium** - Alters the Eridium spawns which require Mysterious
   Amulet to just be normal Eridium clusters/jars instead.

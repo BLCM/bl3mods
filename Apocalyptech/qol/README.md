@@ -18,6 +18,8 @@ See the individual mod folders for full READMEs.
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The
   Droughts have the usual porta-potty weapon attachments when looting.
+- **Easy Entry to Fort Sunshine** - Adds a door-opening lever to the outside of
+  Fort Sunshine, in Floodmoor Basin.
 - **Free Hemovorous Door** - Makes the door to get to Hemovorous the Invincible
   free, instead of costing 500 Eridium.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
@@ -28,6 +30,8 @@ See the individual mod folders for full READMEs.
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
+- **Quick Changes (Almost) Everywhere** - Introduces a Quick Change station to
+  (almost) every level in the game which didn't already have one.
 
 Licenses
 ========
