@@ -31,10 +31,11 @@ import argparse
 
 
 OUTPUT='bosstrials.bl3hotfix'
+SPAWNOUT='spawnoptions.output.json'
 BPCHAR=1
 SEED=None # 42
 our_seed = SEED
-version = '0.1.1'
+version = '0.1.2'
 
 EASY="easy"
 MEDIUM="medium"
@@ -66,20 +67,7 @@ TITLES = {
 # These spawn options cause a lot of trouble so we ignore them
 ignore_list = [
     ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Skags/_Mixes/SpawnOptions_SkagFullMix'), # solves it on most seeds
-    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Rakk/Variants/SpawnOptions_RakkBasic'), # ? untested
-    # ('ProvingGrounds_Trial1_P','/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll'), # nope didn't solve it on 57
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKing"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantKnight"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantQueen"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantRook"),
-    # ('ProvingGrounds_Trial1_P',"/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantSpiderling"),
-
-    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"),
-    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"),
-    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"),
     ('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark"),
-    #('ProvingGrounds_Trial6_P',"/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"),
     ('ProvingGrounds_Trial7_P','/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix'),
 ]
 
@@ -95,7 +83,9 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
     parser.add_argument('--input', type=str, default='trial1.json',help='Trial Input JSON')
     parser.add_argument('--spawnoptions', type=str, default='spawnoptions.1.json',help='Spawn Options for the Trial')
+    parser.add_argument('--overridespawn', action='store_true',help='Use the spawnoptions json to override spawn choices')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--spawnout',type=str, default=SPAWNOUT, help='SpawnOptions output file')
     parser.add_argument('--trial', type=int, default=1, help='Trial number {MISSION_NUMBERS}')
     return parser.parse_args()
 
@@ -110,63 +100,20 @@ else:
 our_trial = args.trial
 title = f'Boss Trials: {TITLES[our_trial]} seed {our_seed}'
 # we abuse ixora to fill in the trials?
-raw_ixora_spawn_list = [
-    ('/Ixora/Enemies/_Spawning/CotV/Tink/SpawnOptions_MaliTinkSuicide_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/CotV/Psycho/SpawnOptions_PsychoBadass_GearUp',      "SpawnFactory_OakAI_0",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/CotV/Psycho/SpawnOptions_MaliPsychoBasic_GearUp',      "SpawnFactory_OakAI_0",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkBasic_GearUp',      "SpawnFactory_OakAI_0",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkBadass_GearUp',      "SpawnFactory_OakAI_0",0,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkSniper_GearUp',      "SpawnFactory_OakAI_0",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkShotgunner_GearUp',      "SpawnFactory_OakAI_0",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/CotV/Punk/SpawnOptions_PunkAssaulter_GearUp',      "SpawnFactory_OakAI_0",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/CotV/Enforcer/SpawnOptions_MaliEnforcerGun_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    # ('/Ixora/Enemies/_Spawning/CotV/Enforcer/SpawnOptions_Enforcer_Reaper',      "Factory_SpawnFactory_OakAI"), # disable replacement of revenants
-    ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Frontrunner_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Nullhound_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_Gunwolf_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_CoVFrontrunner_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperJetpack_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperShotgun_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperFlash_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperMelee_Random_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperBasic_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_CoVTrooper_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY,MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperMedic_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Trooper/SpawnOptions_TrooperBadass_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Nog/SpawnOptions_NogNinja_GearUp',      "SpawnFactory_OakAI_0",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Nog/SpawnOptions_NogBasic_GearUp',      "SpawnFactory_OakAI_0",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Oversphere/SpawnOptions_CoVOversphere_GearUp',      "Factory_SpawnFactory_OakAI",0,[EASY]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyBasic_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyAcidrain_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyGunner_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyPowerhouse_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyBadass_Random_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyBadass_Random_GearUp',      "SpawnFactory_OakAI_0",1,[MEDIUM]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyBadass_Random_GearUp',      "SpawnFactory_OakAI_1",2,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyBadass_Random_GearUp',      "SpawnFactory_OakAI_2",3,[HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_CoVHeavy_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    ('/Ixora/Enemies/_Spawning/Maliwan/Heavy/SpawnOptions_HeavyIcebreaker_GearUp',      "Factory_SpawnFactory_OakAI",0,[MEDIUM,HARD]),
-    #('/Ixora/Enemies/_Spawning/Skags/SpawnOptions_SkagBadass',      "SpawnFactory_OakAI_0"),
-    #('/Ixora/Enemies/_Spawning/Skags/SpawnOptions_SkagAdultsAndBarfers',      "SpawnFactory_OakAI_0"),
-    #('/Ixora/Enemies/_Spawning/Skags/SpawnOptions_SkagAdultsAndBarfers',      "SpawnFactory_OakAI_2"),
-    #('/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/SpawnOptions_FrontRider_Pet',      "Factory_SpawnFactory_OakAI"),
-    #('/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/SpawnOptions_FrontRider_Rider',      "Factory_SpawnFactory_OakAI"),
-    #('/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/SpawnOptions_FrontRider_Mount',      "Factory_SpawnFactory_OakAI"),
-]
 
-raw_ixora_spawn_list = [
-    ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_1", 2, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_2", 3, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_3", 4, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_4", 5, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_5", 6, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_6", 7, [EASY]),
-    ("/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic", "SpawnFactory_OakAI", 0, [EASY]),
-]
-
+# raw_ixora_spawn_list = [
+#     ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_1", 2, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_2", 3, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_3", 4, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_4", 5, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_5", 6, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_6", 7, [EASY]),
+#     ("/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic", "SpawnFactory_OakAI", 0, [EASY]),
+# ]
+# 
 
 random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
@@ -200,18 +147,36 @@ difficulty_pools = {
 def get_bpchar(s):
     return s.split('/')[-1]
 
+def mk_mob_tuple(bpchar_name):
+    bpchar = bpchar_name.split(".")[0]
+    return (bpchar,bpchar,None,None)
+
 def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ignore_list):
     done_so = set()
+    outentries = []
     for entry in raw_ixora_spawn_list:
-        row,factory,idx,pools = entry
+        row,factory,idx,pools = entry[0:4]
         so = row
         # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
         pool = "any"
-        if len(pools) > 0:
-            pool = random.choice(pools)
-        mod.comment(f"From Pool: {pool}")
-        mob = random.choice(difficulty_pools[pool])
+        # look this is a dumb override
+        # essentially if our entry is large and then override it
+        if len(entry) > 4:
+            mob_name = entry[4]
+            mod.comment(f"Override with: {mob_name}")
+            mob = mk_mob_tuple(mob_name)
+        else:
+            if len(pools) > 0:
+                pool = random.choice(pools)
+            mod.comment(f"From Pool: {pool}")
+            mob = random.choice(difficulty_pools[pool])            
         bpchar = mob[BPCHAR]
+        # we want to save out the raw_ixora_spawn_list
+        outentry = [None,None,None,None]
+        outentry[0:4] = entry[0:4]
+        outentry[3] = mob[BPCHAR]
+        print(outentry)
+        outentries.append(outentry)
         # we ignore after the random choice
         # to maintain our seeds better        
         if (mapcode,row) in ignore_list:
@@ -281,7 +246,7 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ig
             # perhaps team was the issue?
             # mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))    
         done_so.add(so)
-
+    return outentries
 
 def modify_spawnpoints(mod, path, level, params,spawpoints):
     # path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
@@ -367,46 +332,26 @@ def load_so(filename,choices=None):
     arr = json.load(open(filename))
     return [(x[0],x[1],x[2],[random.choice(choices)]) for x in arr]
 
+def load_so_override(filename):
+    arr = json.load(open(filename))
+    return [(x[0],x[1],x[2],[],x[3]) for x in arr]
+    
+
 facts = json.load(open(args.input))
 spawnpoints = facts["spawnpoints"]
 spawnoption_facts = facts["spawnoptions"]
 # spawn_list = mk_spawn_list( spawnoption_facts )
-spawn_list = load_so( spawnoptions_filename )
-# make_ixora_spawns( mod, level, raw_ixora_spawn_list, params )
-make_ixora_spawns( mod, level, spawn_list, params )
+
+if args.overridespawn:
+    spawn_list = load_so_override( spawnoptions_filename )
+else:
+    spawn_list = load_so( spawnoptions_filename )
+
+spawn_out = make_ixora_spawns( mod, level, spawn_list, params )
+if args.spawnout:
+    json.dump(spawn_out, open(args.spawnout,"w"), indent=1)
 
 modify_spawnpoints( mod, path, level, params, spawnpoints )
-
-
-# ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_88.SpawnerComponent.SpawnerStyle_SpawnerStyle_Encounter.SpawnerStyle_SpawnerStyle_Den,SpawnOptions,167,SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2.SpawnOptions_Guardian_Possessed_FullMixTD2',SpawnOptionData'/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2.SpawnOptions_Guardian_FullMix_TD2'"
-# ./hotfixes_current.json:      "value": "(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_96.SpawnerComponent.SpawnerStyle_Encounter_3,Waves.Waves[0].Advancement.Percent,8,0.300000,.66"
-
-def reassign_spawnoptions(mod,spawnoption_facts):
-    mod.comment("Reassigning SpawnOptions")
-    for fact in spawnoption_facts:
-        option = list(fact[SPAWNOPTIONS].keys())[0]
-        val    = fact[SPAWNOPTIONS][option]
-        spawn_option  = random.choice(raw_ixora_spawn_list)[0]
-        # options = option.split('.Waves.')
-        # SpawnerComponent hacks
-        options = option.split('.SpawnerComponent.')
-        head = ".".join(options[:len(options)-1]) + ".SpawnerComponent"
-        tail = "SpawnerComponent." + options[-1]
-        # spawn_option = "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
-        # spawn_option = "/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva"    
-        # this works:
-        # SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_Dynamic.ProvingGrounds_Trial1_Dynamic:PersistentLevel.OakSpawner_E1C.SpawnerComponent,SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions,0,,SpawnOptionData'/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva.SpawnOptions_VarkidLarva'
-        # EarlyLevel worked, but it didn't let us change the mobs?w
-        mod.reg_hotfix(DFL_LEVEL,                   
-                       level,
-                       f'{path}:PersistentLevel.{head}',
-                       # f'{path}:{head}',
-                       f'{tail}',
-                       f"SpawnOptionData'{spawn_option}.{get_bpchar(spawn_option)}'"
-        )
-
-# spawnoption_facts = facts["spawnoptions"]
-# reassign_spawnoptions(mod,spawnoption_facts)
 
         
 mod.close()
@@ -423,45 +368,3 @@ mod.close()
 # ... we're kinda stuck, maybe skags or rakks?
 # ... varkid or skags, something with their spawns..
 
-# Sept 6
-# [?] Gem Chest fix?
-# Franco with trial 8 worked good
-# seed 41
-# trial 8 default seed, locked after lagomars
-# Trial 7 fervor worked
-# Trial 6 Supremecy locked second
-# Trial 5 Discipline got blocked - after bridge / fallen guardian no spawn
-# Trial Cunning (5?) works on seed 42
-# Trial Fervor works on seed 41 42
-# Trial 6 (s 42) supremecy blocks on 2nd door, no maliwan mob spawns?
-# Trial 8 instinct seed 42 works
-# Seed 41: Fervor
-# Seed 42: Fervor, Cunning, Instinct
-# Seed 1:  Cunning, Fervor
-# I bet you discipline gets blocked because of that robot ball.
-# 42 seed, trial of survival worked when skag mix wasn't manipulated
-# 42 seed, trial of discipline worked when /Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix wasn't touched
-# 6 trial of supremecy dark mix ? no
-# heavy mix? no
-# 57 debug survival did not work
-
-# On Survival on 57 one of these is causing problems:
-# bpchar:/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c # Red Trooper
-# bpchar:/Game/Enemies/Enforcer/_Unique/BountyPrologue/_Design/Character/BPChar_Enforcer_BountyPrologue # Dumptruck 
-# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant
-# bpchar:/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_Tyrant # vorducken
-# bpchar:/Game/Enemies/Enforcer/_Unique/AnointedJoe/_Design/Character/BPChar_AnointedJoe # Annointed Alpha
-# bpchar:/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/b/BPChar_Punk_Bounty01b # Billee
-# bpchar:/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss # Titan
-# bpchar:/Game/Enemies/Psycho_Male/_Unique/BadassPrologue/_Design/Character/BPChar_PsychoBadassPrologue # Shiv
-# bpchar:/Hibiscus/Enemies/_Unique/Rare_ZealotPilfer/Character/BPChar_ZealotPilfer_Child_Rare # amach
-# survival still failing on seed 57
-# this caused a problem?
-# # From Pool: medium
-# # so:/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix factory:SpawnFactory_OakAI_2
-# # bpchar:/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader
-# SparkEarlyLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/Enemies/_Spawning/Varkids/Mixes/Zone0/SpawnOptions_VarkidFullMix.SpawnOptions_VarkidFullMix,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Dandelion/Enemies/Loader/_Unique/BrotherlyLove/_Design/Character/BPChar_SisterlyLove_DebtCollectorLoader.BPChar_SisterlyLove_DebtCollectorLoader_C'
-# 
-# 1.10 works
-# seed 11 on survival did not work
-# seed 11 crashed others on discipline
