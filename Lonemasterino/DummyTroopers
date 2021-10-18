@@ -1,0 +1,60 @@
+###
+### Name: DummyTroopers
+### Version: 1.0.0
+### Author: Lonemasterino
+### Categories: cheat, enemy
+###
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+#Modify Graveward's Health (Disabled, but in here in case you feel like using it)
+#SparkCharacterLoadedEntry,(1,2,0,BPChar_EdenBoss),/Game/Enemies/EdenBoss/_Shared/_Design/Balance/Table_Balance_EdenBoss_PT1.Table_Balance_EdenBoss_PT1,EdenBoss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,1600
+
+#Modify Power Troopers' Red Health
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,0.01
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,0.01
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,0.01
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,0.01
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,0.01
+
+#Modify Power Troopers' Shields
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000000000000000000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000000000000000000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000000000000000000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000000000000000000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1000000000000000000
+
+#Modify Power Trooper's Melee and Grenade Damage
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01a,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01b,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01c),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01c,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01d,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/Balance/Table_Balance_Trooper_Unique.Table_Balance_Trooper_Unique,Trooper_Rare01e,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+
+#Black Power Trooper no gun
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBadass.ItemPool_TrooperBadass,BalancedItems.BalancedItems[0].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01a),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBadass.ItemPool_TrooperBadass,BalancedItems.BalancedItems[1].Weight.BaseValueConstant,0,,0
+
+#Blue Power Trooper no gun
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBasic_SM.ItemPool_TrooperBasic_SM,BalancedItems.BalancedItems[0].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBasic_SM.ItemPool_TrooperBasic_SM,BalancedItems.BalancedItems[1].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBasic_SM.ItemPool_TrooperBasic_SM,BalancedItems.BalancedItems[2].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBasic_SM.ItemPool_TrooperBasic_SM,BalancedItems.BalancedItems[3].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01e),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_TrooperBasic_SM.ItemPool_TrooperBasic_SM,BalancedItems.BalancedItems[4].Weight.BaseValueConstant,0,,0
+
+#Pink/Yellow Power Trooper no gun
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SM.ItemPool_Trooper_SM,BalancedItems.BalancedItems[0].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SM.ItemPool_Trooper_SM,BalancedItems.BalancedItems[1].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SM.ItemPool_Trooper_SM,BalancedItems.BalancedItems[2].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SM.ItemPool_Trooper_SM,BalancedItems.BalancedItems[3].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01d),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SM.ItemPool_Trooper_SM,BalancedItems.BalancedItems[4].Weight.BaseValueConstant,0,,0
+
+#Red Power Trooper no gun
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[0].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[1].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[2].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[3].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[4].Weight.BaseValueConstant,0,,0
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Trooper_Rare01b),/Game/Enemies/Trooper/_Shared/_Design/ItemPools/ItemPool_Trooper_SG.ItemPool_Trooper_SG,BalancedItems.BalancedItems[5].Weight.BaseValueConstant,0,,0
