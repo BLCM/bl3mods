@@ -85,23 +85,74 @@ MIX1 =	bosstrials.1.16.bl3hotfix \
 	bosstrials.7.19.bl3hotfix \
 	bosstrials.8.15.bl3hotfix
 
+# 5 - 24 doesn't work
+# 1 - 21 doesn't work
+#     27 doesn't work
+#     89 doesn't work
+#     90 doesn't work
+#     91 
+# 8 - 26 too hard
+# 7 - 25 annointed alpha
+# 8 - 21 annointed alpha
+# 4 - 22 is annointed alpha
+MIX2 =	bosstrials.1.91.bl3hotfix \
+	bosstrials.4.22.bl3hotfix \
+	bosstrials.5.25.bl3hotfix \
+	bosstrials.6.24.bl3hotfix \
+	bosstrials.7.67.bl3hotfix \
+	bosstrials.8.58.bl3hotfix
+
+# 1 - 220 wrong (221 works)
+# 4 - 393 kinda too much
+# Fervor too hard
+MIX3 =	bosstrials.1.221.bl3hotfix \
+	bosstrials.4.394.bl3hotfix \
+	bosstrials.5.415.bl3hotfix \
+	bosstrials.6.664.bl3hotfix \
+	bosstrials.7.850.bl3hotfix \
+	bosstrials.8.913.bl3hotfix
+
+SKRUNT1=bosstrials.skrunt1.1.bl3hotfix \
+	bosstrials.skrunt1.4.bl3hotfix \
+	bosstrials.skrunt1.5.bl3hotfix \
+	bosstrials.skrunt1.6.bl3hotfix \
+	bosstrials.skrunt1.7.bl3hotfix \
+	bosstrials.skrunt1.8.bl3hotfix
+
+bosstrials.skrunt1.%.bl3hotfix: bosstrials.py skrunt1/bosstrials.*.spawnoptions.json
+	python3 bosstrials.py --in trial$*.json --output bosstrials.skrunt1.$*.bl3hotfix --spawnoptions skrunt1/bosstrials.$*.spawnoptions.json --trial $* --seed 42 --overridespawn 
+
+
 # This is the currated mix
 bosstrials.bl3hotfix: bosstrials.bl3hotfix.header $(MIX1)
 	cat $^ > $@
 
+bosstrials.vol2.bl3hotfix: bosstrials.vol2.bl3hotfix.header $(MIX2)
+	cat $^ > $@
+
+bosstrials.vol3.bl3hotfix: bosstrials.vol3.bl3hotfix.header $(MIX3)
+	cat $^ > $@
+
+bosstrials.skrunt1.bl3hotfix: bosstrials.skrunt1.bl3hotfix.header $(SKRUNT1)
+	cat $^ > $@
+
 
 bosstrials.1.%.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.json
-	python3 bosstrials.py --in trial1.json --output bosstrials.1.$*.bl3hotfix --spawnoptions  spawnoptions.1.json --trial 1 --seed $*
+	python3 bosstrials.py --in trial1.json --output bosstrials.1.$*.bl3hotfix --spawnoptions  spawnoptions.1.json --trial 1 --seed $* --spawnout bosstrials.1.$*.spawnoptions.json
 bosstrials.4.%.bl3hotfix: trial4.json bosstrials.py spawnoptions.4.json
-	python3 bosstrials.py --in trial4.json --output bosstrials.4.$*.bl3hotfix --spawnoptions  spawnoptions.4.json --trial 4 --seed $*
+	python3 bosstrials.py --in trial4.json --output bosstrials.4.$*.bl3hotfix --spawnoptions  spawnoptions.4.json --trial 4 --seed $* --spawnout bosstrials.4.$*.spawnoptions.json
 bosstrials.5.%.bl3hotfix: trial5.json bosstrials.py spawnoptions.5.json
-	python3 bosstrials.py --in trial5.json --output bosstrials.5.$*.bl3hotfix --spawnoptions  spawnoptions.5.json --trial 5 --seed $*
+	python3 bosstrials.py --in trial5.json --output bosstrials.5.$*.bl3hotfix --spawnoptions  spawnoptions.5.json --trial 5 --seed $* --spawnout bosstrials.5.$*.spawnoptions.json
 bosstrials.6.%.bl3hotfix: trial6.json bosstrials.py spawnoptions.6.json
-	python3 bosstrials.py --in trial6.json --output bosstrials.6.$*.bl3hotfix --spawnoptions  spawnoptions.6.json --trial 6 --seed $*
+	python3 bosstrials.py --in trial6.json --output bosstrials.6.$*.bl3hotfix --spawnoptions  spawnoptions.6.json --trial 6 --seed $* --spawnout bosstrials.6.$*.spawnoptions.json
 bosstrials.7.%.bl3hotfix: trial7.json bosstrials.py spawnoptions.7.json
-	python3 bosstrials.py --in trial7.json --output bosstrials.7.$*.bl3hotfix --spawnoptions  spawnoptions.7.json --trial 7 --seed $*
+	python3 bosstrials.py --in trial7.json --output bosstrials.7.$*.bl3hotfix --spawnoptions  spawnoptions.7.json --trial 7 --seed $* --spawnout bosstrials.7.$*.spawnoptions.json
 bosstrials.8.%.bl3hotfix: trial8.json bosstrials.py spawnoptions.8.json
-	python3 bosstrials.py --in trial8.json --output bosstrials.8.$*.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed $*
+	python3 bosstrials.py --in trial8.json --output bosstrials.8.$*.bl3hotfix --spawnoptions  spawnoptions.8.json --trial 8 --seed $* --spawnout bosstrials.8.$*.spawnoptions.json
+
+bosstrials-override.1.bl3hotfix: trial1.json bosstrials.py spawnoptions.1.json spawnoptions.1.override.json
+	python3 bosstrials.py --in trial1.json --output bosstrials-override.1.bl3hotfix --spawnoptions  spawnoptions.1.override.json --trial 1 --overridespawn --seed 42 --spawnout bosstrials-override.1.spawnoptions.json
+
 
 
 # bosstrials.4.42.bl3hotfix: trial4.json bosstrials.py spawnoptions.4.json

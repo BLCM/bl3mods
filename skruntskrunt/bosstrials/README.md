@@ -7,10 +7,12 @@ rushes!
 
 Works well with True Trials mod.
 
+Check out the modder's cut True Trials mod to have a thematicly nice experience.
+
 Header
 ======
 * Name: Boss Trials
-* Version: 0.1.1
+* Version: 0.1.2
 * Author: skruntskrunt
 * Categories: gameplay, trials
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -19,6 +21,11 @@ Header
 
 Changelog
 =========
+
+**v0.1.2** - 2021-10-19
+ * Curate a 4 sets of working trials, all 6 trials work!
+ * Made a creators cut where I hand chose mobs and kept the trials thematic.
+ * Enables non-random generation of boss trials
 
 **v0.1.1** - 2021-10-02
  * Curate a set of working trials, all 6 trials work!
@@ -30,11 +37,13 @@ Changelog
 Known Bugs
 ==========
 
-Sometimes Survival, Supremecy, and Discipline get locked by spawns that don't activate. If you know how to fix this I'd really like to know how to address it. I have hand currated some seeds that work to get around this but that is slow and adhoc.
+Sometimes Survival, Supremecy, and Discipline get locked by spawns that don't activate. If you know how to fix this I'd really like to know how to address it. I have hand currated some seeds that work to get around this but that is slow and adhoc. I work around this by tuning the kinds of spawns.
 
 Please report bugs to this repository on github: https://github.com/abramhindle/bl3mods
 
 Conflicts with Raid mod.
+
+Sometimes spawns leak into basegame.
 
 Licenses
 ========
