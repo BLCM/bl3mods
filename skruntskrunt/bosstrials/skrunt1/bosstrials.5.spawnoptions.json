@@ -2,80 +2,80 @@
  [
   "/Game/Enemies/_Spawning/CotV/Goliaths/Variants/SpawnOptions_GoliathMidget",
   "SpawnFactory_OakAI_0",
-  0,
-  "/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01"
+     0,
+     "/Geranium/Enemies/GerTink/_Unique/Prohibitor/_Design/Character/BPChar_GerTinkProhibitor"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/Goons/Variants/SpawnOptions_GoonBadass",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Game/Enemies/Punk_Female/_Unique/Bounty02/_Design/Character/BPChar_PunkBounty02"
+"/Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkPsycho",
   "SpawnFactory_OakAI_0",
-  0,
-  "/Game/Enemies/Nog/_Unique/HackedGamer/_Design/Character/BPChar_NogHackedGamer"
+     0,
+     "/Dandelion/Enemies/Looters/_Unique/KillChallenges/BPChar_TinkBadass_Giorgio"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkShotgun",
   "SpawnFactory_OakAI_0",
   0,
-  "/Geranium/Enemies/GerSaurian/_Unique/WW_Toge/_Design/Character/BPChar_GerSaurianWW_Toge"
+     "/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/Tinks/Variants/SpawnOptions_TinkSuicide",
   "SpawnFactory_OakAI_0",
   0,
-  "/Game/Enemies/Ratch/_Unique/BadRat/_Design/Character/BPChar_RatchBadRat"
+     "/Game/Enemies/Nog/_Unique/Nog01_Bounty/_Design/Character/BPChar_Nog01_Bounty"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault",
   "SpawnFactory_OakAI_0",
   0,
-  "/Game/Enemies/Punk_Female/_Unique/AnointedX2_X3/_Design/Character/BPChar_AnointedX2"
+"/Game/Enemies/Goon/Anointed/_Design/Character/BPChar_GoonAnointed"
  ],
  [
   "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoonMix_DesertVault",
   "Factory_SpawnFactory_OakAI",
   1,
-  "/Game/Enemies/ServiceBot/_Unique/JanitorBot/_Design/Character/BPChar_ServiceBot_JanitorBot"
+     "/Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds",
   "SpawnFactory_OakAI_0",
   0,
-  "/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher"
+"/Game/Enemies/Tink/_Unique/MotorcadeBigD/_Design/Character/BPChar_TinkMotorcadeBigD"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds",
   "SpawnFactory_OakAI_5",
   1,
-  "/Alisma/Enemies/AliGoliath/_Unique/TheBlackKing/_Design/Character/BPChar_AliGoliath_TheBlackKing"
+"/Game/Enemies/Tink/_Unique/Bounty01/_Design/Character/BPChar_Tink_Bounty01"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkBadassMix_ProvingGrounds",
   "SpawnFactory_OakAI_9",
   2,
-  "/Game/Enemies/Guardian/_Unique/BeachVault/_Design/Character/BPChar_GuardianBeachVault"
+"/Geranium/Enemies/GerTink/_Unique/Prohibitor/_Design/Character/BPChar_GerTinkProhibitor"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Game/Enemies/Punk_Female/_Unique/MotherOfDragons/_Design/Character/BPChar_PunkMotherOfDragons"
+     "/Game/PatchDLC/Event2/Enemies/Meat/Tink/TenderizerLt/_Design/Character/BPChar_Tink_Tenderizer"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds",
   "Factory_SpawnFactory_OakAI_0",
   1,
-  "/Geranium/Enemies/GerSaurian/_Unique/Horsemen3/_Design/Character/BPChar_GerSaurianHorsemen3"
+     "/Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds",
   "Factory_SpawnFactory_OakAI_1",
   2,
-  "/Game/Enemies/Trooper/_Unique/Bounty02/Design/Character/BPChar_TrooperBounty02"
+     "/Game/Enemies/Tink/_Unique/Demon/_Design/Character/BPChar_TinkDemon"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds",

@@ -2,134 +2,136 @@
  [
   "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBadass",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Game/Enemies/Guardian/_Unique/CityVault/_Design/Character/BPChar_Guardian_CityVault"
+     0,
+     "/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBasic",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Dandelion/Enemies/Looters/_Unique/RegainingOnesFeet/_Design/Character/BPChar_RegainingFeet_GoldenBullion"
+     0,
+     "/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeChump",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01"
+"/Game/Enemies/Ape/_Unique/Squire/_Design/Character/BPChar_ApeSquire"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
   "SpawnFactory_OakAI_1",
-  0,
-  "/Game/Enemies/Goliath/_Unique/SlaughterBoss/_Design/Character/BPChar_Goliath_SlaughterBoss"
+     0,
+     "/Game/Enemies/Ape/_Unique/KGuard/_Design/Character/BPChar_ApeKGuard"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
   "Factory_SpawnFactory_OakAI_0",
   1,
-  "/Game/Enemies/Psycho_Male/_Unique/AnointedX4/Character/BPChar_PsychoAnointedX4"
+     "/Game/Enemies/Ape/_Unique/JungleMonarch/_Design/Character/BPChar_ApeJungleMonarch"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
   "Factory_SpawnFactory_OakAI_1",
   2,
-  "/Geranium/Enemies/Biobeast/_Unique/PlasmaBeast/_Design/Character/BPChar_Biobeast_PlasmaBeast"
+     "/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
   "Factory_SpawnFactory_OakAI_2",
   3,
-  "/Game/Enemies/Enforcer/_Unique/Bounty02/_Design/Character/BPChar_Enforcer_Bounty02"
+     "/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti"
+
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
   "Factory_SpawnFactory_OakAI_3",
-  4,
-  "/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_TrooperBasic_GigamindAdds"
+     4,
+          "/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix",
   "SpawnFactory_OakAI_1",
-  0,
-  "/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/a/BPChar_Punk_Bounty01a"
+     0,
+     "/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix",
   "Factory_SpawnFactory_OakAI_0",
-  1,
-  "/Dandelion/Enemies/Looters/_Unique/MeetTimothy/_Design/Character/BPChar_MeetTimothy_ThirdRail"
+     1,
+          "/Game/Enemies/Ape/_Unique/Hunt01/_Design/Character/BPChar_Ape_Hunt01"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix",
   "Factory_SpawnFactory_OakAI_2",
   3,
-  "/Game/Enemies/Tink/_Unique/Rare01/_Design/Character/BPChar_Tink_Rare01"
+     "/Hibiscus/Enemies/_Unique/Hunt_Yeti/Character/BPChar_Yeti"
+
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix",
   "Factory_SpawnFactory_OakAI",
   4,
-  "/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2"
+     "/Game/Enemies/Skag/_Unique/Trufflemunch/_Design/Character/BPChar_SkagTrufflemunch"     
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass",
   "SpawnFactory_OakAI_1",
-  0,
-  "/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2"
+     0,
+     "/Game/Enemies/Tink/_Unique/RedJabber/_Design/Character/BPChar_TinkRedJabber"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass",
   "Factory_SpawnFactory_OakAI_0",
   1,
-  "/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare"
+     "/Game/Enemies/Ape/Fire/_Design/Character/BPChar_ApeFire"
  ],
  [
   "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass",
   "Factory_SpawnFactory_OakAI",
   3,
-  "/Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01"
+     "/Game/Enemies/Ape/Acid/_Design/Character/BPChar_ApeAcid"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianGrogPoison",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Game/Enemies/Spiderant/_Unique/Hunt01/_Design/Character/BPChar_Spiderant_Hunt01"
+     0,
+     "/Geranium/Enemies/GerSaurian/_Unique/Grogzilla/_Design/Character/BPChar_GerSaurianGrogzilla"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianHamtaurus",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Hibiscus/Enemies/Zealot/Badass/_Design/Character/BPChar_Zealot_Badass_Procurer"
+     "/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredator",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Game/Enemies/Enforcer/_Unique/Bounty01/_Design/Character/BPChar_Enforcer_Bounty01"
+     "/Game/Enemies/Saurian/_Unique/Laser/_Design/Character/BPChar_SaurianLaser"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredatorX",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Game/Enemies/Guardian/_Unique/GemGoblin/_Design/Character/BPChar_GuardianGemGoblin"
+     0,
+     "/Geranium/Enemies/GerSaurian/_Unique/Horsemen2/_Design/Character/BPChar_GerSaurianHorsemen2"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix",
   "SpawnFactory_OakAI_1",
   0,
-  "/Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Law/BPChar_ServiceBot_LAWEvent2"
+  "/Hibiscus/Enemies/_Unique/Hunt_Gmork/Character/BPChar_Gmork_B_Wolf_Child"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix",
   "SpawnFactory_OakAI_4",
   1,
-  "/Alisma/Enemies/AliGoliath/_Unique/TheBlackKing/_Design/Character/BPChar_AliGoliath_TheBlackKing"
+     "/Game/Enemies/Goon/_Unique/RoidRage/_Design/Character/BPChar_GoonBounty01"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix",
   "SpawnFactory_OakAI_2",
-  2,
-  "/Game/Enemies/Ape/_Unique/KGuard/_Design/Character/BPChar_ApeKGuard"
+     2,
+     "/Geranium/Enemies/GerSaurian/_Unique/Devourer/_Design/Character/BPChar_GerSaurianDevourer_GrogPoison"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix",
@@ -140,14 +142,14 @@
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
   "SpawnFactory_OakAI_0",
-  0,
-  "/Game/Enemies/Enforcer/_Unique/Bounty02/_Design/Character/BPChar_Enforcer_Bounty02"
+     0,
+     "/Game/Enemies/Ratch/_Unique/Hunt01/_Design/Character/BPChar_Ratch_Hunt01"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
   "SpawnFactory_OakAI_1",
-  1,
-  "/Game/Enemies/Tink/_Unique/Demon/_Design/Character/BPChar_TinkDemon"
+     1,
+     "/Geranium/Enemies/GerSaurian/_Unique/Grogzilla/_Design/Character/BPChar_GerSaurianGrogzilla"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
@@ -159,84 +161,84 @@
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
   "SpawnFactory_OakAI_2",
   3,
-  "/Dandelion/Enemies/Looters/_Unique/ThePlan/_Design/Character/BPChar_ThePlan_TricksyNick"
+     "/Game/Enemies/Spiderant/_Unique/CakeRoyalty/_Design/Character/BPChar_SpiderantCakeRoyalty" 
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
   "SpawnFactory_OakAI_3",
   4,
-  "/Dandelion/Enemies/Loader/_Unique/Impound/_Design/Character/BPChar_BudLoader"
+"/Geranium/Enemies/GerSaurian/_Unique/Dispatcher/_Design/Character/BPChar_GerSaurianDispatcher"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
   "SpawnFactory_OakAI_6",
   6,
-  "/Game/Enemies/Ratch/_Unique/Hunt01/_Design/Character/BPChar_Ratch_Hunt01"
+     "/Geranium/Enemies/GerSaurian/_Unique/WW_Toge/_Design/Character/BPChar_GerSaurianWW_Toge"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_0",
   0,
-  "/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01d"
+     "/Geranium/Enemies/GerSaurian/_Unique/Horsemen2/_Design/Character/BPChar_GerSaurianHorsemen2"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_1",
   1,
-  "/Game/PatchDLC/Event2/Enemies/Cyber/ServiceBots/Law/BPChar_ServiceBot_LAWEvent2"
+     "/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_2",
   2,
-  "/Game/Enemies/Tink/_Unique/Undertaker/_Design/Character/BPChar_TinkUndertaker"
+     "/Hibiscus/Enemies/_Unique/Rare_MushroomGiant/Character/BPChar_Lost_Mush_Child"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_5",
   3,
-  "/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01"
+"/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_ToughBro"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_4",
   4,
-  "/Game/PatchDLC/Event2/Enemies/Cyber/Punk/TechLt/_Design/Character/BPChar_PunkCyberLt"
+"/Game/Enemies/Nekrobug/_Unique/Hunt01/_Design/Character/BPChar_Nekrobug_Hunt01"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_3",
   5,
-  "/Geranium/Enemies/GerPunk_Female/_Unique/Number/_Design/Character/BPChar_GerPunkNumber"
+     "/Game/Enemies/Saurian/_Unique/Shield/_Design/Character/BPChar_SaurianShield"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
   "SpawnFactory_OakAI_6",
   6,
-  "/Game/PatchDLC/Event2/Enemies/Meat/Punk/RoasterLT/_Design/Character/BPChar_Punk_Roaster"
+     "/Game/Enemies/Saurian/_Unique/Rare01/_Design/Character/BPChar_Saurian_Rare01"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant",
   "SpawnFactory_OakAI_1",
-  0,
-  "/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry"
+     0,
+     "/Game/Enemies/Skag/_Unique/Buttmunch/_Design/Character/BPChar_SkagButtmunch"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant",
   "SpawnFactory_OakAI_2",
   1,
-  "/Geranium/Enemies/GerPunk_Female/_Unique/Larry/_Design/Character/BPChar_GerPunkLarry"
+     "/Game/Enemies/Skag/_Unique/Trufflemunch/_Design/Character/BPChar_SkagTrufflemunch"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant",
   "SpawnFactory_OakAI_5",
-  2,
-  "/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b"
+     2,
+     "/Game/Enemies/Skag/_Unique/Rare01/_Design/Character/BPChar_Skag_Rare01"
  ],
  [
   "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant",
   "SpawnFactory_OakAI_6",
   3,
-  "/Game/Enemies/Psycho_Male/_Unique/Prologue/_Design/Character/BPChar_PsychoPrologue"
+     "/Game/Enemies/Skag/_Unique/AntEater/_Design/Character/BPChar_SkagAntEater"
  ]
 ]

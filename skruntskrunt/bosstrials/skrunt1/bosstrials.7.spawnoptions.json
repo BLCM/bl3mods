@@ -3,139 +3,139 @@
   "/Game/Enemies/_Spawning/Maliwan/Heavies/Variants/SpawnOptions_HeavyBadass_Random",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character/BPChar_Spinsmouth"
+  "/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt"
  ],
  [
   "/Game/Enemies/_Spawning/Maliwan/Heavies/Variants/SpawnOptions_HeavyBadass_Random",
   "SpawnFactory_OakAI_2",
   1,
-  "/Game/Enemies/Enforcer/_Unique/Urist/_Design/Character/BPChar_EnforcerUrist"
+  "/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt"
  ],
  [
   "/Game/Enemies/_Spawning/Maliwan/Heavies/Variants/SpawnOptions_HeavyBadass_Random",
   "SpawnFactory_OakAI_1",
   2,
-  "/Game/Enemies/Guardian/_Unique/EdenVault01/_Design/Character/BPChar_Guardian_EdenVault01"
+     "/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss"
  ],
  [
   "/Game/Enemies/_Spawning/Maliwan/Heavies/Variants/SpawnOptions_HeavyBadass_Random",
   "SpawnFactory_OakAI_0",
-  3,
-  "/Geranium/Enemies/GerSaurian/_Unique/Saurtaur/_Design/Character/BPChar_GerSaurianSaurtaur"
+     3,
+     "/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_HeavyMix",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Game/Enemies/Punk_Female/_Unique/AnointedX2_X3/_Design/Character/BPChar_AnointedX3"
+     0,
+     "/Game/Enemies/Enforcer/_Unique/KillaVolt/_Design/Character/BPChar_EnforcerKillaVolt"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_HeavyMix",
   "Factory_SpawnFactory_OakAI_0",
-  1,
-  "/Game/Enemies/Punk_Female/_Unique/SkagLady/_Design/Character/BPChar_PunkSkagLady"
+     1,
+     "/Game/Enemies/Heavy/_Unique/JavaCore/_Design/Character/BPChar_HeavyJavaCore"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_HeavyMix",
   "Factory_SpawnFactory_OakAI_1",
-  2,
-  "/Game/Enemies/Goon/_Unique/Rare01/_Design/Character/BPChar_Goon_Rare01"
+     2,
+     "/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_HeavyMix",
   "Factory_SpawnFactory_OakAI_2",
   3,
-  "/Game/Enemies/Psycho_Male/_Unique/AnointedX4/Character/BPChar_PsychoAnointedX4"
+"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_HeavyMix",
   "Factory_SpawnFactory_OakAI_3",
   4,
-  "/Game/Enemies/Tink/_Unique/Undertaker/_Design/Character/BPChar_TinkUndertaker"
+"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01e"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Game/Enemies/Guardian/_Unique/EdenVault01/_Design/Character/BPChar_Guardian_EdenVault01"
+"/Game/Enemies/Mech/MG/_Design/Character/BPChar_MechMG"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds",
   "Factory_SpawnFactory_OakAI_2",
-  1,
-  "/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/d/BPChar_Punk_Bounty01d"
+     1,
+     "/Game/Enemies/Mech/Grenadier/_Design/Character/BPChar_MechGrenadier"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds",
   "Factory_SpawnFactory_OakAI_3",
-  2,
-  "/Game/Enemies/Enforcer/_Unique/Dentist/_Design/Character/BPChar_EnforcerDentist"
+     2,
+     "/Game/Enemies/Mech/Charger/_Design/Character/BPChar_MechCharger"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Game/Enemies/Punk_Female/_Unique/AnointedX2_X3/_Design/Character/BPChar_AnointedX3"
+     0,
+     "/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix",
   "Factory_SpawnFactory_OakAI_0",
-  1,
-  "/Game/Enemies/Ratch/_Unique/BadRat/_Design/Character/BPChar_RatchBadRat"
+     1,
+     "/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix",
   "Factory_SpawnFactory_OakAI_1",
-  2,
-  "/Game/Enemies/Punk_Female/_Unique/WardenGuard/_Design/Character/BPChar_PunkBasic_WardenGuard"
+     2,
+     "/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix",
   "Factory_SpawnFactory_OakAI_2",
-  3,
-  "/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_ToughBro"
+     3,
+     "/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01c"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_NogMix",
   "Factory_SpawnFactory_OakAI",
-  0,
-  "/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare"
+     0,
+     "/Game/Enemies/Nog/_Unique/ChipHolder/_Design/Character/BPChar_NogChipHolder"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_NogMix",
   "Factory_SpawnFactory_OakAI_0",
-  1,
-  "/Game/Enemies/Enforcer/_Unique/TurnKey/_Design/Character/BPChar_EnforcerTurnkey"
+     1,
+     "/Game/Enemies/Nog/_Unique/Beans/_Design/Character/BPChar_NogBeans"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_NogMix",
   "Factory_SpawnFactory_OakAI_1",
-  2,
-  "/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/a/BPChar_Punk_Bounty01a"
+     2,
+     "/Game/Enemies/Nog/_Unique/Nog01_Bounty/_Design/Character/BPChar_Nog01_Bounty"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
   "Factory_SpawnFactory_OakAI",
   0,
-  "/Hibiscus/Enemies/LostOne/LostTwo/_Design/Character/BPChar_LostTwo_BigBro"
+"/Game/Enemies/Trooper/_Unique/Bounty02/Design/Character/BPChar_TrooperBounty02"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
   "Factory_SpawnFactory_OakAI_0",
-  1,
-  "/Game/Enemies/Punk_Female/_Unique/Bounty01/_Design/Character/b/BPChar_Punk_Bounty01b"
+     1,
+     "/Game/Enemies/Trooper/_Unique/Bounty02/Design/Character/BPChar_TrooperBounty03"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
   "Factory_SpawnFactory_OakAI_2",
   2,
-  "/Game/Enemies/Ape/_Unique/KGuard/_Design/Character/BPChar_ApeKGuard"
+     "/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
   "Factory_SpawnFactory_OakAI_1",
   3,
-  "/Game/Enemies/Guardian/_Unique/CityVault/_Design/Character/BPChar_Guardian_CityVault"
+     "/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2"
  ],
  [
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
@@ -147,6 +147,6 @@
   "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_TrooperMix",
   "Factory_SpawnFactory_OakAI_4",
   5,
-  "/Hibiscus/Enemies/_Unique/Rare_Shocker/Character/BPChar_ZealotNightmareShocker_Rare"
+"/Game/PatchDLC/Dandelion/Enemies/Loader/Badass/_Design/Character/BPChar_LoaderBadass_Venchy"
  ]
 ]
