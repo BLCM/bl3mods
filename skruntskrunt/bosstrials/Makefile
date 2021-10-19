@@ -127,13 +127,13 @@ bosstrials.skrunt1.%.bl3hotfix: bosstrials.py skrunt1/bosstrials.*.spawnoptions.
 bosstrials.bl3hotfix: bosstrials.bl3hotfix.header $(MIX1)
 	cat $^ > $@
 
-bosstrials.vol2.bl3hotfix: bosstrials.bl3hotfix.header $(MIX2)
+bosstrials.vol2.bl3hotfix: bosstrials.vol2.bl3hotfix.header $(MIX2)
 	cat $^ > $@
 
-bosstrials.vol3.bl3hotfix: bosstrials.bl3hotfix.header $(MIX3)
+bosstrials.vol3.bl3hotfix: bosstrials.vol3.bl3hotfix.header $(MIX3)
 	cat $^ > $@
 
-bosstrials.skrunt1.bl3hotfix: bosstrials.bl3hotfix.header $(SKRUNT1)
+bosstrials.skrunt1.bl3hotfix: bosstrials.skrunt1.bl3hotfix.header $(SKRUNT1)
 	cat $^ > $@
 
 
