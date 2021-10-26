@@ -84,6 +84,22 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,ScaleBy25PercentPerAdditonalPlayer,FourPlayers_PT2,0,,(BaseValueConstant=1.75,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=69)
 
 
+## Allowing Wotan and Kraken to multiply as well
+# Wotan
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.2
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Raid_Boss_B:PersistentLevel.OakSpawnPoint_3.SceneComp,RelativeLocation,0,,(X=3368.0,Y=-71075.0,Z=-8163.225)
+
+# Kraken
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.2
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Raid_Combat:PersistentLevel.OakSpawnPoint_61.SceneComp,RelativeLocation,0,,(X=13794.206,Y=-18230.6,Z=3678.6758)
+
+
 ## Preventing some bosses from scaling up their level with this datatable
 # Rampager
 SparkLevelPatchEntry,(1,2,0,CityBoss_P),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,Add1IfAtLeast1MorePlayer,OnePlayer_PT1,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
