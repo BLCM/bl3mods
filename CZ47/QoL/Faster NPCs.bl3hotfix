@@ -1,0 +1,79 @@
+###
+### Name: Faster NPCs
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: char-other, qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### This mod doubles all movespeed related values for story NPCs known to be too slow.
+### 
+### Shoutout to Apocalpytech! Made use of his Movement Speed Cheats mod to create this mod.
+### 
+### If there's any NPCs missing that you'd want me to add, feel free to message on on discord (=]#7647)
+### 
+### 
+
+# Typhon
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Typhon),/Game/NonPlayerCharacters/Typhon/_Design/Character/BPChar_Typhon.Default__BPChar_Typhon_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Claptrap
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxAcceleration,0,,4096.0
+
+
+# Maya
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Ava
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Clay
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Lilith
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,NavSlowdownOptions,SlowdownSpeed,0,,(Value=1.4)
