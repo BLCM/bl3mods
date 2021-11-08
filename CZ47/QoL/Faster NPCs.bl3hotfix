@@ -1,6 +1,6 @@
 ###
 ### Name: Faster NPCs
-### Version: 1.0.1
+### Version: 1.1.0
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: char-other, qol
@@ -8,7 +8,7 @@
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 ### 
-### Sets the movespeed to twice that of the Vault Hunters for Typhon, Claptrap, Lilith, Clay, Maya and Ava.
+### Sets the movespeed to twice that of the Vault Hunters for Typhon, Claptrap, Lilith, Lorelei, Clay, Maya and Ava.
 ### 
 ### Shoutout to Apocalyptech! Made use of his Movement Speed Cheats mod to create this mod.
 ### 
@@ -37,6 +37,17 @@ SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Clap
 SparkCharacterLoadedEntry,(1,1,0,BpChar_Claptrap),/Game/NonPlayerCharacters/Claptrap/_Design/Character/BpChar_Claptrap.Default__BPChar_Claptrap_C:CharMoveComp,MaxAcceleration,0,,4096.0
 
 
+# Claptrap DLC6
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Claptrap_IXO),/Ixora2/NonPlayerCharacters/Claptrap/_Design/Character/BPChar_Claptrap_IXO.Default__BPChar_Claptrap_IXO_C:CharMoveComp,MaxAcceleration,0,,4096.0
+
+
 # Maya
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Maya),/Game/NonPlayerCharacters/Maya/_Design/Character/BPChar_Maya.Default__BPChar_Maya_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
@@ -57,6 +68,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Desi
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava),/Game/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava.Default__BPChar_Ava_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
 
 
+# Ava DLC6
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Ava_IXO),/Ixora2/NonPlayerCharacters/Ava/_Design/Character/BPChar_Ava_IXO.Default__BPChar_Ava_IXO_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
 # Clay
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
@@ -65,6 +86,16 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_De
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay),/Game/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay.Default__BPChar_Clay_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Clay DLC6
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Clay_IXO),/Ixora2/NonPlayerCharacters/Clay/_Design/Character/BPChar_Clay_IXO.Default__BPChar_Clay_IXO_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
 
 
 # Lilith
@@ -76,3 +107,23 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Lilith),/Game/NonPlayerCharacters/Lilith/_Design/Character/BPChar_Lilith.Default__BPChar_Lilith_C:CharMoveComp,NavSlowdownOptions,SlowdownSpeed,0,,(Value=1.4)
+
+
+# Lorelei
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei),/Game/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei.Default__BPChar_Lorelei_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
+
+
+# Lorelei DLC6
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxWalkSpeed,0,,(Value=940,BaseValue=940)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxSprintSpeed,0,,(Value=1440,BaseValue=1440)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxWalkSpeedCrouched,0,,(Value=550,BaseValue=550)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxInjuredSprintSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxWalkSpeedInjured,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxLadderAscendSpeed,0,,(Value=400,BaseValue=400)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Lorelei_IXO),/Ixora2/NonPlayerCharacters/Lorelei/_Design/Character/BPChar_Lorelei_IXO.Default__BPChar_Lorelei_IXO_C:CharMoveComp,MaxLadderDescendSpeed,0,,(Value=320,BaseValue=320)
