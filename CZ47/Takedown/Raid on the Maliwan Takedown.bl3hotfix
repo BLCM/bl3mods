@@ -1,0 +1,562 @@
+###
+### Name: Raid on the Maliwan Takedown
+### Version: 1.0.1
+### Author: CZ47
+### Contact: =]#7647
+### Categories: takedowns, spawns, enemy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### In this mod most enemies in the Maliwan Takedown have been replaced by enemies of the same class but higher difficulty
+### or a unique variant of said class. (Regular Trooper > Atomic)
+### 
+### Additionally The Valkyries had a buff to their combined health and now have 20B Armor and 10B Shield in True/4P MTD.
+### Wotan has been buffed to have 100B health in total across all his phases and instead of just 1 Wotan, you'll be facing 2 in True TD (or 2P+ lobbies)
+###
+### I highly recommend using my SpawnDelay remover mod so there's less downtime between fights: 
+### https://raw.githubusercontent.com/BLCM/bl3mods/master/CZ47/Takedown/Reduced%20SpawnDelay%20MTD.bl3hotfix
+### 
+### If you want even more spawns/denser mobbing, use my Increased Spawns Mod alongside this. 
+### https://github.com/BLCM/bl3mods/wiki/Increased%20Spawns%20%28from%20Increased%20Spawns.bl3hotfix%29
+### 
+### 
+
+## Hounds
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Badass/_Design/Character/BPChar_Frontrunner_Badass_Raid1.BPChar_Frontrunner_Badass_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_FrontrunnerBadassRaid1.SpawnOptions_FrontrunnerBadassRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Basic/_Design/Character/BPChar_FrontrunnerBasic_Raid1.BPChar_FrontrunnerBasic_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_FrontrunnerRaid1.SpawnOptions_FrontrunnerRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Striker/_Design/Character/BPChar_FrontrunnerStriker_Raid1.BPChar_FrontrunnerStriker_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_GunwolfRaid1.SpawnOptions_GunwolfRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Jammer/_Design/Character/BPChar_FrontrunnerJammer_Raid1.BPChar_FrontrunnerJammer_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Frontrunner/SpawnOptions_NullhoundRaid1.SpawnOptions_NullhoundRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+
+
+
+
+## Heavies
+# /Game/PatchDLC/Raid1/Enemies/Heavy/AcidRain/_Design/Character/BPChar_Heavy_AcidrainDarkRaid1.BPChar_Heavy_AcidrainDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyAcidrainDarkRaid1.SpawnOptions_HeavyAcidrainDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt.BPChar_HeavyDarkTraunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkAcidrainRaid1.SpawnOptions_HeavyBadassDarkAcidrainRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt.BPChar_HeavyDarkTraunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkIcebreakerRaid1.SpawnOptions_HeavyBadassDarkIcebreakerRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt.BPChar_Heavy_Traunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkPowerhouseRaid1.SpawnOptions_HeavyBadassDarkPowerhouseRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkPryoRaid1.SpawnOptions_HeavyBadassDarkPryoRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt.BPChar_Heavy_Traunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkRaid1_Random.SpawnOptions_HeavyBadassDarkRaid1_Random,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkRaid1_Random.SpawnOptions_HeavyBadassDarkRaid1_Random,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkRaid1_Random.SpawnOptions_HeavyBadassDarkRaid1_Random,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBadassDarkRaid1_Random.SpawnOptions_HeavyBadassDarkRaid1_Random,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Basic/_Design/Character/BPChar_Heavy_BasicDarkRaid1.BPChar_Heavy_BasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyBasicDarkRaid1.SpawnOptions_HeavyBasicDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Gunner/_Design/Character/BPChar_Heavy_GunnerDarkRaid1.BPChar_Heavy_GunnerDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyGunnerDarkRaid1.SpawnOptions_HeavyGunnerDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt.BPChar_Heavy_Traunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/IceBreaker/_Design/Character/BPChar_Heavy_IcebreakerDarkRaid1.BPChar_Heavy_IcebreakerDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyIcebreakerDarkRaid1.SpawnOptions_HeavyIcebreakerDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt.BPChar_Heavy_Traunt_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_PowerhouseDarkRaid1.BPChar_Heavy_PowerhouseDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Heavies/SpawnOptions_HeavyPowerhouseDarkRaid1.SpawnOptions_HeavyPowerhouseDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt.BPChar_HeavyDarkTraunt_C"'
+
+
+
+
+
+
+## Overspheres
+# /Game/PatchDLC/Raid1/Enemies/Oversphere/Deathsphere/_Design/Character/BPChar_OversphereDeathsphere.BPChar_OversphereDeathsphere_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Overspheres/SpawnOptions_OversphereDeathsphere_RandomElement.SpawnOptions_OversphereDeathsphere_RandomElement,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Raid1/Enemies/Oversphere/Deathsphere/_Design/Character/BPChar_OversphereDeathsphere.BPChar_OversphereDeathsphere_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Oversphere/Defender/_Design/Character/BPChar_OversphereDefenderDarkRaid1.BPChar_OversphereDefenderDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Overspheres/SpawnOptions_OversphereDefenderDarkRaid1.SpawnOptions_OversphereDefenderDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere.BPChar_Oversphere_KatagawaSphere_C"'
+
+
+
+
+
+
+## Troopers and Heavies 
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Basic/_Design/Character/BPChar_FrontrunnerBasic_Raid1.BPChar_FrontrunnerBasic_Raid1_C XX
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1.SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Jammer/_Design/Character/BPChar_FrontrunnerJammer_Raid1.BPChar_FrontrunnerJammer_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1.SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Striker/_Design/Character/BPChar_FrontrunnerStriker_Raid1.BPChar_FrontrunnerStriker_Raid1_C XX
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1.SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Badass/_Design/Character/BPChar_Frontrunner_Badass_Raid1.BPChar_Frontrunner_Badass_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1.SpawnOptions_Maliwan_Dark_FrontrunnerMixRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Basic/_Design/Character/BPChar_Heavy_BasicDarkRaid1.BPChar_Heavy_BasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1.SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/AcidRain/_Design/Character/BPChar_Heavy_AcidrainDarkRaid1.BPChar_Heavy_AcidrainDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1.SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Raid1/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_PowerhouseDarkRaid1.BPChar_Heavy_PowerhouseDarkRaid1_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/IceBreaker/_Design/Character/BPChar_Heavy_IcebreakerDarkRaid1.BPChar_Heavy_IcebreakerDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1.SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_PowerhouseDarkRaid1.BPChar_Heavy_PowerhouseDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1.SpawnOptions_Maliwan_Dark_HeavyMixNoBadassRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Basic/_Design/Character/BPChar_Heavy_BasicDarkRaid1.BPChar_Heavy_BasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixRaid1.SpawnOptions_Maliwan_Dark_HeavyMixRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/AcidRain/_Design/Character/BPChar_Heavy_AcidrainDarkRaid1.BPChar_Heavy_AcidrainDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixRaid1.SpawnOptions_Maliwan_Dark_HeavyMixRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Raid1/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_PowerhouseDarkRaid1.BPChar_Heavy_PowerhouseDarkRaid1_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/IceBreaker/_Design/Character/BPChar_Heavy_IcebreakerDarkRaid1.BPChar_Heavy_IcebreakerDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixRaid1.SpawnOptions_Maliwan_Dark_HeavyMixRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_PowerhouseDarkRaid1.BPChar_Heavy_PowerhouseDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixRaid1.SpawnOptions_Maliwan_Dark_HeavyMixRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_BadassDarkRaid1.BPChar_Heavy_BadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_HeavyMixRaid1.SpawnOptions_Maliwan_Dark_HeavyMixRaid1,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedicDarkRaid1.BPChar_TrooperMedicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Stealth/_Design/Character/BPChar_TrooperStealthDark.BPChar_TrooperStealthDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedicDarkRaid1.BPChar_TrooperMedicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Stealth/_Design/Character/BPChar_TrooperStealthDark.BPChar_TrooperStealthDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadassDarkRaid1.BPChar_TrooperBadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackRaid1,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Jetpack/_Design/Character/BPChar_TrooperJetpackDarkRaid1.BPChar_TrooperJetpackDarkRaid1_C
+#SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Alisma/Enemies/AliTink/Basic/BPChar_AliTinkBasic.BPChar_AliTinkBasic_C"' ###
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedicDarkRaid1.BPChar_TrooperMedicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Stealth/_Design/Character/BPChar_TrooperStealthDark.BPChar_TrooperStealthDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadassDarkRaid1.BPChar_TrooperBadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixRaid1.SpawnOptions_Maliwan_Dark_TrooperMixRaid1,Options.Options[6].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+
+
+
+
+
+## Valk Adds
+# /Game/PatchDLC/Raid1/Enemies/Mech/BasicMini/_Design/Character/BPChar_MechBasicMini.BPChar_MechBasicMini_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Mech/SpawnOptions_MechMiniBasicRaid1.SpawnOptions_MechMiniBasicRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Mini/_Design/Character/BPChar_BehemothMiniWalker_Event2.BPChar_BehemothMiniWalker_Event2_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Mech/MeleeMini/_Design/Character/BPChar_MechMeleeMini.BPChar_MechMeleeMini_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Mech/SpawnOptions_MechMiniMeleeRaid1.SpawnOptions_MechMiniMeleeRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Raid1/Enemies/Behemoth/MiniWalker/_Design/Character/BPChar_BehemothMiniWalker.BPChar_BehemothMiniWalker_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossMini/_Design/Character/BPChar_RaidBossMini.BPChar_RaidBossMini_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossMini/_Design/Character/SpawnOptions_RaidBossMiniMelee.SpawnOptions_RaidBossMiniMelee,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Mini/_Design/Character/BPChar_BehemothMiniWalker_Event2.BPChar_BehemothMiniWalker_Event2_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossMini/_Design/Character/BPChar_RaidBossMini.BPChar_RaidBossMini_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Mech/_Unique/RaidBossMini/_Design/Character/SpawnOptions_RaidBossMiniRanged.SpawnOptions_RaidBossMiniRanged,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Raid1/Enemies/Behemoth/MiniWalker/_Design/Character/BPChar_BehemothMiniWalker.BPChar_BehemothMiniWalker_C"'
+
+
+
+
+
+
+## Valks in between troopers
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_1.SpawnOptions_Maliwan_MechBossAddsMix_1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_1.SpawnOptions_Maliwan_MechBossAddsMix_1,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Basic/_Design/Character/BPChar_FrontrunnerBasic_Raid1.BPChar_FrontrunnerBasic_Raid1_C
+#SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_2.SpawnOptions_Maliwan_MechBossAddsMix_2,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Jammer/_Design/Character/BPChar_FrontrunnerJammer_Raid1.BPChar_FrontrunnerJammer_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_2.SpawnOptions_Maliwan_MechBossAddsMix_2,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Striker/_Design/Character/BPChar_FrontrunnerStriker_Raid1.BPChar_FrontrunnerStriker_Raid1_C XX
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_2.SpawnOptions_Maliwan_MechBossAddsMix_2,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Frontrunner/Badass/_Design/Character/BPChar_Frontrunner_Badass_Raid1.BPChar_Frontrunner_Badass_Raid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_2.SpawnOptions_Maliwan_MechBossAddsMix_2,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_3.SpawnOptions_Maliwan_MechBossAddsMix_3,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_3.SpawnOptions_Maliwan_MechBossAddsMix_3,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_MechBossAddsMix_4.SpawnOptions_Maliwan_MechBossAddsMix_4,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C"'
+
+
+
+
+
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadassDarkRaid1.BPChar_TrooperBadassDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperBadassDarkRaid1.SpawnOptions_TrooperBadassDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperBasicDarkRaid1.SpawnOptions_TrooperBasicDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperFlashDarkRaid1.SpawnOptions_TrooperFlashDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Jetpack/_Design/Character/BPChar_TrooperJetpackDarkRaid1.BPChar_TrooperJetpackDarkRaid1_C
+#SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperJetpackDarkRaid1.SpawnOptions_TrooperJetpackDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'""' ###Jetpack
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedicDarkRaid1.BPChar_TrooperMedicDarkRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperMedicDarkRaid1.SpawnOptions_TrooperMedicDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflect_Random.SpawnOptions_TrooperReflect_Random,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflect_Random.SpawnOptions_TrooperReflect_Random,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflect_Random.SpawnOptions_TrooperReflect_Random,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflect_Random.SpawnOptions_TrooperReflect_Random,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflect_Random.SpawnOptions_TrooperReflect_Random,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Corrosive.SpawnOptions_TrooperReflectDark_Corrosive,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Cryo.SpawnOptions_TrooperReflectDark_Cryo,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Fire.SpawnOptions_TrooperReflectDark_Fire,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_NoElement.SpawnOptions_TrooperReflectDark_NoElement,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Rad.SpawnOptions_TrooperReflectDark_Rad,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Random.SpawnOptions_TrooperReflectDark_Random,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflectDark.BPChar_TrooperReflectDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperReflectDark_Shock.SpawnOptions_TrooperReflectDark_Shock,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Stealth/_Design/Character/BPChar_TrooperStealthDark.BPChar_TrooperStealthDark_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperStealthDark.SpawnOptions_TrooperStealthDark,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C"'
+
+
+
+
+
+
+## Ratch
+# /Game/PatchDLC/Raid1/Enemies/Ratch/Badass/_Design/Character/BPChar_RatchBadassRaid1.BPChar_RatchBadassRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Ratch/SpawnOptions_RatchBadassRaid1.SpawnOptions_RatchBadassRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Ratch/_Unique/Hunt01/_Design/Character/BPChar_Ratch_Hunt01.BPChar_Ratch_Hunt01_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Ratch/Basic/_Design/Character/BPChar_RatchBasicRaid1.BPChar_RatchBasicRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Ratch/SpawnOptions_RatchBasicRaid1.SpawnOptions_RatchBasicRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Ratch/Hive/_Design/Character/BPChar_RatchHive.BPChar_RatchHive_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Ratch/Pup/_Design/Character/BPChar_RatchPupRaid1.BPChar_RatchPupRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Ratch/SpawnOptions_RatchPupRaid1.SpawnOptions_RatchPupRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Ratch/Birther/_Design/Character/BPChar_RatchBirther.BPChar_RatchBirther_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Ratch/Spitter/_Design/Character/BPChar_RatchSpitterRaid1.BPChar_RatchSpitterRaid1_C
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Ratch/SpawnOptions_RatchSpitterRaid1.SpawnOptions_RatchSpitterRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Ratch/Swarm/_Design/Character/BPChar_RatchSwarm.BPChar_RatchSwarm_C"'
+
+
+
+
+
+
+## Wotan adds
+# SpawnOptionData SpawnOptions_MaliwanMeleeMix",
+        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/_Mixes/SpawnOptions_MaliwanMeleeMix
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1.SpawnOptions_BehemothRaid_Stage1,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1"'
+
+# /Game/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_Badass.BPChar_Heavy_Badass_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/Enemies/Heavy/Basic/_Design/Character/BPChar_Heavy_Basic.BPChar_Heavy_Basic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/Enemies/Heavy/Icebreaker/_Design/Character/BPChar_Heavy_Icebreaker.BPChar_Heavy_Icebreaker_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/Bounty01/_Design/Character/BPChar_Heavy_Bounty01.BPChar_Heavy_Bounty01_C"'
+
+# /Game/Enemies/Heavy/Acidrain/_Design/Character/BPChar_Heavy_Acidrain.BPChar_Heavy_Acidrain_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DarkTraunt/_Design/Character/BPChar_HeavyDarkTraunt.BPChar_HeavyDarkTraunt_C"'
+
+# /Game/Enemies/Heavy/Powerhouse/_Design/Character/BPChar_Heavy_Powerhouse.BPChar_Heavy_Powerhouse_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Heavy/_Unique/DinerBoss/_Design/Character/BPChar_HeavyDinerBoss.BPChar_HeavyDinerBoss_C"'
+
+# /Game/Enemies/Frontrunner/Basic/_Design/Character/BPChar_FrontrunnerBasic.BPChar_FrontrunnerBasic_C
+#SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/Enemies/Frontrunner/Jammer/_Design/Character/BPChar_FrontrunnerJammer.BPChar_FrontrunnerJammer_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[6].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Mini/_Design/Character/BPChar_BehemothMiniWalker_Event2.BPChar_BehemothMiniWalker_Event2_C"'
+
+# /Game/Enemies/Frontrunner/Striker/_Design/Character/BPChar_FrontrunnerStriker.BPChar_FrontrunnerStriker_C XX
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[7].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/Enemies/Frontrunner/Badass/_Design/Character/BPChar_Frontrunner_Badass.BPChar_Frontrunner_Badass_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1Mobile.SpawnOptions_BehemothRaid_Stage1Mobile,Options.Options[8].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/Enemies/Mech/MG/_Design/Character/BPChar_MechMG.BPChar_MechMG_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2.SpawnOptions_BehemothRaid_Stage2,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Mech/Grenadier/_Design/Character/BPChar_MechGrenadierDark.BPChar_MechGrenadierDark_C"'
+
+# /Game/Enemies/Mech/Grenadier/_Design/Character/BPChar_MechGrenadier.BPChar_MechGrenadier_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2.SpawnOptions_BehemothRaid_Stage2,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Mech/_Unique/EvilAI/_Design/Character/BPChar_MechEvilAI.BPChar_MechEvilAI_C"'
+
+# /Game/Enemies/Mech/Charger/_Design/Character/BPChar_MechCharger.BPChar_MechCharger_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2.SpawnOptions_BehemothRaid_Stage2,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Mech/_Unique/EvilAI/_Design/Character/BPChar_MechEvilAI.BPChar_MechEvilAI_C"'
+
+# /Game/Enemies/Frontrunner/Basic/_Design/Character/BPChar_FrontrunnerBasic.BPChar_FrontrunnerBasic_C XX
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount.BPChar_FrontRider_Mount_C"'
+
+# /Game/Enemies/Mech/Basic/_Design/Character/BPChar_MechBasic.BPChar_MechBasic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Geranium/Enemies/GerEnforcer/Rider/_Design/Character/BPChar_GerEnforcerRider.BPChar_GerEnforcerRider_C"'
+
+# /Game/Enemies/Mech/Charger/_Design/Character/BPChar_MechCharger.BPChar_MechCharger_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Mech/Grenadier/_Design/Character/BPChar_MechGrenadierDark.BPChar_MechGrenadierDark_C"'
+
+# /Game/Enemies/Frontrunner/Striker/_Design/Character/BPChar_FrontrunnerStriker.BPChar_FrontrunnerStriker_C XX
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/Enemies/Frontrunner/Jammer/_Design/Character/BPChar_FrontrunnerJammer.BPChar_FrontrunnerJammer_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet.BPChar_FrontRider_Pet_C"'
+
+# /Game/Enemies/Mech/MG/_Design/Character/BPChar_MechMG.BPChar_MechMG_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage2Mobile.SpawnOptions_BehemothRaid_Stage2Mobile,Options.Options[5].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Mech/_Unique/EvilAI/_Design/Character/BPChar_MechEvilAI.BPChar_MechEvilAI_C"'
+
+# /Game/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasic.BPChar_TrooperBasic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3.SpawnOptions_BehemothRaid_Stage3,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlash.BPChar_TrooperFlash_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3.SpawnOptions_BehemothRaid_Stage3,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/Enemies/Trooper/Shotgun/_Design/Character/BPChar_TrooperShotgun.BPChar_TrooperShotgun_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3.SpawnOptions_BehemothRaid_Stage3,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C"'
+
+# /Game/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadass.BPChar_TrooperBadass_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3.SpawnOptions_BehemothRaid_Stage3,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C"'
+
+
+
+
+
+
+## Wotan Krakens
+# /Game/PatchDLC/Raid1/Enemies/Behemoth/Gunner/_Design/Character/BPChar_BehemothGunner.BPChar_BehemothGunner_C (Thor)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3B.SpawnOptions_BehemothRaid_Stage3B,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Gunner/_Design/Character/BPChar_BehemothGunnerEvent2.BPChar_BehemothGunnerEvent2_C"'
+
+# /Game/PatchDLC/Raid1/Enemies/Behemoth/Rocketeer/_Design/Character/BPChar_BehemothRocketeer.BPChar_BehemothRocketeer_C (Kraken)
+#SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage3B.SpawnOptions_BehemothRaid_Stage3B,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Behemoth/Gunner/_Design/Character/BPChar_BehemothGunnerEvent2.BPChar_BehemothGunnerEvent2_C"'
+
+
+
+
+
+
+## OverSpheres during Wotan
+# SpawnOptionData SpawnOptions_Oversphere_RandomElement",
+        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
+#SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_Stage2MobileFlyer.SpawnOptions_Stage2MobileFlyer,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/Enemies/_Spawning/Maliwan/Overspheres/_Unique/SpawnOptions_Oversphere_KatagawaSphere.SpawnOptions_Oversphere_KatagawaSphere"'
+
+# /Game/Enemies/Oversphere/Stinger/_Design/Character/BPChar_OversphereStinger.BPChar_OversphereStinger_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_Stage2MobileFlyer.SpawnOptions_Stage2MobileFlyer,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C"'
+
+# /Game/Enemies/Oversphere/Basic/_Design/Character/BPChar_Oversphere.BPChar_Oversphere_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_Stage2MobileFlyer.SpawnOptions_Stage2MobileFlyer,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C"'
+
+
+
+
+
+
+## OverSpheres during Upper Half
+# "SpawnOptionData SpawnOptions_Oversphere_RandomElement",
+        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
+#SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/SpawnOptions/SpawnOptions_UpperHalf_Wave2.SpawnOptions_UpperHalf_Wave2,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/Enemies/_Spawning/Maliwan/Overspheres/_Unique/SpawnOptions_Oversphere_KatagawaSphere.SpawnOptions_Oversphere_KatagawaSphere"'
+
+# /Game/Enemies/Oversphere/Defender/_Design/Character/BPChar_OversphereDefender.BPChar_OversphereDefender_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/SpawnOptions/SpawnOptions_UpperHalf_Wave2.SpawnOptions_UpperHalf_Wave2,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere.BPChar_Oversphere_KatagawaSphere_C"'
+
+# /Game/Enemies/Oversphere/Basic/_Design/Character/BPChar_Oversphere.BPChar_Oversphere_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/SpawnOptions/SpawnOptions_UpperHalf_Wave2.SpawnOptions_UpperHalf_Wave2,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/Rare01/_Design/Character/BPChar_OversphereRare01.BPChar_OversphereRare01_C"'
+
+# /Game/Enemies/Oversphere/Stinger/_Design/Character/BPChar_OversphereStinger.BPChar_OversphereStinger_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/SpawnOptions/SpawnOptions_UpperHalf_Wave2.SpawnOptions_UpperHalf_Wave2,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/Harbinger/_Design/Character/BPChar_OversphereHarbingerDark.BPChar_OversphereHarbingerDark_C"'
+
+
+
+
+
+
+## ?
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Reflect/_Design/Character/BPChar_TrooperReflect.BPChar_TrooperReflect_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_Carrier.SpawnOptions_Carrier,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01a/_Design/Character/BPChar_Trooper_Rare01a.BPChar_Trooper_Rare01a_C"'
+
+# /Game/Enemies/Trooper/Melee/_Design/Character/BPChar_TrooperMelee.BPChar_TrooperMelee_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_Carrier.SpawnOptions_Carrier,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01b/_Design/Character/BPChar_Trooper_Rare01b.BPChar_Trooper_Rare01b_C"'
+
+# /Game/Enemies/Trooper/Shotgun/_Design/Character/BPChar_TrooperShotgun.BPChar_TrooperShotgun_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_Carrier.SpawnOptions_Carrier,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01c/_Design/Character/BPChar_Trooper_Rare01c.BPChar_Trooper_Rare01c_C"'
+
+# /Game/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedic.BPChar_TrooperMedic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_Carrier.SpawnOptions_Carrier,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01d/_Design/Character/BPChar_Trooper_Rare01d.BPChar_Trooper_Rare01d_C"'
+
+# /Game/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlash.BPChar_TrooperFlash_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_Carrier.SpawnOptions_Carrier,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
+
+# /Game/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlash.BPChar_TrooperFlash_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_CarrierSpawns.SpawnOptions_CarrierSpawns,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+# /Game/Enemies/Trooper/Medic/_Design/Character/BPChar_TrooperMedic.BPChar_TrooperMedic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_CarrierSpawns.SpawnOptions_CarrierSpawns,Options.Options[1].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Tiny/Trooper/Badass/_Design/Character/BPChar_TrooperBadassTinyEvent2.BPChar_TrooperBadassTinyEvent2_C"'
+
+# /Game/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasic.BPChar_TrooperBasic_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_CarrierSpawns.SpawnOptions_CarrierSpawns,Options.Options[2].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Bounty01/_Design/Character/BPChar_Trooper_Bounty01.BPChar_Trooper_Bounty01_C"'
+
+# /Game/Enemies/Trooper/Shotgun/_Design/Character/BPChar_TrooperShotgun.BPChar_TrooperShotgun_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_CarrierSpawns.SpawnOptions_CarrierSpawns,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
+
+# /Game/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadass.BPChar_TrooperBadass_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/Carrier/_Design/SpawnOptions/SpawnOptions_CarrierSpawns.SpawnOptions_CarrierSpawns,Options.Options[4].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+
+
+
+## ?
+# /Game/PatchDLC/Raid1/Enemies/Oversphere/_Unique/BadassHarbinger/_Design/Character/BPChar_BadassHarbinger.BPChar_BadassHarbinger_C
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Oversphere/_Unique/BadassHarbinger/_Design/Character/SpawnOptions_BadassHarbinger.SpawnOptions_BadassHarbinger,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Oversphere/_Unique/KatagawaSphere/_Design/Character/BPChar_Oversphere_KatagawaSphere.BPChar_Oversphere_KatagawaSphere_C"'
+
+
+
+########################################################################################################################################################################
+########################################################################################################################################################################
+########################################################################################################################################################################
+
+
+## Wotan 100B total (in True or 4P MTD)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth.Table_Balance_Behemoth,Behemoth_Raid,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,2037.9737259538992936432
+SparkCharacterLoadedEntry,(1,2,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth.Table_Balance_Behemoth,Behemoth_Raid,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,1426.5816081766965899445
+SparkCharacterLoadedEntry,(1,2,0,BPChar_BehemothRaid),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth.Table_Balance_Behemoth,Behemoth_Raid,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,1018.9868629769496468216
+
+#Upper Half 9.09B (in True or 4P MTD)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_UpperHalf),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth.Table_Balance_Behemoth,BehemothRaid_UpperHalf,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,407.594745191595048219
+
+#Brain 227M (in True or 4P MTD)
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderBrain),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Balance/Table_Balance_Behemoth.Table_Balance_Behemoth,Behemoth_RaidBrain,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10.189868629789876205
+
+
+
+## Multiplying Wotan and Kraken
+# Wotan (Every 5s a new Wotan Spawns, as soon as 1 is dead, they stop spawning. Max 4 Wotans.)
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,5
+SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Raid_Boss_B:PersistentLevel.OakSpawnPoint_3.SceneComp,RelativeLocation,0,,(X=3368.0,Y=-71075.0,Z=-8163.225)
+
+# Kraken (Every 2s a new one spawns max 4 Krakens)
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,2
+SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Raid_Combat:PersistentLevel.OakSpawnPoint_61.SceneComp,RelativeLocation,0,,(X=13794.206,Y=-18230.6,Z=3678.6758)
+
+
+
+## Valks 
+# 20B Armor (in True or 4P MTD)
+# Shield bars 10B (in True or 4P MTD)
+# Bossbar
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossBar),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,Mech_Raid_BossBar,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,896.70843942150910608186
+# Sigrdrifa
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossA),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,Mech_RaidBossA,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,298.90281314050303536062
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossA),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,Mech_RaidBossA,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,149.45140657025151768031
+# Róta
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossB),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,Mech_RaidBossB,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,298.90281314050303536062
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossB),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,Mech_RaidBossB,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,149.45140657025151768031
+# Hildr
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossC),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,MechRaidBossC,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,298.90281314050303536062
+SparkCharacterLoadedEntry,(1,2,0,BPChar_MechRaidBossC),/Game/PatchDLC/Raid1/Enemies/Mech/_Shared/_Design/Balance/Table_Balance_Mech_Raid1.Table_Balance_Mech_Raid1,MechRaidBossC,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,149.45140657025151768031
+
+
+
+
+
+### Disabled by default
+## Custom Health Scaling in MTD only
+# Mayhem 10 (Resetting healthvalues to normal scaling everywhere else)
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,HealthSimpleScalar_42_0499AACF43FDF39B7084E2BB63E4BF68,0,,100
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,ShieldSimpleScalar_43_417C36C54DA2550A4CABC7B26A5E24A8,0,,100
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,ArmorSimpleScalar_44_BCAAA445479831C25B0D55AF294A15D6,0,,100
+# Mayhem 11
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,HealthSimpleScalar_42_0499AACF43FDF39B7084E2BB63E4BF68,0,,100
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,ShieldSimpleScalar_43_417C36C54DA2550A4CABC7B26A5E24A8,0,,100
+#SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,ArmorSimpleScalar_44_BCAAA445479831C25B0D55AF294A15D6,0,,100
+
+
+# Custom Mayhem 10 Health Scaling in MTD
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,HealthSimpleScalar_42_0499AACF43FDF39B7084E2BB63E4BF68,0,,1000
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,ShieldSimpleScalar_43_417C36C54DA2550A4CABC7B26A5E24A8,0,,1000
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,ArmorSimpleScalar_44_BCAAA445479831C25B0D55AF294A15D6,0,,1000
+# Custom Mayhem 11 Health Scaling in MTD
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,HealthSimpleScalar_42_0499AACF43FDF39B7084E2BB63E4BF68,0,,1000
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,ShieldSimpleScalar_43_417C36C54DA2550A4CABC7B26A5E24A8,0,,1000
+#SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,ArmorSimpleScalar_44_BCAAA445479831C25B0D55AF294A15D6,0,,1000
