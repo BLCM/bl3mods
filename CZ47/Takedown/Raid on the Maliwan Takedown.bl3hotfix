@@ -1,6 +1,6 @@
 ###
 ### Name: Raid on the Maliwan Takedown
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: takedowns, spawns, enemy
@@ -13,7 +13,7 @@
 ### or a unique variant of said class. (Regular Trooper > Atomic)
 ### 
 ### Additionally The Valkyries had a buff to their combined health and now have 20B Armor and 10B Shield in True/4P MTD.
-### Wotan has been buffed to have 100B health in total across all his phases and instead of just 1 Wotan, you'll be facing 4.
+### Wotan has been buffed to have 100B health in total across all his phases and instead of just 1 Wotan, you'll be facing 2 in True TD (or 2P+ lobbies)
 ###
 ### I highly recommend using my SpawnDelay remover mod so there's less downtime between fights: 
 ### https://raw.githubusercontent.com/BLCM/bl3mods/master/CZ47/Takedown/Reduced%20SpawnDelay%20MTD.bl3hotfix
@@ -508,16 +508,16 @@ SparkCharacterLoadedEntry,(1,2,0,BPChar_SpiderBrain),/Game/PatchDLC/Raid1/Enemie
 
 ## Multiplying Wotan and Kraken
 # Wotan (Every 5s a new Wotan Spawns, as soon as 1 is dead, they stop spawning. Max 4 Wotans.)
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
 SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,5
 SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Raid_Boss_B:PersistentLevel.OakSpawnPoint_3.SceneComp,RelativeLocation,0,,(X=3368.0,Y=-71075.0,Z=-8163.225)
 
 # Kraken (Every 2s a new one spawns max 4 Krakens)
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(BaseValueConstant=4,BaseValueScale=1))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add1IfAtLeast1MorePlayer.PCF_Add1IfAtLeast1MorePlayer_C'))
 SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,2
 SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Raid_Combat:PersistentLevel.OakSpawnPoint_61.SceneComp,RelativeLocation,0,,(X=13794.206,Y=-18230.6,Z=3678.6758)
 
