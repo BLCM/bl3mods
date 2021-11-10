@@ -250,8 +250,8 @@ SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/
 # /Game/PatchDLC/Raid1/Enemies/Trooper/Badass/_Design/Character/BPChar_TrooperBadassDarkRaid1.BPChar_TrooperBadassDarkRaid1_C
 SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperBadassDarkRaid1.SpawnOptions_TrooperBadassDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo.BPChar_CyberTrooperCapo_C"'
 
-# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C
-SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperBasicDarkRaid1.SpawnOptions_TrooperBasicDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
+# /Game/PatchDLC/Raid1/Enemies/Trooper/Basic/_Design/Character/BPChar_TrooperBasicDarkRaid1.BPChar_TrooperBasicDarkRaid1_C Turret
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperBasicDarkRaid1.SpawnOptions_TrooperBasicDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/Rare01e/_Design/Character/BPChar_Trooper_Rare01e.BPChar_Trooper_Rare01e_C"'
 
 # /Game/PatchDLC/Raid1/Enemies/Trooper/Flash/_Design/Character/BPChar_TrooperFlashDarkRaid1.BPChar_TrooperFlashDarkRaid1_C
 SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Troopers/SpawnOptions_TrooperFlashDarkRaid1.SpawnOptions_TrooperFlashDarkRaid1,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'"/Game/Enemies/Trooper/_Unique/JavaFlasher/_Design/Character/BPChar_TrooperJavaFlasher.BPChar_TrooperJavaFlasher_C"'
