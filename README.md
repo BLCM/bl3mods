@@ -1,5 +1,6 @@
 Borderlands 3 Mods
 ==================
+[![Support Discord](https://img.shields.io/static/v1?label=&message=Support%20Discord&logo=discord&color=424)](https://discord.gg/bXeqV8Ef9R)
 
 This is the github home to a collection of Bordlerlands 3 Mods.  At the
 moment, all the mods stored here are made using the hotfix injection
