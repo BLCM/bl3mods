@@ -17,7 +17,6 @@
 ### Fixed Samsara to now grant Amara Max### Health % Regen instead of Missing Health % Regen.
 ### Fixed Deep Well to grant ### 20% Heat per Shot for COV weapons instead of ### 15% =)
 ### Fixed Tempest to now grant Amara 10% shock per point instead of 8%.
-### Fixed Expedite to grant Amara 30% AS Cooldown per AS Damage kill. Ascendant currently does NOT boost this further.
 ### Buffed Restless from 5% to 12% per point.
 ### Buffed Combobreaker to 25%.
 ### Changed how Find your center's melee bonus interacts in the formula to buff Amara's total melee dealt. (Mult Value)
@@ -209,9 +208,6 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetra
 # Decrease Shooting Star cooldown
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack7,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,32.0
 
-
-# Reverting Expedite to its pre-patch state (the augment works, but Ascendant doesn't do anything for it yet)
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/StatusEffects/StatusEffect_Siren_Quicken.StatusEffect_Siren_Quicken,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues"',RowName="Quicken_CooldownRatePerKill",ValueName="Base_17_28B25EC8493D1EB6C2138A962F659BCD"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
 
 
 # Removing penalties from augments
