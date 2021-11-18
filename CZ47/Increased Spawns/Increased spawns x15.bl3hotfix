@@ -1,6 +1,6 @@
 ###
 ### Name: Increased Spawns
-### Version: 1.1.1
+### Version: 1.2.2
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: mode-balance, scaling, spawns, takedowns
@@ -10,22 +10,28 @@
 ###
 ###
 ### By Default all spawns are multiplied by 15.
+### Wotan and Kraken also multiply now, but with a delay.
+### Every 6s a new Wotan appears, the game gets too laggy if he spawns instantly over and over again.
+### However, as soon as you kill a Wotan completely, there will be no new spawns.
+### Every 3s a new Kraken appears, same reason. Kraken keeps spawning until you killed them all.
+### In 2 and 3 player, you get +1 Wotan and Kraken, in 4 player/true takedown you get +2 Wotans/Kraken.
+### This value is before the multiplier of the mod. (So upto 5 x 3 = 15 Wotans in True Takedown with this mod).
+### 
 ### To increase/decrease the spawns to your liking,
 ### change "BaseValueScale=15" to "BaseValueScale=x"
 ### x being whatever you want the default # of spawns multiplied by.
 ### Easiest/fastest way is using the replace function in most txt editors.
 ### 
-###
 ### Sidenote, it may be that you won't see an exact x5 or x10 or whatever amount of spawns in some cases.
 ### This is either due to rounding or because some parts are simply unaffected by this mod, or maybe something else
 ### With Feedback this mod might see some adjustments.
-###
+### 
 ### Shoutout to SkruntSkrunt for the initial help with looking for ways to modify spawns.
-###
+### 
 ### Maps this is verified to be working on: Both Takedowns, Circles of slaughter and Arms Race
 ### Currently doesn't work on the Proving grounds =(
-###
-### Want more preset spawn changes?
+### 
+### Want more preset spawn changes other than x15?
 ### Check 'em out here: https://github.com/CZ-47/bl3mods-1/tree/master/CZ47/Increased%20Spawns
 
 
@@ -82,6 +88,22 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,ScaleBy25PercentPerAdditonalPlayer,TwoPlayers_PT2,0,,(BaseValueConstant=1.25,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=15)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,ScaleBy25PercentPerAdditonalPlayer,ThreePlayers_PT2,0,,(BaseValueConstant=1.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=15)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/PlayerCountFormulas/DataTable_PlayerCountFormulas.DataTable_PlayerCountFormulas,ScaleBy25PercentPerAdditonalPlayer,FourPlayers_PT2,0,,(BaseValueConstant=1.75,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=15)
+
+
+## Allowing Wotan and Kraken to multiply as well
+# Wotan (Every 5s a new Wotan Spawns, as soon as 1 is dead, they stop spawning. Max amount of spawns depends on the increased spawns mod you're using.
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Default__Raid_Boss_B_C,OakMissionSpawner24_OdinBoss_ExecuteUbergraph_Raid_Boss_B_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,6
+SparkEarlyLevelPatchEntry,(1,1,1,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Boss_B.Raid_Boss_B:PersistentLevel.OakSpawnPoint_3.SceneComp,RelativeLocation,0,,(X=3368.0,Y=-71075.0,Z=-8163.225)
+
+# Kraken (Every 2s a new one spawns)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..NumActorsParam,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenPassive,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..MaxAliveActorsWhenThreatened,0,,(AttributeInitializationData=(AttributeInitializer=BlueprintGeneratedClass'/Game/GameData/Balance/PlayerCountFormulas/PCF_Add2In2PlayerAnd3In4Player.PCF_Add2In2PlayerAnd3In4Player_C'))
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,3
+SparkEarlyLevelPatchEntry,(1,1,1,MatchAll),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Raid_Combat:PersistentLevel.OakSpawnPoint_61.SceneComp,RelativeLocation,0,,(X=13794.206,Y=-18230.6,Z=3678.6758)
 
 
 ## Preventing some bosses from scaling up their level with this datatable
@@ -435,3 +457,65 @@ SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Share
 SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_Phase4_AliveAtOnce.Table_Behemoth_Phase4_AliveAtOnce,AliveOnce,FourPlayers_PT2,0,,(BaseValueConstant=2.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=15)
 
 
+# Significantly reduce SpawnDelays
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner39_trigger_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_0_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_1_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_10_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_11_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_12_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_13_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_14_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_15_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_16_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_17_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_18_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_19_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_20_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_21_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_22_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_23_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_24_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_25_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_26_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_27_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_28_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_29_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_3_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_30_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_31_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_32_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_33_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_34_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_35_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_36_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_37_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_38_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_39_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_4_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_40_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_41_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_42_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_43_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_44_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_45_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_46_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_47_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_48_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_49_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_5_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_6_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_7_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_8_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_Combat.Default__Raid_Combat_C,OakMissionSpawner_9_ExecuteUbergraph_Raid_Combat_RefProperty.Object..SpawnerComponent.Object..SpawnerStyle.Object..SpawnDelay,0,,0.02
+
+#SpawnTimer (Set BaseValueScale to be a value smaller than 1 in order to decrease the spawn timer)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,OnePlayer_PT1,0,,(BaseValueConstant=15.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,TwoPlayers_PT1,0,,(BaseValueConstant=8.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,ThreePlayers_PT1,0,,(BaseValueConstant=3.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,FourPlayers_PT1,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,OnePlayer_PT2,0,,(BaseValueConstant=5.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,TwoPlayers_PT2,0,,(BaseValueConstant=2.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,ThreePlayers_PT2,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)
+SparkLevelPatchEntry,(1,2,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Shared/_Design/Attributes/Table_Behemoth_SpawnTimer.Table_Behemoth_SpawnTimer,SpawnTime,FourPlayers_PT2,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0.001)

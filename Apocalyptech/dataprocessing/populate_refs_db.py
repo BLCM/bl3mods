@@ -80,7 +80,7 @@ curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 673
+estimated_secs = 546
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -188,7 +188,7 @@ for (dirpath, dirnames, filenames) in os.walk('extracted'):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~181700, as of 2021-09-09 (2yr anniversary) (216760 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~182900, as of 2021-11-18 (vault card 3) (218745 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
