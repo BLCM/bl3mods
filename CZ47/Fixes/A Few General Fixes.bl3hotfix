@@ -24,11 +24,6 @@
 
 ## Amara
 
-# Expedite
-# This reverts Expedite to its previous state before the new patch unfortunately enough broke it.
-# This way it works at the very least even though Ascendant doesn't provide a boost for it.
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/StatusEffects/StatusEffect_Siren_Quicken.StatusEffect_Siren_Quicken,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues"',RowName="Quicken_CooldownRatePerKill",ValueName="Base_17_28B25EC8493D1EB6C2138A962F659BCD"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
-
 # Samsara 
 # The card states it provides Health Regen based on Max health, but currently it's Missing Health Regen.
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/BrawlTree/Samsara/StatusEffect_Siren_Samsara.StatusEffect_Siren_Samsara,AttributeEffects.AttributeEffects[1].AttributeData,0,,/Game/GameData/Attributes/Health/Att_HealthPassivePercentRegenerationRate.Att_HealthPassivePercentRegenerationRate
