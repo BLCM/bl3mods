@@ -244,9 +244,6 @@ SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetra
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack7,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,32.0
 
 
-# Reverting Expedite to its pre-patch state (the augment works, but Ascendant doesn't do anything for it yet)
-SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/StatusEffects/StatusEffect_Siren_Quicken.StatusEffect_Siren_Quicken,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=0.0,DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues"',RowName="Quicken_CooldownRatePerKill",ValueName="Base_17_28B25EC8493D1EB6C2138A962F659BCD"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)
-
 # Removing penalties from augments
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_Inevitable,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,Effect_MalignantAura,DamageCoefficient_2_70FF0AD64324CB4406E965B6AFF3BED8,0,,0
