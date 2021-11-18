@@ -1,6 +1,12 @@
 All Weapons Can Anoint
 ======================
 
+**NOTE:** GBX released a patch for Vault Card 3 on November 18, 2021,
+and since that point, this mod seems to crash the game once you load
+into a level.  I've renamed the mod so that anyone loading it via URL
+won't actually load it anymore -- I'll figure out what the deal is
+later, when I've got more time.
+
 There are a number of weapons in the game which can't usually spawn with
 anointments.  This mod makes it so that they can.  Despite the use
 of "Weapons" in the title, this also adds anointments to the Ghast Call
