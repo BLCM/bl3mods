@@ -11,7 +11,7 @@ In cases where there's already an on-card explanation, I've tried to include
 "all effects on card" instead of a custom description, but there are a few
 cases where that could still be tweaked, so you'll have a double-description.
 
-This mod should be current up through DLC6 (Director's Cut).
+This mod should be current up through Vault Card 3.
 
 **Translation Information:** The code which generates this mod now supports
 translations pretty easily.  If you want to contribute a translation to this
@@ -24,6 +24,9 @@ me if you have any questions about that!
 
 Changelog
 =========
+
+**v1.5.0** - Nov 19, 2021
+ * Updated for Vault Card 3 items.
 
 **v1.4.0** - Aug 6, 2021
  * Updated for Vault Card 2 items.

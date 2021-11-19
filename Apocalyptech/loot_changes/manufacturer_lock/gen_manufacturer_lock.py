@@ -232,6 +232,14 @@ type_pools = [
                 # Hotfoot Teddy
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot', TOR, 1),
 
+                ### Vault Card 3
+
+                # Blade Fury
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/Balance/Balance_AR_JAK_BladeFury', JAK, 1),
+
+                # Creeping Corruption
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/Balance/Balance_DAL_AR_Corruption', DAL, 1),
+
                 ### Additions
 
                 # Earworm
@@ -501,6 +509,11 @@ type_pools = [
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer', MAL, 1),
                 # Atlas Replay
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay', ATL, 1),
+
+                ### Vault Card 3
+
+                # TNTina
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/Balance/Balance_PS_TOR_TinyTinaGun', TOR, 1),
 
                 ### Additions
 
@@ -1039,7 +1052,7 @@ for (man, man_label) in eng_manufacturers.items():
             ],
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.4.0',
+            v='1.5.0',
             cats='loot-system',
             )
 

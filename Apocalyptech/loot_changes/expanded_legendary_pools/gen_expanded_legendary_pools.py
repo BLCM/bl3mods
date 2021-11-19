@@ -61,7 +61,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.5.0',
+        v='1.6.0',
         cats='loot-system, enemy-drops',
         )
 
@@ -259,6 +259,14 @@ pools = [
 
                 # Hotfoot Teddy
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot', 1),
+
+                ### Vault Card 3
+
+                # Blade Fury
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/Balance/Balance_AR_JAK_BladeFury', 1),
+
+                # Creeping Corruption
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/Balance/Balance_DAL_AR_Corruption', 1),
 
                 ### Additions
 
@@ -509,6 +517,11 @@ pools = [
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer', 1),
                 # Atlas Replay
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay', 1),
+
+                ### Vault Card 3
+
+                # TNTina
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/Balance/Balance_PS_TOR_TinyTinaGun', 1),
 
                 ### Additions
 
@@ -1097,6 +1110,11 @@ pools = [
                 # Infernal Wish
                 ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Balance/InvBalD_Shield_InfernalWish', 1),
 
+                ### Vault Card 3
+
+                # Mana Well
+                ('/Game/PatchDLC/VaultCard3/Gear/Shields/Unique/Manawell/Balance/InvBalD_Shield_Pangolin_Manawell', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -1209,6 +1227,13 @@ pools = [
 
                 # Pyroburst
                 ('/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/Balance/InvBalD_GM_Pyroburst', 1),
+
+                ### Vault Card 3
+
+                # Bloodsucker
+                ('/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/Balance/InvBalD_GM_Bloodsucker', 1),
+                # Sidewinder
+                ('/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Sidewinder/Balance/InvBalD_GM_Sidewinder', 1),
 
                 ### Additions
 
