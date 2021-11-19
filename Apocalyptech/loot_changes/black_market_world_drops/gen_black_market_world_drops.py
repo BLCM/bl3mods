@@ -63,9 +63,6 @@ pool.add_pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_0
     bva='/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_Siren', bvs=.25*non_gun_scale)),
 pool.add_pool('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary', BVC(bvc=1, bvs=.20*non_gun_scale)),
 
-hf_type = Mod.LEVEL
-hf_target = 'MatchAll'
-
 # This *does* have to be a CHAR hotfix or it doesn't work all the time.  The Black Markets
 # Everywhere mod has to use CHAR, too.  Yay?
 mod.comment('Update main itempool')
