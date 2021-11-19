@@ -1,12 +1,6 @@
 All Weapons Can Anoint
 ======================
 
-**NOTE:** GBX released a patch for Vault Card 3 on November 18, 2021,
-and since that point, this mod seems to crash the game once you load
-into a level.  I've renamed the mod so that anyone loading it via URL
-won't actually load it anymore -- I'll figure out what the deal is
-later, when I've got more time.
-
 There are a number of weapons in the game which can't usually spawn with
 anointments.  This mod makes it so that they can.  Despite the use
 of "Weapons" in the title, this also adds anointments to the Ghast Call
@@ -17,10 +11,16 @@ base-game anointments.)
 This *does* exclude The Shoddy, since it seems quite fitting that that
 gun wouldn't have anointments on it.
 
-Should be up to date with DLC6 (Director's Cut).
+Should be up to date with Vault Card 3.
 
 Changelog
 =========
+
+**v1.3.2** - Nov 19, 2021
+ * Removed Linc, Leech, and Sellout because those have been officially
+   patched to have anointments in the base game data.  That data patch was
+   also causing crashes for Linc and Leech (but weirdly, not Sellout),
+   so this release takes care of that, too.
 
 **v1.3.1** - Aug 14, 2021
  * Added purple Seventh Sense variant, since that's actually been available
