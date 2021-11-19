@@ -35,7 +35,7 @@ mod = Mod('black_market_world_drops.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='vendor',
         )
 
@@ -63,10 +63,33 @@ pool.add_pool('/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Siren_0
     bva='/Game/GameData/Loot/CharacterWeighting/Att_CharacterWeight_Siren', bvs=.25*non_gun_scale)),
 pool.add_pool('/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary', BVC(bvc=1, bvs=.20*non_gun_scale)),
 
-mod.reg_hotfix(Mod.PATCH, '',
+hf_type = Mod.LEVEL
+hf_target = 'MatchAll'
+
+# This *does* have to be a CHAR hotfix or it doesn't work all the time.  The Black Markets
+# Everywhere mod has to use CHAR, too.  Yay?
+mod.comment('Update main itempool')
+mod.reg_hotfix(Mod.CHAR, 'MatchAll',
         '/Game/PatchDLC/Ixora2/Loot/VendingMachines/DA_ItemPool_BlackMarket',
         'BalancedItems',
         str(pool))
+mod.newline()
+
+# With the Vault Card 3 release, Gearbox patched this machine to no longer rely on hotfixes to
+# change its weekly loot, and it did so via some newish attributes inside ExpansionData_VaultCard3.
+# Clear those out so that it doesn't happen anymore.  These can be LEVEL and it seems to
+# work just fine.
+mod.comment('Prevent weekly ItemPool overwrites')
+expansion_obj = '/Game/PatchDLC/VaultCard3/Data/ExpansionData_VaultCard3'
+mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
+        expansion_obj,
+        'RandomDateBasedItemPools',
+        '()')
+mod.reg_hotfix(Mod.LEVEL, 'MatchAll',
+        expansion_obj,
+        'ItemPoolToReplaceWithRandomItemPool',
+        'None')
+mod.newline()
 
 mod.close()
 

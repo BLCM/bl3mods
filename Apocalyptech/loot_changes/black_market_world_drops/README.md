@@ -10,10 +10,14 @@ shields, grenade mods, COMs, and relics.
 Changelog
 =========
 
+**v1.1.0** - Nov 19, 2021
+ * Updated with compatibility with yesterday's Vault Card 3 update, which
+   changed how the machines decide their loot pools.
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 
-**v1.0.0** - May 7, 2020
+**v1.0.0** - May 7, 2021
  * Initial release
  
 Licenses
