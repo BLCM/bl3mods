@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-08-06 12:00-0500\n"
+"POT-Creation-Date: 2021-11-19 09:43-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4794,4 +4794,52 @@ msgstr ""
 
 #: gen_red_text_explainer.py:1898
 msgid "after impact, bounces 5 times while spawning homing elemental orbs"
+msgstr ""
+
+#: gen_red_text_explainer.py:1901
+msgid "Blade Fury"
+msgstr ""
+
+#: gen_red_text_explainer.py:1903
+msgid "Master of the gun, the blade, and philosophy."
+msgstr ""
+
+#: gen_red_text_explainer.py:1906
+msgid "Creeping Corruption"
+msgstr ""
+
+#: gen_red_text_explainer.py:1908
+msgid "How it comes thus?"
+msgstr ""
+
+#: gen_red_text_explainer.py:1911
+msgid "TNTina"
+msgstr ""
+
+#: gen_red_text_explainer.py:1913
+msgid "Squishy. Squishy squishy squishy."
+msgstr ""
+
+#: gen_red_text_explainer.py:1916
+msgid "Mana Well"
+msgstr ""
+
+#: gen_red_text_explainer.py:1918
+msgid "With great (something) comes great (something else)"
+msgstr ""
+
+#: gen_red_text_explainer.py:1921
+msgid "Bloodsucker"
+msgstr ""
+
+#: gen_red_text_explainer.py:1923
+msgid "Chupa's organ transplant."
+msgstr ""
+
+#: gen_red_text_explainer.py:1926
+msgid "Sidewinder"
+msgstr ""
+
+#: gen_red_text_explainer.py:1928
+msgid "This is what I call a target-rich environment."
 msgstr ""

@@ -20,6 +20,7 @@ all items from:
 * DLC5 (Designer's Cut)
 * DLC6 (Director's Cut) and Vault Card #1
 * Vault Card #2
+* Vault Card #3
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will
@@ -36,6 +37,9 @@ added into the loot pool properly.
 
 Changelog
 =========
+
+**v1.6.0** - Nov 19, 2021
+ * Updated with Vault Card 3 items
 
 **v1.5.0** - Aug 6, 2021
  * Updated with Vault Card 2 items

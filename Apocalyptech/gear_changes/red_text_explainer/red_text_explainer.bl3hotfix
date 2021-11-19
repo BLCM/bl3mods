@@ -1,6 +1,6 @@
 ###
 ### Name: Red Text Explainer
-### Version: 1.4.0
+### Version: 1.5.0
 ### Author: Apocalyptech
 ### Contact: https://apocalyptech.com/contact.php
 ### Categories: qol, gear-general
@@ -1113,4 +1113,19 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troublesh
 
 # Pyroburst
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst.UIStat_RedText_Pyroburst,Text,0,,[Flavor]KEKW[/Flavor] (after impact, bounces 5 times while spawning homing elemental orbs)
+
+# Blade Fury
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/UIStat_RedText_BladeFury.UIStat_RedText_BladeFury,Text,0,,[Flavor]Master of the gun, the blade, and philosophy.[/Flavor] (all effects on card)
+
+# Creeping Corruption
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/UIStat_RedText_Corruption.UIStat_RedText_Corruption,Text,0,,[Flavor]How it comes thus?[/Flavor] (all effects on card)
+
+# TNTina
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/UIStat_RedText_TinyTinaGun.UIStat_RedText_TinyTinaGun,Text,0,,[Flavor]Squishy. Squishy squishy squishy.[/Flavor] (all effects on card)
+
+# Bloodsucker
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/UIStat_RedText_Bloodsucker.UIStat_RedText_Bloodsucker,Text,0,,[Flavor]Chupa's organ transplant.[/Flavor] (all effects on card)
+
+# Sidewinder
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Sidewinder/UIStat_RedText_Sidewinder.UIStat_RedText_Sidewinder,Text,0,,[Flavor]This is what I call a target-rich environment.[/Flavor] (all effects on card)
 

@@ -59,7 +59,7 @@ for language in ['en']:
             ],
             contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.4.0',
+            v='1.5.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
@@ -1881,7 +1881,7 @@ for language in ['en']:
                 # +1 projectile when not depleted, +50% amp while full, can cause self-combustion
                 ON_CARD),
 
-            # Vault Card 1
+            # Vault Card 2
             (_("Gold Rush"),
                 '/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/UIStat_RedText_GoldRush',
                 _("Pay dirt."),
@@ -1896,6 +1896,38 @@ for language in ['en']:
                 '/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst',
                 _("KEKW"),
                 _("after impact, bounces 5 times while spawning homing elemental orbs")),
+
+            # Vault Card 3
+            (_("Blade Fury"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/UIStat_RedText_BladeFury',
+                _("Master of the gun, the blade, and philosophy."),
+                # shoots blades that do both weapon + melee damage
+                ON_CARD),
+            (_("Creeping Corruption"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/UIStat_RedText_Corruption',
+                _("How it comes thus?"),
+                # kills spread corruption to nearby enemies, making them take more damage
+                ON_CARD),
+            (_("TNTina"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/UIStat_RedText_TinyTinaGun',
+                _("Squishy. Squishy squishy squishy."),
+                # shoots bundles of dynamite; chain reactions cause additional damage
+                ON_CARD),
+            (_("Mana Well"),
+                '/Game/PatchDLC/VaultCard3/Gear/Shields/Unique/Manawell/UIStat_RedText_Manawell',
+                _("With great (something) comes great (something else)"),
+                # on slam, drain shield and provide damage reduction + bonus shock damage
+                ON_CARD),
+            (_("Bloodsucker"),
+                '/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/UIStat_RedText_Bloodsucker',
+                _("Chupa's organ transplant."),
+                # attaches to enemy and heals for all damage done to flesh, while removing unwanted status effects
+                ON_CARD),
+            (_("Sidewinder"),
+                '/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Sidewinder/UIStat_RedText_Sidewinder',
+                _("This is what I call a target-rich environment."),
+                # heat-seeking, penetrates multiple targets, deploys sticky bombs
+                ON_CARD),
             ]:
 
         # Eh, let's omit shields by default; I am 99% sure that all of them already
