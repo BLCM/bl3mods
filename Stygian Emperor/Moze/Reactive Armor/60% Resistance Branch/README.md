@@ -3,7 +3,9 @@ Moze Skill - Reactive Armor - 60% Resistance Branch
 Created by **Stygian Emperor**
 
 By email request from **Hyper Flares** - 
+
 Increases the effect of the first rank of the skill by approximately 5 times in order to have 60% resistance to splash damage and 30% resistance to fire and radiation. I am not knowledgable enough to reduce the maximum number of ranks available to a skill, so ranks 2 and 3 are meant to be ignored - but I'm not going to tell anyone what to do with their cheat mods.
+
 This is a standalone mod; only one .bl3hotfix file should be in your mod loader for Reactive Armor.
 
 Changelog
@@ -20,7 +22,7 @@ Credits
 Contact the Author
 ------------------
 **Email:** stygianemperor@gmail.com
-- An email regarding any of my mods is always welcome (and resulted in this branch of this mod!). I check this account regularly, so a response should arrive within a day or so.
+- An email regarding any of my mods is always welcome (*and resulted in this branch of this mod!*). I check this account regularly, so a response should arrive within a day or so.
 
 **Discord:** 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
 - This will get my attention pretty quickly if I'm awake. Join the **Borderlands 3 Modding** server to send me private messages, or just @ me in an appropriate channel on the server: https://discord.gg/38sDVpE
