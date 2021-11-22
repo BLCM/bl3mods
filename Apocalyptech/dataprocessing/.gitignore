@@ -3,6 +3,11 @@ bl3save
 bl3hotfixmod
 extracted
 *.csv
+!artifact_balances.csv
+!com_balances.csv
+!grenade_balances.csv
+!gun_balances.csv
+!shield_balances.csv
 *.csv.bak
 *.txt
 *.txt.bak
