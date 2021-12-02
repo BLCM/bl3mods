@@ -1,7 +1,7 @@
 ###
 ### Name: A Few General Fixes
 ### 
-### Version: 1.0.1
+### Version: 1.0.2
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: char-siren, char-beastmaster, bugfix, gear-shield
@@ -11,7 +11,6 @@
 ###
 ### A few small fixes, no other shenanigans. 
 ###
-### Expedite (Ascendant doesn't boost this)
 ### Tempest 40% shock > 50% shock at 5/5
 ### Samsara Max Health Regen instead of Missing Health Regen
 ### Deep well -20% Heat Per Shot instead of -15%
