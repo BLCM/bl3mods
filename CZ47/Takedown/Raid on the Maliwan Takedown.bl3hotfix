@@ -326,7 +326,7 @@ SparkEarlyLevelPatchEntry,(1,1,0,Raid_P),/Game/PatchDLC/Raid1/Enemies/_Spawning/
 
 ## Wotan adds
 # SpawnOptionData SpawnOptions_MaliwanMeleeMix",
-        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/_Mixes/SpawnOptions_MaliwanMeleeMix
+# "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/_Mixes/SpawnOptions_MaliwanMeleeMix
 SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_BehemothRaid_Stage1.SpawnOptions_BehemothRaid_Stage1,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/PatchDLC/Raid1/Enemies/_Spawning/Maliwan/Raid/SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1.SpawnOptions_Maliwan_Dark_TrooperMixNoJetpackNoBadassRaid1"'
 
 # /Game/Enemies/Heavy/Badass/_Design/Character/BPChar_Heavy_Badass.BPChar_Heavy_Badass_C
@@ -414,7 +414,7 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth
 
 ## OverSpheres during Wotan
 # SpawnOptionData SpawnOptions_Oversphere_RandomElement",
-        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
+# "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
 #SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/_Design/SpawnOptions/SpawnOptions_Stage2MobileFlyer.SpawnOptions_Stage2MobileFlyer,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/Enemies/_Spawning/Maliwan/Overspheres/_Unique/SpawnOptions_Oversphere_KatagawaSphere.SpawnOptions_Oversphere_KatagawaSphere"'
 
 # /Game/Enemies/Oversphere/Stinger/_Design/Character/BPChar_OversphereStinger.BPChar_OversphereStinger_C
@@ -430,7 +430,7 @@ SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth
 
 ## OverSpheres during Upper Half
 # "SpawnOptionData SpawnOptions_Oversphere_RandomElement",
-        "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
+# "ObjectPath": "OakGame/Content/Enemies/_Spawning/Maliwan/Overspheres/Variants/SpawnOptions_Oversphere_RandomElement
 #SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Enemies/Behemoth/_Unique/RaidMiniBoss/UpperHalf/SpawnOptions/SpawnOptions_UpperHalf_Wave2.SpawnOptions_UpperHalf_Wave2,Options.Options[0].Factory.Object..Options,0,,SpawnOptionData'"/Game/Enemies/_Spawning/Maliwan/Overspheres/_Unique/SpawnOptions_Oversphere_KatagawaSphere.SpawnOptions_Oversphere_KatagawaSphere"'
 
 # /Game/Enemies/Oversphere/Defender/_Design/Character/BPChar_OversphereDefender.BPChar_OversphereDefender_C
