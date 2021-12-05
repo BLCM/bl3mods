@@ -119,8 +119,9 @@ SKRUNT1=bosstrials.skrunt1.1.bl3hotfix \
 	bosstrials.skrunt1.7.bl3hotfix \
 	bosstrials.skrunt1.8.bl3hotfix
 
-MIX4 =	bosstrials.1.749.bl3hotfix \
-	bosstrials.4.733.bl3hotfix \
+# 749 doesn't work for 1
+MIX4 =	bosstrials.1.750.bl3hotfix \
+	bosstrials.4.734.bl3hotfix \
 	bosstrials.5.649.bl3hotfix \
 	bosstrials.6.913.bl3hotfix \
 	bosstrials.7.453.bl3hotfix \

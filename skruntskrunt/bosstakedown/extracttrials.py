@@ -31,6 +31,7 @@ SPAWNOPTIONS="SpawnOptions"
 WAVES="Waves"
 NUMACTORS="NumActorsParam"
 ATTRINIT="AttributeInitializationData"
+ATTRINITC="AttributeInitializer"
 BASEVALUECONSTANT="BaseValueConstant"
 
 def deep_get(h, keys, dfl=-1):
@@ -66,6 +67,7 @@ def main(args):
             st = oms[SPAWNERCOMPONENT][SPAWNERSTYLE]
             oms[SPAWNERCOMPONENT][SPAWNERSTYLE] = find_jwp_by_id(jwp,st[EXPORT])[0]
     # resolve spawner style fo waves
+    singles = []
     for oms in oakmissionspawners:
         st = oms[SPAWNERCOMPONENT].get(SPAWNERSTYLE,{})
         if WAVES in st:
@@ -75,28 +77,50 @@ def main(args):
                 # print(f'export_id: {export_id}')
                 wave[SPAWNERSTYLE] = find_jwp_by_id(jwp,export_id)[0]
         else:
+            # need to deal with not waves
             print(f"Doesn't have waves? {oms[NAME]}")
+            # print(f"{st}")
+            # wave = st
     # output it
     sos = set()
+    # need to add support for not waves
     for oms in oakmissionspawners:
         st = oms[SPAWNERCOMPONENT][SPAWNERSTYLE]
-        for wave_i,wave in enumerate(st.get(WAVES,[])):
-            # print(f'wave_i: {wave_i} {oms[NAME]}')
-            # print(i,wave)
-            # print(wave[SPAWNERSTYLE])
-            so = wave[SPAWNERSTYLE][SPAWNOPTIONS][1]
+        if st.get(WAVES,None) is None:
+            so = st[SPAWNOPTIONS][1]            
             sos.add(so)
             fact = {SPAWNOPTIONS:None, NUMACTORS:None}
-            fact_key = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{WAVES}.{WAVES}[{wave_i}].{SPAWNERSTYLE}.{SPAWNOPTIONS}'
+            fact_key = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{SPAWNOPTIONS}'
             fact_val = f'{so}'
-            fact["wave"] = f'{wave_i}'
-            # print(f'{fact_key},{fact_val}')
+            # fact["wave"] = -1
             fact[SPAWNOPTIONS] = {fact_key: fact_val}
-            num_actors = deep_get(wave,[SPAWNERSTYLE,NUMACTORS,ATTRINIT,BASEVALUECONSTANT],-1)
-            fact_key = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{WAVES}.{WAVES}[{wave_i}].{SPAWNERSTYLE}.{NUMACTORS}.{ATTRINIT}'
-            fact_val = f'{num_actors}'
-            fact[NUMACTORS] = {fact_key: fact_val}
+            # print(st)
+            # num_actors = deep_get(st,[SPAWNERSTYLE,NUMACTORS,ATTRINIT,BASEVALUECONSTANT],-1)
+            num_actors = deep_get(st,[NUMACTORS,ATTRINIT,BASEVALUECONSTANT],-1)
+            # could get the initializer
+            actor_init = deep_get(st,[NUMACTORS,ATTRINIT,ATTRINITC],"")
+            fact_key_a = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{NUMACTORS}.{ATTRINIT}'
+            fact_val_a = f'{num_actors}'
+            fact[NUMACTORS] = {fact_key_a: fact_val_a}
             facts.append(fact)
+        else:
+            for wave_i,wave in enumerate(st.get(WAVES,[])):
+                # print(f'wave_i: {wave_i} {oms[NAME]}')
+                # print(i,wave)
+                # print(wave[SPAWNERSTYLE])
+                so = wave[SPAWNERSTYLE][SPAWNOPTIONS][1]
+                sos.add(so)
+                fact = {SPAWNOPTIONS:None, NUMACTORS:None}
+                fact_key = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{WAVES}.{WAVES}[{wave_i}].{SPAWNERSTYLE}.{SPAWNOPTIONS}'
+                fact_val = f'{so}'
+                fact["wave"] = f'{wave_i}'
+                # print(f'{fact_key},{fact_val}')
+                fact[SPAWNOPTIONS] = {fact_key: fact_val}
+                num_actors = deep_get(wave,[SPAWNERSTYLE,NUMACTORS,ATTRINIT,BASEVALUECONSTANT],-1)
+                fact_key_a = f'{oms[NAME]}.{SPAWNERCOMPONENT}.{SPAWNERSTYLE}.{WAVES}.{WAVES}[{wave_i}].{SPAWNERSTYLE}.{NUMACTORS}.{ATTRINIT}'
+                fact_val_a = f'{num_actors}'
+                fact[NUMACTORS] = {fact_key_a: fact_val_a}
+                facts.append(fact)
     print(json.dumps(facts,indent=1))
     all_facts["spawnoptions"] = facts
     all_facts["spawnpoints"] = spawn_points

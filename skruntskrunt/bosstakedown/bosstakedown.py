@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Trial Fact Extractor for BL3
+# Takedown Generator for BL3
 # Copyright (C) 2021 abram/skruntksrunt, altef-4, Christopher J. Kucera
 # 
 # This program is free software: you can redistribute it and/or modify
@@ -51,8 +51,8 @@ ignore_list = [
 # Default__ProvingGrounds_Trial{trial}_Dynamic_C
 
 TAKEDOWNPATH='/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat'
-TAKEDOWNLEVEL='GuardianTakedown_C'
-
+TAKEDOWNLEVEL='GuardianTakedown_P'
+DFLTITLE='Boss Guardian Takedown'
 
 def parse_args():
     parser = argparse.ArgumentParser(description=f'Boss Trial Generator v{version}')
@@ -65,6 +65,7 @@ def parse_args():
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--spawnout',type=str, default=SPAWNOUT, help='SpawnOptions output file')
     parser.add_argument('--trial', type=int, default=1, help='Trial number {MISSION_NUMBERS}')
+    parser.add_argument('--title', type=str, default=DFLTITLE, help='Set title of mod')
     return parser.parse_args()
 
 args = parse_args()
@@ -76,7 +77,7 @@ else:
     our_seed = int(our_seed)
 
 our_trial = args.trial
-title = f'Boss Guardian Takedown: {TITLES[our_trial]} seed {our_seed}'
+title = f'{args.title} seed {our_seed}'
 # we abuse ixora to fill in the trials?
 
 # raw_ixora_spawn_list = [
@@ -101,7 +102,7 @@ spawnoptions_filename = args.spawnoptions
 mod = Mod(output_filename,
           title,
           'skruntskrunt',
-          ["Adds new badasses to Guardian Takedown"]
+          ["Adds new badasses to Guardian Takedown"],
           lic=Mod.CC_BY_SA_40,
           v=version,
           cats=['trials','gameplay'],

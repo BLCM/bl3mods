@@ -52,8 +52,15 @@ def open_jwp(so):
 def main(args):
     trial = json.load(open(args.input))
     sos   = trial["spawnoption_list"]
+    seen = {}
     entries = []
-    for so in sos:
+    work = sos + []
+    while len(work) > 0:
+        so = work.pop(0)
+        if so in seen:
+            continue
+        seen[so] = True
+        # for so in sos:
         print(so)
         jso = open_jwp(so)
         sod = [x for x in jso if x.get(EXPORT_TYPE,None) == SPAWNOPTIONDATA][0]
@@ -65,11 +72,18 @@ def main(args):
             if "AIActorClass" in actor:
                 asset = actor["AIActorClass"]["asset_path_name"]
                 entries.append( (so, factory, idx, asset) )
+            elif "Options" in actor:
+                # this is a spawnfactory container instead?
+                # these are external SpawnOptions we can't do much about :(
+                # TODO DEAL WITH THIS
+                print(f"Options {so} {factory} {idx}", actor)
+                work.append(actor["Options"][1])
             else:
                 # this is a spawnfactory container instead?
                 # these are external SpawnOptions we can't do much about :(
                 # TODO DEAL WITH THIS
                 print(f"Missing AIAactorCLass {so} {factory} {idx}", actor)
+
     with open(args.output,'w') as fd:
         json.dump(entries,fd,indent=1)
     
