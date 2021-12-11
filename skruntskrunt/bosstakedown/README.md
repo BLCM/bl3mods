@@ -1,17 +1,13 @@
-Boss Trials
+Boss Takedowns
 ==============
 
-Replace mobs in Trials / Proving Grounds with named Badasses and
+Replace mobs in Takedowns with named Badasses and
 bosses. Spice up the proving grounds trials with 6 different boss
 rushes!
 
-Works well with True Trials mod.
-
-Check out the modder's cut True Trials mod to have a thematicly nice experience.
-
 Header
 ======
-* Name: Boss Trials
+* Name: Boss Takedowns
 * Version: 0.1.2
 * Author: skruntskrunt
 * Categories: gameplay, trials

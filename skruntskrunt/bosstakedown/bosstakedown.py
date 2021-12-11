@@ -48,14 +48,13 @@ ignore_list = [
     # ('ProvingGrounds_Trial7_P','/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_OversphereMix'),
 ]
 
-# Default__ProvingGrounds_Trial{trial}_Dynamic_C
 
 TAKEDOWNPATH='/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat'
 TAKEDOWNLEVEL='GuardianTakedown_P'
 DFLTITLE='Boss Guardian Takedown'
 
 def parse_args():
-    parser = argparse.ArgumentParser(description=f'Boss Trial Generator v{version}')
+    parser = argparse.ArgumentParser(description=f'Bl3 bossify a level Generator v{version}')
     parser.add_argument('--path', type=str, default=TAKEDOWNPATH, help='SpawnOptions Path')
     parser.add_argument('--level', type=str, default=TAKEDOWNLEVEL, help='Level Short Name')
     parser.add_argument('--seed', type=int, default=SEED, help='Seed of random number generator.')
@@ -64,8 +63,10 @@ def parse_args():
     parser.add_argument('--overridespawn', action='store_true',help='Use the spawnoptions json to override spawn choices')
     parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
     parser.add_argument('--spawnout',type=str, default=SPAWNOUT, help='SpawnOptions output file')
-    parser.add_argument('--trial', type=int, default=1, help='Trial number {MISSION_NUMBERS}')
     parser.add_argument('--title', type=str, default=DFLTITLE, help='Set title of mod')
+    parser.add_argument('--multiply', type=float, default=None, help='Multiply number of mobs')
+    parser.add_argument('--dontmodifyspawnpoints', action='store_true', help="Don't Modify the spawn points")
+    parser.add_argument('--dontmodifyspawnoptions', action='store_true', help="Don't Modify the spawn options")
     return parser.parse_args()
 
 args = parse_args()
@@ -76,23 +77,7 @@ if our_seed is None:
 else:
     our_seed = int(our_seed)
 
-our_trial = args.trial
 title = f'{args.title} seed {our_seed}'
-# we abuse ixora to fill in the trials?
-
-# raw_ixora_spawn_list = [
-#     ("/Game/Enemies/_Spawning/Varkids/Variants/SpawnOptions_VarkidLarva", "SpawnFactory_OakAI_0", 0, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI", 0, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_0", 1, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_1", 2, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_2", 3, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_3", 4, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_4", 5, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_5", 6, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/_Mixes/SpawnMix_SpiderantAll", "SpawnFactory_OakAI_6", 7, [EASY]),
-#     ("/Game/Enemies/_Spawning/Spiderants/Variants/SpawnOptions_SpiderantBasic", "SpawnFactory_OakAI", 0, [EASY]),
-# ]
-# 
 
 random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
@@ -105,10 +90,9 @@ mod = Mod(output_filename,
           ["Adds new badasses to Guardian Takedown"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats=['trials','gameplay'],
+          cats=['gameplay'],
 )
 mod.comment(f"Seed {our_seed}")
-mod.comment(f"Trial {our_trial}")
 
 debug_pool = """M /Game/PatchDLC/Event2/Enemies/Cyber/Trooper/Capo/_Design/Character/BPChar_CyberTrooperCapo"""
 
@@ -130,7 +114,7 @@ def mk_mob_tuple(bpchar_name):
     bpchar = bpchar_name.split(".")[0]
     return (bpchar,bpchar,None,None)
 
-def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ignore_list):
+def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ignore_list, dont_modify_spawnoptions=False):
     done_so = set()
     outentries = []
     for entry in raw_ixora_spawn_list:
@@ -181,7 +165,8 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ig
 
         extend = params["extend"]
         scale = 1.0
-        # return# disable this stuff
+        if dont_modify_spawnoptions:
+            continue
         if not so in done_so:
             if not extend == 'None':
                 mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
@@ -223,8 +208,8 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ig
             #            'Options.Options[{}].Factory.Object..SpawnDetails'.format(idx),
             #            '(Critical=AlwaysSpawn,bOverrideCritical=True)') # added this
             # perhaps team was the issue?
-            # mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))    
-        done_so.add(so)
+            # mod.reg_hotfix(DFL_LEVEL, mapcode, '{}:{}'.format(Mod.get_full(so),bpchar), 'TeamOverride', Mod.get_full_cond('/Game/Common/_Design/Teams/Team_Maliwan', 'Team'))
+        done_so.add(so) 
     return outentries
 
 def modify_spawnpoints(mod, path, level, params,spawpoints):
@@ -257,7 +242,8 @@ def modify_spawnpoints(mod, path, level, params,spawpoints):
             if params.get("IrrelevantAction",False):
                 details["IrrelevantAction"] = 'Nothing'
                 details["bOverrideIrrelevantAction"] = 'True'
-            spdetails = ",".join([f'{x}={details[x]}' for x in details])
+            # properly quote it
+            spdetails = '(' + (",".join([f'{x}={details[x]}' for x in details])) + ')'
             for (obj,val) in [('SpawnDetails',spdetails)]:
                 mod.reg_hotfix(
                     DFL_LEVEL, level,
@@ -279,16 +265,18 @@ BASEVALUECONSTANT="BaseValueConstant"
 
 path,level = (args.path, args.level)
 
+default_size=(220,220,240)
+
 params = {
-     "extend":(150,150,180),
+     "extend":default_size,
      'collision':'AdjustIfPossibleButAlwaysSpawn',
      "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
+     'SpawnOrigin':f'(X={1000},Y={1000},Z={1000})',
      'heavy':False,
      "SpawnDetails":True,
      "SpecialEffects":True,
      'modify_spawnpoints':True,
-     'NavCollisionSize':True,
+     'NavCollisionSize':'(X={default_size[0]},Y={default_size[0]},Z={default_size[0]})',
 }
 
 def mk_spawn_list(spawnoption_facts,n=8):
@@ -314,7 +302,23 @@ def load_so(filename,choices=None):
 def load_so_override(filename):
     arr = json.load(open(filename))
     return [(x[0],x[1],x[2],[],x[3]) for x in arr]
-    
+
+def multiply(multiple, spawnoption_facts):
+    # ./skruntskrunt/boss-rush-slaughter/boss_rush_3000.bl3hotfix:SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_Mission.TechSlaughter_Mission:PersistentLevel.OakMissionSpawner_Round1Wave_0.SpawnerComponent,SpawnerComponent.Object..SpawnerStyle.Object.NumActorsParam.AttributeInitializationData.BaseValueConstant,0,,1
+    for so in spawnoption_facts:
+        actors = so[NUMACTORS]
+        if len(actors.keys()) > 0:
+            for attr in actors:
+                if "Lootable" in attr or "Destructible" in attr:
+                    continue
+                val = float(actors[attr])                
+                if (val < 0):
+                    val = 1
+                asplit = attr.split("SpawnerComponent")
+                new_path = f'{path}:PersistentLevel.{asplit[0]}.SpawnerComponent'
+                new_attr = f'SpawnerComponent.Object.{asplit[1]}.BaseValueConstant'
+                mod.reg_hotfix(DFL_LEVEL, level, new_path, new_attr, val * multiple)
+
 
 facts = json.load(open(args.input))
 spawnpoints = facts["spawnpoints"]
@@ -326,12 +330,18 @@ if args.overridespawn:
 else:
     spawn_list = load_so( spawnoptions_filename )
 
-spawn_out = make_ixora_spawns( mod, level, spawn_list, params )
+spawn_out = make_ixora_spawns( mod, level, spawn_list, params, dont_modify_spawnoptions=args.dontmodifyspawnoptions )
+
 if args.spawnout:
     json.dump(spawn_out, open(args.spawnout,"w"), indent=1)
 
-modify_spawnpoints( mod, path, level, params, spawnpoints )
+if not args.dontmodifyspawnpoints:
+    modify_spawnpoints( mod, path, level, params, spawnpoints )
 
-        
+
+if not args.multiply is None:
+    multiply(args.multiply, spawnoption_facts)
+
+                
 mod.close()
 
