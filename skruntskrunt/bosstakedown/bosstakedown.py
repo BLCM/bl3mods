@@ -266,17 +266,18 @@ BASEVALUECONSTANT="BaseValueConstant"
 path,level = (args.path, args.level)
 
 default_size=(220,220,240)
-
+spawn_origin = (3000,0,1000) # some spawn below?
+spawn_origin = (0,3000,3000) 
 params = {
      "extend":default_size,
      'collision':'AdjustIfPossibleButAlwaysSpawn',
      "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={3000},Y={0},Z={1000})',
+     'SpawnOrigin':f'(X={spawn_origin[0]},Y={spawn_origin[1]},Z={spawn_origin[2]})',
      'heavy':False,
      "SpawnDetails":True,
      "SpecialEffects":True,
      'modify_spawnpoints':True,
-     'NavCollisionSize':'(X={default_size[0]},Y={default_size[0]},Z={default_size[0]})',
+     'NavCollisionSize':'(X={default_size[0]},Y={default_size[1]},Z={default_size[2]})',
 }
 
 def mk_spawn_list(spawnoption_facts,n=8):
