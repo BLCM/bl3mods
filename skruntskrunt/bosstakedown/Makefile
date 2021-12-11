@@ -47,5 +47,5 @@ bosstakedown.skrunt2.bl3hotfix: takedown.json bosstakedown.py skrunt/bosstakedow
 skrunt1: bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix
 
 skrunt: bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix bosstakedown.skrunt2.bl3hotfix
-cleanskrunt1:
-	rm -f bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix
+cleanskrunt:
+	rm -f bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix bosstakedown.skrunt2.bl3hotfix

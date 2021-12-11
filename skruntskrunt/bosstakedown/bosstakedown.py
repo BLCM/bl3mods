@@ -179,9 +179,10 @@ def make_ixora_spawns(mod, mapcode, raw_ixora_spawn_list, params, ignore_list=ig
             mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..UINameOverride'.format(idx),
                        'None')
-            mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
-                       'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
-                        params["SpawnOrigin"])
+            if params.get("SpawnOrigin",False):
+                mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
+                               'Options.Options[{}].Factory.Object..SpawnOrigin'.format(idx),
+                               params["SpawnOrigin"])
             # We used AlwaysSpawn and it didn't necessarily work
             mod.reg_hotfix(DFL_LEVEL, mapcode, Mod.get_full(so),
                        'Options.Options[{}].Factory.Object..CollisionHandling'.format(idx),
@@ -267,12 +268,14 @@ path,level = (args.path, args.level)
 
 default_size=(220,220,240)
 spawn_origin = (3000,0,1000) # some spawn below?
-spawn_origin = (0,3000,3000) 
+spawn_origin = (0,3000,3000)
+spawn_origin = (1500,0,0)
+# NavCollisionSize
 params = {
      "extend":default_size,
      'collision':'AdjustIfPossibleButAlwaysSpawn',
      "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={spawn_origin[0]},Y={spawn_origin[1]},Z={spawn_origin[2]})',
+     'SpawnOrigin':False,#f'(X={spawn_origin[0]},Y={spawn_origin[1]},Z={spawn_origin[2]})',
      'heavy':False,
      "SpawnDetails":True,
      "SpecialEffects":True,
