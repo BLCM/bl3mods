@@ -271,7 +271,7 @@ params = {
      "extend":default_size,
      'collision':'AdjustIfPossibleButAlwaysSpawn',
      "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={1000},Z={1000})',
+     'SpawnOrigin':f'(X={3000},Y={0},Z={1000})',
      'heavy':False,
      "SpawnDetails":True,
      "SpecialEffects":True,
