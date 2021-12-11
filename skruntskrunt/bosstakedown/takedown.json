@@ -1,0 +1,1862 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_0.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_0.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_1.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_1.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "25.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_10.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_10.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_100.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_100.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_101.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_WhiteChest"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_101.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "10.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_11.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_11.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_12.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_12.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_13.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_13.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_14.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_14.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_15.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_15.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_16.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_17.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_18.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_18.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_19.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_19.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_2.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_2.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_20.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_20.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_20.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_20.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_21.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_21.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_22.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_22.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_23.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_23.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_24.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_24.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_25.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_25.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_26.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_26.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_27.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianHeraldTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_27.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_28.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_28.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_29.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_29.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_30.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_30.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_31.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_31.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_32.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_32.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_33.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_33.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_34.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_34.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_35.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_35.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_36.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_36.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_37.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_37.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_38.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_38.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_39.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_39.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_4.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_4.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_40.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_40.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_40.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_40.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_41.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_41.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_42.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_42.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_43.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_43.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_44.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_44.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_45.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_45.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "9.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_46.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_46.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "9.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_47.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_47.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_48.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_48.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_49.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_49.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "13.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_5.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_5.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_5.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_5.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "15.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_50.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_50.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_51.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_52.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_53.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_53.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_54.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_54.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_55.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_55.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_56.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_56.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_57.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_57.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_58.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_58.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_59.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_59.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_6.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianHeraldTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_6.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_60.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_60.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "24.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_61.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_61.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "24.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_62.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_62.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "9.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_63.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_63.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_64.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_64.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_65.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_65.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "5.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_66.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_66.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_67.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_67.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "20.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_68.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_68.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "30.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_69.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_69.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_69.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_69.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_7.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_7.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_70.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_70.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "25.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_71.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_72.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Bosses/SpawnOptions_GuardianBruteBomber"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_72.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_73.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_73.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_74.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_74.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_75.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_75.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_75.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_75.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_76.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_76.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "9.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_77.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Bosses/SpawnOptions_GuardianBruteBomber"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_77.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_78.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_78.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_79.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_79.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_8.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_8.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_81.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_81.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_82.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_82.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "9.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_84.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianCrystal_Small"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_84.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_85.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianCrystal_Medium"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_85.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_86.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_86.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "44.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_88.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_88.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_89.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_89.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_9.SpawnerComponent.SpawnerStyle.SpawnOptions": "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_9.SpawnerComponent.SpawnerStyle.NumActorsParam.AttributeInitializationData": "16.0"
+   }
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_90.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_90.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_91.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_91.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_92.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_92.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_93.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_93.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_94.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_94.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_95.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_95.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_96.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_96.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_97.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_97.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_98.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_98.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_99.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_99.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  }
+ ],
+ "spawnpoints": [
+  "OakMissionSpawner_0",
+  "OakMissionSpawner_1",
+  "OakMissionSpawner_10",
+  "OakMissionSpawner_100",
+  "OakMissionSpawner_101",
+  "OakMissionSpawner_11",
+  "OakMissionSpawner_12",
+  "OakMissionSpawner_13",
+  "OakMissionSpawner_14",
+  "OakMissionSpawner_15",
+  "OakMissionSpawner_16",
+  "OakMissionSpawner_17",
+  "OakMissionSpawner_18",
+  "OakMissionSpawner_19",
+  "OakMissionSpawner_2",
+  "OakMissionSpawner_20",
+  "OakMissionSpawner_21",
+  "OakMissionSpawner_22",
+  "OakMissionSpawner_23",
+  "OakMissionSpawner_24",
+  "OakMissionSpawner_25",
+  "OakMissionSpawner_26",
+  "OakMissionSpawner_27",
+  "OakMissionSpawner_28",
+  "OakMissionSpawner_29",
+  "OakMissionSpawner_3",
+  "OakMissionSpawner_30",
+  "OakMissionSpawner_31",
+  "OakMissionSpawner_32",
+  "OakMissionSpawner_33",
+  "OakMissionSpawner_34",
+  "OakMissionSpawner_35",
+  "OakMissionSpawner_36",
+  "OakMissionSpawner_37",
+  "OakMissionSpawner_38",
+  "OakMissionSpawner_39",
+  "OakMissionSpawner_4",
+  "OakMissionSpawner_40",
+  "OakMissionSpawner_41",
+  "OakMissionSpawner_42",
+  "OakMissionSpawner_43",
+  "OakMissionSpawner_44",
+  "OakMissionSpawner_45",
+  "OakMissionSpawner_46",
+  "OakMissionSpawner_47",
+  "OakMissionSpawner_48",
+  "OakMissionSpawner_49",
+  "OakMissionSpawner_5",
+  "OakMissionSpawner_50",
+  "OakMissionSpawner_51",
+  "OakMissionSpawner_52",
+  "OakMissionSpawner_53",
+  "OakMissionSpawner_54",
+  "OakMissionSpawner_55",
+  "OakMissionSpawner_56",
+  "OakMissionSpawner_57",
+  "OakMissionSpawner_58",
+  "OakMissionSpawner_59",
+  "OakMissionSpawner_6",
+  "OakMissionSpawner_60",
+  "OakMissionSpawner_61",
+  "OakMissionSpawner_62",
+  "OakMissionSpawner_63",
+  "OakMissionSpawner_64",
+  "OakMissionSpawner_65",
+  "OakMissionSpawner_66",
+  "OakMissionSpawner_67",
+  "OakMissionSpawner_68",
+  "OakMissionSpawner_69",
+  "OakMissionSpawner_7",
+  "OakMissionSpawner_70",
+  "OakMissionSpawner_71",
+  "OakMissionSpawner_72",
+  "OakMissionSpawner_73",
+  "OakMissionSpawner_74",
+  "OakMissionSpawner_75",
+  "OakMissionSpawner_76",
+  "OakMissionSpawner_77",
+  "OakMissionSpawner_78",
+  "OakMissionSpawner_79",
+  "OakMissionSpawner_8",
+  "OakMissionSpawner_81",
+  "OakMissionSpawner_82",
+  "OakMissionSpawner_84",
+  "OakMissionSpawner_85",
+  "OakMissionSpawner_86",
+  "OakMissionSpawner_88",
+  "OakMissionSpawner_89",
+  "OakMissionSpawner_9",
+  "OakMissionSpawner_90",
+  "OakMissionSpawner_91",
+  "OakMissionSpawner_92",
+  "OakMissionSpawner_93",
+  "OakMissionSpawner_94",
+  "OakMissionSpawner_95",
+  "OakMissionSpawner_96",
+  "OakMissionSpawner_97",
+  "OakMissionSpawner_98",
+  "OakMissionSpawner_99",
+  "OakSpawnPoint_0",
+  "OakSpawnPoint_100",
+  "OakSpawnPoint_101",
+  "OakSpawnPoint_102",
+  "OakSpawnPoint_103",
+  "OakSpawnPoint_105",
+  "OakSpawnPoint_106",
+  "OakSpawnPoint_107",
+  "OakSpawnPoint_11",
+  "OakSpawnPoint_110",
+  "OakSpawnPoint_111",
+  "OakSpawnPoint_112",
+  "OakSpawnPoint_113",
+  "OakSpawnPoint_114",
+  "OakSpawnPoint_115",
+  "OakSpawnPoint_116",
+  "OakSpawnPoint_117",
+  "OakSpawnPoint_118",
+  "OakSpawnPoint_119",
+  "OakSpawnPoint_12",
+  "OakSpawnPoint_120",
+  "OakSpawnPoint_121",
+  "OakSpawnPoint_122",
+  "OakSpawnPoint_123",
+  "OakSpawnPoint_124",
+  "OakSpawnPoint_125",
+  "OakSpawnPoint_126",
+  "OakSpawnPoint_127",
+  "OakSpawnPoint_128",
+  "OakSpawnPoint_129",
+  "OakSpawnPoint_13",
+  "OakSpawnPoint_130",
+  "OakSpawnPoint_131",
+  "OakSpawnPoint_132",
+  "OakSpawnPoint_133",
+  "OakSpawnPoint_134",
+  "OakSpawnPoint_135",
+  "OakSpawnPoint_136",
+  "OakSpawnPoint_137",
+  "OakSpawnPoint_138",
+  "OakSpawnPoint_139",
+  "OakSpawnPoint_14",
+  "OakSpawnPoint_140",
+  "OakSpawnPoint_141",
+  "OakSpawnPoint_142",
+  "OakSpawnPoint_143",
+  "OakSpawnPoint_144",
+  "OakSpawnPoint_145",
+  "OakSpawnPoint_146",
+  "OakSpawnPoint_147",
+  "OakSpawnPoint_148",
+  "OakSpawnPoint_149",
+  "OakSpawnPoint_15",
+  "OakSpawnPoint_150",
+  "OakSpawnPoint_151",
+  "OakSpawnPoint_152",
+  "OakSpawnPoint_153",
+  "OakSpawnPoint_154",
+  "OakSpawnPoint_155",
+  "OakSpawnPoint_156",
+  "OakSpawnPoint_157",
+  "OakSpawnPoint_158",
+  "OakSpawnPoint_159",
+  "OakSpawnPoint_16",
+  "OakSpawnPoint_160",
+  "OakSpawnPoint_161",
+  "OakSpawnPoint_162",
+  "OakSpawnPoint_163",
+  "OakSpawnPoint_164",
+  "OakSpawnPoint_165",
+  "OakSpawnPoint_166",
+  "OakSpawnPoint_167",
+  "OakSpawnPoint_168",
+  "OakSpawnPoint_169",
+  "OakSpawnPoint_170",
+  "OakSpawnPoint_171",
+  "OakSpawnPoint_172",
+  "OakSpawnPoint_173",
+  "OakSpawnPoint_174",
+  "OakSpawnPoint_175",
+  "OakSpawnPoint_176",
+  "OakSpawnPoint_177",
+  "OakSpawnPoint_178",
+  "OakSpawnPoint_179",
+  "OakSpawnPoint_18",
+  "OakSpawnPoint_180",
+  "OakSpawnPoint_181",
+  "OakSpawnPoint_182",
+  "OakSpawnPoint_183",
+  "OakSpawnPoint_184",
+  "OakSpawnPoint_185",
+  "OakSpawnPoint_186",
+  "OakSpawnPoint_187",
+  "OakSpawnPoint_188",
+  "OakSpawnPoint_189",
+  "OakSpawnPoint_19",
+  "OakSpawnPoint_190",
+  "OakSpawnPoint_191",
+  "OakSpawnPoint_192",
+  "OakSpawnPoint_193",
+  "OakSpawnPoint_194",
+  "OakSpawnPoint_195",
+  "OakSpawnPoint_196",
+  "OakSpawnPoint_197",
+  "OakSpawnPoint_198",
+  "OakSpawnPoint_199",
+  "OakSpawnPoint_2",
+  "OakSpawnPoint_20",
+  "OakSpawnPoint_200",
+  "OakSpawnPoint_201",
+  "OakSpawnPoint_202",
+  "OakSpawnPoint_203",
+  "OakSpawnPoint_204",
+  "OakSpawnPoint_205",
+  "OakSpawnPoint_206",
+  "OakSpawnPoint_207",
+  "OakSpawnPoint_208",
+  "OakSpawnPoint_209",
+  "OakSpawnPoint_210",
+  "OakSpawnPoint_211",
+  "OakSpawnPoint_212",
+  "OakSpawnPoint_213",
+  "OakSpawnPoint_214",
+  "OakSpawnPoint_215",
+  "OakSpawnPoint_216",
+  "OakSpawnPoint_217",
+  "OakSpawnPoint_218",
+  "OakSpawnPoint_219",
+  "OakSpawnPoint_22",
+  "OakSpawnPoint_220",
+  "OakSpawnPoint_221",
+  "OakSpawnPoint_222",
+  "OakSpawnPoint_223",
+  "OakSpawnPoint_224",
+  "OakSpawnPoint_225",
+  "OakSpawnPoint_226",
+  "OakSpawnPoint_227",
+  "OakSpawnPoint_228",
+  "OakSpawnPoint_229",
+  "OakSpawnPoint_230",
+  "OakSpawnPoint_231",
+  "OakSpawnPoint_232",
+  "OakSpawnPoint_233",
+  "OakSpawnPoint_234",
+  "OakSpawnPoint_235",
+  "OakSpawnPoint_236",
+  "OakSpawnPoint_237",
+  "OakSpawnPoint_238",
+  "OakSpawnPoint_239",
+  "OakSpawnPoint_24",
+  "OakSpawnPoint_240",
+  "OakSpawnPoint_241",
+  "OakSpawnPoint_242",
+  "OakSpawnPoint_243",
+  "OakSpawnPoint_244",
+  "OakSpawnPoint_245",
+  "OakSpawnPoint_246",
+  "OakSpawnPoint_247",
+  "OakSpawnPoint_248",
+  "OakSpawnPoint_249",
+  "OakSpawnPoint_250",
+  "OakSpawnPoint_251",
+  "OakSpawnPoint_252",
+  "OakSpawnPoint_253",
+  "OakSpawnPoint_254",
+  "OakSpawnPoint_255",
+  "OakSpawnPoint_256",
+  "OakSpawnPoint_257",
+  "OakSpawnPoint_258",
+  "OakSpawnPoint_259",
+  "OakSpawnPoint_26",
+  "OakSpawnPoint_260",
+  "OakSpawnPoint_261",
+  "OakSpawnPoint_262",
+  "OakSpawnPoint_263",
+  "OakSpawnPoint_264",
+  "OakSpawnPoint_265",
+  "OakSpawnPoint_28",
+  "OakSpawnPoint_3",
+  "OakSpawnPoint_30",
+  "OakSpawnPoint_312",
+  "OakSpawnPoint_313",
+  "OakSpawnPoint_314",
+  "OakSpawnPoint_315",
+  "OakSpawnPoint_316",
+  "OakSpawnPoint_317",
+  "OakSpawnPoint_318",
+  "OakSpawnPoint_319",
+  "OakSpawnPoint_32",
+  "OakSpawnPoint_320",
+  "OakSpawnPoint_321",
+  "OakSpawnPoint_322",
+  "OakSpawnPoint_323",
+  "OakSpawnPoint_324",
+  "OakSpawnPoint_325",
+  "OakSpawnPoint_326",
+  "OakSpawnPoint_327",
+  "OakSpawnPoint_328",
+  "OakSpawnPoint_329",
+  "OakSpawnPoint_330",
+  "OakSpawnPoint_331",
+  "OakSpawnPoint_332",
+  "OakSpawnPoint_333",
+  "OakSpawnPoint_334",
+  "OakSpawnPoint_335",
+  "OakSpawnPoint_336",
+  "OakSpawnPoint_337",
+  "OakSpawnPoint_338",
+  "OakSpawnPoint_339",
+  "OakSpawnPoint_34",
+  "OakSpawnPoint_340",
+  "OakSpawnPoint_341",
+  "OakSpawnPoint_342",
+  "OakSpawnPoint_343",
+  "OakSpawnPoint_344",
+  "OakSpawnPoint_345",
+  "OakSpawnPoint_346",
+  "OakSpawnPoint_347",
+  "OakSpawnPoint_348",
+  "OakSpawnPoint_349",
+  "OakSpawnPoint_350",
+  "OakSpawnPoint_351",
+  "OakSpawnPoint_352",
+  "OakSpawnPoint_353",
+  "OakSpawnPoint_354",
+  "OakSpawnPoint_355",
+  "OakSpawnPoint_356",
+  "OakSpawnPoint_357",
+  "OakSpawnPoint_358",
+  "OakSpawnPoint_359",
+  "OakSpawnPoint_36",
+  "OakSpawnPoint_360",
+  "OakSpawnPoint_361",
+  "OakSpawnPoint_362",
+  "OakSpawnPoint_363",
+  "OakSpawnPoint_364",
+  "OakSpawnPoint_365",
+  "OakSpawnPoint_366",
+  "OakSpawnPoint_367",
+  "OakSpawnPoint_368",
+  "OakSpawnPoint_369",
+  "OakSpawnPoint_370",
+  "OakSpawnPoint_371",
+  "OakSpawnPoint_372",
+  "OakSpawnPoint_373",
+  "OakSpawnPoint_374",
+  "OakSpawnPoint_375",
+  "OakSpawnPoint_376",
+  "OakSpawnPoint_377",
+  "OakSpawnPoint_378",
+  "OakSpawnPoint_379",
+  "OakSpawnPoint_38",
+  "OakSpawnPoint_380",
+  "OakSpawnPoint_381",
+  "OakSpawnPoint_382",
+  "OakSpawnPoint_383",
+  "OakSpawnPoint_384",
+  "OakSpawnPoint_385",
+  "OakSpawnPoint_386",
+  "OakSpawnPoint_387",
+  "OakSpawnPoint_388",
+  "OakSpawnPoint_389",
+  "OakSpawnPoint_390",
+  "OakSpawnPoint_391",
+  "OakSpawnPoint_392",
+  "OakSpawnPoint_393",
+  "OakSpawnPoint_394",
+  "OakSpawnPoint_395",
+  "OakSpawnPoint_396",
+  "OakSpawnPoint_397",
+  "OakSpawnPoint_398",
+  "OakSpawnPoint_399",
+  "OakSpawnPoint_40",
+  "OakSpawnPoint_400",
+  "OakSpawnPoint_401",
+  "OakSpawnPoint_402",
+  "OakSpawnPoint_403",
+  "OakSpawnPoint_404",
+  "OakSpawnPoint_405",
+  "OakSpawnPoint_406",
+  "OakSpawnPoint_407",
+  "OakSpawnPoint_408",
+  "OakSpawnPoint_409",
+  "OakSpawnPoint_410",
+  "OakSpawnPoint_411",
+  "OakSpawnPoint_412",
+  "OakSpawnPoint_413",
+  "OakSpawnPoint_414",
+  "OakSpawnPoint_415",
+  "OakSpawnPoint_416",
+  "OakSpawnPoint_417",
+  "OakSpawnPoint_418",
+  "OakSpawnPoint_419",
+  "OakSpawnPoint_42",
+  "OakSpawnPoint_420",
+  "OakSpawnPoint_421",
+  "OakSpawnPoint_422",
+  "OakSpawnPoint_423",
+  "OakSpawnPoint_424",
+  "OakSpawnPoint_425",
+  "OakSpawnPoint_426",
+  "OakSpawnPoint_427",
+  "OakSpawnPoint_428",
+  "OakSpawnPoint_429",
+  "OakSpawnPoint_430",
+  "OakSpawnPoint_431",
+  "OakSpawnPoint_432",
+  "OakSpawnPoint_433",
+  "OakSpawnPoint_434",
+  "OakSpawnPoint_435",
+  "OakSpawnPoint_436",
+  "OakSpawnPoint_437",
+  "OakSpawnPoint_438",
+  "OakSpawnPoint_439",
+  "OakSpawnPoint_44",
+  "OakSpawnPoint_440",
+  "OakSpawnPoint_441",
+  "OakSpawnPoint_442",
+  "OakSpawnPoint_443",
+  "OakSpawnPoint_444",
+  "OakSpawnPoint_445",
+  "OakSpawnPoint_446",
+  "OakSpawnPoint_447",
+  "OakSpawnPoint_448",
+  "OakSpawnPoint_449",
+  "OakSpawnPoint_450",
+  "OakSpawnPoint_451",
+  "OakSpawnPoint_452",
+  "OakSpawnPoint_453",
+  "OakSpawnPoint_454",
+  "OakSpawnPoint_455",
+  "OakSpawnPoint_456",
+  "OakSpawnPoint_457",
+  "OakSpawnPoint_458",
+  "OakSpawnPoint_459",
+  "OakSpawnPoint_46",
+  "OakSpawnPoint_460",
+  "OakSpawnPoint_461",
+  "OakSpawnPoint_462",
+  "OakSpawnPoint_463",
+  "OakSpawnPoint_464",
+  "OakSpawnPoint_465",
+  "OakSpawnPoint_466",
+  "OakSpawnPoint_467",
+  "OakSpawnPoint_468",
+  "OakSpawnPoint_469",
+  "OakSpawnPoint_470",
+  "OakSpawnPoint_471",
+  "OakSpawnPoint_472",
+  "OakSpawnPoint_473",
+  "OakSpawnPoint_475",
+  "OakSpawnPoint_479",
+  "OakSpawnPoint_48",
+  "OakSpawnPoint_480",
+  "OakSpawnPoint_481",
+  "OakSpawnPoint_482",
+  "OakSpawnPoint_484",
+  "OakSpawnPoint_485",
+  "OakSpawnPoint_486",
+  "OakSpawnPoint_487",
+  "OakSpawnPoint_488",
+  "OakSpawnPoint_489",
+  "OakSpawnPoint_49",
+  "OakSpawnPoint_490",
+  "OakSpawnPoint_491",
+  "OakSpawnPoint_492",
+  "OakSpawnPoint_493",
+  "OakSpawnPoint_494",
+  "OakSpawnPoint_495",
+  "OakSpawnPoint_496",
+  "OakSpawnPoint_497",
+  "OakSpawnPoint_498",
+  "OakSpawnPoint_499",
+  "OakSpawnPoint_5",
+  "OakSpawnPoint_50",
+  "OakSpawnPoint_500",
+  "OakSpawnPoint_501",
+  "OakSpawnPoint_502",
+  "OakSpawnPoint_503",
+  "OakSpawnPoint_504",
+  "OakSpawnPoint_505",
+  "OakSpawnPoint_506",
+  "OakSpawnPoint_507",
+  "OakSpawnPoint_508",
+  "OakSpawnPoint_509",
+  "OakSpawnPoint_51",
+  "OakSpawnPoint_510",
+  "OakSpawnPoint_511",
+  "OakSpawnPoint_512",
+  "OakSpawnPoint_513",
+  "OakSpawnPoint_514",
+  "OakSpawnPoint_515",
+  "OakSpawnPoint_516",
+  "OakSpawnPoint_517",
+  "OakSpawnPoint_518",
+  "OakSpawnPoint_519",
+  "OakSpawnPoint_52",
+  "OakSpawnPoint_520",
+  "OakSpawnPoint_521",
+  "OakSpawnPoint_522",
+  "OakSpawnPoint_523",
+  "OakSpawnPoint_524",
+  "OakSpawnPoint_525",
+  "OakSpawnPoint_526",
+  "OakSpawnPoint_527",
+  "OakSpawnPoint_528",
+  "OakSpawnPoint_529",
+  "OakSpawnPoint_53",
+  "OakSpawnPoint_530",
+  "OakSpawnPoint_531",
+  "OakSpawnPoint_532",
+  "OakSpawnPoint_533",
+  "OakSpawnPoint_534",
+  "OakSpawnPoint_535",
+  "OakSpawnPoint_536",
+  "OakSpawnPoint_537",
+  "OakSpawnPoint_538",
+  "OakSpawnPoint_539",
+  "OakSpawnPoint_54",
+  "OakSpawnPoint_540",
+  "OakSpawnPoint_541",
+  "OakSpawnPoint_542",
+  "OakSpawnPoint_543",
+  "OakSpawnPoint_544",
+  "OakSpawnPoint_545",
+  "OakSpawnPoint_546",
+  "OakSpawnPoint_547",
+  "OakSpawnPoint_548",
+  "OakSpawnPoint_549",
+  "OakSpawnPoint_550",
+  "OakSpawnPoint_551",
+  "OakSpawnPoint_552",
+  "OakSpawnPoint_553",
+  "OakSpawnPoint_554",
+  "OakSpawnPoint_555",
+  "OakSpawnPoint_556",
+  "OakSpawnPoint_557",
+  "OakSpawnPoint_558",
+  "OakSpawnPoint_559",
+  "OakSpawnPoint_56",
+  "OakSpawnPoint_560",
+  "OakSpawnPoint_58",
+  "OakSpawnPoint_6",
+  "OakSpawnPoint_60",
+  "OakSpawnPoint_62",
+  "OakSpawnPoint_64",
+  "OakSpawnPoint_66",
+  "OakSpawnPoint_68",
+  "OakSpawnPoint_7",
+  "OakSpawnPoint_70",
+  "OakSpawnPoint_71",
+  "OakSpawnPoint_72",
+  "OakSpawnPoint_74",
+  "OakSpawnPoint_76",
+  "OakSpawnPoint_77",
+  "OakSpawnPoint_78",
+  "OakSpawnPoint_79",
+  "OakSpawnPoint_8",
+  "OakSpawnPoint_80",
+  "OakSpawnPoint_81",
+  "OakSpawnPoint_82",
+  "OakSpawnPoint_83",
+  "OakSpawnPoint_84",
+  "OakSpawnPoint_85",
+  "OakSpawnPoint_86",
+  "OakSpawnPoint_87",
+  "OakSpawnPoint_88",
+  "OakSpawnPoint_89",
+  "OakSpawnPoint_9",
+  "OakSpawnPoint_90",
+  "OakSpawnPoint_91",
+  "OakSpawnPoint_92",
+  "OakSpawnPoint_93",
+  "OakSpawnPoint_94",
+  "OakSpawnPoint_95",
+  "OakSpawnPoint_96",
+  "OakSpawnPoint_97",
+  "OakSpawnPoint_98",
+  "OakSpawnPoint_99",
+  "Spawner_SpawnAnchorEridian_0",
+  "Spawner_SpawnAnchorEridian_1",
+  "Spawner_SpawnAnchorEridian_10",
+  "Spawner_SpawnAnchorEridian_11",
+  "Spawner_SpawnAnchorEridian_12",
+  "Spawner_SpawnAnchorEridian_14",
+  "Spawner_SpawnAnchorEridian_2",
+  "Spawner_SpawnAnchorEridian_3",
+  "Spawner_SpawnAnchorEridian_4",
+  "Spawner_SpawnAnchorEridian_5",
+  "Spawner_SpawnAnchorEridian_6",
+  "Spawner_SpawnAnchorEridian_7",
+  "Spawner_SpawnAnchorEridian_8",
+  "Spawner_SpawnAnchorEridian_9",
+  "SpawnMesh_EridianGuardianMonolith_0",
+  "SpawnMesh_EridianGuardianMonolith_1",
+  "SpawnMesh_EridianGuardianMonolith_2",
+  "SpawnMesh_EridianGuardianMonolith_3",
+  "SpawnMesh_EridianGuardianMonolith_4",
+  "SpawnMesh_EridianGuardianMonolith_5",
+  "SpawnMesh_EridianGuardianMonolith_6",
+  "SpawnMesh_EridianGuardianMonolith_7",
+  "SpawnMesh_Nekrobug_Flyer_0",
+  "SpawnMesh_Nekrobug_Flyer_1",
+  "SpawnMesh_Nekrobug_Flyer_10",
+  "SpawnMesh_Nekrobug_Flyer_11",
+  "SpawnMesh_Nekrobug_Flyer_13",
+  "SpawnMesh_Nekrobug_Flyer_14",
+  "SpawnMesh_Nekrobug_Flyer_15",
+  "SpawnMesh_Nekrobug_Flyer_16",
+  "SpawnMesh_Nekrobug_Flyer_2",
+  "SpawnMesh_Nekrobug_Flyer_20",
+  "SpawnMesh_Nekrobug_Flyer_23",
+  "SpawnMesh_Nekrobug_Flyer_26",
+  "SpawnMesh_Nekrobug_Flyer_3",
+  "SpawnMesh_Nekrobug_Flyer_30",
+  "SpawnMesh_Nekrobug_Flyer_31",
+  "SpawnMesh_Nekrobug_Flyer_32",
+  "SpawnMesh_Nekrobug_Flyer_35",
+  "SpawnMesh_Nekrobug_Flyer_4",
+  "SpawnMesh_Nekrobug_Flyer_5",
+  "SpawnMesh_Nekrobug_Flyer_6",
+  "SpawnMesh_Nekrobug_Flyer_7",
+  "SpawnMesh_Nekrobug_Flyer_8",
+  "SpawnMesh_Nekrobug_Flyer_9",
+  "OakSpawnPoint_104",
+  "OakSpawnPoint_108",
+  "OakSpawnPoint_109",
+  "OakSpawnPoint_4",
+  "SpawnMesh_Nekrobug_Ground_0",
+  "SpawnMesh_Nekrobug_Ground_1",
+  "SpawnMesh_Nekrobug_Ground_10",
+  "SpawnMesh_Nekrobug_Ground_11",
+  "SpawnMesh_Nekrobug_Ground_12",
+  "SpawnMesh_Nekrobug_Ground_13",
+  "SpawnMesh_Nekrobug_Ground_14",
+  "SpawnMesh_Nekrobug_Ground_15",
+  "SpawnMesh_Nekrobug_Ground_16",
+  "SpawnMesh_Nekrobug_Ground_17",
+  "SpawnMesh_Nekrobug_Ground_18",
+  "SpawnMesh_Nekrobug_Ground_19",
+  "SpawnMesh_Nekrobug_Ground_2",
+  "SpawnMesh_Nekrobug_Ground_20",
+  "SpawnMesh_Nekrobug_Ground_21",
+  "SpawnMesh_Nekrobug_Ground_22",
+  "SpawnMesh_Nekrobug_Ground_23",
+  "SpawnMesh_Nekrobug_Ground_24",
+  "SpawnMesh_Nekrobug_Ground_25",
+  "SpawnMesh_Nekrobug_Ground_26",
+  "SpawnMesh_Nekrobug_Ground_27",
+  "SpawnMesh_Nekrobug_Ground_28",
+  "SpawnMesh_Nekrobug_Ground_29",
+  "SpawnMesh_Nekrobug_Ground_3",
+  "SpawnMesh_Nekrobug_Ground_30",
+  "SpawnMesh_Nekrobug_Ground_31",
+  "SpawnMesh_Nekrobug_Ground_32",
+  "SpawnMesh_Nekrobug_Ground_33",
+  "SpawnMesh_Nekrobug_Ground_4",
+  "SpawnMesh_Nekrobug_Ground_5",
+  "SpawnMesh_Nekrobug_Ground_6",
+  "SpawnMesh_Nekrobug_Ground_7",
+  "SpawnMesh_Nekrobug_Ground_8",
+  "SpawnMesh_Nekrobug_Ground_9",
+  "OakSpawnPoint_1",
+  "OakSpawnPoint_10",
+  "OakSpawnPoint_17",
+  "OakSpawnPoint_21",
+  "OakSpawnPoint_23",
+  "OakSpawnPoint_25",
+  "OakSpawnPoint_266",
+  "OakSpawnPoint_267",
+  "OakSpawnPoint_268",
+  "OakSpawnPoint_269",
+  "OakSpawnPoint_27",
+  "OakSpawnPoint_270",
+  "OakSpawnPoint_271",
+  "OakSpawnPoint_272",
+  "OakSpawnPoint_273",
+  "OakSpawnPoint_274",
+  "OakSpawnPoint_275",
+  "OakSpawnPoint_276",
+  "OakSpawnPoint_277",
+  "OakSpawnPoint_278",
+  "OakSpawnPoint_279",
+  "OakSpawnPoint_280",
+  "OakSpawnPoint_281",
+  "OakSpawnPoint_282",
+  "OakSpawnPoint_283",
+  "OakSpawnPoint_284",
+  "OakSpawnPoint_285",
+  "OakSpawnPoint_286",
+  "OakSpawnPoint_287",
+  "OakSpawnPoint_288",
+  "OakSpawnPoint_289",
+  "OakSpawnPoint_29",
+  "OakSpawnPoint_290",
+  "OakSpawnPoint_291",
+  "OakSpawnPoint_292",
+  "OakSpawnPoint_293",
+  "OakSpawnPoint_294",
+  "OakSpawnPoint_295",
+  "OakSpawnPoint_296",
+  "OakSpawnPoint_297",
+  "OakSpawnPoint_298",
+  "OakSpawnPoint_299",
+  "OakSpawnPoint_300",
+  "OakSpawnPoint_301",
+  "OakSpawnPoint_302",
+  "OakSpawnPoint_303",
+  "OakSpawnPoint_304",
+  "OakSpawnPoint_305",
+  "OakSpawnPoint_306",
+  "OakSpawnPoint_307",
+  "OakSpawnPoint_308",
+  "OakSpawnPoint_309",
+  "OakSpawnPoint_31",
+  "OakSpawnPoint_310",
+  "OakSpawnPoint_311",
+  "OakSpawnPoint_33",
+  "OakSpawnPoint_35",
+  "OakSpawnPoint_37",
+  "OakSpawnPoint_39",
+  "OakSpawnPoint_41",
+  "OakSpawnPoint_43",
+  "OakSpawnPoint_45",
+  "OakSpawnPoint_47",
+  "OakSpawnPoint_474",
+  "OakSpawnPoint_476",
+  "OakSpawnPoint_477",
+  "OakSpawnPoint_478",
+  "OakSpawnPoint_55",
+  "OakSpawnPoint_57",
+  "OakSpawnPoint_59",
+  "OakSpawnPoint_61",
+  "OakSpawnPoint_63",
+  "OakSpawnPoint_65",
+  "OakSpawnPoint_67",
+  "OakSpawnPoint_69",
+  "OakSpawnPoint_73",
+  "OakSpawnPoint_75",
+  "SpawnPoint_IO_10",
+  "SpawnPoint_IO_100",
+  "SpawnPoint_IO_101",
+  "SpawnPoint_IO_102",
+  "SpawnPoint_IO_103",
+  "SpawnPoint_IO_104",
+  "SpawnPoint_IO_105",
+  "SpawnPoint_IO_106",
+  "SpawnPoint_IO_107",
+  "SpawnPoint_IO_108",
+  "SpawnPoint_IO_109",
+  "SpawnPoint_IO_11",
+  "SpawnPoint_IO_110",
+  "SpawnPoint_IO_111",
+  "SpawnPoint_IO_113",
+  "SpawnPoint_IO_114",
+  "SpawnPoint_IO_115",
+  "SpawnPoint_IO_116",
+  "SpawnPoint_IO_117",
+  "SpawnPoint_IO_118",
+  "SpawnPoint_IO_119",
+  "SpawnPoint_IO_12",
+  "SpawnPoint_IO_120",
+  "SpawnPoint_IO_121",
+  "SpawnPoint_IO_122",
+  "SpawnPoint_IO_123",
+  "SpawnPoint_IO_124",
+  "SpawnPoint_IO_125",
+  "SpawnPoint_IO_126",
+  "SpawnPoint_IO_13",
+  "SpawnPoint_IO_14",
+  "SpawnPoint_IO_15",
+  "SpawnPoint_IO_16",
+  "SpawnPoint_IO_17",
+  "SpawnPoint_IO_18",
+  "SpawnPoint_IO_19",
+  "SpawnPoint_IO_2",
+  "SpawnPoint_IO_20",
+  "SpawnPoint_IO_21",
+  "SpawnPoint_IO_22",
+  "SpawnPoint_IO_23",
+  "SpawnPoint_IO_24",
+  "SpawnPoint_IO_25",
+  "SpawnPoint_IO_26",
+  "SpawnPoint_IO_27",
+  "SpawnPoint_IO_28",
+  "SpawnPoint_IO_29",
+  "SpawnPoint_IO_3",
+  "SpawnPoint_IO_30",
+  "SpawnPoint_IO_31",
+  "SpawnPoint_IO_32",
+  "SpawnPoint_IO_33",
+  "SpawnPoint_IO_34",
+  "SpawnPoint_IO_35",
+  "SpawnPoint_IO_36",
+  "SpawnPoint_IO_37",
+  "SpawnPoint_IO_38",
+  "SpawnPoint_IO_39",
+  "SpawnPoint_IO_4",
+  "SpawnPoint_IO_40",
+  "SpawnPoint_IO_41",
+  "SpawnPoint_IO_42",
+  "SpawnPoint_IO_43",
+  "SpawnPoint_IO_44",
+  "SpawnPoint_IO_45",
+  "SpawnPoint_IO_46",
+  "SpawnPoint_IO_47",
+  "SpawnPoint_IO_479",
+  "SpawnPoint_IO_48",
+  "SpawnPoint_IO_480",
+  "SpawnPoint_IO_481",
+  "SpawnPoint_IO_482",
+  "SpawnPoint_IO_483",
+  "SpawnPoint_IO_484",
+  "SpawnPoint_IO_485",
+  "SpawnPoint_IO_486",
+  "SpawnPoint_IO_487",
+  "SpawnPoint_IO_488",
+  "SpawnPoint_IO_489",
+  "SpawnPoint_IO_49",
+  "SpawnPoint_IO_5",
+  "SpawnPoint_IO_50",
+  "SpawnPoint_IO_51",
+  "SpawnPoint_IO_52",
+  "SpawnPoint_IO_53",
+  "SpawnPoint_IO_54",
+  "SpawnPoint_IO_55",
+  "SpawnPoint_IO_56",
+  "SpawnPoint_IO_57",
+  "SpawnPoint_IO_58",
+  "SpawnPoint_IO_59",
+  "SpawnPoint_IO_6",
+  "SpawnPoint_IO_60",
+  "SpawnPoint_IO_61",
+  "SpawnPoint_IO_62",
+  "SpawnPoint_IO_63",
+  "SpawnPoint_IO_64",
+  "SpawnPoint_IO_65",
+  "SpawnPoint_IO_66",
+  "SpawnPoint_IO_67",
+  "SpawnPoint_IO_68",
+  "SpawnPoint_IO_69",
+  "SpawnPoint_IO_7",
+  "SpawnPoint_IO_70",
+  "SpawnPoint_IO_71",
+  "SpawnPoint_IO_72",
+  "SpawnPoint_IO_73",
+  "SpawnPoint_IO_74",
+  "SpawnPoint_IO_75",
+  "SpawnPoint_IO_76",
+  "SpawnPoint_IO_77",
+  "SpawnPoint_IO_78",
+  "SpawnPoint_IO_79",
+  "SpawnPoint_IO_8",
+  "SpawnPoint_IO_80",
+  "SpawnPoint_IO_81",
+  "SpawnPoint_IO_82",
+  "SpawnPoint_IO_83",
+  "SpawnPoint_IO_84",
+  "SpawnPoint_IO_85",
+  "SpawnPoint_IO_86",
+  "SpawnPoint_IO_87",
+  "SpawnPoint_IO_88",
+  "SpawnPoint_IO_89",
+  "SpawnPoint_IO_9",
+  "SpawnPoint_IO_90",
+  "SpawnPoint_IO_91",
+  "SpawnPoint_IO_92",
+  "SpawnPoint_IO_93",
+  "SpawnPoint_IO_94",
+  "SpawnPoint_IO_95",
+  "SpawnPoint_IO_96",
+  "SpawnPoint_IO_97",
+  "SpawnPoint_IO_98",
+  "SpawnPoint_IO_99"
+ ],
+ "spawnoption_list": [
+  "/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianCrystal_Medium",
+  "/Game/Lootables/Eridian/Rock_Formation_Pile/_Design/SpawnOption_EridianCrystal_Small",
+  "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_AmmoCrate",
+  "/Game/Lootables/_Design/Data/Eridian/SpawnOptions_Eridian_WhiteChest",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Bosses/SpawnOptions_GuardianBruteBomber",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianHeraldTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianReaperTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianSeraPossessedTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Guardians/SpawnOptions_GuardianWraithBadassTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_BadassTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2",
+  "/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_FullMixTD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPadsLOWXP_TD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMixPads_TD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_FullMix_TD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixLOWXP_TD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_Possessed_FullMixTD2",
+  "/Game/PatchDLC/Takedown2/Maps/GuardianTakedown/MapSpecificAssets/SpawnOptions_Guardian_WraithAndSpectre_TD2"
+ ]
+}
