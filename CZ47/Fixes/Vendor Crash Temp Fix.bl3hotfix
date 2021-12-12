@@ -1,0 +1,18 @@
+###
+### Name: Vendor Crash Temp Fix
+### Version: 1.0.0
+### Author: CZ47
+### Contact: =]#7647
+### Categories: vendor, ui, bugfix
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### This mod "removes" the Item of the Day pop up by setting the distance it shows up for the player to 0.
+### This was tested and reported working by multiple users.
+### 
+### I realise this isn't an actual fix, but until Gearbox fixes it themselves, this should do.
+### 
+
+SparkPatchEntry,(1,1,0,),/Game/UI/VendingMachines/BPWidget_GFxItemOfTheDay.Default__BPWidget_GFxItemOfTheDay_C,VisibilityDistance,0,,0
