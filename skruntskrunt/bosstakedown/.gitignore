@@ -1,0 +1,9 @@
+*~
+spawnoptions.*.json
+bossmaliwantakedown.*.bl3hotfix
+bosstakedown.*.bl3hotfix
+bosstakedown.*.spawnoptions.json
+data/
+old/
+spawnoptions.json
+trial1.json

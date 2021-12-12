@@ -119,6 +119,14 @@ SKRUNT1=bosstrials.skrunt1.1.bl3hotfix \
 	bosstrials.skrunt1.7.bl3hotfix \
 	bosstrials.skrunt1.8.bl3hotfix
 
+# 749 doesn't work for 1
+MIX4 =	bosstrials.1.750.bl3hotfix \
+	bosstrials.4.734.bl3hotfix \
+	bosstrials.5.649.bl3hotfix \
+	bosstrials.6.913.bl3hotfix \
+	bosstrials.7.453.bl3hotfix \
+	bosstrials.8.489.bl3hotfix
+
 bosstrials.skrunt1.%.bl3hotfix: bosstrials.py skrunt1/bosstrials.*.spawnoptions.json
 	python3 bosstrials.py --in trial$*.json --output bosstrials.skrunt1.$*.bl3hotfix --spawnoptions skrunt1/bosstrials.$*.spawnoptions.json --trial $* --seed 42 --overridespawn 
 
@@ -131,6 +139,9 @@ bosstrials.vol2.bl3hotfix: bosstrials.vol2.bl3hotfix.header $(MIX2)
 	cat $^ > $@
 
 bosstrials.vol3.bl3hotfix: bosstrials.vol3.bl3hotfix.header $(MIX3)
+	cat $^ > $@
+
+bosstrials.vol4.bl3hotfix: bosstrials.vol4.bl3hotfix.header $(MIX4)
 	cat $^ > $@
 
 bosstrials.skrunt1.bl3hotfix: bosstrials.skrunt1.bl3hotfix.header $(SKRUNT1)
