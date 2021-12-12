@@ -269,7 +269,8 @@ path,level = (args.path, args.level)
 default_size=(220,220,240)
 spawn_origin = (3000,0,1000) # some spawn below?
 spawn_origin = (0,3000,3000)
-spawn_origin = (1500,0,0)
+spawn_origin = (1500,0,1000) # spawn below?
+spawn_origin = (1500,0,0) # spawn below?
 # NavCollisionSize
 params = {
      "extend":default_size,
