@@ -37,15 +37,14 @@ bossmaliwantakedown.skrunt1.bl3hotfix: maliwantakedown.json bosstakedown.py skru
 	python3 bosstakedown.py --overridespawn --in maliwantakedown.json --output bossmaliwantakedown.skrunt1.bl3hotfix --spawnoptions skrunt/bossmaliwantakedown.skrunt1.spawnoptions.json --seed ${SEED} --spawnout bossmaliwantakedown.skrunt1.spawnoptions.json --path ${MALIWANPATH} --level ${MALIWANLEVEL} --dontmodifyspawnpoints --dontmodifyspawnoptions
 
 bosstakedown.skrunt1.bl3hotfix: takedown.json bosstakedown.py skrunt/bosstakedown.skrunt1.spawnoptions.json
-	python3 bosstakedown.py --overridespawn --in takedown.json --output bosstakedown.skrunt1.bl3hotfix --spawnoptions skrunt/bosstakedown.skrunt1.spawnoptions.json --seed ${SEED} --spawnout bosstakedown.skrunt1.spawnoptions.json  --multiply 3
+	python3 bosstakedown.py --overridespawn --in takedown.json --output bosstakedown.skrunt1.bl3hotfix --spawnoptions skrunt/bosstakedown.skrunt1.spawnoptions.json --seed ${SEED} --spawnout bosstakedown.skrunt1.spawnoptions.json  --multiply 3 --title 'Boss Guardian Takedown: Modders Cut'
 
 bosstakedown.skrunt2.bl3hotfix: takedown.json bosstakedown.py skrunt/bosstakedown.skrunt2.spawnoptions.json
-	python3 bosstakedown.py --overridespawn --in takedown.json --output bosstakedown.skrunt2.bl3hotfix --spawnoptions skrunt/bosstakedown.skrunt2.spawnoptions.json --seed ${SEED} --spawnout bosstakedown.skrunt2.spawnoptions.json  --multiply 3
+	python3 bosstakedown.py --overridespawn --in takedown.json --output bosstakedown.skrunt2.bl3hotfix --spawnoptions skrunt/bosstakedown.skrunt2.spawnoptions.json --seed ${SEED} --spawnout bosstakedown.skrunt2.spawnoptions.json  --multiply 3 --title 'Boss Guardian Takedown: DLC3 Invasion'
 
 
 
 skrunt1: bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix
-
 skrunt: bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix bosstakedown.skrunt2.bl3hotfix
 cleanskrunt:
 	rm -f bossmaliwantakedown.skrunt1.bl3hotfix bosstakedown.skrunt1.bl3hotfix bosstakedown.skrunt2.bl3hotfix

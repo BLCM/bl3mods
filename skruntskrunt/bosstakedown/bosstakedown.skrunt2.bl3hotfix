@@ -1,8 +1,8 @@
 ###
-### Name: Boss Guardian Takedown seed 42
+### Name: Boss Guardian Takedown: DLC3 Invasion
 ### Version: 0.0.1
 ### Author: skruntskrunt
-### Categories: gameplay
+### Categories: gameplay, takedowns, spawns
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -253,10 +253,10 @@ SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/En
 # so:/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_GroundMixTD2 factory:Factory_SpawnFactory_OakAI_0
 # bpchar:/Geranium/Enemies/Biobeast/_Unique/BigJohn/_Design/Character/BPChar_Biobeast_BigJohn
 SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_GroundMixTD2.SpawnOptions_Nekrobug_GroundMixTD2,Options.Options[3].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/Biobeast/_Unique/BigJohn/_Design/Character/BPChar_Biobeast_BigJohn.BPChar_Biobeast_BigJohn_C'
-# Override with: /Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/BPChar_GerRakkRod
+# Override with: /Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless
 # so:/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2 factory:Factory_SpawnFactory_OakAI
-# bpchar:/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/BPChar_GerRakkRod
-SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2.SpawnOptions_Nekrobug_AirMixTD2,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/GerRakk/_Unique/Rod/_Design/Character/BPChar_GerRakkRod.BPChar_GerRakkRod_C'
+# bpchar:/Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2.SpawnOptions_Nekrobug_AirMixTD2,Options.Options[0].Factory.Object..AIActorClass,0,,BlueprintGeneratedClass'/Geranium/Enemies/Gyro/_Unique/Painless/_Design/Character/BPChar_GyroPainless.BPChar_GyroPainless_C'
 SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2.SpawnOptions_Nekrobug_AirMixTD2,Options.Options[0].Factory.Object..SpawnExtent,0,,(X=220.0,Y=220.0,Z=240.0)
 SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2.SpawnOptions_Nekrobug_AirMixTD2,Options.Options[0].Factory.Object..UINameOverride,0,,None
 SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_AirMixTD2.SpawnOptions_Nekrobug_AirMixTD2,Options.Options[0].Factory.Object..SpawnOrigin,0,,(X=1500,Y=0,Z=0)

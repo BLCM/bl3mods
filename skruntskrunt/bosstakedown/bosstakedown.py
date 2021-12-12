@@ -77,7 +77,11 @@ if our_seed is None:
 else:
     our_seed = int(our_seed)
 
-title = f'{args.title} seed {our_seed}'
+# don't include seed in title if you override
+if args.overridespawn:
+    title = args.title
+else:
+    title = f'{args.title} seed {our_seed}'
 
 random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
@@ -90,7 +94,7 @@ mod = Mod(output_filename,
           ["Adds new badasses to Guardian Takedown"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats=['gameplay'],
+          cats=['gameplay','takedowns','spawns'],
 )
 mod.comment(f"Seed {our_seed}")
 

@@ -1,16 +1,21 @@
-Boss Takedowns
+Boss Guardian Takedown
 ==============
 
-Replace mobs in Takedowns with named Badasses and
-bosses. Spice up the proving grounds trials with 6 different boss
-rushes!
+Replace mobs in Guardian Takedowns with named Badasses and
+bosses.
+
+We have 2 curated takedowns and a random takedown generator.
+
+* `bosstakedown.skrunt1.bl3hotfix` a harder version of the guardian takedown meant to be somewhat relevantly themed to the Guardian Takedown. 
+* `bosstakedown.skrunt2.bl3hotfix` DLC3 invades the Guardian Takedown, fight some saurians and cowboys.
 
 Header
 ======
+
 * Name: Boss Takedowns
-* Version: 0.1.2
+* Version: 0.0.1
 * Author: skruntskrunt
-* Categories: gameplay, trials
+* Categories: gameplay, spawns, takedowns
 * License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 * License URL: https://creativecommons.org/licenses/by-sa/4.0/
 * Code License: GNU Public License Version 3
@@ -18,22 +23,15 @@ Header
 Changelog
 =========
 
-**v0.1.2** - 2021-10-19
- * Curate a 4 sets of working trials, all 6 trials work!
- * Made a creators cut where I hand chose mobs and kept the trials thematic.
- * Enables non-random generation of boss trials
+**v0.0.1** - 2021-12-11
+ * skrunt1 creator mix 
+ * Maliwan Takedowns don't work yet but CZ47 did such a great job so go play his mod.
 
-**v0.1.1** - 2021-10-02
- * Curate a set of working trials, all 6 trials work!
- * Release a definitive version that combines all trials into 1 hotfix
-
-**v0.1.0** - 2021-09-06
- * Initial Boss Trials
 
 Known Bugs
 ==========
 
-Sometimes Survival, Supremecy, and Discipline get locked by spawns that don't activate. If you know how to fix this I'd really like to know how to address it. I have hand currated some seeds that work to get around this but that is slow and adhoc. I work around this by tuning the kinds of spawns.
+Some mobs get stuck on the top of Nekro balls in the sky, look up there.
 
 Please report bugs to this repository on github: https://github.com/abramhindle/bl3mods
 
@@ -54,13 +52,27 @@ See [COPYING.txt](../../COPYING.txt) for the full text of the license.
 References
 ==========
 
+Inspiration from CZ47 Raid on Maliwan Takedown mod (totally jealous).
+
 Thanks to Rockroze1, professor portal, philipambrose, ssucka,
 government toast, QualityControl, and more for helping me test this.
+
+Development Info
+================
+
+Check the `Makefile` for examples of how to generate the mod.
+You can edit the spawnoptions json files to choose the mobs you want.
+
+`bosstakedown.py` is relatively poorly written and poorly structured, but it generates the mod.
+
+`make bosstakedown.666.bl3hotfix` will make a Guardian Takedown with random mobs chosen by seed 666.
+
+`make skrunt` will make the currated mods from `skrunt/*.json`
 
 Development Home
 ================
 
-This mod is being developed on the `truetrails` branch of:
+This mod is being developed on the `bosstakedown` branch of:
 
 https://github.com/abramhindle/bl3mods
 
