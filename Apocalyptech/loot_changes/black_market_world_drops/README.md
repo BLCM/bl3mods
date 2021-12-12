@@ -10,6 +10,10 @@ shields, grenade mods, COMs, and relics.
 Changelog
 =========
 
+**v1.1.1** - Dec 11, 2021
+ * Turns out my previous "fix" for VC3 compatibility didn't work as well
+   as I'd hoped.  This update fixes it up for real.
+
 **v1.1.0** - Nov 19, 2021
  * Updated with compatibility with yesterday's Vault Card 3 update, which
    changed how the machines decide their loot pools.
