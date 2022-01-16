@@ -332,17 +332,17 @@ ATLAS REGULAR GUNS
 ------------------
 Pattern [NULL] - Increased Damage by 20%, Magazine Size by 1, and Explosion Radius by 30%.
 
-Pattern Black (multi-rocket) - No change.
+Pattern Black - No change.
 
-Pattern Red (mortar launcher) - No change.
+Pattern Red - No change.
 
-Q-System (double projectile) - Adjusted Damage to (roughly) match the pre-Atlas-AR damage buff.
+Q-System - Adjusted Damage to (roughly) match the pre-Atlas-AR damage buff.
 
 V-System - Added 20% increased Critical Hit Damage.
 
-N-System (high fire rate) - No change.
+N-System - No change.
 
-AX-7 (automatic burst-fire) - No change.
+AX-7 - No change.
 
 AX-19 - No change.
 
@@ -429,31 +429,31 @@ Porta-Pooper 5000 - No change.
 
 COV REGULAR GUNS
 ----------------
-Chucka (spews stuff out, hits five times per second, low range) - No change.
+Chucka - No change.
 
-Zooka (mortar launcher, extra melee damage) - No change.
+Zooka - No change.
 
-Shredda (sawblade launcher, deals twice the damage on the card for some reason) - No change.
+Shredda - No change.
 
-Bombbanayshun (basically a worse Zooka) - Projectile count increased by 3, accuracy reduced by 100%, splash radius reduced by 50%, and ammo cost increased by 1.
+Bombbanayshun - Projectile count increased by 3, accuracy reduced by 100%, splash radius reduced by 50%, and ammo cost increased by 1.
 
  ┗----Rationale: Before these changes, it really was basically just a worse Zooka. The changes that have been made give it more of an identity to distinguish itself from other COV heavy weapons.
  
-Holey-Man (high fire rate, has to build up) - No change.
+Holey-Man - No change.
 
-Preecher (extra melee damage) - No change.
+Preecher - No change.
 
-Splainer (higher damage, lower fire rate) - No change.
+Splainer - No change.
 
-Blastphemy (impacts for 10% of damage, then explodes for card damage) - Increased damage by 150% and projectile speed by 50%.
+Blastphemy - Increased damage by 150% and projectile speed by 50%.
 
-Ratatater (high fire rate, has to build up, extra melee) - No change.
+Ratatater - No change.
 
-BizZurker (high heat tolerance) - No change.
+BizZurker - No change.
 
-Purferator (high damage, lower fire rate) - No change.
+Purferator - No change.
 
-Wizzperer (double the card damage, builds up to triple the initial damage) - No change.
+Wizzperer - No change.
 
 
 DAHL LEGENDARY GUNS
@@ -547,37 +547,37 @@ Kenulox - No change.
 
 DAHL REGULAR GUNS
 -----------------
-Raptor (high fire rate, lower damage) - No change.
+Raptor - No change.
 
 Shrike - Increased Damage and Fire Rate by 18%.
 
-Falcon (high damage, extra crit, lower fire rate) - No change.
+Falcon - No change.
 
-Wyvern (impacts for 10% of damage, then explodes for card damage) - Increased Damage by 125% and Magazine Size by 40%.
+Wyvern - Increased Damage by 125% and Magazine Size by 40%.
 
-Puma (high fire rate, lower damage) - No change.
+Puma - No change.
 
 Jaguar - Increased Fire Rate by 18%.
 
-Caracal (high damage, lower fire rate) - No change.
+Caracal - No change.
 
-Mngwa - (double the card damage, builds up to triple the initial damage) - No change.
+Mngwa - No change.
 
-Jackal (high fire rate, lower damage, extra melee) - No change.
+Jackal - No change.
 
 Hyena - No change.
 
-Wolfhound (high damage, lower fire rate) - No change.
+Wolfhound - No change.
 
-Cadejo (Shots penetrate targets) - Increased Damage by 133% and Magazine Size by 20%.
+Cadejo - Increased Damage by 133% and Magazine Size by 20%.
 
-Rattler (high fire rate, lower damage) - No change.
+Rattler - No change.
 
 Asp - Increased Fire Rate by 35%.
 
-Diamondback (high damage, lower fire rate) - No change.
+Diamondback - No change.
 
-Wyrm (shots ricochet three times and penetrate) - Increased Damage by 150%, reduced Fire Rate by 35%.
+Wyrm - Increased Damage by 150%, reduced Fire Rate by 35%.
 
 
 HYPERION LEGENDARY GUNS
@@ -670,29 +670,29 @@ The Two Time - No change.
 
 HYPERION REGULAR GUNS
 ---------------------
-Boardroom (higher fire rate, lower damage, extra melee damage) - No change.
+Boardroom - No change.
 
-Powerplay A (extra crit) - Reduced Damage by 5% and increased Fire Rate by 10%.
+Powerplay (extra crit version) - Reduced Damage by 5% and increased Fire Rate by 10%.
 
-Powerplay B (higher damage, lower fire rate) - No change.
+Powerplay (higher damage, lower fire rate version) - No change.
 
-Hivemind (ricochets once) - Increased Damage by 100% and Magazine Size by 20%.
+Hivemind - Increased Damage by 100% and Magazine Size by 20%.
 
-Outsourcer (more damage per pellet, less pellets) - Increased Critical Damage by 10%.
+Outsourcer - Increased Critical Damage by 10%.
 
-Collaborator (high fire rate) - Increased Projectile count slightly.
+Collaborator - Increased Projectile count slightly.
 
-Downsizer (less damage per pellet, more pellets, extra melee damage) - No change.
+Downsizer - No change.
 
-Host (exploding globs that bounce three times) - No change.
+Host - No change.
 
-Techspert (higher fire rate, lower damage, less crit) - No change.
+Techspert - No change.
 
-Entrepreneur (increased melee damage) - Reduced Damage by 13% and increased Fire Rate by 10%.
+Entrepreneur - Reduced Damage by 13% and increased Fire Rate by 10%.
 
-Mogul (higher damage, lower fire rate) - No change.
+Mogul - No change.
 
-Broodmother (ricochets twice) - Increased Damage by 105%, reduced Fire Rate by 35%, reduced Magazine Size by 3.
+Broodmother - Increased Damage by 105%, reduced Fire Rate by 35%, reduced Magazine Size by 3.
 
 
 JAKOBS LEGENDARY GUNS
@@ -843,7 +843,7 @@ The Ice Queen - No change.
 
 JAKOBS REGULAR GUNS
 -------------------
-Marshal (more fire rate, less damage) - Increased Damage by 15% and Handling by 40%.
+Marshal - Increased Damage by 15% and Handling by 40%.
 
  ┗----Rationale: More fire rate is typically good on a weapon until you realize it is a semi-automatic weapon. So this one has been given the niche of handling well.
 
@@ -851,25 +851,25 @@ Peacekeeper - Improved Reload Speed by 20% and Magazine Size by 25%.
 
  ┗----Rationale: This one's been changed to suit more of a spray-and-pray style, hence the reload and mag size bonuses.
 
-Ranger (high damage, extra crit) - No change.
+Ranger - No change.
 
-Clipper (higher fire rate, lower damage) - No change.
+Clipper - No change.
 
-Repeater (extra crit) - Increased Damage and Fire Rate by 18%.
+Repeater - Increased Damage and Fire Rate by 18%.
 
-Carbine (higher damage, lower fire rate) - No change.
+Carbine - No change.
 
-Longrider (less pellets, more accuracy) - Increased Critical Damage by 30% and Reload Speed by 20%.
+Longrider - Increased Critical Damage by 30% and Reload Speed by 20%.
 
-Scattergun (burst-fire-ish) - No change.
+Scattergun - No change.
 
-Stagecoach (more pellets, less accuracy) - No change.
+Stagecoach - No change.
 
-Cheechako (higher fire rate, lower damage) - Increased Damage by 10%.
+Cheechako - Increased Damage by 10%.
 
 Calipeen - No change.
 
-Muckamuck (high damage, high crit) - No change.
+Muckamuck - No change.
 
 
 MALIWAN LEGENDARY GUNS
@@ -996,37 +996,37 @@ Soleki Protocol - No change.
 
 MALIWAN REGULAR GUNS
 --------------------
-Atomizer (higher fire rate, lower damage) - No change.
+Atomizer - No change.
 
-Blaster (splash) - No change.
+Blaster - No change.
 
-Melter (higher damage, lower fire rate, charge to double damage, splash) - No change.
+Melter - No change.
 
-Devourer (impacts for 10% of damage, then explodes for card damage) - Increased Damage by 40%, Magazine Size by 20%, and reduced Fire Rate by 30%.
+Devourer - Increased Damage by 40%, Magazine Size by 20%, and reduced Fire Rate by 30%.
 
-Quasar (shoots continuous beam, hits twice per ammo) - No change.
+Quasar  - No change.
 
-Pulsar (higher fire rate, slightly lower damage) - No change.
+Pulsar - No change.
 
-Nebula (higher damage, lower fire rate, splash) - No change.
+Nebula - No change.
 
-Heliophage (no charge speed) - Increased Damage by 120% and reduced Fire Rate by 35%.
+Heliophage - Increased Damage by 120% and reduced Fire Rate by 35%.
 
-Terminator (charge for automatic fire) - Increase magazine size by two.
+Terminator - Increase magazine size by two.
 
-Cyclotron (hold to fire a three round burst) - Improved Projectile Charge Speed by 30%, Recoil Reduction by 40%, and Damage by 75%.
+Cyclotron - Improved Projectile Charge Speed by 30%, Recoil Reduction by 40%, and Damage by 75%.
 
-Shockwave (higher pellet count, higher damage per pellet, single shockwave shot) - No change.
+Shockwave - No change.
 
-Interloper (fires disks that bounce once) - Increased Damage by 400%, reduced Damage-over-Time by 40%, and reduced Ammo Cost by 2.
+Interloper - Increased Damage by 400%, reduced Damage-over-Time by 40%, and reduced Ammo Cost by 2.
 
-Proton Rifle (hold to charge power, splash) - Increased Damage by 30%.
+Proton Rifle  - Increased Damage by 30%.
 
-Multiplex (hold to fire automatically) - Increased Damage by 30%.
+Multiplex - Increased Damage by 30%.
 
-Particle Rifle (hold for three-round burst fire) - No change.
+Particle Rifle - No change.
 
-Antimatter Rifle (penetrates targets, deals double the card damage) - Increased Damage by 85%, reduced Magazine Size by 35%, and Ammo Cost reduced by 1.
+Antimatter Rifle - Increased Damage by 85%, reduced Magazine Size by 35%, and Ammo Cost reduced by 1.
 
 
 TEDIORE LEGENDARY GUNS
@@ -1226,35 +1226,35 @@ Thumper - Projectile speed doubled, number of bounces reduced to 1, launch angle
 
 TORGUE REGULAR GUNS
 -------------------
-Duke (higher fire rate, higher splash radius, lower damage, lower projectile speed) - No change.
+Duke - No change.
 
-Magnum (higher projectile speed, lower fire rate) - No change.
+Magnum - No change.
 
-Pocket Rocket (higher damage) - No change.
+Pocket Rocket - No change.
 
-Carbuncle (impacts for 10% of damage, then explodes for card damage, launches multiple shots) - No change.
+Carbuncle - No change.
 
-Flogger (Higher fire rate, lower damage) - No change.
+Flogger - No change.
 
-Polisher (Higher projectile speed) - Increased Damage by 14% and increased Fire Rate by 18%.
+Polisher - Increased Damage by 14% and increased Fire Rate by 18%.
 
-Stranger (Higher damage, lower fire rate) - No change.
+Stranger - No change.
 
-Blister (Spews flames, hits five times for two ammo, does a bit over twice the listed card damage, increases in damage for continuous damage up to 94%, short range) - Increased the Damage by 50% and Magazube Size by 10%.
+Blister - Increased the Damage by 50% and Magazube Size by 10%.
 
-Bologna Poney (higher splash radius)- Increased Damage by 35%.
+Bologna Poney - Increased Damage by 35%.
 
-Kielbasa (higher projectile speed, higher damage per projectile) - Increased Fire Rate by 25%.
+Kielbasa - Increased Fire Rate by 25%.
 
-Bangstick (higher projectile count, lower damage per projectile) - No change.
+Bangstick - No change.
 
-Protuberance (launches explosive globs that divides into triple the explosive globs on impact) - No change.
+Protuberance - No change.
 
-Threeway (multiple projectiles) - No change.
+Threeway - No change.
 
-Hedgehog (higher damage, splash radius)- No change.
+Hedgehog - No change.
 
-Quickie (higher fire rate, higher magazine size) - Reduced Magazine Size by 1 to compensate for Torgue Heavy Weapon Mag Size Buff.
+Quickie - Reduced Magazine Size by 1 to compensate for Torgue Heavy Weapon Mag Size Buff.
 
 Lump - No change.
 
@@ -1345,39 +1345,39 @@ Septimator - No change.
 
 VLADOF REGULAR GUNS
 -------------------
-Kot (higher fire rate, lower damage) - Improved the spin-up rate by 30%.
+Kot - Improved the spin-up rate by 30%.
 
 Moloko - No change.
 
-Creech (Higher damage, lower fire rate) - No change.
+Creech - No change.
 
-Pushdug (impacts for 10% of damage, then explodes for card damage) - Increased Damage by 180% and Magazine Size by 40%. Underbarrel Damage increased by 500% and Ammo Regen Delay lowered to 1.5 seconds.
+Pushdug - Increased Damage by 180% and Magazine Size by 40%. Underbarrel Damage increased by 500% and Ammo Regen Delay lowered to 1.5 seconds.
  
-Oddy-Knocky (No specialization, lower damage) - No change.
+Oddy-Knocky - No change.
 
-Bezoomy (Higher fire rate, lower damage) - No change.
+Bezoomy - No change.
 
-Mazlo (Higher accuracy, lower fire rate) - No change.
+Mazlo - No change.
 
-Shlaga (Higher damage, lower fire rate ) - No change.
+Shlaga - No change.
 
-Burzum (double the card damage, builds up to 94% the initial damage if aimed at the feet, chains to multiple enemies) - Increased Damage by 40%. Underbarrel Damage increased by 800%.
+Burzum - Increased Damage by 40%. Underbarrel Damage increased by 800%.
  
-Droog (higher fire rate, lower damage) - No change.
+Droog - No change.
 
-Bratchny (can spawn with tri-barrel that spins up for 35% fire rate) - No change.
+Bratchny - No change.
 
-Pooshka (higher damage, lower fire rate) - Increased Damage by 10%.
+Pooshka - Increased Damage by 10%.
 
-Ghaash (bounces twice) - Increased Damage by 150%, reduced Fire Rate by 51%, and Magazine Size reduced by 3. Underbarrel Damage increased by 800%.
+Ghaash - Increased Damage by 150%, reduced Fire Rate by 51%, and Magazine Size reduced by 3. Underbarrel Damage increased by 800%.
  
-Gruppa (higher fire rate) - No change.
+Gruppa - No change.
 
-Vred (higher splash radius, lower projectile speed and fire rate) - Increased Damage by 10%, increased Fire Rate by 100%.
+Vred - Increased Damage by 10%, increased Fire Rate by 100%.
 
-Strack (higher damage, higher projectile speed) - No change.
+Strack - No change.
 
-Bagronk (railgun) - Increased Damage by 10%, increased Magazine Size by 2, and reduced Ammo Cost by 1.
+Bagronk - Increased Damage by 10%, increased Magazine Size by 2, and reduced Ammo Cost by 1.
 
 ERIDIAN
 -------
@@ -3095,4 +3095,3 @@ Treasure Hunter - No change.
 Harmageddon - No change.
 
 Lead or Alive - No change.
-
