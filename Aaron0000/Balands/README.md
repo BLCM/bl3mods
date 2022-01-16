@@ -173,7 +173,7 @@ Increased the amount of chances for Hemovorous to drop her loot, three guarantee
 
 Added three guaranteed Mayhem 6 drops to Vermivorous, a 50% chance to drop a random Director's Cut item, and more loot in general.
 
-=============
+
 ENEMY CHANGES
 -------------
 Eista now retains "the Invincible" in his name for rematches after "We Slass! Part 3". Eista the Invincible's total health has been buffed, now roughly halfway between Wotan and Scourge.
@@ -219,7 +219,7 @@ GEAR CHANGES
 
 Damage on almost all Legendary and Unique gear has been adjusted to a less spongey environment (things that performed well in the usual Mayhem 10 will almost assuredly have the damage numbers lowered, but not necessarily be less effective). Nearly every Legendary piece of gear should be at minimum viable. Weapon changes listed below are basically anything that wasn't a damage change (anything that says "No change" most likely means it only had a damage change.)
 
-====
+
 GUNS
 
 Atlas
@@ -1400,7 +1400,7 @@ Bagronk (railgun) - Increased Damage by 10%, increased Magazine Size by 2, and r
 ERIDIAN;
 Fabricator - Now fully automatic with a fire rate of once per second.
 
-=======
+
 Shields
 
 SHIELD PARTS;
@@ -1603,7 +1603,7 @@ Mendel's Multivitamin Shield - No change.
 MSRC Auto-Dispensary - No change.
 
 
-========
+
 Grenades
 
 GRENADE PARTS;
@@ -1731,7 +1731,8 @@ Slider - No change.
 
 Whispering Ice - No change.
 
-==========
+
+
 Class Mods
 
 PASSIVES;
@@ -1937,7 +1938,7 @@ Spiritual Driver - Gun damage bonus now also affects slide damage.
 Stone - Rush stack chance increased to 20% and replaced Violent Tapestry with Alacrity.
 
 
-=========
+
 Artifacts
 
 
@@ -2355,7 +2356,7 @@ Gunner Infinite Ammo - Increased to 7 seconds.
 ######
 SKILLS
 
-====
+
 Moze
 
 Updated the descriptions of many skills to either mention Iron Cub whenever Iron Bear is mentioned or otherwise be more accurate to the skill's in-game effects.
@@ -2483,7 +2484,8 @@ Iron Bear - Reduced Duration and Cooldown to 60 seconds.
  ┗----Rationale: With a reduction in the cooldown time needed to regain Iron Bear, Moze has more access to anointments and is less reliant on Topped Off. For the reduction in duration as a balancing factor since cooldown was lowered, in a choice between maintaining Iron Bear's power or Iron Bear's duration the mech's power was chosen to be more useful to more builds instead of having a long-lasting but weaker mech.
 
 Iron Cub - No change.
-========
+
+
 Railgun - No change.
 
 Hell on Rails - No change.
@@ -2545,7 +2547,7 @@ My Little Friend - No change.
 Efficiency Engine - No change.
 
 
-====
+
 Zane
 
 Doubled Agent
@@ -2723,7 +2725,7 @@ No Way Out - No change.
 Proliferation - No change.
 
 
-====
+
 Fl4k
 
 Hunter
@@ -2912,7 +2914,8 @@ BUL Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Ele
 
 WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance, replaced fire rate bonus with shield damage.
 
-=====
+
+
 Amara
 
 Fist of the Elements
@@ -3080,7 +3083,8 @@ Light Fantastic - Lowered cooldown to 34 seconds.
 
 Expedite - No change.
 
-==============
+
+
 Guardian Perks
 
 Enforcer
@@ -3125,4 +3129,3 @@ Harmageddon - No change.
 
 Lead or Alive - No change.
 
-======
