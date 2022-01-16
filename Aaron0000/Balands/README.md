@@ -1,11 +1,11 @@
 # DISCLAIMER - The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
-====================
+
 BASIC PLAYER CHANGES
 
 Doubled the base melee damage and base slam damage, while base slide damage has been increased by 260% (on par with the newly buffed base melee damage.) Players now hit harder without affecting certain gear like the Face-puncher or Stinger.
 
-===================
+
 MAYHEM MODE CHANGES
 
 Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
@@ -14,7 +14,7 @@ Nerfed enemy health scaling in Mayhem Mode. Enemy health now increases by 100% p
 The "[Turn It Up To] Mayhem 11" modifier is now called "[None] Nay-hem". It can show up in Easy, Medium, Hard, and Very Hard.
 Reduced the probability of finding green-rarity gear starting from Mayhem 6 and decreasing as the Mayhem Level is increased up to Mayhem 8.
 
-=================
+
 LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
@@ -110,7 +110,7 @@ Enemies no longer spawn with cryo-element guns for the most part.
 Anointed Enforcers should no longer spawn outside of the encounters with the Anointed Alpha, Luke, and Muldock.
  ┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
  
-===================
+
 OTHER CHANGES/FIXES
 -------------------
 Typhon, Claptrap, Ava, Lilith, Maya, Lorelei, Clay, Hammerlock (DLC2), and Gaige have had their overall movement speed increased to be 50% higher than a standard Vault Hunter's and their sprint speed has been increased to 75%.
@@ -1823,4 +1823,4 @@ Treasure Hunter - No change.
 Harmageddon - No change.
 Lead or Alive - No change.
 
-==========================
+======
