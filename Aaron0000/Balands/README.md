@@ -65,7 +65,7 @@ Increased Red Rain's chance of dropping from its loot pool to 100% and increase 
 
 Increased Blue Fire's chance of dropping from its loot pool to 100% and increase the number of drops from this pool to 2.
 
-Increased the odds of Agonizer 9000 dropping from its loot pools to 30% for the White Elephant/Dictator, 40% for the Damned/Loaded Dice/EMP-5/Backburner pool, give it two chances to drop from the loot pools each, and reduce the odds of the Agonizer 1500 considerably.
+Increased the odds of Agonizer 9000 dropping from its loot pools to 30% for the White Elephant/Dictator, 40% for the Damned/Loaded Dice/EMP-5/Backburner pool, gave it two chances to drop from the loot pools each, and reduce the odds of the Agonizer 1500 considerably.
 
 Increased drop rates from Black, Yellow, and Red Power Troopers to 13.33%.
 
