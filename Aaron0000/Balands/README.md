@@ -9,9 +9,13 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 MAYHEM MODE CHANGES
 -------------------
 Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
+
 Guns and grenades no longer receive increased damage from Mayhem levels. The Mayhem level text no longer displays on gear either (but your gear will still be regular Mayhem gear when the mod is no longer active.).
+
 Nerfed enemy health scaling in Mayhem Mode. Enemy health now increases by 100% per Mayhem level, up to 1000% at Mayhem 10.
+
 The "[Turn It Up To] Mayhem 11" modifier is now called "[None] Nay-hem". It can show up in Easy, Medium, Hard, and Very Hard.
+
 Reduced the probability of finding green-rarity gear starting from Mayhem 6 and decreasing as the Mayhem Level is increased up to Mayhem 8.
 
 
