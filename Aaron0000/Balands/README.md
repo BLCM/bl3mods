@@ -2,12 +2,12 @@
 
 
 BASIC PLAYER CHANGES
-
+--------------------
 Doubled the base melee damage and base slam damage, while base slide damage has been increased by 260% (on par with the newly buffed base melee damage.) Players now hit harder without affecting certain gear like the Face-puncher or Stinger.
 
 
 MAYHEM MODE CHANGES
-
+-------------------
 Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
 Guns and grenades no longer receive increased damage from Mayhem levels. The Mayhem level text no longer displays on gear either (but your gear will still be regular Mayhem gear when the mod is no longer active.).
 Nerfed enemy health scaling in Mayhem Mode. Enemy health now increases by 100% per Mayhem level, up to 1000% at Mayhem 10.
@@ -214,56 +214,56 @@ Fixed Guns, Love, and Tentacles/Fantastic Fustercluck enemies not dropping shiel
 
 Fixed Siren COMs sometimes spawning with a blank part.
 
-############
-GEAR CHANGES
 
+GEAR CHANGES
+------------
 Damage on almost all Legendary and Unique gear has been adjusted to a less spongey environment (things that performed well in the usual Mayhem 10 will almost assuredly have the damage numbers lowered, but not necessarily be less effective). Nearly every Legendary piece of gear should be at minimum viable. Weapon changes listed below are basically anything that wasn't a damage change (anything that says "No change" most likely means it only had a damage change.)
 
 
-GUNS
+# GUNS
 
-Atlas
------
+ATLAS GENERAL GUN CHANGES
+---------------------------
 Increased Assault Rifle Damage by 20%.
 
 Removed Heavy Weapon Movement Speed Penalty.
 
  ┗----Rationale: It makes little sense for only some heavy weapons to have a movement speed penalty while others do not. Moving slower also just sucks. The same change has been made for Vladof weapons.
 
-COV
------
+COV GENERAL GUN CHANGES
+-----------------------
 No changes.
 
-Dahl
------
+DAHL GUNS
+---------
 Increased Damage of Semi-Auto Firing Mode by 20% and improved Accuracy Spread by 50% for Pistols and SMGs.
 
 Increased SMG Fire Rate and Magazine Size by 40% each.
 
  ┗----Rationale: SMGs were a bit lacking in DPS compared to other weapon types when I crunched the numbers, so I buffed the mag size and fire rate to make better use of that stupidly high ammo pool. Same goes for Hyperion and Maliwan SMGs.
  
-Hyperion
------
+HYPERION GENERAL GUN CHANGES
+----------------------------
 Increased SMG Fire Rate and Magazine Size by 40% each, and Damage by 12%.
 
 Increased Sniper Rifle Damage by 38%. 
 
-Jakobs
------
+JAKOBS GENERAL GUN CHANGES
+--------------------------
 Assault Rifle Masher Trigger - Improved Spread by 30%, reduced Recoil Height by 15%, improved Weapon Sway by 25%, removed Fire Rate penalty, and increased Magazine Size by 50%.
 
  ┗----Rationale: The AR masher trigger was inferior to the pistol masher grip in most stats, so it has been made roughly equal to it. As for the ammo cost not being lowered, an increase in magazine size should be sufficient instead.
  
-Maliwan
------
+MALIWAN GENERAL GUN CHANGES
+---------------------------
 Increased SMG Fire Rate and Magazine Size by 40% each, and Damage by 18%.
 
-Tediore
------
+TEDIORE GENERAL GUN CHANGES
+---------------------------
 No changes.
 
-Torgue
------
+TORGUE GENERAL GUN CHANGES
+--------------------------
 Increased Pistol Damage by 12.5%, Fire Rate by 20%, and improved Reload Speed by 15%.
 
 Increased Assault Rifle Damage by 40%, Fire Rate and Projectile Speed by 20%, and decreased Recoil Width by 15% as well as making them fully automatic.
@@ -274,8 +274,8 @@ Increased Heavy Weapon Magazine Size by one and made them fully automatic.
 
  ┗----Rationale: Torgue heavy weapons were pretty solid before, but low-magazine versions required loading an awful lot. One more shot per magazine should remedy that to a degree.
  
-Vladof
------
+VLADOF GUNS
+-----------
 Decreased Assault Rifle Vertical Recoil by 25%.
 
 Increased Sniper Rifle Damage by 10%, Magazine Size by 30%, and improved Reload Speed by 20%.
@@ -294,10 +294,8 @@ Improved the Ammo Regen and Ammo Regen Delay of Heavy Weapon Big Boy Underbarrel
 
  ┗----Rationale: Underbarrels are one of the main features of Vladof weaponry, but they weren't very useable due to being stingy with the ammo consumption/regeneration balance. They should now be useable on a more regular basis.
  
-ATLAS;
-
-Legendary
----------
+ATLAS LEGENDARY GUNS
+--------------------
 Carrier - No change.
 
 OPQ - No change.
@@ -326,12 +324,12 @@ Plumage - Accuracy reduced by 50%, ammo cost set to 2.
 
 Ruby's Wrath - No change.
 
-Uniques
----------
+ATLAS UNIQUE GUNS
+-----------------
 Peacemonger - Ammo cost set to 3.
 
-Regular
----------
+ATLAS REGULAR GUNS
+------------------
 Pattern [NULL] - Increased Damage by 20%, Magazine Size by 1, and Explosion Radius by 30%.
 
 Pattern Black (multi-rocket) - No change.
@@ -351,10 +349,8 @@ AX-19 - No change.
 AX-88 - Reduced ammo cost to one and increased Projectile Speed by 57%.
 
 
-COV;
-
-Legendary
----------
+COV LEGENDARY GUNS
+------------------
 Embrace the Pain - Accuracy improved, fire rate increased by 70%, heat rate reduced by 20%.
 
 NoPewPew - Ammo cost set to 3.
@@ -409,8 +405,8 @@ Mechanic - No change.
 
 Yellowcake - No change.
 
-Unique
----------
+COV UNIQUE GUNS
+---------------
 Brad Luck - No change.
 
 Sawpenny - No change.
@@ -431,8 +427,8 @@ Minor Kong - No change.
 
 Porta-Pooper 5000 - No change.
 
-Regular
----------
+COV REGULAR GUNS
+----------------
 Chucka (spews stuff out, hits five times per second, low range) - No change.
 
 Zooka (mortar launcher, extra melee damage) - No change.
@@ -460,10 +456,8 @@ Purferator (high damage, lower fire rate) - No change.
 Wizzperer (double the card damage, builds up to triple the initial damage) - No change.
 
 
-DAHL;
-
-Legendary
----------
+DAHL LEGENDARY GUNS
+-------------------
 Barrage - Burst-count set to 7.
 
 Breath of the Dying - Set on-kill projectile damage to 10 times card damage, removed splash damage, doubled the flight speed of on-kill projectiles.
@@ -531,8 +525,8 @@ Stalker - No change.
 Malak's Bane - Shotgun-mode ammo cost set to 2, standard mode fire rate increased by 75%.
 
 
-Unique
----------
+DAHL UNIQUE GUNS
+-----------------
 Digby's Smooth Tube - No change.
 
 Earworm - No change.
@@ -551,8 +545,8 @@ Brashi's Dedication - No change.
 
 Kenulox - No change.
 
-Regular
----------
+DAHL REGULAR GUNS
+-----------------
 Raptor (high fire rate, lower damage) - No change.
 
 Shrike - Increased Damage and Fire Rate by 18%.
@@ -586,10 +580,8 @@ Diamondback (high damage, lower fire rate) - No change.
 Wyrm (shots ricochet three times and penetrate) - Increased Damage by 150%, reduced Fire Rate by 35%.
 
 
-HYPERION;
-
-Legendary
----------
+HYPERION LEGENDARY GUNS
+-----------------------
 Brainstormer - No change.
 
 Conference Call - Increased base projectile count by 2.
@@ -654,8 +646,8 @@ Tankman's Shield - Set critical hit damage bonus to 100%.
 
 Woodblocker - Critical hit damage bonus set to 50%, vertical recoil improved by 85%.
 
-Unique
----------
+HYPERION UNIQUE GUNS
+--------------------
 Firecracker - Firework radius set to 500.
 
 Melt Facer - No change.
@@ -676,8 +668,8 @@ Null Pointer - No change.
 
 The Two Time - No change.
 
-Regular
----------
+HYPERION REGULAR GUNS
+---------------------
 Boardroom (higher fire rate, lower damage, extra melee damage) - No change.
 
 Powerplay A (extra crit) - Reduced Damage by 5% and increased Fire Rate by 10%.
@@ -703,10 +695,8 @@ Mogul (higher damage, lower fire rate) - No change.
 Broodmother (ricochets twice) - Increased Damage by 105%, reduced Fire Rate by 35%, reduced Magazine Size by 3.
 
 
-JAKOBS;
-
-Legendary
----------
+JAKOBS LEGENDARY GUNS
+---------------------
 Bekah - No change.
 
 Blade Fury - Melee portion of the damage reduced to 17.5% of card damage, melee damage bonus no longer factors in gear or skill bonuses.
@@ -805,8 +795,8 @@ Unseen Threat - Set ricochet damage to 33% of card damage.
 
 Wedding Invitation - Set ricochet damage to 2 times card damage.
 
-Unique
----------
+JAKOBS UNIQUE GUNS
+------------------
 Icebreaker - No change.
 
 Pa's Rifle - No change.
@@ -851,8 +841,8 @@ The Hunt(ress) - Humanoid damage bonus set to 50%, added 50% critical hit damage
 
 The Ice Queen - No change.
 
-Regular
----------
+JAKOBS REGULAR GUNS
+-------------------
 Marshal (more fire rate, less damage) - Increased Damage by 15% and Handling by 40%.
 
  ┗----Rationale: More fire rate is typically good on a weapon until you realize it is a semi-automatic weapon. So this one has been given the niche of handling well.
@@ -882,10 +872,8 @@ Calipeen - No change.
 Muckamuck (high damage, high crit) - No change.
 
 
-MALIWAN;
-
-Legendary
----------
+MALIWAN LEGENDARY GUNS
+----------------------
 Beacon - Set reload-nova damage to 8.2 times card damage, reduced magazine size by 50%, improved reload speed by 40%, increased fire rate by 40%, increased splash radius by 50%.
 
  ┗----Rationale: The special feature of the Beacon is largely ignored due to standard gun usage being far superior compared to the reload-nova. The changes made allow the Beacon to be effective both with simply firing the weapon or using the gimmick.
@@ -982,8 +970,8 @@ Krakatoa - Reduced speed of fireballs by roughly 18%.
 
 Storm - Ammo cost set to 1, radius set to 300.
 
-Unique
----------
+MALIWAN UNIQUE GUNS
+-------------------
 Bubble Blaster - No change.
 
 Starkiller - No change.
@@ -1006,8 +994,8 @@ Emperor's Condiment - No change.
 
 Soleki Protocol - No change.
 
-Regular
----------
+MALIWAN REGULAR GUNS
+--------------------
 Atomizer (higher fire rate, lower damage) - No change.
 
 Blaster (splash) - No change.
@@ -1041,10 +1029,8 @@ Particle Rifle (hold for three-round burst fire) - No change.
 Antimatter Rifle (penetrates targets, deals double the card damage) - Increased Damage by 85%, reduced Magazine Size by 35%, and Ammo Cost reduced by 1.
 
 
-TEDIORE;
-
-Legendary
----------
+TEDIORE LEGENDARY GUNS
+----------------------
 Baby Maker - No change.
 
 Bangarang - No change.
@@ -1089,8 +1075,8 @@ Smart Gun - No change.
 
 Ten Gallon - No change.
 
-Unique
----------
+TEDIORE UNIQUE GUNS
+-------------------
 Sacrificial Lamb - Lifesteal set to 10%.
 
 Superstreamer - No change.
@@ -1099,8 +1085,8 @@ P.A.T. Mk. II. - No change.
 
 The Boo - No change.
 
-Regular
----------
+TEDIORE REGULAR GUNS
+--------------------
 Quickshot (Higher fire rate, lower damage, reload is self-firing gun) - No change.
 
 Deadshot (reload is detonating red globe) - Increased Magazine Size by 25%.
@@ -1126,10 +1112,8 @@ Powerblast (Higher pellet count, lower fire rate, reload is detonating red globe
 Elderblast (lobs explosive globs, reload produces puddle) - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and reduced Damage-over-Time by 40%.
 
 
-TORGUE;
-
-Legendary
----------
+TORGUE LEGENDARY GUNS
+---------------------
 Alchemist - No change.
 
 Bearcat - No change.
@@ -1222,8 +1206,8 @@ The Lob - No change.
 
 Tiggs' Boom - Meteor damage increased to 10 times card damage, meteor radius set to 450.
 
-Unique
----------
+TORGUE UNIQUE GUNS
+------------------
 Amber Management - Anger damage bonus per stack set to 10%, Happiness ammo-regenerate delay set to 10 seconds.
 
 La Varlope - No change.
@@ -1240,8 +1224,8 @@ Chomper - No change.
 
 Thumper - Projectile speed doubled, number of bounces reduced to 1, launch angle set to 9 degrees.
 
-Regular
----------
+TORGUE REGULAR GUNS
+-------------------
 Duke (higher fire rate, higher splash radius, lower damage, lower projectile speed) - No change.
 
 Magnum (higher projectile speed, lower fire rate) - No change.
@@ -1275,10 +1259,8 @@ Quickie (higher fire rate, higher magazine size) - Reduced Magazine Size by 1 to
 Lump - No change.
 
 
-VLADOF;
-
-Legendary
----------
+VLADOF LEGENDARY GUNS
+---------------------
 Damned - No change.
 
 Dowsing Rod - Reduced damage of underbarrel by 35%, lowered the accuracy of the underbarrel by 150%.
@@ -1349,8 +1331,8 @@ Lyuda - Critical hit damage bonus removed.
 
 Septimator Prime - Starfall chance set to 20%, starfall damage set to match card damage, cooldown for starfall chance set to 1 second, rocket launcher underbarrel delay removed, rocket underbarrel ammo regen rate set to 0.225 rounds per second, shotgun underbarrel ammo regen delay lowered to 1.4 seconds, shotgun ammo regen rate set to 0.6 rounds per second.
 
-Unique
----------
+VLADOF UNIQUE GUNS
+------------------
 The Big Succ - No change.
 
 Bone Shredder - Ammo cost set to 1.
@@ -1361,8 +1343,8 @@ Cold Shoulder - No change.
 
 Septimator - No change.
 
-Regular
----------
+VLADOF REGULAR GUNS
+-------------------
 Kot (higher fire rate, lower damage) - Improved the spin-up rate by 30%.
 
 Moloko - No change.
@@ -1397,13 +1379,15 @@ Strack (higher damage, higher projectile speed) - No change.
 
 Bagronk (railgun) - Increased Damage by 10%, increased Magazine Size by 2, and reduced Ammo Cost by 1.
 
-ERIDIAN;
+ERIDIAN
+-------
 Fabricator - Now fully automatic with a fire rate of once per second.
 
 
-Shields
+# SHIELDS
 
-SHIELD PARTS;
+PARTS
+-----
 
 Absorb - No change.
 
@@ -1454,10 +1438,8 @@ Turtle - No change.
 Vagabond - No change.
 
 
-ANSHIN;
-
-Legendary
----------
+ANSHIN LEGENDARY SHIELDS
+------------------------
 Asclepius - Capacity increased by 65%, recharge rate improved by 70%, recharge delay improved by 40%, damage-over-time resistance while shields are down increased to 100%, health regen increased to 10%, fixed nova damage not scaling with level and increased nova radius by 33%.
 
  ┗----Rationale: If you're going to go through hell-and-high-water to get this thing, it should be worth your effort. At least in terms of general defensive capability, it should now be top-notch.
@@ -1504,8 +1486,8 @@ Whiskey Tango Foxtrot - Doubled IED damage, increased IED chance to 40%, increas
 
  ┗----Rationale: The changes made will allow the IEDs to have a better chance of actually damaging the enemy while also reducing the risk of the wearer getting caught up in the explosions.
 
-Unique
----------
+ANSHIN UNIQUE SHIELDS
+---------------------
 All-In - No change.
 
 Initiative - Damage and resistance increased to 33%.
@@ -1513,10 +1495,8 @@ Initiative - Damage and resistance increased to 33%.
 Moxxi's Embrace - No change.
 
 
-HYPERION;
-
-Legendary
----------
+HYPERION LEGENDARY SHIELDS
+--------------------------
 Faulty Star - Capacity increased by 50%.
 
 Firewall - Damage reduction improved to 75%.
@@ -1547,8 +1527,8 @@ Ward - Recharge delay made longer by 100%, recharge rate improved by 50%, health
 
  ┗----Rationale: The recharge delay reduction makes it easier to maintain empty shields while the roid is active. The capacity was not reduced since it helps as a buffer while first approaching an enemy. Weapon damage was replaced since the primary reason anyone uses this shield is for melee, hence the change to damage reduction being more useful.
 
-Unique
----------
+HYPERION UNIQUE SHIELDS
+-----------------------
 Brawler Unpaler - No change.
 
 Golden Touch - No change.
@@ -1560,10 +1540,8 @@ Mr. Caffeine Shield - No change.
 Revengenader - No change.
 
 
-PANGOLIN;
-
-Legendary
----------
+PANGOLIN LEGENDARY SHIELDS
+--------------------------
 Band of Sitorak - Fixed description to say 30% damage instead of 170%.
 
 Big Boom Blaster - No change.
@@ -1588,8 +1566,8 @@ Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay imp
 
 Void Rift - No change beyond what the Impaler and Black Hole have.
 
-Unique
----------
+PANGOLIN UNIQUE SHIELDS
+-----------------------
 Double Downer - No change.
 
 Ember's Blaze - Aura damage increased by 150%.
@@ -1604,10 +1582,10 @@ MSRC Auto-Dispensary - No change.
 
 
 
-Grenades
+# GRENADES
 
-GRENADE PARTS;
-
+PARTS
+-----
 Large - No change.
 
 Bouncy - No change.
@@ -1647,8 +1625,8 @@ Elemental Damage - Increased Damage Bonuses to 20%/40%/60%.
 Rain - Increased amount of grenades produced to 3/5/7.
 
 
-Legendary
----------
+LEGENDARY GRENADES
+------------------
 Chupa's Organ - Healing reduced by 50%.
 
 EMP - Increased radius 25%, doubled damage to shields.
@@ -1705,8 +1683,8 @@ Diamond Butt Bomb - No change.
 
 Ultraball - No change.
 
-Uniques
----------
+UNIQUE GRENADES
+---------------
 Exterminator - No change.
 
 Acid Burn - Loader control duration increased to 12 seconds.
@@ -1733,9 +1711,10 @@ Whispering Ice - No change.
 
 
 
-Class Mods
+# CLASS MODS
 
-PASSIVES;
+PASSIVES
+--------
 Weapon Type Damage - No change.
 
 Area-of-Effect Damage - Reduced in effectiveness (20% at level 72.)
@@ -1803,12 +1782,10 @@ Torgue Weapon Projectile Speed - No change.
 Action Skill Damage - No change.
 
 
-NOTE ABOUT CLAS MOD CHANGES: Several skills were replaced with different skills. The reason why most of the base game class mods haven't had their skills touched is because they use the same part that regular, non-Legendary class mods use. Any exceptions to this are because only *that* class mod (in the base game) boosts the skill that has been replaced. DLC Class mods use different parts to boost their skills (even if they boost the same skill.) As to why the skill parts that can spawn on a class mod hasn't been changed, it is to prevent illegitimate class mods.
+NOTE ABOUT CLASS MOD CHANGES: Several skills were replaced with different skills. The reason why most of the base game class mods haven't had their skills touched is because they use the same part that regular, non-Legendary class mods use. Any exceptions to this are because only *that* class mod (in the base game) boosts the skill that has been replaced. DLC Class mods use different parts to boost their skills (even if they boost the same skill.) As to why the skill parts that can spawn on a class mod hasn't been changed, it is to prevent illegitimate class mods.
 
-Moze
-
-Legendary
----------
+LEGENDARY GUNNER CLASS MODS
+---------------------------
 Bear Trooper - Replaced Explosive Punctuation with Vampyr.
  ┗----Rationale: Bear Trooper is all about getting as much up-time with the mechs active as possible. Vampyr is chosen as an option to help keep the mechs up and running.
 
@@ -1837,10 +1814,8 @@ Raging Bear - Damage and Fuel Bonuses now factor in skill/gear bonuses, Stoke th
 Rocketeer - No change.
 
 
-Zane
-
-Legendary
----------
+LEGENDARY OPERATIVE CLASS MODS
+------------------------------
 Antifreeze - No change.
 
 Cold Warrior - Increased Damage-over-Time to 200% from 15%.
@@ -1870,10 +1845,8 @@ Techspert - SNTNL reset chance increased to 100%.
  ┗----Rationale: With the existence of things like the Spy and Seein' Dead allowing for immense action skill uptime, 100% chance to maintain SNTNL does not seem unreasonable.
 
 
-Fl4k
-
-Legendary
----------
+LEGENDARY BEASTMASTER CLASS MODS
+--------------------------------
 3RROr Cmdl3t - Attack Command chance cooldown lowered to 1 second, replaced Better Toys with Sic 'Em, and replaced Keep Them Safe with Fuzzy Math.
 
  ┗----Rationale: Sic 'Em replaces Better Toys as a means to enhance the Attack Command-centric nature of this class mod, while Fuzzy Math is a more consistent means of shield restoration compared to Keep Them Safe.
@@ -1905,10 +1878,8 @@ Tr4iner - Dominate chance increased to 100%, Domination duration increased to 60
  ┗----Rationale: There isn't a great deal going for this class mod, but you can at least use the dominated enemy to draw aggro away from yourself and your pet for a while now.
 
 
-Amara
-
-Legendary
----------
+LEGENDARY SIREN CLASS MODS
+--------------------------
 Breaker - Increased maximum damage reduction to 50%.
 
 Death's Blessings - Blessing orb speed increased by 200%, Gun Damage changed to General Damage, damage changed back to factor in skill/gear boosts, damage bonus reduced to 50%.
@@ -1919,7 +1890,7 @@ Dragon - Replaced Remnant with Personal Space.
 
  ┗----Rationale: The Dragon's special effect only triggers when a Melee kill is made. To facilitate that, Personal Space (which has been changed to boost Melee damage as well) has been added.
 
-Elementalist - Replace Wildfire with Anima.
+Elementalist - Replaced Wildfire with Anima.
 
 Golden Rule - No change.
 
@@ -1939,10 +1910,10 @@ Stone - Rush stack chance increased to 20% and replaced Violent Tapestry with Al
 
 
 
-Artifacts
+# ARTIFACTS
 
-
-PASSIVES;
+PASSIVES
+--------
 Weapon Type Damage - No change.
 
 Area-of-Effect Damage - Reduced in effectiveness (25% at level 72), no longer increases splash radius.
@@ -1990,8 +1961,8 @@ Element Chance/Cryo Efficiency - No change.
 Experience from Combat - Increased in effectiveness (100% at level 72.)
 
 
-Legendary
----------
+LEGENDARY ARTIFACTS
+-------------------
 Commander Planetoid - Increased bonus elemental melee damage to 130% regardless of level, timer between elemental switching reduced to 0.1 seconds.
 
 Company Man - No change.
@@ -2050,16 +2021,16 @@ Victory Rush - No change.
 
 White Elephant - Damage increased to 140% from 50%.
 
-Unique
----------
+UNIQUE ARTIFACTS
+----------------
 Mysterious Artifact - No change.
 
 Road Warrior - Increased damage of the sawblades by 66%.
 
 Vendetta - Reduced lifesteal to 7.5%.
 
-Regular
----------
+REGULAR ARTIFACTS
+-----------------
 Atom Balm - Radius increased to 50%.
 
 Berserker Rush - Fire rate bonus increased (25% at level 72), movement speed bonus increased (50% at level 72.)
@@ -2103,13 +2074,12 @@ Snowdrift - Increased the slide impact damage bonus per level by 300%, reduced t
 Toxic Revenger - No change.
 
 
-###########
-ANOINTMENTS
+# ANOINTMENTS
 
 Many of the anointsments below have been adjusted to "now factor in skill and gear bonuses." What this means for example is that before if you had 1000% Weapon Damage from skills and gear in an unmodded game of Borderlands 3, and used the 100% weapon damage anointment it'd only be 1100% total. With it factoring in gear and skill boosts however, the 25% Weapon Damage anointment causes that 1000% weapon damage to become 1250%.
 
-General
-----------------------
+GENERAL ANOINTMENTS
+-------------------
 150/90 - Reduced to 70%.
 
 U-Rad - Reduced to 50%.
@@ -2169,8 +2139,8 @@ ASE Cooldown - Reduced to 30% and now factors in skill and gear bonuses.
 ASE Grenade Regen - Increased to 2 grenades.
 
 
-Moze
-----
+GUNNER ANOINTMENTS
+------------------
 IB Nova - Increased damage to 2.5 from 1.75.
 
 N2M Crit/Rate - Reduced critical damage to 20%, increased fire rate to 20%, and now factors in skill and gear bonuses.
@@ -2206,8 +2176,8 @@ IB Cooldown - No change.
 Auto Bear Ammo Regen - Increased ammo regen to 15%.
 
 
-Zane
-----
+OPERATIVE ANOINTMENTS
+---------------------
 Digi-Clone Weapon Damage - Reduced to 35% damage, increased duration to 8 seconds, and now factors in skill and gear bonuses.
 
 MNTIS Damage - Reduced to 70% damage.
@@ -2231,8 +2201,8 @@ Digi-Clone Reload - No change.
 Digi-Clone Ammo Regen - Reduced to 25%.
 
 
-Fl4k
-----
+BEASTMASTER ANOINTMENTS
+-----------------------
 Rakk Crit - Reduced to 40% damage and now factors in skill and gear bonuses.
 
 Rakk Slag - Updated the description to mention that the anointment does not actually work, and prevented this anointment from spawning at all.
@@ -2254,8 +2224,8 @@ Action Command Movespeed - Increased to 50%, duration increased to 10 seconds, a
 Fade Active Accuracy - Accuracy and handling improved to 75% and now factors in skill and gear bonuses.
 
 
-Amara
------
+SIREN ANOINTMENTS
+------------------
 ASE Rad - Duration increased to 10 seconds.
 
 Astral Projection Damage - No change.
@@ -2283,8 +2253,8 @@ Phaseslam Damage Resist/Speed - Increased resistance to 30%, increased move spee
 Phasegrasp Accuracy/Handling - Accuracy and Handling increased to 75% and now factors in skill and gear bonuses.
 
 
-Terror
-------
+TERROR ANOINTMENTS
+------------------
 Terror Crit - Reduced to 15%/30%/45%
 
 Terror Damage/Fire Rate - No change.
@@ -2316,8 +2286,8 @@ Terror SNTNL Lifesteal - Reduced to 2.5%, increase max duration to 120 seconds.
 Terror Nova - Reduced damage by 15%, increased radius by 75%.
 
 
-Retired
--------
+RETIRED ANOINTMENTS
+-------------------
 Airborne Crit Damage - Set to 25%.
 
 Airborne Damage - Reduced to 20%.
@@ -2353,15 +2323,12 @@ ASE Damage Reflect - No change.
 Gunner Infinite Ammo - Increased to 7 seconds.
 
 
-######
-SKILLS
 
-
-Moze
+# GUNNER SKILLS
 
 Updated the descriptions of many skills to either mention Iron Cub whenever Iron Bear is mentioned or otherwise be more accurate to the skill's in-game effects.
 
-Shield of Retribution
+SHIELD OF RETRIBUTION
 ----------------------
 Selfless Vengeance - Increased Incendiary Bonus to 4% per point, increased bonus seconds-per-point to 2 from 1.
 
@@ -2389,7 +2356,7 @@ Force Feedback - Increased shield restore to 15%.
 
 Tenacious Defense - No change.
 
-Demolition Woman
+DEMOLITION WOMAN
 ----------------
 Fire in the Skag Den - No change.
 
@@ -2419,8 +2386,8 @@ Explosive Punctuation - Increased duration to 5 seconds.
 
 Short Fuse - No change.
 
-Bottomless Mags
-----------------
+BOTTOMLESS MAGS
+---------------
 Cloud of Lead - No change.
 
 Dakka Bear - No change.
@@ -2449,8 +2416,8 @@ Click, Click... - No change.
 
 Forge - Increased bonus to 12.5%.
 
-Bear Mother
-----------------
+BEAR MOTHER
+-----------
 Biofuel - No change.
 
 Big Surplus - No change.
@@ -2477,14 +2444,13 @@ Superior Firepower - No change.
 
 Running on Fumes - No change.
 
-Action Skills/Augments
+ACTION SKILLS/AUGMENTS
 ----------------------
 Iron Bear - Reduced Duration and Cooldown to 60 seconds.
 
  ┗----Rationale: With a reduction in the cooldown time needed to regain Iron Bear, Moze has more access to anointments and is less reliant on Topped Off. For the reduction in duration as a balancing factor since cooldown was lowered, in a choice between maintaining Iron Bear's power or Iron Bear's duration the mech's power was chosen to be more useful to more builds instead of having a long-lasting but weaker mech.
 
 Iron Cub - No change.
-
 
 Railgun - No change.
 
@@ -2548,9 +2514,9 @@ Efficiency Engine - No change.
 
 
 
-Zane
+# OPERATIVE SKILLS
 
-Doubled Agent
+DOUBLED AGENT
 -------------
 Synchronicity - No change.
 
@@ -2584,7 +2550,7 @@ Trick of the Light - Changed Cryo Damage back to Shock Damage.
 
 Double Barrel - Changed gun damage to general damage and reduced damage bonus to 20%.
 
-Hitman
+HITMAN
 -------------
 Violent Speed - No change.
 
@@ -2610,8 +2576,8 @@ Good Misfortune - No change.
 
 Death Follows Close - No change.
 
-Under Cover
--------------
+UNDER COVER
+-----------
 Adrenaline - No change.
 
 Hearty Stock - Increased capacity per point to 16.66%.
@@ -2642,8 +2608,8 @@ Confident Competence - Changed gun damage to all-purpose damage and increased th
 
  ┗----Rationale: Zane's got tons of gun damage, but not a great deal of other damage. A 50% increase to all damage should make it worthwhile to reach this capstone.
 
-The Professional
--------------
+THE PROFESSIONAL
+----------------
 Man of Focus - No change.
 
 Renegade - No change.
@@ -2670,7 +2636,7 @@ Eraser - No change.
 
 Our Man Flynt - No change.
 
-Action Skills/Augments
+ACTION SKILLS/AUGMENTS
 ----------------------
 Barrier - Reduced cooldown to 16 seconds from 24 seconds, increase amp damage to 40% on the ground (28% while held).
 
@@ -2726,10 +2692,10 @@ Proliferation - No change.
 
 
 
-Fl4k
+# BEASTMASTER SKILLS
 
-Hunter
--------------
+HUNTER
+------
 Interplanetary Stalker - No change.
 
 Leave No Trace - No change.
@@ -2754,8 +2720,8 @@ Grim Harvest - No change.
 
 Megavore - No change.
 
-Master
--------------
+MASTER
+------
 Ferocity - No change.
 
 Persistance Hunter - No change.
@@ -2782,8 +2748,8 @@ Shared Spirit - No change.
 
 Dominance - No change.
 
-Stalker
--------------
+STALKER
+-------
 Self-Repairing System - No change.
 
 Sic 'Em - Increased cooldown bonus to 16.66% per point from 10%.
@@ -2808,8 +2774,8 @@ Rage and Recover - Fixed skill description to be total health instead of missing
 
 The Power Within - No change.
 
-Trapper
--------------
+TRAPPER
+-------
 Gotta Go Fast - No change.
 
 Success Imminent - No change.
@@ -2838,7 +2804,7 @@ Keep Them Safe - No change.
 
 Capacitance - No change.
 
-Action Skills/Augments
+ACTION SKILLS/AUGMENTS
 ----------------------
 Rakk Attack - Increased damage by 25% and added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
@@ -2882,8 +2848,8 @@ Trap Card - Changed description to mention that the trap is free when deployed w
 
 Blind With Anger - No change.
 
-Pets
--------------
+PETS
+----
 Increased base pet melee damage, ranged damage, and skill damage by 20%.
 
 Improved attack command cooldown by 50%.
@@ -2916,10 +2882,10 @@ WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Ele
 
 
 
-Amara
+# SIREN SKILLS
 
-Fist of the Elements
--------------
+FIST OF THE ELEMENTS
+--------------------
 Anima - Updated description to mention that it does not work with the Cold Hearted augment.
 
 Steady Hands - No change.
@@ -2946,8 +2912,8 @@ Conflux - No change.
 
 Forceful Expression - No change.
 
-Mystical Assault
--------------
+MYSTICAL ASSAULT
+----------------
 Do Harm - No change.
 
 Fast Hand(s) - No change.
@@ -2974,8 +2940,8 @@ Awakening - No change.
 
 Avatar - No change.
 
-Brawl
--------------
+BRAWL
+-----
 Root to Rise - No change.
 
 Personal Space - Made it also affect Melee damage and Phaseslam damage.
@@ -3006,8 +2972,8 @@ Guardian Angel - No change.
 
 Blitz - Reduced cooldown to 6 seconds.
 
-Enlightened Force
--------------
+ENLIGHTENED FORCE
+-----------------
 Trust in Yourself - No change.
 
 No Mistakes In Nature - No change.
@@ -3037,9 +3003,10 @@ Atman - No change.
 Clear the Mind - No change.
 
 
-Action Skills/Augments
+ACTION SKILLS/AUGMENTS
 ----------------------
 One of Amara's bigger issues is a reliance on her Action Skills but lacking the cooldown to use them frequently without the use of things such as Expedite or Topped Off. Since Topped Off has been nerfed and having viable options other than Expedite is a good thing (especially if you lack the Designer's Cut DLC), most of her Action Skills have received a substantial reduction in cooldown length.
+
 
 Phaseslam - Increased damage by 42%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
@@ -3085,9 +3052,9 @@ Expedite - No change.
 
 
 
-Guardian Perks
+# GUARDIAN PERKS
 
-Enforcer
+ENFORCER
 --------
 Inner Fury - No change.
 
@@ -3101,7 +3068,7 @@ C'mon and Slam - No change.
 
 Groundbreaker - No change.
 
-Survivor
+SURVIVOR
 --------
 Resilient - No change.
 
@@ -3115,7 +3082,7 @@ Too Angry to Die - Reduced FFYL restoration bonus to 3% from 5%.
 
 Dead Man Walking - Reduced FFYL bonus to 30%.
 
-Hunter 
+HUNTER 
 ------
 Bullet Collector - No change.
 
