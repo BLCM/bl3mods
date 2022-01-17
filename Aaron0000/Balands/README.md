@@ -197,7 +197,8 @@ Enemies no longer spawn with cryo-element guns for the most part.
  ┗----Rationale: For enemies that are clearly cryo such as certain beasts or Heavies, being able to slow the player down isn't an issue as the player is able to easily determine that they should stay back if they want to avoid being slowed. That isn't viable for common gun-wielding enemies. Getting lightly tickled by a single bullet from some cannon fodder and suddenly becoming unable to dodge a hail of punishment is very irritating, and it is too difficult to try to determine if every single gun-wielding is using a cryo weapon or not by looking at the elemental glow on their weapon.
 
 Anointed Enforcers should no longer spawn outside of the encounters with the Anointed Alpha, Luke, and Muldock.
- ┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
+
+┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
  
 
 OTHER CHANGES/FIXES
