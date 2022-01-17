@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.0.2
+### Version: 1.0.3
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -3630,10 +3630,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bDisplayPercentAsFloat,0,,true
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NervesOfSteel/PassiveSkill_Operative_NervesOfSteel.Default__PassiveSkill_Operative_NervesOfSteel_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,bCalculateWithReductionMath,0,,false
 
-# Best Served Cold - Nova Damage doubled, remove Cooldown.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_SimpleFormulas.DataTable_Operative_SimpleFormulas,NotOrdinaryOrdnance_DamagePerRankCalc,Multiplier,0,,(BaseValueConstant=0.05,BaseValueAttribute=,BaseValueScale=2)
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NotOrdinaryOrdnance/PassiveSkill_Operative_NotOrdinaryOrdnance.Default__PassiveSkill_Operative_NotOrdinaryOrdnance_C,CooldownTime,0,,(DataTable=/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,RowName=ElementalEffect_Chance,ValueName=FivePointSmall_19_B4A397164A67CA1A1F8DA0AA05927FFF)
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/BarrierTree/NotOrdinaryOrdnance/PassiveSkill_Operative_NotOrdinaryOrdnance.Default__PassiveSkill_Operative_NotOrdinaryOrdnance_C:UIStatData_OakPassiveAbilityAttributeInitializer_0,FormatText.string,0,,
+# Best Served Cold - Nova Damage multiplied by 5.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_SimpleFormulas.DataTable_Operative_SimpleFormulas,NotOrdinaryOrdnance_DamagePerRankCalc,Multiplier,0,,(BaseValueConstant=0.25,BaseValueAttribute=,BaseValueScale=1)
 
 # Futility Belt - Increase Damage Resistance to 30%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,FutilityBelt_DamageReduction,Value,0,,(BaseValueConstant=-0.3,BaseValueScale=1)
