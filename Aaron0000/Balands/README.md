@@ -211,6 +211,10 @@ Applied a band-aid fix to Vendor Crashing by adjusting how the Item of the Day a
 
 Fixed the Digi-Clone's Dahl pistol appearing in Maurice's 30th week Black Market vendor. Said week now spawns with a Nova Berner instead alongside the usual Hellwalker and Firestorm.
 
+Made the Hunt(ed), Hunt(er), Hunt(ress), and Revengenador Legendary items.
+
+ ┗----Rationale: There are two reasons for this change. The primary reason is that a player will often overlook blue items, so making them Legendary should prevent them from being carelessly overlooked to some extent. The other minor reason is that they exist in the world drop pool for Legendary gear and it makes sense for them to be Legendary in return (the ECHO-2 remains white for comedic reasons.)
+ 
 Changed the way ammo drops occur so that they should now drop more ammo for what you actually need.
 
 Fixed Beef Plisken yeeting his loot into the abyss.
