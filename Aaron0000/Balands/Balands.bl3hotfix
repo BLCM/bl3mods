@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.0.1
+### Version: 1.0.2
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -4565,6 +4565,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/ClassMods/_Desig
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/PartSet_CM_Ixora_SRN_L01.PartSet_CM_Ixora_SRN_L01,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/InvBalD_CM_Ixora2_SRN_L01.InvBalD_CM_Ixora2_SRN_L01,RuntimePartList.AllParts.AllParts[73].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/ClassMods/_Design/SRN/L01/PartSet_CM_Ixora2_SRN_L01.PartSet_CM_Ixora2_SRN_L01,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
+
+# Make the Hunt sniper rifles and the Revengenador Legendary.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Balance/Balance_SR_JAK_Hunter.Balance_SR_JAK_Hunter,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Hunted/Balance/Balance_SR_JAK_Hunted.Balance_SR_JAK_Hunted,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Huntress/Balance/Balance_SR_JAK_Huntress.Balance_SR_JAK_Huntress,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/Revengenader/Balance/InvBalD_Shield_LGD_Revengenader.InvBalD_Shield_LGD_Revengenader,RarityData,0,,OakInventoryRarityData'"/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary"'
 
 ### AMMO DROP CHANGES (Credit to Apocalyptech) ###
 
