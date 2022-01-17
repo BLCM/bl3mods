@@ -2545,7 +2545,7 @@ Duct Tape Mod - Removed Gun-Splash Immunity. Grenade immunity remains. Fixed the
 
 Quick Breather - No change.
 
-Pocket Full of Grenades - Added a 5%-per-point bonus to grenade damage.
+Pocket Full of Grenades - Added bonus grenade damage to the same extent as the grenade regeneration.
 
 Old-U - No change.
 
@@ -2605,7 +2605,7 @@ Distributed Denial - No change.
 
 Really Expensive Jacket - No change.
 
-Best Served Cold - Nova damage doubled, cooldown removed.
+Best Served Cold - Nova damage multiplied by five.
 
 Futility Belt - Increased damage resistance to 30%.
 
