@@ -75,6 +75,8 @@ Increased the number of Bloody Harvest Legendary drops from Captain Haunt.
 
 Increased the chance of GenIVIV dropping from her loot pool to 30%.
 
+Increased the chance of Evil Lilith dropping from her loot pool to 60% to compensate for the obnoxiously long immunity phase.
+
 Increased the chance of finding Arms-Race exclusive Legendary gear in the Arms Race chests that are locked behind fights.
 
 Added the Bekah to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 40%.
@@ -198,7 +200,7 @@ Enemies no longer spawn with cryo-element guns for the most part.
 
 Anointed Enforcers should no longer spawn outside of the encounters with the Anointed Alpha, Luke, and Muldock.
 
-┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
+ ┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
  
 
 OTHER CHANGES/FIXES
