@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.0.3
+### Version: 1.0.4
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -26,7 +26,7 @@
 ### CREDITS:
 ### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-tuao on the Edirian Fabricator, Beef Plisken's loot fix, ammo drop adjustments, the Siren COM blank part fix, some DLC enemies not dropping shields, and the database from which I obtained a lot of information.
 ### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
-### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
 ### Grimm, apple 1417 - For lending a hand to figuring out some stuff.
 ### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
 ### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
@@ -2930,8 +2930,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/StatusEffect_Generic_KillStackReloadDamage.StatusEffect_Generic_KillStackReloadDamage,AttributeEffects.AttributeEffects[2].BaseModifierValue,0,,(BaseValueConstant=0.1,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_Endgame.DataTable_Raid1_Endgame,RowName=KillsStackReloadDmg,ValueName=Custom_A_21_F62C55A14374986C5D004E94DD277B3D),BaseValueAttributeNone,AttributeInitializer=None,BaseValueScale=1)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/UIStat_EG_Generic_KillStackReloadDamage.UIStat_EG_Generic_KillStackReloadDamage,FormatText.string,0,,[endgame][endgamebold]Killing[/endgamebold] an enemy grants 3% Weapon Damage and Reload Speed for 25 seconds, this effect stacks.[/endgame]
 
-# Skill-End Bonus Elemental Damage - Reduce Damage to 20% from 50%.
+# Skill-End Bonus Elemental Damage - Reduce Damage to 20% from 50%, fix the number not changing on the card (credit to ZetaDaemon for the UI fix)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,ActionSkillStarted_BonusEleDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.2
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Cryo/UIStat_EG_SkillEndBonusEleDamage_Cryo.UIStat_EG_SkillEndBonusEleDamage_Cryo,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Cryo Damage with Weapons for 10 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Fire/UIStat_EG_SkillEndBonusEleDamage_Fire.UIStat_EG_SkillEndBonusEleDamage_Fire,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Fire Damage with Weapons for 10 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Radiation/UIStat_EG_SkillEndBonusEleDamage_Radiation.UIStat_EG_SkillEndBonusEleDamage_Radiation,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Radiation Damage with Weapons for 10 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Shock/UIStat_EG_SkillEndBonusEleDamage_Shock.UIStat_EG_SkillEndBonusEleDamage_Shock,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Shock Damage with Weapons for 10 seconds.[/endgame]
 
 # On Grenade Throw - Reduce Damage to 15% from 25%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,GrenadeThrow_GlobalDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.15
@@ -3899,7 +3903,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Bal
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,Wrath_DamageBonus,Value,0,,(BaseValueConstant=0.0833,BaseValueScale=1)
 
 # Anima - Update Description to mention it doesn't work with Cold Hearted.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Anima/PassiveSkill_Siren_Anima.Default__PassiveSkill_Siren_Anima_C,AbilityDescription.string,0,,Amara's [skillbold]Status Effects[/skillbold] deal increased damage over time and have increased duration. Her [skillbold]Action Skill Status Effect[/skillbold] deals further increased damage. <br><br>(Anima is rendered useless by Cold Hearted, Amara's Cryo Element.)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Anima/PassiveSkill_Siren_Anima.Default__PassiveSkill_Siren_Anima_C,AbilityDescription.string,0,,Amara's [skillbold]Status Effects[/skillbold] deal increased damage over time and have increased duration. Her [skillbold]Action Skill Status Effect[/skillbold] deals further increased damage. <br><br>[italic](Anima is rendered useless by Cold Hearted, Amara's Cryo Element.)[/italic]
 
 # Tempest - Fix Tempest's Shock Damage only getting boosted to 40% instead of 50% (CZ47)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Tempest/StatusEffect_Siren_Tempest_DA.StatusEffect_Siren_Tempest_DA,AttributeEffects.AttributeEffects[1].Mutator.Object..PerGradeUpgrade,,0,(DataTableValue=(DataTable=DataTable'"/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance"',RowName="ElementalEffect_Damage",ValueName="FivePointMedium_21_6CE8CC0645575BFC0483689FFA697E8A"))
