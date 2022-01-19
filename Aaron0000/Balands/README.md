@@ -782,7 +782,7 @@ TK's Wave - Improved the accuracy considerably. Reduced damage of Heatwave and S
 
  ┗----Rationale: The 20% damage reduction to the elemental Waves is simply to be consistent with how elemental parts reduce damage on most other weapons.
 
-The Garcia - No change.
+The Garcia - Lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
 
 The Tidal Wave - Improved accuracy slightly, doubled projectile speed, set ammo cost to 3.
 
@@ -1487,7 +1487,7 @@ Snowshoe - Reduced lifesteal to 5%.
 
 Super Soldier - Damage immunity reduced to a 33% damage reduction.
 
- ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
+ ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
 Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly.
 
@@ -1530,7 +1530,7 @@ Rectifier - Damage buffed by 2333%.
 
 Stop-Gap - Damage immunity changed to 100% damage resistance.
 
- ┗----Rationale: Same situation as the Super Soldier. In order the keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 100% damage resistance (50% less damage received.)
+ ┗----Rationale: Same situation as the Super Soldier. In order to the keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 100% damage resistance (50% less damage received.)
 
 The Transformer - No change.
 
@@ -1798,6 +1798,7 @@ NOTE ABOUT CLASS MOD CHANGES: Several skills were replaced with different skills
 LEGENDARY GUNNER CLASS MODS
 ---------------------------
 Bear Trooper - Replaced Explosive Punctuation with Vampyr.
+
  ┗----Rationale: Bear Trooper is all about getting as much up-time with the mechs active as possible. Vampyr is chosen as an option to help keep the mechs up and running.
 
 Blast Master - No change.
@@ -2921,15 +2922,17 @@ Sustainment - Lowered lifesteal to 0.2% per point and changed the description to
 
 Conflux - No change.
 
-Forceful Expression - No change.
+Forceful Expression - Updated the description to be more accurate.
 
 MYSTICAL ASSAULT
 ----------------
-Do Harm - No change.
+Do Harm - Reduced the maximum amount of stacks to 50, doubled the effectiveness of each stack.
+
+ ┗----Rationale: While this skill can reach up to 99 stacks under certain conditions, those conditions are not realistic in practice. Rather than funneling more damage into the already bloated Phase-skill anointments to make Amara's Action Skills more viable at endgame, Do Harm has been tweaked instead. Hence the maximum count has been reduced to 50 while the effectiveness has been doubled to equal the same strength it would have previously with 99 stacks. This change also narrows the gap between the Phasezerker class mod and other class mods such as the Stone for Action-Skill oriented builds. Same applies to Violent Tapestry.
 
 Fast Hand(s) - No change.
 
-Violent Tapestry - No change.
+Violent Tapestry - Reduced the maximum amount of stacks to 50, doubled the effectiveness of each stack.
 
 Alacrity - No change.
 
@@ -3011,7 +3014,7 @@ Free the Soul - No change.
 
 Atman - No change.
 
-Clear the Mind - No change.
+Clear the Mind - Increased the duration to 12 seconds.
 
 
 ACTION SKILLS/AUGMENTS
