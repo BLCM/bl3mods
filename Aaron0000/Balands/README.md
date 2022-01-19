@@ -37,7 +37,8 @@ Increased the odds of Evil Lilith dropping her specific drops to 60% to compensa
 
 Adjusted the description of the Guardian 4N631 slightly.
 
-###
+#
+_
 
 BASIC PLAYER CHANGES
 --------------------
