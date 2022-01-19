@@ -1,5 +1,42 @@
 # DISCLAIMER - The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
+# CHANGELOG (for Github users)
+------------------------------
+
+1.0.6
+-----
+Fixed The Iron Bank and Praemunitus not decreasing the heat rate of COV weapons and made them display the heat reduction on the skill card.
+
+Made Deep Well display the heat reduction on the skill card.
+
+1.0.5
+-----
+Adjusted Forceful Expression's description to be more accurate to its actual effects.
+
+Halved Do Harm and Violent Tapestry's maximum stacks to 50 and doubled the efficiency of each stack.
+
+Increased Clear the Mind's duration to 12 seconds.
+
+Garcia - Increased damage by 24%, lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 25%, reduced vertical recoil by 40%, and increased fire rate by 60%.
+
+1.0.4
+-----
+Fixed the Action Skill End Elemental Damage anointments' damage percentages in the anointment text not changing to the correct number of 20% (courtesy of ZetaDaemon.)
+
+1.0.3
+-----
+Restored Best Served Cold's cooldown back to three seconds to prevent possible nova-spam issues when using the Seein' Dead (that and the reduction didn't seem to work in the first place). Increased the nova damage to five times what it would be normally.
+
+1.0.2
+-----
+Changed the rarity of the Hunt(er), Hunt(ress), Hunt(ed), and Revengenador to Legendary to help prevent them from being overlooked when they randomly drop.
+
+1.0.1
+-----
+Increased the odds of Evil Lilith dropping her specific drops to 60% to compensate for her obnociously long immunity phase.
+
+Adjusted the description of the Guardian 4N631 slightly.
+
 
 BASIC PLAYER CHANGES
 --------------------
@@ -2532,7 +2569,7 @@ DOUBLED AGENT
 -------------
 Synchronicity - No change.
 
-Praemunitas - No change.
+Praemunitus - No change.
 
 Borrowed Time - No change.
 
