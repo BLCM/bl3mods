@@ -3,6 +3,10 @@
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.0.7
+-----
+Reverted most of the changes to the Flakker's explosions. It now shoots out slightly further away while accelerating slightly slower than normal. Damage has also been adjusted slightly.
+
 1.0.6
 -----
 Fixed The Iron Bank and Praemunitus not decreasing the heat rate of COV weapons and made them display the heat reduction on the skill card.
@@ -1238,9 +1242,9 @@ Tunguska - Explosion radius increased by 68%.
 
 Critical Thug - Updated description to be more accurate.
 
-Flakker - Ammo cost increased to 4, initial projectile speed increased by 400%, initial projectile acceleration reduced by 33%, max initial projectile speed lowered 33%, subsequent projectile speed reduced by 33%. 
+Flakker - Ammo cost increased to 4, initial projectile speed doubled, initial projectile acceleration reduced by 33%.
 
- ┗----Rationale: The changes allow the initial shot to go further from the player, and the explosions are more compact.
+ ┗----Rationale: The changes allow the initial shot to go further from the player and lessen the chance of accidentally killing oneself. Other than extreme scenarios such as Torgue-Cross Promotion used with a Splash Radius passive, one can safely use the Flakker as long as the user isn't running directly into the path of destruction.
 
 Redline - No change.
 
