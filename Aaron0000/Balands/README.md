@@ -5,6 +5,14 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.0.8
+-----
+Replaced the grenade capacity on "Why Can't I Carry All These Grenades" with grenade regeneration.
+
+Increased the DE4DEYE's high-health damage bonus to 50%.
+
+Increased the low-health threshold of the Low-Health damage anointment to 50%, lowered the damage bonus to 60%.
+
 1.0.7
 -----
 Reverted most of the changes to the Flakker's explosions. It now shoots out slightly further away while accelerating slightly slower than normal. Damage has also been adjusted slightly.
