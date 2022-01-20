@@ -5,6 +5,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.0.9
+-----
+Fixed the Health Regen anointment using the incorrect item to get the percentage displayed for how much health-per-second is regained, and buffed the value to 8% per second.
+
 1.0.8
 -----
 Replaced the grenade capacity on "Why Can't I Carry All These Grenades" with grenade regeneration.
@@ -2193,7 +2197,7 @@ Conc Hits - Reduced to 0.25% damage per stack and now factors in skill and gear 
 
 ASE Life Steal - Reduced to 1.5% and reduced duration to 10 seconds.
 
-ASE Health Regen - Improved to 5%.
+ASE Health Regen - Improved to 8%.
 
 ASE Damage Reduction - Increased to 25% and now factors in skill and gear bonuses.
 
@@ -2443,7 +2447,7 @@ Vampyr - Reduced Lifesteal to 0.6% per point.
 
 Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade regeneration, added a 10%-per-point Grenade Damage bonus.
 
- ┗----Rationale: Unless the skill was made to add a copious amount of grenades, nobody would want this. Grenade damage is a nice incentive to pick this skill up, and replacing grenade capacity with grenade regeneration makes it easier to maintain a supply of grenades that do not hit multiple times to trigger Means of Destruction.
+ ┗----Rationale: Unless the skill was made to add a copious amount of grenades, nobody would want this. Grenade damage is a nice incentive to pick this skill up, and replacing grenade capacity with grenade regeneration makes it easier to maintain a supply of grenades that can't hit multiple times (grenades like the Cloning Maddening Tracker or Ghast Call are often able to semi-maintain their own grenade count by themselves with Means of Destruction.)
 
 To The Last - No change.
 
