@@ -1,4 +1,6 @@
-# DISCLAIMER - The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
+# DISCLAIMER
+
+The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
 # CHANGELOG (for Github users)
 ------------------------------
@@ -1910,7 +1912,7 @@ Bounty Hunter - No change.
 
 Cosmic Stalker - No change.
 
-DE4DEYE - No change.
+DE4DEYE - Increased the high-health damage boost to 50%.
 
 Friend-Bot - Pet damage bonus increased to 50%.
 
@@ -2179,9 +2181,9 @@ Conc Hits - Reduced to 0.25% damage per stack and now factors in skill and gear 
 
  ┗----Rationale: It may seem like a tiny number, but by making it affect gears and skills each stack now has slightly greater effect than the one before it. It ends up being notably stronger than 25% at 100 stacks.
 
-25/50 Low-Health Kill - Increased damage bonus to 100%.
+25/50 Low-Health Kill - Increased damage bonus to 60% and increased the low-health threshold to 50%.
 
-ASE Life Steal - Reduced to 1.5%, reduced duration to 10 seconds.
+ASE Life Steal - Reduced to 1.5% and reduced duration to 10 seconds.
 
 ASE Health Regen - Improved to 5%.
 
@@ -2431,9 +2433,9 @@ Auto Bear - No change.
 
 Vampyr - Reduced Lifesteal to 0.6% per point.
 
-Why Can't I Carry All These Grenades - Now boosts two grenades per point. Added a 10%-per-point Grenade Damage bonus.
+Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade regeneration, added a 10%-per-point Grenade Damage bonus.
 
- ┗----Rationale: Unless the skill was made to add a copious amount of grenades, nobody would want this. Grenade damage is a nice incentive to pick this skill up.
+ ┗----Rationale: Unless the skill was made to add a copious amount of grenades, nobody would want this. Grenade damage is a nice incentive to pick this skill up, and replacing grenade capacity with grenade regeneration makes it easier to maintain a supply of grenades that do not hit multiple times to trigger Means of Destruction.
 
 To The Last - No change.
 
