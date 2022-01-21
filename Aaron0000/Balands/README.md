@@ -5,6 +5,20 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.0
+-----
+Reverted the Body and Mind changes.
+
+Reverted the replacement of Violent Tapestry to Alacrity on the Stone.
+
+Added splash notes to Tandava, Fist Over Matter, Fracture, Downfall, Glow Up, Shooting Star, and Light Fantastic.
+
+Reduced Fracture cooldown to 22 seconds.
+
+Made the lifesteal anoint actually display 1.5% instead of rounding up to 2%.
+
+Reverted Devil's Foursum projectile speed increase and lowered splash radius to 245 from 275.
+
 1.0.9
 -----
 Fixed the Health Regen anointment using the incorrect item to get the percentage displayed for how much health-per-second is regained, and buffed the value to 8% per second.
@@ -1206,9 +1220,7 @@ Craps - No change.
 
 Devastator - No change.
 
-Devil's Foursum - Splash radius set to 275, projectile speed increased by 20%.
-
- ┗----Rationale: Gearbox overbuffed the radius on this thing, so the radius has been adjusted to still have a decently large explosion without outright taking the player down in the process.
+Devil's Foursum - Base splash radius set to 245.
 
 Echo - No change.
 
@@ -1975,7 +1987,7 @@ Spiritual Driver - Gun damage bonus now also affects slide damage.
 
  ┗----Rationale: Like with the Violent Momentum change. It adds a bit of extra variety and makes logical sense that something moving fast hurts when it hits something.
 
-Stone - Rush stack chance increased to 20% and replaced Violent Tapestry with Alacrity.
+Stone - Rush stack chance increased to 20%.
 
 
 
@@ -3063,9 +3075,7 @@ Joyful Freedom - No change.
 
 Burn Both Ends - Increased stack duration to ten seconds, updated description to mention that it only affects kinetic and elemental damage.
 
-Body and Mind - Reduced the damage by 50%, doubled the nova radius.
-
- ┗----Rationale: Ideally this skill would have a timer on it limiting the amount of times it can trigger within a certain period of time, but the next best thing that can be done to limit the apocalyptic synergy with the Face-puncher is to chop the damage down a chunk. The radius has been boosted as some sort of compensation for melee builds to be able to damage enemies further away from your initial target for a little more crowd-damage.
+Body and Mind - No change.
 
 Free the Soul - No change.
 
@@ -3079,11 +3089,11 @@ ACTION SKILLS/AUGMENTS
 One of Amara's bigger issues is a reliance on her Action Skills but lacking the cooldown to use them frequently without the use of things such as Expedite or Topped Off. Since Topped Off has been nerfed and having viable options other than Expedite is a good thing (especially if you lack the Designer's Cut DLC), most of her Action Skills have received a substantial reduction in cooldown length.
 
 
-Phaseslam - Increased damage by 42%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
+Phaseslam - Increased damage by 42%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Fracture - Increased damage by 92%, lowered cooldown to 26 seconds.
+Fracture - Increased damage by 92%, lowered cooldown to 22 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Downfall - Made Downfall's slam damage and radius the same as a standard Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds.
+Downfall - Made Downfall's slam damage and radius the same as a standard Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds, increased the flight speed by 25%. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Revelation - Removed damage penalty, increased damage 150%.
 
@@ -3095,7 +3105,7 @@ Deliverance - Projectile damage increased by 300%, cooldown lowered to 20 second
 
 Reverbration - Damage reduced by 50% (damage on the skill card does not match actual damage, deals roughly the same damage as standard Phasecast on initial hit now), lowered cooldown to 22 seconds.
 
-Tandava - Damage increased by 77%, cooldown lowered to 24 seconds.
+Tandava - Damage increased by 77%, cooldown lowered to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Soul Sap - Reduced lifesteal to 15%, reduce Ascendant bonus to 5%.
 
