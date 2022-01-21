@@ -19,6 +19,8 @@ Made the lifesteal anoint actually display 1.5% instead of rounding up to 2%.
 
 Reverted Devil's Foursum projectile speed increase and lowered splash radius to 245 from 275.
 
+Increased Downfall's flight speed by 25%.
+
 1.0.9
 -----
 Fixed the Health Regen anointment using the incorrect item to get the percentage displayed for how much health-per-second is regained, and buffed the value to 8% per second.
