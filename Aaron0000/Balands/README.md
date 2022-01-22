@@ -13,7 +13,7 @@ Implemented most features from the Unofficial Community Patch (for Borderlands 3
 
 Slightly adjusted the duration of the following anointments: Clone-Swap weapon damage, Phasecast weapon damage, and Attack Command movement.
 
-Removed Legendary gear from Earl's Black Market's standard item pool and limited the Item of the Day Legendary gear to level 35 or higher.
+Removed Legendary gear (that isn't a quest reward) from Earl's Black Market and replaced the Item of the Day with a guaranteed Alien-Barrel weapon due to Legendary gear being too cheap in the beginning of a playthrough. This change will hopefully be reverted in a future update after adjusting the prices in Earl's vendor.
 
 Buffed the damage of the Kyb's Worth by 35%.
 
