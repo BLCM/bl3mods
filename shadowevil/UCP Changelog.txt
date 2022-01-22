@@ -1,0 +1,87 @@
+Borderlands 3 UCP Changelog/Mods.
+
+Included Mods:
+1. Shooting Star Shield fix (Credits to Lonemasterino)
+2. No reload notification (Credit to Apocalyptech)
+3. FASTER NPCS (Credit to CZ47)
+4. AMMO DROP CHANGES (Credit to Apocalyptech)
+5. Vendor Crash Band-Aid (Credit to CZ47)
+6. Beef Plisken Loot Drop Pattern Fix. (Credit to Apocalyptech)
+7. Fix DLC2 and DLC4 Enemies not dropping shields. (Credit to Apoacalyptech)
+8. Fix Siren COMs sometimes spawning with a blank part. (Credit to Apocalyptech)
+9. Droughts Stocked Porta-Potties
+10. Map De-fogger (Credits to Novenic)
+11. Mega TimeSaver XL
+12. Patch Slaughterstar 3000 Boss Drop
+13. Atlas HQ Fast Travel: Upper Courtyard/Base of Elevator/Rhys' Office
+14. Trial Names Fix
+15. Red Text Explainer
+16. No Loyalty reward notifications
+17. Smaller UI Scaling (85%)
+18. No Wasted Equipment (Modified so you're three times more likely to find something for your class rather than none at all)
+
+
+Individual Patch Notes:
+
+Characters:
+FL4K:
+
+Fixing the Loader giving you proper damagereduction instead of increased damage intake and making all pet passives scale with Barbaric Yawp
+Making the damagereduction bonus from pet a positive value on the card to avoid confusion.
+
+Amara:
+
+The card states it provides Health Regen based on Max health, but currently it's Missing Health Regen.
+Tempest states that it gives a total of 50% bonus shock damage at 5/5, however currently at max it only gives a 40% bonus. (20 + 20 instead of 30 + 20), this fixes that.
+Deep well currently only Provides -15% Heat per Shot instead of 20%, this fixes that.
+
+Moze:
+
+None
+
+Zane:
+
+Fixing Sheer Will so the bonus cooldown on crit also works for Mntis
+
+General:
+
+Shooting Star Shield works on all maps (Credits to Lonemasterino for this one)
+Plus Ultra, Loop of 4N631 and the All-in Shield now work with Zane's and Fl4k's purple Tree Action Skills
+No reload notifications
+
+Faster NPCs:
+Typhon - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Claptrap - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Claptrap DLC6 - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Maya - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Ava - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Ava DLC6 - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Clay - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Clay DLC6 - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Lilith - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Lorelei - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Lorelei DLC6 - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Gaige - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+Hammerlock DLC2 - Movement Speed increased to 50% faster than a standard Vault Hunter, sprint speed increased to 75%.
+
+Ammo Drop Changes:
+Changed Ammo loot to be based on missing ammo. 
+
+Fixed Plisken Loot to not drop into the void.
+Fixed DLC2 and DLC4 Enemies not dropping shields.
+Fixed Siren COMs sometimes spawning with a blank part.
+Fixed the Droughts Porta-Potties not spawning with loot in early game.
+Entire map is de-fogged (minus the challenges and everything) when you enter a new map.
+Faster Lootable Containers, Doors, Vehicle Interaction animations, Catch-A-Ride digistruct speed, and Eridian Tools.
+Every Red Text gun now explains what the gun does.
+Atlas HQ has more shortcuts now.
+Slaughterstar 3000 Bosses no longer drop their loot to the void.
+Easier explaination of which trials is which.
+Removed all Loyalty Reward notifications.
+All skills that scale with Mayhem will state that they do with their multiplier value.
+All anointments will have a timer on how long they will last (some did before but all do now)
+
+
+
+
+
