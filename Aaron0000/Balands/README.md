@@ -1,9 +1,21 @@
+(Includes the vast majority of the Unofficial Communty Patch's changes other than Red-Text Explainer and the smaller HUD Size, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+
 # DISCLAIMER
 
 The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
 # CHANGELOG (for Github users)
 ------------------------------
+
+1.1.1
+-----
+Implemented most features from the Unofficial Community Patch (for Borderlands 3) other than Red-Text Explainer and Smaller HUD that weren't already included in Balands. This means you do not need to run the Unofficial Community Patch at the same time as Balands.
+
+Slightly adjusted the duration of the following anointments: Clone-Swap weapon damage, Phasecast weapon damage, and Attack Command movement.
+
+Removed Legendary gear from Earl's Black Market's standard item pool and limited the Item of the Day Legendary gear to level 35 or higher.
+
+Buffed the damage of the Kyb's Worth by 35%.
 
 1.1.0
 -----
@@ -96,7 +108,7 @@ LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
-Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a Legendary gun or shield, increased amount of items in the vendor to 20.
+Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day an (almost guaranteed) Legendary gun or shield starting from level 35, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
@@ -2261,7 +2273,7 @@ Auto Bear Ammo Regen - Increased ammo regen to 15%.
 
 OPERATIVE ANOINTMENTS
 ---------------------
-Digi-Clone Weapon Damage - Reduced to 35% damage, increased duration to 8 seconds, and now factors in skill and gear bonuses.
+Digi-Clone Weapon Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
 
 MNTIS Damage - Reduced to 70% damage.
 
@@ -2302,7 +2314,7 @@ Grav Damage - Reduced to 50% damage and now factors in skill and gear bonuses.
 
 Action Command Lifesteal - Lifesteal reduced to 3%.
 
-Action Command Movespeed - Increased to 50%, duration increased to 10 seconds, and now factors in skill and gear bonuses.
+Action Command Movespeed - Increased to 50%, duration increased to 8 seconds, and now factors in skill and gear bonuses.
 
 Fade Active Accuracy - Accuracy and handling improved to 75% and now factors in skill and gear bonuses.
 
@@ -2315,7 +2327,7 @@ Astral Projection Damage - No change.
 
 Phasecast Status - Added status effect damage, increased chance to 100%, increased duration to 10 seconds, and now factors in skill and gear bonuses.
 
-Phasecast Weapon - Reduced to 40% damage, reduced duration to 9 seconds, and now factors in skill and gear bonuses.
+Phasecast Weapon - Reduced to 40% damage, reduced duration to 8 seconds, and now factors in skill and gear bonuses.
 
 Phaseslam Weapon - Reduced to 45% damage and now factors in skill and gear bonuses.
 
@@ -2783,7 +2795,7 @@ Interplanetary Stalker - No change.
 
 Leave No Trace - No change.
 
-Second Intention - Increased reload speed bonuses (25%/50% at 5/5)
+Second Intention - Increased reload speed bonuses (25%/50% at 5/5.)
 
 Hunter's Eye - No change.
 
