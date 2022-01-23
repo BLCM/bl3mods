@@ -7,6 +7,20 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.2
+-----
+Updated to include Unofficial Community Patch version 1.0.1.
+
+Added the newest version of Apoclyptech's Red Text Explainer.
+
+Fixed an issue with the Kill-o'-the-Wisp where the ammo cost was connected to the damage table instead of the actual damage attribute. Increased the Wisp's damage by 25% and fixed the Wisp's ammo cost to be 3.
+
+Fixed Vosk's Deathgrip's description to say it is four seconds instead of six.
+
+Made the Spade fully-automatic and reduced the fire rate by 50%.
+
+Removed the increased weighting on legendary class mod drops from Jack-Bot since class mods now more heavily favor dropping for your current Vault Hunter due to UCP implementation.
+
 1.1.1
 -----
 Implemented most features from the Unofficial Community Patch (for Borderlands 3) other than Red-Text Explainer and Smaller HUD that weren't already included in Balands. This means you do not need to run the Unofficial Community Patch at the same time as Balands.
@@ -184,7 +198,7 @@ Added the Ember's Purge to Loco Chantelle, increased chance of Loco Chantelle dr
 
 Added the Scoville to Freddie, increased chance of Freddie dropping from his loot pool to 20%.
 
-Added the Rico to Jack-bot, increasedd weight for DLC1 class mods to drop, increased chance of Jack-bot dropping from its pool to 70%.
+Added the Rico to Jack-bot and increased the chance of Jack-bot dropping from its pool to 70%.
 
 Added Digby's Smooth Tube to Junpei Goat Eater, increased chance of Junpei dropping from his loot pool to 20%.
 
@@ -1006,7 +1020,7 @@ Frequency - Magazine size increased by 6.
 
 Insider - Ammo cost reduced by 1.
 
-Kill-o'-the-Wisp - No change.
+Kill-o'-the-Wisp - Fixed an issue with the damage and ammo cost. Ammo cost is reduced to 3.
 
 Mind-Killer - No change.
 
@@ -1290,7 +1304,7 @@ Redline - No change.
 
 Shocker - No change.
 
-Spade - No change.
+Spade - Now fully automatic, fire rate reduced by 50%.
 
 The Boring Gun - Now launches initial projectile at high speed, gravity of projectile lowered considerably, reload speed improved by 38%, 75% critical hit damage bonus added.
 
