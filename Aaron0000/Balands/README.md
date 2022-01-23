@@ -1,4 +1,4 @@
-(Includes the vast majority of the Unofficial Communty Patch's changes other than Red-Text Explainer and the smaller HUD Size, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+(Includes the vast majority of the Unofficial Communty Patch's changes other than the smaller HUD Size, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
 
 # DISCLAIMER
 
