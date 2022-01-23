@@ -25,6 +25,13 @@ me if you have any questions about that!
 Changelog
 =========
 
+**v1.6.0** - Jan 22, 2022
+ * Updated formatting:
+   * Starts on the next line, rather than inline with the red text
+   * Uses a pink color
+   * Italicized
+ * Changed Beacon to "all effects on card" text; our addition was redundant
+
 **v1.5.0** - Nov 19, 2021
  * Updated for Vault Card 3 items.
 
