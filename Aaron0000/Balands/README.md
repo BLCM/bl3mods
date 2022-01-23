@@ -11,7 +11,7 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 -----
 Updated to include Unofficial Community Patch version 1.0.1.
 
-Added the newest version of Apoclyptech's Red Text Explainer.
+Added the newest version of Apocalyptech's Red Text Explainer.
 
 Fixed an issue with the Kill-o'-the-Wisp where the ammo cost was connected to the damage table instead of the actual damage attribute. Increased the Wisp's damage by 25% and fixed the Wisp's ammo cost to be 3.
 
