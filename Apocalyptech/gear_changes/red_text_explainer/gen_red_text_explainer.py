@@ -62,8 +62,8 @@ for language in ['en']:
             v='1.6.0',
             cats=', '.join(cats),
             ss=[
-                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
-                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/fastball.png',
+                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/quadomizer.png',
+                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/nagata.png',
                 ],
             )
 
