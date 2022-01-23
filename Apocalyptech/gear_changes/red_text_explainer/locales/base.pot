@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-11-19 09:43-0600\n"
+"POT-Creation-Date: 2022-01-22 18:20-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3983,864 +3983,860 @@ msgstr ""
 msgid "This little light of mine..."
 msgstr ""
 
-#: gen_red_text_explainer.py:1539
-msgid "reload triggers nova of current element"
-msgstr ""
-
-#: gen_red_text_explainer.py:1540
+#: gen_red_text_explainer.py:1541
 msgid "Gargoyle"
 msgstr ""
 
-#: gen_red_text_explainer.py:1542
+#: gen_red_text_explainer.py:1543
 msgid "Defender of the night."
 msgstr ""
 
-#: gen_red_text_explainer.py:1543
+#: gen_red_text_explainer.py:1544
 msgid "rapidly shoots projectiles and occasional globs of corrosive"
 msgstr ""
 
-#: gen_red_text_explainer.py:1544
+#: gen_red_text_explainer.py:1545
 msgid "Light Show"
 msgstr ""
 
-#: gen_red_text_explainer.py:1546
+#: gen_red_text_explainer.py:1547
 msgid "Give me some light, away!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1547
+#: gen_red_text_explainer.py:1548
 msgid "shots form rotating circular pattern"
 msgstr ""
 
-#: gen_red_text_explainer.py:1548
+#: gen_red_text_explainer.py:1549
 msgid "Miscreant"
 msgstr ""
 
-#: gen_red_text_explainer.py:1550
+#: gen_red_text_explainer.py:1551
 msgid "Why waste time shoot lot gun when few gun do trick?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1551
+#: gen_red_text_explainer.py:1552
 msgid "full-auto rockets"
 msgstr ""
 
-#: gen_red_text_explainer.py:1552
+#: gen_red_text_explainer.py:1553
 msgid "Peashooter"
 msgstr ""
 
-#: gen_red_text_explainer.py:1554
+#: gen_red_text_explainer.py:1555
 msgid "If you think there's no risk, take a good dose."
 msgstr ""
 
-#: gen_red_text_explainer.py:1555
+#: gen_red_text_explainer.py:1556
 msgid "crits generate MIRV-like ricochets"
 msgstr ""
 
-#: gen_red_text_explainer.py:1556
+#: gen_red_text_explainer.py:1557
 msgid "The Blanc"
 msgstr ""
 
-#: gen_red_text_explainer.py:1558
+#: gen_red_text_explainer.py:1559
 msgid "This machine unerringly arrives at the truth."
 msgstr ""
 
-#: gen_red_text_explainer.py:1559
+#: gen_red_text_explainer.py:1560
 msgid "damaging enemies grants +35% weapon damage when switching, stacks x10"
 msgstr ""
 
-#: gen_red_text_explainer.py:1560
+#: gen_red_text_explainer.py:1561
 msgid "Quickdraw"
 msgstr ""
 
-#: gen_red_text_explainer.py:1562
+#: gen_red_text_explainer.py:1563
 msgid "Oo, that smarts!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1565
+#: gen_red_text_explainer.py:1566
 msgid "Bloom"
 msgstr ""
 
-#: gen_red_text_explainer.py:1567
+#: gen_red_text_explainer.py:1568
 msgid "A thorn by any other name would probably still hurt."
 msgstr ""
 
-#: gen_red_text_explainer.py:1568
+#: gen_red_text_explainer.py:1569
 msgid "hold trigger to charge burst-fire shots"
 msgstr ""
 
-#: gen_red_text_explainer.py:1574
+#: gen_red_text_explainer.py:1575
 msgid "Unkempt Harold"
 msgstr ""
 
-#: gen_red_text_explainer.py:1576
+#: gen_red_text_explainer.py:1577
 msgid "I wasn't counting either."
 msgstr ""
 
-#: gen_red_text_explainer.py:1577
+#: gen_red_text_explainer.py:1578
 msgid "narrow spread of explosive projectiles"
 msgstr ""
 
-#: gen_red_text_explainer.py:1578
+#: gen_red_text_explainer.py:1579
 msgid "Chandelier"
 msgstr ""
 
-#: gen_red_text_explainer.py:1580
+#: gen_red_text_explainer.py:1581
 msgid "It will not last the night."
 msgstr ""
 
-#: gen_red_text_explainer.py:1581
+#: gen_red_text_explainer.py:1582
 msgid "shoots disk projectiles"
 msgstr ""
 
-#: gen_red_text_explainer.py:1582
+#: gen_red_text_explainer.py:1583
 msgid "Brightside"
 msgstr ""
 
-#: gen_red_text_explainer.py:1584
+#: gen_red_text_explainer.py:1585
 msgid "It's killing me."
 msgstr ""
 
-#: gen_red_text_explainer.py:1585
+#: gen_red_text_explainer.py:1586
 msgid "reload becomes drone which splits into four elemental drones"
 msgstr ""
 
-#: gen_red_text_explainer.py:1586
+#: gen_red_text_explainer.py:1587
 msgid "Dakota"
 msgstr ""
 
-#: gen_red_text_explainer.py:1588
+#: gen_red_text_explainer.py:1589
 msgid "The longarm of the law."
 msgstr ""
 
-#: gen_red_text_explainer.py:1589
+#: gen_red_text_explainer.py:1590
 msgid "randomly fires shock, incendiary, or non-elemental pellets"
 msgstr ""
 
-#: gen_red_text_explainer.py:1590
+#: gen_red_text_explainer.py:1591
 msgid "The Shoddy"
 msgstr ""
 
-#: gen_red_text_explainer.py:1592
+#: gen_red_text_explainer.py:1593
 msgid "100% Genuine Fakobs."
 msgstr ""
 
-#: gen_red_text_explainer.py:1593
+#: gen_red_text_explainer.py:1594
 msgid "projectiles fall very close to player"
 msgstr ""
 
-#: gen_red_text_explainer.py:1594
+#: gen_red_text_explainer.py:1595
 msgid "Frequency"
 msgstr ""
 
-#: gen_red_text_explainer.py:1596
+#: gen_red_text_explainer.py:1597
 msgid "Hertz so good."
 msgstr ""
 
-#: gen_red_text_explainer.py:1597
+#: gen_red_text_explainer.py:1598
 msgid "kills increase burst count for a short time"
 msgstr ""
 
-#: gen_red_text_explainer.py:1598
+#: gen_red_text_explainer.py:1599
 msgid "Spade"
 msgstr ""
 
-#: gen_red_text_explainer.py:1600
+#: gen_red_text_explainer.py:1601
 msgid "Lucille, God gave me a gift."
 msgstr ""
 
-#: gen_red_text_explainer.py:1601
+#: gen_red_text_explainer.py:1602
 msgid "gyrojets penetrate, leaving sticky bombs on enemies"
 msgstr ""
 
-#: gen_red_text_explainer.py:1602
+#: gen_red_text_explainer.py:1603
 msgid "Robin's Call"
 msgstr ""
 
-#: gen_red_text_explainer.py:1604
+#: gen_red_text_explainer.py:1605
 msgid "Are you not he?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1605
+#: gen_red_text_explainer.py:1606
 msgid "crits ricochet 1 bullet and return 1 to mag"
 msgstr ""
 
-#: gen_red_text_explainer.py:1606
+#: gen_red_text_explainer.py:1607
 msgid "Splinter"
 msgstr ""
 
-#: gen_red_text_explainer.py:1608
+#: gen_red_text_explainer.py:1609
 msgid "The first one is always the hardest."
 msgstr ""
 
-#: gen_red_text_explainer.py:1610
+#: gen_red_text_explainer.py:1611
 msgid "crits might ricochet 3x instead of just 1, unsure"
 msgstr ""
 
-#: gen_red_text_explainer.py:1611
+#: gen_red_text_explainer.py:1612
 msgid "Proprietary License"
 msgstr ""
 
-#: gen_red_text_explainer.py:1613
+#: gen_red_text_explainer.py:1614
 msgid "A little from Column A, a little from Column B."
 msgstr ""
 
-#: gen_red_text_explainer.py:1614
+#: gen_red_text_explainer.py:1615
 msgid "crits ricochet, ads increases fire rate"
 msgstr ""
 
-#: gen_red_text_explainer.py:1615
+#: gen_red_text_explainer.py:1616
 msgid "Mother Too"
 msgstr ""
 
-#: gen_red_text_explainer.py:1617
+#: gen_red_text_explainer.py:1618
 msgid "Thank you for taking the time to read this flavor text. This flavor text loves you."
 msgstr ""
 
-#: gen_red_text_explainer.py:1618
+#: gen_red_text_explainer.py:1619
 msgid "continuous laser, reload becomes laser drone"
 msgstr ""
 
-#: gen_red_text_explainer.py:1619
+#: gen_red_text_explainer.py:1620
 msgid "Flipper"
 msgstr ""
 
-#: gen_red_text_explainer.py:1621
+#: gen_red_text_explainer.py:1622
 msgid "Put one foot in front of the other."
 msgstr ""
 
-#: gen_red_text_explainer.py:1622
+#: gen_red_text_explainer.py:1623
 msgid "hold trigger for increased projectile count"
 msgstr ""
 
-#: gen_red_text_explainer.py:1623
+#: gen_red_text_explainer.py:1624
 msgid "Complex Root"
 msgstr ""
 
-#: gen_red_text_explainer.py:1625
+#: gen_red_text_explainer.py:1626
 msgid "Your brain is a creative computer."
 msgstr ""
 
-#: gen_red_text_explainer.py:1626
+#: gen_red_text_explainer.py:1627
 msgid "shoots sporadic zig-zagging projectiles"
 msgstr ""
 
-#: gen_red_text_explainer.py:1627
+#: gen_red_text_explainer.py:1628
 msgid "Narp"
 msgstr ""
 
-#: gen_red_text_explainer.py:1629
+#: gen_red_text_explainer.py:1630
 msgid "What happened to your peace lily?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1630
+#: gen_red_text_explainer.py:1631
 msgid "when reloading, remaining rounds grant bonuses to next mag"
 msgstr ""
 
-#: gen_red_text_explainer.py:1631
+#: gen_red_text_explainer.py:1632
 msgid "Core Buster"
 msgstr ""
 
-#: gen_red_text_explainer.py:1633
+#: gen_red_text_explainer.py:1634
 msgid "Work it."
 msgstr ""
 
-#: gen_red_text_explainer.py:1634
+#: gen_red_text_explainer.py:1635
 msgid "MIRV effect on explosion"
 msgstr ""
 
-#: gen_red_text_explainer.py:1635
+#: gen_red_text_explainer.py:1636
 msgid "Doc Hina's Miracle Bomb"
 msgstr ""
 
-#: gen_red_text_explainer.py:1637
+#: gen_red_text_explainer.py:1638
 msgid "Give me fever."
 msgstr ""
 
-#: gen_red_text_explainer.py:1638
+#: gen_red_text_explainer.py:1639
 msgid "generates incendiary pools while bouncing"
 msgstr ""
 
-#: gen_red_text_explainer.py:1641
+#: gen_red_text_explainer.py:1642
 msgid "Faulty Star"
 msgstr ""
 
-#: gen_red_text_explainer.py:1643
+#: gen_red_text_explainer.py:1644
 msgid "Some infinities are bigger than other infinities."
 msgstr ""
 
-#: gen_red_text_explainer.py:1645
+#: gen_red_text_explainer.py:1646
 msgid "Guilty Spark"
 msgstr ""
 
-#: gen_red_text_explainer.py:1647
+#: gen_red_text_explainer.py:1648
 msgid "You can just float and sputter."
 msgstr ""
 
-#: gen_red_text_explainer.py:1649
+#: gen_red_text_explainer.py:1650
 msgid "Plus Ultra"
 msgstr ""
 
-#: gen_red_text_explainer.py:1651
+#: gen_red_text_explainer.py:1652
 msgid "Remember why you started down this path."
 msgstr ""
 
-#: gen_red_text_explainer.py:1652 gen_red_text_explainer.py:1656
+#: gen_red_text_explainer.py:1653 gen_red_text_explainer.py:1657
 msgid "increases character health"
 msgstr ""
 
-#: gen_red_text_explainer.py:1653
+#: gen_red_text_explainer.py:1654
 msgid "Limit Break"
 msgstr ""
 
-#: gen_red_text_explainer.py:1655
+#: gen_red_text_explainer.py:1656
 msgid "It's dangerous to have a race car in the red."
 msgstr ""
 
-#: gen_red_text_explainer.py:1657
+#: gen_red_text_explainer.py:1658
 msgid "Ashen Beast"
 msgstr ""
 
-#: gen_red_text_explainer.py:1659
+#: gen_red_text_explainer.py:1660
 msgid "Our eyes are yet to open."
 msgstr ""
 
-#: gen_red_text_explainer.py:1660
+#: gen_red_text_explainer.py:1661
 msgid "projectiles penetrate targets"
 msgstr ""
 
-#: gen_red_text_explainer.py:1661
+#: gen_red_text_explainer.py:1662
 msgid "Blood-Starved Beast"
 msgstr ""
 
-#: gen_red_text_explainer.py:1663
+#: gen_red_text_explainer.py:1664
 msgid "Chaos, or some say Chaosm."
 msgstr ""
 
-#: gen_red_text_explainer.py:1664
+#: gen_red_text_explainer.py:1665
 msgid "projectiles penetrate targets and have a chance to explode"
 msgstr ""
 
-#: gen_red_text_explainer.py:1665
+#: gen_red_text_explainer.py:1666
 msgid "Minor Kong"
 msgstr ""
 
-#: gen_red_text_explainer.py:1667
+#: gen_red_text_explainer.py:1668
 msgid "Dear John..."
 msgstr ""
 
-#: gen_red_text_explainer.py:1668 gen_red_text_explainer.py:1672
+#: gen_red_text_explainer.py:1669 gen_red_text_explainer.py:1673
 msgid "spawns a homing child rocket when main rocket hits enemy"
 msgstr ""
 
-#: gen_red_text_explainer.py:1669
+#: gen_red_text_explainer.py:1670
 msgid "Major Kong"
 msgstr ""
 
-#: gen_red_text_explainer.py:1671
+#: gen_red_text_explainer.py:1672
 msgid "Hi there!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1673
+#: gen_red_text_explainer.py:1674
 msgid "Blind Bandit"
 msgstr ""
 
-#: gen_red_text_explainer.py:1675
+#: gen_red_text_explainer.py:1676
 msgid "I got a pretty good look at you."
 msgstr ""
 
-#: gen_red_text_explainer.py:1678
+#: gen_red_text_explainer.py:1679
 msgid "Blind Sage"
 msgstr ""
 
-#: gen_red_text_explainer.py:1680
+#: gen_red_text_explainer.py:1681
 msgid "There is more than one sort of prison."
 msgstr ""
 
-#: gen_red_text_explainer.py:1683
+#: gen_red_text_explainer.py:1684
 msgid "Reunion"
 msgstr ""
 
-#: gen_red_text_explainer.py:1685
+#: gen_red_text_explainer.py:1686
 msgid "Hello, boys! I'm back!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1686 gen_red_text_explainer.py:1690
+#: gen_red_text_explainer.py:1687 gen_red_text_explainer.py:1691
 msgid "hits spawn homing projectiles"
 msgstr ""
 
-#: gen_red_text_explainer.py:1687
+#: gen_red_text_explainer.py:1688
 msgid "Convergence"
 msgstr ""
 
-#: gen_red_text_explainer.py:1689
+#: gen_red_text_explainer.py:1690
 msgid "At the summit, you will find yourselves united."
 msgstr ""
 
-#: gen_red_text_explainer.py:1691
+#: gen_red_text_explainer.py:1692
 msgid "Likable Rascal"
 msgstr ""
 
-#: gen_red_text_explainer.py:1693
+#: gen_red_text_explainer.py:1694
 msgid "You must have a thousand questions."
 msgstr ""
 
-#: gen_red_text_explainer.py:1696
+#: gen_red_text_explainer.py:1697
 msgid "Lovable Rogue"
 msgstr ""
 
-#: gen_red_text_explainer.py:1698
+#: gen_red_text_explainer.py:1699
 msgid "I know."
 msgstr ""
 
-#: gen_red_text_explainer.py:1701
+#: gen_red_text_explainer.py:1702
 msgid "P.A.T. Mk. II"
 msgstr ""
 
-#: gen_red_text_explainer.py:1703
+#: gen_red_text_explainer.py:1704
 msgid "War is a matter of arithmetic."
 msgstr ""
 
-#: gen_red_text_explainer.py:1705 gen_red_text_explainer.py:1711
-#: gen_red_text_explainer.py:1716
+#: gen_red_text_explainer.py:1706 gen_red_text_explainer.py:1712
+#: gen_red_text_explainer.py:1717
 msgid "unique voice module"
 msgstr ""
 
-#: gen_red_text_explainer.py:1706
+#: gen_red_text_explainer.py:1707
 msgid "P.A.T. Mk. I"
 msgstr ""
 
-#: gen_red_text_explainer.py:1708 gen_red_text_explainer.py:1714
+#: gen_red_text_explainer.py:1709 gen_red_text_explainer.py:1715
 msgid "War breeds war again."
 msgstr ""
 
-#: gen_red_text_explainer.py:1712
+#: gen_red_text_explainer.py:1713
 msgid "P.A.T. Mk. III"
 msgstr ""
 
-#: gen_red_text_explainer.py:1717
+#: gen_red_text_explainer.py:1718
 msgid "Sawpenny"
 msgstr ""
 
-#: gen_red_text_explainer.py:1719
+#: gen_red_text_explainer.py:1720
 msgid "Measure once, cut once!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1720 gen_red_text_explainer.py:1724
+#: gen_red_text_explainer.py:1721 gen_red_text_explainer.py:1725
 msgid "fires sawblades which pierce enemies, ricochet, and explode"
 msgstr ""
 
-#: gen_red_text_explainer.py:1721
+#: gen_red_text_explainer.py:1722
 msgid "Rebound"
 msgstr ""
 
-#: gen_red_text_explainer.py:1723
+#: gen_red_text_explainer.py:1724
 msgid "Measure twice, cut twice!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1725
+#: gen_red_text_explainer.py:1726
 msgid "Septimator"
 msgstr ""
 
-#: gen_red_text_explainer.py:1727
+#: gen_red_text_explainer.py:1728
 msgid "When shooting six just isn't enough."
 msgstr ""
 
-#: gen_red_text_explainer.py:1728 gen_red_text_explainer.py:1732
+#: gen_red_text_explainer.py:1729 gen_red_text_explainer.py:1733
 msgid "hits have a chance to launch meteors at enemies"
 msgstr ""
 
-#: gen_red_text_explainer.py:1729
+#: gen_red_text_explainer.py:1730
 msgid "Septimator Prime"
 msgstr ""
 
-#: gen_red_text_explainer.py:1731
+#: gen_red_text_explainer.py:1732
 msgid "I oft have wish'd for Hell for ease from Heaven."
 msgstr ""
 
-#: gen_red_text_explainer.py:1733
+#: gen_red_text_explainer.py:1734
 msgid "Critical Mass"
 msgstr ""
 
-#: gen_red_text_explainer.py:1735
+#: gen_red_text_explainer.py:1736
 msgid "Lend me your energy!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1738
+#: gen_red_text_explainer.py:1739
 msgid "Prompt Critical"
 msgstr ""
 
-#: gen_red_text_explainer.py:1740
+#: gen_red_text_explainer.py:1741
 msgid "Explodermaster masterexploder."
 msgstr ""
 
-#: gen_red_text_explainer.py:1745
+#: gen_red_text_explainer.py:1746
 msgid "Binary Operator"
 msgstr ""
 
-#: gen_red_text_explainer.py:1747
+#: gen_red_text_explainer.py:1748
 msgid "Do it or don't. What's an attempt?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1748
+#: gen_red_text_explainer.py:1749
 msgid "one-shot enemies up to a hidden HP value, otherwise 2 damage"
 msgstr ""
 
-#: gen_red_text_explainer.py:1749
+#: gen_red_text_explainer.py:1750
 msgid "Boogeyman"
 msgstr ""
 
-#: gen_red_text_explainer.py:1751
+#: gen_red_text_explainer.py:1752
 msgid "Comin' ta GET'CHA!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1754
+#: gen_red_text_explainer.py:1755
 msgid "Critical Thug"
 msgstr ""
 
-#: gen_red_text_explainer.py:1756
+#: gen_red_text_explainer.py:1757
 msgid "No shooting at parties!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1757
+#: gen_red_text_explainer.py:1758
 msgid "fires fast-exploding sticky bombs, crits ricochet to other enemies"
 msgstr ""
 
-#: gen_red_text_explainer.py:1758
+#: gen_red_text_explainer.py:1759
 msgid "Dark Army"
 msgstr ""
 
-#: gen_red_text_explainer.py:1760
+#: gen_red_text_explainer.py:1761
 msgid "I am the gun."
 msgstr ""
 
-#: gen_red_text_explainer.py:1763
+#: gen_red_text_explainer.py:1764
 msgid "Firefly"
 msgstr ""
 
-#: gen_red_text_explainer.py:1765
+#: gen_red_text_explainer.py:1766
 msgid "Something bugging you?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1768
+#: gen_red_text_explainer.py:1769
 msgid "Hotfoot Teddy"
 msgstr ""
 
-#: gen_red_text_explainer.py:1770
+#: gen_red_text_explainer.py:1771
 msgid "You could have prevented this."
 msgstr ""
 
-#: gen_red_text_explainer.py:1771
+#: gen_red_text_explainer.py:1772
 msgid "flamethrower, hold fire for more damage, locks on and chains to other enemies"
 msgstr ""
 
-#: gen_red_text_explainer.py:1772
+#: gen_red_text_explainer.py:1773
 msgid "Ice Age"
 msgstr ""
 
-#: gen_red_text_explainer.py:1774
+#: gen_red_text_explainer.py:1775
 msgid "Allow me to break the ice."
 msgstr ""
 
-#: gen_red_text_explainer.py:1775
+#: gen_red_text_explainer.py:1776
 msgid "lobs a cryo grenade in an arc"
 msgstr ""
 
-#: gen_red_text_explainer.py:1776
+#: gen_red_text_explainer.py:1777
 msgid "Superconducting Plasma Coil"
 msgstr ""
 
-#: gen_red_text_explainer.py:1778
+#: gen_red_text_explainer.py:1779
 msgid "Harness the 4th state of matter."
 msgstr ""
 
-#: gen_red_text_explainer.py:1779
+#: gen_red_text_explainer.py:1780
 msgid "long burst-fire, short-range elemental splash damage"
 msgstr ""
 
-#: gen_red_text_explainer.py:1780
+#: gen_red_text_explainer.py:1781
 msgid "Res"
 msgstr ""
 
-#: gen_red_text_explainer.py:1782
+#: gen_red_text_explainer.py:1783
 msgid "She was right here, I swear. Hair blue as the sky."
 msgstr ""
 
-#: gen_red_text_explainer.py:1785
+#: gen_red_text_explainer.py:1786
 msgid "Fasterfied Tizzy"
 msgstr ""
 
-#: gen_red_text_explainer.py:1787
+#: gen_red_text_explainer.py:1788
 msgid "I feel the hurt...time for a rampage!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1788
+#: gen_red_text_explainer.py:1789
 msgid "fire rate increases the longer fire is held, explosive shots"
 msgstr ""
 
-#: gen_red_text_explainer.py:1789
+#: gen_red_text_explainer.py:1790
 msgid "Snide Trickshot"
 msgstr ""
 
-#: gen_red_text_explainer.py:1791
+#: gen_red_text_explainer.py:1792
 msgid "Smooth sextuple action."
 msgstr ""
 
-#: gen_red_text_explainer.py:1794
+#: gen_red_text_explainer.py:1795
 msgid "HOT Spring"
 msgstr ""
 
-#: gen_red_text_explainer.py:1796
+#: gen_red_text_explainer.py:1797
 msgid "Please, call me doctor."
 msgstr ""
 
-#: gen_red_text_explainer.py:1799
+#: gen_red_text_explainer.py:1800
 msgid "Beskar"
 msgstr ""
 
-#: gen_red_text_explainer.py:1801
+#: gen_red_text_explainer.py:1802
 msgid "This is the way."
 msgstr ""
 
-#: gen_red_text_explainer.py:1804
+#: gen_red_text_explainer.py:1805
 msgid "Madcap"
 msgstr ""
 
-#: gen_red_text_explainer.py:1806
+#: gen_red_text_explainer.py:1807
 msgid "Sometimes there is no next time."
 msgstr ""
 
-#: gen_red_text_explainer.py:1809
+#: gen_red_text_explainer.py:1810
 msgid "Gas Mask"
 msgstr ""
 
-#: gen_red_text_explainer.py:1811
+#: gen_red_text_explainer.py:1812
 msgid "Fight until the end; until your last breath."
 msgstr ""
 
-#: gen_red_text_explainer.py:1816
+#: gen_red_text_explainer.py:1817
 msgid "Free Radical"
 msgstr ""
 
-#: gen_red_text_explainer.py:1818
+#: gen_red_text_explainer.py:1819
 msgid "Don't be so negative."
 msgstr ""
 
-#: gen_red_text_explainer.py:1819
+#: gen_red_text_explainer.py:1820
 msgid "sends out homing projectiles towards hit target"
 msgstr ""
 
-#: gen_red_text_explainer.py:1820
+#: gen_red_text_explainer.py:1821
 msgid "Ionic Disruptor"
 msgstr ""
 
-#: gen_red_text_explainer.py:1822
+#: gen_red_text_explainer.py:1823
 msgid "I can bring you in warm, or... not at all."
 msgstr ""
 
-#: gen_red_text_explainer.py:1825
+#: gen_red_text_explainer.py:1826
 msgid "Redeye Rocket Pod"
 msgstr ""
 
-#: gen_red_text_explainer.py:1827
+#: gen_red_text_explainer.py:1828
 msgid "Even oppression itself fears Vladof."
 msgstr ""
 
-#: gen_red_text_explainer.py:1830
+#: gen_red_text_explainer.py:1831
 msgid "Atlas Replay"
 msgstr ""
 
-#: gen_red_text_explainer.py:1832
+#: gen_red_text_explainer.py:1833
 msgid "Anybody else want to negotiate?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1833
+#: gen_red_text_explainer.py:1834
 msgid "tracker darts in horizontal line, increased fire rate per tracked enemy"
 msgstr ""
 
-#: gen_red_text_explainer.py:1834
+#: gen_red_text_explainer.py:1835
 msgid "Bird of Prey"
 msgstr ""
 
-#: gen_red_text_explainer.py:1836
+#: gen_red_text_explainer.py:1837
 msgid "Someone's getting a treat!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1838
+#: gen_red_text_explainer.py:1839
 msgid "additional projectile deals 600% base damage"
 msgstr ""
 
-#: gen_red_text_explainer.py:1839
+#: gen_red_text_explainer.py:1840
 msgid "Guardian 4N631"
 msgstr ""
 
-#: gen_red_text_explainer.py:1841
+#: gen_red_text_explainer.py:1842
 msgid "You're alive for a reason. Go get 'em kid."
 msgstr ""
 
-#: gen_red_text_explainer.py:1843
+#: gen_red_text_explainer.py:1844
 msgid "shoots slow orbs which flap like a bird and reflect off walls"
 msgstr ""
 
-#: gen_red_text_explainer.py:1844
+#: gen_red_text_explainer.py:1845
 msgid "Mechanic"
 msgstr ""
 
-#: gen_red_text_explainer.py:1846
+#: gen_red_text_explainer.py:1847
 msgid "Let's get you rollin'!"
 msgstr ""
 
-#: gen_red_text_explainer.py:1848
+#: gen_red_text_explainer.py:1849
 msgid "shoots explosive car wheels"
 msgstr ""
 
-#: gen_red_text_explainer.py:1849
+#: gen_red_text_explainer.py:1850
 msgid "Kickcharger"
 msgstr ""
 
-#: gen_red_text_explainer.py:1851
+#: gen_red_text_explainer.py:1852
 msgid "Let it slide."
 msgstr ""
 
-#: gen_red_text_explainer.py:1853
+#: gen_red_text_explainer.py:1854
 msgid "shots pierce enemies"
 msgstr ""
 
-#: gen_red_text_explainer.py:1854
+#: gen_red_text_explainer.py:1855
 msgid "Torrent"
 msgstr ""
 
-#: gen_red_text_explainer.py:1856
+#: gen_red_text_explainer.py:1857
 msgid "haha gun go brrrr"
 msgstr ""
 
-#: gen_red_text_explainer.py:1857
+#: gen_red_text_explainer.py:1858
 msgid "bullets follow corkscrew pattern, every 10th bullet is a +380% damage shock"
 msgstr ""
 
-#: gen_red_text_explainer.py:1858
+#: gen_red_text_explainer.py:1859
 msgid "Re-Volter"
 msgstr ""
 
-#: gen_red_text_explainer.py:1860
+#: gen_red_text_explainer.py:1861
 msgid "Please conduct yourself."
 msgstr ""
 
-#: gen_red_text_explainer.py:1862
+#: gen_red_text_explainer.py:1863
 msgid "shock-enraged player will deal 200% bonus shock damage"
 msgstr ""
 
-#: gen_red_text_explainer.py:1863
+#: gen_red_text_explainer.py:1864
 msgid "Mesmer"
 msgstr ""
 
-#: gen_red_text_explainer.py:1865
+#: gen_red_text_explainer.py:1866
 msgid "Sink into the floor. Sink."
 msgstr ""
 
-#: gen_red_text_explainer.py:1868
+#: gen_red_text_explainer.py:1869
 msgid "Ringer / The Big Ringer / Dead Ringer"
 msgstr ""
 
-#: gen_red_text_explainer.py:1870
+#: gen_red_text_explainer.py:1871
 msgid "Obviously you're not a golfer."
 msgstr ""
 
-#: gen_red_text_explainer.py:1873
+#: gen_red_text_explainer.py:1874
 msgid "Super Soldier"
 msgstr ""
 
-#: gen_red_text_explainer.py:1875
+#: gen_red_text_explainer.py:1876
 msgid "Roland, out."
 msgstr ""
 
-#: gen_red_text_explainer.py:1878
+#: gen_red_text_explainer.py:1879
 msgid "Infernal Wish"
 msgstr ""
 
-#: gen_red_text_explainer.py:1880
+#: gen_red_text_explainer.py:1881
 msgid "It's there always, this dark passenger."
 msgstr ""
 
-#: gen_red_text_explainer.py:1885
+#: gen_red_text_explainer.py:1886
 msgid "Gold Rush"
 msgstr ""
 
-#: gen_red_text_explainer.py:1887
+#: gen_red_text_explainer.py:1888
 msgid "Pay dirt."
 msgstr ""
 
-#: gen_red_text_explainer.py:1889
+#: gen_red_text_explainer.py:1890
 msgid "also buffs reload speed, max 20 stacks"
 msgstr ""
 
-#: gen_red_text_explainer.py:1890
+#: gen_red_text_explainer.py:1891
 msgid "Troubleshooter"
 msgstr ""
 
-#: gen_red_text_explainer.py:1892
+#: gen_red_text_explainer.py:1893
 msgid "Tickles your fancy."
 msgstr ""
 
-#: gen_red_text_explainer.py:1894
+#: gen_red_text_explainer.py:1895
 msgid "element-switching orbs ricochet"
 msgstr ""
 
-#: gen_red_text_explainer.py:1895
+#: gen_red_text_explainer.py:1896
 msgid "Pyroburst"
 msgstr ""
 
-#: gen_red_text_explainer.py:1897
+#: gen_red_text_explainer.py:1898
 msgid "KEKW"
 msgstr ""
 
-#: gen_red_text_explainer.py:1898
+#: gen_red_text_explainer.py:1899
 msgid "after impact, bounces 5 times while spawning homing elemental orbs"
 msgstr ""
 
-#: gen_red_text_explainer.py:1901
+#: gen_red_text_explainer.py:1902
 msgid "Blade Fury"
 msgstr ""
 
-#: gen_red_text_explainer.py:1903
+#: gen_red_text_explainer.py:1904
 msgid "Master of the gun, the blade, and philosophy."
 msgstr ""
 
-#: gen_red_text_explainer.py:1906
+#: gen_red_text_explainer.py:1907
 msgid "Creeping Corruption"
 msgstr ""
 
-#: gen_red_text_explainer.py:1908
+#: gen_red_text_explainer.py:1909
 msgid "How it comes thus?"
 msgstr ""
 
-#: gen_red_text_explainer.py:1911
+#: gen_red_text_explainer.py:1912
 msgid "TNTina"
 msgstr ""
 
-#: gen_red_text_explainer.py:1913
+#: gen_red_text_explainer.py:1914
 msgid "Squishy. Squishy squishy squishy."
 msgstr ""
 
-#: gen_red_text_explainer.py:1916
+#: gen_red_text_explainer.py:1917
 msgid "Mana Well"
 msgstr ""
 
-#: gen_red_text_explainer.py:1918
+#: gen_red_text_explainer.py:1919
 msgid "With great (something) comes great (something else)"
 msgstr ""
 
-#: gen_red_text_explainer.py:1921
+#: gen_red_text_explainer.py:1922
 msgid "Bloodsucker"
 msgstr ""
 
-#: gen_red_text_explainer.py:1923
+#: gen_red_text_explainer.py:1924
 msgid "Chupa's organ transplant."
 msgstr ""
 
-#: gen_red_text_explainer.py:1926
+#: gen_red_text_explainer.py:1927
 msgid "Sidewinder"
 msgstr ""
 
-#: gen_red_text_explainer.py:1928
+#: gen_red_text_explainer.py:1929
 msgid "This is what I call a target-rich environment."
 msgstr ""
 

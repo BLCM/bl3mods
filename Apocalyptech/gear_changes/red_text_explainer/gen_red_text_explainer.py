@@ -59,7 +59,7 @@ for language in ['en']:
             ],
             contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.5.0',
+            v='1.6.0',
             cats=', '.join(cats),
             ss=[
                 'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
@@ -1536,7 +1536,8 @@ for language in ['en']:
             (_("Beacon"),
                 '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/UIStat_RedText_Decoupler',
                 _("This little light of mine..."),
-                _("reload triggers nova of current element")),
+                #_("reload triggers nova of current element")),
+                ON_CARD),
             (_("Gargoyle"),
                 '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/UIStat_RedText_Gargoyle',
                 _("Defender of the night."),
@@ -1949,12 +1950,18 @@ for language in ['en']:
                 hf_type = Mod.PATCH
                 hf_package = ''
 
+            # Make the first char of the explanation capital
+            explanation = explanation[0].upper() + explanation[1:]
+
             # Now generate the hotfix
             mod.comment(gear_name)
             mod.reg_hotfix(hf_type, hf_package,
                     obj_name,
                     attr_name,
-                    '[Flavor]{}[/Flavor] ({})'.format(redtext, elementize(explanation)))
+                    '[Flavor]{}[/Flavor] <p><p>    [nameplate_enemy_slight][italic]({}.)[/italic][/nameplate_enemy_slight]'.format(
+                        redtext,
+                        elementize(explanation),
+                        ))
             mod.newline()
 
     mod.close()
