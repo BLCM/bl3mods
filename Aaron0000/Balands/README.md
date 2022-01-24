@@ -7,6 +7,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.4
+-----
+Fixed the Action Skill End Badass/Boss Damage anointment having more damage than intended.
+
+Updated Juliet's Dazzle description slightly to mention that the projectiles penetrate and ricochet.
+
 1.1.3
 -----
 Adjusted some Red-Text Explainer descriptions for accuracy and removed redundant explanations for gear that already included a description on the card.
@@ -15,7 +21,7 @@ Adjusted Bloom, Frequency, Robin's Call, and Unseen Threat descriptions slightly
 
 Removed the ricochet text on the Stonethrower.
 
-Replaced Forge with Redistribution on the Green Monster, restored the unlisted splash effect and updated item description to be more accurate. Turns out giving items like the Sand Hawk excessive ammo regen without a timer isn't very healthy for balance.
+Replaced Forge with Redistribution on the Green Monster, restored the unlisted splash effect and updated item description to be more accurate. Turns out that giving items like the Sand Hawk excessive ammo regen without a timer isn't very healthy for balance.
 
 Fixed the Good Juju's secondary firing mode dealing less damage than it should.
 
