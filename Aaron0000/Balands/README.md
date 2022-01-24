@@ -7,6 +7,18 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.3
+-----
+Adjusted some Red-Text Explainer descriptions for accuracy and removed redundant explanations for gear that already included a description on the card.
+
+Adjusted Bloom, Frequency, Robin's Call, and Unseen Threat descriptions slightly.
+
+Removed the ricochet text on the Stonethrower.
+
+Replaced Forge with Redistribution on the Green Monster, restored the unlisted splash effect and updated item description to be more accurate. Turns out giving items like the Sand Hawk excessive ammo regen without a timer isn't very healthy for balance.
+
+Fixed the Good Juju's secondary firing mode dealing less damage than it should.
+
 1.1.2
 -----
 Updated to include Unofficial Community Patch version 1.0.1.
@@ -576,7 +588,7 @@ Corruption - Now deals corrosive damage instead of kinetic, reduced Corruption b
 
  ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly acclerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
 
-Good Juju - Set critical hit stack bonus to 8%.
+Good Juju - Set critical hit stack bonus to 8%, fixed secondary firing mode not dealing as much damage as it should.
 
 Kaos - Set "radsplosion" damage to 5 times card damage.
 
@@ -827,13 +839,13 @@ Mutant - Improved overall recoil control by 35%, now deals radiation damage inst
 
 Rowan's Call - No change.
 
-Stonethrower - No change.
+Stonethrower - Removed the ricochet text at the bottom of the card.
 
 Amazing Grace - 30% critical hit damage added.
 
 Bite Size - No change.
 
-Bloom - Recoil improved by 35%.
+Bloom - Recoil improved by 35%, adjusted description to be more accurate.
 
 King's/Queen's Call - Lifesteal set to 0.25%.
 
@@ -871,7 +883,7 @@ Nimble Jack - Added 30% critical hit damage.
 
 One-Pump Chump - Added 50% critical hit damage.
 
-Robin's Call - No change.
+Robin's Call - Adjusted description to be more accurate.
 
 Sledge's Shotgun - Sledge's Super Shotgun now also behaves like the triple barrel accessory; higher ammo cost, projectile count, and worse accuracy.
 
@@ -901,7 +913,7 @@ Skullmasher - Made accuracy spread wider by 100%.
 
  ┗----Rationale: This love child between a shotgun and a sniper was leaning more towards the sniper side. The accuracy penalty leads to still being useful at mid-long range but it won't be driving nails like a typical sniper rifle now.
 
-Unseen Threat - Set ricochet damage to 33% of card damage.
+Unseen Threat - Set ricochet damage to 33% of card damage, adjusted description to be more accurate.
 
 Wedding Invitation - Set ricochet damage to 2 times card damage.
 
@@ -1014,7 +1026,7 @@ Blind Sage - No change.
 
 Chandelier - Ammo cost reduced by 2.
 
-Frequency - Magazine size increased by 6.
+Frequency - Magazine size increased by 6, adjusted description to be more accurate.
 
  ┗----Rationale: Depending on the parts, you would not be able to use the maximum bonus of this weapon. The extra mag size remedies that.
 
@@ -1058,7 +1070,7 @@ Plasma Coil - No change.
 
 Polyaimorous - Set chain damage to 40% of card damage.
 
-S.F. Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
+SF Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
 
 Tsunami - No change.
 
@@ -1912,7 +1924,7 @@ Heat Exchanger - No change.
 
 Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%. (Possibly consider replacing Means of Destruction with Click, Click.)
 
-Green Monster - "Blast Master" splash damage effect removed, replaced Click, Click... with Forge.
+Green Monster - Replaced Click, Click... with Forge and made the description more accurate.
 
  ┗----Rationale: Given how the splash bonus is never mentioned anywhere on the card it isn't unreasonable to assume it wasn't intended. Losing a 100% boost in splash damage is a big loss, so it has at least been somewhat compensated for by replacing Click, Click... with Forge (for whatever reason, Click, Click... can only spawn with one point on this class mod legitimately.) Bullet hose builds should appreciate this.
 
