@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.1.3
+### Version: 1.1.4
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -1672,12 +1672,13 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Uniqu
 # Hotfoot Teddy - Reduce Damage to 1.6 from 2.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,HotfootTeddy,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.6
 
-# Juliet's Dazzle - Reduce Damage to 1.1 from 1.3, increase Magazine Size by 25%, increase Projectile Speed to 4000 from 2000, increase Projectile Acceleration to 1000 from 500, increase Max Speed to 10000 from 2500.
+# Juliet's Dazzle - Reduce Damage to 1.1 from 1.3, increase Magazine Size by 25%, increase Projectile Speed to 4000 from 2000, increase Projectile Acceleration to 1000 from 500, increase Max Speed to 10000 from 2500, adjusted description to mention the ricochets and penetration.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,Juliet,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Parts/Part_AR_TOR_Barrel_Juliet.Part_AR_TOR_Barrel_Juliet,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=2,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,RowName=Juliet,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayZoomScale.Att_Weapon_SwayZoomScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=50,BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.25,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/LightProjectile_TOR_AR_Juliet.Default__LightProjectile_TOR_AR_Juliet_C,Speed,0,,4000.0
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/LightProjectile_TOR_AR_Juliet.Default__LightProjectile_TOR_AR_Juliet_C,Acceleration,0,,1000.0
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/LightProjectile_TOR_AR_Juliet.Default__LightProjectile_TOR_AR_Juliet_C,MaxSpeed,0,,10000.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/UIStat_Manufacturer_Desc_Juliet.UIStat_Manufacturer_Desc_Juliet,Text.string,0,,Killing an enemy automatically refills the magazine. Shots ricochet off surfaces and penetrate enemies.
 
 # Laser-Sploder - Reduce Damage to 0.9 from 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,AR_LaserSploder,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.9
@@ -2798,7 +2799,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_ProjectileSpeed/UIStat_All_SkillEnd_ProjectileSpeed.UIStat_All_SkillEnd_ProjectileSpeed,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Projectile Speed is increased by 200% for a short time.[/endgame]
 
 # Badass/Boss Damage - Reduce Damage Bonus to 50% from 75%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_UniqueEnemyDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_UniqueEnemyDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.5
 
 # Action Skill Cooldown - Reduce Cooldown Bonus to 25% from 50%, increase Duration to 60 seconds, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CooldownRate,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.30
@@ -5233,7 +5234,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EchoV2/UIStat_RedText_EchoV2_3.UIStat_RedText_EchoV2_3,Text,0,,[Flavor]Do not look directly at ECHO-2.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Explodes after a short time in a large radius.)[/italic][/nameplate_enemy_slight]
 
 # Embrace the Pain
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text,0,,[Flavor]It hurts, hahahahaha! IT HURTS![/Flavor] <p><p>    [nameplate_enemy_slight][italic]([fire]Ignites[/fire] player when heated. During overheat, consumes no ammo and gains increased fire rate.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text,0,,[Flavor]It hurts, hahahahaha! IT HURTS![/Flavor] <p><p>    [nameplate_enemy_slight][italic]([fire]Ignites[/fire] player when overheated. During overheat, consumes no ammo and gains increased fire rate.)[/italic][/nameplate_enemy_slight]
 
 # EMP
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/EMP/UIStat_RedText_EMP.UIStat_RedText_EMP,Text,0,,[Flavor]Drop the shields.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Deals high damage to shields.)[/italic][/nameplate_enemy_slight]
@@ -5446,7 +5447,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Ogre/UIStat_RedText_Ogre.UIStat_RedText_Ogre,Text,0,,[Flavor]It's all ogre now.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires explosive rounds.)[/italic][/nameplate_enemy_slight]
 
 # Pain is Power
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatDamage.UIStat_RedText_HeatDamage,Text,0,,[Flavor]Nobody kills me but ME![/Flavor] <p><p>    [nameplate_enemy_slight][italic]([fire]Ignites[/fire] player when heated. During overheat, consumes no ammo and gains increased damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatDamage.UIStat_RedText_HeatDamage,Text,0,,[Flavor]Nobody kills me but ME![/Flavor] <p><p>    [nameplate_enemy_slight][italic]([fire]Ignites[/fire] player when overheated. During overheat, consumes no ammo and gains increased damage.)[/italic][/nameplate_enemy_slight]
 
 # Peacemonger
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Warmonger/UIStat_RedText_Warmonger.UIStat_RedText_Warmonger,Text,0,,[Flavor]Look around, chief. You've got a right to protect yourself.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a rocket which eventually splits up into smaller rockets.)[/italic][/nameplate_enemy_slight]
@@ -5488,7 +5489,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/UI/UIStat
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/UIStat_RedText_Rampager.UIStat_RedText_Rampager,Text,0,,[Flavor]You've had this one coming a long time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires slow orbs that link to and damage nearby enemies. Fires additional projectiles at linked foes when the orbs detonate mid-air.)[/italic][/nameplate_enemy_slight]
 
 # Rebel Yell
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/UIStat_RedText_RebelYell.UIStat_RedText_RebelYell,Text,0,,[Flavor]When you charge, yell like Furies.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Regular bullets deal normal damage, trackers deal [shock]shock[/shock] damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/RebellYell/UIStat_RedText_RebelYell.UIStat_RedText_RebelYell,Text,0,,[Flavor]When you charge, yell like Furies.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Secondary mode fires [shock]shock[/shock] trackers like a shotgun.)[/italic][/nameplate_enemy_slight]
 
 # Red Queen
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/RedQueen/UI/UIStat_RedText_RedQueen.UIStat_RedText_RedQueen,Text,0,,[Flavor]OFF WITH THEIR HEADS![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Grenade splits in two with a laser connecting both grenades.)[/italic][/nameplate_enemy_slight]
