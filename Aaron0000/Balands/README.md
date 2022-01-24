@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.5
+-----
+Improved the rate of experience gain in Mayhem Mode by 1.5 times (50% higher) for each level.
+
 1.1.4
 -----
 Fixed the Action Skill End Badass/Boss Damage anointment having more damage than intended.
@@ -196,7 +200,7 @@ Increased the chance of Evil Lilith dropping from her loot pool to 60% to compen
 
 Increased the chance of finding Arms-Race exclusive Legendary gear in the Arms Race chests that are locked behind fights.
 
-Added the Bekah to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 40%.
+Added the Bekah and Superstreamer to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 50%.
 
 Added the Earworm to Graveward's Loot Pool, increased the chance of Graveward dropping from its loot pool to 40%.
 
