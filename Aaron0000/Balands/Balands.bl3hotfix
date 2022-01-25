@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.1.5
+### Version: 1.1.6
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -1145,11 +1145,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Desi
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,Torrent,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.275
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Parts/Part_SM_DAL_Barrel_Torrent.Part_SM_DAL_Barrel_Torrent,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Dahl/Att_Dahl_BurstSize.Att_Dahl_BurstSize,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=10,BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Dahl/Att_Dahl_BurstFireRate.Att_Dahl_BurstFireRate,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,BaseValueScale=1.5)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Dahl/Att_Dahl_SemiFireRate.Att_Dahl_SemiFireRate,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=8.85,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.8,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,RowName=Torrent,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.71425,BaseValueScale=1)))
 
-# Vanquisher - Increase Damage to 1.25 from 1, and adjust damage/fire-rate sliding bonuses, lower Sliding Damage and Fire Rate Bonus to 50%.
+# Vanquisher - Increase Damage to 1.25 from 1, and adjust damage/fire-rate sliding bonuses, lower Sliding Damage and Fire Rate Bonus to 50%, added 50% Bonus Slide Damage.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_Vanquisher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.25
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_Vanquisher,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1.5
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/UIStat_Manufacturer_Desc_Vanquisher.UIStat_Manufacturer_Desc_Vanquisher,Text,0,,Increases [skill]Damage[/skill] and [skill]Fire Rate[/skill] by [skill]50%[/skill] each while sliding.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/UIStat_Desc_Vanquisher.UIStat_Desc_Vanquisher,Text,0,,Increases [skill]Weapon Damage[/skill], [skill]Slide Damage[/skill], and [skill]Fire Rate[/skill] by [skill]50%[/skill] each while sliding.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/StatusEffect_Vanquisher.StatusEffect_Vanquisher,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,RowName=SM_Vanquisher,ValueName=Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22),BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,RowName=SM_Vanquisher,ValueName=Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22),BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Vanquisher/Parts/Part_SM_DAL_Barrel_Vanquisher.Part_SM_DAL_Barrel_Vanquisher,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_Slide_SpeedScale.Att_Players_Slide_SpeedScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.4,DataTableValue=(DataTable=/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_Slide_SpeedScale.Att_Players_Slide_SpeedScale,RowName=SM_Vanquisher,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Slide.Att_DamageSourceInstigatorMultiplier_Slide,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.5,BaseValueScale=1)))
 
 # AutoAime - Increase Damage to 1.2 from 1.15.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SR_AutoAime,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.2
@@ -3219,11 +3220,11 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Siren/Slam_MeleeDamage/StatusEffect_Siren_Slam_MeleeDamage.StatusEffect_Siren_Slam_MeleeDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Siren/Slam_MeleeDamage/UIStat_Siren_Slam_MeleeDamage.UIStat_Siren_Slam_MeleeDamage,FormatText.string,0,,[endgame]After using [endgamebold]Phaseslam[/endgamebold], Melee Damage is increased by 75% for 12 seconds.[/endgame]
 
-# Siren Cast Weapon Damage - Reduce Weapon Damage Bonus to 40% from 250%, reduce Duration to 9 seconds, make it ScaleSimple.
+# Siren Cast Weapon Damage - Reduce Weapon Damage Bonus to 40% from 250%, reduce Duration to 10 seconds, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Siren_Cast_WeaponDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.4
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Siren_Cast_WeaponDamage,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,8
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Siren_Cast_WeaponDamage,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,10
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Siren/Cast_WeaponDamage/StatusEffect_Siren_Cast_WeaponDamage.StatusEffect_Siren_Cast_WeaponDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Siren/Cast_WeaponDamage/UIStat_Siren_Cast_WeaponDamage.UIStat_Siren_Cast_WeaponDamage,FormatText.string,0,,[endgame]After using [endgamebold]Phasecast[/endgamebold], Weapon Damage is increased by 40% for 8 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Siren/Cast_WeaponDamage/UIStat_Siren_Cast_WeaponDamage.UIStat_Siren_Cast_WeaponDamage,FormatText.string,0,,[endgame]After using [endgamebold]Phasecast[/endgamebold], Weapon Damage is increased by 40% for 10 seconds.[/endgame]
 
 # Siren Slam Weapon Damage - Reduce Weapon Damage Bonus to 45% from 300%, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Siren_Slam_WeaponDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.45
@@ -3429,6 +3430,9 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Bal
 
 # Forced Feedback - Increase percentage to restored to 15%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_UrsaCorps/ForceFeedback/Att_Gunner_ForcedFeedback.Att_Gunner_ForcedFeedback:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueConstant,0,,0.15
+
+# Fire in the Skag Den - Increase percentage to 5% from 3%.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_FireInSkagDen,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.05
 
 # Grizzled - Adjust the Cooldown Reduction for the adjusted Iron Bear duration and cooldown.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,P_Grizzled,Cooldown_4_8A38A09E46E89B75CDB6F39A50278802,0,,0.6
@@ -5111,10 +5115,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/UIStat_RedText_Terror.UIStat_RedText_Terror,Text,0,,[Flavor]Bow to Drell, the pot roast king.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires [bold]explosive[/bold] sawblades which home in on enemies.)[/italic][/nameplate_enemy_slight]
 
 # Alchemist
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Alchemist/UIStat_RedText_Alchemist.UIStat_RedText_Alchemist,Text,0,,[Flavor]You can't gain something without giving something in return.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Gyrojets deal [shock]shock[/shock] damage, player takes small [shock]shock[/shock] damage upon firing.)[/italic][/nameplate_enemy_slight]
-
-# Amazing Grace
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/AmazingGrace/UIStat_RedText_AmazingGrace.UIStat_RedText_AmazingGrace,Text,0,,[Flavor]Memento mori.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits add 1 bullet to the magazine.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Alchemist/UIStat_RedText_Alchemist.UIStat_RedText_Alchemist,Text,0,,[Flavor]You can't gain something without giving something in return.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots deal [shock]shock[/shock] damage on impact and [fire]incendiary[/fire] splash, damages player with [shock]shock[/shock] damage upon firing.)[/italic][/nameplate_enemy_slight]
 
 # Baby Maker ++
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Unique/BabyMaker/UIStat_RedText_BabyMaker.UIStat_RedText_BabyMaker,Text,0,,[Flavor]Safety off.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Thrown weapon produce 4 copies of itself.)[/italic][/nameplate_enemy_slight]
@@ -5126,7 +5127,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Barrage/UIStat_RedText_Barrage.UIStat_RedText_Barrage,Text,0,,[Flavor]Quick maths.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Always burst-fire, alt-fire mode toggles zoom.)[/italic][/nameplate_enemy_slight]
 
 # Bearcat
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Bearcat/UIStat_RedText_Bearcat.UIStat_RedText_Bearcat,Text,0,,[Flavor]I love the smell of popcorn in the morning.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Burst-fires multiple bouncing grenades in horizontal row.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/_Unique/Bearcat/UIStat_RedText_Bearcat.UIStat_RedText_Bearcat,Text,0,,[Flavor]I love the smell of popcorn in the morning.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Burst-fires multiple bouncing grenades in a horizontal row.)[/italic][/nameplate_enemy_slight]
 
 # Bekah
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/Bekah/UIStat_RedText_Bekah.UIStat_RedText_Bekah,Text,0,,[Flavor]Shoot them in the face. Twice.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial bullet produces 3 more bullets in a horizontal spread.)[/italic][/nameplate_enemy_slight]
@@ -5168,10 +5169,10 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Summit/UIStat_RedText_Summit.UIStat_RedText_Summit,Text,0,,[Flavor]Can we get some 1G's in the chat?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Explodes immediately upon throwing.)[/italic][/nameplate_enemy_slight]
 
 # The Butcher
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/TheButcher/UIStat_RedText_TheButcher.UIStat_RedText_TheButcher,Text,0,,[Flavor]Fresh meat![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Chance to refill mag by random amount when fired.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/TheButcher/UIStat_RedText_TheButcher.UIStat_RedText_TheButcher,Text,0,,[Flavor]Fresh meat![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Chance to refill mag by a small amount when fired.)[/italic][/nameplate_enemy_slight]
 
 # Buttplug
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/UIStat_RedText_Buttplug.UIStat_RedText_Buttplug,Text,0,,[Flavor]You plug 'em, and they'll be on their butt.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Doubled melee damage when hitting the enemy from behind.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/UIStat_RedText_Buttplug.UIStat_RedText_Buttplug,Text,0,,[Flavor]You plug 'em, and they'll be on their butt.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Doubled melee damage when meleeing the enemy from behind.)[/italic][/nameplate_enemy_slight]
 
 # Carrier
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/_Design/_Unique/Carrier/UIStat_RedText_Carrier.UIStat_RedText_Carrier,Text,0,,[Flavor]I have arrived.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Hits spawn additional homing bullets.)[/italic][/nameplate_enemy_slight]
@@ -5188,8 +5189,11 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Chupa/UI/UIStat_
 # Cloud Kill
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/CloudKill/UIStat_RedText_CloudKill.UIStat_RedText_CloudKill,Text,0,,[Flavor]Now, you will rise.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Creates [corrosive]corrosive[/corrosive] cloud upon shooting an enemy.)[/italic][/nameplate_enemy_slight]
 
+# Cold Shoulder
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Prison/UIStat_RedText_Prison.UIStat_RedText_Prison,Text,0,,[Flavor]Say “freeze”![/Flavor] <p><p>    [nameplate_enemy_slight][italic](No special effects.)[/italic][/nameplate_enemy_slight]
+
 # Conference Call
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/ConferenceCall/UIStat_RedText_ConferenceCall.UIStat_RedText_ConferenceCall,Text,0,,[Flavor]Let's just ping everyone all at once.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots generates additional pellets on impact or after a set distance.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/_Unique/ConferenceCall/UIStat_RedText_ConferenceCall.UIStat_RedText_ConferenceCall,Text,0,,[Flavor]Let's just ping everyone all at once.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots generates additional pellets on impact or after a set period of time.)[/italic][/nameplate_enemy_slight]
 
 # Creeping Death
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/Sludge/UIStat_RedText_Sludge.UIStat_RedText_Sludge,Text,0,,[Flavor]I creep across the land.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires orbs that stick to surfaces and home in on your curent target.)[/italic][/nameplate_enemy_slight]
@@ -5198,7 +5202,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Un
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Crit/UIStat_RedText_Crit.UIStat_RedText_Crit,Text,0,,[Flavor]Slippery when wet.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Dealing damage heals the player, high critical damage, has a chance to drop when reloading.)[/italic][/nameplate_enemy_slight]
 
 # Crossroad
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/UIStat_RedText_Crossroad.UIStat_RedText_Crossroad,Text,0,,[Flavor]Open the gate for me.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires multiple projectiles in a 6-round burst.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Crossroad/UIStat_RedText_Crossroad.UIStat_RedText_Crossroad,Text,0,,[Flavor]Open the gate for me.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires multiple projectiles diagonally in a 6-round burst.)[/italic][/nameplate_enemy_slight]
 
 # Cutsman
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Cutsman/UIStat_RedText_Cutsman.UIStat_RedText_Cutsman,Text,0,,[Flavor]Little android man, born without a soul.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots produce a penetrating laser connected between two projectiles.)[/italic][/nameplate_enemy_slight]
@@ -5244,6 +5248,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_
 
 # Echo
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Echo/UIState_RedText_Echo1.UIState_RedText_Echo1,FormatText,0,,[Flavor]Don't make me repeat myself.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Sticky rounds explode 3 times.)[/italic][/nameplate_enemy_slight]
+
+# The Emperor's Condiment
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Emporer/UIStat_RedText_Emporer.UIStat_RedText_Emporer,Text,0,,[Flavor]I am the punishment of the food gods.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shoots laser beam that looks like mustard.)[/italic][/nameplate_enemy_slight]
 
 # Epicenter
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Epicenter/UI/UIStat_RedText_Epicenter.UIStat_RedText_Epicenter,Text,0,,[Flavor]It burns, burns, burns.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Ring of 13 orbs which deal [fire]incendiary[/fire] damage.)[/italic][/nameplate_enemy_slight]
@@ -5312,13 +5319,13 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/Handsome/UIStat_RedText_Handsome.UIStat_RedText_Handsome,Text,0,,[Flavor]Everyone thinks they are the hero of their own story.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Weapon is thrown Tediore-style and bounces in place. Handsome Jack voice module.)[/italic][/nameplate_enemy_slight]
 
 # Headsplosion
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Headsplosion/UIStat_RedText_Headsplosion.UIStat_RedText_Headsplosion,Text,0,,[Flavor]That happens all the time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Explosive rounds, critical hits ricochet three rounds.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Headsplosion/UIStat_RedText_Headsplosion.UIStat_RedText_Headsplosion,Text,0,,[Flavor]That happens all the time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Explosive rounds, critical hits ricochet three bullets.)[/italic][/nameplate_enemy_slight]
 
 # Hellfire
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/HellFire/UIStat_RedText_HellFire.UIStat_RedText_HellFire,Text,0,,[Flavor]We don't need no... something...[/Flavor] <p><p>    [nameplate_enemy_slight][italic](High damage-over-time damage and chance.)[/italic][/nameplate_enemy_slight]
 
 # Hellshock
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/UIStat_RedText_Hellshock.UIStat_RedText_Hellshock,Text,0,,[Flavor]I had not thought death had undone so many.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Projectiles switch element on bounce.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Hellshock/UIStat_RedText_Hellshock.UIStat_RedText_Hellshock,Text,0,,[Flavor]I had not thought death had undone so many.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Projectiles switch element on ricochet.)[/italic][/nameplate_enemy_slight]
 
 # Hellwalker
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/_Unique/_Legendary/Hellwalker/UIStat_RedText_Hellwalker.UIStat_RedText_Hellwalker,Text,0,,[Flavor]So, my demons. Your time has come.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Pentagram firing pattern, produces Metal sounds.)[/italic][/nameplate_enemy_slight]
@@ -5348,7 +5355,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Uniqu
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Infiniti/UIStat_RedText_Infiniti.UIStat_RedText_Infiniti,Text,0,,[Flavor]It's closer than you think! (no it isn't)[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Does not consume ammo.)[/italic][/nameplate_enemy_slight]
 
 # Jericho
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/UIStat_RedText_CloudBurst.UIStat_RedText_CloudBurst,Text,0,,[Flavor]I prefer the weapon you only need to fire once.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial projectile rises up and releases 3 downward projectiles.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/UIStat_RedText_CloudBurst.UIStat_RedText_CloudBurst,Text,0,,[Flavor]I prefer the weapon you only need to fire once.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial projectile rises up and releases 3 projectiles downward.)[/italic][/nameplate_enemy_slight]
 
 # Kaos
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Kaos/UIStat_RedText_Kaos.UIStat_RedText_Kaos,Text,0,,[Flavor]Grants the mystical art of exploding smallhands.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Slain enemies explode similarly to irradiated enemies.)[/italic][/nameplate_enemy_slight]
@@ -5356,8 +5363,11 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_
 # Kenulox
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/WorldDestroyer/UIStat_RedText_WorldDestroyer.UIStat_RedText_WorldDestroyer,Text,0,,[Flavor]Live life like it's early access.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires diverging bullets.)[/italic][/nameplate_enemy_slight]
 
+# Kevin's Chilly
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Kevins/UIStat_RedText_Kevins.UIStat_RedText_Kevins,Text,0,,[Flavor]This one goes to keleven.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](No special effect.)[/italic][/nameplate_enemy_slight]
+
 # Kill-o'-the-Wisp
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Wisp/UIStat_RedText_Wisp.UIStat_RedText_Wisp,Text,0,,[Flavor]Some say it can lead you to your fate.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a slow moving sphere which electrocutes nearby enemies.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/_Unique/Wisp/UIStat_RedText_Wisp.UIStat_RedText_Wisp,Text,0,,[Flavor]Some say it can lead you to your fate.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a slow moving sphere which [shock]electrocutes[/shock] nearby enemies.)[/italic][/nameplate_enemy_slight]
 
 # The Killing Word
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Mouthpiece/UIStat_RedText_Mouthpiece.UIStat_RedText_Mouthpiece,Text,0,,[Flavor]His word will carry death eternal.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires sound-waves.)[/italic][/nameplate_enemy_slight]
@@ -5381,7 +5391,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/LeadSprinkler/UIStat_RedText_LeadSprinkler.UIStat_RedText_LeadSprinkler,Text,0,,[Flavor]Splish splash.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces an exploding projectile upon shooting an enemy. Critical hits produce 3.)[/italic][/nameplate_enemy_slight]
 
 # The Leech
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/TheLeech/UIStat_RedText_TheLeech.UIStat_RedText_TheLeech,Text,0,,[Flavor]Today, a new emperor must seize the throne.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Alt-fire [fire]ignite[/fire]s enemies and heals the player.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/TheLeech/UIStat_RedText_TheLeech.UIStat_RedText_TheLeech,Text,0,,[Flavor]Today, a new emperor must seize the throne.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Alt-fire [fire]ignites[/fire] enemies and heals the player.)[/italic][/nameplate_enemy_slight]
 
 # Linc
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Unique/Drill/UIStat_RedText_Drill.UIStat_RedText_Drill,Text,0,,[Flavor]Power is pizza.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](High fire rate and magazine size.)[/italic][/nameplate_enemy_slight]
@@ -5390,13 +5400,13 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/_Uniqu
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Legion/UIStat_RedText_Legion.UIStat_RedText_Legion,Text,0,,[Flavor]My name is Legion, for we are many.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Slow-moving bullets ricochet off of surfaces.)[/italic][/nameplate_enemy_slight]
 
 # The Lob
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/UIStat_RedText_TheLob.UIStat_RedText_TheLob,Text,0,,[Flavor]Everything has to be magical.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Slow-moving orb which penetrates enemies.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/TheLob/UIStat_RedText_TheLob.UIStat_RedText_TheLob,Text,0,,[Flavor]Everything has to be magical.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a slow-moving orb which penetrates enemies.)[/italic][/nameplate_enemy_slight]
 
 # Long Musket
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/_Unique/NotAFlamethrower/UIStat_RedText_NotAFlamethrower.UIStat_RedText_NotAFlamethrower,Text,0,,[Flavor]Say “cryptocurrency”![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Short-ranged flamethrower.)[/italic][/nameplate_enemy_slight]
 
 # Lyuda
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/UIStat_RedText_Lyuda.UIStat_RedText_Lyuda,Text,0,,[Flavor]Man killer.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns 2 additional projectiles eventually.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/_Unique/Lyuda/UIStat_RedText_Lyuda.UIStat_RedText_Lyuda,Text,0,,[Flavor]Man killer.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns 2 additional projectiles diagonally to the sides shortly after firing.)[/italic][/nameplate_enemy_slight]
 
 # Maggie
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/UIStat_RedText_Maggie.UIStat_RedText_Maggie,Text,0,,[Flavor]Monty's wife don't take no guff.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Masher-style pistol with improved stats.)[/italic][/nameplate_enemy_slight]
@@ -5405,7 +5415,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Uniq
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/Magnificent/UIStat_RedText_Magnificent.UIStat_RedText_Magnificent,Text,0,,[Flavor]Yedesh na den', khleba beri na nedelyu.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fire rate increases in proportion to magazine size.)[/italic][/nameplate_enemy_slight]
 
 # Malak's Bane
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/UIStat_RedText_MalaksBane.UIStat_RedText_MalaksBane,Text,0,,[Flavor]Welcome to the end.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires shots the penetrate and ricochet. Alt-fire functions like a shotgun.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/UIStat_RedText_MalaksBane.UIStat_RedText_MalaksBane,Text,0,,[Flavor]Welcome to the end.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires shots that penetrate and ricochet. Alt-fire functions like a shotgun.)[/italic][/nameplate_enemy_slight]
 
 # Manic Pixie Dream Gun
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/_Unique/FriendZone/UIStat_RedText_FriendZone.UIStat_RedText_FriendZone,Text,0,,[Flavor]It's all in your head.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Reloads will sometimes drop the gun, which will run away and must be caught to retrieve the weapon.)[/italic][/nameplate_enemy_slight]
@@ -5423,10 +5433,10 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/Mongol/UIStat_RedText_Mongol.UIStat_RedText_Mongol,Text,0,,[Flavor]Man is a horde animal.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial rocket produces additional rockets during flight.)[/italic][/nameplate_enemy_slight]
 
 # Monocle
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Monocle/UIStat_RedText_Monocle.UIStat_RedText_Monocle,Text,0,,[Flavor]One is enough.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Extremely high crit damage while zoomed in.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Monocle/UIStat_RedText_Monocle.UIStat_RedText_Monocle,Text,0,,[Flavor]One is enough.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Extremely high critical damage while zoomed in.)[/italic][/nameplate_enemy_slight]
 
 # Moxxi's Bouncing Pair
-SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/MoxiesBosom/Name/UIStat_RedText_MoxiesBosom.UIStat_RedText_MoxiesBosom,Text,0,,[Flavor]Prepare for trouble, and make it double.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Throws a [shock]shock[/shock] grenade and [fire]incendiary[/fire] grenade. Final explosion heals the player.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/MoxiesBosom/Name/UIStat_RedText_MoxiesBosom.UIStat_RedText_MoxiesBosom,Text,0,,[Flavor]Prepare for trouble, and make it double.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Throws a [shock]shock[/shock] grenade and [fire]incendiary[/fire] grenade. Damaging flesh produces health transfusions and damaging shields produces shield transfusions)[/italic][/nameplate_enemy_slight]
 
 # Nagata
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Nagate/UI/UIStat_RedText_Nagate.UIStat_RedText_Nagate,Text,0,,[Flavor]Beltalowda![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces a ring of projectiles that launch towards the target one by one.)[/italic][/nameplate_enemy_slight]
@@ -5438,7 +5448,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/Rakkman/UIStat_RedText_Rakkman.UIStat_RedText_Rakkman,Text,0,,[Flavor]I have one rule.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Unable to kill enemies directly, alt fire toggles zoom.)[/italic][/nameplate_enemy_slight]
 
 # Night Hawkin
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Demoskag/UIStat_RedText_Demoskag.UIStat_RedText_Demoskag,Text,0,,[Flavor]Stranger than things.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires [cryo]cryo[/cryo damage during day, [fire]incendiary[/fire] damage at night. Projectile count changes with time of day.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Demoskag/UIStat_RedText_Demoskag.UIStat_RedText_Demoskag,Text,0,,[Flavor]Stranger than things.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires [cryo]cryo[/cryo] damage during day, [fire]incendiary[/fire] damage at night. Projectile count changes with time of day.)[/italic][/nameplate_enemy_slight]
 
 # Occultist
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Troy/UIStat_RedText_Troy.UIStat_RedText_Troy,Text,0,,[Flavor]The only way you can control people is to lie to them.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial projectile produces more projectiles during flight.)[/italic][/nameplate_enemy_slight]
@@ -5484,6 +5494,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/
 
 # Quasar
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Quasar/UI/UIStat_RedText_Quasar.UIStat_RedText_Quasar,Text,0,,[Flavor]E=mc^(OMG)/wtf[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces a strong singularity that [shock]shocks[/shock] nearby enemies.)[/italic][/nameplate_enemy_slight]
+
+# Ruby's Wrath
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/_Unique/RubysWrath/UIStat_RedText_RubysWrath.UIStat_RedText_RubysWrath,Text,0,,[Flavor]No one can escape.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Secondary fire produces a singularity.)[/italic][/nameplate_enemy_slight]
 
 # R.Y.N.A.H.
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/UIStat_RedText_Rampager.UIStat_RedText_Rampager,Text,0,,[Flavor]You've had this one coming a long time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires slow orbs that link to and damage nearby enemies. Fires additional projectiles at linked foes when the orbs detonate mid-air.)[/italic][/nameplate_enemy_slight]
@@ -5540,7 +5553,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/_Unique/Starkiller/UIStat_RedText_Starkiller.UIStat_RedText_Starkiller,Text,0,,[Flavor]Has to have some kind of thermal oscillator.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a continuous beam.)[/italic][/nameplate_enemy_slight]
 
 # Storm
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/UIStat_RedText_Storm.UIStat_RedText_Storm,Text,0,,[Flavor]Tut, tut, it looks like rain.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns 4 [shock]shock[/shock] orbs around impact that electrocute nearby enemies.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/_Unique/_Legendary/Storm/UIStat_RedText_Storm.UIStat_RedText_Storm,Text,0,,[Flavor]Tut, tut, it looks like rain.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns 4 [shock]shock[/shock] orbs around impact that [shock]electrocute[/shock] nearby enemies.)[/italic][/nameplate_enemy_slight]
 
 # Storm Front
 SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/StormFront/UI/UIStat_RedText_StormFront.UIStat_RedText_StormFront,Text,0,,[Flavor]Very, very frightening.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces a field that [shock]shocks[/shock] all enemies within it.)[/italic][/nameplate_enemy_slight]
@@ -5594,7 +5607,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/ToyGrenade/Name/
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Unforgiven/UIStat_RedText_TheUnforgiven.UIStat_RedText_TheUnforgiven,Text,0,,[Flavor]It's a helluva thing...[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Very high critical damage.)[/italic][/nameplate_enemy_slight]
 
 # Wagon Wheel
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/WagonWheel/UIStat_RedText_WagonWheel.UIStat_RedText_WagonWheel,Text,0,,[Flavor]Keep them doggies rollin'.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns multiple projectiles in six directions when hitting an enemy.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/WagonWheel/UIStat_RedText_WagonWheel.UIStat_RedText_WagonWheel,Text,0,,[Flavor]Keep them doggies rollin'.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Spawns multiple projectiles in six directions when shooting an enemy.)[/italic][/nameplate_enemy_slight]
 
 # Westergun
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/westergun/UIStat_RedText_westergun.UIStat_RedText_westergun,Text,0,,[Flavor]I believe ya, but my tommy gun don't.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Large splash radius.)[/italic][/nameplate_enemy_slight]
@@ -5636,13 +5649,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_L
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/AutoAime/UIStat_RedText_AutoAime.UIStat_RedText_AutoAime,Text,0,,[Flavor]OGC HOOKED[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Bullets home to center of target if close to target.)[/italic][/nameplate_enemy_slight]
 
 # Boomer
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/UIStat_RedText_Boomer.UIStat_RedText_Boomer,Text,0,,[Flavor]Some like it hot.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Bullets explode on impaact.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Boomer/UIStat_RedText_Boomer.UIStat_RedText_Boomer,Text,0,,[Flavor]Some like it hot.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Bullets explode on impact.)[/italic][/nameplate_enemy_slight]
 
 # Craps
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Craps/UIStat_RedText_Craps.UIStat_RedText_Craps,Text,0,,[Flavor]Oh me.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Every shot has a chance to fire additional projectiles.)[/italic][/nameplate_enemy_slight]
 
 # Creamer
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/UIStat_RedText_Creamer.UIStat_RedText_Creamer,Text,0,,[Flavor]non-dairy[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Rocket explodes mid-flight and splits into two rockets.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Creamer/UIStat_RedText_Creamer.UIStat_RedText_Creamer,Text,0,,[Flavor]non-dairy[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Rocket explodes mid-flight and splits into two rockets, damage dealt heals the player.)[/italic][/nameplate_enemy_slight]
 
 # Digby's Smooth Tube
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Digby/UIStat_RedText_Digby.UIStat_RedText_Digby,Text,0,,[Flavor]Hot or cool, man, hyperjazz is hyperjazz.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Plays saxophone sounds with each shot.)[/italic][/nameplate_enemy_slight]
@@ -5658,6 +5671,9 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/
 
 # ION LASER
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonLaser/UIStat_RedText_IonLaser.UIStat_RedText_IonLaser,Text,0,,[Flavor]Particles unite![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Beam increases in damage the longer it is fired. Fires bonus projectiles upon ending the beam, increasing in number based on beam duration.)[/italic][/nameplate_enemy_slight]
+
+# Just Kaus
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/JustCaustic/UIStat_RedText_JustCaustic.UIStat_RedText_JustCaustic,Text,0,,[Flavor]I like to keep my lists short.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](No special effect.)[/italic][/nameplate_enemy_slight]
 
 # Lucky 7
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/UIStat_RedText_Lucky7.UIStat_RedText_Lucky7,Text,0,,[Flavor]O Fortuna.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Reloading can trigger various buffs for the next magazine.)[/italic][/nameplate_enemy_slight]
@@ -5705,7 +5721,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/BiteSize/UIStat_RedText_BiteSize.UIStat_RedText_BiteSize,Text,0,,[Flavor]And yet so filling![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Bullets produce sticky bombs, crits ricochet 2 bombs towards enemies.)[/italic][/nameplate_enemy_slight]
 
 # Frozen Devil
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/UIStat_RedText_FrozenDevil.UIStat_RedText_FrozenDevil,Text,0,,[Flavor]Not sorry, not sorry, not sorry.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Ice Spike mode deals increased damage to enemies [cryo]frozen[/frozen] with Cryogenic mode.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/FrozenDevil/UIStat_RedText_FrozenDevil.UIStat_RedText_FrozenDevil,Text,0,,[Flavor]Not sorry, not sorry, not sorry.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Ice Spike mode deals increased damage to enemies [cryo]frozen[/cryo] with Cryogenic mode.)[/italic][/nameplate_enemy_slight]
 
 # Kaleidoscope
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscope/UIStat_RedText_Kaleidoscope.UIStat_RedText_Kaleidoscope,Text,0,,[Flavor]I can fly twice as high, take a look...[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces amped shots of various elements when zoomed in.)[/italic][/nameplate_enemy_slight]
@@ -5714,13 +5730,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Kaleidoscop
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LittleYeeti/UIStat_RedText_LittleYeeti.UIStat_RedText_LittleYeeti,Text,0,,[Flavor]Yeet 'em if you got 'em![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Chance to knock enemies back.)[/italic][/nameplate_enemy_slight]
 
 # Love Drill (legendary version)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill_L.UIStat_RedText_LoveDrill_L,Text,0,,[Flavor]...till death us depart.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits return 2 ammo to your magazine.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill_L.UIStat_RedText_LoveDrill_L,Text,0,,[Flavor]...till death us depart.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits return 2 ammo to your magazine, high critical hit damage.)[/italic][/nameplate_enemy_slight]
 
 # Love Drill (mission version)
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits return 2 ammo to your magazine.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/UIStat_RedText_LoveDrill.UIStat_RedText_LoveDrill,Text,0,,[Flavor]To have and to hold...[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits return 2 ammo to your magazine, high critical hit damage.)[/italic][/nameplate_enemy_slight]
 
 # Short Stick
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires 2 [fire]incendiary[/fire] orbs every 3rd shot.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/UIStat_RedText_ShortStick.UIStat_RedText_ShortStick,Text,0,,[Flavor]A small price to pay.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires 2 [fire]incendiary[/fire] orbs every 3rd shot.)[/italic][/nameplate_enemy_slight]
 
 # Seventh Sense (prefixed mission)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/UIStat_RedText_TheSeventhSense.UIStat_RedText_TheSeventhSense,Text,0,,[Flavor]Do you see?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Zooming in reveals hidden things.)[/italic][/nameplate_enemy_slight]
@@ -5738,7 +5754,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/UIS
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Omen/UIStat_RedText_Omen.UIStat_RedText_Omen,Text,0,,[Flavor]VIII. Never turn your back on a Monster![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Projectiles oscillate around the center projectile and ricochet once.)[/italic][/nameplate_enemy_slight]
 
 # Shocker
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker.UIStat_RedText_Shocker,Text,0,,[Flavor]Surprise![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Initial orb splits into 3 orbs horizontally.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Shocker/UIStat_RedText_Shocker.UIStat_RedText_Shocker,Text,0,,[Flavor]Surprise![/Flavor] <p>    [nameplate_enemy_slight][italic](Initial orb splits into 3 orbs horizontally.)[/italic][/nameplate_enemy_slight]
 
 # The Cure
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheCure/UIStat_RedText_TheCure.UIStat_RedText_TheCure,Text,0,,[Flavor]Vaccinations save lives. Sorry, no joke here! Just facts.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Dealing damage restores health.)[/italic][/nameplate_enemy_slight]
@@ -5791,17 +5807,14 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/Pricker/UISta
 # Yellowcake
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UIStat_RedText_YellowCake.UIStat_RedText_YellowCake,Text,0,,[Flavor]I'm really more of a pie person.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Projectiles divide twice in flight.)[/italic][/nameplate_enemy_slight]
 
-# Fish Slap
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/GrenadeMods/FishSlap/UIStat_RedText_FishSlap.UIStat_RedText_FishSlap,Text,0,,[Flavor]Say hello to my little fish![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Deals melee damage.)[/italic][/nameplate_enemy_slight]
-
 # Globetrottr
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/UIStat_RedText_Globetrotter.UIStat_RedText_Globetrotter,Text,0,,[Flavor]Um allan heim, styttur hrynja fyrir mig.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires discs that bounce and explode several times after hitting an enemy.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/UIStat_RedText_Globetrotter.UIStat_RedText_Globetrotter,Text,0,,[Flavor]Um allan heim, styttur hrynja fyrir mig.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires rolling discs that bounce and explode several times after hitting an enemy.)[/italic][/nameplate_enemy_slight]
 
 # Web Slinger
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat_RedText_WebSlinger.UIStat_RedText_WebSlinger,Text,0,,[Flavor]Let's do this one last time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires corkscrewing projectiles that split once in mid-air and ricochet off surfaces. Occasionally fires [cryo]cryo[/cryo[ shots. Secondary mode fires a laser blast.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/WebSlinger/UIStat_RedText_WebSlinger.UIStat_RedText_WebSlinger,Text,0,,[Flavor]Let's do this one last time.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires corkscrewing projectiles that split once in mid-air and ricochet off surfaces. Occasionally fires [cryo]cryo[/cryo] shots. Secondary mode fires a laser blast.)[/italic][/nameplate_enemy_slight]
 
 # Lightspeed
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/UIStat_RedText_Lightspeed.UIStat_RedText_Lightspeed,Text,0,,[Flavor]Gimme a parsec.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Grenade teleports to crosshair location and divides into multiple ricochetting grenades.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/Lightspeed/UIStat_RedText_Lightspeed.UIStat_RedText_Lightspeed,Text,0,,[Flavor]Gimme a parsec.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Divides into multiple ricochetting, homing grenades upon hitting a surface.)[/italic][/nameplate_enemy_slight]
 
 # The Beast (rad)
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/UIStat_RedText_BioBetsy_Rad.UIStat_RedText_BioBetsy_Rad,Text,0,,[Flavor]She grew big, and she grew mean.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Slain enemies produce a [radiation]radiation[/radiation] puddle.)[/italic][/nameplate_enemy_slight]
@@ -5846,13 +5859,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Peashooter/
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/UIStat_RedText_UnkemptHarold.UIStat_RedText_UnkemptHarold,Text,0,,[Flavor]I wasn't counting either.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires three projectiles that first split into 5 projectiles, and then split into 7 projectiles.)[/italic][/nameplate_enemy_slight]
 
 # Chandelier
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/UIStat_RedText_Antler.UIStat_RedText_Antler,Text,0,,[Flavor]It will not last the night.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires ricochetting isk projectiles.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Antler/UIStat_RedText_Antler.UIStat_RedText_Antler,Text,0,,[Flavor]It will not last the night.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires ricochetting disk projectiles.)[/italic][/nameplate_enemy_slight]
 
 # Brightside
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Brightside/UIStat_RedText_Brightside.UIStat_RedText_Brightside,Text,0,,[Flavor]It's killing me.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Thrown weapon becomes a drone which splits into four elemental drones.)[/italic][/nameplate_enemy_slight]
 
 # Dakota
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Randomly fires amped [fire]incendiary[/fire] or [shock]shock[/shock] shots.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Dakota/UIStat_RedText_Dakota.UIStat_RedText_Dakota,Text,0,,[Flavor]The longarm of the law.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Randomly fires [bold]amped[/bold] [fire]incendiary[/fire] or [shock]shock[/shock] shots.)[/italic][/nameplate_enemy_slight]
 
 # The Shoddy
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Fakobs/UIStat_RedText_Fakobs.UIStat_RedText_Fakobs,Text,0,,[Flavor]100% Genuine Fakobs.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Projectiles fall very close to player.)[/italic][/nameplate_enemy_slight]
@@ -5867,7 +5880,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits ricochet 1 bullet at the nearest enemy, body shots apply a sticky bomb.)[/italic][/nameplate_enemy_slight]
 
 # Mother Too
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/UIStat_RedText_Earthbound.UIStat_RedText_Earthbound,Text,0,,[Flavor]Thank you for taking the time to read this flavor text. This flavor text loves you.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](fires a continuous laser, thrown weapon becomes laser drone.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/UIStat_RedText_Earthbound.UIStat_RedText_Earthbound,Text,0,,[Flavor]Thank you for taking the time to read this flavor text. This flavor text loves you.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a continuous laser, thrown weapon becomes laser drone.)[/italic][/nameplate_enemy_slight]
 
 # Flipper
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Flipper/UIStat_RedText_Flipper.UIStat_RedText_Flipper,Text,0,,[Flavor]Put one foot in front of the other.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Continuous fire increases projectile count and fires in the shape of a diamond. Deals splash damage.)[/italic][/nameplate_enemy_slight]
@@ -5900,13 +5913,13 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/U
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/UIStat_RedText_Convergence.UIStat_RedText_Convergence,Text,0,,[Flavor]At the summit, you will find yourselves united.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces additional converging projectiles upon shooting an enemy.)[/italic][/nameplate_enemy_slight]
 
 # P.A.T. Mk. II
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3_Epic.UIStat_RedText_PatMk3_Epic,Text,0,,[Flavor]War is a matter of arithmetic.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, Unique voice module, thrown weapon always deals full reload damage. Thrown turret has a chance to fire an exploding laser )[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3_Epic.UIStat_RedText_PatMk3_Epic,Text,0,,[Flavor]War is a matter of arithmetic.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage. Thrown turret has a chance to fire an exploding laser )[/italic][/nameplate_enemy_slight]
 
 # P.A.T. Mk. I
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, Unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
 
 # P.A.T. Mk. III
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, Unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
 
 # Sawpenny
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/UIStat_RedText_Sawhorse_Epic.UIStat_RedText_Sawhorse_Epic,Text,0,,[Flavor]Measure once, cut once![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires penetrating, exploding, ricochetting sawblades.)[/italic][/nameplate_enemy_slight]
@@ -5921,16 +5934,16 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Septimator/UIStat_RedText_Septimator.UIStat_RedText_Septimator,Text,0,,[Flavor]I oft have wish'd for Hell for ease from Heaven.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Damaging enemies has a chance to launch meteors at all nearby enemies. Underbarrel rocket attachment always summons meteors.)[/italic][/nameplate_enemy_slight]
 
 # Binary Operator
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/UIStat_RedText_BinaryOperator.UIStat_RedText_BinaryOperator,Text,0,,[Flavor]Do it or don't. What's an attempt?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](OKills enemies in one shot up to a hidden HP value, otherwise deals minimal damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/BinaryOperator/UIStat_RedText_BinaryOperator.UIStat_RedText_BinaryOperator,Text,0,,[Flavor]Do it or don't. What's an attempt?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Kills enemies in one shot up to a hidden HP value, otherwise deals minimal damage.)[/italic][/nameplate_enemy_slight]
 
 # Boogeyman
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/UIStat_RedText_Boogeyman.UIStat_RedText_Boogeyman,Text,0,,[Flavor]Comin' ta GET'CHA![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots deal splash damage in addition to effects listed.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Boogeyman/UIStat_RedText_Boogeyman.UIStat_RedText_Boogeyman,Text,0,,[Flavor]Comin' ta GET'CHA![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shots deal splash damage in addition to listed effects.)[/italic][/nameplate_enemy_slight]
 
 # Hotfoot Teddy
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/UIStat_RedText_Hotfoot.UIStat_RedText_Hotfoot,Text,0,,[Flavor]You could have prevented this.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shoots flames that lock onto the enemy's feet and chains to other enemies.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/UIStat_RedText_Hotfoot.UIStat_RedText_Hotfoot,Text,0,,[Flavor]You could have prevented this.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Shoots [fire]flames[/fire] that lock onto the enemy's feet and chains to other enemies.)[/italic][/nameplate_enemy_slight]
 
 # Ice Age
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/UIStat_RedText_IceAge.UIStat_RedText_IceAge,Text,0,,[Flavor]Allow me to break the ice.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Launche an arcing [cryo]cryo[/cryo] warhead.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/IceAge/UIStat_RedText_IceAge.UIStat_RedText_IceAge,Text,0,,[Flavor]Allow me to break the ice.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires an arcing [cryo]cryo[/cryo] warhead with a large radius.)[/italic][/nameplate_enemy_slight]
 
 # Superconducting Plasma Coil
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/PlasmaCoil/UIStat_RedText_PlasmaCoil.UIStat_RedText_PlasmaCoil,Text,0,,[Flavor]Harness the 4th state of matter.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](16-round burst-fire.)[/italic][/nameplate_enemy_slight]
@@ -5942,13 +5955,16 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/UIStat_
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/UIStat_RedText_Deatomizer.UIStat_RedText_Deatomizer,Text,0,,[Flavor]Don't be so negative.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces an additional homing projectile upon shooting an enemy.)[/italic][/nameplate_enemy_slight]
 
 # Atlas Replay
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/UIStat_RedText_Replay.UIStat_RedText_Replay,Text,0,,[Flavor]Anybody else want to negotiate?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Tracker darts ignore walls, fire rate increases per tracked enemy in addition to listed effects.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/UIStat_RedText_Replay.UIStat_RedText_Replay,Text,0,,[Flavor]Anybody else want to negotiate?[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Tracker darts ignore walls and hit all enemies in range, fire rate increases per tracked enemy.)[/italic][/nameplate_enemy_slight]
+
+# Ionic Disruptor
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/UIStat_RedText_Disruptor.UIStat_RedText_Disruptor,Text,0,,[Flavor]I can bring you in warm, or... not at all.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Ignores shields on flesh targets, melee deals [shock]shock[/shock] damage and boosts the damage of this weapon's bullets.)[/italic][/nameplate_enemy_slight]
 
 # Guardian 4N631
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_RedText_Guardian.UIStat_RedText_Guardian,Text,0,,[Flavor]You're alive for a reason. Go get 'em kid.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires ricochetting projectiles in the pattern of a flapping bird in addition to listed effects.)[/italic][/nameplate_enemy_slight]
 
 # Mechanic
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/UIStat_RedText_Mechanic.UIStat_RedText_Mechanic,Text,0,,[Flavor]Let's get you rollin'![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires [bold]explosive[/bold] car wheels and increases damage while using a vehicle.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Mechanic/UIStat_RedText_Mechanic.UIStat_RedText_Mechanic,Text,0,,[Flavor]Let's get you rollin'![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires explosive car wheels and increases damage while using a vehicle.)[/italic][/nameplate_enemy_slight]
 
 # Kickcharger
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/UIStat_RedText_Kickcharger.UIStat_RedText_Kickcharger,Text,0,,[Flavor]Let it slide.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires penetrating rounds that can be charged up for more damage. Sliding instantly charges the weapon.)[/italic][/nameplate_enemy_slight]
@@ -5961,6 +5977,115 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troublesh
 
 # Pyroburst
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst.UIStat_RedText_Pyroburst,Text,0,,[Flavor]KEKW[/Flavor] <p><p>    [nameplate_enemy_slight][italic](After impact, bounces 5 times while spawning homing elemental orbs.)[/italic][/nameplate_enemy_slight]
+
+### SMALLER HUD (Credit to Elektro) ###
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,crosshairContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Offset,0,,(y=-145.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,interactionPrompt,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCard,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,iodCard,Scale,0,,(x=105.0,y=105.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Scale,0,,(x=100.0,y=100.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Offset,0,,(x=-250.0,y=-500.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,buddyWidgets,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,shieldBar,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,healthBar,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,ammoBar,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkill,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkillGreande,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,grenadeWidgetContainer,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,petCommand,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Scale,0,,(x=120.0,y=120.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Offset,0,,(x=2.1,y=-82.5)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Offset,0,,(y=60.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Scale,0,,(x=95,y=95)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,notificationWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,connectionClip,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,xpBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,warningTimer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,topContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,interactionPrompt,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,durationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,durationBar,Offset,0,,(x=-7.5.0,y=400.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ejectWidge,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,itemCard,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ffylWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ejectPromptWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Offset,0,,(y=60.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,friendEventMessage,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,nameplateContainer,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,container,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,speedBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,shieldBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,vehiclePartsWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Offset,0,,(x=2.1,y=-82.5)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipBR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,boostBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,VehicleWeaponWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,matchmakingWidgetContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipTR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,vehiclePartUnlockedWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,VOGECHO,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,bossBar,Offset,0,,(y=60.0)
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,container,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,speedBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,shieldBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,vehiclePartsWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipBR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,boostBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,VehicleWeaponWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,matchmakingWidgetContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipTR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,vehiclePartUnlockedWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,VOGECHO,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,challengeProgressWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,bossBar,Offset,0,,(y=60.0)
 
 ### ANIMATION SPEED INCREASES ###
 
