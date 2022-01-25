@@ -1,4 +1,4 @@
-(Includes the vast majority of the Unofficial Communty Patch's changes other than the smaller HUD Size, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+(Includes the Unofficial Communty Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
 
 # DISCLAIMER
 
@@ -7,9 +7,21 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.6
+-----
+Added in the smaller UI from the Unofficial Community Patch.
+
+Increased Fire in the Skag Den's fire damage to 5% per point.
+
+Increased the duration of the Phasecast-Weapon Damage anointment to 10 seconds.
+
+Added a 50% bonus to slide damage to the Vanquisher.
+
+Updated a few more Red-Text descriptors.
+
 1.1.5
 -----
-Improved the rate of experience gain in Mayhem Mode by 1.5 times (50% higher) for each level.
+Improved the rate of experience gain in Mayhem Mode by 1.5 times (50% higher) for each Mayhem level.
 
 1.1.4
 -----
@@ -131,6 +143,8 @@ MAYHEM MODE CHANGES
 -------------------
 Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
 
+Experience gained in Mayhem Mode increased by 1.5 times (Mayhem 10 now gives 300% EXP instead of 200%, for example.)
+
 Guns and grenades no longer receive increased damage from Mayhem levels. The Mayhem level text no longer displays on gear either (but your gear will still be regular Mayhem gear when the mod is no longer active.).
 
 Nerfed enemy health scaling in Mayhem Mode. Enemy health now increases by 100% per Mayhem level, up to 1000% at Mayhem 10.
@@ -239,8 +253,6 @@ Added La Varlope to Rudy Varlope with a 10% chance to drop, fixed his name not s
 Added Ember's Blaze to Stanley with a 10% chance of dropping.
 
 Added the Double Downer to Gorgeous Armada, increased chance of Armada dropping from his loot pool to 20%.
-
-Added the All-In to Golden Bullion with a 10% chance to drop.
 
 Added the Short Stick to Yeti, increased chance of Yeti dropping from its loot pool to 50%.
 
@@ -646,7 +658,7 @@ Sleeping Giant - Reload-damage bonus set to 50%, omni-boost chance set to 15%.
 
 Torrent - Fire rate and mag size adjusted to counteract Dahl SMG buffs.
 
-Vanquisher - Set sliding bonuses to 50% each.
+Vanquisher - Set sliding bonuses to 50% each and added bonus damage to actual sliding.
 
 Autoaime - No change.
 
@@ -2176,7 +2188,7 @@ Electric Slide - Tesla damage increased by 150%, increased the slide impact dama
 
 Elemental Projector - No change.
 
-Elemental Stones - Increased melee damage bonus to 100% regardless of level.
+Elemental Stones - Increased melee damage bonus on higher rarity artifacts to 100% regardless of level, 50% for less rare artifacts.
 
 Flesh Melter - No change.
 
@@ -2363,7 +2375,7 @@ Astral Projection Damage - No change.
 
 Phasecast Status - Added status effect damage, increased chance to 100%, increased duration to 10 seconds, and now factors in skill and gear bonuses.
 
-Phasecast Weapon - Reduced to 40% damage, reduced duration to 8 seconds, and now factors in skill and gear bonuses.
+Phasecast Weapon - Reduced to 40% damage, reduced increased to 10 seconds, and now factors in skill and gear bonuses.
 
 Phaseslam Weapon - Reduced to 45% damage and now factors in skill and gear bonuses.
 
@@ -2489,7 +2501,7 @@ Tenacious Defense - No change.
 
 DEMOLITION WOMAN
 ----------------
-Fire in the Skag Den - No change.
+Fire in the Skag Den - Increased fire damage to 5% per point.
 
 Deadlines - No change.
 
@@ -2499,7 +2511,7 @@ Means of Destruction - No change.
 
 Torgue Cross-Promotion - No change.
 
-Stainless Steel Bear - Increased Iron Bear Damage per point to 6%.
+Stainless Steel Bear - Increased Iron Bear damage per point to 6%.
 
 Pull the Holy Pin - No change.
 
