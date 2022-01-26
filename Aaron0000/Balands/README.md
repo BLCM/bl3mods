@@ -7,9 +7,29 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.7
+-----
+Removed the Monarch's increased bipod-mode movement speed penalty to prevent issues with the movement penalty sticking around after switching weapons.
+
+Reduced Cold Bore's bonus cryo damage to 10% per point.
+
+Fixed the Crader EMP-5 doing a lot more damage than intended.
+
+Increased the damage of the Butcher by 41%.
+
+Increased the Fade Away damage anointment to 40% and adjusted the text on the Gravity Snare damage anointment to 40%. The Snare anointment uses the Fade Away damage anointment for the damage value and I have yet to figure out how to fix it.
+
+Adjusted the Gamma Burst radiation damage anointment's description to be more accurate.
+
+Tripled the speed of the Web Slinger's projectiles. Fixed the Web Slinger underbarrel having two projectiles instead of one and increased the damage of the underbarrel to 50 from 20.
+
+Made the Ward always spawn with maximum Roid parts.
+
+Made the Trial bosses drop three legendary class mods when they would normally drop one.
+
 1.1.6
 -----
-Added in the smaller UI from the Unofficial Community Patch.
+Added in the smaller HUD from the Unofficial Community Patch and added a separate version of Balands to Github/Nexus that does not include the smaller HUD.
 
 Increased Fire in the Skag Den's fire damage to 5% per point.
 
@@ -213,6 +233,8 @@ Increased the chance of GenIVIV dropping from her loot pool to 30%.
 Increased the chance of Evil Lilith dropping from her loot pool to 60% to compensate for the obnoxiously long immunity phase.
 
 Increased the chance of finding Arms-Race exclusive Legendary gear in the Arms Race chests that are locked behind fights.
+
+Increased the number of Legendary class mod drops from Trial bosses to three when they would normally drop one.
 
 Added the Bekah and Superstreamer to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 50%.
 
@@ -1421,9 +1443,9 @@ The Dictator - Changed how the underbarrel works to benefit better from the Doub
 
  ┗----Rationale: The Dictator's underbarrel adds four projectiles to your shots regardless of whether or not your weapon has the grip that doubles projectile count. It has been changed to increase projectile count by 2.67 times (which works out to 7 shots on a normal Dictator and 16 on a double variant.)
 
-The Monarch - Ammo cost set to 2, magazine size increased by 70%, movement speed penalty while deployed increased to 50%, changed how the underbarrel works to benefit better from the Double grip.
+The Monarch - Ammo cost set to 2, magazine size increased by 70%, changed how the underbarrel works to benefit better from the Double grip.
 
- ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased and movement speed penalty to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
+ ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
 
 Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume four ammo.)
 
@@ -1433,7 +1455,7 @@ Sickle - Made the Boom Sickle have the same stats as a standard Sickle as well a
 
  ┗----Rationale: This weapon seems to be intended as a throwback to the Hammer from Borderlands 1. The various stat changes now allow it to fulfill the role of a high fire-rate shotgun-ish weapon.
 
-Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 20 times card damage, underbarrel splash radius set to 500, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds.
+Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 50 times card damage, underbarrel splash radius set to 500, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds, projectile speed tripled.
 
  ┗----Rationale: The underbarrel was seemingly designed to hit like a truck but never really seemed to accomplish that. The changes made to it hopefully fix that.
 
@@ -1665,7 +1687,7 @@ Stop-Gap - Damage immunity changed to 100% damage resistance.
 
 The Transformer - No change.
 
-Ward - Recharge delay made longer by 100%, recharge rate improved by 50%, health regeneration increased to 5%/10%, weapon damage replaced with damage-taken reduction.
+Ward - Recharge delay made longer by 100%, recharge rate improved by 50%, health regeneration increased to 5%/10%, weapon damage replaced with damage-taken reduction. Now always spawns with three Roid parts.
 
  ┗----Rationale: The recharge delay reduction makes it easier to maintain empty shields while the roid is active. The capacity was not reduced since it helps as a buffer while first approaching an enemy. Weapon damage was replaced since the primary reason anyone uses this shield is for melee, hence the change to damage reduction being more useful.
 
@@ -1800,6 +1822,8 @@ Mesmer - No change.
 Moxxi's Bouncing Pair - No change.
 
 Nagata - No change.
+
+Pyroburst - No change.
 
 Quasar - No change.
 
@@ -2354,11 +2378,11 @@ Rakk Charge - Now adds two additional charges instead of one.
 
 Fade Nova - Increased damage to 2.5 from 1.75, increased radius to 900 from 500.
 
-Fade Active Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
+Fade Active Damage - Reduced to 40% damage and now factors in skill and gear bonuses.
 
-Gamma Rad - Reduced to 45%, max duration increased to 120 seconds.
+Gamma Rad - Reduced to 45% damage, adjusted description to be more accurate.
 
-Grav Damage - Reduced to 50% damage and now factors in skill and gear bonuses.
+Grav Damage - Reduced to 40% damage and now factors in skill and gear bonuses.
 
 Action Command Lifesteal - Lifesteal reduced to 3%.
 
@@ -2697,7 +2721,7 @@ HITMAN
 -------------
 Violent Speed - No change.
 
-Cold Bore - No change.
+Cold Bore - Reduced the bonus cryo damage to 10% per point.
 
 Violent Momentum - Now also increases slide damage.
 
