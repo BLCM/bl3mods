@@ -1209,7 +1209,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataT
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_SlowHand,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.0175
 
 # The Butcher - Reduce Damage to 1.2 from 2.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Butcher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,1.2
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Butcher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.2
 
 # Bitch - Increase Damage to 0.8 from 0.65, increase Critical Hit Damage Bonus to 100% from 50%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Bitch,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
