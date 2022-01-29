@@ -17,13 +17,13 @@ Fixed a typo preventing the Butcher from doing damage.
 
 Fixed an issue with the MNTIS damage anointment doing double the listed damage.
 
-Reverted Face-puncher damage to slightly above game-launch levels.
+Increased Face-puncher damage to slightly above game-launch levels.
 
 Removed the damage penalty on the Unleash the Dragon.
 
 Increased Armored Infantry's damage bonus to 5% per point.
 
-Increased Torgue Cross Promotion's splash damage bonus to 7% per point.
+Increased Torgue Cross-Promotion's splash damage bonus to 7% per point.
 
 Increased Scrappy's damage bonus to 7% per point.
 
@@ -58,6 +58,8 @@ Added action skill damage to Synchronicity.
 Added a small accuracy and handling bonus to Boom. Enhance.
 
 Made Violent Momentum display the Slide Damage bonus.
+
+Adjusted the Naught. The instant recharge has been reduced to a 75% recharge delay reduction, and a 50% recharge rate penalty has been added. This has been done to prevent issues with certain shields such as the Mana Well.
 
 1.1.7
 -----
@@ -2202,7 +2204,7 @@ Loaded Dice - No change.
 
 Lunacy - Recharge rate penalty improved to -100% from -216%.
 
-Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity for instant shield recharging.
+Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity and 50% of your recharge rate for very low shield delay.
 
  ┗----Rationale: In Borderlands 2 the Endowment at least had the distinction of being the only artifact that increased experience gain (and even then, it wasn't a particularly good artifact.) This is Borderlands 3 though, and experience gain is a passive stat that can roll on almost any artifact. Rather than just buffing the Endowment's experience gain heavily, it is now an item that is useful regardless of level and should expand build-making possibilities.
 
