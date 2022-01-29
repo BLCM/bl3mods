@@ -17,7 +17,7 @@ Fixed a typo preventing the Butcher from doing damage.
 
 Fixed an issue with the MNTIS damage anointment doing double the listed damage.
 
-Reverted Face-puncher damage to game-launch levels.
+Reverted Face-puncher damage to slightly above game-launch levels.
 
 Removed the damage penalty on the Unleash the Dragon.
 
