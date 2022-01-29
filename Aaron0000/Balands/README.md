@@ -7,6 +7,58 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.8
+-----
+Experimenting with increasing the damage on Action Skill and pets. Not confident with releasing them in their current state however.
+
+Changed Monkey Do's amp damage to say 86% instead of 81%.
+
+Fixed a typo preventing the Butcher from doing damage.
+
+Fixed an issue with the MNTIS damage anointment doing double the listed damage.
+
+Reverted Face-puncher damage to game-launch levels.
+
+Removed the damage penalty on the Unleash the Dragon.
+
+Increased Armored Infantry's damage bonus to 5% per point.
+
+Increased Torgue Cross Promotion's splash damage bonus to 7% per point.
+
+Increased Scrappy's damage bonus to 7% per point.
+
+Increased the radius of the Stinger's novas by roughly 43%.
+
+Increased the Dowsing Rod's damage by 15%.
+
+Increased the Faisor's damage by 15%
+
+Increased the Flipper's damage by 35%.
+
+Increased the Prompt Critical's damage by 25%.
+
+Increased the Unkempt Harold's damage by 10%.
+
+Increased the Ogre's damage by 10%.
+
+Reduced the base damage of the Guardian 4N631 by 30% and increased the special effect to 120% maximum.
+
+Reduced the damage on the Ember's Purge by 9%, increased the damage of the puddle from 33% to 50%.
+
+Reduced Body and Mind damage by 25%.
+
+Reduced the Reflux' damage by 25%.
+
+Reduced the Sand Hawk's damage by 37.5%.
+
+Reduced the critical hit damage bonus on the Executor to 50%.
+
+Added action skill damage to Synchronicity.
+
+Added a small accuracy and handling bonus to Boom. Enhance.
+
+Made Violent Momentum display the Slide Damage bonus.
+
 1.1.7
 -----
 Removed the Monarch's increased bipod-mode movement speed penalty to prevent issues with the movement penalty sticking around after switching weapons.
@@ -756,11 +808,9 @@ Convergence - No change.
 
 Face-puncher - No change.
 
- ┗----Rationale: The damage on this has been specifically adjusted to not be superior to standard melee for overall damage. It is to be used primarily for when you can't reach out and melee something with fisticuffs.
-
 Fearmonger - No change.
 
-Guardian 4N631 - Set maximum distance bonus to 75%, increased projectile speed by 75%, made description more accurate.
+Guardian 4N631 - Set maximum distance bonus to 120%, increased projectile speed by 75%, made description more accurate.
 
  ┗----Rationale: While it can still be used as a stat-stick to boost the damage on other means of offense, it has been adjusted so that it is now actually viable as a weapon.
 
@@ -1100,7 +1150,7 @@ Devoted - Fire rate reduced by 25%, recoil height improved by 30%, recoil width 
 
 D.N.A. - No change.
 
-Ember's Purge - Puddle damage set to 33% of card damage, puddle chance increased to 33%.
+Ember's Purge - Puddle damage set to 50% of card damage, puddle chance increased to 33%.
 
 Flipper - No change.
 
@@ -1722,7 +1772,7 @@ Red Suit - Aura damage increased by 150%.
 
 Shooting Star - Stars no longer collide with the world.
 
-Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova-levels of damage.
+Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova-levels of damage, increased radius of novas by 43%.
 
  ┗----Rationale: Same story with the rest of the "Melee" gear, traditional melee should be the strongest form of melee. Stinger still has the advantage of a better delivery system as well as receiving splash bonuses.
 
@@ -1993,7 +2043,7 @@ Critical Mass - Replaced Déjà Vu with Headsman's Hand and Playing Dirty with B
 
  ┗----Rationale: The class mod with the special effect of refilling your magazine on a critical kill also spawns with the skill that does the exact same thing. To curb this redundancy and keep in line with the theme of critical hits on this class mod, Headsman's Hand now gets boosted instead.
 
-Executor - No change.
+Executor - Reduced the critical hit damage bonus to 50%.
 
 Hustler - Replaced Adrenaline with Violent Violence.
 
@@ -2181,8 +2231,6 @@ The Pearl of Ineffable Knowledge - Damage for the first 15 stacks increased to 3
 Toboggan - Amp damage lowered to 70%.
 
 Unleash the Dragon - Damage-over-time reduced to 10% from 80%.
-
- ┗----Rationale: For normal melee, this generally wouldn't be an issue. The existence of things like the Fish Slap and Status Effect Crit Nova Anointment however merits a considerable nerf in the DoTs of this artifact.
 
 Victory Rush - No change.
 
@@ -2407,6 +2455,8 @@ Phaseslam Melee - Reduced to 75% damage, duration increased to 12 seconds and no
 
 Phaseflare Orb Damage - Reduced to 125% damage.
 
+Phasecsat Damage - No change.
+
 Phaseslam Damage - No change.
 
 Grasp Active Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
@@ -2501,7 +2551,7 @@ Selfless Vengeance - Increased Incendiary Bonus to 4% per point, increased bonus
 
 Security Bear - No change.
 
-Armored Infantry - No change.
+Armored Infantry - Increased the damage bonus to 5% per point.
 
 Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's.)
 
@@ -2533,7 +2583,7 @@ Grizzled - No change.
 
 Means of Destruction - No change.
 
-Torgue Cross-Promotion - No change.
+Torgue Cross-Promotion - Increased the splash damage bonus to 7% per point.
 
 Stainless Steel Bear - Increased Iron Bear damage per point to 6%.
 
@@ -2565,7 +2615,7 @@ Stoke the Embers - No change.
 
 Redistribution - No change.
 
-Scrappy - No change.
+Scrappy - Increased the damage bonus to 7% per point.
 
 Rushin' Offensive - Reduced lifesteal to 1%.
 
@@ -2685,7 +2735,7 @@ Efficiency Engine - No change.
 
 DOUBLED AGENT
 -------------
-Synchronicity - No change.
+Synchronicity - Added an Action Skill damage bonus.
 
 Praemunitus - No change.
 
@@ -2711,7 +2761,7 @@ Like a Ghost - Increased base dodge chance to 8.33% per point from 5%, reduced b
 
  ┗----Rationale: Reducing the stack count to one means the base bonus for the skill can be increased to a desireable level without making it too strong if it could stack twice.
 
-Boom. Enhance. - Increased the clone health bonus per grenade to 100%.
+Boom. Enhance. - Increased the clone health bonus per grenade to 100% and added accuracy and handling bonuses.
 
 Trick of the Light - Changed Cryo Damage back to Shock Damage.
 
@@ -2959,7 +3009,7 @@ Lethal Force Authorized - Increased respawn rate cooldown to 300%.
 
 Take This! - No change.
 
-Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 81% bonus amp regardless of points invested.
+Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 86% bonus amp regardless of points invested.
 
 Wooly Armor - No change.
 
@@ -3161,7 +3211,7 @@ Joyful Freedom - No change.
 
 Burn Both Ends - Increased stack duration to ten seconds, updated description to mention that it only affects kinetic and elemental damage.
 
-Body and Mind - No change.
+Body and Mind - Reduced the damage by 25%.
 
 Free the Soul - No change.
 
