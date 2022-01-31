@@ -1,0 +1,121 @@
+###
+### Name: SmartBear - Full-Size Iron Cub
+### Version: 1.0.0
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: av-char, char-gunner
+###
+### Screenshot: https://i.imgur.com/p7VqqEh.jpg
+### Nexus: https://www.nexusmods.com/borderlands3/mods/300
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Loosely based on the mods "Poképet" and "PetZilla" by Phenom. Makes Iron Cub the same size as Iron Bear and changes his name to SmartBear - includes sound effects, skill description, animation/movement speeds, and stomp radius; otherwise totally cosmetic.
+###
+###
+
+
+### IRON CUB
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,RelativeScale3D,0,,(X=1.0,Y=1.0,Z=1.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/IronCub/StandIn_Gunner_Cub_SkillScreen.StandIn_Gunner_Cub_SkillScreen:MainMesh,RelativeScale3D,0,,(X=1.0,Y=1.0,Z=1.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_StandIn_Gunner_SkillScreen.BPChar_StandIn_Gunner_SkillScreen:GunnerStandIn_GEN_VARIABLE,IronCubTranslationOffset,0,,(X=0.0,Y=0.0,Z=0.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C.CharacterMesh0,RelativeLocation,0,,(X=0.0,Y=0.0,Z=-165.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,bGaitScalingOverride,0,,false
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,GaitScalingSettings.GaitScalingAlpha,0,,1.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,GaitScalingSettings.GaitScalingLimbs.GaitScalingLimbs[0].MaxLength,0,,232.50955
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,GaitScalingSettings.GaitScalingLimbs.GaitScalingLimbs[1].MaxLength,0,,232.51059
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharacterMesh0,GaitScalingSettings.AppliedLimbLength,0,,1.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharMoveComp,MaxSprintSpeed,0,,(BaseValue=650)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:CharMoveComp,MaxWalkSpeed,0,,(BaseValue=456)
+
+
+## Increase Space Required to Spawn (Hopefully)
+# EnvQueryGenerator_Donut_0 (Defaults: 350.0, 700.0, 438.0, 90.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryGenerator_Donut_0,InnerRadius.DefaultValue,0,,525.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryGenerator_Donut_0,OuterRadius.DefaultValue,0,,1225.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryGenerator_Donut_0,ProjectionData.ProjectUp,0,,876.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryGenerator_Donut_0,ProjectionData.PostProjectionVerticalOffset,0,,180.0
+
+# EnvQueryTest_DigicloneTrace_1 (Defaults: 90.0, 45.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_DigicloneTrace_1,ItemHeightOffset.DefaultValue,0,,180.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_DigicloneTrace_1,ContextHeightOffset.DefaultValue,0,,90.0
+
+# EnvQueryTest_Distance_0 (Default: 2.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_Distance_0,ScoringFactor.DefaultValue,0,,3.0
+
+# EnvQueryTest_Dot_2 (Defaults: -1.0, 1.0, 2.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_Dot_2,ScoreClampMin.DefaultValue,0,,-0.5
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_Dot_2,ScoreClampMax.DefaultValue,0,,1.5
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/EQS_Gunner_FindIronCubSpawnLocation.EQS_Gunner_FindIronCubSpawnLocation:EnvQueryTest_Dot_2,ScoringFactor.DefaultValue,0,,3.0
+
+
+## ???
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BMP_IronCub.BMP_IronCub,BoneModStates.BoneModStates[0].Bones.Bones[0].Scale,0,,(X=1.0,Y=1.0,Z=1.0)
+
+
+## Flavor
+# Bear Cub Name
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/UIName_IronCub.UIName_IronCub,DisplayName.string,0,,SmartBear
+
+# Hardpoint Name
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Augment_HardPoint_IronCub.Augment_HardPoint_IronCub,DisplayName.string,0,,SmartBear
+
+# Description
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Augment_HardPoint_IronCub.Augment_HardPoint_IronCub,Description.string,0,,Moze summons [actionskill]SmartBear[/actionskill] in place of Iron Bear. [actionskill]SmartBear[/actionskill] equips two of whatever weapon is equipped in the remaining [actionskill]Action Skill[/actionskill] slot. While deployed, [actionskill]SmartBear[/actionskill] [skillbold]follows Moze and will target and attack enemies for the duration[/skillbold].<br><br>Skills that affect Iron Bear affect [actionskill]SmartBear[/actionskill]. [actionskill]SmartBear[/actionskill] still uses [skillbold]Fuel[/skillbold], but uses less of it and deals less damage (because while its AI is efficient, it is no replacement for a trained pilot).
+
+# Flavor Text
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/Character/AbilityTree_Gunner_DLCTree.AbilityTree_Gunner_DLCTree,Tiers.Tiers[0].Object..Items.Items[0].Object..FlavorText,0,,[skillflavor]Smarter than the average bear.[/skillflavor]
+
+
+## Allow Aiming Railguns at Nearby Enemies
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:Weapon_Railgun,MinRange.Range.Value,0,,0.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:Weapon_Railgun,QuerySettings.Query.Params.Params[4].Range.Value,0,,0.0
+
+
+## Enable Punching Small(?) Enemies
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFistDefaultLeft,ReachedDistance.Range,0,,(Value=300.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFistDefaultLeft,NavSettings.ReachedDistance.Range,0,,(Value=300.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFistDefaultRight,ReachedDistance.Range,0,,(Value=300.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFistDefaultRight,NavSettings.ReachedDistance.Range,0,,(Value=300.0)
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFist_Mod3_Melee,ReachedDistance.Range,0,,(Value=300.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:BearFist_Mod3_Melee,NavSettings.ReachedDistance.Range,0,,(Value=300.0)
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:SimpleMelee,ReachedDistance.Range,0,,(Value=180.0)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/AI/AIAction_IronCub_v2.Default__AIAction_IronCub_v2_C:SimpleMelee,NavSettings.ReachedDistance.Range,0,,(Value=180.0)
+
+
+## Restore Full-Size Stomp
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/DamageData_IronCub_Stomp.Default__DamageData_IronCub_Stomp_C,ImpactForceSelection.Force,0,,100000.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Defs/DamageData_IronCub_Stomp.Default__DamageData_IronCub_Stomp_C,Radius.BaseValueConstant,0,,700.0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/Actions/A_IronCub_Stomp.Default__A_IronCub_Stomp_C,DefaultAnims.Body3rd.AnimAsset,0,,/Game/PlayerCharacters/Gunner/IronBear/_Shared/Animation/3rd/AS_Stomp.AS_Stomp
+
+
+## Restore Full-Size Sounds
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:Default__BPChar_IronBear_C,CharacterMass.Mass,0,,3719.443
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,FoleyMainWwiseEvent.FoleyMainWwiseEvent[0],0,,WE_Foley_Main_Mech_Robotic_Electro
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,FoleyMainWwiseEvent.FoleyMainWwiseEvent[1],0,,/Game/Audio/Events/Foley_System/Foley_System/Foley_Main/WE_Foley_Main_Mech_Robotic_Electro
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,LoopStartWwiseEvent.LoopStartWwiseEvent[0],0,,WE_Foley_Main_Loop_Mech_Bot_Electro
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,LoopStartWwiseEvent.LoopStartWwiseEvent[1],0,,/Game/Audio/Events/Foley_System/Foley_System/Foley_Main_Loops/WE_Foley_Main_Loop_Mech_Bot_Electro
+
+
+# Footsteps 
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,PerFootFootstepWwiseEvents.PerFootFootstepWwiseEvents,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,FootstepWwiseEvent.FootstepWwiseEvent[0],0,,WE_Footstep_Robot_Electro
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,FootstepWwiseEvent.FootstepWwiseEvent[1],0,,/Game/Audio/Events/Foley_System/Foley_System/Footsteps/WE_Footstep_Robot_Electro
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,CharacterSizeSwitch.CharacterSizeSwitch[0],0,,WwiseSwitch_Size_Large
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,CharacterSizeSwitch.CharacterSizeSwitch[1],0,,/Game/Audio/Switches/Global_Switches/WwiseSwitch_Size_Large
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C:FoleyMain_GEN_VARIABLE,FootstepPitch,0,,-200.0
+
+
+## Jumping & Landing
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C,LandingData,0,,/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/Landing/LandingData_IronBear.LandingData_IronBear
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_DLC/Ixora/HardPoints/IronCub/BPChar_IronCub_V3.Default__BPChar_IronCub_V3_C,JumpedImpact,0,,/Game/PlayerCharacters/Gunner/_Shared/_Design/IronBear/Impacts/Impact_Jump_IRON_BEAR_NOT_CHARACTER_DEFAULT.Impact_Jump_IRON_BEAR_NOT_CHARACTER_DEFAULT
