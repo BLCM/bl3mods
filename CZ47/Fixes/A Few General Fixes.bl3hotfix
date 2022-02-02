@@ -1,7 +1,7 @@
 ###
 ### Name: A Few General Fixes
 ### 
-### Version: 2.0.1
+### Version: 2.0.2
 ### Author: CZ47
 ### Contact: =]#7647
 ### Categories: char-siren, char-beastmaster, char-operative, bugfix, gear-shield
@@ -69,7 +69,7 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DL
 # Shooting Star Shield (Credits to Lonemasterino for this one)
 # The shield has a very cool effect, but unfortunately due to collioson with the world, it hardly ever works
 # This hotfix removes collision with in world objects.
-SparkPatchEntry,(1,1,0,),Game/Gear/Shields/_Design/_Uniques/ShootingStar/LightProjectile_Shield_ShootingStar.Default__LightProjectile_Shield_ShootingStar_C,bPenetratesWorld,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/Shields/_Design/_Uniques/ShootingStar/LightProjectile_Shield_ShootingStar.Default__LightProjectile_Shield_ShootingStar_C,bPenetratesWorld,0,,true
 
 
 # Plus Ultra
