@@ -2287,7 +2287,7 @@ LEGENDARY ARTIFACTS
 -------------------
 Commander Planetoid - Increased bonus elemental melee damage to 130% regardless of level, timer between elemental switching reduced to 0.1 seconds.
 
-Company Man - No change.
+Company Man - Made it always spawn with three (non-manufacturer) passive stat bonuses.
 
 Cosmic Crater - Tripled the damage of the puddles.
 
