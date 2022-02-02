@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.1.9
+### Version: 1.2.0
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -2818,6 +2818,17 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTa
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,Toboggan,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,0.7
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Parts/Artifact_Part_Ability_Toboggan.Artifact_Part_Ability_Toboggan,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_Slide_SpeedScale.Att_Players_Slide_SpeedScale,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=Toboggan,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86),BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Att_Artifact_Ability_Toboggan_SlideSpeed.Att_Artifact_Ability_Toboggan_SlideSpeed:ValueResolver_ConstantAttributeValueResolver,Value.DataTableValue,0,,(DataTable=/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=Toboggan,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86)
+
+# Company Man  - Make it always spawn with three (non-manufacturer) passive stat bonuses.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Atlas/Balance/PartSet_Artifact_CompanyMan_Atlas.PartSet_Artifact_CompanyMan_Atlas,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/Balance/PartSet_Artifact_CompanyMan_CoV.PartSet_Artifact_CompanyMan_CoV,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Dahl/Balance/PartSet_Artifact_CompanyMan_Dahl.PartSet_Artifact_CompanyMan_Dahl,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Hyperion/Balance/PartSet_Artifact_CompanyMan_Hyperion.PartSet_Artifact_CompanyMan_Hyperion,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Jakobs/Balance/PartSet_Artifact_CompanyMan_Jakobs.PartSet_Artifact_CompanyMan_Jakobs,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Maliwan/Balance/PartSet_Artifact_CompanyMan_Maliwan.PartSet_Artifact_CompanyMan_Maliwan,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Tediore/Balance/PartSet_Artifact_CompanyMan_Tediore.PartSet_Artifact_CompanyMan_Tediore,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Torgue/Balance/PartSet_Artifact_CompanyMan_Torgue.PartSet_Artifact_CompanyMan_Torgue,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Vladof/Balance/PartSet_Artifact_CompanyMan_Vladof.PartSet_Artifact_CompanyMan_Vladof,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
 
 ##########################
 ### ANOINTMENT CHANGES ###
