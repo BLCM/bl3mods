@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.0
+-----
+Made the Company Man always spawn with three (non-manufacturer) passive stat bonuses.
+
 1.1.9
 -----
 Added Action Skill damage Mayhem Scaling to a few skills for Zane, Fl4k, and Amara. Investing one point into these skills enables your Action Skill damage to scale with Mayhem levels. Be warned that if you have a point in one of these skills and don't have Mayhem mode activated, your Action Skills don't deal any damage due to how it calculates the damage. It was done this way to prevent Iron Bear and Iron Cub from destroying the universe, as well as being able to manually adjust the boost for each Vault Hunter. Mayhem 11 will end up having slightly more Action Skill damage bonus, but you can simply roll for four "Nay-hem" modifiers on Mayhem 10 if that bothers you.
