@@ -309,7 +309,7 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage.
+Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage (which now displays on the pet cards).
 
 Implemented the Mayhem scaling for Action skill damage in a different way to allow for individual character adjustments. They're now activated by investing one point in Pramunitas, Self-Repairing Systems, or Root to Rise.
 
