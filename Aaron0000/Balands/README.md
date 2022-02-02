@@ -7,6 +7,100 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.1.9
+-----
+Added Action Skill damage Mayhem Scaling to a few skills for Zane, Fl4k, and Amara. Investing one point into these skills enables your Action Skill damage to scale with Mayhem levels. Be warned that if you have a point in one of these skills and don't have Mayhem mode activated, your Action Skills don't deal any damage due to how it calculates the damage. It was done this way to prevent Iron Bear and Iron Cub from destroying the universe, as well as being able to manually adjust the boost for each Vault Hunter. Mayhem 11 will end up having slightly more Action Skill damage bonus, but you can simply roll for four "Nay-hem" modifiers on Mayhem 10 if that bothers you.
+
+Added Action Skill damage Mayhem Scaling to Praemunitas. It increases by 50% for every Mayhem level.
+
+Added Action Skill damage Mayhem Scaling to Self-Repairing Systems. It increases by 25% for every Mayhem level.
+
+Added Action Skill damage Mayhem Scaling to Root to Rise. It increases by 20% for every Mayhem level.
+
+Added notes in the skill descriptions for the following skills/augments to indicate they receive Mayhem Scaling:  Best Served Cold, Binary System, Doppelbanger, Dominance, Success Imminent, Lethal Force Authorized, Remnant, Indiscriminate, Catharsis, Do Unto Others, Revelation, Unweave the Rainbow, Body and Mind, and Free the Soul.
+
+Increased the Digi-Clone's damage by 15%.
+
+Increased the damage of the SNTNL's machine gun, Boomsday, Bad Dose, Static Field, and Almighty Ordnance by 20%.
+
+Increased the Digi-Clone's base health to 39% higher than normal game values.
+
+Increased the base damage of Rakk Attack to 80% stronger than normal game values.
+
+Increased the cooldown on Attack Commands to 12 seconds.
+
+Increased the damage of Success Imminent by 150%.
+
+Increased the base health of Fl4k's pets by 40%.
+
+Tripled the base damage of Fl4k's pets.
+
+Doubled the base damage of the Jabber pets' weapons.
+
+Re-enabled Pet Damage Scaling in Mayhem Mode and added the Mayhem Level multiplier to the pet descriptions, at +70% per Mayhem Level.
+
+Reverted previous damage buffs to the Great Horn Skag and Eridian Skag Attack Commands.
+
+Reduced the damage of the Gunslinger Jabber's Attack Command by 30%.
+
+Reduced the damage of the WAR Loader's Attack Command by 20%.
+
+Increased the base damage of Phasecast to 250% stronger than normal game values.
+
+Increased the base damage of Reverbration to 79% stronger than normal game values.
+
+Increased the base damage of Deliverance to 245% stronger than normal game values.
+
+Increased the base damage of Tandava to 254% stronger than normal game values.
+
+Increased the base damage of Phaseslam, Fracture, and Downfall to 315% stronger than normal game values.
+
+Increased the base damage of Phaseflare to 51% stronger than normal game values.
+
+Increased the base damage of Glow Up to 55% stronger than normal game values.
+
+Increased the base damage of Shooting Star to 91% stronger than normal game values.
+
+Increased the base damage of Light Fantastic to 47% stronger than normal game values.
+
+Reduced the damage of Body and Mind to 50%.
+
+Increased the damage of Free the Soul to 7 times higher than normal game values.
+
+Heavily reduced the health scaling for enemies in Arms Race.
+
+Reduced the damage of Diadems in Scourge the Invincible's fight by 75%.
+
+Fixed Dahl SMGs not receiving a damage bonus in semi-automatic firing mode.
+
+Reduced the fire rate of burst-fire mode on Dahl SMGs to compensate for the increase base fire rate on Dahl SMGs. 
+
+Increased the melee damage bonus of the Psycho Stabber to 250%.
+
+Increased the melee damage bonus of the Ripper to 200%.
+
+Made the description on the Anarchy more accurate.
+
+Reduced the damage of the Blade Fury's bullet damage by 25%, reset the projectile's melee damage to original values.
+
+Removed the increased animation speed for the animation of exiting a vehicle as the driver to prevent running over yourself with your own car.
+
+Reduced the O.P.Q-System's fire rate by 56%.
+
+Made the following shields always spawn with maximum parts; Beskar, Snowshoe, Gas Mask, Infernal Wish, Old God, Recharge-Berner, Re-Volter, Red Card Recharger, Rico, Rough Rider, Super Soldier (but not the first time you redeem one), Torch, Version 0.m.
+
+Made the Rough Rider no longer spawn with "none" parts.
+
+Reduced the maximum bonus of the Flesh Melter's corrosive damage bonus. Now reaches 25% at level 72.
+
+Reduced the Phasecast damage anointment to 75%.
+
+Reduced the Phaseslam damage anointment to 100%.
+
+Reduced the Phaseflare damage anointment to 75%.
+
+Increased the Terror Cryo damage anointment to 50%.
+
 1.1.8
 -----
 Experimenting with increasing the damage on Action Skill and pets. Not confident with releasing them in their current state however.
@@ -215,7 +309,9 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
+Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage.
+
+Implemented the Mayhem scaling for Action skill damage in a different way to allow for individual character adjustments. They're now activated by investing one point in Pramunitas, Self-Repairing Systems, or Root to Rise.
 
 Experience gained in Mayhem Mode increased by 1.5 times (Mayhem 10 now gives 300% EXP instead of 200%, for example.)
 
@@ -227,6 +323,7 @@ The "[Turn It Up To] Mayhem 11" modifier is now called "[None] Nay-hem". It can 
 
 Reduced the probability of finding green-rarity gear starting from Mayhem 6 and decreasing as the Mayhem Level is increased up to Mayhem 8.
 
+Heavily reduced the health scaling of enemies in Arms Race to account for less power from Mayhem-leveled gear.
 
 LOOT POOL CHANGES
 -----------------
@@ -399,6 +496,10 @@ Anathema the Relentless now only triggers an immune phase at 50% and 0% of a hea
 
  ┗----Rationale: Scourge the Invincible also has a lot of immunity phases, but there is variety to said immunity phases. Anathema's immunity phases are largely monotonous, so reducing the amount of these phases improves the flow of the fight.
 
+Reduced the damage towards non-player characters of the Diadems spawned during Scourge the Invincible's fight.
+
+ ┗----Rationale: The Scourge fight ends up turning into a cycle of "Pop Scourge with the Diadems repeatedly, get teleported, repeat." By lowering the Diadem damage, you now actually have to fight Scourge.
+
 Tweaked the Badass enemy spawn rates in the Slaughter Shaft. Badass Zealots and Tinks are now less common while Badass Enforcers, Goliaths, Goons, and Psychos are more common.
 
  ┗----Rationale: The Badass and Armored Badass Zealots/Tinks are each their own type that can spawn (so four different badasses). Coupled with the fact that Zealots and Tinks are the most common enemy types you face in the COV forces, the Slaughter Shaft largely turned into a gauntlet of heavy weapon spam and tink turrets with the occasional blip from a different Badass type or Anointed enemy. Hence the reduction in Badass Zealot/Tink spawn rates and increase in other Badass spawn rates.
@@ -458,7 +559,7 @@ DAHL GUNS
 ---------
 Increased Damage of Semi-Auto Firing Mode by 20% and improved Accuracy Spread by 50% for Pistols and SMGs.
 
-Increased SMG Fire Rate and Magazine Size by 40% each.
+Increased SMG Fire Rate and Magazine Size by 40% each. Adjusted the fire rate of burst-fire parts to counteract the base Dahl SMG fire rate increase.
 
  ┗----Rationale: SMGs were a bit lacking in DPS compared to other weapon types when I crunched the numbers, so I buffed the mag size and fire rate to make better use of that stupidly high ammo pool. Same goes for Hyperion and Maliwan SMGs.
  
@@ -518,7 +619,7 @@ ATLAS LEGENDARY GUNS
 --------------------
 Carrier - No change.
 
-OPQ - No change.
+O.P.Q-System - Reduced the fire rate by 56%.
 
 Portals and Shite - 20% critical damage added.
 
@@ -609,7 +710,7 @@ Pestilence - 70% radiation damage resistance added.
 
  ┗----Rationale: The reload-nova is powerful but it also leads to the player falling into FFYL often. The radiation resistance means the nova is useable without being forced into wearing a Red Suit.
 
-Psycho Stabber - Melee damage bonus reduced to 200%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
+Psycho Stabber - Melee damage bonus reduced to 250%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: We have an actual example of a knife-firing gun that deals melee damage with said knives in the game (Blade Fury.) It makes sense to allow the original knife-lobber to deal melee damage from the launched knives as well.
 
@@ -724,7 +825,7 @@ Kaoson - Accuracy and critical penalties removed.
 
 Night Hawkin - No change.
 
-Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 150%, melee damage bonus no longer factors in gear or skill bonuses.
+Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 200%, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: This gun encourages a hack n' blast playstyle, so it has been altered to better suit such a style.
 
@@ -917,9 +1018,7 @@ JAKOBS LEGENDARY GUNS
 ---------------------
 Bekah - No change.
 
-Blade Fury - Melee portion of the damage reduced to 17.5% of card damage, melee damage bonus no longer factors in gear or skill bonuses.
-
- ┗----Rationale: The damage on this has been specifically adjusted to not be superior to standard melee for overall damage. It is to be used primarily for when you can't reach out and melee something with fisticuffs.
+Blade Fury - Melee damage bonus no longer factors in gear or skill bonuses.
 
 Clairovoyance - No change.
 
@@ -1664,11 +1763,11 @@ Back Ham - Rear-damage resistance increased to 75%.
 
 Badass Combustor - No change.
 
-Beskar - No change.
+Beskar - Now always spawns with maximum shield parts.
 
-Frozen Heart - Reduced lifesteal to 5%.
+Frozen Heart - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
-Infernal Wish - No change.
+Infernal Wish - Now always spawns with maximum shield parts.
 
 Madcap - No change.
 
@@ -1680,21 +1779,21 @@ Re-Router - Fixed amp damage not applying to multi-projectile weapons properly.
 
 Red Card - Slide Damage effect buffed by 428%.
 
-Red Card Re-Charger - Slide Damage effect buffed by 428%.
+Red Card Re-Charger - Slide Damage effect buffed by 428%, now always spawns with maximum shield parts.
 
-Rico - No change.
+Rico - Now always spawns with maximum shield parts.
 
-Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%.
+Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%, now always spawns with maximum shield parts and no longer spawns with "None" parts.
 
 Scream of Terror - Nova radius increased by 66%, capacity and delay reduced by 50%, recharge rate doubled.
 
-Snowshoe - Reduced lifesteal to 5%.
+Snowshoe - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
-Super Soldier - Damage immunity reduced to a 33% damage reduction.
+Super Soldier - Damage immunity reduced to a 33% damage reduction, now always spawns with maximum shield parts after the first redemption of the shield.
 
  ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
-Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly.
+Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly, now always spawns with maximum shield parts.
 
 Wattson - Disc-drop cooldown reduced to 1 second, projectile speed increased 25%.
 
@@ -1719,17 +1818,17 @@ Firewall - Damage reduction improved to 75%.
 
 Front Loader - No change.
 
-Gas Mask - No change.
+Gas Mask - Now always spawns with maximum shield parts.
 
 Mana Well - Shock damage reduced to 50%, damage resistance reduced to 65%, description fixed to match damage resistance.
 
-Old God - No change.
+Old God - Now always spawns with maximum shield parts.
 
-Re-Charge Berner - No change.
+Re-Charge Berner - Now always spawns with maximum shield parts.
 
 Re-Charger - No change.
 
-Re-Volter - Shock damage and fire rate bonuses reduced to 25%.
+Re-Volter - Shock damage and fire rate bonuses reduced to 25%, now always spawns with maximum shield parts.
 
 Rectifier - Damage buffed by 2333%.
 
@@ -1778,7 +1877,7 @@ Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova
 
  ┗----Rationale: Same story with the rest of the "Melee" gear, traditional melee should be the strongest form of melee. Stinger still has the advantage of a better delivery system as well as receiving splash bonuses.
 
-Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay improved by 10%, fireball damage increase by 80%, fireball speed increased by 200%, fireball explosion radius increased by 300%.
+Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay improved by 10%, fireball damage increase by 80%, fireball speed increased by 200%, fireball explosion radius increased by 300%, now always spawns with maximum shield parts.
 
 Void Rift - No change beyond what the Impaler and Black Hole have.
 
@@ -2264,7 +2363,7 @@ Elemental Projector - No change.
 
 Elemental Stones - Increased melee damage bonus on higher rarity artifacts to 100% regardless of level, 50% for less rare artifacts.
 
-Flesh Melter - No change.
+Flesh Melter - Reduced the maximum corrosive damage bonus by 20% (25% per stack at level 72).
 
 Hot Drop - Reduced fireball damage by 50%.
 
@@ -2455,11 +2554,11 @@ Phaseslam Weapon - Reduced to 45% damage and now factors in skill and gear bonus
 
 Phaseslam Melee - Reduced to 75% damage, duration increased to 12 seconds and now factors in skill and gear bonuses.
 
-Phaseflare Orb Damage - Reduced to 125% damage.
+Phaseflare Orb Damage - Reduced to 75% damage.
 
-Phasecsat Damage - No change.
+Phasecsat Damage - Reduced to 75% damage.
 
-Phaseslam Damage - No change.
+Phaseslam Damage - Reduced to 100% damage.
 
 Grasp Active Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
 
@@ -2482,7 +2581,7 @@ Terror Ammo Regen - No change.
 
 Terror Health Regen - Increased to 4%/8%/12%.
 
-Terror Cryo - Reduced to 40%.
+Terror Cryo - Reduced to 50%.
 
 Terror Extra Projectile - No change.
 
@@ -2737,9 +2836,9 @@ Efficiency Engine - No change.
 
 DOUBLED AGENT
 -------------
-Synchronicity - Added an Action Skill damage bonus.
+Synchronicity - Added a bonus to Action Skill damage.
 
-Praemunitus - No change.
+Praemunitus - Added Action-Skill-damage Mayhem Scaling.
 
 Borrowed Time - No change.
 
@@ -2813,7 +2912,7 @@ Distributed Denial - No change.
 
 Really Expensive Jacket - No change.
 
-Best Served Cold - Nova damage multiplied by five.
+Best Served Cold - Nova damage multiplied by five, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Futility Belt - Increased damage resistance to 30%.
 
@@ -2873,29 +2972,29 @@ Retaliation - Changed the gun damage to general damage and increased the damage 
 
 Deterrence Field - No change.
 
-Digi-Clone - Increased base health by roughly 11%.
+Digi-Clone - Increased the Digi-Clone's damage by 15%, increased base health by roughly 39%.
 
-Binary System - Increased damage by 140%.
+Binary System - Increased damage by 140%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Schadenfreude - No change.
 
 Which One's Real - No change.
 
-Doppelbanger - No change.
+Doppelbanger - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Digital Distribution - No change.
 
-SNTNL - Reduced cooldown to 40 seconds from 60 seconds, doubled target-acquiring range.
+SNTNL - Reduced cooldown to 40 seconds from 60 seconds, doubled target-acquiring range, increased machine gun damage by 20%.
 
 Winter's Drone - No change.
 
-Bad Dose - No change.
+Bad Dose - Increased the radiation damage by 20%.
 
-Static Field - No change.
+Static Field - Increased the shock damage by 20%.
 
-Boomsday - No change.
+Boomsday - Increased damage by 20%.
 
-Almighty Ordinance - No change.
+Almighty Ordinance - Increased damage by 20%.
 
 MNTIS Shoulder Cannon - No change.
 
@@ -2965,11 +3064,11 @@ Pack Tactics - No change.
 
 Shared Spirit - No change.
 
-Dominance - No change.
+Dominance - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 STALKER
 -------
-Self-Repairing System - No change.
+Self-Repairing System - Added Action-Skill-damage Mayhem Scaling.
 
 Sic 'Em - Increased cooldown bonus to 16.66% per point from 10%.
 
@@ -2997,7 +3096,7 @@ TRAPPER
 -------
 Gotta Go Fast - No change.
 
-Success Imminent - No change.
+Success Imminent - Increased damage by 150%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Agility Training - No change.
 
@@ -3007,7 +3106,7 @@ Combat Veterinarian - No change.
 
 Throatripper - Increased critical hit chance to 10% per point.
 
-Lethal Force Authorized - Increased respawn rate cooldown to 300%.
+Lethal Force Authorized - Increased respawn rate cooldown to 300%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Take This! - No change.
 
@@ -3025,7 +3124,7 @@ Capacitance - No change.
 
 ACTION SKILLS/AUGMENTS
 ----------------------
-Rakk Attack - Increased damage by 25% and added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
+Rakk Attack - Increased damage by 80% and added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
 Rakk Open a Cold One - No change.
 
@@ -3069,9 +3168,11 @@ Blind With Anger - No change.
 
 PETS
 ----
-Increased base pet melee damage, ranged damage, and skill damage by 20%.
+Increased base pet melee damage, lunge damage, ranged damage, and skill damage by 200%.
 
-Improved attack command cooldown by 50%.
+Increased base pet health by 40%.
+
+Improved attack command cooldown by 40%.
 
  ┗----Rationale: Attack Command is one of those things seldom used because you can only use them once in a while and tend to forget about it in the heat of combat. A reduction in cooldown should remedy that.
 
@@ -3083,21 +3184,21 @@ Spiderant Countess - Increased damage reduction bonus to 10%.
 
 Guard Skag - No change.
 
-Great Horn Skag - Increased gun damage bonus to 10%, increased ram attack damage by 150%.
+Great Horn Skag - Increased gun damage bonus to 10%.
 
-Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%, increased post-singularity slam damage by 170%.
+Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%.
 
-Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 20%.
+Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 100%.
 
-Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 33%.
+Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 100%.
 
-Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 15%.
+Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 100%, reduced rocket launcher damage by 30%.
 
 ION Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp.
 
 BUL Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance.
 
-WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance, replaced fire rate bonus with shield damage.
+WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance, replaced fire rate bonus with shield damage, reduced missile barrage damage by 20%.
 
 
 
@@ -3119,11 +3220,11 @@ Wildfire - Increased spread chance to 10% per point.
 
 Dread - No change.
 
-Indiscriminate - No change.
+Indiscriminate - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Deep Well - Fixed it not giving the correct amount of heat reduction for CoV weapons.
 
-Catharsis - Damage multiplied by 5, cooldown removed.
+Catharsis - Damage multiplied by 5, cooldown removed, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Sustainment - Lowered lifesteal to 0.2% per point and changed the description to be more accurate.
 
@@ -3155,7 +3256,7 @@ Laid Bare - Increased damage bonus to 10% per point.
 
 Wrath - Increased damage bonuses to 8.33% each per point
 
-Remnant - No change.
+Remnant - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Awakening - No change.
 
@@ -3163,7 +3264,7 @@ Avatar - No change.
 
 BRAWL
 -----
-Root to Rise - No change.
+Root to Rise - Added Action-Skill-damage Mayhem Scaling.
 
 Personal Space - Made it also affect Melee damage and Phaseslam damage.
 
@@ -3185,7 +3286,7 @@ Vigor - Increase movement speed bonus to 5% per point.
 
 One With Nature - No change.
 
-Do unto Others - Reduced cooldown to 3 seconds, increased damage by 33%.
+Do unto Others - Reduced cooldown to 3 seconds, increased damage by 33%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Jab Cross - No change.
 
@@ -3203,7 +3304,7 @@ Heavy Rain - No change.
 
 Go With The Flow - No change.
 
-Unweave the Rainbow - No change.
+Unweave the Rainbow - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Ebb and Flow - No change.
 
@@ -3213,9 +3314,9 @@ Joyful Freedom - No change.
 
 Burn Both Ends - Increased stack duration to ten seconds, updated description to mention that it only affects kinetic and elemental damage.
 
-Body and Mind - Reduced the damage by 25%.
+Body and Mind - Reduced the damage by 50%, added a note saying that this skill gets scaled by Mayhem Mode.
 
-Free the Soul - No change.
+Free the Soul - Increased the damage by 600%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Atman - No change.
 
@@ -3227,23 +3328,23 @@ ACTION SKILLS/AUGMENTS
 One of Amara's bigger issues is a reliance on her Action Skills but lacking the cooldown to use them frequently without the use of things such as Expedite or Topped Off. Since Topped Off has been nerfed and having viable options other than Expedite is a good thing (especially if you lack the Designer's Cut DLC), most of her Action Skills have received a substantial reduction in cooldown length.
 
 
-Phaseslam - Increased damage by 42%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Phaseslam - Increased damage by 315%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Fracture - Increased damage by 92%, lowered cooldown to 22 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Fracture - Increased damage by 315%, lowered cooldown to 22 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Downfall - Made Downfall's slam damage and radius the same as a standard Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds, increased the flight speed by 25%. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Downfall - Made Downfall's slam damage and radius the same as Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds, increased the flight speed by 25%. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Revelation - Removed damage penalty, increased damage 150%.
 
 Glamour - Removed damage/action skill cooldown penalties.
 
-Phasecast - Increased damage by 16%, lowered cooldown to 18 seconds.
+Phasecast - Increased damage by 250%, lowered cooldown to 18 seconds.
 
-Deliverance - Projectile damage increased by 300%, cooldown lowered to 20 seconds.
+Deliverance - Projectile damage increased by 300%, main Phasecast damage increased by 245%, cooldown lowered to 20 seconds.
 
-Reverbration - Damage reduced by 50% (damage on the skill card does not match actual damage, deals roughly the same damage as standard Phasecast on initial hit now), lowered cooldown to 22 seconds.
+Reverbration - Damage increased by 79%, lowered cooldown to 22 seconds.
 
-Tandava - Damage increased by 77%, cooldown lowered to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Tandava - Damage increased by 254%, cooldown lowered to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Soul Sap - Reduced lifesteal to 15%, reduce Ascendant bonus to 5%.
 
@@ -3259,13 +3360,13 @@ Fist over Matter - Fist damage increased by 200%, cooldown lowered to 14 seconds
 
 Allure - Removed damage penalty.
 
-Phaseflare - Lowered cooldown to 30 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
+Phaseflare - Increased damage by 51%, owered cooldown to 30 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
-Glow Up - Lowered cooldown to 15 seconds.
+Glow Up - Increased damage by 55%, lowered cooldown to 15 seconds.
 
-Shooting Star (skill) - Made main orb damage match standard Phaseflare damage, lowered cooldown to 32 seconds.
+Shooting Star (skill) - Made main orb damage match Phaseflare damage, lowered cooldown to 32 seconds.
 
-Light Fantastic - Lowered cooldown to 34 seconds.
+Light Fantastic - Increased damage by 47%, lowered cooldown to 34 seconds.
 
 Expedite - No change.
 
