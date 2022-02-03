@@ -49,15 +49,15 @@ Reduced the damage of the Gunslinger Jabber's Attack Command by 30%.
 
 Reduced the damage of the WAR Loader's Attack Command by 20%.
 
-Increased the base damage of Phasecast to 250% stronger than normal game values.
+Increased the base damage of Phasecast to 150% stronger than normal game values.
 
 Increased the base damage of Reverbration to 79% stronger than normal game values.
 
-Increased the base damage of Deliverance to 245% stronger than normal game values.
+Increased the base damage of Deliverance to 145% stronger than normal game values.
 
-Increased the base damage of Tandava to 254% stronger than normal game values.
+Increased the base damage of Tandava to 154% stronger than normal game values.
 
-Increased the base damage of Phaseslam, Fracture, and Downfall to 315% stronger than normal game values.
+Increased the base damage of Phaseslam, Fracture, and Downfall to 215% stronger than normal game values.
 
 Increased the base damage of Phaseflare to 51% stronger than normal game values.
 
