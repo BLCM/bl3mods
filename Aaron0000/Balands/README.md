@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.2
+-----
+Fixed the Spiderant Scorcher and Spiderant Countess not having all of their pet bonuses being displayed on the info card.
+
 1.2.1
 -----
 Reduced the projectile speed of TK's Wave and the Tidal Wave. They're now 25% faster than TK's Wave would be in normal gameplay.
