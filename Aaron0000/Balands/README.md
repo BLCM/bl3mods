@@ -11,7 +11,9 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 -----
 Fixed the Rakk Commander not actually increasing Rakk count by 3.
 
-Made the Shlooter always spawn with max bonus stat parts after the first redemption.
+Fixed Torgue Cross-Promotion not boosting Splash Damage by 7% per point.
+
+Made the Shlooter always spawn with maximum bonus stat parts after the first redemption.
 
 Made the following grenades always spawn with maximum parts; Fish Slap, Firestorm, Tran-fusion, and Widowmaker.
 
