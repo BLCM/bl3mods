@@ -3502,7 +3502,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/Grizzled/PassiveSkill_Gunnerner_Grizzled.Default__PassiveSkill_Gunnerner_Grizzled_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,RoundingMode,0,,EUIStatValueRoundingMode::None
 
 # Torgue Cross-Promotion - Increased Splash Damage Bonus per point to 7% from 6%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/NewDemoPassive2/Att_Gunner_TCP_SplashDamage.Att_Gunner_TCP_SplashDamage:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueConstant,0,,0.07
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/NewDemoPassive2/Att_Gunner_TCP_SplashDamage.Att_Gunner_TCP_SplashDamage:ValueResolver_ConstantAttributeValueResolver,Value.BaseValueConstant,0,,0.07
 
 # Stainless-Steel Bear - Increase Iron Bear Damage per point to 6% from 4%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_DemolitionWoman/StainlessSteelBear/StatusEffect_Gunner_Core_VeryIronBear_DA.StatusEffect_Gunner_Core_VeryIronBear_DA:Mutator_OakPassiveAbilityAttributeEffectMutatorData_0,PerGradeUpgrade,0,,(BaseValueConstant=0.06,DataTableValue=(DataTable=None),BaseValueAttribute=None,BaseValueScale=1)
