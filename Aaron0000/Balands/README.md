@@ -7,6 +7,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.3
+-----
+Fixed some base weapon type and standard weapon barrel stat changes not applying to secondary firing modes.
+
+Fixed the pet bonuses for Fl4k's Jabbers not displaying the increase in percentage they should display when Barbaric Yawp is invested into.
+
 1.2.2
 -----
 Fixed the Spiderant Scorcher and Spiderant Countess not having all of their pet bonuses being displayed on the info card.
@@ -613,13 +619,11 @@ Increased Heavy Weapon Magazine Size by one and made them fully automatic.
  
 VLADOF GUNS
 -----------
-Decreased Assault Rifle Vertical Recoil by 25%.
+Increased Assault Rifle Damage by 30%, decreased Vertical Recoil by 25%.
 
 Increased Sniper Rifle Damage by 10%, Magazine Size by 30%, and improved Reload Speed by 20%.
 
-Increased Heavy Weapon Damage by 17%.
-
-Removed Heavy Weapon Movement Speed Penalty.
+Increased Heavy Weapon Damage by 17%, removed Movement Speed Penalty.
 
 Improved the Ammo Regen and Ammo Regen Delay of Pistol Zip-Rocket and Taser Underbarrels.
 
@@ -782,7 +786,7 @@ Preecher - No change.
 
 Splainer - No change.
 
-Blastphemy - Increased damage by 150% and projectile speed by 50%.
+Blastphemy - Increased damage by 150% and projectile speed by 200%.
 
 Ratatater - No change.
 
