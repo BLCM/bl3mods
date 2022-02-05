@@ -7,6 +7,18 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.4
+-----
+Fixed the Rakk Commander not actually increasing Rakk count by 3.
+
+Made the Shlooter always spawn with max bonus stat parts after the first redemption.
+
+Made the following grenades always spawn with maximum parts; Fish Slap, Firestorm, Tran-fusion, and Widowmaker.
+
+Made the following grenades more likely to spawn with extra parts; Ghast Call, Ringer, and Epicenter.
+
+Made the Widowmaker more likely to spawn with an element.
+
 1.2.3
 -----
 Fixed some base weapon type and standard weapon barrel stat changes not applying to secondary firing modes.
