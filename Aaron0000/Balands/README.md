@@ -1809,7 +1809,7 @@ Infernal Wish - Now always spawns with maximum shield parts.
 
 Madcap - No change.
 
-Messy Breakup - Drone damage increased 533%.
+Messy Breakup - No change.
 
 Nova Berner - No change.
 
