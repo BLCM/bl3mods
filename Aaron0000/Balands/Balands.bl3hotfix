@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.2.4
+### Version: 1.2.5
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -2359,8 +2359,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldA
 # Red Suit - Increase Aura Damage to 0.25 from 0.1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,LGD_Radiate,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.25
 
-# Messy Break-Up - Increase Damage to 0.4 from 0.075
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,LGD_Breakup,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.4
+# Messy Break-Up - Set Damage to 0.075
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,LGD_Breakup,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.075
 
 # Stop-Gap - Damage Immunity changed to Damage Resistance.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/StopGap/CDM_ShieldAug_StopGap.CDM_ShieldAug_StopGap,ModifierType,0,,Scale
