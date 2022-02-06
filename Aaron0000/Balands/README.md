@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.5
+-----
+Reverted the damage buff on the Messy Break-Up to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
+
 1.2.4
 -----
 Fixed the Rakk Commander not actually increasing Rakk count by 3.
