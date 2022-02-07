@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.2.5
+### Version: 1.2.6
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -1561,9 +1561,11 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Balance/DataTabl
 # Plasma Coil - Reduce Damage to 2.15 from 20.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,PlasmaCoil,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.15
 
-# Polyamorous - Increase Damage to 3 from 1.5, reduce Tesla Damage to 0.4 from 0.5
+# Polyamorous - Increase Damage to 3 from 1.5, reduce Tesla Damage to 0.4 from 0.5, fix the Secondary Firing Mode not receiving proper Damge bonuses.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,PolyAim,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,PolyAim,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.4
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Parts/Part_SM_MAL_Barrel_01_PolyAim.Part_SM_MAL_Barrel_01_PolyAim,InventoryAttributeEffects,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/PolyAim/Parts/Part_SM_MAL_Barrel_01_PolyAim.Part_SM_MAL_Barrel_01_PolyAim,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,RowName=PolyAim,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3,BaseValueScale=1)))))
 
 # SF Force - Increase Damage to 1.42 from 1, decrease Bonus Note Damage to 0.5 from 0.75, Fix the Secondary Firing Mode not getting altered by Data Table edits.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,SM_SFForce,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.42
@@ -2424,11 +2426,11 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Shield/_Unique/
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,Capacity_26_1F88EEE04E890908FB52AE9442E35CE3,0,,0.65
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,RechargeRate_27_8A47A06C426C0A244C25068F9B363075,0,,0.7
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,RechargeDelay_28_56D5148C458B7E0E4C3DEB8437889B8E,0,,-0.4
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,-1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,-1000000
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,0.1
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/ShieldAug_Takedown2_Balance.ShieldAug_Takedown2_Balance,Aesclepius_2,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,1000
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/Parts/Part_Shield_ANS_Aug_LGD_Aesclepius.Part_Shield_ANS_Aug_LGD_Aesclepius:AspectList_ShieldAugmentAspectData_0.Augment_ShieldAugment_Damage,PrimaryStackValues,0,,((BaseValueConstant=1.0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=GbxAttributeData'"/Game/Gear/Shields/_Design/PartSets/Part_Augment/Nova/Attribute/Att_Calc_ShieldAug_Nova_Damage_P1.Att_Calc_ShieldAug_Nova_Damage_P1"',AttributeInitializer=None,BaseValueScale=1),(BaseValueConstant=1.0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=GbxAttributeData'"/Game/Gear/Shields/_Design/PartSets/Part_Augment/Nova/Attribute/Att_Calc_ShieldAug_Nova_Damage_P2.Att_Calc_ShieldAug_Nova_Damage_P2"',AttributeInitializer=None,BaseValueScale=1),(BaseValueConstant=1.0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=GbxAttributeData'"/Game/Gear/Shields/_Design/PartSets/Part_Augment/Nova/Attribute/Att_Calc_ShieldAug_Nova_Damage_P3.Att_Calc_ShieldAug_Nova_Damage_P3"',AttributeInitializer=None,BaseValueScale=1))
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_Aesclepius_DESC_2.UIStat_Aesclepius_DESC_2,FormatText,0,,Triggers [skill]$VALUE$[/skill] Damage Nova when [skill]shield breaks[/skill]. Immunity to elemental status effect damage while shield is [skill]depleted[/skill].
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_Aesclepius_DESC_2.UIStat_Aesclepius_DESC_2,FormatText,0,,Triggers [skill]$VALUE$[/skill] Damage Nova when [skill]shield breaks[/skill]. [bold]Extreme[/bold] reduction to elemental status effect damage received while shield is [skill]depleted[/skill].
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_Aesclepius_DESC_2.UIStat_Aesclepius_DESC_2,Attribute,0,,/Game/Gear/Shields/_Design/PartSets/Part_Augment/Nova/Attribute/Att_Calc_ShieldAug_Nova_Damage_P1.Att_Calc_ShieldAug_Nova_Damage_P1
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_Aesclepius_DESC_2.UIStat_Aesclepius_DESC_2,bDisplayAsPercentage,0,,false
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Shields/Aesclepius/UIStat_Aesclepius_DESC_2.UIStat_Aesclepius_DESC_2,bDisplayPercentAsFloat,0,,true
@@ -6220,7 +6222,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/DeathGrip/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/UIStat_RedText_Zheitsev.UIStat_RedText_Zheitsev,Text,0,,[Flavor]Pain and Misery erupt in the Void.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Overheating launches projectiles that apply a stackable debuff to enemies.)[/italic][/nameplate_enemy_slight]
 
 # Crader's EM-P5
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5,Text,0,,[Flavor]Dust off the beta EMP5.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Increases movement speed. Increases accuracy while airborne.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/UIStat_RedText_CraderMP5.UIStat_RedText_CraderMP5,Text,0,,[Flavor]Dust off the beta EMP5.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Increases movement speed. Increases accuracy and critical hit damage while airborne.)[/italic][/nameplate_enemy_slight]
 
 # Kyb's Worth
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/KybsWorth/UIStat_RedText_KybsWorth.UIStat_RedText_KybsWorth,Text,0,,[Flavor]Stand in the f****** circle.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires oscillating projectiles.)[/italic][/nameplate_enemy_slight]
@@ -6466,7 +6468,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Shoveler/UI
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Splinter/UIStat_RedText_Splinter.UIStat_RedText_Splinter,Text,0,,[Flavor]The first one is always the hardest.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits ricochet [bold]3[/bold] bullets at the nearest enemy.)[/italic][/nameplate_enemy_slight]
 
 # Proprietary License
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Critical hits ricochet 1 bullet at the nearest enemy, body shots apply a sticky bomb.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Copybeast/UIStat_RedText_Copybeast.UIStat_RedText_Copybeast,Text,0,,[Flavor]A little from Column A, a little from Column B.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Five-round burst. Critical hits ricochet 1 bullet at the nearest enemy, body shots apply a sticky bomb.)[/italic][/nameplate_enemy_slight]
 
 # Mother Too
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/UIStat_RedText_Earthbound.UIStat_RedText_Earthbound,Text,0,,[Flavor]Thank you for taking the time to read this flavor text. This flavor text loves you.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a continuous laser, thrown weapon becomes laser drone.)[/italic][/nameplate_enemy_slight]
