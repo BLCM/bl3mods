@@ -7,6 +7,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.6
+-----
+Updated the red-text explanation for the Crader's EMP-5 and Proprietary License slightly.
+Adjusted the Aesclepius' status effect damage reduction to be far more effective and updated the description slightly.
+Fixed the Polyamorous' secondary firing mode not receiving proper damage bonuses.
+
 1.2.5
 -----
 Reverted the damage buff on the Messy Break-Up to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
@@ -1986,15 +1992,15 @@ EMP - Increased radius 25%, doubled damage to shields.
 
 Echo-2 - Radius increased by 52%, fuse time reduced to 2 seconds.
 
-Epicenter - No change other than a possible damage adjustment.
+Epicenter - Now more likely to spawn with extra parts.
 
 Fastball - No change other than a possible damage adjustment.
 
-Firestorm - No change other than a possible damage adjustment.
+Firestorm - Now always spawns with maximum parts.
 
-Fish Slap - No change other than a possible damage adjustment.
+Fish Slap - Now always spawns with maximum parts.
 
-Ghast Call - No change other than a possible damage adjustment.
+Ghast Call - Now more likely to spawn with extra parts.
 
 Hex - No change other than a possible damage adjustment.
 
@@ -2018,7 +2024,7 @@ Quasar - No change other than a possible damage adjustment.
 
 Red Queen - No change other than a possible damage adjustment.
 
-Ringer - No change other than a possible damage adjustment.
+Ringer - Now more likely to spawn with extra parts.
 
 Sidewinder - Radius reduced by 60%.
 
@@ -2028,9 +2034,9 @@ Surge - Splash radius increased by 85%.
 
 Tina's Hippity Hopper - No change other than a possible damage adjustment.
 
-Tran-fusion - No change other than a possible damage adjustment.
+Tran-fusion - Now always spawns with maximum parts.
 
-Widowmaker - No change other than a possible damage adjustment.
+Widowmaker - Now always spawns with maximum parts, more likely to spawn in elemental variants.
 
 Cheddar Shredder - No change other than a possible damage adjustment.
 
@@ -2357,7 +2363,7 @@ Rocket Boots - Increased rokcet damage by 300%.
 
 Safeguard - No change.
 
-Shlooter - No change.
+Shlooter - Now always spawns with maximum stat bonuses after the first redemption.
 
 Splatter Gun - Increased shotgun damage bonus to 100%.
 
@@ -3226,11 +3232,11 @@ Great Horn Skag - Increased gun damage bonus to 10%.
 
 Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%.
 
-Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 100%.
+Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 100%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
-Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 100%.
+Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 100%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
-Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 100%, reduced rocket launcher damage by 30%.
+Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 100%, reduced rocket launcher damage by 30%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
 ION Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp.
 
