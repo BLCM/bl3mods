@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.2.6
+### Version: 1.2.7
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -2841,7 +2841,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Uniq
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Vladof/Balance/PartSet_Artifact_CompanyMan_Vladof.PartSet_Artifact_CompanyMan_Vladof,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
 
 # Shlooter - Make it always spawn with three passive stat bonuses.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/PartSet_Artifact_Shlooter.PartSet_Artifact_Shlooter,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,2
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/PartSet_Artifact_Shlooter.PartSet_Artifact_Shlooter,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
 
 ##########################
 ### ANOINTMENT CHANGES ###
