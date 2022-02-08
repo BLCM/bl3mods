@@ -14,7 +14,9 @@ Fixed a typo in the adjustment for the Shlooter that is supposed to make it alwa
 1.2.6
 -----
 Updated the red-text explanation for the Crader's EMP-5 and Proprietary License slightly.
+
 Adjusted the Aesclepius' status effect damage reduction to be far more effective and updated the description slightly.
+
 Fixed the Polyamorous' secondary firing mode not receiving proper damage bonuses.
 
 1.2.5
