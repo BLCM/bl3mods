@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.7
+-----
+Fixed a typo in the adjustment for the Shlooter that is supposed to make it always spawn with three stat bonuses. It should now work properly.
+
 1.2.6
 -----
 Updated the red-text explanation for the Crader's EMP-5 and Proprietary License slightly.
