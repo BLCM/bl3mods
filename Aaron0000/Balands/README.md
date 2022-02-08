@@ -7,6 +7,18 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.8
+-----
+Exchanged the Ten Gallon in GenIVIV's loot pool with the Messy Breakup from Rax.
+
+Made the Messy Breakup and Band of Sitorak always spawn with maximum parts. Messy Breakup additionally is now more likely to spawn in shock element compared to before.
+
+Fixed the Rough Rider not always spawning with maximum parts.
+
+Made the Hunter-Seeker, Hex, and Quasar more likely to spawn with extra parts.
+
+Made the Hunter-Seeker, Hippity Hopper, Surge, and Lightspeed more likely to spawn in elemental versions.
+
 1.2.7
 -----
 Fixed a typo in the adjustment for the Shlooter that is supposed to make it always spawn with three stat bonuses. It should now work properly.
@@ -17,11 +29,11 @@ Updated the red-text explanation for the Crader's EMP-5 and Proprietary License 
 
 Adjusted the Aesclepius' status effect damage reduction to be far more effective and updated the description slightly.
 
-Fixed the Polyamorous' secondary firing mode not receiving proper damage bonuses.
+Fixed the Polyaimorous' secondary firing mode not receiving proper damage bonuses.
 
 1.2.5
 -----
-Reverted the damage buff on the Messy Break-Up to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
+Reverted the damage buff on the Messy Breakup to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
 
 1.2.4
 -----
@@ -445,7 +457,9 @@ Added the Earworm to Graveward's Loot Pool, increased the chance of Graveward dr
 
 Added the Hunt(er) to Manvark's Loot Pool, increased the chance of Manvark dropping from his loot pool to 40%.
 
-Added the Cloud Kill to Rampager's Loot Pool, switch the Duc with the Quadomizer in Rampager's loot pool and Added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 50%.
+Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomizer in Rampager's loot pool and added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 50%.
+
+Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Messy Breakup to Rax.
 
 Added the Hand of Glory to Muldock's Loot Pool, increased the chance of Muldock dropping from his loot pool to 30%.
 
@@ -1313,7 +1327,7 @@ P2P Networker - No change other than a possible damage adjustment.
 
 Plasma Coil - No change other than a possible damage adjustment.
 
-Polyaimorous - Set chain damage to 40% of card damage.
+Polyaimorous - Set chain damage to 40% of card damage, fixed the secondary firing mode not receiving damage buffs properly.
 
 SF Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
 
@@ -1805,7 +1819,7 @@ Vagabond - No change.
 
 ANSHIN LEGENDARY SHIELDS
 ------------------------
-Asclepius - Capacity increased by 65%, recharge rate improved by 70%, recharge delay improved by 40%, damage-over-time resistance while shields are down increased to 100%, health regen increased to 10%, fixed nova damage not scaling with level and increased nova radius by 33%.
+Asclepius - Capacity increased by 65%, recharge rate improved by 70%, recharge delay improved by 40%, damage-over-time received while shields are down reduced to effectively nothing, health regen increased to 10%, fixed nova damage not scaling with level and increased nova radius by 33%.
 
  ┗----Rationale: If you're going to go through hell-and-high-water to get this thing, it should be worth your effort. At least in terms of general defensive capability, it should now be top-notch.
 
@@ -1821,7 +1835,7 @@ Infernal Wish - Now always spawns with maximum shield parts.
 
 Madcap - No change.
 
-Messy Breakup - No change.
+Messy Breakup - Now always spawns with maximum parts.
 
 Nova Berner - No change.
 
@@ -1833,7 +1847,7 @@ Red Card Re-Charger - Slide Damage effect buffed by 428%, now always spawns with
 
 Rico - Now always spawns with maximum shield parts.
 
-Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%, now always spawns with maximum shield parts and no longer spawns with "None" parts.
+Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%, now always spawns with maximum shield parts.
 
 Scream of Terror - Nova radius increased by 66%, capacity and delay reduced by 50%, recharge rate doubled.
 
@@ -1907,7 +1921,7 @@ Revengenader - No change.
 
 PANGOLIN LEGENDARY SHIELDS
 --------------------------
-Band of Sitorak - Fixed description to say 30% damage instead of 170%.
+Band of Sitorak - Fixed description to say 30% damage instead of 170%, now always spawns with maximum parts.
 
 Big Boom Blaster - No change.
 
@@ -2008,15 +2022,15 @@ Fish Slap - Now always spawns with maximum parts.
 
 Ghast Call - Now more likely to spawn with extra parts.
 
-Hex - No change other than a possible damage adjustment.
+Hex - Now more likely to spawn with extra parts.
 
 HOT Spring - No change other than a possible damage adjustment.
 
-Hunter-Seeker - No change other than a possible damage adjustment.
+Hunter-Seeker - Now more likely to spawn with extra parts as well as more likely to spawn in elemental versions.
 
 It's Piss - No change other than a possible damage adjustment.
 
-Lightspeed - No change other than a possible damage adjustment.
+Lightspeed - Now more likely to spawn in elemental versions.
 
 Mesmer - No change other than a possible damage adjustment.
 
@@ -2026,7 +2040,7 @@ Nagata - No change other than a possible damage adjustment.
 
 Pyroburst - No change other than a possible damage adjustment.
 
-Quasar - No change other than a possible damage adjustment.
+Quasar - Now more likely to spawn with extra parts.
 
 Red Queen - No change other than a possible damage adjustment.
 
@@ -2036,9 +2050,9 @@ Sidewinder - Radius reduced by 60%.
 
 Storm Front - No change other than a possible damage adjustment.
 
-Surge - Splash radius increased by 85%.
+Surge - Splash radius increased by 85%, now more likely to spawn in elemental versions.
 
-Tina's Hippity Hopper - No change other than a possible damage adjustment.
+Tina's Hippity Hopper - Now more likely to spawn in elemental versions.
 
 Tran-fusion - Now always spawns with maximum parts.
 
