@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.2.9
+-----
+Fixed the Star Helix not consuming two ammo per shot when a secondary firing mode is active.
+
 1.2.8
 -----
 Exchanged the Ten Gallon in GenIVIV's loot pool with the Messy Breakup from Rax.
