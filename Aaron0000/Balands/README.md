@@ -1,4 +1,4 @@
-(Includes the Unofficial Communty Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
 
 # DISCLAIMER
 
@@ -6,6 +6,38 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+
+1.3.0
+-----
+Endgame activities (Trials, Circles of Slaughter, and Takedowns) have been given an increased chance to world-drop Legendary gear. For comparison's sake, "Loot the Universe" increased the chance of Legendary loot by 2000%.
+
+Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+
+Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+
+Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+
+Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+
+Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+
+Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+
+Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
+
+Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
+
+Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
+
+Improved the loot drops of Godliaths.
+
+Fixed some typos in the loot changes for Anathema, Scourge, Hemovorous. They should now drop more of their specific loot.
 
 1.2.9
 -----
@@ -401,6 +433,30 @@ Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward ite
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
+Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+
+Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+
+Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+
+Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+
+Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+
+Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+
+Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
+
+Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
+
+Improved the loot drops of Godliaths.
+
 Added a 33% chance for Anointed Zealots to drop Alien-Barrel Submachine Guns.
 
 Added a 33% chance for Anointed Tinks to drop Alien-Barrel Pistols.
@@ -498,6 +554,8 @@ Added Ember's Blaze to Stanley with a 10% chance of dropping.
 Added the Double Downer to Gorgeous Armada, increased chance of Armada dropping from his loot pool to 20%.
 
 Added the Short Stick to Yeti, increased chance of Yeti dropping from its loot pool to 50%.
+
+Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
 
 Added the Pearl of Knowledge, Firecracker, and non-Legendary Love Drill to Eleanor, increased chance of Eleanor dropping from her loot pool to 40%.
 
