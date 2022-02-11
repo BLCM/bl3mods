@@ -37,7 +37,7 @@ Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small
 
 Improved the loot drops of Godliaths.
 
-Fixed some typos in the loot changes for Anathema, Scourge, Hemovorous. They should now drop more of their specific loot.
+Fixed some typos in the loot changes for Anathema, Scourge, and Hemovorous. They should now drop more of their specific loot.
 
 1.2.9
 -----
