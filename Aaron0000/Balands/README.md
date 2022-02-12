@@ -7,6 +7,28 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.1
+-----
+Added Mayhem-scaled gun damage to Matched Set as a means of accomodating the loss of damage from Mayhem-scaled Skag Den/Big Surplus/Short Fuse. It does not increase in effectiveness based on how many items of a specific manufacturer you are wearing. It increases gun damage by 12% per Mayhem level and should be effective for 99% of guns.
+
+Increased the effectiveness of Vampyr to 1% per point.
+
+Increased the fire damage of Big Surplus to 10% per point.
+
+Increased the fire damage of Cloud of Lead to 4% per point.
+
+Reduced the fire damage of Fire in the Skag Den to 4% per point.
+
+Reverted the damage bonus buff of Armored Infantry back to 3% per point, made it global damage instead of gun damage.
+
+Made the damage bonus of Tenacious Defense global damage and made the damage bonus factor in skill and gear boosts.
+
+Reduced the maximum damage bonus of Click, Click... to 50% and made it factor in skill and gear boosts.
+
+Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added bonus movement speed.
+
+Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
+
 1.3.0
 -----
 Endgame activities (Trials, Circles of Slaughter, and Takedowns) have been given an increased chance to world-drop Legendary gear. For comparison's sake, "Loot the Universe" increased the chance of Legendary loot by 2000%.
@@ -399,7 +421,7 @@ Increased the odds of Evil Lilith dropping her specific drops to 60% to compensa
 
 Adjusted the description of the Guardian 4N631 slightly.
 
-(End of Changelog)
+(End of Update Changelog)
 -----------------
 
 BASIC PLAYER CHANGES
@@ -643,6 +665,8 @@ Anointed Enforcers should no longer spawn outside of the encounters with the Ano
 
 OTHER CHANGES/FIXES
 -------------------
+Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
+
 Typhon, Claptrap, Ava, Lilith, Maya, Lorelei, Clay, Hammerlock (DLC2), and Gaige have had their overall movement speed increased to be 50% higher than a standard Vault Hunter's and their sprint speed has been increased to 75%.
 
 Applied a band-aid fix to Vendor Crashing by adjusting how the Item of the Day appears on the outside of the vendor.
@@ -1530,29 +1554,29 @@ The Boo - No change other than a possible damage adjustment.
 
 TEDIORE REGULAR GUNS
 --------------------
-Quickshot (Higher fire rate, lower damage, reload is self-firing gun) - No change.
+Quickshot - No change.
 
-Deadshot (reload is detonating red globe) - Increased Magazine Size by 25%.
+Deadshot - Increased Magazine Size by 25%.
 
-Sureshot (Higher damage, lower fire rate, bigger mag, reload is multi-projectile) - No change.
+Sureshot - No change.
 
-Lurkshot (impacts for 10% of damage, then explodes for card damage, reload produces puddle) - Increased Damage by 90% and Magazine Size by 40%.
+Lurkshot - Increased Damage by 90% and Magazine Size by 40%.
 
-Excelerator (higher fire rate, lower damage, reload is self-firing gun) - No change.
+Excelerator - No change.
 
-Kill-O-Matic (reload is detonating red globe) - No change.
+Kill-O-Matic - No change.
 
-Keenfire (Higher damage, lower fire rate, reload is multi-projectile) - No change.
+Keenfire - No change.
 
-Gibbergun (shots penetrate, reload produces puddle) - Increased Damage by 85%, reduced Fire Rate by 20%, and Magazine Size increased by 5 bullets.
+Gibbergun - Increased Damage by 85%, reduced Fire Rate by 20%, and Magazine Size increased by 5 bullets.
 
-Fastblast (Higher damage per pellet, less pellets, higher fire rate. Reload is self-firing gun) - No change.
+Fastblast - No change.
 
-Everblast (Bigger magazine, reload is multi-projectile) - No change.
+Everblast - No change.
 
-Powerblast (Higher pellet count, lower fire rate, reload is detonating red globe) - No change.
+Powerblast - No change.
 
-Elderblast (lobs explosive globs, reload produces puddle) - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and reduced Damage-over-Time by 40%.
+Elderblast - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and reduced Damage-over-Time by 40%.
 
 
 TORGUE LEGENDARY GUNS
@@ -2245,7 +2269,7 @@ Flare - Replaced Stainless-Steel Bear with Desperate Measures, replaced Cloud of
 
 Heat Exchanger - No change.
 
-Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%. (Possibly consider replacing Means of Destruction with Click, Click.)
+Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%.
 
 Green Monster - Replaced Click, Click... with Forge and made the description more accurate.
 
@@ -2778,7 +2802,7 @@ Selfless Vengeance - Increased Incendiary Bonus to 4% per point, increased bonus
 
 Security Bear - No change.
 
-Armored Infantry - Increased the damage bonus to 5% per point.
+Armored Infantry - Changed the damage type to global damage instead of gun damage.
 
 Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's.)
 
@@ -2798,11 +2822,11 @@ Phalanx Doctrine - No change.
 
 Force Feedback - Increased shield restore to 15%.
 
-Tenacious Defense - No change.
+Tenacious Defense - Made the damage bonus affect most types of damage as well as factor in gear and skill bonuses.
 
 DEMOLITION WOMAN
 ----------------
-Fire in the Skag Den - Increased fire damage to 5% per point.
+Fire in the Skag Den - Increased fire damage to 4% per point.
 
 Deadlines - No change.
 
@@ -2818,7 +2842,7 @@ Pull the Holy Pin - No change.
 
 Auto Bear - No change.
 
-Vampyr - Reduced Lifesteal to 0.6% per point.
+Vampyr - Reduced Lifesteal to 1% per point.
 
 Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade regeneration, added a 10%-per-point Grenade Damage bonus.
 
@@ -2826,17 +2850,17 @@ Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade re
 
 To The Last - No change.
 
-Explosive Punctuation - Increased duration to 5 seconds.
+Explosive Punctuation - Increased duration to 5 seconds, reduced the cooldown bonus to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added 5% bonus movement speed per point.
 
 Short Fuse - No change.
 
 BOTTOMLESS MAGS
 ---------------
-Cloud of Lead - No change.
+Cloud of Lead - Increased fire damage to 4% per point.
 
 Dakka Bear - No change.
 
-Matched Set - No change.
+Matched Set - Added gun-damage Mayhem Scaling.
 
 Stoke the Embers - No change.
 
@@ -2856,7 +2880,7 @@ Specialist Bear - Reduced the damage bonus to 30%.
 
 Some for the Road - A second point in Some For The Road now increases duration by 5 seconds.
 
-Click, Click... - No change.
+Click, Click... - Reduced maximum bonus to 50% and made it factor in gear and skill bonuses.
 
 Forge - Increased bonus to 12.5%.
 
@@ -2864,7 +2888,7 @@ BEAR MOTHER
 -----------
 Biofuel - No change.
 
-Big Surplus - No change.
+Big Surplus - Increased fire damage to 10%.
 
 Really Big Guns - No change.
 
