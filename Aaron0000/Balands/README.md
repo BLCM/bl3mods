@@ -7,6 +7,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.2
+-----
+Moved the Mayhem-scaled gun damage from Matched Set to Armored Infantry for two reasons. One, Armored Infantry is a more commonly selected skill and two, unlike the Mayhem-scaled Action Skill damage implemented on other characters this Mayhem-scaled gun damage does not penalize the user in any fashion so it being on a popular skill has no demerit.
+
+Added a small (not Mayhem-scaled) gun damage bonus to Matched Set.
+
 1.3.1
 -----
 Added Mayhem-scaled gun damage to Matched Set as a means of accomodating the loss of damage from Mayhem-scaled Skag Den/Big Surplus/Short Fuse. It does not increase in effectiveness based on how many items of a specific manufacturer you are wearing. It increases gun damage by 12% per Mayhem level and should be effective for 99% of guns.
@@ -2802,7 +2808,7 @@ Selfless Vengeance - Increased Incendiary Bonus to 4% per point, increased bonus
 
 Security Bear - No change.
 
-Armored Infantry - Changed the damage type to global damage instead of gun damage.
+Armored Infantry - Changed the damage type to global damage instead of gun damage and added Mayhem-scaled gun-damage.
 
 Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's.)
 
@@ -2860,7 +2866,7 @@ Cloud of Lead - Increased fire damage to 4% per point.
 
 Dakka Bear - No change.
 
-Matched Set - Added gun-damage Mayhem Scaling.
+Matched Set - Added 1.5% gun damage per point.
 
 Stoke the Embers - No change.
 
