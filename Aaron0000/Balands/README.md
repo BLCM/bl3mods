@@ -7,6 +7,16 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.4
+-----
+Realized a less clunky way of applying Mayhem-scaled Action Skill damage to skills. It no longer renders action skill damage useless outside of Mayhem Mode or less effective than otherwise at lower Mayhem Levels. It has thus been moved to more commonly selected skills on each of the vault hunters (that have Action Skill damage scaling on a skill currently), and the percentages have been adjusted to have roughly the same damage before this update. 
+
+Moved Amara's Action Skill Scaling to Violent Momentum. Action Skill Scaling is now 56.6% per point.
+
+Moved Fl4k's Action Skill Scaling to Persistence Hunter. Action Skill Scaling is now 21.2% per point.
+
+Moved Amara's Action Skill Scaling to Fast Hand(s). Action Skill Scaling is now 12% per point.
+
 1.3.3
 -----
 Add "(Total)" in front of the Matched Set gun damage bonus to reduce confusion. The damage bonus doesn't display the damage increase per individual piece of matching gear, it displays the full bonus.
@@ -2998,7 +3008,7 @@ DOUBLED AGENT
 -------------
 Synchronicity - Added a bonus to Action Skill damage.
 
-Praemunitus - Added Action-Skill-damage Mayhem Scaling.
+Praemunitus - Made it affect Heat-per-Shot.
 
 Borrowed Time - No change.
 
@@ -3034,7 +3044,7 @@ Violent Speed - No change.
 
 Cold Bore - Reduced the bonus cryo damage to 10% per point.
 
-Violent Momentum - Now also increases slide damage.
+Violent Momentum - Now also increases slide damage, added Action-Skill-damage Mayhem Scaling.
 
  ┗----Rationale: If an old man slides into your kneecaps at hyperspeed, logically speaking it should hurt more than if he slides into you at a brisk jog. It also opens up some fun avenues for alternate damage.
 
@@ -3202,7 +3212,7 @@ MASTER
 ------
 Ferocity - No change.
 
-Persistance Hunter - No change.
+Persistance Hunter - Added Action-Skill-damage Mayhem Scaling.
 
 Go for the Eyes - No change.
 
@@ -3228,7 +3238,7 @@ Dominance - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 STALKER
 -------
-Self-Repairing System - Added Action-Skill-damage Mayhem Scaling.
+Self-Repairing System - No change.
 
 Sic 'Em - Increased cooldown bonus to 16.66% per point from 10%.
 
@@ -3398,7 +3408,7 @@ Do Harm - Reduced the maximum amount of stacks to 50, doubled the effectiveness 
 
  ┗----Rationale: While this skill can reach up to 99 stacks under certain conditions, those conditions are not realistic in practice. Rather than funneling more damage into the already bloated Phase-skill anointments to make Amara's Action Skills more viable at endgame, Do Harm has been tweaked instead. Hence the maximum count has been reduced to 50 while the effectiveness has been doubled to equal the same strength it would have previously with 99 stacks. This change also narrows the gap between the Phasezerker class mod and other class mods such as the Stone for Action-Skill oriented builds. Same applies to Violent Tapestry.
 
-Fast Hand(s) - No change.
+Fast Hand(s) - Added Action-Skill-damage Mayhem Scaling.
 
 Violent Tapestry - Reduced the maximum amount of stacks to 50, doubled the effectiveness of each stack.
 
@@ -3424,7 +3434,7 @@ Avatar - No change.
 
 BRAWL
 -----
-Root to Rise - Added Action-Skill-damage Mayhem Scaling.
+Root to Rise - No change.
 
 Personal Space - Made it also affect Melee damage and Phaseslam damage.
 
