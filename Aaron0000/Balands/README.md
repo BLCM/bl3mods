@@ -7,6 +7,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.3
+-----
+Add "(Total)" in front of the Matched Set gun damage bonus to reduce confusion. The damage bonus doesn't display the damage increase per individual piece of matching gear, it displays the full bonus.
+
 1.3.2
 -----
 Moved the Mayhem-scaled gun damage from Matched Set to Armored Infantry for two reasons. One, Armored Infantry is a more commonly selected skill and two, unlike the Mayhem-scaled Action Skill damage implemented on other characters this Mayhem-scaled gun damage does not penalize the user in any fashion so it being on a popular skill has no demerit.
@@ -2866,7 +2870,7 @@ Cloud of Lead - Increased fire damage to 4% per point.
 
 Dakka Bear - No change.
 
-Matched Set - Added 1.5% gun damage per point.
+Matched Set - Added 1.5% gun damage per point (it doesn't display the percentage in the same way the magazine size and heat reduction do, it's the total bonus.)
 
 Stoke the Embers - No change.
 
