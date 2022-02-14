@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.3.2
+### Version: 1.3.3
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -3670,7 +3670,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,StatusEffectData,0,,/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Status_Gunner_MatchedSet.Status_Gunner_MatchedSet
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,Attribute,0,,/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C,AbilityDescription.string,0,,Moze's currently equipped weapon gains a stacking bonus to [skillbold]Gun Damage[/skillbold], [skillbold]Magazine Size[/skillbold], and [skillbold]Decreased Heat Per Shot[/skillbold] for every piece of equipped gear that has a [skillbold]matching manufacturer[/skillbold].
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,FormatText.string,0,,[skillbold]Gun Damage:[/skillbold] $VALUE$
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,FormatText.string,0,,[skillbold](Total) Gun Damage:[/skillbold] $VALUE$
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,SignStyle,0,,EUIStatValueSignStyle::Positive
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,RoundingMode,0,,EUIStatValueRoundingMode::None
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/MatchedSet/Passive_Gunner_MatchedSet.Default__Passive_Gunner_MatchedSet_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeWeaponDamage,bDisplayAsPercentage,0,,true
