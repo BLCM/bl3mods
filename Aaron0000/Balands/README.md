@@ -453,6 +453,8 @@ MAYHEM MODE CHANGES
 -------------------
 Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage (which now displays on the pet cards).
 
+Implemented mayhem scaling for Moze's gun damage to account for the heavy loss of damage from skills such as Fire in the Skag Den, Big Surplus, and Short Fuse no longer being Mayhem scaled.
+
 Implemented the Mayhem scaling for Action skill damage in a different way to allow for individual character adjustments. They're now activated by investing one point in Pramunitas, Self-Repairing Systems, or Root to Rise.
 
 Experience gained in Mayhem Mode increased by 1.5 times (Mayhem 10 now gives 300% EXP instead of 200%, for example.)
