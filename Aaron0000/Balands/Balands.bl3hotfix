@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.3.4
+### Version: 1.3.5
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -2787,8 +2787,9 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/Table_CM_Ixora.Table_CM_Ixora,SirenL01,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,10
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/ClassMods/_Design/SRN/L01/UIStat_CM_Ixora_SRN_Description.UIStat_CM_Ixora_SRN_Description,FormatText,0,,After activating her action skill Amara deals [skillbold]$VALUE$ Bonus Melee Damage[/skillbold] of her attuned element type with her weapons.
 
-# Nimbus - Increase Base Damage per Second to 30 from 25.
+# Nimbus - Increase Base Damage per Second to 30 from 25, make the description more accurate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Siren/_Unique/DataTable_CM_Siren_Unique.DataTable_CM_Siren_Unique,Unique_05,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,30
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/UI/UIStat_CM_SR_Unique_05_Desc.UIStat_CM_SR_Unique_05_Desc,FormatText,0,,Whenever Amara first damages an enemy with her [skill]Action Skill[/skill], she creates a damaging cloud of her [skill]Action Skill Element[/skill] at that location. This cloud inherits the damage of your currently wielded weapon's Damage-over-Time.
 
 # Stone - Increase Rush Stack Chance to 20% from 10%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/Table_CM_Hib.Table_CM_Hib,SirenHibiscusClassMod,Value_C_6_3F98C9DC474EDF4757401A9211583E20,0,,0.2
@@ -3143,7 +3144,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameP
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameParts/Gunner/IronCubDamage/UIStat_Gunner_IronCubActiveDamage.UIStat_Gunner_IronCubActiveDamage,FormatText.string,0,,[endgame]While [endgamebold]Iron Cub[/endgamebold] is active, Weapon Damage is increased by 35%.[/endgame]
 
 # MNTIS Damage - Reduce Damage Bonus to 70% from 100%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameParts/DataTable_EndGameParts_Ixora.DataTable_EndGameParts_Ixora,Operative_MNTIS_Damage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,3
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameParts/DataTable_EndGameParts_Ixora.DataTable_EndGameParts_Ixora,Operative_MNTIS_Damage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.7
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameParts/OP1/MNTISDamage/CDM_Operative_MNTISDamage.CDM_Operative_MNTISDamage,DamageValue.BaseValueScale,0,,1
 
 ### GUNNER ###
