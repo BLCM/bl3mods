@@ -7,6 +7,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.5
+-----
+Fixed the MNTIS Cannon Damage anointment doing more damage than intended.
+
+Adjusted the description of the Nimbus class mod to remove the damage number since it is useless and mention that the cloud inherits your weapon's damage-over-time damage value.
+
 1.3.4
 -----
 Realized a less clunky way of applying Mayhem-scaled Action Skill damage to skills. It no longer renders action skill damage useless outside of Mayhem Mode or less effective than otherwise at lower Mayhem Levels. It has thus been moved to more commonly selected skills on each of the vault hunters (that have Action Skill damage scaling on a skill currently), and the percentages have been adjusted to have roughly the same damage before this update. 
