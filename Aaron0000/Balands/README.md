@@ -11,7 +11,7 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 -----
 Realized a less clunky way of applying Mayhem-scaled Action Skill damage to skills. It no longer renders action skill damage useless outside of Mayhem Mode or less effective than otherwise at lower Mayhem Levels. It has thus been moved to more commonly selected skills on each of the vault hunters (that have Action Skill damage scaling on a skill currently), and the percentages have been adjusted to have roughly the same damage before this update. 
 
-Moved Amara's Action Skill Scaling to Violent Momentum. Action Skill Scaling is now 56.6% per point.
+Moved Zane's Action Skill Scaling to Violent Momentum. Action Skill Scaling is now 56.6% per point.
 
 Moved Fl4k's Action Skill Scaling to Persistence Hunter. Action Skill Scaling is now 21.2% per point.
 
