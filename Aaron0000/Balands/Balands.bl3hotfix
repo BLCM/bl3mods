@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.3.5
+### Version: 1.3.6
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -794,6 +794,13 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/Gre
 # Buff Rain Grenades to 3/5/7 from 3/4/5.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Balance_Table.GrenadeMod_Balance_Table,Rain,Primary_2_15_2B2EF17E422835A6F855B0B351652BD4,0,,5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Balance_Table.GrenadeMod_Balance_Table,Rain,Primary_3_16_1E6ADA3B4212CC38E1A4E59C9B29BBE2,0,,7
+
+# Buff Singularity Radius of Singularity Grenades by 80%.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/GrenadeMods/_Design/PartSets/Part_Behavior/Singularity/GM_Part_Behavior_09_Singularity.GM_Part_Behavior_09_Singularity:AspectList_GrenadePayloadMethodAspectData.PayloadBehavior_GrenadeBehavior_PayloadSingularity,MinSingularityRadius,0,,1260
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/GrenadeMods/_Design/PartSets/Part_Behavior/Singularity/GM_Part_Behavior_09_Singularity.GM_Part_Behavior_09_Singularity:AspectList_GrenadePayloadMethodAspectData.PayloadBehavior_GrenadeBehavior_PayloadSingularity,MaxSingularityRadius,0,,2340
+
+# Buff Nuke Grenade Radius from -0.1 to 0.2345.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Balance_Table.GrenadeMod_Balance_Table,Nuke,Radius_13_9DDB780D4981106D3843E19FAC0856D3,0,,0.2345
 
 ### BASIC CLASS MOD CHANGES ###
 
@@ -2525,8 +2532,11 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/Gre
 # Nagata - Increase Damage to -1.2 from -3.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Nagate,Damage_12_F33DA0994756D761207677A51A156787,0,,-1.2
 
-# Quasar - Increase Damage to 1.5 from -2.
+# Quasar - Increase Damage to 1.5 from -2, increase Radius from 950 to 1400.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Quasar,Damage_12_F33DA0994756D761207677A51A156787,0,,1.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Quasar,Primary_1_14_785154D64AF8EEEA12E3F1A63A0B04B6,0,,1400
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Quasar,Primary_2_15_2B2EF17E422835A6F855B0B351652BD4,0,,1500
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_Quasar,Primary_3_16_1E6ADA3B4212CC38E1A4E59C9B29BBE2,0,,1600
 
 # Storm Front - Increase Damage to 1.25 from -2.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_StormFront,Damage_12_F33DA0994756D761207677A51A156787,0,,1.25
@@ -2775,7 +2785,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Siren/ClassMod_Part_Skill_Siren_Remnant.ClassMod_Part_Skill_Siren_Remnant:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,personalSpace
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Siren/ClassMod_Part_Skill_Siren_Remnant.ClassMod_Part_Skill_Siren_Remnant:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,green
 
-# Elementalist - Replace Wildfire with Anima.
+# Elementalist - Increase Damage by 1750%, replace Wildfire with Anima.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_SimpleFormulas.DataTable_Siren_SimpleFormulas,Grasp_DamagePerSecond,Multiplier,0,,(BaseValueConstant=0,BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/Att_Calc_Siren_GlobalSkillDamage.Att_Calc_Siren_GlobalSkillDamage,BaseValueScale=17.5)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Siren/ClassMod_Part_Skill_Siren_WildFire.ClassMod_Part_Skill_Siren_WildFire:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/Anima/PassiveSkill_Siren_Anima.PassiveSkill_Siren_Anima_C
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_Skills/Siren/ClassMod_Part_Skill_Siren_WildFire.ClassMod_Part_Skill_Siren_WildFire:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,anima
 
