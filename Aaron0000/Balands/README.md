@@ -7,6 +7,16 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.6
+-----
+Increased the damage of the Elementalist's damage-over-time by 1750%.
+
+Increased the radius of the Nuke grenade part from -10% per Nuke part to +23.45%.
+
+Increased the suction radius of Singularity grenades by 80%.
+
+Increased the suction radius of the Quasar by 47%.
+
 1.3.5
 -----
 Fixed the MNTIS Cannon Damage anointment doing more damage than intended.
