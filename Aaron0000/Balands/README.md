@@ -1,4 +1,4 @@
-(Includes the vast majority of the Unofficial Communty Patch's changes other than Red-Text Explainer and the smaller HUD Size, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
 
 # DISCLAIMER
 
@@ -6,6 +6,380 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+
+1.3.6
+-----
+Increased the damage of the Elementalist's damage-over-time by 1750%.
+
+Increased the radius of the Nuke grenade part from -10% per Nuke part to +23.45%.
+
+Increased the suction radius of Singularity grenades by 80%.
+
+Increased the suction radius of the Quasar by 47%.
+
+1.3.5
+-----
+Fixed the MNTIS Cannon Damage anointment doing more damage than intended.
+
+Adjusted the description of the Nimbus class mod to remove the damage number since it is useless and mention that the cloud inherits your weapon's damage-over-time damage value.
+
+1.3.4
+-----
+Realized a less clunky way of applying Mayhem-scaled Action Skill damage to skills. It no longer renders action skill damage useless outside of Mayhem Mode or less effective than otherwise at lower Mayhem Levels. It has thus been moved to more commonly selected skills on each of the vault hunters (that have Action Skill damage scaling on a skill currently), and the percentages have been adjusted to have roughly the same damage before this update. 
+
+Moved Zane's Action Skill Scaling to Violent Momentum. Action Skill Scaling is now 56.6% per point.
+
+Moved Fl4k's Action Skill Scaling to Persistence Hunter. Action Skill Scaling is now 21.2% per point.
+
+Moved Amara's Action Skill Scaling to Fast Hand(s). Action Skill Scaling is now 12% per point.
+
+1.3.3
+-----
+Add "(Total)" in front of the Matched Set gun damage bonus to reduce confusion. The damage bonus doesn't display the damage increase per individual piece of matching gear, it displays the full bonus.
+
+1.3.2
+-----
+Moved the Mayhem-scaled gun damage from Matched Set to Armored Infantry for two reasons. One, Armored Infantry is a more commonly selected skill and two, unlike the Mayhem-scaled Action Skill damage implemented on other characters this Mayhem-scaled gun damage does not penalize the user in any fashion so it being on a popular skill has no demerit.
+
+Added a small (not Mayhem-scaled) gun damage bonus to Matched Set.
+
+1.3.1
+-----
+Added Mayhem-scaled gun damage to Matched Set as a means of accomodating the loss of damage from Mayhem-scaled Skag Den/Big Surplus/Short Fuse. It does not increase in effectiveness based on how many items of a specific manufacturer you are wearing. It increases gun damage by 12% per Mayhem level and should be effective for 99% of guns.
+
+Increased the effectiveness of Vampyr to 1% per point.
+
+Increased the fire damage of Big Surplus to 10% per point.
+
+Increased the fire damage of Cloud of Lead to 4% per point.
+
+Reduced the fire damage of Fire in the Skag Den to 4% per point.
+
+Reverted the damage bonus buff of Armored Infantry back to 3% per point, made it global damage instead of gun damage.
+
+Made the damage bonus of Tenacious Defense global damage and made the damage bonus factor in skill and gear boosts.
+
+Reduced the maximum damage bonus of Click, Click... to 50% and made it factor in skill and gear boosts.
+
+Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added bonus movement speed.
+
+Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
+
+1.3.0
+-----
+Endgame activities (Trials, Circles of Slaughter, and Takedowns) have been given an increased chance to world-drop Legendary gear. For comparison's sake, "Loot the Universe" increased the chance of Legendary loot by 2000%.
+
+Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+
+Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+
+Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+
+Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+
+Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+
+Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+
+Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
+
+Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
+
+Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
+
+Improved the loot drops of Godliaths.
+
+Fixed some typos in the loot changes for Anathema, Scourge, and Hemovorous. They should now drop more of their specific loot.
+
+1.2.9
+-----
+Fixed the Star Helix not consuming two ammo per shot when a secondary firing mode is active.
+
+1.2.8
+-----
+Exchanged the Ten Gallon in GenIVIV's loot pool with the Messy Breakup from Rax.
+
+Made the Messy Breakup and Band of Sitorak always spawn with maximum parts. Messy Breakup additionally is now more likely to spawn in shock element compared to before.
+
+Fixed the Rough Rider not always spawning with maximum parts.
+
+Made the Hunter-Seeker, Hex, and Quasar more likely to spawn with extra parts.
+
+Made the Hunter-Seeker, Hippity Hopper, Surge, and Lightspeed more likely to spawn in elemental versions.
+
+1.2.7
+-----
+Fixed a typo in the adjustment for the Shlooter that is supposed to make it always spawn with three stat bonuses. It should now work properly.
+
+1.2.6
+-----
+Updated the red-text explanation for the Crader's EMP-5 and Proprietary License slightly.
+
+Adjusted the Aesclepius' status effect damage reduction to be far more effective and updated the description slightly.
+
+Fixed the Polyaimorous' secondary firing mode not receiving proper damage bonuses.
+
+1.2.5
+-----
+Reverted the damage buff on the Messy Breakup to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
+
+1.2.4
+-----
+Fixed the Rakk Commander not actually increasing Rakk count by 3.
+
+Fixed Torgue Cross-Promotion not boosting Splash Damage by 7% per point.
+
+Made the Shlooter always spawn with maximum bonus stat parts after the first redemption.
+
+Made the following grenades always spawn with maximum parts; Fish Slap, Firestorm, Tran-fusion, and Widowmaker.
+
+Made the following grenades more likely to spawn with extra parts; Ghast Call, Ringer, and Epicenter.
+
+Made the Widowmaker more likely to spawn with an element.
+
+1.2.3
+-----
+Fixed some base weapon type and standard weapon barrel stat changes not applying to secondary firing modes.
+
+Fixed the pet bonuses for Fl4k's Jabbers not displaying the increase in percentage they should display when Barbaric Yawp is invested into.
+
+1.2.2
+-----
+Fixed the Spiderant Scorcher and Spiderant Countess not having all of their pet bonuses being displayed on the info card.
+
+1.2.1
+-----
+Reduced the projectile speed of TK's Wave and the Tidal Wave. They're now 25% faster than TK's Wave would be in normal gameplay.
+
+Increased the projectile damage of the Psycho Stabber.
+
+Increased the melee damage of the Ionic Disruptor to 200%.
+
+1.2.0
+-----
+Made the Company Man always spawn with three (non-manufacturer) passive stat bonuses.
+
+1.1.9
+-----
+Added Action Skill damage Mayhem Scaling to a few skills for Zane, Fl4k, and Amara. Investing one point into these skills enables your Action Skill damage to scale with Mayhem levels. Be warned that if you have a point in one of these skills and don't have Mayhem mode activated, your Action Skills don't deal any damage due to how it calculates the damage. It was done this way to prevent Iron Bear and Iron Cub from destroying the universe, as well as being able to manually adjust the boost for each Vault Hunter. Mayhem 11 will end up having slightly more Action Skill damage bonus, but you can simply roll for four "Nay-hem" modifiers on Mayhem 10 if that bothers you.
+
+Added Action Skill damage Mayhem Scaling to Praemunitas. It increases by 50% for every Mayhem level.
+
+Added Action Skill damage Mayhem Scaling to Self-Repairing Systems. It increases by 25% for every Mayhem level.
+
+Added Action Skill damage Mayhem Scaling to Root to Rise. It increases by 20% for every Mayhem level.
+
+Added notes in the skill descriptions for the following skills/augments to indicate they receive Mayhem Scaling:  Best Served Cold, Binary System, Doppelbanger, Dominance, Success Imminent, Lethal Force Authorized, Remnant, Indiscriminate, Catharsis, Do Unto Others, Revelation, Unweave the Rainbow, Body and Mind, and Free the Soul.
+
+Increased the Digi-Clone's damage by 15%.
+
+Increased the damage of the SNTNL's machine gun, Boomsday, Bad Dose, Static Field, and Almighty Ordnance by 20%.
+
+Increased the Digi-Clone's base health to 39% higher than normal game values.
+
+Increased the base damage of Rakk Attack to 80% stronger than normal game values.
+
+Increased the cooldown on Attack Commands to 12 seconds.
+
+Increased the damage of Success Imminent by 150%.
+
+Increased the base health of Fl4k's pets by 40%.
+
+Tripled the base damage of Fl4k's pets.
+
+Doubled the base damage of the Jabber pets' weapons.
+
+Re-enabled Pet Damage Scaling in Mayhem Mode and added the Mayhem Level multiplier to the pet descriptions, at +70% per Mayhem Level.
+
+Reverted previous damage buffs to the Great Horn Skag and Eridian Skag Attack Commands.
+
+Reduced the damage of the Gunslinger Jabber's Attack Command by 30%.
+
+Reduced the damage of the WAR Loader's Attack Command by 20%.
+
+Increased the base damage of Phasecast to 150% stronger than normal game values.
+
+Increased the base damage of Reverbration to 79% stronger than normal game values.
+
+Increased the base damage of Deliverance to 145% stronger than normal game values.
+
+Increased the base damage of Tandava to 154% stronger than normal game values.
+
+Increased the base damage of Phaseslam, Fracture, and Downfall to 215% stronger than normal game values.
+
+Increased the base damage of Phaseflare to 51% stronger than normal game values.
+
+Increased the base damage of Glow Up to 55% stronger than normal game values.
+
+Increased the base damage of Shooting Star to 91% stronger than normal game values.
+
+Increased the base damage of Light Fantastic to 47% stronger than normal game values.
+
+Reduced the damage of Body and Mind to 50%.
+
+Increased the damage of Free the Soul to 7 times higher than normal game values.
+
+Heavily reduced the health scaling for enemies in Arms Race.
+
+Reduced the damage of Diadems in Scourge the Invincible's fight by 75%.
+
+Fixed Dahl SMGs not receiving a damage bonus in semi-automatic firing mode.
+
+Reduced the fire rate of burst-fire mode on Dahl SMGs to compensate for the increase base fire rate on Dahl SMGs. 
+
+Increased the melee damage bonus of the Psycho Stabber to 250%.
+
+Increased the melee damage bonus of the Ripper to 200%.
+
+Made the description on the Anarchy more accurate.
+
+Reduced the damage of the Blade Fury's bullet damage by 25%, reset the projectile's melee damage to original values.
+
+Removed the increased animation speed for the animation of exiting a vehicle as the driver to prevent running over yourself with your own car.
+
+Reduced the O.P.Q-System's fire rate by 56%.
+
+Made the following shields always spawn with maximum parts; Beskar, Snowshoe, Gas Mask, Infernal Wish, Old God, Recharge-Berner, Re-Volter, Red Card Recharger, Rico, Rough Rider, Super Soldier (but not the first time you redeem one), Torch, Version 0.m.
+
+Made the Rough Rider no longer spawn with "none" parts.
+
+Reduced the maximum bonus of the Flesh Melter's corrosive damage bonus. Now reaches 25% at level 72.
+
+Reduced the Phasecast damage anointment to 75%.
+
+Reduced the Phaseslam damage anointment to 100%.
+
+Reduced the Phaseflare damage anointment to 75%.
+
+Increased the Terror Cryo damage anointment to 50%.
+
+1.1.8
+-----
+Experimenting with increasing the damage on Action Skill and pets. Not confident with releasing them in their current state however.
+
+Changed Monkey Do's amp damage to say 86% instead of 81%.
+
+Fixed a typo preventing the Butcher from doing damage.
+
+Fixed an issue with the MNTIS damage anointment doing double the listed damage.
+
+Increased Face-puncher damage to slightly above game-launch levels.
+
+Removed the damage penalty on the Unleash the Dragon.
+
+Increased Armored Infantry's damage bonus to 5% per point.
+
+Increased Torgue Cross-Promotion's splash damage bonus to 7% per point.
+
+Increased Scrappy's damage bonus to 7% per point.
+
+Increased the radius of the Stinger's novas by roughly 43%.
+
+Increased the Dowsing Rod's damage by 15%.
+
+Increased the Faisor's damage by 15%
+
+Increased the Flipper's damage by 35%.
+
+Increased the Prompt Critical's damage by 25%.
+
+Increased the Unkempt Harold's damage by 10%.
+
+Increased the Ogre's damage by 10%.
+
+Reduced the base damage of the Guardian 4N631 by 30% and increased the special effect to 120% maximum.
+
+Reduced the damage on the Ember's Purge by 9%, increased the damage of the puddle from 33% to 50%.
+
+Reduced Body and Mind damage by 25%.
+
+Reduced the Reflux' damage by 25%.
+
+Reduced the Sand Hawk's damage by 37.5%.
+
+Reduced the critical hit damage bonus on the Executor to 50%.
+
+Added action skill damage to Synchronicity.
+
+Added a small accuracy and handling bonus to Boom. Enhance.
+
+Made Violent Momentum display the Slide Damage bonus.
+
+Adjusted the Naught. The instant recharge has been reduced to a 75% recharge delay reduction, and a 50% recharge rate penalty has been added. This has been done to prevent issues with certain shields such as the Mana Well.
+
+1.1.7
+-----
+Removed the Monarch's increased bipod-mode movement speed penalty to prevent issues with the movement penalty sticking around after switching weapons.
+
+Reduced Cold Bore's bonus cryo damage to 10% per point.
+
+Fixed the Crader EMP-5 doing a lot more damage than intended.
+
+Increased the damage of the Butcher by 41%.
+
+Increased the Fade Away damage anointment to 40% and adjusted the text on the Gravity Snare damage anointment to 40%. The Snare anointment uses the Fade Away damage anointment for the damage value and I have yet to figure out how to fix it.
+
+Adjusted the Gamma Burst radiation damage anointment's description to be more accurate.
+
+Tripled the speed of the Web Slinger's projectiles. Fixed the Web Slinger underbarrel having two projectiles instead of one and increased the damage of the underbarrel to 50 from 20.
+
+Made the Ward always spawn with maximum Roid parts.
+
+Made the Trial bosses drop three legendary class mods when they would normally drop one.
+
+1.1.6
+-----
+Added in the smaller HUD from the Unofficial Community Patch and added a separate version of Balands to Github/Nexus that does not include the smaller HUD.
+
+Increased Fire in the Skag Den's fire damage to 5% per point.
+
+Increased the duration of the Phasecast-Weapon Damage anointment to 10 seconds.
+
+Added a 50% bonus to slide damage to the Vanquisher.
+
+Updated a few more Red-Text descriptors.
+
+1.1.5
+-----
+Improved the rate of experience gain in Mayhem Mode by 1.5 times (50% higher) for each Mayhem level.
+
+1.1.4
+-----
+Fixed the Action Skill End Badass/Boss Damage anointment having more damage than intended.
+
+Updated Juliet's Dazzle description slightly to mention that the projectiles penetrate and ricochet.
+
+1.1.3
+-----
+Adjusted some Red-Text Explainer descriptions for accuracy and removed redundant explanations for gear that already included a description on the card.
+
+Adjusted Bloom, Frequency, Robin's Call, and Unseen Threat descriptions slightly.
+
+Removed the ricochet text on the Stonethrower.
+
+Replaced Forge with Redistribution on the Green Monster, restored the unlisted splash effect and updated item description to be more accurate. Turns out that giving items like the Sand Hawk excessive ammo regen without a timer isn't very healthy for balance.
+
+Fixed the Good Juju's secondary firing mode dealing less damage than it should.
+
+1.1.2
+-----
+Updated to include Unofficial Community Patch version 1.0.1.
+
+Added the newest version of Apocalyptech's Red Text Explainer.
+
+Fixed an issue with the Kill-o'-the-Wisp where the ammo cost was connected to the damage table instead of the actual damage attribute. Increased the Wisp's damage by 25% and fixed the Wisp's ammo cost to be 3.
+
+Fixed Vosk's Deathgrip's description to say it is four seconds instead of six.
+
+Made the Spade fully-automatic and reduced the fire rate by 50%.
+
+Removed the increased weighting on legendary class mod drops from Jack-Bot since class mods now more heavily favor dropping for your current Vault Hunter due to UCP implementation.
 
 1.1.1
 -----
@@ -83,7 +457,7 @@ Increased the odds of Evil Lilith dropping her specific drops to 60% to compensa
 
 Adjusted the description of the Guardian 4N631 slightly.
 
-(End of Changelog)
+(End of Update Changelog)
 -----------------
 
 BASIC PLAYER CHANGES
@@ -93,7 +467,13 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed all non-enemy health-based Mayhem mode scaling. No skill scaling, action skill scaling, shield scaling, pet scaling, vehicle scaling, etc.
+Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage (which now displays on the pet cards).
+
+Implemented mayhem scaling for Moze's gun damage to account for the heavy loss of damage from skills such as Fire in the Skag Den, Big Surplus, and Short Fuse no longer being Mayhem scaled. It is activated by investing a point into Armored Infantry.
+
+Implemented the Mayhem scaling for Action skill damage in a different way to allow for individual character adjustments. They're now activated by investing one point in Violent Momentum, Persistence Hunter, or Fast Hand(s).
+
+Experience gained in Mayhem Mode increased by 1.5 times (Mayhem 10 now gives 300% EXP instead of 200%, for example.)
 
 Guns and grenades no longer receive increased damage from Mayhem levels. The Mayhem level text no longer displays on gear either (but your gear will still be regular Mayhem gear when the mod is no longer active.).
 
@@ -103,6 +483,7 @@ The "[Turn It Up To] Mayhem 11" modifier is now called "[None] Nay-hem". It can 
 
 Reduced the probability of finding green-rarity gear starting from Mayhem 6 and decreasing as the Mayhem Level is increased up to Mayhem 8.
 
+Heavily reduced the health scaling of enemies in Arms Race to account for less power from Mayhem-leveled gear.
 
 LOOT POOL CHANGES
 -----------------
@@ -111,6 +492,30 @@ The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day an (almost guaranteed) Legendary gun or shield starting from level 35, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
+
+Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+
+Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+
+Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+
+Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+
+Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+
+Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+
+Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+
+Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
+
+Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
+
+Improved the loot drops of Godliaths.
 
 Added a 33% chance for Anointed Zealots to drop Alien-Barrel Submachine Guns.
 
@@ -164,13 +569,17 @@ Increased the chance of Evil Lilith dropping from her loot pool to 60% to compen
 
 Increased the chance of finding Arms-Race exclusive Legendary gear in the Arms Race chests that are locked behind fights.
 
-Added the Bekah to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 40%.
+Increased the number of Legendary class mod drops from Trial bosses to three when they would normally drop one.
+
+Added the Bekah and Superstreamer to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 50%.
 
 Added the Earworm to Graveward's Loot Pool, increased the chance of Graveward dropping from its loot pool to 40%.
 
 Added the Hunt(er) to Manvark's Loot Pool, increased the chance of Manvark dropping from his loot pool to 40%.
 
-Added the Cloud Kill to Rampager's Loot Pool, switch the Duc with the Quadomizer in Rampager's loot pool and Added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 50%.
+Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomizer in Rampager's loot pool and added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 50%.
+
+Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Messy Breakup to Rax.
 
 Added the Hand of Glory to Muldock's Loot Pool, increased the chance of Muldock dropping from his loot pool to 30%.
 
@@ -184,7 +593,7 @@ Added the Ember's Purge to Loco Chantelle, increased chance of Loco Chantelle dr
 
 Added the Scoville to Freddie, increased chance of Freddie dropping from his loot pool to 20%.
 
-Added the Rico to Jack-bot, increasedd weight for DLC1 class mods to drop, increased chance of Jack-bot dropping from its pool to 70%.
+Added the Rico to Jack-bot and increased the chance of Jack-bot dropping from its pool to 70%.
 
 Added Digby's Smooth Tube to Junpei Goat Eater, increased chance of Junpei dropping from his loot pool to 20%.
 
@@ -204,9 +613,9 @@ Added Ember's Blaze to Stanley with a 10% chance of dropping.
 
 Added the Double Downer to Gorgeous Armada, increased chance of Armada dropping from his loot pool to 20%.
 
-Added the All-In to Golden Bullion with a 10% chance to drop.
-
 Added the Short Stick to Yeti, increased chance of Yeti dropping from its loot pool to 50%.
+
+Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
 
 Added the Pearl of Knowledge, Firecracker, and non-Legendary Love Drill to Eleanor, increased chance of Eleanor dropping from her loot pool to 40%.
 
@@ -275,6 +684,10 @@ Anathema the Relentless now only triggers an immune phase at 50% and 0% of a hea
 
  ┗----Rationale: Scourge the Invincible also has a lot of immunity phases, but there is variety to said immunity phases. Anathema's immunity phases are largely monotonous, so reducing the amount of these phases improves the flow of the fight.
 
+Reduced the damage towards non-player characters of the Diadems spawned during Scourge the Invincible's fight.
+
+ ┗----Rationale: The Scourge fight ends up turning into a cycle of "Pop Scourge with the Diadems repeatedly, get teleported, repeat." By lowering the Diadem damage, you now actually have to fight Scourge.
+
 Tweaked the Badass enemy spawn rates in the Slaughter Shaft. Badass Zealots and Tinks are now less common while Badass Enforcers, Goliaths, Goons, and Psychos are more common.
 
  ┗----Rationale: The Badass and Armored Badass Zealots/Tinks are each their own type that can spawn (so four different badasses). Coupled with the fact that Zealots and Tinks are the most common enemy types you face in the COV forces, the Slaughter Shaft largely turned into a gauntlet of heavy weapon spam and tink turrets with the occasional blip from a different Badass type or Anointed enemy. Hence the reduction in Badass Zealot/Tink spawn rates and increase in other Badass spawn rates.
@@ -290,6 +703,8 @@ Anointed Enforcers should no longer spawn outside of the encounters with the Ano
 
 OTHER CHANGES/FIXES
 -------------------
+Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
+
 Typhon, Claptrap, Ava, Lilith, Maya, Lorelei, Clay, Hammerlock (DLC2), and Gaige have had their overall movement speed increased to be 50% higher than a standard Vault Hunter's and their sprint speed has been increased to 75%.
 
 Applied a band-aid fix to Vendor Crashing by adjusting how the Item of the Day appears on the outside of the vendor.
@@ -334,7 +749,7 @@ DAHL GUNS
 ---------
 Increased Damage of Semi-Auto Firing Mode by 20% and improved Accuracy Spread by 50% for Pistols and SMGs.
 
-Increased SMG Fire Rate and Magazine Size by 40% each.
+Increased SMG Fire Rate and Magazine Size by 40% each. Adjusted the fire rate of burst-fire parts to counteract the base Dahl SMG fire rate increase.
 
  ┗----Rationale: SMGs were a bit lacking in DPS compared to other weapon types when I crunched the numbers, so I buffed the mag size and fire rate to make better use of that stupidly high ammo pool. Same goes for Hyperion and Maliwan SMGs.
  
@@ -372,13 +787,11 @@ Increased Heavy Weapon Magazine Size by one and made them fully automatic.
  
 VLADOF GUNS
 -----------
-Decreased Assault Rifle Vertical Recoil by 25%.
+Increased Assault Rifle Damage by 30%, decreased Vertical Recoil by 25%.
 
 Increased Sniper Rifle Damage by 10%, Magazine Size by 30%, and improved Reload Speed by 20%.
 
-Increased Heavy Weapon Damage by 17%.
-
-Removed Heavy Weapon Movement Speed Penalty.
+Increased Heavy Weapon Damage by 17%, removed Movement Speed Penalty.
 
 Improved the Ammo Regen and Ammo Regen Delay of Pistol Zip-Rocket and Taser Underbarrels.
 
@@ -392,9 +805,9 @@ Improved the Ammo Regen and Ammo Regen Delay of Heavy Weapon Big Boy Underbarrel
  
 ATLAS LEGENDARY GUNS
 --------------------
-Carrier - No change.
+Carrier - No change other than a possible damage adjustment.
 
-OPQ - No change.
+O.P.Q-System - Reduced the fire rate by 56%.
 
 Portals and Shite - 20% critical damage added.
 
@@ -404,21 +817,21 @@ Replay - Fire rate reduced by 30%, damage radius increased by 140%.
 
  ┗----Rationale: While the fire rate is lower, the damage was also adjusted accordingly. It'll be more effective with the ammo you chew through with the post-tracker fire rate boost now.
 
-Linc - No change.
+Linc - No change other than a possible damage adjustment.
 
 Multi-Tap - Reload speed increased by 190%.
 
  ┗----Rationale: The cryo rocket launched upon reloading is supposed to be the special feature of this gun, but reloading all the time interferes with the flow of combat. Making the reload lightning-quick resolves that.
 
-Res - No change.
+Res - No change other than a possible damage adjustment.
 
-Freeman - No change.
+Freeman - No change other than a possible damage adjustment.
 
 Plumage - Accuracy reduced by 50%, ammo cost set to 2.
 
  ┗----Rationale: The Plumage's identity was basically "Ruby's Wrath but better." It has been altered to "Ruby's Wrath but bigger" so it isn't just a direct upgrade.
 
-Ruby's Wrath - No change.
+Ruby's Wrath - No change other than a possible damage adjustment.
 
 ATLAS UNIQUE GUNS
 -----------------
@@ -455,7 +868,7 @@ NoPewPew - Ammo cost set to 3.
 
 Pain is Power - Heat rate reduced by 40%.
 
-Rebound - No change.
+Rebound - No change other than a possible damage adjustment.
 
 Sawbar - Made the projectile split happen earlier.
 
@@ -485,7 +898,7 @@ Pestilence - 70% radiation damage resistance added.
 
  ┗----Rationale: The reload-nova is powerful but it also leads to the player falling into FFYL often. The radiation resistance means the nova is useable without being forced into wearing a Red Suit.
 
-Psycho Stabber - Melee damage bonus reduced to 200%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
+Psycho Stabber - Melee damage bonus reduced to 250%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: We have an actual example of a knife-firing gun that deals melee damage with said knives in the game (Blade Fury.) It makes sense to allow the original knife-lobber to deal melee damage from the launched knives as well.
 
@@ -493,35 +906,35 @@ Skeksil - Bonus projectile damage set to match card damage.
 
 Tizzy - Reload speed increased by 25%.
 
-Globetrottr - No change.
+Globetrottr - No change other than a possible damage adjustment.
 
-Major Kong - No change.
+Major Kong - No change other than a possible damage adjustment.
 
-Mechanic - No change.
+Mechanic - No change other than a possible damage adjustment.
 
-Yellowcake - No change.
+Yellowcake - No change other than a possible damage adjustment.
 
 COV UNIQUE GUNS
 ---------------
-Brad Luck - No change.
+Brad Luck - No change other than a possible damage adjustment.
 
-Sawpenny - No change.
+Sawpenny - No change other than a possible damage adjustment.
 
-The Beast - No change.
+The Beast - No change other than a possible damage adjustment.
 
-Hangin' Chadd - No change.
+Hangin' Chadd - No change other than a possible damage adjustment.
 
-The Killing Word - No change.
+The Killing Word - No change other than a possible damage adjustment.
 
 Agonizer 1500 - Repair speed increased by 50%, magazine size increased by 2 rounds, heat-per-shot reduced by 66%.
 
  ┗----Rationale: 80% of your combat time consisting of slowly reloading a weapon usually does not make for an enjoyable experience. More magazine size and faster repairs alleviate this.
 
-Hot Drop - No change.
+Hot Drop - No change other than a possible damage adjustment.
 
-Minor Kong - No change.
+Minor Kong - No change other than a possible damage adjustment.
 
-Porta-Pooper 5000 - No change.
+Porta-Pooper 5000 - No change other than a possible damage adjustment.
 
 COV REGULAR GUNS
 ----------------
@@ -541,7 +954,7 @@ Preecher - No change.
 
 Splainer - No change.
 
-Blastphemy - Increased damage by 150% and projectile speed by 50%.
+Blastphemy - Increased damage by 150% and projectile speed by 200%.
 
 Ratatater - No change.
 
@@ -562,7 +975,7 @@ Corruption - Now deals corrosive damage instead of kinetic, reduced Corruption b
 
  ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly acclerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
 
-Good Juju - Set critical hit stack bonus to 8%.
+Good Juju - Set critical hit stack bonus to 8%, fixed secondary firing mode not dealing as much damage as it should.
 
 Kaos - Set "radsplosion" damage to 5 times card damage.
 
@@ -574,23 +987,23 @@ Soulrender - Set the amount of skulls spawned from 2 to 1 (this was apparently a
 
 Warlord - Set ammo saving chance to 66%.
 
-AAA - No change.
+AAA - No change other than a possible damage adjustment.
 
-Hornet - No change.
+Hornet - No change other than a possible damage adjustment.
 
-Nemesis - No change.
+Nemesis - No change other than a possible damage adjustment.
 
-Night Flyer - No change.
+Night Flyer - No change other than a possible damage adjustment.
 
 The Blanc - Set damage per stack to 7%.
 
-9-Volt - No change.
+9-Volt - No change other than a possible damage adjustment.
 
 Blood-Starved Beast - Set explosion chance to 15%, set explosion damage to 1.5 times card damage, fixed it to get SMG boosts instead of AR boosts.
 
-Boomer - No change.
+Boomer - No change other than a possible damage adjustment.
 
-Crader's EMP-5 - No change.
+Crader's EMP-5 - No change other than a possible damage adjustment.
 
 Hellfire - Set damage-over-time chance to be 666%, set damage-over-time to 2.5 times higher than average Dahl SMG DoT damage.
 
@@ -598,9 +1011,9 @@ Hellfire - Set damage-over-time chance to be 666%, set damage-over-time to 2.5 t
 
 Kaoson - Accuracy and critical penalties removed.
 
-Night Hawkin - No change.
+Night Hawkin - No change other than a possible damage adjustment.
 
-Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 150%, melee damage bonus no longer factors in gear or skill bonuses.
+Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 200%, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: This gun encourages a hack n' blast playstyle, so it has been altered to better suit such a style.
 
@@ -610,22 +1023,22 @@ Sleeping Giant - Reload-damage bonus set to 50%, omni-boost chance set to 15%.
 
 Torrent - Fire rate and mag size adjusted to counteract Dahl SMG buffs.
 
-Vanquisher - Set sliding bonuses to 50% each.
+Vanquisher - Set sliding bonuses to 50% each and added bonus damage to actual sliding.
 
-Autoaime - No change.
+Autoaime - No change other than a possible damage adjustment.
 
-Sand Hawk - No change.
+Sand Hawk - No change other than a possible damage adjustment.
 
-Stalker - No change.
+Stalker - No change other than a possible damage adjustment.
 
 Malak's Bane - Shotgun-mode ammo cost set to 2, standard mode fire rate increased by 75%.
 
 
 DAHL UNIQUE GUNS
 -----------------
-Digby's Smooth Tube - No change.
+Digby's Smooth Tube - No change other than a possible damage adjustment.
 
-Earworm - No change.
+Earworm - No change other than a possible damage adjustment.
 
 Hail - Critical hit damage set to 100%, set lifesteal to 0.5%.
 
@@ -633,13 +1046,13 @@ Hail - Critical hit damage set to 100%, set lifesteal to 0.5%.
 
 Kaleidoscope - Amp damage set to 65%, amp chance set to 100%.
 
-Omniloader - No change.
+Omniloader - No change other than a possible damage adjustment.
 
-Ashen Beast - No change.
+Ashen Beast - No change other than a possible damage adjustment.
 
-Brashi's Dedication - No change.
+Brashi's Dedication - No change other than a possible damage adjustment.
 
-Kenulox - No change.
+Kenulox - No change other than a possible damage adjustment.
 
 DAHL REGULAR GUNS
 -----------------
@@ -678,27 +1091,25 @@ Wyrm - Increased Damage by 150%, reduced Fire Rate by 35%.
 
 HYPERION LEGENDARY GUNS
 -----------------------
-Brainstormer - No change.
+Brainstormer - No change other than a possible damage adjustment.
 
 Conference Call - Increased base projectile count by 2.
 
-Convergence - No change.
+Convergence - No change other than a possible damage adjustment.
 
-Face-puncher - No change.
+Face-puncher - No change other than a possible damage adjustment.
 
- ┗----Rationale: The damage on this has been specifically adjusted to not be superior to standard melee for overall damage. It is to be used primarily for when you can't reach out and melee something with fisticuffs.
+Fearmonger - No change other than a possible damage adjustment.
 
-Fearmonger - No change.
-
-Guardian 4N631 - Set maximum distance bonus to 75%, increased projectile speed by 75%, made description more accurate.
+Guardian 4N631 - Set maximum distance bonus to 120%, increased projectile speed by 75%, made description more accurate.
 
  ┗----Rationale: While it can still be used as a stat-stick to boost the damage on other means of offense, it has been adjusted so that it is now actually viable as a weapon.
 
 Heart Breaker - Set lifesteal to 1.5%, added 25% critical hit damage bonus.
 
-Iceburger - No change.
+Iceburger - No change other than a possible damage adjustment.
 
-Phebert - No change.
+Phebert - No change other than a possible damage adjustment.
 
 Reflux - Increased ammo cost by one, projectile count by one, and magazine size by 40%.
 
@@ -706,35 +1117,35 @@ Reflux - Increased ammo cost by one, projectile count by one, and magazine size 
 
 Slow Hand - Set lifesteal to 1.75%.
 
-The Butcher - No change.
+The Butcher - No change other than a possible damage adjustment.
 
-Bitch - No change.
+Bitch - No change other than a possible damage adjustment.
 
 Cheap Tips - Set chip-drop chance to 15%, damage boost set to 10%.
 
 Crossroad - Projectile count and accuracy nerfs reverted.
 
-Gold Rush - No change.
+Gold Rush - No change other than a possible damage adjustment.
 
-Handsome Jackhammer - No change.
+Handsome Jackhammer - No change other than a possible damage adjustment.
 
-Hyperfocus XZ41 - No change.
+Hyperfocus XZ41 - No change other than a possible damage adjustment.
 
 Oldridian - Reload speed improved by 40%.
 
  ┗----Rationale: A boost to reload speed now means you can switch to a preferable element more readily.
 
-Predatory Lending - No change.
+Predatory Lending - No change other than a possible damage adjustment.
 
-Proprietary License - No change.
+Proprietary License - No change other than a possible damage adjustment.
 
-Redistributor - No change.
+Redistributor - No change other than a possible damage adjustment.
 
 Smog - Set amp damage to 100%.
 
-Troubleshooter - No change.
+Troubleshooter - No change other than a possible damage adjustment.
 
-Crossbow - No change.
+Crossbow - No change other than a possible damage adjustment.
 
 Narp - Post-reload bonuses set to 5%.
 
@@ -746,23 +1157,23 @@ HYPERION UNIQUE GUNS
 --------------------
 Firecracker - Firework radius set to 500.
 
-Melt Facer - No change.
+Melt Facer - No change other than a possible damage adjustment.
 
-Reunion - No change.
+Reunion - No change other than a possible damage adjustment.
 
-Just Kaus - No change.
+Just Kaus - No change other than a possible damage adjustment.
 
-Redistributor - No change.
+Redistributor - No change other than a possible damage adjustment.
 
-LOV3M4CH1N3 - No change.
+LOV3M4CH1N3 - No change other than a possible damage adjustment.
 
-Pricker - No change.
+Pricker - No change other than a possible damage adjustment.
 
-Short Stick - No change.
+Short Stick - No change other than a possible damage adjustment.
 
-Null Pointer - No change.
+Null Pointer - No change other than a possible damage adjustment.
 
-The Two Time - No change.
+The Two Time - No change other than a possible damage adjustment.
 
 HYPERION REGULAR GUNS
 ---------------------
@@ -793,17 +1204,15 @@ Broodmother - Increased Damage by 105%, reduced Fire Rate by 35%, reduced Magazi
 
 JAKOBS LEGENDARY GUNS
 ---------------------
-Bekah - No change.
+Bekah - No change other than a possible damage adjustment.
 
-Blade Fury - Melee portion of the damage reduced to 17.5% of card damage, melee damage bonus no longer factors in gear or skill bonuses.
+Blade Fury - Melee damage bonus no longer factors in gear or skill bonuses.
 
- ┗----Rationale: The damage on this has been specifically adjusted to not be superior to standard melee for overall damage. It is to be used primarily for when you can't reach out and melee something with fisticuffs.
-
-Clairovoyance - No change.
+Clairovoyance - No change other than a possible damage adjustment.
 
 Gatling Gun - Recoil-per-shot improved by 24%, accuracy improved by 33%, vertical recoil improved by 52.5%, horizontal recoil improved by 15%.
 
-Hand of Glory - No change.
+Hand of Glory - No change other than a possible damage adjustment.
 
 Lead Sprinkler - Splash radius set to 120, lowered speed of bonus projectiles by roughly 19%, improved accuracy by 50%, improved vertical recoil by 25%, improved horizontal recoil by 30%, improved recoil-per-shot by 20%.
 
@@ -811,19 +1220,19 @@ Lead Sprinkler - Splash radius set to 120, lowered speed of bonus projectiles by
 
 Mutant - Improved overall recoil control by 35%, now deals radiation damage instead of kinetic.
 
-Rowan's Call - No change.
+Rowan's Call - No change other than a possible damage adjustment.
 
-Stonethrower - No change.
+Stonethrower - Removed the ricochet text at the bottom of the card.
 
 Amazing Grace - 30% critical hit damage added.
 
-Bite Size - No change.
+Bite Size - No change other than a possible damage adjustment.
 
-Bloom - Recoil improved by 35%.
+Bloom - Recoil improved by 35%, adjusted description to be more accurate.
 
 King's/Queen's Call - Lifesteal set to 0.25%.
 
-Maggie - No change.
+Maggie - No change other than a possible damage adjustment.
 
 Little Yeeti - Adjusted it so that a masher grip will now increase projectile count to 10 instead of 6.
 
@@ -835,13 +1244,13 @@ Lucky 7 - Reload mod chance set to 33% (how often each of them will roll and sho
 
  ┗----Rationale: The Lucky 7 has been adjusted so that you can actually use it effectively as a normal gun instead of spending a copious amount of time trying to get a good roll. If you still insist on fishing for a good roll though, you can do it faster.
 
-Seventh Sense - No change.
+Seventh Sense - No change other than a possible damage adjustment.
 
 The Companion - Status effect damage doubled, removed accuracy penalty.
 
-The Duc - No change.
+The Duc - No change other than a possible damage adjustment.
 
-The Flood - No change.
+The Flood - No change other than a possible damage adjustment.
 
 Trickshot - Added 40% critical hit damage.
 
@@ -849,27 +1258,27 @@ Unforgiven - Set innate critical hit damage bonus to 250%, reduced sway while zo
 
  ┗----Rationale: Changing the scopeless part to behave like a masher is partially to make the scopeless version worth considering over a scoped version, as well as to add a bit of spice to the weapon beyond being a stat stick for critical hit damage. 
 
-Wagon Wheel - No change.
+Wagon Wheel - No change other than a possible damage adjustment.
 
-Hellwalker - No change.
+Hellwalker - No change other than a possible damage adjustment.
 
 Nimble Jack - Added 30% critical hit damage.
 
 One-Pump Chump - Added 50% critical hit damage.
 
-Robin's Call - No change.
+Robin's Call - Adjusted description to be more accurate.
 
 Sledge's Shotgun - Sledge's Super Shotgun now also behaves like the triple barrel accessory; higher ammo cost, projectile count, and worse accuracy.
 
  ┗----Rationale: The "Super" implies a significant increase or change over the standard version. Increasing the burst-fire count by one doesn't amount to much of a difference (especially since the delay between being able to fire again is increased). So now this special triple-barrel accessory actually behaves more like one.
 
-TK's Wave - Improved the accuracy considerably. Reduced damage of Heatwave and Shockwave by 20%.
+TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, Reduced damage of Heatwave and Shockwave by 20%.
 
  ┗----Rationale: The 20% damage reduction to the elemental Waves is simply to be consistent with how elemental parts reduce damage on most other weapons.
 
 The Garcia - Lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
 
-The Tidal Wave - Improved accuracy slightly, doubled projectile speed, set ammo cost to 3.
+The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3.
 
  ┗----Rationale: The reason for ammo cost being increased is because this thing now hits like a truck if you manage to land all the projectiles.
 
@@ -879,53 +1288,53 @@ Cocky Bastard - Set bonus shock damage to 50%.
 
 Headsplosion - Removed critical hit damage penalty, increased splash radius by 50%.
 
-Ionic Disruptor - Set post-melee damage bonus to 66%.
+Ionic Disruptor - Set post-melee damage bonus to 66%, increased melee damage to 200%.
 
-Monocle - No change.
+Monocle - No change other than a possible damage adjustment.
 
 Skullmasher - Made accuracy spread wider by 100%.
 
  ┗----Rationale: This love child between a shotgun and a sniper was leaning more towards the sniper side. The accuracy penalty leads to still being useful at mid-long range but it won't be driving nails like a typical sniper rifle now.
 
-Unseen Threat - Set ricochet damage to 33% of card damage.
+Unseen Threat - Set ricochet damage to 33% of card damage, adjusted description to be more accurate.
 
 Wedding Invitation - Set ricochet damage to 2 times card damage.
 
 JAKOBS UNIQUE GUNS
 ------------------
-Icebreaker - No change.
+Icebreaker - No change other than a possible damage adjustment.
 
-Pa's Rifle - No change.
+Pa's Rifle - No change other than a possible damage adjustment.
 
 The Chalice - Post-crit-kill bonus set to 40%.
 
 Traitor's Death - Incendiary damage set to 50%, incendiary chance set to 50%.
 
-Buttplug - No change.
+Buttplug - No change other than a possible damage adjustment.
 
-Dead Chamber - No change.
+Dead Chamber - No change other than a possible damage adjustment.
 
 Love Drill (purple) - Set critical hit damage to 100%.
 
-Peashooter - No change.
+Peashooter - No change other than a possible damage adjustment.
 
 Quickdraw - Amp damage set to 50%, amp duration set to 4 seconds.
 
-Robo-Melter - No change.
+Robo-Melter - No change other than a possible damage adjustment.
 
-Rogue-Sight - No change.
+Rogue-Sight - No change other than a possible damage adjustment.
 
-Seventh Sense - No change.
+Seventh Sense - No change other than a possible damage adjustment.
 
 Dakota - Incendiary damage set to +50%, shock damage set to +100%, elemental shot chance set to 50%.
 
-Fingerbiter - No change.
+Fingerbiter - No change other than a possible damage adjustment.
 
 Splinter - Removed the "1 ricochet" text.
 
 The Cure - Lifesteal set to 1.5%.
 
-The Shoddy - No change.
+The Shoddy - No change other than a possible damage adjustment.
 
 The Hunt(ed) - Robot damage bonus set to 50%, added 50% critical hit damage.
 
@@ -935,7 +1344,7 @@ The Hunt(ress) - Humanoid damage bonus set to 50%, added 50% critical hit damage
 
  ┗----Rationale: The Hunt rifles have been adjusted to be similar to the Buffalo or Elephant Gun of older titles; high damage but no scope.
 
-The Ice Queen - No change.
+The Ice Queen - No change other than a possible damage adjustment.
 
 JAKOBS REGULAR GUNS
 -------------------
@@ -974,7 +1383,7 @@ Beacon - Set reload-nova damage to 8.2 times card damage, reduced magazine size 
 
  ┗----Rationale: The special feature of the Beacon is largely ignored due to standard gun usage being far superior compared to the reload-nova. The changes made allow the Beacon to be effective both with simply firing the weapon or using the gimmick.
 
-Free Radical - No change.
+Free Radical - No change other than a possible damage adjustment.
 
 Frozen Devil - Increased Ice Spike damage by 1000%, reduced Cryogenic-Mode frozen damage bonus to 2 times card damage.
 
@@ -984,11 +1393,11 @@ Grease Trap - Set Grease Mode grease damage to 10% of card damage, reduced Greas
 
 Hellshock - Reduced projectile count to 1.
 
-Hyper-Hydrator - No change.
+Hyper-Hydrator - No change other than a possible damage adjustment.
 
-Ice Pick - No change.
+Ice Pick - No change other than a possible damage adjustment.
 
-Sellout - No change.
+Sellout - No change other than a possible damage adjustment.
 
 Superball - Doubled splash radius, made it fully automatic, added 50% critical hit damage.
 
@@ -996,67 +1405,67 @@ Superball - Doubled splash radius, made it fully automatic, added 50% critical h
 
 Thunderball Fists - Splash radius doubled, ammo cost set to 1, made the thunderball faster.
 
-Blind Sage - No change.
+Blind Sage - No change other than a possible damage adjustment.
 
 Chandelier - Ammo cost reduced by 2.
 
-Frequency - Magazine size increased by 6.
+Frequency - Magazine size increased by 6, adjusted description to be more accurate.
 
  ┗----Rationale: Depending on the parts, you would not be able to use the maximum bonus of this weapon. The extra mag size remedies that.
 
 Insider - Ammo cost reduced by 1.
 
-Kill-o'-the-Wisp - No change.
+Kill-o'-the-Wisp - Fixed an issue with the damage and ammo cost. Ammo cost is reduced to 3.
 
-Mind-Killer - No change.
+Mind-Killer - No change other than a possible damage adjustment.
 
 Nothingness - Set "flak" damage to 2.5 times card damage.
 
-Projectile Recursion - No change.
+Projectile Recursion - No change other than a possible damage adjustment.
 
-Trevanator - No change.
+Trevanator - No change other than a possible damage adjustment.
 
 Vosk's Deathgrip - Ammo cost reduced to 3, secondary mode ammo-regeneration delay set to 4 seconds.
 
  ┗----Rationale: The intended play-loop for this weapon revolves around using the singularity to immobolize enemies so that you can zap the daylights out of them with the primary fire. The secondary regeneration delay change now allows you to reliably do that.
 
-Cloud Kill - No change.
+Cloud Kill - No change other than a possible damage adjustment.
 
 Cutsman - Damage-over-time reduced by 40%.
 
-Destructo Spinner - No change.
+Destructo Spinner - No change other than a possible damage adjustment.
 
 Devoted - Fire rate reduced by 25%, recoil height improved by 30%, recoil width improved by 65%, improved accuracy.
 
-D.N.A. - No change.
+D.N.A. - No change other than a possible damage adjustment.
 
-Ember's Purge - Puddle damage set to 33% of card damage, puddle chance increased to 33%.
+Ember's Purge - Puddle damage set to 50% of card damage, puddle chance increased to 33%.
 
-Flipper - No change.
+Flipper - No change other than a possible damage adjustment.
 
 ION LASER - Set sustained-fire damage bonus to 7.5% per stack.
 
-Kyb's Worth - No change.
+Kyb's Worth - No change other than a possible damage adjustment.
 
-P2P Networker - No change.
+P2P Networker - No change other than a possible damage adjustment.
 
-Plasma Coil - No change.
+Plasma Coil - No change other than a possible damage adjustment.
 
-Polyaimorous - Set chain damage to 40% of card damage.
+Polyaimorous - Set chain damage to 40% of card damage, fixed the secondary firing mode not receiving damage buffs properly.
 
-S.F. Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
+SF Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
 
-Tsunami - No change.
+Tsunami - No change other than a possible damage adjustment.
 
-Vault Hero - No change.
+Vault Hero - No change other than a possible damage adjustment.
 
 Westergun - Splash radius doubled.
 
 ASMD - Set energy ball explosion to five times card damage.
 
-Binary Operator - No change.
+Binary Operator - No change other than a possible damage adjustment.
 
-Complex Root - No change.
+Complex Root - No change other than a possible damage adjustment.
 
 Firestorm - Ammo cost set to 1, fireball radius set to 400.
 
@@ -1068,11 +1477,11 @@ Storm - Ammo cost set to 1, radius set to 300.
 
 MALIWAN UNIQUE GUNS
 -------------------
-Bubble Blaster - No change.
+Bubble Blaster - No change other than a possible damage adjustment.
 
-Starkiller - No change.
+Starkiller - No change other than a possible damage adjustment.
 
-Blind Bandit - No change.
+Blind Bandit - No change other than a possible damage adjustment.
 
 Shrieking Devil - Removed self-damage.
 
@@ -1080,15 +1489,15 @@ Crit - Lifesteal set to 1%.
 
 Vibra-Pulse - Lifesteal set to 1.5%.
 
-E-Gone - No change.
+E-Gone - No change other than a possible damage adjustment.
 
-Kevin's Chilly - No change.
+Kevin's Chilly - No change other than a possible damage adjustment.
 
 Moxxi's Vibra-Pulse - Lifesteal set to 1.5%.
 
-Emperor's Condiment - No change.
+Emperor's Condiment - No change other than a possible damage adjustment.
 
-Soleki Protocol - No change.
+Soleki Protocol - No change other than a possible damage adjustment.
 
 MALIWAN REGULAR GUNS
 --------------------
@@ -1127,13 +1536,13 @@ Antimatter Rifle - Increased Damage by 85%, reduced Magazine Size by 35%, and Am
 
 TEDIORE LEGENDARY GUNS
 ----------------------
-Baby Maker - No change.
+Baby Maker - No change other than a possible damage adjustment.
 
-Bangarang - No change.
+Bangarang - No change other than a possible damage adjustment.
 
-Gunerang - No change.
+Gunerang - No change other than a possible damage adjustment.
 
-S3RV-8OS-EXECUTE - No change.
+S3RV-8OS-EXECUTE - No change other than a possible damage adjustment.
 
 Scorpio - Reload damage doubled.
 
@@ -1147,98 +1556,98 @@ Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40
 
  ┗----Rationale: The damage on this thing's been increased a truckload. It's now useable both for traditional use and the "mine-laying" gimmick.
 
-Flama Diddle - No change.
+Flama Diddle - No change other than a possible damage adjustment.
 
-Manic Pixie Dream Gun - No change.
+Manic Pixie Dream Gun - No change other than a possible damage adjustment.
 
 Polybius - Magazine size doubled.
 
  ┗----Rationale: Polybius' identity is high fire rate, and thus a higher magazine size helps to make use of that fire rate.
 
-The Horizon - No change.
+The Horizon - No change other than a possible damage adjustment.
 
 Dark Army - Drone damage reduced to 25% of card damage.
 
-Long Musket - No change.
+Long Musket - No change other than a possible damage adjustment.
 
 Needle Gun - Set damage stack to 4%, set base-reload damage to 2.5 times card damage.
 
 Mother Too - Fire rate increased by 140%.
 
-P.A.T. Mk. III - No change.
+P.A.T. Mk. III - No change other than a possible damage adjustment.
 
-Smart Gun - No change.
+Smart Gun - No change other than a possible damage adjustment.
 
-Ten Gallon - No change.
+Ten Gallon - No change other than a possible damage adjustment.
 
 TEDIORE UNIQUE GUNS
 -------------------
 Sacrificial Lamb - Lifesteal set to 10%.
 
-Superstreamer - No change.
+Superstreamer - No change other than a possible damage adjustment.
 
-P.A.T. Mk. II. - No change.
+P.A.T. Mk. II. - No change other than a possible damage adjustment.
 
-The Boo - No change.
+The Boo - No change other than a possible damage adjustment.
 
 TEDIORE REGULAR GUNS
 --------------------
-Quickshot (Higher fire rate, lower damage, reload is self-firing gun) - No change.
+Quickshot - No change.
 
-Deadshot (reload is detonating red globe) - Increased Magazine Size by 25%.
+Deadshot - Increased Magazine Size by 25%.
 
-Sureshot (Higher damage, lower fire rate, bigger mag, reload is multi-projectile) - No change.
+Sureshot - No change.
 
-Lurkshot (impacts for 10% of damage, then explodes for card damage, reload produces puddle) - Increased Damage by 90% and Magazine Size by 40%.
+Lurkshot - Increased Damage by 90% and Magazine Size by 40%.
 
-Excelerator (higher fire rate, lower damage, reload is self-firing gun) - No change.
+Excelerator - No change.
 
-Kill-O-Matic (reload is detonating red globe) - No change.
+Kill-O-Matic - No change.
 
-Keenfire (Higher damage, lower fire rate, reload is multi-projectile) - No change.
+Keenfire - No change.
 
-Gibbergun (shots penetrate, reload produces puddle) - Increased Damage by 85%, reduced Fire Rate by 20%, and Magazine Size increased by 5 bullets.
+Gibbergun - Increased Damage by 85%, reduced Fire Rate by 20%, and Magazine Size increased by 5 bullets.
 
-Fastblast (Higher damage per pellet, less pellets, higher fire rate. Reload is self-firing gun) - No change.
+Fastblast - No change.
 
-Everblast (Bigger magazine, reload is multi-projectile) - No change.
+Everblast - No change.
 
-Powerblast (Higher pellet count, lower fire rate, reload is detonating red globe) - No change.
+Powerblast - No change.
 
-Elderblast (lobs explosive globs, reload produces puddle) - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and reduced Damage-over-Time by 40%.
+Elderblast - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and reduced Damage-over-Time by 40%.
 
 
 TORGUE LEGENDARY GUNS
 ---------------------
-Alchemist - No change.
+Alchemist - No change other than a possible damage adjustment.
 
-Bearcat - No change.
+Bearcat - No change other than a possible damage adjustment.
 
 Contained Blast - Consecutive-hit bonus set to 2.5% per stack.
 
-Hotfoot Teddy - No change.
+Hotfoot Teddy - No change other than a possible damage adjustment.
 
-Juliet's Dazzle - No change.
+Juliet's Dazzle - No change other than a possible damage adjustment.
 
-Laser-Sploder - No change.
+Laser-Sploder - No change other than a possible damage adjustment.
 
-Lovable Rogue - No change.
+Lovable Rogue - No change other than a possible damage adjustment.
 
-Try-Bolt - No change.
+Try-Bolt - No change other than a possible damage adjustment.
 
 Breeder - Child projectile gravity increased by 76%, splash radius increased to 150.
 
  ┗----Rationale: The increased gravity allows the child projectiles to fall much faster, and the radius boost helps to ensure those explosions actually hit something.
 
-Craps - No change.
+Craps - No change other than a possible damage adjustment.
 
-Devastator - No change.
+Devastator - No change other than a possible damage adjustment.
 
 Devil's Foursum - Base splash radius set to 245.
 
-Echo - No change.
+Echo - No change other than a possible damage adjustment.
 
-Girth Blaster Elite - No change.
+Girth Blaster Elite - No change other than a possible damage adjustment.
 
 Moonfire - Critical hit damage set to 50%, amp damage set to 100%, accuracy improved by 60%, vertical recoil improved by 135%, horizontal recoil improved by 35%, weapon sway heavily reduced by 90%, equip time improved by 40%.
 
@@ -1250,9 +1659,9 @@ Occultist - Accuracy penalty removed, splash radius set to 100, main projectile 
 
 Prompt Critical - Sticky impact damage set to 40% of card damage.
 
-Roisen's Thorns - No change.
+Roisen's Thorns - No change other than a possible damage adjustment.
 
-Scoville - No change.
+Scoville - No change other than a possible damage adjustment.
 
 TNTina - Projectile Speed increased by 50%, fuse time lowered to 2 seconds, set Splash Radius to 175, increased Fire Rate by 45%.
 
@@ -1266,9 +1675,9 @@ Nukem - Now deals radiation damage instead of kinetic damage.
 
  ┗----Rationale: It's a nuclear warhead launcher called the Nukem with a literal radiation symbol on the weapon's skin, in a game with nukes that actually deal radiation damage (Hammerdown Protocol and Baby Nukes). If any weapon deserves to be a radiation-element weapon, it is this one.
 
-Plaguebearer - No change.
+Plaguebearer - No change other than a possible damage adjustment.
 
-Quadomizer - No change.
+Quadomizer - No change other than a possible damage adjustment.
 
 R.Y.N.A.H. - Ammo cost set to 5, splash radius increased.
 
@@ -1286,17 +1695,17 @@ Flakker - Ammo cost increased to 4, initial projectile speed doubled, initial pr
 
  ┗----Rationale: The changes allow the initial shot to go further from the player and lessen the chance of accidentally killing oneself. Other than extreme scenarios such as Torgue-Cross Promotion used with a Splash Radius passive, one can safely use the Flakker as long as the user isn't running directly into the path of destruction.
 
-Redline - No change.
+Redline - No change other than a possible damage adjustment.
 
-Shocker - No change.
+Shocker - No change other than a possible damage adjustment.
 
-Spade - No change.
+Spade - Now fully automatic, fire rate reduced by 50%.
 
 The Boring Gun - Now launches initial projectile at high speed, gravity of projectile lowered considerably, reload speed improved by 38%, 75% critical hit damage bonus added.
 
  ┗----Rationale: The changes allow the Boring Gun to not be dead-weight against anything beyond point-blank range. The ideal shot is to land it right before an enemy's feet, but the critical hit damage bonus allows it to still have some use against airborne enemies.
 
-The Lob - No change.
+The Lob - No change other than a possible damage adjustment.
 
 Tiggs' Boom - Meteor damage increased to 10 times card damage, meteor radius set to 450.
 
@@ -1304,17 +1713,17 @@ TORGUE UNIQUE GUNS
 ------------------
 Amber Management - Anger damage bonus per stack set to 10%, Happiness ammo-regenerate delay set to 10 seconds.
 
-La Varlope - No change.
+La Varlope - No change other than a possible damage adjustment.
 
-Likeable Rascal - No change.
+Likeable Rascal - No change other than a possible damage adjustment.
 
-Critical Mass - No change.
+Critical Mass - No change other than a possible damage adjustment.
 
-Gettleburger - No change.
+Gettleburger - No change other than a possible damage adjustment.
 
 Black Flame - Status effect damage reduced by 40%.
 
-Chomper - No change.
+Chomper - No change other than a possible damage adjustment.
 
 Thumper - Projectile speed doubled, number of bounces reduced to 1, launch angle set to 9 degrees.
 
@@ -1355,7 +1764,7 @@ Lump - No change.
 
 VLADOF LEGENDARY GUNS
 ---------------------
-Damned - No change.
+Damned - No change other than a possible damage adjustment.
 
 Dowsing Rod - Reduced damage of underbarrel by 35%, lowered the accuracy of the underbarrel by 150%.
 
@@ -1365,7 +1774,7 @@ Faisor - Underbarrel ammo regeneration delay set to .75 seconds, underbarrel reg
 
  ┗----Rationale: The underbarrel is one of the defining features of the Faisor. The ammo regeneration changes make it useable consistently.
 
-Lucian's Call - No change.
+Lucian's Call - No change other than a possible damage adjustment.
 
 Ogre - Accuracy considerably improved, fire rate increased by 80%.
 
@@ -1373,9 +1782,9 @@ The Dictator - Changed how the underbarrel works to benefit better from the Doub
 
  ┗----Rationale: The Dictator's underbarrel adds four projectiles to your shots regardless of whether or not your weapon has the grip that doubles projectile count. It has been changed to increase projectile count by 2.67 times (which works out to 7 shots on a normal Dictator and 16 on a double variant.)
 
-The Monarch - Ammo cost set to 2, magazine size increased by 70%, movement speed penalty while deployed increased to 50%, changed how the underbarrel works to benefit better from the Double grip.
+The Monarch - Ammo cost set to 2, magazine size increased by 70%, changed how the underbarrel works to benefit better from the Double grip.
 
- ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased and movement speed penalty to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
+ ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
 
 Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume four ammo.)
 
@@ -1385,7 +1794,7 @@ Sickle - Made the Boom Sickle have the same stats as a standard Sickle as well a
 
  ┗----Rationale: This weapon seems to be intended as a throwback to the Hammer from Borderlands 1. The various stat changes now allow it to fulfill the role of a high fire-rate shotgun-ish weapon.
 
-Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 20 times card damage, underbarrel splash radius set to 500, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds.
+Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 50 times card damage, underbarrel splash radius set to 500, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds, projectile speed tripled.
 
  ┗----Rationale: The underbarrel was seemingly designed to hit like a truck but never really seemed to accomplish that. The changes made to it hopefully fix that.
 
@@ -1393,15 +1802,15 @@ Firefly - Damage of firefiles set to 30% of card damage, speed of initial projec
 
  ┗----Rationale: What this translates to is that the bullets fired from the gun go faster, the fireflies spread out less from impact, and they quickly fly after a target.
 
-Infinity - No change.
+Infinity - No change other than a possible damage adjustment.
 
-Light Show - No change.
+Light Show - No change other than a possible damage adjustment.
 
 Magnificent - Added an ability that increases fire rate based on how large your magazine is. Removed accuracy and recoil penalties.
 
  ┗----Rationale: A giant magazine size isn't an especially interesting mechanic. So to get some use from the "Mag" in Magnificent, it has been given something that encourages going hog-wild with magazine size boosts. With enough mag size boosts you can hit a triple-digit increase in fire rate (up to 150% if you go maximum gear and skill investment on Moze.)
 
-Miscreant - No change.
+Miscreant - No change other than a possible damage adjustment.
 
 Backburner - Child projectile damage reduced by 50%.
 
@@ -1417,7 +1826,7 @@ Kickcharger - Maximum charge damage multiplier reduced to 100% from 400%.
 
 Mongol - Increased splash radius by 70%.
 
-Rocket Pod - No change.
+Rocket Pod - No change other than a possible damage adjustment.
 
 Boogeyman - Skull damage reduced to 2000% card damage from 2500% card damage.
 
@@ -1427,15 +1836,15 @@ Septimator Prime - Starfall chance set to 20%, starfall damage set to match card
 
 VLADOF UNIQUE GUNS
 ------------------
-The Big Succ - No change.
+The Big Succ - No change other than a possible damage adjustment.
 
 Bone Shredder - Ammo cost set to 1.
 
 The Leech - Lifesteal set to 6%, taser ammo-regenerate delay set to 5 seconds.
 
-Cold Shoulder - No change.
+Cold Shoulder - No change other than a possible damage adjustment.
 
-Septimator - No change.
+Septimator - No change other than a possible damage adjustment.
 
 VLADOF REGULAR GUNS
 -------------------
@@ -1534,7 +1943,7 @@ Vagabond - No change.
 
 ANSHIN LEGENDARY SHIELDS
 ------------------------
-Asclepius - Capacity increased by 65%, recharge rate improved by 70%, recharge delay improved by 40%, damage-over-time resistance while shields are down increased to 100%, health regen increased to 10%, fixed nova damage not scaling with level and increased nova radius by 33%.
+Asclepius - Capacity increased by 65%, recharge rate improved by 70%, recharge delay improved by 40%, damage-over-time received while shields are down reduced to effectively nothing, health regen increased to 10%, fixed nova damage not scaling with level and increased nova radius by 33%.
 
  ┗----Rationale: If you're going to go through hell-and-high-water to get this thing, it should be worth your effort. At least in terms of general defensive capability, it should now be top-notch.
 
@@ -1542,15 +1951,15 @@ Back Ham - Rear-damage resistance increased to 75%.
 
 Badass Combustor - No change.
 
-Beskar - No change.
+Beskar - Now always spawns with maximum shield parts.
 
-Frozen Heart - Reduced lifesteal to 5%.
+Frozen Heart - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
-Infernal Wish - No change.
+Infernal Wish - Now always spawns with maximum shield parts.
 
 Madcap - No change.
 
-Messy Breakup - Drone damage increased 533%.
+Messy Breakup - Now always spawns with maximum parts.
 
 Nova Berner - No change.
 
@@ -1558,21 +1967,21 @@ Re-Router - Fixed amp damage not applying to multi-projectile weapons properly.
 
 Red Card - Slide Damage effect buffed by 428%.
 
-Red Card Re-Charger - Slide Damage effect buffed by 428%.
+Red Card Re-Charger - Slide Damage effect buffed by 428%, now always spawns with maximum shield parts.
 
-Rico - No change.
+Rico - Now always spawns with maximum shield parts.
 
-Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%.
+Rough Rider - Damage resistance increased to 50%, health bonus increased to 50%, now always spawns with maximum shield parts.
 
 Scream of Terror - Nova radius increased by 66%, capacity and delay reduced by 50%, recharge rate doubled.
 
-Snowshoe - Reduced lifesteal to 5%.
+Snowshoe - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
-Super Soldier - Damage immunity reduced to a 33% damage reduction.
+Super Soldier - Damage immunity reduced to a 33% damage reduction, now always spawns with maximum shield parts after the first redemption of the shield.
 
  ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
-Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly.
+Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly, now always spawns with maximum shield parts.
 
 Wattson - Disc-drop cooldown reduced to 1 second, projectile speed increased 25%.
 
@@ -1597,17 +2006,17 @@ Firewall - Damage reduction improved to 75%.
 
 Front Loader - No change.
 
-Gas Mask - No change.
+Gas Mask - Now always spawns with maximum shield parts.
 
 Mana Well - Shock damage reduced to 50%, damage resistance reduced to 65%, description fixed to match damage resistance.
 
-Old God - No change.
+Old God - Now always spawns with maximum shield parts.
 
-Re-Charge Berner - No change.
+Re-Charge Berner - Now always spawns with maximum shield parts.
 
 Re-Charger - No change.
 
-Re-Volter - Shock damage and fire rate bonuses reduced to 25%.
+Re-Volter - Shock damage and fire rate bonuses reduced to 25%, now always spawns with maximum shield parts.
 
 Rectifier - Damage buffed by 2333%.
 
@@ -1617,7 +2026,7 @@ Stop-Gap - Damage immunity changed to 100% damage resistance.
 
 The Transformer - No change.
 
-Ward - Recharge delay made longer by 100%, recharge rate improved by 50%, health regeneration increased to 5%/10%, weapon damage replaced with damage-taken reduction.
+Ward - Recharge delay made longer by 100%, recharge rate improved by 50%, health regeneration increased to 5%/10%, weapon damage replaced with damage-taken reduction. Now always spawns with three Roid parts.
 
  ┗----Rationale: The recharge delay reduction makes it easier to maintain empty shields while the roid is active. The capacity was not reduced since it helps as a buffer while first approaching an enemy. Weapon damage was replaced since the primary reason anyone uses this shield is for melee, hence the change to damage reduction being more useful.
 
@@ -1636,7 +2045,7 @@ Revengenader - No change.
 
 PANGOLIN LEGENDARY SHIELDS
 --------------------------
-Band of Sitorak - Fixed description to say 30% damage instead of 170%.
+Band of Sitorak - Fixed description to say 30% damage instead of 170%, now always spawns with maximum parts.
 
 Big Boom Blaster - No change.
 
@@ -1652,11 +2061,11 @@ Red Suit - Aura damage increased by 150%.
 
 Shooting Star - Stars no longer collide with the world.
 
-Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova-levels of damage.
+Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova-levels of damage, increased radius of novas by 43%.
 
  ┗----Rationale: Same story with the rest of the "Melee" gear, traditional melee should be the strongest form of melee. Stinger still has the advantage of a better delivery system as well as receiving splash bonuses.
 
-Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay improved by 10%, fireball damage increase by 80%, fireball speed increased by 200%, fireball explosion radius increased by 300%.
+Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay improved by 10%, fireball damage increase by 80%, fireball speed increased by 200%, fireball explosion radius increased by 300%, now always spawns with maximum shield parts.
 
 Void Rift - No change beyond what the Impaler and Black Hole have.
 
@@ -1727,81 +2136,83 @@ EMP - Increased radius 25%, doubled damage to shields.
 
 Echo-2 - Radius increased by 52%, fuse time reduced to 2 seconds.
 
-Epicenter - No change.
+Epicenter - Now more likely to spawn with extra parts.
 
-Fastball - No change.
+Fastball - No change other than a possible damage adjustment.
 
-Firestorm - No change.
+Firestorm - Now always spawns with maximum parts.
 
-Fish Slap - No change.
+Fish Slap - Now always spawns with maximum parts.
 
-Ghast Call - No change.
+Ghast Call - Now more likely to spawn with extra parts.
 
-Hex - No change.
+Hex - Now more likely to spawn with extra parts.
 
-HOT Spring - No change.
+HOT Spring - No change other than a possible damage adjustment.
 
-Hunter-Seeker - No change.
+Hunter-Seeker - Now more likely to spawn with extra parts as well as more likely to spawn in elemental versions.
 
-It's Piss - No change.
+It's Piss - No change other than a possible damage adjustment.
 
-Lightspeed - No change.
+Lightspeed - Now more likely to spawn in elemental versions.
 
-Mesmer - No change.
+Mesmer - No change other than a possible damage adjustment.
 
-Moxxi's Bouncing Pair - No change.
+Moxxi's Bouncing Pair - No change other than a possible damage adjustment.
 
-Nagata - No change.
+Nagata - No change other than a possible damage adjustment.
 
-Quasar - No change.
+Pyroburst - No change other than a possible damage adjustment.
 
-Red Queen - No change.
+Quasar - Now more likely to spawn with extra parts.
 
-Ringer - No change.
+Red Queen - No change other than a possible damage adjustment.
+
+Ringer - Now more likely to spawn with extra parts.
 
 Sidewinder - Radius reduced by 60%.
 
-Storm Front - No change.
+Storm Front - No change other than a possible damage adjustment.
 
-Surge - Splash radius increased by 85%.
+Surge - Splash radius increased by 85%, now more likely to spawn in elemental versions.
 
-Tina's Hippity Hopper - No change.
+Tina's Hippity Hopper - Now more likely to spawn in elemental versions.
 
-Tran-fusion - No change.
+Tran-fusion - Now always spawns with maximum parts.
 
-Widowmaker - No change.
+Widowmaker - Now always spawns with maximum parts, more likely to spawn in elemental variants.
 
-Cheddar Shredder - No change.
+Cheddar Shredder - No change other than a possible damage adjustment.
 
-Diamond Butt Bomb - No change.
+Diamond Butt Bomb - No change other than a possible damage adjustment.
 
-Ultraball - No change.
+Ultraball - No change other than a possible damage adjustment.
 
 UNIQUE GRENADES
 ---------------
-Exterminator - No change.
+Exterminator - No change other than a possible damage adjustment.
 
 Acid Burn - Loader control duration increased to 12 seconds.
 
-Burning Summit - No change.
+Burning Summit - No change other than a possible damage adjustment.
 
 Chocolate Thunder - Radius increased by 250%.
 
-Core Buster - No change.
+Core Buster - No change other than a possible damage adjustment.
 
-Exterminator - No change.
+Exterminator - No change other than a possible damage adjustment.
 
-Fungus Among Us - No change.
+Fungus Among Us - No change other than a possible damage adjustment.
 
-Miracle Bomb - No change.
+Miracle Bomb - No change other than a possible damage adjustment.
 
-NOG Potion #9 - No change.
+NOG Potion #9 - No change other than a possible damage adjustment.
 
-Porcelain Pipe Bomb - No change.
+Porcelain Pipe Bomb - No change other than a possible damage adjustment.
 
-Slider - No change.
+Slider - No change other than a possible damage adjustment.
 
-Whispering Ice - No change.
+Whispering Ice - No change other than a possible damage adjustment.
 
 
 
@@ -1896,9 +2307,9 @@ Flare - Replaced Stainless-Steel Bear with Desperate Measures, replaced Cloud of
 
 Heat Exchanger - No change.
 
-Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%. (Possibly consider replacing Means of Destruction with Click, Click.)
+Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%.
 
-Green Monster - "Blast Master" splash damage effect removed, replaced Click, Click... with Forge.
+Green Monster - Replaced Click, Click... with Forge and made the description more accurate.
 
  ┗----Rationale: Given how the splash bonus is never mentioned anywhere on the card it isn't unreasonable to assume it wasn't intended. Losing a 100% boost in splash damage is a big loss, so it has at least been somewhat compensated for by replacing Click, Click... with Forge (for whatever reason, Click, Click... can only spawn with one point on this class mod legitimately.) Bullet hose builds should appreciate this.
 
@@ -1921,7 +2332,7 @@ Critical Mass - Replaced Déjà Vu with Headsman's Hand and Playing Dirty with B
 
  ┗----Rationale: The class mod with the special effect of refilling your magazine on a critical kill also spawns with the skill that does the exact same thing. To curb this redundancy and keep in line with the theme of critical hits on this class mod, Headsman's Hand now gets boosted instead.
 
-Executor - No change.
+Executor - Reduced the critical hit damage bonus to 50%.
 
 Hustler - Replaced Adrenaline with Violent Violence.
 
@@ -2060,7 +2471,7 @@ LEGENDARY ARTIFACTS
 -------------------
 Commander Planetoid - Increased bonus elemental melee damage to 130% regardless of level, timer between elemental switching reduced to 0.1 seconds.
 
-Company Man - No change.
+Company Man - Made it always spawn with three (non-manufacturer) passive stat bonuses.
 
 Cosmic Crater - Tripled the damage of the puddles.
 
@@ -2080,7 +2491,7 @@ Loaded Dice - No change.
 
 Lunacy - Recharge rate penalty improved to -100% from -216%.
 
-Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity for instant shield recharging.
+Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity and 50% of your recharge rate for very low shield delay.
 
  ┗----Rationale: In Borderlands 2 the Endowment at least had the distinction of being the only artifact that increased experience gain (and even then, it wasn't a particularly good artifact.) This is Borderlands 3 though, and experience gain is a passive stat that can roll on almost any artifact. Rather than just buffing the Endowment's experience gain heavily, it is now an item that is useful regardless of level and should expand build-making possibilities.
 
@@ -2096,7 +2507,7 @@ Rocket Boots - Increased rokcet damage by 300%.
 
 Safeguard - No change.
 
-Shlooter - No change.
+Shlooter - Now always spawns with maximum stat bonuses after the first redemption.
 
 Splatter Gun - Increased shotgun damage bonus to 100%.
 
@@ -2109,8 +2520,6 @@ The Pearl of Ineffable Knowledge - Damage for the first 15 stacks increased to 3
 Toboggan - Amp damage lowered to 70%.
 
 Unleash the Dragon - Damage-over-time reduced to 10% from 80%.
-
- ┗----Rationale: For normal melee, this generally wouldn't be an issue. The existence of things like the Fish Slap and Status Effect Crit Nova Anointment however merits a considerable nerf in the DoTs of this artifact.
 
 Victory Rush - No change.
 
@@ -2140,9 +2549,9 @@ Electric Slide - Tesla damage increased by 150%, increased the slide impact dama
 
 Elemental Projector - No change.
 
-Elemental Stones - Increased melee damage bonus to 100% regardless of level.
+Elemental Stones - Increased melee damage bonus on higher rarity artifacts to 100% regardless of level, 50% for less rare artifacts.
 
-Flesh Melter - No change.
+Flesh Melter - Reduced the maximum corrosive damage bonus by 20% (25% per stack at level 72).
 
 Hot Drop - Reduced fireball damage by 50%.
 
@@ -2306,11 +2715,11 @@ Rakk Charge - Now adds two additional charges instead of one.
 
 Fade Nova - Increased damage to 2.5 from 1.75, increased radius to 900 from 500.
 
-Fade Active Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
+Fade Active Damage - Reduced to 40% damage and now factors in skill and gear bonuses.
 
-Gamma Rad - Reduced to 45%, max duration increased to 120 seconds.
+Gamma Rad - Reduced to 45% damage, adjusted description to be more accurate.
 
-Grav Damage - Reduced to 50% damage and now factors in skill and gear bonuses.
+Grav Damage - Reduced to 40% damage and now factors in skill and gear bonuses.
 
 Action Command Lifesteal - Lifesteal reduced to 3%.
 
@@ -2327,15 +2736,17 @@ Astral Projection Damage - No change.
 
 Phasecast Status - Added status effect damage, increased chance to 100%, increased duration to 10 seconds, and now factors in skill and gear bonuses.
 
-Phasecast Weapon - Reduced to 40% damage, reduced duration to 8 seconds, and now factors in skill and gear bonuses.
+Phasecast Weapon - Reduced to 40% damage, reduced increased to 10 seconds, and now factors in skill and gear bonuses.
 
 Phaseslam Weapon - Reduced to 45% damage and now factors in skill and gear bonuses.
 
 Phaseslam Melee - Reduced to 75% damage, duration increased to 12 seconds and now factors in skill and gear bonuses.
 
-Phaseflare Orb Damage - Reduced to 125% damage.
+Phaseflare Orb Damage - Reduced to 75% damage.
 
-Phaseslam Damage - No change.
+Phasecsat Damage - Reduced to 75% damage.
+
+Phaseslam Damage - Reduced to 100% damage.
 
 Grasp Active Damage - Reduced to 35% damage and now factors in skill and gear bonuses.
 
@@ -2358,7 +2769,7 @@ Terror Ammo Regen - No change.
 
 Terror Health Regen - Increased to 4%/8%/12%.
 
-Terror Cryo - Reduced to 40%.
+Terror Cryo - Reduced to 50%.
 
 Terror Extra Projectile - No change.
 
@@ -2429,7 +2840,7 @@ Selfless Vengeance - Increased Incendiary Bonus to 4% per point, increased bonus
 
 Security Bear - No change.
 
-Armored Infantry - No change.
+Armored Infantry - Changed the damage type to global damage instead of gun damage and added Mayhem-scaled gun-damage.
 
 Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's.)
 
@@ -2449,11 +2860,11 @@ Phalanx Doctrine - No change.
 
 Force Feedback - Increased shield restore to 15%.
 
-Tenacious Defense - No change.
+Tenacious Defense - Made the damage bonus affect most types of damage as well as factor in gear and skill bonuses.
 
 DEMOLITION WOMAN
 ----------------
-Fire in the Skag Den - No change.
+Fire in the Skag Den - Increased fire damage to 4% per point.
 
 Deadlines - No change.
 
@@ -2461,15 +2872,15 @@ Grizzled - No change.
 
 Means of Destruction - No change.
 
-Torgue Cross-Promotion - No change.
+Torgue Cross-Promotion - Increased the splash damage bonus to 7% per point.
 
-Stainless Steel Bear - Increased Iron Bear Damage per point to 6%.
+Stainless Steel Bear - Increased Iron Bear damage per point to 6%.
 
 Pull the Holy Pin - No change.
 
 Auto Bear - No change.
 
-Vampyr - Reduced Lifesteal to 0.6% per point.
+Vampyr - Reduced Lifesteal to 1% per point.
 
 Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade regeneration, added a 10%-per-point Grenade Damage bonus.
 
@@ -2477,23 +2888,23 @@ Why Can't I Carry All These Grenades - Replaced grenade capacity with grenade re
 
 To The Last - No change.
 
-Explosive Punctuation - Increased duration to 5 seconds.
+Explosive Punctuation - Increased duration to 5 seconds, reduced the cooldown bonus to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added 5% bonus movement speed per point.
 
 Short Fuse - No change.
 
 BOTTOMLESS MAGS
 ---------------
-Cloud of Lead - No change.
+Cloud of Lead - Increased fire damage to 4% per point.
 
 Dakka Bear - No change.
 
-Matched Set - No change.
+Matched Set - Added 1.5% gun damage per point (it doesn't display the percentage in the same way the magazine size and heat reduction do, it's the total bonus.)
 
 Stoke the Embers - No change.
 
 Redistribution - No change.
 
-Scrappy - No change.
+Scrappy - Increased the damage bonus to 7% per point.
 
 Rushin' Offensive - Reduced lifesteal to 1%.
 
@@ -2507,7 +2918,7 @@ Specialist Bear - Reduced the damage bonus to 30%.
 
 Some for the Road - A second point in Some For The Road now increases duration by 5 seconds.
 
-Click, Click... - No change.
+Click, Click... - Reduced maximum bonus to 50% and made it factor in gear and skill bonuses.
 
 Forge - Increased bonus to 12.5%.
 
@@ -2515,7 +2926,7 @@ BEAR MOTHER
 -----------
 Biofuel - No change.
 
-Big Surplus - No change.
+Big Surplus - Increased fire damage to 10%.
 
 Really Big Guns - No change.
 
@@ -2613,9 +3024,9 @@ Efficiency Engine - No change.
 
 DOUBLED AGENT
 -------------
-Synchronicity - No change.
+Synchronicity - Added a bonus to Action Skill damage.
 
-Praemunitus - No change.
+Praemunitus - Made it affect Heat-per-Shot.
 
 Borrowed Time - No change.
 
@@ -2639,7 +3050,7 @@ Like a Ghost - Increased base dodge chance to 8.33% per point from 5%, reduced b
 
  ┗----Rationale: Reducing the stack count to one means the base bonus for the skill can be increased to a desireable level without making it too strong if it could stack twice.
 
-Boom. Enhance. - Increased the clone health bonus per grenade to 100%.
+Boom. Enhance. - Increased the clone health bonus per grenade to 100% and added accuracy and handling bonuses.
 
 Trick of the Light - Changed Cryo Damage back to Shock Damage.
 
@@ -2649,9 +3060,9 @@ HITMAN
 -------------
 Violent Speed - No change.
 
-Cold Bore - No change.
+Cold Bore - Reduced the bonus cryo damage to 10% per point.
 
-Violent Momentum - Now also increases slide damage.
+Violent Momentum - Now also increases slide damage, added Action-Skill-damage Mayhem Scaling.
 
  ┗----Rationale: If an old man slides into your kneecaps at hyperspeed, logically speaking it should hurt more than if he slides into you at a brisk jog. It also opens up some fun avenues for alternate damage.
 
@@ -2689,7 +3100,7 @@ Distributed Denial - No change.
 
 Really Expensive Jacket - No change.
 
-Best Served Cold - Nova damage multiplied by five.
+Best Served Cold - Nova damage multiplied by five, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Futility Belt - Increased damage resistance to 30%.
 
@@ -2749,29 +3160,29 @@ Retaliation - Changed the gun damage to general damage and increased the damage 
 
 Deterrence Field - No change.
 
-Digi-Clone - Increased base health by roughly 11%.
+Digi-Clone - Increased the Digi-Clone's damage by 15%, increased base health by roughly 39%.
 
-Binary System - Increased damage by 140%.
+Binary System - Increased damage by 140%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Schadenfreude - No change.
 
 Which One's Real - No change.
 
-Doppelbanger - No change.
+Doppelbanger - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Digital Distribution - No change.
 
-SNTNL - Reduced cooldown to 40 seconds from 60 seconds, doubled target-acquiring range.
+SNTNL - Reduced cooldown to 40 seconds from 60 seconds, doubled target-acquiring range, increased machine gun damage by 20%.
 
 Winter's Drone - No change.
 
-Bad Dose - No change.
+Bad Dose - Increased the radiation damage by 20%.
 
-Static Field - No change.
+Static Field - Increased the shock damage by 20%.
 
-Boomsday - No change.
+Boomsday - Increased damage by 20%.
 
-Almighty Ordinance - No change.
+Almighty Ordinance - Increased damage by 20%.
 
 MNTIS Shoulder Cannon - No change.
 
@@ -2819,7 +3230,7 @@ MASTER
 ------
 Ferocity - No change.
 
-Persistance Hunter - No change.
+Persistance Hunter - Added Action-Skill-damage Mayhem Scaling.
 
 Go for the Eyes - No change.
 
@@ -2841,7 +3252,7 @@ Pack Tactics - No change.
 
 Shared Spirit - No change.
 
-Dominance - No change.
+Dominance - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 STALKER
 -------
@@ -2873,7 +3284,7 @@ TRAPPER
 -------
 Gotta Go Fast - No change.
 
-Success Imminent - No change.
+Success Imminent - Increased damage by 150%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Agility Training - No change.
 
@@ -2883,11 +3294,11 @@ Combat Veterinarian - No change.
 
 Throatripper - Increased critical hit chance to 10% per point.
 
-Lethal Force Authorized - Increased respawn rate cooldown to 300%.
+Lethal Force Authorized - Increased respawn rate cooldown to 300%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Take This! - No change.
 
-Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 81% bonus amp regardless of points invested.
+Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 86% bonus amp regardless of points invested.
 
 Wooly Armor - No change.
 
@@ -2901,7 +3312,7 @@ Capacitance - No change.
 
 ACTION SKILLS/AUGMENTS
 ----------------------
-Rakk Attack - Increased damage by 25% and added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
+Rakk Attack - Increased damage by 80% and added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
 Rakk Open a Cold One - No change.
 
@@ -2945,9 +3356,11 @@ Blind With Anger - No change.
 
 PETS
 ----
-Increased base pet melee damage, ranged damage, and skill damage by 20%.
+Increased base pet melee damage, lunge damage, ranged damage, and skill damage by 200%.
 
-Improved attack command cooldown by 50%.
+Increased base pet health by 40%.
+
+Improved attack command cooldown by 40%.
 
  ┗----Rationale: Attack Command is one of those things seldom used because you can only use them once in a while and tend to forget about it in the heat of combat. A reduction in cooldown should remedy that.
 
@@ -2959,21 +3372,21 @@ Spiderant Countess - Increased damage reduction bonus to 10%.
 
 Guard Skag - No change.
 
-Great Horn Skag - Increased gun damage bonus to 10%, increased ram attack damage by 150%.
+Great Horn Skag - Increased gun damage bonus to 10%.
 
-Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%, increased post-singularity slam damage by 170%.
+Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%.
 
-Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 20%.
+Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 100%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
-Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 33%.
+Beefcake Jabber - Increased health bonus to 15%, increased attack command damage by 300%, increased Beefcake's shotgun damage by 100%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
-Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 15%.
+Gunslinger Jabber - Increased critical damage bonus to 10%, increased Gunslinger's SMG damage by 100%, reduced rocket launcher damage by 30%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
 ION Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp.
 
 BUL Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance.
 
-WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance, replaced fire rate bonus with shield damage.
+WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Elemental Resistance, replaced fire rate bonus with shield damage, reduced missile barrage damage by 20%.
 
 
 
@@ -2995,11 +3408,11 @@ Wildfire - Increased spread chance to 10% per point.
 
 Dread - No change.
 
-Indiscriminate - No change.
+Indiscriminate - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Deep Well - Fixed it not giving the correct amount of heat reduction for CoV weapons.
 
-Catharsis - Damage multiplied by 5, cooldown removed.
+Catharsis - Damage multiplied by 5, cooldown removed, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Sustainment - Lowered lifesteal to 0.2% per point and changed the description to be more accurate.
 
@@ -3013,7 +3426,7 @@ Do Harm - Reduced the maximum amount of stacks to 50, doubled the effectiveness 
 
  ┗----Rationale: While this skill can reach up to 99 stacks under certain conditions, those conditions are not realistic in practice. Rather than funneling more damage into the already bloated Phase-skill anointments to make Amara's Action Skills more viable at endgame, Do Harm has been tweaked instead. Hence the maximum count has been reduced to 50 while the effectiveness has been doubled to equal the same strength it would have previously with 99 stacks. This change also narrows the gap between the Phasezerker class mod and other class mods such as the Stone for Action-Skill oriented builds. Same applies to Violent Tapestry.
 
-Fast Hand(s) - No change.
+Fast Hand(s) - Added Action-Skill-damage Mayhem Scaling.
 
 Violent Tapestry - Reduced the maximum amount of stacks to 50, doubled the effectiveness of each stack.
 
@@ -3031,7 +3444,7 @@ Laid Bare - Increased damage bonus to 10% per point.
 
 Wrath - Increased damage bonuses to 8.33% each per point
 
-Remnant - No change.
+Remnant - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Awakening - No change.
 
@@ -3061,7 +3474,7 @@ Vigor - Increase movement speed bonus to 5% per point.
 
 One With Nature - No change.
 
-Do unto Others - Reduced cooldown to 3 seconds, increased damage by 33%.
+Do unto Others - Reduced cooldown to 3 seconds, increased damage by 33%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Jab Cross - No change.
 
@@ -3079,7 +3492,7 @@ Heavy Rain - No change.
 
 Go With The Flow - No change.
 
-Unweave the Rainbow - No change.
+Unweave the Rainbow - Added a note saying that this skill gets scaled by Mayhem Mode.
 
 Ebb and Flow - No change.
 
@@ -3089,9 +3502,9 @@ Joyful Freedom - No change.
 
 Burn Both Ends - Increased stack duration to ten seconds, updated description to mention that it only affects kinetic and elemental damage.
 
-Body and Mind - No change.
+Body and Mind - Reduced the damage by 50%, added a note saying that this skill gets scaled by Mayhem Mode.
 
-Free the Soul - No change.
+Free the Soul - Increased the damage by 600%, added a note saying that this skill gets scaled by Mayhem Mode.
 
 Atman - No change.
 
@@ -3103,23 +3516,23 @@ ACTION SKILLS/AUGMENTS
 One of Amara's bigger issues is a reliance on her Action Skills but lacking the cooldown to use them frequently without the use of things such as Expedite or Topped Off. Since Topped Off has been nerfed and having viable options other than Expedite is a good thing (especially if you lack the Designer's Cut DLC), most of her Action Skills have received a substantial reduction in cooldown length.
 
 
-Phaseslam - Increased damage by 42%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Phaseslam - Increased damage by 315%, lowered cooldown to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Fracture - Increased damage by 92%, lowered cooldown to 22 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Fracture - Increased damage by 315%, lowered cooldown to 22 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
-Downfall - Made Downfall's slam damage and radius the same as a standard Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds, increased the flight speed by 25%. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Downfall - Made Downfall's slam damage and radius the same as Phaseslam, increased the damage of the beam 1000%, lowered cooldown to 28 seconds, increased the flight speed by 25%. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Revelation - Removed damage penalty, increased damage 150%.
 
 Glamour - Removed damage/action skill cooldown penalties.
 
-Phasecast - Increased damage by 16%, lowered cooldown to 18 seconds.
+Phasecast - Increased damage by 250%, lowered cooldown to 18 seconds.
 
-Deliverance - Projectile damage increased by 300%, cooldown lowered to 20 seconds.
+Deliverance - Projectile damage increased by 300%, main Phasecast damage increased by 245%, cooldown lowered to 20 seconds.
 
-Reverbration - Damage reduced by 50% (damage on the skill card does not match actual damage, deals roughly the same damage as standard Phasecast on initial hit now), lowered cooldown to 22 seconds.
+Reverbration - Damage increased by 79%, lowered cooldown to 22 seconds.
 
-Tandava - Damage increased by 77%, cooldown lowered to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
+Tandava - Damage increased by 254%, cooldown lowered to 24 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill.
 
 Soul Sap - Reduced lifesteal to 15%, reduce Ascendant bonus to 5%.
 
@@ -3135,13 +3548,13 @@ Fist over Matter - Fist damage increased by 200%, cooldown lowered to 14 seconds
 
 Allure - Removed damage penalty.
 
-Phaseflare - Lowered cooldown to 30 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
+Phaseflare - Increased damage by 51%, owered cooldown to 30 seconds. Added a note to the skill description mentioning that Splash bonuses apply to this action skill and its augments.
 
-Glow Up - Lowered cooldown to 15 seconds.
+Glow Up - Increased damage by 55%, lowered cooldown to 15 seconds.
 
-Shooting Star (skill) - Made main orb damage match standard Phaseflare damage, lowered cooldown to 32 seconds.
+Shooting Star (skill) - Made main orb damage match Phaseflare damage, lowered cooldown to 32 seconds.
 
-Light Fantastic - Lowered cooldown to 34 seconds.
+Light Fantastic - Increased damage by 47%, lowered cooldown to 34 seconds.
 
 Expedite - No change.
 

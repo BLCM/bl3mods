@@ -1,0 +1,698 @@
+###
+### Name: SnS Replaces CoV
+### Version: 4.0
+### Author: Novenic
+### Categories: gear-brand, gear-general
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Screenshot: https://i.imgur.com/JdWcLD8.png
+### Screenshot: https://i.imgur.com/gIOZRJR.png
+### Screenshot: https://i.imgur.com/PRabgG2.png
+### Screenshot: https://i.imgur.com/ZPy92AX.png
+### Screenshot: https://i.imgur.com/72lza2k.png
+### Screenshot: https://i.imgur.com/7yagMPc.png
+### Screenshot: https://i.imgur.com/IIgM2g7.png
+### Nexus: https://www.nexusmods.com/borderlands3/mods/231
+###
+
+###
+### Changes CoV into S&S Munitions
+###
+### Stat Changes:
+###	All weapons deal less damage, but have higher elemental effect chance and elemental damage
+###	ARs and Heavy Weapons have decreased heat per shot (increased magazine size)
+### Sawblade projectiles are now glowing disks (to look less bandit-y)
+###
+### UI Changes:
+### Weapon names, flavor text, manufacturer challenges, loyalty emails,
+### and class mod text referenceing CoV
+###
+### NOTE: CHANGES TO WEAPON COLORS ARE NOT CURRENTLY POSSIBLE VIA HOTFIX AND MUST BE DOWNLOADED AT THE NEXUS LINK
+###
+
+
+
+
+
+
+##### BASE STAT CHANGES #####
+
+
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,0.9
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,ElementalChanceScale_73_C4EC9BCE44E98744632F78844B99DA83,0,,1.3
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,ElementalDamageMultiplierScale_80_D457807F45510F5C3D23D69C7D7C7964,0,,2.1
+
+
+
+
+
+
+##### HEAVY WEAPONS #####
+
+
+
+### Heavy Weapon Magazine Increase
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_01/Part_HW_COV_Barrel_01.Part_HW_COV_Barrel_01:AspectList_WeaponUseModeSecondaryAspectData.Component_BPHeatComponent_CoV,UseHeatImpulse,0,,(BaseValue=0.1)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_02/Part_HW_COV_Barrel_02.Part_HW_COV_Barrel_02:AspectList_WeaponUseModeSecondaryAspectData.Component_BPHeatComponent_CoV,UseHeatImpulse,0,,(BaseValue=0.2)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_03/Part_HW_COV_Barrel_03.Part_HW_COV_Barrel_03:AspectList_WeaponUseModeSecondaryAspectData.Component_BPHeatComponent_CoV,UseHeatImpulse,0,,(BaseValue=0.1)
+
+
+
+### Heavy Weapon Uniques Magazine Increase
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/Parts/Part_HW_COV_Barrel_ETech_YellowCake.Part_HW_COV_Barrel_ETech_YellowCake,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=275.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Grips/Att_Weapon_ForegripType.Att_Weapon_ForegripType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2.DataTable_WeaponBalance_Event2,RowName=YellowCake,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Parts/Part_HW_COV_Barrel_Globetrotter.Part_HW_COV_Barrel_Globetrotter,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=275.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Grips/Att_Weapon_ForegripType.Att_Weapon_ForegripType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,RowName=HW_Globetrotter,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+
+
+### Removing the voice from PortaPooper and changing the weapon fire sound
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/WeaponCustom/BPWeap_HW_COV_Poop.BPWeap_HW_COV_Poop_C:OakDialog_GEN_VARIABLE,DialogScripts,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/Part/Part_HW_COV_Barrel_PortaPooper.Part_HW_COV_Barrel_PortaPooper:AspectList_WeaponAudioAspectData,ConfigurationEvents,0,,(/Game/Audio/Events/Weapons/Wep_CoV/Wep_CoV_Heavy/CONFIG/WE_Wep_CoV_Heavy_BarrelType_02_CONFIG.WE_Wep_CoV_Heavy_BarrelType_02_CONFIG)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/Part/Part_HW_COV_Barrel_PortaPooper.Part_HW_COV_Barrel_PortaPooper:AspectList_WeaponAudioStreamingAspectData,EventsToPrepareForStreaming,0,,()
+
+
+
+### Heavy Weapon Sawblades Visual Change
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/COV/HW/Projectiles/LightProjectile_HW_COV_SawBlade.Default__LightProjectile_HW_COV_SawBlade_C,ExplosionData,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Maliwan/ExplosionData/DA_Maliwan_Explosion_Default.DA_Maliwan_Explosion_Default
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/COV/HW/Projectiles/LightProjectile_HW_COV_SawBlade.Default__LightProjectile_HW_COV_SawBlade_C,TracerFXCollection,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.ElementalEffectCollection_MAL_ETech_DiscTrail_C
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Proj_BladesOfTerror.Proj_BladesOfTerror_C:Saw_GEN_VARIABLE,Template,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/PS_MAL_ETech_Disc_Trail_Cryo.PS_MAL_ETech_Disc_Trail_Cryo
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.Default__ElementalEffectCollection_MAL_ETech_DiscTrail_C,ElementalEffect,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/PS_MAL_ETech_Disc_Trail_Cryo.PS_MAL_ETech_Disc_Trail_Cryo
+
+
+
+
+
+
+##### ASSAULT RIFLES #####
+
+
+
+### AR Magazine Increase and Remove Barrel Break Reload Animation
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_01/Part_AR_COV_Barrel_01.Part_AR_COV_Barrel_01,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_02/Part_AR_COV_Barrel_02.Part_AR_COV_Barrel_02,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.45,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/Parts/Barrel/Barrel_03/Part_AR_COV_Barrel_03.Part_AR_COV_Barrel_03,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+
+
+### AR Uniques Magazine Increase and Remove Barrel Break Reload Animation
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/Sawbar/Parts/Part_AR_COV_Barrel_Sawbar.Part_AR_COV_Barrel_Sawbar,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,RowName=AR_SAWBAR,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Parts/Damage/Part_AR_COV_Barrel_HeatDamage.Part_AR_COV_Barrel_HeatDamage,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.8,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Parts/FireRate/Part_AR_COV_Barrel_HeatFirerate.Part_AR_COV_Barrel_HeatFirerate,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.35,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.45,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Parts/Part_AR_COV_Barrel_Sawhorse.Part_AR_COV_Barrel_Sawhorse,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,RowName=AR_Sawhorse,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Parts/Part_AR_COV_Barrel_Sawhorse_Epic.Part_AR_COV_Barrel_Sawhorse_Epic,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,RowName=AR_Sawhorse,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/Parts/Part_AR_COV_Barrel_Trash.Part_AR_COV_Barrel_Trash,InventoryAttributeEffects.InventoryAttributeEffects[0].ModifierValue.BaseValueConstant,0,,4.0
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Trash/Parts/Part_AR_COV_Barrel_Trash.Part_AR_COV_Barrel_Trash,InventoryAttributeEffects.InventoryAttributeEffects[6].ModifierValue.BaseValueConstant,0,,0.49
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/Parts/Part_AR_COV_Barrel_PewPew.Part_AR_COV_Barrel_PewPew,InventoryAttributeEffects.InventoryAttributeEffects[0].ModifierValue.BaseValueConstant,0,,4.0
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/Parts/Part_AR_COV_Barrel_PewPew.Part_AR_COV_Barrel_PewPew,InventoryAttributeEffects.InventoryAttributeEffects[1],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.45,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Parts/Part_AR_COV_Barrel_BioBetsy_Shock.Part_AR_COV_Barrel_BioBetsy_Shock,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,RowName=AR_BioBetsy,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/BioBetsy/Parts/Part_AR_COV_Barrel_BioBetsy_Rad.Part_AR_COV_Barrel_BioBetsy_Rad,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,RowName=AR_BioBetsy,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/Parts/Part_AR_COV_Barrel_Homicidal.Part_AR_COV_Barrel_Homicidal,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/Parts/Part_AR_COV_Barrel_Zheitsev.Part_AR_COV_Barrel_Zheitsev,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Re-Engagement/Balance/DataTable_ReEngagement1_Weapons.DataTable_ReEngagement1_Weapons,RowName=Zheitsev,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/COV/Attributes/Att_Cov_RepairStyle.Att_Cov_RepairStyle"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.57,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Parts/Part_AR_COV_Barrel_SparkyBoom.Part_AR_COV_Barrel_SparkyBoom,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,DataTableValue=(DataTable=/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,RowName=AR_SparkyBoom,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.75,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.45,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0)))
+
+
+
+### Rebound and Sawpenny Sawblades Visual Change
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse.Default__LightProjectile_Sawhorse_C,TracerFXCollection,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.ElementalEffectCollection_MAL_ETech_DiscTrail_C
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse.Default__LightProjectile_Sawhorse_C,ExplosionData,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Maliwan/ExplosionData/DA_Maliwan_Explosion_Default.DA_Maliwan_Explosion_Default
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse_Return.Default__LightProjectile_Sawhorse_Return_C,TracerFXCollection,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.ElementalEffectCollection_MAL_ETech_DiscTrail_C
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse_Return.Default__LightProjectile_Sawhorse_Return_C,ExplosionData,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Maliwan/ExplosionData/DA_Maliwan_Explosion_Default.DA_Maliwan_Explosion_Default
+
+
+
+
+
+
+#########################################################
+##################### UI CHANGES ########################
+#########################################################
+
+
+
+
+
+
+##### GENERAL #####
+
+
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Ele_Corrosive.Name_COV_Ele_Corrosive,PartName.SourceString,0,,Chemical
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Ele_Cryo.Name_COV_Ele_Cryo,PartName.SourceString,0,,Frigid
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Ele_Fire.Name_COV_Ele_Fire,PartName.SourceString,0,,Solar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Ele_Radiation.Name_COV_Ele_Radiation,PartName.SourceString,0,,Gamma-Ray
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Ele_Shock.Name_COV_Ele_Shock,PartName.SourceString,0,,Electric
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Melee_02.Name_COV_Melee_02,PartName.SourceString,0,,Merging
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_Melee.Name_COV_Melee,PartName.SourceString,0,,Colliding
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_ShotCost.Name_COV_ShotCost,PartName.SourceString,0,,Binary
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NameParts/Name_COV_ShotCost_02.Name_COV_ShotCost_02,PartName.SourceString,0,,Trinary
+
+
+
+
+
+
+##### WEAPONS #####
+
+
+
+### Assault Rifles
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/AR/Name_COV_AR_Barrel_01.Name_COV_AR_Barrel_01,PartName.SourceString,0,,Orbit
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/AR/Name_COV_AR_Barrel_02.Name_COV_AR_Barrel_02,PartName.SourceString,0,,System
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/AR/Name_COV_AR_Barrel_03.Name_COV_AR_Barrel_03,PartName.SourceString,0,,Body
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/AR/Name_COV_AR_Barrel_ETech.Name_COV_AR_Barrel_ETech,PartName.SourceString,0,,Parallax
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_27,PartName.SourceString,0,,Intense
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_28,PartName.SourceString,0,,Energetic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_29,PartName.SourceString,0,,Shining
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_30,PartName.SourceString,0,,Rotating
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_31,PartName.SourceString,0,,Dim
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_32,PartName.SourceString,0,,Meteoric
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_33,PartName.SourceString,0,,Luminous
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_34,PartName.SourceString,0,,Sidereal
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_35,PartName.SourceString,0,,Blazing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_36,PartName.SourceString,0,,Nebular
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_37,PartName.SourceString,0,,Vast
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_38,PartName.SourceString,0,,Radiant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_39,PartName.SourceString,0,,Elliptical
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_40,PartName.SourceString,0,,Galactic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_41,PartName.SourceString,0,,Stellar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_42,PartName.SourceString,0,,Retrograde
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_43,PartName.SourceString,0,,Lunar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_44,PartName.SourceString,0,,Giant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_45,PartName.SourceString,0,,Cosmic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_46,PartName.SourceString,0,,Astral
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_47,PartName.SourceString,0,,Flaring
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_48,PartName.SourceString,0,,Pulsing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_49,PartName.SourceString,0,,Clustered
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_50,PartName.SourceString,0,,Celestial
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_51,PartName.SourceString,0,,Perihelic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_52,PartName.SourceString,0,,Dwarf
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_AR.NamingStrategy_COV_AR:InventoryNamePartData_53,PartName.SourceString,0,,Massive
+
+
+
+### Pistols
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/PS/Name_COV_PS_Barrel_01.Name_COV_PS_Barrel_01,PartName.SourceString,0,,Comet
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/PS/Name_COV_PS_Barrel_02.Name_COV_PS_Barrel_02,PartName.SourceString,0,,Planetoid
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/PS/Name_COV_PS_Barrel_03.Name_COV_PS_Barrel_03,PartName.SourceString,0,,Satellite
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/PS/Name_COV_PS_Barrel_ETech.Name_COV_PS_Barrel_ETech,PartName.SourceString,0,,Star
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_0,PartName.SourceString,0,,Intense
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_1,PartName.SourceString,0,,Energetic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_10,PartName.SourceString,0,,Vast
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_11,PartName.SourceString,0,,Radiant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_12,PartName.SourceString,0,,Elliptical
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_13,PartName.SourceString,0,,Galactic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_14,PartName.SourceString,0,,Stellar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_15,PartName.SourceString,0,,Retrograde
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_16,PartName.SourceString,0,,Lunar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_17,PartName.SourceString,0,,Giant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_18,PartName.SourceString,0,,Cosmic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_19,PartName.SourceString,0,,Astral
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_2,PartName.SourceString,0,,Shining
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_20,PartName.SourceString,0,,Flaring
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_21,PartName.SourceString,0,,Pulsing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_22,PartName.SourceString,0,,Clustered
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_23,PartName.SourceString,0,,Celestial
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_24,PartName.SourceString,0,,Perihelic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_25,PartName.SourceString,0,,Dwarf
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_26,PartName.SourceString,0,,Massive
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_3,PartName.SourceString,0,,Rotating
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_4,PartName.SourceString,0,,Dim
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_5,PartName.SourceString,0,,Meteoric
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_6,PartName.SourceString,0,,Luminous
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_7,PartName.SourceString,0,,Sidereal
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_8,PartName.SourceString,0,,Blazing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_PS.NamingStrategy_COV_PS:InventoryNamePartData_9,PartName.SourceString,0,,Nebular
+
+
+
+### Heavy Weapons
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/HW/Name_COV_HW_Barrel_01.Name_COV_HW_Barrel_01,PartName.SourceString,0,,Blazar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/HW/Name_COV_HW_Barrel_02.Name_COV_HW_Barrel_02,PartName.SourceString,0,,Pulsar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/HW/Name_COV_HW_Barrel_03.Name_COV_HW_Barrel_03,PartName.SourceString,0,,Magnetar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/_Title/HW/Name_COV_HW_Barrel_ETech.Name_COV_HW_Barrel_ETech,PartName.SourceString,0,,Seyfert
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_27,PartName.SourceString,0,,Intense
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_28,PartName.SourceString,0,,Energetic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_29,PartName.SourceString,0,,Shining
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_30,PartName.SourceString,0,,Rotating
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_31,PartName.SourceString,0,,Dim
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_32,PartName.SourceString,0,,Meteoric
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_33,PartName.SourceString,0,,Luminous
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_34,PartName.SourceString,0,,Sidereal
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_35,PartName.SourceString,0,,Blazing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_36,PartName.SourceString,0,,Nebular
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_37,PartName.SourceString,0,,Vast
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_38,PartName.SourceString,0,,Radiant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_39,PartName.SourceString,0,,Elliptical
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_40,PartName.SourceString,0,,Galactic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_41,PartName.SourceString,0,,Stellar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_42,PartName.SourceString,0,,Retrograde
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_43,PartName.SourceString,0,,Lunar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_44,PartName.SourceString,0,,Giant
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_45,PartName.SourceString,0,,Cosmic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_46,PartName.SourceString,0,,Astral
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_47,PartName.SourceString,0,,Flaring
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_48,PartName.SourceString,0,,Pulsing
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_49,PartName.SourceString,0,,Clustered
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_50,PartName.SourceString,0,,Celestial
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_51,PartName.SourceString,0,,Perihelic
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_52,PartName.SourceString,0,,Dwarf
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrategy/COV/NamingStrategy_COV_HW.NamingStrategy_COV_HW:InventoryNamePartData_53,PartName.SourceString,0,,Massive
+
+
+
+
+
+
+##### UNIQUES AND LEGENDARIES #####
+
+
+
+### Embrace the Pain
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Name_COV_AR_HeatFirerate.Name_COV_AR_HeatFirerate,PartName.SourceString,0,,Castor
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text.SourceString,0,,[Flavor]Double Whammy[/Flavor]
+
+
+
+### Gargoyle
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/Name_COV_PS_Gargoyle.Name_COV_PS_Gargoyle,PartName.SourceString,0,,Scorpius
+
+
+
+### Globetrottr
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Takedown2/Gear/Weapons/Globetrotter/Name_COV_HW_Globetrotter.Name_COV_HW_Globetrotter,PartName.SourceString,0,,Antlia
+
+
+
+### Hot Drop
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/Name_COV_HW_HotDrop.Name_COV_HW_HotDrop,PartName.SourceString,0,,Hyades
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/UIStat_RedText_HotDrop.UIStat_RedText_HotDrop,Text.SourceString,0,,[Flavor]Vexed the dim sea.[/Flavor]
+
+
+
+### Hydrafrost
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Hydrafrost/Name_COV_PS_Hydrafrost.Name_COV_PS_Hydrafrost,PartName.SourceString,0,,Hydra
+
+
+
+### Linoge
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Legion/Name_COV_PS_Legion.Name_COV_PS_Legion,PartName.SourceString,0,,Boötes
+
+
+
+### Major Kong
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Name_COV_HW_BanditLauncher.Name_COV_HW_BanditLauncher,PartName.SourceString,0,,Ursa Major
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/UIStat_RedText_BanditLauncher.UIStat_RedText_BanditLauncher,Text.SourceString,0,,[Flavor]Only YOU can prevent intergalactic war.[/Flavor]
+
+
+
+### Minor Kong
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/Name_COV_HW_BanditLauncher_Epic.Name_COV_HW_BanditLauncher_Epic,PartName.SourceString,0,,Ursa Minor
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/BanditLauncher/UIStat_RedText_BanditLauncher_Epic.UIStat_RedText_BanditLauncher_Epic,Text.SourceString,0,,[Flavor]Someone's been eating my porridge![/Flavor]
+
+
+
+### NoPewPew
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/PewPew/Name_COV_AR_PewPew.Name_COV_AR_PewPew,PartName.SourceString,0,,Phoenix
+
+
+
+### Pain is Power
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Name_COV_AR_HeatDamage.Name_COV_AR_HeatDamage,PartName.SourceString,0,,Pollux
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatDamage.UIStat_RedText_HeatDamage,Text.SourceString,0,,[Flavor]Two of a kind.[/Flavor]
+
+
+
+### Pestilence
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Contagion/Name_COV_PS_Contagion.Name_COV_PS_Contagion,PartName.SourceString,0,,Crab
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Contagion/UIStat_RedText_Contagion.UIStat_RedText_Contagion,Text.SourceString,0,,[Flavor]It's a bird! It's a plane! It's a supernova![/Flavor]
+
+
+
+### Porta-Pooper 5000
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/Name_TOR_HW_PortaPooper.Name_TOR_HW_PortaPooper,PartName.SourceString,0,,Sirius
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/PortaPooper/UIStat_RedText_PortaPooper.UIStat_RedText_PortaPooper,Text.SourceString,0,,[Flavor]Shine bright.[/Flavor]
+
+
+
+### Psycho Stabber
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/PsychoStabber/Name_COV_PS_PsychoStabber.Name_COV_PS_PsychoStabber,PartName.SourceString,0,,Caelum
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/PsychoStabber/UIStat_RedText_PsychoStabber.UIStat_RedText_PsychoStabber,Text.SourceString,0,,[Flavor]Visualize the sculpture within.[/Flavor]
+
+
+
+### Rebound
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Name_COV_AR_Sawhorse.Name_COV_AR_Sawhorse,PartName.SourceString,0,,Canis Major
+
+
+
+### Sawbar
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/Sawbar/Name_COV_AR_Sawbar.Name_COV_AR_Sawbar,PartName.SourceString,0,,Draco
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/Sawbar/UIStat_RedText_Sawbar.UIStat_RedText_Sawbar,Text.SourceString,0,,[Flavor]Dragon Fire![/Flavor]
+
+
+
+### Sawpenny
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Name_COV_AR_Sawhorse_Epic.Name_COV_AR_Sawhorse_Epic,PartName.SourceString,0,,Canis Minor
+
+
+
+### Seeryul Killur
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/Name_COV_AR_Homicidal.Name_COV_AR_Homicidal,PartName.SourceString,0,,Fornax
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Homicidal/UIStat_RedText_Homicidal.UIStat_RedText_Homicidal,Text.SourceString,0,,[Flavor]Can't take the heat?[/Flavor]
+
+
+
+### SkekSil
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Skeksis/Name_COV_PS_Skeksis.Name_COV_PS_Skeksis,PartName.SourceString,0,,Apollo
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Skeksis/UIStat_RedText_Skeksis.UIStat_RedText_Skeksis,Text.SourceString,0,,[Flavor]One small step...[/Flavor]
+
+
+
+### Stauros' Burn
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/Name_COV_HW_SparkyBoom.Name_COV_HW_SparkyBoom,PartName.SourceString,0,,Betelgeuse
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SparkyBoom/UIStat_RedText_SparkyBoom.UIStat_RedText_SparkyBoom,Text.SourceString,0,,[Flavor]Space is big. Really big.[/Flavor]
+
+
+
+### Tizzy
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Name_COV_PS_Tizzy.Name_COV_PS_Tizzy,PartName.SourceString,0,,Blazing Thanatos
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Name_COV_PS_Tizzy1.Name_COV_PS_Tizzy1,PartName.SourceString,0,,Binary Blazing Thanatos
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/UIStat_RedText_Tizzy.UIStat_RedText_Tizzy,Text.SourceString,0,,[Flavor]Big Tony says "Hi"[/Flavor]
+
+
+
+### Yellowcake
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/Name_COV_HW_YellowCake.Name_COV_HW_YellowCake,PartName.SourceString,0,,Triangulum
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/YellowCake/UIStat_RedText_YellowCake.UIStat_RedText_YellowCake,Text.SourceString,0,,[Flavor]Get to the point![/Flavor]
+
+
+
+### Zheitsev's Eruption
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Re-Engagement/Weapons/ZheitsevEruption/Name_COV_AR_Zheitsev.Name_COV_AR_Zheitsev,PartName.SourceString,0,,Perseids
+
+
+
+
+
+
+##### UI TEXT #####
+
+
+
+### Manufacturer Attributes
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_Stats/UIStats/UIStat_ClassMod_Stat_CoV_WeaponAccuracy.UIStat_ClassMod_Stat_CoV_WeaponAccuracy,FormatText.SourceString,0,,[skill]$Value$[/skill] S&S Weapon Accuracy
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_Stats/UIStats/UIStat_ClassMod_Stat_CoV_WeaponDamage.UIStat_ClassMod_Stat_CoV_WeaponDamage,FormatText.SourceString,0,,[skill]$Value$[/skill] S&S Weapon Damage
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_Stats/UIStats/UIStat_ClassMod_Stat_CoV_WeaponFireRate.UIStat_ClassMod_Stat_CoV_WeaponFireRate,FormatText.SourceString,0,,[skill]$Value$[/skill] S&S Weapon Fire Rate
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/ClassMods/_Design/PartSets/Part_Stats/UIStats/UIStat_ClassMod_Stat_CoV_WeaponMagazineSize.UIStat_ClassMod_Stat_CoV_WeaponMagazineSize,FormatText.SourceString,0,,[skill]$Value$[/skill] S&S Weapon Heat Per Shot
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/Artifact_Prefix_CompanyMan_CoV.Artifact_Prefix_CompanyMan_CoV,PartName.SourceString,0,,S&S Munitions
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_Accuracy.UIStat_Artifact_CompanyMan_CoV_Accuracy,FormatText.SourceString,0,,S&S ACCURACY $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_CritDamage1.UIStat_Artifact_CompanyMan_CoV_CritDamage1,FormatText.SourceString,0,,S&S CRITICAL DAMAGE $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_CritDamage2.UIStat_Artifact_CompanyMan_CoV_CritDamage2,FormatText.SourceString,0,,S&S CRITICAL DAMAGE $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_Damage1.UIStat_Artifact_CompanyMan_CoV_Damage1,FormatText.SourceString,0,,S&S DAMAGE $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_Damage2.UIStat_Artifact_CompanyMan_CoV_Damage2,FormatText.SourceString,0,,S&S DAMAGE $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_FireRate.UIStat_Artifact_CompanyMan_CoV_FireRate,FormatText.SourceString,0,,S&S FIRE RATE $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_MagSize.UIStat_Artifact_CompanyMan_CoV_MagSize,FormatText.SourceString,0,,S&S HEAT PER SHOT $VALUE$
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/CoV/UIStat_Artifact_CompanyMan_CoV_ReloadSpeed.UIStat_Artifact_CompanyMan_CoV_ReloadSpeed,FormatText.SourceString,0,,S&S REPAIR TIME $VALUE$
+
+
+
+### Manufacturer Challenges and Stats
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Categories/BP_CategoryData_Manufacturer_COV.BP_CategoryData_Manufacturer_COV,CategoryName.SourceString,0,,S&S Challenges
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_CoVKills.Default__Challenge_Manufacturer_CoV_CoVKills_C,ChallengeName.SourceString,0,,Defeat the Family
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_CoVKills.Default__Challenge_Manufacturer_CoV_CoVKills_C,Description.SourceString,0,,Kill COV with S&S weapons.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_CoVKills.Default__Challenge_Manufacturer_CoV_CoVKills_C,CompletedDescription.SourceString,0,,Kill COV with S&S weapons.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_HeavyKills.Default__Challenge_Manufacturer_CoV_HeavyKills_C,ChallengeName.SourceString,0,,Tech Juggernaut
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_HeavyKills.Default__Challenge_Manufacturer_CoV_HeavyKills_C,Description.SourceString,0,,Kill enemies with S&S heavy weapons.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_HeavyKills.Default__Challenge_Manufacturer_CoV_HeavyKills_C,CompletedDescription.SourceString,0,,Kill enemies with S&S heavy weapons.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_NotOverheatedKills.Default__Challenge_Manufacturer_CoV_NotOverheatedKills_C,Description.SourceString,0,,Kill enemies with S&S weapons while not overheated.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_NotOverheatedKills.Default__Challenge_Manufacturer_CoV_NotOverheatedKills_C,CompletedDescription.SourceString,0,,Kill enemies with S&S weapons while not overheated.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_OverheatedKills.Default__Challenge_Manufacturer_CoV_OverheatedKills_C,Description.SourceString,0,,Kill enemies with S&S weapons while overheated.
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/Challenge_Manufacturer_CoV_OverheatedKills.Default__Challenge_Manufacturer_CoV_OverheatedKills_C,CompletedDescription.SourceString,0,,Kill enemies with S&S weapons while overheated.
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Stats/Manufacturer/Stat_Combat_ManufacturerKill_CoV.Stat_Combat_ManufacturerKill_CoV,StatName.SourceString,0,,S&S Weapon Kills
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Stats/Manufacturer/Stat_ManufacturerRewards_CoV.Stat_ManufacturerRewards_CoV,StatName.SourceString,0,,S&S Rewards
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Challenges/Weekly/VC1/VC1_WeeklyChallenge_ManufactureCoV.Default__VC1_WeeklyChallenge_ManufactureCoV_C,Description.SourceString,0,,Kill 250 enemies with S&S weapons
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Stats/Manufacturer/Stat_Combat_ManufacturerKill_CoV.Stat_Combat_ManufacturerKill_CoV,StatName.SourceString,0,,S&S Weapon Kills
+
+
+
+### Manufacturer Name and Description
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,ManufacturerName.SourceString,0,,S&S Munitions
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,Blurb.SourceString,0,,The S&S philosophy is: Tech + Ammo Capacity = I win! With S&S Munitions' brand-new magazine technology, you will never have to reload. Their weapons take ammo directly from your backpack, so you only need to focus on hitting those targets!
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,ManufacturerLogoFrameName,0,,SnS
+
+
+
+### Loyalty Emails
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_CoV.Default__Challenge_ManufacturerRewardReward_CoV_C,ChallengeName.SourceString,0,,S&S Success
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_CoV.Default__Challenge_ManufacturerRewardReward_CoV_C,Description.SourceString,0,,Kill enemies with S&S weapons.
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_01,SenderDisplayName,SourceString,0,S&S
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_01,Subject,SourceString,0,S&S Munitions Loyalty Reward
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_01,Body,SourceString,0,Greetings, valued customer<br><br>At S&S, we would like to congratulate you on your one-hundred kills using our innovative unlimited-magazine technology.<br>Don't think your efforts have gone unnoticed!<br>Because of your consistent success, we are sending you a free weapon as thanks.<br>We hope to continue this mutually beneficial interest with you.<br><br>Sincerely,<br>Saul and Simon Sanders, Co-Founders of S&S Munitions
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_02,SenderDisplayName,SourceString,0,S&S
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_02,Subject,SourceString,0,S&S Munitions Loyalty Reward
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_02,Body,SourceString,0,Dear valued customer,<br><br>We are happy to hear that you have busy with our advanced weaponry.<br>One-hundred kills is no easy feat, but we're sure glad you chose our limitless magazines and smart tech to help you out.<br>Here's a reward on us for your continued support!<br>Remember, if power and capacity are your concerns, then say yes to S&S.<br><br>Sincerely,<br>Saul and Simon Sanders, Co-Founders of S&S Munitions
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_03,SenderDisplayName,SourceString,0,S&S
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_03,Subject,SourceString,0,S&S Munitions Loyalty Reward
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_03,Body,SourceString,0,Hello from your friends at S&S,<br><br>Many of our technicians have heard of your incredible achievement - one-hundred kills with some of the galaxy's finest armaments!<br>We would like to assist in your future successes by providing you with a brand new weapon, unlimited magazine included.<br>Protect yourself and your loved ones with S&S Munitions!<br><br>Sincerely,<br>Saul and Simon Sanders, Co-Founders of S&S Munitions
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_04,SenderDisplayName,SourceString,0,S&S
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_04,Subject,SourceString,0,S&S Munitions Loyalty Reward
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_04,Body,SourceString,0,Dear valued customer,<br><br>We are happy to hear that you have busy with our advanced weaponry.<br>One-hundred kills is no easy feat, but we're sure glad you chose our limitless magazines and smart tech to help you out.<br>Here's a reward on us for your continued support!<br>Remember, if power and capacity are your concerns, then say yes to S&S.<br><br>Sincerely,<br>Saul and Simon Sanders, Co-Founders of S&S Munitions
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_05,SenderDisplayName,SourceString,0,S&S
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_05,Subject,SourceString,0,S&S Munitions Loyalty Reward
+
+SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/MailData/Table_ManufacturerMail.Table_ManufacturerMail,CoVManufacturerMail_05,Body,SourceString,0,Felicitations, dear customer<br><br>One-hundred enemies have met their end at your S&S-filled hand. We know you would love to get back to doing what you do best, so we decided to mail you a litle something extra.<br>Take in hand the weapon included with this message, and strike down upon your foes with unending firepower and smart design.<br><br>Regards,<br>Saul and Simon Sanders, Co-Founders of S&S Munitions
+
+
+
+### Loading Screen Tips
+
+SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingScreenGlobals,LoadingTooltips.LoadingTooltips[36].SourceString,0,,S&S guns are engine-driven, and have to be started before they can be fired. Don't even ask about the gas mileage.
+
+SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingScreenGlobals,LoadingTooltips.LoadingTooltips[37].SourceString,0,,S&S Munitions guns don't use magazines, pulling ammo directly from your Backpack instead. You'll never have to reload, but your weapon might overheat if you fire too long.
+
+
+
+### Moze Skill
+
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/ClickClick/PassiveSkill_Gunner_ClickClick.Default__PassiveSkill_Gunner_ClickClick_C,AbilityDescription.SourceString,0,,Moze gains increased [skillbold]Gun Damage[/skillbold] as her magazine empties. The less ammo there is remaining, the greater the increase.<br><br>If Moze has an [skillbold]S&S[/skillbold] gun equipped, she gains [skillbold]Gun Damage[/skillbold] as her gun's heat increases.
