@@ -10,8 +10,8 @@ Changelog
 
 **v1.1** - Feb 23, 2022
  * Modified stats on S&S weapons
-    * Decreased equip speed
-    * Increased reload speed
+    * Decreased equip time
+    * Increased reload time
     * Increased Tizzy/Thanatos magazine size
  * Changed some animations
     * Removed startup animation when equipping S&S weapons
