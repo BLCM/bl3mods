@@ -23,7 +23,7 @@
 ### Stat Changes:
 ###	All weapons deal less damage, but have higher elemental effect chance and elemental damage
 ###	ARs and Heavy Weapons have decreased heat per shot (increased magazine size)
-### Increased reload speed
+### Increased reload time
 ### Sawblade projectiles are now glowing disks (to look less bandit-y)
 ### Weapons no longer have startup animations when equipping the weapon
 ###
@@ -71,8 +71,6 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[0].RepairTime,0,,3.0
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[1].RepairTime,0,,4.0
-
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue.BaseValueConstant,0,,1.0
 
 
 
@@ -294,6 +292,12 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Reload_Water_Cooled_Start_02.AM_PS_COV_Reload_Water_Cooled_Start_02,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.105
 
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Reload_Water_Cooled_Start_03.AM_PS_COV_Reload_Water_Cooled_Start_03,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.105
+
+
+
+### Tizzy/Thanatos Magazine Size Increase
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue.BaseValueConstant,0,,1.0
 
 
 
