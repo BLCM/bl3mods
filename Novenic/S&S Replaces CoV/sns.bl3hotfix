@@ -23,7 +23,9 @@
 ### Stat Changes:
 ###	All weapons deal less damage, but have higher elemental effect chance and elemental damage
 ###	ARs and Heavy Weapons have decreased heat per shot (increased magazine size)
+### Increased reload time
 ### Sawblade projectiles are now glowing disks (to look less bandit-y)
+### Weapons no longer have startup animations when equipping the weapon
 ###
 ### UI Changes:
 ### Weapon names, flavor text, manufacturer challenges, loyalty emails,
@@ -46,6 +48,29 @@ SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/W
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,ElementalChanceScale_73_C4EC9BCE44E98744632F78844B99DA83,0,,1.3
 
 SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,ElementalDamageMultiplierScale_80_D457807F45510F5C3D23D69C7D7C7964,0,,2.1
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,COV,EquipTimeScale_68_391D5B8C4D0759E7FA619A8947BE0458,0,,0.9
+
+
+
+### Reload Time Increase
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/Parts/Body/Part_AR_COV_Body.Part_AR_COV_Body:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[0].RepairTime,0,,5.25
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/Parts/Body/Part_AR_COV_Body.Part_AR_COV_Body:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[1].RepairTime,0,,5.25
+
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/Parts/Body/Part_HW_COV_Body.Part_HW_COV_Body:AspectList_WeaponUseModeSecondaryAspectData_1.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[0].RepairTime,0,,7.0
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/Parts/Body/Part_HW_COV_Body.Part_HW_COV_Body:AspectList_WeaponUseModeSecondaryAspectData_1.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[1].RepairTime,0,,6.25
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/WT_PS_COV.WT_PS_COV:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[0].RepairTime,0,,4.5
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/WT_PS_COV.WT_PS_COV:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[1].RepairTime,0,,4.0
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[0].RepairTime,0,,3.0
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponCOVRepairComponent,RepairTypes.RepairTypes[1].RepairTime,0,,4.0
 
 
 
@@ -93,6 +118,46 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/COV/H
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/Proj_BladesOfTerror.Proj_BladesOfTerror_C:Saw_GEN_VARIABLE,Template,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/PS_MAL_ETech_Disc_Trail_Cryo.PS_MAL_ETech_Disc_Trail_Cryo
 
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.Default__ElementalEffectCollection_MAL_ETech_DiscTrail_C,ElementalEffect,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/PS_MAL_ETech_Disc_Trail_Cryo.PS_MAL_ETech_Disc_Trail_Cryo
+
+
+
+### Remove Heavy Equip Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AM_HW_COV_Equip_Starter_01.AM_HW_COV_Equip_Starter_01,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Equip_Starter_01.AM_HW_COV_Equip_Starter_01,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AM_HW_COV_Equip_Starter_02.AM_HW_COV_Equip_Starter_02,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Equip_Starter_02.AM_HW_COV_Equip_Starter_02,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AM_HW_COV_Equip_Starter_03.AM_HW_COV_Equip_Starter_03,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Equip_Starter_03.AM_HW_COV_Equip_Starter_03,SequenceLength,0,,0.5
+
+
+
+### Adjust Heavy Reload Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AS_HW_COV_Reload_Water_Cooled.AS_HW_COV_Reload_Water_Cooled,Notifies.Notifies[0].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AS_HW_COV_Reload_Water_Cooled.AS_HW_COV_Reload_Water_Cooled,Notifies.Notifies[6].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Reload_Water_Cooled_Starter_01.AM_HW_COV_Reload_Water_Cooled_Starter_01,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.04
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Reload_Water_Cooled_Starter_02.AM_HW_COV_Reload_Water_Cooled_Starter_02,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.04
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AM_HW_COV_Reload_Water_Cooled_Starter_03.AM_HW_COV_Reload_Water_Cooled_Starter_03,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.03
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/Actions/Reloads/Action_HW_COV_Reload_01.Default__Action_HW_COV_Reload_01_C,DefaultAnims.Weapon1st.AnimAsset,0,,/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AM_HW_COV_Reload_Water_Cooled_Starter01.AM_HW_COV_Reload_Water_Cooled_Starter01
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/Actions/Reloads/Action_HW_COV_Reload_03.Default__Action_HW_COV_Reload_03_C,DefaultAnims.Weapon1st.AnimAsset,0,,/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AM_HW_COV_Reload_Water_Cooled_Starter03.AM_HW_COV_Reload_Water_Cooled_Starter03
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AS_HW_COV_Reload_01.AS_HW_COV_Reload_01,SequenceLength,0,,0.35
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Heavy/CoV/1st/AS_HW_COV_Reload_03.AS_HW_COV_Reload_03,SequenceLength,0,,0.2
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Heavy/COV/AS_HW_COV_Start_01.AS_HW_COV_Start_01,Notifies.Notifies[7].TriggerTimeOffset,0,,-0.5
 
 
 
@@ -152,6 +217,87 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/Ligh
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse_Return.Default__LightProjectile_Sawhorse_Return_C,TracerFXCollection,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Shotgun/Effects/ElementalEffectCollection_MAL_ETech_DiscTrail.ElementalEffectCollection_MAL_ETech_DiscTrail_C
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/LightProjectile_Sawhorse_Return.Default__LightProjectile_Sawhorse_Return_C,ExplosionData,0,,/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Maliwan/ExplosionData/DA_Maliwan_Explosion_Default.DA_Maliwan_Explosion_Default
+
+
+
+### Remove AR Equip Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/AssaultRifle/ChildrenofTheVault/AM_AR_COV_Equip_Starter01_Montage.AM_AR_COV_Equip_Starter01_Montage,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Equip_Starter01.AM_AR_COV_Equip_Starter01,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/AssaultRifle/ChildrenofTheVault/AM_AR_COV_Equip_Starter02_Montage.AM_AR_COV_Equip_Starter02_Montage,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Equip_Starter02.AM_AR_COV_Equip_Starter02,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/AssaultRifle/ChildrenofTheVault/AM_AR_COV_Equip_Starter03_Montage.AM_AR_COV_Equip_Starter03_Montage,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Equip_Starter03.AM_AR_COV_Equip_Starter03,SequenceLength,0,,0.5
+
+
+
+### Adjust AR Reload Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/AssaultRifle/ChildrenofTheVault/AS_AR_COV_Reload_Water_Cooled.AS_AR_COV_Reload_Water_Cooled,Notifies.Notifies[0].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/AssaultRifle/ChildrenofTheVault/AS_AR_COV_Reload_Water_Cooled.AS_AR_COV_Reload_Water_Cooled,Notifies.Notifies[4].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Reload_04_Starter01.AM_AR_COV_Reload_04_Starter01,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.045
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Reload_04_Starter02.AM_AR_COV_Reload_04_Starter02,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.04
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Rifle/AssaultRifle/CoV/1st/AM_AR_COV_Reload_04_Starter03.AM_AR_COV_Reload_04_Starter03,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.05
+
+
+
+
+
+
+##### PISTOLS #####
+
+
+
+### Remove Pistol Equip Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AM_PS_COV_Equip_Start_01.AM_PS_COV_Equip_Start_01,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Equip_Start_01.AM_PS_COV_Equip_Start_01,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AM_PS_COV_Equip_Start_02.AM_PS_COV_Equip_Start_02,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Equip_Start_02.AM_PS_COV_Equip_Start_02,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AM_PS_COV_Equip_Start_03.AM_PS_COV_Equip_Start_03,SequenceLength,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Equip_Start_03.AM_PS_COV_Equip_Start_03,SequenceLength,0,,0.5
+
+
+
+### Adjust Pistol Reload Animations
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[3].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[4].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[5].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[6].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[8].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/WeaponAnimation/Pistol/COV/AS_PS_COV_Reload_Water_Cooled.AS_PS_COV_Reload_Water_Cooled,Notifies.Notifies[9].Notify,0,,()
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Reload_Water_Cooled_Start_01.AM_PS_COV_Reload_Water_Cooled_Start_01,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.105
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Reload_Water_Cooled_Start_02.AM_PS_COV_Reload_Water_Cooled_Start_02,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.105
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/Animation/Pistol/CoV/1st/AM_PS_COV_Reload_Water_Cooled_Start_03.AM_PS_COV_Reload_Water_Cooled_Start_03,SlotAnimTracks.SlotAnimTracks[0].AnimTrack.AnimSegments.AnimSegments[0].AnimPlayRate,0,,0.105
+
+
+
+### Tizzy/Thanatos Magazine Size Increase
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy,InventoryAttributeEffects.InventoryAttributeEffects[1].ModifierValue.BaseValueConstant,0,,1.0
 
 
 
@@ -407,7 +553,7 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/_WeaponNamingStrateg
 
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Name_COV_AR_HeatFirerate.Name_COV_AR_HeatFirerate,PartName.SourceString,0,,Castor
 
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text.SourceString,0,,[Flavor]Double Whammy[/Flavor]
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/UIStat_RedText_HeatFirerate.UIStat_RedText_HeatFirerate,Text.SourceString,0,,[Flavor]Double Whammy.[/Flavor]
 
 
 
@@ -640,9 +786,11 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/Stats/Manufactur
 
 SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,ManufacturerName.SourceString,0,,S&S Munitions
 
-SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,Blurb.SourceString,0,,The S&S philosophy is: Tech + Ammo Capacity = I win! With S&S Munitions' brand-new magazine technology, you will never have to reload. Their weapons take ammo directly from your backpack, so you only need to focus on hitting those targets!
+SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,Blurb.SourceString,0,,S&S Munitions merges smart design and high technology. With S&S Munitions' fusion-powered firearms, you will never have to reload. Their weapons take ammo directly from your backpack, so you only need to focus on hitting those targets!
 
 SparkPatchEntry,(1,1,0,),/Game/Gear/Manufacturers/_Design/CoV.CoV,ManufacturerLogoFrameName,0,,SnS
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/UIStats/COV/UIStat_COV_Description.UIStat_COV_Description,FormatText.SourceString,0,,Unlimited magazine size, weapon [skill]heats up[/skill] and eventually will [skill]overheat[/skill].
 
 
 
@@ -686,7 +834,7 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Challenges/Manufacturer/ManufacturerRewa
 
 ### Loading Screen Tips
 
-SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingScreenGlobals,LoadingTooltips.LoadingTooltips[36].SourceString,0,,S&S guns are engine-driven, and have to be started before they can be fired. Don't even ask about the gas mileage.
+SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingScreenGlobals,LoadingTooltips.LoadingTooltips[36].SourceString,0,,S&S guns are fusion-powered, and can overheat. Just don't think about all that radiation bombarding you.
 
 SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingScreenGlobals,LoadingTooltips.LoadingTooltips[37].SourceString,0,,S&S Munitions guns don't use magazines, pulling ammo directly from your Backpack instead. You'll never have to reload, but your weapon might overheat if you fire too long.
 
@@ -694,5 +842,18 @@ SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/LoadingScreenGlobals.LoadingSc
 
 ### Moze Skill
 
-
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_BottomlessMags/ClickClick/PassiveSkill_Gunner_ClickClick.Default__PassiveSkill_Gunner_ClickClick_C,AbilityDescription.SourceString,0,,Moze gains increased [skillbold]Gun Damage[/skillbold] as her magazine empties. The less ammo there is remaining, the greater the increase.<br><br>If Moze has an [skillbold]S&S[/skillbold] gun equipped, she gains [skillbold]Gun Damage[/skillbold] as her gun's heat increases.
+
+
+
+### Overheat Flavor Text
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/UIStats/UIStat_Weapon_COVMagSize.UIStat_Weapon_COVMagSize,Description.SourceString,0,,SHOTS TO OVERHEAT
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/UIStats/UIStat_Weapon_ReloadTime_COV.UIStat_Weapon_ReloadTime_COV,Description.SourceString,0,,COOLING TIME
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/HotDrop/UIStat_Weapon_COVMagSize_HotDrop.UIStat_Weapon_COVMagSize_HotDrop,Description.SourceString,0,,SHOTS TO OVERHEAT
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_Unique/Terror/UIStat_Weapon_COVMagSize_Terror.UIStat_Weapon_COVMagSize_Terror,Description.SourceString,0,,SHOTS TO OVERHEAT
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Chad/UIStat_Weapon_COVMagSize_Chad.UIStat_Weapon_COVMagSize_Chad,Description.SourceString,0,,SHOTS TO OVERHEAT

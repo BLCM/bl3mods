@@ -8,6 +8,16 @@ Note: The hotfix only contains stat changes and UI changes. If you would like th
 Changelog
 =========
 
+**v1.1** - Feb 23, 2022
+ * Modified stats on S&S weapons
+    * Decreased equip time
+    * Increased reload time
+    * Increased Tizzy/Thanatos magazine size
+ * Changed some animations
+    * Removed startup animation when equipping S&S weapons
+    * Modified reload animations to get rid of water bottles, water pistols, and hoses
+ * Changed flavor text to focus more on the weapons overheating, instead of breaking, to reflect the reload animation changes
+
 **v1.0** - Jan 27, 2022
  * Initial release on Github
 
