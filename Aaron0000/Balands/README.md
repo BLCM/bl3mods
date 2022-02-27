@@ -31,7 +31,7 @@ Reduced the increased Legendary world drop rate of all Circles of Slaughter by 3
 
 Reduced the increased Legendary world drop rate of Maliwan Takedown by 40%.
 
-Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance and 0.3 drops for every Mayhem level. At Mayhe 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
+Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance (adjusted if multiple enemies have the same dedicated drops such as the Power Troopers) and 0.3 drops for every Mayhem level. At Mayhem 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
 
 Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincement, Muldock the Anointed, and the Brood Mother.
 
