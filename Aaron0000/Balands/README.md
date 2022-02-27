@@ -723,6 +723,8 @@ Added the Short Stick to Yeti, increased chance of Yeti dropping from its loot p
 
 Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
 
+Added the Pearl of Knowledge to Kratch.
+
 Added the Firecracker and non-Legendary Love Drill to Eleanor, increased chance of Eleanor dropping from her loot pool to 40%.
 
 Added the Seventh Sense to Wendigo, increased chance of Wendigo dropping from his loot pool to 30%.
