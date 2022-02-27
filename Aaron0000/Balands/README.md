@@ -57,6 +57,8 @@ Reverted the Seer's dedicated drop quantity back to normal as it interfered with
 
 Made Captain Haunt always drop three Bloody Harvest items.
 
+Increased the odds of Loot Ghosts dropping Bloody Harvest loot.
+
 Lowered the chance for additional drops on Joey Ultraviolet to 20%.
 
 Lowered the world drop quantity of the Valkyries and made them always drop three pieces of dedicated loot.
@@ -664,6 +666,8 @@ Increased drop rates from Black, Yellow, and Red Power Troopers to 13.33%.
 Increased drops rates from Pink and Blue Power Troopers to 20%.
 
 Increased the number of Bloody Harvest Legendary drops from Captain Haunt to 3.
+
+Increased the odds of Loot Ghosts dropping Bloody Harvest loot.
 
 Increased the chance of GenIVIV dropping from her loot pool to 30%.
 
