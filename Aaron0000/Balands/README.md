@@ -1,11 +1,19 @@
 (Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
 
+(This mod works just fine with regular save files. Just reroll your Mayhem modifiers if you go back to normal play if it's needed.)
+
 # DISCLAIMER
 
 The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
 # CHANGELOG (for Github users)
 ------------------------------
+
+1.3.8
+-----
+Changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
+
+Made Hemovorous always drop three pieces of her non-Company Man dedicated loot. Company Man drops seperately from her regular dedicated item pool.
 
 1.3.7
 -----
@@ -787,7 +795,7 @@ Increased the amount of chances for Anathema to drop its loot, one guaranteed pi
 
 Increased the amount of chances for Scourge to drop his loot, multiple chances for pieces of Mayhem 6 gear, and a metric crapton of money, eridium, and blue or higher gear.
 
-Increased the amount of chances for Hemovorous to drop her loot, three guaranteed Company Men, and a significant amount of money, eridium, and blue or higher gear.
+Made Hemovorous always drop three pieces of non-Company Man dedicated loot, three guaranteed Company Men, and a significant amount of money, eridium, and blue or higher gear.
 
 Added three guaranteed Mayhem 6 drops to Vermivorous, a 50% chance to drop a random Director's Cut item, and more loot in general.
 
@@ -3600,7 +3608,7 @@ Jab Cross - No change.
 
 Guardian Angel - No change.
 
-Blitz - Reduced cooldown to 6 seconds.
+Blitz - Reduced cooldown to 6 seconds, changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
 
 ENLIGHTENED FORCE
 -----------------
