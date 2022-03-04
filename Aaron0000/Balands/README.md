@@ -9,6 +9,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.3.9
+-----
+Fixed the Shlooter spawning with four parts instead of three.
+
 1.3.8
 -----
 Changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
