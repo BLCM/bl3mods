@@ -11,7 +11,7 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 1.3.9
 -----
-Fixed the Shlooter spawning with four parts instead of three.
+Fixed the Shlooter spawning with four passive part instead of three.
 
 1.3.8
 -----
