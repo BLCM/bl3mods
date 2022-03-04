@@ -1,0 +1,366 @@
+###
+### Name: Djira Ball
+### Version: 0.0.2
+### Author: CZ47
+### Contact: =]#7647
+### Categories: gameplay, joke, coop, event, maps, fast-travel
+### Video: https://www.youtube.com/watch?v=YFrAJ-D5alw
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### 
+### This mod creates a custom arena for the Borderlands Sports dubbed as "Djira Ball" by Stone_Swan (the inventor of the minigame).
+### The goal of this Coop sports is to slide in Djiras (ball shaped enemies) to launch them into the air
+### and then use the Fastball grenade mod to yeet them through the goal posts.
+### 
+### Djiras can only die when they've been flung out of bounds, so on scoring a goal. They'll drop a single
+### legendary item upon death to indicate a point to whoever did so.
+### The arena itself is created in the Guardian Takedown, Anathema's section to be precise. 
+### The Drop Pod has been moved to spawn players at the waterfall above the arena.
+### In the Ammo vendor you'll find the fastball to be the item of the day, which is what you'll need to play the game.
+### In the Health vendor you'll find a toboggan, which makes sliding a bit more fun.
+### Players have 400+ grenade ammo, so there's no need to worry about running out of grenades.
+### 
+### 
+### There's still some minor bugs, WIP™
+
+# Moving the Pillars in Anathema's arena under the floor
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_12.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_13.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_14.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_15.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_16.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_17.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_18.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Geo.GuardianTakedown_MiniBoss_Geo:PersistentLevel.SM_Eridian_Column_V_19.StaticMeshComponent0,RelativeLocation,0,,(x=13919.4795,y=-17142.654,z=-34960.0)
+
+# Moving the chests in Anathema's arena under the floor
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_5.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_6.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_7.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_8.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_9.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_10.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_11.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_MiniBoss_Combat.GuardianTakedown_MiniBoss_Combat:PersistentLevel.OakMissionSpawner_12.SpawnerComponent,RelativeLocation,0,,(x=14905.964,y=-18039.398,z=-34929.875)
+
+# Waterfall tiles
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_Ornate_V1_1000x1000,86,"20900.0000,-17000.000,-22500.000|0.000000,0.000000,0.000000|1.000000,1.000000,1.500000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_Ornate_V1_1000x1000,86,"19900.0000,-17000.000,-22500.000|0.000000,0.000000,0.000000|1.000000,1.000000,1.500000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_Ornate_V1_1000x1000,86,"18900.0000,-17000.000,-22500.000|0.000000,0.000000,0.000000|1.000000,1.000000,1.500000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_Ornate_V1_1000x1000,86,"17900.0000,-17000.000,-22500.000|0.000000,0.000000,0.000000|1.000000,1.000000,1.500000",0
+
+### Walls
+## In Arena Walls
+# Invis walls
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-17470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-15470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-13470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-17470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-15470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-13470.000,-33000.000|0.000000,0.000000,0.000000|1.000000,1.000000,4.500000",1
+
+# Sectioned Walls
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-18970.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-17245.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-15245.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13750.0000,-13520.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-18970.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-17245.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-15245.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17350.0000,-13520.000,-33000.000|0.000000,0.000000,0.000000|1.000000,0.250000,0.900000",0
+
+# Sectioned Fancy Walls
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"13640.0000,-18358.000,-32575.000|0.000000,0.000000,0.000000|0.350000,0.650000,0.400000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"13640.0000,-16494.000,-32575.000|0.000000,0.000000,0.000000|0.350000,0.800000,0.400000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"13640.0000,-14632.000,-32575.000|0.000000,0.000000,0.000000|0.350000,0.650000,0.400000",0
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"17350.0000,-18358.000,-32575.000|0.000000,180.0000,0.000000|0.350000,0.650000,0.400000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"17350.0000,-16494.000,-32575.000|0.000000,180.0000,0.000000|0.350000,0.800000,0.400000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Wall_2000x2000,86,"17350.0000,-14632.000,-32575.000|0.000000,180.0000,0.000000|0.350000,0.650000,0.400000",0
+
+
+## Goals
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/Doors/Model/Meshes,SM_Eridian_Vehicle_Door_Frame,86,"15500.0000,-13580.654,-31350.000|180.0000,90.00000,0.000000|1.000000,1.650000,1.700000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/Doors/Model/Meshes,SM_Eridian_Vehicle_Door_Frame,86,"15500.0000,-19420.654,-31350.000|180.0000,90.00000,0.000000|1.000000,1.650000,1.700000",0
+
+# Ornaments next to goal
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Fresco,86,"14165.0000,-13588.000,-31750.000|0.000000,180.0000,0.000000|0.600000,0.600000,0.600000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Fresco,86,"16835.0000,-13588.000,-31750.000|0.000000,180.0000,0.000000|0.600000,0.600000,0.600000",0
+# Bars
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14477.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14311.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14116.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13921.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13815.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16483.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16590.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16785.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16980.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17144.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+# Invis walls behind bars
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14600.0000,-13660.000,-33350.000|0.000000,-90.0000,0.000000|0.600000,2.450000,4.500000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16400.0000,-13586.000,-33350.000|0.000000,90.00000,0.000000|0.600000,2.450000,4.500000",1
+
+
+
+# Ornaments next to goal
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Fresco,86,"14165.0000,-19400.000,-31750.000|0.000000,0.000000,0.000000|0.600000,0.600000,0.600000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Ornate_Fresco,86,"16835.0000,-19400.000,-31750.000|0.000000,0.000000,0.000000|0.600000,0.600000,0.600000",0
+# Bars
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14477.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14311.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14116.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13921.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"13815.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16483.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16590.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16785.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16980.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.050000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"17144.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,0.020000,0.800000",0
+# Invis walls behind bars
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"14600.0000,-19400.000,-33350.000|0.000000,-90.0000,0.000000|0.600000,2.450000,4.500000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"16380.0000,-19347.000,-33350.000|0.000000,90.00000,0.000000|0.600000,2.450000,4.500000",1
+
+
+
+
+# Under goal
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Wall,86,"15500.0000,-13700.000,-33300.000|0.000000,-90.0000,0.000000|0.5000000,0.670000,0.600000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Wall,86,"15500.0000,-19300.000,-33300.000|0.000000,90.00000,0.000000|0.5000000,0.670000,0.600000",0
+
+# Bar on goal to prevent Djire phasing
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_V1_500x500,86,"15500.0000,-13595.000,-32400.000|0.000000,0.000000,0.000000|3.5000000,0.170000,0.200000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_V1_500x500,86,"15500.0000,-19400.000,-32400.000|0.000000,0.000000,0.000000|3.5000000,0.170000,0.200000",0
+
+
+
+## Mid Walls
+# Flat
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-11000.000,-30000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-11000.000,-30000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-11000.000,-36000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-11000.000,-36000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-21350.000,-30000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-21350.000,-30000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-21350.000,-36000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-21350.000,-36000.000|0.000000,90.00000,0.000000|1.000000,3.000000,3.000000",1
+
+# Slope very high
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-11000.000,-24000.000|45.00000,90.00000,0.000000|1.000000,3.000000,1.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-11000.000,-24000.000|45.00000,90.00000,0.000000|1.000000,3.000000,1.000000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"15300.0000,-21350.000,-24000.000|-45.0000,90.00000,0.000000|1.000000,3.000000,1.000000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"9300.00000,-21350.000,-24000.000|-45.0000,90.00000,0.000000|1.000000,3.000000,1.000000",1
+
+# Slope Walls sides below (prevents Djira getting stuck)
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"18600.0000,-12400.000,-32600.000|38.00000,0.000000,0.000000|1.000000,4.000000,1.000000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"12400.0000,-20300.000,-32600.000|38.00000,180.0000,0.000000|1.000000,4.000000,1.000000",1
+
+
+## Outer Walls (invis)
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"0.00000000,-4000.0000,-40000.000|0.000000,90.00000,0.000000|1.000000,25.00000,10.00000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_V1_2000x2000,86,"0.00000000,-28350.000,-40000.000|0.000000,90.00000,0.000000|1.000000,25.00000,10.00000",1
+
+
+
+
+
+
+
+## Slopes
+# Slope at the bottom of the walls
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-19300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-18800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-18300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-17800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-17300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-16800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-16300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-15800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-15300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-14800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-14300.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-13800.000,-33225.000|30.00000,0.000000,0.000000|0.250000,0.250000,0.250000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-19300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-18800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-18300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-17800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-17300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-16800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-16300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-15800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-15300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-14800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-14300.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-13800.000,-33225.000|30.00000,180.0000,0.000000|0.250000,0.250000,0.250000",1
+
+# Slope at the bottom of goals
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"16500.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"16000.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"15500.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"15000.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14500.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-13895.000,-33225.000|30.00000,-90.0000,0.000000|0.250000,0.250000,0.250000",1
+
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"17000.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"16500.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"16000.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"15500.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"15000.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14500.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Wall_Slanted_V1_2000x2000,86,"14000.0000,-19097.000,-33225.000|30.00000,90.00000,0.000000|0.250000,0.250000,0.250000",1
+
+
+
+
+# Floor to block legendaries:
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Floor_V1_2000x2000,86,"-14000.000,-39097.000,-35500.000|0.000000,0.000000,0.000000|20.00000,20.00000,1.000000",1
+
+
+Above goal sides:
+#SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianStatueIndividualRelief,86,"14560.0000,-13580.000,-31000.000|0.000000,-90.0000,0.000000|1.250000,1.250000,1.250000",0
+#SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianStatueIndividualRelief,86,"16440.0000,-13580.000,-31000.000|0.000000,90.00000,0.000000|1.250000,1.250000,1.250000",0
+
+
+
+
+
+
+## Stairs/seats large
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Stairs_Straight_V1_250x1000,86,"19000.0000,-19500.0000,-30500.000|75.00000,180.000,0.000000|3.000000,6.000000,6.000000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Architecture/_Shared/Model/Meshes,SM_Eridian_Stairs_Straight_V1_250x1000,86,"12000.0000,-13500.0000,-30500.000|75.00000,0.00000,0.000000|3.000000,6.000000,6.000000",0
+
+
+## First Side
+2crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12675.0000,-14000.0000,-30525.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12675.0000,-16000.0000,-30525.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12675.0000,-19200.0000,-30525.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12435.0000,-17100.0000,-30000.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12435.0000,-17800.0000,-30000.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12300.0000,-15500.0000,-29825.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"12300.0000,-17000.0000,-29825.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+
+3crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"12750.0000,-18000.0000,-30525.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"12650.0000,-17000.0000,-30375.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"12515.0000,-15200.0000,-30175.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"12435.0000,-16250.0000,-30000.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"12435.0000,-19000.0000,-30000.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+
+
+5crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"12675.0000,-15000.0000,-30525.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"12450.0000,-14000.0000,-30175.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"12450.0000,-18000.0000,-30175.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"12275.0000,-18800.0000,-29825.000|-10.0000,0.00000,0.000000|0.800000,0.800000,0.800000",0
+
+
+## Other Side
+2crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18325.0000,-14000.0000,-30525.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18325.0000,-16000.0000,-30525.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18325.0000,-19200.0000,-30525.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18565.0000,-17100.0000,-30000.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18565.0000,-17800.0000,-30000.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18700.0000,-15500.0000,-29825.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Left,86,"18700.0000,-17000.0000,-29825.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+
+3crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"18250.0000,-18000.0000,-30525.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"18350.0000,-17000.0000,-30375.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"18485.0000,-15200.0000,-30175.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"18565.0000,-16250.0000,-30000.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures_Right,86,"18565.0000,-19000.0000,-30000.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+
+
+5crowd
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"18325.0000,-15000.0000,-30525.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"18550.0000,-14300.0000,-30175.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"18550.0000,-18000.0000,-30175.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+SparkLevelPatchEntry,(1,6,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/LevelArt/Environments/Eridian/Props/Statues/EridianStatues/Model/Meshes,SM_EridianCarvedRelief_Figures,86,"18725.0000,-18800.0000,-29825.000|-10.0000,180.000,0.000000|0.800000,0.800000,0.800000",0
+
+
+
+
+
+# Moving the Drop Pod to the Vendors BEFORE Anathema (Still makes you spawn in at the default spot on map travel for some reason)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Mission.GuardianTakedown_Mission:PersistentLevel.FastTravel_DropPod_2.Scene,RelativeLocation,0,,(x=22086,y=-23350,z=-12780)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Mission.GuardianTakedown_Mission:PersistentLevel.FastTravel_DropPod_2.Scene,RelativeRotation,0,,(Pitch=0,Yaw=-120,Roll=0)
+
+
+
+# Spawning Djira
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2.SpawnOptions_Nekrobug_Flyer_FodderTD2,Options.Options[0].Factory.Object..AIActorClass,0,,/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Broodling/BPChar_Nekrobug_BroodlingTD2.BPChar_Nekrobug_BroodlingTD2_C
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Enemies/_Spawning/Nekrobugs/SpawnOptions_Nekrobug_Flyer_FodderTD2.SpawnOptions_Nekrobug_Flyer_FodderTD2,Options.Options[0].Factory.Object..ItemPoolToDropOnDeath,0,,None
+
+# Moving the Spawn location above the arena
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent,RelativeLocation,0,,(x=15460,y=-16495,z=-31500)
+SparkLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent,ActivationRadius,0,,200000
+
+# Making it so there's 3 Djiras present at all times and setting the spawn amount to infinite
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,bInfinite,0,,True
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,NumActorsParam.AttributeInitializationData,0,,(BaseValueConstant=1000000,BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,MaxAliveActorsWhenPassive.AttributeInitializationData,0,,(BaseValueConstant=3,BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,MaxAliveActorsWhenThreatened.AttributeInitializationData,0,,(BaseValueConstant=3,BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkEarlyLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_Combat.GuardianTakedown_Combat:PersistentLevel.OakMissionSpawner_39.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,SpawnDelay,0,,2
+
+# Making the Djira drop 1 legendary on death as a soundevent when you yeet a Djira off the arena
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BroodlingTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Broodling/BPChar_Nekrobug_BroodlingTD2.BPChar_Nekrobug_BroodlingTD2_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools,0,,(ItemPools=((ItemPool=ItemPoolData'"/Game/Missions/Side/Zone_2/MarshFields/SuckerPunch/ItemPool_SuckerPunch_Pistol"',PoolProbability=(BaseValueConstant=1,BaseValueScale=1),NumberOfTimesToSelectFromThisPool=(BaseValueConstant=1,BaseValueScale=1))))
+
+# Renaming Djiras
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Nekrobug_BroodlingTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/Broodling/UIName_Nekrobug_BroodlingTD2.UIName_Nekrobug_BroodlingTD2,DisplayName,0,,[Fire]Djira Ball[/Fire]
+
+# Buffing Djira so they only die by falling off the arena and also nerfing their damage dealt
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BroodlingTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/_Shared/_Design/Balance/Table_Balance_NekrobugTD2.Table_Balance_NekrobugTD2,Nekrobug_BroodlingTD2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,10000000
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Nekrobug_BroodlingTD2),/Game/PatchDLC/Takedown2/Enemies/Nekrobugs/_Shared/_Design/Balance/Table_Balance_NekrobugTD2.Table_Balance_NekrobugTD2,Nekrobug_BroodlingTD2,DamageMultiplier_LevelBased_23_3CAF34804D650A98AB8FAFAB37CB87FF,0,,0
+
+# Giving players 420 grenades
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Grenade.Table_SDU_Grenade,Lv1,AttributeModifyInfo,0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Ammo/Att_Ammo_Grenade_Max.Att_Ammo_Grenade_Max"',ModifierType=PreAdd,ModifierValue=(BaseValueConstant=4080)
+
+# Making the Item of the Day in the Ammo Vending Machines the Fastball.
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Ammo_OfTheDay.DA_ItemPool_VendingMachine_Ammo_OfTheDay,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Ammo_OfTheDay.DA_ItemPool_VendingMachine_Ammo_OfTheDay,BalancedItems.BalancedItems[1].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Ammo_OfTheDay.DA_ItemPool_VendingMachine_Ammo_OfTheDay,BalancedItems.BalancedItems[2],0,,(ItemPoolData=None,InventoryBalanceData=/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Balance/InvBalD_GM_TED_Fastball.InvBalD_GM_TED_Fastball,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Balance/InvBalD_GM_TED_Fastball.InvBalD_GM_TED_Fastball"',Weight=(BaseValueConstant=1,BaseValueScale=1))
+
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[0].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[1].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[2].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[3].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[4].Weight,0,,(BaseValueConstant=0,BaseValueScale=0)
+SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Health_OfTheDay.DA_ItemPool_VendingMachine_Health_OfTheDay,BalancedItems.BalancedItems[5],0,,(ItemPoolData=None,InventoryBalanceData=/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan.InvBalD_Artifact_Toboggan,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan.InvBalD_Artifact_Toboggan"',Weight=(BaseValueConstant=1,BaseValueScale=1))
+
+
+# Toboggan no barrier screen effect and no audio
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/StatusEffect_Ability_Toboggan.StatusEffect_Ability_Toboggan,PresentationData.Object..bUsesScreenParticle,0,,False
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/StatusEffect_Ability_Toboggan.StatusEffect_Ability_Toboggan,PresentationData.Object..bUsesThirdPersonParticles,0,,False
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/StatusEffect_Ability_Toboggan.StatusEffect_Ability_Toboggan,PresentationData.Object..bUsesAudioEvents,0,,False
+
+# Removing Movespeed from Toboggan
+#SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/PartSet_Artifact_Toboggan.PartSet_Artifact_Toboggan,ActorPartLists.ActorPartLists[4].Parts.Parts[3].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan.InvBalD_Artifact_Toboggan,RuntimePartList,AllParts.AllParts[25].Weight.BaseValueScale,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan.InvBalD_Artifact_Toboggan,RuntimePartList,AllParts.AllParts[34].Weight.BaseValueScale,0,,0
+
+
+# Smoother grenade throws (Dont think this does anything)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GrenadeThrow/Action_GrenadeThrow_Base.Default__Action_GrenadeThrow_Base_C,bBlockWeaponActions,0,,False
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GrenadeThrow/Action_GrenadeThrow_Base.Default__Action_GrenadeThrow_Base_C,bBlockSprinting,0,,False
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GrenadeThrow/Action_GrenadeThrow_Base.Default__Action_GrenadeThrow_Base_C,DefaultBlendOutTime,0,,0
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GrenadeThrow/Action_GrenadeThrow_Base.Default__Action_GrenadeThrow_Base_C,SourceCameraAlpha,0,,0
+
+# Decreasing Damage of the Fastball
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/_Unique/Fastball/Parts/Part_GM_Aug_Fastball.Part_GM_Aug_Fastball,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'/Game/Gear/GrenadeMods/_Design/Attributes/Att_Grenade_IgnoreDeliveryName.Att_Grenade_IgnoreDeliveryName',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/Gear/GrenadeMods/_Design/Attributes/Att_Grenade_ImpactFuseTime.Att_Grenade_ImpactFuseTime',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/Gear/GrenadeMods/_Design/Attributes/Att_GrenadeMod_Damage.Att_GrenadeMod_Damage',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.0,BaseValueScale=1)))
+
