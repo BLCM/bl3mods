@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.3.8
+### Version: 1.3.9
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -2947,7 +2947,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Uniq
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/StatusEffect_Artifact_CompanyMan_FireRate.StatusEffect_Artifact_CompanyMan_FireRate,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,DataTableValue=,BaseValueAttribute=/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Att_Artifact_CompanyMan_Generic2.Att_Artifact_CompanyMan_Generic2,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,DataTableValue=,BaseValueAttribute=/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Att_Artifact_CompanyMan_Generic2.Att_Artifact_CompanyMan_Generic2,BaseValueScale=-1)))
 
 # Shlooter - Make it always spawn with three passive stat bonuses.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/PartSet_Artifact_Shlooter.PartSet_Artifact_Shlooter,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/PartSet_Artifact_Shlooter.PartSet_Artifact_Shlooter,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,2
 
 ##########################
 ### ANOINTMENT CHANGES ###
