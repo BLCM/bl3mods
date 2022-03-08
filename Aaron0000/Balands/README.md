@@ -9,9 +9,13 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.0
+-----
+Fixed the Trial bosses not dropping three legendary class mods.
+
 1.3.9
 -----
-Fixed the Shlooter spawning with four passive part instead of three.
+Fixed the Shlooter spawning with four passive parts instead of three.
 
 1.3.8
 -----
