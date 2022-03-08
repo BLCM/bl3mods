@@ -13,6 +13,8 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 -----
 Fixed the Trial bosses not dropping three legendary class mods.
 
+Fixed the Anarchy not dropping from Kukuwajack.
+
 1.3.9
 -----
 Fixed the Shlooter spawning with four passive parts instead of three.
