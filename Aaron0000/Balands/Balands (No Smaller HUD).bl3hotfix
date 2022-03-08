@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.3.9
+### Version: 1.4.0
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -5752,6 +5752,14 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GiganticMech2),/Game/Enemies/Mech/_Uniqu
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GiganticMech2),/Game/Enemies/Mech/_Unique/TechSlaughterBoss/_Design/LootPools/LootSpawnPattern_TechSalughterBoss_2.LootSpawnPattern_TechSalughterBoss_2,AngularSpeed,0,,3000
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GiganticMech2),/Game/Enemies/Mech/_Unique/TechSlaughterBoss/_Design/LootPools/LootSpawnPattern_TechSalughterBoss_2.LootSpawnPattern_TechSalughterBoss_2,MaxAngularSpeed,0,,1500
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GiganticMech2),/Game/Enemies/Mech/_Unique/TechSlaughterBoss/_Design/LootPools/LootSpawnPattern_TechSalughterBoss_2.LootSpawnPattern_TechSalughterBoss_2,Direction.AdditionalRotation.pitch,0,,30
+
+# Make the normal Trial Bosses drop three Class Mods instead of one.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[48].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[49].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[54].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[60].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[62].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/GameData/Loot/ItemPoolExpansions/CharacterItemPoolExpansions_Raid1.CharacterItemPoolExpansions_Raid1,CharacterExpansions.CharacterExpansions_Value[66].DropOnDeathItemPools[0].NumberOfTimesToSelectFromThisPool.BaseValueConstant,0,,3
 
 # Golden Bullion - Add All-In to Golden Bullion with a 10% chance of dropping.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_RegainingFeet_GoldenBullion),/Dandelion/Enemies/Looters/_Unique/RegainingOnesFeet/_Design/Character/BPChar_RegainingFeet_GoldenBullion.BPChar_RegainingFeet_GoldenBullion_C:AIBalanceState_GEN_VARIABLE,DropOnDeathItemPools.ItemPools,0,,((ItemPool=ItemPoolData'"/Game/PatchDLC/Dandelion/Missions/ItemPool_Reward/ItemPool_Mission_Side_RegainingOnesFeet.ItemPool_Mission_Side_RegainingOnesFeet"',PoolProbability=(BaseValueConstant=0.1,BaseValueScale=1)))
