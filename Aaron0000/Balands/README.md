@@ -9,6 +9,38 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.1
+-----
+Moved the purple Atlas grenade drop from General Traunt to Road Dog to prevent General Traunt/Blinding Banshee dropping the incorrect manufacturer of purple grenade assigned to them.
+
+Made purple grenades always spawn with three parts.
+
+Made regular Jakobs shotguns more likely to spawn with higher projectile counts.
+
+Added the Mayhem 4 and Mayhem 6 exclusive gear to the regular legendary world drop pools (provided an appropriate Mayhem level is active.)
+
+Added the Bekah, R.Y.N.A.H, Hunt(er), and Hunt(ress) to the regular legendary world drop pools.
+
+Changed the previously added increased chance of Legendary loot in certain endgame activities to allow more focused world-drops similarly to the "Loot the Universe" events. Non-Takedown activities have been changed from increasing all ten types of non-cosmetic Legendary loot (six weapon types, shields, grenades, class mods, and artifacts) to boosting a specific type of loot. For example, if previously a specific Circle of Slaughter boosted all ten types of legendary gear drops by 100% each, it would now boost one type of legendary gear by 1000% (unless the drop chance has been further changed).
+
+Replaced the 375% higher chance of all legendary loot in Trial of Survival with an x37.5 higher chance of legendary pistols.
+
+Replaced the 100% higher chance of all legendary loot in Trial of Fervor with an x10 higher chance of legendary heavy weapons.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Cunning with an x37.5 higher chance of legendary sniper rifles.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Supremacy with an x20 higher chance of legendary shotguns.
+
+Replaced the 1500% higher chance of all legendary loot in Trial of Discipline with an x150 higher chance of legendary assault rifles.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Instinct with an x37.5 higher chance of legendary SMGs.
+
+Replaced the 100% higher chance of all legendary loot in Cistern of Slaughter with an x10 higher chance of legendary grenades.
+
+Replaced the 100% higher chance of all legendary loot in Slaughterstar 3000 with an x10 higher chance of legendary shields.
+
+Replaced the 66% higher chance of all legendary loot in the Slaughter Shaft with an x3 higher chance of legendary artifacts and class mods each.
+
 1.4.0
 -----
 Fixed the Trial bosses not dropping three legendary class mods.
@@ -615,23 +647,27 @@ Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward ite
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
-Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+Added the Mayhem 4 and Mayhem 6 exclusive gear to the regular legendary world drop pools (provided an appropriate Mayhem level is active.)
 
-Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+Added the Bekah, R.Y.N.A.H, Hunt(er), and Hunt(ress) to the regular legendary world drop pools.
 
-Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+Increased the chance of legendary pistols dropping in the Trial of Survival by x37.5.
 
-Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+Increased the chance of legendary heavy weapons dropping in the Trial of Fervor by x10.
 
-Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+Increased the chance of legendary sniper rifles dropping in the Trial of Cunning by x37.5.
 
-Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+Increased the chance of legendary shotguns dropping in the Trial of Supremacy by x20.
 
-Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+Increased the chance of legendary assault rifles dropping in the Trial of Discipline by x150. (The enemies here were particularly stingy with drops.)
 
-Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+Increased the chance of legendary SMGs dropping in the Trial of Instinct by x37.5.
 
-Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+Increased the chance of legendary grenades dropping in the Cistern of Slaughter by x10.
+
+Increased the chance of legendary shields dropping in the Slaughterstar 3000 by x10.
+
+Increased the chance of legendary artifacts and class mods dropping in the the Slaughter Shaft by x3 each.
 
 Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
 
@@ -653,7 +689,7 @@ Added a 33% chance for Anointed Goliaths to drop Alien-Barrel Heavy Weapons.
 
  ┗----Rationale: Given how Anointed enemies are practically mini-bosses in their own right, an extra reward in the form of a blue or purple alien-barrel gun seems fair. These drops can also occur from any of the named Anointed enemies excluding the Anointed Alpha.
 
-Added a 50% chance for General Traunt to drop a purple Atlas grenade separately from his regular loot pool.
+Added a 50% chance for Road Dog to drop a purple Atlas grenade separately from his regular loot pool.
 
 Added a 75% chance for Blinding Banshee to drop a purple Hyperion grenade separately from their regular loot pool.
 
@@ -862,6 +898,10 @@ Fixed the Slaughterstar bosses dropping their loot into the abyss.
 Fixed Guns, Love, and Tentacles/Fantastic Fustercluck enemies not dropping shields.
 
 Fixed Siren COMs sometimes spawning with a blank part.
+
+Made regular Jakobs shotguns more likely to spawn with higher projectile count.
+
+Made purple grenades always spawn with three parts instead of sometimes spawning with two.
 
 
 GEAR CHANGES
