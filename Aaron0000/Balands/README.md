@@ -9,6 +9,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.2
+-----
+Fixed the Trigger-Happy part boosting fire rate less than intended.
+
 1.4.1
 -----
 Moved the purple Atlas grenade drop from General Traunt to Road Dog to prevent General Traunt/Blinding Banshee dropping the incorrect manufacturer of purple grenade assigned to them.
