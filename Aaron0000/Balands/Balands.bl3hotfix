@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.4.1
+### Version: 1.4.2
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -766,6 +766,9 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldA
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,Spike,Primary_3_58_12AFE8834560F575F1813591F715BCE1,0,,1.2
 
 # Trigger-Happy - Buff percentages to 15%/27.5%/40%, add Burst Fire Delay Reduction.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.15
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Primary_2_57_B75F9DB543F7963A15ECCBAC5D036A8E,0,,0.275
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Primary_3_58_12AFE8834560F575F1813591F715BCE1,0,,0.4
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,-0.15
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Secondary_2_63_5492A1134C687D18D386DAA6A8FF185E,0,,-0.275
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_BalanceData.ShieldAug_BalanceData,TriggerHappy,Secondary_3_64_A3C5C0EC446950EEEEC7E9B3776271B7,0,,-0.4
