@@ -9,6 +9,18 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.3
+-----
+Added Rachel the Anointed's item pool to Crushjaw as a separate drop in order to deal with not being able to directly adjust Rachel's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
+
+Added Muldock the Anointed's item pool to Turnkey Tim as a separate drop in order to deal with not being able to directly adjust Muldock's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Tediore white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
+
+Added Artemis' item pool to Indo Tyrant as a separate drop in order to deal with not being able to directly adjust Artemis' pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Torgue white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
+
+Added the Brood Mother's item pool to Tyreen as a separate drop in order to deal with not being able to directly adjust Brood Mother's pool (without affecting certain enemies in the Cistern of Slaughter.) This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
+
+Fixed Explosive Punctuation not reducing Action Skill cooldown properly.
+
 1.4.2
 -----
 Fixed the Trigger-Happy part boosting fire rate less than intended.
@@ -211,7 +223,7 @@ Made the damage bonus of Tenacious Defense global damage and made the damage bon
 
 Reduced the maximum damage bonus of Click, Click... to 50% and made it factor in skill and gear boosts.
 
-Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added bonus movement speed.
+Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in before skill and gear boosts, and added bonus movement speed.
 
 Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
 
