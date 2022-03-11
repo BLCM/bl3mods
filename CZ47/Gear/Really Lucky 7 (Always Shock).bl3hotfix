@@ -1,0 +1,26 @@
+###
+### Name: Really Lucky 7 (Always Shock)
+### 
+### Author: CZ47
+### Contact: =]#7647
+### Categories: gear-pistol, cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### All rolls every reload on the Lucky 7
+###
+### This mod guarantees the element to be Shock
+###
+###
+# Guarantee all rolls
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1
+
+## Guaranteed Shock 
+# Convert Fire into Shock
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Parts/ShotModifier_Lucky7_v2_Elemental_Fire.ShotModifier_Lucky7_v2_Elemental_Fire,DamageType,0,,BlueprintGeneratedClass'/Game/GameData/DamageTypes/Shock/DmgType_Shock_Impact.DmgType_Shock_Impact_C'
+
+# Convert Corr into Shock
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Parts/ShotModifier_Lucky7_v2_Elemental_Corr.ShotModifier_Lucky7_v2_Elemental_Corr,DamageType,0,,BlueprintGeneratedClass'/Game/GameData/DamageTypes/Shock/DmgType_Shock_Impact.DmgType_Shock_Impact_C'
+
