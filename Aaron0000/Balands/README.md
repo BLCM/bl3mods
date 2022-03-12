@@ -9,6 +9,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.4
+-----
+Made Trial bosses drop dedicated Class Mods for the player's current class more often (if they drop class mods for more than one class from their dedicated loot pool.)
+
+Reduced Warty's mayhem scaled drops by half to account for his clone also being able to drop Warty's dedicated loot.
+
 1.4.3
 -----
 Added Rachel the Anointed's item pool to Crushjaw as a separate drop in order to deal with not being able to directly adjust Rachel's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
