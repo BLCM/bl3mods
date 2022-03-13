@@ -467,7 +467,7 @@ Reduced the damage on the Ember's Purge by 9%, increased the damage of the puddl
 
 Reduced Body and Mind damage by 25%.
 
-Reduced the Reflux' damage by 25%.
+Reduced the Reflux' damage by 25% and reverted the ammo cost back to one.
 
 Reduced the Sand Hawk's damage by 37.5%.
 
@@ -1311,9 +1311,7 @@ Iceburger - No change other than a possible damage adjustment.
 
 Phebert - No change other than a possible damage adjustment.
 
-Reflux - Increased ammo cost by one, projectile count by one, and magazine size by 40%.
-
- ┗----Rationale: The Reflux was basically Brainstormer 2.0. Rather than ruining the damage, the ammo cost was increased to make it worth considering the Brainstormer over the Reflux at times.
+Reflux - Increased projectile count by one and magazine size by 40%.
 
 Slow Hand - Set lifesteal to 1.75%.
 
