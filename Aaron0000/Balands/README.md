@@ -9,6 +9,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.5
+-----
+Made it more likely for TK's Wave and the Tidal Wave to spawn with higher projectile counts.
+
 1.4.4
 -----
 Made Trial bosses drop dedicated Class Mods for the player's current class more often (if they drop class mods for more than one class from their dedicated loot pool.)
@@ -1470,13 +1474,13 @@ Sledge's Shotgun - Sledge's Super Shotgun now also behaves like the triple barre
 
  ┗----Rationale: The "Super" implies a significant increase or change over the standard version. Increasing the burst-fire count by one doesn't amount to much of a difference (especially since the delay between being able to fire again is increased). So now this special triple-barrel accessory actually behaves more like one.
 
-TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, Reduced damage of Heatwave and Shockwave by 20%.
+TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, reduced damage of Heatwave and Shockwave by 20%, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The 20% damage reduction to the elemental Waves is simply to be consistent with how elemental parts reduce damage on most other weapons.
 
 The Garcia - Lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
 
-The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3.
+The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The reason for ammo cost being increased is because this thing now hits like a truck if you manage to land all the projectiles.
 
