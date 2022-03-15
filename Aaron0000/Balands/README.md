@@ -9,6 +9,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 # CHANGELOG (for Github users)
 ------------------------------
 
+1.4.6
+-----
+Adjusted the Agonizer 9000's item drops. The Agonizer 1500 has been moved to a new item pool separate from the Agonizer 9000's regular dedicated item pools with a 50% chance to drop. The Crader MP-5 has been moved from the now-30%-chance-to-drop Damned/Loaded Dice/Crader's EM-P5/Backburner item pool to the Dictator/White Elephant item pool to further help reduce item pool bloat. (Note for modders; the Agonizer 1500 change modified the unused CoV white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the Agonizer 1500 and nothing else.)
+
 1.4.5
 -----
 Made it more likely for TK's Wave and the Tidal Wave to spawn with higher projectile counts.
@@ -739,11 +743,11 @@ Increased Red Rain's chance of dropping from its loot pool to 100% and increase 
 
 Increased Blue Fire's chance of dropping from its loot pool to 100% and increase the number of drops from this pool to 2.
 
-Increased the odds of Agonizer 9000 dropping from its loot pools to 30% for the White Elephant/Dictator, 40% for the Damned/Loaded Dice/EMP-5/Backburner pool, gave it two chances to drop from the loot pools each, and reduce the odds of the Agonizer 1500 considerably.
+Adjusted the Agonizer 9000's dedicated item drops. It now has a 30% chance to drop from either of its loot pools, the Crader's EM-P5 has been moved to the Dictator/Loaded Dice loot pool, and the Agonizer 1500 has been removed from both of the regular Agonizer 9000 dedicated item drop pools and given its own item pool with a 50% chance to drop.
 
 Increased drop rates from Black, Yellow, and Red Power Troopers to 13.33%.
 
-Increased drops rates from Pink and Blue Power Troopers to 20%.
+Increased drop rates from Pink and Blue Power Troopers to 20%.
 
 Increased the number of Bloody Harvest Legendary drops from Captain Haunt to 3.
 
