@@ -8,6 +8,11 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.4.7
+-----
+Fixed From Rest's skill description not displaying the fire rate bonus.
+
+Adjusted  Catharsis' description to no longer mention Action Skill cooldown since the cooldown was removed.
 
 1.4.6
 -----
