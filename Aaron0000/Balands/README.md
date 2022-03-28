@@ -1,4 +1,6 @@
-(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod.)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
+
+(This mod works just fine with regular save files. Just reroll your Mayhem modifiers if you go back to normal play if it's needed.)
 
 # DISCLAIMER
 
@@ -6,6 +8,185 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.4.7
+-----
+Fixed From Rest's skill description not displaying the fire rate bonus.
+
+Adjusted  Catharsis' description to no longer mention Action Skill cooldown since the cooldown was removed.
+
+1.4.6
+-----
+Adjusted the Agonizer 9000's item drops. The Agonizer 1500 has been moved to a new item pool separate from the Agonizer 9000's regular dedicated item pools with a 50% chance to drop. The Crader MP-5 has been moved from the now-30%-chance-to-drop Damned/Loaded Dice/Crader's EM-P5/Backburner item pool to the Dictator/White Elephant item pool to further help reduce item pool bloat. (Note for modders; the Agonizer 1500 change modified the unused CoV white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the Agonizer 1500 and nothing else.)
+
+1.4.5
+-----
+Made it more likely for TK's Wave and the Tidal Wave to spawn with higher projectile counts.
+
+1.4.4
+-----
+Made Trial bosses drop dedicated Class Mods for the player's current class more often (if they drop class mods for more than one class from their dedicated loot pool.)
+
+Reduced Warty's mayhem scaled drops by half to account for his clone also being able to drop Warty's dedicated loot.
+
+1.4.3
+-----
+Added Rachel the Anointed's item pool to Crushjaw as a separate drop in order to deal with not being able to directly adjust Rachel's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
+
+Added Muldock the Anointed's item pool to Turnkey Tim as a separate drop in order to deal with not being able to directly adjust Muldock's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Tediore white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
+
+Added Artemis' item pool to Indo Tyrant as a separate drop in order to deal with not being able to directly adjust Artemis' pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Torgue white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
+
+Added the Brood Mother's item pool to Tyreen as a separate drop in order to deal with not being able to directly adjust Brood Mother's pool (without affecting certain enemies in the Cistern of Slaughter.) This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
+
+Fixed Explosive Punctuation not reducing Action Skill cooldown properly.
+
+1.4.2
+-----
+Fixed the Trigger-Happy part boosting fire rate less than intended.
+
+1.4.1
+-----
+Moved the purple Atlas grenade drop from General Traunt to Road Dog to prevent General Traunt/Blinding Banshee dropping the incorrect manufacturer of purple grenade assigned to them.
+
+Made purple grenades always spawn with three parts.
+
+Made regular Jakobs shotguns more likely to spawn with higher projectile counts.
+
+Added the Mayhem 4 and Mayhem 6 exclusive gear to the regular legendary world drop pools (provided an appropriate Mayhem level is active.)
+
+Added the Bekah, R.Y.N.A.H, Hunt(er), and Hunt(ress) to the regular legendary world drop pools.
+
+Changed the previously added increased chance of Legendary loot in certain endgame activities to allow more focused world-drops similarly to the "Loot the Universe" events. Non-Takedown activities have been changed from increasing all ten types of non-cosmetic Legendary loot (six weapon types, shields, grenades, class mods, and artifacts) to boosting a specific type of loot. For example, if previously a specific Circle of Slaughter boosted all ten types of legendary gear drops by 100% each, it would now boost one type of legendary gear by 1000% (unless the drop chance has been further changed).
+
+Replaced the 375% higher chance of all legendary loot in Trial of Survival with an x37.5 higher chance of legendary pistols.
+
+Replaced the 100% higher chance of all legendary loot in Trial of Fervor with an x10 higher chance of legendary heavy weapons.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Cunning with an x37.5 higher chance of legendary sniper rifles.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Supremacy with an x20 higher chance of legendary shotguns.
+
+Replaced the 1500% higher chance of all legendary loot in Trial of Discipline with an x150 higher chance of legendary assault rifles.
+
+Replaced the 375% higher chance of all legendary loot in Trial of Instinct with an x37.5 higher chance of legendary SMGs.
+
+Replaced the 100% higher chance of all legendary loot in Cistern of Slaughter with an x10 higher chance of legendary grenades.
+
+Replaced the 100% higher chance of all legendary loot in Slaughterstar 3000 with an x10 higher chance of legendary shields.
+
+Replaced the 66% higher chance of all legendary loot in the Slaughter Shaft with an x3 higher chance of legendary artifacts and class mods each.
+
+1.4.0
+-----
+Fixed the Trial bosses not dropping three legendary class mods.
+
+Fixed the Anarchy not dropping from Kukuwajack.
+
+1.3.9
+-----
+Fixed the Shlooter spawning with four passive parts instead of three.
+
+1.3.8
+-----
+Changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
+
+Made Hemovorous always drop three pieces of her non-Company Man dedicated loot. Company Man drops seperately from her regular dedicated item pool.
+
+1.3.7
+-----
+Added Burst Fire Delay to most things that affect fire rate. Delay is reduced for things that increase fire rate (meaning shorter intervals), and increased for things that reduce fire rate (meaning longer intervals)
+
+Added Repair Time to most things that affected reload speed.
+
+Fixed the status effect anointments for Zane and Amara not actually factoring in gear and skills, made all of the status effect anointments also increase cryo rate.
+
+Reintroduced Mayhem Scaling for Slide Damage. It increase by 6% per Mayhem Level, may be further adjusted after receiving feedback.
+
+Reintroduced Mayhem Scaling for Slam Damage. It increase by 10% per Mayhem Level, may be further adjusted after receiving feedback.
+
+Reintroduced Mayhem Scaling for Shield Damage. It increase by 24% per Mayhem Level, may be further adjusted after receiving feedback.
+
+Reduced Pet Damage Scaling to 55% per Mayhem level from 70%.
+
+Increased Attack Command cooldown to 15 seconds from 12 seconds.
+
+Reduced the increased Legendary world drop rate of all Trials excluding the Trial of Fervor by 25%.
+
+Reduced the increased Legendary world drop rate of all Circles of Slaughter by 33%.
+
+Reduced the increased Legendary world drop rate of Maliwan Takedown by 40%.
+
+Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance (adjusted if multiple enemies have the same dedicated drops such as the Power Troopers) and 0.3 drops for every Mayhem level. At Mayhem 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
+
+Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincement, Muldock the Anointed, and the Brood Mother.
+
+Enemies that did not receive Mayhem-scaled drops due to already having sufficient drops; Trial bosses, Raid bosses, and Anathema.
+
+Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet
+
+Added Blue Fire's drop pool to King Gnasher in replacement of his Westergun drop as a viable farming source for Blue Fire's loot.
+
+Added Red Rain's drop pool to Rohner as a viable farming source for Red Rain's loot.
+
+Moved the Pearl of Knowledge from Eleanor to Kratch.
+
+Added the P.A.T. Mk. III to General Blisterpus.
+
+Added chances to get legendary Fustercluck DLC items from Spongeboss (General Blisterpus has the mayhem-scaled P.A.T. Mk III drops.)
+
+Lowered the drop chances of Gigamind, Rampager, Atomic, Sylestro, Kritchy, Amach, Wendigo, and Eleanor since certain previously added unique items no longer drop directly from their loot pools.
+
+Reverted the drop chances for Adelai Bronson, Ipswitch Dunne, Lani Dixon, Haddon Marr, Lasodactyl, Lectrikor, and Bellik Primis back to normal after having made certain uniques no longer directly drop from their loot pools.
+
+Reverted the Seer's dedicated drop quantity back to normal as it interfered with the Mayhem-scaled drops that have been added.
+
+Made Captain Haunt always drop three Bloody Harvest items.
+
+Increased the odds of Loot Ghosts dropping Bloody Harvest loot.
+
+Lowered the chance for additional drops on Joey Ultraviolet to 20%.
+
+Lowered the world drop quantity of the Valkyries and made them always drop three pieces of dedicated loot.
+
+Removed a portion of Scourge's money and eridium drops and replaced the eridium with a brick of 500 eridium to reduce the wait between the actual kill and main loot spawning.
+
+Fixed Red Rain not dropping a 500-count eridium brick due to a previous update's changes.
+
+Reduced Psychoreaver's health by roughly 40%.
+
+Increased the damage of the Troubleshooter by 14%.
+
+Reduced the damage of the Blade Fury's melee projectile by 25% and increased the bullet damage by 20%.
+
+Reduced the recoil of Quasar (smgs), Polyaimorous, and Vibra-Pulse by 80%.
+
+Increased the damage of the Devil's Foursum by 65%.
+
+Increased the frequency of the Laser-Sploder's projectiles to 0.65 seconds from 0.85 seconds.
+
+Reduced the vertical recoil of La Varlope by 35%.
+
+Reduced the recoil of the Sickle by 15%.
+
+Reduced the recoil of the Webslinger's primary firing mode by 20%.
+
+Increased the damage of single-part and double-part novas to 50%/75% of a triple-part nova shield respectively.
+
+Doubled the damage of the Stinger's novas (in-game description number doesn't change to reflect this.)
+
+Reduced the cooldown of the Faulty Star's novas from 8 seconds to 2 seconds.
+
+Reduced the Garcia's damage by 14%.
+
+Reduced the Dakota's damage by 37.5%.
+
+Reduced the D.N.A's damage by 50%.
+
+Reverted the cooldown reduction on the Cmdl3t back to 6 seconds.
+
+Adjusted the description of the Ice Spiker to mention that it counts as Amara's Action Skill damage.
+
+Adjusted the description of the Bounty Hunter to be more accurate to the in-game effects.
 
 1.3.6
 -----
@@ -61,7 +242,7 @@ Made the damage bonus of Tenacious Defense global damage and made the damage bon
 
 Reduced the maximum damage bonus of Click, Click... to 50% and made it factor in skill and gear boosts.
 
-Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in skill and gear boosts, and added bonus movement speed.
+Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in before skill and gear boosts, and added bonus movement speed.
 
 Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
 
@@ -69,25 +250,25 @@ Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per
 -----
 Endgame activities (Trials, Circles of Slaughter, and Takedowns) have been given an increased chance to world-drop Legendary gear. For comparison's sake, "Loot the Universe" increased the chance of Legendary loot by 2000%.
 
-Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+Increased the amount of Legendary item drops in the Trial of Survival by 375%.
 
 Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
 
-Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+Increased the amount of Legendary item drops in the Trial of Cunning by 375%.
 
-Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+Increased the amount of Legendary item drops in the Trial of Supremacy by 375%.
 
-Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+Increased the amount of Legendary item drops in the Trial of Discipline by 1500%. (The enemies here were particularly stingy with drops.)
 
-Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+Increased the amount of Legendary item drops in the Trial of Instinct by 375%.
 
-Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+Increased the amount of Legendary item drops in the Cistern of Slaughter by 100%.
 
-Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+Increased the amount of Legendary item drops in the Slaughter Shaft by 66%.
 
-Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+Increased the amount of Legendary item drops in Slaughterstar 3000 by 100%.
 
-Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
+Increased the amount of Legendary item drops in the Maliwan Takedown by 300%.
 
 Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
 
@@ -299,7 +480,7 @@ Reduced the damage on the Ember's Purge by 9%, increased the damage of the puddl
 
 Reduced Body and Mind damage by 25%.
 
-Reduced the Reflux' damage by 25%.
+Reduced the Reflux' damage by 25% and reverted the ammo cost back to one.
 
 Reduced the Sand Hawk's damage by 37.5%.
 
@@ -467,7 +648,15 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed most non-enemy health-based Mayhem mode scaling other than enemy health, loot quality/quantity, and pet damage (which now displays on the pet cards).
+Removed or reduced most non-enemy health-based Mayhem mode scaling. other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, and pet damage (which now displays on the pet cards).
+
+Mayhem Scaling for Slide Damage is 6% per Mayhem Level.
+
+Mayhem Scaling for Slam Damage is 10% per Mayhem Level.
+
+Mayhem Scaling for Shield Damage is 24% per Mayhem Level.
+
+Mayhem Scaling for Pet Damage Scaling is 55% per Mayhem level.
 
 Implemented mayhem scaling for Moze's gun damage to account for the heavy loss of damage from skills such as Fire in the Skag Den, Big Surplus, and Short Fuse no longer being Mayhem scaled. It is activated by investing a point into Armored Infantry.
 
@@ -493,23 +682,27 @@ Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward ite
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
-Increased the amount of Legendary item drops in the Trial of Survival by 500%.
+Added the Mayhem 4 and Mayhem 6 exclusive gear to the regular legendary world drop pools (provided an appropriate Mayhem level is active.)
 
-Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
+Added the Bekah, R.Y.N.A.H, Hunt(er), and Hunt(ress) to the regular legendary world drop pools.
 
-Increased the amount of Legendary item drops in the Trial of Cunning by 500%.
+Increased the chance of legendary pistols dropping in the Trial of Survival by x37.5.
 
-Increased the amount of Legendary item drops in the Trial of Supremacy by 500%.
+Increased the chance of legendary heavy weapons dropping in the Trial of Fervor by x10.
 
-Increased the amount of Legendary item drops in the Trial of Discipline by 2000%. (The enemies here were particularly stingy with drops.)
+Increased the chance of legendary sniper rifles dropping in the Trial of Cunning by x37.5.
 
-Increased the amount of Legendary item drops in the Trial of Instinct by 500%.
+Increased the chance of legendary shotguns dropping in the Trial of Supremacy by x20.
 
-Increased the amount of Legendary item drops in the Cistern of Slaughter by 150%.
+Increased the chance of legendary assault rifles dropping in the Trial of Discipline by x150. (The enemies here were particularly stingy with drops.)
 
-Increased the amount of Legendary item drops in the Slaughter Shaft by 100%.
+Increased the chance of legendary SMGs dropping in the Trial of Instinct by x37.5.
 
-Increased the amount of Legendary item drops in Slaughterstar 3000 by 150%.
+Increased the chance of legendary grenades dropping in the Cistern of Slaughter by x10.
+
+Increased the chance of legendary shields dropping in the Slaughterstar 3000 by x10.
+
+Increased the chance of legendary artifacts and class mods dropping in the the Slaughter Shaft by x3 each.
 
 Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
 
@@ -531,7 +724,7 @@ Added a 33% chance for Anointed Goliaths to drop Alien-Barrel Heavy Weapons.
 
  ┗----Rationale: Given how Anointed enemies are practically mini-bosses in their own right, an extra reward in the form of a blue or purple alien-barrel gun seems fair. These drops can also occur from any of the named Anointed enemies excluding the Anointed Alpha.
 
-Added a 50% chance for General Traunt to drop a purple Atlas grenade separately from his regular loot pool.
+Added a 50% chance for Road Dog to drop a purple Atlas grenade separately from his regular loot pool.
 
 Added a 75% chance for Blinding Banshee to drop a purple Hyperion grenade separately from their regular loot pool.
 
@@ -555,13 +748,15 @@ Increased Red Rain's chance of dropping from its loot pool to 100% and increase 
 
 Increased Blue Fire's chance of dropping from its loot pool to 100% and increase the number of drops from this pool to 2.
 
-Increased the odds of Agonizer 9000 dropping from its loot pools to 30% for the White Elephant/Dictator, 40% for the Damned/Loaded Dice/EMP-5/Backburner pool, gave it two chances to drop from the loot pools each, and reduce the odds of the Agonizer 1500 considerably.
+Adjusted the Agonizer 9000's dedicated item drops. It now has a 30% chance to drop from either of its loot pools, the Crader's EM-P5 has been moved to the Dictator/Loaded Dice loot pool, and the Agonizer 1500 has been removed from both of the regular Agonizer 9000 dedicated item drop pools and given its own item pool with a 50% chance to drop.
 
 Increased drop rates from Black, Yellow, and Red Power Troopers to 13.33%.
 
-Increased drops rates from Pink and Blue Power Troopers to 20%.
+Increased drop rates from Pink and Blue Power Troopers to 20%.
 
-Increased the number of Bloody Harvest Legendary drops from Captain Haunt.
+Increased the number of Bloody Harvest Legendary drops from Captain Haunt to 3.
+
+Increased the odds of Loot Ghosts dropping Bloody Harvest loot.
 
 Increased the chance of GenIVIV dropping from her loot pool to 30%.
 
@@ -571,21 +766,25 @@ Increased the chance of finding Arms-Race exclusive Legendary gear in the Arms R
 
 Increased the number of Legendary class mod drops from Trial bosses to three when they would normally drop one.
 
+Added Red Rain's loot pool to Rohner.
+
+Added Blue Fire's loot pool to King Gnasher in replacement of his Westergun drop.
+
 Added the Bekah and Superstreamer to Tyreen's Loot Pool, increased the chance of Tyreen dropping from her loot pool to 50%.
 
 Added the Earworm to Graveward's Loot Pool, increased the chance of Graveward dropping from its loot pool to 40%.
 
 Added the Hunt(er) to Manvark's Loot Pool, increased the chance of Manvark dropping from his loot pool to 40%.
 
-Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomizer in Rampager's loot pool and added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 50%.
+Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomizer in Rampager's loot pool and added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 40%.
 
 Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Messy Breakup to Rax.
 
 Added the Hand of Glory to Muldock's Loot Pool, increased the chance of Muldock dropping from his loot pool to 30%.
 
-Added the Null-Pointer and Vault Hero to Gigamind, increased the chance of Gigamind dropping from its loot pool to 40%.
+Added the Null-Pointer and Vault Hero to Gigamind, increased the chance of Gigamind dropping from its loot pool to 30%.
 
-Added the Vibra-Pulse to Atomic and Sylestro's Loot Pool, increased the chance of them dropping from their loot pool to 30%.
+Added the Vibra-Pulse to Sylestro's Loot Pool, increased the chance of them dropping from their loot pool to 20%.
 
 Added the Boo to Private Beans' Trevanator/Front Loader Loot Pool (Westergun uses a separate pool), increased the chance of Beans dropping from the Trevanator/Front Loader loot pool to 30%.
 
@@ -617,13 +816,15 @@ Added the Short Stick to Yeti, increased chance of Yeti dropping from its loot p
 
 Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
 
-Added the Pearl of Knowledge, Firecracker, and non-Legendary Love Drill to Eleanor, increased chance of Eleanor dropping from her loot pool to 40%.
+Added the Pearl of Knowledge to Kratch.
+
+Added the Firecracker and non-Legendary Love Drill to Eleanor, increased chance of Eleanor dropping from her loot pool to 40%.
 
 Added the Seventh Sense to Wendigo, increased chance of Wendigo dropping from his loot pool to 30%.
 
-Added the Initiative to Amach, increased chance of Amach dropping from his loot pool to 50%.
+Added the Initiative to Amach, increased chance of Amach dropping from his loot pool to 30%.
 
-Added The Cure to Kritchy, increased chance of Kritchy dropping from its loot pool to 50%.
+Added The Cure to Kritchy, increased chance of Kritchy dropping from its loot pool to 30%.
 
 Added the Cocky Bastard to Gmork, increased chance of Gmork dropping from his loot pool to 50%.
 
@@ -631,25 +832,25 @@ Added the Skullmasher to Kukuwajack, increased chance of Kukuwajack dropping fro
 
 Added the Sacrificial Lamb to Eista as a guaranteed drop, make Eista have a 30% chance to drop a DLC2 item of each type, and fattened up his drops with more money, eridium, and more chances for Legendary gear.
 
-Added an additional 35% chance to drop from each of the Underboss drop pools and a 10% chance to drop the Pricker to Joey Ultraviolet.
+Added an additional 20% chance to drop from each of the Underboss drop pools and a 10% chance to drop the Pricker to Joey Ultraviolet.
 
-Added the Quickdraw to Ipswitch Dunne, increased chance of Ipswitch Dunne dropping from his loot pool to 40%.
+Added the Quickdraw to Ipswitch Dunne.
 
-Added the Chalice to Lani Dixon, increased chance of Lani Dixon dropping from her loot pool to 40%.
+Added the Chalice to Lani Dixon.
 
-Added the Bubble Blaster to Haddon Marr, increased chance of Haddon Marr dropping from his loot pool to 40%.
+Added the Bubble Blaster to Haddon Marr.
 
-Added the Peashooter to Adelai Bronson, increased chance of Adelai dropping from her loot pool to 40%.
+Added the Peashooter to Adelai Bronson.
 
 Added Doc Hina's Miracle Bomb to Doc Stanley with a 10% chance to drop.
 
-Added the Beast to Lectrikor, increased chance of Lectrikor dropping from its loot pool to 40%.
+Added the Beast to Lectrikor.
 
-Added the Icebreaker to Lasodactyl, increased chance of Lasodactyl dropping from its loot pool to 40%.
+Added the Icebreaker to Lasodactyl.
 
 Added the Vendetta to Kormash.
 
-Added the Core Buster to Bellik Primus, increased chance of Bellik Primus dropping from its loot pool to 50%.
+Added the Core Buster to Bellik Primus.
 
 Added the Splinter to the Quartermaster.
 
@@ -657,19 +858,25 @@ Added the Dakota to the Ruiner.
 
 Added the Ashen Beast, Minor Kong, P.A.T. Mk. II, and Sawpenny to the Psycho Krieg DLC unique item world drop pool, and made the pool drop twice whenever it drops.
 
+Added the P.A.T. Mk. III to General Blisterpus.
+
+Added chances to get legendary Fustercluck DLC items from Spongeboss.
+
 Added more chances to drop Arms Race Legendary Gear from the Heavyweight Harker
 
 Added the Company Man to the Gravekeeper, increased chance of Gravekeeper dropping from its loot pool to 30%.
 
  ┗----Rationale: The reason the Company Man has been added to the Gravekeeper is purely a quality-of-life change for allegiance playthroughs so that said playthroughs don't have to wait until Hemovorous to get a Company Man. Hemovorous will still be a far more reliable farm for Company Men, however.
 
-Added a small chance of dropping a Mysterious Amulet from the Seer and made the Seer drop two items from its unique pool whenever it would drop one instead.
+Added a chance of dropping a Mysterious Amulet from the Seer.
+
+Lowered the world drop quantity of the Valkyries and made them always drop three pieces of dedicated loot.
 
 Increased the amount of chances for Anathema to drop its loot, one guaranteed piece of Mayhem 6 gear, and a significant amount of money, eridium, and blue or higher gear.
 
 Increased the amount of chances for Scourge to drop his loot, multiple chances for pieces of Mayhem 6 gear, and a metric crapton of money, eridium, and blue or higher gear.
 
-Increased the amount of chances for Hemovorous to drop her loot, three guaranteed Company Men, and a significant amount of money, eridium, and blue or higher gear.
+Made Hemovorous always drop three pieces of non-Company Man dedicated loot, three guaranteed Company Men, and a significant amount of money, eridium, and blue or higher gear.
 
 Added three guaranteed Mayhem 6 drops to Vermivorous, a 50% chance to drop a random Director's Cut item, and more loot in general.
 
@@ -677,6 +884,8 @@ Added three guaranteed Mayhem 6 drops to Vermivorous, a 50% chance to drop a ran
 ENEMY CHANGES
 -------------
 Eista now retains "the Invincible" in his name for rematches after "We Slass! Part 3". Eista the Invincible's total health has been buffed, now roughly halfway between Wotan and Scourge.
+
+Psychoreaver now has 40% less health than before.
 
 Joey Ultraviolet's total health has been reduced to roughly half of what it was previously.
 
@@ -724,6 +933,10 @@ Fixed the Slaughterstar bosses dropping their loot into the abyss.
 Fixed Guns, Love, and Tentacles/Fantastic Fustercluck enemies not dropping shields.
 
 Fixed Siren COMs sometimes spawning with a blank part.
+
+Made regular Jakobs shotguns more likely to spawn with higher projectile count.
+
+Made purple grenades always spawn with three parts instead of sometimes spawning with two.
 
 
 GEAR CHANGES
@@ -1023,7 +1236,7 @@ Sleeping Giant - Reload-damage bonus set to 50%, omni-boost chance set to 15%.
 
 Torrent - Fire rate and mag size adjusted to counteract Dahl SMG buffs.
 
-Vanquisher - Set sliding bonuses to 50% each and added bonus damage to actual sliding.
+Vanquisher - Set sliding bonuses to 50% each and added bonus damage to actual sliding, fire rate bonus now affects burst fire delay.
 
 Autoaime - No change other than a possible damage adjustment.
 
@@ -1111,9 +1324,7 @@ Iceburger - No change other than a possible damage adjustment.
 
 Phebert - No change other than a possible damage adjustment.
 
-Reflux - Increased ammo cost by one, projectile count by one, and magazine size by 40%.
-
- ┗----Rationale: The Reflux was basically Brainstormer 2.0. Rather than ruining the damage, the ammo cost was increased to make it worth considering the Brainstormer over the Reflux at times.
+Reflux - Increased projectile count by one and magazine size by 40%.
 
 Slow Hand - Set lifesteal to 1.75%.
 
@@ -1272,13 +1483,13 @@ Sledge's Shotgun - Sledge's Super Shotgun now also behaves like the triple barre
 
  ┗----Rationale: The "Super" implies a significant increase or change over the standard version. Increasing the burst-fire count by one doesn't amount to much of a difference (especially since the delay between being able to fire again is increased). So now this special triple-barrel accessory actually behaves more like one.
 
-TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, Reduced damage of Heatwave and Shockwave by 20%.
+TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, reduced damage of Heatwave and Shockwave by 20%, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The 20% damage reduction to the elemental Waves is simply to be consistent with how elemental parts reduce damage on most other weapons.
 
 The Garcia - Lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
 
-The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3.
+The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The reason for ammo cost being increased is because this thing now hits like a truck if you manage to land all the projectiles.
 
@@ -1451,7 +1662,7 @@ P2P Networker - No change other than a possible damage adjustment.
 
 Plasma Coil - No change other than a possible damage adjustment.
 
-Polyaimorous - Set chain damage to 40% of card damage, fixed the secondary firing mode not receiving damage buffs properly.
+Polyaimorous - Set chain damage to 40% of card damage, fixed the secondary firing mode not receiving damage buffs properly, ecoil reduced by 80%.
 
 SF Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
 
@@ -1487,7 +1698,7 @@ Shrieking Devil - Removed self-damage.
 
 Crit - Lifesteal set to 1%.
 
-Vibra-Pulse - Lifesteal set to 1.5%.
+Vibra-Pulse - Lifesteal set to 1.5%, recoil reduced by 80%.
 
 E-Gone - No change other than a possible damage adjustment.
 
@@ -1509,7 +1720,7 @@ Melter - No change.
 
 Devourer - Increased Damage by 40%, Magazine Size by 20%, and reduced Fire Rate by 30%.
 
-Quasar  - No change.
+Quasar  - Recoil reduced by 80%.
 
 Pulsar - No change.
 
@@ -1629,7 +1840,7 @@ Hotfoot Teddy - No change other than a possible damage adjustment.
 
 Juliet's Dazzle - No change other than a possible damage adjustment.
 
-Laser-Sploder - No change other than a possible damage adjustment.
+Laser-Sploder - Increased the frequency of the Laser-Sploder's projectiles to 0.65 seconds from 0.85 seconds.
 
 Lovable Rogue - No change other than a possible damage adjustment.
 
@@ -1713,7 +1924,7 @@ TORGUE UNIQUE GUNS
 ------------------
 Amber Management - Anger damage bonus per stack set to 10%, Happiness ammo-regenerate delay set to 10 seconds.
 
-La Varlope - No change other than a possible damage adjustment.
+La Varlope - Reduced the vertical recoil of La Varlope by 35%.
 
 Likeable Rascal - No change other than a possible damage adjustment.
 
@@ -1794,7 +2005,7 @@ Sickle - Made the Boom Sickle have the same stats as a standard Sickle as well a
 
  ┗----Rationale: This weapon seems to be intended as a throwback to the Hammer from Borderlands 1. The various stat changes now allow it to fulfill the role of a high fire-rate shotgun-ish weapon.
 
-Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 50 times card damage, underbarrel splash radius set to 500, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds, projectile speed tripled.
+Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 50 times card damage, underbarrel splash radius set to 500, primary firing mode recoil reduced by 20%, number of underbarrel projectiles reduced to 1 from 2, set underbarrel ammo regeneration delay to 3 seconds, projectile speed tripled.
 
  ┗----Rationale: The underbarrel was seemingly designed to hit like a truck but never really seemed to accomplish that. The changes made to it hopefully fix that.
 
@@ -1896,7 +2107,7 @@ Absorb - No change.
 
 Adaptive - Increased Adaptive Bonuses to to 20%/35%/50%.
 
-Adrenaline - Increased Reload Speed Bonuses to 20%/40%/60%.
+Adrenaline - Increased Reload Speed Bonuses to 20%/40%/60%, now also affects repair time.
 
 Amp - No change.
 
@@ -1912,7 +2123,7 @@ Health - No change.
 
 Health Charge - Increased Percentage of Health restored to 15%/33%/50%.
 
-Nova - No change.
+Nova - Damage of a single-part and double-part nova shield increased to 50% and 75% of a triple-part nova shield's damage respectively.
 
 Power Charge - No change.
 
@@ -1934,7 +2145,7 @@ Shield Charge - Increased Percentage of Shield Capacity restored to 20%/30%/40%.
 
 Spike - Increased Spike Damage.
 
-Trigger-Happy - Increased Fire Rate Bonuses to 15%/27.5%/40%.
+Trigger-Happy - Increased Fire Rate Bonuses to 15%/27.5%/40%, now also affects burst fire delay.
 
 Turtle - No change.
 
@@ -1977,7 +2188,7 @@ Scream of Terror - Nova radius increased by 66%, capacity and delay reduced by 5
 
 Snowshoe - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
-Super Soldier - Damage immunity reduced to a 33% damage reduction, now always spawns with maximum shield parts after the first redemption of the shield.
+Super Soldier - Damage immunity reduced to a 33% damage reduction, now affects burst fire delay, and now always spawns with maximum shield parts after the first redemption of the shield.
 
  ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
@@ -2000,7 +2211,7 @@ Moxxi's Embrace - No change.
 
 HYPERION LEGENDARY SHIELDS
 --------------------------
-Faulty Star - Capacity increased by 50%.
+Faulty Star - Capacity increased by 50%, cooldown between novas reduced to 2 seconds from 8.
 
 Firewall - Damage reduction improved to 75%.
 
@@ -2016,7 +2227,7 @@ Re-Charge Berner - Now always spawns with maximum shield parts.
 
 Re-Charger - No change.
 
-Re-Volter - Shock damage and fire rate bonuses reduced to 25%, now always spawns with maximum shield parts.
+Re-Volter - Shock damage and fire rate bonuses reduced to 25%, now affects burst fire delay, and now always spawns with maximum shield parts.
 
 Rectifier - Damage buffed by 2333%.
 
@@ -2038,7 +2249,7 @@ Golden Touch - No change.
 
 Limit Break - No change.
 
-Mr. Caffeine Shield - No change.
+Mr. Caffeine Shield - Now affects burst fire delay and repair time.
 
 Revengenader - No change.
 
@@ -2061,7 +2272,7 @@ Red Suit - Aura damage increased by 150%.
 
 Shooting Star - Stars no longer collide with the world.
 
-Stinger - Nova damage reduced from Nova-Berner levels of damage to standard nova-levels of damage, increased radius of novas by 43%.
+Stinger - Nova damage reduced from Nova-Berner levels of damage to half, increased radius of novas by 43%.
 
  ┗----Rationale: Same story with the rest of the "Melee" gear, traditional melee should be the strongest form of melee. Stinger still has the advantage of a better delivery system as well as receiving splash bonuses.
 
@@ -2081,7 +2292,7 @@ Loop of 4N631 - No change.
 
 Mendel's Multivitamin Shield - No change.
 
-MSRC Auto-Dispensary - No change.
+MSRC Auto-Dispensary - Now affects burst fire delay, cut the strength of the detrimental effects in half.
 
 
 
@@ -2234,7 +2445,7 @@ Action Skill Cooldown - No change.
 
 Weapon Accuracy - No change.
 
-Weapon Reload Speed - Increased in effectiveness (30% at level 72.)
+Weapon Reload Speed - Increased in effectiveness (30% at level 72.), now affects repair time.
 
 Grenade Damage - No change.
 
@@ -2266,7 +2477,7 @@ Grenade Radius - No change.
 
 Grenade Capacity - Increased in effectiveness (+10 grenades at level 72.)
 
-Weapon Fire Rate - Increased in effectiveness (30% at level 72.)
+Weapon Fire Rate - Increased in effectiveness (30% at level 72.), now affects burst fire delay.
 
 Weapon Charge Speed - No change.
 
@@ -2353,11 +2564,11 @@ Techspert - SNTNL reset chance increased to 100%.
 
 LEGENDARY BEASTMASTER CLASS MODS
 --------------------------------
-3RROr Cmdl3t - Attack Command chance cooldown lowered to 1 second, replaced Better Toys with Sic 'Em, and replaced Keep Them Safe with Fuzzy Math.
+3RROr Cmdl3t - Replaced Better Toys with Sic 'Em, and replaced Keep Them Safe with Fuzzy Math.
 
  ┗----Rationale: Sic 'Em replaces Better Toys as a means to enhance the Attack Command-centric nature of this class mod, while Fuzzy Math is a more consistent means of shield restoration compared to Keep Them Safe.
 
-Bounty Hunter - No change.
+Bounty Hunter - Adjusted the description of the Bounty Hunter to be more accurate to the in-game effects.
 
 Cosmic Stalker - No change.
 
@@ -2471,13 +2682,13 @@ LEGENDARY ARTIFACTS
 -------------------
 Commander Planetoid - Increased bonus elemental melee damage to 130% regardless of level, timer between elemental switching reduced to 0.1 seconds.
 
-Company Man - Made it always spawn with three (non-manufacturer) passive stat bonuses.
+Company Man - Made it always spawn with three (non-manufacturer) passive stat bonuses. Fire rate bonuses now affect burst fire delay.
 
 Cosmic Crater - Tripled the damage of the puddles.
 
 Deathless - No change.
 
-Deathrattle - No change.
+Deathrattle - Now affects burst fire delay.
 
 Electric Banjo - Bullet proc chance increased to 33%, melee proc chance reduced to 33%, UI now mentions melee chance.
 
@@ -2537,7 +2748,7 @@ REGULAR ARTIFACTS
 -----------------
 Atom Balm - Radius increased to 50%.
 
-Berserker Rush - Fire rate bonus increased (25% at level 72), movement speed bonus increased (50% at level 72.)
+Berserker Rush - Fire rate bonus increased (25% at level 72), movement speed bonus increased (50% at level 72.), now affects burst fire delay.
 
 Cauterizing - Puddle cooldown lowered to 2 seconds, increased the slide impact damage bonus per level by 300%.
 
@@ -2557,7 +2768,7 @@ Hot Drop - Reduced fireball damage by 50%.
 
 Ice Breaker - No change.
 
-Ice Spiker - Increased icicle damage by 100%.
+Ice Spiker - Increased icicle damage by 100%, adjusted the description of the Ice Spiker to mention that it counts as Amara's Action Skill damage.
 
 Knife Drain - Lifesteal reduced to 15%.
 
@@ -2614,7 +2825,7 @@ ASE Melee - Reduced to 40% damage and now factors in skill and gear bonuses.
 
 ASE Element 10 Sec - Reduced to 20% damage.
 
-ASE Fire Rate/Reload - Increased fire rate to 20% and now factors in skill and gear bonuses.
+ASE Fire Rate/Reload - Increased fire rate to 20% and made it affect burst fire delay, made the reload speed affect repair time, and now factors in skill and gear bonuses.
 
 OGT Damage - Reduced to 15% damage.
 
@@ -2647,7 +2858,7 @@ GUNNER ANOINTMENTS
 ------------------
 IB Nova - Increased damage to 2.5 from 1.75.
 
-N2M Crit/Rate - Reduced critical damage to 20%, increased fire rate to 20%, and now factors in skill and gear bonuses.
+N2M Crit/Rate - Reduced critical damage to 20%, increased fire rate to 20%, now affects burst fire delay, and now factors in skill and gear bonuses.
 
 N2M Moze Incendiary - Reduced bonus to 35% and updated the description to be more accurate.
 
@@ -2673,7 +2884,7 @@ Cub Active Damage - Reduced to 35% damage and now factors in skill and gear bonu
 
 IB Health/Shields - Now factors in skill and gear bonuses.
 
-N2M Reload/Handling - Improved reload bonus to 40%, improved handling to 75%, and now factors in skill and gear bonuses.
+N2M Reload/Handling - Improved reload bonus to 40% and now affects repair time, improved handling to 75%, and now factors in skill and gear bonuses.
 
 IB Cooldown - No change.
 
@@ -2696,7 +2907,7 @@ Barrier Shield Charge - Recharge rate reduced to 50%, recharge effect now contin
 
 Digi-Clone Health Regen - Increased to 7.5%, max duration increased to 120 seconds.
 
-SNTNL Fire Rate - Increased reload to 50%, increased fire rate to 30%, max duration increased to 120 seconds, and now factors in skill and gear bonuses.
+SNTNL Fire Rate - Increased reload to 50% and made it affect repair time, increased fire rate to 30% and made it affect burst fire delay, max duration increased to 120 seconds, and now factors in skill and gear bonuses.
 
 SNTNL Movement Speed - Increased to 20%, max duration increased to 120 seconds, and now factors in skill and gear bonuses.
 
@@ -2752,7 +2963,7 @@ Grasp Active Damage - Reduced to 35% damage and now factors in skill and gear bo
 
 Phasegrasp Nova - Increased frequency to once per second, increased radius to 900 from 500.
 
-Phase Grasp Charge Time - Increased fire rate to 30% and now factors in skill and gear bonuses.
+Phase Grasp Charge Time - Increased fire rate to 30%, now affects burst fire delay, and now factors in skill and gear bonuses.
 
 Phaseslam Damage Resist/Speed - Increased resistance to 30%, increased move speed to 35%, increased duration to 12 seconds, and now factors in skill and gear bonuses.
 
@@ -2798,7 +3009,7 @@ Airborne Crit Damage - Set to 25%.
 
 Airborne Damage - Reduced to 20%.
 
-Airborne Fire Rate - Set to 20%.
+Airborne Fire Rate - Set to 20%, now affects burst fire delay.
 
 Airborne Accuracy - Increased both stats to 50%.
 
@@ -2806,7 +3017,7 @@ Sliding Damage - Set damage to 35%.
 
 Sliding Accuracy - Increased both stats to 70%.
 
-Sliding Fire Rate - Set to 35%.
+Sliding Fire Rate - Set to 35%, now affects burst fire delay.
 
 ASA Damage Reduction - Reduced to 25% and now factors in skill and gear bonuses.
 
@@ -2842,7 +3053,7 @@ Security Bear - No change.
 
 Armored Infantry - Changed the damage type to global damage instead of gun damage and added Mayhem-scaled gun-damage.
 
-Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's.)
+Drowning in Brass - Iron Bear damage boost changed to a type that affects both arms (same as Stainless Steel Bear's), now affects burst fire delay.
 
 Thin Red Line - No change.
 
@@ -2908,9 +3119,9 @@ Scrappy - Increased the damage bonus to 7% per point.
 
 Rushin' Offensive - Reduced lifesteal to 1%.
 
-Scorching RPM's - Increased Iron Bear Damage per point to 7%.
+Scorching RPM's - Increased Iron Bear Damage per point to 7%, now affects burst fire delay.
 
-The Iron Bank - Added a 5%-per-point bonus to reload speed.
+The Iron Bank - Added a 5%-per-point bonus to reload speed/repair time, made it also affect heat per shot.
 
 Specialist Bear - Reduced the damage bonus to 30%.
 
@@ -3050,7 +3261,7 @@ Like a Ghost - Increased base dodge chance to 8.33% per point from 5%, reduced b
 
  ┗----Rationale: Reducing the stack count to one means the base bonus for the skill can be increased to a desireable level without making it too strong if it could stack twice.
 
-Boom. Enhance. - Increased the clone health bonus per grenade to 100% and added accuracy and handling bonuses.
+Boom. Enhance. - Increased the clone health bonus per grenade to 100% and added accuracy and handling bonuses. Made the fire rate/reload speed bonuses affect burst fire delay and repair time.
 
 Trick of the Light - Changed Cryo Damage back to Shock Damage.
 
@@ -3066,7 +3277,7 @@ Violent Momentum - Now also increases slide damage, added Action-Skill-damage Ma
 
  ┗----Rationale: If an old man slides into your kneecaps at hyperspeed, logically speaking it should hurt more than if he slides into you at a brisk jog. It also opens up some fun avenues for alternate damage.
 
-Cool Hand - No change.
+Cool Hand - Now also affects repair time.
 
 Drone Delivery - Reduced cooldown to 10 seconds.
 
@@ -3130,7 +3341,7 @@ Commitment - No change.
 
 Fugitive - No change.
 
-Domino Effect - Fixed burst-fire delay being increased by this skill.
+Domino Effect - Fixed burst-fire delay being increased by this skill instead of decreased, made it affect repair time.
 
 Art of War - Reduced max stack amount to 3, increased damage per point to 6.66%.
 
@@ -3148,11 +3359,11 @@ Barrier - Reduced cooldown to 16 seconds from 24 seconds, increase amp damage to
 
  ┗----Rationale: The increase in amp damage and the reduction of Lifesteal should encourage more usage of the Barrier.
 
-Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35%.
+Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35% and now affects burst fire delay.
 
  ┗----Rationale: Two augments in the same tree shouldn't be boosting the exact same stat. Thus the reload speed has been replaced with fire rate.
 
-Nanites or Some Shite - Increased maximum health regen to 10%, increase reload speed bonus to 33%, increase shield delay bonus to 50%.
+Nanites or Some Shite - Increased maximum health regen to 10%, increase reload speed bonus to 33% and now affects repair time, increase shield delay bonus to 50%.
 
 All-Rounder - No change.
 
@@ -3360,9 +3571,9 @@ Increased base pet melee damage, lunge damage, ranged damage, and skill damage b
 
 Increased base pet health by 40%.
 
-Improved attack command cooldown by 40%.
+Improved attack command cooldown by 25%.
 
- ┗----Rationale: Attack Command is one of those things seldom used because you can only use them once in a while and tend to forget about it in the heat of combat. A reduction in cooldown should remedy that.
+ ┗----Rationale: Attack Command is one of those things seldom used because you can only use them once in a while and tend to forget about it in the heat of combat. A reduction in cooldown should help remedy that.
 
 Spiderant Centurion - No change.
 
@@ -3374,7 +3585,7 @@ Guard Skag - No change.
 
 Great Horn Skag - Increased gun damage bonus to 10%.
 
-Eridian Skag - Increased fire rate bonus to 10%, increased singularity radius by 50%.
+Eridian Skag - Increased fire rate bonus to 10%, now affects burst fire delay, increased singularity radius by 50%.
 
 Jabber Sidekick - Increased movement speed bonus to 10% (all Jabber pets), increased Jabber's pistol damage by 100%, made pet stat bonuses be affected by Barbaric Yawp on the info card.
 
@@ -3426,11 +3637,11 @@ Do Harm - Reduced the maximum amount of stacks to 50, doubled the effectiveness 
 
  ┗----Rationale: While this skill can reach up to 99 stacks under certain conditions, those conditions are not realistic in practice. Rather than funneling more damage into the already bloated Phase-skill anointments to make Amara's Action Skills more viable at endgame, Do Harm has been tweaked instead. Hence the maximum count has been reduced to 50 while the effectiveness has been doubled to equal the same strength it would have previously with 99 stacks. This change also narrows the gap between the Phasezerker class mod and other class mods such as the Stone for Action-Skill oriented builds. Same applies to Violent Tapestry.
 
-Fast Hand(s) - Added Action-Skill-damage Mayhem Scaling.
+Fast Hand(s) - Added Action-Skill-damage Mayhem Scaling and now affects repair time.
 
 Violent Tapestry - Reduced the maximum amount of stacks to 50, doubled the effectiveness of each stack.
 
-Alacrity - No change.
+Alacrity - Now affects repair time.
 
 Transcend - No change.
 
@@ -3438,7 +3649,7 @@ Restless - Increased cooldown bonus to 6% per point.
 
 Ascendant - No change.
 
-From Rest - No change.
+From Rest - Now affects burst fire delay.
 
 Laid Bare - Increased damage bonus to 10% per point.
 
@@ -3480,11 +3691,11 @@ Jab Cross - No change.
 
 Guardian Angel - No change.
 
-Blitz - Reduced cooldown to 6 seconds.
+Blitz - Reduced cooldown to 6 seconds, changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
 
 ENLIGHTENED FORCE
 -----------------
-Trust in Yourself - No change.
+Trust in Yourself - Now affects repair time.
 
 No Mistakes In Nature - No change.
 

@@ -1,0 +1,22 @@
+###
+### Name: Really Lucky 7 (Always Semi Auto)
+### 
+### Author: CZ47
+### Contact: =]#7647
+### Categories: gear-pistol, cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### All rolls every reload on the Lucky 7
+### Reloading swaps between corr, fire and shock still.
+###
+### This mod converts the Full-auto roll into Semi-auto fire
+###
+###
+# Guarantee all rolls
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1
+
+# Make Lucky7 Single Burst
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Firing/StatusEffect_Lucky7_FullAuto.StatusEffect_Lucky7_FullAuto,AttributeEffects.AttributeEffects[0].BaseModifierValue,0,,(BaseValueConstant=1,BaseValueScale=1)
