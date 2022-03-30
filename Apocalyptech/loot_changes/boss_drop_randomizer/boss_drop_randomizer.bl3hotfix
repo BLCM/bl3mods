@@ -1,6 +1,6 @@
 ###
 ### Name: Boss Drop Randomizer
-### Version: 1.3.2
+### Version: 1.3.3
 ### Author: Apocalyptech
 ### Contact: https://apocalyptech.com/contact.php
 ### Categories: enemy-drops, randomizer
@@ -51,6 +51,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Ta
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[2].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[2].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[2].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"'
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[3].InventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[3].ResolvedInventoryBalanceData,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[3].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Pistols/ItemPool_Pistols_Legendary.ItemPool_Pistols_Legendary"'
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries.ItemPool_Mayhem2_Legendaries,BalancedItems.BalancedItems[0].InventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries.ItemPool_Mayhem2_Legendaries,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,None
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries.ItemPool_Mayhem2_Legendaries,BalancedItems.BalancedItems[0].ItemPoolData,0,,ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/Heavy/ItemPool_Heavy_Legendary.ItemPool_Heavy_Legendary"'
