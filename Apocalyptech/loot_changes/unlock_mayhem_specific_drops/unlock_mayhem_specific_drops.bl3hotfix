@@ -1,6 +1,6 @@
 ###
 ### Name: Unlock Mayhem-Specific Drops
-### Version: 1.0.0
+### Version: 1.0.1
 ### Author: Apocalyptech
 ### Contact: https://apocalyptech.com/contact.php
 ### Categories: enemy-drops, loot-system
@@ -59,7 +59,7 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_TroyBoss),/Game/PatchDLC/Raid1/GameData/
 ###
 
 # Anathema the Relentless
-SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[3].Weight.BaseValueAttribute,0,,None
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss.ItemPool_TD2_Miniboss,BalancedItems.BalancedItems[4].Weight.BaseValueAttribute,0,,None
 
 # Captain Traunt
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_SMG_Legendary1.ItemPoolExpansion_Mayhem2_SMG_Legendary1,BalancedItems.BalancedItems[0].Weight.BaseValueAttribute,0,,None
