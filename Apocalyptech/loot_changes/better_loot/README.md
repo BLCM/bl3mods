@@ -64,6 +64,9 @@ anything if you do).
 Changelog
 =========
 
+**v1.3.5** - Mar 30, 2022
+ * Updated to account for Anathema's new TNTina drop (added via GBX hotfix today)
+
 **v1.3.4** - Jul 2, 2021
  * Fixed guaranteed drops for Muldock, the Anointed (and possibly also Artemis,
    Mincemeat, and the runnable version of Private Beans, though I didn't

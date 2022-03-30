@@ -563,6 +563,7 @@ Takedowns
    * Asclepius
    * Stinger
    * Lightspeed
+   * TNTina
    * Backburner (m6)
    * D.N.A. (m6)
    * Kaoson (m6)

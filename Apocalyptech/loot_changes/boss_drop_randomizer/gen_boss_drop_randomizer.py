@@ -39,7 +39,7 @@ mod = Mod('boss_drop_randomizer.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.2',
+        v='1.3.3',
         cats='enemy-drops, randomizer',
         )
 
@@ -69,7 +69,7 @@ for (label, char_name, pools) in sorted([
             ('/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_UnseenThreat', [SR, AR]),
             ]),
         ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', [
-            ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', [SH, SH, GM, None]),
+            ('/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', [SH, SH, GM, PS, None]),
             ('/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPool_Mayhem2_Legendaries', [HW, SM, PS, SM, AR, HW, SG, SR]),
             ]),
         ('Anointed Alpha', 'BPChar_AnointedJoe', [

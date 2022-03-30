@@ -33,7 +33,7 @@ mod = Mod('unlock_mayhem_specific_drops.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='enemy-drops, loot-system',
         )
 
@@ -65,7 +65,7 @@ for mayhem_level, data in [
             ('Killavolt', 'BPChar_EnforcerKillavolt', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_AR_Legendary', 0, None),
             ('Pain', 'BPChar_Terror', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary1', 0, None),
             ('Warden', 'BPChar_Goliath_CageArena', '/Game/PatchDLC/Mayhem2/Gear/ItemPoolExpansion_Mayhem2/ItemPoolExpansion_Mayhem2_HW_Legendary2', 0, None),
-            ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, None),
+            ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 4, None),
             ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, None),
             ]),
         ]:

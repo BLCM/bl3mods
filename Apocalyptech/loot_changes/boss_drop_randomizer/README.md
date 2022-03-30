@@ -28,6 +28,9 @@ Better Loot in your mod list.
 Changelog
 =========
 
+**v1.3.3** - Mar 30, 2022
+ * Updated to account for Anathema's new TNTina drop (added via GBX hotfix today)
+
 **v1.3.2** - Jul 9, 2021
  * Added Loot Hearts and Loot Ghosts
 

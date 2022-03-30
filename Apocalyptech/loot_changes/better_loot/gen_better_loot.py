@@ -53,7 +53,7 @@ mod = Mod('better_loot.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.4',
+        v='1.3.5',
         cats='enemy-drops, loot-system',
         )
 
@@ -1672,7 +1672,7 @@ for label, char_name, pool, idx, weight in [
         ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 0, None),
         # With a hotfix on 2020-08-20, GBX changed Anathema and Scourge to pull from the M6 pool instead.  This
         # statement continues to work just fine, though.
-        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
+        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 4, 0.5),
         ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, 0.5),
         ]:
     if weight is None:
