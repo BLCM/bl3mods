@@ -18,7 +18,7 @@
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Edit the XYZ at the end of the line below to change the camera position.
-SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_OffsetCameraRelative_0,LocationOffset,0,,(x=-150,y=100,z=0)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_OffsetCameraRelative_0,LocationOffset,0,,(x=-200,y=75,z=0)
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Swap Camera Mode Names, effectively making the default camera 3rd person.
