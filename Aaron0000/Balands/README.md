@@ -8,6 +8,12 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.4.8
+-----
+Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
+
+Reduced the total health of the Seer by roughly 60%.
+
 1.4.7
 -----
 Fixed From Rest's skill description not displaying the fire rate bonus.
@@ -1334,7 +1340,7 @@ Bitch - No change other than a possible damage adjustment.
 
 Cheap Tips - Set chip-drop chance to 15%, damage boost set to 10%.
 
-Crossroad - Projectile count and accuracy nerfs reverted.
+Crossroads - Projectile count and accuracy nerfs reverted.
 
 Gold Rush - No change other than a possible damage adjustment.
 

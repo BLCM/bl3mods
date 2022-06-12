@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.4.7
+### Version: 1.4.8
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -6188,9 +6188,36 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Ta
 # Reduce the damage by Diadems during the Scourge fight by 75%.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBomber_BossFodder),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Bomber/_Design/Character/BPChar_GuardianBruteBomber_BossFodder.Default__BPChar_GuardianBruteBomber_BossFodder_C:DefaultDamageCauserComponent,OakDamageCauserComponent.Object..DamageDealtMultiplier,0,,(BaseValue=0.250000)
 
+# Evil Brick - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Balance/Table_Balance_DarkBrick_PT1.Table_Balance_DarkBrick_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,60
+
+# Evil Mordecai - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Balance/Table_Balance_DarkMordecai.Table_Balance_DarkMordecai,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,45
+
+# Evil Lilith - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Balance/Table_Balance_DarkLilith_PT1.Table_Balance_DarkLilith_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,75
+
+# Spongeboss - Reducde health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Balance/Table_Balance_SpongeBoss.Table_Balance_SpongeBoss,Spongeboss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,130
+
+# Locomobius - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1.Table_Balance_TrainBoss_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,165
+
+# Dr. Benedict - Reduce total health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,46
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,26
+
 # Psychoreaver - Reduce health by roughly 40%.
 SparkCharacterLoadedEntry,(1,2,0,BPChar_Psychodin),/Alisma/Enemies/Psychodin/_Shared/_Design/Balance/Table_Balance_Psychodin.Table_Balance_Psychodin,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,200
 SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/_Shared/_Design/Balance/Table_Balance_Psychodin.Table_Balance_Psychodin,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,200
+
+# The Seer - Reduce total health by roughly 60%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,155
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,145
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,90
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,155
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,145
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,90
 
 # Prevent Anointed Enforcers from spawning (other than Anointed Alpha, Luke, and Muldock.)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions__CoVMix_OrbitalBadasses.SpawnOptions__CoVMix_OrbitalBadasses,Options.Options[7].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
