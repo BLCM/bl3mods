@@ -1,0 +1,241 @@
+###
+### Name: Classic Loot Beams
+### Version: 1.0
+### Author: Novenic
+### Categories: av-gear, loot-system, gear-general
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Screenshot: https://i.imgur.com/IOLD50m.png
+### Screenshot: https://i.imgur.com/yfkp2Al.png
+### Screenshot: https://i.imgur.com/gODeZWp.png
+### Screenshot: https://i.imgur.com/3IOikZe.png
+### Screenshot: https://i.imgur.com/Zq2cOMJ.png
+### Nexus: https://www.nexusmods.com/borderlands3/mods/311
+### 
+
+###
+### Changes loot beams and outlines on gear, ammo, and other consumables to resemble the beams from previous games
+###
+
+
+
+### Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,RarityLootBeamForInventoryWithFoilParts,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.X,0,,2
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.Y,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common:ParticleModuleSize_3.DistributionVectorUniform_0,Max.X,0,,2.25
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common:ParticleModuleSize_3.DistributionVectorUniform_0,Min.X,0,,1.25
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_01_Common.RarityData_01_Common,DisplayRarityOutline,0,,false
+
+
+
+
+
+
+### Uncommon
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_02_UnCommon.RarityData_02_UnCommon,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_02_UnCommon.RarityData_02_UnCommon,RarityLootBeamForInventoryWithFoilParts,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_02_UnCommon.RarityData_02_UnCommon,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_02_UnCommon.RarityData_02_UnCommon,RarityLootBeamHeight,0,,100.0
+
+
+
+
+
+
+### Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_03_Rare.RarityData_03_Rare,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_03_Rare.RarityData_03_Rare,RarityLootBeamForInventoryWithFoilParts,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.X,0,,2
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare:ParticleModuleSize_0.DistributionVectorConstant_1,Constant.Y,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare:ParticleModuleSize_3.DistributionVectorUniform_0,Max.X,0,,2.5
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare:ParticleModuleSize_3.DistributionVectorUniform_0,Min.X,0,,1.5
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare:ParticleModuleRequired_0,Material,0,,/Game/Pickups/_Shared/Effects/Materials/MI_FX_Item_Loot_Stick_SingleBeam.MI_FX_Item_Loot_Stick_SingleBeam
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_03_Rare.RarityData_03_Rare,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_03_Rare.RarityData_03_Rare,RarityLootBeamHeight,0,,100.0
+
+
+
+
+
+
+### Very Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityLootBeamForInventoryWithFoilParts,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+
+
+# Beam Color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX.R,0,,0.58
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX.G,0,,0.27
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityColorFX.B,0,,0.9
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityLootBeamHeight,0,,100.0
+
+
+
+# Spawn Sound
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_04_VeryRare.RarityData_04_VeryRare,RarityLootAudioStinger,0,,/Game/Audio/Events/UX/HUD/Loot/WE_Loot_Spawn_Generic.WE_Loot_Spawn_Generic
+
+
+
+
+
+
+### Legendary
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityLootBeamForInventoryWithFoilParts,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Rare.PS_ItemLocatorStick_Rare
+
+
+
+# Beam Color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityColorFX.R,0,,0.8
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityColorFX.G,0,,0.56
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityColorFX.B,0,,0
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityLootBeamHeight,0,,100.0
+
+
+
+# Spawn Sound
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityLootAudioStinger,0,,/Game/Audio/Events/UX/HUD/Loot/WE_Loot_Spawn_Generic.WE_Loot_Spawn_Generic
+
+
+
+# Map Icon
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,ZoneMapPOIType,0,,()
+
+
+
+
+
+
+### Consumable
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Ammo.RarityData_00_Ammo,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Eridium.RarityData_00_Eridium,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Health.RarityData_00_Health,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Mission.RarityData_00_Mission,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Money.RarityData_00_Money,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_ShieldBooster.RarityData_00_ShieldBooster,RarityLootBeamOverride,0,,/Game/Pickups/_Shared/Effects/Systems/PS_ItemLocatorStick_Common.PS_ItemLocatorStick_Common
+
+
+
+# Outline
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Mission.RarityData_00_Mission,DisplayRarityOutline,0,,false
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_ShieldBooster.RarityData_00_ShieldBooster,DisplayRarityOutline,0,,false
+
+
+
+# Icon Height
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Ammo.RarityData_00_Ammo,RarityLootBeamHeight,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Eridium.RarityData_00_Eridium,RarityLootBeamHeight,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Health.RarityData_00_Health,RarityLootBeamHeight,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Mission.RarityData_00_Mission,RarityLootBeamHeight,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Money.RarityData_00_Money,RarityLootBeamHeight,0,,100.0
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_ShieldBooster.RarityData_00_ShieldBooster,RarityLootBeamHeight,0,,100.0
+
+
+
+# Ammo Beam Color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Ammo.RarityData_00_Ammo,RarityColorFX.R,0,,0.75
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Ammo.RarityData_00_Ammo,RarityColorFX.G,0,,0.75
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Ammo.RarityData_00_Ammo,RarityColorFX.B,0,,0.70
+
+
+
+# Health Beam Color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Health.RarityData_00_Health,RarityColorFX.R,0,,1
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Health.RarityData_00_Health,RarityColorFX.G,0,,0.5
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Health.RarityData_00_Health,RarityColorFX.B,0,,0.5
+
+
+
+# Money Beam Color
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Money.RarityData_00_Money,RarityColorFX.R,0,,1
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Money.RarityData_00_Money,RarityColorFX.G,0,,0.95
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_00_Money.RarityData_00_Money,RarityColorFX.B,0,,0
