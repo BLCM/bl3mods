@@ -1,0 +1,25 @@
+###
+### Name: Arms Race Hard Difficulty
+### Version: 1.0.0
+### Author: Hhking
+### Credits: Apocalyptech (mod derived from arms_race_cheats)
+### Categories: armsrace
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### You complete 10x Boss Race with your eyes closed? Melee down Harker without any issues? Looking for a new challenge?
+### Then this is the mod for you! No more one-tapping badasses or mowing down mobs with your hands behind your back:
+### Enemies have a LOT more health and as the Murder Cane shrinks they get even stronger.
+###
+### DISLAIMER:
+### This mod is HARD and is aimed to make the game a challenge even with mods like Legendary Arms Race, Loot De-Emphasizer and armsracestarter-orange enabled.
+### Completing a run with this mod enabled but without any other mods is near impossible: you have been warned.
+###
+
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyAccuracyScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.9
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,1.5
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthPerHumanPlayerScale,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,0.2
+SparkLevelPatchEntry,(1,2,0,FrostSite_P),/Game/PatchDLC/Ixora/GameData/Balance/Table_GearUp_Combat_Balance.Table_GearUp_Combat_Balance,EnemyHealthScalePerDeathCircle,Value_138_7567CFEB4E1077623BE84EBC11D10EB8,0,,1.2
