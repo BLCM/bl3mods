@@ -8,7 +8,6 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
-
 1.4.9
 -----
 Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
@@ -667,7 +666,7 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed or reduced most non-enemy health-based Mayhem mode scaling. other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, and pet damage (which now displays on the pet cards).
+Removed or reduced most non-enemy health-based Mayhem mode scaling. other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, vehicle damage, and pet damage (which now displays on the pet cards).
 
 Mayhem Scaling for Slide Damage is 6% per Mayhem Level.
 
@@ -676,6 +675,8 @@ Mayhem Scaling for Slam Damage is 10% per Mayhem Level.
 Mayhem Scaling for Shield Damage is 24% per Mayhem Level.
 
 Mayhem Scaling for Pet Damage Scaling is 55% per Mayhem level.
+
+Mayhem Scaling for Vehicle Damage Scaling is 65% per Mayhem level.
 
 Implemented mayhem scaling for Moze's gun damage to account for the heavy loss of damage from skills such as Fire in the Skag Den, Big Surplus, and Short Fuse no longer being Mayhem scaled. It is activated by investing a point into Armored Infantry.
 
