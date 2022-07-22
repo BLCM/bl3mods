@@ -8,6 +8,7 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+
 1.4.9
 -----
 # Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
