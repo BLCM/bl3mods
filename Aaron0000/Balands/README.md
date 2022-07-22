@@ -1,4 +1,4 @@
-(Includes the Unofficial Community Patch's changes (other than Map Defogger since I didn't realize that existed), so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
+(Includes the Unofficial Community Patch's changes (other than Map Defogger), so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
 
 (This mod works just fine with regular save files. Just reroll your Mayhem modifiers if you go back to normal play if it's needed.)
 
@@ -8,6 +8,18 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.4.9
+-----
+# Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
+
+# Reduced the total health of Hemovorous' final form and Vermivorous by 40%.
+
+# Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
+
+# Increased the damage of the Creeping Death by 12.5%, the magazine size by 2, and the fire rate by 40%.
+
+# Reduced the damage of the D.N.A's damage-over-time by 40%.
+
 1.4.8
 -----
 Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
@@ -1654,7 +1666,7 @@ Destructo Spinner - No change other than a possible damage adjustment.
 
 Devoted - Fire rate reduced by 25%, recoil height improved by 30%, recoil width improved by 65%, improved accuracy.
 
-D.N.A. - No change other than a possible damage adjustment.
+D.N.A. - Damage-over-time reduced by 40%.
 
 Ember's Purge - Puddle damage set to 50% of card damage, puddle chance increased to 33%.
 
@@ -1769,7 +1781,7 @@ Anarchy - Set damage per stack to 10%, set accuracy penalty to 10% per stack.
 
 Brightside - Reload-shot damage set to 1.5 times the card damage.
 
-Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40%, projectile speed increased by 50%.
+Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40%, projectile speed increased by 50%, Magazine Size by 2, and Fire Rate by 40%.
 
  ┗----Rationale: The damage on this thing's been increased a truckload. It's now useable both for traditional use and the "mine-laying" gimmick.
 
