@@ -11,15 +11,15 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 1.4.9
 -----
-# Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
+Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
 
-# Reduced the total health of Hemovorous' final form and Vermivorous by 40%.
+Reduced the total health of Hemovorous' final form and Vermivorous by 40%.
 
-# Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
+Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
 
-# Increased the damage of the Creeping Death by 12.5%, the magazine size by 2, and the fire rate by 40%.
+Increased the damage of the Creeping Death by 12.5%, the magazine size by 2, and the fire rate by 40%.
 
-# Reduced the damage of the D.N.A's damage-over-time by 40%.
+Reduced the damage of the D.N.A's damage-over-time by 40%.
 
 1.4.8
 -----
