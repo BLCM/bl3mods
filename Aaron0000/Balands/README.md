@@ -13,7 +13,7 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 -----
 Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
 
-Reduced the total health of Hemovorous' final form and Vermivorous by 40%.
+Reduced the total health of Hemovorous' final form and Vermivorous by roughly 40%.
 
 Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
 
