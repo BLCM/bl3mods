@@ -2218,7 +2218,7 @@ Snowshoe - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
 Super Soldier - Damage immunity reduced to a 33% damage reduction, now affects burst fire delay, and now always spawns with maximum shield parts after the first redemption of the shield.
 
- ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
+ ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
 Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly, now always spawns with maximum shield parts.
 
@@ -2548,9 +2548,9 @@ Heat Exchanger - No change.
 
 Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%.
 
-Green Monster - Replaced Click, Click... with Forge and made the description more accurate.
+Green Monster - Replaced Click, Click... with Redistribution and made the description more accurate.
 
- ┗----Rationale: Given how the splash bonus is never mentioned anywhere on the card it isn't unreasonable to assume it wasn't intended. Losing a 100% boost in splash damage is a big loss, so it has at least been somewhat compensated for by replacing Click, Click... with Forge (for whatever reason, Click, Click... can only spawn with one point on this class mod legitimately.) Bullet hose builds should appreciate this.
+ ┗----Rationale: The other skills present on the class mod seem to aim towards maintaining the corrosive damage bonus, so Redistribution was added to further that goal and give bullet-hose builds a leg up.
 
 Mind Sweeper - No change.
 
