@@ -136,11 +136,11 @@ Reduced the increased Legendary world drop rate of Maliwan Takedown by 40%.
 
 Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance (adjusted if multiple enemies have the same dedicated drops such as the Power Troopers) and 0.3 drops for every Mayhem level. At Mayhem 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
 
-Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincement, Muldock the Anointed, and the Brood Mother.
+Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincemeat, Muldock the Anointed, and the Brood Mother.
 
 Enemies that did not receive Mayhem-scaled drops due to already having sufficient drops; Trial bosses, Raid bosses, and Anathema.
 
-Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet
+Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet have drop sources.
 
 Added Blue Fire's drop pool to King Gnasher in replacement of his Westergun drop as a viable farming source for Blue Fire's loot.
 
@@ -698,7 +698,7 @@ LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
-Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day an (almost guaranteed) Legendary gun or shield starting from level 35, increased amount of items in the vendor to 20.
+Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel or shield starting from level 35, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
