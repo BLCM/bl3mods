@@ -905,9 +905,17 @@ ENEMY CHANGES
 -------------
 Eista now retains "the Invincible" in his name for rematches after "We Slass! Part 3". Eista the Invincible's total health has been buffed, now roughly halfway between Wotan and Scourge.
 
-Psychoreaver now has 40% less health than before.
+Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
 
-Joey Ultraviolet's total health has been reduced to roughly half of what it was previously.
+Reduced the total health of the Psychoreaver by roughly 40%.
+
+Reduced the total health of the Seer by roughly 60%.
+
+Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
+
+Reduced the total health of Joey Ultraviolet by 50%.
+
+Reduced the total health of Hemovorous' final form and Vermivorous by roughly 40%.
 
 Anathema the Relentless now only triggers an immune phase at 50% and 0% of a health bar instead of every quarter of a health bar. 5 immunity phases total.
 
