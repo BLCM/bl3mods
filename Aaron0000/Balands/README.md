@@ -8,6 +8,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.0
+-----
+Fixed the double barrel on the Shredifier not calculating damage appropiately (thanks to Lonemasterino for noticing this), changed the way the extra ammo cost is calculated on the Shredifier's double barrel to compensate for the loss in damage (an x2 Super Shredifier in double barrel mode will now only consume three ammo per shot).
+
 1.4.9
 -----
 Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
@@ -2025,7 +2029,7 @@ The Monarch - Ammo cost set to 2, magazine size increased by 70%, changed how th
 
  ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
 
-Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume four ammo.)
+Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume three ammo.)
 
  ┗----Rationale: The Super Shredifier's underbarrel technically was worse than the regular double barrel for Vladof assault rifles. It has been given some tweaks to really drive home the theme of "more dakka".
 
