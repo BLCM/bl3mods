@@ -8,6 +8,14 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.1
+-----
+Fixed Boom. Enhance using the skill description for Cool Hand instead.
+
+Fixed a typo preventing the Burn Both Ends skill description from being changed to match the actual effects.
+
+Added Mayhem-scaled drops to Buttmunch after remembering it existed.
+
 1.5.0
 -----
 Fixed the double barrel on the Shredifier not calculating damage appropiately (thanks to Lonemasterino for noticing this), changed the way the extra ammo cost is calculated on the Shredifier's double barrel to compensate for the loss in damage (an x2 Super Shredifier in double barrel mode will now only consume three ammo per shot).
@@ -670,7 +678,7 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed or reduced most non-enemy health-based Mayhem mode scaling. other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, vehicle damage, and pet damage (which now displays on the pet cards).
+Removed or reduced most non-enemy health-based Mayhem mode scaling, other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, vehicle damage, and pet damage (which now displays on the pet cards).
 
 Mayhem Scaling for Slide Damage is 6% per Mayhem Level.
 
@@ -3111,7 +3119,7 @@ Fire in the Skag Den - Increased fire damage to 4% per point.
 
 Deadlines - No change.
 
-Grizzled - No change.
+Grizzled - The amount of Action Skill Cooldown Time reduced has been adjusted to accomodate the changed Iron bear duration and cooldown changes.
 
 Means of Destruction - No change.
 
@@ -3177,7 +3185,7 @@ Double Time - Increased bonus to 6.66% per point.
 
 Harmonious Havoc - No change.
 
-Explosive Fury - No change.
+Explosive Fury - Added a note mentioning that this skill does not actually work at all.
 
 Fired Up - Fixed burst-fire delay being increased by this skill.
 
@@ -3313,7 +3321,7 @@ Cool Hand - Now also affects repair time.
 
 Drone Delivery - Reduced cooldown to 10 seconds.
 
-Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal form this skill.
+Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal fm this skill.
 
 Seein' Red - No change.
 
@@ -3345,7 +3353,7 @@ Really Expensive Jacket - No change.
 
 Best Served Cold - Nova damage multiplied by five, added a note saying that this skill gets scaled by Mayhem Mode.
 
-Futility Belt - Increased damage resistance to 30%.
+Futility Belt - Increased damage resistance to 30% (displays as 23% in the skill card.)
 
 Refreshment - Reduced lifesteal to 1% per point.
 
