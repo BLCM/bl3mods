@@ -1,4 +1,4 @@
-(Includes the Unofficial Community Patch's changes (other than Map Defogger since I didn't realize that existed), so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
+(Includes the Unofficial Community Patch's changes (other than Map Defogger), so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
 
 (This mod works just fine with regular save files. Just reroll your Mayhem modifiers if you go back to normal play if it's needed.)
 
@@ -8,6 +8,30 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.1
+-----
+Fixed Boom. Enhance using the skill description for Cool Hand instead.
+
+Fixed a typo preventing the Burn Both Ends skill description from being changed to match the actual effects.
+
+Added Mayhem-scaled drops to Buttmunch after remembering it existed.
+
+1.5.0
+-----
+Fixed the double barrel on the Shredifier not calculating damage appropiately (thanks to Lonemasterino for noticing this), changed the way the extra ammo cost is calculated on the Shredifier's double barrel to compensate for the loss in damage (an x2 Super Shredifier in double barrel mode will now only consume three ammo per shot).
+
+1.4.9
+-----
+Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
+
+Reduced the total health of Hemovorous' final form and Vermivorous by roughly 40%.
+
+Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
+
+Increased the damage of the Creeping Death by 12.5%, the magazine size by 2, and the fire rate by 40%.
+
+Reduced the damage of the D.N.A's damage-over-time by 40%.
+
 1.4.8
 -----
 Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
@@ -124,11 +148,11 @@ Reduced the increased Legendary world drop rate of Maliwan Takedown by 40%.
 
 Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance (adjusted if multiple enemies have the same dedicated drops such as the Power Troopers) and 0.3 drops for every Mayhem level. At Mayhem 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
 
-Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincement, Muldock the Anointed, and the Brood Mother.
+Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincemeat, Muldock the Anointed, and the Brood Mother.
 
 Enemies that did not receive Mayhem-scaled drops due to already having sufficient drops; Trial bosses, Raid bosses, and Anathema.
 
-Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet
+Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet have drop sources.
 
 Added Blue Fire's drop pool to King Gnasher in replacement of his Westergun drop as a viable farming source for Blue Fire's loot.
 
@@ -654,7 +678,7 @@ Doubled the base melee damage and base slam damage, while base slide damage has 
 
 MAYHEM MODE CHANGES
 -------------------
-Removed or reduced most non-enemy health-based Mayhem mode scaling. other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, and pet damage (which now displays on the pet cards).
+Removed or reduced most non-enemy health-based Mayhem mode scaling, other than enemy health, loot quality/quantity, shield damage, slide damage, slam damage, vehicle damage, and pet damage (which now displays on the pet cards).
 
 Mayhem Scaling for Slide Damage is 6% per Mayhem Level.
 
@@ -663,6 +687,8 @@ Mayhem Scaling for Slam Damage is 10% per Mayhem Level.
 Mayhem Scaling for Shield Damage is 24% per Mayhem Level.
 
 Mayhem Scaling for Pet Damage Scaling is 55% per Mayhem level.
+
+Mayhem Scaling for Vehicle Damage Scaling is 65% per Mayhem level.
 
 Implemented mayhem scaling for Moze's gun damage to account for the heavy loss of damage from skills such as Fire in the Skag Den, Big Surplus, and Short Fuse no longer being Mayhem scaled. It is activated by investing a point into Armored Infantry.
 
@@ -684,7 +710,7 @@ LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
-Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day an (almost guaranteed) Legendary gun or shield starting from level 35, increased amount of items in the vendor to 20.
+Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel or shield starting from level 35, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
@@ -891,9 +917,17 @@ ENEMY CHANGES
 -------------
 Eista now retains "the Invincible" in his name for rematches after "We Slass! Part 3". Eista the Invincible's total health has been buffed, now roughly halfway between Wotan and Scourge.
 
-Psychoreaver now has 40% less health than before.
+Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
 
-Joey Ultraviolet's total health has been reduced to roughly half of what it was previously.
+Reduced the total health of the Psychoreaver by roughly 40%.
+
+Reduced the total health of the Seer by roughly 60%.
+
+Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
+
+Reduced the total health of Joey Ultraviolet by 50%.
+
+Reduced the total health of Hemovorous' final form and Vermivorous by roughly 40%.
 
 Anathema the Relentless now only triggers an immune phase at 50% and 0% of a health bar instead of every quarter of a health bar. 5 immunity phases total.
 
@@ -1654,7 +1688,7 @@ Destructo Spinner - No change other than a possible damage adjustment.
 
 Devoted - Fire rate reduced by 25%, recoil height improved by 30%, recoil width improved by 65%, improved accuracy.
 
-D.N.A. - No change other than a possible damage adjustment.
+D.N.A. - Damage-over-time reduced by 40%.
 
 Ember's Purge - Puddle damage set to 50% of card damage, puddle chance increased to 33%.
 
@@ -1769,7 +1803,7 @@ Anarchy - Set damage per stack to 10%, set accuracy penalty to 10% per stack.
 
 Brightside - Reload-shot damage set to 1.5 times the card damage.
 
-Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40%, projectile speed increased by 50%.
+Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40%, projectile speed increased by 50%, Magazine Size by 2, and Fire Rate by 40%.
 
  ┗----Rationale: The damage on this thing's been increased a truckload. It's now useable both for traditional use and the "mine-laying" gimmick.
 
@@ -2003,7 +2037,7 @@ The Monarch - Ammo cost set to 2, magazine size increased by 70%, changed how th
 
  ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
 
-Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume four ammo.)
+Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume three ammo.)
 
  ┗----Rationale: The Super Shredifier's underbarrel technically was worse than the regular double barrel for Vladof assault rifles. It has been given some tweaks to really drive home the theme of "more dakka".
 
@@ -2196,7 +2230,7 @@ Snowshoe - Reduced lifesteal to 5%, now always spawns with maximum shield parts.
 
 Super Soldier - Damage immunity reduced to a 33% damage reduction, now affects burst fire delay, and now always spawns with maximum shield parts after the first redemption of the shield.
 
- ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to the keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
+ ┗----Rationale: In a world without things such as the anointment for triggering shield effects or the Bloodletter, full-immunity might be fine. But in order to keep people from having perpetual God-mode active, the immunity's been toned down to a decent damage reduction.
 
 Version 0.m - Fixed amp damage not applying to multi-projectile weapons properly, now always spawns with maximum shield parts.
 
@@ -2526,9 +2560,9 @@ Heat Exchanger - No change.
 
 Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%.
 
-Green Monster - Replaced Click, Click... with Forge and made the description more accurate.
+Green Monster - Replaced Click, Click... with Redistribution and made the description more accurate.
 
- ┗----Rationale: Given how the splash bonus is never mentioned anywhere on the card it isn't unreasonable to assume it wasn't intended. Losing a 100% boost in splash damage is a big loss, so it has at least been somewhat compensated for by replacing Click, Click... with Forge (for whatever reason, Click, Click... can only spawn with one point on this class mod legitimately.) Bullet hose builds should appreciate this.
+ ┗----Rationale: The other skills present on the class mod seem to aim towards maintaining the corrosive damage bonus, so Redistribution was added to further that goal and give bullet-hose builds a leg up.
 
 Mind Sweeper - No change.
 
@@ -3085,7 +3119,7 @@ Fire in the Skag Den - Increased fire damage to 4% per point.
 
 Deadlines - No change.
 
-Grizzled - No change.
+Grizzled - The amount of Action Skill Cooldown Time reduced has been adjusted to accomodate the changed Iron bear duration and cooldown changes.
 
 Means of Destruction - No change.
 
@@ -3151,7 +3185,7 @@ Double Time - Increased bonus to 6.66% per point.
 
 Harmonious Havoc - No change.
 
-Explosive Fury - No change.
+Explosive Fury - Added a note mentioning that this skill does not actually work at all.
 
 Fired Up - Fixed burst-fire delay being increased by this skill.
 
@@ -3287,7 +3321,7 @@ Cool Hand - Now also affects repair time.
 
 Drone Delivery - Reduced cooldown to 10 seconds.
 
-Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal form this skill.
+Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal fm this skill.
 
 Seein' Red - No change.
 
@@ -3319,7 +3353,7 @@ Really Expensive Jacket - No change.
 
 Best Served Cold - Nova damage multiplied by five, added a note saying that this skill gets scaled by Mayhem Mode.
 
-Futility Belt - Increased damage resistance to 30%.
+Futility Belt - Increased damage resistance to 30% (displays as 23% in the skill card.)
 
 Refreshment - Reduced lifesteal to 1% per point.
 
