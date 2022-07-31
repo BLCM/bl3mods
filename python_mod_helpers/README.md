@@ -64,9 +64,9 @@ randomizer), you can have the helper generate a compressed version by appending
 
 The `contact=foo` line is completely optional, and is just used if you want to
 give users a way to contact you about your mods.  You can actually use any of
-four variables here: `contact`, `contact_url`, `contact_email`, and/or
-`contact_discord`.  Keep in mind that this information will be public, so only
-put info in here if you're okay with that.
+three variables here: `contact`, `contact_email`, and/or `contact_discord`.  Keep
+in mind that this information will be public, so only put info in here if you're
+okay with that.
 
 The `v=foo` line is completely optional, so don't worry about specifying a
 version if you don't want (though it's good practice to put it in your file so that
@@ -113,6 +113,7 @@ mod = Mod('filename_to_save.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol',
+        homepage='https://your-cool-mod.biz/',
         ss='https://i.imgur.com/ClUttYw.gif',
         videos='https://www.youtube.com/watch?v=JiEu23G4onM',
         nexus='https://www.nexusmods.com/borderlands3/mods/128',
@@ -120,7 +121,8 @@ mod = Mod('filename_to_save.bl3hotfix',
         )
 ```
 
-`ss` is for screenshots (which will be inlined on the ModCabinet wiki page), `videos`
+`homepage` is there in case your mod has an official homepage.  `ss` is for
+screenshots (which will be inlined on the ModCabinet wiki page), `videos`
 is for videos, `nexus` is for an alternate Nexus Mods link for this mod, and `urls`
 is any other URL you might want to link to.  `ss`, `videos`, and `urls` can all be
 lists rather than just strings, if you wanted to supply more than one.
