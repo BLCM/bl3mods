@@ -1,13 +1,12 @@
-###
-### Name: Disable Mayhem Modifier (Medium): High Voltage
-### Version: 1.0.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: mayhem
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Disable Mayhem Modifier (Medium): High Voltage
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories mayhem
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Disables the 'High Voltage' Medium mayhem modifier.

@@ -1,13 +1,12 @@
-###
-### Name: BL3 Better Loot
-### Version: 1.3.5
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: enemy-drops, loot-system
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title BL3 Better Loot
+@version 1.3.5
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories enemy-drops, loot-system
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Like my BL2 and TPS variants, this mod improves the quality of

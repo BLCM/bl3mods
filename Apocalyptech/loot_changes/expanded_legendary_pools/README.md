@@ -38,6 +38,10 @@ added into the loot pool properly.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.6.0** - Nov 19, 2021
  * Updated with Vault Card 3 items
 

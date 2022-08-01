@@ -1,13 +1,12 @@
-###
-### Name: Expanded Customization Pools: All but Mission Rewards
-### Version: 1.6.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: loot-system, enemy-drops
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Expanded Customization Pools: All but Mission Rewards
+@version 1.6.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories loot-system, enemy-drops
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### The global drop pools for the various customization types in BL3 excludes various

@@ -1,13 +1,12 @@
-###
-### Name: All (Limited-Time) Event Spawns Active
-### Version: 1.1.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: event, enemy
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title All (Limited-Time) Event Spawns Active
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories event, enemy
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Enables Bloody Harvest, Broken Hearts, and Revenge of the Cartels spawn

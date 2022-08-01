@@ -1,15 +1,14 @@
-###
-### Name: Money Grenade Changes: Eridium
-### Version: 1.0.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: joke, gear-grenade, cheat
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/money_grenade_changes/screenshot_eridium.png
-###
+
+@title Money Grenade Changes: Eridium
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories joke, gear-grenade, cheat
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/money_grenade_changes/screenshot_eridium.png
 
 ###
 ### Changes the 'Money' grenade part to drop eridium instead of money.

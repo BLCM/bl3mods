@@ -1,15 +1,14 @@
-###
-### Name: Fabricator: Eridium
-### Version: 1.0.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: joke, gear-heavy
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Video: https://www.youtube.com/watch?v=AYJYnaHxLOY
-###
+
+@title Fabricator: Eridium
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories joke, gear-heavy
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@video https://www.youtube.com/watch?v=AYJYnaHxLOY
 
 ###
 ### Converts the Fabricator's primary firing mode to full auto single Eridium

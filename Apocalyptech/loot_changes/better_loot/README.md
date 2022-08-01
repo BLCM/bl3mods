@@ -64,6 +64,10 @@ anything if you do).
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.3.5** - Mar 30, 2022
  * Updated to account for Anathema's new TNTina drop (added via GBX hotfix today)
 

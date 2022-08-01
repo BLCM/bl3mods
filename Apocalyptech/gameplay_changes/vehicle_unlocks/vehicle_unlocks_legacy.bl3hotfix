@@ -1,13 +1,12 @@
-###
-### Name: Vehicle Unlocks (Legacy)
-### Version: 1.0.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: gameplay, vehicle
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Vehicle Unlocks (Legacy)
+@version 1.0.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gameplay, vehicle
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Sets enemy vehicle spawns to use all vehicle parts/skins from the beginning of

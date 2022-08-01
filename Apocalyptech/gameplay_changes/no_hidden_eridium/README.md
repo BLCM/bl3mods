@@ -10,6 +10,10 @@ spawns are ordinary, and don't require the Amulet to discover.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.0.1** - Oct 14, 2021
  * Updated description; the hidden/spectral eridium clusters *can*
    be destroyed even without the amulet; you just have to know
