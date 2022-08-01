@@ -77,6 +77,35 @@ for (attr, mod_type, mod_val) in [
         ('/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale', 'ScaleSimple', 0.001),
         ('/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale', 'ScaleSimple', 0.001),
 
+        ###
+        ### Spent a bit of time getting a better feel for exactly what all these
+        ### attributes do; below is my playing with 'em.  I never did finish
+        ### doing that, in the end.
+        ###
+
+        # zoom at 0 == basically no sway while firing
+        # zoom at 200 == *tons* of sway while firing, like dogfighting type stuff
+        #('/Game/GameData/Weapons/Att_Weapon_SwayAccuracyScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayZoomAccuracyScale', 'ScaleSimple', 0),
+        # 0 == perfect accuracy, 200 == bullets spread out over an incredible distance
+        #('/Game/GameData/Weapons/Att_Weapon_Spread', 'ScaleSimple', 0),
+        # How much each shot makes accuracy worse
+        #('/Game/GameData/Weapons/Att_Weapon_AccuracyImpulse', 'ScaleSimple', 0),
+        # Idle "sway," though the non-zoomed version doesn't seem to do much?
+        #('/Game/GameData/Weapons/Att_Weapon_SwayScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayZoomScale', 'ScaleSimple', 0),
+        # Specific recoil while firing
+        #('/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale', 'ScaleSimple', 0),
+        # Not sure, honestly
+        #('/Game/GameData/Accuracy/Att_AccuracyMaxValue', 'ScaleSimple', 400),
+        # Seems to define the ellipse on which sway happens, both during firing and while zoomed.
+        #('/Game/GameData/Weapons/Att_Weapon_SwayDiscHeight', 'ScaleSimple', 1),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayDiscWidth', 'ScaleSimple', 100),
+        # The speed at which firing-sway jerks around
+        #('/Game/GameData/Weapons/Att_Weapon_SwaySpeed', 'ScaleSimple', 400),
+        #('/Game/GameData/Weapons/Att_Weapon_ActiveHeatRate', 'ScaleSimple', 400),
+
         ]:
 
     last_part = attr.split('/')[-1]
