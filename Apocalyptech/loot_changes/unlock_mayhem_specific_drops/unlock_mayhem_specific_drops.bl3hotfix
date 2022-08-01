@@ -1,13 +1,12 @@
-###
-### Name: Unlock Mayhem-Specific Drops
-### Version: 1.0.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: enemy-drops, loot-system
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Unlock Mayhem-Specific Drops
+@version 1.0.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories enemy-drops, loot-system
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Removes the Mayhem level requirement for gear drops which ordinarily require

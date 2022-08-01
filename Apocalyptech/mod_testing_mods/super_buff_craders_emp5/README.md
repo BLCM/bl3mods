@@ -24,6 +24,10 @@ kept using Crader's EM-P5 regardless.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.0.1** - Jul 14, 2020
  * Updated zero-ammo-consumption modification to work regardless of
    the presence of an x2 accessory part.  Thx to Grimm for figuring

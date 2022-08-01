@@ -14,6 +14,10 @@ have to enable the event of your choice from the main menu for that.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.1.0** - Jul 4, 2021
  * Fixed to work again after June 24th's Endless Seasonal Events update
 

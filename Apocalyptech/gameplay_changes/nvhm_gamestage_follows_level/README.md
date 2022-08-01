@@ -8,6 +8,10 @@ it!
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.1.0** - Jun 16, 2021
  * Added support for DLC5 and DLC6
  * Added contact info to mod header

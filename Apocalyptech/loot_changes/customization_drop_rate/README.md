@@ -32,6 +32,10 @@ don't care about overt cheating, that'd be the quicker option.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.2.1** - Jul 2, 2021
  * `None` variant now blocks dropping of seasonal event cosmetics from
    Joey Ultraviolet, Captain Haunt, Loot Ghosts, and Loot Hearts.

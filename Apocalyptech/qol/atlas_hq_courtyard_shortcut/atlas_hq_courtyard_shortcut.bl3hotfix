@@ -1,15 +1,14 @@
-###
-### Name: Atlas HQ Courtyard Shortcut
-### Version: 1.0.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: qol, maps
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/atlas_hq_courtyard_shortcut/screenshot.jpg
-###
+
+@title Atlas HQ Courtyard Shortcut
+@version 1.0.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories qol, maps
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/atlas_hq_courtyard_shortcut/screenshot.jpg
 
 ###
 ### Adds a food cart with an umbrella just to the right when leaving the

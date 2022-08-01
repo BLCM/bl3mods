@@ -1,16 +1,15 @@
-###
-### Name: Red Text Explainer
-### Version: 1.6.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: qol, gear-general
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/quadomizer.png
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/nagata.png
-###
+
+@title Red Text Explainer
+@version 1.6.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories qol, gear-general
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/quadomizer.png
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/nagata.png
 
 ###
 ### Inspired by Ezeith's BL2 Red Text Explainer

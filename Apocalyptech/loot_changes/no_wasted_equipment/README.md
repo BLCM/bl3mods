@@ -20,6 +20,11 @@ but of course that also affects all other boss drops, so possibly not what you w
 Changelog
 =========
 
+**v1.0.1** - Aug 1, 2022
+ * Housekeeping changes *(no actual functionality changes)*:
+   * Converted to use my usual mod-generation scripts
+   * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+
 Jul 6, 2021 *(no version number change)*
  * Clarified named enemy drops in the mod header
 

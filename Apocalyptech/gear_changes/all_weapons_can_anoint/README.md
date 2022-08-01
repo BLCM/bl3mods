@@ -16,6 +16,10 @@ Should be up to date with Vault Card 3.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 **v1.3.2** - Nov 19, 2021
  * Removed Linc, Leech, and Sellout because those have been officially
    patched to have anointments in the base game data.  That data patch was

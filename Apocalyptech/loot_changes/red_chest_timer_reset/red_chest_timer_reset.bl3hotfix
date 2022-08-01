@@ -1,13 +1,12 @@
-###
-### Name: Red Chest Timer Reset
-### Version: 1.0.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: chests
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Red Chest Timer Reset
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories chests
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Prevents the game's red chests from remembering their opened state when

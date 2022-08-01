@@ -1,13 +1,12 @@
-###
-### Name: Black Market World Drops
-### Version: 1.1.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: vendor
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Black Market World Drops
+@version 1.1.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories vendor
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Sets the Black Market vending machines to use the world-drop Legendary

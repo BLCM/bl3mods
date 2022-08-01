@@ -10,6 +10,11 @@ I can't imagine it'd be of any use to anyone else, really, but here it is just i
 Changelog
 =========
 
+**v1.0.1** - Aug 1, 2022
+ * Housekeeping changes *(no actual functionality changes)*:
+   * Updated to use my usual mod-generation scripts
+   * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 

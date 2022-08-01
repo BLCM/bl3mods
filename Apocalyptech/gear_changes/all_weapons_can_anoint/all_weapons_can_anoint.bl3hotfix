@@ -1,13 +1,12 @@
-###
-### Name: All Weapons Can Anoint
-### Version: 1.3.2
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: gear-anointments
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title All Weapons Can Anoint
+@version 1.3.2
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-anointments
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Adds anointment parts to all the weapons which can't ordinarily

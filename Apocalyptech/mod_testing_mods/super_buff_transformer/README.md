@@ -16,6 +16,10 @@ from hardcoded insta-death scenarios, of course.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
 Jun 16, 2021 *(no version number change)*
  * Added contact info to mod header
 

@@ -1,15 +1,14 @@
-###
-### Name: Provocateur COM (Unreleased Ixora Operative COM)
-### Version: 1.0.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: gear-com
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/provocateur_com/screenshot.png
-###
+
+@title Provocateur COM (Unreleased Ixora Operative COM)
+@version 1.0.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-com
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/provocateur_com/screenshot.png
 
 ###
 ### The Designer's Cut DLC (Ixora) data included an unreleased/unfinished

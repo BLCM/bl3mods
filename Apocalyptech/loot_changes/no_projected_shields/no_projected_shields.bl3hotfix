@@ -1,13 +1,12 @@
-###
-### Name: No Projected Shields
-### Version: 1.1.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: gear-general, gear-shield
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title No Projected Shields
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-general, gear-shield
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Makes shields never spawn with the "projected" effect

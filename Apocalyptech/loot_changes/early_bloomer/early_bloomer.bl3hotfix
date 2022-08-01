@@ -1,13 +1,12 @@
-###
-### Name: Early Bloomer
-### Version: 1.1.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: loot-system, gameplay
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Early Bloomer
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories loot-system, gameplay
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Unlocks all weapon types, elements, manufacturers, anointments, etc,

@@ -1,13 +1,12 @@
-###
-### Name: Testing Loot Drops
-### Version: 1.0.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: resource
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Testing Loot Drops
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories resource
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### This mod isn't actually a general-purpose mod.  Rather, it's what I use to spawn

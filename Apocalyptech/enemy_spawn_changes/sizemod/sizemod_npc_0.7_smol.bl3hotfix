@@ -1,15 +1,14 @@
-###
-### Name: Sizemod: NPC Smol-lands (0.7x)
-### Version: 1.3.1
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: enemy, joke
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_smol.jpg
-###
+
+@title Sizemod: NPC Smol-lands (0.7x)
+@version 1.3.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories enemy, joke
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_smol.jpg
 
 ###
 ### Scales NPC (enemies and otherwise) to 0.7x.  Keep in mind that this may

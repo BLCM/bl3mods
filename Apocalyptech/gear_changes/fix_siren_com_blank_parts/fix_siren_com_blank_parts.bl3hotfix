@@ -1,13 +1,12 @@
-###
-### Name: Fix Siren COM Blank Parts
-### Version: 1.2.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: gear-com, bugfix
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Fix Siren COM Blank Parts
+@version 1.2.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-com, bugfix
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Siren COMs have a 'None' part in their PRIMARY part category, which
