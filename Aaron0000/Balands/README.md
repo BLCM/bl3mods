@@ -8,6 +8,22 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.2
+-----
+Marginally increased the damage of Boomsday.
+
+Fixed some incorrectly colored text in the description for Fast Hand(s).
+
+Changed "multiplied by" for mayhem-damage scalars in Armored Infantry, Violent Momentum, Persistence Hunter, and Fast Hand(s) to "increased by" for clarity.
+
+Fixed the Super Soldier still granting immunity.
+
+Changed the Stop-Gap damage resistance to damage reduction.
+
+Removed a duplicate line for Buttmunch's mayhem drops.
+
+Added Mincemeat's dedicated drops to Buttmunch/Trufflemunch as mayhem-scaled drops due to being unable to do it to Mincemeat directly.
+
 1.5.1
 -----
 Fixed Boom. Enhance using the skill description for Cool Hand instead.
@@ -390,7 +406,11 @@ Added notes in the skill descriptions for the following skills/augments to indic
 
 Increased the Digi-Clone's damage by 15%.
 
-Increased the damage of the SNTNL's machine gun, Boomsday, Bad Dose, Static Field, and Almighty Ordnance by 20%.
+Increased the damage of the SNTNL's machine gun, Bad Dose, and Static Field by 20%.
+
+Increased the damage of Boomsday by 80%.
+
+Increased the damage of Almighty Ordinance by 113%.
 
 Increased the Digi-Clone's base health to 39% higher than normal game values.
 
@@ -2271,9 +2291,9 @@ Re-Volter - Shock damage and fire rate bonuses reduced to 25%, now affects burst
 
 Rectifier - Damage buffed by 2333%.
 
-Stop-Gap - Damage immunity changed to 100% damage resistance.
+Stop-Gap - Damage immunity changed to 50% damage reduction.
 
- ┗----Rationale: Same situation as the Super Soldier. In order to the keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 100% damage resistance (50% less damage received.)
+ ┗----Rationale: Same situation as the Super Soldier. In order to the keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 50% damage reduction (50% less damage received.)
 
 The Transformer - No change.
 
@@ -2770,7 +2790,7 @@ The Pearl of Ineffable Knowledge - Damage for the first 15 stacks increased to 3
 
 Toboggan - Amp damage lowered to 70%.
 
-Unleash the Dragon - Damage-over-time reduced to 10% from 80%.
+Unleash the Dragon - No change.
 
 Victory Rush - No change.
 
@@ -3431,9 +3451,9 @@ Bad Dose - Increased the radiation damage by 20%.
 
 Static Field - Increased the shock damage by 20%.
 
-Boomsday - Increased damage by 20%.
+Boomsday - Increased damage by roughly 80%.
 
-Almighty Ordinance - Increased damage by 20%.
+Almighty Ordinance - Increased damage by 113%.
 
 MNTIS Shoulder Cannon - No change.
 
