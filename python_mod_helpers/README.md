@@ -2,9 +2,9 @@ Constructing Borderlands 3 Mods With Code
 =========================================
 
 * [Overview](#overview)
+  * [Bytecode Alterations](#bytecode-alterations)
   * [Mesh Additions](#mesh-additions)
   * [StaticMesh Text Blocks](#staticmesh-text-blocks)
-  * [Bytecode Alterations](#bytecode-alterations)
 * [Data Introspection](#data-introspection)
 * [Hotfix Generator](#hotfix-generator)
 * [License](#license)
@@ -187,6 +187,72 @@ with some commonly-used structures like `BaseValueConstant`-based stanzas and
 English titles.  Look through the source for some more info on those, and grep
 for their use in the mod-generation scripts for examples.
 
+### Bytecode Alterations
+
+The library now also supports [hotfix type 7](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-7-blueprint-bytecode),
+which is used to alter the Blueprint Bytecode which provides some of the fancier
+behaviors in objects.  This isn't as straightforward as some of the other modding
+we do, and requires some different tools to use effectively.  The tools we usually
+use to look at Borderlands data (JohnWickParse and FModel) don't output anything
+about bytecode.  The project that we're using to look into the bytecode is
+[UAssetGUI/UAssetAPI](https://github.com/atenfyr/UAssetGUI).  When serializing
+the data, it will give you "indexes" in the JSON which correspond to the values
+you need to use in these types of hotfixes.
+
+If UAssetGUI isn't showing you the exact index that you need (or if you wanted to
+doublecheck the indexes yourself), [UAssetAPI's `KismetSerializer.cs` source](https://github.com/atenfyr/UAssetAPI/blob/master/UAssetAPI/Kismet/KismetSerializer.cs)
+is what you'd want to look at -- specifically the `SerializeExpression` method.
+Keep track of changes to the `index` variable (keeping in mind that recursive
+calls to `SerializeExpression` may do their own `index` increments) to keep track
+of the "current" index as you walk through the serialization.
+
+The syntax for specifying these types hotfixes is pretty straightforward:
+
+```python
+mod.bytecode_hotfix(Mod.PATCH, '',
+        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
+        'ExecuteUbergraph_Ability_AntGreatBow',
+        194,
+        0,
+        2)
+```
+
+The first few arguments should be familiar by now -- the fourth is the name
+of the export containing the function you're trying to alter.  The fifth argument
+is the index that you're altering, as found via UAssetGUI (or other methods, if
+they exist).  Then the final two arguments are the current/previous/"from" value,
+and the new/"to" value.  Unlike other hotfix types, the previous value *must* be
+specified, so this hotfix type cannot do "blind" changes like other hotfix types
+can.
+
+One unique behavior in `bytecode_hotfix` is how it handles the object name.  If
+given a "bare" name, like above (without a `.SecondPart` in the object name),
+rather than converting it to just the usual "full" form, it'll additionally add
+a `_C` at the end of the name.  So the code above would generate a hotfix whose
+full object name comes out as:
+
+    /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C
+
+It seems that doing so is pretty likely to be the correct behavior in all cases,
+so feel free to give that a try.  As with other hotfix types, if you pass in
+an object name which already contains a `.`, it'll leave it alone, so if there are
+cases where `_C` isn't an appropriate suffix, you can specify the correct values
+yourself.
+
+This hotfix type supports specifying multiple indexes, when making the same change
+more than once within a single function.  This may be required in some cases --
+the bytecode hotfix processing seems to be a little picky sometimes.  To do this,
+you can pass a list in for the index, rather than a single number:
+
+```python
+mod.bytecode_hotfix(Mod.PATCH, '',
+        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
+        'ExecuteUbergraph_Ability_AntGreatBow',
+        [194, 318],
+        0,
+        2)
+```
+
 ### Mesh Additions
 
 The library now also supports [hotfix type 6](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-6-spawnmesh),
@@ -253,72 +319,6 @@ library is available to make it much easier.  See [README-textmesh.md](README-te
 for documentation on using this library.
 
 ![StaticMesh Text Example](screenshots/textmesh_example.jpg)
-
-### Bytecode Alterations
-
-The library now also supports [hotfix type 7](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-7-blueprint-bytecode),
-which is used to alter the Blueprint Bytecode which provides some of the fancier
-behaviors in objects.  This isn't as straightforward as some of the other modding
-we do, and requires some different tools to use effectively.  The tools we usually
-use to look at Borderlands data (JohnWickParse and FModel) don't output anything
-about bytecode.  The project that we're using to look into the bytecode is
-[UAssetGUI/UAssetAPI](https://github.com/atenfyr/UAssetGUI).  When serializing
-the data, it will give you "indexes" in the JSON which correspond to the values
-you need to use in these types of hotfixes.
-
-If UAssetGUI isn't showing you the exact index that you need (or if you wanted to
-doublecheck the indexes yourself), [UAssetAPI's `KismetSerializer.cs` source](https://github.com/atenfyr/UAssetAPI/blob/master/UAssetAPI/Kismet/KismetSerializer.cs)
-is what you'd want to look at -- specifically the `SerializeExpression` method.
-Keep track of changes to the `index` variable (keeping in mind that recursive
-calls to `SerializeExpression` may do their own `index` increments) to keep track
-of the "current" index as you walk through the serialization.
-
-The syntax for specifying these types hotfixes is pretty straightforward:
-
-```python
-mod.bytecode_hotfix(Mod.PATCH, '',
-        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
-        'ExecuteUbergraph_Ability_AntGreatBow',
-        194,
-        0,
-        2)
-```
-
-The first few arguments should be familiar by now -- the fourth is the name
-of the export containing the function you're trying to alter.  The fifth argument
-is the index that you're altering, as found via UAssetGUI (or other methods, if
-they exist).  Then the final two arguments are the current/previous/"from" value,
-and the new/"to" value.  Unlike other hotfix types, the previous value *must* be
-specified, so this hotfix type cannot do "blind" changes like other hotfix types
-can.
-
-One unique behavior in `bytecode_hotfix` is how it handles the object name.  If
-given a "bare" name, like above (without a `.SecondPart` in the object name),
-rather than converting it to just the usual "full" form, it'll additionally add
-a `_C` at the end of the name.  So the code above would generate a hotfix whose
-full object name comes out as:
-
-    /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C
-
-It seems that doing so is pretty likely to be the correct behavior in all cases,
-so feel free to give that a try.  As with other hotfix types, if you pass in
-an object name which already contains a `.`, it'll leave it alone, so if there are
-cases where `_C` isn't an appropriate suffix, you can specify the correct values
-yourself.
-
-This hotfix type supports specifying multiple indexes, when making the same change
-more than once within a single function.  This may be required in some cases --
-the bytecode hotfix processing seems to be a little picky sometimes.  To do this,
-you can pass a list in for the index, rather than a single number:
-
-```python
-mod.bytecode_hotfix(Mod.PATCH, '',
-        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
-        'ExecuteUbergraph_Ability_AntGreatBow',
-        [194, 318],
-        0,
-        2)
-```
 
 Data Introspection
 ==================
