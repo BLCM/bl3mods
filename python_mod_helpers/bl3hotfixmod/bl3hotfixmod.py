@@ -895,6 +895,61 @@ class Mod(object):
         # And return the main object's name
         return direct_obj
 
+    def bytecode_hotfix(self, hf_type, package,
+            obj_name,
+            export_name,
+            index,
+            from_val,
+            to_val,
+            notify=False):
+        """
+        Writes a Blueprint Bytecode (type 7) hotfix to the mod file.  The best way to
+        view blueprint bytecode at the moment is probably the UAssetAPI/UAssetGUI
+        library+app found here: https://github.com/atenfyr/UAssetGUI
+
+        `hf_type` is our usual PATCH/LEVEL/etc
+        `package` is any target that needs to be specified for LEVEL/CHAR/etc.
+        `obj_name` is the object to act on.  If it contains a `.` already, it will
+            be used as-is.  Otherwise, we'll convert to the "full" format but add
+            a `_C` at the end, which seems likely to be the correct thing to do
+            for any of these hotfixes.
+        `export_name` is the name of the export containing the script to edit
+        `index` is the bytecode offset location that we'll be changing.  This can
+            also be a list, if you want to specify more than one.
+        `from_val` is the previous value which must be matched for the hotfix to
+            activate (much like other hotfix types).  Unlike other types, though,
+            this field seems to be *mandatory*.  There's no way (that I've found)
+            to omit it and "blindly" apply the hotfix.
+        `to_val` is the new value to set.
+        `notify` can be set to `True` if you want to set the "notify" flag on the
+            hotfix (so far no GBX hotfixes use it, so unlikely to ever be necessary).
+        """
+        if '.' not in obj_name:
+            obj_name = self.get_full_cond(obj_name) + '_C'
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+        if type(index) == list:
+            indexes = [str(i) for i in index]
+        else:
+            indexes = [str(index)]
+        from_val = str(from_val)
+        to_val = str(to_val)
+        print(','.join([
+            Mod.TYPE[hf_type],
+            f'(1,7,{notification_flag},{package})',
+            obj_name,
+            '0',
+            '1',
+            export_name,
+            str(len(indexes)),
+            *indexes,
+            '{}:{}'.format(len(from_val), from_val),
+            '{}:{}'.format(len(to_val), to_val),
+            ]), file=self.df)
+        self.last_was_newline = False
+
     def finish_streaming(self):
         """
         Only has an effect when the Mod-level attr `aggressive_streaming` is
