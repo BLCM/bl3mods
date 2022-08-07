@@ -394,12 +394,20 @@ class BL3Data(object):
         data = self.get_exports(table_name, 'DataTable')[0]
         if row_name in data and col_name in data[row_name]:
             return data[row_name][col_name]
+        elif row_name in data and col_name == 'None' and 'Value' in data[row_name]:
+            # This happens in Amulet part weights, if nowhere else.  Note the
+            # nested BVC processing here.  Note too that this is almost certainly
+            # a BVC struct, though we're not making assumptions here.
+            return data[row_name]['Value']
         else:
             return None
 
-    def process_bvc(self, bvc_obj):
+    def process_bvc(self, bvc_obj, cur_dt=None):
         """
-        Given a bl3hotfixmod BVC object, return a value.
+        Given a bl3hotfixmod BVC object, return a value.  Optionally pass in `cur_dt`
+        as the objet path to the currently-being-processed DataTable, in case a
+        nested BVC ends up referring back to the DataTable with subobject-following
+        syntax.
         """
 
         # BVC
@@ -409,7 +417,10 @@ class BL3Data(object):
         if bvc_obj.dtv and bvc_obj.dtv.table != 'None':
             new_bvc = self.datatable_lookup(bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
             if new_bvc is not None:
-                bvc = new_bvc
+                if type(new_bvc) == dict:
+                    bvc = round(self.process_bvc_struct(new_bvc, cur_dt=bvc_obj.dtv.table), 6)
+                else:
+                    bvc = new_bvc
 
         # BVA
         if bvc_obj.bva and bvc_obj.bva != 'None':
@@ -454,12 +465,17 @@ class BL3Data(object):
         # BVS
         return bvc * bvc_obj.bvs
 
-    def process_bvc_struct(self, data):
+    def process_bvc_struct(self, data, cur_dt=None):
         """
-        Given a serialized BVC/BVSC/etc structure, return a value.
+        Given a serialized BVC/BVSC/etc structure, return a value.  Optionally
+        pass in a `cur_dt` with the current DataTable path, if we're processing
+        a BVC struct inside a DataTable.  (Nested BVCs may reference the same
+        DataTable it's in using the `export` subobject-following syntax.  See
+        /Game/Gear/Amulets/_Shared/_Design/GameplayAttributes/Tables/DataTable_Amulets_BaseValues
+        in Wonderlands for some examples of this (for instance, `Weight_Low_2X`)
         """
 
-        return self.process_bvc(BVC.from_data_struct(data))
+        return self.process_bvc(BVC.from_data_struct(data, cur_dt=cur_dt), cur_dt=cur_dt)
 
     def _cache_part_category_name(self, part_name, name):
         """

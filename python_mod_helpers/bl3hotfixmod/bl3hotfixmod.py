@@ -1050,9 +1050,13 @@ class BVC(object):
         self.bvs = bvs
 
     @staticmethod
-    def from_data_struct(data):
+    def from_data_struct(data, cur_dt=None):
         """
-        Given a serialized data struct, return a BVC object
+        Given a serialized data struct, return a BVC object.  Optionally
+        pass in `cur_dt` as the path to a DataTable currently being processed.
+        Nested BVCs may refer back to themselves using subobject-following
+        syntax.  See /Game/Gear/Amulets/_Shared/_Design/GameplayAttributes/Tables/DataTable_Amulets_BaseValues
+        from Wonderlands for some examples of this (for instance, `Weight_Low_2X`)
         """
 
         # BVC
@@ -1062,12 +1066,23 @@ class BVC(object):
             bvc = 1
 
         # DataTable
-        if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
-            dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
-                    row=data['DataTableValue']['RowName'],
-                    value=data['DataTableValue']['ValueName'])
-        else:
-            dtv = None
+        dtv = None
+        if 'DataTableValue' in data:
+            if 'export' in data['DataTableValue']['DataTable']:
+                if data['DataTableValue']['DataTable']['export'] == 0:
+                    pass
+                elif data['DataTableValue']['DataTable']['export'] == 1:
+                    if cur_dt is None:
+                        raise RuntimeError('Found internal DataTable redirect, but no cur_dt')
+                    dtv = DataTableValue(table=cur_dt,
+                            row=data['DataTableValue']['RowName'],
+                            value=data['DataTableValue']['ValueName'])
+                else:
+                    raise RuntimeError('Found internal DataTable redirect with unknown export')
+            else:
+                dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
+                        row=data['DataTableValue']['RowName'],
+                        value=data['DataTableValue']['ValueName'])
 
         # BVA
         if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
