@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -35,12 +35,11 @@ mod = Mod('always_visible_challenge_icons.bl3hotfix',
             "Eridian Writings are included in here, though those aren't really",
             "challenges per se.",
             "",
-            "There are various exceptions to this, for challenges I wasn't able",
-            "to get working properly.  See the README for the full list.",
+            "This does not include any DLC1 challenges, which seem to act weirdly.",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='qol',
         ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/always_visible_challenge_icons/droughts.png',
         )
@@ -48,8 +47,10 @@ mod = Mod('always_visible_challenge_icons.bl3hotfix',
 # I should look at actual data, but it looks to me from some *real* simple
 # scaling on the map screen that The Droughts is probably 65k "wide".
 # Double that and round up to the next "nicest" number will get you 200k,
-# so I'm thinking that's what we should go for.
-radius = 200000
+# so I'm thinking that's what we should go for.  (As of v1.1.0, I'm popping
+# it up to 300k -- the Dead Claptrap in Neon Arterial is *just* outside
+# the 200k that we'd been using, as it turns out.)
+radius = 300000
 
 # This value wouldn't be awful to simply have a pretty wide radius which
 # would reveal things as you go sort of generally in their direction.  In
@@ -244,7 +245,6 @@ for (label, level_name, object_names) in sorted([
             ]),
         ("Meridian Outskirts", 'Outskirts_P', [
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_HijackCrewChallenge_2.BP_CrewChallengeComponent_Hijack_Spawner',
-            # One of these journals doesn't like showing up, it seems
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_6.BP_CrewChallengeComponent_Collection',
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal_2.BP_CrewChallengeComponent_Collection',
             '/Game/Maps/Zone_1/Outskirts/Outskirts_Dynamic.Outskirts_Dynamic:PersistentLevel.BP_IO_Collection_EchoJournal3-OutskirtsofCity.BP_CrewChallengeComponent_Collection',
@@ -382,26 +382,22 @@ for (label, level_name, object_names) in sorted([
         ### DLC2
         ###
 
-        # So the Occult Hunts seem to work fine, but Gaige's Gifts don't, and having these in here
-        # prevents her dialog from playing, so I'm taking those out for now.  (Or rather: the gifts
-        # themselves work just fine, minus the missing dialog, but these statements don't make them
-        # show up ahead of time.)  Jury's still out on the statues; those don't activate until after
-        # Wainwright's taken over, and the one I'd checked out previously in Cursehaven showed up
-        # when I went back there, but the one in Dustbound Archive didn't.  So: hrm.
+        # Should be the full set!  Note that Gaige's Gifts and Eldritch Statues don't
+        # start showing up until certain plot events have happened.
 
         ("Dustbound Archives", 'Archive_P', [
             '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
-            #'/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            '/Hibiscus/Maps/Archive/Archive_CrewChallenges.Archive_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Lodge", 'Bar_P', [
             ]),
         ("Negul Neshai", 'Camp_P', [
             '/Hibiscus/Maps/Camp/Camp_Combat.Camp_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
             '/Hibiscus/Maps/Camp/Camp_Bunkers.Camp_Bunkers:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
-            #'/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            '/Hibiscus/Maps/Camp/Camp_DigSite.Camp_DigSite:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Skittermaw Basin", 'Lake_P', [
-            #'/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            '/Hibiscus/Maps/Lake/Lake_Docks.Lake_Docks:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             '/Hibiscus/Maps/Lake/Lake_CrewHunt.Lake_CrewHunt:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
             ]),
         ("Heart's Desire", 'Venue_P', [
@@ -411,22 +407,22 @@ for (label, level_name, object_names) in sorted([
         ("Cursehaven", 'Village_P', [
             '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
             '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
-            #'/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            '/Hibiscus/Maps/Village/Village_CrewChallenges.Village_CrewChallenges:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
         ("Cankerwood", 'Woods_P', [
             '/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Mancubus_Brain_2.BP_CrewChallengeComp_Mancubus_DLC2',
             '/Hibiscus/Maps/Woods/Woods_Combat.Woods_Combat:PersistentLevel.IO_DLC2_Crew_Hunt_2.BP_CrewChallengeComp_Hunt_DLC2',
-            #'/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
+            '/Hibiscus/Maps/Woods/Woods_IO.Woods_IO:PersistentLevel.IO_DLC2_Crew_Gifts_2.BP_CrewChallengeComp_Gifts_DLC2',
             ]),
 
         ###
         ### DLC3
-        ### Looks like probably everything works fine here except for Good Prospects (the
-        ### treasure chest one), since that does some funky stuff with the treasure maps,
-        ### and I don't care enough to track it down.
         ###
 
+        # Should be the full set!
+
         ("Crater's Edge", 'CraterBoss_P', [
+            '/Geranium/Maps/CraterBoss/CraterBoss_Dynamic.CraterBoss_Dynamic:PersistentLevel.OakSpawner_TreasureChest.BP_CrewChallengeComponent_TreasureMap',
             ]),
         ("Bloodsun Canyon", 'Facility_P', [
             '/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge__2.BP_CrewChallengeComponent_Geranium',
@@ -436,6 +432,7 @@ for (label, level_name, object_names) in sorted([
             '/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__8.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__7.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__6.BP_CrewChallengeComponent_Geranium',
+            '/Geranium/Maps/Facility/Facility_Dynamic.Facility_Dynamic:PersistentLevel.OakSpawner_TreasureChest_0.BP_CrewChallengeComponent_TreasureMap',
             ]),
         ("Obsidian Forest", 'Forest_P', [
             '/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
@@ -445,6 +442,7 @@ for (label, level_name, object_names) in sorted([
             '/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
+            '/Geranium/Maps/Forest/Forest_Dynamic.Forest_Dynamic:PersistentLevel.OakSpawner_Treasure_.BP_CrewChallengeComponent_TreasureMap',
             ]),
         ("The Blastplains", 'Frontier_P', [
             '/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium',
@@ -457,6 +455,7 @@ for (label, level_name, object_names) in sorted([
             '/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__5.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__4.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
+            '/Geranium/Maps/Frontier/Frontier_Dynamic.Frontier_Dynamic:PersistentLevel.OakSpawner_TreasureMap_.BP_CrewChallengeComponent_TreasureMap',
             ]),
         ("Ashfall Peaks", 'Lodge_P', [
             '/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_Tannery_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
@@ -466,11 +465,35 @@ for (label, level_name, object_names) in sorted([
             '/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__1.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge__0.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.BP_IO_CemeteryOpportunity_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
+            '/Geranium/Maps/Lodge/Lodge_Dynamic.Lodge_Dynamic:PersistentLevel.OakSpawner_TreasureMap_.BP_CrewChallengeComponent_TreasureMap',
             ]),
         ("Vestige", 'Town_P', [
             '/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__3.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_JakobsJournal_CrewChallenge__0.BP_CrewChallengeComponent_Geranium',
             '/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_CreatureFeature_CrewChallenge_.BP_CrewChallengeComponent_Geranium',
+            '/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.OakSpawner_TreasureMap_.BP_CrewChallengeComponent_TreasureMap1',
+            ]),
+
+        ###
+        ### DLC4
+        ###
+
+        # Not a lot in this DLC, but this should be all of 'em.
+
+        ("Castle Crimson", 'Anger_P', [
+            '/Alisma/Maps/Anger/Anger_Env_CastleEscherStairs.Anger_Env_CastleEscherStairs:PersistentLevel.ALI_IO_Crew_Challenge_2.ChallengeLevelActor',
+            '/Alisma/Maps/Anger/Anger_Env_Meatscape.Anger_Env_Meatscape:PersistentLevel.ALI_IO_Crew_Challenge_2.ChallengeLevelActor',
+            '/Alisma/Maps/Anger/Anger_Env_Outpost2.Anger_Env_Outpost2:PersistentLevel.ALI_IO_Crew_Challenge_2.ChallengeLevelActor',
+            ]),
+        ("Sapphire's Run", 'Chase_P', [
+            '/Alisma/Maps/Chase/Chase_Interactives.Chase_Interactives:PersistentLevel.ALI_IO_Crew_Challenge_0.ChallengeLevelActor',
+            '/Alisma/Maps/Chase/Chase_Interactives.Chase_Interactives:PersistentLevel.ALI_IO_Crew_Challenge_1.ChallengeLevelActor',
+            '/Alisma/Maps/Chase/Chase_Interactives.Chase_Interactives:PersistentLevel.ALI_IO_Crew_Challenge_2.ChallengeLevelActor',
+            ]),
+        ("Benediction of Pain", 'Experiment_P', [
+            '/Alisma/Maps/Experiment/Experiment_Gameplay.Experiment_Gameplay:PersistentLevel.ALI_IO_Crew_Challenge_.ChallengeLevelActor',
+            '/Alisma/Maps/Experiment/Experiment_Gameplay.Experiment_Gameplay:PersistentLevel.ALI_IO_Crew_Challenge__10.ChallengeLevelActor',
+            '/Alisma/Maps/Experiment/Experiment_Gameplay.Experiment_Gameplay:PersistentLevel.ALI_IO_Crew_Challenge__6.ChallengeLevelActor',
             ]),
 
         ]):
@@ -492,14 +515,11 @@ for (label, level_name, object_names) in sorted([
                 'UnfogRadiusWhenChallengeActive',
                 unfog_radius,
                 notify=True)
+        mod.reg_hotfix(Mod.LEVEL, level_name,
+                object_name,
+                'bWorldAreaRadius',
+                'True',
+                notify=True)
     mod.newline()
-
-# Some nonstandard stuff for DLC3 "Good Prospects"
-# (this does change the property but doesn't result in an unlock.  Don't really care enough to track it down further at the moment)
-#mod.comment('DLC3 "Good Prospects" Handling')
-#mod.reg_hotfix(Mod.LEVEL, 'Town_P',
-#        '/Geranium/Maps/Town/Town_Dynamic.Town_Dynamic:PersistentLevel.BP_IO_TreasureMap_CrewChallenge_',
-#        'ChallengeToActivate',
-#        Mod.get_full_cond('/Game/GameData/Challenges/Missions/Plot/Challenge_Mission_Plot_01_ChildrenOfTheVault.Challenge_Mission_Plot_01_ChildrenOfTheVault_C', 'BlueprintGeneratedClass'))
 
 mod.close()

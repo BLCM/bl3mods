@@ -5,47 +5,25 @@ This mod attempts to make all challenge icons (Claptrap salvages, Radios, etc)
 always appear on the map, regardless of if you've been close to them.  It does
 the same for Eridian Writings.  Note that you will miss dialog if you use this:
 when entering a new map, only one of the available challenge intros will be
-played.  Note that this currently only supports the base game, some of DLC2,
-and most of DLC3.  DLC1 challenges are omitted entirely because they act
-weirdly, and DLC4 challenges are omitted both because they're nearly impossible
-to miss, and because my initial attempts at finding the objects failed.
-Known issues:
+played.  This mod supports the base game, DLC2, DLC3, and DLC4.  It does *not*
+handle any DLC1 challenges because they act weirdly, and don't respond to the
+same techniques used for everything else.
 
-* The third Typhon log in Meridian Outskirts won't show up until you're very
-  close to it.
-* The Dead Claptrap in Neon Arterial might not show up immediately,
-  though it does show up before there's been too much progression
-  in the level.
-* A *bunch* of Legendary Hunts don't show up until you're right on
-  top of them, for some reason.  Eden-6 and the second half of
-  Pandora are especially finnicky about it for some reason:
-  * Eden-6:
-    * Floodmoor Basin
-    * Anvil
-    * Voracious Canopy
-    * Ambermire
-  * Pandora:
-    * Devil's Razor
-    * Splinterlands
-    * Konrad's Hold
-  * Nekrotafeyo:
-    * The Pyre of Stars
-* The Target of Opportunity in Devil's Razor
-* Target of Opportunity in Cathedral of the Twin Gods
-* All DLC1 challenges are omitted
-* All DLC4 challenges are omitted (though you won't miss 'em anyway)
-* Gaige's Gift challenges from DLC2 are omitted 'cause they act weirdly
-* Some Eldritch Statue challenges from DLC2 don't seem to work.
-* DLC3's "Good Prospects" are omitted since they do some weird Treasure Map
-  things, and I didn't care enough to try and figure those out.
+NOTE: The DLC2 challenges Gaige's Gifts and Eldritch Statues don't start
+showing up until you've gotten through specific plot events, so don't be
+surprised if they're not there directly from the start.
 
 TODO
 ====
 
-- Would love to figure out all the above exceptions
+- Would love to figure out the weird DLC1 challenges.
 
 Changelog
 =========
+
+**v1.1.0** - Aug 8, 2022
+ * Updated to fill in the challenge icons we've been previously missing,
+   including all DLCs except DLC1, which remains entirely missing.
 
 Aug 1, 2022 *(no version number change)*
  * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
