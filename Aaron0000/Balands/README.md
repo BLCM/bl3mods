@@ -8,6 +8,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.3
+-----
+Fixed Loco Chantelle not actually dropping Ember's Purge.
+
 1.5.2
 -----
 Marginally increased the damage of Boomsday.
@@ -22,7 +26,7 @@ Changed the Stop-Gap damage resistance to damage reduction.
 
 Removed a duplicate line for Buttmunch's mayhem drops.
 
-Added Mincemeat's dedicated drops to Buttmunch/Trufflemunch as mayhem-scaled drops due to being unable to do it to Mincemeat directly.
+Added Mincemeat's dedicated drops to Buttmunch/Trufflemunch as mayhem-scaled drops due to being unable to apply it to Mincemeat directly.
 
 1.5.1
 -----
