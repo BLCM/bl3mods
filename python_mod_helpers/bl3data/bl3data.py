@@ -288,8 +288,8 @@ class BL3Data(object):
         https://en.wikipedia.org/wiki/Glob_(programming)
         """
         for filename in glob.glob('{}{}'.format(self.data_dir, glob_pattern)):
-            if filename.endswith('.uasset'):
-                yield filename[len(self.data_dir):-7]
+            if filename.endswith('.uasset') or filename.endswith('.umap'):
+                yield filename[len(self.data_dir):].rsplit('.', 1)[0]
 
     def glob_data(self, glob_pattern):
         """
