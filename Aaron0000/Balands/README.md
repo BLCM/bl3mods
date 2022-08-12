@@ -8,6 +8,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.4
+-----
+Re-implemented the increased damage taken for player-controlled vehicles in Mayhem Mode. Player-controlled vehicles were taking too little damage relative to health. Open to suggestions on future changes for vehicles.
+
 1.5.3
 -----
 Fixed Loco Chantelle not actually dropping Ember's Purge.
