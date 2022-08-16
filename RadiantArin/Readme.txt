@@ -10,7 +10,7 @@ DISCLAIMER:
 
 2. If you are a STREAMER, please DISABLE your Echo Cast events to avoid sharing ANY modded/event gear to viewers. 
 
-3. If you encounter ANY bugs or scaling issues, PLEASE test extensively to ensure that when you finally do forward the report to me.
+3. If you encounter ANY bugs or scaling issues, PLEASE test extensively to make sure that it is not a user error, then report the bug to me.
 
 You can submit any reports to me via Discord @ RadiantArin#7156
 
