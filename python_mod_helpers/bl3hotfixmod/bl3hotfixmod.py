@@ -30,7 +30,6 @@
 import os
 import sys
 import gzip
-import string
 
 class _StreamingBlueprintPosition:
     """
@@ -162,27 +161,14 @@ class _StreamingBlueprintHelper:
             '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
             }
 
-    used_sm_letters_by_map = {
-            'atlashq_p': set(['A', 'B', 'F', 'I', 'K', 'L', 'N', 'O', 'Q', 'S']),
-            'bar_p': set(['A', 'C', 'D', 'E', 'G', 'H', 'L', 'N', 'O', 'R', 'S', 'U', 'V']),
-            'cityvault_p': set(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'W', 'Y']),
-            'covslaughter_p': set(['C', 'O', 'V']),
-            'creatureslaughter_p': set(['C', 'O', 'V']),
-            'desert_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'L', 'M', 'N', 'O', 'P', 'S', 'T', 'W']),
-            'finalboss_p': set(['B', 'M', 'N', 'O', 'T', 'W']),
-            'mansion_p': set(['A', 'E', 'M', 'T']),
-            'marshfields_p': set(['A', 'C', 'E', 'K', 'L', 'T']),
-            'motorcade_p': set(['B', 'C', 'E', 'I', 'J', 'K', 'L', 'N', 'R', 'W']),
-            'motorcadefestival_p': set(['A', 'B', 'C', 'D', 'E', 'G', 'I', 'K', 'L', 'N', 'O', 'S', 'T']),
-            'motorcadeinterior_p': set(['C', 'E', 'L', 'M', 'O', 'W']),
-            'prologue_p': set(['A', 'C', 'E', 'G', 'I', 'K', 'L', 'O', 'P', 'R', 'S', 'T', 'Y']),
-            'sanctuary3_p': set(['A', 'C', 'E', 'I', 'L', 'M', 'N', 'O', 'P', 'R', 'T', 'X', 'Z']),
-            'strip_p': set(['J', 'K', 'M', 'O', 'P', 'R', 'S', 'T', 'W']),
-            'towers_p': set(['A', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'Y']),
-            'trashtown_p': set(['A', 'H', 'I', 'L', 'N', 'R', 'S', 'T']),
-            'wetlands_p': set(['A', 'E', 'G', 'L', 'M', 'O', 'S', 'T']),
-            'woods_p': set(['H', 'M', 'S', 'U']),
-            }
+    _type_11_delay_meshes = [
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Arm',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Base',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Body',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Track',
+            ]
 
     def __init__(self, mod, map_name):
         self.map_name = map_name
@@ -192,13 +178,10 @@ class _StreamingBlueprintHelper:
         to_lower = map_name.lower()
         if to_lower == 'MatchAll':
             raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
-        self.avail_meshes = []
-        for letter in string.ascii_uppercase:
-            if to_lower in self.used_sm_letters_by_map and letter in self.used_sm_letters_by_map[to_lower]:
-                continue
-            self.avail_meshes.append(f'/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_{letter}')
-        # Use 'em in order
-        self.avail_meshes.reverse()
+        # Make a copy of the mesh list, otherwise when we pop entries later
+        # it'll update for all instances.  Reverse it so our `.pop()`s pull
+        # things in the correct order.
+        self.type_11_delay_meshes = list(reversed(self._type_11_delay_meshes))
 
     def get_next_index(self, obj_name, index=None):
         obj_name_lower = obj_name.lower()
@@ -211,10 +194,10 @@ class _StreamingBlueprintHelper:
         return index
 
     def consume(self, count=2):
-        if count > len(self.avail_meshes):
+        if count > len(self.type_11_delay_meshes):
             raise RuntimeError('Not enough free meshes to properly delay hotfix execution!')
         for _ in range(count):
-            yield self.avail_meshes.pop()
+            yield self.type_11_delay_meshes.pop()
 
     def add_positioning(self, *args):
         self.positions.append(_StreamingBlueprintPosition(*args))
@@ -236,14 +219,14 @@ class _StreamingBlueprintHelper:
             # First the delay
             for mesh_name in self.consume(count):
                 self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
-                        '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
-                        'StaticMeshComponent.Object..StaticMesh',
+                        '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                        'ItemMeshComponent.Object..StaticMesh',
                         self.mod.get_full_cond(mesh_name, 'StaticMesh'))
             # Revert it right away; no sense waiting for it.
             self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
-                    '/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C',
-                    'StaticMeshComponent.Object..StaticMesh',
-                    self.mod.get_full_cond('/Game/Gear/Game/Resonator/Model/Meshes/SM_Eridian_Resonator', 'StaticMesh'))
+                    '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                    'ItemMeshComponent.Object..StaticMesh',
+                    self.mod.get_full_cond('/Game/Pickups/Ammo/Model/Meshes/SM_ammo_pistol', 'StaticMesh'))
 
             # And now the individual repositioning
             for pos in self.positions:
