@@ -41,7 +41,6 @@ mod = Mod('quick_changes_almost_everywhere.bl3hotfix',
         v='1.0.0',
         cats='qol, maps',
         quiet_streaming=True,
-        aggressive_streaming=False,
         )
 
 mod.header('Injecting Quick Change stations')

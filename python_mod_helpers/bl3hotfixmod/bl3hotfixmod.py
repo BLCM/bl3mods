@@ -85,54 +85,23 @@ class _StreamingBlueprintHelper:
     loaded these meshes prior to trying this delay will interfere with the process.
     """
 
-    # TODO: Should probably *not* specify a default here.  Just have a known list, and
-    # raise an exception if we don't know what the var should be.
-    # These positioning object names are *not* at all exhaustive!  Objects
-    # that we *do* know should work fine, though:
-    #  - /Alisma/Lootables/_Design/Classes/Hyperion/BPIO_Ali_Lootable_Hyperion_RedChest
-    #  - /Dandelion/Lootables/_Design/Classes/Hyperion/BPIO_Lootable_Hyperion_RedChest
-    #  - /Game/InteractiveObjects/AtlasDefenseTurret/_Shared/_Design/IO_AtlasDefenseTurret
-    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console
-    #  - /Game/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Platform
-    #  - /Game/InteractiveObjects/GameSystemMachines/QuickChange/BP_QuickChange
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Ammo
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Health
-    #  - /Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_Weapons
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_ClapTrap
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_HiJinx
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_LootBoxer
-    #  - /Game/InteractiveObjects/SlotMachine/_Shared/_Design/BPIO_SlotMachine_VaultLine
-    #  - /Game/InteractiveObjects/StationaryMannedTurret/IO_GroundTurret
-    #  - /Game/InteractiveObjects/Switches/Circuit_Breaker/_Design/IO_Switch_Circuit_Breaker_V1
-    #  - /Game/InteractiveObjects/Switches/Lever/Design/IO_Switch_Industrial_Prison
-    #  - /Game/Lootables/_Design/Classes/Atlas/BPIO_Lootable_Atlas_RedChest
-    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate
-    #  - /Game/Lootables/_Design/Classes/CoV/BPIO_Lootable_COV_RedCrate_Slaughter
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_RedChest
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChest
-    #  - /Game/Lootables/_Design/Classes/Eridian/BPIO_Lootable_Eridian_WhiteChestCrystal
-    #  - /Game/Lootables/_Design/Classes/Global/BPIO_Lootable_Global_WhiteCrate
-    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_RedChest
-    #  - /Game/Lootables/_Design/Classes/Jakobs/BPIO_Lootable_Jakobs_WhiteChest
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_RedChest_Slaughter
-    #  - /Game/Lootables/_Design/Classes/Maliwan/BPIO_Lootable_Maliwan_WhiteChest
-    #  - /Game/PatchDLC/Event2/Lootables/_Design/BPIO_Lootable_Jakobs_WhiteChest_Cartels
-    #  - /Game/PatchDLC/Ixora2/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/BP_VendingMachine_BlackMarket
-    #  - /Geranium/InteractiveObjects/GameSystemMachines/CatchARide/_Shared/Blueprints/BP_CatchARide_Console_Ger
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_RedChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/Cultists/BPIO_Hib_Lootable_Cultist_WhiteChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_RedChest
-    #  - /Hibiscus/InteractiveObjects/Lootables/_Design/Classes/FrostBiters/BPIO_Hib_Lootable_FrostBiters_WhiteChest
-    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Console
-    #  - /Hibiscus/InteractiveObjects/Systems/CatchARide/_Design/BP_Hib_CatchARide_Platform
-    positioning_obj_default = 'RootComponent'
+    # The subobject names which we need to use to reposition the objects, once
+    # they've been streamed into the level.  These positioning object names are
+    # *not* at all exhaustive!  We'll raise a RuntimeError if we're asked for
+    # an object we don't know about.  `RootComponent` is a reasonable first
+    # guess since most objects seem to *have* that subobject, but it often
+    # doesn't actually take effect, so other names are needed instead.
     positioning_obj_names = {
             '/alisma/lootables/_design/classes/hyperion/bpio_ali_lootable_hyperion_redchest': 'Mesh_Chest1',
             '/dandelion/lootables/_design/classes/hyperion/bpio_lootable_hyperion_redchest': 'Mesh_Chest1',
             '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console': 'RootComponent',
             '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
+            '/game/interactiveobjects/gamesystemmachines/quickchange/bp_quickchange': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_ammo': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_crazyearl': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_health': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_weapons': 'RootComponent',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_claptrap': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_hijinx': 'Cabinet',
             '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
@@ -153,11 +122,14 @@ class _StreamingBlueprintHelper:
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest_slaughter': 'Mesh_Chest1',
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_whitechest': 'Mesh_Chest1',
             '/game/patchdlc/event2/lootables/_design/bpio_lootable_jakobs_whitechest_cartels': 'Mesh_Chest1',
+            '/game/patchdlc/ixora2/interactiveobjects/gamesystemmachines/vendingmachine/_shared/bp_vendingmachine_blackmarket': 'RootComponent',
+            '/geranium/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console_ger': 'RootComponent',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_redchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_whitechest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_portalchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_redchest': 'Mesh_Chest1',
             '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_console': 'RootComponent',
             '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
             }
 
@@ -207,7 +179,13 @@ class _StreamingBlueprintHelper:
         if obj_name_lower in self.positioning_obj_names:
             return self.positioning_obj_names[obj_name_lower]
         else:
-            return self.positioning_obj_default
+            print('-'*80)
+            print(f'ERROR: Unknown positioning object for: {obj_name}')
+            print('Specify the `positioning_obj` argument to `streaming_hotfix`, or add the')
+            print('mapping to the _StreamingBlueprintHelper class in bl3hotfixmod.py.')
+            print('The value `RootComponent` might be a good option to try, if unsure.')
+            print('-'*80)
+            raise RuntimeError(f'Unknown positioning object for: {obj_name}')
 
     def finish(self, count=2):
         if self.positions:
@@ -308,7 +286,7 @@ class Mod(object):
             homepage=None, nexus=None,
             contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
-            aggressive_streaming=True,
+            aggressive_streaming=False,
             comment_tags=False,
             ):
         """
@@ -343,17 +321,16 @@ class Mod(object):
             of course).  See `_ensure_mesh()` for some info on this.
         `quiet_streaming` - Likewise, this library can do Streaming Blueprint
             injection, which also requires some extra injected hotfixes to work
-            properly.  Setting this to `True` will suppress warnings/notices
-            about this, including to the console while generating.
+            properly.  Setting this to `True` will suppress the extra mod comments
+            which detail that behavior.
         `aggressive_streaming` - This library has helper code to aggressively
             help out with handling Streaming Blueprint (type 11) hotfixes which
             are really better handled in mod-injection software like B3HM or
             Apoc's mitmproxy-based hfinject.py.  Support for this is present in
-            hfinject.py, and is forthcoming in B3HM.  For now, if using B3HM,
-            leave `aggressive_streaming` at its default of `True`, and if using
-            hfinject.py, set it to `False` instead.  (Though is should be noted
-            that there's not really any downside to always leaving it on, apart
-            from some wasted hotfixes.)
+            hfinject.py and B3HM v1.0.2+.  If using older versions of B3HM, set
+            this to `True` to enable the helper code right in the mod itself.
+            (Note that this will make multiple mods using type-11 hotfixes on
+            the same mod probably not work together.)
         `comment_tags` - This controls whether the BLIMP tags (mod metadata at
             the top of the mod) are printed "inside" the triple-hash comments
             that the rest of the mod comments use.  The BLIMP spec allows for
@@ -384,7 +361,6 @@ class Mod(object):
         self.comment_tags = comment_tags
 
         # Some vars to help out with type-11 (streaming blueprint) hotfixes
-        self.seen_streaming_warning = quiet_streaming
         self.streaming_helpers = {}
 
         self.source = os.path.basename(sys.argv[0])
@@ -792,22 +768,11 @@ class Mod(object):
             with the value set to `True`)
         `positioning_obj` can be set, to specify the subobject used to actually position the
             injected object in the world.  If not specified, this will use a small hardcoded
-            mapping to see if we know what the object name is, defaulting to `RootComponent`
-            if not (which is what's used for objects like vending machines).
+            mapping to see if we know what the object name is -- if we don't already have a
+            name mapping, a RuntimeError will be raised.
 
         Returns the full object name of what we believe the created object should be.
-
-        NOTE: These are finnicky, and these may not be reliable at the moment.
         """
-
-        if not self.seen_streaming_warning:
-            self.seen_streaming_warning = True
-            print("WARNING: Blueprint Stream hotfixes (type 11) are rather finnicky, and often")
-            print("don't seem to work how you'd hope them to.  The position/rotation/scaling")
-            print("changes in particular often seem to not actually 'take', leaving your added")
-            print("object at the origin point (0,0,0).  Mods using this type may not be reliable.")
-            print("")
-            self.comment('WARNING: type-11 hotfixes (and associated positioning params) may not work right...')
 
         # Map path
         map_first, map_last = map_path.rsplit('/', 1)

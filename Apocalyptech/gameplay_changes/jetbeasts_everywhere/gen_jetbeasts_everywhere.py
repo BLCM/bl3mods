@@ -97,7 +97,6 @@ mod = Mod('jetbeasts_everywhere.bl3hotfix',
         v='1.0.0',
         cats='qol, maps',
         quiet_streaming=True,
-        aggressive_streaming=False,
         )
 
 

@@ -37,7 +37,6 @@ mod = Mod('easy_entry_to_fort_sunshine.bl3hotfix',
         v='1.0.0',
         cats='maps, qol',
         quiet_streaming=True,
-        aggressive_streaming=False,
         )
 
 mod.comment('Create the new switch')
