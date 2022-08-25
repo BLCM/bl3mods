@@ -1,0 +1,15 @@
+@title Horned and Eridium Skags model swap
+@version 1.0.0
+@author deadjack133
+@categories qol
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### Special thanks to "apocalyptech" and  "=] (CZ47)" for helping me.
+###
+
+#skag
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo1_Horned.Default__BPChar_PetSkag_Evo1_Horned_C:CharacterMesh0,GestaltPartList,0,,GestaltPartListData'"/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/GPartList_PetSkag.GPartList_PetSkag"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/BPChar_PetSkag_Evo2_Eridian.Default__BPChar_PetSkag_Evo2_Eridian_C:CharacterMesh0,GestaltPartList,0,,GestaltPartListData'"/Game/PlayerCharacters/Beastmaster/Pet/Skag/_Design/Character/GPartList_PetSkag.GPartList_PetSkag"'
