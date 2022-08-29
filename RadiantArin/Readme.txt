@@ -15,3 +15,49 @@ DISCLAIMER:
 You can submit any reports to me via Discord @ RadiantArin#7156
 
 Thank you so much for downloading, and enjoy, fellow badass!
+
+CHANGELOG:
+
+1.0.1
+
+• Addressed that the Luck Cannon was not dropping on lower levels. This has been fixed.
+
+• Fixed an issue regarding the quest reward Gemini crashing the game. This has been fixed.
+
+• Addressed that the Plasma Coil SMG was not dropping with all of its intended Elemental Parts. This has been fixed.
+
+• Addressed that Chubby enemies (Skags, Spiderants, and Rakks) were not dropping Class Mods as intended. This has been fixed.
+
+• Additionally, increased the rate at which Chubby enemies spawn. Looter Psychos remain the same values. Loot Jabbers has been increased to 4%, Shiny Grogs to 4%, AMBER LAMPS to 4%, Chubby Skags and Engorged Rakks to 4%, and Chubby Spiderants to 5%.
+
+• Addressed that the Monarch Assault Rifle, while deployed in BiPod Mode, and then switching to another weapon, would cause the Movement Speed decrease to stick after switching back to the Monarch. This has been fixed.
+
+• Reworked the Hitman Sniper Rifle. It's Crit Damage scaling is now 500%, but reduced overall damage by 25%.
+
+• The Garcia now consumes two ammo per shot instead of one. It's damage is decreased by 10%.
+
+• Reworked Sledge's Shotgun. The base Sledge's Shotgun now adds two extra projectiles for x8. Recoil has been reduced by 15%. The Super Sledge's Shotgun attachment adds +35% projectiles for x14 projectiles. Recoil for that attachment further is decreased by 38%.
+
+• Reworked The Seeker. Reduced it's projectiles to 6 but now it only costs 1 Ammo per shot. It's damage has been increased by 15% and scaling by 50%.
+
+• The Icebreaker Assault Rifle has had its damage increased by 50%. It was doing significantly less damage than what was intended.
+
+• The Boogeyman Sniper Rifle has had its damage decreased by 25%. 
+
+• The DNA's Reload Time has been changed to reflect it's actual value. It was 50% decrease, now it is 40%.
+
+• The Radiance Shotgun has had its damage decreased by 10%.
+
+• Decreased overall damage of Shotguns by 5%, SMGs by 5%, and Assault Rifles by 2.5%.
+
+• Decreased the overall damage of E-Tech SMGs by 10%.
+
+• The Dark Army SMG has had its damage decreased by 20%, and the drone damage decreased by 146%.
+
+• Addressed that Red Jabber, Big "D", and Donny had 100% drop chance from their respective pools. This has been reverted back to their original 10% value.
+
+• Changed the skin on the Cryophobia.
+
+1.0.0:
+
+Released Mod!!!
