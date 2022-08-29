@@ -30,8 +30,8 @@ See the individual mod folders for full READMEs.
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
-- **Quick Changes (Almost) Everywhere** - Introduces a Quick Change station to
-  (almost) every level in the game which didn't already have one.
+- **Quick Changes Everywhere** - Introduces a Quick Change station to every
+  level in the game which didn't already have one.
 
 Licenses
 ========
