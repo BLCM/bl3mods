@@ -1,13 +1,13 @@
-Quick Changes (Almost) Everywhere
-=================================
+Quick Changes Everywhere
+========================
 
-Introduces a Quick Change station to (almost) every level in the game
-which didn't already have one.  The exceptions are:
+Introduces a Quick Change station to every level in the game which
+didn't already have one.  Many thanks to CZ47 for the Slaughters
+and Trials / Proving Grounds locations!
 
-- The three Slaughters and six Trials / Proving Grounds, since those
-  were already done in a mod by CZ47:
-  https://github.com/BLCM/bl3mods/wiki/QuickChange%20Station%20in%20Slaughters%20and%20Trials
-- Stormblind Complex
+**NOTE:** This mod requires either B3HM v1.0.2 (which, as of August
+29th, 2022, has not been released yet), or apple1417's OpenHotfixLoader.
+This mod will *not* with with B3HM v1.0.1 or lower!
 
 The Quick Change placements should in general be pretty obvious, and
 placed around the "main" Fast Travel location in each map.  Some larger
@@ -47,8 +47,7 @@ think might make sense, either as an alternative to what I have in here
 or as an addition.
 
 **Compatibility Note:** This mod will *not* be compatible with any other
-mod which adds in Quick Change stations to the same levels.  It also
-requires some specific version of B3HM which isn't out yet...
+mod which adds in Quick Change stations to the same levels.
 
 Changelog
 =========

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2021 Christopher J. Kucera
+# Copyright 2021-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -23,18 +23,17 @@ import sys
 sys.path.append('../../../python_mod_helpers')
 from bl3hotfixmod.bl3hotfixmod import Mod, BVC
 
-mod = Mod('quick_changes_almost_everywhere.bl3hotfix',
-        'Quick Changes (Almost) Everywhere',
-        'Apocalyptech',
+mod = Mod('quick_changes_everywhere.bl3hotfix',
+        'Quick Changes Everywhere',
+        'Apocalyptech and CZ47',
         [
-            "Introduces a Quick Change station to (almost) every level in the game",
-            "which didn't already have one.  Exceptions are the three Slaughters",
-            "and six Trials / Proving Grounds, since those were already done in a",
-            "mod by CZ47: https://github.com/BLCM/bl3mods/wiki/QuickChange%20Station%20in%20Slaughters%20and%20Trials",
-            "Also omits Stormblind Complex.",
+            "Introduces a Quick Change station to every level in the game which",
+            "which didn't already have one.",
             "",
-            "Requires B3HM v*mumble*, and is incompatible with any other mod which",
-            "adds Quick Change stations to the same levels!",
+            "Requires either OpenHotfixLoader or B3HM v1.0.2, and is incompatible with",
+            "any other mod which adds Quick Change stations to the same levels!",
+            "",
+            "Slaughter / Trials Quick Change locations graciously donated by CZ47.",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
@@ -250,6 +249,43 @@ for label, map_path, coords, rotation in sorted([
         ("Vaulthalla",
             '/Alisma/Maps/Eldorado/Eldorado_P',
             (-3760, -817, 4326), (-15, 140, 3)),
+
+        # Trials/Slaughters, courtesy CZ47
+        ("Slaughterstar 3000",
+            '/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_P',
+            (-6080, -7570, 490), (0, 82, 0)),
+        ("The Slaughter Shaft",
+            '/Game/Maps/Slaughters/COVSlaughter/COVSlaughter_P',
+            (-2270, -5420, 900), (0, 90, 0)),
+        ("Cistern of Slaughter",
+            '/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P',
+            (-5400, 1032, 1473), (0, 180, 0)),
+        ("Wayward Tether (Instinct)",
+            '/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_P',
+            (130225, -9200, -12297), (0, 0, 0)),
+        ("The Skydrowned Pulpit (Fervor)",
+            '/Game/Maps/ProvingGrounds/Trial4/ProvingGrounds_Trial4_P',
+            (-11100, 17000, 6089), (0, -135, 0)),
+        ("Precipice Anchor (Discipline)",
+            '/Game/Maps/ProvingGrounds/Trial7/ProvingGrounds_Trial7_P',
+            (1169, 10970, 8360), (0, 0, 0)),
+        ("The Hall Obsidian (Supremacy)",
+            '/Game/Maps/ProvingGrounds/Trial6/ProvingGrounds_Trial6_P',
+            (1100, 15707, 190), (0, 0, 0)),
+        ("Gradient of Dawn (Survival)",
+            '/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_P',
+            (74516, -49259, -8084), (0, 155, 0)),
+        ("Ghostlight Beacon (Cunning)",
+            '/Game/Maps/ProvingGrounds/Trial5/ProvingGrounds_Trial5_P',
+            (-1465, -1523, 1233), (0, 186, 0)),
+
+        # I suppose we may as well do Stormblind Complex too, then,
+        # since we've pulled in CZ47's data.  Otherwise I'll have to list
+        # the *single* exception, and that would be lame.
+        ("Stormblind Complex",
+            '/Ixora/Maps/FrostSite/FrostSite_P',
+            (4160, -3216, 4614), (0, 150, 0)),
+
         ]):
 
     # Now the actual hotfix
@@ -296,11 +332,6 @@ for num, new_loc, new_rot in [
             '(Pitch={},Yaw={},Roll={})'.format(*new_rot),
             notify=True)
 mod.newline()
-
-# mod.close() would do this anyway, but may as well make it explicit
-# (commented since I've turned off "aggressive" handling, though)
-#mod.header('Delays and In-Level Positioning')
-#mod.finish_streaming()
 
 mod.close()
 
