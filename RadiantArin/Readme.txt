@@ -18,6 +18,42 @@ Thank you so much for downloading, and enjoy, fellow badass!
 
 CHANGELOG:
 
+1.0.2
+
+• Reduced the health of all enemies in the GTD by 50%.
+
+• Fixed a reported issue where early level Maliwan guns would spawn with no elemental parts. This has been fixed.
+
+• Fixed a bug where Muldock was accidentally given the Bulwark instead of Turnkey Tim. This has been fixed.
+
+• Added four new items! These will be the Trespasser, Love Thumper, Live Wire, and the Trash Cannon. The Trespasser will drop from Muldock the Anointed, Love Thumper from Archer Rowe, Live Wire from Killavolt, and Trash Cannon from Stanley.
+
+• Reduced the damage of the Long Musket by 28%.
+
+• Reduced the damage of the Insider by 20%.
+
+• Reduced the damage of the Cryophobia by 10%.
+
+• Increased the damage of the Yellowcake by 25%.
+
+• Increased the damage of ALL Dahl Legendary ARs. Barrage was increased by 10%, Breath of the Dying by 10%, Good Juju by 20%, Kaos by 25%, Star Helix by 15%, Soulrender by 10%, Warlord by 25%. This is to combat the decreased RoF for these types of weapons.
+
+• Increased the damage of the Unseen Threat by 60%. It was doing much less damage than what was intended.
+
+• Made the Seeker ACTUALLY have 6 projectiles. The x2 variant will have 12 projectiles.
+
+• Cleaned up a bit of code with non-elemental parts on some of the new weapons.
+
+• Changed Amara's Blitz skill to not show the cooldown and increased its damage by 50%.
+
+• Decreased Ebb and Flow's Life Steal from 21% to 3.33% per level.
+
+• Diamond Loot Room now actually spawns only Unique/Legendary items (except the Elemental Persistance Contact Grenade that drops from Jabbermogwai).
+
+• Cleaned up a bit of code surrounding quest rewards.
+
+• The O.P.Q. was removed from the game due to the Love Thumper. :(
+
 1.0.1
 
 • Addressed that the Luck Cannon was not dropping on lower levels. This has been fixed.
