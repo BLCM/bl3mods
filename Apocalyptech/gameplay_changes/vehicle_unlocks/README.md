@@ -65,6 +65,10 @@ though, you may just have to drop back to the Legacy version.
 Changelog
 =========
 
+Aug 28, 2022 *(no version number change)*
+ * Updated "Vehicle Unlocks" and "Vehicle Unlocks+" to be regular files,
+   instead of compressed, for OpenHotfixLoader compatibility.
+
 Aug 1, 2022 *(no version number change)*
  * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
    (no functionality change)

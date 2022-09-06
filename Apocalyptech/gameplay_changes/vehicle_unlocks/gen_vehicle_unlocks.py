@@ -1819,7 +1819,7 @@ for filename, mod_title, profile_idx, extra_description in [
         ])
 
     # Start the mod object
-    mod = Mod('vehicle_unlocks{}.bl3hotfix.gz'.format(filename),
+    mod = Mod('vehicle_unlocks{}.bl3hotfix'.format(filename),
             mod_title,
             'Apocalyptech',
             desc,
