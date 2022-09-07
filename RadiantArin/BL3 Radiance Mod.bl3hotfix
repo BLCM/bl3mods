@@ -5147,11 +5147,6 @@ SparkEarlyLevelPatchEntry,(1,11,0,SacrificeBoss_p),/Ixora2/Maps/Boss,/Game/Loota
 SparkEarlyLevelPatchEntry,(1,11,0,SacrificeBoss_p),/Ixora2/Maps/Boss,/Game/Lootables/_Design/Classes/Eridian,BPIO_Lootable_Eridian_RedChest,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
 SparkEarlyLevelPatchEntry,(1,11,0,SacrificeBoss_p),/Ixora2/Maps/Boss,/Game/Lootables/_Design/Classes/Eridian,BPIO_Lootable_Eridian_RedChest,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
 
-# Adding Delay
-SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_B.SM_Letter_B"'
-SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_D.SM_Letter_D"'
-SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_F.SM_Letter_F"'
-
 # Moving BPIO_Lootable_Eridian_RedChest_C_0
 SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_p),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_p:PersistentLevel.BPIO_Lootable_Eridian_RedChest_C_0.Mesh_Chest1,RelativeLocation,0,,(x=93500.000000,y=30145.000000,z=10115.000000)
 SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_p),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_p:PersistentLevel.BPIO_Lootable_Eridian_RedChest_C_0.Mesh_Chest1,RelativeRotation,0,,(Pitch=0.000000,Yaw=173.000000,Roll=0.000000)
@@ -5172,8 +5167,6 @@ SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_p),/Ixora2/Maps/Boss/SacrificeBos
 SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_p),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_p:PersistentLevel.BPIO_Lootable_Eridian_RedChest_C_3.Mesh_Chest1,RelativeRotation,0,,(Pitch=0.000000,Yaw=128.000000,Roll=0.000000)
 SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_p),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_p:PersistentLevel.BPIO_Lootable_Eridian_RedChest_C_3.Mesh_Chest1,RelativeScale3D,0,,(X=1.000000,Y=1.000000,Z=1.000000)
 
-# Undo changes introduced by Delay
-SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/Gear/Game/Resonator/Model/Meshes/SM_Eridian_Resonator.SM_Eridian_Resonator"'
 
 ### END CZ47'S CODE###
 
