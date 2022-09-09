@@ -67,6 +67,23 @@ blacklist_to = {
 # "real" database connections anymore.  So we'll manually read in its INI
 # file, and expect to see the old-style database connection parameters
 # in there.
+#
+# The util does also make use of the `data_dir` value inside the `filesystem`
+# section in that config file, since we're reading it in anyway.
+#
+# The stanza we expect to see (including vars used by convert_refs_db.py):
+#
+#    [mysql]
+#    host = localhost
+#    port = 3306
+#    user = bl3refs
+#    passwd = password
+#    db = bl3refs
+#    mysql2sqlite = /usr/local/dv/virtualenv/mysql2sqlite/bin/mysql2sqlite
+#    notice2 = Not used by bl3data anymore, but IS used by populate_refs_db.py
+#
+# (The "notice2" isn't actually important, just a note to myself.)
+# ~/.config/bl3data/bl3data.ini on Linux, if using defaults
 config_dir = appdirs.user_config_dir('bl3data')
 config_file = os.path.join(config_dir, 'bl3data.ini')
 config = configparser.ConfigParser()
@@ -75,7 +92,9 @@ db = MySQLdb.connect(
         user=config['mysql']['user'],
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
-        db=config['mysql']['db'])
+        db=config['mysql']['db'],
+        port=config['mysql']['port'],
+        )
 curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
@@ -112,7 +131,12 @@ objects = {}
 toplevels = set()
 obj_count = 0
 
-for (dirpath, dirnames, filenames) in os.walk('extracted'):
+data_dir = config['filesystem']['data_dir']
+# Could alternatively *chop* off a slash if we do find it, but whatever.
+if data_dir[-1] != '/':
+    data_dir += '/'
+data_dir_slice = len(data_dir)
+for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):
 
@@ -121,9 +145,9 @@ for (dirpath, dirnames, filenames) in os.walk('extracted'):
 
             # Get our object name
             if filename.endswith('.uasset'):
-                cur_obj_name = full_filename[9:-7]
+                cur_obj_name = full_filename[data_dir_slice:-7]
             else:
-                cur_obj_name = full_filename[9:-5]
+                cur_obj_name = full_filename[data_dir_slice:-5]
             cur_obj_name_lower = cur_obj_name.lower()
             if cur_obj_name_lower in toplevels:
                 print('WARNING: Found duplicate name {} in {}'.format(cur_obj_name, full_filename))
