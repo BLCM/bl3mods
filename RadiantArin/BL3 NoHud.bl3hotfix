@@ -1,0 +1,63 @@
+###
+### @title BL3 No HUD mod
+### @author RadiantArin
+### @categories ui
+### @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+##############################
+####### INTRODUCTION #########
+##############################
+
+# This is just a general mod that gets rid of the HUD! If for some reason you need this for filming BL3 without having the HUD on or want to showcase something in particular, this mod gets rid of all entries on the HUD (except for interactables and enemy health).
+
+##############################
+########### CODE #############
+##############################
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCard,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,interactionPrompt,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,reloadWidgetMC,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,crosshairContainer,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,container,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,grenadeIndicatorWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,iodCard,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,menuDamageClipBL,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,buddyWidgets,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,shieldBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,healthBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,ffylWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,sirenComboBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBars,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,menuDamageClipBR,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,petCommand,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkill,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkillGrenade,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,grenadeWidgetContainer,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,ammoBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,currencyWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,minimapContainer,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,missionTracker,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,challengeProgressWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,tutorialContentWrapper,Scale,0,,(x=0,y=0)
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,warningTimer,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,interactionPrompt,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,durationBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,allCrosshairs,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,itemCard,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,itemCardAbbreivated,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,healthBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,buddyWidgets,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,xpBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,passiveSkillWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ffylWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,currencyWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,minimapContainer,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,missionTracker,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,challengeProgressWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,tutorialCombatWrapper,Scale,0,,(x=0,y=0)
