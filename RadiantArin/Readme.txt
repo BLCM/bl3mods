@@ -18,6 +18,70 @@ Thank you so much for downloading, and enjoy, fellow badass!
 
 CHANGELOG:
 
+1.1.0
+
+• Decreased Shock damage on armor to its original value of 75% on NVHM, and 50% on TVHM.
+
+• Lowered Hyperion Shotgun damage bonus from 1.3 to 1.2.
+
+• Snowdrift and Toboggan Slide Speed nerfs were removed.
+
+• Increase the damage of the Bodyguard SMG by 22%.
+
+• Taken out the Moxxi's Blood Rush artifact. Upon further notation and advice from the community, it was a poorly executed, better version of an already existing Artifact, the Holy Grail. Therefore, the changes to the Blood Rush have been reverted.
+
+• Doubled the damage reduction of the Dragon Class Mod.
+
+• Moze's Minigun Damage has been increased. Minigun 1 Mod (Let off some Steam) was increased by 10%, Minigun 2 Mod (General Winter) was increased by about 5%, and Minigun 3 Mod (Exploding. Bullets.) was increased by 20%. Iron Cub damage was reduced from 0.6 to 0.5.
+
+• Target Softening's Debuff was increased to 25%.
+
+• Amara's Violent Tapestry was changed to deal Status Damage instead of Status Chance.
+
+• Amara's Forceful Expression value was tripled.
+
+• Amara's Phasecast Damage has been increased. Base Phasecast was increased by 25%, Reverberation by 25%, Deliverance by 30%, and Tandava by 32.5%. Amara's Phaseslam Damage has also been increased. Base Phaseslam was increased by 35%, Fracture by 25%, and Downfall by 35%.
+
+• Increased the rate at which you get Legendaries from Red Chests in Arms Race at their dedicated locations (for example Silo, Spaceport, Sewers, etc.). This does not affect global Red Chest values.
+
+1.0.3
+
+• Added a floor in the Slaughterstar 3000 map to prevent Red Rain/Blue Fire's loot from dropping into the void.
+
+• Added Weighted Ammo Drops to the game. The lower you are on a particular item (health or ammo), the more you will receive from chests.
+
+• Changed the way elements work. Before, matching element bonus on NVHM was only 25%. Now it is 50%. TVHM/Mayhem has also been increased by 25%, for a grand total of 75% increased damage. Resistances have stayed the same. Cryo is no longer effective against Shields.
+
+• Completely changed Mayhem! Before, Mayhem 11 was only served to have no mayhem modifiers, but it didn't actually do anything regarding the values of Eridium, Cash, EXP, and Loot Drops. Therefore, all data regarding M11 was replaced with the values for M10, and M11 no longer exists. The curve for loot has also changed substantially regarding this change. The scaling of health, shield, and armor remains the same, at 100% each level.
+
+• Decreased the rate at which badasses spawn in Mayhem/TVHM by 50%.
+
+• Decreased Hemo/Vermi's Health by 50%.
+
+• Tripled the damage of Panoptic Malechars and RPG Loaders to make them high priority targets. More enemies of the same caliber will have increased damage down the line.
+
+• Reverted the Tediore Nerf.
+
+• Increase the damage of the Gold Rush by 30%.
+
+• Increase the damage of the Boomer by 25%. Additionally, increased it's Status Effect Chance and Damage by 10%.
+
+• Increase the damage of the Flama Diddle by 20%.
+
+• Reduce the damage of the Cocky Bastard by 15%.
+
+• Decrease the capacity of the Madcap shield by 20%, but increase its Recharge Rate by the same amount.
+
+• Equalized all Nova Anointments to 2.5.
+
+• Increase the damage of the SNTNL Cryo Anointment to 60% to fit in line with the other character specific Anointments.
+
+• Increase the damage of ALL grenades in the game by 50%.
+
+• Decrease the damage of the Chandelier by 50%.
+
+• Added four new items! These are the Lucent Prism manufactured by Atlas, the Eternal Guardian manufactured by Torgue, the Amalgam Artifact, and the Bonus Package manufactured by Torgue. The Lucent Prism will drop from Hemovorous and Vermivorous on Mayhem 6 or above, the Eternal Guardian will drop from Scourge on Mayhem 6 or above, the Amalgam will drop from Empowered Grawn, and the Bonus Package drops from Ruiner.
+
 1.0.2
 
 • Reduced the health of all enemies in the GTD by 50%.
