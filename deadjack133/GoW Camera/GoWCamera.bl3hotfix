@@ -1,0 +1,41 @@
+@title Gears of War style Camera
+@version 0.0.1
+@author deadjack
+@categories qol
+@pakfile Z_GOWCAMERA_P.pak
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### Huge thanks to "apocalyptech" for helping me and "screen names" for original third person camera mod
+###
+
+###
+### Changing camera to third person similar to Gears of War games, with unified settings for two classes (4 in future) and increased interact and pickup distance.
+### For now mod meant to be playing only with FL4K and Zane. Additionally you required to download Z_GOWCAMERA_P.pak and put it into Borderlands 3\OakGame\Content\Paks\~mods\ folder.
+###
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Offset for GoW camera
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_OffsetCameraRelative_0,LocationOffset,0,,(x=-180,y=61,z=0)
+
+# Swap Camera Mode Names, effectively making the default camera 3rd person (screen names code)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson,ModeName,0,,Default
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_Default.CameraMode_Default,ModeName,0,,ThirdPerson
+
+# Change camera paths for disabling switching to fps camera and remove timeout when FFYL starts. (screen names code modified by me)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraModeSet_Default.CameraModeSet_Default,Modes,0,,(CameraMode_Default'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_ThirdPerson'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_Fixed'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_Orbit'"/Game/GameData/Camera/CameraMode_Orbit"',CameraMode_ThirdPersonViewModel'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_DownState'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_ThirdPersonNoInput'"/Game/GameData/Camera/CameraMode_ThirdPersonNoInput"',CameraMode_VehicleTransitionIn'"/Game/GameData/Camera/Vehicle/CameraMode_VehicleTransitionIn"',CameraMode_Ladder'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_Slide'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_GroundSlam_High_Enter'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_GroundSlam_High_Exit'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_Melee'"/Game/GameData/Camera/CameraMode_ThirdPerson"',CameraMode_VehicleTransitionOut'"/Game/GameData/Camera/Vehicle/CameraMode_VehicleTransitionOut"',CameraMode_StatusMenu'"/Game/GameData/Camera/CameraMode_StatusMenu"',CameraMode_AIO'"/Game/GameData/Camera/CameraMode_AIO"',CameraMode_AIONoTranslucency'"/Game/GameData/Camera/CameraMode_AIONoTranslucency"',CameraMode_PhotoMode_Offset'"/Game/GameData/Camera/CameraMode_PhotoMode_Offset"',CameraMode_PhotoMode'"/Game/GameData/Camera/CameraMode_PhotoMode"',CameraMode_Mission1_CameraStart'"/Game/Missions/Plot/EP01_ChildrenOfTheVault/CameraMode_Mission1_CameraStart"',CameraMode_Mission1_EchoDevice'"/Game/Missions/Plot/EP01_ChildrenOfTheVault/CameraMode_Mission1_EchoDevice"',CameraMode_Mission1_EULA'"/Game/Missions/Plot/EP01_ChildrenOfTheVault/CameraMode_Mission1_EULA"',CamMode_Shared_Teleport'"/Game/PlayerCharacters/_Shared/_Design/PlayerTeleport/CamMode_Shared_Teleport"',CameraMode_RaidSpectator'"/Game/GameData/Camera/CameraMode_RaidSpectator"',CameraMode_Mission1_CameraStart'"/Game/Missions/Plot/EP01_ChildrenOfTheVault/CameraMode_Mission1_CameraStart"')
+
+# Add zoom, weapon sway, weapon recoil and dof behaviors to CameraMode_ThirdPerson (screen names code modified by me)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson,Behaviors,0,,(CameraBehavior_Look'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_Look_0',CameraBehavior_LimitPitch'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_LimitPitch_0',CameraBehavior_DefaultFOV'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_DefaultFOV_0',CameraBehavior_AnchorToEyeLocation'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_AnchorToEyeLocation_1',CameraBehavior_OffsetCameraRelative'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_OffsetCameraRelative_0',CameraBehavior_CollisionOffsetTrace'/Game/GameData/Camera/CameraMode_ThirdPerson.CameraMode_ThirdPerson:CameraBehavior_CollisionOffsetTrace_0',CameraBehavior_WeaponZoomFOV'/Game/GameData/Camera/CameraMode_Default.CameraMode_Default:CameraBehavior_WeaponZoomFOV_0',CameraBehavior_WeaponRecoil'/Game/GameData/Camera/CameraMode_Default.CameraMode_Default:CameraBehavior_WeaponRecoil_0',CameraBehavior_WeaponSway'/Game/GameData/Camera/CameraMode_Default.CameraMode_Default:CameraBehavior_WeaponSway_0',CameraBehavior_DefaultFocusDOF_C'/Game/GameData/Camera/CameraMode_Default.CameraMode_Default:CameraBehavior_DefaultFocusDOF_C_0')
+
+#Optional! Move crosshair out off screen. Crosspoint or similar app required
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,crosshairContainer,Offset,0,,(x=1999.0,y=00.0)
+
+#Change default camera height per class so they can use single offset setting.
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C,BaseEyeHeight,0,,78
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C,CrouchedEyeHeight,0,,43
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C,BaseEyeHeight,0,,95
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C,CrouchedEyeHeight,0,,64

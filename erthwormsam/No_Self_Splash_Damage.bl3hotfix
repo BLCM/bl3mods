@@ -1,0 +1,19 @@
+@title No Self Splash Damage
+@version 1.0.0
+@author Erthwormsam
+@contact-discord erthwormsam#2317
+@categories cheat, gear-general, char-gunner
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###DESCRIPTION
+###I got tired of blowing myself up on Moze, so I made this mod to prevent grenade and weapon damage from hurting myself.
+###Works on grenade mods, rocket launchers, and most explosive effects on weapons. Also works with Moze's MindSweeper class mod. 
+
+###Prevents self damage from grenades
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/Projectiles/DamageData/Damage_Grenade.Default__Damage_Grenade_c,bCanHurtInstigator,0,,false
+SparkPatchEntry,(1,1,0,),/Game/Gear/GrenadeMods/_Design/Projectiles/DamageData/Damage_Grenade.Default__Damage_Grenade_c,bCanHurtSelf,0,,false
+
+###Prevents self damage from gun explosions
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/_Shared/_Design/Projectiles/Damage_WeaponProjectile.Default__Damage_WeaponProjectile_c,bCanHurtInstigator,0,,false
