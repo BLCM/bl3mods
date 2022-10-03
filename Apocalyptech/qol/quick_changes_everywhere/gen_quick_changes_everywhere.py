@@ -41,6 +41,7 @@ mod = Mod('quick_changes_everywhere.bl3hotfix',
         v='1.0.0',
         cats='qol, maps',
         quiet_streaming=True,
+        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/quick_changes_everywhere/trashlantis.png',
         )
 
 mod.header('Injecting Quick Change stations')

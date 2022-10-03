@@ -41,6 +41,7 @@ mod = Mod('easy_entry_to_fort_sunshine.bl3hotfix',
         v='1.0.0',
         cats='maps, qol',
         quiet_streaming=True,
+        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/easy_entry_to_fort_sunshine/switch.png',
         )
 
 mod.comment('Create the new switch')

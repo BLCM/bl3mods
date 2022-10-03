@@ -102,6 +102,7 @@ mod = Mod('jetbeasts_everywhere.bl3hotfix',
         v='1.0.0',
         cats='qol, maps, vehicle',
         quiet_streaming=True,
+        ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gameplay_changes/jetbeasts_everywhere/metroplex.png',
         )
 
 
