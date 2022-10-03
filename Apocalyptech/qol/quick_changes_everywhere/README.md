@@ -5,8 +5,8 @@ Introduces a Quick Change station to every level in the game which
 didn't already have one.  Many thanks to CZ47 for the Slaughters
 and Trials / Proving Grounds locations!
 
-**NOTE:** This mod requires either B3HM v1.0.2 (which, as of August
-29th, 2022, has not been released yet), or apple1417's OpenHotfixLoader.
+**NOTE:** This mod requires either B3HM v1.0.2 (which, as of October
+2nd, 2022, has not been released yet), or apple1417's OpenHotfixLoader.
 This mod will *not* with with B3HM v1.0.1 or lower!
 
 The Quick Change placements should in general be pretty obvious, and
@@ -52,7 +52,7 @@ mod which adds in Quick Change stations to the same levels.
 Changelog
 =========
 
-**v1.0.0** - (pfffff)
+**v1.0.0** - Oct 2, 2022
  * Initial release
  
 Licenses

@@ -3,7 +3,7 @@
 
 # Copyright 2021-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Borderlands 3 Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -30,8 +30,9 @@ mod = Mod('quick_changes_everywhere.bl3hotfix',
             "Introduces a Quick Change station to every level in the game which",
             "which didn't already have one.",
             "",
-            "Requires either OpenHotfixLoader or B3HM v1.0.2, and is incompatible with",
-            "any other mod which adds Quick Change stations to the same levels!",
+            "Requires either OpenHotfixLoader or B3HM v1.0.2 (or higher), and is",
+            "incompatible with any other mod which adds Quick Change stations to",
+            "the same levels!",
             "",
             "Slaughter / Trials Quick Change locations graciously donated by CZ47.",
         ],

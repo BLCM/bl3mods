@@ -16,9 +16,13 @@ DLC2/Hibiscus consoles) which makes them a little more washed-out looking.
 This visual change has been applied to the consoles in The Blastplains,
 as well.
 
-**Compatibility Note:** This mod will *not* be compatible with any other
-mod which adds in Catch-A-Ride consoles/platforms to the same levels.  It
-also requires some specific version of B3HM which isn't out yet...
+**Compatibility Note:** This mod *requires* either OpenHotfixLoader or
+B3HM v1.0.2 (or greater) to work properly.  Note that as of time of the
+mod release, B3HM v1.0.2 has not yet been released, so OHL is the only
+supported way to run the mod until then.
+
+**Compatibility Note 2:** This mod will *not* be compatible with any other
+mod which adds in Catch-A-Ride consoles/platforms to the same levels.
 
 Bugs/TODO
 =========
@@ -52,9 +56,9 @@ Bugs/TODO
 Changelog
 =========
 
-**v1.0.0** - (pfffff)
+**v1.0.0** - Oct 2, 2022
  * Initial release
- 
+
 Licenses
 ========
 

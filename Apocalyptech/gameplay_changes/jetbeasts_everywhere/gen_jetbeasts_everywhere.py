@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2021 Christopher J. Kucera
+# Copyright 2021-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Borderlands 3 Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -91,11 +91,16 @@ mod = Mod('jetbeasts_everywhere.bl3hotfix',
             "",
             "This unfortunately omits Skittermaw Basin, where due to some limitations",
             "of hotfixes, our methods here won't work.",
+            "",
+            "This mod requires either OpenHotfixLoader or B3HM v1.0.2 (or higher)",
+            "to work properly.  Note that at time of release, B3HM v1.0.2 has not yet",
+            "been released.  It will also be incompatible with any other mod which",
+            "adds Catch-A-Ride consoles/platforms to the same map.",
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
-        cats='qol, maps',
+        cats='qol, maps, vehicle',
         quiet_streaming=True,
         )
 
@@ -267,7 +272,7 @@ class New(Modification):
                 new_console,
                 'CatchARide_Platform1',
                 mod.get_full_cond(new_plat, 'BP_CatchARide_Platform_C'))
-        
+
         # Return the new console + platform names
         return ([new_console], [new_plat])
 
