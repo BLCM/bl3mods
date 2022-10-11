@@ -24,6 +24,8 @@ See the individual mod folders for full READMEs.
 - **Testing Enemy Spawns** - Used to spawn in specific enemies wihthout having
   to travel to their usual spawn points, used for testing enemy-specific mods.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
+- **Visible BPChar Names** - Displays the BPChar names for NPCs and Enemies
+  in-game, instead of their usual names.
 
 Licenses
 ========
