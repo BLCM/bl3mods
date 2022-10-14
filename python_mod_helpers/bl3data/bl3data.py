@@ -257,19 +257,23 @@ class BL3Data(object):
         only match on exact object names, rather than a prefix.
         """
         prefix_lower = prefix.lower()
-        if exact:
-            full_match = '{}.uasset'.format(prefix_lower)
         base_dir = '{}{}'.format(self.data_dir, base)
         results = []
         for (dirpath, dirnames, filenames) in os.walk(base_dir):
             obj_base = dirpath[len(self.data_dir):]
             for filename in filenames:
-                if exact:
-                    if filename.lower() == full_match:
-                        yield os.path.join(obj_base, filename[:-7])
+                if '.' in filename:
+                    filename, ext = filename.rsplit('.', 1)
                 else:
-                    if filename.lower().startswith(prefix_lower) and filename.endswith('.uasset'):
-                        yield os.path.join(obj_base, filename[:-7])
+                    ext = None
+                if ext != 'uasset' and ext != 'umap':
+                    continue
+                if exact:
+                    if filename.lower() == prefix_lower:
+                        yield os.path.join(obj_base, filename)
+                else:
+                    if filename.lower().startswith(prefix_lower):
+                        yield os.path.join(obj_base, filename)
 
     def find_data(self, base, prefix):
         """
