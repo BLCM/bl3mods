@@ -17,6 +17,7 @@ Balands - Enemy Adjustments: Contains health reductions for certain enemies, red
 Balands - Item Part Spawning Adjustments: Makes regular Jakobs shotguns (and the Wave shotguns) more likely to spawn with higher projectile counts, makes purple grenades always spawn with three augments, makes the Boom Sickle more likely to appear, makes certain legendary shields and grenades always/more likely to spawn with maximum augments, makes certain shields/grenades more likely to spawn in more elements, and makes the Shlooter and Company Man always spawn with three stat bonuses.
 
 Balands - Loot Adjustments: Contains the following;
+
 	Earl's Vendor improvements 
 	
 	Loot-o-Gram reward changes 
@@ -38,6 +39,7 @@ Balands - Loot Adjustments: Contains the following;
 Balands - Mayhem Mode Modifier Adjustments: Contains the altered Mayhem 11 modifer "Nay-hem" that allows any level of Mayhem to potentially spawn without modifiers.
 
 Balands - Objective Fixes: (Recommended to load this file before other files) Contains the following fixes that correct genuine issues;
+
 	Weapons dealing the wrong type of damage 
 	
 	Secondary firing modes not receiving damage buffs properly 
@@ -53,6 +55,7 @@ Balands - Objective Fixes: (Recommended to load this file before other files) Co
 	Certain class mods spawning with less bonus stats than normal 
 
 Balands - Quality-of-Life Adjustments: Contains the following; 
+
 	Self-damage removal for the Breath of the Dying and Shrieking Banshee 
 	
 	Fully Automatic Eridian Fabricator 
@@ -81,6 +84,7 @@ Balands - Red Text Explainer: Adds helpful descriptions below the flavor text on
 Balands - Smaller HUD: Reduces the size of elements on the Heads-Up-Display.
 
 Balands - Subjective Fixes: (Recommended to load this file before other files but after Objective Fixes) Contains fixes that address several inconsistencies and minor issues; 
+
 	Anything that would affect Fire Rate/Reload Speed/Magazine Size now affects Burst-Fire Rate/Repair Time/Heat Rate respectively 
 	
 	Addresses some inconsistencies for accuracy boosts on artifacts 
