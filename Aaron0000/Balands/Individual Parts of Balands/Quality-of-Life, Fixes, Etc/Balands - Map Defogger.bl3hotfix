@@ -1,0 +1,47 @@
+###
+### Name: Balands - Map Defogger
+### Version: 1.5.5
+### Author: Aaron0000
+### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
+### Categories: qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### (The mod's name is pronounced the same as the word "balance".)
+###
+### Borderlands 3 is a good time, but there are some parts that leave room
+### for questioning. Certain aspects of endgame like skill, pet, and shield
+### damage being multiplied dozens of times over without being mentioned
+### in-game, the overwhelming importance of anointments, and lots of gear
+### requiring triple-digit buffs in order to deal with a five-digit boost to
+### enemy health makes it almost impossible to keep things relatively
+### balanced during playthroughs. And then there's the stuff that can't
+### even perform well at the lowest levels of play. So I've tried my hand 
+### at putting some more balance in the Borderlands.
+###
+### This mod can used with any normal save file without needing to change anything, the only thing you may need to change when you return to normal-play is your Mayhem Mode modifiers if you change them while the mod is active.
+###
+### CREDITS:
+### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-auto on the Edirian Fabricator, Beef Plisken's loot fix, the Siren COM blank part fix, some DLC enemies not dropping shields, Red-Text Explainer, and the database from which I obtained a lot of information.
+### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
+### Grimm - For the weighted ammo drop adjustments and lending a hand to figuring out some stuff.
+### apple 1417 - For lending a hand to figuring out some stuff.
+### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
+### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
+### tbj_quag, JoeForLong, ki11erSix, shadowevil - For playtesting and/or giving feedback.
+### EpicNNG - For allowing me to use his code for making the Psycho Stabber's projectiles deal melee damage, for helping me fix an issue with the Nukem, and for making Redux which was useful for referring to when dealing with certain lines of code.
+### SSpyR - For making the Borderlands 3 Object Explorer, which proved immensely useful for investigating almost everything adjusted in this file.
+### Any contributors to the Unofficial Community Patch (for Borderlands 3) that haven't already been previously mentioned.
+### c0dycode - For making the Borderlands 3 Hotfix Manager.
+### Lootlemon.com - Good information source for Borderlands 3 gear and skills.
+###
+
+### MAP DEFOGGER (Credit to Novenic) ###
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/ZoneMap/ZoneMapGlobals.ZoneMapGlobals,PlayerUnfogRadius,0,,999999999999.9
+SparkPatchEntry,(1,1,0,),/Game/GameData/ZoneMap/ZoneMapGlobals.ZoneMapGlobals,VehicleUnfogRadius,0,,999999999999.9
+SparkPatchEntry,(1,1,0,),/Game/GameData/ZoneMap/ZoneMapGlobals.ZoneMapGlobals,DefaultUnfogHeight,0,,999999999999.9
+SparkPatchEntry,(1,1,0,),/Game/GameData/ZoneMap/ZoneMapGlobals.ZoneMapGlobals,DefaultVehicleUnfogHeight,0,,999999999999.9

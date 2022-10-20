@@ -1,0 +1,149 @@
+###
+### Name: Balands - Smaller HUD
+### Version: 1.5.5
+### Author: Aaron0000
+### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
+### Categories: qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### (The mod's name is pronounced the same as the word "balance".)
+###
+### Borderlands 3 is a good time, but there are some parts that leave room
+### for questioning. Certain aspects of endgame like skill, pet, and shield
+### damage being multiplied dozens of times over without being mentioned
+### in-game, the overwhelming importance of anointments, and lots of gear
+### requiring triple-digit buffs in order to deal with a five-digit boost to
+### enemy health makes it almost impossible to keep things relatively
+### balanced during playthroughs. And then there's the stuff that can't
+### even perform well at the lowest levels of play. So I've tried my hand 
+### at putting some more balance in the Borderlands.
+###
+### This mod can used with any normal save file without needing to change anything, the only thing you may need to change when you return to normal-play is your Mayhem Mode modifiers if you change them while the mod is active.
+###
+### CREDITS:
+### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-auto on the Edirian Fabricator, Beef Plisken's loot fix, the Siren COM blank part fix, some DLC enemies not dropping shields, Red-Text Explainer, and the database from which I obtained a lot of information.
+### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
+### Grimm - For the weighted ammo drop adjustments and lending a hand to figuring out some stuff.
+### apple 1417 - For lending a hand to figuring out some stuff.
+### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
+### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
+### tbj_quag, JoeForLong, ki11erSix, shadowevil - For playtesting and/or giving feedback.
+### EpicNNG - For allowing me to use his code for making the Psycho Stabber's projectiles deal melee damage, for helping me fix an issue with the Nukem, and for making Redux which was useful for referring to when dealing with certain lines of code.
+### SSpyR - For making the Borderlands 3 Object Explorer, which proved immensely useful for investigating almost everything adjusted in this file.
+### Any contributors to the Unofficial Community Patch (for Borderlands 3) that haven't already been previously mentioned.
+### c0dycode - For making the Borderlands 3 Hotfix Manager.
+### Lootlemon.com - Good information source for Borderlands 3 gear and skills.
+###
+
+### SMALLER HUD (Credit to Elektro) ###
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,crosshairContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,xpBar,Offset,0,,(y=-145.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,interactionPrompt,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCard,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,iodCard,Scale,0,,(x=105.0,y=105.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Scale,0,,(x=100.0,y=100.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,itemCardAbbreviated,Offset,0,,(x=-250.0,y=-500.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,buddyWidgets,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,shieldBar,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,healthBar,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,ammoBar,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkill,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,actionSkillGreande,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,grenadeWidgetContainer,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,petCommand,Scale,0,,(x=90.0,y=90.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Scale,0,,(x=120.0,y=120.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Offset,0,,(x=2.1,y=-82.5)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,skillDurationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Offset,0,,(y=60.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,bossBar,Scale,0,,(x=95,y=95)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,notificationWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,connectionClip,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,xpBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,warningTimer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,topContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,interactionPrompt,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,durationBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,durationBar,Offset,0,,(x=-7.5.0,y=400.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ejectWidge,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,itemCard,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ffylWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,ejectPromptWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,bossBar,Offset,0,,(y=60.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,friendEventMessage,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_IronBear.UIData_HUDLayout_IronBear,nameplateContainer,Scale,0,,(x=95.0,y=95.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,container,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,speedBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,shieldBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,vehiclePartsWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Character.UIData_HUDLayout_Character,passiveSkillWidget,Offset,0,,(x=2.1,y=-82.5)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipBR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,boostBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,VehicleWeaponWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,matchmakingWidgetContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,menuDamageClipTR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,vehiclePartUnlockedWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,VOGECHO,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Vehicle.UIData_HUDLayout_Vehicle,bossBar,Offset,0,,(y=60.0)
+
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,reloadWidgetMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,allCrosshairs,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,container,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipBL,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,speedBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,shieldBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,healthBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,vehiclePartsWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,buddyWidgets,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,passiveSkillWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipBR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,boostBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,VehicleWeaponWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,matchmakingWidgetContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,menuDamageClipTR,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,onlineMessageMC,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,vehiclePartUnlockedWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,VOGECHO,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,currencyWidget,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,echoContentWrapper,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,minimapContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,missionTracker,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,challengeProgressWidget,Scale,0,,(x=0,y=0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,nameplateContainer,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,bossBar,Scale,0,,(x=85.0,y=85.0)
+SparkPatchEntry,(1,2,0,),/Game/UI/HUD/UIData_HUDLayout_Turret.UIData_HUDLayout_Turret,bossBar,Offset,0,,(y=60.0)

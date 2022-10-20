@@ -1,0 +1,181 @@
+###
+### Name: Balands - Enemy Adjustments
+### Version: 1.5.5
+### Author: Aaron0000
+### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
+### Categories: enemy, enemy-drops
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### (The mod's name is pronounced the same as the word "balance".)
+###
+### Borderlands 3 is a good time, but there are some parts that leave room
+### for questioning. Certain aspects of endgame like skill, pet, and shield
+### damage being multiplied dozens of times over without being mentioned
+### in-game, the overwhelming importance of anointments, and lots of gear
+### requiring triple-digit buffs in order to deal with a five-digit boost to
+### enemy health makes it almost impossible to keep things relatively
+### balanced during playthroughs. And then there's the stuff that can't
+### even perform well at the lowest levels of play. So I've tried my hand 
+### at putting some more balance in the Borderlands.
+###
+### This mod can used with any normal save file without needing to change anything, the only thing you may need to change when you return to normal-play is your Mayhem Mode modifiers if you change them while the mod is active.
+###
+### CREDITS:
+### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-auto on the Edirian Fabricator, Beef Plisken's loot fix, the Siren COM blank part fix, some DLC enemies not dropping shields, Red-Text Explainer, and the database from which I obtained a lot of information.
+### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
+### Grimm - For the weighted ammo drop adjustments and lending a hand to figuring out some stuff.
+### apple 1417 - For lending a hand to figuring out some stuff.
+### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
+### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
+### tbj_quag, JoeForLong, ki11erSix, shadowevil - For playtesting and/or giving feedback.
+### EpicNNG - For allowing me to use his code for making the Psycho Stabber's projectiles deal melee damage, for helping me fix an issue with the Nukem, and for making Redux which was useful for referring to when dealing with certain lines of code.
+### SSpyR - For making the Borderlands 3 Object Explorer, which proved immensely useful for investigating almost everything adjusted in this file.
+### Any contributors to the Unofficial Community Patch (for Borderlands 3) that haven't already been previously mentioned.
+### c0dycode - For making the Borderlands 3 Hotfix Manager.
+### Lootlemon.com - Good information source for Borderlands 3 gear and skills.
+###
+
+#####################
+### ENEMY CHANGES ###
+#####################
+
+# Captain Haunt - Reduce health and shield by roughly 50%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/_Shared/_Design/Balance/Table_Balance_HarvestEnemies.Table_Balance_HarvestEnemies,Boss_Normal,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/_Shared/_Design/Balance/Table_Balance_HarvestEnemies.Table_Balance_HarvestEnemies,Boss_Normal,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,32
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/_Shared/_Design/Balance/Table_Balance_HarvestEnemies_PT2.Table_Balance_HarvestEnemies_PT2,Boss_Normal,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/Enemies/_Shared/_Design/Balance/Table_Balance_HarvestEnemies_PT2.Table_Balance_HarvestEnemies_PT2,Boss_Normal,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,32
+
+# Captain Haunt's Phylacteries - Reduce health by 80%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_HarvestBoss),/Game/PatchDLC/BloodyHarvest/GameData/Balance/BloodyHarvest/DataTable_Season_Halloween.DataTable_Season_Halloween,HarvestBossIO_Health_BaseScale,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,20
+
+# Reduce Joey Ultraviolet's health and shield by 50%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/Enemies/CartelBoss/Boss/_Design/Balance/Table_CartelBoss_Balance.Table_CartelBoss_Balance,CartelBoss_PT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,100
+SparkCharacterLoadedEntry,(1,2,0,BPChar_CartelBoss),/Game/PatchDLC/Event2/Enemies/CartelBoss/Boss/_Design/Balance/Table_CartelBoss_Balance.Table_CartelBoss_Balance,CartelBoss_PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,100
+
+# Reduce Anathema the Relentless' Immune Phases to 5 from 11.
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteMiniboss),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Miniboss/_Design/Character/BPChar_GuardianBruteMiniboss.Default__BPChar_GuardianBruteMiniboss_C:DefaultDamageComponent,DamageEvents,0,,((EventName=CE_TertiaryAt50,HealthPool=GameResourcePoolData'"/Game/GameData/ResourcePools/ResourcePool_AI_Health_03_Tertiary.ResourcePool_AI_Health_03_Tertiary"',EventHealthPercent=0.5,EVENTTYPE=(Type=/Script/GbxGameSystemCore.EDamageReactionEventType,Name=Health,Value=0),Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=CE_TertiaryAt00,HealthPool=GameResourcePoolData'"/Game/GameData/ResourcePools/ResourcePool_AI_Health_03_Tertiary.ResourcePool_AI_Health_03_Tertiary"',EventHealthPercent=0.0,EVENTTYPE=(Type=/Script/GbxGameSystemCore.EDamageReactionEventType,Name=Health,Value=0),Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=CE_SecondaryAt50,HealthPool=GameResourcePoolData'"/Game/GameData/ResourcePools/ResourcePool_AI_Health_02_Secondary.ResourcePool_AI_Health_02_Secondary"',EventHealthPercent=0.5,EVENTTYPE=(Type=/Script/GbxGameSystemCore.EDamageReactionEventType,Name=Health,Value=0),Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=CE_SecondaryAt00,HealthPool=GameResourcePoolData'"/Game/GameData/ResourcePools/ResourcePool_AI_Health_02_Secondary.ResourcePool_AI_Health_02_Secondary"',EventHealthPercent=0.0,EVENTTYPE=(Type=/Script/GbxGameSystemCore.EDamageReactionEventType,Name=Health,Value=0),Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1),(EventName=CE_PrimaryAt50,HealthPool=GameResourcePoolData'"/Game/GameData/ResourcePools/ResourcePool_AI_Health_01_Primary.ResourcePool_AI_Health_01_Primary"',EventHealthPercent=0.5,EVENTTYPE=(Type=/Script/GbxGameSystemCore.EDamageReactionEventType,Name=Health,Value=0),Filter=None,DamageTime=0.0,RetriggerDelay=0.0,MaxTriggerCount=1))
+
+# Reduce the damage by Diadems during the Scourge fight by 75%.
+SparkCharacterLoadedEntry,(1,1,0,BPChar_GuardianBruteBomber_BossFodder),/Game/PatchDLC/Takedown2/Enemies/GuardianBrute/Bomber/_Design/Character/BPChar_GuardianBruteBomber_BossFodder.Default__BPChar_GuardianBruteBomber_BossFodder_C:DefaultDamageCauserComponent,OakDamageCauserComponent.Object..DamageDealtMultiplier,0,,(BaseValue=0.250000)
+
+# Evil Brick - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkBrick),/Alisma/Enemies/DarkVH/DarkBrick/_Design/Balance/Table_Balance_DarkBrick_PT1.Table_Balance_DarkBrick_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,60
+
+# Evil Mordecai - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkMordecai),/Alisma/Enemies/DarkVH/DarkMordecai/_Design/Balance/Table_Balance_DarkMordecai.Table_Balance_DarkMordecai,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,45
+
+# Evil Lilith - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DarkLilith),/Alisma/Enemies/DarkVH/DarkLilith/_Design/Balance/Table_Balance_DarkLilith_PT1.Table_Balance_DarkLilith_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,75
+
+# Spongeboss - Reducde health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_SpongeBoss),/Alisma/Enemies/_Unique/SpongeBoss/_Design/Balance/Table_Balance_SpongeBoss.Table_Balance_SpongeBoss,Spongeboss,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,130
+
+# Locomobius - Reduce health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_TrainBoss),/Alisma/Enemies/TrainBoss/_Shared/_Design/Balance/Table_Balance_TrainBoss_PT1.Table_Balance_TrainBoss_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,165
+
+# Dr. Benedict - Reduce total health by roughly 35%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,46
+SparkCharacterLoadedEntry,(1,2,0,BPChar_DrBenedict),/Alisma/Enemies/DrBenedict/_Shared/_Design/Balance/Table_Balance_DrBenedict_PT1.Table_Balance_DrBenedict_PT1,Basic,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,26
+
+# Psychoreaver - Reduce health by roughly 40%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Psychodin),/Alisma/Enemies/Psychodin/_Shared/_Design/Balance/Table_Balance_Psychodin.Table_Balance_Psychodin,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,200
+SparkCharacterLoadedEntry,(1,2,0,BPChar_PsychodinP2),/Alisma/Enemies/Psychodin/_Shared/_Design/Balance/Table_Balance_Psychodin.Table_Balance_Psychodin,Basic,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,200
+
+# The Seer - Reduce total health by roughly 60%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,155
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,145
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_Redeemer,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,90
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,155
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,145
+SparkCharacterLoadedEntry,(1,2,0,BPChar_GuardianBrute_Redeemer),/Ixora2/Enemies/Guardian/_Shared/_Design/Balance/Table_Balance_Guardian_Ixora2.Table_Balance_Guardian_Ixora2,GuardianBrute_RedeemerPT2,HealthMultiplier_03_Tertiary_16_46D12ED24F464AF5278FAAA2927388E2,0,,90
+
+# Hemovorous the Invincible - Reduce health by roughly 40%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_RaidBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_Raid,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,235
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_RaidBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_Raid,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,235
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_RaidBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_Raid_PT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,235
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_RaidBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_Raid_PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,235
+
+# Vermivorous the Invincible - Reduce health by roughly 40%.
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_LesserBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,VarkidLesserRaid,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,115
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_LesserBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_LesserRaid,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,115
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_LesserBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_LesserRaid_PT2,HealthMultiplier_01_Primary_9_07801BE24749AFC87299AD91E1B82E12,0,,115
+SparkCharacterLoadedEntry,(1,2,0,BPChar_Varkid_LesserBoss),/Ixora2/Enemies/Varkid/_Unique/RaidBoss/_Design/Balance/Table_Varkid_Balance_Raid.Table_Varkid_Balance_Raid,Varkid_LesserRaid_PT2,HealthMultiplier_02_Secondary_12_9204082C4992E4200D005C8CBA622E49,0,,115
+
+# Prevent Anointed Enforcers from spawning (other than Anointed Alpha, Luke, and Muldock.)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions__CoVMix_OrbitalBadasses.SpawnOptions__CoVMix_OrbitalBadasses,Options.Options[7].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions_CoVMix_CityVaultBadasses.SpawnOptions_CoVMix_CityVaultBadasses,Options.Options[9].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_1/SpawnOptions_CoVMix_TowersBadasses.SpawnOptions_CoVMix_TowersBadasses,Options.Options[9].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/Prison/SpawnOptions_CotVFullMix_PrisonBadasses.SpawnOptions_CotVFullMix_PrisonBadasses,Options.Options[9].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_2/WetlandsVault/SpawnOptions_CoVMix_WetlandsVaultBadasses.SpawnOptions_CoVMix_WetlandsVaultBadasses,Options.Options[8].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses.SpawnOptions_CoVMix_DesertVaultBadasses,Options.Options[11].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Mine/SpawnOptions_CoVMix_MineBadasses.SpawnOptions_CoVMix_MineBadasses,Options.Options[8].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/Motorcade/SpawnOptions_Cotv_MotorcadeBadasses.SpawnOptions_Cotv_MotorcadeBadasses,Options.Options[10].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_EnforcerMix_COVSlaughter.SpawnOptions_EnforcerMix_COVSlaughter,Options.Options[4].WeightParam.AttributeInitializationData.BaseValueScale,0,,0
+
+# Slaughter Shaft - Increase the chance of Badass Enforcer spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_EnforcerMix_COVSlaughter.SpawnOptions_EnforcerMix_COVSlaughter,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueScale,0,,15
+
+# Slaughter Shaft - Increase the chance of Badass Goliath spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_GoliathMix_COVSlaughter.SpawnOptions_GoliathMix_COVSlaughter,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueScale,0,,15
+
+# Slaughter Shaft - Increase the chance of Badass Goon spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_GoonMix_COVSlaughter.SpawnOptions_GoonMix_COVSlaughter,Options.Options[2].WeightParam.AttributeInitializationData.BaseValueScale,0,,15
+
+# Slaughter Shaft - Increase the chance of Badass Psycho spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_PsychoMix_COVSlaughter.SpawnOptions_PsychoMix_COVSlaughter,Options.Options[5].WeightParam.AttributeInitializationData.BaseValueScale,0,,15
+
+# Slaughter Shaft - Reduce the chance of Badass Zealot spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_PunkMix_COVSlaughter.SpawnOptions_PunkMix_COVSlaughter,Options.Options[4].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.05
+
+# Slaughter Shaft - Reduce the chance of Armored Badass Zealot spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_PunkMix_COVSlaughter.SpawnOptions_PunkMix_COVSlaughter,Options.Options[5].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.05
+
+# Slaughter Shaft - Reduce the chance of Badass Tink spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_TinkMix_COVSlaughter.SpawnOptions_TinkMix_COVSlaughter,Options.Options[3].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.05
+
+# Slaughter Shaft - Reduce the chance of Armored Badass Tink spawns.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_TinkMix_COVSlaughter.SpawnOptions_TinkMix_COVSlaughter,Options.Options[4].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.05
+
+# Slaughter Shaft - Reduce the chance of Anointed Zealot spawns since lowering Badass spawn chance makes Anointed Zealots more common.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_PunkMix_COVSlaughter.SpawnOptions_PunkMix_COVSlaughter,Options.Options[6].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.01
+
+# Slaughter Shaft - Reduce the chance of Anointed Tink spawns since lowering Badass spawn chance makes Anointed Tinks more common.
+SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/Enemies/_Spawning/Slaughters/COVSlaughter/SpawnOptions_TinkMix_COVSlaughter.SpawnOptions_TinkMix_COVSlaughter,Options.Options[5].WeightParam.AttributeInitializationData.BaseValueScale,0,,0.005
+
+# Prevent the Cryo part from spawning on most enemy weapons.
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/AI/Balance_AR_COV_AI.Balance_AR_COV_AI,RuntimePartList.AllParts[43].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/AI/Balance_DAL_AR_AI.Balance_DAL_AR_AI,RuntimePartList.AllParts[51].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Torgue/_Shared/_Design/AI/Balance_AR_TOR_AI.Balance_AR_TOR_AI,RuntimePartList.AllParts[41].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/AI/Balance_AR_VLA_AI.Balance_AR_VLA_AI,RuntimePartList.AllParts[50].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/AI/Balance_PS_COV_AI.Balance_PS_COV_AI,RuntimePartList.AllParts[51].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/AI/Balance_DAL_PS_AI.Balance_DAL_PS_AI,RuntimePartList.AllParts[37].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/AI/Balance_PS_MAL_AI.Balance_PS_MAL_AI,RuntimePartList.AllParts[41].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Maliwan/_Shared/_Design/AI/Balance_PS_MAL_AI.Balance_PS_MAL_AI,RuntimePartList.AllParts[46].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Tediore/Shared/_Design/AI/Balance_PS_Tediore_AI.Balance_PS_Tediore_AI,RuntimePartList.AllParts[37].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/AI/Balance_PS_TOR_AI.Balance_PS_TOR_AI,RuntimePartList.AllParts[43].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/AI/Balance_PS_VLA_AI.Balance_PS_VLA_AI,RuntimePartList.AllParts[50].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Hyperion/_Shared/_Design/AI/Balance_SG_HYP_AI.Balance_SG_HYP_AI,RuntimePartList.AllParts[39].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/AI/Balance_SG_MAL_AI.Balance_SG_MAL_AI,RuntimePartList.AllParts[40].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Maliwan/_Shared/_Design/AI/Balance_SG_MAL_AI.Balance_SG_MAL_AI,RuntimePartList.AllParts[45].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Tediore/_Shared/_Design/AI/Balance_SG_TED_AI.Balance_SG_TED_AI,RuntimePartList.AllParts[43].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/AI/Balance_SG_Torgue_AI.Balance_SG_Torgue_AI,RuntimePartList.AllParts[36].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/AI/Balance_SM_DAHL_AI.Balance_SM_DAHL_AI,RuntimePartList.AllParts[48].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/AI/Balance_SM_HYP_AI.Balance_SM_HYP_AI,RuntimePartList.AllParts[45].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/AI/Balance_SM_MAL_AI.Balance_SM_MAL_AI,RuntimePartList.AllParts[39].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/AI/Balance_SM_MAL_AI.Balance_SM_MAL_AI,RuntimePartList.AllParts[44].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Tediore/_Shared/_Design/AI/Balance_SM_TED_AI.Balance_SM_TED_AI,RuntimePartList.AllParts[42].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/AI/Balance_SR_DAL_AI.Balance_SR_DAL_AI,RuntimePartList.AllParts[58].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/AI/Balance_SR_HYP_AI.Balance_SR_HYP_AI,RuntimePartList.AllParts[52].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/AI/Balance_MAL_SR_AI.Balance_MAL_SR_AI,RuntimePartList.AllParts[56].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Maliwan/Shared/_Design/AI/Balance_MAL_SR_AI.Balance_MAL_SR_AI,RuntimePartList.AllParts[60].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Vladof/_Shared/_Design/AI/Balance_VLA_SR_AI.Balance_VLA_SR_AI,RuntimePartList.AllParts[55].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/ChildrenOfTheVault/_Shared/_Design/_ForAI/Balance_HW_COV_AI_UseONLY.Balance_HW_COV_AI_UseONLY,RuntimePartList.AllParts[41].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_ForAI/Balance_HW_TOR_AI_UseONLY.Balance_HW_TOR_AI_UseONLY,RuntimePartList.AllParts[34].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_ForAI/Balance_HW_VLA_AI_UseONLY.Balance_HW_VLA_AI_UseONLY,RuntimePartList.AllParts[45].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/BadassHeavyWeapons/COV/Balance_HW_COV_AI_UseONLY_Bullet.Balance_HW_COV_AI_UseONLY_Bullet,RuntimePartList.AllParts[32].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/BadassHeavyWeapons/VLA/Balance_HW_VLA_AI_UseONLY_Bullet.Balance_HW_VLA_AI_UseONLY_Bullet,RuntimePartList.AllParts[33].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Hibiscus/Enemies/FrostBiters/_Unique/_Design/Character/Balance_HW_COV_AI_UseONLY_Hib.Balance_HW_COV_AI_UseONLY_Hib,RuntimePartList.AllParts[41].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=0)
