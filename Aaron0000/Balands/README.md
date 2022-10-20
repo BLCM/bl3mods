@@ -1,6 +1,8 @@
-(Includes the Unofficial Community Patch's changes (other than Map Defogger), so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix , or for the normal-sized hud version; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20(No%20Smaller%20HUD).bl3hotfix )
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix)
 
-(This mod works just fine with regular save files. Just reroll your Mayhem modifiers if you go back to normal play if it's needed.)
+(This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
+
+(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod.)
 
 # DISCLAIMER
 
@@ -8,6 +10,16 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.5
+-----
+Balands now has a collection of seperate files apart from the original main file, for users to pick and choose what they prefer. This is largely divided into a file containing the balancing portion, and multiple files containing bugfixes, quality-of-life adjustments, and other miscellaneous options.
+
+Removed the Smaller HUD and Animation-Speed-Up mods from the main Balands file and seperated them into the previously mentioned individual files. Also added the Map Defogger from the Unofficial Community Patch as a seperate file.
+
+Removed the P.A.T. Mk. III from Spongeboss' dedicated drops since it has already been moved to General Blisterpus.
+
+Made the Septimator and Septimator Prime's meteors' damage source be Sniper Rifle instead of Shotgun.
+
 1.5.4
 -----
 Re-implemented the increased damage taken for player-controlled vehicles in Mayhem Mode. Player-controlled vehicles were taking too little damage relative to health. Open to suggestions on future changes for vehicles.
@@ -800,13 +812,13 @@ Added a 75% chance for Tink-Train to drop a purple Vladof grenade separately fro
 
 Increased the odds of a Sickle spawning as a Boom Sickle to 40%.
 
-Increased Raging Titan's chance of dropping from his loot pool to 80% and increase the number of drops from this pool to 2.
+Increased Raging Titan's number of drops from its loot pool to 2.
 
 Increased Tremendous Rex's number of drops from its loot pool to 2.
 
-Increased Red Rain's chance of dropping from its loot pool to 100% and increase the number of drops from this pool to 2.
+Increased Red Rain's number of drops from its loot pool to 2.
 
-Increased Blue Fire's chance of dropping from its loot pool to 100% and increase the number of drops from this pool to 2.
+Increased Blue Fire's number of drops from its loot pool to 2.
 
 Adjusted the Agonizer 9000's dedicated item drops. It now has a 30% chance to drop from either of its loot pools, the Crader's EM-P5 has been moved to the Dictator/Loaded Dice loot pool, and the Agonizer 1500 has been removed from both of the regular Agonizer 9000 dedicated item drop pools and given its own item pool with a 50% chance to drop.
 
