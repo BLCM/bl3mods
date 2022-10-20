@@ -18,38 +18,62 @@ Balands - Item Part Spawning Adjustments: Makes regular Jakobs shotguns (and the
 
 Balands - Loot Adjustments: Contains the following;
 	Earl's Vendor improvements 
+	
 	Loot-o-Gram reward changes 
+	
 	Anointed enemies drop Alien-barrel weapons 
+	
 	Mayhem-exclusive/Bekah/R.Y.N.A.H/Hunt(er)/Hunt(ress) added to the world drop legendary pool 
+	
 	Increased type-specific legendary world drops in the trials and circles of slaughter 
+	
 	Improved Takedown legendary world drop rates 
+	
 	Better Loot Skulls 
+	
 	More Fustercluck DLC unique weapons added to the Fustercluck unique world drop pool 
+	
 	Guns, Love, and Tentacles Singing Fish can produce a Fish Slap 
 
 Balands - Mayhem Mode Modifier Adjustments: Contains the altered Mayhem 11 modifer "Nay-hem" that allows any level of Mayhem to potentially spawn without modifiers.
 
 Balands - Objective Fixes: (Recommended to load this file before other files) Contains the following fixes that correct genuine issues;
 	Weapons dealing the wrong type of damage 
+	
 	Secondary firing modes not receiving damage buffs properly 
+	
 	Fl4k's loader pets not receving Barbaric Yawp bonuses 
+	
 	Certain enemies having loot drop patterns that would drop gear into bottomless pits 
+	
 	Certain gear not providing cooldown bonuses appropiately 
+	
 	Certain enemies and loot containers not producing loot properly 
+	
 	Certain class mods spawning with less bonus stats than normal 
 
 Balands - Quality-of-Life Adjustments: Contains the following; 
 	Self-damage removal for the Breath of the Dying and Shrieking Banshee 
+	
 	Fully Automatic Eridian Fabricator 
 	Anointment re-roll cost lowered to 50 
+	
 	Makes the Hunt sniper rifles and the Revengenador Legendary rarity 
+	
 	Fixed Caustic Coast artifacts not scaling their damage with level 
+	
 	Faster NPCs 
+	
 	Reduces the delay on multi-item pick-ups 
+	
 	Increases flight-speed of pick-up-able items 
+	
 	Adjusts the position of the Fast Travel at Atlas HQ and adds a shortcut 
+	
 	Adds Trial Names to the Galaxy Map Proving Grounds 
+	
 	Removes reload and loyalty reward notifications 
+	
 	Prevents waste of class-specific equipment 
 
 Balands - Red Text Explainer: Adds helpful descriptions below the flavor text on the vast majority of unique and legendary weapons.
@@ -58,18 +82,31 @@ Balands - Smaller HUD: Reduces the size of elements on the Heads-Up-Display.
 
 Balands - Subjective Fixes: (Recommended to load this file before other files but after Objective Fixes) Contains fixes that address several inconsistencies and minor issues; 
 	Anything that would affect Fire Rate/Reload Speed/Magazine Size now affects Burst-Fire Rate/Repair Time/Heat Rate respectively 
+	
 	Addresses some inconsistencies for accuracy boosts on artifacts 
+	
 	Fixed the Kill-o'-the-Wisp using the damage table for its ammo cost instead of using it for the actual weapon's damage. 
+	
 	Makes the Little Yeeti/Dictator/Monarch behave better with increased projectile count parts 
+	
 	Applies the buffs the TK's Wave received in the past to the Tidal Wave as well 
+	
 	Fixed certain sources of amp damage not applying damage bonuses to multiple projectiles correctly 
+	
 	Makes the Shooting Star's projectiles go through surfaces 
+	
 	Makes Anointments that effect Status Effect Chance also affect Cryo Rate 
+	
 	Fixed the Phasegrasp Terror Skull anointment using the Phasegrasp Nova anointment for damage calculation 
+	
 	Made certain Moze skills affect Iron Bear's damage appropiately 
+	
 	Fixed Monkey Do's amp removing elements and damage not applying correctly to multi-projectile weapons 
+	
 	Added Elemental Resistance to Fl4k's BUL Loader and WAR Loader for consistency with the ION Loader 
+	
 	Replaced Zane's Digi-Clone's Dahl pistol appearing in Maurice's Week 30 vendor with a Nova Berner 
+	
 	Made Sheer Will work with MNTIS critical hits 
 
 ---
