@@ -2,7 +2,7 @@
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
 
-(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod.)
+(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the "Contents" file for details.)
 
 # DISCLAIMER
 
