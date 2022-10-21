@@ -1,4 +1,4 @@
-(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" one of these links; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix)
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
 
@@ -12,9 +12,9 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 ------------------------------
 1.5.5
 -----
-Balands now has a collection of seperate files apart from the original main file, for users to pick and choose what they prefer. This is largely divided into a file containing the balancing portion, and multiple files containing bugfixes, quality-of-life adjustments, and other miscellaneous options.
+Balands now has a collection of separate files apart from the original main file, for users to pick and choose what they prefer. This is largely divided into a file containing the balancing portion, and multiple files containing bugfixes, quality-of-life adjustments, and other miscellaneous options.
 
-Removed the Smaller HUD and Animation-Speed-Up mods from the main Balands file and seperated them into the previously mentioned individual files. Also added the Map Defogger from the Unofficial Community Patch as a seperate file.
+Removed the Smaller HUD and Animation-Speed-Up mods from the main Balands file and separated them into the previously mentioned individual files. Also added the Map Defogger from the Unofficial Community Patch as a separate file.
 
 Removed the P.A.T. Mk. III from Spongeboss' dedicated drops since it has already been moved to General Blisterpus.
 
@@ -156,7 +156,7 @@ Fixed the Shlooter spawning with four passive parts instead of three.
 -----
 Changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
 
-Made Hemovorous always drop three pieces of her non-Company Man dedicated loot. Company Man drops seperately from her regular dedicated item pool.
+Made Hemovorous always drop three pieces of her non-Company Man dedicated loot. Company Man drops separately from her regular dedicated item pool.
 
 1.3.7
 -----
