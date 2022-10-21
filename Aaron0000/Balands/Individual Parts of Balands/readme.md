@@ -38,6 +38,8 @@ Balands - Loot Adjustments: Contains the following;
 
 Balands - Mayhem Mode Modifier Adjustments: Contains the altered Mayhem 11 modifer "Nay-hem" that allows any level of Mayhem to potentially spawn without modifiers.
 
+Balands - Map Defogger: Automatically discovers an area's entire map at once.
+
 Balands - Objective Fixes: (Recommended to load this file before other files) Contains the following fixes that correct genuine issues;
 
 	Weapons dealing the wrong type of damage 
