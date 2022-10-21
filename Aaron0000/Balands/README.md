@@ -2,7 +2,7 @@
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
 
-(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the readme file in "Individual Parts of Balands" for details.)
+(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the "Contents" file for details.)
 
 # DISCLAIMER
 
@@ -2123,7 +2123,7 @@ Boogeyman - Skull damage reduced to 2000% card damage from 2500% card damage.
 
 Lyuda - Critical hit damage bonus removed.
 
-Septimator Prime - Starfall chance set to 20%, starfall damage set to match card damage, cooldown for starfall chance set to 1 second, rocket launcher underbarrel delay removed, rocket underbarrel ammo regen rate set to 0.225 rounds per second, shotgun underbarrel ammo regen delay lowered to 1.4 seconds, shotgun ammo regen rate set to 0.6 rounds per second.
+Septimator Prime - Starfall chance set to 20%, starfall damage set to match card damage, cooldown for starfall chance set to 1 second, rocket launcher underbarrel delay removed, rocket underbarrel ammo regen rate set to 0.225 rounds per second, shotgun underbarrel ammo regen delay lowered to 1.4 seconds, shotgun ammo regen rate set to 0.6 rounds per second, set the meteors' damage source be Sniper Rifle instead of Shotgun.
 
 VLADOF UNIQUE GUNS
 ------------------
