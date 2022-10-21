@@ -81,7 +81,7 @@ Balands - Quality-of-Life Adjustments: Contains the following;
 	
 	Prevents waste of class-specific equipment 
 
-Balands - Red Text Explainer: Adds helpful descriptions below the flavor text on the vast majority of unique and legendary weapons.
+Balands - Red Text Explainer: Adds helpful descriptions below the flavor text on the vast majority of unique and legendary items.
 
 Balands - Smaller HUD: Reduces the size of elements on the Heads-Up-Display.
 
