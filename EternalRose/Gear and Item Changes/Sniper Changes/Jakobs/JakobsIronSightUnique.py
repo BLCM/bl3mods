@@ -1,6 +1,6 @@
 import sys
 import collections
-sys.path.append('../../../python_mod_helpers')
+sys.path.append('../../../../python_mod_helpers')
 from bl3data.bl3data import BL3Data
 from bl3hotfixmod.bl3hotfixmod import Mod, Balance
 
