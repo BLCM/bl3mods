@@ -29,6 +29,8 @@ fixedbirdofprey_bal_name = '/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/BirdofP
         
 disruptor_bal_name = '/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Disruptor/Balance/Balance_SR_JAK_Disruptor'
 
+wedding_bal_name = '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite'
+
 # Parts is for directing the game "here's where I want the part" and the Category makes a new "None" sniper scope. 
         
 parts = [
@@ -76,5 +78,12 @@ cat.enabled = True
 for parts in category:
     cat.add_part_name(parts)
 disruptor_bal.hotfix_full(mod)
+
+wedding_bal = Balance.from_data(data, wedding_bal_name)
+cat = wedding_bal.categories[6]
+cat.enabled = True
+for parts in category:
+    cat.add_part_name(parts)
+wedding_bal.hotfix_full(mod)
 
 mod.close()
