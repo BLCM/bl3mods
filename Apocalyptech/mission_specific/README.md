@@ -9,6 +9,8 @@ See the individual mod folders for full READMEs.
   as soon as you can get to the levels which provide them.
 - **Sisterly Love: More Money** - Buffs the amount of cash you get from the
   malfunctioning slot machines during "Sisterly Love."
+- **Transaction-Packed: Abridged** - Skips basically all of the mission, and
+  removes all remaining mission dialogue.
 
 Licenses
 ========
