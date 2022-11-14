@@ -97,7 +97,7 @@
 # Legendaries
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary,ValueResolver,0,,SimpleMathValueResolver'/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary:ValueResolver_SimpleMathValueResolver'
 
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Att_ActorExperienceLevel.Att_ActorExperienceLevel,BaseValueScale=1)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary:ValueResolver_SimpleMathValueResolver,ValueA,0,,(BaseValueConstant=1,BaseValueAttribute=/Game/GameData/Attributes/Att_GameStage.Att_GameStage,BaseValueScale=1)
 
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary:ValueResolver_SimpleMathValueResolver,ValueB,0,,(BaseValueConstant=1,BaseValueScale=100)
 
