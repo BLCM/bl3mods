@@ -1,6 +1,6 @@
 
 @title Expanded Legendary Pools
-@version 1.6.0
+@version 1.6.1
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories loot-system, enemy-drops
@@ -75,4 +75,14 @@ SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legend
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary,BalancedItems.BalancedItems[4].Weight.BaseValueConstant,0,,46.6
 # SMGs: 18%
 SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary,BalancedItems.BalancedItems[5].Weight.BaseValueConstant,0,,48.66
+
+###
+### Fix various artifact MinGameStage entries
+###
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy.InvBalD_Artifact_Lunacy,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage,0,,(BaseValueConstant=1,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule"',RowName="Artifacts",ValueName="MinGameStage_17_2500317646FAD2F4916D158835B29E83"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet.InvBalD_Artifact_MysteriousAmulet,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage,0,,(BaseValueConstant=1,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule"',RowName="Artifacts",ValueName="MinGameStage_17_2500317646FAD2F4916D158835B29E83"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet.InvBalD_Artifact_MysteriousAmulet,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage,0,,(BaseValueConstant=1,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule"',RowName="Artifacts",ValueName="MinGameStage_17_2500317646FAD2F4916D158835B29E83"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK.InvBalD_Artifact_PUK,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage,0,,(BaseValueConstant=1,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule"',RowName="Artifacts",ValueName="MinGameStage_17_2500317646FAD2F4916D158835B29E83"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance.InvBalD_Artifact_Vengeance,Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage,0,,(BaseValueConstant=1,DataTableValue=(DataTable=DataTable'"/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule.DataTable_GameStage_Schedule"',RowName="Artifacts",ValueName="MinGameStage_17_2500317646FAD2F4916D158835B29E83"),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 

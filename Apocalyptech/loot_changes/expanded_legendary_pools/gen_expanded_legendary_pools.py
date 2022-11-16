@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2021 Christopher J. Kucera
+# Copyright 2019-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Borderlands 3 Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -21,7 +21,7 @@
 
 import sys
 sys.path.append('../../../python_mod_helpers')
-from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfixmod import Mod, BVCF, DataTableValue
 
 ###
 ### A lot of this mod is duplicated in gen_manufacturer_lock.py now.
@@ -61,7 +61,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.6.0',
+        v='1.6.1',
         cats='loot-system, enemy-drops',
         )
 
@@ -1468,6 +1468,36 @@ for idx, label, weight in sorted(legendary_weight_params):
             '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary',
             f'BalancedItems.BalancedItems[{idx}].Weight.BaseValueConstant',
             round(weight, 6))
+mod.newline()
+
+# A handful of DLC artifacts don't have a MinGameStage defined (or rather, it's set to 1),
+# as opposed to most gear's 27.  This can cause problems for someone using this mod in
+# Normal mode *without* my Early Bloomer mod -- prior to gamestage 27, the Artifact pools
+# become valid drops, but the only available artifacts would be these.  So, those users
+# would start seeing mysterious legendary artifacts pop up with surprising frequency.
+# So, this hooks those artifacts up to the main-game DataTable, so that they play nicely
+# with or without Early Bloomer.
+#
+# The Mysterious Amulet here will never spawn ordinarily -- it's the unreleased DLC5 version
+# of the Mysterious Artifact which was properly released with DLC6.  But, we may as well do
+# it here, too, since we're doing the others.
+mod.header('Fix various artifact MinGameStage entries')
+mingamestage = BVCF(dtv=DataTableValue(
+    table='/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule',
+    row='Artifacts',
+    value='MinGameStage_17_2500317646FAD2F4916D158835B29E83',
+    ))
+for name, balance in [
+        ('Lunacy', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy'),
+        ('Mysterious Amulet', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
+        ('Mysterious Artifact', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
+        ('Pearl of Ineffable Knowledge', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK'),
+        ('Vendetta', '/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance'),
+        ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+            balance,
+            'Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage',
+            mingamestage)
 mod.newline()
 
 mod.close()

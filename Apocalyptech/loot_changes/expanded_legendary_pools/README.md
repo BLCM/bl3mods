@@ -38,6 +38,14 @@ added into the loot pool properly.
 Changelog
 =========
 
+**v1.6.1** - Nov 16, 2022
+ * Players using this mod in Normal, in the early game, without also running
+   Early Bloomer, were getting various legendary DLC artifacts as drops
+   (specifically Lunacy, Mysterious Artifact, Pearl of Ineffable Knowledge,
+   and Vendetta).  The problem wouldn't show up in TVHM or with Mayhem Mode
+   enabled, or with the Early Bloomer mod enabled.  Regardless, fixed that
+   up!
+
 Aug 1, 2022 *(no version number change)*
  * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
    (no functionality change)
