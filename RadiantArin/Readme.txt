@@ -18,6 +18,95 @@ Thank you so much for downloading, and enjoy, fellow badass!
 
 CHANGELOG:
 
+1.2.0
+
+• Changed NE damage bonus versus Armor back to it's original 80%. Radiation damage is now weak against shields and armor by 25% in Normal Mode, and 50% in TVHM/Mayhem mode.
+
+• Changed the health of Scraptrap Nest and Scraptrap Prime.
+
+• Increased Heavy weapon damage by 0.25.
+
+• Reduced SMG damage by 0.05.
+
+• Reduced Shotgun damage by 0.025.
+
+• Increased COV damage by 15% across the board. Reverted the AR buff to compensate.
+
+• Reverted the Dahl AR Rifle nerf to Fire Rate and Damage buff. The nerf to Fire Rate was 25%, now it's 15%. Damage was lowered from 25% to 15%.
+
+• Hyperion Shotgun Damage was decreased by 5%.
+
+• Maliwan Pistol damage was increased by 5%.
+
+• Tediore E-Tech barrels were being double dipped with the new changes to E-Tech weapons. These have been reverted.
+
+• Torgue has had its damage increased by 35% across the board.
+
+• E-Tech ARs were nerfed by 10%. Dahl E-Tech SMGs were buffed by 12.5%.
+
+• Ruby's Wrath damage was reduced to 2.2 from 2.5.
+
+• Globetrotter damage was increased to 2.5 from 2.0.
+
+• Kaos damage was reduced to 1.75 from 1.875.
+
+• Boomer was fixed.
+
+• Gold Rush damage was increased to 1.638 up from 1.365.
+
+• Hyperfocus XZ41 damage increased to 1.5 from 1.4.
+
+• Blade Fury damage decreased from 1.6 to 1.072.
+
+• Hive damage decreased from 2.25 to 2.0.
+
+• Quadomizer damage increased from 2.1 to 2.3.
+
+• Satisfaction damage increased from 2.0 to 2.5.
+
+• Scourge damage decreased from 2.0 to 1.8.
+
+• Tunguska damage decreased from 2.0 to 1.75.
+
+• Kickcharger damage decreased from 2.0 to 1.75.
+
+• Cryophobia damage decreased from 1.85 to 1.75.
+
+• Splash Damage on the Fulcrum decreased from 180 to 100.
+
+• Changed Parts Set on the Arcadia in order for it to work with anointment reroll.
+
+• Added three new weapons. These are the Basilisk, the Executive Decision, and the Boom Stick. The Basilisk can drop from Lasodactyl, the Executive Decision from One Punch, and the Boom Stick from Waylon Hurd.
+
+• The Love Thumper was removed from the modpack. Coincidentally, this means bringing back the OPQ. Yay! :)
+
+CHARACTER CHANGES:
+
+Moze:
+
+• Matched Set and Experimental Munitions buffs were reverted.
+
+• Click Click was changed to the following: "Moze gains dramatically increased Gun Damage on the first shot of a fully loaded magazine. Does not work with COV weapons." The reason for this change is that Click Click originally did not fit in with Moze's skill tree, and it was primarily a useless skill. Now, it serves more purpose in her tree and has actual use, especially with the class mods that now boost it. The scaling for Click Click has been increased to 40% per level now to make room for the new text.
+
+Amara:
+
+• Replaced Mindfulness Shield Recharge Delay with Gun Damage.
+
+• From Rest replaces Charge Time with Magazine Size.
+
+• Tempest Gun Damage was reverted from V1 back to its original Gun Damage. Some other skills that work the same way have been reverted as well.
+
+• Updated the World Drop Legendary pool with the new weapons. If it specifically does not say on the Wiki that it world drops, then it will not world drop.
+
+• Fixed a bug with GeneVIV's drop pools.
+
+• Fixed a bug with Pain and Terror (or more appropriately, Agonizer 9k) dropping the Kitten still.
+
+• Increased Looter Psycho's drop chances for Legendary gear.
+
+• Adding Manufacturer Infos back to Anointed Gear. The most annoying part of Anointed Gear was that it took away some much needed information regarding Manufacturer Texts, like Vladof Sniper Rifles, or how many shots a Shotgun has on its Underbarrel. This has been fixed. 
+
+
 1.1.0
 
 • Decreased Shock damage on armor to its original value of 75% on NVHM, and 50% on TVHM.
