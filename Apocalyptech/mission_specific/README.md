@@ -5,6 +5,8 @@ See the individual mod folders for full READMEs.
 
 - **Heart of Gold: Better Gifts** - Improves the quality of gifts given by
   Joy in "Heart of Gold"
+- **Life of the Party: Short Rakk Shootout** - Shortens the Rakk shootout
+  portion of Life in the Party from 90 seconds to 15 seconds.
 - **No Trials Dependencies** - Unlocks the Proving Grounds / Trials missions
   as soon as you can get to the levels which provide them.
 - **Sisterly Love: More Money** - Buffs the amount of cash you get from the
