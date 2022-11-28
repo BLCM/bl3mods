@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Arm's Race Start Chest Generator
-# Copyright (C) 2021 abram/skruntksrunt, altef-4, Christopher J. Kucera
+# Arm's Race Gear in Arm's Race
+# Copyright (C) 2021 abram/skruntksrunt, Christopher J. Kucera
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -26,28 +26,38 @@ import random
 import argparse
 
 IXORA_MAP = 'FrostSite_P'
-version = '0.0.1'
+version = '0.0.2'
 
+OUTPUT = 'armsracegearinarmsrace.bl3hotfix'
 
 def parse_args():
     parser = argparse.ArgumentParser(description=f'Arms Race Gear in Arms race v{version}')
-    # parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--output', type=str, default=OUTPUT, help='Hotfix output file')
+    parser.add_argument('--gear', action='store_true',help='Generate hotfix to manipulate specific gear')
     return parser.parse_args()
 
 args = parse_args()
+filename = args.output
 
 DFL_LEVEL=Mod.EARLYLEVEL
+LEVEL=Mod.LEVEL
 
 
 
 def mod_header(output_filename,colour="green"):
     mod = Mod(output_filename,
           f'Arms Race Gear in Arms Race',
-          'skruntskrunt',
-          [f"Makes the Arms race gear available in Arms race. Thanks to apple1417 and apocalyptech. Note: do not use this mod if you do not own arm's race."],
+          'skruntskrunt, apocalyptech',
+          [
+              f"Makes the Arms race gear available in Arms race. Thanks to apple1417 and apocalyptech.",
+              f"In COOP, COOP players without the mod can equip arms race gear by unequipping a slot",
+              f"and picking up an arm's race item. To pickup a torrent, unequip gun slot 1, then",
+              f"pickup the torrent. To equip a gas mask, unequip your shield, then pick up the gas mask.",
+              f"Note: do not use this mod if you do not own arm's race.",
+          ],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats=['gameplay','armsrace'], # fix this
+          cats=['gameplay','armsrace'],
     )
     return mod
 
@@ -96,8 +106,18 @@ armsracegear = [
     "/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot",
 ]
 
-filename = 'armsracegearinarmsrace.bl3hotfix'
 mod = mod_header(filename)
-for gear in armsracegear:
-    mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, gear, "DlcInventorySetData", "OakDownloadableInventorySetData'\"/Game/PatchDLC/Ixora2/GameData/DLCData/InventorySet_Ixora2\"'")
+
+if args.gear:
+    for gear in armsracegear:
+        mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, gear, "DlcInventorySetData", "OakDownloadableInventorySetData'\"/Game/PatchDLC/Ixora2/GameData/DLCData/InventorySet_Ixora2\"'")
+        mod.reg_hotfix(    LEVEL, IXORA_MAP, gear, "DlcInventorySetData", "OakDownloadableInventorySetData'\"/Game/PatchDLC/Ixora2/GameData/DLCData/InventorySet_Ixora2\"'")
+
+mod.reg_hotfix(LEVEL, 
+    IXORA_MAP,
+    '/Game/PatchDLC/Ixora/GameData/Mode/FrostSiteGearUpData',
+    'DlcPackageData',
+    None
+)
+
 mod.close()
