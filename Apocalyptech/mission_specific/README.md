@@ -3,6 +3,9 @@ Apocalyptech's Mission-Specific BL3 Mods
 
 See the individual mod folders for full READMEs.
 
+- **Earlier Childhood's End** - Unlocks Childhood's End as soon as Blood
+  Drive is done, and enables the full intro dialogue if the mission is
+  picked up at the Devil's Razor water purifier.
 - **Heart of Gold: Better Gifts** - Improves the quality of gifts given by
   Joy in "Heart of Gold"
 - **Life of the Party: Short Rakk Shootout** - Shortens the Rakk shootout
