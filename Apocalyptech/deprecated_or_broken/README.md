@@ -219,9 +219,6 @@ don't look at these thinking that they're any good.  :)
   "structure" as the vanilla tree.  You could swap skills around all you like
   (while making sure that the max-points and icon vars are moved too) but you
   wouldn't be able to rearrange the tree at will.
-- `instant_guardian_takedown_crystals.txt` - A small little attempt to speed up
-  the crystals you have to guard for awhile in the Guardian Takedown.  I think
-  dynamic blueprinty stuff gets in the way of being able to set these vars.
 - `no_marcus_character_intros.txt` - An attempt to turn off the Marcus voiceovers
   as you cycle through your savegames (and presumably while selecting a new
   character).  As with my Better Vehicles attempt, though, the relevant objects
@@ -232,6 +229,9 @@ don't look at these thinking that they're any good.  :)
   life of me get the animations to *look* decent, and it bothers me enough that
   I'm not willing to "officially" release this thing.  Essentially the same problem
   that I have with the vehicle animations in my Mega Timesaver XL mod.  Pffffff.
+- `always_visible_guardian_takedown_platforms` - Basically what it says: trying
+  to make the platforms in Guardian Takedown visible all the time, instead of just
+  some of the time.
 
 Licenses
 ========

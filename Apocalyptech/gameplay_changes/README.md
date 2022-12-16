@@ -16,6 +16,8 @@ See the individual mod folders for full READMEs.
   Amulet to just be normal Eridium clusters/jars instead.
 - **NVHM Gamestage Follows Level** - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
+- **Short Guardian Takedown Crystal Charge** - Drastically shortens the time
+  required to charge the crystal pads during Takedown at the Guardian Breach.
 - **Unlock DLC3 Tech** - Unlocks Coresploders, Traitorweed, and Telezappers
   right from the beginning in Bounty of Blood.
 - **Vehicle Unlocks** - Nearly all vehicle parts/skins are available from the
