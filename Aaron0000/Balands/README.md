@@ -2964,7 +2964,7 @@ Cub Active Damage - Reduced to 35% damage and now factors in skill and gear bonu
 
 IB Health/Shields - Now factors in skill and gear bonuses.
 
-N2M Reload/Handling - Improved reload bonus to 40% and now affects repair time, improved handling to 75%, and now factors in skill and gear bonuses.
+N2M Reload/Handling - Changedd reload bonus to 25% and now affects repair time, changed handling to 40%, and the anointment now factors in skill and gear bonuses.
 
 IB Cooldown - No change.
 
