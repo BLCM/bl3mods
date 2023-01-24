@@ -59,9 +59,11 @@ weren't actually intended to be mods themselves.
   but it *does* seem to work just fine.
 - `droughts_eridium_moves.txt` - Similar to my mod-testing Droughts Chest Moves
   mod, this moves all small eridium piles in The Droughts to near the Highway Fast
-  Travel location, and converts them all to the always-visible type.  Works fine,
-  but it's pretty custom-purpose so it didn't seem worth making into an official
-  mod, even as a "resource" type.
+  Travel location.  There's some easily-tweaked bits in the generation code to
+  turn them all into the "regular" sort (which don't need the Mysterious Amulet to
+  see), or even into other spawnable items.  Also does some similar stuff in Enoch's
+  Grove and Eschaton Row.  Works fine, but it's pretty custom-purpose so it didn't
+  seem worth making into an official mod, even as a "resource" type.
 - `moodlock_*.txt` - Sets NPC dialogue "mood" to the specified value, which just
   affects their facial expressions.  I was hoping it would be more amusing than
   it is, but in the end it's kind of "meh," so I'm tossing it in here rather than

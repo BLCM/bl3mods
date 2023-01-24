@@ -1,13 +1,12 @@
-###
-### Name: Droughts Eridium Moves
-### Version: 1.1.0
-### Author: Apocalyptech
-### Contact: https://apocalyptech.com/contact.php
-### Categories: resource
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Droughts Eridium Moves
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories resource
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Mod which moves all small Eridium piles in The Droughts (and, now,
@@ -77,9 +76,6 @@ SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dyna
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.SpawnPoint_IO_38.SceneComp,RelativeLocation,0,,(x=45140.1,y=24054.0,z=-3613.2)
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.SpawnPoint_IO_46.SceneComp,RelativeLocation,0,,(x=45044.1,y=23958.0,z=-3607.1)
 SparkLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.SpawnPoint_IO_42.SceneComp,RelativeLocation,0,,(x=44948.0,y=23862.0,z=-3601.0)
-
-# Updating spawner to SpawnOptions_VendingMachine_Weapons_GearUp
-SparkEarlyLevelPatchEntry,(1,1,0,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.OakSpawner_EridiumCrystals.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,SpawnOptions,0,,SpawnOptionData'"/Game/PatchDLC/Ixora/Lootables/_Design/Data/GearUp/SpawnOptions_VendingMachine_Weapons_GearUp.SpawnOptions_VendingMachine_Weapons_GearUp"'
 
 # Maxing spawn parameters
 SparkEarlyLevelPatchEntry,(1,1,0,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_Dynamic.Prologue_Dynamic:PersistentLevel.OakSpawner_EridiumCrystals.SpawnerComponent.SpawnerStyle_SpawnerStyle_Den,NumActorsParam.AttributeInitializationData,0,,(BaseValueConstant=52,BaseValueAttribute=None,BaseValueScale=1)
