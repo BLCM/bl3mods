@@ -51,21 +51,24 @@ class _StreamingBlueprintPosition:
                 self.obj_name.split('.')[-2],
                 map_name,
                 ))
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeLocation',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
-                notify=True)
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeRotation',
-                '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
-                notify=True)
-        mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
-                self.obj_name,
-                'RelativeScale3D',
-                '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
-                notify=True)
+        if self.location != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeLocation',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
+                    notify=True)
+        if self.rotation != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeRotation',
+                    '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
+                    notify=True)
+        if self.scale != (1,1,1):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeScale3D',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
+                    notify=True)
 
 class _StreamingBlueprintHelper:
     """
@@ -121,6 +124,7 @@ class _StreamingBlueprintHelper:
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest': 'Mesh_Chest1',
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest_slaughter': 'Mesh_Chest1',
             '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_whitechest': 'Mesh_Chest1',
+            '/game/patchdlc/vaultcard/interactiveobjects/bpio_lootable_vaultcard_redcrate': 'Mesh_Chest1',
             '/game/patchdlc/event2/lootables/_design/bpio_lootable_jakobs_whitechest_cartels': 'Mesh_Chest1',
             '/game/patchdlc/ixora2/interactiveobjects/gamesystemmachines/vendingmachine/_shared/bp_vendingmachine_blackmarket': 'RootComponent',
             '/geranium/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console_ger': 'RootComponent',
