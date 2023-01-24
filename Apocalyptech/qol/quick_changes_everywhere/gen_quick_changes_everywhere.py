@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2021-2022 Christopher J. Kucera
+# Copyright 2021-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <https://apocalyptech.com/contact.php>
 #
@@ -38,7 +38,7 @@ mod = Mod('quick_changes_everywhere.bl3hotfix',
         ],
         contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='qol, maps',
         quiet_streaming=True,
         ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/quick_changes_everywhere/trashlantis.png',
@@ -333,6 +333,52 @@ for num, new_loc, new_rot in [
             'RelativeRotation',
             '(Pitch={},Yaw={},Roll={})'.format(*new_rot),
             notify=True)
+mod.newline()
+
+# So there's not a lot of room in here for a Quick Change, and it turns out
+# that the spot I picked happens to cover up a couple of mission-pickup points.
+# Rather than trying to squeeze the machine in somewhere else, I figured I'd
+# just move the mission pickups, 'cause that seemed like a lot less work.  Their
+# vanilla locations are arranged nicely along the Y axis, 150 map units between
+# 'em.  I've kept their ordering and moved 'em around the corner next to the
+# vending machines, on the wall that's 45-degrees offset.  I've also squished
+# 'em closer together (75 units) to fit in the space, and raised 'em up the Z
+# axis a bit to account for a barrel thing.
+mod.comment("The Spendopticon Sidequest Pickup Posters - Casa de Timothy")
+cur_pos = [2899, -23161, 4170]
+x_offset = -53
+y_offset = 53
+for spawner in [
+        'OakMissionSpawner_WantedPoster_BrotherlyLove',
+        'OakMissionSpawner_WantedPoster_RagingBot',
+        'OakMissionSpawner_WantedPoster_AcidTrip',
+        ]:
+    obj_name = f'/Dandelion/Maps/Strip/Strip_Mission.Strip_Mission:PersistentLevel.{spawner}.SpawnerComponent'
+    mod.reg_hotfix(Mod.LEVEL, 'Strip_P',
+            obj_name,
+            'RelativeLocation',
+            '(X={},Y={},Z={})'.format(*cur_pos),
+            notify=True,
+            )
+    mod.reg_hotfix(Mod.LEVEL, 'Strip_P',
+            obj_name,
+            'RelativeRotation',
+            '(Pitch=0,Yaw=-135,Roll=0)',
+            notify=True,
+            )
+    cur_pos[0] += x_offset
+    cur_pos[1] += y_offset
+mod.newline()
+
+# Heh, looks like this also happens in The Blastplains.  Just moving it
+# down the wall a bit!
+mod.comment("The Blastplains Sidequest Pickup Posters - Pump & Charge")
+mod.reg_hotfix(Mod.LEVEL, 'Frontier_P',
+        '/Geranium/Maps/Frontier/Frontier_M_SaurdewValley.Frontier_M_SaurdewValley:PersistentLevel.OakMissionSpawner_WantedPoster.SpawnerComponent',
+        'RelativeLocation',
+        '(X=-27710.876942,Y=18214.887669,Z=8920)',
+        notify=True,
+        )
 mod.newline()
 
 mod.close()

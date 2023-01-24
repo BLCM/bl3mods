@@ -52,6 +52,12 @@ mod which adds in Quick Change stations to the same levels.
 Changelog
 =========
 
+**v1.0.1** - Jan 24, 2023
+ * Move some sidequest-pickup posters out of the way to make room for
+   the Quick Change machine: three in The Spendopticon (at Casa de
+   Timothy), and one in The Blastplains (at Pump & Charge).
+ * Remove some unnecessary scaling hotfixes
+
 **v1.0.0** - Oct 2, 2022
  * Initial release
  
