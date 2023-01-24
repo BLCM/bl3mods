@@ -6,6 +6,8 @@ See the individual mod folders for full READMEs.
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
 - **Enemy Equips** - A set of mods to alter what kind of gear enemies use.
+- **Fragile Containers** - Makes the majority of containers in the game
+  openable by taking damage from any source.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
   infinite.
 - **Jetbeasts (Almost) Everywhere** - Adds Jetbeast-spawning Catch-A-Ride
