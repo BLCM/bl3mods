@@ -1,6 +1,6 @@
 
 @title BL3 Better Loot
-@version 1.3.5
+@version 1.3.6
 @author Apocalyptech
 @contact https://apocalyptech.com/contact.php
 @categories enemy-drops, loot-system
@@ -1292,6 +1292,9 @@ SparkCharacterLoadedEntry,(1,1,0,BPChar_FrontRider_Rider),/Game/PatchDLC/Ixora/G
 ### Miscellaneous Pool Tweaks
 ###
 
+# Life of the Party Piñata, in Devil's Razor
+SparkLevelPatchEntry,(1,1,0,Desert_P),/Game/Missions/Side/Zone_3/Desert/BirthdaySurprise/ItemPool_BirthdaySurprise_Pinata.ItemPool_BirthdaySurprise_Pinata,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/Missions/Side/Zone_3/Desert/BirthdaySurprise/ItemPool_BirthdaySurprise_GrenadeMod.ItemPool_BirthdaySurprise_GrenadeMod"',Weight=(BaseValueConstant=1,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare.Att_RarityWeight_04_VeryRare"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare.ItemPool_Guns_VeryRare"',Weight=(BaseValueConstant=1,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare.Att_RarityWeight_04_VeryRare"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary.ItemPool_Guns_Legendary"',Weight=(BaseValueConstant=1,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare.ItemPool_GrenadeMods_04_VeryRare"',Weight=(BaseValueConstant=1,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare.Att_RarityWeight_04_VeryRare"')),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary.ItemPool_GrenadeMods_05_Legendary"',Weight=(BaseValueConstant=1,BaseValueAttribute=GbxAttributeData'"/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary.Att_RarityWeight_05_Legendary"')))
+
 # Have Hemovorous drop only a single Company Man
 # Using both Level and Char based hotfixes due to some oddities in Hemo's BPChar-loading behavior
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Varkid_RaidBoss),/Game/PatchDLC/Ixora2/GameData/Loot/UniqueEnemyDrops/ItemPool_Ixora2_VarkidRaidBoss.ItemPool_Ixora2_VarkidRaidBoss,BalancedItems.BalancedItems[3].Weight.BaseValueScale,0,,0
@@ -1545,15 +1548,15 @@ SparkEarlyLevelPatchEntry,(1,1,0,Wetlands_P),/Game/Lootables/_Design/Data/SlotMa
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_Bounty01),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_Bounty01.BPChar_AtlasSoldier_Bounty01_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
 
+# Fix Hightower Crew drops
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
+
 # Fix Tom/Xam Insider addition
 SparkCharacterLoadedEntry,(1,1,0,BPChar_LostTwo_BigBro),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Soulrender.ItemPool_Hibiscus_Soulrender,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender.Balance_DAL_AR_Soulrender,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/Balance/Balance_DAL_AR_Soulrender.Balance_DAL_AR_Soulrender"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Insider/Balance/Balance_SG_MAL_ETech_Insider.Balance_SG_MAL_ETech_Insider"',Weight=(BaseValueConstant=1)))
 
 # Fix Empowered Grawn Sapper COM addition
 SparkCharacterLoadedEntry,(1,1,0,BPChar_LunaticPossessed),/Game/PatchDLC/Hibiscus/GameData/Loot/UniqueEnemyDrops/ItemPool_Hibiscus_Lunacy.ItemPool_Hibiscus_Lunacy,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy.InvBalD_Artifact_Lunacy,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy.InvBalD_Artifact_Lunacy"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib.InvBalD_CM_Gunner_Hib,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/InvBalD_CM_Gunner_Hib.InvBalD_CM_Gunner_Hib"',Weight=(BaseValueConstant=1)))
-
-# Fix Hightower Crew drops
-SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].bOverrideDropOnDeathItemPools,0,,False
-SparkCharacterLoadedEntry,(1,1,0,BPChar_AtlasSoldier_BountyGang),/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE,PlayThroughs[0].DropOnDeathItemPools.ItemPools,0,,()
 
 # Ensure legendaries in Lilith's game-end chest
 SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_BalanceData.DataTable_Lootable_BalanceData,LilithEndChest,CommonWeightModifier_21_3D483428462299E5B6AF02B6CC0F65CC,0,,0
@@ -1563,4 +1566,9 @@ SparkPatchEntry,(1,2,0,),/Game/GameData/Loot/RarityWeighting/DataTable_Lootable_
 
 # Fix Aurelia's drop for Juliet's Dazzle
 SparkCharacterLoadedEntry,(1,1,0,BPChar_AureliaBoss),/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_AureliaBoss.ItemPool_AureliaBoss,BalancedItems.BalancedItems[0].ResolvedInventoryBalanceData,0,,InventoryBalanceData'"/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop.Balance_AR_TOR_Juliet_WorldDrop"'
+
+# Fix broken loot patterns (identical to Fix Broken Loot Patterns mod)
+SparkCharacterLoadedEntry,(1,1,0,BPChar_EnforcerSacrificeBoss),/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss.BPChar_EnforcerSacrificeBoss_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
+SparkCharacterLoadedEntry,(1,1,0,BPChar_Heavy_Traunt),/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt.BPChar_Heavy_Traunt_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,3
+SparkCharacterLoadedEntry,(1,1,0,BPChar_MinionLoot),/Hibiscus/Enemies/Minion/Basic/_Design/Character/BPChar_MinionLoot.BPChar_MinionLoot_C:AIBalanceState_GEN_VARIABLE,TimeToSpawnLootOver,0,,1
 

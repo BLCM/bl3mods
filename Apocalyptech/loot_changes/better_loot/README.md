@@ -37,11 +37,12 @@ already drops extremely good gear.  I personally use my No Mayhem Drop Scaling m
 to remove those inbuilt buffs to drops, so that the quality of drops is the same
 regardless of whether you're in Normal, TVHM, or any Mayhem mode.
 
-I personally recommend the use of Expanded Legendary Pools with this mod, so that
-the loot you come across is as varied as possible.
+I personally recommend the use of
+[Expanded Legendary Pools](https://github.com/BLCM/bl3mods/wiki/Expanded%20Legendary%20Pools)
+with this mod, so that the loot you come across is as varied as possible.
 
 For a list of what drops you should expect from bosses, while using this mod, see
-[expected_drops.md](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
+[`expected_drops.md`](https://github.com/BLCM/bl3mods/blob/master/Apocalyptech/loot_changes/better_loot/expected_drops.md).
 
 Note that this mod leaves Arms Race (DLC5, Stormblind Complex) basically as-is,
 since the rarity levels in there are pretty clearly engineered for specific
@@ -50,19 +51,25 @@ reward chests, though, and increases the drop quantity for Heavyweight Harker.
 
 **Mod Compatibility Info:**
 
-If you use Boss Drop Randomizer along with this mod, make sure this mod is
-*before* Boss Drop Randomzer in your mod list.
+If you use [Boss Drop Randomizer](https://github.com/BLCM/bl3mods/wiki/Boss%20Drop%20Randomizer)
+along with this mod, make sure this mod is *before* Boss Drop Randomzer in
+your mod list.
 
-This mod includes the functionality in my "Unlock Mayhem-Specific Drops" mod,
-so there's no reason to use both together (though it shouldn't hurt anything
-if you do).
+This mod includes the functionality of a few other standlone mods.  There's
+no need to use these separately if you're using Better Loot, though it also
+won't hurt anything if you do have them active at the same time:
 
-This mod also includes the functionality of my "Droughts Stocked Porta-Potties"
-mod, so there's no reason to use both together (though it shouldn't hurt
-anything if you do).
+* [Droughts Stocked Porta-Potties](https://github.com/BLCM/bl3mods/wiki/Droughts%20Stocked%20Porta-Potties)
+* [Fix Broken Loot Patterns](https://github.com/BLCM/bl3mods/wiki/Fix%20Broken%20Loot%20Patterns)
+* [Unlock Mayhem-Specific Drops](https://github.com/BLCM/bl3mods/wiki/Unlock%20Mayhem-Specific%20Drops)
 
 Changelog
 =========
+
+**v1.3.6** - Jan 25, 2023
+ * Improved piñata drops during Life of the Party, in Devil's Razor
+ * Fix loot drop patterns for Mouthpiece, Captain Traunt, and Loot Skrits.  This
+   is identical to the standalone Fix Broken Loot Patterns mod.
 
 Aug 1, 2022 *(no version number change)*
  * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
