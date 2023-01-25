@@ -22,6 +22,7 @@ See the individual mod folders for full READMEs.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
 - **First Gun Chest** - Some alternate contents for the first gun chest, in Covenant Pass.
 - **Fix DLC2 Shield Drops** - Most enemies in DLC2 don't drop shields; this fixes that.
+- **Fix Broken Loot Patterns** - Fixes up some loot drop patterns for a handful of enemies.
 - **Manufacturer Lock** - A set of mods which make only the specified manufacturers drop.
 - **Mission Reward Randomizer** - Randomizes mission rewards
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
