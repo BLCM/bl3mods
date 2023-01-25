@@ -15,6 +15,8 @@ See the individual mod folders for full READMEs.
 - **Equal Character Gear Chance** - Makes character-specific gear equally likely
   to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
+- **Force Enemy Spawns** - Resource mod to attempt to force a configured enemy
+  type to spawn whenever possible.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
 - **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
