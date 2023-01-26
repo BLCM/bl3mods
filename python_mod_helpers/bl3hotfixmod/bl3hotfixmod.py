@@ -287,6 +287,7 @@ class Mod(object):
     def __init__(self, filename, title, author, description,
             v=None, lic=None, cats=None,
             ss=None, videos=None, urls=None,
+            pakfile=None,
             homepage=None, nexus=None,
             contact=None, contact_email=None, contact_discord=None,
             quiet_meshes=False, quiet_streaming=False,
@@ -308,6 +309,8 @@ class Mod(object):
         `ss` - Screenshot URL(s).  Can be a single string, or a list of strings
         `videos` - Video URL(s).  Can be a single string, or a list of strings
         `urls` - Extra URL(s).  Can be a single string, or a list of strings
+        `pakfile` - Pakfile (or list of pakfiles) to be included along with the mod.
+            Can be a single string, or a list of strings
         `homepage` - Homepage, in case that exists
         `nexus` - Nexus Mods URL, in case you're uploading there as well
         `contact` - Generic contact info
@@ -352,6 +355,7 @@ class Mod(object):
         self.ss = ss
         self.videos = videos
         self.urls = urls
+        self.pakfile = pakfile
         self.homepage = homepage
         self.nexus = nexus
         self.contact = contact
@@ -399,6 +403,14 @@ class Mod(object):
             else:
                 print(f'{comment_prefix}@categories {self.categories}', file=self.df)
         print(comment_prefix.strip(), file=self.df)
+
+        # Pakfile, if we have it
+        if self.pakfile is not None:
+            if type(self.pakfile) == str:
+                self.pakfile = [self.pakfile]
+            for pakfile in self.pakfile:
+                print(f'{comment_prefix}@pakfile {pakfile}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
         # if it hasn't!)

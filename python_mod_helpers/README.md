@@ -101,6 +101,28 @@ included in that list, such as:
 
     lic="Abandon all hope, ye who try to upload this mod anywhere",
 
+The BL3/WL modding community has started digging into pakfile modding, which
+occasionally gives rise to "hybrid" hotfix/pakfile mods.  The ModCabinet wiki
+supports a `@pakfile` tag to intelligently link in pakfiles specified by a
+hotfix mod file, and this library supports that as well:
+
+```python
+mod = Mod('filename_to_save.bl3hotfix',
+        'Mod Title',
+        'Author Name',
+        [
+            'A mod which includes a pakfile component as well',
+        ],
+        lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='qol',
+        pakfile='Fancy_Mod_999999_P.pak',
+        )
+```
+
+`pakfile` can be just a single string, or a list of strings, in case there are
+multiple pakfiles for the mod.
+
 Finally, there's a bunch of media data which can be added to the mod header,
 which will be added to the ModCabinet wiki if specified.  Here's a mod
 definition which includes all of them:
