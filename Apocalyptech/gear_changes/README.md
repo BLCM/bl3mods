@@ -10,6 +10,7 @@ See the individual mod folders for full READMEs.
 
 - **All Weapons Can Anoint** - Makes it so all weapons (apart from The Shoddy) can have anointments.
 - **Better Maliwan Charge Time** - Improves the charge time on most Maliwan guns
+- **Digby's Smooth Tube Audio Fix** - Pakfile mod to restore audio functionality of Digby's Smooth Tube
 - **Fabricator Changes** - A collection of mods that makes the Fabricator full-auto, and alters
   what it fires (Eridium, more Fabricators, or Guns as usual).
 - **Fix Siren COM Blank Parts** - Fixes a (rare) bug with Siren COMs which would cause
