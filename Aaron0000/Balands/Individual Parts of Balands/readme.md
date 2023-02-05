@@ -1,10 +1,14 @@
-(The main Balands file contains everything in this list except "Smaller HUD", "Animation Speed Increases", and "Map Defogger.")
+(The main Balands file contains everything in this list except "Smaller HUD", "Animation Speed Increases", "Map Defogger", "Less Legendary World Drops", "Less Legendary World Drops in Trials, Slaughters, & Takedowns", and the variants of "Dedicated Drop Source & Mayhem-Scaled Drops" such as Less Extra Drops.)
 
 Quality-of-Life, Fixes, etc. (to be used with or without the "Balands - Balancing" file.)
 =====================
 Balands - Animation Speed Increases: Contains solely the incresaed animation speeds for vehicles, doors, containers, etc.
 
-Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments: Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop quantity and chance the higher the active Mayhem level is.
+Balands - Dedicated Drop Source & Mayhem-Scaled Drop Adjustments (Less Drops, more Artifacts & COMs): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop quantity and chance the higher the active Mayhem level is.
+
+Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments (Less Extra Drops): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version unless the drop source has an artifact or class mod in it (in which case it drops three items.)
+
+Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments: Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version.
 
 Balands - Dedicated Drop Source Adjustments: Contains the various tweaks and additions to dedicated sources of loot in the game. Only use this version or the version with the Mayhem-Scaled drops seperately.
 
@@ -15,6 +19,10 @@ Balands - Eista the Invincible Adjustments: Makes Eista retain his Invincible ti
 Balands - Enemy Adjustments: Contains health reductions for certain enemies, reduces Anathema's immunity phases to only 5, reduces the damage that Diadems do to Scourge the Invincible, prevents Anointed Enforcers from spawning outside of named enemy encounters, adjusts the frequency of enemy type spawns in the Slaughter Shaft, and prevents most enemies from spawning in wielding Cryo weaponry.
 
 Balands - Item Part Spawning Adjustments: Makes regular Jakobs shotguns (and the Wave shotguns) more likely to spawn with higher projectile counts, makes purple grenades always spawn with three augments, makes the Boom Sickle more likely to appear, makes certain legendary shields and grenades always/more likely to spawn with maximum augments, makes certain shields/grenades more likely to spawn in more elements, and makes the Shlooter and Company Man always spawn with three stat bonuses.
+
+Balands - Less Legendary World Drops: Reduces the chance for Legendary gear to drop from white/red chests, badass enemies, and vendors to a level closer to what was seen at the game's launch.
+
+Balands - Less Legendary World Drops in Trials, Slaughters, & Takedowns: Intended to be used if you use the "Less Legendary World Drops" and either "Loot Adjustments" or the regular Balands - Complete Version files together. This file reduces the amount of extra Legendary drops obtained in those maps.
 
 Balands - Loot Adjustments: Contains the following;
 
@@ -119,5 +127,4 @@ Balands - Subjective Fixes: (Recommended to load this file before other files bu
 
 Balancing
 =========
-Balands - Balancing: Contains all gear, weapon, skill, and Mayhem balancing as well as some bugfixes related to gear and enemy changes. Load this file after any file contained in the "Quality-of-Life, Fixes, etc" folder so that the changes within this file can overwrite any changes in those files.
-
+Balands - Balancing: Contains all gear, weapon, skill, and Mayhem balancing as well as some bugfixes related to gear and enemy changes.
