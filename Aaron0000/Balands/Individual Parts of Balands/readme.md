@@ -4,13 +4,13 @@ Quality-of-Life, Fixes, etc. (to be used with or without the "Balands - Balancin
 =====================
 Balands - Animation Speed Increases: Contains solely the incresaed animation speeds for vehicles, doors, containers, etc.
 
-Balands - Dedicated Drop Source & Mayhem-Scaled Drop Adjustments (Less Drops, more Artifacts & COMs): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop quantity and chance the higher the active Mayhem level is.
+Balands - Dedicated Drop Source & Mayhem-Scaled Drop Adjustments (Less Drops, more Artifacts & COMs): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop quantity and chance the higher the active Mayhem level is. Don't use this file with any of the other "Dedicated Drop..." files.
 
-Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments (Less Extra Drops): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version unless the drop source has an artifact or class mod in it (in which case it drops three items.)
+Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments (Less Extra Drops): Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version unless the drop source has an artifact or class mod in it (in which case it drops three items.) Don't use this file with any of the other "Dedicated Drop..." files.
 
-Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments: Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version.
+Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments: Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. This version drops a single item instead of up to three like the regular version. Don't use this file with any of the other "Dedicated Drop..." files.
 
-Balands - Dedicated Drop Source Adjustments: Contains the various tweaks and additions to dedicated sources of loot in the game. Only use this version or the version with the Mayhem-Scaled drops seperately.
+Balands - Dedicated Drop Source Adjustments: Contains the various tweaks and additions to dedicated sources of loot in the game. Only use this version or the version with the Mayhem-Scaled drops seperately. Don't use this file with any of the other "Dedicated Drop..." files.
 
 Balands - Description Adjustments: Contains minor corrections and tweaks to (mostly) various gear and skill descriptions in the game.
 
