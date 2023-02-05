@@ -750,7 +750,7 @@ LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
-Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel or shield starting from level 35, increased amount of items in the vendor to 20.
+Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel weapon from level 35 onwards, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
