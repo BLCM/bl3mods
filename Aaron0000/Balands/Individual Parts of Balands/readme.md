@@ -10,7 +10,7 @@ Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments (Less
 
 Balands - Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments: Contains both the various tweaks and additions to dedicated sources of loot in the game, as well as adding an additional drop pool to most dedicated sources that increases in drop chance the higher the active Mayhem level is. Don't use this file with any of the other "Dedicated Drop..." files.
 
-Balands - Dedicated Drop Source Adjustments: Contains the various tweaks and additions to dedicated sources of loot in the game. Only use this version or the version with the Mayhem-Scaled drops seperately. Don't use this file with any of the other "Dedicated Drop..." files.
+Balands - Dedicated Drop Source Adjustments: Contains the various tweaks and additions to dedicated sources of loot in the game. Don't use this file with any of the other "Dedicated Drop..." files.
 
 Balands - Description Adjustments: Contains minor corrections and tweaks to (mostly) various gear and skill descriptions in the game.
 
