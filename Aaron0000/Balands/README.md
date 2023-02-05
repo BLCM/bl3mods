@@ -1,4 +1,4 @@
-(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands.bl3hotfix)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20-%201%20-%20Complete%20Version.bl3hotfix)
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
 
@@ -10,6 +10,16 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.6
+-----
+Renamed all of the files to automatically load in the correct order in OpenHotfixLoader instead of requiring the user to manually rename files (apologies, URL users.)
+
+Added a file that allows you to lower the drop chance of Legendary gear from badass enemies, white/red chests, and vendors.
+
+Added a file to be used with the previously mentioned file that reduces the amount of extra world drops in the Trials, Circles of Slaughter, and Takedowns.
+
+Added some variants of the "Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments" files. One changes the amount of extra drops to only a single extra drop regardless of Mayhem level, another does the same but allows for the extra drops from the usual version if the drop source contains artifacts or class mods.
+
 1.5.5
 -----
 Balands now has a collection of separate files apart from the original main file, for users to pick and choose what they prefer. This is largely divided into a file containing the balancing portion, and multiple files containing bugfixes, quality-of-life adjustments, and other miscellaneous options.
@@ -750,7 +760,7 @@ LOOT POOL CHANGES
 -----------------
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
-Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel weapon from level 35 onwards, increased amount of items in the vendor to 20.
+Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel weapon, increased amount of items in the vendor to 20.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
@@ -850,7 +860,7 @@ Added the Hunt(er) to Manvark's Loot Pool, increased the chance of Manvark dropp
 
 Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomizer in Rampager's loot pool and added the Duc to Dreg and Rage, increased the chance of the Rampager dropping from its loot pool to 40%.
 
-Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Messy Breakup to Rax.
+Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Ten Gallon to Rax.
 
 Added the Hand of Glory to Muldock's Loot Pool, increased the chance of Muldock dropping from his loot pool to 30%.
 
@@ -858,7 +868,7 @@ Added the Null-Pointer and Vault Hero to Gigamind, increased the chance of Gigam
 
 Added the Vibra-Pulse to Sylestro's Loot Pool, increased the chance of them dropping from their loot pool to 20%.
 
-Added the Boo to Private Beans' Trevanator/Front Loader Loot Pool (Westergun uses a separate pool), increased the chance of Beans dropping from the Trevanator/Front Loader loot pool to 30%.
+Added the Boo to Private Beans with a 10% chance to drop.
 
 Added the Ember's Purge to Loco Chantelle, increased chance of Loco Chantelle dropping from her loot pool to 20%.
 
@@ -870,7 +880,7 @@ Added Digby's Smooth Tube to Junpei Goat Eater, increased chance of Junpei dropp
 
 Added the Robo-Melter Masher to Tricksy Nick with a 10% chance of dropping.
 
-Added the Melt-Facer to Fabricator with a 15% chance to drop. Drops separately from ION CANNON.
+Added the Melt-Facer to Fabricator with a 10% chance to drop. Drops separately from ION CANNON.
 
 Added the Just Kaus to EVIL Saint Lawrence, increased chance of Lawrence dropping from his loot pool to 20%.
 
@@ -987,7 +997,7 @@ Enemies no longer spawn with cryo-element guns for the most part.
 
 Anointed Enforcers should no longer spawn outside of the encounters with the Anointed Alpha, Luke, and Muldock.
 
- ┗----Rationale: If 2/3 of the moves this enemy could make didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
+ ┗----Rationale: If 2/3 of the moves this enemy didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
  
 
 OTHER CHANGES/FIXES
@@ -1157,7 +1167,7 @@ Embrace the Pain - Accuracy improved, fire rate increased by 70%, heat rate redu
 
 NoPewPew - Ammo cost set to 3.
 
- ┗----Rationale: Instead of gutting the power of this weapon, so it's been given the ION CANNON treatment and increased the ammo cost. It'll also make x4 and x5 versions not so blatantly inferior to x3 versions.
+ ┗----Rationale: Instead of gutting the power of this weapon, it's been given the ION CANNON treatment and increased the ammo cost. It'll also make x4 and x5 versions not so blatantly inferior to x3 versions.
 
 Pain is Power - Heat rate reduced by 40%.
 
