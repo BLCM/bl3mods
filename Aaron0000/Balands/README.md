@@ -16,7 +16,7 @@ Renamed all of the files to automatically load in the correct order in OpenHotfi
 
 Added a file that allows you to lower the drop chance of Legendary gear from badass enemies, white/red chests, and vendors.
 
-Added a file to be used with the previously mentioned file that reduces the amount of extra world drops in the Trials, Circles of Slaughter, and Takedowns.
+Added a file intended to be used with the previously mentioned file that reduces the amount of extra world drops in the Trials, Circles of Slaughter, and Takedowns.
 
 Added some variants of the "Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments" files. One changes the amount of extra drops to only a single extra drop regardless of Mayhem level, another does the same but allows for the extra drops from the usual version if the drop source contains artifacts or class mods.
 
