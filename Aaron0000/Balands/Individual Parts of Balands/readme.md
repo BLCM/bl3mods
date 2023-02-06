@@ -48,7 +48,7 @@ Balands - Mayhem Mode Modifier Adjustments: Contains the altered Mayhem 11 modif
 
 Balands - Map Defogger: Automatically discovers an area's entire map at once.
 
-Balands - Objective Fixes: (Recommended to load this file before other files) Contains the following fixes that correct genuine issues;
+Balands - Objective Fixes: Contains the following fixes that correct genuine issues;
 
 	Weapons dealing the wrong type of damage 
 	
@@ -69,6 +69,7 @@ Balands - Quality-of-Life Adjustments: Contains the following;
 	Self-damage removal for the Breath of the Dying and Shrieking Banshee 
 	
 	Fully Automatic Eridian Fabricator 
+	
 	Anointment re-roll cost lowered to 50 
 	
 	Makes the Hunt sniper rifles and the Revengenador Legendary rarity 
@@ -93,7 +94,7 @@ Balands - Red Text Explainer: Adds helpful descriptions below the flavor text on
 
 Balands - Smaller HUD: Reduces the size of elements on the Heads-Up-Display.
 
-Balands - Subjective Fixes: (Recommended to load this file before other files but after Objective Fixes) Contains fixes that address several inconsistencies and minor issues; 
+Balands - Subjective Fixes: Contains fixes that address several inconsistencies and minor issues; 
 
 	Anything that would affect Fire Rate/Reload Speed/Magazine Size now affects Burst-Fire Rate/Repair Time/Heat Rate respectively 
 	
