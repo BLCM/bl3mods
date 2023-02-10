@@ -1,8 +1,8 @@
+(There's a Complete version of Balands, as well as the option to use only select portions of the mod. Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the readme file in said Individual Parts folder for details.)
+
 (Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20-%203%20-%20Complete%20Version.bl3hotfix)
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
-
-(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the "Contents" file for details.)
 
 # DISCLAIMER
 
