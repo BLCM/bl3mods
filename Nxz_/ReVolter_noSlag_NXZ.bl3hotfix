@@ -1,0 +1,14 @@
+###
+### Name: Re-Volter Visual FX Removal - Slag only
+### Version: 1.0.0
+### Author: Nxz_
+### Categories: qol-ui
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### Disables the ReVolter-Shield's yellow slag-effect applied by the on-shield-break trigger
+###
+
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/PresStatusEffect_Revolter.PresStatusEffect_Revolter,PresentationData.Object..bUsesMaterialParameter,0,,false
