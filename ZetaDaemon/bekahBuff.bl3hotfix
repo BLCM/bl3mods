@@ -1,9 +1,0 @@
-### Name: Bekah Buff
-### Version: 1.0.0
-### Author: ZetaDaemon
-### Categories: gear-ar
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-
-#Increase damage by 40%
-SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/Bekah/Parts/Part_AR_JAK_Barrel_Bekah.Part_AR_JAK_Barrel_Bekah,InventoryAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.45)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_CustomSightColorScheme.Att_Weapon_CustomSightColorScheme"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.4)))
