@@ -220,36 +220,36 @@ Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,PRIMARY,1,1,1,Artifact_Part_
 Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Very Rare,04/Very Rare,InvBalD_Artifact_04_VeryRare,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_SplatterGun,,
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_MoxxisEndowment,,
@@ -319,36 +319,36 @@ Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,PRIMARY,1,1,1,Artifact_Part
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Legendary,05/Legendary,InvBalD_Artifact_05_Legendary,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_CommanderPlanetoid,,
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -405,36 +405,36 @@ Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_Commande
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Commander Planetoid (dedicated drop only),05/Legendary,InvBalD_Artifact_CommanderPlanetoid,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Company Man (Atlas),05/Legendary,InvBalD_Artifact_CompanyMan_Atlas,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Company Man (Atlas),05/Legendary,InvBalD_Artifact_CompanyMan_Atlas,LEGENDARY ABILITY,1,1,1,Artifact_Part_CompanyMan_Base,,
 Company Man (Atlas),05/Legendary,InvBalD_Artifact_CompanyMan_Atlas,PRIMARY,3,3,1,Artifact_Part_Stats_CompanyMan_Atlas_Damage1,,Artifact_Part_Stats_CompanyMan_Atlas_Damage2
@@ -851,36 +851,36 @@ Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,P
 Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Cosmic Crater (dedicated drop only),05/Legendary,InvBalD_Artifact_CosmicCrater,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Deathless,,
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -937,36 +937,36 @@ Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,PRIMARY,
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Deathless (dedicated drop only),05/Legendary,InvBalD_Artifact_Deathless,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Deathrattle,05/Legendary,InvBalD_Artifact_Deathrattle,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Deathrattle,05/Legendary,InvBalD_Artifact_Deathrattle,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Deathrattle,,
 Deathrattle,05/Legendary,InvBalD_Artifact_Deathrattle,PRIMARY,1,1,1,Artifact_Part_Stats_DeadEye,,
@@ -1081,36 +1081,36 @@ Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,PRIMARY,1,1
 Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Launch Pad (dedicated drop only),05/Legendary,InvBalD_Artifact_Salvo,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_LoadedDice,,
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -1167,36 +1167,36 @@ Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,PRIMA
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Loaded Dice (dedicated drop only),05/Legendary,InvBalD_Artifact_LoadedDice,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Lunacy,05/Legendary,InvBalD_Artifact_Lunacy,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Lunacy,05/Legendary,InvBalD_Artifact_Lunacy,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Lunacy,,
 Lunacy,05/Legendary,InvBalD_Artifact_Lunacy,PRIMARY,1,1,1,Artifact_Part_Stat_Lunacy,,
@@ -1266,36 +1266,36 @@ Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndo
 Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Moxxi's Endowment (dedicated drop only),05/Legendary,InvBalD_Artifact_MoxxisEndowment,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Mysterious Amulet,04/Very Rare,/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Mysterious Amulet,04/Very Rare,/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet,LEGENDARY ABILITY,1,1,1,/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Artifact_Part_Ability_MysteriousAmulet,,
 Mysterious Artifact,04/Very Rare,/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
@@ -1356,36 +1356,36 @@ Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,PRIMARY,1
 Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Otto Idol (dedicated drop only),05/Legendary,InvBalD_Artifact_OttoIdol,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Pearl of Ineffable Knowledge,05/Legendary,InvBalD_Artifact_PUK,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Pearl of Ineffable Knowledge,05/Legendary,InvBalD_Artifact_PUK,ABILITY,1,1,1,Artifact_Part_Ability_PUK,,
 Pearl of Ineffable Knowledge,05/Legendary,InvBalD_Artifact_PUK,PRIMARY,1,1,1,Artifact_Part_Stat_PUK,,
@@ -1459,36 +1459,36 @@ Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMetho
 Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Pull Out Method (dedicated drop only),05/Legendary,InvBalD_Artifact_PullOutMethod,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Road Warrior,05/Legendary,InvBalD_Artifact_RoadWarrior,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Road Warrior,05/Legendary,InvBalD_Artifact_RoadWarrior,ABILITY,1,1,1,Artifact_Part_Ability_RoadWarrior,,
 Road Warrior,05/Legendary,InvBalD_Artifact_RoadWarrior,PRIMARY,1,1,1,Artifact_Part_Stat_RoadWarrior,,
@@ -1551,36 +1551,36 @@ Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,PRI
 Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Rocket Boots (dedicated drop only),05/Legendary,InvBalD_Artifact_RocketBoots,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Safegaurd,,
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -1637,36 +1637,36 @@ Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,PRIMARY,
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Safeguard (dedicated drop only),05/Legendary,InvBalD_Artifact_Safegaurd,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Shlooter,,
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,PRIMARY,1,1,1,Artifact_Part_Stats_DeadEye,,
@@ -1698,36 +1698,36 @@ Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,PRIMARY,1,1,1,Artifact_Part_Stat
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_FireDamage_2,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_FireDoTChance,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_HealthRegen,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_Movespeed,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_XPMultiplier,,
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_Movespeed,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Shlooter,05/Legendary,InvBalD_Artifact_Shlooter,SECONDARY,1,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_SplatterGun,,
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -1784,36 +1784,36 @@ Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,PRI
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Splatter Gun (dedicated drop only),05/Legendary,InvBalD_Artifact_SplatterGun,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_StaticTouch,,
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -1870,36 +1870,36 @@ Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,PR
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Static Charge (dedicated drop only),05/Legendary,InvBalD_Artifact_StaticTouch,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 Toboggan,05/Legendary,InvBalD_Artifact_Toboggan,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 Toboggan,05/Legendary,InvBalD_Artifact_Toboggan,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_Toboggan,,
 Toboggan,05/Legendary,InvBalD_Artifact_Toboggan,PRIMARY,1,1,1,Artifact_Part_Stats_DeadEye,,
@@ -2011,36 +2011,36 @@ Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,PRI
 Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+Victory Rush (dedicated drop only),05/Legendary,InvBalD_Artifact_VictoryRush,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,RARITY,1,1,1,Artifact_Part_Rarity_Legendary,,
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,LEGENDARY ABILITY,1,1,1,Artifact_Part_Ability_WhiteElephant,,
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,ABILITY,1,1,1,Artifact_Part_Ability_RearEnder,,
@@ -2097,33 +2097,33 @@ White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,PRIMARY,1,1,1,Artifact_Part_Stats_Spicy,,
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,PRIMARY,1,1,1,Artifact_Part_Stats_Frozen,,
 White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,PRIMARY,1,1,1,Artifact_Part_Stats_Contaminated,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_FireDamage_2,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CryoDamage_2,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_FireDoTChance,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ShockDoTChance,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CorrosiveDoTChance,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_CryoEfficiency,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_RadiationDoTChance,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeDelay,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ShieldRechargeRate,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_HealthRegen,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_Movespeed,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutMoveSpeed,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_XPMultiplier,,
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
-White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,1,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDamage_2,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDamage,,Artifact_Part_Stats_Zappy
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDamage,,Artifact_Part_Stats_Melty
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoDamage_2,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDamage,,Artifact_Part_Stats_Melty
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireResist,,Artifact_Part_Stats_Asbestos
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockResist,,Artifact_Part_Stats_Grounded
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveResist,,Artifact_Part_Stats_Durable
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoResist,,Artifact_Part_Stats_Insulated
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationResist,,Artifact_Part_Stats_LeadCoated
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_FireDoTChance,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShockDoTChance,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CorrosiveDoTChance,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_CryoEfficiency,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_RadiationDoTChance,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_Accuracy,,Artifact_Part_Stats_Precision
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ReloadSpeed,,Artifact_Part_Stats_Quickdraw
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_MagazineSize,,"Artifact_Part_Stats_ATLAS, Artifact_Part_Stats_Jakobs1, Artifact_Part_Stats_Loaded, Artifact_Part_Stats_Tediore, Artifact_Part_Stats_Vladof"
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxShieldCapacity,,Artifact_Part_Stats_Stalwart
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeDelay,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ShieldRechargeRate,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_MaxHealth,,Artifact_Part_Stats_Vigorous
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_HealthRegen,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_Movespeed,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_MeleeDamage,,Artifact_Part_Stats_Ravaging
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutMoveSpeed,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_BleedoutDuration,,Artifact_Part_Stats_Unyielding
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_XPMultiplier,,
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_AreaDamage,,Artifact_Part_Stats_Ravaging
+White Elephant (dedicated drop only),05/Legendary,InvBalD_Artifact_WhiteElephant,SECONDARY,2,2,n/a,Artifact_Part_Stats_ActionSkillCooldown,,Artifact_Part_Stats_LongLasting

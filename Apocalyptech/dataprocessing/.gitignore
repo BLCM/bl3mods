@@ -16,6 +16,7 @@ extracted
 *.dot
 *.png
 *.svg
+*.xlsx
 dlc3_tech.out
 bl3refs.sqlite3.zip
 bl3refs.sqlite3
