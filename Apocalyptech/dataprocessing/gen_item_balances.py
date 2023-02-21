@@ -958,66 +958,66 @@ changelog = [
             "Updated Google Drive update procedure to use XLS version instead",
             "Correctly omit weights in situations where weights aren't actually used",
             ]),
-		('Nov 18, 2021', [
+        ('Nov 18, 2021', [
             'Updated with Vault Card 3 Items',
             ]),
-		('Aug 14, 2021', [
+        ('Aug 14, 2021', [
             'Updated with the purple version of Seventh Sense, which as of DLC5 has a drop source in the Diamond Armory.',
             'Also fixed the link to my gen_item_balances.py script.',
             ]),
-		('Aug 5, 2021', [
+        ('Aug 5, 2021', [
             'Updated with Vault Card 2 Items',
             ]),
-		('Apr 11, 2021', [
+        ('Apr 11, 2021', [
             'Report the full path names for Mysterious Amulet + Mysterious Artifact balances/parts, since they otherwise have identical names',
             ]),
-		('Apr 8, 2021', [
+        ('Apr 8, 2021', [
             "Updated with DLC6 (Director's Cut) and Vault Card #1 items (includes some other item fixes from this patch)",
             ]),
-		('Nov 10, 2020', [
+        ('Nov 10, 2020', [
             'Updated the Siren "Muse" COM to reflect changes from an unannounced patch (removes two Illuminated Fist and two Laid Bare part options)',
             ]),
-		('Nov 9, 2020', [
+        ('Nov 9, 2020', [
             "Updated with DLC5 (Designer's Cut) items",
             ]),
-		('Sep 10, 2020', [
+        ('Sep 10, 2020', [
             "Updated with DLC4 (Psycho Krieg) Items",
             ]),
-		('Aug 25, 2020', [
+        ('Aug 25, 2020', [
             'Updated Ward shield AUGMENT to properly have a min-parts of 1 (instead of 3), due to GBX hardcoded tweak',
             ]),
-		('Jul 16, 2020', [
+        ('Jul 16, 2020', [
             'Added Action Skill Damage parts to COMs (as added back in the June 25 patch)',
             'Fixed references to Artifact_Part_Stats_FireDamage_2 and Artifact_Part_Stats_CryoDamage_2 on artifacts (was missing the "_2")',
             "Categorized The Shoddy's body accessory part properly.",
             ]),
-		('Jun 25, 2020', [
+        ('Jun 25, 2020', [
             'Added gear from DLC3 (Bounty of Blood)',
             'Added the specific legendary artifact balances added way back in Maliwan Takedown',
             ]),
-		('Jun 11, 2020', [
+        ('Jun 11, 2020', [
             'Added gear from the Guardian Takedown patch',
             ]),
-		('May 8, 2020', [
+        ('May 8, 2020', [
             'Added balances for the versions of the base-game legendary COMs which get dropped specifically from Trials bosses',
             ]),
-		('May 5, 2020', [
+        ('May 5, 2020', [
             'Added non-Etech "regular" Maliwan Snipers and Tediore Pistols, which had been missing until now',
             ]),
-		('Apr 23, 2020', [
+        ('Apr 23, 2020', [
             'Added Mayhem 2.0 and Revenge of the Cartels weapons/items',
             ]),
-		('Mar 27, 2020', [
+        ('Mar 27, 2020', [
             'Added DLC2 items (Guns, Love, and Tentacles)',
             'Should be complete, with the exception of: the mission version of Love Drill, mission version of Seventh Sense, and the email-reward version of Short Stick',
             ]),
-		('Feb 24, 2020', [
+        ('Feb 24, 2020', [
             'Added items (shields, grenade mods, class mods, artifacts)',
             ]),
-		('?', [
+        ('?', [
             'probably some updates inbetween',
             ]),
-		('Feb 10ish, 2020', [
+        ('Feb 10ish, 2020', [
             "Initial post (I wasn't actually keeping track of changes for this sheet until Feb 24)",
             ]),
         ]
