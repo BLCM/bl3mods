@@ -1,4 +1,4 @@
-(The main Balands file contains everything in this list except "Smaller HUD", "Animation Speed Increases", "Map Defogger", "Less Legendary World Drops", "Less Legendary World Drops in Trials, Slaughters, & Takedowns", and the variants of "Dedicated Drop Source & Mayhem-Scaled Drops" such as Less Extra Drops.)
+(The main Balands file "Balands - 3 - Complete Version" contains everything in this list except "Smaller HUD", "Animation Speed Increases", "Map Defogger", "Less Legendary World Drops", "Less Legendary World Drops in Trials, Slaughters, & Takedowns", and the variants of "Dedicated Drop Source & Mayhem-Scaled Drops" such as Less Extra Drops.)
 
 Quality-of-Life, Fixes, etc. (to be used with or without the "Balands - Balancing" file.)
 =====================
