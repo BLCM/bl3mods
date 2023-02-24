@@ -2055,9 +2055,6 @@ for label, level, obj_name, speed, travel_time in sorted([
             200, 50),
         ]):
     mod.comment(label)
-    # Honestly not sure if we need both of these, but we *do* need EarlyLevel.  I'm pretty
-    # sure that the one we *actually* need is TravelTime -- I think the Speed ends up
-    # getting dynamically set.  Whatever, it doesn't *hurt*.
     mod.reg_hotfix(Mod.EARLYLEVEL, level,
             obj_name,
             'ElevatorSpeed',
