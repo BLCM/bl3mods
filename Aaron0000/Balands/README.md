@@ -1,8 +1,10 @@
 (There's a main version of Balands, as well as the option to use only select portions of the mod. Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. The main Balands file "Balands - 3 - Complete Version" contains everything in said folder except "Smaller HUD", "Animation Speed Increases", "Map Defogger", "Less Legendary World Drops", "Less Legendary World Drops in Trials, Slaughters, & Takedowns", and the variants of "Dedicated Drop Source & Mayhem-Scaled Drops" such as Less Extra Drops.)
 
-(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20-%203%20-%20Complete%20Version.bl3hotfix)
+(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20-%201%20-%20Complete%20Version.bl3hotfix)
 
 (This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
+
+(Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod. Read the "Contents" file for details.)
 
 # DISCLAIMER
 
@@ -10,6 +12,33 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.7
+-----
+
+Testing out taking some power from Violent Momentum and buffing some of Zane's other skills in return. Values are not final and are open to feedback (credit to Ancient_Rune for brainstorming these Zane changes.)
+
+Changed Donnybrook's health regen from missing health to total health.
+
+Increased Stiff Upper Lips' damage resistance to 10% per point and added Elemental Damage to the skill.
+
+Increased Nerves of Steel's crit damage to 1.5% per point.
+
+Increased Renegade's health regen to 1.5% per point.
+
+Considerably reduced the damage curve on Violent Momentum for speeds past normal walking speed and made it stop counting as a kill skill (credit to Arin for the kill skill removal portion).
+
+Fixed a typo in the Antifreeze's description.
+
+Adjusted the weighting for health vials so that don't always drop from enemies even when you're at full health.
+
+Added missing Red-Text Explainer to the Black Hole.
+
+Updated the Void Rift's description.
+
+Removed the Raging Bear changes that I left in the "Description Fixes" file by mistake.
+
+Added the Weighted Ammo Drops to the "Qualifty-of-Life Adjustments" file.
+
 1.5.6
 -----
 Renamed all of the files to automatically load in the correct order in OpenHotfixLoader instead of requiring the user to manually rename files (apologies, URL users.)
@@ -2368,7 +2397,7 @@ Stinger - Nova damage reduced from Nova-Berner levels of damage to half, increas
 
 Torch - Capacity reduced by 70%, recharge rate buffed by 75%, recharge delay improved by 10%, fireball damage increase by 80%, fireball speed increased by 200%, fireball explosion radius increased by 300%, now always spawns with maximum shield parts.
 
-Void Rift - No change beyond what the Impaler and Black Hole have.
+Void Rift - No change beyond what the Impaler and Black Hole have, updated the description slightly.
 
 PANGOLIN UNIQUE SHIELDS
 -----------------------
@@ -2623,7 +2652,7 @@ Rocketeer - No change.
 
 LEGENDARY OPERATIVE CLASS MODS
 ------------------------------
-Antifreeze - No change.
+Antifreeze - Fixed a typon in the description.
 
 Cold Warrior - Increased Damage-over-Time to 200% from 15%.
 
@@ -2697,7 +2726,7 @@ Dragon - Replaced Remnant with Personal Space.
 
  ┗----Rationale: The Dragon's special effect only triggers when a Melee kill is made. To facilitate that, Personal Space (which has been changed to boost Melee damage as well) has been added.
 
-Elementalist - Replaced Wildfire with Anima.
+Elementalist - Replaced Wildfire with Anima and increased the Damage-over-Time's damage by 1750%.
 
 Golden Rule - No change.
 
@@ -3331,7 +3360,7 @@ Praemunitus - Made it affect Heat-per-Shot.
 
 Borrowed Time - No change.
 
-Donnybrook - No change.
+Donnybrook - Changed the health regeneration from missing health to total health.
 
 Fractal Frags - No change.
 
@@ -3363,7 +3392,7 @@ Violent Speed - No change.
 
 Cold Bore - Reduced the bonus cryo damage to 10% per point.
 
-Violent Momentum - Now also increases slide damage, added Action-Skill-damage Mayhem Scaling.
+Violent Momentum - Gun damage curve reduced past regular walking speed, now also increases slide damage, added Action-Skill-damage Mayhem Scaling.
 
  ┗----Rationale: If an old man slides into your kneecaps at hyperspeed, logically speaking it should hurt more than if he slides into you at a brisk jog. It also opens up some fun avenues for alternate damage.
 
@@ -3393,7 +3422,7 @@ Ready for Action - No change.
 
 Brain Freeze - No change.
 
-Stiff Upper Lip - No change.
+Stiff Upper Lip - Increased damage resistance, now increases elemental damage.
 
 Rise to the Occasion - No change.
 
@@ -3409,7 +3438,7 @@ Refreshment - Reduced lifesteal to 1% per point.
 
 Calm, Cool, Collected - Increased health regeneration to 5%.
 
-Nerves of Steel - Increased accuracy and handling bonuses to 2.66% per point, added 1%-per-point critical hit damage.
+Nerves of Steel - Increased accuracy and handling bonuses to 2.66% per point, added 1.5%-per-point critical hit damage.
 
 Confident Competence - Changed gun damage to all-purpose damage and increased the maximum damage bonus to 50%.
 
@@ -3419,7 +3448,7 @@ THE PROFESSIONAL
 ----------------
 Man of Focus - No change.
 
-Renegade - No change.
+Renegade - INcreased health regeneration to 1.5% per point.
 
 Deja Vu - No change.
 
