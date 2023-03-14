@@ -25,7 +25,7 @@ Increased Nerves of Steel's crit damage to 1.5% per point.
 
 Increased Renegade's health regen to 1.5% per point.
 
-Considerably reduced the damage curve on Violent Momentum for speeds past normal walking speed and made it stop counting as a kill skill (credit to Arin for the kill skill removal portion).
+Considerably reduced the gun damage curve on Violent Momentum for speeds past normal walking speed and made it stop counting as a kill skill (credit to Arin for the kill skill removal portion).
 
 Fixed a typo in the Antifreeze's description.
 
