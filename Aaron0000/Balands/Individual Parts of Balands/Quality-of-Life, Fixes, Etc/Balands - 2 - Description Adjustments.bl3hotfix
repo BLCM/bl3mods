@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Description Adjustments
-### Version: 1.5.6
+### Version: 1.5.7
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: qol, bugfix
@@ -93,14 +93,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/Cyttor
 # Green Monster - Make the Description more accurate.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/GUN/UIStat_CM_GN_DLC1_Desc.UIStat_CM_GN_DLC1_Desc,FormatText,0,,After firing her weapon, Moze's weapons gain [skillbold]Bonus Corrosive Damage[/skillbold] and increased [skillbold]Splash Damage[/skillbold]. This bonus resets when she begins firing again.
 
-# Raging Bear - Change Damage Bonus and Fuel Bonus to ScaleSimple and replace Stoke the Embers with Drowning in Brass.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/SE_Gunner_CM_Raid1_Damage.SE_Gunner_CM_Raid1_Damage,AttributeEffects,0,,((AttributeData=/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Skill.Att_DamageSourceInstigatorMultiplier_Skill,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,RowName=GunnerRaid1ClassMod,ValueName=Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0),BaseValueScale=1)))
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,GunnerRaid1ClassMod,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,1.01
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/SE_Gunner_CM_Raid1_Fuel.SE_Gunner_CM_Raid1_Fuel,AttributeEffects,0,,((AttributeData=/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/Att_IronBearScalar_CoreUse.Att_IronBearScalar_CoreUse,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,RowName=GunnerRaid1ClassMod,ValueName=Value_A_2_4C4DFC67484D02BA3DBB029A999F015E),BaseValueScale=1)))
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/Table_CM_Raid1.Table_CM_Raid1,GunnerRaid1ClassMod,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.95
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/CM_Part_Skill_Gunner_StokeTheEmbers_Raid1.CM_Part_Skill_Gunner_StokeTheEmbers_Raid1:OakPassiveAbilityBuffAspectData_0,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Gunner/_Shared/_Design/Passives/_Tree_UrsaCorps/DrowningInBrass/PassiveSkill_Gunner_DrowningInBrass.PassiveSkill_Gunner_DrowningInBrass_C
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/CM_Part_Skill_Gunner_StokeTheEmbers_Raid1.CM_Part_Skill_Gunner_StokeTheEmbers_Raid1:OakPassiveAbilityBuffAspectData_0,Buffs.Buffs[0].ItemFrameName,0,,drowningBrass
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/CM_Part_Skill_Gunner_StokeTheEmbers_Raid1.CM_Part_Skill_Gunner_StokeTheEmbers_Raid1:OakPassiveAbilityBuffAspectData_0,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,orange
+# Antifreeze - Fix a typo in the description.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/UIStat_CM_OP_Raid1_Desc.UIStat_CM_OP_Raid1_Desc,FormatText.string,0,,While Sliding or Airborne, Zane gains [skillbold]$VALUE$[/skillbold] Weapon Damage
 
 # Bounty Hunter - Adjust the description to mention that all enemies count for Bounty Hunter, not just bosses. Also mention the movement speed bonus from Interplanetary Stalker being disabled.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Beastmaster/_Unique/Beastmaster_Unique_03/UI/UIStat_CM_BM_Unique_03_Desc.UIStat_CM_BM_Unique_03_Desc,FormatText,0,,FL4K has a [skill]3%[/skill] chance to activate any purchased [skill]Hunt Kill Skill[/skill] when dealing [skill]gun damage[/skill].<br><br>[skill]All enemies[/skill] are now treated as Humans, Beasts, and Robotics for FL4K's Hunt Skills. [italic](Disables the Movement Speed bonus from Interplanetary Stalker.)[/italic]

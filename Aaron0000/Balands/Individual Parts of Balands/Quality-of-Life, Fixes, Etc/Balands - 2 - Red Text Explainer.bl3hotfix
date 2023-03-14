@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Red-Text Explainer
-### Version: 1.5.6
+### Version: 1.5.7
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: gear-general, qol
@@ -81,6 +81,9 @@ SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Uniqu
 
 # Black Flame
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Brew/UIStat_RedText_Shroom.UIStat_RedText_Shroom,Text,0,,[Flavor]A virgin lit the candle.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires projectiles in an arc with a large splash radius.)[/italic][/nameplate_enemy_slight]
+
+# Black Hole
+SparkPatchEntry,(1,1,0,),/Game/Gear/Shields/_Design/_Uniques/BlackHole/Name/UIStat_RedText_BlackHole.UIStat_RedText_BlackHole,Text,0,,[Flavor]She's gone from suck to blow.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces a singularity upon being depleted.)[/italic][/nameplate_enemy_slight]
 
 # Bone Shredder
 SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/Vladof/_Shared/_Design/_Unique/BoneShredder/UIStat_RedText_BoneShredder.UIStat_RedText_BoneShredder,Text,0,,[Flavor]THE LEAD WIND BLOWS![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Multiple projectiles.)[/italic][/nameplate_enemy_slight]
