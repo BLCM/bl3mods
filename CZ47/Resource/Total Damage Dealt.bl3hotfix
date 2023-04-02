@@ -8,8 +8,8 @@
 @license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
 
 ### The hotfix license:
-@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-@license URL https://creativecommons.org/licenses/by-sa/4.0/
+### @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### @license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ### This Hotfix mod MUST be used with the accompanying Pakmod.
 ### 
@@ -28,9 +28,6 @@
 # Putting the Weapon in the Ammo/Grenade Vendor
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,Quantity,0,,(BaseValueConstant=5,BaseValueScale=1)
-
-# Setting the duration
-#SparkPatchEntry,(1,2,0,),/Game/Maffs/DamageStorage/Table_DamageStorage.Table_DamageStorage,Aftershock_DamageInstanceDuration,Value,0,,(BaseValueConstant=86400,BaseValueScale=1)
 
 # Setting the Damage Source
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectile_MAL_SMG,DamageSource,0,,BlueprintGeneratedClass'/Game/Maffs/DamageStorage/DamageSource_TotalDmg2.DamageSource_TotalDmg2_C'
