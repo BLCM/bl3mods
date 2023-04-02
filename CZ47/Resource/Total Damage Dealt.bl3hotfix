@@ -1,6 +1,6 @@
 
 @title Total Damage Dealt
-@version 2.0.4
+@version 3.0.0
 @author CZ47
 @contact =]#7647
 @categories resource, gear-smg, vendor, qol
@@ -27,8 +27,16 @@
 ### In Cryo: Total Damage Dealt divided by 100 000
 ### In Rad: Total Damage Dealt divided by 10 000 000
 ### 
+### When holding the weapon, all Elemental Damage, "V1" (Global Damage/All Damage Dealt), Gun Damage and Splash Damage has been nullified.
+### "V2" (Conditional Damage) and CCCombo have not been nullified. 
+### So make sure to disable CCCombo and if you have global V2 (150/90 and some Fl4k stuff), either unequip it or unspec.
+### 
+### If you want 100% accurate results, remove all equipped gear, unspec all skills and disable Guardian Ranks before shooting to get the exact Total Damage Dealt.
+### 
 ### You do not need to have this weapon equipped, nor do you have to have it in your inventory for this effect to work. 
 ### Just acquire one at any given time and it will shoot your total damage dealt since your last save quit.
+### 
+### Additionally, this mod adds a Jack Dummy to all Endgame activities: https://imgur.com/a/ARk2KDC
 ### 
 ### The Weapon can be found in all Ammo/Grenade Vendors or
 ### mail this to yourself if you use B3HM or use in Save Editor:
@@ -38,10 +46,10 @@
 ### This mod contains the mod: "P2P Networker Element Fix"
 ### 
 
-# 
+
 # Putting the Weapon in the Ammo/Grenade Vendor
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
-SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,Quantity,0,,(BaseValueConstant=5,BaseValueScale=1)
+SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,Quantity,0,,(BaseValueConstant=10,BaseValueScale=1)
 
 # Setting the Damage Source
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectile_MAL_SMG,DamageSource,0,,BlueprintGeneratedClass'/Game/Maffs/DamageStorage/DamageSource_TotalDmg2.DamageSource_TotalDmg2_C'
@@ -54,7 +62,6 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Name_MAL_SM_Link
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[rarity_epic]Shoots the total dmg dealt of upto the last 24h, save quit or its last hit. Persists through Death & Fast Travel.[/rarity_epic]
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,UIStats,0,,((UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra1000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000000"'))
-
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100,Text,0,,Deal the same damage divided by [skillbold]100[/skillbold] in [Shock]Shock[/Shock].
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100,SectionName,0,,ManufacturerBottom
@@ -111,8 +118,9 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MA
 
 
 # Making the weapon deal only the accumulated damage // Making it a single shot weapon // Setting the Status Effect Chance to 0 to prevent screen clutter.
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects,0,,((AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0.00001,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_AutomaticBurstCount.Att_Weapon_AutomaticBurstCount',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=20,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_StatusEffectChance.Att_Weapon_StatusEffectChance',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)))
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects[0].AttributeEffects,0,,((AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0.00001,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_AutomaticBurstCount.Att_Weapon_AutomaticBurstCount',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=20,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_StatusEffectChance.Att_Weapon_StatusEffectChance',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)),(AttributeToModify=GbxAttributeData'/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute="",AttributeInitializer=None,BaseValueScale=1)))
 
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,InstigatorAttributeEffects,0,,((AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_InstigatedRadiusDamage_DamageMultiplier.Att_InstigatedRadiusDamage_DamageMultiplier"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Corrosive.Att_DamageInstigatorMultiplier_Corrosive"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Cryo.Att_DamageInstigatorMultiplier_Cryo"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Fire.Att_DamageInstigatorMultiplier_Fire"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Normal.Att_DamageInstigatorMultiplier_Normal"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Shock.Att_DamageInstigatorMultiplier_Shock"',ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/Damage/Att_InstigatedRadiusDamage_DamageMultiplier.Att_InstigatedRadiusDamage_DamageMultiplier"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Corrosive.Att_DamageInstigatorMultiplier_Corrosive"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Cryo.Att_DamageInstigatorMultiplier_Cryo"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Fire.Att_DamageInstigatorMultiplier_Fire"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Normal.Att_DamageInstigatorMultiplier_Normal"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Radiation.Att_DamageInstigatorMultiplier_Radiation"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)),(AttributeToModify=GbxAttributeData'"/Game/GameData/Attributes/DamageMultipliers/Att_DamageInstigatorMultiplier_Shock.Att_DamageInstigatorMultiplier_Shock"',ModifierType=PostAdd,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=None,RowName="",ValueNames=""),BasevalueAttribute="",BaseValueScale=1.0)))
 
 
 
@@ -121,6 +129,145 @@ SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/_Design/Charac
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/DefaultAbilitiesList_Siren.DefaultAbilitiesList_Siren,Abilities,0,,(BlueprintGeneratedClass'/Game/Maffs/DamageStorage/Ability_TotalDmg.Ability_TotalDmg_C')
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Inventory/DefaultAbilitiesList_Gunner.DefaultAbilitiesList_Gunner,Abilities,0,,(BlueprintGeneratedClass'/Game/Maffs/DamageStorage/Ability_TotalDmg.Ability_TotalDmg_C')
 SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkill/DefaultAbilitiesList_Beastmaster.DefaultAbilitiesList_Beastmaster,Abilities,0,,(BlueprintGeneratedClass'/Game/Maffs/DamageStorage/Ability_TotalDmg.Ability_TotalDmg_C')
+
+
+
+
+
+
+### Adding Dummies to Endgame Activities
+
+## Midnight's Cairn (Maliwan Takedown)
+# Spawn Jack Dummy
+SparkEarlyLevelPatchEntry,(1,11,0,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_P.Raid_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=4050.000000,y=-64090.000000,z=-9075.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_P.Raid_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=-90.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,Raid_P),/Game/PatchDLC/Raid1/Maps/Raid/Raid_P.Raid_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(X=2.000000,Y=2.000000,Z=2.000000)
+
+
+## Minos Prime (Guardian Takedown)
+# Spawn Jack Dummy
+SparkEarlyLevelPatchEntry,(1,11,0,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P.GuardianTakedown_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=148520.000000,y=-78350.000000,z=-42525.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P.GuardianTakedown_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(Pitch=0.000000,Yaw=-45.000000,Roll=0.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,GuardianTakedown_P),/Game/PatchDLC/Takedown2/Maps/GuardianTakedown_P.GuardianTakedown_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(X=2.000000,Y=2.000000,Z=2.000000)
+
+
+## Darkthirst Dominion (Hemo's Map)
+# Spawn Jack Dummyd
+SparkEarlyLevelPatchEntry,(1,11,0,SacrificeBoss_P),/Ixora2/Maps/Boss,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Adding Delay (for some reason necessary)
+SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_B.SM_Letter_B"'
+SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_D.SM_Letter_D"'
+SparkEarlyLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/Gear/Game/Resonator/_Design/BP_Eridian_Resonator.Default__BP_Eridian_Resonator_C,StaticMeshComponent.Object..StaticMesh,0,,StaticMesh'"/Game/LevelArt/Environments/_Global/Letters/Meshes/SM_Letter_F.SM_Letter_F"'
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_P),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=92700.000000,y=32570.000000,z=10170.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_P),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(Pitch=0.000000,Yaw=45.000000,Roll=0.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,SacrificeBoss_P),/Ixora2/Maps/Boss/SacrificeBoss_p.SacrificeBoss_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(X=2.000000,Y=2.000000,Z=2.000000)
+
+
+
+## Slaughterstar 3000
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_P.TechSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=-5630.000000,y=-4390.000000,z=165.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_P.TechSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=-45,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,TechSlaughter_P),/Game/Maps/Slaughters/TechSlaughter/TechSlaughter_P.TechSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## The Slaughter Shaft
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,COVSlaughter_P),/Game/Maps/Slaughters/COVSlaughter,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,COVSlaughter_P),/Game/Maps/Slaughters/COVSlaughter/COVSlaughter_P.COVSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=-4000.000000,y=-4520.000000,z=775.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,COVSlaughter_P),/Game/Maps/Slaughters/COVSlaughter/COVSlaughter_P.COVSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=0.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,COVSlaughter_P),/Game/Maps/Slaughters/COVSlaughter/COVSlaughter_P.COVSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## Cistern of Slaughter
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=-5730.000000,y=2555.000000,z=1247.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=-90,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,CreatureSlaughter_P),/Game/Maps/Slaughters/CreatureSlaughter/CreatureSlaughter_P.CreatureSlaughter_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+
+### Trials
+## Wayward Tether (Instinct)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial8_P),/Game/Maps/ProvingGrounds/Trial8,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial8_P),/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_P.ProvingGrounds_Trial8_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=132420.000000,y=-9480.000000,z=-12485.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial8_P),/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_P.ProvingGrounds_Trial8_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=180.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial8_P),/Game/Maps/ProvingGrounds/Trial8/ProvingGrounds_Trial8_P.ProvingGrounds_Trial8_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## The Skydrowned Pulpit (Fervor)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial4_P),/Game/Maps/ProvingGrounds/Trial4,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial4_P),/Game/Maps/ProvingGrounds/Trial4/ProvingGrounds_Trial4_P.ProvingGrounds_Trial4_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=-10760.000000,y=14675.000000,z=5975.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial4_P),/Game/Maps/ProvingGrounds/Trial4/ProvingGrounds_Trial4_P.ProvingGrounds_Trial4_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=135.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial4_P),/Game/Maps/ProvingGrounds/Trial4/ProvingGrounds_Trial4_P.ProvingGrounds_Trial4_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## Precipice Anchor (Discipline)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial7_P),/Game/Maps/ProvingGrounds/Trial7,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial7_P),/Game/Maps/ProvingGrounds/Trial7/ProvingGrounds_Trial7_P.ProvingGrounds_Trial7_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=2900.000000,y=11250.000000,z=8210.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial7_P),/Game/Maps/ProvingGrounds/Trial7/ProvingGrounds_Trial7_P.ProvingGrounds_Trial7_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=-175.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial7_P),/Game/Maps/ProvingGrounds/Trial7/ProvingGrounds_Trial7_P.ProvingGrounds_Trial7_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## The Hall Obsidian (Supremacy)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial6_P),/Game/Maps/ProvingGrounds/Trial6,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial6_P),/Game/Maps/ProvingGrounds/Trial6/ProvingGrounds_Trial6_P.ProvingGrounds_Trial6_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=2930.000000,y=16245.000000,z=-55.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial6_P),/Game/Maps/ProvingGrounds/Trial6/ProvingGrounds_Trial6_P.ProvingGrounds_Trial6_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=180.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial6_P),/Game/Maps/ProvingGrounds/Trial6/ProvingGrounds_Trial6_P.ProvingGrounds_Trial6_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## Gradient of Dawn (Survival)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_P.ProvingGrounds_Trial1_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=74370.000000,y=-49100.000000,z=-8205.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_P.ProvingGrounds_Trial1_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=155.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial1_P),/Game/Maps/ProvingGrounds/Trial1/ProvingGrounds_Trial1_P.ProvingGrounds_Trial1_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+## Ghostlight Beacon (Cunning)
+# Spawn Jack Dummy on the map
+SparkEarlyLevelPatchEntry,(1,11,0,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5,/Game/Patch/TargetDummy,IO_TargetDummy,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+
+# Move the Spawned Jack Dummy
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5/ProvingGrounds_Trial5_P.ProvingGrounds_Trial5_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeLocation,0,,(x=-3000.000000,y=-2050.000000,z=1110.000000)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5/ProvingGrounds_Trial5_P.ProvingGrounds_Trial5_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeRotation,0,,(pitch=0.0,yaw=6.0,roll=0.0)
+SparkEarlyLevelPatchEntry,(1,1,1,ProvingGrounds_Trial5_P),/Game/Maps/ProvingGrounds/Trial5/ProvingGrounds_Trial5_P.ProvingGrounds_Trial5_P:PersistentLevel.IO_TargetDummy_C_0.Scene,RelativeScale3D,0,,(x=2.000000,y=2.000000,z=2.000000)
+
+
+
+
+
 
 
 
