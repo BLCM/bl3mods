@@ -9,9 +9,9 @@
 @license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
 
 ### The hotfix license:
-@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-@license-url https://creativecommons.org/licenses/by-sa/4.0/
-
+### @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### @license-url https://creativecommons.org/licenses/by-sa/4.0/
+### 
 ### This Hotfix mod MUST be used with the accompanying Pakmod.
 ### 
 ### Changes the P2P Networker to shoot your Total Accumulated Damage Dealt 
@@ -36,6 +36,7 @@
 ### Credit to Apocalyptech for fixing the Secondary Firing mode of the P2P Networker.
 ### This mod contains the mod: "P2P Networker Element Fix"
 ### 
+
 # Putting the Weapon in the Ammo/Grenade Vendor
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,Quantity,0,,(BaseValueConstant=5,BaseValueScale=1)
