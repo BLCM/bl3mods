@@ -13,8 +13,13 @@
 
 ### This Hotfix mod MUST be used with the accompanying Pakmod.
 ### 
-### Changes the P2P Networker to shoot the Total Accumulated Damage Dealt 
-### of upto the last 24h or since the last shot.
+### Changes the P2P Networker to shoot your Total Accumulated Damage Dealt 
+### of upto the last 24h or since the last shot of this weapon.
+### 
+### This will often lead to over damage cap values. Either way, when this isn't the case
+### or when you have tools to read over damage cap value, this is a resource that gives
+### the player more insight in their total damage dealt, ttk, average dps etc.
+### 
 ### 
 ### The Weapon can be found in all Ammo/Grenade Vendors or
 ### mail this to yourself if you use B3HM or use in Save Editor:
