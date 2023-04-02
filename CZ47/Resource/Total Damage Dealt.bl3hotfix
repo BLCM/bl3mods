@@ -16,16 +16,19 @@
 ### 
 ### Changes the P2P Networker to shoot your Total Accumulated Damage Dealt 
 ### of upto the last 24h or since the last shot of this weapon.
+### This is a resource that gives the player more insight in their total damage dealt, ttk, average dps etc.
 ### 
-### This will often lead to over damage cap values. Either way, when this isn't the case
-### or when you have tools to read over damage cap value, this is a resource that gives
-### the player more insight in their total damage dealt, ttk, average dps etc.
-### 
+### This will often lead to over damage cap values. That's why the weapon also deals the same Total Stored Damage
+### in smaller fractions in the form of bonus elements to make sure you get a visual on your damage dealt. 
+### In Shock: Total Damage Dealt divided by 100
+### In Corrosive: Total Damage Dealt divided by 1 000
+### In Fire: Total Damage Dealt divided by 10 000
+### In Cryo: Total Damage Dealt divided by 100 000
+### In Rad: Total Damage Dealt divided by 10 000 000
 ### 
 ### The Weapon can be found in all Ammo/Grenade Vendors or
 ### mail this to yourself if you use B3HM or use in Save Editor:
 ### bl3(BLQDtEXc7O2Dwu7MBNDBc1a5DKr98YPV1OPSF7oi4129X1qZ)
-### 
 ### 
 ### Credit to Apocalyptech for fixing the Secondary Firing mode of the P2P Networker.
 ### This mod contains the mod: "P2P Networker Element Fix"
