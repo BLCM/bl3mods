@@ -1,6 +1,6 @@
 
 @title Total Damage Dealt
-@version 2.0.1
+@version 2.0.2
 @author CZ47
 @contact =]#7647
 @categories resource, gear-smg, vendor, qol
@@ -9,13 +9,13 @@
 @license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
 
 ### The hotfix license:
-@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-@license-url https://creativecommons.org/licenses/by-sa/4.0/
-
+### @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### @license-url https://creativecommons.org/licenses/by-sa/4.0/
+### 
 ### This Hotfix mod MUST be used with the accompanying Pakmod.
 ### 
 ### Changes the P2P Networker to shoot your Total Accumulated Damage Dealt 
-### of upto the last 24h or since the last shot of this weapon.
+### of (upto) the last 24h, last save quit or since the last time this weapon was shot.
 ### This is a resource that gives the player more insight in their total damage dealt, ttk, average dps etc.
 ### 
 ### This will often lead to over damage cap values. That's why the weapon also deals the same Total Stored Damage
@@ -26,6 +26,9 @@
 ### In Cryo: Total Damage Dealt divided by 100 000
 ### In Rad: Total Damage Dealt divided by 10 000 000
 ### 
+### You do not need to have this weapon equipped, nor do you have to have it in your inventory for this effect to work. 
+### Just acquire one at any given time and it will shoot your total damage dealt since your last save quit.
+### 
 ### The Weapon can be found in all Ammo/Grenade Vendors or
 ### mail this to yourself if you use B3HM or use in Save Editor:
 ### bl3(BLQDtEXc7O2Dwu7MBNDBc1a5DKr98YPV1OPSF7oi4129X1qZ)
@@ -33,6 +36,7 @@
 ### Credit to Apocalyptech for fixing the Secondary Firing mode of the P2P Networker.
 ### This mod contains the mod: "P2P Networker Element Fix"
 ### 
+
 # Putting the Weapon in the Ammo/Grenade Vendor
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Balance/Balance_SM_MAL_Link.Balance_SM_MAL_Link"',Weight=(BaseValueConstant=1,BaseValueScale=1)))
 SparkEarlyLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Loot/ItemPools/VendingMachines/DA_ItemPool_VendingMachine_Grenades.DA_ItemPool_VendingMachine_Grenades,Quantity,0,,(BaseValueConstant=5,BaseValueScale=1)
@@ -45,7 +49,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MA
 
 # Changing the name and adding explanatory text
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Name_MAL_SM_Link.Name_MAL_SM_Link,PartName,0,,Total Damage Dealt
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[rarity_epic]Shoots the acummulated damage dealt of upto the last 24h. Persists through Death and Fast Travel.[/rarity_epic]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[rarity_epic]Shoots the acummulated damage dealt of (upto) the last 24h, last save quit or since the last time this weapon was shot. Persists through Death and Fast Travel.[/rarity_epic]
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,UIStats,0,,((UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra1000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000000"'))
 
