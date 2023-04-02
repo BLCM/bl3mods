@@ -1,6 +1,6 @@
 
 @title Total Damage Dealt
-@version 2.0.3
+@version 2.0.4
 @author CZ47
 @contact =]#7647
 @categories resource, gear-smg, vendor, qol
@@ -51,9 +51,10 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MA
 
 # Changing the name and adding explanatory text
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Name_MAL_SM_Link.Name_MAL_SM_Link,PartName,0,,Total Damage Dealt
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[rarity_epic]Shoots the acummulated damage dealt of (upto) the last 24h, save quit or this weapon's last hit. Persists through Death and Fast Travel.[/rarity_epic]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link,Text,0,,[rarity_epic]Shoots the total dmg dealt of upto the last 24h, save quit or its last hit. Persists through Death & Fast Travel.[/rarity_epic]
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link,UIStats,0,,((UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/UIStat_RedText_Link.UIStat_RedText_Link"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra1000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100000"'),(UIStat=UIStatData_Text'"/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra10000000"'))
+
 
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100,Text,0,,Deal the same damage divided by [skillbold]100[/skillbold] in [Shock]Shock[/Shock].
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Weapons/Link/Parts/Part_SM_MAL_Barrel_Link.Part_SM_MAL_Barrel_Link:Extra100,SectionName,0,,ManufacturerBottom
