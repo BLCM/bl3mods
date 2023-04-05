@@ -1,0 +1,25 @@
+
+@title Cryo DoTs
+@version 1.0.0
+@author Itzsmugg
+@contact its smugg#8302
+@categories Element, gameplay
+
+@pakfile zpakchunk999_CryoDoTs_99_P.pak
+
+@license The pakfile contents included here are owned by Gearbox/2K/whoever-technically-owns-that-stuff
+
+###
+### Adds cryo DoTs to the game similair to wonderlands. 
+### Includes my previous anima and explosive fury fixes so no need to add them seperatly. 
+### If you have already added said fixes I reccomend you delete them as this pack changes them further to add cryo dot synergies.
+### Cryo DoTs allow nimbus and elementalist to work with amaras cryo augment
+### Cryo dots do not work with the ele crit anoint. Cryo dots can not be procced by amaras conflux skill but can proc the skill itself
+### Note that there is *no* hotfix component to this mod!
+### You don't actually have to import this file into either OHL or B3HM.  
+### The actual fix is contained in the associated pakfile.  
+### Get that installed along with your existing pakfiles, and you'll be good to go.
+### Specifically, create a directory named ~mods inside OakGame\Content\Paks in the game install,
+### and copy the included Pakfile into there
+###
+
