@@ -7,6 +7,8 @@
   * Legendary Price Scaling
   * Better Vending Machines
   * Moxxi's Tipping Jar Rewards
+  * No Action Skills Cooldown All
+  * Lower Legendary Beam
 
 * Beastmaster
    * Leave No Trace Old Version (Instant Cooldown)
@@ -18,9 +20,17 @@
    * PokePet
    * PokePetZilla
  
- * Operative
+* Operative
    * No Action Skills Cooldown Operative
    * Infinite SNTNL Drone Duration
+   * Power Ranger Clone
+
+* Siren
+   * No Action Skills Cooldown Siren
+   * Volleyball Amara
+
+* Gunner
+   * No Action Skill Cooldown Gunner
  
 * French translations
   * Trial Names FR (DexManly)
