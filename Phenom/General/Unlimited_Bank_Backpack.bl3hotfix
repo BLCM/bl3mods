@@ -10,7 +10,7 @@
 
 ###
 ### Are you a True Vault Hunter ?
-### Tediore has created for you The Portable Digistruct Backpack, a new thecnology which digitize your stuff and give you an unlimited space to store them.
+### Tediore has created for you The Portable Digistruct Backpack, a new technology which digitize your stuff and give you an unlimited space to store them.
 ### You say cheated ? We say totaly lore friendly.
 ### Who is useless now ?
 ### By using our technolgy you agree to our confidentiality agreement (which mean we know everything about you and we can sell your personal data's infos).
@@ -18,7 +18,14 @@
 ### Modify the base backpack space to unlimited.
 ### Modify the bank SDU Lv1 to unlimited.
 ###
-### The unlimited space also reduce the lags in huge inventory.
+### The unlimited space also reduce the lags in huge inventories.
+###
+### Known issue:
+### The Unlimited BANK space DOES NOT WORK in Arm's Race, you can't retrieve your gears because the game see a negative space.
+### To fix it, you can temporarily modify it from -1000 to a positive value depending on your stuff in bank.
+### The lesser the better because the game loads every slots even the empties ones.
+### For example if you have 100 items in your bank, put something like 150 or less.
+### Then either restart your game or go back to the main logo page to reload the hotfixes before starting an Arm's Race.
 ###
 
 # Unlimited backpack space

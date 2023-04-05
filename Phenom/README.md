@@ -7,19 +7,30 @@
   * Legendary Price Scaling
   * Better Vending Machines
   * Moxxi's Tipping Jar Rewards
+  * No Action Skills Cooldown All
+  * Lower Legendary Beam
 
 * Beastmaster
+   * Leave No Trace Old Version (Instant Cooldown)
    * No Action Skills Cooldown Beastmaster
    * Infinite Fade Away Duration
    * Infinite Gamma Burst Duration
    * Instant Pet Respawn
    * PetZilla
    * PokePet
-   * Leave No Trace Old Version (Instant Cooldown)
+   * PokePetZilla
  
- * Operative
+* Operative
    * No Action Skills Cooldown Operative
    * Infinite SNTNL Drone Duration
+   * Power Ranger Clone
+
+* Siren
+   * No Action Skills Cooldown Siren
+   * Volleyball Amara
+
+* Gunner
+   * No Action Skill Cooldown Gunner
  
 * French translations
   * Trial Names FR (DexManly)

@@ -1,0 +1,37 @@
+###
+### Name: Power Ranger Clone
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, joke, char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### The Digi-Clone expands his territory:
+###	-Infinite duration
+###	-No more break range
+###	-No swap cooldown
+###
+### For example, you can put it anywhere on the map and use it as a TP or watch how many rounds it can last in an arena while you're outside.
+###
+### Cancel it by reloading the map (Fast Travel).
+###
+### NOTE: SSpyR already did something similar with his God Clone. You can use both, just put mine after in load order.
+###
+
+# Infinite Digi-Clone Duration
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DigiClone_Duration,Value,0,,(BaseValueConstant=-1.0)
+
+# Digi-Clone Max Range
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Digiclone_MaxRange,Value,0,,(BaseValueConstant=-1.0)
+
+# No Digi-Clone Swap Cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DigiClone_SwapPlacesCooldown,Value,0,,(BaseValueConstant=0.1)
+
+# No Digi-Clone Break Range
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Digiclone_MaxRange_SeperationAnxiety,Value,0,,(BaseValueConstant=-1.0)
+
+# No Digi-Clone Respawn Delay
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DigiClone_RespawnDelay,Value,0,,(BaseValueConstant=0.1)

@@ -2,7 +2,7 @@
 ### Name: Infinite Gamma Burst Duration
 ### Version: 1.0.0
 ### Author: Phenom
-### Categories: cheat, skill-system, char-beastmaster
+### Categories: cheat, char-beastmaster
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -15,7 +15,6 @@
 ###
 ### You can cancel it by reloading the map (Fast Travel) or dying as you wish.
 ###
-
 
 # Infinite Gamma Burst duration
 SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Skill_PetEnrage,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,-1.0

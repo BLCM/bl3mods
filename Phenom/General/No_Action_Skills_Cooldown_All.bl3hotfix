@@ -1,0 +1,97 @@
+###
+### Name: No Action Skills Cooldown All Characters
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, skill-system, char-beastmaster, char-gunner, char-siren, char-operative
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### All characters's action skill have no cooldown.
+###
+
+
+###
+### Beastmaster
+###
+
+# Instant Pet Attack Command cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Global_AttackCommmand,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Gamma Burst cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Skill_PetEnrage,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Rakk Attack cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,1.0
+
+# Instant Fade Away cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Spiderant,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,0
+
+# Instant Gravity Snare cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,AntiGravityTrap,Cooldown_20_735A4D0A498632382644F385DC1382EB,0,,0
+
+###
+### Gunner
+###
+
+# Instant Iron Bear cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Global_IronBear_Cooldown,Cooldown_4_8A38A09E46E89B75CDB6F39A50278802,0,,0.1
+
+# Instant Iron Cub cooldown
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,IronCub,Cooldown_20_735A4D0A498632382644F385DC1382EB,0,,0.1
+
+###
+### Siren
+###
+
+# PhaseCast
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Tandava
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_100Fists,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Reverberation
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_CausalChain,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Deliverance
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Cast_Schism,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+
+# PhaseGrasp
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# The Eternal Fist
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Essence,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Fist Over Matter
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Force,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Ties That Bind
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Grasp_Web,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+
+# PhaseSlam
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Downfall
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Barrage,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Fracture
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_PhasetranceCoefficients.DataTable_Siren_PhasetranceCoefficients,ASkill_Slam_Fracture,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+
+# PhaseFlare
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack1,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Glow Up
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack2,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Light Fantastic
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack5,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Shooting Star
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack7,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+
+###
+### Operative
+###
+
+# Digi-Clone
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DigiClone_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# Drone SNTNL
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# Barrier
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,DeployBarrier_Cooldown,Value,0,,(BaseValueConstant=0.000000,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
+
+# MNTIS Shoulder Cannon
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_DLC/Ixora/Tables/Table_DLCSkillTreeActionSkillData.Table_DLCSkillTreeActionSkillData,ShoulderMountedCannon,Cooldown_20_735A4D0A498632382644F385DC1382EB,0,,0.1
