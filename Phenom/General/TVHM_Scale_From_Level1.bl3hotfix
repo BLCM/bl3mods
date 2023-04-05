@@ -1,6 +1,6 @@
 ###
 ### Name: TVHM Scale From Level 1
-### Version: 1.0.0
+### Version: 1.1.0
 ### Author: Phenom
 ### Categories: scaling
 ###
@@ -11,9 +11,33 @@
 ###
 ### TVHM now scale from level 1 instead of 30.
 ###
-### You can start a new game directly in TVHM by unlocking it with a save editor, the mayhem menu will be available from start.
+### You can start a new game directly in TVHM by unlocking it with a save editor.
+###
+###
+###	Credits: Grendel for the DLCs parts
+###
+### Changelog:
+### v1.1.0: Added DLCs zones support, thanks to Grendel
 ###
 
-# Scale TVHM from level 1 instead of 30
+# Base Game - Scale TVHM from level 1 instead of 30
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC 1 - Moxxi's Heist of the Handsome Jackpot
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/GameData/Regions/RegionManagerData_DLC1.RegionManagerData_DLC1,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC2 - Guns, Love, and Tentacles
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/GameData/Regions/RegionManagerData_DLC2.RegionManagerData_DLC2,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC3 - Bounty of Blood
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/GameData/Regions/RegionManagerData_DLC3.RegionManagerData_DLC3,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC4 - Psycho Krieg and the Fantastic Fustercluck
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/GameData/Regions/ALI_RegionManagerData.ALI_RegionManagerData,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC5 - Designer's Cut
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/GameData/Regions/RegionManagerData_Ixora.RegionManagerData_Ixora,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
+
+# DLC6 - Director's Cut
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/GameData/Regions/RegionManagerData_Ixora2.RegionManagerData_Ixora2,PlayThroughs.PlayThroughs[1].MinimumGameStageForPlaythrough.BaseValueConstant,0,,1.0
 

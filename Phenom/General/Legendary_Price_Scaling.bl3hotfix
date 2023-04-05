@@ -2,7 +2,7 @@
 ### Name: Legendary Price Scaling
 ### Version: 1.0.0
 ### Author: Phenom
-### Categories: economy
+### Categories: economy, mode-balance, scaling
 ###
 ### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ### License URL: https://creativecommons.org/licenses/by-sa/4.0/
@@ -12,10 +12,10 @@
 ### Modify the legendary price multiplier.
 ###
 ### I felt that the legendaries were too cheap, they are now 10 times more expensive in all vending machines in cash, including Black Market.
-### Since it's a multiplier you can change it to whatever you want.
+### Since it's a multiplier you can change it to whatever you want. For example you can put 0.5 for 50% of the Vanilla price.
 ###
 ### Vanilla: 1.0
-### Mod default: 10.0
+### Mod default (x10): 10.0
 ### 
 
 # Legendary Price Scaling

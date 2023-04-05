@@ -1,0 +1,20 @@
+###
+### Name: Lower Lengadry Beam
+### Version: 1.0.0
+### Author: Phenom
+### Categories: qol
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Lower the legendaries loot beam height, almost divided by 3.
+###
+### Made by request.
+###
+###	Vanilla: 200.0
+### Mod default: 75.0
+###
+
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/RarityData/RarityData_05_Legendary.RarityData_05_Legendary,RarityLootBeamHeight,0,,75.0
