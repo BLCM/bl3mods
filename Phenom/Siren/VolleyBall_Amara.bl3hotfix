@@ -1,0 +1,35 @@
+###
+### Name: VolleyBall Amara
+### Version: 1.0.0
+### Author: Phenom
+### Categories: cheat, joke, char-siren
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### All the Enlightened Force's action skills have no cooldown and an infinite duration.
+###
+### Made for fun to beat ranged bosses at volleyball with a melee build.
+###
+
+### Infinite duration
+# PhaseFlare
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,ActionSkill_Duration_Skill1,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,-1.0
+# Glow Up
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,ActionSkill_Duration_Skill2,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,-1.0
+# Shooting Star
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,ActionSkill_Duration_Skill3,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,-1.0
+# Light Fantastic
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Passives/Table_Siren_DLCPassiveConstantValues.Table_Siren_DLCPassiveConstantValues,ActionSkill_Duration_Skill4,Base_17_28B25EC8493D1EB6C2138A962F659BCD,0,,-1.0
+
+### No cooldown
+# PhaseFlare
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack1,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Glow Up
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack2,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Light Fantastic
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack5,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
+# Shooting Star
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/SirenBrawler/_DLC/Ixora/Phasetrance/Defs/Table_PhasetranceCoefficients_DLC.Table_PhasetranceCoefficients_DLC,DLCAttack7,CooldownCoefficient_4_F654EB144A946CD7D29756AF24FC67B8,0,,0
