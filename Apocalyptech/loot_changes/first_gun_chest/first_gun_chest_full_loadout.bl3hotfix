@@ -1,12 +1,12 @@
-###
-### Name: First Gun Chest: Full Loadout
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: chests, cheat
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title First Gun Chest: Full Loadout
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories chests, cheat
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Updates the opening gun chest in Covenant Pass to include a full set of

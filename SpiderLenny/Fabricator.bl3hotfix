@@ -1,0 +1,12 @@
+###
+### Name: Gun Gun
+### Author: SpiderLenny
+### Categories: joke,gear-general
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###Changes the Eridian Fabricator's name to the unequivocally best line in the game
+
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/WT_EridianFabricator.WT_EridianFabricator,InventoryName,0,,Gun Gun. Gun Gun Gun! Guuuuuun.

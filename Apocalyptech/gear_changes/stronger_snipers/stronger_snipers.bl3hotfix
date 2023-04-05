@@ -1,12 +1,12 @@
-###
-### Name: Stronger Snipers
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: gear-sniper
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Stronger Snipers
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-sniper
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### This buffs up sniper rifles by a bit, with a bit of base-damage increase, and

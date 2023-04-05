@@ -1,23 +1,31 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
-# Borderlands 3 Data Library is free software: you can redistribute it
-# and/or modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation, either version 3 of
-# the License, or (at your option) any later version.
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of the development team nor the
+#       names of its contributors may be used to endorse or promote products
+#       derived from this software without specific prior written permission.
 #
-# Borderlands 3 Data Library is distributed in the hope that it will
-# be useful, but WITHOUT ANY WARRANTY; without even the implied
-# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with Borderlands 3 Data Library.  If not, see
-# <https://www.gnu.org/licenses/>.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL CJ KUCERA BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import os
 import re
@@ -62,7 +70,7 @@ class BL3Data(object):
     """
 
     # Data serialization version requirements
-    data_version = 20
+    data_version = 24
 
     # Hardcoded BVA values
     bva_values = {
@@ -249,19 +257,23 @@ class BL3Data(object):
         only match on exact object names, rather than a prefix.
         """
         prefix_lower = prefix.lower()
-        if exact:
-            full_match = '{}.uasset'.format(prefix_lower)
         base_dir = '{}{}'.format(self.data_dir, base)
         results = []
         for (dirpath, dirnames, filenames) in os.walk(base_dir):
             obj_base = dirpath[len(self.data_dir):]
             for filename in filenames:
-                if exact:
-                    if filename.lower() == full_match:
-                        yield os.path.join(obj_base, filename[:-7])
+                if '.' in filename:
+                    filename, ext = filename.rsplit('.', 1)
                 else:
-                    if filename.lower().startswith(prefix_lower) and filename.endswith('.uasset'):
-                        yield os.path.join(obj_base, filename[:-7])
+                    ext = None
+                if ext != 'uasset' and ext != 'umap':
+                    continue
+                if exact:
+                    if filename.lower() == prefix_lower:
+                        yield os.path.join(obj_base, filename)
+                else:
+                    if filename.lower().startswith(prefix_lower):
+                        yield os.path.join(obj_base, filename)
 
     def find_data(self, base, prefix):
         """
@@ -280,8 +292,8 @@ class BL3Data(object):
         https://en.wikipedia.org/wiki/Glob_(programming)
         """
         for filename in glob.glob('{}{}'.format(self.data_dir, glob_pattern)):
-            if filename.endswith('.uasset'):
-                yield filename[len(self.data_dir):-7]
+            if filename.endswith('.uasset') or filename.endswith('.umap'):
+                yield filename[len(self.data_dir):].rsplit('.', 1)[0]
 
     def glob_data(self, glob_pattern):
         """
@@ -386,12 +398,20 @@ class BL3Data(object):
         data = self.get_exports(table_name, 'DataTable')[0]
         if row_name in data and col_name in data[row_name]:
             return data[row_name][col_name]
+        elif row_name in data and col_name == 'None' and 'Value' in data[row_name]:
+            # This happens in Amulet part weights, if nowhere else.  Note the
+            # nested BVC processing here.  Note too that this is almost certainly
+            # a BVC struct, though we're not making assumptions here.
+            return data[row_name]['Value']
         else:
             return None
 
-    def process_bvc(self, bvc_obj):
+    def process_bvc(self, bvc_obj, cur_dt=None):
         """
-        Given a bl3hotfixmod BVC object, return a value.
+        Given a bl3hotfixmod BVC object, return a value.  Optionally pass in `cur_dt`
+        as the objet path to the currently-being-processed DataTable, in case a
+        nested BVC ends up referring back to the DataTable with subobject-following
+        syntax.
         """
 
         # BVC
@@ -401,7 +421,10 @@ class BL3Data(object):
         if bvc_obj.dtv and bvc_obj.dtv.table != 'None':
             new_bvc = self.datatable_lookup(bvc_obj.dtv.table, bvc_obj.dtv.row, bvc_obj.dtv.value)
             if new_bvc is not None:
-                bvc = new_bvc
+                if type(new_bvc) == dict:
+                    bvc = round(self.process_bvc_struct(new_bvc, cur_dt=bvc_obj.dtv.table), 6)
+                else:
+                    bvc = new_bvc
 
         # BVA
         if bvc_obj.bva and bvc_obj.bva != 'None':
@@ -446,12 +469,17 @@ class BL3Data(object):
         # BVS
         return bvc * bvc_obj.bvs
 
-    def process_bvc_struct(self, data):
+    def process_bvc_struct(self, data, cur_dt=None):
         """
-        Given a serialized BVC/BVSC/etc structure, return a value.
+        Given a serialized BVC/BVSC/etc structure, return a value.  Optionally
+        pass in a `cur_dt` with the current DataTable path, if we're processing
+        a BVC struct inside a DataTable.  (Nested BVCs may reference the same
+        DataTable it's in using the `export` subobject-following syntax.  See
+        /Game/Gear/Amulets/_Shared/_Design/GameplayAttributes/Tables/DataTable_Amulets_BaseValues
+        in Wonderlands for some examples of this (for instance, `Weight_Low_2X`)
         """
 
-        return self.process_bvc(BVC.from_data_struct(data))
+        return self.process_bvc(BVC.from_data_struct(data, cur_dt=cur_dt), cur_dt=cur_dt)
 
     def _cache_part_category_name(self, part_name, name):
         """

@@ -24,6 +24,13 @@ mod active.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.2.0** - Nov 10, 2020
  * Updated for DLC5 (Designer's Cut) weapons (just the Superconducting Plasma Coil).
  * Fixed some restricted-element weapons to properly have all the element

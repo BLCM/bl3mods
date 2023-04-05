@@ -1,12 +1,12 @@
-###
-### Name: Customization Drop Rate: Improved
-### Version: 1.2.0
-### Author: Apocalyptech
-### Categories: enemy-drops
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Customization Drop Rate: Improved
+@version 1.2.1
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories enemy-drops
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### This improves the customization drop rate from 0.5% to 3%, for most enemy

@@ -53,6 +53,7 @@ for value in [
                 "All *real* credit for this goes to Nexus-Mistress, who found the",
                 "proper attribute to use after I'd failed to do so myself!"
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.0.0',
             cats='cheat, economy',

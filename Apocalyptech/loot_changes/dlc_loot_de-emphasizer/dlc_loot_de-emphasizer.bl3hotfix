@@ -1,12 +1,12 @@
-###
-### Name: DLC Loot De-Emphasizer
-### Version: 1.3.0
-### Author: Apocalyptech
-### Categories: loot-system, enemy-drops, chests
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title DLC Loot De-Emphasizer
+@version 1.3.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories loot-system, enemy-drops, chests
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### So far, all story DLCs for BL3 have included specific legendary loot

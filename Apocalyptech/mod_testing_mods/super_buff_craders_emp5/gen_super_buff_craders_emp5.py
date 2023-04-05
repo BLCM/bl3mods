@@ -34,11 +34,12 @@ mod = Mod('super_buff_craders_emp5.bl3hotfix',
             "Used by myself primarily just for mod testing purposes, for when I",
             "don't want to be bothered by actual combat.",
             "",
-            "Note that any EM-P5 with the x2 Grip will consume 1 ammo (as opposed",
-            "to its usual 2).  This mod prevents further x2 Grips from spawning.",
+            "This mod also prevents x2 Grips from spawning on new EM-P5s, though",
+            "the zero-ammo-consumption should work regardless of that part.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.0.1',
         cats='cheat, gear-smg',
         )
 
@@ -53,7 +54,7 @@ for (attr, mod_type, mod_val) in [
         ('/Game/GameData/Weapons/Att_Weapon_Damage', 'ScaleSimple', 6000),
 
         # Infinite ammo.
-        ('/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost', 'OverrideBaseValue', 0),
+        ('/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost', 'ScaleSimple', 0),
 
         # Fire Rate!  Already quite good, but what the hell.  Excess makes the heart grow fonder.
         ('/Game/GameData/Weapons/Att_Weapon_FireRate', 'ScaleSimple', 1.5),
@@ -75,6 +76,35 @@ for (attr, mod_type, mod_val) in [
         # Better Recoil
         ('/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale', 'ScaleSimple', 0.001),
         ('/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale', 'ScaleSimple', 0.001),
+
+        ###
+        ### Spent a bit of time getting a better feel for exactly what all these
+        ### attributes do; below is my playing with 'em.  I never did finish
+        ### doing that, in the end.
+        ###
+
+        # zoom at 0 == basically no sway while firing
+        # zoom at 200 == *tons* of sway while firing, like dogfighting type stuff
+        #('/Game/GameData/Weapons/Att_Weapon_SwayAccuracyScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayZoomAccuracyScale', 'ScaleSimple', 0),
+        # 0 == perfect accuracy, 200 == bullets spread out over an incredible distance
+        #('/Game/GameData/Weapons/Att_Weapon_Spread', 'ScaleSimple', 0),
+        # How much each shot makes accuracy worse
+        #('/Game/GameData/Weapons/Att_Weapon_AccuracyImpulse', 'ScaleSimple', 0),
+        # Idle "sway," though the non-zoomed version doesn't seem to do much?
+        #('/Game/GameData/Weapons/Att_Weapon_SwayScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayZoomScale', 'ScaleSimple', 0),
+        # Specific recoil while firing
+        #('/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale', 'ScaleSimple', 0),
+        #('/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale', 'ScaleSimple', 0),
+        # Not sure, honestly
+        #('/Game/GameData/Accuracy/Att_AccuracyMaxValue', 'ScaleSimple', 400),
+        # Seems to define the ellipse on which sway happens, both during firing and while zoomed.
+        #('/Game/GameData/Weapons/Att_Weapon_SwayDiscHeight', 'ScaleSimple', 1),
+        #('/Game/GameData/Weapons/Att_Weapon_SwayDiscWidth', 'ScaleSimple', 100),
+        # The speed at which firing-sway jerks around
+        #('/Game/GameData/Weapons/Att_Weapon_SwaySpeed', 'ScaleSimple', 400),
+        #('/Game/GameData/Weapons/Att_Weapon_ActiveHeatRate', 'ScaleSimple', 400),
 
         ]:
 

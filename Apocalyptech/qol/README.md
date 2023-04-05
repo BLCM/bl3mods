@@ -18,6 +18,8 @@ See the individual mod folders for full READMEs.
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The
   Droughts have the usual porta-potty weapon attachments when looting.
+- **Easy Entry to Fort Sunshine** - Adds a door-opening lever to the outside of
+  Fort Sunshine, in Floodmoor Basin.
 - **Free Hemovorous Door** - Makes the door to get to Hemovorous the Invincible
   free, instead of costing 500 Eridium.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
@@ -28,14 +30,16 @@ See the individual mod folders for full READMEs.
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
+- **Quick Changes Everywhere** - Introduces a Quick Change station to every
+  level in the game which didn't already have one.
 
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

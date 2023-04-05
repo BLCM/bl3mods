@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -25,7 +25,6 @@ from bl3hotfixmod.bl3hotfixmod import Mod
 
 start_price = 500
 increment = 2
-default_levels = 8
 max_price = 1024000
 
 mod = Mod('cheaper_sdus.bl3hotfix',
@@ -34,36 +33,49 @@ mod = Mod('cheaper_sdus.bl3hotfix',
         [
             "Makes the purchaseable SDUs in the game significantly cheaper.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.2.0',
         cats='cheat, economy',
         )
 
-for table_data in [
-        'Table_SDU_AssaultRifle',
+# This is stupid, but so is this updated object.
+row_hardcodes = {
+        'Table_SDU_Bank': {
+            23: 'NewRow',
+            24: 'NewRow_0',
+            25: 'NewRow_1',
+            26: 'NewRow_2',
+            27: 'NewRow_3',
+            },
+        }
+
+for table, levels in [
+        ('Table_SDU_AssaultRifle', 10),
         ('Table_SDU_Backpack', 13),
-        ('Table_SDU_Bank', 23),
-        'Table_SDU_Grenade',
+        ('Table_SDU_Bank', 28),
+        ('Table_SDU_Grenade', 10),
         ('Table_SDU_Heavy', 13),
-        'Table_SDU_LostLoot',
-        'Table_SDU_Pistol',
-        'Table_SDU_Shotgun',
-        'Table_SDU_SMG',
+        ('Table_SDU_LostLoot', 10),
+        ('Table_SDU_Pistol', 10),
+        ('Table_SDU_Shotgun', 10),
+        ('Table_SDU_SMG', 10),
         ('Table_SDU_SniperRifle', 13),
         ]:
-    if type(table_data) == tuple:
-        (table, levels) = table_data
-    else:
-        table = table_data
-        levels = default_levels
+    mod.comment(table)
     price = start_price
     for level in range(levels):
+        if table in row_hardcodes and level in row_hardcodes[table]:
+            row_name = row_hardcodes[table][level]
+        else:
+            row_name = 'Lv{}'.format(level+1)
         mod.table_hotfix(Mod.PATCH, '',
-                '/Game/Pickups/SDU/{}.{}'.format(table, table),
-                'Lv{}'.format(level+1),
+                '/Game/Pickups/SDU/{}'.format(table),
+                row_name,
                 'SDUPrice',
                 price)
         if price < max_price:
             price = int(price*increment)
+    mod.newline()
 
 mod.close()

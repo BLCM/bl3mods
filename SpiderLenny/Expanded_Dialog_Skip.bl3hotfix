@@ -1,0 +1,196 @@
+###
+### Name: Expanded Quest Dialogue Skip
+### Author: Grimm, SpiderLenny
+### Categories: qol, quest-changes
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### NOTE 2: After testing by doing a 100% run of the game, DLC 3 main story and Ava DLC Mission 4 - Scryer's Crypt break completely, so I've disabled them.
+### Anything else seems to work fine, if occasionally requiring save quits.
+### The DialogScript files for some sidequests seem to not be present in the folders I was investigating, so the mod won't work on those. I have no idea why.
+### Also included in the mod are skips for the Proving Grounds dialogue, Nyriad's Writings, Typhon's Logs and Claptrap's Salvage.
+### !!ORIGINAL MOD BY GRIMM! I just expanded it to include DLC and Sidequests. Left the takedowns, arms race, and most dialogue you don't need to wait on.
+
+# Dialog Skip
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_The_Big_Chase.DialogScript_The_Big_Chase,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Watership.DialogScript_Watership,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Wetlands_Vault.DialogScript_Wetlands_Vault,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Wrecktory.DialogScript_Wrecktory,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Atlas_HQ.DialogScript_Atlas_HQ,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Beach.DialogScript_Beach,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_City_Vault.DialogScript_City_Vault,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Desert_Vault.DialogScript_Desert_Vault,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Desolate.DialogScript_Desolate,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_End_Vault.DialogScript_End_Vault,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Hostile_Takeover.DialogScript_Hostile_Takeover,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Mansion.DialogScript_Mansion,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Marshfields.DialogScript_Marshfields,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Mines.DialogScript_Mines,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Monastery.DialogScript_Monastery,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Neon_Crypt.DialogScript_Neon_Crypt,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Orbital_Platform.DialogScript_Orbital_Platform,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Prison.DialogScript_Prison,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Recruitment.DialogScript_Recruitment,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Resistance.DialogScript_Resistance,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_RNR_Intro.DialogScript_RNR_Intro,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Sanctuary.DialogScript_Sanctuary,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Sun_Smasher.DialogScript_Sun_Smasher,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Scripted/DialogScript_Takeoff.DialogScript_Takeoff,TimeSlots,0,,()
+
+#DLC Main Quests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Scripted/DialogScript_DLC4_Main_Missions.DialogScript_DLC4_Main_Missions,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Scripted/DialogScript_DLC1_Main_Missions.DialogScript_DLC1_Main_Missions,TimeSlots,0,,()
+
+#SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Scripted/DialogScript_DLC3_Main_Missions.DialogScript_DLC3_Main_Missions,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Scripted/DialogScript_DLC2_Main_Missions.DialogScript_DLC2_Main_Missions,TimeSlots,0,,()
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Dialog/Scripts/Ixora2/DialogScript_Mystery_01.DialogScript_Mystery_01,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Dialog/Scripts/Ixora2/DialogScript_Mystery_02.DialogScript_Mystery_02,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Dialog/Scripts/Ixora2/DialogScript_Mystery_03.DialogScript_Mystery_03,TimeSlots,0,,()
+#SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Dialog/Scripts/Ixora2/DialogScript_Mystery_04.DialogScript_Mystery_04,TimeSlots,0,,()
+
+#Nyriad and Typhon, Proving Grounds, Claptrap
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/CrewChallenges/DialogScript_Crew_Challenges_Typhon.DialogScript_Crew_Challenges_Typhon,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/CrewChallenges/DialogScript_Crew_Challenges_Writings.DialogScript_Crew_Challenges_Writings,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/CrewChallenges/DialogScript_Crew_Challenges_Salvage.DialogScript_Crew_Challenges_Salvage,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Misc/DialogScript_Proving_Grounds.DialogScript_Proving_Grounds,TimeSlots,0,,()
+
+
+#Takedowns + Arms Race
+
+#Main Story Sidequests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Baby_Dancer.DialogScript_SQ_Baby_Dancer,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Bad_Reception.DialogScript_SQ_Bad_Reception,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Bad_Vibrations.DialogScript_SQ_Bad_Vibrations,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Better_Times.DialogScript_SQ_Better_Times,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Birthday_Surprise.DialogScript_SQ_Birthday_Surprise,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Bitter_Pills_to_Swallow.DialogScript_SQ_Bitter_Pills_to_Swallow,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Boom_Boom_Boomtown.DialogScript_SQ_Boom_Boom_Boomtown,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Buff_Film_Buff.DialogScript_SQ_Buff_Film_Buff,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Cannonization.DialogScript_SQ_Cannonization,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Caring_For_The_Elderly.DialogScript_SQ_Caring_For_The_Elderly,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Change_of_Heart.DialogScript_SQ_Change_of_Heart,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Debug_Destroyer_of_Worlds.DialogScript_SQ_Debug_Destroyer_of_Worlds,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Demon_Dark.DialogScript_SQ_Demon_Dark,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Drive_Away.DialogScript_SQ_Drive_Away,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Dump_On_Dumptruck.DialogScript_SQ_Dump_On_Dumptruck,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Dynasty_Dash_Eden6.DialogScript_SQ_Dynasty_Dash_Eden6,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Dynasty_Dash_Pandora.DialogScript_SQ_Dynasty_Dash_Pandora,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Dynasty_Diner.DialogScript_SQ_Dynasty_Diner,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_ECHONet_Neutrality.DialogScript_SQ_ECHONet_Neutrality,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Free_Holder.DialogScript_SQ_Free_Holder,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Game_Show.DialogScript_SQ_Game_Show,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Golden_Calves.DialogScript_SQ_Golden_Calves,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Growing_Pains.DialogScript_SQ_Growing_Pains,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Head_Case.DialogScript_SQ_Head_Case,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Homeopathological.DialogScript_SQ_Homeopathological,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Homestead_1.DialogScript_SQ_Homestead_1,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Homestead_2.DialogScript_SQ_Homestead_2,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Homestead_3.DialogScript_SQ_Homestead_3,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Invasion_of_Privacy.DialogScript_SQ_Invasion_of_Privacy,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Its_Alive.DialogScript_SQ_Its_Alive,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Just_A_Prick.DialogScript_SQ_Just_A_Prick,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Just_Desserts.DialogScript_SQ_Just_Desserts,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Kill_KillaVolt.DialogScript_SQ_Kill_KillaVolt,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Last_Katagawa.DialogScript_SQ_Last_Katagawa,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Malevolent_Practice.DialogScript_SQ_Malevolent_Practice,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Maliwannabes.DialogScript_SQ_Maliwannabes,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Monk_Brew.DialogScript_SQ_Monk_Brew,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Opposition_Research.DialogScript_SQ_Opposition_Research,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Pandoras_Next_Top_Mouthpiece.DialogScript_SQ_Pandoras_Next_Top_Mouthpiece,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Portaprison.DialogScript_SQ_Portaprison,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Powerful_Connections.DialogScript_SQ_Powerful_Connections,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Raiders_of_the_Lost_Rock.DialogScript_SQ_Raiders_of_the_Lost_Rock,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Ratchet_It_Up.DialogScript_SQ_Ratchet_It_Up,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Rise_and_Grind.DialogScript_SQ_Rise_and_Grind,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Rumble_In_The_Jungle.DialogScript_SQ_Rumble_In_The_Jungle,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Sacked.DialogScript_SQ_Sacked,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Sell_Out.DialogScript_SQ_Sell_Out,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Skag_Dogs.DialogScript_SQ_Skag_Dogs,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Slaughterstar.DialogScript_SQ_Slaughterstar,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Special_Delivery.DialogScript_SQ_Special_Delivery,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Swamp_Bro.DialogScript_SQ_Swamp_Bro,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_The_Hangover.DialogScript_SQ_The_Hangover,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Too_Many_Kevins.DialogScript_SQ_Too_Many_Kevins,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Torture_Truck.DialogScript_SQ_Torture_Truck,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Under_Taker.DialogScript_SQ_Under_Taker,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Wildlife_Conservation.DialogScript_SQ_Wildlife_Conservation,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Witchs_Brew.DialogScript_SQ_Witchs_Brew,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Dialog/Scripts/Sidequests/DialogScript_SQ_Wizard_of_NOGs.DialogScript_SQ_Wizard_of_NOGs,TimeSlots,0,,()
+
+#DLC 1 Sidequests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Acid_Trip.DialogScript_DLC1_SQ_Acid_Trip,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Do_It_For_Digby_Pt1.DialogScript_DLC1_SQ_Do_It_For_Digby_Pt1,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Do_It_For_Digby_Pt2.DialogScript_DLC1_SQ_Do_It_For_Digby_Pt2,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Do_It_For_Digby_Pt3.DialogScript_DLC1_SQ_Do_It_For_Digby_Pt3,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Double_Down.DialogScript_DLC1_SQ_Double_Down,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Heart_Of_Gold.DialogScript_DLC1_SQ_Heart_Of_Gold,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Raging_Bot.DialogScript_DLC1_SQ_Raging_Bot,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Regaining_Ones_Feet.DialogScript_DLC1_SQ_Regaining_Ones_Feet,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Sisterly_Love.DialogScript_DLC1_SQ_Sisterly_Love,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_The_Great_Escape.DialogScript_DLC1_SQ_The_Great_Escape,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Dialog/Scripts/Sidequests/DialogScript_DLC1_SQ_Too_Much_Of_A_Good_Thing.DialogScript_DLC1_SQ_Too_Much_Of_A_Good_Thing,TimeSlots,0,,()
+
+#DLC 2 Sidequests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Business_As_Usual.DialogScript_DLC2_SQ_Business_As_Usual,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Debt_Collector.DialogScript_DLC2_SQ_Debt_Collector,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Happily_Ever_After.DialogScript_DLC2_SQ_Happily_Ever_After,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Into_The_Deep.DialogScript_DLC2_SQ_Into_The_Deep,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Krichy_Situation.DialogScript_DLC2_SQ_Krichy_Situation,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Nibblenomicon.DialogScript_DLC2_SQ_Nibblenomicon,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Private_Eye_Pt1.DialogScript_DLC2_SQ_Private_Eye_Pt1,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Private_Eye_Pt2.DialogScript_DLC2_SQ_Private_Eye_Pt2,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Private_Eye_Pt3.DialogScript_DLC2_SQ_Private_Eye_Pt3,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Sinister_Sounds.DialogScript_DLC2_SQ_Sinister_Sounds,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_The_Great_Escape_Pt2.DialogScript_DLC2_SQ_The_Great_Escape_Pt2,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_We_Slass_Pt1.DialogScript_DLC2_SQ_We_Slass_Pt1,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_We_Slass_Pt2.DialogScript_DLC2_SQ_We_Slass_Pt2,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_We_Slass_Pt3.DialogScript_DLC2_SQ_We_Slass_Pt3,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Dialog/Scripts/Sidequests/DialogScript_DLC2_SQ_Where_I_Belong.DialogScript_DLC2_SQ_Where_I_Belong,TimeSlots,0,,()
+
+#DLC 3 Sidequests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Animal_Control.DialogScript_DLC3_SQ_Animal_Control,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Blood_and_Beans.DialogScript_DLC3_SQ_Blood_and_Beans,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Dirty_Deeds.DialogScript_DLC3_SQ_Dirty_Deeds,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Ghost_Stories.DialogScript_DLC3_SQ_Ghost_Stories,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Love_Bars_None.DialogScript_DLC3_SQ_Love_Bars_None,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_McSmugger.DialogScript_DLC3_SQ_McSmugger,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Miracle_Man.DialogScript_DLC3_SQ_Miracle_Man,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Money_Back_Guarantee.DialogScript_DLC3_SQ_Money_Back_Guarantee,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Quick_and_the_Quickerer.DialogScript_DLC3_SQ_Quick_and_the_Quickerer,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Rustlers.DialogScript_DLC3_SQ_Rustlers,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Dialog/Scripts/Sidequests/DialogScript_DLC3_SQ_Saurdew_Valley.DialogScript_DLC3_SQ_Saurdew_Valley,TimeSlots,0,,()
+
+#DLC 4 Sidequests
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQ_All_Shapes_And_Calibers.DialogScript_DLC4_SQ_All_Shapes_And_Calibers,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQ_Checks_And_Balances.DialogScript_DLC4_SQ_Checks_And_Balances,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQB_Anger_Missions.DialogScript_DLC4_SQB_Anger_Missions,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQ_Exposure_Therapy.DialogScript_DLC4_SQ_Exposure_Therapy,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQB_Chase_Missions.DialogScript_DLC4_SQB_Chase_Missions,TimeSlots,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Dialog/Scripts/Sidequests/DialogScript_DLC4_SQB_Experiment_Missions.DialogScript_DLC4_SQB_Experiment_Missions,TimeSlots,0,,()

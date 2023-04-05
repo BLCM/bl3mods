@@ -1,12 +1,12 @@
-###
-### Name: No Projected Shields
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: gear-general, gear-shield
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title No Projected Shields
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-general, gear-shield
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Makes shields never spawn with the "projected" effect
@@ -127,6 +127,22 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/OldGod/Bal
 
 # PartSet_Shield_OldGod
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Hibiscus/Gear/Shields/_Unique/OldGod/Balance/PartSet_Shield_OldGod.PartSet_Shield_OldGod,ActorPartLists.ActorPartLists[3].Parts.Parts[1].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# InvBalD_Shield_Ventilator
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator.InvBalD_Shield_Ventilator,RuntimePartList.AllParts.AllParts[21].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator.InvBalD_Shield_Ventilator,RuntimePartList.AllParts.AllParts[22].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/InvBalD_Shield_Ventilator.InvBalD_Shield_Ventilator,RuntimePartList.AllParts.AllParts[23].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# PartSet_Shield_Ventilator Weighting
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Shields/_Unique/Ventilator/Balance/PartSet_Shield_Ventilator.PartSet_Shield_Ventilator,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
+
+# InvBalD_Shield_Revolter
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/InvBalD_Shield_Revolter.InvBalD_Shield_Revolter,RuntimePartList.AllParts.AllParts[21].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/InvBalD_Shield_Revolter.InvBalD_Shield_Revolter,RuntimePartList.AllParts.AllParts[22].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/InvBalD_Shield_Revolter.InvBalD_Shield_Revolter,RuntimePartList.AllParts.AllParts[23].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# PartSet_Shield_Revolter Weighting
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/Balance/PartSet_Shield_Revolter.PartSet_Shield_Revolter,ActorPartLists.ActorPartLists[3].bUseWeightWithMultiplePartSelection,0,,True
 
 # InvBalD_Shield_LGD_ReCharger_Berner
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Raid1/Gear/Shields/_HybridLegendary/SlideKickHybrid/ReCharger_Berner/InvBalD_Shield_LGD_ReCharger_Berner.InvBalD_Shield_LGD_ReCharger_Berner,RuntimePartList.AllParts.AllParts[21].Weight,0,,(BaseValueConstant=0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)

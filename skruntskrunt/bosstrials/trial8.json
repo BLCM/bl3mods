@@ -1,0 +1,312 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBasic"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeChump"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredatorX"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredator"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianHamtaurus"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianGrogPoison"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBasic"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBadass"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "12.0"
+   },
+   "wave": "0"
+  }
+ ],
+ "spawnpoints": [
+  "OakMissionSpawner_Boss",
+  "OakMissionSpawner_BossAdds",
+  "OakMissionSpawner_E1C",
+  "OakMissionSpawner_E1C2A",
+  "OakMissionSpawner_E1C2B",
+  "OakMissionSpawner_E2C",
+  "OakMissionSpawner_E2C2A",
+  "OakMissionSpawner_E2C2B",
+  "OakMissionSpawner_E3C",
+  "OakMissionSpawner_E3C2A",
+  "OakMissionSpawner_E3C2B",
+  "OakMissionSpawner_GemGuardian",
+  "OakMissionSpawner_GemGuardian_0",
+  "OakMissionSpawner_GemGuardian_1",
+  "OakMissionSpawner_Guardian_0",
+  "OakSpawner_Crystals_Small",
+  "OakSpawnPoint",
+  "OakSpawnPoint442",
+  "OakSpawnPoint443",
+  "OakSpawnPoint446",
+  "OakSpawnPoint461",
+  "OakSpawnPoint462",
+  "OakSpawnPoint464",
+  "OakSpawnPoint465",
+  "OakSpawnPoint470",
+  "OakSpawnPoint471",
+  "OakSpawnPoint472",
+  "OakSpawnPoint_0",
+  "OakSpawnPoint_1",
+  "OakSpawnPoint_2",
+  "OakSpawnPoint_3",
+  "OakSpawnPoint_4",
+  "OakSpawnPoint_5",
+  "SpawnMesh_ApeHut",
+  "SpawnMesh_ApeHut_0",
+  "SpawnMesh_ApeHut_1",
+  "SpawnMesh_ApeHut_10",
+  "SpawnMesh_ApeHut_11",
+  "SpawnMesh_ApeHut_15",
+  "SpawnMesh_ApeHut_16",
+  "SpawnMesh_ApeHut_17",
+  "SpawnMesh_ApeHut_18",
+  "SpawnMesh_ApeHut_19",
+  "SpawnMesh_ApeHut_2",
+  "SpawnMesh_ApeHut_20",
+  "SpawnMesh_ApeHut_22",
+  "SpawnMesh_ApeHut_25",
+  "SpawnMesh_ApeHut_26",
+  "SpawnMesh_ApeHut_27",
+  "SpawnMesh_ApeHut_28",
+  "SpawnMesh_ApeHut_3",
+  "SpawnMesh_ApeHut_4",
+  "SpawnMesh_ApeHut_5",
+  "SpawnMesh_ApeHut_6",
+  "SpawnMesh_ApeHut_7",
+  "SpawnMesh_ApeHut_8",
+  "SpawnMesh_ApeHut_9",
+  "SpawnMesh_EridianGuardianMonolith_10",
+  "SpawnMesh_EridianGuardianMonolith_11",
+  "SpawnMesh_EridianGuardianMonolith_14",
+  "SpawnMesh_EridianGuardianMonolith_18",
+  "SpawnMesh_EridianGuardianMonolith_2",
+  "SpawnMesh_EridianGuardianMonolith_3",
+  "SpawnMesh_EridianGuardianMonolith_6",
+  "SpawnMesh_EridianGuardianMonolith_7",
+  "SpawnPoint_IO_SmallCrystal",
+  "SpawnPoint_IO_SmallCrystal_74",
+  "SpawnPoint_IO_SmallCrystal_75",
+  "SpawnPoint_IO_SmallCrystal_76",
+  "SpawnPoint_IO_SmallCrystal_77",
+  "SpawnPoint_IO_SmallCrystal_78",
+  "SpawnPoint_IO_SmallCrystal_79",
+  "SpawnPoint_IO_SmallCrystal_80",
+  "SpawnPoint_IO_SmallCrystal_81",
+  "SpawnPoint_IO_SmallCrystal_82",
+  "SpawnPoint_IO_SmallCrystal_83",
+  "SpawnPoint_IO_SmallCrystal_84",
+  "SpawnPoint_IO_SmallCrystal_85",
+  "SpawnPoint_IO_SmallCrystal_86",
+  "SpawnPoint_IO_SmallCrystal_87",
+  "SpawnPoint_IO_SmallCrystal_88",
+  "SpawnPoint_IO_SmallCrystal_89",
+  "SpawnPoint_IO_SmallCrystal_90"
+ ],
+ "spawnoption_list": [
+  "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBadass",
+  "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeBasic",
+  "/Game/Enemies/_Spawning/Ape/Variants/SpawnOptions_ApeChump",
+  "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeElementalMix",
+  "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix",
+  "/Game/Enemies/_Spawning/Ape/_Mixes/SpawnOptions_ApeMix_NoBadass",
+  "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianGrogPoison",
+  "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianHamtaurus",
+  "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredator",
+  "/Game/Enemies/_Spawning/Saurian/Variants/SpawnOptions_SaurianPredatorX",
+  "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_GrogMix",
+  "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianGrogMix_MarshFields",
+  "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands",
+  "/Game/Enemies/_Spawning/Saurian/_Mixes/SpawnOptions_SaurianMix_Wetlands_NoTyrant"
+ ]
+}

@@ -15,6 +15,14 @@ No gameplay changes or anything!  Just the main menu style.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.0.1** - Jun 16, 2021
+ * Added contact info to mod header
+ * Updated in-mod description slightly
+
 **v1.0.0** - Sep 26, 2020
  * First versioned release
  

@@ -1,0 +1,26 @@
+###
+### Name: No Heavy Weapon Player Speed Penalty
+### Version: 1.0.0
+### Author: Stygian Emperor
+### Contact (Email): stygianemperor@gmail.com
+### Contact (Discord): 𝔖𝔱𝔶𝔤𝔦𝔞𝔫 𝔈𝔪𝔭𝔢𝔯𝔬𝔯#1500 (also try Stygian Emperor#1500)
+### Categories: cheat, gear-heavy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+
+### 
+### DESCRIPTION
+### Removes player movement speed reduction from Heavy Weapons which have it.
+### 
+
+
+## ATLAS
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/ATL/_Shared/_Design/WT_HW_ATL.WT_HW_ATL,InstigatorAttributeEffects,0,,()
+
+## VLADOF
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/WT_HW_VLA.WT_HW_VLA,InstigatorAttributeEffects,0,,()
+
+## COV & TORGUE
+# COV & TORGUE heavy weapons do not slow the player by default.

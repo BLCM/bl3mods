@@ -63,6 +63,7 @@ mod = Mod('testing_loot_drops.bl3hotfix',
             "shield -- that's the testing gear I use alongside my two Super Buff mods.  To",
             "get this mod to drop anything else, you'll have to edit to suit.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='resource',
@@ -86,10 +87,12 @@ pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SniperRifles/ItemPool_SnipeRif
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Beastmaster_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Gunner_05_Legendary'
 #pool_to_set = '/Game/Gear/ClassMods/_Design/ItemPools/ItemPool_ClassMods_Operative_05_Legendary'
+#pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_05_Legendary'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts_03_Rare'
 #pool_to_set = '/Game/Gear/Artifacts/_Design/ItemPools/ItemPool_Artifacts'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Shields/ItemPool_Shields_All'
 #pool_to_set = '/Game/GameData/Loot/ItemPools/Guns/SMG/ItemPool_SMGs_VeryRare'
+#pool_to_set = '/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money_Normal'
 
 # Hoovering up cosmetics
 #pool_to_set = '/Game/GameData/Loot/ItemPools/ItemPool_SkinsAndMisc'
@@ -107,6 +110,9 @@ balances = [
         # Testing Gear!
         '/Game/PatchDLC/Raid1/Re-Engagement/Weapons/CraderMP5/Balance/Balance_SM_DAHL_CraderMP5',
         '/Game/Gear/Shields/_Design/_Uniques/Transformer/Balance/InvBalD_Shield_LGD_Transformer',
+
+        # Mysterious Amulet
+        #'/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet',
 
         # Ixora COMs
         ## Various

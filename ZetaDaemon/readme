@@ -4,12 +4,6 @@ Mods by ZetaDaemon
 Transforms the Soleki Protocol sniper into a recreation of the Orion from BL1. 
 Has increased stats over the Soleki to make it a stronger weapon, also now drops from Tumorhead in Lectra City on Promethea.
 
--MaggieTrickshotBalancing
-Totally legit balancing of the Maggie and Trickshot to be equal.
-
--Bekah Buff
-Increases the Bekah's damage by 40% to make it more viable in endgame play
-
 -More Max Ammo
 Greatly increase the ammount of ammo you can hold with the highest level SDU purchased
 
@@ -23,3 +17,25 @@ Doesn't have the self damage as I have no idea how to implement it and I dont ev
 -No Burst Plasma Coil
 Removes the 16 round burst on the Plasma Coil but reduces the fire rate a fair bit to compensate for the constant firing without a delay.
 Makes the Plasma Coil a bit more reliable and consistant to use in my opinion.
+
+-Radiation Fire in the Skag Den (Nuclear Fallout)
+Changes the bonus damage of Fire in the Skag Den to be radiation instead of fire
+
+-Stacking Rage And Recover
+Lets Rage and Recover stack up to 5 times so that you almost always gain a new stack of the health regen after a kill rather than it just re-triggering the kill skill.
+Adds a mention of the stacking on the description, also changes it to say 'Max Health/sec' rather than 'Missing Health/sec' as apparently thats what it should be.
+
+-Burst Fire Skill Descriptions
+Some skills that increase fire rate also INCREASE burst fire delay, yup they increase it, this mod doesn't change their functions but it adds the information about their burst fire delay increases to the skill descriptions.
+I've also made 'Burst Fire Skill Fixes' which adds the information and fixes the skills so they reduce burst fire delay instead of increasing it.
+The effected skills are 'Violent Violence', 'Domino Effect', 'Fired up' and the passive from Fl4ks 'War Loader'.
+
+-Burst Fire Skill Fixes
+Some skills that increase fire rate also INCREASE burst fire delay, yup they increase it, so this mod fixes that making the skills reduce burst fire delay as well as adding the information to the skill descriptions and card.
+I've also made 'Burst Fire Skill Descriptions' which adds the information but doesn't change their function so it's only a visual change.
+The effected skills are 'Violent Violence', 'Domino Effect', 'Fired up' and the passive from Fl4ks 'War Loader'.
+Fl4k's War Loader passive now also scales with barbaric yawp
+
+-Self Splash Immunity
+Makes you Immune to your own splash damage.  
+You will still take dots from splash damage but wont be hurt by the initial impact of the damage.

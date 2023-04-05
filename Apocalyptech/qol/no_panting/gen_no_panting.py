@@ -30,6 +30,7 @@ mod = Mod('no_panting.bl3hotfix',
             "Disables the 'tired' panting sound effect loop when you've been",
             "sprinting for awhile."
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol',

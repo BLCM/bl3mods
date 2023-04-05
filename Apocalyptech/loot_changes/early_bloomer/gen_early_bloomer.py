@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -28,11 +28,14 @@ mod = Mod('early_bloomer.bl3hotfix',
         'Apocalyptech',
         [
             "Unlocks all weapon types, elements, manufacturers, anointments, etc,",
-            "from the very beginning of the game.  Also unlocks all inventory slots",
-            "and removes the level-locking from a couple of event-specific items.",
+            "from the very beginning of the game.  Also unlocks all inventory slots,",
+            "removes the level-locking from a couple of event-specific items, and",
+            "allows use of the Eridian Resonator (which lets you break eridium",
+            "clusters).",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.0.0',
+        v='1.1.0',
         cats='loot-system, gameplay',
         )
 
@@ -118,6 +121,18 @@ for slot in [
             slot,
             'InitiallyEnabled',
             'True')
+mod.newline()
+
+# Eridian Resonator
+mod.comment('Allow use of Eridian Resonator immediately')
+mod.reg_hotfix(Mod.PATCH, '',
+        '/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator',
+        'OverrideCondition.Object..Conditions',
+        # Basically this just removes the mission/challenge condition and leaves the rest
+        '({},{})'.format(
+            mod.get_full_cond('/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator:OverrideCondition_GbxCondition_List.Conditions_Condition_CompareDistance', 'Condition_CompareDistance_C'),
+            mod.get_full_cond('/Game/Gear/Game/Resonator/_Design/MeleeData_Resonator.MeleeData_Resonator:OverrideCondition_GbxCondition_List.Conditions_Condition_CanUseResonator', 'Condition_CanUseResonator_C'),
+            ))
 mod.newline()
 
 # Item types

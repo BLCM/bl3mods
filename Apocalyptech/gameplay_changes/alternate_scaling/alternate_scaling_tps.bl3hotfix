@@ -1,12 +1,12 @@
-###
-### Name: Alternate Scaling: TPS
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: scaling
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Alternate Scaling: TPS
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories scaling
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Updates the universal scaling constant from BL3's default of 1.09 to match

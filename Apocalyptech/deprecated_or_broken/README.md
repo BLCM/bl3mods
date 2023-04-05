@@ -54,6 +54,24 @@ weren't actually intended to be mods themselves.
   won't be able to harm you if they switch.  It's a bit weird.  Anyway, was kind
   of hoping to make a gun which would just generate more and more enemies
   against you, but the Team thing got in my way.  So a Claptrap gun it remains.
+- `trivial_vc.txt` - Silly little mod to reduce the required quantity of Vault
+  Card challenge targets to 1.  Don't really feel like officially making it a mod,
+  but it *does* seem to work just fine.
+- `droughts_eridium_moves.txt` - Similar to my mod-testing Droughts Chest Moves
+  mod, this moves all small eridium piles in The Droughts to near the Highway Fast
+  Travel location.  There's some easily-tweaked bits in the generation code to
+  turn them all into the "regular" sort (which don't need the Mysterious Amulet to
+  see), or even into other spawnable items.  Also does some similar stuff in Enoch's
+  Grove and Eschaton Row.  Works fine, but it's pretty custom-purpose so it didn't
+  seem worth making into an official mod, even as a "resource" type.
+- `moodlock_*.txt` - Sets NPC dialogue "mood" to the specified value, which just
+  affects their facial expressions.  I was hoping it would be more amusing than
+  it is, but in the end it's kind of "meh," so I'm tossing it in here rather than
+  doing a "real" release.
+- `its_raining_skags.txt` - Repurposes the Eridium Cluster spawner in The
+  Droughts to provide a rain of skags near the Highway fast travel.  I couldn't
+  quite figure out having them *constantly* falling; they get to about 20 or
+  so and then you need to kill one to get another to fall down.
 
 ## Deprecated/Testing Mods
 
@@ -67,10 +85,6 @@ weren't actually intended to be mods themselves.
 - `datatable.txt` - Was used to test out how DataTable values interact with
   the rest of the BVC tuple - turns out that they probably override everything
   except for BVSC, which gets multiplied at the end as per usual.
-- `free_fabricator.txt` - This actually doesn't do what it *says* it does;
-  it actually just spits out 10 Eridium bars, at a cost of 10 Eridium.
-  Useful!  (Actually I suppose it *could* be useful to give Eridium to
-  other co-op players.)
 - `always_scale_maliwan_takedown.txt` - Taken from the GBX event which
   set the Takedown to scale to the number of players.  This'll let you
   keep it that way forever, if you want.  Turns out that GBX decided
@@ -82,20 +96,34 @@ weren't actually intended to be mods themselves.
   of event.  Still, keeping it around for awhile.
 - `eridian_unlocks.txt` - Aims to eventually unlock all eridian equipment
   from the beginning of the game, though currently all it does is the
-  Resonator.
-  - **NOTE:** This currently does have a couple weird side effects, namely:
-    - Meleeing enemies will use the Resonator animation, though it
-      continues to do damage as usual
-    - You won't be able to attach the empty blood pack to Ace Baron, during
-      the Meridian Outskirts mission "Healers and Dealers."
-    - You won't be able to melee the varkid poop pile in Demon in the Dark,
-      in Konrad's Hold
-  - Given the problems above, and the fact that there's some actual savegame
-    editing forthcoming which can unlock this gear properly, without any
-    fuss, I'm moving the mod into this deprecated section.
+  Resonator.  Unlocking the Analyzer seems to be trickier, and the fact
+  that there's some actual savegame editing which can unlock this gear
+  properly, without any fuss, I'm moving the mod into this deprecated
+  section.  Also, if I ever do figure out more, I'm almost certainly going
+  to just fold it into Early Bloomer rather than release as a separate
+  mod (which is, in fact, what I did with the Resonator).
 - `guaranteed_cartel_operatives.txt` - Ups the probability of Cartel operatives
   (during the Revenge of the Cartels event) from 30% to 100%.  Works fine, but
   it's a bit much.  Never used it outside of a couple tests.
+- `mayhem_level_cheats` - Some old Mayhem Mode cheats that I was using for
+  quite awhile; namely restricting enemy scaling to 2x and forcing specific
+  modifier configs for each level.  Since releasing my Mayhem Mode Configurator,
+  though, this mod's kind of obsolete, and I grew to not really want this
+  exact config anyway.  So, moving this over here as a deprecated mod.
+
+I had a collection of timed-event-enabling mods publicly available prior to
+the availability of B3HM as a modding tool.  Gearbox asked us to not do mods
+which enabled those events, though, since they were still using them as
+marketing tools, so we removed 'em from the repo.  As of the patch on June
+24, 2021, though, GBX has added the ability to enable them at will directly
+from the main menu (which I'd been expecting them to do eventually - yay!).
+Anyway, I'm moving these mods back in here just for my own historical
+packrattery, but they're not really useful anymore (and are possibly/probably
+not even functional, given the new event framework).
+
+- `timed_event_enable_bloody_harvest` - The event-enabler mod for 2019+2020 Bloody Harvests
+- `timed_event_enable_broken_hearts` - The event-enabler mod for 2020+2021 Broken Heartses
+- `timed_event_enable_cartels` - The event-enabler mod for 2020+2021 Cartelses
 
 These mods were used for awhile for testing, and a few for doing some
 Bloody Harvest farming, but they're basically now obsolete (or at least
@@ -193,22 +221,27 @@ don't look at these thinking that they're any good.  :)
   "structure" as the vanilla tree.  You could swap skills around all you like
   (while making sure that the max-points and icon vars are moved too) but you
   wouldn't be able to rearrange the tree at will.
-- `instant_guardian_takedown_crystals.txt` - A small little attempt to speed up
-  the crystals you have to guard for awhile in the Guardian Takedown.  I think
-  dynamic blueprinty stuff gets in the way of being able to set these vars.
 - `no_marcus_character_intros.txt` - An attempt to turn off the Marcus voiceovers
   as you cycle through your savegames (and presumably while selecting a new
   character).  As with my Better Vehicles attempt, though, the relevant objects
   get loaded dynamically and I've never figured out how to trigger a hotfix for
   that.
+- `faster_vladof_mode_change` - This is sort of only half-failed...  Getting the
+  mode-switch animations to complete faster is pretty easy, but I cannot for the
+  life of me get the animations to *look* decent, and it bothers me enough that
+  I'm not willing to "officially" release this thing.  Essentially the same problem
+  that I have with the vehicle animations in my Mega Timesaver XL mod.  Pffffff.
+- `always_visible_guardian_takedown_platforms` - Basically what it says: trying
+  to make the platforms in Guardian Takedown visible all the time, instead of just
+  some of the time.
 
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

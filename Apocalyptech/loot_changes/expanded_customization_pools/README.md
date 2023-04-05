@@ -30,9 +30,28 @@ TODO
 
 - DLC Cosmetics could use some going-over, to see if they need to be excluded from
   the "No Mission Rewards" variants.
+- This doesn't actually touch emotes at all, which don't ordinarily world-drop.
+  Perhaps we should add those in?  Still, the only ones which are "random" in a sense
+  are the Vault Card ones, so it might not be worth it.
 
 Changelog
 =========
+
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.6.0** - Nov 19, 2021
+ * Updated with Vault Card 3 (and related) cosmetics
+
+**v1.5.1** - Aug 11, 2021
+ * Updated with some Heads that were bundled with the VC2 update but overlooked here.
+
+**v1.5.0** - Aug 6, 2021
+ * Updated with Vault Card 2 cosmetics
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
 
 **v1.4.0** - Apr 11, 2021
  * Updated with DLC6 (Director's Cut), Vault Card 1, and Cartels 2021 cosmetics

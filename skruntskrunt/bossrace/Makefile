@@ -114,7 +114,7 @@ default: mod
 
 mod: $(MOD)
 
-$(MOD): $(EXE)
+$(MOD): $(EXE) ixorabosses.py
 	python3 $(EXE) --seed $(SEED)
 clean:
 	rm -f bossrace.bl3hotfix
@@ -123,7 +123,13 @@ clean:
 bossrace.rand.bl3hotfix: $(EXE)
 	python3 $(EXE) --output bossrace.rand.bl3hotfix
 
-bossrace.%.bl3hotfix: $(EXE)
+mitosis.bossrace.bl3hotfix: $(EXE)
+	python3 $(EXE) --output mitosis.bossrace.bl3hotfix --seed $(SEED) --mitosis
+
+mitosis.bl3hotfix: $(EXE)
+	python3 $(EXE) --output mitosis.bl3hotfix --seed $(SEED) --justmitosis
+
+bossrace.%.bl3hotfix: $(EXE) ixorabosses.py
 	python3 $(EXE) --seed $* --output bossrace.$*.bl3hotfix
 
 bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix
@@ -132,8 +138,20 @@ bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix
 $(GENDIR)/bossrace.%.bl3hotfix.txt: bossrace.%.bl3hotfix.txt
 	mv $< $@
 
-dist: seeds $(GENDIR) $(DISTFILES) 
+dist: seeds $(GENDIR) $(DISTFILES) $(EXE) ixorabosses.py
+
+doublemurdertime.bl3hotfix: murdertime.py doublemurdertime.csv
+	python3 murdertime.py --csv doublemurdertime.csv --output doublemurdertime.bl3hotfix
+
+fastmurdertime.bl3hotfix: murdertime.py fastmurdertime.csv
+	python3 murdertime.py --csv fastmurdertime.csv --output fastmurdertime.bl3hotfix
+
+growmurdertime.bl3hotfix: murdertime.py growmurdertime.csv
+	python3 murdertime.py --csv growmurdertime.csv --output growmurdertime.bl3hotfix
+
+murdertime: growmurdertime.bl3hotfix fastmurdertime.bl3hotfix doublemurdertime.bl3hotfix
 
 gen:
 	rm -f $(MOD)
 	make $(MOD)
+

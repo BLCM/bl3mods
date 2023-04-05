@@ -1,12 +1,12 @@
-###
-### Name: Photo Mode Unlock
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: qol
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Photo Mode Unlock
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories qol
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Unlocks the camera in Photo Mode to be able to go extremely far.  Possibly

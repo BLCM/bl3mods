@@ -67,7 +67,6 @@ for k,v in {
         '/Game/PatchDLC/Steam/Gear/Weapons/SteamGun/Balance/Balance_SM_HYP_ShortStick': 'Short Stick',
         '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/TheSeventhSense/Balance/Balance_PS_JAK_TheSeventhSense_MissionWeapon': 'Seventh Sense (mission version)',
         '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SS_L': 'Seventh Sense (ghost Burton version)',
-        '/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/SeventhSense/Balance/Balance_PS_JAK_SeventhSense': 'Seventh Sense (unknown version)',
         }.items():
     mapping[k.lower()] = v
 

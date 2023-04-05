@@ -115,8 +115,9 @@ for label, scale in [
                 "way.  Some characters (such as ones operating consoles in Sanctuary) will",
                 "remain unscaled.  Let me know if anything really game-breaking happens!",
             ],
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.3.1',
             cats='enemy, joke',
             ss='https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/enemy_spawn_changes/sizemod/ss_{}.jpg'.format(label.lower()),
             )

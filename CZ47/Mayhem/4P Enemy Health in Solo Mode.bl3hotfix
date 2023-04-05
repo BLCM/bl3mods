@@ -1,0 +1,92 @@
+###
+### Name: 4 Player Enemy Health in 1P, 2P & 3P Lobbies
+### Version: 2.1.1
+### Author: CZ47
+### Contact: =]#7647
+### Categories: mode-balance, scaling, gameplay, enemy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### Enemy health and damage is scaled up to as if you were 4 player coop in 1P, 2P and 3P lobbies.
+### This affects both Regular Playthroughs and Mayhem Mode.
+###
+
+
+### Solo Lobby
+## Enemy Damage
+# NVHM (OG Value: 0.75)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT1,0,,(BaseValueConstant=1.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 0.9)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,OnePlayer_PT2,0,,(BaseValueConstant=1.45,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Enemy Health
+# NVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Boss Enemy Health
+# NVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT1,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.0)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,OnePlayer_PT2,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+
+
+### 2P lobbies
+## Enemy Damage
+# NVHM (OG Value: 0.9)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,TwoPlayers_PT1,0,,(BaseValueConstant=1.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 1.1)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,TwoPlayers_PT2,0,,(BaseValueConstant=1.45,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Enemy Health
+# NVHM (OG Health: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,TwoPlayers_PT1,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,TwoPlayers_PT2,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Boss Enemy Health
+# NVHM (OG Health: 1.4)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,TwoPlayers_PT1,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.4)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,TwoPlayers_PT2,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+
+
+### 3P Lobbies
+## Enemy Damage
+# NVHM (OG Value: 1.05)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,ThreePlayers_PT1,0,,(BaseValueConstant=1.15,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Value: 1.3)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyDamage,ThreePlayers_PT2,0,,(BaseValueConstant=1.45,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Enemy Health
+# NVHM (OG Health: 1.6)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,ThreePlayers_PT1,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.6)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,NormalEnemyHealth,ThreePlayers_PT2,0,,(BaseValueConstant=1.9,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+## Boss Enemy Health
+# NVHM (OG Health: 1.7)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,ThreePlayers_PT1,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+# TVHM (OG Health: 1.7)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Balance/HealthAndDamage/DataTable_EnemyHealthAndDamageScalars.DataTable_EnemyHealthAndDamageScalars,BossEnemyHealth,ThreePlayers_PT2,0,,(BaseValueConstant=2.1,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)

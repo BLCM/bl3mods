@@ -1,12 +1,12 @@
-###
-### Name: No Mayhem Drop Scaling
-### Version: 1.1.0
-### Author: Apocalyptech
-### Categories: mayhem, enemy-drops
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title No Mayhem Drop Scaling
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories mayhem, enemy-drops
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Mayhem 2.0 increases the drop rates pretty significantly, and when

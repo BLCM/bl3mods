@@ -1,0 +1,33 @@
+### Name: Self Splash Immunity
+### Version: 1.0.1
+### Author: ZetaDaemon
+### Categories: char-other, qol
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+## Makes you Immune to your own splash damage.
+## You will still take dots from splash damage but wont be hurt by the initial impact of the damage.
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01,AspectList,0,,(WeaponUseModeSecondaryAspectData'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:WeaponUseModeSecondaryAspectData_1',WeaponBonusAspectData'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:AspectList_WeaponBonusAspectData',ConditionalDamageValueModifier'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter')
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C:DefaultDamageCauserComponent,DefaultConditionalDamageModifiers,0,,(/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_FrozenMultiplier.CDM_Melee_FrozenMultiplier,/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_NoFriendlyVehicleDamage.CDM_Melee_NoFriendlyVehicleDamage,/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter)
+
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C:DefaultDamageCauserComponent,DefaultConditionalDamageModifiers,0,,(/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_FrozenMultiplier.CDM_Melee_FrozenMultiplier,/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_NoFriendlyVehicleDamage.CDM_Melee_NoFriendlyVehicleDamage,/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter)
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C:DefaultDamageCauserComponent,DefaultConditionalDamageModifiers,0,,(/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_FrozenMultiplier.CDM_Melee_FrozenMultiplier,/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_NoFriendlyVehicleDamage.CDM_Melee_NoFriendlyVehicleDamage,/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter)
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C:DefaultDamageCauserComponent,DefaultConditionalDamageModifiers,0,,(/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_FrozenMultiplier.CDM_Melee_FrozenMultiplier,/Game/PlayerCharacters/_Shared/_Design/Melee/CDM_Melee_NoFriendlyVehicleDamage.CDM_Melee_NoFriendlyVehicleDamage,/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,DamageValue,0,,(BaseValueScale=0)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,DefenderCondition,0,,GbxCondition_IsPlayerController'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter:AttackerCondition_GbxCondition_IsPlayerController'
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,AttackerCondition,0,,GbxCondition_IsPlayerController'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter:AttackerCondition_GbxCondition_IsPlayerController'
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,DamageSourceFilter,0,,(/Game/GameData/DamageSources/DamageSource_Bullet.DamageSource_Bullet,/Game/GameData/DamageSources/DamageSource_Grenade.DamageSource_Grenade_C,/Game/GameData/DamageSources/DamageSource_GrenadeDoT.DamageSource_GrenadeDoT_C)
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,ModifierType,0,,ScaleSimple
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:CDM_SelfSplashFilter,bIncludeDamageSourceSubclasses,0,,True
+
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01,AspectList,0,,(WeaponUseModeSecondaryAspectData'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:WeaponUseModeSecondaryAspectData_1',WeaponBonusAspectData'/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/Parts/Scope/Part_SM_MAL_Scope_01.Part_SM_MAL_Scope_01:AspectList_WeaponBonusAspectData')

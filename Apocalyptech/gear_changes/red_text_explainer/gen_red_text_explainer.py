@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -57,12 +57,13 @@ for language in ['en']:
                 '',
                 *textwrap.wrap(description, width=75),
             ],
+            contact=_('https://apocalyptech.com/contact.php'),
             lic=Mod.CC_BY_SA_40,
-            v='1.3.0',
+            v='1.6.0',
             cats=', '.join(cats),
             ss=[
-                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/craders.png',
-                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/fastball.png',
+                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/quadomizer.png',
+                'https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/gear_changes/red_text_explainer/nagata.png',
                 ],
             )
 
@@ -1535,7 +1536,8 @@ for language in ['en']:
             (_("Beacon"),
                 '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/UIStat_RedText_Decoupler',
                 _("This little light of mine..."),
-                _("reload triggers nova of current element")),
+                #_("reload triggers nova of current element")),
+                ON_CARD),
             (_("Gargoyle"),
                 '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Gargoyle/UIStat_RedText_Gargoyle',
                 _("Defender of the night."),
@@ -1879,6 +1881,54 @@ for language in ['en']:
                 _("It's there always, this dark passenger."),
                 # +1 projectile when not depleted, +50% amp while full, can cause self-combustion
                 ON_CARD),
+
+            # Vault Card 2
+            (_("Gold Rush"),
+                '/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/UIStat_RedText_GoldRush',
+                _("Pay dirt."),
+                # Mostly on-card
+                _("also buffs reload speed, max 20 stacks")),
+            (_("Troubleshooter"),
+                '/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troubleshooter/UIStat_RedText_Troubleshooter',
+                _("Tickles your fancy."),
+                # Also does the on-card element-changing thing
+                _("element-switching orbs ricochet")),
+            (_("Pyroburst"),
+                '/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst',
+                _("KEKW"),
+                _("after impact, bounces 5 times while spawning homing elemental orbs")),
+
+            # Vault Card 3
+            (_("Blade Fury"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/UIStat_RedText_BladeFury',
+                _("Master of the gun, the blade, and philosophy."),
+                # shoots blades that do both weapon + melee damage
+                ON_CARD),
+            (_("Creeping Corruption"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/UIStat_RedText_Corruption',
+                _("How it comes thus?"),
+                # kills spread corruption to nearby enemies, making them take more damage
+                ON_CARD),
+            (_("TNTina"),
+                '/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/UIStat_RedText_TinyTinaGun',
+                _("Squishy. Squishy squishy squishy."),
+                # shoots bundles of dynamite; chain reactions cause additional damage
+                ON_CARD),
+            (_("Mana Well"),
+                '/Game/PatchDLC/VaultCard3/Gear/Shields/Unique/Manawell/UIStat_RedText_Manawell',
+                _("With great (something) comes great (something else)"),
+                # on slam, drain shield and provide damage reduction + bonus shock damage
+                ON_CARD),
+            (_("Bloodsucker"),
+                '/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/UIStat_RedText_Bloodsucker',
+                _("Chupa's organ transplant."),
+                # attaches to enemy and heals for all damage done to flesh, while removing unwanted status effects
+                ON_CARD),
+            (_("Sidewinder"),
+                '/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Sidewinder/UIStat_RedText_Sidewinder',
+                _("This is what I call a target-rich environment."),
+                # heat-seeking, penetrates multiple targets, deploys sticky bombs
+                ON_CARD),
             ]:
 
         # Eh, let's omit shields by default; I am 99% sure that all of them already
@@ -1900,12 +1950,18 @@ for language in ['en']:
                 hf_type = Mod.PATCH
                 hf_package = ''
 
+            # Make the first char of the explanation capital
+            explanation = explanation[0].upper() + explanation[1:]
+
             # Now generate the hotfix
             mod.comment(gear_name)
             mod.reg_hotfix(hf_type, hf_package,
                     obj_name,
                     attr_name,
-                    '[Flavor]{}[/Flavor] ({})'.format(redtext, elementize(explanation)))
+                    '[Flavor]{}[/Flavor] <p><p>    [nameplate_enemy_slight][italic]({}.)[/italic][/nameplate_enemy_slight]'.format(
+                        redtext,
+                        elementize(explanation),
+                        ))
             mod.newline()
 
     mod.close()

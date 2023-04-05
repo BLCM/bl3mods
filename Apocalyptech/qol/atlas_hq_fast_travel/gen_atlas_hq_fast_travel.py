@@ -394,6 +394,7 @@ for title, filename, moves, desc in [
             f'Atlas HQ Fast Travel: {title}',
             'Apocalyptech',
             desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
             v='1.0.1',
             cats='qol, maps',

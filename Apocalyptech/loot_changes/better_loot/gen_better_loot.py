@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2021 Christopher J. Kucera
+# Copyright 2019-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Borderlands 3 Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -51,8 +51,9 @@ mod = Mod('better_loot.bl3hotfix',
             "I'd recommend using my Early Bloomer mod in conjunction with this,",
             "as well as All Weapons Can Anoint, and Expanded Legendary Pools.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.3.3',
+        v='1.3.6',
         cats='enemy-drops, loot-system',
         )
 
@@ -97,6 +98,12 @@ def set_death_pools(mod, char_name, obj_name, pools=[]):
             obj_name_full,
             'DropOnDeathItemPools.ItemPools',
             '({})'.format(','.join(pool_collection)))
+
+# Some rarity attrs to use throughout the mod
+rarity_att_uncommon = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon'
+rarity_att_rare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare'
+rarity_att_veryrare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare'
+rarity_att_legendary = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary'
 
 # Define new rarity weights.  Note that there's an `ExponentForGrowthRate` row for
 # these which presumably defines how the rarities change in certain circumstances.
@@ -945,16 +952,32 @@ for char_name, char_obj, pool_name, qty in [
             '/Game/Missions/Side/Zone_1/Athenas/InvasionOfPrivacy/ItemPool_InvasionOfPrivacy_BeansRunnable',
             1),
         ]:
+
+    # NOTE: We used to use `char_obj` as the hotfix targets here, but as of
+    # July 2021, at least, doing so doesn't seem to work, at least for Muldock.
+    # The ItemPool we're editing exists from the start of the level load, and even
+    # after confirming that there are no Anointed Enforcers present at the beginning,
+    # and re-checking the pool after Muldock *does* spawn in, the pool just doesn't
+    # update.  It's possible that BPChar_EnforcerAnointed has technically *loaded*
+    # at the level start, presumably before ItemPool_Muldock loads, even though
+    # there's no Anointed Enforcers present yet, which is the only explanation that
+    # makes any sense.  At any rate, changing these to `MatchAll` instead lets these
+    # trigger properly, so I guess we're just doing that from now on.  I did *not*
+    # verify whether Artemis, Mincemeat, or Beans were affected in the same way, but
+    # I did check that their drops work fine after this change, so go figure.  My
+    # guess is that something changed in the engine (perhaps w/ the crossplay patch
+    # on June 24?) to break this, but it's possible it was something earlier (or
+    # also possible that my earlier testing was just false positives, of course).
     mod.comment(char_name)
-    mod.reg_hotfix(Mod.CHAR, char_obj,
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
             pool_name,
-            'Quantity',
-            BVC(bvc=qty))
+            'Quantity.BaseValueConstant',
+            qty)
     # The `ItemPool_Guns_All` entry to clear will always be the last one
-    mod.reg_hotfix(Mod.CHAR, char_obj,
+    mod.reg_hotfix(Mod.CHAR, 'MatchAll',
             pool_name,
             'BalancedItems.BalancedItems[{}].Weight.BaseValueScale'.format(qty),
-            BVCF(bvc=0))
+            0)
     mod.newline()
 
 # Mayhem 2.0 Gear Additions.  Yet another way of doing it, yay!
@@ -1553,6 +1576,23 @@ for (label, bpchar_name, poollist, itempool_idx, drop_qty) in [
 # Miscellaneous pool tweaks
 mod.header('Miscellaneous Pool Tweaks')
 
+# I feel like the Piñata at the end of Life of the Party (in Devil's Razor) should
+# contain better loot, so I'm buffing it up.  Sticking with just weapons+guns because
+# that's what the original contents are.
+mod.comment("Life of the Party Piñata, in Devil's Razor")
+mod.reg_hotfix(Mod.LEVEL, 'Desert_P',
+        '/Game/Missions/Side/Zone_3/Desert/BirthdaySurprise/ItemPool_BirthdaySurprise_Pinata',
+        'BalancedItems',
+        ItemPool('foo', pools=[
+            ('/Game/Missions/Side/Zone_3/Desert/BirthdaySurprise/ItemPool_BirthdaySurprise_GrenadeMod', BVC(bva=rarity_att_veryrare)),
+            ('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_VeryRare', BVC(bva=rarity_att_veryrare)),
+            ('/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary', BVC(bva=rarity_att_legendary)),
+            ('/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_04_VeryRare', BVC(bva=rarity_att_veryrare)),
+            ('/Game/GameData/Loot/ItemPools/GrenadeMods/ItemPool_GrenadeMods_05_Legendary', BVC(bva=rarity_att_legendary)),
+            ]),
+        )
+mod.newline()
+
 # Hemovorous has a guaranteed Company Man drop, but then *also* has Company man in a
 # four-item pool whose droprate depends on your current Mayhem level.  Rather than
 # "pollute" those drops, we're removing Company Man from that four-item pool.
@@ -1655,7 +1695,7 @@ for label, char_name, pool, idx, weight in [
         ('Troy Calypso', 'BPChar_TroyBoss', '/Game/PatchDLC/Raid1/GameData/Loot/ItemPools/ItemPool_TroyDedicated', 0, None),
         # With a hotfix on 2020-08-20, GBX changed Anathema and Scourge to pull from the M6 pool instead.  This
         # statement continues to work just fine, though.
-        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 3, 0.5),
+        ('Anathema the Relentless', 'BPChar_GuardianBruteMiniboss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Miniboss', 4, 0.5),
         ('Scourge the Invincible Martyr', 'BPChar_GuardianBruteBoss', '/Game/PatchDLC/Takedown2/GameData/Loot/ItemPool_TD2_Boss', 4, 0.5),
         ]:
     if weight is None:
@@ -1842,20 +1882,14 @@ mod.newline()
 # but c'est la vie!
 mod.comment("Wainwright's chests in Knotty Peak are Jakobs-Only")
 
-# Some rarity attrs to use
-uncommon = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_02_Uncommon'
-rare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_03_Rare'
-veryrare = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_04_VeryRare'
-legendary = '/Game/GameData/Loot/RarityWeighting/Att_RarityWeight_05_Legendary'
-
 # Set up the pools we're going to use.  There aren't really any manufacturer-specifc
 # pools in the base data, so we're grabbing some pools which don't ordinarily exist
 # in Wetlands_P and making use of those, instead.  UE4's dynamic object loading is aces.
 # Snipers first.
 pool_1gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashDrip')
-#pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_02_Uncommon', weight=BVC(bva=uncommon, bvs=0.5))
-pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
-pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+#pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_02_Uncommon', weight=BVC(bva=rarity_att_uncommon, bvs=0.5))
+pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_03_Rare', weight=BVC(bva=rarity_att_rare, bvs=0.75))
+pool_1gun.add_balance('/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/Balance/Balance_SR_JAK_04_VeryRare', weight=BVC(bva=rarity_att_veryrare))
 jak_sniper_leg = [
         '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/Monocle/Balance/Balance_SR_JAK_Monocle',
         '/Game/Gear/Weapons/SniperRifles/Jakobs/_Shared/_Design/_Unique/TheHunter/Hunted/Balance/Balance_SR_JAK_Hunted',
@@ -1865,16 +1899,16 @@ jak_sniper_leg = [
         '/Game/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite',
         ]
 for bal in jak_sniper_leg:
-    pool_1gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_sniper_leg)))
+    pool_1gun.add_balance(bal, weight=BVC(bva=rarity_att_legendary, bvs=2/len(jak_sniper_leg)))
 
 # Now ARs + Shotguns
 pool_2gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashExplosion')
-#pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
-#pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
-pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
-pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
-pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_04_VeryRare', weight=BVC(bva=veryrare))
-pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+#pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_02_UnCommon', weight=BVC(bva=rarity_att_uncommon, bvs=0.5))
+#pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_02_UnCommon', weight=BVC(bva=rarity_att_uncommon, bvs=0.5))
+pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_03_Rare', weight=BVC(bva=rarity_att_rare, bvs=0.75))
+pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_03_Rare', weight=BVC(bva=rarity_att_rare, bvs=0.75))
+pool_2gun.add_balance('/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/Balance/Balance_AR_JAK_04_VeryRare', weight=BVC(bva=rarity_att_veryrare))
+pool_2gun.add_balance('/Game/Gear/Weapons/Shotguns/Jakobs/_Shared/_Design/BalanceState/Balance_SG_JAK_04_VeryRare', weight=BVC(bva=rarity_att_veryrare))
 jak_ar_shot_leg = [
         # ARs
         '/Game/Gear/Weapons/AssaultRifles/Jakobs/_Shared/_Design/_Unique/GatlingGun/Balance/Balance_AR_JAK_04_GatlingGun',
@@ -1891,13 +1925,13 @@ jak_ar_shot_leg = [
         '/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/SpeakEasy/Balance/Balance_SG_JAK_SpeakEasy',
         ]
 for bal in jak_ar_shot_leg:
-    pool_2gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_ar_shot_leg)))
+    pool_2gun.add_balance(bal, weight=BVC(bva=rarity_att_legendary, bvs=2/len(jak_ar_shot_leg)))
 
 # Finally pistols
 pool_4gun = ItemPool('/Game/Enemies/Rakk/Queen/_Design/Character/ItemPool_RakkQueen_CashTrickle')
-#pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_02_UnCommon', weight=BVC(bva=uncommon, bvs=0.5))
-pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_03_Rare', weight=BVC(bva=rare, bvs=0.75))
-pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_04_VeryRare', weight=BVC(bva=veryrare))
+#pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_02_UnCommon', weight=BVC(bva=rarity_att_uncommon, bvs=0.5))
+pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_03_Rare', weight=BVC(bva=rarity_att_rare, bvs=0.75))
+pool_4gun.add_balance('/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/BalanceState/Balance_PS_JAK_04_VeryRare', weight=BVC(bva=rarity_att_veryrare))
 jak_pistol_leg = [
         '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Doc/Balance/Balance_PS_JAK_Doc',
         '/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Maggie/Balance/Balance_PS_JAK_Maggie',
@@ -1913,7 +1947,7 @@ jak_pistol_leg = [
         '/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Trickshot/Balance/Balance_PS_JAK_Trickshot',
         ]
 for bal in jak_pistol_leg:
-    pool_4gun.add_balance(bal, weight=BVC(bva=legendary, bvs=2/len(jak_pistol_leg)))
+    pool_4gun.add_balance(bal, weight=BVC(bva=rarity_att_legendary, bvs=2/len(jak_pistol_leg)))
 
 # Change the loot definition to a lootdef that's ordinarily not present
 mod.reg_hotfix(Mod.LEVEL, 'Wetlands_P',
@@ -2311,6 +2345,17 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_Bounty01',
         '()')
 mod.newline()
 
+mod.comment('Fix Hightower Crew drops')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].bOverrideDropOnDeathItemPools',
+        'False')
+mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
+        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
+        'PlayThroughs[0].DropOnDeathItemPools.ItemPools',
+        '()')
+mod.newline()
+
 # The 2021-04-22 hotfix adds various dedicated drops on DLC3 bosses, but their addition of
 # Insider to Tom/Xam is broken and won't actually apply.  They'll theoretically fix that
 # up at some point, but for now I'm doing it here myself.
@@ -2355,17 +2400,6 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_LunaticPossessed',
         )""")
 mod.newline()
 
-mod.comment('Fix Hightower Crew drops')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
-        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
-        'PlayThroughs[0].bOverrideDropOnDeathItemPools',
-        'False')
-mod.reg_hotfix(Mod.CHAR, 'BPChar_AtlasSoldier_BountyGang',
-        '/Game/NonPlayerCharacters/_Promethea/AtlasSoldier/_Design/Character/BPChar_AtlasSoldier_BountyGang.BPChar_AtlasSoldier_BountyGang_C:AIBalanceState_GEN_VARIABLE',
-        'PlayThroughs[0].DropOnDeathItemPools.ItemPools',
-        '()')
-mod.newline()
-
 # Lilith's chest on Sanctuary doesn't actually *guarantee* legendaries because GBX doesn't
 # realize that 0 is a number too.  The chances of a non-legendary are super slim, but FDH
 # got a bit of white gear there once, so it's possible.  (Default modifiers for these are 1,
@@ -2394,31 +2428,25 @@ mod.reg_hotfix(Mod.CHAR, 'BPChar_AureliaBoss',
         Mod.get_full_cond('/Game/PatchDLC/Raid1/Re-Engagement/Weapons/Juliet/Balance/Balance_AR_TOR_Juliet_WorldDrop', 'InventoryBalanceData'))
 mod.newline()
 
-# Just some testing stuff at the end of the file, to make sure that the game
-# is parsing all the way to the end of the file
-if False:
-    mod.comment('Effectively All Legendaries')
-    mod.table_hotfix(Mod.PATCH, '',
-            '/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity',
-            'VeryRare',
-            'BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191',
-            65)
-    mod.table_hotfix(Mod.PATCH, '',
-            '/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity',
-            'Legendary',
-            'BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191',
-            2000000)
-if False:
-    mod.comment('Effectively All Purps')
-    mod.table_hotfix(Mod.PATCH, '',
-            '/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity',
-            'VeryRare',
-            'BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191',
-            2000000)
-    mod.table_hotfix(Mod.PATCH, '',
-            '/Game/GameData/Loot/RarityWeighting/DataTable_ItemRarity.DataTable_ItemRarity',
-            'Legendary',
-            'BaseWeight_7_F9F7E65D4BC13F8CB481169592B2D191',
-            5)
+# Including my Fix Broken Loot Patterns mod in here as well.  Improves drop pattern for
+# Mouthpiece, Captain Traunt, and Loot Skrit / Loot Skritaari
+mod.comment('Fix broken loot patterns (identical to Fix Broken Loot Patterns mod)')
+for label, bpchar, new_time in [
+        ('Mouthpiece',
+            '/Game/Enemies/Enforcer/_Unique/SacrificeBoss/_Design/Character/BPChar_EnforcerSacrificeBoss',
+            1),
+        ('Captain Traunt',
+            '/Game/Enemies/Heavy/_Unique/Traunt/_Design/Character/BPChar_Heavy_Traunt',
+            3),
+        ('Loot Skrit / Loot Skritaari',
+            '/Hibiscus/Enemies/Minion/Basic/_Design/Character/BPChar_MinionLoot',
+            1),
+        ]:
+    bpchar_short = bpchar.rsplit('/', 1)[-1]
+    mod.reg_hotfix(Mod.CHAR, bpchar_short,
+            f'{bpchar}.{bpchar_short}_C:AIBalanceState_GEN_VARIABLE',
+            'TimeToSpawnLootOver',
+            new_time)
+mod.newline()
 
 mod.close()

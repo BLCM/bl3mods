@@ -16,6 +16,19 @@ to Iron Bear and FL4K's pets.  There are three variants:
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.1.0** - Aug 16, 2021
+ * Added speedups to:
+   * Ladder climbing/descending speed
+   * Speed while crouched
+   * FFYL movement speed
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.2** - Mar 19, 2021
  * Added FL4K's Pet Loaders, from DLC5 (Designer's Cut)
 

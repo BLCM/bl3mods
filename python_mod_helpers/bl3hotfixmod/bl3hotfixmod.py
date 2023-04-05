@@ -1,27 +1,222 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
-# Borderlands 3 Hotfix Modding Library is free software: you can redistribute it
-# and/or modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation, either version 3 of
-# the License, or (at your option) any later version.
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above copyright
+#       notice, this list of conditions and the following disclaimer in the
+#       documentation and/or other materials provided with the distribution.
+#     * Neither the name of the development team nor the
+#       names of its contributors may be used to endorse or promote products
+#       derived from this software without specific prior written permission.
 #
-# Borderlands 3 Hotfix Modding Library is distributed in the hope that it will
-# be useful, but WITHOUT ANY WARRANTY; without even the implied
-# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-# See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with Borderlands 3 Hotfix Modding Library.  If not, see
-# <https://www.gnu.org/licenses/>.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL CJ KUCERA BE LIABLE FOR ANY
+# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import os
 import sys
 import gzip
+
+class _StreamingBlueprintPosition:
+    """
+    Class to hold positioning information for objects created with type-11
+    hotfixes.  These statements have to be delayed, and it's probably good
+    practice to "bunch them up," so to speak, so it'll be nice to have a
+    way to store that information temporarily while building the mod.
+    """
+
+    def __init__(self, obj_name, location, rotation, scale):
+        self.obj_name = obj_name
+        self.location = location
+        self.rotation = rotation
+        self.scale = scale
+
+    def do_positioning(self, mod, map_name):
+        if not mod.quiet_streaming:
+            mod.comment('Doing repositioning for {} in {}'.format(
+                self.obj_name.split('.')[-2],
+                map_name,
+                ))
+        if self.location != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeLocation',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.location),
+                    notify=True)
+        if self.rotation != (0,0,0):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeRotation',
+                    '(Pitch={:.6f},Yaw={:.6f},Roll={:.6f})'.format(*self.rotation),
+                    notify=True)
+        if self.scale != (1,1,1):
+            mod.reg_hotfix(Mod.EARLYLEVEL, map_name,
+                    self.obj_name,
+                    'RelativeScale3D',
+                    '(X={:.6f},Y={:.6f},Z={:.6f})'.format(*self.scale),
+                    notify=True)
+
+class _StreamingBlueprintHelper:
+    """
+    A class to provide some support for dealing with type-11 hotfixes (Streaming
+    Blueprint).
+
+    Its primary purpose is to help "delay" the hotfix processing long enough for
+    the new object to exist, so that the subsequent positioning hotfixes have an
+    object reference to work with.
+
+    Each instance of this object is tied to a specific level, and the class can
+    also be used to "queue up" the post-injection positioning hotixes within a
+    level, in case you're injecting more than one.
+
+    NOTE: The timing we're using here is pretty dependent on loading meshes that do
+    *not* exist in the level already, so any edits to the map which have already
+    loaded these meshes prior to trying this delay will interfere with the process.
+    """
+
+    # The subobject names which we need to use to reposition the objects, once
+    # they've been streamed into the level.  These positioning object names are
+    # *not* at all exhaustive!  We'll raise a RuntimeError if we're asked for
+    # an object we don't know about.  `RootComponent` is a reasonable first
+    # guess since most objects seem to *have* that subobject, but it often
+    # doesn't actually take effect, so other names are needed instead.
+    positioning_obj_names = {
+            '/alisma/lootables/_design/classes/hyperion/bpio_ali_lootable_hyperion_redchest': 'Mesh_Chest1',
+            '/dandelion/lootables/_design/classes/hyperion/bpio_lootable_hyperion_redchest': 'Mesh_Chest1',
+            '/game/interactiveobjects/atlasdefenseturret/_shared/_design/io_atlasdefenseturret': 'DefaultSceneRoot',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_platform': 'PlatformMesh',
+            '/game/interactiveobjects/gamesystemmachines/quickchange/bp_quickchange': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_ammo': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_crazyearl': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_health': 'RootComponent',
+            '/game/interactiveobjects/gamesystemmachines/vendingmachine/_shared/blueprints/bp_vendingmachine_weapons': 'RootComponent',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_claptrap': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_hijinx': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_lootboxer': 'Cabinet',
+            '/game/interactiveobjects/slotmachine/_shared/_design/bpio_slotmachine_vaultline': 'Cabinet',
+            '/game/interactiveobjects/stationarymannedturret/io_groundturret': 'SK_MannedTurret',
+            '/game/interactiveobjects/switches/circuit_breaker/_design/io_switch_circuit_breaker_v1': 'DefaultSceneRoot',
+            '/game/interactiveobjects/switches/lever/design/io_switch_industrial_prison': 'DefaultSceneRoot',
+            '/game/lootables/_design/classes/atlas/bpio_lootable_atlas_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/cov/bpio_lootable_cov_redcrate_slaughter': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/eridian/bpio_lootable_eridian_whitechestcrystal': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/global/bpio_lootable_global_whitecrate': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/jakobs/bpio_lootable_jakobs_whitechest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_redchest_slaughter': 'Mesh_Chest1',
+            '/game/lootables/_design/classes/maliwan/bpio_lootable_maliwan_whitechest': 'Mesh_Chest1',
+            '/game/patchdlc/vaultcard/interactiveobjects/bpio_lootable_vaultcard_redcrate': 'Mesh_Chest1',
+            '/game/patchdlc/event2/lootables/_design/bpio_lootable_jakobs_whitechest_cartels': 'Mesh_Chest1',
+            '/game/patchdlc/ixora2/interactiveobjects/gamesystemmachines/vendingmachine/_shared/bp_vendingmachine_blackmarket': 'RootComponent',
+            '/geranium/interactiveobjects/gamesystemmachines/catcharide/_shared/blueprints/bp_catcharide_console_ger': 'RootComponent',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_redchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_cultist_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/cultists/bpio_hib_lootable_portalchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_redchest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/lootables/_design/classes/frostbiters/bpio_hib_lootable_frostbiters_whitechest': 'Mesh_Chest1',
+            '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_console': 'RootComponent',
+            '/hibiscus/interactiveobjects/systems/catcharide/_design/bp_hib_catcharide_platform': 'PlatformMesh',
+            }
+
+    _type_11_delay_meshes = [
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Arm',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Base',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Body',
+            '/Engine/EditorMeshes/Camera/SM_CraneRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Mount',
+            '/Engine/EditorMeshes/Camera/SM_RailRig_Track',
+            ]
+
+    def __init__(self, mod, map_name):
+        self.map_name = map_name
+        self.mod = mod
+        self.positions = []
+        self.obj_next_indicies = {}
+        to_lower = map_name.lower()
+        if to_lower == 'MatchAll':
+            raise RuntimeError('MatchAll is not a valid level target for delaying streaming blueprint hotfixes')
+        # Make a copy of the mesh list, otherwise when we pop entries later
+        # it'll update for all instances.  Reverse it so our `.pop()`s pull
+        # things in the correct order.
+        self.type_11_delay_meshes = list(reversed(self._type_11_delay_meshes))
+
+    def get_next_index(self, obj_name, index=None):
+        obj_name_lower = obj_name.lower()
+        if index is None:
+            if obj_name_lower in self.obj_next_indicies:
+                index = self.obj_next_indicies[obj_name_lower]
+            else:
+                index = 0
+        self.obj_next_indicies[obj_name_lower] = index + 1
+        return index
+
+    def consume(self, count=2):
+        if count > len(self.type_11_delay_meshes):
+            raise RuntimeError('Not enough free meshes to properly delay hotfix execution!')
+        for _ in range(count):
+            yield self.type_11_delay_meshes.pop()
+
+    def add_positioning(self, *args):
+        self.positions.append(_StreamingBlueprintPosition(*args))
+
+    def get_positioning_obj(self, obj_name):
+        obj_name_lower = obj_name.lower()
+        if obj_name_lower in self.positioning_obj_names:
+            return self.positioning_obj_names[obj_name_lower]
+        else:
+            print('-'*80)
+            print(f'ERROR: Unknown positioning object for: {obj_name}')
+            print('Specify the `positioning_obj` argument to `streaming_hotfix`, or add the')
+            print('mapping to the _StreamingBlueprintHelper class in bl3hotfixmod.py.')
+            print('The value `RootComponent` might be a good option to try, if unsure.')
+            print('-'*80)
+            raise RuntimeError(f'Unknown positioning object for: {obj_name}')
+
+    def finish(self, count=2):
+        if self.positions:
+            if not self.mod.quiet_streaming:
+                self.mod.comment('Injecting an artificial delay before proceeding with positioning of streamed Blueprints in {}'.format(
+                    self.map_name,
+                    ))
+
+            # First the delay
+            for mesh_name in self.consume(count):
+                self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
+                        '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                        'ItemMeshComponent.Object..StaticMesh',
+                        self.mod.get_full_cond(mesh_name, 'StaticMesh'))
+            # Revert it right away; no sense waiting for it.
+            self.mod.reg_hotfix(Mod.EARLYLEVEL, self.map_name,
+                    '/Game/Pickups/Ammo/BPAmmoItem_Pistol.Default__BPAmmoItem_Pistol_C',
+                    'ItemMeshComponent.Object..StaticMesh',
+                    self.mod.get_full_cond('/Game/Pickups/Ammo/Model/Meshes/SM_ammo_pistol', 'StaticMesh'))
+
+            # And now the individual repositioning
+            for pos in self.positions:
+                pos.do_positioning(self.mod, self.map_name)
+
+            # Now clear out the list of positions and end with a newline
+            self.positions = []
+            self.mod.newline()
 
 class Mod(object):
     """
@@ -91,8 +286,13 @@ class Mod(object):
 
     def __init__(self, filename, title, author, description,
             v=None, lic=None, cats=None,
-            ss=None, videos=None, urls=None, nexus=None,
-            quiet_meshes=False,
+            ss=None, videos=None, urls=None,
+            pakfile=None,
+            homepage=None, nexus=None,
+            contact=None, contact_email=None, contact_discord=None,
+            quiet_meshes=False, quiet_streaming=False,
+            aggressive_streaming=False,
+            comment_tags=False,
             ):
         """
         Initializes ourselves and starts writing the mod.
@@ -109,9 +309,15 @@ class Mod(object):
         `ss` - Screenshot URL(s).  Can be a single string, or a list of strings
         `videos` - Video URL(s).  Can be a single string, or a list of strings
         `urls` - Extra URL(s).  Can be a single string, or a list of strings
+        `pakfile` - Pakfile (or list of pakfiles) to be included along with the mod.
+            Can be a single string, or a list of strings
+        `homepage` - Homepage, in case that exists
         `nexus` - Nexus Mods URL, in case you're uploading there as well
+        `contact` - Generic contact info
+        `contact_email` - Contact email address
+        `contact_discord` - Contact Discord info
 
-        And then, some extra control parameters (just the one for now, actually):
+        And then, some extra control parameters:
 
         `quiet_meshes` - This library can do StaticMesh injection, to allow
             meshes to be used in any level, even if they're not ordinarily allowed
@@ -120,6 +326,24 @@ class Mod(object):
             automatically added.  Setting `quiet_meshes` to `True` will suppress
             those comments (though the necessary hotfixes will still be written,
             of course).  See `_ensure_mesh()` for some info on this.
+        `quiet_streaming` - Likewise, this library can do Streaming Blueprint
+            injection, which also requires some extra injected hotfixes to work
+            properly.  Setting this to `True` will suppress the extra mod comments
+            which detail that behavior.
+        `aggressive_streaming` - This library has helper code to aggressively
+            help out with handling Streaming Blueprint (type 11) hotfixes which
+            are really better handled in mod-injection software like B3HM or
+            Apoc's mitmproxy-based hfinject.py.  Support for this is present in
+            hfinject.py and B3HM v1.0.2+.  If using older versions of B3HM, set
+            this to `True` to enable the helper code right in the mod itself.
+            (Note that this will make multiple mods using type-11 hotfixes on
+            the same mod probably not work together.)
+        `comment_tags` - This controls whether the BLIMP tags (mod metadata at
+            the top of the mod) are printed "inside" the triple-hash comments
+            that the rest of the mod comments use.  The BLIMP spec allows for
+            either.  If `False`, the default, the tags will be printed on their
+            own.  If `True`, the tags will be printed after the usual hashes.
+            `True` more closely resembles the "old-style" tags we used to use.
         """
         self.filename = filename
         self.title = title
@@ -131,10 +355,21 @@ class Mod(object):
         self.ss = ss
         self.videos = videos
         self.urls = urls
+        self.pakfile = pakfile
+        self.homepage = homepage
         self.nexus = nexus
+        self.contact = contact
+        self.contact_email = contact_email
+        self.contact_discord = contact_discord
         self.last_was_newline = True
         self.ensured_meshes = {}
         self.quiet_meshes = quiet_meshes
+        self.quiet_streaming = quiet_streaming
+        self.aggressive_streaming = aggressive_streaming
+        self.comment_tags = comment_tags
+
+        # Some vars to help out with type-11 (streaming blueprint) hotfixes
+        self.streaming_helpers = {}
 
         self.source = os.path.basename(sys.argv[0])
 
@@ -145,17 +380,37 @@ class Mod(object):
         if not self.df:
             raise Exception('Unable to write to {}'.format(self.filename))
 
-        print('###', file=self.df)
-        print('### Name: {}'.format(self.title), file=self.df)
+        if self.comment_tags:
+            comment_prefix = '### '
+        else:
+            comment_prefix = ''
+        print(comment_prefix.strip(), file=self.df)
+        print(f'{comment_prefix}@title {self.title}', file=self.df)
         if self.version is not None:
-            print('### Version: {}'.format(self.version), file=self.df)
-        print('### Author: {}'.format(self.author), file=self.df)
+            print(f'{comment_prefix}@version {self.version}', file=self.df)
+        print(f'{comment_prefix}@author {self.author}', file=self.df)
+        if self.contact:
+            print(f'{comment_prefix}@contact {self.contact}', file=self.df)
+        if self.contact_email:
+            print(f'{comment_prefix}@contact-email {self.contact_email}', file=self.df)
+        if self.contact_discord:
+            print(f'{comment_prefix}@contact-discord {self.contact_discord}', file=self.df)
+        if self.homepage:
+            print(f'{comment_prefix}@homepage {self.homepage}', file=self.df)
         if self.categories:
             if type(self.categories) == list:
-                print('### Categories: {}'.format(', '.join(self.categories)), file=self.df)
+                print('{}@categories {}'.format(comment_prefix, ', '.join(self.categories)), file=self.df)
             else:
-                print('### Categories: {}'.format(self.categories), file=self.df)
-        print('###', file=self.df)
+                print(f'{comment_prefix}@categories {self.categories}', file=self.df)
+        print(comment_prefix.strip(), file=self.df)
+
+        # Pakfile, if we have it
+        if self.pakfile is not None:
+            if type(self.pakfile) == str:
+                self.pakfile = [self.pakfile]
+            for pakfile in self.pakfile:
+                print(f'{comment_prefix}@pakfile {pakfile}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Process license information, if it's been specified (complaint to the user
         # if it hasn't!)
@@ -179,11 +434,11 @@ class Mod(object):
         else:
             if self.lic in Mod.LIC_INFO:
                 lic_name, lic_url = Mod.LIC_INFO[self.lic]
-                print('### License: {}'.format(lic_name), file=self.df)
-                print('### License URL: {}'.format(lic_url), file=self.df)
+                print(f'{comment_prefix}@license {lic_name}', file=self.df)
+                print(f'{comment_prefix}@license-url {lic_url}', file=self.df)
             else:
-                print('### License: {}'.format(self.lic), file=self.df)
-            print('###', file=self.df)
+                print(f'{comment_prefix}@license {self.lic}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Media links
         if ss or videos or urls or nexus:
@@ -191,23 +446,24 @@ class Mod(object):
                 if type(ss) != list:
                     ss = [ss]
                 for shot in ss:
-                    print('### Screenshot: {}'.format(shot), file=self.df)
+                    print(f'{comment_prefix}@screenshot {shot}', file=self.df)
             if videos:
                 if type(videos) != list:
                     videos = [videos]
                 for video in videos:
-                    print('### Video: {}'.format(video), file=self.df)
+                    print(f'{comment_prefix}@video {video}', file=self.df)
             if urls:
                 if type(urls) != list:
                     urls = [urls]
                 for url in urls:
-                    print('### URL: {}'.format(url), file=self.df)
+                    print(f'{comment_prefix}@url {url}', file=self.df)
             if nexus:
-                print('### Nexus: {}'.format(nexus), file=self.df)
-            print('###', file=self.df)
+                print(f'{comment_prefix}@nexus {nexus}', file=self.df)
+            print(comment_prefix.strip(), file=self.df)
 
         # Now continue on (basically just the description from here on out)
-        print('', file=self.df)
+        if self.comment_tags:
+            print('', file=self.df)
         print('###', file=self.df)
         for desc in self.description:
             if desc == '':
@@ -426,7 +682,7 @@ class Mod(object):
             notify=False,
             ensure=False):
         """
-        Writes out a SpawnMesh-altering hotfix to the mod file.
+        Writes out a SpawnMesh addition hotfix to the mod file.
 
         `map_path` is the full path to the "main" `_P` map where this is being put
         `mesh_path` is the full path to the mesh to be added
@@ -494,6 +750,187 @@ class Mod(object):
             transparent_flag=transparent_flag,
             ), file=self.df)
 
+    def streaming_hotfix(self, map_path, obj_path,
+            index=None,
+            location=(0,0,0),
+            rotation=(0,0,0),
+            scale=(1,1,1),
+            notify=False,
+            finish=False,
+            positioning_obj=None,
+            ):
+        """
+        Writes out a Blueprint Stream/addition hotfix to the mod file.
+
+        `map_path` is the full path to the "main" `_P` map where this is being put
+        `obj_path` is the full path to the object to be added
+        `index` is the expected numerical index of the added blueprint object;
+            this is needed because the actual type-11 hotfix ignores location/rotation/scale,
+            so we need to inject more hotfixes after the fact to move the new object
+            around, and need to know the path to the object in order to do so.  It appears
+            that indexes will start at 0, even "bumping up" hardcoded in-map objects.  Note
+            that this implies that mods which add the same type of object to the same map
+            will end up conflicting with each other, since you'll have no way of knowing
+            how they're ordered in users' mod lists.  If this is left as `None`, this
+            library will start numbering at 0 automatically.
+        `location`, `rotation`, and `scale` define the physical parameters of the object
+        `notify` can be used to set the "notify" flag on hotfixes.  This doesn't
+            seem like it's ever necessary, so best to leave it alone.
+        `finish` only has an effect when the Mod-level `aggressive_streaming` param is
+            set to `True`.  `finish` can be set to `False` in those cases to avoid
+            "finishing" the injection immediately; the delaying StaticMesh hotfixes and
+            the positioning hotfixes won't be written out right away.  They'll be written
+            at the end of the mod instead (or when another `streaming_hotfix` call is made
+            with the value set to `True`)
+        `positioning_obj` can be set, to specify the subobject used to actually position the
+            injected object in the world.  If not specified, this will use a small hardcoded
+            mapping to see if we know what the object name is -- if we don't already have a
+            name mapping, a RuntimeError will be raised.
+
+        Returns the full object name of what we believe the created object should be.
+        """
+
+        # Map path
+        map_first, map_last = map_path.rsplit('/', 1)
+
+        # Object path
+        obj_first, obj_last = obj_path.rsplit('/', 1)
+
+        # Notify flag
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+
+        # Coordinates/transforms - these values are actually ignored by type-11 hotfixes, so
+        # we're just putting in the defaults, to make that more obvious to anyone looking
+        # at the mod file
+        coord_parts = []
+        for coords in [(0,0,0), (0,0,0), (1,1,1)]:
+            coord_parts.append(','.join([
+                '{:.6f}'.format(n) for n in coords
+                ]))
+        coord_field = '|'.join(coord_parts)
+
+        # First the hotfix to add it to the map
+        print('{hf_type},(1,11,{notification_flag},{map_last}),{map_first},{obj_first},{obj_last},{coord_len},"{coord_field}"'.format(
+            hf_type=Mod.TYPE[Mod.EARLYLEVEL],
+            notification_flag=notification_flag,
+            map_first=map_first,
+            map_last=map_last,
+            obj_first=obj_first,
+            obj_last=obj_last,
+            coord_len=len(coord_field),
+            coord_field=coord_field,
+            ), file=self.df)
+
+        # Get our _StreamingBlueprintHelper (or create a new one)
+        map_lower = map_last.lower()
+        if map_lower not in self.streaming_helpers:
+            self.streaming_helpers[map_lower] = _StreamingBlueprintHelper(self, map_last)
+        helper = self.streaming_helpers[map_lower]
+
+        # Figure out what our actual object names are likely to be
+        direct_obj = '{}.{}:PersistentLevel.{}_C_{}'.format(
+                map_path,
+                map_last,
+                obj_last,
+                helper.get_next_index(obj_path, index),
+                )
+        if positioning_obj is None:
+            root_obj = '{}.{}'.format(direct_obj, helper.get_positioning_obj(obj_path))
+        else:
+            root_obj = '{}.{}'.format(direct_obj, positioning_obj)
+
+        # If we're in "aggressive streaming" mode, queue up positions and check for
+        # the `finish` arg.  Otherwise just position right away.
+        if self.aggressive_streaming:
+            # Add our positioning info to the helper
+            helper.add_positioning(root_obj, location, rotation, scale)
+
+            # If we've been told to "finish" the hotfix (ie: delay a bit, and then do
+            # our positioning hotfixes), do so now.
+            if finish:
+                helper.finish()
+        else:
+            pos = _StreamingBlueprintPosition(root_obj, location, rotation, scale)
+            pos.do_positioning(self, map_last)
+
+        # And return the main object's name
+        return direct_obj
+
+    def bytecode_hotfix(self, hf_type, package,
+            obj_name,
+            export_name,
+            index,
+            from_val,
+            to_val,
+            notify=False):
+        """
+        Writes a Blueprint Bytecode (type 7) hotfix to the mod file.  The best way to
+        view blueprint bytecode at the moment is probably the UAssetAPI/UAssetGUI
+        library+app found here: https://github.com/atenfyr/UAssetGUI
+
+        `hf_type` is our usual PATCH/LEVEL/etc
+        `package` is any target that needs to be specified for LEVEL/CHAR/etc.
+        `obj_name` is the object to act on.  If it contains a `.` already, it will
+            be used as-is.  Otherwise, we'll convert to the "full" format but add
+            a `_C` at the end, which seems likely to be the correct thing to do
+            for any of these hotfixes.
+        `export_name` is the name of the export containing the script to edit
+        `index` is the bytecode offset location that we'll be changing.  This can
+            also be a list, if you want to specify more than one.
+        `from_val` is the previous value which must be matched for the hotfix to
+            activate (much like other hotfix types).  Unlike other types, though,
+            this field seems to be *mandatory*.  There's no way (that I've found)
+            to omit it and "blindly" apply the hotfix.
+        `to_val` is the new value to set.
+        `notify` can be set to `True` if you want to set the "notify" flag on the
+            hotfix (so far no GBX hotfixes use it, so unlikely to ever be necessary).
+        """
+        if '.' not in obj_name:
+            obj_name = self.get_full_cond(obj_name) + '_C'
+        if notify:
+            notification_flag=1
+        else:
+            notification_flag=0
+        if type(index) == list:
+            indexes = [str(i) for i in index]
+        else:
+            indexes = [str(index)]
+        from_val = str(from_val)
+        to_val = str(to_val)
+        print(','.join([
+            Mod.TYPE[hf_type],
+            f'(1,7,{notification_flag},{package})',
+            obj_name,
+            '0',
+            '1',
+            export_name,
+            str(len(indexes)),
+            *indexes,
+            '{}:{}'.format(len(from_val), from_val),
+            '{}:{}'.format(len(to_val), to_val),
+            ]), file=self.df)
+        self.last_was_newline = False
+
+    def finish_streaming(self):
+        """
+        Only has an effect when the Mod-level attr `aggressive_streaming` is
+        `True`.  In those cases, used to explicitly "finish" our Streaming
+        Blueprint hotfix statements, so that their object names can be used in
+        other hotfixes.  This is also triggered on a per-level basis by
+        specifying the `finish` argument to `streaming_hotfix()`, or
+        automatically when the modfile is closed, but this is another way to
+        call it.
+        """
+
+        if self.aggressive_streaming:
+            for helper in self.streaming_helpers.values():
+                helper.finish()
+            if not self.last_was_newline:
+                self.newline()
+
     def close(self):
         """
         Closes us out
@@ -506,6 +943,9 @@ class Mod(object):
         self._reset_meshes()
         if not self.last_was_newline:
             self.newline()
+
+        # See if we have any streaming blueprint (type 11) hotfixes to finish
+        self.finish_streaming()
 
         # Now close out and report
         self.df.close()
@@ -574,9 +1014,13 @@ class BVC(object):
         self.bvs = bvs
 
     @staticmethod
-    def from_data_struct(data):
+    def from_data_struct(data, cur_dt=None):
         """
-        Given a serialized data struct, return a BVC object
+        Given a serialized data struct, return a BVC object.  Optionally
+        pass in `cur_dt` as the path to a DataTable currently being processed.
+        Nested BVCs may refer back to themselves using subobject-following
+        syntax.  See /Game/Gear/Amulets/_Shared/_Design/GameplayAttributes/Tables/DataTable_Amulets_BaseValues
+        from Wonderlands for some examples of this (for instance, `Weight_Low_2X`)
         """
 
         # BVC
@@ -586,12 +1030,23 @@ class BVC(object):
             bvc = 1
 
         # DataTable
-        if 'DataTableValue' in data and 'export' not in data['DataTableValue']['DataTable']:
-            dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
-                    row=data['DataTableValue']['RowName'],
-                    value=data['DataTableValue']['ValueName'])
-        else:
-            dtv = None
+        dtv = None
+        if 'DataTableValue' in data:
+            if 'export' in data['DataTableValue']['DataTable']:
+                if data['DataTableValue']['DataTable']['export'] == 0:
+                    pass
+                elif data['DataTableValue']['DataTable']['export'] == 1:
+                    if cur_dt is None:
+                        raise RuntimeError('Found internal DataTable redirect, but no cur_dt')
+                    dtv = DataTableValue(table=cur_dt,
+                            row=data['DataTableValue']['RowName'],
+                            value=data['DataTableValue']['ValueName'])
+                else:
+                    raise RuntimeError('Found internal DataTable redirect with unknown export')
+            else:
+                dtv = DataTableValue(table=data['DataTableValue']['DataTable'][1],
+                        row=data['DataTableValue']['RowName'],
+                        value=data['DataTableValue']['ValueName'])
 
         # BVA
         if 'BaseValueAttribute' in data and 'export' not in data['BaseValueAttribute']:
@@ -712,9 +1167,21 @@ class ItemPool(object):
     Some abstraction to easily build up ItemPools.
     """
 
-    def __init__(self, pool_name):
+    def __init__(self, pool_name, pools=[], balances=[]):
         self.pool_name = pool_name
         self.balanceditems = []
+
+        # Populate initial values if specified
+        for pool in pools:
+            if type(pool) == tuple:
+                self.add_pool(*pool)
+            else:
+                self.add_pool(pool)
+        for balance in balances:
+            if type(balance) == tuple:
+                self.add_balance(*balance)
+            else:
+                self.add_balance(balance)
 
     def add_pool(self, pool_name, weight=None):
         """

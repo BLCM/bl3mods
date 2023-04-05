@@ -1,12 +1,12 @@
-###
-### Name: Disable Email Loyalty Rewards
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: qol
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Disable Email Loyalty Rewards
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories qol
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Disables the email rewards given out for 100 kills for each manufacturer type.

@@ -1,12 +1,12 @@
-###
-### Name: Slayer Modifier Booster Change
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: mayhem
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Slayer Modifier Booster Change
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories mayhem
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### The Mayhem 2.0 Easy modifier 'Slayer' drops shield boosters by default, which

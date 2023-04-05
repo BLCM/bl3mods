@@ -11,7 +11,8 @@ Cheat mod which gives Crader's EM-P5 the following:
 A level 1 EM-P5 will easily last you throughout an entire story
 runthough, and probably into Mayhem levels after that.  This mod
 also prevents Crader's EM-P5 from spawning with the x2 accessory,
-since an x2 gun will end up consuming ammo still.
+though the infinite ammo capability should work fine regardless of
+that part's presence.
 
 This is basically just what I use for testing out mods, when I don't
 want to be bothered by combat.  I'd picked Crader's EM-P5 originally
@@ -22,6 +23,18 @@ kept using Crader's EM-P5 regardless.
 
 Changelog
 =========
+
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.0.1** - Jul 14, 2020
+ * Updated zero-ammo-consumption modification to work regardless of
+   the presence of an x2 accessory part.  Thx to Grimm for figuring
+   this out!
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
 
 **v1.0.0** - Sep 26, 2020
  * First versioned release

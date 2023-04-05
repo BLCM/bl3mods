@@ -1,0 +1,44 @@
+###
+### Name: THICCLANDS3
+### Version: 1.1.3
+### Author: CZ47
+### Contact: =]#7647
+### Categories: mayhem, cheat, joke
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+### 
+### This mod replaces the Mayhem Modifier "Galaxy Brain" with "THICCLANDS3".
+###
+### This modifier scales up the thighs of most entities that have some sort of Bone structure. (Ava Excluded)
+### Don't ask.
+### (When scaling the number too high up, you'll find that characters sink into the floor.)
+### This mod also adds the ability to thicken thighs dynamically when equipping either the Girth Blaster or the Buttplug.
+###
+### Mayhem 11 has an easy modifier to get easier access this mod without having to deal with other modifiers.
+### 
+### IMPORTANT NOTE: The mayhem modifier sometimes only applies after you load into a map, swap away and back to this modifier 
+### OR swap to this modifier if you weren't already on it.
+### This modifier will then persist on map travel etc, but will be removed again on save quitting at which time you need to reapply the process above.
+### 
+### 
+# Changing the Bones the modifier resizes
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,DefaultTransform,0,,(Bones=((BoneRef=(BoneName=R_Thigh),Scale=2),(BoneRef=(BoneName=L_Thigh),Scale=2),(BoneRef=(BoneName=R_Hip),Scale=2),(BoneRef=(BoneName=L_Hip),Scale=2),(BoneRef=(BoneName=BL_Thigh),Scale=2),(BoneRef=(BoneName=BR_Thigh),Scale=2),(BoneRef=(BoneName=FL_Thigh),Scale=2),(BoneRef=(BoneName=FR_Thigh),Scale=2),(BoneRef=(BoneName=ML_Thigh),Scale=2),(BoneRef=(BoneName=MR_Thigh),Scale=2),(BoneRef=(BoneName=R_Thigh_Spinner),Scale=2),(BoneRef=(BoneName=L_Thigh_Spinner),Scale=2),(BoneRef=(BoneName=B_ThighPiston),Scale=2),(BoneRef=(BoneName=F_ThighPiston),Scale=2),(BoneRef=(BoneName=L_ThighPiston),Scale=2),(BoneRef=(BoneName=R_ThighPiston),Scale=2)))
+
+# Ava (large head), Tediore raptors and Wotan needed an override as well
+SparkCharacterLoadedEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/GBMP_Mayhem2_Bighetti.GBMP_Mayhem2_Bighetti,SkeletonOverrides,0,,((/Game/NonPlayerCharacters/Ava/Model/Rig/SK_Ava_Skeleton.SK_Ava_Skeleton,(Bones=((BoneRef=(BoneName=Head),Scale=2)))),(/Game/NonPlayerCharacters/Claptrap/Model/Rig/SK_Claptrap_Skeleton.SK_Claptrap_Skeleton,(Bones=((BoneRef=(BoneName=Tire),Scale=2)))),(/Game/Enemies/Varkid/_Shared/Model/Rig/SK_Varkid_Skeleton.SK_Varkid_Skeleton,(Bones=((BoneRef=(BoneName=BL_Thigh),Scale=1),(BoneRef=(BoneName=BR_Thigh),Scale=1),(BoneRef=(BoneName=FL_Thigh),Scale=1),(BoneRef=(BoneName=FR_Thigh),Scale=1),(BoneRef=(BoneName=ML_Thigh),Scale=1),(BoneRef=(BoneName=MR_Thigh),Scale=1)))),(/Game/Gear/Weapons/SMGs/Tediore/_Shared/Model/Rig/SK_SM_TED_RaptorLegs_Skeleton.SK_SM_TED_RaptorLegs_Skeleton,(Bones=((BoneRef=(BoneName=R_Raptor_Hip),Scale=3),(BoneRef=(BoneName=R_Raptor_Thigh),Scale=2),(BoneRef=(BoneName=L_Raptor_Hip),Scale=3),(BoneRef=(BoneName=L_Raptor_Thigh),Scale=2)))),(/Game/Gear/Weapons/Shotguns/Tediore/_Shared/Model/Rig/SK_SG_TED_SpiderLegs_Skeleton.SK_SG_TED_SpiderLegs_Skeleton,(Bones=((BoneRef=(BoneName=L_Back_Leg_Thigh),Scale=2),(BoneRef=(BoneName=L_Front_Leg_Thigh),Scale=2),(BoneRef=(BoneName=R_Back_Leg_Thigh),Scale=2),(BoneRef=(BoneName=R_Front_Leg_Thigh),Scale=2)))),(/Game/Gear/Weapons/Pistols/Tediore/Shared/Model/Rig/SK_PS_TED_SpiderLegs_Skeleton.SK_PS_TED_SpiderLegs_Skeleton,(Bones=((BoneRef=(BoneName=FL_Thigh),Scale=2),(BoneRef=(BoneName=FR_Thigh),Scale=2),(BoneRef=(BoneName=BL_Thigh),Scale=2),(BoneRef=(BoneName=BR_Thigh),Scale=2)))))
+
+# Changing modifier name and description
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Text,0,,[EXTRA HARD] THICCLANDS3
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/ModifierSets/UI/Shared/ModUiStat_Mayhem2_Shared_Bighetti.ModUiStat_Mayhem2_Shared_Bighetti,Description,0,,All thighs are extra thicc. Bonk!
+
+# Adding the modifier to the Girth Blaster to dynamically create thicc thighs.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf,AspectList,0,,(WeaponUseModeAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponUseModeAspectData',WeaponBonusAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponBonusAspectData',WeaponAttributeEffectsAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponAttributeEffectsAspectData',WeaponAttachmentEffectAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:AspectList_WeaponAttachmentEffectAspectData',InventoryAbilityAspectData'/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:Thicc')
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Torgue/_Shared/_Design/_Unique/Nurf/Parts/Part_PS_TOR_Barrel_Nurf.Part_PS_TOR_Barrel_Nurf:Thicc,Abilities,0,,((Ability=BlueprintGeneratedClass'"/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/Ability_Mayhem2_Bighetti.Ability_Mayhem2_Bighetti_C"'))
+
+# Adding the modifier to the Buttplug to dynamically create thicc thighs.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug,AspectList,0,,(WeaponUseModeAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponUseModeAspectData_0',WeaponBonusAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_WeaponBonusAspectData',WeaponAudioAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:WeaponAudioAspectData_0',InventoryConditionalDamageAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:AspectList_InventoryConditionalDamageAspectData',InventoryAbilityAspectData'/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc')
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Jakobs/_Shared/_Design/_Unique/Buttplug/Parts/Part_PS_JAK_Barrel_Buttplug.Part_PS_JAK_Barrel_Buttplug:Thicc,Abilities,0,,((Ability=BlueprintGeneratedClass'"/Game/PatchDLC/Mayhem2/Abilities/Shared/Bighetti/Ability_Mayhem2_Bighetti.Ability_Mayhem2_Bighetti_C"'))
+
+# Adding the Easy Modifier pool to M11
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/OverrideModSet_Mayhem2.OverrideModSet_Mayhem2,PerLevelOverrides.PerLevelOverrides[10].RandomModifierSlotsOverride,0,,(MayhemModifierSlotDataAsset'"/Game/PatchDLC/Mayhem2/ModifierSets/ModSet_Mayhem2_Easy.ModSet_Mayhem2_Easy"')

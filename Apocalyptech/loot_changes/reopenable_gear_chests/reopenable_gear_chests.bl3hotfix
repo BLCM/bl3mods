@@ -1,12 +1,12 @@
-###
-### Name: Reopenable Gear Chests
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: chests
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title Reopenable Gear Chests
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories chests
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Prevents red and white chests throughout the game from remembering their

@@ -14,6 +14,14 @@ overpowering all other loot.
 Changelog
 =========
 
+**v1.0.1** - Aug 1, 2022
+ * Housekeeping changes *(no actual functionality change)*:
+   * Converted to use my usual mod-generation scripts
+   * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Nov 24, 2020
  * Initial Release
  

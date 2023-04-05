@@ -25,6 +25,14 @@ the size scaling.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.3.1** - Jun 16, 2021
+ * Tweaked some scaling values due to data patches we must've missed with DLC6
+ * Added contact info to mod header
+
 **v1.3.0** - Apr 14, 2020
  * Updated with DLC6 BPChars
  * Correctly exclude FL4K's Loader Pet from alterations

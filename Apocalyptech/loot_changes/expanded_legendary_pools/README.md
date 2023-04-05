@@ -19,6 +19,8 @@ all items from:
 * DLC4 (Psycho Krieg and the Fantastic Fustercluck)
 * DLC5 (Designer's Cut)
 * DLC6 (Director's Cut) and Vault Card #1
+* Vault Card #2
+* Vault Card #3
 
 This mod is more or less intended to be used with something like Better Loot,
 though players in Mayhem 10 who get lots of legendary drops from there will
@@ -35,6 +37,27 @@ added into the loot pool properly.
 
 Changelog
 =========
+
+**v1.6.1** - Nov 16, 2022
+ * Players using this mod in Normal, in the early game, without also running
+   Early Bloomer, were getting various legendary DLC artifacts as drops
+   (specifically Lunacy, Mysterious Artifact, Pearl of Ineffable Knowledge,
+   and Vendetta).  The problem wouldn't show up in TVHM or with Mayhem Mode
+   enabled, or with the Early Bloomer mod enabled.  Regardless, fixed that
+   up!
+
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.6.0** - Nov 19, 2021
+ * Updated with Vault Card 3 items
+
+**v1.5.0** - Aug 6, 2021
+ * Updated with Vault Card 2 items
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
 
 **v1.4.0** - Apr 24, 2021
  * Added in setting the gun-type drop weights on the main Legendary Gun pool,

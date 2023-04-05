@@ -22,6 +22,7 @@ See the individual mod folders for full READMEs.
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
 - **First Gun Chest** - Some alternate contents for the first gun chest, in Covenant Pass.
 - **Fix DLC2 Shield Drops** - Most enemies in DLC2 don't drop shields; this fixes that.
+- **Fix Broken Loot Patterns** - Fixes up some loot drop patterns for a handful of enemies.
 - **Manufacturer Lock** - A set of mods which make only the specified manufacturers drop.
 - **Mission Reward Randomizer** - Randomizes mission rewards
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
@@ -45,10 +46,10 @@ See the individual mod folders for full READMEs.
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

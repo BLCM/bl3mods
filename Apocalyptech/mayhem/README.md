@@ -9,11 +9,6 @@ See the individual mod folders for full READMEs.
   given to enemies in Mayhem modes.  Conflicts with Mayhem Level Cheats.
 - **Disable Mayhem Modifiers** - A collection of mods to individually disable each
   Mayhem Modifier, so you can choose which ones you want to show up.
-- **Disable Lootsplosion Modifier** - Disables the "Lootsplosion" Mayhem modifier
-- **Disable Rogue Lite Modifier** - Disables the "Rogue Lite" Mayhem modifier
-- **Mayhem Level Cheats** - Hardcodes Easy+Easy+Hard modifiers at all mayhem levels,
-  and sets a flat enemy scaling across all levels as well.  Conflicts with Decreased
-  Mayhem Enemy Scaling.
 - **Mayhem Modifier Nerfs** - Nerfs for various Mayhem modifiers that I wanted to
   be less difficult.
 - **No Mayhem Drop Scaling** - Ordinarily, higher mayhem levels makes drop quality
@@ -27,10 +22,10 @@ See the individual mod folders for full READMEs.
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](../COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

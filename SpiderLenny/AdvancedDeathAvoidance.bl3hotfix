@@ -1,0 +1,16 @@
+###Name: Advanced Damage Avoidance
+###Author: SpiderLenny
+###Categories: char-other, cheat
+###License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+#Adds Effective Damage Immunity by changing the Max Health Guardian Rank to a copy of the Super Soldier's effect.
+
+#Make Max Health give Damage Immunity
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GuardianRank/GuardianReward_MaxHealth.GuardianReward_MaxHealth,RewardAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/Damage/Att_DamageTakenMultiplier.Att_DamageTakenMultiplier,ModifierType=ScaleSimple,ModifierValue=(BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/GuardianRank/Attributes/Att_GuardianReward_MaxHealth_Modifier.Att_GuardianReward_MaxHealth_Modifier,BaseValueScale=1)))
+
+#Modfying the UI Data
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GuardianRank/GuardianReward_MaxHealth.GuardianReward_MaxHealth,DisplayName,0,,DMG Taken Mult
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/_Shared/_Design/GuardianRank/UI/GuardianRank_UIStat_MaxHealth.GuardianRank_UIStat_MaxHealth,Attribute,bDisplayPlusSign,0,,false
+
+#Capping Max Health Values at 0. Any higher would reduce damage taken, but not remove it.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/GuardianRank/Attributes/Table_GuardianRank_Balance2.Table_GuardianRank_Balance2,MaxHealth,Value,0,,(BaseValueConstant=0.00)

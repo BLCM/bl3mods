@@ -1,0 +1,230 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_TrooperMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FullMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C4A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_TrooperMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E1C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FrontrunnerMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E1C4B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_TrooperMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_HeavyMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FullMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E2C2B.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "2.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FullMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "6.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "OakMissionSpawner_E3C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_TrooperMix"
+   },
+   "NumActorsParam": {
+    "OakMissionSpawner_E3C3A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "4.0"
+   },
+   "wave": "0"
+  }
+ ],
+ "spawnpoints": [
+  "OakMissionSpawner_Boss",
+  "OakMissionSpawner_BossAdds",
+  "OakMissionSpawner_E1C",
+  "OakMissionSpawner_E1C4A",
+  "OakMissionSpawner_E1C4B",
+  "OakMissionSpawner_E2C",
+  "OakMissionSpawner_E2C2B",
+  "OakMissionSpawner_E3C",
+  "OakMissionSpawner_E3C3A",
+  "OakMissionSpawner_GemGuardian",
+  "OakMissionSpawner_GemGuardian_0",
+  "OakMissionSpawner_GemGuardian_1",
+  "OakMissionSpawner_Guardian_0",
+  "OakSpawner_Crystals_Small",
+  "OakSpawnPoint_20",
+  "OakSpawnPoint_23",
+  "Spawner_Dropship_E2C2A",
+  "Spawner_Dropship_E3C3B",
+  "Spawner_SpawnAnchor_E1C",
+  "Spawner_SpawnAnchor_E2C",
+  "Spawner_SpawnAnchor_E3C_0",
+  "Spawner_SpawnAnchorEridian_E1C",
+  "Spawner_SpawnAnchorEridian_E1C_0",
+  "Spawner_SpawnAnchorEridian_E1C_1",
+  "Spawner_SpawnAnchorEridian_E2C3A",
+  "Spawner_SpawnAnchorEridian_E2C3B",
+  "Spawner_SpawnAnchorEridian_E3C",
+  "Spawner_SpawnAnchorEridian_E3C_0",
+  "SpawnMesh_DogCarrier_2",
+  "SpawnMesh_DogCarrier_3",
+  "SpawnMesh_DogCarrier_4",
+  "SpawnMesh_DogCarrier_5",
+  "SpawnMesh_DogCarrier_7",
+  "SpawnMesh_DogCarrier_8",
+  "SpawnMesh_DogCarrier_9",
+  "SpawnMesh_DoorCargo_0",
+  "SpawnMesh_DoorCargo_1",
+  "SpawnMesh_DoorCargo_10",
+  "SpawnMesh_DoorCargo_11",
+  "SpawnMesh_DoorCargo_2",
+  "SpawnMesh_DoorCargo_3",
+  "SpawnMesh_DoorCargo_4",
+  "SpawnMesh_DoorCargo_5",
+  "SpawnMesh_DoorCargo_6",
+  "SpawnMesh_DoorCargo_7",
+  "SpawnMesh_DoorCargo_8",
+  "SpawnMesh_DoorCargo_9",
+  "SpawnMesh_DoorSmall_0",
+  "SpawnMesh_DoorSmall_1",
+  "SpawnMesh_DoorSmall_10",
+  "SpawnMesh_DoorSmall_11",
+  "SpawnMesh_DoorSmall_2",
+  "SpawnMesh_DoorSmall_3",
+  "SpawnMesh_DoorSmall_5",
+  "SpawnMesh_DoorSmall_6",
+  "SpawnMesh_DoorSmall_7",
+  "SpawnMesh_DoorSmall_8",
+  "SpawnMesh_DoorSmall_9",
+  "SpawnMesh_EridianGuardianMonolith_13",
+  "SpawnMesh_EridianGuardianMonolith_14",
+  "SpawnMesh_EridianGuardianMonolith_15",
+  "SpawnMesh_EridianGuardianMonolith_16",
+  "SpawnMesh_EridianGuardianMonolith_17",
+  "SpawnMesh_EridianGuardianMonolith_2",
+  "SpawnMesh_EridianGuardianMonolith_3",
+  "SpawnMesh_EridianGuardianMonolith_4",
+  "SpawnMesh_EridianGuardianMonolith_5",
+  "SpawnMesh_EridianGuardianMonolith_6",
+  "SpawnMesh_EridianGuardianMonolith_7",
+  "SpawnPoint_IO_SmallCrystal",
+  "SpawnPoint_IO_SmallCrystal_39",
+  "SpawnPoint_IO_SmallCrystal_40",
+  "SpawnPoint_IO_SmallCrystal_41",
+  "SpawnPoint_IO_SmallCrystal_42",
+  "SpawnPoint_IO_SmallCrystal_43",
+  "SpawnPoint_IO_SmallCrystal_44",
+  "SpawnPoint_IO_SmallCrystal_45",
+  "SpawnPoint_IO_SmallCrystal_46",
+  "SpawnPoint_IO_SmallCrystal_47",
+  "SpawnPoint_IO_SmallCrystal_48",
+  "SpawnPoint_IO_SmallCrystal_49",
+  "SpawnPoint_IO_SmallCrystal_50",
+  "SpawnPoint_IO_SmallCrystal_51",
+  "SpawnPoint_IO_SmallCrystal_52",
+  "SpawnPoint_IO_SmallCrystal_53",
+  "SpawnPoint_IO_SmallCrystal_54",
+  "SpawnPoint_IO_SmallCrystal_55"
+ ],
+ "spawnoption_list": [
+  "/Game/Enemies/_Spawning/Guardian/Variants/SpawnOptions_GuardianWraith",
+  "/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_Possessed_WraithAndSpectre",
+  "/Game/Enemies/_Spawning/Guardian/_Mixes/Zone_4/SpawnOptions_Guardian_WraithAndSpectre",
+  "/Game/Enemies/_Spawning/Maliwan/Troopers/Variants/SpawnOptions_TrooperBasicDark",
+  "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FrontrunnerMix",
+  "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_FullMix",
+  "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_HeavyMix",
+  "/Game/Enemies/_Spawning/Maliwan/_Mixes/Zone_4/DarkMaliwan_mixes/SpawnOptions_Maliwan_Dark_TrooperMix",
+  "/Game/Enemies/_Spawning/ProvingGrounds/Trial7/SpawnOptions_PGTrial7_Maliwan_MechAdds"
+ ]
+}

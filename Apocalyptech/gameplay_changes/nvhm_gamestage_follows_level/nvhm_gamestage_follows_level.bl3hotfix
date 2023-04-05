@@ -1,12 +1,12 @@
-###
-### Name: NVHM GameStage Follows Player Level
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: scaling
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title NVHM GameStage Follows Player Level
+@version 1.1.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories scaling
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Makes Normal/NVHM mode always scale to your player level, like it
@@ -22,6 +22,7 @@ SparkLevelPatchEntry,(1,1,0,Bar_P),/Game/GameData/Regions/RegionManagerData.Regi
 SparkLevelPatchEntry,(1,1,0,Beach_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,BloodyHarvest_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,COVSlaughter_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,Cabin_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Camp_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Cartels_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,CasinoIntro_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
@@ -44,6 +45,7 @@ SparkLevelPatchEntry,(1,1,0,Facility_P),/Game/GameData/Regions/RegionManagerData
 SparkLevelPatchEntry,(1,1,0,FinalBoss_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Forest_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Frontier_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,FrostSite_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,GuardianTakedown_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Impound_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Lake_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
@@ -55,8 +57,11 @@ SparkLevelPatchEntry,(1,1,0,Monastery_P),/Game/GameData/Regions/RegionManagerDat
 SparkLevelPatchEntry,(1,1,0,MotorcadeFestival_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,MotorcadeInterior_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Motorcade_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,NekroMystery_p),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,Noir_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,OrbitalPlatform_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Outskirts_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,PandoraMystery_p),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Prison_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Prologue_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial1_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
@@ -67,6 +72,7 @@ SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial7_P),/Game/GameData/Regions/Regi
 SparkLevelPatchEntry,(1,1,0,ProvingGrounds_Trial8_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Raid_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Recruitment_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
+SparkLevelPatchEntry,(1,1,0,SacrificeBoss_p),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Sacrifice_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True
 SparkLevelPatchEntry,(1,1,0,Sanctum_P),/Game/GameData/Regions/RegionManagerData.RegionManagerData,PlayThroughs.PlayThroughs[0].bGameStageTracksPlayerLevelAboveMinimum,0,,True

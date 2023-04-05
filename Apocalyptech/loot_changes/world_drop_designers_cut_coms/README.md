@@ -31,6 +31,13 @@ COM Blank Parts happens after this one, it'll end up disabling the wrong part.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Nov 24, 2020
  * Initial Release
  

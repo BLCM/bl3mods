@@ -1,0 +1,33 @@
+###
+### Name: Operative Com-Combo
+### Version: 1.0.1
+### Author: PHM2D
+### Categories: char-operative, gear-com
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This hotfix mod makes the following changes to the skills of the operative class mod Seein' Dead:
+### Violent Violence	replaced by	Commitment
+### Playing Dirty	replaced by	Good Misfortune
+###
+### Kudos to:
+### dex_manly
+###
+
+# Violent Violence to Commitment
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_DLC/Ixora/Passives/DLCSkill_06/Passive_OperativeDLC_6.Passive_OperativeDLC_6_C
+
+# Violent Violence to Commitment Name
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,Commitment
+
+# Violent Violence to Commitment Color
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_ViolentViolence_dlc1.ClassMod_Part_Skill_Operative_ViolentViolence_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,purple
+
+# Playing Dirty to Good Misfortune
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Operative/_Shared/_Design/Passives/DroneTree/GoodMisfortune/PassiveSkill_Operative_GoodMisfortune.PassiveSkill_Operative_GoodMisfortune_C
+
+# Playing Dirty to Good Misfortune
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSets/_U/OPE/Skills/ClassMod_Part_Skill_Operative_PlayingDirty_dlc1.ClassMod_Part_Skill_Operative_PlayingDirty_dlc1:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,GoodMisfortune

@@ -2,8 +2,10 @@ Constructing Borderlands 3 Mods With Code
 =========================================
 
 * [Overview](#overview)
+  * [Bytecode Alterations](#bytecode-alterations)
   * [Mesh Additions](#mesh-additions)
   * [StaticMesh Text Blocks](#staticmesh-text-blocks)
+  * [Blueprint Streaming](#blueprint-streaming)
 * [Data Introspection](#data-introspection)
 * [Hotfix Generator](#hotfix-generator)
 * [License](#license)
@@ -48,6 +50,7 @@ mod = Mod('filename_to_save.bl3hotfix',
             'Extra description lines to show in the header, if you want.',
             'You can leave this as an empty list.',
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='scaling',
@@ -60,6 +63,12 @@ If you're generating a mod which is really huge (such as SSpyR's runtime weapon/
 randomizer), you can have the helper generate a compressed version by appending
 `.gz` to the filename.  In the example above, for instance, you could specify
 `filename_to_save.bl3hotfix.gz` instead.
+
+The `contact=foo` line is completely optional, and is just used if you want to
+give users a way to contact you about your mods.  You can actually use any of
+three variables here: `contact`, `contact_email`, and/or `contact_discord`.  Keep
+in mind that this information will be public, so only put info in here if you're
+okay with that.
 
 The `v=foo` line is completely optional, so don't worry about specifying a
 version if you don't want (though it's good practice to put it in your file so that
@@ -92,6 +101,28 @@ included in that list, such as:
 
     lic="Abandon all hope, ye who try to upload this mod anywhere",
 
+The BL3/WL modding community has started digging into pakfile modding, which
+occasionally gives rise to "hybrid" hotfix/pakfile mods.  The ModCabinet wiki
+supports a `@pakfile` tag to intelligently link in pakfiles specified by a
+hotfix mod file, and this library supports that as well:
+
+```python
+mod = Mod('filename_to_save.bl3hotfix',
+        'Mod Title',
+        'Author Name',
+        [
+            'A mod which includes a pakfile component as well',
+        ],
+        lic=Mod.CC_BY_SA_40,
+        v='1.0.0',
+        cats='qol',
+        pakfile='Fancy_Mod_999999_P.pak',
+        )
+```
+
+`pakfile` can be just a single string, or a list of strings, in case there are
+multiple pakfiles for the mod.
+
 Finally, there's a bunch of media data which can be added to the mod header,
 which will be added to the ModCabinet wiki if specified.  Here's a mod
 definition which includes all of them:
@@ -106,6 +137,7 @@ mod = Mod('filename_to_save.bl3hotfix',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol',
+        homepage='https://your-cool-mod.biz/',
         ss='https://i.imgur.com/ClUttYw.gif',
         videos='https://www.youtube.com/watch?v=JiEu23G4onM',
         nexus='https://www.nexusmods.com/borderlands3/mods/128',
@@ -113,7 +145,8 @@ mod = Mod('filename_to_save.bl3hotfix',
         )
 ```
 
-`ss` is for screenshots (which will be inlined on the ModCabinet wiki page), `videos`
+`homepage` is there in case your mod has an official homepage.  `ss` is for
+screenshots (which will be inlined on the ModCabinet wiki page), `videos`
 is for videos, `nexus` is for an alternate Nexus Mods link for this mod, and `urls`
 is any other URL you might want to link to.  `ss`, `videos`, and `urls` can all be
 lists rather than just strings, if you wanted to supply more than one.
@@ -177,10 +210,76 @@ with some commonly-used structures like `BaseValueConstant`-based stanzas and
 English titles.  Look through the source for some more info on those, and grep
 for their use in the mod-generation scripts for examples.
 
+### Bytecode Alterations
+
+The library supports [hotfix type 7](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-7-blueprint-bytecode),
+which is used to alter the Blueprint Bytecode which provides some of the fancier
+behaviors in objects.  This isn't as straightforward as some of the other modding
+we do, and requires some different tools to use effectively.  The tools we usually
+use to look at Borderlands data (JohnWickParse and FModel) don't output anything
+about bytecode.  The project that we're using to look into the bytecode is
+[UAssetGUI/UAssetAPI](https://github.com/atenfyr/UAssetGUI).  When serializing
+the data, it will give you "indexes" in the JSON which correspond to the values
+you need to use in these types of hotfixes.
+
+If UAssetGUI isn't showing you the exact index that you need (or if you wanted to
+doublecheck the indexes yourself), [UAssetAPI's `KismetSerializer.cs` source](https://github.com/atenfyr/UAssetAPI/blob/master/UAssetAPI/Kismet/KismetSerializer.cs)
+is what you'd want to look at -- specifically the `SerializeExpression` method.
+Keep track of changes to the `index` variable (keeping in mind that recursive
+calls to `SerializeExpression` may do their own `index` increments) to keep track
+of the "current" index as you walk through the serialization.
+
+The syntax for specifying these types hotfixes is pretty straightforward:
+
+```python
+mod.bytecode_hotfix(Mod.PATCH, '',
+        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
+        'ExecuteUbergraph_Ability_AntGreatBow',
+        194,
+        0,
+        2)
+```
+
+The first few arguments should be familiar by now -- the fourth is the name
+of the export containing the function you're trying to alter.  The fifth argument
+is the index that you're altering, as found via UAssetGUI (or other methods, if
+they exist).  Then the final two arguments are the current/previous/"from" value,
+and the new/"to" value.  Unlike other hotfix types, the previous value *must* be
+specified, so this hotfix type cannot do "blind" changes like other hotfix types
+can.
+
+One unique behavior in `bytecode_hotfix` is how it handles the object name.  If
+given a "bare" name, like above (without a `.SecondPart` in the object name),
+rather than converting it to just the usual "full" form, it'll additionally add
+a `_C` at the end of the name.  So the code above would generate a hotfix whose
+full object name comes out as:
+
+    /Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow.Ability_AntGreatBow_C
+
+It seems that doing so is pretty likely to be the correct behavior in all cases,
+so feel free to give that a try.  As with other hotfix types, if you pass in
+an object name which already contains a `.`, it'll leave it alone, so if there are
+cases where `_C` isn't an appropriate suffix, you can specify the correct values
+yourself.
+
+This hotfix type supports specifying multiple indexes, when making the same change
+more than once within a single function.  This may be required in some cases --
+the bytecode hotfix processing seems to be a little picky sometimes.  To do this,
+you can pass a list in for the index, rather than a single number:
+
+```python
+mod.bytecode_hotfix(Mod.PATCH, '',
+        '/Game/Gear/Weapons/SniperRifles/Hyperion/_Shared/_Design/_Unique/AntGreatBow/Ability_AntGreatBow'
+        'ExecuteUbergraph_Ability_AntGreatBow',
+        [194, 318],
+        0,
+        2)
+```
+
 ### Mesh Additions
 
-The library now also supports [hotfix type 6](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-6-spawnmesh),
-which is what Gearbox uses to make map alterations using hotfixes.  The most
+The library supports [hotfix type 6](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-6-spawnmesh),
+which is what Gearbox uses to add in "static" map elements.  The most
 basic syntax for that is:
 
 ```python
@@ -213,7 +312,7 @@ By default, you can only make use of StaticMeshes which are already available
 in the level, while using this hotfix type.  One way around this is to use
 *another* hotfix first, to create a reference to a new StaticMesh.  Thanks to
 the dynamic object-loading capabilities of UE4, this will let you use the
-new mesh in one of these hotfixes.  The `mesh_hotfix` method now supports
+new mesh in one of these hotfixes.  The `mesh_hotfix` method supports
 doing this transparently behind-the-scenes, so long as you add the parameter
 `ensure=True`, such as this statement which adds the DLC1 Neon Peach mesh
 into The Droughts (near the Highway fast travel):
@@ -233,8 +332,7 @@ along with these mesh-swapping hotfixes, so it's obvious where it's put things
 in automatically.  If you prefer not to see these comments, pass in
 `quiet_meshes=True` to your initial `Mod()` object creation.
 
-StaticMesh Text Blocks
-======================
+### StaticMesh Text Blocks
 
 The game data includes two sets of StaticMesh letters, which can be used as
 "fonts" to write out text blocks in the game world.  This would be incredibly
@@ -243,6 +341,105 @@ library is available to make it much easier.  See [README-textmesh.md](README-te
 for documentation on using this library.
 
 ![StaticMesh Text Example](screenshots/textmesh_example.jpg)
+
+### Blueprint Streaming
+
+The library supports [hotfix type 11](https://github.com/BLCM/BLCMods/wiki/Borderlands-3-Hotfixes#hotfix-type-11-stream-blueprint),
+which can be used to add in interactive elements to maps, such as vending
+machines, quick change stations, and more.  (This is in contrast to mesh/type-6
+hotfixes which can only add in "static" elements.)  This has a ton of caveats,
+so definitely read through this whole section to know what you can and can't
+do with this hotfix type.
+
+The basic syntax looks like this, which adds in a Crazy Earl vending machine
+near the "Highway" fast travel in The Droughts:
+
+```python
+mod.streaming_hotfix('/Game/Maps/Zone_0/Prologue/Prologue_P',
+        '/Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl',
+        location=(46488, 22942, -3879),
+        )
+```
+
+`rotation` and `scale` parameters can also be added, though `scale` hasn't
+been very well tested.  `rotation` defaults to `(0,0,0)`, and `scale` defaults
+to `(1,1,1)`:
+
+```python
+mod.streaming_hotfix('/Game/Maps/Zone_0/Prologue/Prologue_P',
+        '/Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl',
+        location=(46488, 22942, -3879),
+        rotation=(0, 180, 0),
+        scale=(1.2, 1.2, 1.2),
+        )
+```
+
+There are a few caveats with using this type of hotfix.  Unfortunately,
+Gearbox's implementation of this hotfix type is somewhat broken, to the extent
+that they have never successfully used it themselves in the live hotfixes.  The
+hotfix includes parameters for location, rotation, and scale (like our
+`streaming_hotfix` function), but the game totally ignores them, and instead
+spawns the object right at location `(0,0,0)` with the default rotation and
+scale.  So mods which want to use this type of hotfix need to "manually" do
+the repositioning themselves.
+
+The `streaming_hotfix` function takes care of this for you automatically.  For
+instance, the first example above generates the following in your mod file:
+
+    SparkEarlyLevelPatchEntry,(1,11,0,Prologue_P),/Game/Maps/Zone_0/Prologue,/Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints,BP_VendingMachine_CrazyEarl,80,"0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+    # Doing repositioning for BP_VendingMachine_CrazyEarl_C_0 in Prologue_P
+    SparkEarlyLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_P.Prologue_P:PersistentLevel.BP_VendingMachine_CrazyEarl_C_0.RootComponent,RelativeLocation,0,,(X=46488.000000,Y=22942.000000,Z=-3879.000000)
+    SparkEarlyLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_P.Prologue_P:PersistentLevel.BP_VendingMachine_CrazyEarl_C_0.RootComponent,RelativeRotation,0,,(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)
+    SparkEarlyLevelPatchEntry,(1,1,1,Prologue_P),/Game/Maps/Zone_0/Prologue/Prologue_P.Prologue_P:PersistentLevel.BP_VendingMachine_CrazyEarl_C_0.RootComponent,RelativeScale3D,0,,(X=1.000000,Y=1.000000,Z=1.000000)
+
+Note the initial type-11 hotfix followed by three positioning hotfixes.  It
+also includes a comment about doing the positioning -- you can disable that
+by passing `quiet_streaming=True` to the initial `Mod` constructor.
+
+One further wrinkle here is that we have to know what sub-object to use to
+reposition the object.  In the example above, that sub-object is `RootComponent`,
+but it varies by type.  The library has a mapping for a number of objects
+(check the `_StreamingBlueprintHelper` class to see the list for yourself), but
+if you try to inject an object the helper doesn't know about, it will raise
+a RuntimeError.  To specify the subobject name yourself, in these cases, use
+the `positioning_obj` parameter to `streaming_hotfix`.  For instance, using
+the initial example:
+
+```python
+mod.streaming_hotfix('/Game/Maps/Zone_0/Prologue/Prologue_P',
+        '/Game/InteractiveObjects/GameSystemMachines/VendingMachine/_Shared/Blueprints/BP_VendingMachine_CrazyEarl',
+        location=(46488, 22942, -3879),
+        positioning_obj='RootComponent',
+        )
+```
+
+If you do discover some mappings which are not in the library yet, please feel
+free to send them along so they can get added to the library!  If you're not sure
+what object name to try, `RootComponent` is a decent first guess, but if that
+doesn't work, you'll have to dig into object serializations to figure out what
+name to use.
+
+Another thing to note is that the object names we use for positioning start with
+an suffix of `_0` for the first one added, and go up by one for each of the same
+type of object added to the map.  This library keeps track of which indexes to use
+when doing the auto-positioning hotfixes.  If more than one mod tries to add the same
+type of object to the same map, though, the mods will have no way of knowing what the
+proper index is.  So, effectively, two mods won't be able to add the same object
+type to the same map, using our current methods.
+
+One *other* thing to note is that this hotfix type *cannot* be used to add objects
+to a map which already contains that object type.  So if a map already has ammo
+vending machines, for instance, you won't be able to add more ammo vending machines.
+
+The final thing to note with this hotfix type is that it *requires* at least B3HM
+v1.0.2 to work properly.  The type-11/streaming hotfix itself seems to require some
+time to fully load into the level, when processing hotfixes, and if the repositioning
+hotfixes happen too soon after the streaming hotfix, the object won't exist yet to
+be repositioned.  So, a delay has to be injected inbetween the streaming hotfix
+and the repositioning hotfix, and B3HM is the only reasonable place where this can
+be accomplished.  So, mods using this type of hotfix *must* use at least v1.0.2 of
+B3HM to work properly.  (The Linux mitmproxy-based `hfinject.py` also supports
+injecting these delay statements properly.)
 
 Data Introspection
 ==================
@@ -346,7 +543,8 @@ information.
 License
 =======
 
-Both bl3hotfixmod and bl3data are licensed under the
-[GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
+As of 2021-08-15, Both bl3hotfixmod and bl3data are licensed under the
+[3-clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
+Prior to that date, they were licensed under [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](COPYING.txt) for the full text of the license.
 

@@ -41,6 +41,16 @@ both of them together (though it shouldn't hurt anything if you *do*).
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.0.1** - Mar 30, 2022
+ * Updated to account for Anathema's new TNTina drop (added via GBX hotfix today)
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.0.0** - Jan 3, 2020
  * Initial release
  

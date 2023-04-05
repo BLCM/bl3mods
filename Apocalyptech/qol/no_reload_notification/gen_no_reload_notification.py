@@ -29,6 +29,7 @@ mod = Mod('no_reload_notification.bl3hotfix',
         [
             "Removes the onscreen prompt to reload, when near the end of a mag.",
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='qol, ui',

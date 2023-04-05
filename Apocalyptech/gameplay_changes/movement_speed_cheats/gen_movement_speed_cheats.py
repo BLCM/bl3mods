@@ -54,6 +54,19 @@ def do_walk(mod, obj_name, val, base, multiplier):
 def do_sprint(mod, obj_name, val, base, multiplier):
     do_move(mod, obj_name, 'MaxSprintSpeed', val, base, multiplier)
 
+def do_crouch(mod, obj_name, val, base, multiplier):
+    do_move(mod, obj_name, 'MaxWalkSpeedCrouched', val, base, multiplier)
+
+def do_ladder_up(mod, obj_name, val, base, multiplier):
+    do_move(mod, obj_name, 'MaxLadderAscendSpeed', val, base, multiplier)
+
+def do_ladder_down(mod, obj_name, val, base, multiplier):
+    do_move(mod, obj_name, 'MaxLadderDescendSpeed', val, base, multiplier)
+
+def do_ffyl(mod, obj_name, val, base, multiplier):
+    do_move(mod, obj_name, 'MaxInjuredSprintSpeed', val, base, multiplier)
+    do_move(mod, obj_name, 'MaxWalkSpeedInjured', val, base, multiplier)
+
 # We're actually generating two separate mods here, in the absence of
 # something like BLCMM
 for (label, suffix, multiplier, desc_override) in [
@@ -61,9 +74,6 @@ for (label, suffix, multiplier, desc_override) in [
             "Sets character (and pet, and Iron Bear) movement speed back to the defaults.",
             "Of use if you want to revert your movement speed after using one of the other",
             "movement speed mods, without having to quit the entire game to do so.",
-            "",
-            "I'd wanted it while testing my No Cryo Penalty mod, so perhaps other mod-makers",
-            "will find it useful in some cirumstances.",
             ]),
         ('Reasonable Improvements', 'reasonable', 1.5, None),
         ('Extreme Improvements', 'extreme', 2.25, None),
@@ -72,10 +82,8 @@ for (label, suffix, multiplier, desc_override) in [
     # Fill in our description
     if desc_override is None:
         mod_desc = [
-                "Increases character (and pet, and Iron Bear) movement speed by {}x,".format(multiplier),
-                "",
-                "Not yet sure how this interacts with stuff like speed while crouching,",
-                "FFYL, climbing ladders, etc.",
+                "Increases character (and pet, and Iron Bear) movement speed by {}x.".format(multiplier),
+                "Includes improvements to FFYL, crouching, and ladder climbing.",
             ]
     else:
         mod_desc = desc_override
@@ -86,24 +94,54 @@ for (label, suffix, multiplier, desc_override) in [
             'Movement Speed Cheats - {}'.format(label),
             'Apocalyptech',
             mod_desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.0.2',
+            v='1.1.0',
             cats='cheat',
             )
 
     # Player Chars
     mod.header('Player Characters')
-    for (label, obj_name) in [
-            ('Beastmaster', '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C'),
-            ('Gunner', '/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C'),
-            ('Operative', '/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C'),
-            ('Siren', '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C'),
+    for (label, dirname, obj_name) in [
+            ('Beastmaster', 'Beastmaster', '/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/BPChar_Beastmaster.Default__BPChar_Beastmaster_C'),
+            ('Gunner', 'Gunner', '/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/BPChar_Gunner.Default__BPChar_Gunner_C'),
+            ('Operative', 'Operative', '/Game/PlayerCharacters/Operative/_Shared/_Design/Character/BPChar_Operative.Default__BPChar_Operative_C'),
+            ('Siren', 'SirenBrawler', '/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Character/BPChar_Siren.Default__BPChar_Siren_C'),
             ]:
 
         mod.comment(label)
         do_walk(mod, obj_name, 470, 470, multiplier)
         do_sprint(mod, obj_name, 720, 720, multiplier)
+        do_crouch(mod, obj_name, 275, 275, multiplier)
+        do_ffyl(mod, obj_name, 200, 200, multiplier)
+        do_ladder_up(mod, obj_name, 200, 200, multiplier)
+        do_ladder_down(mod, obj_name, 160, 160, multiplier)
+        for anim, default_rate in [
+                ('AS_Ladder_Enter', 1),
+                ('AS_Ladder_Enter_Top', 1),
+                ('AS_Ladder_Exit', 1),
+                ('AS_Ladder_Exit_Top', 1),
+                ]:
+            mod.reg_hotfix(Mod.PATCH, '',
+                    '/Game/PlayerCharacters/{}/_Shared/Animation/Generic/Ladders/3rd/{}'.format(dirname, anim),
+                    'RateScale',
+                    '{:g}'.format(default_rate*multiplier))
         mod.newline()
+
+    # Ladder Animations
+    mod.header('Generic Ladder Animations')
+    for anim, default_rate in [
+            ('AS_Ladder_Descend_Exit', 1),
+            ('AS_Ladder_Enter', 1),
+            ('AS_Ladder_Enter_Top', 1),
+            ('AS_Ladder_Exit', 0.7),
+            ('AS_Ladder_Exit_Top', 1),
+            ]:
+        mod.reg_hotfix(Mod.PATCH, '',
+                '/Game/PlayerCharacters/_Shared/Animation/Generic/Ladders/1st/{}'.format(anim),
+                'RateScale',
+                '{:g}'.format(default_rate*multiplier))
+    mod.newline()
 
     # Iron Bear
     mod.header('Iron Bear')

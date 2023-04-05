@@ -1,0 +1,46 @@
+###
+### Name: Crit Manufacture
+### Version: 1.0.0
+### Author: Wayne-The-Brain-McClain
+### Categories: gameplay
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+
+
+
+### Crit changes
+
+# Dahl
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Dahl,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.476
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Dahl,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.65
+
+# Jakobs
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Jakobs,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.466
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Jakobs,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.825
+
+# Hyperion
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Hyperion,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.437
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Hyperion,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.675
+
+# Vladof
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Vladof,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,2.447
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Vladof,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.6
+
+# Tediore
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Tediore,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.52
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Tediore,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.625
+
+# COV
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,CoV,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,2.036
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,CoV,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.6
+
+# Maliwan
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Maliwan,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,0.782
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Maliwan,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.575
+
+# Atlas
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Atlas,DamageScale_36_150C89A04BB4FCF0061CAC86E39E1A39,0,,1.666
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/Weapon_Initialization/DataTable_Weapon_Manufacturer_Base_Data.DataTable_Weapon_Manufacturer_Base_Data,Atlas,CritDamageScale_63_CD26C16D40CD2DDF676270956F04A694,0,,0.6

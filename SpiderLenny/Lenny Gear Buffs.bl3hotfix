@@ -1,0 +1,29 @@
+###
+### Name: Lenny's Assorted Gear Buffs
+### Author: SpiderLenny
+### Categories: cheat,gear-general,gear-shield,gear-artifact,gear-pack,gear-pistol
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###A couple gear mods I made while playing the game. They haven't been extensively tested, but as far as I can tell, all work.
+
+#OmNom Bee
+#Sets the amp drain on the Version.N to 0, making it behave like the Bee from Borderlands 2.
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Raid1/Gear/Balance/DataTable_Raid1_Shields.DataTable_Raid1_Shields,VersionOmNom,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,0
+
+#Moonfire Every Shot Amp
+#Makes every shot Moonfire shoots amped, instead of every third.
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Raid1/Gear/Balance/DataTable_Raid1_Weapons.DataTable_Raid1_Weapons,PS_HandCannon_PT2,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1
+
+#Atom Balm Radius Buff
+#Significantly increases the radius of the explosions that irradiated enemies cause on death. Figured it might give the artifact ability atleast some useful aspects.
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,DMG_AtomBalm_Radius,Multiplier,0,,(BaseValueConstant=0.045,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+#White Elephant Sticky Chance Buff
+#Sets the white elephant's chance to create a sticky bomb on melee hit to 100%, to combat Gearbox's nerf, although it was arguably still usable.
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,LEGENDARY_WhiteElephant_StickyChance,Offset,0,,(BaseValueConstant=1.0,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+#Pestilence Faster Heat Buildup
+#Makes pestilence break very quickly, thus allowing you to proc rad novas significantly faster.
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Contagion/Parts/Part_PS_COV_Barrel_Contagion.Part_PS_COV_Barrel_Contagion,InventoryAttributeEffects.InventoryAttributeEffects[2],0,,(AttributeToModify=GbxAttributeData'"/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse"',ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=10.0,DataTableValue=(DataTable=None,RowName=None,ValueName=None),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.0))

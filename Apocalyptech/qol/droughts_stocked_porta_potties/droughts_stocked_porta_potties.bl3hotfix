@@ -1,14 +1,14 @@
-###
-### Name: Droughts Stocked Porta-Potties
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: qol, maps
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
-### Screenshot: https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/droughts_stocked_porta_potties/screenshot.jpg
-###
+
+@title Droughts Stocked Porta-Potties
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories qol, maps
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://raw.githubusercontent.com/BLCM/bl3mods/master/Apocalyptech/qol/droughts_stocked_porta_potties/screenshot.jpg
 
 ###
 ### Various Porta-Potties throughout The Droughts ordinarily only provide

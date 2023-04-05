@@ -22,6 +22,10 @@ import csv
 import sys
 from bl3data.bl3data import BL3Data
 
+# TODO: When we do the refs DB thing to find bpchars we inherit from, we
+# should probably *only* inject *just* the names that that bpchar has, not
+# also the ones added by SpawnOptions
+
 # This is all a bit hokey, but it seems to work in general.  Current error
 # output, as of 2020-11-09 (note that it may be awhile before I can confirm
 # some of the Alisma errors):

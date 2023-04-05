@@ -28,13 +28,14 @@ import boss
 import ixorabosses
 import argparse
 
+
 OUTPUT='bossrace.bl3hotfix'
 BPCHAR=1
 IXORA_MAP = 'FrostSite_P'
-SEED=None#42
+SEED=None # 42
 CHUBBY=True # include the Chubby mod for Arm's Race
 our_seed = SEED
-version = '0.2.0'
+version = '0.2.1'
 
 
 def parse_args():
@@ -44,6 +45,8 @@ def parse_args():
     parser.add_argument('--nochubby',action='store_true', default=False, help='Disable Chubby Mod')
     parser.add_argument('--bias',action='store_true', default=False, help='Bias Item Rarity against whites')
     parser.add_argument('--nogreen',action='store_true', default=False, help='Disable Green Chest')
+    parser.add_argument('--mitosis',action='store_true', default=False, help='Enable Mitosis Harker')
+    parser.add_argument('--justmitosis',action='store_true', default=False, help='Only generate Mitosis Mod')
     return parser.parse_args()
 
 args = parse_args()
@@ -51,6 +54,12 @@ our_seed = args.seed
 chubby_mod = not args.nochubby
 bias_items = args.bias
 green_chest = not args.nogreen
+mitosis = args.mitosis
+just_mitosis = args.justmitosis
+
+title = 'Boss Race'
+if just_mitosis:
+    title = 'Mitosis Harker'
 
 if our_seed is None:
     our_seed = random.randint(0,2**32-1)
@@ -62,12 +71,12 @@ random.seed(our_seed)
 DFL_LEVEL=Mod.EARLYLEVEL
 output_filename = args.output
 mod = Mod(output_filename,
-          'Boss Race',
+          title,
           'skruntskrunt',
           ["Turns Arm's Race into a weird boss rush"],
           lic=Mod.CC_BY_SA_40,
           v=version,
-          cats='gameplay',
+          cats=['gameplay','armsrace'],
 )
 
 mod.comment(f"Seed {our_seed}")
@@ -75,15 +84,64 @@ EASY="easy"
 MEDIUM="medium"
 HARD="hard"
 
+harker = "/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount"
+# # crashed?
+# harker_pool = [
+#     ("Harker and Pet",'/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount',"/Ixora/Enemies/GearUpBoss/_Shared/Balance/Table_GearUpBoss_Balance","Rider_And_Mount"),
+#     ("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+#     ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+#     ("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+#     ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+# ]
+# 
+# doesn't crash
+harker_pool = [
+    ("Harker and Pet",'/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount',"/Ixora/Enemies/GearUpBoss/_Shared/Balance/Table_GearUpBoss_Balance","Rider_And_Mount"),
+    ("Harker and Pet",'/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount',"/Ixora/Enemies/GearUpBoss/_Shared/Balance/Table_GearUpBoss_Balance","Rider_And_Mount"),
+    ("Harker and Pet",'/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount',"/Ixora/Enemies/GearUpBoss/_Shared/Balance/Table_GearUpBoss_Balance","Rider_And_Mount"),
+]
+# Works but he's sunken?
+# harker_pool = [
+#     ("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+#     ("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+#     ("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+# ]
+# # Works fine
+# harker_pool = [
+#     ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+#     ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+#     ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+# ]
+harker_pool = [
+    #("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+    #("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+    #("Harker","/Ixora/Enemies/GearUpBoss/Rider/_Design/Character/BPChar_FrontRider_Rider",None,None),
+    #("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+    #("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+    ("Harker Pet","/Ixora/Enemies/GearUpBoss/Pet/_Design/Character/BPChar_FrontRider_Pet",None,None),
+    ("Harker and Pet",'/Ixora/Enemies/GearUpBoss/Mount/_Design/Character/BPChar_FrontRider_Mount',"/Ixora/Enemies/GearUpBoss/_Shared/Balance/Table_GearUpBoss_Balance","Rider_And_Mount"),
+]
+
+
+
+
 difficulty_pools = {
     EASY:ixorabosses.easy_bosses,
     MEDIUM:ixorabosses.medium_bosses,
     HARD:ixorabosses.hard_bosses,
     "heavy":ixorabosses.heavy_bosses,
     "all":ixorabosses.safe_bosses,
+    "harker":harker_pool,
 }
 
 # @piggy:~/projects/bl3data/extracted_new/frost-site/pp$ for file in `cat SpawnOptions`; do echo; bash json-of.sh $file | fgrep jwp_object_name | sed -e "s#^#'$file',#"; done | fgrep Factory | sed -e 's/"_jwp_object_name" : //'
+harker_boss_adds = [
+    # ('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "Factory_SpawnFactory_OakAI",0,["harker"]),
+    ('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "SpawnFactory_OakAI_1",1,["harker"]),
+    ('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "SpawnFactory_OakAI_2",2,["harker"]),
+    ('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "SpawnFactory_OakAI_3",3,["harker"]),
+]
+
 raw_ixora_spawn_list = [
     #('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "Factory_SpawnFactory_OakAI",0),
     #('/Ixora/Enemies/_Spawning/GearUpBoss/SpawnOptions_FrontRider_Adds',      "SpawnFactory_OakAI_1",1),
@@ -142,591 +200,6 @@ for entry in  raw_ixora_spawn_list:
 def get_bpchar(s):
     return s.split('/')[-1]
 
-## Doesn't work on heavies in pit
-# params = {
-#     "extend":(70,70,119),
-#     "collision":'AlwaysSpawn',
-#     "UseActorProperties":"True",
-#     'bosses':ixorabosses.heavy_bosses,
-# }
-## Doesn't spawn heavies in pit after first round
-# params = {
-#     "extend":(70,70,119),
-#     # "collision":'AlwaysSpawn',
-#     "collision":'AdjustIfPossibleButDontSpawnIfColliding',
-#     "UseActorProperties":"True",
-#     'bosses':ixorabosses.heavy_bosses,
-# }
-# 
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"True",# maybe coop doesn't see it
-#     'bosses':ixorabosses.safe_bosses,
-# }
-# # no movement of pit spawns
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'bosses':ixorabosses.heavy_bosses,
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-# }
-# # no bugs but no big baddies
-#params = {
-#    "extend":(119,119,119),
-#    'collision':'AdjustIfPossibleButAlwaysSpawn',
-#    "UseActorProperties":"False",# maybe coop doesn't see it
-#    'bosses':ixorabosses.safe_bosses,
-#    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#}
-# 1. crash?
-# 2. still the lock problem :(
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':True,
-# }
-# # someone didn't spawn??
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':False,
-#     'modify_spawnpoints':True,
-# }
-# # spawn issues?
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':False,
-#     'modify_spawnpoints':False,
-# }
-#
-# # some failed spawns?
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':False,
-#     'modify_spawnpoints':False,
-# }
-# # sane
-#params = {
-#    "extend":(119,119,119),
-#    'collision':'AdjustIfPossibleButAlwaysSpawn',
-#    "UseActorProperties":"False",# maybe coop doesn't see it
-#    'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#    'heavy':False,
-#    'modify_spawnpoints':True,
-#}
-# # still didn't work on heavies
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # 
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",# maybe coop doesn't see it
-#     'SpawnOrigin':f'(X={1500},Y={0},Z={100})',
-#     'heavy':False,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# Play with spawn origin
-# # DID NOT SPAWN WELL
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"True",
-#     'SpawnOrigin':f'(X={0},Y={0},Z={0})',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# COOP ISSUES
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"True",
-#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-#     'heavy':False,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-
-# 
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-#     'heavy':False,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # a little weird
-# params = {
-#     "extend":(119,119,119),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
-#     'heavy':False,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-#
-# # Traunt moved but sigdriftia did not.?
-# params = {
-#     "extend":(160,160,160),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # Sigdriftia spawns but doesn't move
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X={1500},Y={100},Z={100})',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # They fall through the map, traunt doesn't though
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-#
-# Nothing spawns
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X=0,Y=0,Z=-100)',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # Some spawning issues
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X=1500,Y=0,Z=-100)',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # Trying none? No spawn
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':'None',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # # No spawn
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":False,
-#     'modify_spawnpoints':False,
-# }
-# # # mod spawn but no special?
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X=1500,Y=0,Z=100)',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":False,
-#     'modify_spawnpoints':True,
-# }
-# # All true? & Z=200 it didn't spawn
-# params = {
-#     "extend":(180,180,180),
-#     'collision':'AdjustIfPossibleButAlwaysSpawn',
-#     "UseActorProperties":"False",
-#     'SpawnOrigin':f'(X=1500,Y=0,Z=200)',
-#     'heavy':True,
-#     "SpawnDetails":True,
-#     "SpecialEffects":True,
-#     'modify_spawnpoints':True,
-# }
-# # ?? well the heavies do spawn :/ but sigdrifia just rotates :(
-# params = {
-#      "extend":(99,99,180),
-#      'collision':'AdjustIfPossibleButAlwaysSpawn',
-#      "UseActorProperties":"False",
-#      'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-#      'heavy':True,
-#      "SpawnDetails":True,
-#      "SpecialEffects":True,
-#      'modify_spawnpoints':True,
-# }
-# # Works OK v0.1.2 was this
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-     'heavy':False,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-}
-# billy the annointed got stuck
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={100},Z={100})',
-     'heavy':False,
-     "SpawnDetails":True,
-     "SpecialEffects":False,
-     'modify_spawnpoints':False,
-}
-# billy worked? No. Not in the pit
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
-     'heavy':False,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-}
-# Disabled Billy
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
-     'heavy':False,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-}
-# added navcollisionsize
-# removed lowercase SpawnExtent
-# didn't spawn in pit?
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# Y to 180
-# Switch to 80,80,80 NavCollision
-# sigdriftia spawns but doesn't move
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=80,Y=80,Z=80)',
-}
-# added NavBox.BoxExtent
-# Rota stands still
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=80,Y=80,Z=80)',
-}
-# 180 NavCollisionSize
-# spawn no move :(
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# 180 extend
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# just always spawn
-# rota doesn't move in WTF
-params = {
-     "extend":(180,180,180),
-     'collision':'AlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={180},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# Just overdo it
-# nope still no movement
-params = {
-     "extend":(1800,1800,1800),
-     'collision':'AlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1800},Y={1800},Z={1800})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=1800,Y=1800,Z=1800)',
-}
-# Nuke it?
-# Rota doesn't move
-params = {
-     "extend":'None',#(180,180,180),
-     'collision':'AlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
-}
-# ok add Adjust
-# no still no movement spawns
-params = {
-     "extend":'None',#(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
-}
-# 200 extend
-# sigdrifia doesn't move
-params = {
-     "extend":(200,200,200),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':'None',#f'(X={1800},Y={1800},Z={1800})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'None',#(X=1800,Y=1800,Z=1800)',
-}
-# tesitng this now
-
-# navbox fix?
-# some sunk into the ground
-params = {
-     "extend":(150,150,150),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={0},Z={180})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# Nothing spawns
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={1500},Z={1500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# Don't touch y Z is still 1500
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1500},Y={0},Z={1500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# make spawn og X bigger
-# they all fell down in WTF
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={2500},Y={0},Z={500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# interesting...
-# spawn don't move but fall down
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={2500},Y={0},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# 0 out X
-# spawn no move
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={0},Y={0},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# try -500 X
-# spawn no move fall
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={-500},Y={0},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# OK try use actor properties
-# spawn no move fall :(
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"True",
-     'SpawnOrigin':f'(X={-500},Y={-500},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-}
-# Hmmm last successful play
-params = {
-     "extend":(99,99,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={180})',
-     'heavy':False,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':True,
-}
-# heavy test with IrrelevantAction
-# didn't move
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-     'IrrelevantAction':True,     
-}
-# Now with critical
-# Respawn
-params = {
-     "extend":(180,180,180),
-     'collision':'AdjustIfPossibleButAlwaysSpawn',
-     "UseActorProperties":"False",
-     'SpawnOrigin':f'(X={1000},Y={0},Z={-500})',
-     'heavy':True,
-     "SpawnDetails":True,
-     "SpecialEffects":True,
-     'modify_spawnpoints':True,
-     'NavCollisionSize':'(X=180,Y=180,Z=180)',
-     'IrrelevantAction':True,
-     'Critical':'Critical',
-     'RespawnStyle':True,
-}
 # works
 params = {
      "extend":(99,99,180),
@@ -744,21 +217,24 @@ params = {
 
 
 
-def make_ixora_spawns():
+def make_ixora_spawns(params,raw_ixora_spawn_list):
     done_so = set()
     for entry in raw_ixora_spawn_list:
         row,factory,idx,pools = entry
         so = row
         # 'Options.Options[{}].Factory.Object..AIActorClass'.format(rev(c,idx))
         pool = "all"
-        if params["heavy"]:
+        if params.get("heavy",False):
             pool = "heavy"
+        elif params.get("pool",False):
+            pool = params["pool"]
         elif len(pools) > 0:
             pool = random.choice(pools)
         mod.comment(f"From Pool: {pool}")
         mob = random.choice(difficulty_pools[pool])
         bpchar = mob[BPCHAR]
-        mod.comment(f"so:{row} factory:{factory} bpchar:{bpchar}")
+        mod.comment(f"so:{row} factory:{factory}")
+        mod.comment(f"bpchar:{bpchar}")
         mod.reg_hotfix(Mod.EARLYLEVEL,
                        IXORA_MAP,
                        row,
@@ -831,7 +307,7 @@ def make_ixora_spawns():
 #         "bOverrideCritical" : true
 #      },
 
-def modify_spawnpoints():
+def modify_spawnpoints(params):
     spawnpoints = json.load(open('spawnpoints.json'))
     pp_ixora_path = f"/Ixora/Maps/FrostSite/FrostSite_Combat.FrostSite_Combat:PersistentLevel"
     objvals =  [('SpawnAction','None'),
@@ -919,20 +395,36 @@ def change_chest_rarity(change_key=False):
         mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, smg_equippable, smg_key2, smg_v2)
         mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, pistol_equippable, pistol_key2, pistol_v2)
         mod.reg_hotfix(DFL_LEVEL, IXORA_MAP, shield_equippable, shield_key2, shield_v2)
+
+def gen_mitosis_harker(params):
+    mparams = params.copy()
+    mparams["pool"] = "harker"
+    mod.comment("And now for mitosis harker")
+    make_ixora_spawns(mparams, harker_boss_adds)
+
+def gen_boss_race(params, raw_ixora_spawn_list):
+    make_ixora_spawns(params, raw_ixora_spawn_list)
     
-make_ixora_spawns()
-if params.get("modify_spawnpoints",False):
-    modify_spawnpoints()
-
-if chubby_mod:
-    mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
-
-if bias_items:
-    bias_item_rarity()
-
-if green_chest:
-    change_chest_rarity()
+    if mitosis:
+        gen_mitosis_harker(params)
     
+    if params.get("modify_spawnpoints",False):
+        modify_spawnpoints(params)
+    
+    if chubby_mod:
+        mod.raw_line(open("ixorachubby.bl3hotfix.txt").read())
+    
+    if bias_items:
+        bias_item_rarity()
+    
+    if green_chest:
+        change_chest_rarity()
+    
+if just_mitosis:
+    gen_mitosis_harker(params)    
+else:
+    gen_boss_race(params, raw_ixora_spawn_list)
+
 mod.close()
 
 # TODOS

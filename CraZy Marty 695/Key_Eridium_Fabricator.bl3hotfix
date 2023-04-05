@@ -1,0 +1,125 @@
+###
+### Name: Key Eridium Fabricator
+### Version: 1.0.0
+### Author: CraZy Marty 695
+### Contact (Discord): CraZy Marty 695#7819
+### Categories: cheat, joke, loot-sources
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Based off of Apocalyptech's Eridium Fabricator mod 
+### 
+### This makes the Standard Fire of the Eridian Fabricator shoot four projectiles that are a mix
+### of Diamond Keys, Fallen Heros Keys (Vault Card 1), Welcome to Pandora Keys (Vault Card 2), and Money
+### Shots cost 1 Eridium
+###
+### It keeps the orignal function of Apocalyptech's Eridium Fabricator Legendary fire which makes it shoot out
+### a shotgun blast of 8 Eridium Stacks.
+### Shots are 0 cost
+###
+### The keys all have a value of 100 and the eridium stack has a value of 10,000,000 (80,000,000 in one blast) 
+### The Keys are auto-pickup and shared with everyone in the lobby
+### The Money is multplied by 500 
+###
+### The Recoil is also removed from the gun
+### 
+
+###
+### Global Definitions
+###
+
+# Weapon Name
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/WT_EridianFabricator.WT_EridianFabricator,InventoryName,0,,Key Eridium Fabricator
+
+# Item Card
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Firing/UIStat_EridianFabricator_02.UIStat_EridianFabricator_02,FormatText,0,,Shoots [skill]Keys[/skill] instead of bullets!
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Firing/UIStat_EridianFabricator_03.UIStat_EridianFabricator_03,FormatText,0,,Shoots [skill]Eridium[/skill] instead of bullets!
+
+# Remove Recoil
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..PatternHeightScale.BaseValue,0,,0.0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..PatternWidthScale.BaseValue,0,,0.0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..RecoilSpeed,0,,0
+
+###
+### Eridium (Amount) Value
+###
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Single.InvData_Eridium_Single,MonetaryValue,0,,(BaseValueConstant=1000000.0)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Ingot.InvData_Eridium_Ingot,MonetaryValue,0,,(BaseValueConstant=1000000.0)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Stack.InvData_Eridium_Stack,MonetaryValue,0,,(BaseValueConstant=10000000.0)
+
+###
+### Key (Amount) and Money (Multiplier) Value
+###
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Data/Currency/InvData_DiamondKey.InvData_DiamondKey,MonetaryValue,0,,(BaseValueConstant=100.0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Data/Currency/InvData_VaultCard01Key_3.InvData_VaultCard01Key_3,MonetaryValue,0,,(BaseValueConstant=100.0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Data/Currency/InvData_VaultCard2Key_3.InvData_VaultCard2Key_3,MonetaryValue,0,,(BaseValueConstant=100.0)
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SingleStack.InvData_Money_SingleStack,MonetaryValue,0,,(BaseValueScale=500)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_TripleStack.InvData_Money_TripleStack,MonetaryValue,0,,(BaseValueScale=500)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Single.InvData_Money_SlotMachine_Single,MonetaryValue,0,,(BaseValueScale=500)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Double.InvData_Money_SlotMachine_Double,MonetaryValue,0,,(BaseValueScale=500)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Triple.InvData_Money_SlotMachine_Triple,MonetaryValue,0,,(BaseValueScale=500)
+
+# Auto-Pickup
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_DiamondKey.InventoryCategory_DiamondKey,PickupActionType,0,,OnUseOrTouch
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard1Key.InventoryCategory_VaultCard1Key,PickupActionType,0,,OnUseOrTouch
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard2Key.InventoryCategory_VaultCard2Key,PickupActionType,0,,OnUseOrTouch
+
+# Shared Pickups
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_DiamondKey.InventoryCategory_DiamondKey,SharedWithAllPlayers,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard1Key.InventoryCategory_VaultCard1Key,SharedWithAllPlayers,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard2Key.InventoryCategory_VaultCard2Key,SharedWithAllPlayers,0,,true
+
+###
+### Regular Fire
+###
+
+# Mode Label
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/UIModeName_Fabricator_PrimaryFire.UIModeName_Fabricator_PrimaryFire,Text,0,,Key Hose
+
+# One Grouping per shot and set cost to one Eridium 
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorProjectilesPerShot.Att_FabricatorProjectilesPerShot,ValueResolver.Object..Value.BaseValueConstant,0,,1
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorShotCost.Att_FabricatorShotCost,ValueResolver.Object..Value.BaseValueConstant,0,,1
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..ShotAmmoCost.BaseValue,0,,0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..MinShotAmmoCost,0,,0
+
+# Full Auto
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[1].Object..WeaponUseComponent.Object..AutomaticBurstCount.BaseValue,0,,0
+
+# Fire Rate
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[1].Object..WeaponUseComponent.Object..FireRate.BaseValue,0,,6
+
+# Setting the item pool
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns.ItemPool_FabricatorGuns,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_VaultCard01Key_3,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_VaultCard01Key_3"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/VaultCard2/Data/Currency/InventoryBalance_VaultCard2Key_3,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard2/Data/Currency/InventoryBalance_VaultCard2Key_3"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_DiamondKey.InventoryBalance_DiamondKey,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_DiamondKey.InventoryBalance_DiamondKey"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money_Rich.ItemPool_Money_Rich"',Weight=(BaseValueConstant=0.25)))
+
+# Shot Modifier (BaseValueConstant for Amount, BaseValueScale for Multiplier)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns.ItemPool_FabricatorGuns,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+###
+### Legendary Fire
+###
+
+# Mode Label
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/UIModeName_Fabricator_AltFire.UIModeName_Fabricator_AltFire,Text,0,,Eridium Stack Blast
+
+# Full Auto
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..AutomaticBurstCount.BaseValue,0,,0
+
+# Fire Rate
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..FireRate.BaseValue,0,,1.5
+
+# Firing Cost
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..ShotAmmoCost.BaseValue,0,,0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..MinShotAmmoCost,0,,0
+
+# Setting the item pool
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns_AltFire.ItemPool_FabricatorGuns_AltFire,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',Weight=(BaseValueConstant=1)))
+
+# Shot Modifier (BaseValueConstant for Amount, BaseValueScale for Multiplier)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns_AltFire.ItemPool_FabricatorGuns_AltFire,Quantity,0,,(BaseValueConstant=8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)

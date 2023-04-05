@@ -1,12 +1,12 @@
-###
-### Name: No Slam-based Artifacts
-### Version: 1.0.0
-### Author: Apocalyptech
-### Categories: gear-general, gear-artifact
-###
-### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-### License URL: https://creativecommons.org/licenses/by-sa/4.0/
-###
+
+@title No Slam-based Artifacts
+@version 1.0.0
+@author Apocalyptech
+@contact https://apocalyptech.com/contact.php
+@categories gear-general, gear-artifact
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
 
 ###
 ### Makes non-legendary/unique artifacts never have slam effects.

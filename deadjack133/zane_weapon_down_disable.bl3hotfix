@@ -1,0 +1,28 @@
+@title Zane Weapon Down Animation Disable
+@version 1.0.0
+@author deadjack
+@categories qol
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### Huge thanks to "apocalyptech" for helping me.
+###
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#Disable rifle animations (shotguns, AR, SMG etc)
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[25],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[92],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[94],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[96],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[97],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/ASet_Operative_Rifle_3rd.ASet_Operative_Rifle_3rd,AnimationList.AnimationList_Value[98],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Rifle/_Shared/3rd/AS_RH_Idle.AS_RH_Idle"'
+
+#Disable pistol animations
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/ASet_Operative_Pistol_3rd.ASet_Operative_Pistol_3rd,AnimationList.AnimationList_Value[76],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/_Shared/3rd/AS_PS_Idle.AS_PS_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/ASet_Operative_Pistol_3rd.ASet_Operative_Pistol_3rd,AnimationList.AnimationList_Value[80],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/_Shared/3rd/AS_PS_Idle.AS_PS_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/ASet_Operative_Pistol_3rd.ASet_Operative_Pistol_3rd,AnimationList.AnimationList_Value[82],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/_Shared/3rd/AS_PS_Idle.AS_PS_Idle"'
+SparkPatchEntry,(1,1,0,),/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/ASet_Operative_Pistol_3rd.ASet_Operative_Pistol_3rd,AnimationList.AnimationList_Value[96],,0,AnimSequence'"/Game/PlayerCharacters/Operative/_Shared/Animation/Pistol/_Shared/3rd/AS_PS_Idle.AS_PS_Idle"'

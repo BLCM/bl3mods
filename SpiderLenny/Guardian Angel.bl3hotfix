@@ -1,0 +1,13 @@
+###
+### Name: Guardian 4N631 No Longer Long Distance
+### Author: SpiderLenny
+### Categories: gear-shotgun, cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+
+#Makes guardian angel always apply it's full damage bonus, regardless of distance to enemy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/CDM_Guardian.CDM_Guardian,bModifyValueBasedOnDistance,0,,false
+

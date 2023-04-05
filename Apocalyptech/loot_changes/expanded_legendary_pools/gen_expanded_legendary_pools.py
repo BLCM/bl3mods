@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2022 Christopher J. Kucera
 # <cj@apocalyptech.com>
-# <http://apocalyptech.com/contact.php>
+# <https://apocalyptech.com/contact.php>
 #
 # This Borderlands 3 Hotfix Mod is free software: you can redistribute it
 # and/or modify it under the terms of the GNU General Public License
@@ -21,7 +21,7 @@
 
 import sys
 sys.path.append('../../../python_mod_helpers')
-from bl3hotfixmod.bl3hotfixmod import Mod
+from bl3hotfixmod.bl3hotfixmod import Mod, BVCF, DataTableValue
 
 ###
 ### A lot of this mod is duplicated in gen_manufacturer_lock.py now.
@@ -59,8 +59,9 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
             'Adds all uniques and stuff (minus a few exceptions) into the legendary drop pools,',
             'at a reduced rate compared to the legendaries already in there.',
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
-        v='1.4.0',
+        v='1.6.1',
         cats='loot-system, enemy-drops',
         )
 
@@ -126,7 +127,7 @@ mod = Mod('expanded_legendary_pools.bl3hotfix',
 # They're visually identical, so we're not gonna bother having this one in here.
 #    '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'
 #
-# There's a `_FixedParts` variant for all Vault Card #1 items, which I think is just the version that's shown when
+# There's a `_FixedParts` variant for all Vault Card items, which I think is just the version that's shown when
 # you inspect it on the card.  Not bothering with those.
 
 addition_scale = 0.6
@@ -258,6 +259,14 @@ pools = [
 
                 # Hotfoot Teddy
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/HotfootTeddy/Balance/Balance_AR_TOR_Hotfoot', 1),
+
+                ### Vault Card 3
+
+                # Blade Fury
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/BladeFury/Balance/Balance_AR_JAK_BladeFury', 1),
+
+                # Creeping Corruption
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/Corruption/Balance/Balance_DAL_AR_Corruption', 1),
 
                 ### Additions
 
@@ -508,6 +517,11 @@ pools = [
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Deatomizer/Balance/Balance_PS_MAL_Deatomizer', 1),
                 # Atlas Replay
                 ('/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique/Replay/Balance/Balance_PS_ATL_Replay', 1),
+
+                ### Vault Card 3
+
+                # TNTina
+                ('/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/Balance/Balance_PS_TOR_TinyTinaGun', 1),
 
                 ### Additions
 
@@ -831,6 +845,14 @@ pools = [
                 # Torrent
                 ('/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Torrent/Balance/Balance_SM_DAL_Torrent', 1),
 
+                ### Vault Card 2
+
+                # Gold Rush
+                ('/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/GoldRush/Balance/Balance_SM_HYP_GoldRush', 1),
+
+                # Troubleshooter
+                ('/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troubleshooter/Balance/Balance_SM_HYP_ETech_Troubleshooter', 1),
+
                 ### Additions
 
                 # Hellfire
@@ -1088,6 +1110,11 @@ pools = [
                 # Infernal Wish
                 ('/Game/PatchDLC/Ixora/Gear/Shields/_Unique/InfernalWish/Balance/InvBalD_Shield_InfernalWish', 1),
 
+                ### Vault Card 3
+
+                # Mana Well
+                ('/Game/PatchDLC/VaultCard3/Gear/Shields/Unique/Manawell/Balance/InvBalD_Shield_Pangolin_Manawell', 1),
+
                 ### Additions
 
                 # Frozen Heart
@@ -1195,6 +1222,18 @@ pools = [
                 ('/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Mesmer/Balance/InvBalD_GM_Mesmer', 1),
                 # Ringer / The Big Ringer / Dead Ringer
                 ('/Game/PatchDLC/Ixora2/Gear/GrenadeMods/_Unique/Ringer/Balance/InvBalD_GM_Ringer', 1),
+
+                ### Vault Card 2
+
+                # Pyroburst
+                ('/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/Balance/InvBalD_GM_Pyroburst', 1),
+
+                ### Vault Card 3
+
+                # Bloodsucker
+                ('/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Bloodsucker/Balance/InvBalD_GM_Bloodsucker', 1),
+                # Sidewinder
+                ('/Game/PatchDLC/VaultCard3/Gear/GrenadeMods/Unique/Sidewinder/Balance/InvBalD_GM_Sidewinder', 1),
 
                 ### Additions
 
@@ -1376,6 +1415,11 @@ pools = [
                 # Toboggan
                 ('/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Balance/InvBalD_Artifact_Toboggan', 1),
 
+                ### Vault Card 2
+
+                # Shlooter
+                ('/Game/PatchDLC/VaultCard2/Gear/Artifacts/Unique/Shlooter/Balance/InvBalD_Artifact_Shlooter', 1),
+
                 ### Additions
 
                 # Unleash the Dragon
@@ -1424,6 +1468,36 @@ for idx, label, weight in sorted(legendary_weight_params):
             '/Game/GameData/Loot/ItemPools/Guns/ItemPool_Guns_Legendary',
             f'BalancedItems.BalancedItems[{idx}].Weight.BaseValueConstant',
             round(weight, 6))
+mod.newline()
+
+# A handful of DLC artifacts don't have a MinGameStage defined (or rather, it's set to 1),
+# as opposed to most gear's 27.  This can cause problems for someone using this mod in
+# Normal mode *without* my Early Bloomer mod -- prior to gamestage 27, the Artifact pools
+# become valid drops, but the only available artifacts would be these.  So, those users
+# would start seeing mysterious legendary artifacts pop up with surprising frequency.
+# So, this hooks those artifacts up to the main-game DataTable, so that they play nicely
+# with or without Early Bloomer.
+#
+# The Mysterious Amulet here will never spawn ordinarily -- it's the unreleased DLC5 version
+# of the Mysterious Artifact which was properly released with DLC6.  But, we may as well do
+# it here, too, since we're doing the others.
+mod.header('Fix various artifact MinGameStage entries')
+mingamestage = BVCF(dtv=DataTableValue(
+    table='/Game/GameData/Loot/LootSchedule/DataTable_GameStage_Schedule',
+    row='Artifacts',
+    value='MinGameStage_17_2500317646FAD2F4916D158835B29E83',
+    ))
+for name, balance in [
+        ('Lunacy', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/Lunacy/Balance/InvBalD_Artifact_Lunacy'),
+        ('Mysterious Amulet', '/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
+        ('Mysterious Artifact', '/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/MysteriousAmulet/Balance/InvBalD_Artifact_MysteriousAmulet'),
+        ('Pearl of Ineffable Knowledge', '/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Balance/InvBalD_Artifact_PUK'),
+        ('Vendetta', '/Game/PatchDLC/Geranium/Gear/Artifacts/_Design/_Unique/Vengeance/Balance/InvBalD_Artifact_Vengeance'),
+        ]:
+    mod.reg_hotfix(Mod.PATCH, '',
+            balance,
+            'Manufacturers.Manufacturers[0].GameStageWeight.MinGameStage',
+            mingamestage)
 mod.newline()
 
 mod.close()

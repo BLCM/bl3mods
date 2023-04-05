@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2021 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -112,8 +112,9 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             'Expanded Customization Pools: {}'.format(label),
             'Apocalyptech',
             full_desc,
+            contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.4.0',
+            v='1.6.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -166,63 +167,92 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
 
         pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Skins/ItemPool_Customizations_Skins_Loot_{shortname}.ItemPool_Customizations_Skins_Loot_{shortname}'
         balances = []
+
         # Base Game
-        blacklist = {
+        blocklist = {
                 # These indexes plain ol' don't exist
                 33, 38, 40,
                 # 34 is retro pack, 35 is neon pack 
                 34, 35,
                 }
         if not drop_earl:
-            blacklist |= {5, 7, 8, 9, 10, 11, 13, 14, 15, 18, 39}
+            blocklist |= {5, 7, 8, 9, 10, 11, 13, 14, 15, 18, 39}
         if not drop_mission:
-            blacklist |= {29, 30, 31, 32, 36}
+            blocklist |= {29, 30, 31, 32, 36}
         for num in range(1, 44):
-            if num not in blacklist:
+            if num not in blocklist:
                 balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+
         # Bloody Harvest
         balances.append(f'/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_40.InvBal_CustomSkin_{shortname}_40')
+
         # Maliwan Takedown
         balances.append(f'/Game/PatchDLC/Raid1/PlayerCharacters/_Customizations/{shortname}/CustomSkin_{shortname}_45.InvBal_CustomSkin_{shortname}_45')
+
         # DLC1 - Dandelion
         for num in [44, 46]:
             balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+
         # Broken Hearts
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_50.InvBal_CustomSkin_{shortname}_50')
-        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blacklist
+
+        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC2_01.InvBal_CustomSkin_{shortname}_DLC2_01')
+
         # Citizen Science stuff (came long with DLC2)
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_CS.InvBal_CustomSkin_{shortname}_CS')
+
         # Revenge of the Cartels
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_47.InvBal_CustomSkin_{shortname}_47')
+
         # Guardian Takedown
         balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/PlayerSkins/CustomSkin_{shortname}_52.InvBal_CustomSkin_{shortname}_52')
-        # DLC3 - Geranium - TODO: need to figure out if this should be in a blacklist
+
+        # DLC3 - Geranium - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerSkin/CustomSkin_{shortname}_DLC3_1.InvBal_CustomSkin_{shortname}_DLC3_1')
-        # DLC4 - Alisma - TODO: need to figure out if this should be in a blacklist
+
+        # DLC4 - Alisma - TODO: need to figure out if this should be in a blocklist
         # Note the stupidity with the names here...
         if shortname == 'Operative' or shortname == 'Siren':
             alisma_underscore = '__'
         else:
             alisma_underscore = '_'
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_DLC4_01.InvBal_CustomSkin_{shortname}{alisma_underscore}DLC4_01')
+
         # Bloody Harvest 2020
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_63.InvBal_CustomSkin_{shortname}_63')
-        # DLC5 - Ixora - TODO: need to figure out if this should be in a blacklist
+
+        # DLC5 - Ixora - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Ixora/PlayerCharacters/_Customizations/PlayerSkins/Skin62/CustomSkin_{shortname}_62.InvBal_CustomSkin_{shortname}_62')
+
         # Broken Hearts 2021 + Others
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomSkin_{shortname}_65.InvBal_CustomSkin_{shortname}_65')
         balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Skins/CustomSkin_{shortname}_61.InvBal_CustomSkin_{shortname}_61')
-        # DLC6 - Ixora2 - TODO: need to figure out if this should be in a blacklist
+
+        # DLC6 - Ixora2 - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Ixora2/PlayerCharacters/_Shared/Skins/CustomSkin_{shortname}_66.InvBal_CustomSkin_{shortname}_66')
+
         # Vault Card #1
         if drop_vaultcard:
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_67.InvBal_CustomSkin_{shortname}_67')
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_68.InvBal_CustomSkin_{shortname}_68')
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_69.InvBal_CustomSkin_{shortname}_69')
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomSkin_{shortname}_70.InvBal_CustomSkin_{shortname}_70')
+
         # Cartels 2021
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Skins/CustomSkin_{shortname}_48.InvBal_CustomSkin_{shortname}_48')
+
+        # Vault Card #2
+        if drop_vaultcard:
+            for num in [75, 76, 77, 78]:
+                balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+
+        # Vault Card #3
+        if drop_vaultcard:
+            for num in [71, 72, 73, 74]:
+                balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
+        # w/ VC3 data
+        balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/_Shared/Skins/CustomSkin_{shortname}_38.InvBal_CustomSkin_{shortname}_38')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -237,44 +267,73 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
 
         pool_name = f'/Game/Pickups/Customizations/_Design/ItemPools/Heads/ItemPool_Customizations_Heads_Loot_{shortname}.ItemPool_Customizations_Heads_Loot_{shortname}'
         balances = []
+
         # Base Game
-        blacklist = {
+        blocklist = {
                 # These indexes just plain ol' don't exist
                 2, 3, 25
                 }
         if not drop_earl:
-            blacklist |= {7, 9, 10, 11, 12, 13, 14, 16, 18, 19}
+            blocklist |= {7, 9, 10, 11, 12, 13, 14, 16, 18, 19}
         if not drop_mission:
-            blacklist |= {5, 20, 21, 22, 23, 24}
+            blocklist |= {5, 20, 21, 22, 23, 24}
         for num in range(1, 27):
-            if num not in blacklist:
+            if num not in blocklist:
                 balances.append(f'/Game/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+
         # Bloody Harvest, Ordering Bonuses, etc
         # 28 is retro pack, 29 is neon pack (26 doesn't exist)
         for num in [25, 27]:
             balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+
         # DLC1 - Dandelion
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
+
         # Broken Hearts (actually a Twitch Prime reward, most likely)
         balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
-        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blacklist
+
+        # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC2_01.InvBal_CustomHead_{shortname}_DLC2_01')
+
         # Citizen Science stuff (came long with DLC2)
         balances.append(f'/Game/PatchDLC/CitizenScience/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_CS.InvBal_CustomHead_{shortname}_CS')
+
         # Revenge of the Cartels
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_34.InvBal_CustomHead_{shortname}_34')
+
         # Guardian Takedown
         balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/CustomHeads/CustomHead46/CustomHead_{shortname}_46.InvBal_CustomHead_{shortname}_46')
-        # DLC3 - Geranium - TODO: need to figure out if this should be in a blacklist
+
+        # DLC3 - Geranium - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerHead/CustomHead38/CustomHead_{shortname}_38.InvBal_CustomHead_{shortname}_38')
-        # DLC4 - Alisma - TODO: need to figure out if this should be in a blacklist
+
+        # DLC4 - Alisma - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC4_01.InvBal_CustomHead_{shortname}_DLC4_01')
+
         # Introduced in Broken Hearts 2021, though not actually Broken Hearts...
         for num in [33, 35, 36, 37]:
             balances.append(f'/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Customizations/{shortname}/Heads/DA_{abbrev}Head{num}.InvBal_DA_{abbrev}Head{num}')
-        # Vault Card 1
+
+        # Vault Cards
         if drop_vaultcard:
+            # Vault Card 1
             balances.append(f'/Game/PatchDLC/VaultCard/PlayerCharacters/_Shared/CustomHeads/CustomHead47/CustomHead_{shortname}_47.InvBal_CustomHead_{shortname}_47')
+            # Vault Card 2
+            balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/_Shared/CustomHeads/CustomHead_{shortname}_49.InvBal_CustomHead_{shortname}_49')
+            # Vault Card 3
+            balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/_Shared/CustomHeads/CustomHead_{shortname}_48.InvBal_CustomHead_{shortname}_48')
+
+        # Introduced with VC2 but not actually *on* VC2
+        balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/{dirname}/Heads/DA_{abbrev}Head03.InvBal_DA_{abbrev}Head03')
+
+        # Introduced with VC3 but not actually *on* VC3
+        for num in [40, 41, 42, 44]:
+            if shortname == 'Siren' and num == 44:
+                # The Siren head here has a slightly different path for... reasons?
+                balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/Heads/{abbrev}Head{num}/DA_{abbrev}Head44.InvBal_DA_{abbrev}Head{num}')
+            else:
+                balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/Heads/DA_{abbrev}Head{num}.InvBal_DA_{abbrev}Head{num}')
+        balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/_Shared/CustomHeads/CustomHead_{shortname}_32.InvBal_CustomHead_{shortname}_32')
 
         # Now output
         mod.comment(f'{shortname} Heads')
@@ -289,27 +348,41 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
 
     balances = []
     # Base Game
-    blacklist = {
+    blocklist = {
             # 21 is gold pack, 22 is gbx pack, 23 is retro pack, 24 is butt stallion pack
             21, 22, 23, 24,
             }
     if not drop_earl:
-        blacklist |= {1, 2, 8, 12, 13, 14, 15, 16, 20}
+        blocklist |= {1, 2, 8, 12, 13, 14, 15, 16, 20}
     for num in range(1, 26):
-        if num not in blacklist:
+        if num not in blocklist:
             balances.append(f'/Game/Gear/WeaponSkins/_Design/SkinParts/WeaponSkin_{num}.InvBal_WeaponSkin_{num}')
+
     # Bloody Harvest
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_01.InvBal_WeaponSkin_BloodyHarvest_01')
+
     # Broken DLC3 weapon skin; not adding it!
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponSkin/WeaponSkin_DLC3_1.InvBal_WeaponSkin_DLC3_1')
+
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponSkins/WeaponSkin_BloodyHarvest_02.InvBal_WeaponSkin_BloodyHarvest_02')
+
     # Vault Card 1
     if drop_vaultcard:
         for num in [1, 2, 3]:
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/WeaponSkin/WeaponSkin_VC1_{num}.InvBal_WeaponSkin_VC1_{num}')
+
     # Cartels 2021
     balances.append(f'/Game/PatchDLC/Event2/Gear/_Design/WeaponSkins/WeaponSkin_Event2_2.InvBal_WeaponSkin_Event2_2')
+
+    # Vault Card 2
+    if drop_vaultcard:
+        balances.append(f'/Game/PatchDLC/VaultCard2/Gear/_Design/WeaponSkins/WeaponSkin_VC2_1.InvBal_WeaponSkin_VC2_1')
+
+    # Vault Card 3
+    if drop_vaultcard:
+        for num in [1, 2, 3]:
+            balances.append(f'/Game/PatchDLC/VaultCard3/Gear/_Design/WeaponSkins/WeaponSkin_VC3_{num}.InvBal_WeaponSkin_VC3_{num}')
 
     # Now output
     mod.comment('Weapon Skins')
@@ -322,56 +395,86 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     ###
 
     balances = []
+
     # Base Game
-    blacklist = {
+    blocklist = {
             # These indexes plain ol' don't exist
             1, 23, 36, 55, 56,
             # 51 is gold pack, 52 is neon pack, 53 is butt stallion pack, 54 is gbx pack, 58 is toy box pack
             51, 52, 53, 54, 58,
             }
     if not drop_earl:
-        blacklist |= {5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 24, 27, 31, 34, 41}
+        blocklist |= {5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 24, 27, 31, 34, 41}
     if not drop_mission:
-        blacklist |= {6, 20, 22, 28, 29, 30}
+        blocklist |= {6, 20, 22, 28, 29, 30}
     for num in range(1, 59):
-        if num not in blacklist:
+        if num not in blocklist:
             balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
+
     # Uncategorized DLC
     balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
+
     # Bloody Harvest
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1')
+
     # DLC1 - Dandelion
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_01_JackGoldenMask.InvBal_Trinket_Dandelion_01_JackGoldenMask')
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_02_Mimic.InvBal_Trinket_Dandelion_02_Mimic')
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
+
     # Broken Hearts
     balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1')
-    # DLC2 - Hibiscus - TODO: Need to figure out if these should be on a blacklist
+
+    # DLC2 - Hibiscus - TODO: Need to figure out if these should be on a blocklist
     balances.append('/Game/PatchDLC/Hibiscus/Gear/WeaponTrinkets/_Shared/Trinket_Hibiscus_01_Squidly.InvBal_Trinket_Hibiscus_01_Squidly')
     balances.append('/Game/PatchDLC/Hibiscus/Gear/WeaponTrinkets/_Shared/Trinket_Hibiscus_02_Necrocookmicon.InvBal_Trinket_Hibiscus_02_Necrocookmicon')
+
     # DLC2 Email reward of some sort?  Keeping it out for now, but I'm guessing that Not Everyone actually gets it?
     #balances.append('/Game/PatchDLC/Steam/Gear/WeaponTrinkets/WeaponTrinket_SteamPunk.InvBal_WeaponTrinket_SteamPunk')
+
     # Revenge of the Cartels
     balances.append('/Game/PatchDLC/Event2/Gear/_Design/WeaponTrinkets/WeaponTrinket_Cartels_1.InvBal_WeaponTrinket_Cartels_1')
+
     # DLC3 - Geranium - Commenting these because they're currently broken
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponTrinket/WeaponTrinket_DLC3_1.InvBal_WeaponTrinket_DLC3_1')
     #balances.append('/Game/PatchDLC/Geranium/Customizations/WeaponTrinket/WeaponTrinket_DLC3_2.InvBal_WeaponTrinket_DLC3_2')
-    # DLC4 - Alisma - TODO: Need to figure out if these should be on a blacklist
+
+    # DLC4 - Alisma - TODO: Need to figure out if these should be on a blocklist
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_01.InvBal_Trinket_DLC4_Trinket_01')
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/Trinket_DLC4_Trinket_02.InvBal_Trinket_DLC4_Trinket_02')
+
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/Alisma/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2020.InvBal_Trinket_League_BloodyHarvest_2020'),
-    # DLC5 - Ixora - TODO: Need to figure out if these should be on a blacklist
+
+    # DLC5 - Ixora - TODO: Need to figure out if these should be on a blocklist
     balances.append('/Game/PatchDLC/Ixora/Gear/Weapons/WeaponTrinkets/_Design/WeaponTrinket_GearUp.InvBal_WeaponTrinket_GearUp')
+
     # Broken Hearts 2021 + Others
     balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_2.InvBal_Trinket_League_VDay_2')
     balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_Twitch.InvBal_Trinket_Twitch')
+
     # Vault Card 1
     if drop_vaultcard:
         for num in [1, 2, 3, 4]:
             balances.append(f'/Game/PatchDLC/VaultCard/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC1_{num}.InvBal_WeaponTrinket_VC1_{num}')
+
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/Gear/_Design/WeaponTrinkets/WeaponTrinket_Cartels_2021.InvBal_WeaponTrinket_Cartels_2021')
+
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4, 5, 6]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC2_{num}.InvBal_WeaponTrinket_VC2_{num}')
+    
+    # Vault Card 3
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4, 5]:
+            balances.append(f'/Game/PatchDLC/VaultCard3/Gear/WeaponTrinkets/_Design/WeaponTrinket_VC3_{num}.InvBal_WeaponTrinket_VC3_{num}')
+
+    # Included in VC3 data but not actually VC
+    for num in [1, 3, 4, 5]:
+        balances.append(f'/Game/PatchDLC/VaultCard3/Gear/_Design/WeaponTrinkets/WeaponTrinket_BattlePass_{num}.InvBal_WeaponTrinket_BattlePass_{num}')
+    balances.append('/Game/PatchDLC/VaultCard3/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2.InvBal_Trinket_League_BloodyHarvest_2')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -384,56 +487,91 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     ###
 
     balances = []
+
     # Base Game
-    blacklist = {
+    blocklist = {
             # These indexes plain ol' don't exist
             11, 25,
             # 12 is retro pack, 13 is neon pack
             12, 13,
             }
     if not drop_earl:
-        blacklist |= {1, 2, 3, 4, 5, 6, 8, 9, 10, 26, 27, 28, 29, 30}
+        blocklist |= {1, 2, 3, 4, 5, 6, 8, 9, 10, 26, 27, 28, 29, 30}
     for num in range(1, 36):
-        if num not in blacklist:
+        if num not in blocklist:
             balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
+
     # Uncategorized DLC
     balances.append('/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_37.InvBal_ECHOTheme_37')
+
     # Bloody Harvest
     balances.append('/Game/PatchDLC/BloodyHarvest/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_11.InvBal_ECHOTheme_11')
+
     # Maliwan Takedown
     balances.append('/Game/PatchDLC/Raid1/Customizations/EchoDevice/ECHOTheme_38.InvBal_ECHOTheme_38')
+
     # DLC1 - Dandelion
     for num in [36, 64, 65, 66]:
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+
     # Broken Hearts
     balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_01.InvBal_EchoTheme_Valentines_01')
-    # DLC2 - Hibiscus - TODO: figure out if any of these should be blacklisted
+
+    # DLC2 - Hibiscus - TODO: figure out if any of these should be blocklisted
     for num in [1, 2, 3, 4]:
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC2_{num:02d}.InvBal_ECHOTheme_DLC2_{num:02d}')
+
     # Revenge of the Cartels
     balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_44.InvBal_ECHOTheme_44')
+
     # Guardian Takedown
     balances.append('/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/EchoDevice/EchoTheme_Takedown2.InvBal_EchoTheme_Takedown2')
-    # DLC3 - Geranium - TODO: figure out if any of these should be blacklisted
+
+    # DLC3 - Geranium - TODO: figure out if any of these should be blocklisted
     for num in [73, 74, 75, 76]:
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/EchoTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
-    # DLC4 - Alisma - TODO: figure out if any of these should be blacklisted
+
+    # DLC4 - Alisma - TODO: figure out if any of these should be blocklisted
     for num in [1, 2, 3, 4]:
         balances.append(f'/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_DLC4_{num:02d}.InvBal_ECHOTheme_DLC4_{num:02d}')
+
     # Bloody Harvest 2020
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_79.InvBal_ECHOTheme_79')
-    # DLC5 - Ixora - TODO: figure out if any of these should be blacklisted
+
+    # DLC5 - Ixora - TODO: figure out if any of these should be blocklisted
     for num in ['50', '52', '57a', '58']:
         balances.append(f'/Game/PatchDLC/Ixora/Customizations/ECHOTheme/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+
     # Broken Hearts 2021 + Others
     balances.append('/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/ECHODevice/EchoTheme_Valentines_02.InvBal_EchoTheme_Valentines_02')
     balances.append('/Game/PatchDLC/EventVDay/TwitchDrops/PlayerCharacters/_Shared/ECHODevice/ECHOTheme_46.InvBal_ECHOTheme_46')
+
     # Vault Card 1
     if drop_vaultcard:
         for num in [1, 2, 3, 4]:
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/EchoDevice/ECHOTheme_VC1_{num}.InvBal_ECHOTheme_VC1_{num}')
+
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_40.InvBal_ECHOTheme_40')
+
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4, 5]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Customizations/EchoDevice/ECHOTheme_VC2_{num}.InvBal_ECHOTheme_VC2_{num}')
+
+    # Vault Card 3
+    if drop_vaultcard:
+        for num in [1, 2, 3, 4]:
+            balances.append(f'/Game/PatchDLC/VaultCard3/Customizations/EchoDevice/ECHOTheme_VC3_{num}.InvBal_ECHOTheme_VC3_{num}')
+
+    # Included in VC3 data, including some more for earl
+    blocklist = {}
+    if not drop_earl:
+        blocklist = {39, 61, 77}
+    for num in [39, 41, 42, 43, 47, 48, 49, 51, 53, 54, 55, 56, 59, 61, 62, 77, 80, 'Poop']:
+        if num not in blocklist:
+            balances.append(f'/Game/PatchDLC/VaultCard3/Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
+    balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/Beastmaster/EchoDevice/ECHOTheme_25.InvBal_ECHOTheme_25')
 
     # Now output
     mod.comment('ECHO Skins')
@@ -446,30 +584,37 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     ###
 
     balances = []
+
     # Base Game
-    blacklist = {
+    blocklist = {
             # These indexes plain ol' don't exist
             1, 2, 3, 14, 53, 54,
             }
     if not drop_earl:
-        blacklist |= {4, 6, 7, 8, 10, 11, 12, 13, 15, 17, 18, 19, 23, 24, 26, 27, 41, 42, 43, 52, 55, 61, 65}
+        blocklist |= {4, 6, 7, 8, 10, 11, 12, 13, 15, 17, 18, 19, 23, 24, 26, 27, 41, 42, 43, 52, 55, 61, 65}
     if not drop_mission:
-        blacklist |= {5}
+        blocklist |= {5}
     for num in range(1, 68):
         balances.append(f'/Game/Pickups/RoomDecoration/RoomDecoration_{num}.InvBal_RoomDecoration_{num}')
+
     # Maliwan Takedown
     balances.append('/Game/PatchDLC/Raid1/Customizations/RoomDeco/RoomDeco_Raid1_1.InvBal_RoomDeco_Raid1_1')
+
     # DLC1 - Dandelion
     for num in range(1, 7):
         balances.append(f'/Game/PatchDLC/Dandelion/Customizations/RoomDeco/RoomDeco_DLC1_{num}.InvBal_RoomDeco_DLC1_{num}')
-    # DLC2 - Hibiscus - TODO: Figure out if any of these should be on a blacklist
+
+    # DLC2 - Hibiscus - TODO: Figure out if any of these should be on a blocklist
     for num in range(1, 9):
         balances.append(f'/Game/PatchDLC/Hibiscus/Customizations/RoomDeco/RoomDeco_DLC2_{num}.InvBal_RoomDeco_DLC2_{num}')
+
     # Revenge of the Cartels
     balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_3.InvBal_RoomDecoration_Event2_3')
+
     # Guardian Takedown
     balances.append('/Game/PatchDLC/Takedown2/InteractiveObjects/PlayerQuarters/RoomDeco_Takedown2.InvBal_RoomDeco_Takedown2')
-    # DLC3 - Geranium - TODO: Figure out if any of these should be on a blacklist
+
+    # DLC3 - Geranium - TODO: Figure out if any of these should be on a blocklist
     # this one's broken, omit
     #balances.append('/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDeco_DLC3_1.InvBal_RoomDeco_DLC3_1')
     for num in [2, 3, 4, 5, 6, 7]:
@@ -477,18 +622,30 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     for num in [1, 2, 3]:
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_Geranium_IO_{num}.RoomDecoration_Geranium_IO_{num}')
     balances.append('/Game/PatchDLC/Geranium/Customizations/RoomDeco/RoomDecoration_KeyToCity.InvBal_RoomDecoration_KeyToCity')
-    # DLC4 - Alisma - TODO: Figure out if any of these should be on a blacklist
+
+    # DLC4 - Alisma - TODO: Figure out if any of these should be on a blocklist
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_01_Orbs.InvBal_RoomDeco_DLC4_01_Orbs')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_02_Trophy.InvBal_RoomDeco_DLC4_02_Trophy')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_03_Axe.InvBal_RoomDeco_DLC4_03_Axe')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_04_Moon.InvBal_RoomDeco_DLC4_04_Moon')
     balances.append('/Game/PatchDLC/Alisma/PlayerCharacters/_Customizations/RoomDeco/RoomDeco_DLC4_05_Mask.InvBal_RoomDeco_DLC4_05_Mask')
+
     # Vault Card 1
     if drop_vaultcard:
         for num in [1, 2, 3]:
             balances.append(f'/Game/PatchDLC/VaultCard/Customizations/RoomDeco/RoomDecoration_VC1_{num}.InvBal_RoomDecoration_VC1_{num}')
+
     # Cartels 2021
     balances.append('/Game/PatchDLC/Event2/Pickups/RoomDecoration/RoomDecoration_Event2_2.InvBal_RoomDecoration_Event2_2')
+
+    # Vault Card 2
+    if drop_vaultcard:
+        for num in [1, 2]:
+            balances.append(f'/Game/PatchDLC/VaultCard2/Customizations/RoomDeco/RoomDecoration_VC2_{num}.InvBal_RoomDecoration_VC2_{num}')
+
+    # Vault Card 3
+    if drop_vaultcard:
+        balances.append(f'/Game/PatchDLC/VaultCard3/Customizations/RoomDeco/RoomDecoration_VC3_1.InvBal_RoomDecoration_VC3_1')
 
     # Now output
     mod.comment('Room Decorations')

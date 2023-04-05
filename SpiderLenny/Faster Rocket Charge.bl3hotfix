@@ -1,0 +1,23 @@
+###Name: Non-Maliwan Charge Speed
+###Author: SpiderLenny
+###Categories: gear-heavy,gear-pistol,cheat
+###License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+#Taking heavy inspirations from Apocalyptech, but touching the weapons he didn't cover, which are mostly non-Maliwans.
+#Every weapon mentioned below got it's charge time reduced to roughly a third
+
+#RYNAH
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Parts/Part_HW_TOR_Barrel_RYNO.Part_HW_TOR_Barrel_RYNO:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponChargeComponent,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.50000)
+#SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Torgue/_Shared/_Design/_Unique/RYNO/Parts/Part_HW_TOR_Barrel_RYNO.Part_HW_TOR_Barrel_RYNO:Component_WeaponChargeComponent.ChargeTime,BaseValue,0,,0.5
+
+#PlagueBearer
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared//_Unique/Plague/Parts/Part_HW_TOR_Barrel_ETech_Plague.Part_HW_TOR_Barrel_ETech_Plague:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponChargeComponent,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.50000)
+
+#ION CANNON
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/IonCannon/Parts/Part_HW_VLA_Barrel_IonCannon.Part_HW_VLA_Barrel_IonCannon:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponChargeComponent,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.667)
+
+#Kickcharger
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Kickcharger/Parts/Part_HW_VLA_Barrel_ETech_Kickcharger.Part_HW_VLA_Barrel_ETech_Kickcharger:WeaponUseModeSecondaryAspectData_4.Component_WeaponChargeComponent,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=1.33300)
+
+#Rose
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Rose/Parts/Part_PS_JAK_Barrel_Rose.Part_PS_JAK_Barrel_Rose:AspectList_WeaponUseModeSecondaryAspectData.Component_WeaponChargeComponent,AspectList.AspectList[1].Object..Component.Object..ChargeTime,0,,(BaseValue=0.06700)

@@ -23,6 +23,16 @@ myself anymore, but I'm keeping it here for old time's sake.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.2.0** - Jun 24, 2020
+ * Updated for the level bump in today's patch (should take you to 72 now)
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.1.0** - Sep 30, 2020
  * Updated for level bump in DLC4 (should take you to 65 now)
 

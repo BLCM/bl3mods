@@ -31,6 +31,7 @@ mod = Mod('unlocked_vermivorous.bl3hotfix',
             "in Mayhem 6 or higher.  This mod will make Vermivorous spawn during that",
             "battle regardless of Mayhem level."
         ],
+        contact='https://apocalyptech.com/contact.php',
         lic=Mod.CC_BY_SA_40,
         v='1.0.0',
         cats='spawns',

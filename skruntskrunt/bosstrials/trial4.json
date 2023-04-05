@@ -1,0 +1,320 @@
+{
+ "spawnoptions": [
+  {
+   "SpawnOptions": {
+    "Spawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_BossAdds.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "20.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/Punks/Variants/SpawnOptions_PunkAssaulter"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "3.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[4].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C.SpawnerComponent.SpawnerStyle.Waves.Waves[4].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "4"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2A.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2B_2.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2B_2.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E1C2B_2.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E1C2B_2.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E2C_3.SpawnerComponent.SpawnerStyle.Waves.Waves[3].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "3"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "2"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[0].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "0"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[1].SpawnerStyle.NumActorsParam.AttributeInitializationData": "8.0"
+   },
+   "wave": "1"
+  },
+  {
+   "SpawnOptions": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.SpawnOptions": "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses"
+   },
+   "NumActorsParam": {
+    "Spawner_E3C_0.SpawnerComponent.SpawnerStyle.Waves.Waves[2].SpawnerStyle.NumActorsParam.AttributeInitializationData": "-1"
+   },
+   "wave": "2"
+  }
+ ],
+ "spawnpoints": [
+  "BP_TinkPile_13",
+  "BP_TinkPile_17",
+  "BP_TinkPile_21",
+  "BP_TinkPile_5",
+  "BP_TinkPile_9",
+  "OakMissionSpawner_GemGuardian",
+  "OakMissionSpawner_GemGuardian_0",
+  "OakMissionSpawner_GemGuardian_1",
+  "OakMissionSpawner_Guardian_1",
+  "Spawner_Boss",
+  "Spawner_BossAdds",
+  "Spawner_E1C",
+  "Spawner_E1C2A",
+  "Spawner_E1C2B_2",
+  "Spawner_E2C",
+  "Spawner_E2C_3",
+  "Spawner_E3C",
+  "Spawner_E3C_0",
+  "OakSpawner_Crystals_Small",
+  "OakSpawnPoint_10",
+  "OakSpawnPoint_14",
+  "OakSpawnPoint_17",
+  "OakSpawnPoint_21",
+  "OakSpawnPoint_23",
+  "OakSpawnPoint_26",
+  "OakSpawnPoint_27",
+  "OakSpawnPoint_29",
+  "Spawner_SpawnAnchorEridian_E2C3A",
+  "Spawner_SpawnAnchorEridian_E2C3B",
+  "Spawner_SpawnAnchorEridian_E3C2A",
+  "Spawner_SpawnAnchorEridian_E3C2B",
+  "SpawnMesh_DoorCargo_2",
+  "SpawnMesh_DoorCargo_3",
+  "SpawnMesh_DoorCargo_4",
+  "SpawnMesh_DoorCargo_5",
+  "SpawnMesh_DoorSmall_0",
+  "SpawnMesh_DoorSmall_1",
+  "SpawnMesh_DoorSmall_10",
+  "SpawnMesh_DoorSmall_11",
+  "SpawnMesh_DoorSmall_12",
+  "SpawnMesh_DoorSmall_13",
+  "SpawnMesh_DoorSmall_14",
+  "SpawnMesh_DoorSmall_15",
+  "SpawnMesh_DoorSmall_16",
+  "SpawnMesh_DoorSmall_17",
+  "SpawnMesh_DoorSmall_18",
+  "SpawnMesh_DoorSmall_19",
+  "SpawnMesh_DoorSmall_2",
+  "SpawnMesh_DoorSmall_20",
+  "SpawnMesh_DoorSmall_21",
+  "SpawnMesh_DoorSmall_22",
+  "SpawnMesh_DoorSmall_23",
+  "SpawnMesh_DoorSmall_24",
+  "SpawnMesh_DoorSmall_25",
+  "SpawnMesh_DoorSmall_26",
+  "SpawnMesh_DoorSmall_27",
+  "SpawnMesh_DoorSmall_28",
+  "SpawnMesh_DoorSmall_29",
+  "SpawnMesh_DoorSmall_3",
+  "SpawnMesh_DoorSmall_30",
+  "SpawnMesh_DoorSmall_31",
+  "SpawnMesh_DoorSmall_32",
+  "SpawnMesh_DoorSmall_34",
+  "SpawnMesh_DoorSmall_36",
+  "SpawnMesh_DoorSmall_37",
+  "SpawnMesh_DoorSmall_38",
+  "SpawnMesh_DoorSmall_39",
+  "SpawnMesh_DoorSmall_4",
+  "SpawnMesh_DoorSmall_40",
+  "SpawnMesh_DoorSmall_41",
+  "SpawnMesh_DoorSmall_42",
+  "SpawnMesh_DoorSmall_43",
+  "SpawnMesh_DoorSmall_466",
+  "SpawnMesh_DoorSmall_5",
+  "SpawnMesh_DoorSmall_6",
+  "SpawnMesh_DoorSmall_639",
+  "SpawnMesh_DoorSmall_7",
+  "SpawnMesh_DoorSmall_8",
+  "SpawnMesh_DoorSmall_9",
+  "SpawnMesh_EridianGuardianMonolith_10",
+  "SpawnMesh_EridianGuardianMonolith_12",
+  "SpawnMesh_EridianGuardianMonolith_13",
+  "SpawnMesh_EridianGuardianMonolith_14",
+  "SpawnMesh_EridianGuardianMonolith_18",
+  "SpawnMesh_EridianGuardianMonolith_2",
+  "SpawnMesh_EridianGuardianMonolith_3",
+  "SpawnMesh_EridianGuardianMonolith_4",
+  "SpawnMesh_EridianGuardianMonolith_7",
+  "SpawnMesh_EridianGuardianMonolith_8",
+  "SpawnPoint_IO_SmallCrystal",
+  "SpawnPoint_IO_SmallCrystal_18",
+  "SpawnPoint_IO_SmallCrystal_19",
+  "SpawnPoint_IO_SmallCrystal_20",
+  "SpawnPoint_IO_SmallCrystal_21",
+  "SpawnPoint_IO_SmallCrystal_22",
+  "SpawnPoint_IO_SmallCrystal_23",
+  "SpawnPoint_IO_SmallCrystal_24",
+  "SpawnPoint_IO_SmallCrystal_25",
+  "SpawnPoint_IO_SmallCrystal_26",
+  "SpawnPoint_IO_SmallCrystal_27",
+  "SpawnPoint_IO_SmallCrystal_28",
+  "SpawnPoint_IO_SmallCrystal_29",
+  "SpawnPoint_IO_SmallCrystal_30",
+  "SpawnPoint_IO_SmallCrystal_31",
+  "SpawnPoint_IO_SmallCrystal_32",
+  "SpawnPoint_IO_SmallCrystal_33",
+  "SpawnPoint_IO_SmallCrystal_34"
+ ],
+ "spawnoption_list": [
+  "/Game/Enemies/_Spawning/CotV/Punks/Variants/SpawnOptions_PunkAssaulter",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVault",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_CoVMix_DesertVaultBadasses",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_EnforcerMix_DesertVault",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_GoliathMix_DesertVault",
+  "/Game/Enemies/_Spawning/CotV/_Mixes/Zone_3/DesertVault/SpawnOptions_PsychoMix_DesertVault",
+  "/Game/Enemies/_Spawning/ProvingGrounds/SpawnOptions_TinkMix_ProvingGrounds"
+ ]
+}

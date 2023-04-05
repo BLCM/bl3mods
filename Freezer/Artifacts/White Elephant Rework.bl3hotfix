@@ -1,0 +1,16 @@
+###
+### Name: White Elephant Rework
+### Author: Freezer
+### Version: 1.0
+### Categories: gear-general, gear-artifact
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### Rebalances White Elephant's damage and increases the sticky proc chance to 75%.
+###
+
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,LEGENDARY_WhiteElephant_StickyChance,Offset,0,,(BaseValueConstant=0.75)
+SparkPatchEntry,(1,2,0,),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,LEGENDARY_WhiteElephant_DamageMultiplier,Offset,0,,(BaseValueConstant=1.0)

@@ -28,11 +28,23 @@ of the mods you'll find in here, though:
 
 - **Alternate Scaling** - A set of mods to set the scaling constants to match
   BL1, BL2, or TPS.
+- **Enemy Equips** - A set of mods to alter what kind of gear enemies use.
+- **Fragile Containers** - Makes the majority of containers in the game
+  openable by taking damage from any source.
+- **Fragile Eridium Clusters** - Allows Eridium clusters (and jars) to be broken
+  apart by gunfire or any other source of damage.
 - **Infinite Slide** - Makes the duration of your character's slide effectively
   infinite.
+- **Jetbeasts (Almost) Everywhere** - Adds Jetbeast-spawning Catch-A-Ride
+  consoles wherever regular ones are found, with the exception of Skittermaw
+  Basin.
 - **Movement Speed Cheats** - Move faster!
+- **No Hidden Eridium** - Alters the Eridium spawns which require Mysterious
+  Amulet to just be normal Eridium clusters/jars instead.
 - **NVHM Gamestage Follows Level** - Makes the game follow your
   character level in Normal/PT1/NVHM, as it does during TVHM and Mayhem.
+- **Short Guardian Takedown Crystal Charge** - Drastically shortens the time
+  required to charge the crystal pads during Takedown at the Guardian Breach.
 - **Unlock DLC3 Tech** - Unlocks Coresploders, Traitorweed, and Telezappers
   right from the beginning in Bounty of Blood.
 - **Vehicle Unlocks** - Nearly all vehicle parts/skins are available from the
@@ -42,6 +54,9 @@ of the mods you'll find in here, though:
 
 - **All Weapons Can Anoint** - Makes it so all weapons (apart from The Shoddy) can have anointments.
 - **Better Maliwan Charge Time** - Improves the charge time on most Maliwan guns
+- **Digby's Smooth Tube Audio Fix** - Pakfile mod to restore audio functionality of Digby's Smooth Tube
+- **Fabricator Changes** - A collection of mods that makes the Fabricator full-auto, and alters
+  what it fires (Eridium, more Fabricators, or Guns as usual).
 - **Fix Siren COM Blank Parts** - Fixes a (rare) bug with Siren COMs which would cause
   them to have one too few ability parts.
 - **Money Grenade Changes** - Collection of mods which alter the "Money" grenade part to drop things
@@ -77,6 +92,7 @@ of the mods you'll find in here, though:
 - **Expanded Legendary Pools** - Adds all legendary/unique items to the world drop pools.
 - **First Gun Chest** - Some alternate contents for the first gun chest, in Covenant Pass.
 - **Fix DLC2 Shield Drops** - Most enemies in DLC2 don't drop shields; this fixes that.
+- **Fix Broken Loot Patterns** - Fixes up some loot drop patterns for a handful of enemies.
 - **Manufacturer Lock** - A set of mods which make only the specified manufacturers drop.
 - **Mission Reward Randomizer** - Randomizes mission rewards
 - **More Elemental Weapons** - Increases the probability of rolling the elemental version
@@ -105,9 +121,6 @@ of the mods you'll find in here, though:
   given to enemies in Mayhem modes.  Conflicts with Mayhem Level Cheats.
 - **Disable Mayhem Modifiers** - A collection of mods to individually disable each
   Mayhem Modifier, so you can choose which ones you want to show up.
-- **Mayhem Level Cheats** - Hardcodes Easy+Easy+Hard modifiers at all mayhem levels,
-  and sets a flat enemy scaling across all levels as well.  Conflicts with Decreased
-  Mayhem Enemy Scaling.
 - **Mayhem Modifier Nerfs** - Nerfs for various Mayhem modifiers that I wanted to
   be less difficult.
 - **No Mayhem Drop Scaling** - Ordinarily, higher mayhem levels makes drop quality
@@ -120,29 +133,43 @@ of the mods you'll find in here, though:
 
 ## Mission-Specific Changes
 
+- **Earlier Childhood's End** - Unlocks Childhood's End as soon as Blood
+  Drive is done, and enables the full intro dialogue if the mission is
+  picked up at the Devil's Razor water purifier.
 - **Heart of Gold: Better Gifts** - Improves the quality of gifts given by
   Joy in "Heart of Gold"
+- **Life of the Party: Short Rakk Shootout** - Shortens the Rakk shootout
+  portion of Life in the Party from 90 seconds to 15 seconds.
 - **No Trials Dependencies** - Unlocks the Proving Grounds / Trials missions
   as soon as you can get to the levels which provide them.
 - **Sisterly Love: More Money** - Buffs the amount of cash you get from the
   malfunctioning slot machines during "Sisterly Love."
+- **Transaction-Packed: Abridged** - Skips basically all of the mission, and
+  removes all remaining mission dialogue.
 
 ## Mod-Testing Mods
 
 - **Arms Race Cheat** - A mod to make Arms Race completely trivial.
 - **Droughts Chest Moves** - Moves white+red chests in The Droughts to near the
   Highway fast travel station, used for testing out some chest-related mods.
+- **Droughts Quick Change at Highway Fast Travel** - Moves the Quick Change machine
+  in The Droughs to near the Highway fast travel.
 - **Equal Character Gear Chance** - Makes character-specific gear equally likely
   to spawn over all characters, instead of being weighted towards current players.
 - **Fast Levelling** - A collection of mods to provide increased XP acquisition.
+- **Force Enemy Spawns** - Resource mod to attempt to force a configured enemy
+  type to spawn whenever possible.
 - **Modtest Char Setup** - A mod to build up a mod-testing character at the
   beginning of the game, without needing save editing.
+- **Mountaineer** - Allows the player to climb (nearly) vertical surfaces.
 - **No Cryo Penalty** - Removes the player cryo movement speed debuff.
 - **Super Buff: Crader's EM-P5** - Absurdly OP Crader's EM-P5 buffs.
 - **Super Buff: Transformer** - Absurdly OP Transformer shield.
 - **Testing Enemy Spawns** - Used to spawn in specific enemies wihthout having
   to travel to their usual spawn points, used for testing enemy-specific mods.
 - **Testing Loot Drops** - Used to test drops and verify balance names.
+- **Visible BPChar Names** - Displays the BPChar names for NPCs and Enemies
+  in-game, instead of their usual names.
 
 ## Quality of Life Mods
 
@@ -161,6 +188,8 @@ of the mods you'll find in here, though:
   for killing enemies with specific manufacturers.
 - **Droughts Stocked Porta-Potties** - Ensures that all porta-potties in The
   Droughts have the usual porta-potty weapon attachments when looting.
+- **Easy Entry to Fort Sunshine** - Adds a door-opening lever to the outside of
+  Fort Sunshine, in Floodmoor Basin.
 - **Free Hemovorous Door** - Makes the door to get to Hemovorous the Invincible
   free, instead of costing 500 Eridium.
 - **Mega TimeSaver XL** - Speeds up slow animations throughout the game.
@@ -171,12 +200,16 @@ of the mods you'll find in here, though:
   near the end of a magazine.
 - **Photo Mode Unlock** - Lets the camera in Photo Mode go extremely far, and
   speeds up its movement.
+- **Quick Changes Everywhere** - Introduces a Quick Change station to every
+  level in the game which didn't already have one.
 
 ## Timed Event Mods
 
 - **All Event Spawns Active** - Turns on Bloody Harvest, Broken Hearts,
   and Revenge of the Cartels spawn alterations (does not actually enable
   the events themselves)
+- **Event Rewards** - A collection of mods to set the Seasonal Event
+  challenge rewards to the year of your choice.
 - **Expanded Event Spawners** - One mod for each of the three events; will
   expand the areas in which the event spawns will occur.
 - **Fewer Cartel Operatives** - Reduces the number of Cartel operatives
@@ -203,10 +236,10 @@ there's also scripts which populate some Google Sheets that I maintain as well.
 Licenses
 ========
 
-All the code in this project is licensed under the
+All Apocalyptech's code in here is licensed under the
 [GPLv3 or later](https://www.gnu.org/licenses/quick-guide-gplv3.html).
 See [COPYING.txt](COPYING.txt) for the full text of the license.
 
-All the mods in this repository are currently licensed under
+All Apocalyptech's mods in this repository are currently licensed under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 

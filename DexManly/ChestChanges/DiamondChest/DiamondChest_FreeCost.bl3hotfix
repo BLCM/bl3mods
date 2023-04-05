@@ -1,0 +1,16 @@
+###
+### Name: Diamond Chest: Free Cost
+### Version: 1.0.0
+### Author: DexManly
+### Categories: chests,loot-system,cheat
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+###
+### This mod changes the Diamond Chest to be FREE instead of Diamond Keys.
+###
+
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,ActionText,0,,And Open!
+SparkLevelPatchEntry,(1,1,0,Sanctuary3_P),/Game/PatchDLC/DiamondLootChest/InteractiveObjects/DiamondChest/Data/UIData_DiamondKeyUsePrompt.UIData_DiamondKeyUsePrompt,bCostsToUse,0,,False

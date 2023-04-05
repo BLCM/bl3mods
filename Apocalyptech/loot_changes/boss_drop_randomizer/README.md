@@ -28,6 +28,19 @@ Better Loot in your mod list.
 Changelog
 =========
 
+Aug 1, 2022 *(no version number change)*
+ * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
+   (no functionality change)
+
+**v1.3.3** - Mar 30, 2022
+ * Updated to account for Anathema's new TNTina drop (added via GBX hotfix today)
+
+**v1.3.2** - Jul 9, 2021
+ * Added Loot Hearts and Loot Ghosts
+
+Jun 16, 2021 *(no version number change)*
+ * Added contact info to mod header
+
 **v1.3.1** - Apr 23, 2021
  * Updated for new DLC2 drops added by yesterday's hotfixes
 
