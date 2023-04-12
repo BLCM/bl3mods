@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.5.7
+### Version: 1.5.8
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy
@@ -1963,6 +1963,9 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_S
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Parts/Part_AR_VLA_Magazine_Sickle.Part_AR_VLA_Magazine_Sickle:WeaponUseModeSecondaryAspectData_1.WeaponAmmoPoolComponent_0,MaxLoadedAmmo.BaseValue,0,,24
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Parts/Part_AR_VLA_Magazine_Sickle.Part_AR_VLA_Magazine_Sickle,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Accuracy/Att_AccuracyMaxValue.Att_AccuracyMaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.3,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Accuracy/Att_AccuracyMinValue.Att_AccuracyMinValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Parts/Part_AR_VLA_BoomSickle.Part_AR_VLA_BoomSickle:WeaponUseModeAspectData_1.WeaponFireProjectileComponent_0,DamageSource,0,,BlueprintGeneratedClass'/Game/GameData/DamageSources/DamageSource_Bullet_AssaultRifle.DamageSource_Bullet_AssaultRifle_C'
+
+# Increase the odds of a Sickle spawning as a Boom Sickle to 40%.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Sickle/Balance/Balance_AR_VLA_Sickle.Balance_AR_VLA_Sickle,RuntimePartList.AllParts.AllParts[7].Weight,0,,(BaseValueConstant=1.5,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 
 # The Dictator - Set Damage to 0.9, change how the Underbarrel increases Projectile Count to better work with the Double Grip and adjusted the Bipod Mode damage to account for increased projectile count.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Dictator,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.9
