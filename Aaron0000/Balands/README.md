@@ -12,6 +12,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.8
+-----
+Fixed the "Complete Version" of Balands lacking the change that makes Boom Sickles spawn more often.
+
 1.5.7
 -----
 
