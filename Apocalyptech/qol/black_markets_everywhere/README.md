@@ -32,6 +32,11 @@ Maps which contain the machines:
 * Tazendeer Ruins
 * Voracious Canopy
 
+**Note:** It seems that one of the three Black Market machines in Meridian
+Metroplex still doesn't show up even with this mod.  It seems that there
+must be something special with that particular machine, because the mod uses
+the exact same statement as every other machine.  C'est la vie!
+
 Changelog
 =========
 
