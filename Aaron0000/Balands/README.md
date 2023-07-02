@@ -12,13 +12,36 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.5.9
+-----
+Added an item to the news section on the main menu to indicate Balands is active (Complete version and "Balance" files only.)
+
+Fixed an issue with the S.F. Force again (accidentally deleted a previous portion of the fix at some point during a previous version.)
+
+Reduced the strength of some of the animation speed increases in order to prevent items from spawning too low in relation to their container.
+
+Removed "No More Loyalty Reward Notifications" from quality of life changes to re-enable loyalty rewards since it removed Loyalty Rewards to remove the notifications.
+
+Replaced the unused manufacturer reward pools used for a few dedicated drops with other deprecated pools (Notes for Modders: replaced the previously used /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_CoV_Common, /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_Torgue_Common, and /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_Tediore_Common with /Game/GameData/Loot/ItemPools/ItemPool_Creatures_Normal_DEPRECATED, /Game/GameData/Loot/ItemPools/ItemPool_Humans_Badass_DEPRECATED, and /Game/GameData/Loot/ItemPools/ItemPool_Humans_Normal_DEPRECATED)
+
+Reduced Vehicle Mayhem Scaling by roughly 26%.
+
+Lowered the variants of Jetbeasts' health closer to the health of the vehicles in the base game.
+
+Vehicle weapons have been adjusted to be more on par with the default weapons instead of significantly worse for the most part (was unable to adjust the Jetbeast weapons).
+
+Vehicle boosters have been diversified in terms of stats. Laser Wings/Jet Engine/Sonic Booster now have longer durations but slower recharge rates, while Firestarter/Toxic Booster/Thrust Turbine have lower boost duration but higher recharge rates and lower recharge delay.
+
+Vehicle armor has been adjusted to actually have a downside instead of not actually reducing speed. It now increases Boost Consumption by 20%/30%/40% for Technicals/Outrunners/Cyclones and Jetbeasts respectively.
+
+Added a file containing the previously mentioned vehicle changes to the "Individual Parts of Balands" folder.
+
 1.5.8
 -----
 Fixed the "Complete Version" of Balands lacking the change that makes Boom Sickles spawn more often.
 
 1.5.7
 -----
-
 Testing out taking some power from Violent Momentum and buffing some of Zane's other skills in return. Values are not final and are open to feedback (credit to Ancient_Rune for brainstorming these Zane changes.)
 
 Changed Donnybrook's health regen from missing health to total health.
@@ -2356,7 +2379,7 @@ Rectifier - Damage buffed by 2333%.
 
 Stop-Gap - Damage immunity changed to 50% damage reduction.
 
- ┗----Rationale: Same situation as the Super Soldier. In order to the keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 50% damage reduction (50% less damage received.)
+ ┗----Rationale: Same situation as the Super Soldier. In order to keep people from having perpetual God-mode active, the immunity's been changed from 100% damage reduction (zero damage received) to 50% damage reduction (50% less damage received.)
 
 The Transformer - No change.
 
