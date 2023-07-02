@@ -1,0 +1,142 @@
+###
+### Name: Balands - Vehicles Changes
+### Version: 1.5.9
+### Author: Aaron0000
+### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
+### Categories: vehicle
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### (The mod's name is pronounced the same as the word "balance".)
+###
+### Borderlands 3 is a good time, but there are some parts that leave room
+### for questioning. Certain aspects of endgame like skill, pet, and shield
+### damage being multiplied dozens of times over without being mentioned
+### in-game, the overwhelming importance of anointments, and lots of gear
+### requiring triple-digit buffs in order to deal with a five-digit boost to
+### enemy health makes it almost impossible to keep things relatively
+### balanced during playthroughs. And then there's the stuff that can't
+### even perform well at the lowest levels of play. So I've tried my hand 
+### at putting some more balance in the Borderlands.
+###
+### This mod can used with any normal save file without needing to change anything, the only thing you may need to change when you return to normal-play is your Mayhem Mode modifiers if you change them while the mod is active.
+###
+### CREDITS:
+### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-auto on the Edirian Fabricator, Beef Plisken's loot fix, the Siren COM blank part fix, some DLC enemies not dropping shields, Red-Text Explainer, and the database from which I obtained a lot of information.
+### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
+### Grimm - For the weighted ammo drop adjustments and lending a hand to figuring out some stuff.
+### apple 1417 - For lending a hand to figuring out some stuff.
+### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
+### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
+### tbj_quag, JoeForLong, ki11erSix, shadowevil - For playtesting and/or giving feedback.
+### EpicNNG - For allowing me to use his code for making the Psycho Stabber's projectiles deal melee damage, for helping me fix an issue with the Nukem, and for making Redux which was useful for referring to when dealing with certain lines of code.
+### SSpyR - For making the Borderlands 3 Object Explorer, which proved immensely useful for investigating almost everything adjusted in this file.
+### Any contributors to the Unofficial Community Patch (for Borderlands 3) that haven't already been previously mentioned.
+### c0dycode - For making the Borderlands 3 Hotfix Manager.
+### Lootlemon.com - Good information source for Borderlands 3 gear and skills.
+###
+
+#######################
+### VEHICLE CHANGES ###
+#######################
+
+### WEAPON CHANGES ###
+
+# Increase Tesla Coil damage from 0.6 to 1.4
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_TeslaCoil,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,1.4
+
+# Increase Flamethrower damage from 0.35 to 2.1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_FlameThrower,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,2.1
+
+# Increase Shotgun Missile damage from 1.5 to 1.625
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_ShotgunMissile,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,1.625
+
+# Increase Swarmer Missile damage from 1.5 to 2
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_SwarmerMissile,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,2
+
+# Increase Flak Cannon damage from 0.4 to 1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_FlakCannon,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,1
+
+# Increase Sticky Bomb damage from 1.25 to 1.95
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_StickyBombs,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,1.95
+
+# Increase Tire Bomb damage from 5.5 to 6.75
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_TireBombs,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,6.75
+
+# Increase Needle Launcher damage from 1.25 to 4.3
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SpikeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,4.3
+
+# Increase Sawblade Launcher damage from 3 to 12
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SawBladeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,12
+
+### ARMOR CHANGES ###
+
+# Enable the Heavy Armor pieces to affect Boost stats.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Outrunner/Design/Parts/Armor/VehiclePart_Outrunner_Armor_HeavyArmor.VehiclePart_Outrunner_Armor_HeavyArmor,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Vehicle/Att_VehicleHealthMaxValue.Att_VehicleHealthMaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Outrunner_HeavyArmor,ValueName=HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_Vehicle_Health_OnIdleRegenRate.Att_Vehicle_Health_OnIdleRegenRate,ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_HealthRegenPct_DA.Att_Vehicle_HealthRegenPct_DA,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_MaxValue.Att_VehicleBoost_MaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Outrunner_HeavyArmor,ValueName=BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_ConsumptionRate.Att_VehicleBoost_ConsumptionRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Outrunner_HeavyArmor,ValueName=BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenDelay.Att_VehicleBoost_RegenDelay,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Outrunner_HeavyArmor,ValueName=BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E),BaseValueScale=1))(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenRate.Att_VehicleBoost_RegenRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Outrunner_HeavyArmor,ValueName=BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601),BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Technical/Design/Parts/Armor/VehiclePart_Technical_Armor_HeavyArmor.VehiclePart_Technical_Armor_HeavyArmor,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Vehicle/Att_VehicleHealthMaxValue.Att_VehicleHealthMaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Technical_HeavyArmor,ValueName=HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_Vehicle_Health_OnIdleRegenRate.Att_Vehicle_Health_OnIdleRegenRate,ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_HealthRegenPct_DA.Att_Vehicle_HealthRegenPct_DA,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_MaxValue.Att_VehicleBoost_MaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Technical_HeavyArmor,ValueName=BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_ConsumptionRate.Att_VehicleBoost_ConsumptionRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Technical_HeavyArmor,ValueName=BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenDelay.Att_VehicleBoost_RegenDelay,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Technical_HeavyArmor,ValueName=BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E),BaseValueScale=1))(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenRate.Att_VehicleBoost_RegenRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Technical_HeavyArmor,ValueName=BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601),BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Revolver/Design/Parts/Armor/VehiclePart_Revolver_Armor_HeavyArmor.VehiclePart_Revolver_Armor_HeavyArmor,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Vehicle/Att_VehicleHealthMaxValue.Att_VehicleHealthMaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Revolver_HeavyArmor,ValueName=HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_Vehicle_Health_OnIdleRegenRate.Att_Vehicle_Health_OnIdleRegenRate,ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_HealthRegenPct_DA.Att_Vehicle_HealthRegenPct_DA,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_MaxValue.Att_VehicleBoost_MaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Revolver_HeavyArmor,ValueName=BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_ConsumptionRate.Att_VehicleBoost_ConsumptionRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Revolver_HeavyArmor,ValueName=BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenDelay.Att_VehicleBoost_RegenDelay,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Revolver_HeavyArmor,ValueName=BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenRate.Att_VehicleBoost_RegenRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,RowName=Revolver_HeavyArmor,ValueName=BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601),BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Geranium/Vehicles/Horse/Design/Parts/Armor/VehiclePart_Horse_Armor_HardSaddleBags.VehiclePart_Horse_Armor_HardSaddleBags,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Vehicle/Att_VehicleHealthMaxValue.Att_VehicleHealthMaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,RowName=Horse_HardSaddleBags,ValueName=HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_Vehicle_Health_OnIdleRegenRate.Att_Vehicle_Health_OnIdleRegenRate,ModifierType=PostAdd,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=/Game/Vehicles/_Shared/Design/Balance/Attributes/VehicleHealth/Att_Vehicle_HealthRegenPct_DA.Att_Vehicle_HealthRegenPct_DA,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_MaxValue.Att_VehicleBoost_MaxValue,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,RowName=Horse_HardSaddleBags,ValueName=BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_ConsumptionRate.Att_VehicleBoost_ConsumptionRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,RowName=Horse_HardSaddleBags,ValueName=BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenDelay.Att_VehicleBoost_RegenDelay,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,RowName=Horse_HardSaddleBags,ValueName=BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Vehicle/Att_VehicleBoost_RegenRate.Att_VehicleBoost_RegenRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,RowName=Horse_HardSaddleBags,ValueName=BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601),BaseValueScale=1)))
+
+# Make Heavy Armor reduce Boost Capacity by 20%/30%/40% for Technicals/Outrunners/Cyclones & Jetbeasts.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_HeavyArmor,BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F,0,,1.25
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_HeavyArmor,BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F,0,,1.375
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_HeavyArmor,BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F,0,,1.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_HardSaddleBags,BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F,0,,1.5
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Outrunner/CAR_Armor_Outrunner_FullArmor.CAR_Armor_Outrunner_FullArmor,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of boost duration.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Revolver/CAR_Armor_Revolver_FullArmor.CAR_Armor_Revolver_FullArmor,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of boost duration.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Technical/CAR_Armor_Technical_SteelPlates.CAR_Armor_Technical_SteelPlates,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of boost duration.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Geranium/UI/CatchARideMenu/VehiclesAndParts/Horse/CAR_Armor_Horse_HardSaddleBags.CAR_Armor_Horse_HardSaddleBags,UIInfo.Description,0,,Add a little extra toughness to your ride with these heavyweight hard cases, though your boosts will have a bit less kick to them.
+
+### BOOSTER CHANGES ###
+
+# Blaze Booster - Increase Boost Recharge Rate by 33% (from 1 to 1.33).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_BlazeBooster,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,1.33
+
+# Laser Wings - Increase Boost Capacity by 40% (from 1 to 1.4), reduce Boost Recharge Rate by 50% (from 1 to 0.66).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_RazerWings,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,1.6
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Outrunner_RazerWings,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,0.66
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Outrunner/CAR_CoreMod_Outrunner_RazerWings.CAR_CoreMod_Outrunner_RazerWings,UIInfo.Description,0,,Boost energy redirected to create multiple laser blades around the vehicle.<br><br>[italic](Long duration, low recharge rate.)[/italic]
+
+# Jet Engine - Increase Boost Capacity by 40% (from 1 to 1.4), reduce Boost Recharge Rate by 50% (from 1 to 0.66).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_JetEngine,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,1.6
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_JetEngine,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,0.66
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Technical/CAR_CoreMod_Technical_JetBooster.CAR_CoreMod_Technical_JetBooster,UIInfo.Description,0,,Nothing can go wrong with a jet-engine strapped to the back of a truck. It takes a bit of time to charge up, but it is well worth the wait.<br><br>[italic](Long duration, low recharge rate.)[/italic]
+
+# Toxic Booster - Reduce Boost Capacity by 50% (from 1 to 0.5), reduce Boost Recharge Delay by 66% (from 1 to 0.33), increase Boost Recharge Rate by 50% (from 1 to 1.5).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_ToxicBooster,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,0.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_ToxicBooster,BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E,0,,0.33
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Technical_ToxicBooster,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,1.5
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Technical/CAR_CoreMod_Technical_ToxicBooster.CAR_CoreMod_Technical_ToxicBooster,UIInfo.Description,0,,At first glance, it just doesn't provide much speed, and is all dirty and rusty. But it also coughs up corrosive (incendiary) clouds that damage the bad guys. So ask yourself, what's your poison (fire)?<br><br>[italic](Low duration, fast recharge rate.)[/italic]
+
+# Digithruster - Reduce Boost Recharge Delay by 66% (from 1 to 0.33), increase Boost Recharge Rate by 350% (from 0.02 to 0.66).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_Digithruster,BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E,0,,0.33
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_Digithruster,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,0.066
+
+# Sonic Booster - Increase Boost Capacity by 40% (from 1 to 1.4), reduce Boost Recharge Rate by 50% (from 1 to 0.66).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_CryoBooster,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,1.6
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_CryoBooster,BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E,0,,1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_CryoBooster,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,0.66
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_CryoBooster,BoostConsumptionRateScaler_28_B72CF3A848A30D8AF17B2397D2DEA74F,0,,1
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Revolver/CAR_CoreMod_Revolver_CryoBooster.CAR_CoreMod_Revolver_CryoBooster,UIInfo.Description,0,, Boost with three different stages of increasing intensity. The longer it is active, the faster it goes.<br><br>[italic](Low duration, fast recharge rate.)[/italic]
+
+# Fire Starter - Reduce Boost Capacity by 50% (from 1 to 0.5), reduce Boost Recharge Delay by 66% (from 1 to 0.33), increase Boost Recharge Rate by 50% (from 1 to 1.5).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_FireStarter,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,0.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_FireStarter,BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E,0,,0.33
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_FireStarter,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,1.5
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Revolver/CAR_CoreMod_Revolver_FireStarter.CAR_CoreMod_Revolver_FireStarter,UIInfo.Description,0,,Magma Clouds are created behind the booster, causing chasing enemies to catch fire!<br><br>[italic](Low duration, fast recharge rate.)[/italic]
+
+# Jetbeast Thrust Turbine - Reduce Boost Capacity by 70% (from 1 to 0.3), reduce Boost Recharge Delay by 66% (from 1 to 0.33), increase Boost Recharge Rate by 25% (from 1 to 1.25).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_SingleBooster,BoostPoolMaxValueScaler_25_1F2F02954892FAB590A01C90C5917A79,0,,0.3
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_SingleBooster,BoostRegenDelayScaler_26_521D8AD74AE5AE704F5BDC92CDE0792E,0,,0.33
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_SingleBooster,BoostRegenRateScaler_27_4697DC134217A8DD9E87BE9EBA712601,0,,1.25
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Geranium/UI/CatchARideMenu/VehiclesAndParts/Horse/CAR_CoreMod_Horse_SingleBooster.CAR_CoreMod_Horse_SingleBooster,UIInfo.Description,0,,This engine boasts a moderate amount of thrust, followed by a large burst of speed after heating up.<br><br>[italic](Low duration, fast recharge rate.)[/italic]
+
+### JETBEAST HEALTH ADJUSTMENTS ###
+
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_Predator,HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4,0,,1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_Biobeast,HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4,0,,1.1764705
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Geranium/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData_Ger.DataTable_VehiclePartsData_Ger,Horse_Tyrant,HealthMultiplier_7_0261A41A4EE6978DE6454391C44DE8C4,0,,1.4117648

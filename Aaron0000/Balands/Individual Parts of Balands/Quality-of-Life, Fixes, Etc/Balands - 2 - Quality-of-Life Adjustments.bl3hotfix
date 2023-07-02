@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Quality-of-Life Adjustments
-### Version: 1.5.7
+### Version: 1.5.9
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: qol
@@ -349,17 +349,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/ZoneMap/PlanetMapData/Plane
 
 # No Reload Notification
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/GameplayGlobals.GameplayGlobals,AmmoLowPercent,0,,0.01
-
-# No More Loyalty Reward Notifications
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Atlas.Default__Challenge_ManufacturerRewardReward_Atlas_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_CoV.Default__Challenge_ManufacturerRewardReward_CoV_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Dahl.Default__Challenge_ManufacturerRewardReward_Dahl_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Hyperion.Default__Challenge_ManufacturerRewardReward_Hyperion_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Jakobs.Default__Challenge_ManufacturerRewardReward_Jakobs_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Maliwan.Default__Challenge_ManufacturerRewardReward_Maliwan_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Tediore.Default__Challenge_ManufacturerRewardReward_Tediore_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Torgue.Default__Challenge_ManufacturerRewardReward_Torgue_C,NPCMailDataRowHandles,0,,()
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Challenges/Manufacturer/ManufacturerRewards/Challenge_ManufacturerRewardReward_Vladof.Default__Challenge_ManufacturerRewardReward_Vladof_C,NPCMailDataRowHandles,0,,()
 
 # No Wasted Class-Specific Equipment
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/GameData/Economy/Economy_Miscellaneous.Economy_Miscellaneous,CharacterWeights_Base,Value,0,,(BaseValueConstant=0.05,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)

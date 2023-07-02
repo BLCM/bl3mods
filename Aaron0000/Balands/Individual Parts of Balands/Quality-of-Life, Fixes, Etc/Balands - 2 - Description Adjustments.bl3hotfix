@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Description Adjustments
-### Version: 1.5.7
+### Version: 1.5.9
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: qol, bugfix
@@ -343,3 +343,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Share
 
 # Make Eista retain his Invincible moniker.
 SparkCharacterLoadedEntry,(1,1,0,BPChar_Hib_EistaChild_Radiation),/Game/PatchDLC/Hibiscus/UI/UINames/Characters/UIName_Hib_Eista.UIName_Hib_Eista,DisplayName,0,,Eista The Invincible
+
+# Make the Toxic Booster's description more accurate to what it actually does.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Technical/CAR_CoreMod_Technical_ToxicBooster.CAR_CoreMod_Technical_ToxicBooster,UIInfo.Description,0,,At first glance, it just doesn't provide much speed, and is all dirty and rusty. But it also coughs up corrosive (incendiary) clouds that damage the bad guys. So ask yourself, what's your poison (fire)?
+
+# Make the Vehicle Heavy Armor descriptions more accurate.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Outrunner/CAR_Armor_Outrunner_FullArmor.CAR_Armor_Outrunner_FullArmor,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of speed (doesn't actually lower speed.)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Revolver/CAR_Armor_Revolver_FullArmor.CAR_Armor_Revolver_FullArmor,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of speed (doesn't actually lower speed.)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/UI/CatchARideMenu/VehicleAndParts/Technical/CAR_Armor_Technical_SteelPlates.CAR_Armor_Technical_SteelPlates,UIInfo.Description,0,,Heavy plated armor improves durability at the expense of speed (doesn't actually lower speed.)
+
