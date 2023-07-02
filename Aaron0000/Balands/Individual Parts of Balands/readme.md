@@ -126,6 +126,7 @@ Balands - Subjective Fixes: Contains fixes that address several inconsistencies 
 	
 	Made Sheer Will work with MNTIS critical hits 
 
+Balands - Vehicle changes: Buffs most vehicle weapons, adjusts several boosters to be more different in terms of usage, adds an actual penalty to using armor on vehicles, and lowers Jetbeast health.
 ---
 
 Balancing
