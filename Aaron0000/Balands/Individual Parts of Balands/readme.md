@@ -26,7 +26,9 @@ Balands - Less Legendary World Drops in Trials, Slaughters, & Takedowns: Intende
 
 Balands - Loot Adjustments: Contains the following;
 
-	Earl's Vendor improvements 
+	Earl's Vendor improvements
+	
+	Legendary Manufacturer Rewards added to manufacturer loyalty item pools
 	
 	Loot-o-Gram reward changes 
 	
