@@ -12,6 +12,20 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.6.0
+-----
+Added a small chance for Manufacturer Rewards to deliver a (base game) Legendary item (Note for modders: Repurposes the unused Common manufacturer reward item pools for this.)
+
+Tweaked how certain unique enemies dropped purple grenades to prevent ammo vending machines from having only a specific manufacturer of purple grenades on certain maps. (Note for modders: Repurposes an unused Pangolin grenade item pool for this.)
+
+Reduced the chance of said enemies dropping a purple grenade from 50% (Road Dog)/ 75% (Tink Train, Lagromar, Crush Jaw, Blinding Banshee, Lt. Preston) to 20%/30% but added mayhem-scaled purple grenade drops in return.
+
+Added elemental glows to the Corruption, Mutant, and Nukem to match their previously-changed elements.
+
+Reduced the self-damage of the Pain is Power and Embrace the Pain by 50%.
+
+Fixed Fast Hand(s)' presentation slightly.
+
 1.5.9
 -----
 Added an item to the news section on the main menu to indicate Balands is active (Complete version and "Balance" files only.)
@@ -777,6 +791,11 @@ Adjusted the description of the Guardian 4N631 slightly.
 (End of Update Changelog)
 -----------------
 
+MAIN MENU CHANGES
+-----------------
+Added an item to the news section on the main menu to indicate Balands is active (Complete version and "Balance" files only.)
+
+
 BASIC PLAYER CHANGES
 --------------------
 Doubled the base melee damage and base slam damage, while base slide damage has been increased by 260% (on par with the newly buffed base melee damage.) Players now hit harder without affecting certain gear like the Face-puncher or Stinger.
@@ -817,6 +836,8 @@ LOOT POOL CHANGES
 The cost for re-rolling anointments on gear has been reduced to 50 eridium.
 
 Removed Uncommon gear from Earl's Veteran Rewards Machine, made quest reward items more common, made the item of the day a guaranteed Alien-Barrel weapon, increased amount of items in the vendor to 20.
+
+Added a chance for the Manufacturer Rewards to deliver a Legendary weapon.
 
 Replaced the Butcher and Lucian's Call in Loot-o-Gram redemption with a random drop from the slaughter boss loot pools.
 
@@ -862,17 +883,17 @@ Added a 33% chance for Anointed Goliaths to drop Alien-Barrel Heavy Weapons.
 
  ┗----Rationale: Given how Anointed enemies are practically mini-bosses in their own right, an extra reward in the form of a blue or purple alien-barrel gun seems fair. These drops can also occur from any of the named Anointed enemies excluding the Anointed Alpha.
 
-Added a 50% chance for Road Dog to drop a purple Atlas grenade separately from his regular loot pool.
+Added a 20% chance for Road Dog to drop a purple Atlas grenade separately from his regular loot pool.
 
-Added a 75% chance for Blinding Banshee to drop a purple Hyperion grenade separately from their regular loot pool.
+Added a 30% chance for Blinding Banshee to drop a purple Hyperion grenade separately from their regular loot pool.
 
-Added a 75% chance for Lt. Preston to drop a purple Pangolin grenade separately from his regular loot pool.
+Added a 30% chance for Lt. Preston to drop a purple Pangolin grenade separately from his regular loot pool.
 
-Added a 75% chance for Crushjaw to drop a purple Tediore grenade separately from her regular loot pool.
+Added a 30% chance for Crushjaw to drop a purple Tediore grenade separately from her regular loot pool.
 
-Added a 75% chance for Lagromar to drop a purple Torgue grenade separately from his regular loot pool.
+Added a 30% chance for Lagromar to drop a purple Torgue grenade separately from his regular loot pool.
 
-Added a 75% chance for Tink-Train to drop a purple Vladof grenade separately from her regular loot pool.
+Added a 30% chance for Tink-Train to drop a purple Vladof grenade separately from her regular loot pool.
 
  ┗----Rationale: With guns and shields, you're at least able to farm them to some degree through either Earl's Veteran Rewards Machine or the Eridian Fabricator, but that isn't the case for grenades. With certain purple grenades being highly desirable and having no suitable Legendary alternative, late-game drop sources have been added for each manufacturer's purple grenades to provide an option to obtain them. Atlas grenades are only a 50% chance since there's less part variety due to lacking elements.
 
@@ -1054,7 +1075,18 @@ Enemies no longer spawn with cryo-element guns for the most part.
 Anointed Enforcers should no longer spawn outside of the encounters with the Anointed Alpha, Luke, and Muldock.
 
  ┗----Rationale: If 2/3 of the moves this enemy didn't make them immune to damage (as well as not being able to switch between the immunity actions repeatedly), this enemy would be stomachable. But one can potentially waste minutes waiting for this enemy to actually be vulnerable. Removing this enemy improves the flow of combat.
- 
+
+
+VEHICLE CHANGES
+---------------
+Lowered the variants of Jetbeasts' health closer to the health of the vehicles in the base game.
+
+Vehicle weapons have been adjusted to be more on par with the default weapons instead of significantly worse for the most part (was unable to adjust the Jetbeast weapons).
+
+Vehicle boosters have been diversified in terms of stats. Laser Wings/Jet Engine/Sonic Booster now have longer durations but slower recharge rates, while Firestarter/Toxic Booster/Thrust Turbine have lower boost duration but higher recharge rates and lower recharge delay.
+
+Vehicle armor has been adjusted to actually have a downside instead of not actually reducing speed. It now increases Boost Consumption by 20%/30%/40% for Technicals/Outrunners/Cyclones and Jetbeasts respectively.
+
 
 OTHER CHANGES/FIXES
 -------------------
@@ -1219,13 +1251,13 @@ AX-88 - Reduced ammo cost to one and increased Projectile Speed by 57%.
 
 COV LEGENDARY GUNS
 ------------------
-Embrace the Pain - Accuracy improved, fire rate increased by 70%, heat rate reduced by 20%.
+Embrace the Pain - Accuracy improved, fire rate increased by 70%, heat rate reduced by 20%, self-damage reduced by 50%.
 
 NoPewPew - Ammo cost set to 3.
 
  ┗----Rationale: Instead of gutting the power of this weapon, it's been given the ION CANNON treatment and increased the ammo cost. It'll also make x4 and x5 versions not so blatantly inferior to x3 versions.
 
-Pain is Power - Heat rate reduced by 40%.
+Pain is Power - Heat rate reduced by 40%, self-damage reduced by 50%.
 
 Rebound - No change other than a possible damage adjustment.
 
@@ -3475,7 +3507,7 @@ THE PROFESSIONAL
 ----------------
 Man of Focus - No change.
 
-Renegade - INcreased health regeneration to 1.5% per point.
+Renegade - Increased health regeneration to 1.5% per point.
 
 Deja Vu - No change.
 
