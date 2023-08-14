@@ -12,6 +12,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.6.1
+-----
+Fixed an issue for the "Less Extra Drops" files where a few enemies may not have been able to drop extra loot outside of Mayhem 10.
+
 1.6.0
 -----
 Added a small chance for Manufacturer Rewards to deliver a (base game) Legendary item (Note for modders: Repurposes the unused Common manufacturer reward item pools for this.)
