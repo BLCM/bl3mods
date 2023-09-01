@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2022 Christopher J. Kucera
+# Copyright 2022-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -63,7 +63,7 @@ print('')
 if os.path.exists(file_sql_zip):
     os.unlink(file_sql_zip)
 with open(file_sql, 'w') as odf:
-    subprocess.run(['mysqldump',
+    subprocess.run(['mariadb-dump',
         '-u', user,
         f'-p{passwd}',
         '-h', host,
@@ -88,7 +88,7 @@ cp = subprocess.run([mysql2sqlite,
     '-h', host,
     '-P', port,
     '-V',
-    '-p', passwd,
+    '--mysql-password', passwd,
     ])
 if cp.returncode == 0:
     subprocess.run(['zip', file_sqlite_zip, file_sqlite])

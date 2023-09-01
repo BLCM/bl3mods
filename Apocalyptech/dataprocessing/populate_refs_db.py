@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim: set expandtab tabstop=4 shiftwidth=4:
 
-# Copyright 2019-2020 Christopher J. Kucera
+# Copyright 2019-2023 Christopher J. Kucera
 # <cj@apocalyptech.com>
 # <http://apocalyptech.com/contact.php>
 #
@@ -93,13 +93,13 @@ db = MySQLdb.connect(
         passwd=config['mysql']['passwd'],
         host=config['mysql']['host'],
         db=config['mysql']['db'],
-        port=config['mysql']['port'],
+        port=int(config['mysql']['port']),
         )
 curs = db.cursor()
 
 # Let's time this.  Obviously the ETA comparison will vary if you're not
 # on my machine.
-estimated_secs = 546
+estimated_secs = 494
 start_time = time.time()
 
 # Go ahead and auto-truncate first
@@ -135,7 +135,7 @@ data_dir = config['filesystem']['data_dir']
 # Could alternatively *chop* off a slash if we do find it, but whatever.
 if data_dir[-1] != '/':
     data_dir += '/'
-data_dir_slice = len(data_dir)
+data_dir_slice = len(data_dir)-1
 for (dirpath, dirnames, filenames) in os.walk(data_dir):
     for filename in filenames:
         if filename.endswith('.uasset') or filename.endswith('.umap'):
@@ -212,7 +212,7 @@ for (dirpath, dirnames, filenames) in os.walk(data_dir):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~182900, as of 2022-06-01 (playstation crossplay) (218633 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~183400, as of 2023-08-31 (cosmetics update) (219359 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
