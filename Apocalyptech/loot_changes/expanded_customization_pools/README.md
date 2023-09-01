@@ -37,6 +37,10 @@ TODO
 Changelog
 =========
 
+**v1.7.0** - Sep 1, 2023
+ * Updated to account for all the new cosmetics which are now available via Earl's
+   shop, as of yesterday's BL3 update.
+
 Aug 1, 2022 *(no version number change)*
  * Updated to use [new metadata tags](https://github.com/apple1417/blcmm-parsing/tree/master/blimp)
    (no functionality change)

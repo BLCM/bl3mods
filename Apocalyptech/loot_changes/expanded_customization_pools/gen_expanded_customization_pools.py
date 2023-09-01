@@ -114,7 +114,7 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             full_desc,
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,
-            v='1.6.0',
+            v='1.7.0',
             cats='loot-system, enemy-drops',
             )
 
@@ -176,7 +176,12 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
                 34, 35,
                 }
         if not drop_earl:
-            blocklist |= {5, 7, 8, 9, 10, 11, 13, 14, 15, 18, 39}
+            blocklist |= {
+                    # Original set that was in here (or at least, pre-2023-08-31 patch)
+                    5, 7, 8, 9, 10, 11, 13, 14, 15, 18, 23, 39,
+                    # New additions as of 2023-08-31:
+                    22, 23, 24, 37, 41, 42,
+                    }
         if not drop_mission:
             blocklist |= {29, 30, 31, 32, 36}
         for num in range(1, 44):
@@ -190,7 +195,11 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
         balances.append(f'/Game/PatchDLC/Raid1/PlayerCharacters/_Customizations/{shortname}/CustomSkin_{shortname}_45.InvBal_CustomSkin_{shortname}_45')
 
         # DLC1 - Dandelion
-        for num in [44, 46]:
+        if drop_earl:
+            dandelion_nums = [44, 46]
+        else:
+            dandelion_nums = [44]
+        for num in dandelion_nums:
             balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
 
         # Broken Hearts
@@ -252,7 +261,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             for num in [71, 72, 73, 74]:
                 balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/_Shared/CustomSkin_{shortname}_{num}.InvBal_CustomSkin_{shortname}_{num}')
         # w/ VC3 data
-        balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/_Shared/Skins/CustomSkin_{shortname}_38.InvBal_CustomSkin_{shortname}_38')
+        if drop_earl:
+            balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/_Shared/Skins/CustomSkin_{shortname}_38.InvBal_CustomSkin_{shortname}_38')
 
         # Now output
         mod.comment(f'{shortname} Skins')
@@ -274,7 +284,12 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
                 2, 3, 25
                 }
         if not drop_earl:
-            blocklist |= {7, 9, 10, 11, 12, 13, 14, 16, 18, 19}
+            blocklist |= {
+                    # Original set that was in here (or at least, pre-2023-08-31 patch)
+                    7, 9, 10, 11, 12, 13, 14, 16, 18, 19,
+                    # New additions as of 2023-08-31:
+                    26,
+                    }
         if not drop_mission:
             blocklist |= {5, 20, 21, 22, 23, 24}
         for num in range(1, 27):
@@ -283,14 +298,16 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
 
         # Bloody Harvest, Ordering Bonuses, etc
         # 28 is retro pack, 29 is neon pack (26 doesn't exist)
-        for num in [25, 27]:
-            balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
+        if drop_earl:
+            for num in [25, 27]:
+                balances.append(f'/Game/PatchDLC/Customizations/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_{num}.InvBal_CustomHead_{shortname}_{num}')
 
         # DLC1 - Dandelion
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_30.InvBal_CustomHead_{shortname}_30')
 
         # Broken Hearts (actually a Twitch Prime reward, most likely)
-        balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
+        if drop_earl:
+            balances.append(f'/Game/PatchDLC/EventVDay/PlayerCharacters/_Shared/CustomHead_{shortname}_Twitch.InvBal_CustomHead_{shortname}_Twitch')
 
         # DLC2 - Hibiscus - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Hibiscus/PlayerCharacters/_Customizations/_Shared/CustomHead_{shortname}_DLC2_01.InvBal_CustomHead_{shortname}_DLC2_01')
@@ -302,7 +319,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
         balances.append(f'/Game/PatchDLC/Event2/PlayerCharacters/_Customizations/{dirname}/Heads/CustomHead_{shortname}_34.InvBal_CustomHead_{shortname}_34')
 
         # Guardian Takedown
-        balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/CustomHeads/CustomHead46/CustomHead_{shortname}_46.InvBal_CustomHead_{shortname}_46')
+        if drop_earl:
+            balances.append(f'/Game/PatchDLC/Takedown2/PlayerCharacters/_Customizations/CustomHeads/CustomHead46/CustomHead_{shortname}_46.InvBal_CustomHead_{shortname}_46')
 
         # DLC3 - Geranium - TODO: need to figure out if this should be in a blocklist
         balances.append(f'/Game/PatchDLC/Geranium/Customizations/PlayerHead/CustomHead38/CustomHead_{shortname}_38.InvBal_CustomHead_{shortname}_38')
@@ -327,7 +345,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
         balances.append(f'/Game/PatchDLC/VaultCard2/PlayerCharacters/{dirname}/Heads/DA_{abbrev}Head03.InvBal_DA_{abbrev}Head03')
 
         # Introduced with VC3 but not actually *on* VC3
-        for num in [40, 41, 42, 44]:
+        vc3_nums = [40, 41, 42]
+        if drop_earl:
+            vc3_nums.append(44)
+        for num in vc3_nums:
             if shortname == 'Siren' and num == 44:
                 # The Siren head here has a slightly different path for... reasons?
                 balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/{dirname}/Heads/{abbrev}Head{num}/DA_{abbrev}Head44.InvBal_DA_{abbrev}Head{num}')
@@ -404,7 +425,12 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             51, 52, 53, 54, 58,
             }
     if not drop_earl:
-        blocklist |= {5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 24, 27, 31, 34, 41}
+        blocklist |= {
+                # Original set that was in here (or at least, pre-2023-08-31 patch)
+                5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 24, 27, 31, 34, 41,
+                # New additions as of 2023-08-31:
+                11, 39, 40, 42, 57,
+                }
     if not drop_mission:
         blocklist |= {6, 20, 22, 28, 29, 30}
     for num in range(1, 59):
@@ -412,7 +438,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/Gear/WeaponTrinkets/_Design/TrinketParts/WeaponTrinket_{num}.InvBal_WeaponTrinket_{num}')
 
     # Uncategorized DLC
-    balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
+    if drop_earl:
+        balances.append('/Game/PatchDLC/Customizations/Gear/Weapons/WeaponTrinkets/WeaponTrinket_59.InvBal_WeaponTrinket_59')
 
     # Bloody Harvest
     balances.append('/Game/PatchDLC/BloodyHarvest/Gear/Weapons/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_1.InvBal_Trinket_League_BloodyHarvest_1')
@@ -420,7 +447,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     # DLC1 - Dandelion
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_01_JackGoldenMask.InvBal_Trinket_Dandelion_01_JackGoldenMask')
     balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_Dandelion_02_Mimic.InvBal_Trinket_Dandelion_02_Mimic')
-    balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
+    if drop_earl:
+        balances.append('/Game/PatchDLC/Dandelion/Gear/WeaponTrinkets/_Shared/Trinket_MercenaryDay_01_CandyCane.InvBal_Trinket_MercenaryDay_01_CandyCane')
 
     # Broken Hearts
     balances.append('/Game/PatchDLC/EventVDay/Gear/Weapon/WeaponTrinkets/_Shared/Trinket_League_VDay_1.InvBal_Trinket_League_VDay_1')
@@ -474,7 +502,8 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     # Included in VC3 data but not actually VC
     for num in [1, 3, 4, 5]:
         balances.append(f'/Game/PatchDLC/VaultCard3/Gear/_Design/WeaponTrinkets/WeaponTrinket_BattlePass_{num}.InvBal_WeaponTrinket_BattlePass_{num}')
-    balances.append('/Game/PatchDLC/VaultCard3/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2.InvBal_Trinket_League_BloodyHarvest_2')
+    if drop_earl:
+        balances.append('/Game/PatchDLC/VaultCard3/Gear/WeaponTrinkets/_Shared/Trinket_League_BloodyHarvest_2.InvBal_Trinket_League_BloodyHarvest_2')
 
     # Now output
     mod.comment('Weapon Trinkets')
@@ -496,7 +525,12 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             12, 13,
             }
     if not drop_earl:
-        blocklist |= {1, 2, 3, 4, 5, 6, 8, 9, 10, 26, 27, 28, 29, 30}
+        blocklist |= {
+                # Original set that was in here (or at least, pre-2023-08-31 patch)
+                1, 2, 3, 4, 5, 6, 8, 9, 10, 26, 27, 28, 29, 30,
+                # New additions as of 2023-08-31:
+                14, 15, 16, 17, 35,
+                }
     for num in range(1, 36):
         if num not in blocklist:
             balances.append(f'/Game/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num:02d}.InvBal_ECHOTheme_{num:02d}')
@@ -511,7 +545,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
     balances.append('/Game/PatchDLC/Raid1/Customizations/EchoDevice/ECHOTheme_38.InvBal_ECHOTheme_38')
 
     # DLC1 - Dandelion
-    for num in [36, 64, 65, 66]:
+    dand_nums = [36]
+    if drop_earl:
+        dand_nums.extend([64, 65, 66])
+    for num in dand_nums:
         balances.append(f'/Game/PatchDLC/Dandelion/PlayerCharacters/_Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
 
     # Broken Hearts
@@ -565,13 +602,10 @@ for (label, filename_addition, drop_mission, drop_earl, drop_vaultcard, extra_te
             balances.append(f'/Game/PatchDLC/VaultCard3/Customizations/EchoDevice/ECHOTheme_VC3_{num}.InvBal_ECHOTheme_VC3_{num}')
 
     # Included in VC3 data, including some more for earl
-    blocklist = {}
-    if not drop_earl:
-        blocklist = {39, 61, 77}
-    for num in [39, 41, 42, 43, 47, 48, 49, 51, 53, 54, 55, 56, 59, 61, 62, 77, 80, 'Poop']:
-        if num not in blocklist:
+    if drop_earl:
+        for num in [39, 41, 42, 43, 47, 48, 49, 51, 53, 54, 55, 56, 59, 61, 62, 77, 80, 'Poop']:
             balances.append(f'/Game/PatchDLC/VaultCard3/Customizations/EchoDevice/ECHOTheme_{num}.InvBal_ECHOTheme_{num}')
-    balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/Beastmaster/EchoDevice/ECHOTheme_25.InvBal_ECHOTheme_25')
+        balances.append(f'/Game/PatchDLC/VaultCard3/PlayerCharacters/Beastmaster/EchoDevice/ECHOTheme_25.InvBal_ECHOTheme_25')
 
     # Now output
     mod.comment('ECHO Skins')
