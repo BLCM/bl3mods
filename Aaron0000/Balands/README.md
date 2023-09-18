@@ -12,6 +12,10 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.6.2
+-----
+Fixed a typo preventing the Semi-Auto mode of Auto/Single Dahl SMGs from receiving a damage buff.
+
 1.6.1
 -----
 Fixed an issue for the "Less Extra Drops" files where a few enemies may not have been able to drop extra loot outside of Mayhem 10.
