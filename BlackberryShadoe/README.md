@@ -1,17 +1,16 @@
 ###
 ### Name: Shadoe's Mayhem Raid
-#### Version: 1.0.0 - FINAL
+#### Version: 1.0.0
 ### Author: BlackberryShadoe
 ##### Contact: BlackBerryShadoe on discord, join my server here: https://discord.com/invite/uNmYkvaT78
-##### Credits: SkruntSkrunt, Grimm, SSpyR, Apocalyptech, TheGigaMaster, EpicNNG, CZ47, Freezer,
-##### Poïpoï, Lonemasterino, niol, Phenom, ZetaDaemon, 10 FPSs, Novenic, Elektrohund, lollixlii, Bra2ha,
-##### Nexus-Mistress, Erthwormsam, apple1417, TheNiTrex, Aaron0000, Stygian Emperor, RadiantArin
 ##### Categories: gameplay, armsrace, major-pack, scaling, mode-balance, loot-system, mode-overhaul
 #####
 ##### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 ##### License URL: https://creativecommons.org/licenses/by-sa/4.0/
 #####
-#####
+##### Credits: SkruntSkrunt, Grimm, SSpyR, Apocalyptech, TheGigaMaster, EpicNNG, CZ47, Freezer,
+##### Poïpoï, Lonemasterino, niol, Phenom, ZetaDaemon, 10 FPSs, Novenic, Elektrohund, lollixlii, Bra2ha,
+##### Nexus-Mistress, Erthwormsam, apple1417, TheNiTrex, Aaron0000, Stygian Emperor, RadiantArin
 #####
 ##### THIS IS A STAND-ALONE MOD!!! DO NOT USE ANY OTHER MODS WITH
 ##### THIS ONE, BECAUSE THEY WILL CAUSE THIS MOD TO WORK INCORRECTLY...
