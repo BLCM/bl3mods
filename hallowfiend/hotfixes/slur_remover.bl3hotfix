@@ -1,0 +1,68 @@
+@title Slur Remover
+@version 1.0.0
+@author hallowfiend
+@contact-discord @hallowlock
+@categories av-enemy, text
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+### Renames most of the franchise's mascot enemies to have less... controversial names, let's say,
+### instead giving them ones more appropriate to the religious CoV AND to their origin in-lore
+### as (uh oh, spoiler!) people whose minds were shattered by the incomprehensible power of Vaulthalla.
+### Only changes their display names, does not affect in-game subtitles that mention them.
+
+# Base Game
+
+# Playthrough 1
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBasic),/Game/Enemies/Psycho_Male/Basic/_Design/Character/UIName_PsychoBasic.UIName_PsychoBasic,DisplayName,0,,Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadass),/Game/Enemies/Psycho_Male/Badasss/_Design/Character/UIName_PsychoBadass.UIName_PsychoBadass,DisplayName,0,,Badass Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoFirebrand),/Game/Enemies/Psycho_Male/Firebrand/_Design/Character/UIName_PsychoFirebrand.UIName_PsychoFirebrand,DisplayName,0,,Torchbearer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoLoot),/Game/Enemies/Psycho_Male/Loot/_Design/Character/UIName_PsychoLoot.UIName_PsychoLoot,DisplayName,0,,Vicar
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoSlugger),/Game/Enemies/Psycho_Male/Slugger/_Design/Character/UIName_PsychoSlugger.UIName_PsychoSlugger,DisplayName,0,,Flagellant
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoAnointed),/Game/Enemies/Psycho_Male/Anointed/_Design/Character/UIName_PsychoAnointed.UIName_PsychoAnointed,DisplayName,0,,Anointed Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoWardenGuard),/Game/Enemies/Psycho_Male/_Unique/WardenGuard/_Design/Character/UIName_PsychoWardenGuard.UIName_PsychoWardenGuard,DisplayName,0,,Warden's Eye
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoInfectedOnes),/Game/Enemies/Psycho_Male/_Unique/InfectedOnes/_Design/Character/UIName_PsychoInfectedOnes.UIName_PsychoInfectedOnes,DisplayName,0,,Plaguebringer
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkPsycho),/Game/Enemies/Tink/Psycho/_Design/Character/UIName_TinkPsycho.UIName_TinkPsycho,DisplayName,0,,Seer Tink
+
+# lmao gbx made a typo point and laugh/j
+# gonna leave martyrs/boomsaints alone. their names are fine as is tbh.
+
+# Playthrough 2
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBasic),/Game/Enemies/Psycho_Male/Basic/_Design/Character/UIName_PsychoBasic_PT2.UIName_PsychoBasic_PT2,DisplayName,0,,Herald
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoBadass),/Game/Enemies/Psycho_Male/Badasss/_Design/Character/UIName_PsychoBadass_PT2.UIName_PsychoBadass_PT2,DisplayName,0,,Badass Herald
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoFirebrand),/Game/Enemies/Psycho_Male/Firebrand/_Design/Character/UIName_PsychoFirebrand_PT2.UIName_PsychoFirebrand_PT2,DisplayName,0,,Immolatist
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoLoot),/Game/Enemies/Psycho_Male/Loot/_Design/Character/UIName_PsychoLoot_PT2.UIName_PsychoLoot_PT2,DisplayName,0,,Decorated Vicar
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoSlugger),/Game/Enemies/Psycho_Male/Slugger/_Design/Character/UIName_PsychoSlugger_PT2.UIName_PsychoSlugger_PT2,DisplayName,0,,Ministrant
+SparkCharacterLoadedEntry,(1,1,0,BPChar_PsychoAnointed),/Game/Enemies/Psycho_Male/Anointed/_Design/Character/UIName_PsychoAnointed_PT2.UIName_PsychoAnointed_PT2,DisplayName,0,,Anointed Herald
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_TinkPsycho),/Game/Enemies/Tink/Psycho/_Design/Character/UIName_TinkPsychoPT2.UIName_TinkPsychoPT2,DisplayName,0,,Herald Tink
+
+# Fustercluck
+
+# Playthrough 1
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoBasic),Alisma/Enemies/AliPsycho/Basic/UIName_AliPsychoBasic.UIName_AliPsychoBasic,DisplayName,0,,Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoBasic2),Alisma/Enemies/AliPsycho/Basic2/UIName_AliPsychoBasic.UIName_AliPsychoBasic,DisplayName,0,,Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoBadass),Alisma/Enemies/AliPsycho/Badass/UIName_AliPsychoBadass.UIName_AliPsychoBadass,DisplayName,0,,Badass Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoFirebrand),Alisma/Enemies/AliPsycho/Firebrand/UIName_AliPsychoFirebrand.UIName_AliPsychoFirebrand,DisplayName,0,,Pyromaniac Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoSlugger),Alisma/Enemies/AliPsycho/Slugger/UIName_AliPsychoSlugger.UIName_AliPsychoSlugger,DisplayName,0,,Slugger Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoSuicide),Alisma/Enemies/AliPsycho/Suicide/UIName_AliPsychoSuicide.UIName_AliPsychoSuicide,DisplayName,0,,Far-Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoSuicide2),Alisma/Enemies/AliPsycho/Suicide2/UIName_AliPsychoSuicide.UIName_AliPsychoSuicide,DisplayName,0,,Far-Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HibPsychoBasic),Alisma/Enemies/HibPsycho/Basic/_Design/Character/UIName_HibPsychoBasic_Sanctum.UIName_HibPsychoBasic_Sanctum,DisplayName,0,,Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_HibPsychoBadass),Alisma/Enemies/HibPsycho/Badass/_Design/Character/UIName_HibPsychoBadass_Sanctum.UIName_HibPsychoBadass_Sanctum,DisplayName,0,,Badass Seer
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliTinkPsycho),Alisma/Enemies/AliTink/Psycho/UIName_AliTinkPsycho.UIName_AliTinkPsycho,DisplayName,0,,Pineal Herald
+
+# Playthrough 2
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoBasic),Alisma/Enemies/AliPsycho/Basic/UIName_AliPsychoBasic_PT2.UIName_AliPsychoBasic_PT2,DisplayName,0,,Herald
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoBadass),Alisma/Enemies/AliPsycho/Badass/UIName_AliPsychoBadass_PT2.UIName_AliPsychoBadass_PT2,DisplayName,0,,Badass Herald
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoFirebrand),Alisma/Enemies/AliPsycho/Firebrand/UIName_AliPsychoFirebrand_PT2.UIName_AliPsychoFirebrand_PT2,DisplayName,0,,Ignicolist Seer
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoSlugger),Alisma/Enemies/AliPsycho/Slugger/UIName_AliPsychoSlugger_PT2.UIName_AliPsychoSlugger_PT2,DisplayName,0,,Slugger Herald
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliPsychoSuicide),Alisma/Enemies/AliPsycho/Suicide/UIName_AliPsychoSuicide_PT2.UIName_AliPsychoSuicide_PT2,DisplayName,0,,Afflicted Far-Seer
+
+SparkCharacterLoadedEntry,(1,1,0,BPChar_AliTinkPsycho),Alisma/Enemies/AliTink/Psycho/UIName_AliTinkPsycho_PT2.UIName_AliTinkPsycho_PT2,DisplayName,0,,Vault-Eye Herald
