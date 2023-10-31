@@ -1,6 +1,6 @@
 ###
 ### Name: Shadoe's Mayhem Raid
-#### Version: 1.0.0 - FINAL
+#### Version: 1.0.0
 ### Author: BlackberryShadoe
 ##### Contact: BlackBerryShadoe on discord, join my server here: https://discord.com/invite/uNmYkvaT78
 ##### Categories: gameplay, armsrace, major-pack, scaling, mode-balance, loot-system, mode-overhaul
