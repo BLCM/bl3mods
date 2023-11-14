@@ -1,6 +1,6 @@
 ###
 ### Name: Shadoe's Mayhem Raid
-#### Version: 1.0.0
+#### Version: 1.0.1
 ### Author: BlackberryShadoe
 ##### Contact: BlackBerryShadoe on discord, join my server here: https://discord.com/invite/uNmYkvaT78
 ##### Categories: gameplay, armsrace, major-pack, scaling, mode-balance, loot-system, mode-overhaul
@@ -190,7 +190,7 @@
 #####
 ##### Lagromar, SpongeBoss BulletPants, Yellow Force Trooper, Caber Dowd, Anointed Alpha, Wotan the Invincible,
 ##### Gideon, Facemelter, One Punch, Xam, General Blisterpuss, Tink of Cunning, Skag of Survival, Aurelia, Shiv, 
-##### Loot Tink, Mr. Titan, Tyrone Smallums, Sky Bully, Demoskaggon, Tom, Loot Skritaari, Josie Byte, Hydragoian,
+##### Handsome Jackie, Mr. Titan, Tyrone Smallums, Sky Bully, Demoskaggon, Tom, Loot Skritaari, Josie Byte, Hydragoian,
 ##### Beef Plissken, Franco Firewall, Evil St. Lawrence, Dr. Benedict, Borman Nates, Billy the Anointed, Tony Bordel,
 ##### Rachael the Anointed, Jerrick Logan, Gigamind, Hag of Fervor, Heavyweight Harker the Invincible, and Voltborn.
 #####
