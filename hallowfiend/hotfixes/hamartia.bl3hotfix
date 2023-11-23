@@ -1,0 +1,14 @@
+@title Hamartia
+@version 1.0.0
+@author hallowfiend
+@contact-discord @hallowlock
+@categories char-siren
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+### Reduces the cooldown of Catharsis to nil.
+### HUMONGOUS props to Arin for providing the code for this. Like holy shit I would have been wrestling with this for ages - and I was - if not for him.
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/FearPassThroughMe/PassiveSkill_Siren_FearPassThroughMe.Default__PassiveSkill_Siren_FearPassThroughMe_C,CooldownTime,0,,(DataTable=/Game/PlayerCharacters/_Shared/_Design/Balance/_Shared/DataTable_Shared_PassiveSkillBalance.DataTable_Shared_PassiveSkillBalance,RowName=ElementalEffect_Chance,ValueName=FivePointSmall_19_B4A397164A67CA1A1F8DA0AA05927FFF)
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/SirenBrawler/_Shared/_Design/Passives/ManifestTree/FearPassThroughMe/PassiveSkill_Siren_FearPassThroughMe.Default__PassiveSkill_Siren_FearPassThroughMe_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer_0,FormatText.string,0,,

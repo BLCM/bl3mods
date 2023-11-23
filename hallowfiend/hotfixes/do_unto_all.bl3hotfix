@@ -1,0 +1,12 @@
+@title Do Unto All
+@version 1.0.0
+@author hallowfiend
+@contact-discord @hallowlock
+@categories char-siren
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+### Removes the cooldown of Do Unto Others.
+
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Siren/DataTable_Siren_ConstantValues.DataTable_Siren_ConstantValues,DoUntoOthers_Cooldown,Value,0,,(BaseValueConstant=0)
