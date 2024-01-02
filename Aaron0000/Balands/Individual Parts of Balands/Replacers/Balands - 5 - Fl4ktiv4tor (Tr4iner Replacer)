@@ -1,0 +1,57 @@
+###
+### Name: Balands - Flaktiv4tor (Tr4iner Replacer)
+### Version: 1.6.3
+### Author: Aaron0000
+### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
+### Categories: gear-general, gear-com
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+
+### (The mod's name is pronounced the same as the word "balance".)
+###
+### Borderlands 3 is a good time, but there are some parts that leave room
+### for questioning. Certain aspects of endgame like skill, pet, and shield
+### damage being multiplied dozens of times over without being mentioned
+### in-game, the overwhelming importance of anointments, and lots of gear
+### requiring triple-digit buffs in order to deal with a five-digit boost to
+### enemy health makes it almost impossible to keep things relatively
+### balanced during playthroughs. And then there's the stuff that can't
+### even perform well at the lowest levels of play. So I've tried my hand 
+### at putting some more balance in the Borderlands.
+###
+### This mod can used with any normal save file without needing to change anything, the only thing you may need to change when you return to normal-play is your Mayhem Mode modifiers if you change them while the mod is active.
+###
+### CREDITS:
+### Apocalyptech - For lending a hand to figuring out some stuff, as well as the Mayhem Mode Config Tool, removing Mayhem bonuses on gear, full-auto Torgue assault rifles, full-auto on the Edirian Fabricator, Beef Plisken's loot fix, the Siren COM blank part fix, some DLC enemies not dropping shields, Red-Text Explainer, and the database from which I obtained a lot of information.
+### CZ47 - For lending a hand to figuring out some stuff, as well as the Monkey Do fixes, some changes to the Pet Loader pet bonuses, removing damage/cooldown penalties from Amara's augments, the Vendor Crash Pseudo-Fix, and Faster NPCs.
+### ZetaDaemon - For lending a hand to figuring out some stuff as well as fixing burst-fire delay getting increased by some skills instead of reduced and providing a fix for the Action-Skill-End-Element anoints' number not changing to reflect the correct value.
+### Grimm - For the weighted ammo drop adjustments and lending a hand to figuring out some stuff.
+### apple 1417 - For lending a hand to figuring out some stuff.
+### Stygian Emperor - For removing movement speed penalties on Atlas and Vladof heavy weapons.
+### LoneMasterino - For making the Shooting Star shield's projectiles not collide with level geometry.
+### tbj_quag, JoeForLong, ki11erSix, shadowevil - For playtesting and/or giving feedback.
+### EpicNNG - For allowing me to use his code for making the Psycho Stabber's projectiles deal melee damage, for helping me fix an issue with the Nukem, and for making Redux which was useful for referring to when dealing with certain lines of code.
+### SSpyR - For making the Borderlands 3 Object Explorer, which proved immensely useful for investigating almost everything adjusted in this file.
+### Any contributors to the Unofficial Community Patch (for Borderlands 3) that haven't already been previously mentioned.
+### c0dycode - For making the Borderlands 3 Hotfix Manager.
+### Lootlemon.com - Good information source for Borderlands 3 gear and skills.
+###
+
+# Tr4iner - Turn it into the Fl4ktiv4tor.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/_GearExtension/NamingStrategies/NamingStrategyExtension_Hib_CM_Beastmaster.NamingStrategyExtension_Hib_CM_Beastmaster:NamePart_InventoryNamePartData,PartName,0,,Fl4ktiv4tor
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/UIText_CM_BM_Hib_RedText.UIText_CM_BM_Hib_RedText,Text,0,,[flavor]Let's kick it into overdrive.[/flavor]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/UIStat_CM_BM_Hib_Desc.UIStat_CM_BM_Hib_Desc,FormatText.string,0,,Fl4k gains [skill]50% increased Action Skill Cooldown Rate[/skill] and loses [skill]Action Skill Duration.[/skill]<br><br>[skill]Gamma Burst Duration: -85%[/skill]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/UIStat_CM_BM_Hib_Desc.UIStat_CM_BM_Hib_Desc:SupplementalStat_UIStatData_Attribute,FormatText.string,0,,<br>[skill]Fade Away Duration: -66%[/skill]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/UIStat_CM_BM_Hib_Desc.UIStat_CM_BM_Hib_Desc:SupplementalStat_UIStatData_Attribute.SupplementalStat_UIStatData_Attribute_0,FormatText.string,0,,<br>[skill]Gravity Snare Duration: -80%[/skill]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/Part_CM_Beastmaster_Hib.Part_CM_Beastmaster_Hib,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/Character/Att_Character_ActionSkill_GlobalCooldownRate.Att_Character_ActionSkill_GlobalCooldownRate,ModifierType=Scale,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_ActionSkill_Beastmaster_SkillDuration_Skill2.Att_ActionSkill_Beastmaster_SkillDuration_Skill2,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.50,BaseValueScale=1)),(AttributeToModify=/Game/PlayerCharacters/_Shared/_Design/Attributes/Beastmaster/Att_ActionSkill_Beastmaster_SkillDuration_Skill3.Att_ActionSkill_Beastmaster_SkillDuration_Skill3,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.15,BaseValueScale=1)),(AttributeToModify=/Game/PlayerCharacters/_Shared/_DLC/Ixora/Balance/Beastmaster/Att_ActionSkill_Beastmaster_SkillDuration_Skill4.Att_ActionSkill_Beastmaster_SkillDuration_Skill4,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.2,BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/Part_CM_Beastmaster_Hib.Part_CM_Beastmaster_Hib:AspectList_InventoryAbilityAspectData,Abilities,0,,()
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_Ferocity.ClassMod_Part_Skill_Hib_BeastMaster_Ferocity:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond3/Passive_Beastmaster_Bond3.Passive_Beastmaster_Bond3_C
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_Ferocity.ClassMod_Part_Skill_Hib_BeastMaster_Ferocity:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,whoRescuedWho
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest.ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Passive_Beastmaster_HitAndRun_3.Passive_Beastmaster_HitAndRun_3_C
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest.ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,rageAndRecover
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest.ClassMod_Part_Skill_Hib_BeastMaster_GrimHarvest:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,green
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_PackTac.ClassMod_Part_Skill_Hib_BeastMaster_PackTac:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].PassiveAbilityClassPtr,0,,/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged11/Passive_Beastmaster_Ranged11.Passive_Beastmaster_Ranged11_C
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_PackTac.ClassMod_Part_Skill_Hib_BeastMaster_PackTac:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].ItemFrameName,0,,headCount
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/BSM/ClassMod_Part_Skill_Hib_BeastMaster_PackTac.ClassMod_Part_Skill_Hib_BeastMaster_PackTac:AspectList_OakPassiveAbilityBuffAspectData,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,orange
