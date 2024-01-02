@@ -10,6 +10,29 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.6.3
+-----
+(Attempted to) fix the Tr4iner class mod not activating upon every kill.
+
+Added a replacer class mod for the Tr4iner since it seldom works and the effect is inconsequential. The replacer is called the "Fl4ktiv4tor":
+	• It replaces the confusion ability with a 50% additive increase in Action Skill cooldown rate while heavily reducing the duration of most of Fl4k's Action Skills, intended to allow non-Rakk Attack Action Skills to activate certain anointments and skills more frequently.
+	• Ferocity/Grim Harvest/Pack Tactics are swapped to Who Rescued Who/Rage and Recover/Head Count respectively.
+	• Credit to tbj_quag for the idea.
+
+Changed Moxxi's Endowment to now double all experience earned through combat (including boosts from other sources).
+
+Removed the Naught replacer for Moxxi's Endowment from the main file and balancing file and included it as a seperate file in the newly added "Replacers" folder along with the Fl4ktiv4tor.
+
+Fixed some loot drop issues with Gmork.
+
+Fixed an incorrect reference for the Porcelain Pipe Bomb causing it to refer to the Red Queen for its damage. The actual damage number on the Pipebomb is unchanged.
+
+Remade the previously made changes to the Sleeping Giant's post-reload buffs since it wasn't actually working. The post-reload damage buff is now 35%, the post-reload fire rate buff is now 35%, the post-reload critical damage buff is now 50%, and the previously attempted omni-buff chance change has been removed.
+
+Changed Wooly Armor's 75% damage resistance into a 40% flat damage reduction.
+
+Removed the "Nayhem" Mayhem modifier from the Balancing file. It can still be applied via the "Balands - Mayhem Mode Modifier Adjustments" file in the Quality of Life, Fixes, Etc. folder.
+
 1.6.2
 -----
 Fixed a typo preventing the Semi-Auto mode of Auto/Single Dahl SMGs from receiving a damage buff.
@@ -1414,9 +1437,7 @@ Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 200%
 
  ┗----Rationale: This gun encourages a hack n' blast playstyle, so it has been altered to better suit such a style.
 
-Sleeping Giant - Reload-damage bonus set to 50%, omni-boost chance set to 15%.
-
- ┗----Rationale: Instead of spending excessive amounts of time trying to get the perfect roll of boosts, the gun has been adjusted so it is good even without the omni-boost.
+Sleeping Giant - Post-reload damage buff set to 35%, post-reload fire rate buff set to 35%, the post-reload critical damage buff is now 50%.
 
 Torrent - Fire rate and mag size adjusted to counteract Dahl SMG buffs.
 
@@ -2774,9 +2795,9 @@ Red Fang - No change.
 
 St4ckbot - No change.
 
-Tr4iner - Dominate chance increased to 100%, Domination duration increased to 60 seconds.
+Tr4iner - (Attempted to) increase Dominate chance to 100%, Domination duration increased to 60 seconds. Also added an optional replacement Class Mod that focuses on enabling non-Rakk Attack Action Skills to be activated frequently.
 
- ┗----Rationale: There isn't a great deal going for this class mod, but you can at least use the dominated enemy to draw aggro away from yourself and your pet for a while now.
+ ┗----Rationale: There isn't a great deal going for this class mod, but you can at least use the dominated enemy to draw aggro away from yourself and your pet for a while now (when it works).
 
 
 LEGENDARY SIREN CLASS MODS
@@ -2886,9 +2907,7 @@ Loaded Dice - No change.
 
 Lunacy - Recharge rate penalty improved to -100% from -216%.
 
-Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity and 50% of your recharge rate for very low shield delay.
-
- ┗----Rationale: In Borderlands 2 the Endowment at least had the distinction of being the only artifact that increased experience gain (and even then, it wasn't a particularly good artifact.) This is Borderlands 3 though, and experience gain is a passive stat that can roll on almost any artifact. Rather than just buffing the Endowment's experience gain heavily, it is now an item that is useful regardless of level and should expand build-making possibilities.
+Moxxi's Endowment - Now doubles all experience obtained in combat (includes other experience boosts.) Also added an optional replacer that changes it to enhance shield recharge rate and delay at the cost of capacity.
 
 Otto Idol - No change.
 
@@ -3695,7 +3714,7 @@ Take This! - No change.
 
 Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 86% bonus amp regardless of points invested.
 
-Wooly Armor - No change.
+Wooly Armor - Replaced the 75% damage resistance with a 40% flat damage reduction.
 
 Not Even a Challenge - No change.
 
