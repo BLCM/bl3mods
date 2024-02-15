@@ -10,6 +10,21 @@ The numbers listed going from here down may not be 100% accurate in some cases. 
 
 # CHANGELOG (for Github users)
 ------------------------------
+1.6.4
+-----
+Adjusted the Loaded Dice to now actually affect the quality of loot obtained. White gear will be 50% less common, Green gear will be 30% less common, Purple gear will be twice as likely to drop, and Orange gear will be 30% more likely to drop.
+
+Replaced the Luck stat on artifacts with Action Skill Duration since it did not actually work. Refrained from giving it the same treatment as the Loaded Dice due to issues with the calculation methods and leveling (kept producing too much purple gear if I tried to affect purple gear at all, and having it affect only white and green gear would be somewhat redundant in higher Mayhem levels where they already drop rarely.) The artifact prefix for Action Skill Cooldown is also changed to Refreshing while the Lucky prefix is changed to Long Lasting.
+
+Fixed an issue with the Fire Rate/Reload generic anointment not reducing the time it takes to reload.
+
+Fixed some issues with Red-Text Explainer involving the Pat SMGs and the Short Stick as well as the individual Red Text Explainer file not matching what was contained in the Complete file.
+
+Adjusted the Devil's Foursum. Changed the damage type of the projectiles from shotgun to pistol, made the explosions no longer injure the user, and tightened the spread of the projectiles.
+
+Significantly increased the damage of Baby Nukes. Unfortunately does not hold up in the later Mayhem Modes (Need to find a way to increase the damage of solely Baby Nukes without affecting other aspects of Moze/Iron Bear that use Action Skill Daamge.)
+
+
 1.6.3
 -----
 (Attempted to) fix the Tr4iner class mod not activating upon every kill.
@@ -2059,7 +2074,7 @@ Craps - No change other than a possible damage adjustment.
 
 Devastator - No change other than a possible damage adjustment.
 
-Devil's Foursum - Base splash radius set to 245.
+Devil's Foursum - Splash Radius set to 240 from 200, increased Projectile Speed by 20%, changed damage type to pistol, make it no longer deal self-damage, and tightened the spread of the projectiles.
 
 Echo - No change other than a possible damage adjustment.
 
@@ -2870,7 +2885,7 @@ Movement Speed - No change.
 
 Element Damage - No change.
 
-Luck - Increased in effectiveness (+50 at level 72.)
+Luck - Replaced with Action Skill Duration.
 
 FFYL Time - No change.
 
@@ -2903,7 +2918,7 @@ Holy Grail - Maximum health bonus increased to 17%/34%/50%, post-Second Wind mov
 
 Launch Pad - No change.
 
-Loaded Dice - No change.
+Loaded Dice - Now actually affects loot quality. White gear will be 50% less common, Green gear will be 30% less common, Purple gear will be twice as likely to drop, and Orange gear will be 30% more likely to drop.
 
 Lunacy - Recharge rate penalty improved to -100% from -216%.
 
@@ -3426,7 +3441,7 @@ Exploding. Bullets. - No change.
 
 Fuel for the Fire - No change.
 
-Baby Nukes - No change.
+Baby Nukes - Increased the damage by roughly 160%.
 
 My Little Friend - No change.
 
