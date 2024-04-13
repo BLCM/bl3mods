@@ -1,4 +1,4 @@
-### Balands includes the Unofficial Community Patch for Borderlands 3 within itself, so you don't need to run the Unofficial Community Patch separately from Balands. You can also use individual portions of the mod by checking out the "Individual Parts of Balands" folder and read the "Contents" file for details.
+### Balands includes the Unofficial Community Patch for Borderlands 3 within itself, so you don't need to run the Unofficial Community Patch separately from Balands. You can also use individual portions of the mod by checking out the "Individual Parts of Balands" folder and read the readme file within it for details.
 
 # DISCLAIMER: The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
