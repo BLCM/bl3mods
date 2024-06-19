@@ -1,5 +1,3 @@
-### Balands includes the Unofficial Community Patch for Borderlands 3 within itself, so you don't need to run the Unofficial Community Patch separately from Balands. You can also use individual portions of the mod by checking out the "Individual Parts of Balands" folder and read the readme file within it for details.
-
 # DISCLAIMER: The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
 MAIN MENU CHANGES
@@ -2431,6 +2429,8 @@ Gunner Infinite Ammo - Increased to 7 seconds.
 
 # GUNNER SKILLS
 
+Gunner Summary - Moze now has more reasons to invest in non-Demolition Woman skill trees for damage, some minor additions to increase Moze's overall speed, and Iron Bear can now be used more frequently with higher hard point variety. 
+
 Updated the descriptions of many skills to either mention Iron Cub whenever Iron Bear is mentioned or otherwise be more accurate to the skill's in-game effects.
 
 SHIELD OF RETRIBUTION
@@ -2621,6 +2621,8 @@ Efficiency Engine - No change.
 
 # OPERATIVE SKILLS
 
+Operative Summary - Damage has been spread out from Violent Momentum to other skills, Zane now has wider variety in the types of damage he can boost, Barrier and the Under Cover tree have been made more useful, Drone and Clone have been buffed to be less gear dependent.
+
 DOUBLED AGENT
 -------------
 Synchronicity - Added a bonus to Action Skill damage.
@@ -2669,7 +2671,7 @@ Cool Hand - Now also affects repair time.
 
 Drone Delivery - Reduced cooldown to 10 seconds.
 
-Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal fm this skill.
+Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal from this skill.
 
 Seein' Red - No change.
 
@@ -2747,7 +2749,7 @@ Barrier - Reduced cooldown to 16 seconds from 24 seconds, increase amp damage to
 
  ┗----Rationale: The increase in amp damage and the reduction of Lifesteal should encourage more usage of the Barrier.
 
-Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35% and now affects burst fire delay.
+Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35% and now affects burst fire delay, and made it more clear that the Barrier must be on the ground in order to receive the bonuses.
 
  ┗----Rationale: Two augments in the same tree shouldn't be boosting the exact same stat. Thus the reload speed has been replaced with fire rate.
 
@@ -2799,6 +2801,8 @@ Proliferation - No change.
 
 # BEASTMASTER SKILLS
 
+Beastmaster Summary - Some modest changes throughout Fl4k's three standard skill trees, pets and the Gravity Snare/Trapper tree have been buffed considerably.
+
 HUNTER
 ------
 Interplanetary Stalker - No change.
@@ -2807,7 +2811,7 @@ Leave No Trace - No change.
 
 Second Intention - Increased reload speed bonuses (25%/50% at 5/5.)
 
-Hunter's Eye - No change.
+Hunter's Eye - Updated the description to mention that it is a Hunter skill.
 
 Head Count - No change.
 
@@ -2990,6 +2994,8 @@ WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Ele
 
 
 # SIREN SKILLS
+
+Siren Summary -  Massive buffs to her Action Skills' damage and cooldown rates to enable her Action-Skill-centric playstyle, increased viability of true Melee builds, and other general buffs.
 
 FIST OF THE ELEMENTS
 --------------------
