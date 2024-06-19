@@ -104,7 +104,7 @@ Added a 30% chance for Lagromar to drop a purple Torgue grenade separately from 
 
 Added a 30% chance for Tink-Train to drop a purple Vladof grenade separately from her regular loot pool.
 
- ┗----Rationale: With guns and shields, you're at least able to farm them to some degree through either Earl's Veteran Rewards Machine or the Eridian Fabricator, but that isn't the case for grenades. With certain purple grenades being highly desirable and having no suitable Legendary alternative, late-game drop sources have been added for each manufacturer's purple grenades to provide an option to obtain them. Atlas grenades are only a 50% chance since there's less part variety due to lacking elements.
+ ┗----Rationale: With guns and shields, you're at least able to farm them to some degree through either Earl's Veteran Rewards Machine or the Eridian Fabricator, but that isn't the case for grenades. With certain purple grenades being highly desirable and having no suitable Legendary alternative, late-game drop sources have been added for each manufacturer's purple grenades to provide an option to obtain them. Atlas grenades are only a 20% chance since there's less part variety due to lacking elements.
 
 Increased the odds of a Sickle spawning as a Boom Sickle to 40%.
 
