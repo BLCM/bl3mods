@@ -70,7 +70,7 @@ Increased the chance of legendary grenades dropping in the Cistern of Slaughter 
 
 Increased the chance of legendary shields dropping in the Slaughterstar 3000 by x10.
 
-Increased the chance of legendary artifacts and class mods dropping in the the Slaughter Shaft by x3 each.
+Increased the chance of legendary artifacts and class mods dropping in the Slaughter Shaft by x3 each.
 
 Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
 
