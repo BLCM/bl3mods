@@ -577,7 +577,7 @@ Breath of the Dying - Base damage multiplier lowered from 3.3 to 1.3, set on-kil
 
 Corruption - Base damage multiplier lowered from 2.5 to 0.9, now deals corrosive damage instead of kinetic, reduced Corruption bonus to 20% per stack, increased projectiles produced to 3, reduced initial projectile speed by 50%, made projectiles now accelerate over 3 seconds to ten times the initial speed, fixed projectiles not being boosted by assault rifle damage.
 
- ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly acclerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
+ ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly accelerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
 
 Good Juju - Base damage multiplier lowered from 1.25 to 0.65, set critical hit stack bonus to 8%, fixed secondary firing mode not dealing as much damage as it should.
 
