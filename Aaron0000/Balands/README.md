@@ -349,7 +349,7 @@ COV GENERAL GUN CHANGES
 -----------------------
 No changes.
 
-DAHL GUNS
+DAHL GENERAL GUN CHANGES
 ---------
 Increased Damage of Semi-Auto Firing Mode by 20% and improved Accuracy Spread by 50% for Pistols and SMGs.
 
