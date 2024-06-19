@@ -2,6 +2,16 @@
 
 # CHANGELOG
 ------------------------------
+1.6.6
+-----
+Made Hunter's eye mention that it is a Hunter skill.
+
+Fixed the Kaoson still displaying accuracy and critical damage penalties on the weapon card.
+
+Updated the Bounty Hunter class mod's description to be more accurate.
+
+Updated Charged Relay's description to make it more clear that the Barrier must not be held in order to receive the bonuses.
+
 1.6.5
 -----
 Seperated the Changelog from the Readme file and made it it's own file.
