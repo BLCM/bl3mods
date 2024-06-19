@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Description Adjustments
-### Version: 1.6.5
+### Version: 1.6.6
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: qol, bugfix
@@ -97,7 +97,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/CM/_D/PartSe
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/OPE/UIStat_CM_OP_Raid1_Desc.UIStat_CM_OP_Raid1_Desc,FormatText.string,0,,While Sliding or Airborne, Zane gains [skillbold]$VALUE$[/skillbold] Weapon Damage
 
 # Bounty Hunter - Adjust the description to mention that all enemies count for Bounty Hunter, not just bosses. Also mention the movement speed bonus from Interplanetary Stalker being disabled.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Beastmaster/_Unique/Beastmaster_Unique_03/UI/UIStat_CM_BM_Unique_03_Desc.UIStat_CM_BM_Unique_03_Desc,FormatText,0,,FL4K has a [skill]3%[/skill] chance to activate any purchased [skill]Hunt Kill Skill[/skill] when dealing [skill]gun damage[/skill].<br><br>[skill]All enemies[/skill] are now treated as Humans, Beasts, and Robotics for FL4K's Hunt Skills. [italic](Disables the Movement Speed bonus from Interplanetary Stalker.)[/italic]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Beastmaster/_Unique/Beastmaster_Unique_03/UI/UIStat_CM_BM_Unique_03_Desc.UIStat_CM_BM_Unique_03_Desc,FormatText,0,,FL4K has a [skill]3%[/skill] chance to activate any purchased [skill]Hunt Kill Skill[/skill] when dealing [skill]gun damage[/skill].<br><br>Kills activate all Interplanetary Stalker Bonuses regardless of their target's Type. Fighting a Boss grants all Hunter's Eye Bonuses in addition to the Boss's Type Bonus. [italic](Disables the Movement Speed bonus from Interplanetary Stalker.)[/italic]
 
 # Nimbus - Make the description more accurate.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/SIren/_Unique/Unique_05/UI/UIStat_CM_SR_Unique_05_Desc.UIStat_CM_SR_Unique_05_Desc,FormatText,0,,Whenever Amara first damages an enemy with her [skill]Action Skill[/skill], she creates a damaging cloud of her [skill]Action Skill Element[/skill] at that location. This cloud inherits the damage of your currently wielded weapon's Damage-over-Time.
@@ -287,6 +287,9 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_
 
 # Binary System - Increase Damage to 2.4 from 1, add a note to the skill description saying that it receives Mayhem Scaling.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_Design/ActionSkills/Gadget_DigiClone/Mods/AugmentData_Operative_DigiClone_TrapCard.AugmentData_Operative_DigiClone_TrapCard,Description,0,,Whenever Zane swaps places with his [actionskill]Clone[/actionskill], a [skillbold]Cryo Nova[/skillbold] is triggered around Zane and his [actionskill]Clone[/actionskill].<br><br>This augment receives [actionskill]Action Skill[/actionskill] [endgame]Mayhem Scaling[/endgame].
+
+# Hunter's Eye - Change the skill description to mention that it is a Hunt skill.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged4/Passive_Beastmaster_Ranged4.Default__Passive_Beastmaster_Ranged4_C,AbilityDescription.string,0,,[skillbold]Hunter Skill[/skillbold]. FL4K gains [skillbold]bonuses[/skillbold] when fighting different types of enemies.
 
 # Dominance - Add a note to the skill description saying that it receives Mayhem Scaling.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Bond10/Passive_Beastmaster_Bond10.Default__Passive_Beastmaster_Bond10_C,AbilityDescription.string,0,,Whenever FL4K attacks an enemy with a [skillbold]melee attack[/skillbold] or [skillbold]scores a Critical Hit with a weapon while aiming down sights[/skillbold] they establish [skillbold]Dominance[/skillbold] over that enemy, turning it into an ally for a short time. If the enemy is a [skillbold]Beast[/skillbold], the duration is doubled.<br><br>While under the effect of [skillbold]Dominance[/skillbold], other enemies are more likely to attack it and it constantly loses health until it dies or the effect ends. Once [skillbold]Dominance[/skillbold] ends, a [skillbold]Radiation Nova[/skillbold] is created centered on that enemy. Only one enemy can be under the effect of [skillbold]Dominance[/skillbold] at a time and an enemy may only be affected once.<br><br>This skill receives [actionskill]Action Skill[/actionskill] [endgame]Mayhem Scaling[/endgame].
