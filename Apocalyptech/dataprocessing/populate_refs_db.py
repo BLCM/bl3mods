@@ -212,7 +212,7 @@ for (dirpath, dirnames, filenames) in os.walk(data_dir):
                     eta = '{}m{}s remaining'.format(mins, secs)
                 else:
                     eta = '---- remaining'
-                print('Processed {} objects (of ~183400, as of 2023-08-31 (cosmetics update) (219359 in DB)) | {}...'.format(obj_count, eta))
+                print('Processed {} objects (of ~183800, as of 2024-07-18 (cosmetics update) (220054 in DB)) | {}...'.format(obj_count, eta))
                 db.commit()
 
 # Ensure that we've committed
