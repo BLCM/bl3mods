@@ -64,6 +64,7 @@ if os.path.exists(file_sql_zip):
     os.unlink(file_sql_zip)
 with open(file_sql, 'w') as odf:
     subprocess.run(['mariadb-dump',
+        '--skip-ssl',
         '-u', user,
         f'-p{passwd}',
         '-h', host,
