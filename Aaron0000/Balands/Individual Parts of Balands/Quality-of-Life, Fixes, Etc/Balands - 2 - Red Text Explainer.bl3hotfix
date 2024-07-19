@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Red-Text Explainer
-### Version: 1.5.9
+### Version: 1.6.4
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: gear-general, qol
@@ -857,13 +857,10 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/U
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Convergence/UIStat_RedText_Convergence.UIStat_RedText_Convergence,Text,0,,[Flavor]At the summit, you will find yourselves united.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Produces additional converging projectiles upon shooting an enemy.)[/italic][/nameplate_enemy_slight]
 
 # P.A.T. Mk. II
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3_Epic.UIStat_RedText_PatMk3_Epic,Text,0,,[Flavor]War is a matter of arithmetic.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage. Thrown turret has a chance to fire an exploding laser )[/italic][/nameplate_enemy_slight]
-
-# P.A.T. Mk. I
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3_Epic.UIStat_RedText_PatMk3_Epic,Text,0,,[Flavor]War is a matter of arithmetic.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
 
 # P.A.T. Mk. III
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/PAT_Mk3/UIStat_RedText_PatMk3.UIStat_RedText_PatMk3,Text,0,,[Flavor]War breeds war again.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Wobbly bullets, unique voice module, thrown weapon always deals full reload damage. Thrown turret has a chance to fire an exploding laser )[/italic][/nameplate_enemy_slight]
 
 # Sawpenny
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/Sawhorse/UIStat_RedText_Sawhorse_Epic.UIStat_RedText_Sawhorse_Epic,Text,0,,[Flavor]Measure once, cut once![/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires penetrating, exploding, ricochetting sawblades.)[/italic][/nameplate_enemy_slight]

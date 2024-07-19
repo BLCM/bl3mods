@@ -1,801 +1,4 @@
-All changes in this mod are listed below the changelog of updates. There's a main version of Balands, as well as the option to use only select portions of the mod. Check the folder labeled "Individual Parts of Balands" if you only want to use a portion of the mod, read the "Contents" file for details. The main Balands file "Balands - 3 - Complete Version" contains everything in said folder except "Smaller HUD", "Animation Speed Increases", "Map Defogger", "Less Legendary World Drops", "Less Legendary World Drops in Trials, Slaughters, & Takedowns", and the variants of "Dedicated Drop Source & Mayhem-Scaled Drops" such as Less Extra Drops.
-
-(Includes the Unofficial Community Patch's changes, so you do not need to run the Unofficial Community Patch at the same time as this mod. If you want to always have the latest version of Balands active, in the Hotfix manager "add URL" a link like this; https://raw.githubusercontent.com/BLCM/bl3mods/master/Aaron0000/Balands/Balands%20-%201%20-%20Complete%20Version.bl3hotfix)
-
-(This mod works just fine with regular save files. Just reroll your Mayhem Modifiers after you quit using the mod if you have Mayhem Mode 1 through 10 on.)
-
-# DISCLAIMER
-
-The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
-
-# CHANGELOG (for Github users)
-------------------------------
-1.6.2
------
-Fixed a typo preventing the Semi-Auto mode of Auto/Single Dahl SMGs from receiving a damage buff.
-
-1.6.1
------
-Fixed an issue for the "Less Extra Drops" files where a few enemies may not have been able to drop extra loot outside of Mayhem 10.
-
-1.6.0
------
-Added a small chance for Manufacturer Rewards to deliver a (base game) Legendary item (Note for modders: Repurposes the unused Common manufacturer reward item pools for this.)
-
-Tweaked how certain unique enemies dropped purple grenades to prevent ammo vending machines from having only a specific manufacturer of purple grenades on certain maps. (Note for modders: Repurposes an unused Pangolin grenade item pool for this.)
-
-Reduced the chance of said enemies dropping a purple grenade from 50% (Road Dog)/ 75% (Tink Train, Lagromar, Crush Jaw, Blinding Banshee, Lt. Preston) to 20%/30% but added mayhem-scaled purple grenade drops in return.
-
-Added elemental glows to the Corruption, Mutant, and Nukem to match their previously-changed elements.
-
-Reduced the self-damage of the Pain is Power and Embrace the Pain by 50%.
-
-Fixed Fast Hand(s)' presentation slightly.
-
-1.5.9
------
-Added an item to the news section on the main menu to indicate Balands is active (Complete version and "Balance" files only.)
-
-Fixed an issue with the S.F. Force again (accidentally deleted a previous portion of the fix at some point during a previous version.)
-
-Reduced the strength of some of the animation speed increases in order to prevent items from spawning too low in relation to their container.
-
-Removed "No More Loyalty Reward Notifications" from quality of life changes to re-enable loyalty rewards since it removed Loyalty Rewards to remove the notifications.
-
-Replaced the unused manufacturer reward pools used for a few dedicated drops with other deprecated pools (Notes for Modders: replaced the previously used /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_CoV_Common, /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_Torgue_Common, and /Game/GameData/Loot/ItemPools/ManufacturerRewards/CoV/ItemPool_ManufacturerRewards_Tediore_Common with /Game/GameData/Loot/ItemPools/ItemPool_Creatures_Normal_DEPRECATED, /Game/GameData/Loot/ItemPools/ItemPool_Humans_Badass_DEPRECATED, and /Game/GameData/Loot/ItemPools/ItemPool_Humans_Normal_DEPRECATED)
-
-Reduced Vehicle Mayhem Scaling by roughly 26%.
-
-Lowered the variants of Jetbeasts' health closer to the health of the vehicles in the base game.
-
-Vehicle weapons have been adjusted to be more on par with the default weapons instead of significantly worse for the most part (was unable to adjust the Jetbeast weapons).
-
-Vehicle boosters have been diversified in terms of stats. Laser Wings/Jet Engine/Sonic Booster now have longer durations but slower recharge rates, while Firestarter/Toxic Booster/Thrust Turbine have lower boost duration but higher recharge rates and lower recharge delay.
-
-Vehicle armor has been adjusted to actually have a downside instead of not actually reducing speed. It now increases Boost Consumption by 20%/30%/40% for Technicals/Outrunners/Cyclones and Jetbeasts respectively.
-
-Added a file containing the previously mentioned vehicle changes to the "Individual Parts of Balands" folder.
-
-1.5.8
------
-Fixed the "Complete Version" of Balands lacking the change that makes Boom Sickles spawn more often.
-
-1.5.7
------
-Testing out taking some power from Violent Momentum and buffing some of Zane's other skills in return. Values are not final and are open to feedback (credit to Ancient_Rune for brainstorming these Zane changes.)
-
-Changed Donnybrook's health regen from missing health to total health.
-
-Increased Stiff Upper Lips' damage resistance to 10% per point and added Elemental Damage to the skill.
-
-Increased Nerves of Steel's crit damage to 1.5% per point.
-
-Increased Renegade's health regen to 1.5% per point.
-
-Considerably reduced the gun damage curve on Violent Momentum for speeds past normal walking speed and made it stop counting as a kill skill (credit to Arin for the kill skill removal portion).
-
-Fixed a typo in the Antifreeze's description.
-
-Adjusted the weighting for health vials so that don't always drop from enemies even when you're at full health.
-
-Added missing Red-Text Explainer to the Black Hole.
-
-Updated the Void Rift's description.
-
-Removed the Raging Bear changes that I left in the "Description Fixes" file by mistake.
-
-Added the Weighted Ammo Drops to the "Qualifty-of-Life Adjustments" file.
-
-1.5.6
------
-Renamed all of the files to automatically load in the correct order in OpenHotfixLoader instead of requiring the user to manually rename files (apologies, URL users.)
-
-Added a file that allows you to lower the drop chance of Legendary gear from badass enemies, white/red chests, and vendors.
-
-Added a file intended to be used with the previously mentioned file that reduces the amount of extra world drops added by the main Balands file or "Loot Adjustments" in the Trials, Circles of Slaughter, and Takedowns.
-
-Added some variants of the "Dedicated Drop Source & Mayhem-Scaled Dedicated Drop Adjustments" files. One changes the amount of extra drops to only a single extra drop regardless of Mayhem level, another does the same but allows for the extra drops from the usual version if the drop source contains artifacts or class mods.
-
-1.5.5
------
-Balands now has a collection of separate files apart from the original main file, for users to pick and choose what they prefer. This is largely divided into a file containing the balancing portion, and multiple files containing bugfixes, quality-of-life adjustments, and other miscellaneous options.
-
-Removed the Smaller HUD and Animation-Speed-Up mods from the main Balands file and separated them into the previously mentioned individual files. Also added the Map Defogger from the Unofficial Community Patch as a separate file.
-
-Removed the P.A.T. Mk. III from Spongeboss' dedicated drops since it has already been moved to General Blisterpus.
-
-Made the Septimator and Septimator Prime's meteors' damage source be Sniper Rifle instead of Shotgun.
-
-1.5.4
------
-Re-implemented the increased damage taken for player-controlled vehicles in Mayhem Mode. Player-controlled vehicles were taking too little damage relative to health. Open to suggestions on future changes for vehicles.
-
-1.5.3
------
-Fixed Loco Chantelle not actually dropping Ember's Purge.
-
-1.5.2
------
-Marginally increased the damage of Boomsday.
-
-Fixed some incorrectly colored text in the description for Fast Hand(s).
-
-Changed "multiplied by" for mayhem-damage scalars in Armored Infantry, Violent Momentum, Persistence Hunter, and Fast Hand(s) to "increased by" for clarity.
-
-Fixed the Super Soldier still granting immunity.
-
-Changed the Stop-Gap damage resistance to damage reduction.
-
-Removed a duplicate line for Buttmunch's mayhem drops.
-
-Added Mincemeat's dedicated drops to Buttmunch/Trufflemunch as mayhem-scaled drops due to being unable to apply it to Mincemeat directly.
-
-1.5.1
------
-Fixed Boom. Enhance using the skill description for Cool Hand instead.
-
-Fixed a typo preventing the Burn Both Ends skill description from being changed to match the actual effects.
-
-Added Mayhem-scaled drops to Buttmunch after remembering it existed.
-
-1.5.0
------
-Fixed the double barrel on the Shredifier not calculating damage appropiately (thanks to Lonemasterino for noticing this), changed the way the extra ammo cost is calculated on the Shredifier's double barrel to compensate for the loss in damage (an x2 Super Shredifier in double barrel mode will now only consume three ammo per shot).
-
-1.4.9
------
-Re-added Mayhem scaling to vehicle damage. It increases by 65% per Mayhem level now.
-
-Reduced the total health of Hemovorous' final form and Vermivorous by roughly 40%.
-
-Reduced the total health of Captain Haunt by 50%, and his phylacteries by 80%.
-
-Increased the damage of the Creeping Death by 12.5%, the magazine size by 2, and the fire rate by 40%.
-
-Reduced the damage of the D.N.A's damage-over-time by 40%.
-
-1.4.8
------
-Reduced the total health of Evil Brick, Evil Mordecai, Evil Lilith, Spongeboss, Locomobius, and Dr. Benedict by roughly 35% each.
-
-Reduced the total health of the Seer by roughly 60%.
-
-1.4.7
------
-Fixed From Rest's skill description not displaying the fire rate bonus.
-
-Adjusted  Catharsis' description to no longer mention Action Skill cooldown since the cooldown was removed.
-
-1.4.6
------
-Adjusted the Agonizer 9000's item drops. The Agonizer 1500 has been moved to a new item pool separate from the Agonizer 9000's regular dedicated item pools with a 50% chance to drop. The Crader MP-5 has been moved from the now-30%-chance-to-drop Damned/Loaded Dice/Crader's EM-P5/Backburner item pool to the Dictator/White Elephant item pool to further help reduce item pool bloat. (Note for modders; the Agonizer 1500 change modified the unused CoV white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the Agonizer 1500 and nothing else.)
-
-1.4.5
------
-Made it more likely for TK's Wave and the Tidal Wave to spawn with higher projectile counts.
-
-1.4.4
------
-Made Trial bosses drop dedicated Class Mods for the player's current class more often (if they drop class mods for more than one class from their dedicated loot pool.)
-
-Reduced Warty's mayhem scaled drops by half to account for his clone also being able to drop Warty's dedicated loot.
-
-1.4.3
------
-Added Rachel the Anointed's item pool to Crushjaw as a separate drop in order to deal with not being able to directly adjust Rachel's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
-
-Added Muldock the Anointed's item pool to Turnkey Tim as a separate drop in order to deal with not being able to directly adjust Muldock's pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Tediore white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
-
-Added Artemis' item pool to Indo Tyrant as a separate drop in order to deal with not being able to directly adjust Artemis' pool. This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod. (Note for modders; this change modified the unused Torgue white rarity gun pool for manufacturer rewards in order to produce a pool that only drops the dedicated drops instead of mostly dropping regular gear)
-
-Added the Brood Mother's item pool to Tyreen as a separate drop in order to deal with not being able to directly adjust Brood Mother's pool (without affecting certain enemies in the Cistern of Slaughter.) This newly-added item pool only activates during Mayhem mode and scales like most other Mayhem-scaled pools in this mod.
-
-Fixed Explosive Punctuation not reducing Action Skill cooldown properly.
-
-1.4.2
------
-Fixed the Trigger-Happy part boosting fire rate less than intended.
-
-1.4.1
------
-Moved the purple Atlas grenade drop from General Traunt to Road Dog to prevent General Traunt/Blinding Banshee dropping the incorrect manufacturer of purple grenade assigned to them.
-
-Made purple grenades always spawn with three parts.
-
-Made regular Jakobs shotguns more likely to spawn with higher projectile counts.
-
-Added the Mayhem 4 and Mayhem 6 exclusive gear to the regular legendary world drop pools (provided an appropriate Mayhem level is active.)
-
-Added the Bekah, R.Y.N.A.H, Hunt(er), and Hunt(ress) to the regular legendary world drop pools.
-
-Changed the previously added increased chance of Legendary loot in certain endgame activities to allow more focused world-drops similarly to the "Loot the Universe" events. Non-Takedown activities have been changed from increasing all ten types of non-cosmetic Legendary loot (six weapon types, shields, grenades, class mods, and artifacts) to boosting a specific type of loot. For example, if previously a specific Circle of Slaughter boosted all ten types of legendary gear drops by 100% each, it would now boost one type of legendary gear by 1000% (unless the drop chance has been further changed).
-
-Replaced the 375% higher chance of all legendary loot in Trial of Survival with an x37.5 higher chance of legendary pistols.
-
-Replaced the 100% higher chance of all legendary loot in Trial of Fervor with an x10 higher chance of legendary heavy weapons.
-
-Replaced the 375% higher chance of all legendary loot in Trial of Cunning with an x37.5 higher chance of legendary sniper rifles.
-
-Replaced the 375% higher chance of all legendary loot in Trial of Supremacy with an x20 higher chance of legendary shotguns.
-
-Replaced the 1500% higher chance of all legendary loot in Trial of Discipline with an x150 higher chance of legendary assault rifles.
-
-Replaced the 375% higher chance of all legendary loot in Trial of Instinct with an x37.5 higher chance of legendary SMGs.
-
-Replaced the 100% higher chance of all legendary loot in Cistern of Slaughter with an x10 higher chance of legendary grenades.
-
-Replaced the 100% higher chance of all legendary loot in Slaughterstar 3000 with an x10 higher chance of legendary shields.
-
-Replaced the 66% higher chance of all legendary loot in the Slaughter Shaft with an x3 higher chance of legendary artifacts and class mods each.
-
-1.4.0
------
-Fixed the Trial bosses not dropping three legendary class mods.
-
-Fixed the Anarchy not dropping from Kukuwajack.
-
-1.3.9
------
-Fixed the Shlooter spawning with four passive parts instead of three.
-
-1.3.8
------
-Changed Blitz' melee bonus to be applied before skill and gear bonuses, increase the distance by 37.5%, and tripled the movement speed of Blitz.
-
-Made Hemovorous always drop three pieces of her non-Company Man dedicated loot. Company Man drops separately from her regular dedicated item pool.
-
-1.3.7
------
-Added Burst Fire Delay to most things that affect fire rate. Delay is reduced for things that increase fire rate (meaning shorter intervals), and increased for things that reduce fire rate (meaning longer intervals)
-
-Added Repair Time to most things that affected reload speed.
-
-Fixed the status effect anointments for Zane and Amara not actually factoring in gear and skills, made all of the status effect anointments also increase cryo rate.
-
-Reintroduced Mayhem Scaling for Slide Damage. It increase by 6% per Mayhem Level, may be further adjusted after receiving feedback.
-
-Reintroduced Mayhem Scaling for Slam Damage. It increase by 10% per Mayhem Level, may be further adjusted after receiving feedback.
-
-Reintroduced Mayhem Scaling for Shield Damage. It increase by 24% per Mayhem Level, may be further adjusted after receiving feedback.
-
-Reduced Pet Damage Scaling to 55% per Mayhem level from 70%.
-
-Increased Attack Command cooldown to 15 seconds from 12 seconds.
-
-Reduced the increased Legendary world drop rate of all Trials excluding the Trial of Fervor by 25%.
-
-Reduced the increased Legendary world drop rate of all Circles of Slaughter by 33%.
-
-Reduced the increased Legendary world drop rate of Maliwan Takedown by 40%.
-
-Added additional opportunities to find dedicated loot to most dedicated loot sources in an effort to reduce farming tedium. This opportunity is based on Mayhem level, growing by 10% in chance (adjusted if multiple enemies have the same dedicated drops such as the Power Troopers) and 0.3 drops for every Mayhem level. At Mayhem 4 you will have a 40% chance of an extra drop, at Mayhem 7 it will be two 70% chances, at at Mayhem 10 or 11 it will be three guaranteed dedicated drops. 
-
-Enemies that did not receive Mayhem-scaled drops due to technical reasons; Rachel the Anointed, Artemis, Mincemeat, Muldock the Anointed, and the Brood Mother.
-
-Enemies that did not receive Mayhem-scaled drops due to already having sufficient drops; Trial bosses, Raid bosses, and Anathema.
-
-Made the Null Pointer, Boo, Cloud Kill, Vibra-Pulse, Digby's Smooth Tube, Just Kaus, Acid Burn, Double Downer, Cure, Initiative, Seventh Sense, (purple) Love Drill, Firecracker, Peashooter, Quickdraw, Chalice, Bubble Blaster, Vendetta, Icebreaker, Beast (both elements), Core Buster, Splinter, Dakota, Company Man (Gravekeeper), Mysterious Amulet have drop sources.
-
-Added Blue Fire's drop pool to King Gnasher in replacement of his Westergun drop as a viable farming source for Blue Fire's loot.
-
-Added Red Rain's drop pool to Rohner as a viable farming source for Red Rain's loot.
-
-Moved the Pearl of Knowledge from Eleanor to Kratch.
-
-Added the P.A.T. Mk. III to General Blisterpus.
-
-Added chances to get legendary Fustercluck DLC items from Spongeboss (General Blisterpus has the mayhem-scaled P.A.T. Mk III drops.)
-
-Lowered the drop chances of Gigamind, Rampager, Atomic, Sylestro, Kritchy, Amach, Wendigo, and Eleanor since certain previously added unique items no longer drop directly from their loot pools.
-
-Reverted the drop chances for Adelai Bronson, Ipswitch Dunne, Lani Dixon, Haddon Marr, Lasodactyl, Lectrikor, and Bellik Primis back to normal after having made certain uniques no longer directly drop from their loot pools.
-
-Reverted the Seer's dedicated drop quantity back to normal as it interfered with the Mayhem-scaled drops that have been added.
-
-Made Captain Haunt always drop three Bloody Harvest items.
-
-Increased the odds of Loot Ghosts dropping Bloody Harvest loot.
-
-Lowered the chance for additional drops on Joey Ultraviolet to 20%.
-
-Lowered the world drop quantity of the Valkyries and made them always drop three pieces of dedicated loot.
-
-Removed a portion of Scourge's money and eridium drops and replaced the eridium with a brick of 500 eridium to reduce the wait between the actual kill and main loot spawning.
-
-Fixed Red Rain not dropping a 500-count eridium brick due to a previous update's changes.
-
-Reduced Psychoreaver's health by roughly 40%.
-
-Increased the damage of the Troubleshooter by 14%.
-
-Reduced the damage of the Blade Fury's melee projectile by 25% and increased the bullet damage by 20%.
-
-Reduced the recoil of Quasar (smgs), Polyaimorous, and Vibra-Pulse by 80%.
-
-Increased the damage of the Devil's Foursum by 65%.
-
-Increased the frequency of the Laser-Sploder's projectiles to 0.65 seconds from 0.85 seconds.
-
-Reduced the vertical recoil of La Varlope by 35%.
-
-Reduced the recoil of the Sickle by 15%.
-
-Reduced the recoil of the Webslinger's primary firing mode by 20%.
-
-Increased the damage of single-part and double-part novas to 50%/75% of a triple-part nova shield respectively.
-
-Doubled the damage of the Stinger's novas (in-game description number doesn't change to reflect this.)
-
-Reduced the cooldown of the Faulty Star's novas from 8 seconds to 2 seconds.
-
-Reduced the Garcia's damage by 14%.
-
-Reduced the Dakota's damage by 37.5%.
-
-Reduced the D.N.A's damage by 50%.
-
-Reverted the cooldown reduction on the Cmdl3t back to 6 seconds.
-
-Adjusted the description of the Ice Spiker to mention that it counts as Amara's Action Skill damage.
-
-Adjusted the description of the Bounty Hunter to be more accurate to the in-game effects.
-
-1.3.6
------
-Increased the damage of the Elementalist's damage-over-time by 1750%.
-
-Increased the radius of the Nuke grenade part from -10% per Nuke part to +23.45%.
-
-Increased the suction radius of Singularity grenades by 80%.
-
-Increased the suction radius of the Quasar by 47%.
-
-1.3.5
------
-Fixed the MNTIS Cannon Damage anointment doing more damage than intended.
-
-Adjusted the description of the Nimbus class mod to remove the damage number since it is useless and mention that the cloud inherits your weapon's damage-over-time damage value.
-
-1.3.4
------
-Realized a less clunky way of applying Mayhem-scaled Action Skill damage to skills. It no longer renders action skill damage useless outside of Mayhem Mode or less effective than otherwise at lower Mayhem Levels. It has thus been moved to more commonly selected skills on each of the vault hunters (that have Action Skill damage scaling on a skill currently), and the percentages have been adjusted to have roughly the same damage before this update. 
-
-Moved Zane's Action Skill Scaling to Violent Momentum. Action Skill Scaling is now 56.6% per point.
-
-Moved Fl4k's Action Skill Scaling to Persistence Hunter. Action Skill Scaling is now 21.2% per point.
-
-Moved Amara's Action Skill Scaling to Fast Hand(s). Action Skill Scaling is now 12% per point.
-
-1.3.3
------
-Add "(Total)" in front of the Matched Set gun damage bonus to reduce confusion. The damage bonus doesn't display the damage increase per individual piece of matching gear, it displays the full bonus.
-
-1.3.2
------
-Moved the Mayhem-scaled gun damage from Matched Set to Armored Infantry for two reasons. One, Armored Infantry is a more commonly selected skill and two, unlike the Mayhem-scaled Action Skill damage implemented on other characters this Mayhem-scaled gun damage does not penalize the user in any fashion so it being on a popular skill has no demerit.
-
-Added a small (not Mayhem-scaled) gun damage bonus to Matched Set.
-
-1.3.1
------
-Added Mayhem-scaled gun damage to Matched Set as a means of accomodating the loss of damage from Mayhem-scaled Skag Den/Big Surplus/Short Fuse. It does not increase in effectiveness based on how many items of a specific manufacturer you are wearing. It increases gun damage by 12% per Mayhem level and should be effective for 99% of guns.
-
-Increased the effectiveness of Vampyr to 1% per point.
-
-Increased the fire damage of Big Surplus to 10% per point.
-
-Increased the fire damage of Cloud of Lead to 4% per point.
-
-Reduced the fire damage of Fire in the Skag Den to 4% per point.
-
-Reverted the damage bonus buff of Armored Infantry back to 3% per point, made it global damage instead of gun damage.
-
-Made the damage bonus of Tenacious Defense global damage and made the damage bonus factor in skill and gear boosts.
-
-Reduced the maximum damage bonus of Click, Click... to 50% and made it factor in skill and gear boosts.
-
-Reduced the cooldown bonus of Explosive Punctuation to 5% from 8%, made the cooldown bonus factor in before skill and gear boosts, and added bonus movement speed.
-
-Increased the amount of sniper rifle ammo given by SDUs by 3 additional ammo per SDU.
-
-1.3.0
------
-Endgame activities (Trials, Circles of Slaughter, and Takedowns) have been given an increased chance to world-drop Legendary gear. For comparison's sake, "Loot the Universe" increased the chance of Legendary loot by 2000%.
-
-Increased the amount of Legendary item drops in the Trial of Survival by 375%.
-
-Increased the amount of Legendary item drops in the Trial of Fervor by 100%.
-
-Increased the amount of Legendary item drops in the Trial of Cunning by 375%.
-
-Increased the amount of Legendary item drops in the Trial of Supremacy by 375%.
-
-Increased the amount of Legendary item drops in the Trial of Discipline by 1500%. (The enemies here were particularly stingy with drops.)
-
-Increased the amount of Legendary item drops in the Trial of Instinct by 375%.
-
-Increased the amount of Legendary item drops in the Cistern of Slaughter by 100%.
-
-Increased the amount of Legendary item drops in the Slaughter Shaft by 66%.
-
-Increased the amount of Legendary item drops in Slaughterstar 3000 by 100%.
-
-Increased the amount of Legendary item drops in the Maliwan Takedown by 300%.
-
-Increased the amount of Legendary item drops in the Guardian Takedown by 800%.
-
-Gave the singing fish found throughout the Guns, Love, and Tentacles DLC a small chance of producing a Fish Slap.
-
-Improved the loot drops of Godliaths.
-
-Fixed some typos in the loot changes for Anathema, Scourge, and Hemovorous. They should now drop more of their specific loot.
-
-1.2.9
------
-Fixed the Star Helix not consuming two ammo per shot when a secondary firing mode is active.
-
-1.2.8
------
-Exchanged the Ten Gallon in GenIVIV's loot pool with the Messy Breakup from Rax.
-
-Made the Messy Breakup and Band of Sitorak always spawn with maximum parts. Messy Breakup additionally is now more likely to spawn in shock element compared to before.
-
-Fixed the Rough Rider not always spawning with maximum parts.
-
-Made the Hunter-Seeker, Hex, and Quasar more likely to spawn with extra parts.
-
-Made the Hunter-Seeker, Hippity Hopper, Surge, and Lightspeed more likely to spawn in elemental versions.
-
-1.2.7
------
-Fixed a typo in the adjustment for the Shlooter that is supposed to make it always spawn with three stat bonuses. It should now work properly.
-
-1.2.6
------
-Updated the red-text explanation for the Crader's EMP-5 and Proprietary License slightly.
-
-Adjusted the Aesclepius' status effect damage reduction to be far more effective and updated the description slightly.
-
-Fixed the Polyaimorous' secondary firing mode not receiving proper damage bonuses.
-
-1.2.5
------
-Reverted the damage buff on the Messy Breakup to prevent certain builds from violently destroying game content with an army of superpowered drones. Will see if the amount of drones active can be limited in the future.
-
-1.2.4
------
-Fixed the Rakk Commander not actually increasing Rakk count by 3.
-
-Fixed Torgue Cross-Promotion not boosting Splash Damage by 7% per point.
-
-Made the Shlooter always spawn with maximum bonus stat parts after the first redemption.
-
-Made the following grenades always spawn with maximum parts; Fish Slap, Firestorm, Tran-fusion, and Widowmaker.
-
-Made the following grenades more likely to spawn with extra parts; Ghast Call, Ringer, and Epicenter.
-
-Made the Widowmaker more likely to spawn with an element.
-
-1.2.3
------
-Fixed some base weapon type and standard weapon barrel stat changes not applying to secondary firing modes.
-
-Fixed the pet bonuses for Fl4k's Jabbers not displaying the increase in percentage they should display when Barbaric Yawp is invested into.
-
-1.2.2
------
-Fixed the Spiderant Scorcher and Spiderant Countess not having all of their pet bonuses being displayed on the info card.
-
-1.2.1
------
-Reduced the projectile speed of TK's Wave and the Tidal Wave. They're now 25% faster than TK's Wave would be in normal gameplay.
-
-Increased the projectile damage of the Psycho Stabber.
-
-Increased the melee damage of the Ionic Disruptor to 200%.
-
-1.2.0
------
-Made the Company Man always spawn with three (non-manufacturer) passive stat bonuses.
-
-1.1.9
------
-Added Action Skill damage Mayhem Scaling to a few skills for Zane, Fl4k, and Amara. Investing one point into these skills enables your Action Skill damage to scale with Mayhem levels. Be warned that if you have a point in one of these skills and don't have Mayhem mode activated, your Action Skills don't deal any damage due to how it calculates the damage. It was done this way to prevent Iron Bear and Iron Cub from destroying the universe, as well as being able to manually adjust the boost for each Vault Hunter. Mayhem 11 will end up having slightly more Action Skill damage bonus, but you can simply roll for four "Nay-hem" modifiers on Mayhem 10 if that bothers you.
-
-Added Action Skill damage Mayhem Scaling to Praemunitas. It increases by 50% for every Mayhem level.
-
-Added Action Skill damage Mayhem Scaling to Self-Repairing Systems. It increases by 25% for every Mayhem level.
-
-Added Action Skill damage Mayhem Scaling to Root to Rise. It increases by 20% for every Mayhem level.
-
-Added notes in the skill descriptions for the following skills/augments to indicate they receive Mayhem Scaling:  Best Served Cold, Binary System, Doppelbanger, Dominance, Success Imminent, Lethal Force Authorized, Remnant, Indiscriminate, Catharsis, Do Unto Others, Revelation, Unweave the Rainbow, Body and Mind, and Free the Soul.
-
-Increased the Digi-Clone's damage by 15%.
-
-Increased the damage of the SNTNL's machine gun, Bad Dose, and Static Field by 20%.
-
-Increased the damage of Boomsday by 80%.
-
-Increased the damage of Almighty Ordinance by 113%.
-
-Increased the Digi-Clone's base health to 39% higher than normal game values.
-
-Increased the base damage of Rakk Attack to 80% stronger than normal game values.
-
-Increased the cooldown on Attack Commands to 12 seconds.
-
-Increased the damage of Success Imminent by 150%.
-
-Increased the base health of Fl4k's pets by 40%.
-
-Tripled the base damage of Fl4k's pets.
-
-Doubled the base damage of the Jabber pets' weapons.
-
-Re-enabled Pet Damage Scaling in Mayhem Mode and added the Mayhem Level multiplier to the pet descriptions, at +70% per Mayhem Level.
-
-Reverted previous damage buffs to the Great Horn Skag and Eridian Skag Attack Commands.
-
-Reduced the damage of the Gunslinger Jabber's Attack Command by 30%.
-
-Reduced the damage of the WAR Loader's Attack Command by 20%.
-
-Increased the base damage of Phasecast to 150% stronger than normal game values.
-
-Increased the base damage of Reverbration to 79% stronger than normal game values.
-
-Increased the base damage of Deliverance to 145% stronger than normal game values.
-
-Increased the base damage of Tandava to 154% stronger than normal game values.
-
-Increased the base damage of Phaseslam, Fracture, and Downfall to 215% stronger than normal game values.
-
-Increased the base damage of Phaseflare to 51% stronger than normal game values.
-
-Increased the base damage of Glow Up to 55% stronger than normal game values.
-
-Increased the base damage of Shooting Star to 91% stronger than normal game values.
-
-Increased the base damage of Light Fantastic to 47% stronger than normal game values.
-
-Reduced the damage of Body and Mind to 50%.
-
-Increased the damage of Free the Soul to 7 times higher than normal game values.
-
-Heavily reduced the health scaling for enemies in Arms Race.
-
-Reduced the damage of Diadems in Scourge the Invincible's fight by 75%.
-
-Fixed Dahl SMGs not receiving a damage bonus in semi-automatic firing mode.
-
-Reduced the fire rate of burst-fire mode on Dahl SMGs to compensate for the increase base fire rate on Dahl SMGs. 
-
-Increased the melee damage bonus of the Psycho Stabber to 250%.
-
-Increased the melee damage bonus of the Ripper to 200%.
-
-Made the description on the Anarchy more accurate.
-
-Reduced the damage of the Blade Fury's bullet damage by 25%, reset the projectile's melee damage to original values.
-
-Removed the increased animation speed for the animation of exiting a vehicle as the driver to prevent running over yourself with your own car.
-
-Reduced the O.P.Q-System's fire rate by 56%.
-
-Made the following shields always spawn with maximum parts; Beskar, Snowshoe, Gas Mask, Infernal Wish, Old God, Recharge-Berner, Re-Volter, Red Card Recharger, Rico, Rough Rider, Super Soldier (but not the first time you redeem one), Torch, Version 0.m.
-
-Made the Rough Rider no longer spawn with "none" parts.
-
-Reduced the maximum bonus of the Flesh Melter's corrosive damage bonus. Now reaches 25% at level 72.
-
-Reduced the Phasecast damage anointment to 75%.
-
-Reduced the Phaseslam damage anointment to 100%.
-
-Reduced the Phaseflare damage anointment to 75%.
-
-Increased the Terror Cryo damage anointment to 50%.
-
-1.1.8
------
-Experimenting with increasing the damage on Action Skill and pets. Not confident with releasing them in their current state however.
-
-Changed Monkey Do's amp damage to say 86% instead of 81%.
-
-Fixed a typo preventing the Butcher from doing damage.
-
-Fixed an issue with the MNTIS damage anointment doing double the listed damage.
-
-Increased Face-puncher damage to slightly above game-launch levels.
-
-Removed the damage penalty on the Unleash the Dragon.
-
-Increased Armored Infantry's damage bonus to 5% per point.
-
-Increased Torgue Cross-Promotion's splash damage bonus to 7% per point.
-
-Increased Scrappy's damage bonus to 7% per point.
-
-Increased the radius of the Stinger's novas by roughly 43%.
-
-Increased the Dowsing Rod's damage by 15%.
-
-Increased the Faisor's damage by 15%
-
-Increased the Flipper's damage by 35%.
-
-Increased the Prompt Critical's damage by 25%.
-
-Increased the Unkempt Harold's damage by 10%.
-
-Increased the Ogre's damage by 10%.
-
-Reduced the base damage of the Guardian 4N631 by 30% and increased the special effect to 120% maximum.
-
-Reduced the damage on the Ember's Purge by 9%, increased the damage of the puddle from 33% to 50%.
-
-Reduced Body and Mind damage by 25%.
-
-Reduced the Reflux' damage by 25% and reverted the ammo cost back to one.
-
-Reduced the Sand Hawk's damage by 37.5%.
-
-Reduced the critical hit damage bonus on the Executor to 50%.
-
-Added action skill damage to Synchronicity.
-
-Added a small accuracy and handling bonus to Boom. Enhance.
-
-Made Violent Momentum display the Slide Damage bonus.
-
-Adjusted the Naught. The instant recharge has been reduced to a 75% recharge delay reduction, and a 50% recharge rate penalty has been added. This has been done to prevent issues with certain shields such as the Mana Well.
-
-1.1.7
------
-Removed the Monarch's increased bipod-mode movement speed penalty to prevent issues with the movement penalty sticking around after switching weapons.
-
-Reduced Cold Bore's bonus cryo damage to 10% per point.
-
-Fixed the Crader EMP-5 doing a lot more damage than intended.
-
-Increased the damage of the Butcher by 41%.
-
-Increased the Fade Away damage anointment to 40% and adjusted the text on the Gravity Snare damage anointment to 40%. The Snare anointment uses the Fade Away damage anointment for the damage value and I have yet to figure out how to fix it.
-
-Adjusted the Gamma Burst radiation damage anointment's description to be more accurate.
-
-Tripled the speed of the Web Slinger's projectiles. Fixed the Web Slinger underbarrel having two projectiles instead of one and increased the damage of the underbarrel to 50 from 20.
-
-Made the Ward always spawn with maximum Roid parts.
-
-Made the Trial bosses drop three legendary class mods when they would normally drop one.
-
-1.1.6
------
-Added in the smaller HUD from the Unofficial Community Patch and added a separate version of Balands to Github/Nexus that does not include the smaller HUD.
-
-Increased Fire in the Skag Den's fire damage to 5% per point.
-
-Increased the duration of the Phasecast-Weapon Damage anointment to 10 seconds.
-
-Added a 50% bonus to slide damage to the Vanquisher.
-
-Updated a few more Red-Text descriptors.
-
-1.1.5
------
-Improved the rate of experience gain in Mayhem Mode by 1.5 times (50% higher) for each Mayhem level.
-
-1.1.4
------
-Fixed the Action Skill End Badass/Boss Damage anointment having more damage than intended.
-
-Updated Juliet's Dazzle description slightly to mention that the projectiles penetrate and ricochet.
-
-1.1.3
------
-Adjusted some Red-Text Explainer descriptions for accuracy and removed redundant explanations for gear that already included a description on the card.
-
-Adjusted Bloom, Frequency, Robin's Call, and Unseen Threat descriptions slightly.
-
-Removed the ricochet text on the Stonethrower.
-
-Replaced Forge with Redistribution on the Green Monster, restored the unlisted splash effect and updated item description to be more accurate. Turns out that giving items like the Sand Hawk excessive ammo regen without a timer isn't very healthy for balance.
-
-Fixed the Good Juju's secondary firing mode dealing less damage than it should.
-
-1.1.2
------
-Updated to include Unofficial Community Patch version 1.0.1.
-
-Added the newest version of Apocalyptech's Red Text Explainer.
-
-Fixed an issue with the Kill-o'-the-Wisp where the ammo cost was connected to the damage table instead of the actual damage attribute. Increased the Wisp's damage by 25% and fixed the Wisp's ammo cost to be 3.
-
-Fixed Vosk's Deathgrip's description to say it is four seconds instead of six.
-
-Made the Spade fully-automatic and reduced the fire rate by 50%.
-
-Removed the increased weighting on legendary class mod drops from Jack-Bot since class mods now more heavily favor dropping for your current Vault Hunter due to UCP implementation.
-
-1.1.1
------
-Implemented most features from the Unofficial Community Patch (for Borderlands 3) other than Red-Text Explainer and Smaller HUD that weren't already included in Balands. This means you do not need to run the Unofficial Community Patch at the same time as Balands.
-
-Slightly adjusted the duration of the following anointments: Clone-Swap weapon damage, Phasecast weapon damage, and Attack Command movement.
-
-Removed Legendary gear (that isn't a quest reward) from Earl's Black Market and replaced the Item of the Day with a guaranteed Alien-Barrel weapon due to Legendary gear being too cheap in the beginning of a playthrough. This change will hopefully be reverted in a future update after adjusting the prices in Earl's vendor.
-
-Buffed the damage of the Kyb's Worth by 35%.
-
-1.1.0
------
-Reverted the Body and Mind changes.
-
-Reverted the replacement of Violent Tapestry to Alacrity on the Stone.
-
-Added splash notes to Tandava, Fist Over Matter, Fracture, Downfall, Glow Up, Shooting Star, and Light Fantastic.
-
-Reduced Fracture cooldown to 22 seconds.
-
-Made the lifesteal anoint actually display 1.5% instead of rounding up to 2%.
-
-Reverted Devil's Foursum projectile speed increase and lowered splash radius to 245 from 275.
-
-Increased Downfall's flight speed by 25%.
-
-1.0.9
------
-Fixed the Health Regen anointment using the incorrect item to get the percentage displayed for how much health-per-second is regained, and buffed the value to 8% per second.
-
-1.0.8
------
-Replaced the grenade capacity on "Why Can't I Carry All These Grenades" with grenade regeneration.
-
-Increased the DE4DEYE's high-health damage bonus to 50%.
-
-Increased the low-health threshold of the Low-Health damage anointment to 50%, lowered the damage bonus to 60%.
-
-1.0.7
------
-Reverted most of the changes to the Flakker's explosions. It now shoots out slightly further away while accelerating slightly slower than normal. Damage has also been adjusted slightly.
-
-1.0.6
------
-Fixed The Iron Bank and Praemunitus not decreasing the heat rate of COV weapons and made them display the heat reduction on the skill card.
-
-Made Deep Well display the heat reduction on the skill card.
-
-1.0.5
------
-Adjusted Forceful Expression's description to be more accurate to its actual effects.
-
-Halved Do Harm and Violent Tapestry's maximum stacks to 50 and doubled the efficiency of each stack.
-
-Increased Clear the Mind's duration to 12 seconds.
-
-Garcia - Increased damage by 24%, lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 25%, reduced vertical recoil by 40%, and increased fire rate by 60%.
-
-1.0.4
------
-Fixed the Action Skill End Elemental Damage anointments' damage percentages in the anointment text not changing to the correct number of 20% (courtesy of ZetaDaemon.)
-
-1.0.3
------
-Restored Best Served Cold's cooldown back to three seconds to prevent possible nova-spam issues when using the Seein' Dead (that and the reduction didn't seem to work in the first place). Increased the nova damage to five times what it would be normally.
-
-1.0.2
------
-Changed the rarity of the Hunt(er), Hunt(ress), Hunt(ed), and Revengenador to Legendary to help prevent them from being overlooked when they randomly drop.
-
-1.0.1
------
-Increased the odds of Evil Lilith dropping her specific drops to 60% to compensate for her obnociously long immunity phase.
-
-Adjusted the description of the Guardian 4N631 slightly.
-
-(End of Update Changelog)
------------------
+# DISCLAIMER: The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
 MAIN MENU CHANGES
 -----------------
@@ -867,7 +70,7 @@ Increased the chance of legendary grenades dropping in the Cistern of Slaughter 
 
 Increased the chance of legendary shields dropping in the Slaughterstar 3000 by x10.
 
-Increased the chance of legendary artifacts and class mods dropping in the the Slaughter Shaft by x3 each.
+Increased the chance of legendary artifacts and class mods dropping in the Slaughter Shaft by x3 each.
 
 Increased the amount of Legendary item drops in the Maliwan Takedown by 500%.
 
@@ -901,7 +104,7 @@ Added a 30% chance for Lagromar to drop a purple Torgue grenade separately from 
 
 Added a 30% chance for Tink-Train to drop a purple Vladof grenade separately from her regular loot pool.
 
- ┗----Rationale: With guns and shields, you're at least able to farm them to some degree through either Earl's Veteran Rewards Machine or the Eridian Fabricator, but that isn't the case for grenades. With certain purple grenades being highly desirable and having no suitable Legendary alternative, late-game drop sources have been added for each manufacturer's purple grenades to provide an option to obtain them. Atlas grenades are only a 50% chance since there's less part variety due to lacking elements.
+ ┗----Rationale: With guns and shields, you're at least able to farm them to some degree through either Earl's Veteran Rewards Machine or the Eridian Fabricator, but that isn't the case for grenades. With certain purple grenades being highly desirable and having no suitable Legendary alternative, late-game drop sources have been added for each manufacturer's purple grenades to provide an option to obtain them. Atlas grenades are only a 20% chance since there's less part variety due to lacking elements.
 
 Increased the odds of a Sickle spawning as a Boom Sickle to 40%.
 
@@ -946,6 +149,8 @@ Added the Cloud Kill to Rampager's Loot Pool, switched the Duc with the Quadomiz
 Switched the Ten Gallon with the Messy Breakup in GenIVIV's loot pool and added the Ten Gallon to Rax.
 
 Added the Hand of Glory to Muldock's Loot Pool, increased the chance of Muldock dropping from his loot pool to 30%.
+
+Added the Burning Summit to The Unstoppable with a 10% chance to drop.
 
 Added the Null-Pointer and Vault Hero to Gigamind, increased the chance of Gigamind dropping from its loot pool to 30%.
 
@@ -1125,7 +330,9 @@ Made purple grenades always spawn with three parts instead of sometimes spawning
 
 GEAR CHANGES
 ------------
-Damage on almost all Legendary and Unique gear has been adjusted to a less spongey environment (things that performed well in the usual Mayhem 10 will almost assuredly have the damage numbers lowered, but not necessarily be less effective). Nearly every Legendary piece of gear should be at minimum viable. Weapon changes listed below are basically anything that wasn't a damage change (anything that says "No change" most likely means it only had a damage change.)
+Damage on almost all Legendary and Unique gear has been adjusted to a less spongey environment (things that performed well in the usual Mayhem 10 will almost assuredly have the damage numbers lowered, but not necessarily be less effective). Nearly every Legendary piece of gear should be at minimum viable.
+
+Some changes will mention base damage multiplier (mostly legendary and unique guns). This is a damage multiplier of the weapon without influence from other parts, so if a weapon's base damage multiplier is 4 for example, it is four times stronger than a normal gun. Some of these items I was unable to find the original value of (in which case they will mention "Set base damage multiplier to...")
 
 
 # GUNS
@@ -1142,7 +349,7 @@ COV GENERAL GUN CHANGES
 -----------------------
 No changes.
 
-DAHL GUNS
+DAHL GENERAL GUN CHANGES
 ---------
 Increased Damage of Semi-Auto Firing Mode by 20% and improved Accuracy Spread by 50% for Pistols and SMGs.
 
@@ -1202,37 +409,37 @@ Improved the Ammo Regen and Ammo Regen Delay of Heavy Weapon Big Boy Underbarrel
  
 ATLAS LEGENDARY GUNS
 --------------------
-Carrier - No change other than a possible damage adjustment.
+Carrier - Base damage multiplier raised from 0.5 to 0.7.
 
-O.P.Q-System - Reduced the fire rate by 56%.
+O.P.Q-System - Base damage multiplier lowered from 1.8 to 1, reduced the fire rate by 56%.
 
-Portals and Shite - 20% critical damage added.
+Portals and Shite - Damage increased by 55%, 20% critical damage added.
 
 Rebel Yell - Fire rate lowered by 20%.
 
-Replay - Fire rate reduced by 30%, damage radius increased by 140%.
+Replay - Base damage multiplier lowered from 3.2 to 1.75, fire rate reduced by 30%, damage radius increased by 140%.
 
  ┗----Rationale: While the fire rate is lower, the damage was also adjusted accordingly. It'll be more effective with the ammo you chew through with the post-tracker fire rate boost now.
 
 Linc - No change other than a possible damage adjustment.
 
-Multi-Tap - Reload speed increased by 190%.
+Multi-Tap - Base damage multiplier lowered from 2 to 1.8, reload speed increased by 190%.
 
  ┗----Rationale: The cryo rocket launched upon reloading is supposed to be the special feature of this gun, but reloading all the time interferes with the flow of combat. Making the reload lightning-quick resolves that.
 
 Res - No change other than a possible damage adjustment.
 
-Freeman - No change other than a possible damage adjustment.
+Freeman - Base damage multiplier set to 1.7.
 
-Plumage - Accuracy reduced by 50%, ammo cost set to 2.
+Plumage - Base damage multiplier lowered from 1.5 to 1.225, accuracy reduced by 50%, ammo cost set to 2.
 
  ┗----Rationale: The Plumage's identity was basically "Ruby's Wrath but better." It has been altered to "Ruby's Wrath but bigger" so it isn't just a direct upgrade.
 
-Ruby's Wrath - No change other than a possible damage adjustment.
+Ruby's Wrath - Base damage multiplier set to 1.
 
 ATLAS UNIQUE GUNS
 -----------------
-Peacemonger - Ammo cost set to 3.
+Peacemonger - Base damage multiplier set to 0.7, ammo cost set to 3.
 
 ATLAS REGULAR GUNS
 ------------------
@@ -1257,21 +464,21 @@ AX-88 - Reduced ammo cost to one and increased Projectile Speed by 57%.
 
 COV LEGENDARY GUNS
 ------------------
-Embrace the Pain - Accuracy improved, fire rate increased by 70%, heat rate reduced by 20%, self-damage reduced by 50%.
+Embrace the Pain - Base damage multiplier raised from 1 to 1.2, accuracy improved, fire rate increased by 70%, heat rate reduced by 20%, self-damage reduced by 50%.
 
-NoPewPew - Ammo cost set to 3.
+NoPewPew - Base damage multiplier lowered from 1.1 to 0.65, ammo cost set to 3.
 
  ┗----Rationale: Instead of gutting the power of this weapon, it's been given the ION CANNON treatment and increased the ammo cost. It'll also make x4 and x5 versions not so blatantly inferior to x3 versions.
 
-Pain is Power - Heat rate reduced by 40%, self-damage reduced by 50%.
+Pain is Power - Base damage multiplier raised from 1 to 1.2, heat rate reduced by 40%, self-damage reduced by 50%.
 
-Rebound - No change other than a possible damage adjustment.
+Rebound - Base damage multiplier lowered from 2 to 1.25.
 
-Sawbar - Made the projectile split happen earlier.
+Sawbar - Base damage multiplier lowered from 2 to 0.75, made the projectile split happen earlier.
 
-Seeryul Killer - Kill effect stack bonus set to 16.6% per stack.
+Seeryul Killer - Base damage multiplier lowered from 1.4 to 1.2, kill effect stack bonus set to 16.6% per stack.
 
-Stauros' Burn - Self-ignite chance set to 100%.
+Stauros' Burn - Base damage multiplier raised from 1 to 1.3, self-ignite chance set to 100%.
 
  ┗----Rationale: If you're going to use this gun, you're using it for the special effect. The chance is now guaranteed for that purpose.
 
@@ -1279,59 +486,59 @@ Zheitsev's Eruption - Set maximum reload-debuff to 100%, repair speed improved b
 
  ┗----Rationale: Spend less time using this weapon as a debuff tool and more as an actual weapon.
 
-Gargoyle - Glob damage set to 150%, glob chance set to 33%.
+Gargoyle - Base damage multiplier lowered from 2.5 to 1, glob damage set to 150%, glob chance set to 33%.
 
  ┗----Rationale: The glob changes were made as a way to counteract spamming the blobs after the gun breaks.
 
-Hydrafrost - Amp damage set to 50%.
+Hydrafrost - Base damage multiplier lowered from 1.5 to 0.55, amp damage set to 50%.
 
 Killing Word - Accuracy improved by 20%.
 
-Linoge - Heat rate improved by 65%, accuracy improved 100%.
+Linoge - Base damage multiplier lowered from 1.05 to 0.6, heat rate improved by 65%, accuracy improved 100%.
 
  ┗----Rationale: What good is a swarm of bullets if 90% of them miss and you spend half of your time reloading?
 
-Pestilence - 70% radiation damage resistance added.
+Pestilence - Base damage multiplier raised from 0.9 to 1.15, 70% radiation damage resistance added.
 
  ┗----Rationale: The reload-nova is powerful but it also leads to the player falling into FFYL often. The radiation resistance means the nova is useable without being forced into wearing a Red Suit.
 
-Psycho Stabber - Melee damage bonus reduced to 250%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
+Psycho Stabber - Base damage multiplier reduced from 1.25 to 0.9, melee damage bonus reduced to 250%, projectiles now actually deal melee damage, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: We have an actual example of a knife-firing gun that deals melee damage with said knives in the game (Blade Fury.) It makes sense to allow the original knife-lobber to deal melee damage from the launched knives as well.
 
-Skeksil - Bonus projectile damage set to match card damage.
+Skeksil - Base damage multiplier lowered from 1.15 to 1, bonus projectile damage reduced from 2 to 1 (weapon card damage).
 
-Tizzy - Reload speed increased by 25%.
+Tizzy - Base damage multiplier lowered from 2 to 0.95, reload speed improved by 25%.
 
-Globetrottr - No change other than a possible damage adjustment.
+Globetrottr - Base damage multiplier lowered from 1.5 to 1.
 
-Major Kong - No change other than a possible damage adjustment.
+Major Kong - Base damage multiplier lowered from 3 to 1.
 
-Mechanic - No change other than a possible damage adjustment.
+Mechanic - Base damage multiplier lowered from 2 to 1. 
 
-Yellowcake - No change other than a possible damage adjustment.
+Yellowcake - Base damage multiplier lowered from 1.75 to 1.
 
 COV UNIQUE GUNS
 ---------------
-Brad Luck - No change other than a possible damage adjustment.
+Brad Luck - Base damage multiplier raised from 1.025 to 1.35.
 
-Sawpenny - No change other than a possible damage adjustment.
+Sawpenny - No change.
 
-The Beast - No change other than a possible damage adjustment.
+The Beast - Base damage multiplier raised from 1 to 1.4.
 
-Hangin' Chadd - No change other than a possible damage adjustment.
+Hangin' Chadd - Base damage multiplier raised from 0.7 to 0.8.
 
-The Killing Word - No change other than a possible damage adjustment.
+The Killing Word - Base damage multiplier set to 1.4, improved the accuracy spread by 20%.
 
-Agonizer 1500 - Repair speed increased by 50%, magazine size increased by 2 rounds, heat-per-shot reduced by 66%.
+Agonizer 1500 - Base damage multiplier raised from 1.25 to 1.35, repair speed increased by 50%, magazine size increased by 2 rounds, heat-per-shot reduced by 66%.
 
  ┗----Rationale: 80% of your combat time consisting of slowly reloading a weapon usually does not make for an enjoyable experience. More magazine size and faster repairs alleviate this.
 
-Hot Drop - No change other than a possible damage adjustment.
+Hot Drop - Base damage multiplier raised from 1 to 1.7.
 
-Minor Kong - No change other than a possible damage adjustment.
+Minor Kong - No change.
 
-Porta-Pooper 5000 - No change other than a possible damage adjustment.
+Porta-Pooper 5000 - Base damage multiplier raised from 1.45 to 3.5.
 
 COV REGULAR GUNS
 ----------------
@@ -1364,92 +571,90 @@ Wizzperer - No change.
 
 DAHL LEGENDARY GUNS
 -------------------
-Barrage - Burst-count set to 7.
+Barrage - Base damage multiplier raised from 1 to 1.05, burst-count set to 7.
 
-Breath of the Dying - Set on-kill projectile damage to 10 times card damage, removed splash damage, doubled the flight speed of on-kill projectiles.
+Breath of the Dying - Base damage multiplier lowered from 3.3 to 1.3, set on-kill projectile damage to 10 times card damage, removed splash damage, doubled the flight speed of on-kill projectiles.
 
-Corruption - Now deals corrosive damage instead of kinetic, reduced Corruption bonus to 20% per stack, increased projectiles produced to 3, reduced initial projectile speed by 50%, made projectiles now accelerate over 3 seconds to ten times the initial speed, fixed projectiles not being boosted by assault rifle damage.
+Corruption - Base damage multiplier lowered from 2.5 to 0.9, now deals corrosive damage instead of kinetic, reduced Corruption bonus to 20% per stack, increased projectiles produced to 3, reduced initial projectile speed by 50%, made projectiles now accelerate over 3 seconds to ten times the initial speed, fixed projectiles not being boosted by assault rifle damage.
 
- ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly acclerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
+ ┗----Rationale: The Corruption on-kill projectiles were slower than a one-legged skag trying to crawl up a hill. Now the projectiles start out extra slow but quickly accelerate towards their target. As for making it deal corrosive damage, the on-kill projectiles would produce corrosive damage-over-time on struck enemies. Thus it makes sense for the gun itself to deal corrosive damage.
 
-Good Juju - Set critical hit stack bonus to 8%, fixed secondary firing mode not dealing as much damage as it should.
+Good Juju - Base damage multiplier lowered from 1.25 to 0.65, set critical hit stack bonus to 8%, fixed secondary firing mode not dealing as much damage as it should.
 
-Kaos - Set "radsplosion" damage to 5 times card damage.
+Kaos - Base damage multiplier lowered from 3 to 1.2, increased "radsplosion" damage to 5 times card damage from 4.
 
-Star Helix - Ammo cost set to 2, 14 rounds added to magazine.
+Star Helix - Base damage multiplier lowered from 1.5 to 0.85, ammo cost set to 2, 14 rounds added to magazine.
 
  ┗----Rationale: Rather than making each bullet do a pittance of damage, it has been given an increase in ammo cost.
 
-Soulrender - Set the amount of skulls spawned from 2 to 1 (this was apparently a thing), increased skull spawn chance to 33%, set skull damage to match card damage.
+Soulrender - Base damage multiplier lowered from 1.7 to 1.1, set the amount of skulls spawned from 2 to 1 (this was apparently a thing), increased skull spawn chance to 33%, set skull damage to match card damage.
 
-Warlord - Set ammo saving chance to 66%.
+Warlord - Base damage multiplier raised from 1 to 1.25, set ammo saving chance to 66%.
 
-AAA - No change other than a possible damage adjustment.
+AAA - Base damage multiplier raised from 0.9 to 1.15.
 
-Hornet - No change other than a possible damage adjustment.
+Hornet - Base damage multiplier lowered from 2.5 to 1. 
 
-Nemesis - No change other than a possible damage adjustment.
+Nemesis - Base damage multiplier lowered from 2.2 to 1.725. 
 
-Night Flyer - No change other than a possible damage adjustment.
+Night Flyer - Base damage multiplier raised from 1.35 to 1.5.
 
-The Blanc - Set damage per stack to 7%.
+The Blanc - Base damage multiplier raised from 1.25 to 1.4, set damage per stack to 7%.
 
-9-Volt - No change other than a possible damage adjustment.
+9-Volt - Base damage multiplier lowered from 1.5 to 0.75. 
 
-Blood-Starved Beast - Set explosion chance to 15%, set explosion damage to 1.5 times card damage, fixed it to get SMG boosts instead of AR boosts.
+Blood-Starved Beast - Base damage multiplier lowered from 1.75 to 0.85, set explosion chance to 15%, set explosion damage to 1.5 times card damage, fixed it to get SMG boosts instead of AR boosts.
 
-Boomer - No change other than a possible damage adjustment.
+Boomer - Base damage multiplier lowered from 2 to 1.3. 
 
-Crader's EMP-5 - No change other than a possible damage adjustment.
+Crader's EMP-5 - Base damage multiplier lowered from 1.8 to 1.05. 
 
-Hellfire - Set damage-over-time chance to be 666%, set damage-over-time to 2.5 times higher than average Dahl SMG DoT damage.
+Hellfire - Base damage multiplier increased from 1.1 to 1.25, set damage-over-time chance to be 666%, set damage-over-time to 2.5 times higher than average Dahl SMG DoT damage.
 
  ┗----Rationale: This weapon's schtick is based on damage-over-time, so we need to make the DoT worthwhile. 100% chance would be enough to guarantee a DoT on most enemies, the 666% chance is just for flavor.
 
-Kaoson - Accuracy and critical penalties removed.
+Kaoson - Base damage multiplier lowered from 2.25 to 0.8, accuracy and critical penalties removed.
 
-Night Hawkin - No change other than a possible damage adjustment.
+Night Hawkin - Set base damage multiplier to 0.525.
 
-Ripper - Set post-melee gun damage bonus to 100%, increased melee damage to 200%, melee damage bonus no longer factors in gear or skill bonuses.
+Ripper - Base damage multiplier lowered from 3.5 to 1.05, set post-melee gun damage bonus to 100%, increased melee damage to 200%, melee damage bonus no longer factors in gear or skill bonuses.
 
  ┗----Rationale: This gun encourages a hack n' blast playstyle, so it has been altered to better suit such a style.
 
-Sleeping Giant - Reload-damage bonus set to 50%, omni-boost chance set to 15%.
+Sleeping Giant - Post-reload damage buff set to 35%, post-reload fire rate buff set to 35%, the post-reload critical damage buff is now 50%.
 
- ┗----Rationale: Instead of spending excessive amounts of time trying to get the perfect roll of boosts, the gun has been adjusted so it is good even without the omni-boost.
+Torrent - Base damage multiplier lowered from 3.7 to 1.275, fire rate and mag size adjusted to counteract Dahl SMG buffs.
 
-Torrent - Fire rate and mag size adjusted to counteract Dahl SMG buffs.
+Vanquisher - Base damage multiplier lowered from 1.5 to 1.25, et sliding bonuses to 50% each and added bonus damage to actual sliding, fire rate bonus now affects burst fire delay.
 
-Vanquisher - Set sliding bonuses to 50% each and added bonus damage to actual sliding, fire rate bonus now affects burst fire delay.
+Autoaime - Base damage multiplier lowered from 1.6 to 1.2.
 
-Autoaime - No change other than a possible damage adjustment.
+Sand Hawk - Base damage multiplier lowered from 1.5 to 0.64. 
 
-Sand Hawk - No change other than a possible damage adjustment.
+Stalker - Base damage multiplier raised from 1 to 3.
 
-Stalker - No change other than a possible damage adjustment.
-
-Malak's Bane - Shotgun-mode ammo cost set to 2, standard mode fire rate increased by 75%.
+Malak's Bane - Base damage multiplier raised from 3.3 to 3.5, shotgun-mode ammo cost set to 2, standard mode fire rate increased by 75%.
 
 
 DAHL UNIQUE GUNS
 -----------------
-Digby's Smooth Tube - No change other than a possible damage adjustment.
+Digby's Smooth Tube - Set base damage multiplier to 1.2.
 
-Earworm - No change other than a possible damage adjustment.
+Earworm - Base damage multiplier raised from 1.15 to 1.2.
 
-Hail - Critical hit damage set to 100%, set lifesteal to 0.5%.
+Hail - Base damage multiplier lowered from 5 to 0.6, critical hit damage set to 100%, set lifesteal to 0.5%.
 
  ┗----Rationale: This is one of the few weapons that was deliberately nerfed. You shouldn't be able to get a top tier weapon as easily as you can get this. Same goes for the Crit.
 
-Kaleidoscope - Amp damage set to 65%, amp chance set to 100%.
+Kaleidoscope - Base damage multiplier raised from 1.1 to 1.25, amp damage set to 65%, amp chance set to 100%.
 
-Omniloader - No change other than a possible damage adjustment.
+Omniloader - Base damage multiplier set to 1.
 
-Ashen Beast - No change other than a possible damage adjustment.
+Ashen Beast - Increased Damage by 10%.
 
-Brashi's Dedication - No change other than a possible damage adjustment.
+Brashi's Dedication - Base damage multiplier set to 0.5.
 
-Kenulox - No change other than a possible damage adjustment.
+Kenulox - Base damage multiplier set to 0.85.
 
 DAHL REGULAR GUNS
 -----------------
@@ -1488,87 +693,87 @@ Wyrm - Increased Damage by 150%, reduced Fire Rate by 35%.
 
 HYPERION LEGENDARY GUNS
 -----------------------
-Brainstormer - No change other than a possible damage adjustment.
+Brainstormer - No change.
 
-Conference Call - Increased base projectile count by 2.
+Conference Call - Base damage multiplier lowered from 1.15 to 1, ncreased base projectile count by 2.
 
-Convergence - No change other than a possible damage adjustment.
+Convergence - Base damage multiplier lowered from 1.8 to 0.85. 
 
-Face-puncher - No change other than a possible damage adjustment.
+Face-puncher - Base damage multiplier raised from 0.3 to 0.6. 
 
-Fearmonger - No change other than a possible damage adjustment.
+Fearmonger - Base damage multiplier lowered from 1.4 to 0.425. 
 
-Guardian 4N631 - Set maximum distance bonus to 120%, increased projectile speed by 75%, made description more accurate.
+Guardian 4N631 - Base damage multiplier lowered from 1 to 0.7, set maximum distance bonus to 120%, increased projectile speed by 75%, made description more accurate.
 
  ┗----Rationale: While it can still be used as a stat-stick to boost the damage on other means of offense, it has been adjusted so that it is now actually viable as a weapon.
 
-Heart Breaker - Set lifesteal to 1.5%, added 25% critical hit damage bonus.
+Heart Breaker - Base damage multiplier lowered from 3 to 1.1, set lifesteal to 1.5%, added 25% critical hit damage bonus.
 
-Iceburger - No change other than a possible damage adjustment.
+Iceburger - Base damage multiplier lowered from 3.5 to 2.5.
 
-Phebert - No change other than a possible damage adjustment.
+Phebert - No change.
 
-Reflux - Increased projectile count by one and magazine size by 40%.
+Reflux - Base damage multiplier lowered from 2.3 to 1, increased projectile count by one and magazine size by 40%.
 
-Slow Hand - Set lifesteal to 1.75%.
+Slow Hand - Base damage multiplier lowered from 1.5 to 1, set lifesteal to 1.75%.
 
-The Butcher - No change other than a possible damage adjustment.
+The Butcher - Base damage multiplier lowered from 2.75 to 1.2. 
 
-Bitch - No change other than a possible damage adjustment.
+Bitch - Base damage multiplier lowered from 1.55 to 0.8, critical hit bonus increased to 100% from 50%.
 
-Cheap Tips - Set chip-drop chance to 15%, damage boost set to 10%.
+Cheap Tips - Base damage multiplier raised from 1 to 1.1, set chip-drop chance to 15%, damage boost set to 10%.
 
-Crossroads - Projectile count and accuracy nerfs reverted.
+Crossroads - Base damage multiplier lowered from 1.2 to 0.6, projectile count and accuracy nerfs reverted.
 
-Gold Rush - No change other than a possible damage adjustment.
+Gold Rush - Base damage multiplier lowered from 3 to 1.25, 
 
-Handsome Jackhammer - No change other than a possible damage adjustment.
+Handsome Jackhammer - Base damage multiplier lowered from 1.7 to 1.15. 
 
-Hyperfocus XZ41 - No change other than a possible damage adjustment.
+Hyperfocus XZ41 - Base damage multiplier lowered from 1.75 to 1.4.
 
-Oldridian - Reload speed improved by 40%.
+Oldridian - Base damage multiplier lowered from 1.5 to 1, reload speed improved by 40%.
 
  ┗----Rationale: A boost to reload speed now means you can switch to a preferable element more readily.
 
-Predatory Lending - No change other than a possible damage adjustment.
+Predatory Lending - Base damage multiplier raised from 0.8 to 1.1.
 
-Proprietary License - No change other than a possible damage adjustment.
+Proprietary License - Base damage multiplier lowered from 1.8 to 1.35.
 
-Redistributor - No change other than a possible damage adjustment.
+Redistributor - Base damage multiplier lowered from 2.6 to 1.25. 
 
-Smog - Set amp damage to 100%.
+Smog - Base damage multiplier lowered from 2.5 to 1.25, set amp damage to 100%.
 
-Troubleshooter - No change other than a possible damage adjustment.
+Troubleshooter - Base damage multiplier lowered from 3 to 1.2. 
 
-Crossbow - No change other than a possible damage adjustment.
+Crossbow - Base damage multiplier lowered from 10 to 2.65.
 
 Narp - Post-reload bonuses set to 5%.
 
-Tankman's Shield - Set critical hit damage bonus to 100%.
+Tankman's Shield - Base damage multiplier lowered from 1.55 to 1.25, lower post-kill damage bonus to 15% from 40%.
 
-Woodblocker - Critical hit damage bonus set to 50%, vertical recoil improved by 85%.
+Woodblocker - Base damage multiplier raised from 0.8 to 1.1, critical hit damage bonus set to 50% from 100%, vertical recoil improved by 85%.
 
 HYPERION UNIQUE GUNS
 --------------------
-Firecracker - Firework radius set to 500.
+Firecracker - Base damage multiplier lowered from 4 to 3, increased firework radius to 500 from 200.
 
-Melt Facer - No change other than a possible damage adjustment.
+Melt Facer - Base damage multiplier raised from 1 to 2.
 
-Reunion - No change other than a possible damage adjustment.
+Reunion - Base damage multiplier raised from 1 to 1.25
 
-Just Kaus - No change other than a possible damage adjustment.
+Just Kaus - Set base damage multiplier to 1.
 
-Redistributor - No change other than a possible damage adjustment.
+Redistributor - Set base damage multiplier to 1.1.
 
-LOV3M4CH1N3 - No change other than a possible damage adjustment.
+LOV3M4CH1N3 - Base damage multiplier lowered from 1.25 to 1.1
 
-Pricker - No change other than a possible damage adjustment.
+Pricker - Needle damage increased by 200%, explosion damage lowered from 12 to 3.
 
-Short Stick - No change other than a possible damage adjustment.
+Short Stick - Base damage multiplier raised from 0.61 to 0.8.
 
-Null Pointer - No change other than a possible damage adjustment.
+Null Pointer - No change.
 
-The Two Time - No change other than a possible damage adjustment.
+The Two Time - Base damage multiplier raised from 0.75 to 0.85.
 
 HYPERION REGULAR GUNS
 ---------------------
@@ -1599,147 +804,147 @@ Broodmother - Increased Damage by 105%, reduced Fire Rate by 35%, reduced Magazi
 
 JAKOBS LEGENDARY GUNS
 ---------------------
-Bekah - No change other than a possible damage adjustment.
+Bekah - Base damage multiplier lowered from 3 to 0.7.
 
-Blade Fury - Melee damage bonus no longer factors in gear or skill bonuses.
+Blade Fury - Base damage multiplier lowered from 1.55 to 1.29, melee damage bonus no longer factors in gear or skill bonuses.
 
-Clairovoyance - No change other than a possible damage adjustment.
+Clairovoyance - Base damage multiplier lwoered from 2.5 to 0.75.
 
-Gatling Gun - Recoil-per-shot improved by 24%, accuracy improved by 33%, vertical recoil improved by 52.5%, horizontal recoil improved by 15%.
+Gatling Gun - Base damage multiplier lowered from 1 to 0.95, recoil-per-shot improved by 24%, accuracy improved by 33%, vertical recoil improved by 52.5%, horizontal recoil improved by 15%.
 
-Hand of Glory - No change other than a possible damage adjustment.
+Hand of Glory - Base damage multiplier raised from 0.9 to 1.2.
 
-Lead Sprinkler - Splash radius set to 120, lowered speed of bonus projectiles by roughly 19%, improved accuracy by 50%, improved vertical recoil by 25%, improved horizontal recoil by 30%, improved recoil-per-shot by 20%.
+Lead Sprinkler - Base damage multiplier lowered from 1 to 0.85, splash radius set to 120, lowered speed of bonus projectiles by roughly 19%, improved accuracy by 50%, improved vertical recoil by 25%, improved horizontal recoil by 30%, improved recoil-per-shot by 20%.
 
  ┗----Rationale: The child projectiles have been adjusted so that they can hit smaller targets.
 
-Mutant - Improved overall recoil control by 35%, now deals radiation damage instead of kinetic.
+Mutant - Base damage multiplier lowered from 1.75 to 1.4, mproved overall recoil control by 35%, now deals radiation damage instead of kinetic.
 
-Rowan's Call - No change other than a possible damage adjustment.
+Rowan's Call - Base damage multiplier lowered from 4 to 1.2. 
 
-Stonethrower - Removed the ricochet text at the bottom of the card.
+Stonethrower - Base damage multiplier lowered from 1.6 to 1.2, removed the ricochet text at the bottom of the card.
 
-Amazing Grace - 30% critical hit damage added.
+Amazing Grace - Base damage multiplier lowered from 2.6 to 1.25, 30% critical hit damage added.
 
-Bite Size - No change other than a possible damage adjustment.
+Bite Size - No change.
 
-Bloom - Recoil improved by 35%, adjusted description to be more accurate.
+Bloom - Base damage multiplier lowered from 1.5 to 0.875, recoil improved by 35%, adjusted description to be more accurate.
 
-King's/Queen's Call - Lifesteal set to 0.25%.
+King's/Queen's Call - Base damage multiplier lowered from 2.5 to 0.8, ifesteal set to 0.25%.
 
-Maggie - No change other than a possible damage adjustment.
+Maggie - Base damage multiplier lowered from 0.62 to 0.3.
 
-Little Yeeti - Adjusted it so that a masher grip will now increase projectile count to 10 instead of 6.
+Little Yeeti - Base damage multiplier lowered from 2 to 0.8, adjusted it so that a masher grip will now increase projectile count to 10 instead of 6.
 
  ┗----Rationale: This change was made so that the masher variant wasn't blatantly worse than the standard version.
 
-Love Drill - Set Shock chance to 50%, set shock damage to 50%, set innate critical hit damage bonus to 100%.
+Love Drill - Base damage multiplier lowered from 1 to 0.7, set Shock chance to 50%, set shock damage to 50%, set innate critical hit damage bonus to 100%.
 
-Lucky 7 - Reload mod chance set to 33% (how often each of them will roll and show up), set "7" roll chance to 20%, "7" damage reduced by 65%, reload speed increased by 66%.
+Lucky 7 - Base damage multiplier raised from 0.7 to 1.05, reload mod chance set to 33% (how often each of them will roll and show up), set "7" roll chance to 20%, "7" damage reduced by 65%, reload speed increased by 66%.
 
  ┗----Rationale: The Lucky 7 has been adjusted so that you can actually use it effectively as a normal gun instead of spending a copious amount of time trying to get a good roll. If you still insist on fishing for a good roll though, you can do it faster.
 
-Seventh Sense - No change other than a possible damage adjustment.
+Seventh Sense - Base damage multiplier lowered from 3 to 1.
 
-The Companion - Status effect damage doubled, removed accuracy penalty.
+The Companion - Base damage multiplier lowered from 2 to 1.15, status effect damage doubled, removed accuracy penalty.
 
-The Duc - No change other than a possible damage adjustment.
+The Duc - Base damage multiplier lowered from 1.5 to 1.2. 
 
-The Flood - No change other than a possible damage adjustment.
+The Flood - Base damage multiplier lowered from 1.5 to 1.
 
-Trickshot - Added 40% critical hit damage.
+Trickshot - Base damage multiplier lowered from 3 to 0.7, added 40% critical hit damage.
 
-Unforgiven - Set innate critical hit damage bonus to 250%, reduced sway while zoomed-in by 85%. "Scopeless" sight now transforms the Unforgiven into a masher with an ammo cost of 2 and now spawns less frequently.
+Unforgiven - Base damage multiplier raised from 0.6 to 1.6, set innate critical hit damage bonus to 250% from 400%, reduced sway while zoomed-in by 85%. "Scopeless" sight now transforms the Unforgiven into a masher with an ammo cost of 2 and now spawns less frequently.
 
  ┗----Rationale: Changing the scopeless part to behave like a masher is partially to make the scopeless version worth considering over a scoped version, as well as to add a bit of spice to the weapon beyond being a stat stick for critical hit damage. 
 
-Wagon Wheel - No change other than a possible damage adjustment.
+Wagon Wheel - Base damage multiplier raised from 1.3 to 1.45. 
 
-Hellwalker - No change other than a possible damage adjustment.
+Hellwalker - Base damage multiplier lowered from 5 to 1.5. 
 
-Nimble Jack - Added 30% critical hit damage.
+Nimble Jack - Base damage multiplier lowered from 1.45 to 1.2, added 30% critical hit damage.
 
-One-Pump Chump - Added 50% critical hit damage.
+One-Pump Chump - Base damage multiplier lowered from 12 to 10, added 50% critical hit damage.
 
 Robin's Call - Adjusted description to be more accurate.
 
-Sledge's Shotgun - Sledge's Super Shotgun now also behaves like the triple barrel accessory; higher ammo cost, projectile count, and worse accuracy.
+Sledge's Shotgun - Base damage multiplier lowered from 3 to 1.6, Sledge's Super Shotgun now also behaves like the triple barrel accessory; higher ammo cost, projectile count, and worse accuracy.
 
  ┗----Rationale: The "Super" implies a significant increase or change over the standard version. Increasing the burst-fire count by one doesn't amount to much of a difference (especially since the delay between being able to fire again is increased). So now this special triple-barrel accessory actually behaves more like one.
 
-TK's Wave - Improved the accuracy considerably, increased projectile speed by 25%, reduced damage of Heatwave and Shockwave by 20%, made it more likely to spawn with higher projectile counts.
+TK's Wave - Base damage multiplier lowered from 5 to 1.5, improved the accuracy considerably, increased projectile speed by 25%, reduced damage of Heatwave and Shockwave by 20%, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The 20% damage reduction to the elemental Waves is simply to be consistent with how elemental parts reduce damage on most other weapons.
 
-The Garcia - Lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
+The Garcia - Base damage multiplier lowered from 3 to 1.25, lowered ammo cost to 1, increased projectile count by 2, improved accuracy spread by 15%, reduced vertical recoil by 40%, increased fire rate by 60%.
 
-The Tidal Wave - Improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3, made it more likely to spawn with higher projectile counts.
+The Tidal Wave - Base damage multiplier lowered from 5 to 1.5, improved accuracy slightly, increased projectile speed by 150%, set ammo cost to 3, made it more likely to spawn with higher projectile counts.
 
  ┗----Rationale: The reason for ammo cost being increased is because this thing now hits like a truck if you manage to land all the projectiles.
 
-Bird of Prey - Set bonus projectile damage to match card damage.
+Bird of Prey - Base damage multiplier lowered from 2 to 1.15, set bonus projectile damage to match card damage from 600%.
 
-Cocky Bastard - Set bonus shock damage to 50%.
+Cocky Bastard - Base damage multiplier raised from 1 to 1.2, set bonus shock damage to 50% from 150%.
 
-Headsplosion - Removed critical hit damage penalty, increased splash radius by 50%.
+Headsplosion - Base damage multiplier lowered from 1.5 to 1.175, removed critical hit damage penalty, increased splash radius by 50%.
 
-Ionic Disruptor - Set post-melee damage bonus to 66%, increased melee damage to 200%.
+Ionic Disruptor - Base damage multiplier lowered from 3 to 1.4, set post-melee damage bonus to 66%, increased melee damage to 200%.
 
-Monocle - No change other than a possible damage adjustment.
+Monocle - Base damage multiplier lowered from 1.15 to 0.5. 
 
-Skullmasher - Made accuracy spread wider by 100%.
+Skullmasher - Base damage multiplier lowered from 0.75 to 0.4, made accuracy spread wider by 100%.
 
  ┗----Rationale: This love child between a shotgun and a sniper was leaning more towards the sniper side. The accuracy penalty leads to still being useful at mid-long range but it won't be driving nails like a typical sniper rifle now.
 
-Unseen Threat - Set ricochet damage to 33% of card damage, adjusted description to be more accurate.
+Unseen Threat - Base damage multiplier lowered from 1.75 to 1.2, set ricochet damage to 33% of card damage, adjusted description to be more accurate.
 
-Wedding Invitation - Set ricochet damage to 2 times card damage.
+Wedding Invitation - Set ricochet damage to 2 times card damage from 2.928.
 
 JAKOBS UNIQUE GUNS
 ------------------
-Icebreaker - No change other than a possible damage adjustment.
+Icebreaker - Base damage multiplier lowered from 1 to 0.625.
 
 Pa's Rifle - No change other than a possible damage adjustment.
 
-The Chalice - Post-crit-kill bonus set to 40%.
+The Chalice - Base damage multiplier raised from 1 to 1.4, post-crit-kill bonus lowered from 100% to 40%.
 
-Traitor's Death - Incendiary damage set to 50%, incendiary chance set to 50%.
+Traitor's Death - Set base damage multiplier to 1, incendiary damage set to 50%, incendiary chance set to 50%.
 
-Buttplug - No change other than a possible damage adjustment.
+Buttplug - Base damage multiplier raised from 0.1 to 0.1666
 
-Dead Chamber - No change other than a possible damage adjustment.
+Dead Chamber - Base damage multiplier set to 1.
 
-Love Drill (purple) - Set critical hit damage to 100%.
+Love Drill (purple) - Base damage multiplier lowered from 0.75 to 0.65, lowered critical hit damage from 200% to 100%.
 
-Peashooter - No change other than a possible damage adjustment.
+Peashooter - Set base damage multiplier to 1.
 
-Quickdraw - Amp damage set to 50%, amp duration set to 4 seconds.
+Quickdraw - Base damage multiplier lowered from 1.25 to 0.9, amp damage increased to 50%, amp duration increased to 4 seconds.
 
-Robo-Melter - No change other than a possible damage adjustment.
+Robo-Melter - Set base damage multiplier to 1.
 
-Rogue-Sight - No change other than a possible damage adjustment.
+Rogue-Sight - Base damage multiplier raised from 0.7 to 0.85.
 
-Seventh Sense - No change other than a possible damage adjustment.
+Seventh Sense - Damage increased by 40%.
 
-Dakota - Incendiary damage set to +50%, shock damage set to +100%, elemental shot chance set to 50%.
+Dakota - Base damage multiplier lowered from 1.5 to 1, incendiary damage set to +50%, shock damage set to +100%, elemental shot chance set to 50%.
 
-Fingerbiter - No change other than a possible damage adjustment.
+Fingerbiter - Set base damage multiplier to 1.3
 
-Splinter - Removed the "1 ricochet" text.
+Splinter - Base damage multiplier raised from 1.3 to 1.6, removed the "1 ricochet" text.
 
-The Cure - Lifesteal set to 1.5%.
+The Cure - Base damage multiplier raised from 1.4 to 1.55, lifesteal set to 1.5%.
 
-The Shoddy - No change other than a possible damage adjustment.
+The Shoddy - Set base damage multiplier to 1.
 
 The Hunt(ed) - Robot damage bonus set to 50%, added 50% critical hit damage.
 
-The Hunt(er) - Creature damage bonus set to 50%, added 50% critical hit damage.
+The Hunt(er) - Base damage multiplier raised from 1 to 1.25, creature damage bonus set to 50%, added 50% critical hit damage.
 
-The Hunt(ress) - Humanoid damage bonus set to 50%, added 50% critical hit damage.
+The Hunt(ress) - Base damage multiplier raised from 1 to 1.05, humanoid damage bonus set to 50%, added 50% critical hit damage.
 
  ┗----Rationale: The Hunt rifles have been adjusted to be similar to the Buffalo or Elephant Gun of older titles; high damage but no scope.
 
-The Ice Queen - No change other than a possible damage adjustment.
+The Ice Queen - Base damage multiplier raised from 1 to 1.4.
 
 JAKOBS REGULAR GUNS
 -------------------
@@ -1774,125 +979,123 @@ Muckamuck - No change.
 
 MALIWAN LEGENDARY GUNS
 ----------------------
-Beacon - Set reload-nova damage to 8.2 times card damage, reduced magazine size by 50%, improved reload speed by 40%, increased fire rate by 40%, increased splash radius by 50%.
+Beacon - Base damage multiplier lowered from 2 to 0.725, set reload-nova damage to 8.2 times card damage from 5, reduced magazine size by 50%, improved reload speed by 40%, increased fire rate by 40%, increased splash radius by 50%.
 
  ┗----Rationale: The special feature of the Beacon is largely ignored due to standard gun usage being far superior compared to the reload-nova. The changes made allow the Beacon to be effective both with simply firing the weapon or using the gimmick.
 
-Free Radical - No change other than a possible damage adjustment.
+Free Radical - Base damage multiplier lowered from 4 to 0.8.
 
-Frozen Devil - Increased Ice Spike damage by 1000%, reduced Cryogenic-Mode frozen damage bonus to 2 times card damage.
+Frozen Devil - Base damage multiplier raised from 0.25 to 0.3, increased Ice Spike damage multiplier from 1 to 10, reduced Cryogenic-Mode frozen damage bonus to 2 times card damage.
 
  ┗----Rationale: Slowly freezing an enemy in order to be able to deal sufficient damage isn't the most enjoyable gameplay loop. The Ice Spike mode is now efficient enough for standard combat while the freeze-for-bonus-damage gimmick is worth considering on tough enemies.
 
-Grease Trap - Set Grease Mode grease damage to 10% of card damage, reduced Grease Mode fire rate by 38%.
+Grease Trap - Base damage multiplier lowered from 1.2 to 1, set Grease Mode grease damage to 10% of card damage from 20%, reduced Grease Mode fire rate by 38%.
 
-Hellshock - Reduced projectile count to 1.
+Hellshock - Base damage multiplier lowered from 1.25 to 0.85, reduced projectile count to 1.
 
-Hyper-Hydrator - No change other than a possible damage adjustment.
+Hyper-Hydrator - No change.
 
-Ice Pick - No change other than a possible damage adjustment.
+Ice Pick - No change.
 
-Sellout - No change other than a possible damage adjustment.
+Sellout - No change.
 
 Superball - Doubled splash radius, made it fully automatic, added 50% critical hit damage.
 
- ┗----Rationale: Making fully-automatic is a quality-of-life change for your fingers, the critical hit damage is to reward skillful bouncing, and the splash radius boost is to discourage getting point-blank in something's face to reap the critical damage benefits.
+ ┗----Rationale: Making it fully-automatic is a quality-of-life change for your fingers, the critical hit damage is to reward skillful bouncing, and the splash radius boost is to discourage getting point-blank in something's face to reap the critical damage benefits.
 
-Thunderball Fists - Splash radius doubled, ammo cost set to 1, made the thunderball faster.
+Thunderball Fists - Base damage multiplier lowered from 2.25 to 1.7, splash radius doubled, ammo cost set to 1, made the thunderball faster.
 
-Blind Sage - No change other than a possible damage adjustment.
+Blind Sage - Base damage multiplier lowered from 2.25 to 1.2.
 
-Chandelier - Ammo cost reduced by 2.
+Chandelier - Base damage multiplier raised from 1.2 to 1.25, ammo cost reduced by 2.
 
-Frequency - Magazine size increased by 6, adjusted description to be more accurate.
+Frequency - Base damage multiplier lowered from 1 to 0.95, magazine size increased by 6, adjusted description to be more accurate.
 
  ┗----Rationale: Depending on the parts, you would not be able to use the maximum bonus of this weapon. The extra mag size remedies that.
 
-Insider - Ammo cost reduced by 1.
+Insider - Base damage multiplier raised from 0.3 to 1, ammo cost reduced by 1, tweaked the damage formula.
 
-Kill-o'-the-Wisp - Fixed an issue with the damage and ammo cost. Ammo cost is reduced to 3.
+Kill-o'-the-Wisp - Base damage multiplier raised from 4 to 10, fixed an issue with the ammo cost being connected with the damage multiplier value, fixed the damage formula, ammo cost is reduced to 3.
 
-Mind-Killer - No change other than a possible damage adjustment.
+Mind-Killer - Base damage multiplier raised from 1.17 to 1.3.
 
-Nothingness - Set "flak" damage to 2.5 times card damage.
+Nothingness - Set "flak" damage to 2.5 times card damage from 3.
 
-Projectile Recursion - No change other than a possible damage adjustment.
+Projectile Recursion - Base damage multiplier lowered from 7 to 4.
 
-Trevanator - No change other than a possible damage adjustment.
+Trevanator - Base damage multiplier lowered from 5 to 2.1.
 
-Vosk's Deathgrip - Ammo cost reduced to 3, secondary mode ammo-regeneration delay set to 4 seconds.
+Vosk's Deathgrip - Base damage multiplier lowered from 5 to 3.25, ammo cost reduced to 3, secondary mode ammo-regeneration delay set to 4 seconds.
 
  ┗----Rationale: The intended play-loop for this weapon revolves around using the singularity to immobolize enemies so that you can zap the daylights out of them with the primary fire. The secondary regeneration delay change now allows you to reliably do that.
 
-Cloud Kill - No change other than a possible damage adjustment.
+Cloud Kill - Base damage multiplier lowered from 1.825 to 1.3.
 
-Cutsman - Damage-over-time reduced by 40%.
+Cutsman - Base damage multiplier lowered from 3.5 to 1.45, damage-over-time reduced by 40%.
 
-Destructo Spinner - No change other than a possible damage adjustment.
+Destructo Spinner - Base damage multiplier lowered from 2 to 1.45.
 
-Devoted - Fire rate reduced by 25%, recoil height improved by 30%, recoil width improved by 65%, improved accuracy.
+Devoted - Base damage multiplier lowered from 3 to 1.2, fire rate reduced by 25%, recoil height improved by 30%, recoil width improved by 65%, improved accuracy.
 
-D.N.A. - Damage-over-time reduced by 40%.
+D.N.A. - Base damage multiplier lowered from 10.5 to 2.4, damage-over-time reduced by 40%.
 
-Ember's Purge - Puddle damage set to 50% of card damage, puddle chance increased to 33%.
+Ember's Purge - Base damage multiplier raised from 1 to 1.1, puddle damage set to 50% of card damage from 600%, puddle chance increased to 33%.
 
-Flipper - No change other than a possible damage adjustment.
+Flipper - Base damage multiplier lowered from 1.6 to 0.25.
 
-ION LASER - Set sustained-fire damage bonus to 7.5% per stack.
+ION LASER - Base damage multiplier lowered from 1.6 to 1, set sustained-fire damage bonus to 7.5% per stack from 20%.
 
-Kyb's Worth - No change other than a possible damage adjustment.
+Kyb's Worth - Base damage multiplier lowered from 2.75 to 0.975.
 
-P2P Networker - No change other than a possible damage adjustment.
+P2P Networker - Base damage multiplier raised from 0.6 to 1.2.
 
-Plasma Coil - No change other than a possible damage adjustment.
+Plasma Coil - Base damage multiplier lowered from 20 to 2.15. 
 
-Polyaimorous - Set chain damage to 40% of card damage, fixed the secondary firing mode not receiving damage buffs properly, ecoil reduced by 80%.
+Polyaimorous - Base damage multiplier raised from 1.5 to 3, set chain damage to 40% of card damage from 50%, fixed the secondary firing mode not receiving damage buffs properly, recoil reduced by 80%.
 
-SF Force - Set note damage to 50% of card damage, fixed alternate mode not receiving damage buff properly.
+SF Force - Base damage multiplier lowered from 7 to 1.42, set note damage to 50% of card damage from 75%, fixed alternate mode not receiving damage buff properly.
 
-Tsunami - No change other than a possible damage adjustment.
+Tsunami - Base damage multiplier lowered from 1.9 to 1.
 
-Vault Hero - No change other than a possible damage adjustment.
+Vault Hero - No change.
 
-Westergun - Splash radius doubled.
+Westergun - Base damage multiplier lowered from 1.25 to 1.2, splash radius doubled.
 
-ASMD - Set energy ball explosion to five times card damage.
+ASMD - Base damage multiplier lowered from 1.7 to 1.3, set energy ball explosion to five times card damage from 2.5.
 
-Binary Operator - No change other than a possible damage adjustment.
+Binary Operator - No change.
 
-Complex Root - No change other than a possible damage adjustment.
+Complex Root - Base damage multiplier raised from 1 to 1.2.
 
-Firestorm - Ammo cost set to 1, fireball radius set to 400.
+Firestorm - Base damage multiplier lowered from 2.25 to 1.9, ammo cost set to 1, fireball radius set to 400.
 
-Krakatoa - Reduced speed of fireballs by roughly 18%.
+Krakatoa - Base damage multiplier lowered from 4.25 to 1.9, educed speed of fireballs by roughly 18%.
 
  ┗----Rationale: Reducing the speed of the fireballs means they don't go quite as high and land closer to the volcano.
 
-Storm - Ammo cost set to 1, radius set to 300.
+Storm - Base damage multiplier lowered from 2.25 to 1.9, ammo cost set to 1, radius set to 300.
 
 MALIWAN UNIQUE GUNS
 -------------------
-Bubble Blaster - No change other than a possible damage adjustment.
+Bubble Blaster - No change.
 
-Starkiller - No change other than a possible damage adjustment.
+Starkiller - Base damage multiplier raised from 0.3 to 0.4.
 
-Blind Bandit - No change other than a possible damage adjustment.
+Blind Bandit - No change.
 
-Shrieking Devil - Removed self-damage.
+Shrieking Devil - Base damage multiplier raised from 9 to 12, removed self-damage.
 
-Crit - Lifesteal set to 1%.
+Crit - Base damage multiplier lowered from 8 to 1.25, lifesteal set to 1%.
 
 Vibra-Pulse - Lifesteal set to 1.5%, recoil reduced by 80%.
 
-E-Gone - No change other than a possible damage adjustment.
+E-Gone - Base damage multiplier raised from 0.75 to 1.2.
 
-Kevin's Chilly - No change other than a possible damage adjustment.
+Kevin's Chilly - No change.
 
-Moxxi's Vibra-Pulse - Lifesteal set to 1.5%.
+Emperor's Condiment - Base damage multiplier raised from 1.45 to 1.
 
-Emperor's Condiment - No change other than a possible damage adjustment.
-
-Soleki Protocol - No change other than a possible damage adjustment.
+Soleki Protocol - No change.
 
 MALIWAN REGULAR GUNS
 --------------------
@@ -1931,59 +1134,59 @@ Antimatter Rifle - Increased Damage by 85%, reduced Magazine Size by 35%, and Am
 
 TEDIORE LEGENDARY GUNS
 ----------------------
-Baby Maker - No change other than a possible damage adjustment.
+Baby Maker - Base damage multiplier lowered from 2 to 1.25.
 
-Bangarang - No change other than a possible damage adjustment.
+Bangarang - Base damage multiplier raised from 1 to 1.3.
 
-Gunerang - No change other than a possible damage adjustment.
+Gunerang - Base damage multiplier raised from 1 to 1.3.
 
-S3RV-8OS-EXECUTE - No change other than a possible damage adjustment.
+S3RV-8OS-EXECUTE - Base damage multiplier lowered from 3 to 1.35. 
 
-Scorpio - Reload damage doubled.
+Scorpio - Base damage multiplier lowered from 2.5 to 1.2, reload damage doubled from 25% to 50% of card damage..
 
-Anarchy - Set damage per stack to 10%, set accuracy penalty to 10% per stack.
+Anarchy - Set damage per stack to 10% from 30%, set accuracy penalty to 10% per stack from 5%.
 
  ┗----Rationale: The Anarchy's gimmick is more power for less accuracy. The accuracy penalty has been increased enough to actually matter.
 
-Brightside - Reload-shot damage set to 1.5 times the card damage.
+Brightside - Base damage multiplier lowered from 1.6 to 1.05, reload-shot damage increased by 50%.
 
-Creeping Death - Explosion damage set to 70%, status effect damage reduced by 40%, projectile speed increased by 50%, Magazine Size by 2, and Fire Rate by 40%.
+Creeping Death - Base damage multiplier raised from 2.75 to 12, explosion damage set to 70% from 150%, status effect damage reduced by 40%, projectile speed increased by 50%, Magazine Size increased by 2, and Fire Rate by 40%.
 
  ┗----Rationale: The damage on this thing's been increased a truckload. It's now useable both for traditional use and the "mine-laying" gimmick.
 
-Flama Diddle - No change other than a possible damage adjustment.
+Flama Diddle - Base damage multiplier lowered from 1.5 to 1.25.
 
-Manic Pixie Dream Gun - No change other than a possible damage adjustment.
+Manic Pixie Dream Gun - No change.
 
-Polybius - Magazine size doubled.
+Polybius - Base damage multiplier lowered from 3.2 to 2.4, magazine size doubled.
 
  ┗----Rationale: Polybius' identity is high fire rate, and thus a higher magazine size helps to make use of that fire rate.
 
-The Horizon - No change other than a possible damage adjustment.
+The Horizon - Base damage multiplier lowered from 2.5 to 1.2.
 
-Dark Army - Drone damage reduced to 25% of card damage.
+Dark Army - Base damage multiplier lowered from 1.7 to 1.4, drone damage reduced to 25% of card damage from 166%.
 
-Long Musket - No change other than a possible damage adjustment.
+Long Musket - No change.
 
-Needle Gun - Set damage stack to 4%, set base-reload damage to 2.5 times card damage.
+Needle Gun - Base damage multiplier raised from 0.75 to 0.85, set damage stack to 4%, set base-reload damage to 2.5 times card damage.
 
-Mother Too - Fire rate increased by 140%.
+Mother Too - Base damage multiplier lowered from 3 to 1.25, fire rate increased by 140%.
 
-P.A.T. Mk. III - No change other than a possible damage adjustment.
+P.A.T. Mk. III - Base damage multiplier lowered from 2 to 1.15.
 
-Smart Gun - No change other than a possible damage adjustment.
+Smart Gun - Base damage multiplier lowered from 7 to 2.7.
 
-Ten Gallon - No change other than a possible damage adjustment.
+Ten Gallon - Base damage multiplier lowered from 2 to 1.5.
 
 TEDIORE UNIQUE GUNS
 -------------------
-Sacrificial Lamb - Lifesteal set to 10%.
+Sacrificial Lamb - Base damage multiplier raised from 1.25 to 1.4, lifesteal lowered from 25% to 10%.
 
-Superstreamer - No change other than a possible damage adjustment.
+Superstreamer - No change.
 
-P.A.T. Mk. II. - No change other than a possible damage adjustment.
+P.A.T. Mk. II. - Damage increased by 15%.
 
-The Boo - No change other than a possible damage adjustment.
+The Boo - No change.
 
 TEDIORE REGULAR GUNS
 --------------------
@@ -2014,37 +1217,39 @@ Elderblast - Increased Damage by 775%, reduced Tediore Reload Damage by 40%, and
 
 TORGUE LEGENDARY GUNS
 ---------------------
-Alchemist - No change other than a possible damage adjustment.
+Alchemist - Base damage multiplier raised from 1 to 1.3.
 
-Bearcat - No change other than a possible damage adjustment.
+Bearcat - Base damage multiplier lowered from 3 to 0.85, increased base Splash Radius to 300, reduce Delay between burst-volleys by 50%, reduce maximum number of bounces to 1 from 4.
+ 
+Contained Blast - Base damage multiplier lowered from 1 to 0.75, consecutive-hit bonus set to 2.5% per stack from 20%, increased magazine size by 25%.
 
-Contained Blast - Consecutive-hit bonus set to 2.5% per stack.
+Hotfoot Teddy - Base damage multiplier lowered from 2 to 1.6. 
 
-Hotfoot Teddy - No change other than a possible damage adjustment.
+Juliet's Dazzle - Base damage multiplier lowered from 2 to 1.35, projectile speed and acceleration doubled, adjusted description to mention the projectiles ricochet and penetrate.
 
-Juliet's Dazzle - No change other than a possible damage adjustment.
+Laser-Sploder - Base damage multiplier lowered from 2.2 to 0.9, increased the frequency of the Laser-Sploder's projectiles to 0.65 seconds from 0.85 seconds.
 
-Laser-Sploder - Increased the frequency of the Laser-Sploder's projectiles to 0.65 seconds from 0.85 seconds.
+Lovable Rogue - Base damage multiplier lowered from 1.4 to 1.3, fixed the damage formula, increased fire rate by 50%.
 
-Lovable Rogue - No change other than a possible damage adjustment.
+Try-Bolt - Base damage multiplier lowered from 4 to 1.6, reduced delay between Burst-Volleys by 40%, reduced Recoil-Per-Shot, Recoil Height, and Recoil Width by 30% each.
 
-Try-Bolt - No change other than a possible damage adjustment.
-
-Breeder - Child projectile gravity increased by 76%, splash radius increased to 150.
+Breeder - Base damage multiplier lowered from 1.5 to 0.75, child projectile gravity increased by 76%, splash radius increased to 150.
 
  ┗----Rationale: The increased gravity allows the child projectiles to fall much faster, and the radius boost helps to ensure those explosions actually hit something.
 
-Craps - No change other than a possible damage adjustment.
+Craps - No change.
 
-Devastator - No change other than a possible damage adjustment.
+Devastator - No change.
 
-Devil's Foursum - Base splash radius set to 245.
+Devil's Foursum - Splash Radius set to 240 from 400, increased Projectile Speed by 20%, changed damage type to pistol, make it no longer deal self-damage, and tightened the spread of the projectiles.
 
-Echo - No change other than a possible damage adjustment.
+Echo - Base damage multiplier lowered from 1.5 to 0.75.
 
-Girth Blaster Elite - No change other than a possible damage adjustment.
+Girth Blaster Elite - Base damage multiplier raised from 0.3 to 0.8.
 
-Moonfire - Critical hit damage set to 50%, amp damage set to 100%, accuracy improved by 60%, vertical recoil improved by 135%, horizontal recoil improved by 35%, weapon sway heavily reduced by 90%, equip time improved by 40%.
+Ice Age - Base damage multiplier raised from 1 to 1.7.
+
+Moonfire - Base damage multiplier lowered from 2.25 to 1.3, critical hit damage set to 50% from 70%, amp damage set to 100% from 200%, accuracy improved by 60%, vertical recoil improved by 135%, horizontal recoil improved by 35%, weapon sway heavily reduced by 90%, equip time improved by 40%.
 
  ┗----Rationale: This thing's meant to be a hand cannon, so it has been touched up everything to allow it to be an effective hand cannon despite the lack of a proper sight.
 
@@ -2052,75 +1257,75 @@ Occultist - Accuracy penalty removed, splash radius set to 100, main projectile 
 
  ┗----Rationale: The initial projectile being slow allows it to spawn more projectiles before it hits something.
 
-Prompt Critical - Sticky impact damage set to 40% of card damage.
+Prompt Critical - Base damage multiplier lowered from 1.3 to 0.5, sticky impact damage set to 40% of card damage from 150%.
 
-Roisen's Thorns - No change other than a possible damage adjustment.
+Roisen's Thorns - Base damage multiplier lowered from 0.75 to 0.5, lowered the extra projectile damage multiplier from 1.533333 to 0.5
 
-Scoville - No change other than a possible damage adjustment.
+Scoville - Base damage multiplier lowered from 2.75 to 2.3.
 
-TNTina - Projectile Speed increased by 50%, fuse time lowered to 2 seconds, set Splash Radius to 175, increased Fire Rate by 45%.
+TNTina - Base damage multiplier raised from 2 to 4.5, Projectile Speed increased by 50%, fuse time lowered to 2 seconds, set Splash Radius to 175, increased Fire Rate by 45%.
 
-Unkempt Harold - Base splash radius set to 100, projectiles now split 25% earlier, projectile speed reduced by 20%.
+Unkempt Harold - Base damage multiplier lowered from 2 to 0.385, base splash radius set to 100, projectiles now split 25% earlier, projectile speed reduced by 20%.
 
-Creamer - Lifesteal set to 1.5%.
+Creamer - Base damage multiplier lowered from 8 to 0.7, lifesteal set to 1.5%.
 
-Hive - Ammo cost set to 3.
+Hive - Base damage multiplier lowered from 1.75 to 0.75, ammo cost set to 3 from 4.
 
-Nukem - Now deals radiation damage instead of kinetic damage.
+Nukem - Base damage multiplier lowered from 2.5 to 1.75, now deals radiation damage instead of kinetic damage.
 
  ┗----Rationale: It's a nuclear warhead launcher called the Nukem with a literal radiation symbol on the weapon's skin, in a game with nukes that actually deal radiation damage (Hammerdown Protocol and Baby Nukes). If any weapon deserves to be a radiation-element weapon, it is this one.
 
-Plaguebearer - No change other than a possible damage adjustment.
+Plaguebearer - No change.
 
-Quadomizer - No change other than a possible damage adjustment.
+Quadomizer - Base damage multiplier raised from 0.8 to 2.1.
 
-R.Y.N.A.H. - Ammo cost set to 5, splash radius increased.
+R.Y.N.A.H. - Base damage multiplier raised from 1.2 to 1.6, ammo cost set to 5 from 7, splash radius increased.
 
-Satisfaction - Explosion delay reduced to 1 second from 2 seconds.
+Satisfaction - Base damage multiplier lowered from 2.5 to 1.4, xplosion delay reduced to 1 second from 2 seconds.
 
-Scourge - Ammo cost set to 3, splash radius increased by 50%.
+Scourge - Ammo cost set to 3 from 4, splash radius increased by 50%.
 
  ┗----Rationale: Reducing the ammo cost no longer means the Plaguebearer is effectively a direct upgrade to the Scourge.
 
-Tunguska - Explosion radius increased by 68%.
+Tunguska - child projectile explosion base damage multiplier increased from 6 to 6.25.
 
 Critical Thug - Updated description to be more accurate.
 
-Flakker - Ammo cost increased to 4, initial projectile speed doubled, initial projectile acceleration reduced by 33%.
+Flakker - Base damage multiplier lowered from 3 to 2.2, ammo cost increased to 4, initial projectile speed doubled, initial projectile acceleration reduced by 33%.
 
  ┗----Rationale: The changes allow the initial shot to go further from the player and lessen the chance of accidentally killing oneself. Other than extreme scenarios such as Torgue-Cross Promotion used with a Splash Radius passive, one can safely use the Flakker as long as the user isn't running directly into the path of destruction.
 
-Redline - No change other than a possible damage adjustment.
+Redline - Base damage multiplier lowered from 3 to 2.25.
 
-Shocker - No change other than a possible damage adjustment.
+Shocker - Base damage multiplier lowered from 1.25 to 0.85. 
 
-Spade - Now fully automatic, fire rate reduced by 50%.
+Spade - Base damage multiplier raised from 1 to 1.2, now fully automatic, fire rate reduced by 50%.
 
-The Boring Gun - Now launches initial projectile at high speed, gravity of projectile lowered considerably, reload speed improved by 38%, 75% critical hit damage bonus added.
+The Boring Gun - Base damage multiplier raised from 1 to 1.2, now launches initial projectile at high speed, gravity of projectile lowered considerably (shallower arc), reload speed improved by 38%, 75% critical hit damage bonus added.
 
  ┗----Rationale: The changes allow the Boring Gun to not be dead-weight against anything beyond point-blank range. The ideal shot is to land it right before an enemy's feet, but the critical hit damage bonus allows it to still have some use against airborne enemies.
 
-The Lob - No change other than a possible damage adjustment.
+The Lob - Base damage multiplier lowered from 1.8 to 0.8.
 
-Tiggs' Boom - Meteor damage increased to 10 times card damage, meteor radius set to 450.
+Tiggs' Boom - Base damage multiplier lowered from 1.75 to 1.2, meteor damage increased to 10 times card damage from 6, meteor radius increased 50%.
 
 TORGUE UNIQUE GUNS
 ------------------
-Amber Management - Anger damage bonus per stack set to 10%, Happiness ammo-regenerate delay set to 10 seconds.
+Amber Management - Base damage multiplier raised from 1 to 1.25, anger damage bonus per stack set to 10%, Happiness ammo-regenerate delay set to 10 seconds.
 
-La Varlope - Reduced the vertical recoil of La Varlope by 35%.
+La Varlope - Base damage multiplier lowered from 1.1 to 0.7, reduced the vertical recoil of La Varlope by 35%.
 
-Likeable Rascal - No change other than a possible damage adjustment.
+Likeable Rascal - No change.
 
-Critical Mass - No change other than a possible damage adjustment.
+Critical Mass - Base damage multiplier increased from 1 to 3.7 (it sounds like a bigger boost than it actually is.)
 
-Gettleburger - No change other than a possible damage adjustment.
+Gettleburger - Base damage multiplier raised from 0.6 to 1.1.
 
-Black Flame - Status effect damage reduced by 40%.
+Black Flame - Base damage multiplier raised from 2.8 to 7, status effect damage reduced by 40%.
 
-Chomper - No change other than a possible damage adjustment.
+Chomper - Base damage multiplier raised from 1.4 to 2.5.
 
-Thumper - Projectile speed doubled, number of bounces reduced to 1, launch angle set to 9 degrees.
+Thumper - Base damage multiplier raised from 1 to 1.35, projectile speed doubled, number of bounces reduced to 1, launch angle set to 9 degrees.
 
 TORGUE REGULAR GUNS
 -------------------
@@ -2159,33 +1364,33 @@ Lump - No change.
 
 VLADOF LEGENDARY GUNS
 ---------------------
-Damned - No change other than a possible damage adjustment.
+Damned - Base damage multiplier lowered from 2.75 to 1.4.
 
-Dowsing Rod - Reduced damage of underbarrel by 35%, lowered the accuracy of the underbarrel by 150%.
+Dowsing Rod - Base damage multiplier raised from 1.55 to 1.6, reduced damage of underbarrel by 35%, lowered the accuracy of the underbarrel by half.
 
  ┗----Rationale: The underbarrel still does sufficient damage, now it just able to spread that damage out more without increasing the splash radius.
 
-Faisor - Underbarrel ammo regeneration delay set to .75 seconds, underbarrel regeneration rate set to .75 rounds per second, underbarrel ammo set to 8.
+Faisor - Base damage multiplier lowered from 2 to 1.55, underbarrel ammo regeneration delay set to 0.75 seconds from 5, underbarrel regeneration rate set to .75 rounds per second, underbarrel ammo set to 8.
 
  ┗----Rationale: The underbarrel is one of the defining features of the Faisor. The ammo regeneration changes make it useable consistently.
 
-Lucian's Call - No change other than a possible damage adjustment.
+Lucian's Call - Base damage multiplier lowered from 4 to 1.6.
 
-Ogre - Accuracy considerably improved, fire rate increased by 80%.
+Ogre - Base damage multiplier lowered from 2.5 to 1.35, accuracy considerably improved, fire rate increased by 80%.
 
 The Dictator - Changed how the underbarrel works to benefit better from the Double grip.
 
  ┗----Rationale: The Dictator's underbarrel adds four projectiles to your shots regardless of whether or not your weapon has the grip that doubles projectile count. It has been changed to increase projectile count by 2.67 times (which works out to 7 shots on a normal Dictator and 16 on a double variant.)
 
-The Monarch - Ammo cost set to 2, magazine size increased by 70%, changed how the underbarrel works to benefit better from the Double grip.
+The Monarch - Base damage multiplier lowered from 1.6 to 0.8, ammo cost set to 2, magazine size increased by 70%, changed how the underbarrel works to benefit better from the Double grip.
 
  ┗----Rationale: The Monarch was basically Dictator 2.0. Rather than chunking the damage, the ammo cost was increased to make it worth considering the Dictator over the Monarch at times. The Monarch underbarrel now increases to 10 and 20 projectiles for normal and double variants respectively when using the underbarrel.
 
-Shredifier - Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume three ammo.)
+Shredifier - Base damage multiplier lowered from 2.2 to 1.3, Super Shredifier's underbarrel accuracy and recoil are now the same as a standard double barrel, added a second projectile to the Super Shredifier underbarrel, increased ammo cost of the Super Shredifier underbarrel by one, reduced damage of the Super Shredifier underbarrel by 25%. (x2 variants will produce four projectiles and consume three ammo.)
 
  ┗----Rationale: The Super Shredifier's underbarrel technically was worse than the regular double barrel for Vladof assault rifles. It has been given some tweaks to really drive home the theme of "more dakka".
 
-Sickle - Made the Boom Sickle have the same stats as a standard Sickle as well as properly getting boosted by Assault Rifle Damage, heavily improved accuracy and recoil, reload speed improved, magazine size increased by 12.
+Sickle - Base damage multiplier lowered from 2.5 to 0.75, made the Boom Sickle have the same stats as a standard Sickle as well as properly getting boosted by Assault Rifle Damage, heavily improved accuracy and recoil, reload speed improved, magazine size increased by 12.
 
  ┗----Rationale: This weapon seems to be intended as a throwback to the Hammer from Borderlands 1. The various stat changes now allow it to fulfill the role of a high fire-rate shotgun-ish weapon.
 
@@ -2193,53 +1398,53 @@ Web Slinger - Cryo projectile chance set to 33%, underbarrel damage set to 50 ti
 
  ┗----Rationale: The underbarrel was seemingly designed to hit like a truck but never really seemed to accomplish that. The changes made to it hopefully fix that.
 
-Firefly - Damage of firefiles set to 30% of card damage, speed of initial projectile increased ten-fold, child projectile initial speed reduced by 50%, child projectile max speed increased by 650%, fixed a typo in the description.
+Firefly - Base damage multiplier lowered from 3.5 to 1.6, damage of firefiles set to 30% of card damage from 66%, speed of initial projectile increased ten-fold, child projectile initial speed reduced by 50%, child projectile max speed increased by 650%, fixed a typo in the description.
 
  ┗----Rationale: What this translates to is that the bullets fired from the gun go faster, the fireflies spread out less from impact, and they quickly fly after a target.
 
-Infinity - No change other than a possible damage adjustment.
+Infinity - Base damage multiplier raised from 1.2 to 1.3. 
 
-Light Show - No change other than a possible damage adjustment.
+Light Show - Base damage multiplier lowered from 1 to 0.325.
 
-Magnificent - Added an ability that increases fire rate based on how large your magazine is. Removed accuracy and recoil penalties.
+Magnificent - Base damage multiplier lowered from 1.5 to 1.05, added an ability that increases fire rate based on how large your magazine is. Removed accuracy and recoil penalties.
 
  ┗----Rationale: A giant magazine size isn't an especially interesting mechanic. So to get some use from the "Mag" in Magnificent, it has been given something that encourages going hog-wild with magazine size boosts. With enough mag size boosts you can hit a triple-digit increase in fire rate (up to 150% if you go maximum gear and skill investment on Moze.)
 
-Miscreant - No change other than a possible damage adjustment.
+Miscreant - Base damage multiplier lowered from 2.3 to 1.25. 
 
-Backburner - Child projectile damage reduced by 50%.
+Backburner - Base damage multiplier lowered from 2 to 1.5, child projectile damage reduced by 50%.
 
 ION CANNON - x1 ION CANNONs now consume 4 ammo while x2 ION CANNONs still consume 7.
 
  ┗----Rationale: X2 ION CANNONS are still going to doleing out more damage, but the reduced ammo cost of the x1 version gives it a niche of ammo efficiency.
 
-Jericho - Increased splash radius by 25%, made initial projectile fly slower and fly upward less, increased child projectile speed by 500% and detonate on impact instead of bouncing.
+Jericho - Base damage multiplier raised from 0.7 to 0.95, increased splash radius by 25%, made initial projectile fly slower and fly upward less, increased child projectile speed by 500% and detonate on impact instead of bouncing.
 
-Kickcharger - Maximum charge damage multiplier reduced to 100% from 400%.
+Kickcharger - Base damage multiplier lowered from 4 to 1, maximum charge damage multiplier reduced to 200% from 400%.
 
  ┗----Rationale: One shouldn't be able to instantly quadruple their damage by sliding. Doubling it is enough.
 
-Mongol - Increased splash radius by 70%.
+Mongol - Base damage multiplier lowered from 1.6 to 0.8, increased splash radius by 70%.
 
-Rocket Pod - No change other than a possible damage adjustment.
+Rocket Pod - Base damage multiplier lowered from 1 to 0.33.
 
 Boogeyman - Skull damage reduced to 2000% card damage from 2500% card damage.
 
-Lyuda - Critical hit damage bonus removed.
+Lyuda - Base damage multiplier lowered from 1.2 to 0.6, critical hit damage bonus removed.
 
-Septimator Prime - Starfall chance set to 20%, starfall damage set to match card damage, cooldown for starfall chance set to 1 second, rocket launcher underbarrel delay removed, rocket underbarrel ammo regen rate set to 0.225 rounds per second, shotgun underbarrel ammo regen delay lowered to 1.4 seconds, shotgun ammo regen rate set to 0.6 rounds per second, set the meteors' damage source be Sniper Rifle instead of Shotgun.
+Septimator Prime - Base damage multiplier lowered from 2 to 1.2, starfall chance set to 20% from 14%, starfall damage set to match card damage from 200%, cooldown for starfall chance set to 1 second from 3.5 seconds, rocket launcher underbarrel delay removed, rocket underbarrel ammo regen rate set to 0.225 rounds per second, shotgun underbarrel ammo regen delay lowered to 1.4 seconds, shotgun ammo regen rate set to 0.6 rounds per second, set the meteors' damage source be Sniper Rifle instead of Shotgun.
 
 VLADOF UNIQUE GUNS
 ------------------
-The Big Succ - No change other than a possible damage adjustment.
+The Big Succ - No change.
 
-Bone Shredder - Ammo cost set to 1.
+Bone Shredder - Base damage multiplier lowered from 0.5 to 0.4, ammo cost reduced to 1 from 3.
 
-The Leech - Lifesteal set to 6%, taser ammo-regenerate delay set to 5 seconds.
+The Leech - Base damage multiplier increased from 1.4 to 1, lifesteal reduced from 30% to 6%, taser ammo-regenerate delay set to 5 seconds.
 
-Cold Shoulder - No change other than a possible damage adjustment.
+Cold Shoulder - Base damage multiplier raised from 1.2 to 1.3.
 
-Septimator - No change other than a possible damage adjustment.
+Septimator - No change.
 
 VLADOF REGULAR GUNS
 -------------------
@@ -2435,8 +1640,6 @@ Limit Break - No change.
 
 Mr. Caffeine Shield - Now affects burst fire delay and repair time.
 
-Revengenader - No change.
-
 
 PANGOLIN LEGENDARY SHIELDS
 --------------------------
@@ -2478,6 +1681,7 @@ Mendel's Multivitamin Shield - No change.
 
 MSRC Auto-Dispensary - Now affects burst fire delay, cut the strength of the detrimental effects in half.
 
+Revengenader - Added passive grenade regeneration to the Revengenader (roughly one grenade every eight seconds.)
 
 
 # GRENADES
@@ -2774,9 +1978,9 @@ Red Fang - No change.
 
 St4ckbot - No change.
 
-Tr4iner - Dominate chance increased to 100%, Domination duration increased to 60 seconds.
+Tr4iner - (Attempted to) increase Dominate chance to 100%, Domination duration increased to 60 seconds. Also added an optional replacement Class Mod that focuses on enabling non-Rakk Attack Action Skills to be activated frequently.
 
- ┗----Rationale: There isn't a great deal going for this class mod, but you can at least use the dominated enemy to draw aggro away from yourself and your pet for a while now.
+ ┗----Rationale: There isn't a great deal going for this class mod, but you can at least use the dominated enemy to draw aggro away from yourself and your pet for a while now (when it works).
 
 
 LEGENDARY SIREN CLASS MODS
@@ -2849,7 +2053,7 @@ Movement Speed - No change.
 
 Element Damage - No change.
 
-Luck - Increased in effectiveness (+50 at level 72.)
+Luck - Replaced with Action Skill Duration.
 
 FFYL Time - No change.
 
@@ -2882,13 +2086,11 @@ Holy Grail - Maximum health bonus increased to 17%/34%/50%, post-Second Wind mov
 
 Launch Pad - No change.
 
-Loaded Dice - No change.
+Loaded Dice - Now actually affects loot quality. White gear will be 50% less common, Green gear will be 30% less common, Purple gear will be twice as likely to drop, and Orange gear will be 30% more likely to drop.
 
 Lunacy - Recharge rate penalty improved to -100% from -216%.
 
-Moxxi's Endowment - Changed completely. Now called the "Naught" and it trades 75% of your shield's capacity and 50% of your recharge rate for very low shield delay.
-
- ┗----Rationale: In Borderlands 2 the Endowment at least had the distinction of being the only artifact that increased experience gain (and even then, it wasn't a particularly good artifact.) This is Borderlands 3 though, and experience gain is a passive stat that can roll on almost any artifact. Rather than just buffing the Endowment's experience gain heavily, it is now an item that is useful regardless of level and should expand build-making possibilities.
+Moxxi's Endowment - Now doubles all experience obtained in combat (includes other experience boosts.) Also added an optional replacer that changes it to enhance shield recharge rate and delay at the cost of capacity.
 
 Otto Idol - No change.
 
@@ -3227,6 +2429,8 @@ Gunner Infinite Ammo - Increased to 7 seconds.
 
 # GUNNER SKILLS
 
+Gunner Summary - Moze now has more reasons to invest in non-Demolition Woman skill trees for damage, some minor additions to increase Moze's overall speed, and Iron Bear can now be used more frequently with higher hard point variety. 
+
 Updated the descriptions of many skills to either mention Iron Cub whenever Iron Bear is mentioned or otherwise be more accurate to the skill's in-game effects.
 
 SHIELD OF RETRIBUTION
@@ -3243,7 +2447,7 @@ Thin Red Line - No change.
 
 Vladof Ingenuity - No change.
 
-Full Can of Whoop-Ass - No change.
+Full Can of Whoop-Ass - Now displays the damage reduction it has.
 
 Experimental Munitions - No change.
 
@@ -3273,7 +2477,7 @@ Stainless Steel Bear - Increased Iron Bear damage per point to 6%.
 
 Pull the Holy Pin - No change.
 
-Auto Bear - No change.
+Auto Bear - Increased self-destruct damage by 300%.
 
 Vampyr - Reduced Lifesteal to 1% per point.
 
@@ -3347,7 +2551,7 @@ Running on Fumes - No change.
 
 ACTION SKILLS/AUGMENTS
 ----------------------
-Iron Bear - Reduced Duration and Cooldown to 60 seconds.
+Iron Bear - Reduced Duration and Cooldown to 60 seconds, increased stomp damage by 250% per level (basically meaning that low-level Iron Bear has the same stomp damage as before while high-level Iron Bear has stronger stomps.)
 
  ┗----Rationale: With a reduction in the cooldown time needed to regain Iron Bear, Moze has more access to anointments and is less reliant on Topped Off. For the reduction in duration as a balancing factor since cooldown was lowered, in a choice between maintaining Iron Bear's power or Iron Bear's duration the mech's power was chosen to be more useful to more builds instead of having a long-lasting but weaker mech.
 
@@ -3407,7 +2611,7 @@ Exploding. Bullets. - No change.
 
 Fuel for the Fire - No change.
 
-Baby Nukes - No change.
+Baby Nukes - Increased the damage by roughly 160%.
 
 My Little Friend - No change.
 
@@ -3416,6 +2620,8 @@ Efficiency Engine - No change.
 
 
 # OPERATIVE SKILLS
+
+Operative Summary - Damage has been spread out from Violent Momentum to other skills, Zane now has wider variety in the types of damage he can boost, Barrier and the Under Cover tree have been made more useful, Drone and Clone have been buffed to be less gear dependent.
 
 DOUBLED AGENT
 -------------
@@ -3465,7 +2671,7 @@ Cool Hand - Now also affects repair time.
 
 Drone Delivery - Reduced cooldown to 10 seconds.
 
-Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal fm this skill.
+Salvation - Reduced lifesteal to 0.2% per point from 2%, allowed grenades to receive lifesteal from this skill.
 
 Seein' Red - No change.
 
@@ -3543,7 +2749,7 @@ Barrier - Reduced cooldown to 16 seconds from 24 seconds, increase amp damage to
 
  ┗----Rationale: The increase in amp damage and the reduction of Lifesteal should encourage more usage of the Barrier.
 
-Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35% and now affects burst fire delay.
+Charged Relay - Replaced reload speed with fire rate, increase maximum movement speed to 40%, increased maximum fire rate to 35% and now affects burst fire delay, and made it more clear that the Barrier must be on the ground in order to receive the bonuses.
 
  ┗----Rationale: Two augments in the same tree shouldn't be boosting the exact same stat. Thus the reload speed has been replaced with fire rate.
 
@@ -3595,6 +2801,8 @@ Proliferation - No change.
 
 # BEASTMASTER SKILLS
 
+Beastmaster Summary - Some modest changes throughout Fl4k's three standard skill trees, pets and the Gravity Snare/Trapper tree have been buffed considerably.
+
 HUNTER
 ------
 Interplanetary Stalker - No change.
@@ -3603,7 +2811,7 @@ Leave No Trace - No change.
 
 Second Intention - Increased reload speed bonuses (25%/50% at 5/5.)
 
-Hunter's Eye - No change.
+Hunter's Eye - Updated the description to mention that it is a Hunter skill.
 
 Head Count - No change.
 
@@ -3695,7 +2903,7 @@ Take This! - No change.
 
 Monkey Do! - No longer removes elements, changed amp type to behave better with multi-projectile weapons, changed skill description to reflect that it is always 86% bonus amp regardless of points invested.
 
-Wooly Armor - No change.
+Wooly Armor - Replaced the 75% damage resistance with a 40% flat damage reduction.
 
 Not Even a Challenge - No change.
 
@@ -3786,6 +2994,8 @@ WAR Loader - Fixed the pet bonus not getting boosted by Barbaric Yawp, added Ele
 
 
 # SIREN SKILLS
+
+Siren Summary -  Massive buffs to her Action Skills' damage and cooldown rates to enable her Action-Skill-centric playstyle, increased viability of true Melee builds, and other general buffs.
 
 FIST OF THE ELEMENTS
 --------------------

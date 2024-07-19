@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Objective Fixes
-### Version: 1.5.9
+### Version: 1.6.6
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: bugfix
@@ -117,6 +117,9 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,CoreStrength_Salamander_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.18
 
 ### FL4K ###
+
+# Hunter's Eye - Change the skill description to mention that it is a Hunt skill.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/Ranged4/Passive_Beastmaster_Ranged4.Default__Passive_Beastmaster_Ranged4_C,AbilityDescription.string,0,,[skillbold]Hunter Skill[/skillbold]. FL4K gains [skillbold]bonuses[/skillbold] when fighting different types of enemies.
 
 # Rage and Recover - Fix Skill Description to be Total Health instead of Missing Health.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Passive_Beastmaster_HitAndRun_3.Default__Passive_Beastmaster_HitAndRun_3_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Health Regeneration:[/skillbold] $VALUE$ of Total Health/sec
