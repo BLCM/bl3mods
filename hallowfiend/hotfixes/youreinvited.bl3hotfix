@@ -4,12 +4,12 @@
 @contact-discord @hallowlock
 @categories loot-sources, quest-rewards
 
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
 ### This mod makes it so during the Great Vault quest, Hammerlock will give you a Wedding Invitation rather than a purple Jakobs pistol.
 ### Is this a little OP because Troy is a big ol' flesh bar? Yes. I do not care. It's what Wainwright would have wanted.
 
 #changing item pool
 
 SparkPatchEntry,(1,1,0,),/Game/Missions/Plot/EP18_DesertVault/ItemPool_Pistols_Jakobs_DesertVault.ItemPool_Pistols_Jakobs_DesertVault,BalancedItems,0,,((InventoryBalanceData=/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite.Balance/Balance_SR_JAK_WeddingInvite,ResolvedInventoryBalanceData=InventoryBalanceData'"/PatchDLC/EventVDay/Gear/Weapon/_Unique/WeddingInvitation/Balance/Balance_SR_JAK_WeddingInvite.Balance/Balance_SR_JAK_WeddingInvite"',Weight=(BaseValueConstant=1,BaseValueScale=1))
-
-@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-@license-url https://creativecommons.org/licenses/by-sa/4.0/
