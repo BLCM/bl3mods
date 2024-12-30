@@ -58,3 +58,57 @@ SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_Muzzl
 SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Incendiary.PS_SR_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
 SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Shock.PS_SR_MuzzleFlash_Shock,Delay,8,0.000000,2.0
 SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Radiation.PS_SR_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# STATIC / MOUNTED
+SparkPatchEntry,(1,1,0,),/Game/InteractiveObjects/StationaryMannedTurret/Design/TurretWeapons/Effects/PS_Veh_Turret_MuzzleFlash.PS_Veh_Turret_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),/Game/InteractiveObjects/StationaryMannedTurret/Design/TurretWeapons/Effects/PS_Turret_MuzzleFlash_Red.PS_Turret_MuzzleFlash_Red,Delay,8,0.000000,2.0
+
+# BEASTMASTER
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Beastmaster/_Shared/Effects/Systems/Jabbermon/Abilities/PS_Beastmaster_PetJabbermon_Rocket_MuzzleFlash.PS_Beastmaster_PetJabbermon_Rocket_MuzzleFlash,Delay,8,0.000000,2.0
+
+# GUNNER
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_Nest_MuzzleFlash.PS_IronBear_Nest_MuzzleFlash,Delay,8,0.000000,2.0
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/GrenadeLauncher/PS_IronBear_GL_MuzzleFlash.PS_IronBear_GL_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/GrenadeLauncher/PS_IronBear_GL_MuzzleFlash_Vortex.PS_IronBear_GL_MuzzleFlash_Vortex,Delay,8,0.000000,2.0
+
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_MiniGun_MuzzleFlash.PS_IronBear_MiniGun_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_MiniGun_MuzzleFlash_Cryo.PS_IronBear_MiniGun_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_MiniGun_MuzzleFlash_Explosive.PS_IronBear_MiniGun_MuzzleFlash_Explosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_MiniGun_MuzzleFlash_Overheat.PS_IronBear_MiniGun_MuzzleFlash_Overheat,Delay,8,0.000000,2.0
+
+# Maliwan SMGs
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Corr.PS_MAL_SMG_MuzzleFlash_Corr,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Cryo.PS_MAL_SMG_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Fire.PS_MAL_SMG_MuzzleFlash_Fire,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Rad.PS_MAL_SMG_MuzzleFlash_Rad,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Shock.PS_MAL_SMG_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+
+# Maliwan Pistols
+SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Corr.PS_MAL_PS_MuzzleFlash_Corr,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Cryo.PS_MAL_PS_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Fire.PS_MAL_PS_MuzzleFlash_Fire,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Rad.PS_MAL_PS_MuzzleFlash_Rad,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Shock.PS_MAL_PS_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+
+# Maliwan Snipers
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Corr.PS_MAL_SR_MuzzleFlash_Corr,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Cryo.PS_MAL_SR_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Fire.PS_MAL_SR_MuzzleFlash_Fire,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Rad.PS_MAL_SR_MuzzleFlash_Rad,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Shock.PS_MAL_SR_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+
+# ATLAS MISC
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/Effects/PS_AR_ATL_Barrel_01_MuzzleFlash.PS_AR_ATL_Barrel_01_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/Effects/PS_AR_ATL_Barrel_02_MuzzleFlash.PS_AR_ATL_Barrel_02_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/Effects/PS_AR_ATL_Barrel_03_MuzzleFlash.PS_AR_ATL_Barrel_03_MuzzleFlash,Delay,8,0.000000,2.0
+
+# DAHL
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Dahl/_Shared/_Design/_Unique/Ripper/Effects/Systems/PS_Ripper_MuzzleFlash.PS_Ripper_MuzzleFlash,Delay,8,0.000000,2.0
+
+# HYPERION
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Hyperion/_Shared/_Design/_Unique/PredatoryLending/FX/PS_HYP_PredatoryLending_MuzzleFlash.PS_HYP_PredatoryLending_MuzzleFlash,Delay,8,0.000000,2.0
+
+# FABRICATOR
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/Effects/Systems/PS_Eridian_Fabricator_MuzzleFlash.PS_Eridian_Fabricator_MuzzleFlash,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/Effects/Systems/PS_Eridian_Fabricator_MuzzleFlash_AltFire.PS_Eridian_Fabricator_MuzzleFlash_AltFire,Delay,8,0.000000,2.0
