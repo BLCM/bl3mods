@@ -1,0 +1,60 @@
+@title Disable MuzzleFlash
+@version 1.0.0
+@author heheoppsy
+@contact-discord @self.mom
+@categories qol
+
+@license Public Domain
+@license-url https://creativecommons.org/public-domain/
+
+###
+### Disable sometime excessive muzzle flash on small guns.
+###
+
+# ASSAULT RIFLE
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Default.PS_AR_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Corrosive.PS_AR_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Cryo.PS_AR_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Incendiary.PS_AR_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Shock.PS_AR_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/AssaultRifle/PS_AR_MuzzleFlash_Radiation.PS_AR_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# HEAVY
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Default.PS_Heavy_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Corrosive.PS_Heavy_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Cryo.PS_Heavy_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Incendiary.PS_Heavy_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Shock.PS_Heavy_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Heavy/PS_Heavy_MuzzleFlash_Radiation.PS_Heavy_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# PISTOL
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Default.PS_PS_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Corrosive.PS_PS_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Cryo.PS_PS_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Incendiary.PS_PS_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Shock.PS_PS_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Pistol/PS_PS_MuzzleFlash_Radiation.PS_PS_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# SHOTGUN
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Default.PS_SG_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Corrosive.PS_SG_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Cryo.PS_SG_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Incendiary.PS_SG_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Shock.PS_SG_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Shotgun/PS_SG_MuzzleFlash_Radiation.PS_SG_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# SMG
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Default.PS_SMG_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Corrosive.PS_SMG_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Cryo.PS_SMG_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Incendiary.PS_SMG_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Shock.PS_SMG_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/SMG/PS_SMG_MuzzleFlash_Radiation.PS_SMG_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
+
+# SNIPER
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Default.PS_SR_MuzzleFlash_Default,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Corrosive.PS_SR_MuzzleFlash_Corrosive,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Cryo.PS_SR_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Incendiary.PS_SR_MuzzleFlash_Incendiary,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Shock.PS_SR_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Gear/Weapons/_Shared/Effects/Systems/Sniper/PS_SR_MuzzleFlash_Radiation.PS_SR_MuzzleFlash_Radiation,Delay,8,0.000000,2.0
