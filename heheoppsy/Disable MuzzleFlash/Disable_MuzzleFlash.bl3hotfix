@@ -78,25 +78,25 @@ SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Mi
 SparkPatchEntry,(1,1,0,),Game/PlayerCharacters/Gunner/_Shared/Effects/Systems/Minigun/PS_IronBear_MiniGun_MuzzleFlash_Overheat.PS_IronBear_MiniGun_MuzzleFlash_Overheat,Delay,8,0.000000,2.0
 
 # Maliwan SMGs
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Corr.PS_MAL_SMG_MuzzleFlash_Corr,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Cryo.PS_MAL_SMG_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Fire.PS_MAL_SMG_MuzzleFlash_Fire,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Rad.PS_MAL_SMG_MuzzleFlash_Rad,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Shock.PS_MAL_SMG_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Corr.PS_MAL_SMG_MuzzleFlash_Corr,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Cryo.PS_MAL_SMG_MuzzleFlash_Cryo,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Fire.PS_MAL_SMG_MuzzleFlash_Fire,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Rad.PS_MAL_SMG_MuzzleFlash_Rad,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SMGs/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SMG_MuzzleFlash_Shock.PS_MAL_SMG_MuzzleFlash_Shock,Delay,8,0.000000,99.0
 
 # Maliwan Pistols
-SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Corr.PS_MAL_PS_MuzzleFlash_Corr,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Cryo.PS_MAL_PS_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Fire.PS_MAL_PS_MuzzleFlash_Fire,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Rad.PS_MAL_PS_MuzzleFlash_Rad,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Shock.PS_MAL_PS_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Corr.PS_MAL_PS_MuzzleFlash_Corr,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Cryo.PS_MAL_PS_MuzzleFlash_Cryo,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Fire.PS_MAL_PS_MuzzleFlash_Fire,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Rad.PS_MAL_PS_MuzzleFlash_Rad,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/Pistols/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_PS_MuzzleFlash_Shock.PS_MAL_PS_MuzzleFlash_Shock,Delay,8,0.000000,99.0
 
 # Maliwan Snipers
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Corr.PS_MAL_SR_MuzzleFlash_Corr,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Cryo.PS_MAL_SR_MuzzleFlash_Cryo,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Fire.PS_MAL_SR_MuzzleFlash_Fire,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Rad.PS_MAL_SR_MuzzleFlash_Rad,Delay,8,0.000000,2.0
-SparkPatchEntry,(1,1,0,),Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Shock.PS_MAL_SR_MuzzleFlash_Shock,Delay,8,0.000000,2.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Corr.PS_MAL_SR_MuzzleFlash_Corr,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Cryo.PS_MAL_SR_MuzzleFlash_Cryo,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Fire.PS_MAL_SR_MuzzleFlash_Fire,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Rad.PS_MAL_SR_MuzzleFlash_Rad,Delay,8,0.000000,99.0
+SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/SniperRifle/Maliwan/_Shared/Effects/MuzzleFlash/PS_MAL_SR_MuzzleFlash_Shock.PS_MAL_SR_MuzzleFlash_Shock,Delay,8,0.000000,99.0
 
 # ATLAS MISC
 SparkPatchEntry,(1,1,0,),Game/Gear/Weapons/AssaultRifles/Atlas/_Shared/Effects/PS_AR_ATL_Barrel_01_MuzzleFlash.PS_AR_ATL_Barrel_01_MuzzleFlash,Delay,8,0.000000,2.0
