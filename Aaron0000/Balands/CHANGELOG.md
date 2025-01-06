@@ -2,6 +2,12 @@
 
 # CHANGELOG
 ------------------------------
+1.6.7
+-----
+Fixed a typo in the change for the SNTNL Drone's search radius.
+
+Fixed some inconsistencies between Mayhem 10 and 11's pet/vehicle damage.
+
 1.6.6
 -----
 Made Hunter's eye mention that it is a Hunter skill.
