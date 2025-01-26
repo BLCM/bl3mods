@@ -35,7 +35,7 @@ The following are my modest little contributions to the community:
 
  ## Cheats
 
-  - **Shadoe's Insane Guardian Rank and Fabricator Fix** - this is useless to those on PC as they
+  - **Shadoe's Insane Guardian Rank plus Fabricator Fix** - this is useless to those on PC as they
     can just save edit these things, but is a great utility for those that do boosting of console players.
     Can be used to instaboost a character to max level. Can be used to "instaboost" someone's
     Guardian Rank. Only about level 2200 is needed to max all % stats on left and with this mod,
