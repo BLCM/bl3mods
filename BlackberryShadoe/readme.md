@@ -33,7 +33,7 @@ The following are my modest little contributions to the community:
   This version is mostly cross-platform compatible. (further explanation will be provided with mod)
   There will be a complete changelog included with release which is scheduled for April 2025
 
-  ## Cheats
+ ## Cheats
 
   - **Shadoe's Insane Guardian Rank and Fabricator Fix** - this is useless to those on PC as they
     can just save edit these things, but is a great utility for those that do boosting of console players.
