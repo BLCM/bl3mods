@@ -1,0 +1,134 @@
+###
+### Name: Shadoe's Insane Guardian Rank plus Fabricator Fix
+### Version: 1.0.0
+### Author: BlackberryShadoe
+### Contact: BlackBerryShadoe on discord
+### Categories: gameplay, cheat, economy
+###
+### License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+### License URL: https://creativecommons.org/licenses/by-sa/4.0/
+###
+### In the past, using a hotfix (or trainer) we were able to push to the max how much xp you can get per enemy killed.
+### However, even with that being used, it would still take about 4-6 minutes to boost someone's Guardian Rank. Well...
+### Going thru official gbx hotfixes in the "point-in-time" repo that Apocolyptech set up, I found a line of code that made
+### edits to how Guardian Rank is being calculated. I started messing with the formula and after a few tries, have 
+### managed to successfully change it. Here, instead of just increasing the xp gains to max, the amount of xp needed for 
+### every Guardian Rank level was massively reduced. Now, it take ONE enemy killed to gain about 2500 levels, depending
+### on initial rank level (as the amount of xp needed, the higher the GR, still grows, just at a lot slower rate) Of course,
+### this is useless to those on PC that can just edit their rank with a save editor. However, there are those that help those
+### that are on consoles and this will be a huge time saver. I'm also including my slight edits to the eridium/keys fabricator
+### hotfix, where the fire rate was reduced for keys a little bit (for stability on old-gen consoles) but the value of each was 
+### massively increased. Here, 10 shots from "Eridium/Cash" gives almost 100 mil and about a billion cash, and 10 shots
+### from "Keyzzz" gives about 100 million diamond/ALL vault card keys. Sharing this utility from those that help.
+###
+###
+
+
+
+# Base XP Scaling
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughOne.BaseValueConstant,0,,999999
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughTwoAndBeyond.BaseValueConstant,0,,999999
+# Area discovery XP
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,BaseDiscoverAreaExperienceFormula.BaseValueConstant,0,,999999
+# and my Guardian Rank instaboost (basevalue and multiplier can be lowered, however below 0.5 on both, started noticing fuckery, like rank boosting but point not being awarded so settled on 0.666 cuz it works (and SATAN!!! lol...j/k)
+SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/ExperienceGlobals.ExperienceGlobals,.PlayerGuardianRankFormula,0,,(BaseValue=0.666,BaseMultiplier=1.000000,Multiplier=0.666,Power=2.3,Offset=7.330000)
+
+
+
+# My Fabricator Edits
+
+###
+### Global Definitions
+###
+
+# Weapon Name
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/WT_EridianFabricator.WT_EridianFabricator,InventoryName,0,,Key Eridium Fabricator
+
+# Item Card
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Firing/UIStat_EridianFabricator_02.UIStat_EridianFabricator_02,FormatText,0,,Shoots [skill]Keys[/skill] instead of bullets!
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Firing/UIStat_EridianFabricator_03.UIStat_EridianFabricator_03,FormatText,0,,Shoots [skill]Eridium[/skill] instead of bullets!
+
+# Remove Recoil
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..PatternHeightScale.BaseValue,0,,0.0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..PatternWidthScale.BaseValue,0,,0.0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[7].Object..Component.Object..RecoilSpeed,0,,0
+
+###
+### Eridium Value
+###
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Single.InvData_Eridium_Single,MonetaryValue,0,,(BaseValueConstant=999999.0)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Ingot.InvData_Eridium_Ingot,MonetaryValue,0,,(BaseValueConstant=999999.0)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Eridium/InvData_Eridium_Stack.InvData_Eridium_Stack,MonetaryValue,0,,(BaseValueConstant=999999.0)
+
+###
+### Key and Money Value (original had gold key statements that were useless, as gold keys can't be dropped; so those were removed
+###
+
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Data/Currency/InvData_DiamondKey.InvData_DiamondKey,MonetaryValue,0,,(BaseValueConstant=9999999.0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Data/Currency/InvData_VaultCard01Key_3.InvData_VaultCard01Key_3,MonetaryValue,0,,(BaseValueConstant=9999999.0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Data/Currency/InvData_VaultCard2Key_3.InvData_VaultCard2Key_3,MonetaryValue,0,,(BaseValueConstant=9999999.0)
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard3/Data/Currency/InvData_VaultCard3Key_3.InvData_VaultCard3Key_3,MonetaryValue,0,,(BaseValueConstant=9999999.0)
+
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SingleStack.InvData_Money_SingleStack,MonetaryValue,0,,(BaseValueScale=999)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_TripleStack.InvData_Money_TripleStack,MonetaryValue,0,,(BaseValueScale=999)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Single.InvData_Money_SlotMachine_Single,MonetaryValue,0,,(BaseValueScale=999)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Double.InvData_Money_SlotMachine_Double,MonetaryValue,0,,(BaseValueScale=999)
+SparkPatchEntry,(1,1,0,),/Game/Pickups/Money/InvData_Money_SlotMachine_Triple.InvData_Money_SlotMachine_Triple,MonetaryValue,0,,(BaseValueScale=999)
+
+# Pickup
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_DiamondKey.InventoryCategory_DiamondKey,PickupActionType,0,,OnUseOrTouch
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard1Key.InventoryCategory_VaultCard1Key,PickupActionType,0,,OnUseOrTouch
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard2Key.InventoryCategory_VaultCard2Key,PickupActionType,0,,OnUseOrTouch
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard3Key.InventoryCategory_VaultCard3Key,PickupActionType,0,,OnUseOrTouch
+
+# Shared Pickups
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_DiamondKey.InventoryCategory_DiamondKey,SharedWithAllPlayers,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard1Key.InventoryCategory_VaultCard1Key,SharedWithAllPlayers,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard2Key.InventoryCategory_VaultCard2Key,SharedWithAllPlayers,0,,true
+SparkPatchEntry,(1,1,0,),/Game/Gear/_Shared/_Design/InventoryCategories/InventoryCategory_VaultCard3Key.InventoryCategory_VaultCard3Key,SharedWithAllPlayers,0,,true
+
+###
+### Regular Fire
+###
+
+# Mode Label
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/UIModeName_Fabricator_PrimaryFire.UIModeName_Fabricator_PrimaryFire,Text,0,,[skillbold]Keyzzz[/skillbold]
+
+# One projectile per shot
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorProjectilesPerShot.Att_FabricatorProjectilesPerShot,ValueResolver.Object..Value.BaseValueConstant,0,,1
+
+# Shot cost
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Att_FabricatorShotCost.Att_FabricatorShotCost,ValueResolver.Object..Value.BaseValueConstant,0,,1
+
+# Full Auto
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[1].Object..WeaponUseComponent.Object..AutomaticBurstCount.BaseValue,0,,0
+
+# Fire Rate - was@6but that lags the game way2much(host looses half fps, co-ops complain a lot of game lagging so much it freezes or kicks them4m shift....so increasing value of items quantities while cutting this2eridium cuz its good...
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[1].Object..WeaponUseComponent.Object..FireRate.BaseValue,0,,1.5
+
+# Setting the item pool
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns.ItemPool_FabricatorGuns,BalancedItems,0,,((InventoryBalanceData=/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_VaultCard01Key_3,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_VaultCard01Key_3"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/VaultCard2/Data/Currency/InventoryBalance_VaultCard2Key_3,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard2/Data/Currency/InventoryBalance_VaultCard2Key_3"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/VaultCard3/Data/Currency/InventoryBalance_VaultCard3Key_3.InventoryBalance_VaultCard3Key_3,ResolvedInventoryBalanceData=InventoryBalanceData'"Game/PatchDLC/VaultCard3/Data/Currency/InventoryBalance_VaultCard3Key_3.InventoryBalance_VaultCard3Key_3"',Weight=(BaseValueConstant=1)),(InventoryBalanceData=/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_DiamondKey.InventoryBalance_DiamondKey,ResolvedInventoryBalanceData=InventoryBalanceData'"/Game/PatchDLC/VaultCard/Data/Currency/InventoryBalance_DiamondKey.InventoryBalance_DiamondKey"',Weight=(BaseValueConstant=1)))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns.ItemPool_FabricatorGuns,Quantity,0,,(BaseValueConstant=4,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
+
+
+###
+### Legendary Fire
+###
+
+# Mode Label
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/UIModeName_Fabricator_AltFire.UIModeName_Fabricator_AltFire,Text,0,,[rarity_epic]Eridium[/rarity_epic]/[corrosive]Cash[/corrosive]
+
+# Full Auto
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..AutomaticBurstCount.BaseValue,0,,0
+
+# Fire Rate
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..FireRate.BaseValue,0,,1.5
+
+# Firing Cost
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..ShotAmmoCost.BaseValue,0,,0
+SparkPatchEntry,(1,1,0,),/Game/Gear/Weapons/HeavyWeapons/Eridian/_Shared/_Design/Parts/Part_Eridian_Fabricator.Part_Eridian_Fabricator,AspectList.AspectList[2].Object..WeaponUseComponent.Object..MinShotAmmoCost,0,,0
+
+# Setting the item pool
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns_AltFire.ItemPool_FabricatorGuns_AltFire,BalancedItems,0,,((ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Eridium/ItemPool_Eridium_Stack.ItemPool_Eridium_Stack"',Weight=(BaseValueConstant=1)),(ItemPoolData=ItemPoolData'"/Game/GameData/Loot/ItemPools/Currency/ItemPool_Money_Rich.ItemPool_Money_Rich"',Weight=(BaseValueConstant=0.18)))
+SparkPatchEntry,(1,1,0,),/Game/GameData/Loot/ItemPools/Fabricator/ItemPool_FabricatorGuns_AltFire.ItemPool_FabricatorGuns_AltFire,Quantity,0,,(BaseValueConstant=8,DataTableValue=(DataTable=None,RowName="",ValueName=""),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
