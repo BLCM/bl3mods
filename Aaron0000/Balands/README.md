@@ -1833,7 +1833,7 @@ Action Skill Cooldown - No change.
 
 Weapon Accuracy - No change.
 
-Weapon Reload Speed - Increased in effectiveness (30% at level 72.), now affects repair time.
+Weapon Reload Speed - Increased in effectiveness (30% at level 72), now affects repair time.
 
 Grenade Damage - No change.
 
@@ -1906,7 +1906,7 @@ Flare - Replaced Stainless-Steel Bear with Desperate Measures, replaced Cloud of
 
 Heat Exchanger - No change.
 
-Sapper - Maximum lifesteal reduced to 6%, time needed to reach max lifesteal reduced by 50%.
+Sapper - Lifesteal increase per interval (every 0.2 seconds) reduced to 0.2%.
 
 Green Monster - Replaced Click, Click... with Redistribution and made the description more accurate.
 
@@ -2360,7 +2360,7 @@ TERROR ANOINTMENTS
 ------------------
 Terror Crit - Reduced to 15%/30%/45%
 
-Terror Damage/Fire Rate - No change.
+Terror Damage/Fire Rate - Now affects burst-fire.
 
 Terror Ammo Regen - No change.
 
@@ -2869,11 +2869,11 @@ Eager to Impress - No change.
 
 All My BFF's - No change.
 
-Overclocked - Increased to 4% fire rate and 4% post-reload fire rate per point.
+Overclocked - Increased to 4% fire rate and 4% post-reload fire rate per point, now affects burst-fire.
 
 Lick the Wounds - No change.
 
-Turn Tail and Run - No change.
+Turn Tail and Run - Now affects burst-fire.
 
 The Fast and the Furryous - No change.
 
