@@ -2563,7 +2563,7 @@ Hell on Rails - No change.
 
 Capacitive Armature - Reduced splinter damage to 40% from 70%.
 
-Corrosive Sabot - Reduced initial damage to 85% from 97%, reduced explosion damage to 50% from 60%.
+Corrosive Sabot - Reduced damage to 85% from 97.92%.
 
 Bear Fist - Increased damage by 347%, reduced fuel consumption by 70%.
 
