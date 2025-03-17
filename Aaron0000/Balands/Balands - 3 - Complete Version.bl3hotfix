@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.6.7
+### Version: 1.6.8
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, qol, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, enemy-drops, loot-system, vendor, armsrace, economy, vehicle
@@ -42,7 +42,7 @@
 ##############################
 ##### BALANDS NEWS ITEM ######
 ##############################
-InjectNewsItem,Balands v1.6.6 Active!,https://i.imgur.com/dphElZ9.png
+InjectNewsItem,Balands v1.6.8 Active!,https://i.imgur.com/dphElZ9.png
 
 ##############################
 ####### BASIC CHANGES ########
@@ -86,7 +86,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,1.55
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,1.65
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,2.25
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,1,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,1.24
@@ -114,7 +114,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.2
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,2.1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,2.3
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,3.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,2,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,1.48
@@ -142,7 +142,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.3
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,2.65
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,2.95
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,4.75
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,3,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,1.72
@@ -170,7 +170,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.4
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,3.2
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,3.6
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,6
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,4,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,1.96
@@ -198,7 +198,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,3.75
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,4.25
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,7.25
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,5,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,2.2
@@ -226,7 +226,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.6
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,4.3
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,4.9
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,8.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,6,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,2.44
@@ -254,7 +254,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.7
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,4.85
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,5.55
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,9.75
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,7,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,2.68
@@ -282,7 +282,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.8
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,5.4
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,6.2
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,11
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,8,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,2.92
@@ -310,7 +310,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,1.9
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,5.95
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,6.85
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,12.25
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,9,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,2.16
@@ -338,7 +338,7 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,2
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,6.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,7.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,13.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,10,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,3.4
@@ -364,10 +364,10 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,0,,1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarSlide_68_B48D0E3A4DF57196839BB58D5AE3E638,0,,1.6
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,2
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,6.5
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,7.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,1
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,7.5
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,4
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,13.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,3.4
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DropNumberChanceSimpleScalar_40_115637764B3918F01E6FAFADDC005388,0,,0
@@ -2858,10 +2858,10 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/CM_Part_Skill_Gunner_StokeTheEmbers_Raid1.CM_Part_Skill_Gunner_StokeTheEmbers_Raid1:OakPassiveAbilityBuffAspectData_0,Buffs.Buffs[0].ItemFrameName,0,,drowningBrass
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/CM/_D/PartSets/_U/GUN/CM_Part_Skill_Gunner_StokeTheEmbers_Raid1.CM_Part_Skill_Gunner_StokeTheEmbers_Raid1:OakPassiveAbilityBuffAspectData_0,Buffs.Buffs[0].TreeBranchColorInfo.FrameColorName,0,,orange
 
-# Sapper - Reduce Lifesteal to 6% Maximum, tick time reduced to 0.1 from 0.2.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/CM/_D/PartSets/_U/Table_CM_Hib.Table_CM_Hib,GunnerHibiscusClassMod,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.06
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/CM/_D/PartSets/_U/Table_CM_Hib.Table_CM_Hib,GunnerHibiscusClassMod,Description_B_11_F977D68D4A34B4087AADAC8526423B2B,0,,0.1
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/UIStat_CM_GN_Hib_Desc.UIStat_CM_GN_Hib_Desc,FormatText,0,,Moze gains up to [skill]6% Life Steal[/skill]. The longer she holds down the fire button, the greater the life steal.
+# Sapper - Reduce Lifesteal to 0.2%, tick time set to 0.2 (unchanged).
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/Table_CM_Hib.Table_CM_Hib,GunnerHibiscusClassMod,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,0.002
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/Table_CM_Hib.Table_CM_Hib,GunnerHibiscusClassMod,Value_B_5_AC44446B4200DFD2A654AC85CC59B4B0,0,,0.2
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/ClassMods/_Design/GUN/UIStat_CM_GN_Hib_Desc.UIStat_CM_GN_Hib_Desc,FormatText,0,,Moze gains increasing [skill]Life Steal[/skill]. The longer she holds down the fire button, the greater the life steal.
 
 # Cold Warrior - Increase Damage-over-Time to 200% from 15%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/ClassMods/_Design/PartSets/Part_ClassMod/Operative/_Unique/DataTable_CM_Operative_Unique.DataTable_CM_Operative_Unique,Unique_05,Value_A_2_4C4DFC67484D02BA3DBB029A999F015E,0,,1
@@ -3159,6 +3159,9 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_EleChanceDamage/UIStat_All_SkillEnd_EleChanceDamage.UIStat_All_SkillEnd_EleChanceDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Weapon Status Effect Damage and Chance/Cryo Rate are increased by 75% for 12 seconds.[/endgame]
 
 ### BLOODY HARVEST ###
+
+# Terror Damage/Fire Rate - Now affects burst-fire.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/_Generic/Terror2/StatusEffect_All_Passive_TerrorDamageFireRate.StatusEffect_All_Passive_TerrorDamageFireRate,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/Att_Init_NegateTerror_Spread.Att_Init_NegateTerror_Spread_C,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/Att_Init_NegateTerror_Recoil.Att_Init_NegateTerror_Recoil_C,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/Att_Init_NegateTerror_Recoil.Att_Init_NegateTerror_Recoil_C,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_SwayScale.Att_Weapon_SwayScale,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Enemies/Ghost/_Shared/_Design/Att_Init_NegateTerror_Recoil.Att_Init_NegateTerror_Recoil_C,BaseValueScale=1)),(AttributeData=/Game/GameData/Attributes/Damage/Att_DamageDealtMultiplier.Att_DamageDealtMultiplier,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/_Generic/Terror2/Att_InitGPart_TerrorDamage.Att_InitGPart_TerrorDamage_C,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/_Generic/Terror2/Att_InitGPart_TerrorFireRate.Att_InitGPart_TerrorFireRate_C,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,AttributeInitializer=/Game/PatchDLC/BloodyHarvest/Gear/Weapons/EndGameParts/_Generic/Terror2/Att_InitGPart_TerrorFireRate.Att_InitGPart_TerrorFireRate_C,BaseValueScale=1)))
 
 # Drone Active Terror Lifesteal - Reduce Bonus to 2.5% from 100%, increase Duration to 120 seconds from 60 seconds.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_BloodyHarvest_EndGameParts.DataTable_BloodyHarvest_EndGameParts,GPart_Operative_DroneActiveTerrorLifesteal,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.025
@@ -4077,10 +4080,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 # Capacitive Armature - Reduce Splinter Damage to 0.4 from 0.7.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.4
 
-# Corrosive Sabots - Reduce Initial Damage to 0.85 from 0.9792, reduce Bomb Damage to 0.5 from 0.6.
+# Corrosive Sabots - Reduce Damage to 0.85 from 0.9792.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.85
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod3,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,0,,0.5
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Railgun_3.Augment_Mod_Railgun_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText.string,0,,[skillbold]Explosion Damage:[/skillbold] $VALUE$
 
 # Salamander - Increase Damage to 0.06500 from 0.02096, reduce Damage-over-Time to 5.5 from 8.5, increase Fire Rate to 8 from 3, adjust Fuel Consumption to compensate for increased Fire Rate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.06500
@@ -4654,7 +4655,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Operative/_Shared/_
 
 # SNTNL - Reduce Cooldown to 40 seconds from 60 seconds, increase Target-Acquiring Range to 6,000 from 3,000, increase Machine Gun Damage by 20%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_Cooldown,Value,0,,(BaseValueConstant=40,BaseValueScale=1)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_FindTargetSearchRadius,Value,0,,(BaseValueConstant=6000,BaseValueScale=1)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_FindTargetSearchRadiuse,Value,0,,(BaseValueConstant=6000,BaseValueScale=1)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Operative/DataTable_Operative_ConstantValues.DataTable_Operative_ConstantValues,Drone_MachineGunDamageScalar,Value,0,,(BaseValueConstant=0.108,BaseValueScale=1)
 
 # Boomsday - Increase Damage by 80%.
@@ -4739,9 +4740,17 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Bal
 # Rage and Recover - Fix Skill Description to be Total Health instead of Missing Health.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun3/Passive_Beastmaster_HitAndRun_3.Default__Passive_Beastmaster_HitAndRun_3_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute,FormatText,0,,[skillbold]Health Regeneration:[/skillbold] $VALUE$ of Total Health/sec
 
-# Overclocked - Increase Fire Rate Bonus to 4% from 2%.
+# Overclocked - Increase Fire Rate Bonus to 4% from 2%, add burst-fire delay reduction.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun8,Secondary_21_5ED678CA4FB7C9C602D841A55EDD67B9,0,,0.04
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,P_HitAndRun8,Tertiary_20_8B581C1746A7BAAB3F3F7BA08BD29453,0,,0.04
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8.Status_Beastmaster_HitAndRun8,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8.Status_Beastmaster_HitAndRun8.Mutator_OakPassiveAbilityAttributeEffectMutatorData_0"'),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8.Status_Beastmaster_HitAndRun8.Mutator_OakPassiveAbilityAttributeEffectMutatorData_0"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8_Triggered.Status_Beastmaster_HitAndRun8_Triggered,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8_Triggered.Status_Beastmaster_HitAndRun8_Triggered.Mutator_OakPassiveAbilityAttributeEffectMutatorData_0"'),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Status_Beastmaster_HitAndRun8_Triggered.Status_Beastmaster_HitAndRun8_Triggered.Mutator_OakPassiveAbilityAttributeEffectMutatorData_0"'))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun8/Passive_Beastmaster_HitAndRun8.Default__Passive_Beastmaster_HitAndRun8_C,AbilityDescription.string,0,,FL4K gains increased [skillbold]Fire Rate[/skillbold] and [skillbold]Burst-Fire Delay Reduction[/skillbold]. FL4K gains even more [skillbold]Fire Rate[/skillbold] and [skillbold]Burst-Fire Delay Reduction[/skillbold] after reloading.
+
+# Turn Tail and Run - Add burst-fire delay reduction.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Status_Beastmaster_HitAndRun5_Still.Status_Beastmaster_HitAndRun5_Still,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Status_Beastmaster_HitAndRun5_Still.Status_Beastmaster_HitAndRun5_Still.Mutator_OakPassiveAbilityAttributeEffectMutatorData_0"'),(AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Status_Beastmaster_HitAndRun5_Still.Status_Beastmaster_HitAndRun5_Still.Mutator_OakPassiveAbilityAttributeEffectMutatorData"'),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueScale=1),Mutator=OakPassiveAbilityAttributeEffectMutatorData'"/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Status_Beastmaster_HitAndRun5_Still.Status_Beastmaster_HitAndRun5_Still.Mutator_OakPassiveAbilityAttributeEffectMutatorData"')))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Passive_Beastmaster_HitAndRun_5.Default__Passive_Beastmaster_HitAndRun_5_C,AbilityDescription.string,0,,While moving, FL4K constantly [skillbold]regenerates health[/skillbold] and gains [skillbold]Damage Reduction[/skillbold].<br><br>While still, FL4K gains [skillbold]Gun Damage[/skillbold] and [skillbold]Fire Rate[/skillbold]/[skillbold]Burst-Fire Delay Reduction[/skillbold].
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Passives/HitAndRun5/Passive_Beastmaster_HitAndRun_5.Default__Passive_Beastmaster_HitAndRun_5_C:StatDataItems_UIStatData_OakPassiveAbilityAttribute_2,FormatText.string,0,,[skillbold]Fire Rate/Burst Fire Delay:[/skillbold] $VALUE$ per stack
 
 # Success Imminent - Increase Nova Damage to 2.5 from 1 and add a note to the skill description saying that it receives Mayhem Scaling.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/Table_Beastmaster_DLCSimpleFormulas.Table_Beastmaster_DLCSimpleFormulas,DLCSkill2_NovaDamageCalc,Multiplier,0,,(BaseValueConstant=0,BaseValueAttribute=/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/Att_Calc_Beastmaster_GlobalSkillDamage.Att_Calc_Beastmaster_GlobalSkillDamage,BaseValueScale=2.5)
