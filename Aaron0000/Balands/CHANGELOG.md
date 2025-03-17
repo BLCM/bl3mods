@@ -2,6 +2,14 @@
 
 # CHANGELOG
 ------------------------------
+1.6.8
+-----
+Added Burst-Fire Delay Reduction to the Terror Damage & Fire Rate anointment, Overclocked, and Turn Tail and Run.
+
+Fixed Short Fuse and Indiscriminate dealing double the intended damage in Mayhem mode.
+
+Fixed some typos in the Sapper changes preventing them from applying properly.
+
 1.6.7
 -----
 Fixed a typo in the change for the SNTNL Drone's search radius.
