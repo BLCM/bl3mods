@@ -42,7 +42,7 @@
 ##############################
 ##### BALANDS NEWS ITEM ######
 ##############################
-InjectNewsItem,Balands v1.6.8 Active!,https://i.imgur.com/dphElZ9.png
+InjectNewsItem,Balands v1.6.9 Active!,https://i.imgur.com/dphElZ9.png
 
 ##############################
 ####### BASIC CHANGES ########
@@ -364,10 +364,10 @@ SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarMelee_67_9948929F4FF34364CED2EAB51A881946,0,,1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarSlide_68_B48D0E3A4DF57196839BB58D5AE3E638,0,,1.6
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarSlam_69_15DB6EDC4CCA52620BF25398CFFD9B26,0,,2
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,7.5
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPet_72_0DD7977D44C4A71D0A6B56B7884E023C,0,,6.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarEnviornmental_111_E2A582AA47FC000789FC68BBD31D2CFC,0,,1
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarPassive_115_6A30229E4CC04F751ED01CB64A71880F,0,,0
-SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,4
+SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageDealtScalarVehicles_103_5739171948322B35CDA36487F78AF0CE,0,,7.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageTakenScalarVehicles_104_B75AB4EC482624FDEAAF31B0FA369A77,0,,13.5
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DamageScalarGear_119_9FC89117424C6619F2CA958FA2842FC2,0,,3.4
 SparkPatchEntry,(1,2,0,),/Game/PatchDLC/Mayhem2/Abilities/CoreModifierSets/Table_Mayhem2CoreModifierSet.Table_Mayhem2CoreModifierSet,11,DropNumberChanceSimpleScalar_40_115637764B3918F01E6FAFADDC005388,0,,0
@@ -494,7 +494,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Sh
 
 # AX-88 - Reduce ammo cost to one, increase Projectile Speed of AX-88 from 1800 to 3150.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Atlas/_Shared/_Design/Parts/Barrel/Barrel_02/Part_PS_ATL_Barrel_02.Part_PS_ATL_Barrel_02:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_ATL,ShotAmmoCost.BaseValue,0,,1
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Atlas/Projectiles/PS/LightProjectile_PS_ATL_Barrel_02_Rocket.Default__LightProjectile_PS_ATL_Barrel_02_Rocket_C,Speed,0,,1800.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Atlas/Projectiles/PS/LightProjectile_PS_ATL_Barrel_02_Rocket.Default__LightProjectile_PS_ATL_Barrel_02_Rocket_C,Speed,0,,3150.0
 
 # Blastphemy Damage Buff by 150% and Projectile Speed Bonus by 50%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/_ETech/_Design/Pistol/COV/Part_PS_COV_Barrel_ETech.Part_PS_COV_Barrel_ETech,InventoryAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ProjectileSpeedScale.Att_Weapon_ProjectileSpeedScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.5,BaseValueScale=1.0)))
@@ -1138,7 +1138,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTabl
 
 # Barrage - Increase Damage to 1.05 from 1, increase Burst-Count from 3 to 7.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_Barrage,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.05
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Barrage/Parts/Part_DAL_AR_Barrel_Barrage.Part_DAL_AR_Barrel_Barrage,InventoryAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_AutomaticBurstCount.Att_Weapon_AutomaticBurstCount,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=4,BaseValueScale=1)))
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/Barrage/Parts/Part_DAL_AR_Barrel_Barrage.Part_DAL_AR_Barrel_Barrage,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_AccuracyImpulse.Att_Weapon_AccuracyImpulse,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=10.0,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,RowName=AR_Barrage,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_AutomaticBurstCount.Att_Weapon_AutomaticBurstCount,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=4,BaseValueScale=1)))))
 
 # Breath of the Dying - Set Damage to 1.3 from 3.3, reduce Bonus Projectile Damage to 10 from 12, remove Self-Damage, double Projectile Speed.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_BOTD,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.3
@@ -2316,8 +2316,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenO
 # Pain is Power (Krieg Damage Gun) - Damage raised to 1.4 from 0.8, Heat Rate reduced by 40%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Parts/Damage/Part_AR_COV_Barrel_HeatDamage.Part_AR_COV_Barrel_HeatDamage,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)))
 
-# Reduce Pain is Power/Embrace the Pain's self-damage from 2 to 1.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Ability/Ability_OverheatSelfBurn.Default__Ability_OverheatSelfBurn_C,SelfDamageScale,0,,1
+# Reduce Pain is Power/Embrace the Pain's self-damage from 2 to 0.2.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/ChildrenOfTheVault/_Shared/_Design/_Unique/KriegAR/Ability/Ability_OverheatSelfBurn.Default__Ability_OverheatSelfBurn_C,SelfDamageScale,0,,0.2
 
 # AAA - Increase Damage from 0.9 to 1.15.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Dahl/_Shared/_Design/_Unique/AAA/Parts/Part_DAL_PS_AAA.Part_DAL_PS_AAA,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Dahl/Att_Dahl_BurstSize.Att_Dahl_BurstSize,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3,BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=2,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.15,BaseValueScale=1)))
@@ -4049,10 +4049,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Des
 # Capacitive Armature - Reduce Splinter Damage to 0.4 from 0.7.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod2,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.4
 
-# Corrosive Sabots - Reduce Initial Damage to 0.85 from 0.9792, reduce Bomb Damage to 0.5 from 0.6.
+# Corrosive Sabots - Reduce Damage to 0.85 from 0.9792.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod3,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.85
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Railgun_Mod3,Secondary_13_BE03AB154A90401B6BFE67BB3B3554E0,0,,0.5
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Gunner/_Shared/_Design/Character/Augments/Augment_Mod_Railgun_3.Augment_Mod_Railgun_3:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText.string,0,,[skillbold]Explosion Damage:[/skillbold] $VALUE$
 
 # Salamander - Increase Damage to 0.06500 from 0.02096, reduce Damage-over-Time to 5.5 from 8.5, increase Fire Rate to 8 from 3, adjust Fuel Consumption to compensate for increased Fire Rate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Gunner/DataTable_Gunner_SkillsBalance.DataTable_Gunner_SkillsBalance,Salamander,DamageScalar_2_28B25EC8493D1EB6C2138A962F659BCD,0,,0.06500
