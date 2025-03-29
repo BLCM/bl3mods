@@ -464,13 +464,13 @@ AX-88 - Reduced ammo cost to one and increased Projectile Speed by 57%.
 
 COV LEGENDARY GUNS
 ------------------
-Embrace the Pain - Base damage multiplier raised from 1 to 1.2, accuracy improved, fire rate increased by 70%, heat rate reduced by 20%, self-damage reduced by 50%.
+Embrace the Pain - Base damage multiplier raised from 1 to 1.2, accuracy improved, fire rate increased by 70%, heat rate reduced by 20%, self-damage reduced by 90%.
 
 NoPewPew - Base damage multiplier lowered from 1.1 to 0.65, ammo cost set to 3.
 
  ┗----Rationale: Instead of gutting the power of this weapon, it's been given the ION CANNON treatment and increased the ammo cost. It'll also make x4 and x5 versions not so blatantly inferior to x3 versions.
 
-Pain is Power - Base damage multiplier raised from 1 to 1.2, heat rate reduced by 40%, self-damage reduced by 50%.
+Pain is Power - Base damage multiplier raised from 1 to 1.2, heat rate reduced by 40%, self-damage reduced by 90%.
 
 Rebound - Base damage multiplier lowered from 2 to 1.25.
 
@@ -1906,7 +1906,7 @@ Flare - Replaced Stainless-Steel Bear with Desperate Measures, replaced Cloud of
 
 Heat Exchanger - No change.
 
-Sapper - Lifesteal increase per interval (every 0.2 seconds) reduced to 0.2%.
+Sapper - Lifesteal increase per interval (every 0.2 seconds) reduced to 0.2%. Also added an optional replacement Class Mod that focuses on Moze's incendiary capabilities while also igniting her when she does damage, Elemental Projector recommended.
 
 Green Monster - Replaced Click, Click... with Redistribution and made the description more accurate.
 
