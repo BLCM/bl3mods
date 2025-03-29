@@ -2,6 +2,22 @@
 
 # CHANGELOG
 ------------------------------
+1.6.9
+-----
+Fixed some 1.6.7 changes being removed by accident.
+
+Removed mayhem scaling description from Indiscriminate.
+
+Fixed a typo in the Grease Trap's description.
+
+Fixed the AX-88 not actually getting faster projectiles.
+
+Fixed the Barrage's increased burst-fire not applying in alternate firing modes.
+
+Further lowered the Pain is Power and Embrace the Pain's self-damage from 1 to 0.2.
+
+Added an optional replacer for the Sapper class mod called the Tamale, a Hellborn-themed class mod that boosts Moze's spicy tendencies and can also ignite her when she deals damage. Recommended to use with an Elemental Projector.
+
 1.6.8
 -----
 Added Burst-Fire Delay Reduction to the Terror Damage & Fire Rate anointment, Overclocked, and Turn Tail and Run.
