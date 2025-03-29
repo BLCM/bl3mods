@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Red-Text Explainer
-### Version: 1.6.4
+### Version: 1.6.9
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: gear-general, qol
@@ -734,7 +734,7 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Refl
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/SandHawk/UIStat_RedText_SandHawk.UIStat_RedText_SandHawk,Text,0,,[Flavor]Wedge a pig.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires projectiles in the pattern of a flapping bird. Deals splash damage.)[/italic][/nameplate_enemy_slight]
 
 # Grease Trap
-SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/UIStat_RedText_GreaseTrap.UIStat_RedText_GreaseTrap,Text,0,,[Flavor]“EXTREMELY FLAMMABLE!”[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fire Starter mode produces an powerful explosion based on how many Hot Grease mode projectiles hit the target.)[/italic][/nameplate_enemy_slight]
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/GreaseTrap/UIStat_RedText_GreaseTrap.UIStat_RedText_GreaseTrap,Text,0,,[Flavor]“EXTREMELY FLAMMABLE!”[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fire Starter mode produces a powerful explosion based on how many Hot Grease mode projectiles hit the target.)[/italic][/nameplate_enemy_slight]
 
 # Iceburger
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/Event2/Gear/Weapon/_Unique/IceBurger/UIStat_RedText_IceBurger.UIStat_RedText_IceBurger,Text,0,,[Flavor]90% of the flavor is under the bun.[/Flavor] <p><p>    [nameplate_enemy_slight][italic](Fires a continuous [fire]incendiary[/fire] beam and periodically fires [cryo]cryo[/cryo] burgers.)[/italic][/nameplate_enemy_slight]
