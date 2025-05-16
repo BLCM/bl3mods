@@ -1,0 +1,19 @@
+
+@title Quick Change & Respec Keybind
+@version 1.0.0
+@author CZ47
+@contact =]#7647
+@categories gameplay, skill-system, ui, qol, qui-ui
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license URL https://creativecommons.org/licenses/by-sa/4.0/
+
+@screenshot https://i.imgur.com/zdEjfbU.jpeg
+@screenshot https://i.imgur.com/JIRSuhe.jpeg
+
+### 
+### Instantly jump into the Quick Change / Respec menu by pressing the "Quick Menu" keybind.
+### This replaces/removes the base game "Quick menu" from where you can emote etc.
+### 
+
+SparkPatchEntry,(1,1,0,),/Game/UI/_Shared/_Design/UIGlobals.UIGlobals,QuickEmoteMenuData,0,,OakGFxMenuData'/Game/UI/QuickChangeMenu/MenuData_QuickChangeMenu.MenuData_QuickChangeMenu'
