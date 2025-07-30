@@ -5,10 +5,10 @@
 @categories cheat
 
 @license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-@license-url https://creativecommons.org/licenses/by-sa/4.0/
+@license-url https://creativecommons.org/licenses/by-sa/2.0/
 
 ### I wanted a way to more quickly level a character up since I hate grinding too much and not being on level is grating.
-### Based on Apocalyptech's mod. Multiplies EXP gain by 5x, and does not remove penalties from overleveling.
+### Based on Apocalyptech's mod. Multiplies EXP gain by 2x, and does not remove penalties from overleveling.
 
 # XP scaling
 SparkPatchEntry,(1,1,0,),/Game/GameData/Balance/Experience/Att_BaseEnemyExperience.Att_BaseEnemyExperience:ValueResolver_PlayThroughDefinedAttributeValueResolver,Value.PlaythroughOne.BaseValueConstant,0,,50
