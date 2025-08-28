@@ -1,6 +1,6 @@
 ###
 ### Name: Balands - Vehicles Changes
-### Version: 1.5.9
+### Version: 1.7
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: vehicle
@@ -69,7 +69,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data
 # Increase Needle Launcher damage from 1.25 to 4.3
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SpikeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,4.3
 
-# Increase Sawblade Launcher damage from 3 to 12
+# Increase Sawblade Launcher damage from 3 to 7.5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SawBladeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,12
 
 ### ARMOR CHANGES ###
