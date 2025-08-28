@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.6.8
+### Version: 1.7
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, armsrace, vehicle
@@ -42,7 +42,7 @@
 ##############################
 ##### BALANDS NEWS ITEM ######
 ##############################
-InjectNewsItem,Balands v1.6.9 Active!,https://i.imgur.com/dphElZ9.png
+InjectNewsItem,Balands v1.7 Active!,https://i.imgur.com/dphElZ9.png
 
 ##############################
 ####### BASIC CHANGES ########
@@ -5560,8 +5560,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data
 # Increase Needle Launcher damage from 1.25 to 4.3
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SpikeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,4.3
 
-# Increase Sawblade Launcher damage from 3 to 12
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SawBladeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,12
+# Increase Sawblade Launcher damage from 3 to 7.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Vehicles/_Shared/Design/Balance/Data/DataTable_VehiclePartsData.DataTable_VehiclePartsData,Revolver_SawBladeLauncher,WeaponDamageScale_31_40176F82433522D6C11812BBFCBC607C,0,,7.5
 
 ### ARMOR CHANGES ###
 
