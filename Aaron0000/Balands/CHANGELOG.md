@@ -2,6 +2,10 @@
 
 # CHANGELOG
 ------------------------------
+1.7
+-----
+Reduced the damage of the Cyclone Sawblade Launcher from 12 to 7.5 (normally 3 in vanilla.)
+
 1.6.9
 -----
 Fixed some 1.6.7 changes being removed by accident.
