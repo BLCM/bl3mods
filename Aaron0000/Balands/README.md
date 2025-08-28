@@ -1,5 +1,7 @@
 # DISCLAIMER: The numbers listed going from here down may not be 100% accurate in some cases. It may something like "Accuracy increased by 200%" but that doesn't mean it'll have an Accuracy of 200%+. Take the numbers with a grain of salt.
 
+# No longer in active development.
+
 MAIN MENU CHANGES
 -----------------
 Added an item to the news section on the main menu to indicate Balands is active (Complete version and "Balance" files only.)
@@ -3208,3 +3210,4 @@ Treasure Hunter - No change.
 Harmageddon - No change.
 
 Lead or Alive - No change.
+
