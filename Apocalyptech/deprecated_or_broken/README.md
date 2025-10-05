@@ -110,6 +110,12 @@ weren't actually intended to be mods themselves.
   modifier configs for each level.  Since releasing my Mayhem Mode Configurator,
   though, this mod's kind of obsolete, and I grew to not really want this
   exact config anyway.  So, moving this over here as a deprecated mod.
+- `main_menu` - This directory *used* to contain a selection of working "Main
+  Menu" mods which would force the main menu to the style used in the varous
+  timed events, even if you don't have that event (or even if you have a
+  different one) enabled.  Alas, this was broken at some point -- probably when
+  Gearbox added the ability to enable events right from the game settings --
+  and nobody noticed the breakage until 2025.  So, they've been moved in here.
 
 I had a collection of timed-event-enabling mods publicly available prior to
 the availability of B3HM as a modding tool.  Gearbox asked us to not do mods

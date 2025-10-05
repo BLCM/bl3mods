@@ -30,7 +30,7 @@ for event, menunum in [
         ('cartels', 5),
         ]:
 
-    mod_filename = 'main_menu_{}.bl3hotfix'.format(event)
+    mod_filename = 'main_menu_{}.txt'.format(event)
     event_cap = event.capitalize()
 
     mod = Mod(mod_filename,
@@ -39,6 +39,8 @@ for event, menunum in [
             [
                 "Sets the main menu to have the {} visuals.  No actual effect on".format(event_cap),
                 "gameplay or anything.",
+                "",
+                "NOTE: THIS IS ACTUALLY BROKEN AND NO LONGER WORKS!",
             ],
             contact='https://apocalyptech.com/contact.php',
             lic=Mod.CC_BY_SA_40,

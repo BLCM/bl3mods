@@ -14,8 +14,17 @@ See the individual mod folders for full READMEs.
   which will spawn when Cartel spawns are active.
 - **Guaranteed Ghosts** - Guarantees haunted enemies when Bloody Harvest is
   active.
-- **Main Menu** - Collection of mods to choose a specific main menu theme
-  (including the eventless Christmas menu)
+
+Deprecated
+----------
+
+This directory *used* to contain a selection of "Main Menu" mods which
+would force the main menu to the style used in the varous timed events, even
+if you don't have that event (or even if you have a different one) enabled.
+Alas, this was broken at some point -- probably when Gearbox added the
+ability to enable events right from the game settings -- and nobody noticed
+the breakage until 2025.  Those mods have been moved to my `deprecated_or_broken`
+directory.
 
 Licenses
 ========
