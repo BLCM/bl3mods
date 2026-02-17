@@ -1,6 +1,6 @@
 ###
 ### Name: Balands
-### Version: 1.7
+### Version: 1.7.1
 ### Author: Aaron0000
 ### Contact: Just look for me on Shadowevil's Discord (Shadow's Hideout).
 ### Categories: major-pack, mode-balance, scaling, mayhem, gear-general, gear-anointments, skill-system, char-gunner, char-operative, char-beastmaster, char-siren, bugfix, gameplay, enemy, armsrace, vehicle
@@ -3361,7 +3361,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 
 ### OPERATIVE ###
 
-# Clone Swap Weapon Damage - Reduce Weapon Damage Bonus to 40% from 130%, Increase Duration to 8 seconds from 6 seconds, make it ScaleSimple.
+# Clone Swap Weapon Damage - Reduce Weapon Damage Bonus to 35% from 130%, Increase Duration to 8 seconds from 6 seconds, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_CloneSwap_WeaponDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.35
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Operative_CloneSwap_WeaponDamage,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,6
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Operative/CloneSwapDamage/StatusEffect_CloneSwap_WeaponDamage.StatusEffect_CloneSwap_WeaponDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
