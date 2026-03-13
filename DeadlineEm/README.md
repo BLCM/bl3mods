@@ -1,113 +1,98 @@
-# Unlimited Vehicle Boost & Vehicle Health
+# DeadlineEm Borderlands 3 Mods
 
-Author: **DeadlineEm**
+A collection of hotfix mods for Borderlands 3 focused on gameplay tweaks, quality-of-life improvements, and experimental mechanics.
 
-Categories: Cheat, Vehicle
-
-Game: Borderlands 3
+Mods are organized by category to make navigation simple and scalable as the collection grows.
 
 ---
 
-## Description
+## Repository Structure
 
-Two hotfix mods which enhance vehicle gameplay by removing boost limitations and preventing vehicle destruction.
+```
+DeadlineEm/
+│
+├── README.md
+│
+├── Vehicle/
+│   ├── README.md
+│   └── Cheat/
+│       ├── Unlimited_Vehicle_Boost.bl3hotfix
+│       └── Unlimited_Vehicle_Health.bl3hotfix
+│
+├── Player/
+│   └── ...
+│
+├── Vendor/
+│   └── ...
+```
 
-These scripts patch multiple vehicle systems to ensure the behavior works consistently across all supported vehicles.
-
-Included mods:
-
-* **Unlimited Vehicle Boost**
-* **Unlimited Vehicle Health**
-
-Both mods are lightweight hotfix injections and do not modify save data.
-
----
-
-## Mods
-
-### Unlimited Vehicle Boost
-
-Provides **true infinite boost** for all vehicles.
-
-This mod patches every known boost drain mechanic, including:
-
-* Boost resource pool consumption
-* Boost activation costs
-* Boost drain rates
-* Movement boost fuel usage
-* Idle regeneration systems
-
-Supported vehicles:
-
-* Outrunner
-* Technical
-* Cyclone
-
-Result:
-
-* Boost never drains
-* Boost activates instantly
-* Boost regenerates instantly
+Each category contains its own README explaining the mods located in that section.
 
 ---
 
-### Unlimited Vehicle Health
+## Mod Format
 
-Prevents vehicles from being destroyed during gameplay.
+All mods use the **Borderlands 3 hotfix injection system**.
 
-This mod modifies the vehicle health resource pool and related damage systems.
+File extension:
 
-Changes include:
+```
+.bl3hotfix
+```
 
-* Extremely large vehicle health pool
-* Instant health regeneration
-* Removal of damage multipliers
-
-Vehicles become effectively **indestructible** against:
-
-* Enemy gunfire
-* Rockets and explosives
-* Collision damage
-* Environmental hazards
-
-Supported vehicles:
-
-* Outrunner
-* Technical
-* Cyclone
+These files contain patches that modify game data at runtime without altering game or save files.
 
 ---
 
 ## Installation
 
-These mods use the **BL3 hotfix injection system**.
-
 Recommended loader:
 
-* **B3HM (Borderlands 3 Hotfix Merger)**
+**B3HM – Borderlands 3 Hotfix Merger**
 
 Steps:
 
-1. Download Copy the `raw` URL of your preferred mod file
-2. Place it in your mod directory (if downloaded) or load it via URL
-3. Launch the game through B3HM
-4. The hotfix will automatically apply
+1. Download the desired `.bl3hotfix` file OR copy the `raw` URL
+2. Load Local or Add URL through your hotfix loader
+3. Launch the game
+4. The patch will apply automatically
+
+---
+
+## Categories
+
+Current mod categories:
+
+| Category | Description                                 |
+| -------- | ------------------------------------------- |
+| Vehicle  | Mods affecting vehicle systems and gameplay |
+
+More categories will be added as additional mods are created.
 
 ---
 
 ## Compatibility
 
-* Works with the latest version of Borderlands 3
-* Compatible with most other vehicle hotfix mods
-* Safe for singleplayer and co-op
+Most mods are designed to work together unless they modify the same internal game values.
 
-Note: Other mods which modify vehicle systems may override these changes.
+Conflicts may occur if multiple mods patch the same asset.
+
+---
+
+## Author
+
+**DeadlineEm**
+
+---
+
+## License
+
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+https://creativecommons.org/licenses/by-sa/4.0/
 
 ---
 
 ## Credits
 
-Mod Author
-**DeadlineEm**
-
-Thanks to the Borderlands modding community for research and documentation related to BL3 hotfix modding.
+Thanks to the Borderlands modding community for their research and documentation related to hotfix modding.
