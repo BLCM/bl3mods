@@ -6,7 +6,7 @@ Mods are organized by category to make navigation simple and scalable as the col
 
 ---
 
-## Repository Structure
+## Repository Structure (Full includes empty directories)
 
 ```
 DeadlineEm/
@@ -22,11 +22,17 @@ DeadlineEm/
 ├── Player/
 │   └── ...
 │
-├── Vendor/
+├── Weapon/
+│   └── ...
+│
+├── Environnment/
+│   └── ...
+│
+├── Economy/
 │   └── ...
 ```
 
-Each category contains its own README explaining the mods located in that section.
+Each category contains its own README explaining the mods located in that section if they exist.
 
 ---
 
@@ -61,13 +67,15 @@ Steps:
 
 ## Categories
 
-Current mod categories:
+Current Categories (With hotfixes):
 
 | Category | Description                                 |
 | -------- | ------------------------------------------- |
 | Vehicle  | Mods affecting vehicle systems and gameplay |
 
-More categories will be added as additional mods are created.
+Categories listed above are ONLY populated categories, empty folders will not be listed!
+More categories may be added as additional mods are created. Categories MAY BE EMPTY until
+hotfixes are created under them, folder structure is there for reference and ease of use.
 
 ---
 
