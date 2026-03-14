@@ -1,0 +1,54 @@
+@title Unlimited Vehicle Boost
+@version 1.0.0
+@author DeadlineEm
+@contact Discord - DeadlineEm
+@categories cheat, vehicle
+
+@license Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+@license-url https://creativecommons.org/licenses/by-sa/4.0/
+
+###
+### TRUE INFINITE VEHICLE BOOST
+### Patches every known boost drain system for every vehicle, always keeps boost at 100%
+###
+
+############################
+# RESOURCE POOL OVERRIDES
+############################
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseValueConstant,0,,999999.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseValueScale,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseOnIdleRegenerationRate,0,,999999.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/GameData/Vehicle/ResourcePool_VehicleBoost.ResourcePool_VehicleBoost,BaseOnIdleRegenerationDelay,0,,0.0
+
+############################
+# BOOST COMPONENT DRAIN
+############################
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostResourceCost,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostResourceCostPerSecond,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostResourceDrainRate,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostConsumptionRate,0,,0.0
+
+############################
+# VEHICLE MOVEMENT DRAIN
+############################
+
+# Outrunner
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Outrunner/_Design/VehicleMovement_Outrunner.VehicleMovement_Outrunner,BoostFuelConsumptionRate,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Outrunner/_Design/VehicleMovement_Outrunner.VehicleMovement_Outrunner,BoostFuelUseRate,0,,0.0
+
+# Technical
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Technical/_Design/VehicleMovement_Technical.VehicleMovement_Technical,BoostFuelConsumptionRate,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Technical/_Design/VehicleMovement_Technical.VehicleMovement_Technical,BoostFuelUseRate,0,,0.0
+
+# Cyclone
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Cyclone/_Design/VehicleMovement_Cyclone.VehicleMovement_Cyclone,BoostFuelConsumptionRate,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/Cyclone/_Design/VehicleMovement_Cyclone.VehicleMovement_Cyclone,BoostFuelUseRate,0,,0.0
+
+############################
+# BOOST ACTIVATION COST
+############################
+
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostActivationCost,0,,0.0
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Vehicles/_Shared/_Design/VehicleSystems/VehicleBoostComponent.VehicleBoostComponent,BoostStartCost,0,,0.0
